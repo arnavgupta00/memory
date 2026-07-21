@@ -1,28 +1,44 @@
 from __future__ import annotations
 
 from pathlib import Path
+from typing import ClassVar
 
 import pytest
 
 from longmemeval.agent_loader import load_agent
 from longmemeval.api import (
     CaseMetadata,
-    GenerationRequest,
     GenerationResponse,
+    ModelRoleInfo,
     TimestampedSession,
     Turn,
 )
-from longmemeval.config import AgentConfig, ProviderConfig
+from longmemeval.config import AgentConfig
 
 
-class FakeProvider:
-    async def generate(self, request: GenerationRequest) -> GenerationResponse:
+class FakeGateway:
+    roles: ClassVar = {
+        "answer": ModelRoleInfo(kind="generation", provider="openai", model="gpt-test")
+    }
+
+    async def generate(
+        self,
+        role: str,
+        prompt: str,
+        *,
+        temperature: float | None = None,
+        max_output_tokens: int | None = None,
+    ) -> GenerationResponse:
+        assert role == "answer"
         return GenerationResponse(
             text="Pune",
-            model=request.model,
+            model="gpt-test",
             provider="openai",
             latency_ms=1,
         )
+
+    async def embed(self, *args, **kwargs):  # type: ignore[no-untyped-def]
+        raise AssertionError("the full-context agent should not request embeddings")
 
 
 @pytest.mark.asyncio
@@ -32,8 +48,7 @@ async def test_current_agent_loads_dynamically_and_implements_contract() -> None
             entrypoint="agents.current:create_agent",
             options={"chain_of_note": False, "history_format": "text"},
         ),
-        FakeProvider(),
-        ProviderConfig(provider="openai", model="gpt-test", max_retries=0),
+        FakeGateway(),
     )
     await agent.reset(CaseMetadata(question_id="q1", question_type="single-session-user"))
     await agent.ingest(

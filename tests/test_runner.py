@@ -26,6 +26,14 @@ class FakeSystem:
         return AnswerResult(hypothesis="Pune")
 
 
+class FakeGateway:
+    def begin_case(self) -> None:
+        return None
+
+    def finish_case(self) -> list[object]:
+        return []
+
+
 @pytest.mark.asyncio
 async def test_run_checkpoints_and_resume(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
     cases = [make_case("q1"), make_case("q2")]
@@ -34,7 +42,9 @@ async def test_run_checkpoints_and_resume(tmp_path: Path, monkeypatch: pytest.Mo
     monkeypatch.setattr("longmemeval.runner.verify_data", lambda: {"data.json": "hash"})
     monkeypatch.setattr("longmemeval.runner.dataset_path", lambda mode: tmp_path / "data.json")
     monkeypatch.setattr("longmemeval.runner.load_cases", lambda path: cases)
-    monkeypatch.setattr("longmemeval.runner.create_provider", lambda config: object())
+    monkeypatch.setattr(
+        "longmemeval.runner.create_model_gateway", lambda answer, models: FakeGateway()
+    )
     monkeypatch.setattr("longmemeval.runner.load_agent", lambda *args: fake)
     config = RunConfig.model_validate(
         {

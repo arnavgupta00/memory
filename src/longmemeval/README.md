@@ -9,7 +9,8 @@ It owns the stable execution boundary and LongMemEval-specific invariants:
 - validation of all 500 cases and 30 abstentions;
 - removal of gold-answer annotations before agent ingestion;
 - one isolated agent instance state per question through `reset`;
-- Gemini and OpenAI provider normalization;
+- named Gemini/OpenAI generation and embedding roles with provider normalization;
+- per-question model-call hashes, usage, latency, and role-level cost accounting;
 - immutable JSONL checkpoints and resume behavior;
 - frozen Canary 1 and Canary 2 selections;
 - the pinned upstream `gpt-4o-2024-08-06` evaluator;
@@ -23,6 +24,7 @@ It owns the stable execution boundary and LongMemEval-specific invariants:
 | `agent_loader.py` | Dynamically imports the factory named by agent YAML |
 | `config.py` | Run/provider/judge/selection schema |
 | `data.py` | Fetching, checksums, validation, and annotation stripping |
+| `model_gateway.py` | Named agent model roles and call instrumentation |
 | `runner.py` | Case isolation, ingestion lifecycle, checkpointing, resume |
 | `providers.py` | Gemini/OpenAI adapter normalization and retries |
 | `evaluation.py` | Canonical judge execution and report aggregation |

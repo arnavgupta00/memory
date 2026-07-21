@@ -4,14 +4,13 @@ import importlib
 from collections.abc import Callable
 from typing import Any, cast
 
-from longmemeval.config import AgentConfig, ProviderConfig
-from longmemeval.models import AgentRuntime, MemoryAgent, TextProvider
+from longmemeval.config import AgentConfig
+from longmemeval.models import AgentRuntime, MemoryAgent, ModelGateway
 
 
 def load_agent(
     config: AgentConfig,
-    provider: TextProvider,
-    provider_config: ProviderConfig,
+    models: ModelGateway,
 ) -> MemoryAgent:
     """Load an agent factory without requiring changes to the benchmark harness."""
 
@@ -25,10 +24,7 @@ def load_agent(
         raise ValueError(f"agent entrypoint is not callable: {config.entrypoint}")
     factory = cast(Callable[[AgentRuntime], object], factory_value)
     runtime = AgentRuntime(
-        provider=provider,
-        answer_model=provider_config.model,
-        temperature=provider_config.temperature,
-        max_output_tokens=provider_config.max_output_tokens,
+        models=models,
         options=dict(config.options),
     )
     agent = factory(runtime)

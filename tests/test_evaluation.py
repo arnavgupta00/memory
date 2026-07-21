@@ -5,7 +5,7 @@ from pathlib import Path
 import pytest
 from conftest import make_case
 
-from longmemeval.evaluation import build_report
+from longmemeval.evaluation import _aggregate_model_usage, _build_cost_report, build_report
 from longmemeval.utils import append_jsonl, write_json
 
 
@@ -128,3 +128,58 @@ def test_canary_report_post_stratifies_to_full_population(
     estimate = report["canary_estimate"]
     assert estimate["population_weighted_accuracy"] == 0.8
     assert estimate["population_weighted_task_averaged_accuracy"] == 0.5
+
+
+def test_multi_role_usage_and_cost_are_aggregated_without_double_counting() -> None:
+    manifest = {
+        "config": {
+            "answer": {
+                "provider": "gemini",
+                "model": "gemini-answer",
+                "input_price_per_million": 2,
+                "output_price_per_million": 4,
+            },
+            "agent": {
+                "models": {
+                    "memory_embedder": {
+                        "kind": "embedding",
+                        "provider": "openai",
+                        "model": "embedding-test",
+                        "input_price_per_million": 1,
+                    }
+                }
+            },
+        }
+    }
+    predictions = [
+        {
+            "generation": {
+                "usage": {"input_tokens": 999, "output_tokens": 999, "total_tokens": 1998}
+            },
+            "model_calls": [
+                {
+                    "role": "memory_embedder",
+                    "kind": "embedding",
+                    "provider": "openai",
+                    "model": "embedding-test",
+                    "item_count": 3,
+                    "usage": {"input_tokens": 100, "total_tokens": 100},
+                    "latency_ms": 2,
+                },
+                {
+                    "role": "answer",
+                    "kind": "generation",
+                    "provider": "gemini",
+                    "model": "gemini-answer",
+                    "item_count": 1,
+                    "usage": {"input_tokens": 200, "output_tokens": 10, "total_tokens": 210},
+                    "latency_ms": 4,
+                },
+            ],
+        }
+    ]
+    usage = _aggregate_model_usage(predictions, manifest)
+    cost = _build_cost_report(manifest, usage)
+    assert usage["memory_embedder"]["item_count"] == 3
+    assert usage["answer"]["total_tokens"] == 210
+    assert cost["estimated_total"] == pytest.approx(0.00054)

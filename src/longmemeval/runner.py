@@ -14,8 +14,9 @@ from longmemeval.data import (
     sanitized_sessions,
     verify_data,
 )
+from longmemeval.model_gateway import create_model_gateway
 from longmemeval.models import FailureRecord, PredictionRecord
-from longmemeval.providers import ProviderError, create_provider
+from longmemeval.providers import ProviderError
 from longmemeval.selection import ResolvedSelection, resolve_selection
 from longmemeval.utils import (
     append_jsonl,
@@ -141,7 +142,7 @@ async def execute_run(
             raise FileExistsError(f"run already exists; pass --resume: {run_path.name}")
     else:
         manifest = {
-            "schema_version": 1,
+            "schema_version": 2,
             "run_id": run_path.name,
             "status": "running",
             "created_at": utc_now(),
@@ -166,17 +167,19 @@ async def execute_run(
     if len(completed_ids) != len(completed_records):
         raise ValueError("predictions contain duplicate question IDs")
 
-    provider = create_provider(config.answer)
-    agent = load_agent(config.agent, provider, config.answer)
+    models = create_model_gateway(config.answer, config.agent.models)
+    agent = load_agent(config.agent, models)
 
     for case in selected:
         if case.question_id in completed_ids:
             continue
+        models.begin_case()
         try:
             await agent.reset(case.metadata())
             for session in sanitized_sessions(case):
                 await agent.ingest(session)
             result = await agent.answer(case.question, case.question_date)
+            model_calls = models.finish_case()
             record = PredictionRecord(
                 question_id=case.question_id,
                 question_type=case.question_type,
@@ -184,10 +187,12 @@ async def execute_run(
                 evidence=result.evidence,
                 trace=result.trace,
                 generation=result.generation,
+                model_calls=model_calls,
             )
             append_jsonl(predictions_path, record.model_dump(mode="json", exclude_none=True))
             completed_ids.add(case.question_id)
         except Exception as exc:
+            models.finish_case()
             retryable = isinstance(exc, ProviderError) and exc.retryable
             failure = FailureRecord(
                 question_id=case.question_id,

@@ -16,7 +16,7 @@ configurations, architecture explanation, and versioned Excalidraw diagrams all 
 
 You should not need to change `src/longmemeval/` while building retrieval, graph, consolidation,
 temporal, or reasoning systems. That package owns dataset validation, case isolation, annotation
-stripping, provider calls, resumable runs, official judging, reporting, and publication checks.
+stripping, named provider calls, resumable runs, official judging, reporting, and publication checks.
 
 ## How the boundary works
 
@@ -25,6 +25,15 @@ Every architecture-owned YAML names a Python factory:
 ```yaml
 agent:
   entrypoint: agents.current:create_agent
+  models:
+    memory_writer:
+      kind: generation
+      provider: openai
+      model: gpt-4.1-mini-2025-04-14
+    memory_embedder:
+      kind: embedding
+      provider: openai
+      model: text-embedding-3-small
   options:
     chain_of_note: true
     history_format: json
@@ -41,6 +50,19 @@ async def answer(question, question_date): ...
 
 There is no architecture registry and no harness file to update. The stable types are exported by
 [`longmemeval.api`](src/longmemeval/api.py).
+
+Inside agent code, model access is role-based:
+
+```python
+memory = await self.runtime.models.generate("memory_writer", prompt)
+vectors = await self.runtime.models.embed("memory_embedder", texts)
+answer = await self.runtime.models.generate(self.runtime.answer_role, final_prompt)
+```
+
+The canonical judge is never present in this gateway. Successful calls are automatically recorded
+by role without serializing their prompt or input text. See
+[`src/agents/current/MODEL_ROLES.md`](src/agents/current/MODEL_ROLES.md) and the
+[`complex-agent.yaml`](src/agents/current/configs/examples/complex-agent.yaml) template.
 
 ## Setup
 

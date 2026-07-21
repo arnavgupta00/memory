@@ -5,9 +5,15 @@ from types import SimpleNamespace
 
 import pytest
 
-from longmemeval.config import ProviderConfig
-from longmemeval.models import GenerationRequest
-from longmemeval.providers import GeminiProvider, OpenAIProvider, ProviderError
+from longmemeval.config import EmbeddingModelConfig, ProviderConfig
+from longmemeval.models import EmbeddingRequest, GenerationRequest
+from longmemeval.providers import (
+    GeminiEmbeddingProvider,
+    GeminiProvider,
+    OpenAIEmbeddingProvider,
+    OpenAIProvider,
+    ProviderError,
+)
 
 
 class FakeOpenAICompletions:
@@ -25,6 +31,25 @@ class FakeOpenAIClient:
         self.chat = SimpleNamespace(completions=FakeOpenAICompletions())
 
 
+class FakeOpenAIEmbeddings:
+    async def create(self, **kwargs):  # type: ignore[no-untyped-def]
+        assert kwargs["dimensions"] == 2
+        return SimpleNamespace(
+            id="openai-embedding-request",
+            model=kwargs["model"],
+            data=[
+                SimpleNamespace(index=1, embedding=[0.0, 1.0]),
+                SimpleNamespace(index=0, embedding=[1.0, 0.0]),
+            ],
+            usage=SimpleNamespace(prompt_tokens=8, total_tokens=8),
+        )
+
+
+class FakeOpenAIEmbeddingClient:
+    def __init__(self) -> None:
+        self.embeddings = FakeOpenAIEmbeddings()
+
+
 class FakeGeminiModels:
     async def generate_content(self, **kwargs):  # type: ignore[no-untyped-def]
         return SimpleNamespace(
@@ -40,6 +65,24 @@ class FakeGeminiModels:
 class FakeGeminiClient:
     def __init__(self) -> None:
         self.aio = SimpleNamespace(models=FakeGeminiModels())
+
+
+class FakeGeminiEmbeddingModels:
+    async def embed_content(self, **kwargs):  # type: ignore[no-untyped-def]
+        assert kwargs["config"].output_dimensionality == 2
+        return SimpleNamespace(
+            embeddings=[
+                SimpleNamespace(values=[1.0, 0.0], statistics=SimpleNamespace(token_count=3)),
+                SimpleNamespace(values=[0.0, 1.0], statistics=SimpleNamespace(token_count=4)),
+            ],
+            model_version=kwargs["model"],
+            response_id="gemini-embedding-request",
+        )
+
+
+class FakeGeminiEmbeddingClient:
+    def __init__(self) -> None:
+        self.aio = SimpleNamespace(models=FakeGeminiEmbeddingModels())
 
 
 class EmptyOpenAICompletions:
@@ -80,6 +123,45 @@ async def test_gemini_normalization() -> None:
     assert response.text == "Pune"
     assert response.usage.total_tokens == 11
     assert response.request_id == "gemini-request"
+
+
+@pytest.mark.asyncio
+async def test_openai_embedding_normalization_and_ordering() -> None:
+    config = EmbeddingModelConfig(
+        provider="openai", model="text-embedding-test", dimensions=2, max_retries=0
+    )
+    provider = OpenAIEmbeddingProvider(  # type: ignore[arg-type]
+        config, client=FakeOpenAIEmbeddingClient()
+    )
+    response = await provider.embed(
+        EmbeddingRequest(inputs=["first", "second"], model=config.model, dimensions=2)
+    )
+    assert response.embeddings == [[1.0, 0.0], [0.0, 1.0]]
+    assert response.usage.total_tokens == 8
+    assert response.request_id == "openai-embedding-request"
+
+
+@pytest.mark.asyncio
+async def test_gemini_embedding_normalization() -> None:
+    config = EmbeddingModelConfig(
+        provider="gemini",
+        model="gemini-embedding-test",
+        dimensions=2,
+        task_type="RETRIEVAL_DOCUMENT",
+        max_retries=0,
+    )
+    provider = GeminiEmbeddingProvider(config, client=FakeGeminiEmbeddingClient())
+    response = await provider.embed(
+        EmbeddingRequest(
+            inputs=["first", "second"],
+            model=config.model,
+            dimensions=2,
+            task_type="RETRIEVAL_DOCUMENT",
+        )
+    )
+    assert response.embeddings == [[1.0, 0.0], [0.0, 1.0]]
+    assert response.usage.input_tokens == 7
+    assert response.request_id == "gemini-embedding-request"
 
 
 def test_missing_openai_credential(monkeypatch: pytest.MonkeyPatch) -> None:

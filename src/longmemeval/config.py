@@ -3,7 +3,7 @@ from __future__ import annotations
 import hashlib
 import json
 from pathlib import Path
-from typing import Any, Literal
+from typing import Annotated, Any, Literal
 
 import yaml
 from pydantic import BaseModel, Field, field_validator, model_validator
@@ -28,6 +28,43 @@ class ProviderConfig(BaseModel):
         return value.strip()
 
 
+class GenerationModelConfig(ProviderConfig):
+    """A named text-generation role available to an agent."""
+
+    kind: Literal["generation"] = "generation"
+
+
+class EmbeddingModelConfig(BaseModel):
+    """A named text-embedding role available to an agent."""
+
+    kind: Literal["embedding"] = "embedding"
+    provider: Literal["openai", "gemini"]
+    model: str = Field(min_length=1)
+    dimensions: int | None = Field(default=None, gt=0)
+    task_type: str | None = Field(default=None, min_length=1)
+    timeout_seconds: float = Field(default=120.0, gt=0)
+    concurrency: int = Field(default=1, ge=1, le=64)
+    max_retries: int = Field(default=5, ge=0, le=20)
+    input_price_per_million: float | None = Field(default=None, ge=0)
+
+    @field_validator("model")
+    @classmethod
+    def reject_alias_placeholders(cls, value: str) -> str:
+        return ProviderConfig.reject_alias_placeholders(value)
+
+    @model_validator(mode="after")
+    def provider_options_match(self) -> EmbeddingModelConfig:
+        if self.provider == "openai" and self.task_type is not None:
+            raise ValueError("task_type is supported only by Gemini embedding roles")
+        return self
+
+
+ModelRoleConfig = Annotated[
+    GenerationModelConfig | EmbeddingModelConfig,
+    Field(discriminator="kind"),
+]
+
+
 class JudgeConfig(BaseModel):
     provider: Literal["openai"] = "openai"
     model: Literal["gpt-4o-2024-08-06"] = "gpt-4o-2024-08-06"
@@ -39,7 +76,30 @@ class AgentConfig(BaseModel):
         min_length=3,
         pattern=r"^[A-Za-z_]\w*(?:\.[A-Za-z_]\w*)*:[A-Za-z_]\w*$",
     )
+    models: dict[str, ModelRoleConfig] = Field(default_factory=dict)
     options: dict[str, Any] = Field(default_factory=dict)
+
+    @field_validator("models")
+    @classmethod
+    def validate_model_role_names(
+        cls, value: dict[str, ModelRoleConfig]
+    ) -> dict[str, ModelRoleConfig]:
+        reserved = {"answer", "judge", "canonical-judge", "canonical_judge"}
+        for role in value:
+            if (
+                not role
+                or not role[0].isalpha()
+                or any(
+                    character not in "abcdefghijklmnopqrstuvwxyz0123456789_-" for character in role
+                )
+            ):
+                raise ValueError(
+                    "model role names must start with a letter and use lowercase letters, "
+                    "numbers, underscores, or dashes"
+                )
+            if role in reserved:
+                raise ValueError(f"model role name is reserved: {role}")
+        return value
 
 
 class SelectionConfig(BaseModel):

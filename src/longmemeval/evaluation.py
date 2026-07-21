@@ -119,23 +119,18 @@ def build_report(run_id: str) -> dict[str, Any]:
     type_accuracies = [sum(values) / len(values) for values in by_type.values() if values]
     canary_estimate = _canary_estimate(manifest, judgments, references)
 
-    input_tokens = 0
-    output_tokens = 0
-    total_tokens = 0
-    latency_ms = 0.0
-    usage_records = 0
-    for item in predictions:
-        generation = item.get("generation") or {}
-        usage = generation.get("usage") or {}
-        input_tokens += usage.get("input_tokens") or 0
-        output_tokens += usage.get("output_tokens") or 0
-        total_tokens += usage.get("total_tokens") or 0
-        latency_ms += generation.get("latency_ms") or 0.0
-        if generation:
-            usage_records += 1
+    usage_by_role = _aggregate_model_usage(predictions, manifest)
+    input_tokens = sum(item["input_tokens"] for item in usage_by_role.values())
+    output_tokens = sum(item["output_tokens"] for item in usage_by_role.values())
+    total_tokens = sum(item["total_tokens"] for item in usage_by_role.values())
+    total_latency_ms = sum(item["latency_ms"] for item in usage_by_role.values())
+    model_call_count = sum(item["call_count"] for item in usage_by_role.values())
+    answer_usage = usage_by_role.get("answer") or {}
+    answer_latency_ms = float(answer_usage.get("latency_ms", 0.0))
+    answer_call_count = int(answer_usage.get("call_count", 0))
 
     report = {
-        "schema_version": 1,
+        "schema_version": 2,
         "run_id": run_id,
         "generated_at": utc_now(),
         "status": manifest["status"],
@@ -156,20 +151,15 @@ def build_report(run_id: str) -> dict[str, Any]:
             "input_tokens": input_tokens,
             "output_tokens": output_tokens,
             "total_tokens": total_tokens,
-            "answer_latency_ms": latency_ms,
-            "mean_answer_latency_ms": latency_ms / usage_records if usage_records else None,
-        },
-        "cost": {
-            "currency": "USD",
-            "input_unit_price_per_million": manifest["config"]["answer"].get(
-                "input_price_per_million"
+            "model_call_count": model_call_count,
+            "total_model_latency_ms": total_latency_ms,
+            "answer_latency_ms": answer_latency_ms,
+            "mean_answer_latency_ms": (
+                answer_latency_ms / answer_call_count if answer_call_count else None
             ),
-            "output_unit_price_per_million": manifest["config"]["answer"].get(
-                "output_price_per_million"
-            ),
-            "estimated_total": _estimated_cost(manifest, input_tokens, output_tokens),
-            "note": "Prices are user-supplied run-date inputs; model aliases and prices change.",
+            "by_role": usage_by_role,
         },
+        "cost": _build_cost_report(manifest, usage_by_role),
     }
     write_json(run_path / "report.json", report)
     return report
@@ -240,12 +230,108 @@ def _canary_estimate(
     }
 
 
-def _estimated_cost(
-    manifest: dict[str, Any], input_tokens: int, output_tokens: int
-) -> float | None:
+def _aggregate_model_usage(
+    predictions: list[dict[str, Any]], manifest: dict[str, Any]
+) -> dict[str, dict[str, Any]]:
+    totals: dict[str, dict[str, Any]] = {}
     answer_config = manifest["config"]["answer"]
-    input_price = answer_config.get("input_price_per_million")
-    output_price = answer_config.get("output_price_per_million")
-    if input_price is None or output_price is None:
-        return None
-    return (input_tokens * float(input_price) + output_tokens * float(output_price)) / 1_000_000
+    for prediction in predictions:
+        if "model_calls" in prediction:
+            calls = prediction.get("model_calls") or []
+        else:
+            generation = prediction.get("generation") or {}
+            calls = (
+                [
+                    {
+                        "role": "answer",
+                        "kind": "generation",
+                        "provider": generation.get("provider") or answer_config["provider"],
+                        "model": generation.get("model") or answer_config["model"],
+                        "item_count": 1,
+                        "usage": generation.get("usage") or {},
+                        "latency_ms": generation.get("latency_ms") or 0.0,
+                    }
+                ]
+                if generation
+                else []
+            )
+        for call in calls:
+            role = str(call["role"])
+            usage = call.get("usage") or {}
+            input_count = int(usage.get("input_tokens") or 0)
+            output_count = int(usage.get("output_tokens") or 0)
+            total_count = int(usage.get("total_tokens") or input_count + output_count)
+            summary = totals.setdefault(
+                role,
+                {
+                    "kind": call["kind"],
+                    "provider": call["provider"],
+                    "model": call["model"],
+                    "call_count": 0,
+                    "item_count": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 0,
+                    "total_tokens": 0,
+                    "latency_ms": 0.0,
+                },
+            )
+            if (
+                summary["kind"] != call["kind"]
+                or summary["provider"] != call["provider"]
+                or summary["model"] != call["model"]
+            ):
+                raise ValueError(f"model role {role!r} changed identity within one run")
+            summary["call_count"] += 1
+            summary["item_count"] += int(call.get("item_count") or 1)
+            summary["input_tokens"] += input_count
+            summary["output_tokens"] += output_count
+            summary["total_tokens"] += total_count
+            summary["latency_ms"] += float(call.get("latency_ms") or 0.0)
+    return dict(sorted(totals.items()))
+
+
+def _role_configs(manifest: dict[str, Any]) -> dict[str, dict[str, Any]]:
+    run_config = manifest["config"]
+    roles = {"answer": run_config["answer"]}
+    roles.update((run_config.get("agent") or {}).get("models") or {})
+    return roles
+
+
+def _build_cost_report(
+    manifest: dict[str, Any], usage_by_role: dict[str, dict[str, Any]]
+) -> dict[str, Any]:
+    configs = _role_configs(manifest)
+    role_costs: dict[str, dict[str, Any]] = {}
+    known_total = 0.0
+    complete = True
+    for role, usage in usage_by_role.items():
+        config = configs.get(role) or {}
+        input_price = config.get("input_price_per_million")
+        output_price = config.get("output_price_per_million")
+        price_complete = input_price is not None and (
+            usage["kind"] == "embedding" or output_price is not None
+        )
+        estimated = None
+        if price_complete:
+            assert input_price is not None
+            estimated = (
+                usage["input_tokens"] * float(input_price)
+                + usage["output_tokens"] * float(output_price or 0)
+            ) / 1_000_000
+            known_total += estimated
+        else:
+            complete = False
+        role_costs[role] = {
+            "kind": usage["kind"],
+            "provider": usage["provider"],
+            "model": usage["model"],
+            "input_unit_price_per_million": input_price,
+            "output_unit_price_per_million": output_price,
+            "estimated_total": estimated,
+        }
+    return {
+        "currency": "USD",
+        "estimated_total": known_total if complete else None,
+        "by_role": role_costs,
+        "note": "Prices are user-supplied run-date inputs; model aliases and prices change.",
+    }

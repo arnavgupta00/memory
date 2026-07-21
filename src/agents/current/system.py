@@ -9,7 +9,6 @@ from longmemeval.api import (
     AnswerResult,
     CaseMetadata,
     EvidenceReference,
-    GenerationRequest,
     MemoryAgent,
     TimestampedSession,
 )
@@ -39,14 +38,7 @@ class CurrentAgent:
         if self._case is None:
             raise RuntimeError("reset must be called before answer")
         prompt = answer_prompt(self._sessions, question, question_date, self.config)
-        response = await self.runtime.provider.generate(
-            GenerationRequest(
-                prompt=prompt,
-                model=self.runtime.answer_model,
-                temperature=self.runtime.temperature,
-                max_output_tokens=self.runtime.max_output_tokens,
-            )
-        )
+        response = await self.runtime.models.generate(self.runtime.answer_role, prompt)
         return AnswerResult(
             hypothesis=response.text,
             evidence=[EvidenceReference(session_id=item.session_id) for item in self._sessions],

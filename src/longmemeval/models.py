@@ -1,10 +1,10 @@
 from __future__ import annotations
 
-from collections.abc import Mapping
+from collections.abc import Mapping, Sequence
 from dataclasses import dataclass
 from typing import Any, Literal, Protocol
 
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 
 class Turn(BaseModel):
@@ -69,6 +69,49 @@ class GenerationResponse(BaseModel):
     request_id: str | None = None
 
 
+class EmbeddingRequest(BaseModel):
+    inputs: list[str] = Field(min_length=1)
+    model: str
+    dimensions: int | None = Field(default=None, gt=0)
+    task_type: str | None = None
+
+    @field_validator("inputs")
+    @classmethod
+    def reject_empty_inputs(cls, value: list[str]) -> list[str]:
+        if any(not item.strip() for item in value):
+            raise ValueError("embedding inputs cannot be empty")
+        return value
+
+
+class EmbeddingResponse(BaseModel):
+    embeddings: list[list[float]]
+    model: str
+    provider: Literal["openai", "gemini"]
+    usage: TokenUsage = Field(default_factory=TokenUsage)
+    latency_ms: float
+    request_id: str | None = None
+
+
+class ModelRoleInfo(BaseModel):
+    kind: Literal["generation", "embedding"]
+    provider: Literal["openai", "gemini"]
+    model: str
+
+
+class ModelCallRecord(BaseModel):
+    sequence: int
+    role: str
+    kind: Literal["generation", "embedding"]
+    provider: Literal["openai", "gemini"]
+    model: str
+    input_sha256: str
+    item_count: int = Field(ge=1)
+    parameters: dict[str, Any] = Field(default_factory=dict)
+    usage: TokenUsage = Field(default_factory=TokenUsage)
+    latency_ms: float
+    request_id: str | None = None
+
+
 class AnswerResult(BaseModel):
     hypothesis: str
     evidence: list[EvidenceReference] = Field(default_factory=list)
@@ -90,21 +133,49 @@ class PredictionRecord(BaseModel):
     evidence: list[EvidenceReference] = Field(default_factory=list)
     trace: dict[str, Any] = Field(default_factory=dict)
     generation: GenerationResponse | None = None
+    model_calls: list[ModelCallRecord] = Field(default_factory=list)
 
 
 class TextProvider(Protocol):
     async def generate(self, request: GenerationRequest) -> GenerationResponse: ...
 
 
+class EmbeddingProvider(Protocol):
+    async def embed(self, request: EmbeddingRequest) -> EmbeddingResponse: ...
+
+
+class ModelGateway(Protocol):
+    """Named, instrumented model roles exposed to an agent architecture."""
+
+    @property
+    def roles(self) -> Mapping[str, ModelRoleInfo]: ...
+
+    async def generate(
+        self,
+        role: str,
+        prompt: str,
+        *,
+        temperature: float | None = None,
+        max_output_tokens: int | None = None,
+    ) -> GenerationResponse: ...
+
+    async def embed(
+        self,
+        role: str,
+        inputs: Sequence[str],
+        *,
+        dimensions: int | None = None,
+        task_type: str | None = None,
+    ) -> EmbeddingResponse: ...
+
+
 @dataclass(frozen=True)
 class AgentRuntime:
     """Dependencies supplied by the harness to a dynamically loaded agent."""
 
-    provider: TextProvider
-    answer_model: str
-    temperature: float
-    max_output_tokens: int
+    models: ModelGateway
     options: Mapping[str, Any]
+    answer_role: str = "answer"
 
 
 class MemoryAgent(Protocol):
