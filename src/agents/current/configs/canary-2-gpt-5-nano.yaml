@@ -13,7 +13,7 @@ answer:
   max_output_tokens: 800
   timeout_seconds: 300
   concurrency: 1
-  max_retries: 5
+  max_retries: 6
   input_price_per_million: 0.05
   output_price_per_million: 0.40
 judge:
