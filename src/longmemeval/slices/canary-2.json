@@ -1,0 +1,226 @@
+{
+  "abstention_by_type": {
+    "knowledge-update": 2,
+    "multi-session": 4,
+    "single-session-user": 2,
+    "temporal-reasoning": 2
+  },
+  "abstention_count": 10,
+  "coverage": {
+    "evidence_counts_by_type": {
+      "knowledge-update": [
+        2
+      ],
+      "multi-session": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "single-session-assistant": [
+        1
+      ],
+      "single-session-preference": [
+        1
+      ],
+      "single-session-user": [
+        1
+      ],
+      "temporal-reasoning": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "evidence_position_quartiles_by_type": {
+      "knowledge-update": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "multi-session": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "single-session-assistant": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "single-session-preference": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "single-session-user": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "temporal-reasoning": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "selection_features": [
+      "session_count",
+      "context_chars",
+      "turn_count",
+      "evidence_count",
+      "evidence_mean_position",
+      "evidence_span",
+      "question_chars",
+      "answer_chars"
+    ]
+  },
+  "dataset_file": "longmemeval_s_cleaned.json",
+  "dataset_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+  "name": "canary-2",
+  "purpose": "Small architecture changes; a 60-case coverage-first regression benchmark.",
+  "question_ids": [
+    "031748ae",
+    "031748ae_abs",
+    "06878be2",
+    "0862e8bf_abs",
+    "0a34ad58",
+    "0ddfec37_abs",
+    "1a1907b4",
+    "1d4da289",
+    "1d4e3b97",
+    "25e5aa4f",
+    "2ce6a0f2",
+    "32260d93",
+    "36b9f61e",
+    "3ba21379",
+    "4100d0a0",
+    "42ec0761",
+    "4388e9dd",
+    "505af2f5",
+    "58bf7951",
+    "58ef2f1c",
+    "6222b6eb",
+    "66f24dbb",
+    "70b3e69b",
+    "7e00a6cb",
+    "852ce960",
+    "8550ddae",
+    "8752c811",
+    "88432d0a_abs",
+    "89941a94",
+    "8cf51dda",
+    "982b5123_abs",
+    "a3838d2b",
+    "a40e080f",
+    "a89d7624",
+    "afdc33df",
+    "b46e15ed",
+    "b86304ba",
+    "b9cfe692",
+    "ba358f49_abs",
+    "c8f1aeed",
+    "cc5ded98",
+    "d6233ab6",
+    "d905b33f",
+    "db467c8c",
+    "e5ba910e_abs",
+    "e982271f",
+    "ec81a493",
+    "f4f1d8a4_abs",
+    "f685340e",
+    "fca70973",
+    "gpt4_18c2b244",
+    "gpt4_2487a7cb",
+    "gpt4_2f91af09",
+    "gpt4_372c3eed_abs",
+    "gpt4_468eb063",
+    "gpt4_5501fe77",
+    "gpt4_70e84552_abs",
+    "gpt4_7fce9456",
+    "gpt4_b5700ca0",
+    "gpt4_d6585ce8"
+  ],
+  "question_type_counts": {
+    "knowledge-update": 10,
+    "multi-session": 10,
+    "single-session-assistant": 10,
+    "single-session-preference": 10,
+    "single-session-user": 10,
+    "temporal-reasoning": 10
+  },
+  "schema_version": 1,
+  "seed": 20260722,
+  "strata": [
+    {
+      "abstention": false,
+      "population_count": 72,
+      "question_type": "knowledge-update",
+      "sample_count": 8
+    },
+    {
+      "abstention": true,
+      "population_count": 6,
+      "question_type": "knowledge-update",
+      "sample_count": 2
+    },
+    {
+      "abstention": false,
+      "population_count": 121,
+      "question_type": "multi-session",
+      "sample_count": 6
+    },
+    {
+      "abstention": true,
+      "population_count": 12,
+      "question_type": "multi-session",
+      "sample_count": 4
+    },
+    {
+      "abstention": false,
+      "population_count": 56,
+      "question_type": "single-session-assistant",
+      "sample_count": 10
+    },
+    {
+      "abstention": false,
+      "population_count": 30,
+      "question_type": "single-session-preference",
+      "sample_count": 10
+    },
+    {
+      "abstention": false,
+      "population_count": 64,
+      "question_type": "single-session-user",
+      "sample_count": 8
+    },
+    {
+      "abstention": true,
+      "population_count": 6,
+      "question_type": "single-session-user",
+      "sample_count": 2
+    },
+    {
+      "abstention": false,
+      "population_count": 127,
+      "question_type": "temporal-reasoning",
+      "sample_count": 8
+    },
+    {
+      "abstention": true,
+      "population_count": 6,
+      "question_type": "temporal-reasoning",
+      "sample_count": 2
+    }
+  ],
+  "subset_of": "canary-1"
+}
