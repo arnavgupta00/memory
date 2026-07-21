@@ -13,6 +13,9 @@ class ProviderConfig(BaseModel):
     provider: Literal["openai", "gemini"]
     model: str = Field(min_length=1)
     temperature: float = Field(default=0.0, ge=0.0, le=2.0)
+    reasoning_effort: Literal["none", "minimal", "low", "medium", "high", "xhigh", "max"] | None = (
+        None
+    )
     max_output_tokens: int = Field(default=800, gt=0)
     timeout_seconds: float = Field(default=120.0, gt=0)
     concurrency: int = Field(default=1, ge=1, le=64)
@@ -26,6 +29,12 @@ class ProviderConfig(BaseModel):
         if value.strip().lower() in {"latest", "default", "model-name"}:
             raise ValueError("use an explicit provider model ID")
         return value.strip()
+
+    @model_validator(mode="after")
+    def provider_options_match(self) -> ProviderConfig:
+        if self.provider == "gemini" and self.reasoning_effort is not None:
+            raise ValueError("reasoning_effort is supported only by OpenAI generation roles")
+        return self
 
 
 class GenerationModelConfig(ProviderConfig):

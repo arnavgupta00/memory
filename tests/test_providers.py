@@ -17,7 +17,11 @@ from longmemeval.providers import (
 
 
 class FakeOpenAICompletions:
+    def __init__(self) -> None:
+        self.last_kwargs = {}
+
     async def create(self, **kwargs):  # type: ignore[no-untyped-def]
+        self.last_kwargs = kwargs
         return SimpleNamespace(
             id="openai-request",
             model=kwargs["model"],
@@ -28,7 +32,8 @@ class FakeOpenAICompletions:
 
 class FakeOpenAIClient:
     def __init__(self) -> None:
-        self.chat = SimpleNamespace(completions=FakeOpenAICompletions())
+        self.completions = FakeOpenAICompletions()
+        self.chat = SimpleNamespace(completions=self.completions)
 
 
 class FakeOpenAIEmbeddings:
@@ -113,6 +118,28 @@ async def test_openai_normalization() -> None:
     assert response.text == "Pune"
     assert response.usage.total_tokens == 12
     assert response.request_id == "openai-request"
+
+
+@pytest.mark.asyncio
+async def test_openai_reasoning_effort_is_forwarded() -> None:
+    config = ProviderConfig(
+        provider="openai",
+        model="gpt-test",
+        temperature=1,
+        reasoning_effort="minimal",
+        max_retries=0,
+    )
+    client = FakeOpenAIClient()
+    provider = OpenAIProvider(config, client=client)  # type: ignore[arg-type]
+    await provider.generate(
+        GenerationRequest(
+            prompt="?",
+            model="gpt-test",
+            temperature=1,
+            reasoning_effort="minimal",
+        )
+    )
+    assert client.completions.last_kwargs["reasoning_effort"] == "minimal"
 
 
 @pytest.mark.asyncio

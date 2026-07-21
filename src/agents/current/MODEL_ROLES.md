@@ -85,6 +85,18 @@ agent:
 A complete starting configuration is available at
 [`configs/examples/complex-agent.yaml`](configs/examples/complex-agent.yaml).
 
+OpenAI reasoning models can also pin `reasoning_effort` under a generation role. Keep the value
+explicit in benchmark configs because reasoning tokens count toward `max_output_tokens`:
+
+```yaml
+answer:
+  provider: openai
+  model: gpt-5-nano-2025-08-07
+  temperature: 1
+  reasoning_effort: minimal
+  max_output_tokens: 800
+```
+
 ## Guarantees
 
 - `answer`, `judge`, and canonical-judge variants are reserved role names.

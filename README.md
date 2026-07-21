@@ -91,6 +91,10 @@ uv run memorybench run \
 uv run memorybench run \
   --config src/agents/current/configs/canary-2-gemini.yaml
 
+# 60-case cost-efficient OpenAI baseline with pinned GPT-5 nano
+uv run memorybench run \
+  --config src/agents/current/configs/canary-2-gpt-5-nano.yaml
+
 # 150-case gate for major architecture changes
 uv run memorybench run \
   --config src/agents/current/configs/canary-1-gemini.yaml

@@ -51,6 +51,9 @@ class GenerationRequest(BaseModel):
     prompt: str
     model: str
     temperature: float = 0.0
+    reasoning_effort: Literal["none", "minimal", "low", "medium", "high", "xhigh", "max"] | None = (
+        None
+    )
     max_output_tokens: int = 800
 
 

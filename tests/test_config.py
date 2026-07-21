@@ -81,6 +81,22 @@ def test_named_generation_and_embedding_roles_are_validated() -> None:
     assert config.agent.models["memory_embedder"].kind == "embedding"
 
 
+def test_gemini_generation_rejects_openai_reasoning_effort() -> None:
+    with pytest.raises(ValidationError, match="reasoning_effort"):
+        RunConfig.model_validate(
+            {
+                "name": "bad-gemini-reasoning",
+                "mode": "full-context",
+                "agent": {"entrypoint": "agents.current:create_agent"},
+                "answer": {
+                    "provider": "gemini",
+                    "model": "gemini-test",
+                    "reasoning_effort": "minimal",
+                },
+            }
+        )
+
+
 @pytest.mark.parametrize("role", ["answer", "judge", "BadRole", "memory.writer"])
 def test_rejects_reserved_or_invalid_model_roles(role: str) -> None:
     with pytest.raises(ValidationError, match="model role"):

@@ -84,7 +84,11 @@ async def test_gateway_dispatches_named_roles_and_records_sanitized_calls(
     assert generated.model == "gemini-writer"
     assert len(embedded.embeddings) == 2
     assert [call.role for call in calls] == ["memory_writer", "memory_embedder"]
-    assert calls[0].parameters == {"temperature": 0.2, "max_output_tokens": 200}
+    assert calls[0].parameters == {
+        "temperature": 0.2,
+        "reasoning_effort": None,
+        "max_output_tokens": 200,
+    }
     assert calls[1].item_count == 2
     serialized = "\n".join(call.model_dump_json() for call in calls)
     assert "secret history" not in serialized

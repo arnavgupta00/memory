@@ -97,6 +97,7 @@ class ConfiguredModelGateway:
             prompt=prompt,
             model=binding.config.model,
             temperature=binding.config.temperature if temperature is None else temperature,
+            reasoning_effort=binding.config.reasoning_effort,
             max_output_tokens=(
                 binding.config.max_output_tokens if max_output_tokens is None else max_output_tokens
             ),
@@ -113,6 +114,7 @@ class ConfiguredModelGateway:
                 item_count=1,
                 parameters={
                     "temperature": request.temperature,
+                    "reasoning_effort": request.reasoning_effort,
                     "max_output_tokens": request.max_output_tokens,
                 },
                 usage=response.usage,

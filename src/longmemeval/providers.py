@@ -141,12 +141,15 @@ class OpenAIProvider(_ProviderBase):
 
     async def _generate_once(self, request: GenerationRequest) -> GenerationResponse:
         started = perf_counter()
-        response = await self.client.chat.completions.create(
-            model=request.model,
-            messages=[{"role": "user", "content": request.prompt}],
-            temperature=request.temperature,
-            max_completion_tokens=request.max_output_tokens,
-        )
+        parameters: dict[str, Any] = {
+            "model": request.model,
+            "messages": [{"role": "user", "content": request.prompt}],
+            "temperature": request.temperature,
+            "max_completion_tokens": request.max_output_tokens,
+        }
+        if request.reasoning_effort is not None:
+            parameters["reasoning_effort"] = request.reasoning_effort
+        response = await self.client.chat.completions.create(**parameters)
         text = response.choices[0].message.content
         if not text:
             raise ProviderError("OpenAI returned an empty response")
@@ -176,6 +179,8 @@ class GeminiProvider(_ProviderBase):
         super().__init__(config)
 
     async def _generate_once(self, request: GenerationRequest) -> GenerationResponse:
+        if request.reasoning_effort is not None:
+            raise ProviderError("Gemini generation roles do not support reasoning_effort")
         started = perf_counter()
         response = await self.client.aio.models.generate_content(
             model=request.model,
