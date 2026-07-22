@@ -1,6 +1,7 @@
 # Preserved baseline runs
 
-These artifacts document the July 22, 2026 baseline-stabilization sequence. Mutable future runs
+The top level of this directory contains only definitive benchmark runs. Superseded, aborted,
+diagnostic, and preflight runs are retained under `archive/` for auditability. Mutable future runs
 remain ignored by Git; the files listed in `CHECKSUMS.sha256` are intentionally tracked as an
 immutable audit trail.
 
@@ -23,13 +24,17 @@ manifest therefore correctly reports zero unresolved failures.
 
 ## Stabilization trail
 
+The following non-definitive runs live under `archive/`:
+
 - `baseline-preflight-openai-20260722`: GPT-4.1 credential and judging preflight.
 - `baseline-canary-2-openai-20260722`: user-aborted GPT-4.1 canary attempt.
 - `baseline-preflight-gpt-5-nano-20260722`: GPT-5 nano one-case canonical preflight.
 - `baseline-preflight-gpt-5-nano-06878be2-20260722`: completion-budget diagnostic.
 - `baseline-canary-2-gpt-5-nano-20260722`: aborted 800-token attempt.
 - `baseline-canary-2-gpt-5-nano-20260722-v2`: aborted unpaced attempt.
-- `baseline-canary-2-gpt-5-nano-20260722-v3`: definitive completed baseline.
+
+The top-level `baseline-canary-2-gpt-5-nano-20260722-v3` directory is the definitive completed
+baseline.
 
 Verify every preserved artifact from the repository root:
 

@@ -12,7 +12,13 @@ dist/
 data/raw/
 .cache/
 
-# Mutable runs are local; selected verified bundles are tracked.
-runs/
+# Mutable top-level runs are local; the definitive baseline and audit archive are tracked.
+runs/*
+!runs/README.md
+!runs/CHECKSUMS.sha256
+!runs/archive/
+!runs/archive/**
+!runs/baseline-canary-2-gpt-5-nano-20260722-v3/
+!runs/baseline-canary-2-gpt-5-nano-20260722-v3/**
 submissions/*
 !submissions/.gitkeep
