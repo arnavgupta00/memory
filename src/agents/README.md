@@ -9,7 +9,8 @@ agents/
 └── current/
     ├── __init__.py             # Dynamic factory export
     ├── system.py               # reset / ingest / answer: primary implementation
-    ├── prompt.py               # Answer prompt owned by this architecture
+    ├── prompt.py               # YAML loading, validation, and rendering
+    ├── prompts/                # Editable architecture-owned prompt YAML
     ├── config.py               # Architecture-specific option schema
     ├── configs/                # Gemini/OpenAI smoke, canary, and full runs
     ├── MODEL_ROLES.md          # Named generation/embedding API and configuration
@@ -61,6 +62,25 @@ agent:
 changes never require a benchmark registry edit. Architecture-specific settings belong under
 `agent.options` and are validated in `current/config.py`. Provider-backed model declarations belong
 under `agent.models`; the harness validates and instruments them without exposing the judge.
+
+## Editing the answer prompt
+
+The complete baseline prompt is
+[`current/prompts/full_history.yaml`](current/prompts/full_history.yaml). Static instructions and
+the `chain_of_note`/`direct` variants live there. Dynamic values are explicit `{history}`,
+`{question_date}`, `{question}`, `{answer_instruction}`, and `{answer_cue}` placeholders.
+
+`current/prompt.py` only serializes sessions, validates the YAML variable contract, and renders it.
+Select a different architecture-owned prompt from a run configuration with:
+
+```yaml
+agent:
+  options:
+    prompt_template: prompts/full_history.yaml
+```
+
+Relative paths resolve from `src/agents/current/`. A missing, misspelled, or undeclared placeholder
+stops the run before a model API call.
 
 ## Architecture history
 

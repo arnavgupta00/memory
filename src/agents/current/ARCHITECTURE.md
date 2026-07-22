@@ -6,6 +6,11 @@ The current agent is intentionally simple: it stores every sanitized session in 
 serializes the complete history when a question arrives, and asks the configured Gemini or OpenAI
 model for the answer. There is no retrieval, indexing, consolidation, graph, or temporal layer yet.
 
+The complete model-facing prompt is editable at
+[`prompts/full_history.yaml`](prompts/full_history.yaml). `prompt.py` contains rendering and
+validation only; prompt instructions, modes, structure, and `{variable}` insertion points live in
+the YAML file.
+
 The runtime now supports named generation and embedding roles for future architectures, but
 `0001-full-context` deliberately calls only the reserved final `answer` role. See
 [`MODEL_ROLES.md`](MODEL_ROLES.md) for the extension boundary. This runtime capability does not

@@ -44,6 +44,7 @@ agent:
   options:
     chain_of_note: true
     history_format: json
+    prompt_template: prompts/full_history.yaml
 answer:
   provider: gemini
   model: gemini-3.1-pro-preview

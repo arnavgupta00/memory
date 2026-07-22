@@ -5,6 +5,7 @@ agent:
   options:
     chain_of_note: true
     history_format: json
+    prompt_template: prompts/full_history.yaml
 answer:
   provider: openai
   model: gpt-5-nano-2025-08-07

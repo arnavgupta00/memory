@@ -14,6 +14,10 @@ Open [`src/agents/README.md`](src/agents/README.md), then work inside
 [`src/agents/current/`](src/agents/current/). The active implementation, answer prompt, model/run
 configurations, architecture explanation, and versioned Excalidraw diagrams all live there.
 
+The active answer prompt is
+[`src/agents/current/prompts/full_history.yaml`](src/agents/current/prompts/full_history.yaml). Its
+dynamic inputs are explicit `{variable}` placeholders; Python only validates and fills them.
+
 You should not need to change `src/longmemeval/` while building retrieval, graph, consolidation,
 temporal, or reasoning systems. That package owns dataset validation, case isolation, annotation
 stripping, named provider calls, resumable runs, official judging, reporting, and publication checks.
