@@ -127,6 +127,9 @@ class FailureRecord(BaseModel):
     error_type: str
     message: str
     retryable: bool
+    status_code: int | None = None
+    provider_code: str | None = None
+    request_id: str | None = None
 
 
 class PredictionRecord(BaseModel):

@@ -14,6 +14,7 @@ answer:
   timeout_seconds: 300
   concurrency: 1
   max_retries: 6
+  min_request_interval_seconds: 65
   input_price_per_million: 0.05
   output_price_per_million: 0.40
 judge:

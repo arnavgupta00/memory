@@ -199,8 +199,11 @@ async def execute_run(
                 error_type=type(exc).__name__,
                 message=str(exc),
                 retryable=retryable,
+                status_code=exc.status_code if isinstance(exc, ProviderError) else None,
+                provider_code=exc.provider_code if isinstance(exc, ProviderError) else None,
+                request_id=exc.request_id if isinstance(exc, ProviderError) else None,
             )
-            append_jsonl(errors_path, failure.model_dump(mode="json"))
+            append_jsonl(errors_path, failure.model_dump(mode="json", exclude_none=True))
 
         unresolved = _unresolved_failures(errors_path, completed_ids)
         manifest.update(

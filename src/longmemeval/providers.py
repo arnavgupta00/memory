@@ -25,17 +25,62 @@ from longmemeval.models import (
 class ProviderError(RuntimeError):
     """A normalized model-provider failure."""
 
-    def __init__(self, message: str, *, retryable: bool = False) -> None:
+    def __init__(
+        self,
+        message: str,
+        *,
+        retryable: bool = False,
+        status_code: int | None = None,
+        provider_code: str | None = None,
+        request_id: str | None = None,
+    ) -> None:
         super().__init__(message)
         self.retryable = retryable
+        self.status_code = status_code
+        self.provider_code = provider_code
+        self.request_id = request_id
+
+
+def _status_code(exc: Exception) -> int | None:
+    raw = getattr(exc, "status_code", None)
+    try:
+        return int(raw) if raw is not None else None
+    except (TypeError, ValueError):
+        return None
+
+
+def _provider_code(exc: Exception) -> str | None:
+    raw = getattr(exc, "code", None)
+    if raw is None:
+        body = getattr(exc, "body", None)
+        if isinstance(body, dict):
+            error = body.get("error", body)
+            if isinstance(error, dict):
+                raw = error.get("code") or error.get("type")
+    return str(raw) if raw is not None else None
+
+
+def _provider_request_id(exc: Exception) -> str | None:
+    raw = getattr(exc, "request_id", None)
+    return str(raw) if raw is not None else None
+
+
+def _normalized_provider_error(exc: Exception, *, operation: str) -> ProviderError:
+    detail = str(exc).strip() or f"{operation} failed"
+    # Keep structured logs useful without allowing an unexpectedly large provider body
+    # to dominate the per-question error ledger.
+    detail = detail[:2000]
+    return ProviderError(
+        f"{type(exc).__name__}: {detail}",
+        retryable=_retryable_provider_exception(exc),
+        status_code=_status_code(exc),
+        provider_code=_provider_code(exc),
+        request_id=_provider_request_id(exc),
+    )
 
 
 def _retryable_provider_exception(exc: Exception) -> bool:
-    status = getattr(exc, "status_code", None) or getattr(exc, "code", None)
-    try:
-        status_number = int(status) if status is not None else None
-    except (TypeError, ValueError):
-        status_number = None
+    status_number = _status_code(exc)
     return isinstance(exc, (ConnectionError, TimeoutError)) or status_number in {
         408,
         409,
@@ -47,10 +92,31 @@ def _retryable_provider_exception(exc: Exception) -> bool:
     }
 
 
+class _RequestPacer:
+    """Space request starts so large prompts do not overlap a provider TPM window."""
+
+    def __init__(self, minimum_interval_seconds: float) -> None:
+        self.minimum_interval_seconds = minimum_interval_seconds
+        self._lock = asyncio.Lock()
+        self._last_started_at: float | None = None
+
+    async def wait_for_slot(self) -> None:
+        if self.minimum_interval_seconds <= 0:
+            return
+        async with self._lock:
+            now = perf_counter()
+            if self._last_started_at is not None:
+                remaining = self.minimum_interval_seconds - (now - self._last_started_at)
+                if remaining > 0:
+                    await asyncio.sleep(remaining)
+            self._last_started_at = perf_counter()
+
+
 class _ProviderBase:
     def __init__(self, config: ProviderConfig) -> None:
         self.config = config
         self._semaphore = asyncio.Semaphore(config.concurrency)
+        self._pacer = _RequestPacer(config.min_request_interval_seconds)
 
     async def generate(self, request: GenerationRequest) -> GenerationResponse:
         async with self._semaphore:
@@ -65,6 +131,7 @@ class _ProviderBase:
             ):
                 with attempt:
                     try:
+                        await self._pacer.wait_for_slot()
                         return await asyncio.wait_for(
                             self._generate_once(request), timeout=self.config.timeout_seconds
                         )
@@ -75,10 +142,7 @@ class _ProviderBase:
                             raise
                         raise
                     except Exception as exc:
-                        raise ProviderError(
-                            f"{type(exc).__name__}: provider request failed",
-                            retryable=_retryable_provider_exception(exc),
-                        ) from exc
+                        raise _normalized_provider_error(exc, operation="provider request") from exc
         raise AssertionError("retry loop exited without returning or raising")
 
     async def _generate_once(self, request: GenerationRequest) -> GenerationResponse:
@@ -89,6 +153,7 @@ class _EmbeddingProviderBase:
     def __init__(self, config: EmbeddingModelConfig) -> None:
         self.config = config
         self._semaphore = asyncio.Semaphore(config.concurrency)
+        self._pacer = _RequestPacer(config.min_request_interval_seconds)
 
     async def embed(self, request: EmbeddingRequest) -> EmbeddingResponse:
         async with self._semaphore:
@@ -103,6 +168,7 @@ class _EmbeddingProviderBase:
             ):
                 with attempt:
                     try:
+                        await self._pacer.wait_for_slot()
                         return await asyncio.wait_for(
                             self._embed_once(request), timeout=self.config.timeout_seconds
                         )
@@ -115,9 +181,8 @@ class _EmbeddingProviderBase:
                             raise
                         raise
                     except Exception as exc:
-                        raise ProviderError(
-                            f"{type(exc).__name__}: embedding provider request failed",
-                            retryable=_retryable_provider_exception(exc),
+                        raise _normalized_provider_error(
+                            exc, operation="embedding provider request"
                         ) from exc
         raise AssertionError("retry loop exited without returning or raising")
 

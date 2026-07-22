@@ -20,6 +20,7 @@ class ProviderConfig(BaseModel):
     timeout_seconds: float = Field(default=120.0, gt=0)
     concurrency: int = Field(default=1, ge=1, le=64)
     max_retries: int = Field(default=5, ge=0, le=20)
+    min_request_interval_seconds: float = Field(default=0.0, ge=0.0, le=600.0)
     input_price_per_million: float | None = Field(default=None, ge=0)
     output_price_per_million: float | None = Field(default=None, ge=0)
 
@@ -54,6 +55,7 @@ class EmbeddingModelConfig(BaseModel):
     timeout_seconds: float = Field(default=120.0, gt=0)
     concurrency: int = Field(default=1, ge=1, le=64)
     max_retries: int = Field(default=5, ge=0, le=20)
+    min_request_interval_seconds: float = Field(default=0.0, ge=0.0, le=600.0)
     input_price_per_million: float | None = Field(default=None, ge=0)
 
     @field_validator("model")

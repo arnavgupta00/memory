@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import asyncio
+from time import perf_counter
 from types import SimpleNamespace
 
 import pytest
@@ -108,6 +109,22 @@ class SlowOpenAICompletions:
 class CustomOpenAIClient:
     def __init__(self, completions) -> None:  # type: ignore[no-untyped-def]
         self.chat = SimpleNamespace(completions=completions)
+
+
+class TimedOpenAICompletions(FakeOpenAICompletions):
+    def __init__(self) -> None:
+        super().__init__()
+        self.started_at: list[float] = []
+
+    async def create(self, **kwargs):  # type: ignore[no-untyped-def]
+        self.started_at.append(perf_counter())
+        return await super().create(**kwargs)
+
+
+class RateLimitErrorForTest(Exception):
+    status_code = 429
+    code = "rate_limit_exceeded"
+    request_id = "req_rate_limit"
 
 
 @pytest.mark.asyncio
@@ -220,3 +237,42 @@ async def test_provider_timeout_is_structured() -> None:
     with pytest.raises(ProviderError, match="timed out") as captured:
         await provider.generate(GenerationRequest(prompt="?", model="gpt-test"))
     assert captured.value.retryable is True
+
+
+@pytest.mark.asyncio
+async def test_provider_spaces_request_starts() -> None:
+    completions = TimedOpenAICompletions()
+    config = ProviderConfig(
+        provider="openai",
+        model="gpt-test",
+        concurrency=2,
+        max_retries=0,
+        min_request_interval_seconds=0.02,
+    )
+    provider = OpenAIProvider(  # type: ignore[arg-type]
+        config, client=CustomOpenAIClient(completions)
+    )
+    await asyncio.gather(
+        provider.generate(GenerationRequest(prompt="one", model="gpt-test")),
+        provider.generate(GenerationRequest(prompt="two", model="gpt-test")),
+    )
+    assert len(completions.started_at) == 2
+    assert completions.started_at[1] - completions.started_at[0] >= 0.015
+
+
+@pytest.mark.asyncio
+async def test_provider_preserves_error_metadata() -> None:
+    class FailingCompletions:
+        async def create(self, **kwargs):  # type: ignore[no-untyped-def]
+            raise RateLimitErrorForTest("wait before retrying")
+
+    config = ProviderConfig(provider="openai", model="gpt-test", max_retries=0)
+    provider = OpenAIProvider(  # type: ignore[arg-type]
+        config, client=CustomOpenAIClient(FailingCompletions())
+    )
+    with pytest.raises(ProviderError, match="wait before retrying") as captured:
+        await provider.generate(GenerationRequest(prompt="?", model="gpt-test"))
+    assert captured.value.retryable is True
+    assert captured.value.status_code == 429
+    assert captured.value.provider_code == "rate_limit_exceeded"
+    assert captured.value.request_id == "req_rate_limit"
