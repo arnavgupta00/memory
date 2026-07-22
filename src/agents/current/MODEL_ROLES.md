@@ -94,7 +94,7 @@ answer:
   model: gpt-5-nano-2025-08-07
   temperature: 1
   reasoning_effort: minimal
-  max_output_tokens: 800
+  max_output_tokens: 4000
 ```
 
 ## Guarantees
