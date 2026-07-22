@@ -1,0 +1,62 @@
+{
+  "abstention_accuracy": null,
+  "abstention_count": 0,
+  "answer_model": "gpt-4.1-2025-04-14",
+  "answer_provider": "openai",
+  "canary_estimate": null,
+  "completed_count": 1,
+  "cost": {
+    "by_role": {
+      "answer": {
+        "estimated_total": null,
+        "input_unit_price_per_million": null,
+        "kind": "generation",
+        "model": "gpt-4.1-2025-04-14",
+        "output_unit_price_per_million": null,
+        "provider": "openai"
+      }
+    },
+    "currency": "USD",
+    "estimated_total": null,
+    "note": "Prices are user-supplied run-date inputs; model aliases and prices change."
+  },
+  "failure_count": 0,
+  "generated_at": "2026-07-21T23:38:51.669593+00:00",
+  "judge_model": "gpt-4o-2024-08-06",
+  "judged_count": 1,
+  "mode": "full-context",
+  "overall_accuracy": 1.0,
+  "per_question_type": {
+    "knowledge-update": {
+      "accuracy": 1.0,
+      "correct": 1,
+      "count": 1
+    }
+  },
+  "run_id": "baseline-preflight-openai-20260722",
+  "schema_version": 2,
+  "status": "completed",
+  "task_averaged_accuracy": 1.0,
+  "usage": {
+    "answer_latency_ms": 11300.055667001288,
+    "by_role": {
+      "answer": {
+        "call_count": 1,
+        "input_tokens": 114094,
+        "item_count": 1,
+        "kind": "generation",
+        "latency_ms": 11300.055667001288,
+        "model": "gpt-4.1-2025-04-14",
+        "output_tokens": 311,
+        "provider": "openai",
+        "total_tokens": 114405
+      }
+    },
+    "input_tokens": 114094,
+    "mean_answer_latency_ms": 11300.055667001288,
+    "model_call_count": 1,
+    "output_tokens": 311,
+    "total_model_latency_ms": 11300.055667001288,
+    "total_tokens": 114405
+  }
+}

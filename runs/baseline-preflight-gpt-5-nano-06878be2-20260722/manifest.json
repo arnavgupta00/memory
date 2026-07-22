@@ -1,0 +1,66 @@
+{
+  "completed_at": "2026-07-22T00:02:26.110638+00:00",
+  "completed_count": 1,
+  "config": {
+    "agent": {
+      "entrypoint": "agents.current:create_agent",
+      "models": {},
+      "options": {
+        "chain_of_note": true,
+        "history_format": "json"
+      }
+    },
+    "answer": {
+      "concurrency": 1,
+      "input_price_per_million": 0.05,
+      "max_output_tokens": 4000,
+      "max_retries": 6,
+      "model": "gpt-5-nano-2025-08-07",
+      "output_price_per_million": 0.4,
+      "provider": "openai",
+      "reasoning_effort": "minimal",
+      "temperature": 1.0,
+      "timeout_seconds": 300.0
+    },
+    "judge": {
+      "model": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "temperature": 0
+    },
+    "mode": "full-context",
+    "name": "canary-2-gpt-5-nano",
+    "selection": {
+      "strategy": "canary-2"
+    }
+  },
+  "config_fingerprint": "6ddcb9dd25743b1f682997ed88be5d48a3aaeabcf84c71a4eaa0074e1bc87dd7",
+  "config_source": "src/agents/current/configs/canary-2-gpt-5-nano.yaml",
+  "created_at": "2026-07-22T00:02:11.041464+00:00",
+  "dataset_hashes": {
+    "canary-1.json": "80160fbc0b3f00f11684affb9d572e8ec2826f7dd402abd4d50020156eb0baaf",
+    "canary-2.json": "947d192cb60c4fcf837793f9247bd77c57b43de53651ff9288ee3986100a33db",
+    "evaluate_qa.py": "ecce9c4c79dc89d99534ac17b383a5cbb5b9f0c69ee98adaf0684742e3d95251",
+    "longmemeval_oracle.json": "821a2034d219ab45846873dd14c14f12cfe7776e73527a483f9dac095d38620c",
+    "longmemeval_s_cleaned.json": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442"
+  },
+  "dataset_mode": "full-context",
+  "failure_count": 0,
+  "git": {
+    "commit": "065d9e3ea765e2e7faf50da088db31d37564d9a6",
+    "dirty": false
+  },
+  "run_id": "baseline-preflight-gpt-5-nano-06878be2-20260722",
+  "schema_version": 2,
+  "selected_count": 1,
+  "selected_question_ids": [
+    "06878be2"
+  ],
+  "selection": {
+    "is_canary": false,
+    "population_count": 500,
+    "sample_count": 1,
+    "strategy": "question-ids"
+  },
+  "status": "completed",
+  "updated_at": "2026-07-22T00:02:26.110630+00:00"
+}

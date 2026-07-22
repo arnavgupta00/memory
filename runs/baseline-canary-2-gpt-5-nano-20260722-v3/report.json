@@ -1,0 +1,175 @@
+{
+  "abstention_accuracy": 0.8,
+  "abstention_count": 10,
+  "answer_model": "gpt-5-nano-2025-08-07",
+  "answer_provider": "openai",
+  "canary_estimate": {
+    "estimated_per_question_type": {
+      "knowledge-update": 0.6153846153846154,
+      "multi-session": 0.21929824561403508,
+      "single-session-assistant": 0.8,
+      "single-session-preference": 0.3,
+      "single-session-user": 0.7714285714285715,
+      "temporal-reasoning": 0.7612781954887218
+    },
+    "method": "post-stratified by question type and abstention status",
+    "population_count": 500,
+    "population_weighted_accuracy": 0.5724333333333333,
+    "population_weighted_task_averaged_accuracy": 0.577898271319324,
+    "sample_count": 60,
+    "slice": "canary-2",
+    "strata": [
+      {
+        "abstention": false,
+        "accuracy": 0.625,
+        "population_count": 72,
+        "question_type": "knowledge-update",
+        "sample_count": 8
+      },
+      {
+        "abstention": true,
+        "accuracy": 0.5,
+        "population_count": 6,
+        "question_type": "knowledge-update",
+        "sample_count": 2
+      },
+      {
+        "abstention": false,
+        "accuracy": 0.16666666666666666,
+        "population_count": 121,
+        "question_type": "multi-session",
+        "sample_count": 6
+      },
+      {
+        "abstention": true,
+        "accuracy": 0.75,
+        "population_count": 12,
+        "question_type": "multi-session",
+        "sample_count": 4
+      },
+      {
+        "abstention": false,
+        "accuracy": 0.8,
+        "population_count": 56,
+        "question_type": "single-session-assistant",
+        "sample_count": 10
+      },
+      {
+        "abstention": false,
+        "accuracy": 0.3,
+        "population_count": 30,
+        "question_type": "single-session-preference",
+        "sample_count": 10
+      },
+      {
+        "abstention": false,
+        "accuracy": 0.75,
+        "population_count": 64,
+        "question_type": "single-session-user",
+        "sample_count": 8
+      },
+      {
+        "abstention": true,
+        "accuracy": 1.0,
+        "population_count": 6,
+        "question_type": "single-session-user",
+        "sample_count": 2
+      },
+      {
+        "abstention": false,
+        "accuracy": 0.75,
+        "population_count": 127,
+        "question_type": "temporal-reasoning",
+        "sample_count": 8
+      },
+      {
+        "abstention": true,
+        "accuracy": 1.0,
+        "population_count": 6,
+        "question_type": "temporal-reasoning",
+        "sample_count": 2
+      }
+    ],
+    "warning": "Regression estimate only; a public benchmark result requires all 500 cases."
+  },
+  "completed_count": 60,
+  "cost": {
+    "by_role": {
+      "answer": {
+        "estimated_total": 0.34821235000000006,
+        "input_unit_price_per_million": 0.05,
+        "kind": "generation",
+        "model": "gpt-5-nano-2025-08-07",
+        "output_unit_price_per_million": 0.4,
+        "provider": "openai"
+      }
+    },
+    "currency": "USD",
+    "estimated_total": 0.34821235000000006,
+    "note": "Prices are user-supplied run-date inputs; model aliases and prices change."
+  },
+  "failure_count": 0,
+  "generated_at": "2026-07-22T01:16:34.637263+00:00",
+  "judge_model": "gpt-4o-2024-08-06",
+  "judged_count": 60,
+  "mode": "full-context",
+  "overall_accuracy": 0.6166666666666667,
+  "per_question_type": {
+    "knowledge-update": {
+      "accuracy": 0.6,
+      "correct": 6,
+      "count": 10
+    },
+    "multi-session": {
+      "accuracy": 0.4,
+      "correct": 4,
+      "count": 10
+    },
+    "single-session-assistant": {
+      "accuracy": 0.8,
+      "correct": 8,
+      "count": 10
+    },
+    "single-session-preference": {
+      "accuracy": 0.3,
+      "correct": 3,
+      "count": 10
+    },
+    "single-session-user": {
+      "accuracy": 0.8,
+      "correct": 8,
+      "count": 10
+    },
+    "temporal-reasoning": {
+      "accuracy": 0.8,
+      "correct": 8,
+      "count": 10
+    }
+  },
+  "run_id": "baseline-canary-2-gpt-5-nano-20260722-v3",
+  "schema_version": 2,
+  "status": "completed",
+  "task_averaged_accuracy": 0.6166666666666667,
+  "usage": {
+    "answer_latency_ms": 386702.86862803187,
+    "by_role": {
+      "answer": {
+        "call_count": 60,
+        "input_tokens": 6777687,
+        "item_count": 60,
+        "kind": "generation",
+        "latency_ms": 386702.86862803187,
+        "model": "gpt-5-nano-2025-08-07",
+        "output_tokens": 23320,
+        "provider": "openai",
+        "total_tokens": 6801007
+      }
+    },
+    "input_tokens": 6777687,
+    "mean_answer_latency_ms": 6445.047810467197,
+    "model_call_count": 60,
+    "output_tokens": 23320,
+    "total_model_latency_ms": 386702.86862803187,
+    "total_tokens": 6801007
+  }
+}

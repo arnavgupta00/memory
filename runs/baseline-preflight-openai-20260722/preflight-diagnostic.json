@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-07-21T23:32:08Z",
+  "credential_present": true,
+  "endpoint_test": "chat.completions.create",
+  "error": {
+    "code": "insufficient_quota",
+    "message": "OpenAI reported that the project has no available API quota; billing or credits must be enabled before paid benchmark calls can run.",
+    "request_id": "req_99d2f15cedaa4b3682a2334267226c9c",
+    "status": 429,
+    "type": "RateLimitError"
+  },
+  "model": "gpt-4.1-2025-04-14",
+  "next_action": "Enable API billing or add credits, then rerun the preflight before Canary 2.",
+  "secret_recorded": false
+}

@@ -117,6 +117,15 @@ Interrupted runs resume without repeating completed question IDs:
 uv run memorybench run --config CONFIG_PATH --resume
 ```
 
+## Established baseline
+
+The first preserved Canary-2 baseline uses `gpt-5-nano-2025-08-07` for answers and the canonical
+`gpt-4o-2024-08-06` judge. It scored **37/60 (61.67%)**, including **8/10 abstention cases**.
+
+The complete predictions, judgments, manifests, provider-error records, reports, and stabilization
+runs are tracked under [`runs/`](runs/README.md). The definitive result is
+[`baseline-canary-2-gpt-5-nano-20260722-v3`](runs/baseline-canary-2-gpt-5-nano-20260722-v3/report.json).
+
 ## What is frozen
 
 | Component | Pin |
@@ -138,7 +147,7 @@ result.
 | `src/longmemeval/` | LongMemEval-specific harness | No |
 | `benchmark.lock.json` | Upstream revisions and checksums | No |
 | `data/raw/` | Downloaded ignored benchmark data | No |
-| `runs/` | Ignored resumable run artifacts | Generated |
+| `runs/` | Ignored mutable runs plus explicitly tracked verified baseline logs | Generated |
 | `submissions/` | Frozen complete 500-case result bundles | Generated |
 | `tests/` | Offline contract and harness tests | Only when behavior changes |
 
