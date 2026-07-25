@@ -1,0 +1,62 @@
+name: architecture-0003.2-gemini-b3-c9
+mode: full-context
+agent:
+  backend: node
+  entrypoint: src/agents/current/dist/host.js
+  provider_model_limits:
+    - provider: gemini
+      model: gemini-3.1-pro-preview
+      max_concurrency: 2
+      token_budget: 160000
+      window_seconds: 60
+  models:
+    contexto:
+      kind: generation
+      provider: gemini
+      model: gemini-3.1-pro-preview
+      temperature: 0
+      max_output_tokens: 32000
+      timeout_seconds: 300
+      concurrency: 4
+      max_retries: 6
+    shino:
+      kind: generation
+      provider: gemini
+      model: gemini-3.1-pro-preview
+      temperature: 0
+      max_output_tokens: 8000
+      timeout_seconds: 300
+      concurrency: 4
+      max_retries: 6
+    reader:
+      kind: generation
+      provider: gemini
+      model: gemini-3.1-pro-preview
+      temperature: 0
+      max_output_tokens: 12000
+      timeout_seconds: 300
+      concurrency: 4
+      max_retries: 6
+  options:
+    graph_batch_size: 3
+    summary_batch_size: 9
+    latest_raw_sessions: 9
+    allow_graph_replacement: true
+answer:
+  provider: gemini
+  model: gemini-3.1-pro-preview
+  temperature: 0
+  max_output_tokens: 32000
+  timeout_seconds: 300
+  concurrency: 4
+  max_retries: 6
+judge:
+  provider: openai
+  model: gpt-4o-2024-08-06
+  temperature: 0
+selection:
+  strategy: canary-2
+execution:
+  case_concurrency: 4
+  capture_model_io: true
+  auto_export_final_svg: true

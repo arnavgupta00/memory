@@ -1,11 +1,13 @@
 from __future__ import annotations
 
+import asyncio
 import json
 import re
 from pathlib import Path
-from typing import Any
+from typing import Any, cast
 
 from longmemeval.agent_loader import load_agent
+from longmemeval.artifacts import FileArtifactStore
 from longmemeval.config import RunConfig
 from longmemeval.constants import PROJECT_ROOT, RUNS_DIR
 from longmemeval.data import (
@@ -15,7 +17,8 @@ from longmemeval.data import (
     verify_data,
 )
 from longmemeval.model_gateway import create_model_gateway
-from longmemeval.models import FailureRecord, PredictionRecord
+from longmemeval.models import FailureRecord, ModelGateway, PredictionRecord
+from longmemeval.node_agent import NodeAgentHost, NodeMemoryAgent
 from longmemeval.providers import ProviderError
 from longmemeval.selection import ResolvedSelection, resolve_selection
 from longmemeval.utils import (
@@ -167,54 +170,103 @@ async def execute_run(
     if len(completed_ids) != len(completed_records):
         raise ValueError("predictions contain duplicate question IDs")
 
-    models = create_model_gateway(config.answer, config.agent.models)
-    agent = load_agent(config.agent, models)
-
-    for case in selected:
-        if case.question_id in completed_ids:
-            continue
-        models.begin_case()
-        try:
-            await agent.reset(case.metadata())
-            for session in sanitized_sessions(case):
-                await agent.ingest(session)
-            result = await agent.answer(case.question, case.question_date)
-            model_calls = models.finish_case()
-            record = PredictionRecord(
-                question_id=case.question_id,
-                question_type=case.question_type,
-                hypothesis=result.hypothesis,
-                evidence=result.evidence,
-                trace=result.trace,
-                generation=result.generation,
-                model_calls=model_calls,
-            )
-            append_jsonl(predictions_path, record.model_dump(mode="json", exclude_none=True))
-            completed_ids.add(case.question_id)
-        except Exception as exc:
-            models.finish_case()
-            retryable = isinstance(exc, ProviderError) and exc.retryable
-            failure = FailureRecord(
-                question_id=case.question_id,
-                error_type=type(exc).__name__,
-                message=str(exc),
-                retryable=retryable,
-                status_code=exc.status_code if isinstance(exc, ProviderError) else None,
-                provider_code=exc.provider_code if isinstance(exc, ProviderError) else None,
-                request_id=exc.request_id if isinstance(exc, ProviderError) else None,
-            )
-            append_jsonl(errors_path, failure.model_dump(mode="json", exclude_none=True))
-
-        unresolved = _unresolved_failures(errors_path, completed_ids)
-        manifest.update(
-            {
-                "updated_at": utc_now(),
-                "completed_count": len(completed_ids & selected_set),
-                "failure_count": len(unresolved),
-                "status": "running",
-            }
+    model_pool = (
+        create_model_gateway(config.answer, config.agent.models)
+        if config.agent.backend == "python"
+        else None
+    )
+    node_host = (
+        await NodeAgentHost.start(
+            run_path=run_path,
+            config=config.agent,
+            answer=config.answer,
+            capture_model_io=config.execution.capture_model_io,
+            auto_export_final_svg=config.execution.auto_export_final_svg,
         )
-        write_json(manifest_path, manifest)
+        if config.agent.backend == "node"
+        else None
+    )
+    case_limit = asyncio.Semaphore(config.execution.case_concurrency)
+    output_lock = asyncio.Lock()
+
+    async def process_case(case: Any) -> None:
+        if case.question_id in completed_ids:
+            return
+        async with case_limit:
+            artifacts = FileArtifactStore(run_path / "agent-artifacts" / "cases" / case.question_id)
+            models: ModelGateway | None
+            if model_pool is not None and hasattr(model_pool, "for_case"):
+                models = model_pool.for_case(
+                    artifacts,
+                    capture_model_io=config.execution.capture_model_io,
+                )
+            else:
+                models = model_pool
+            if models is not None:
+                models.begin_case()
+            agent = load_agent(config.agent, models, artifacts, node_host)
+            try:
+                await agent.reset(case.metadata())
+                for session in sanitized_sessions(case):
+                    if isinstance(agent, NodeMemoryAgent) and not agent.should_ingest(session):
+                        continue
+                    await agent.ingest(session)
+                result = await agent.answer(case.question, case.question_date)
+                model_calls = (
+                    models.finish_case()
+                    if models is not None
+                    else cast(NodeMemoryAgent, agent).finish_model_calls()
+                )
+                record = PredictionRecord(
+                    question_id=case.question_id,
+                    question_type=case.question_type,
+                    hypothesis=result.hypothesis,
+                    evidence=result.evidence,
+                    trace=result.trace,
+                    generation=result.generation,
+                    model_calls=model_calls,
+                )
+                async with output_lock:
+                    append_jsonl(
+                        predictions_path,
+                        record.model_dump(mode="json", exclude_none=True),
+                    )
+                    completed_ids.add(case.question_id)
+            except Exception as exc:
+                if models is not None:
+                    models.finish_case()
+                retryable = isinstance(exc, ProviderError) and exc.retryable
+                failure = FailureRecord(
+                    question_id=case.question_id,
+                    error_type=type(exc).__name__,
+                    message=str(exc),
+                    retryable=retryable,
+                    status_code=exc.status_code if isinstance(exc, ProviderError) else None,
+                    provider_code=exc.provider_code if isinstance(exc, ProviderError) else None,
+                    request_id=exc.request_id if isinstance(exc, ProviderError) else None,
+                )
+                async with output_lock:
+                    append_jsonl(
+                        errors_path,
+                        failure.model_dump(mode="json", exclude_none=True),
+                    )
+            async with output_lock:
+                unresolved = _unresolved_failures(errors_path, completed_ids)
+                manifest.update(
+                    {
+                        "updated_at": utc_now(),
+                        "completed_count": len(completed_ids & selected_set),
+                        "failure_count": len(unresolved),
+                        "status": "running",
+                    }
+                )
+                write_json(manifest_path, manifest)
+
+    try:
+        await asyncio.gather(*(process_case(case) for case in selected))
+    finally:
+        if node_host is not None:
+            await node_host.close()
 
     unresolved = _unresolved_failures(errors_path, completed_ids)
     complete = len(completed_ids & selected_set) == len(selected_ids)

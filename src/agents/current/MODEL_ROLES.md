@@ -1,118 +1,33 @@
-# Model roles for complex architectures
+# Model roles in architecture 0003
 
-`CurrentAgent` receives every external model through `runtime.models`. Agent code selects a stable
-role name; YAML selects the provider, exact model ID, limits, retries, concurrency, and optional
-run-date pricing.
+The three roles are independent and may use OpenAI or Gemini in any combination:
 
-This keeps architecture code independent of OpenAI and Gemini SDK details:
+| Role | Input | Cadence | Structured output |
+|---|---|---:|---|
+| `contexto` | current graph + exactly B raw sessions | `floor(N/B)` | patch or replacement proposal |
+| `shino` | complete graph + C session IDs only | `floor(N/C)` | one window summary |
+| `answer` | assembled final context | once per question | hypothesis, evidence, support status |
 
-```python
-memory = await self.runtime.models.generate(
-    "memory_writer",
-    "Extract durable, timestamped memories from this session...",
-)
+Provider configuration is explicit in YAML. The Node host owns one semaphore per role across every
+concurrent case, so case parallelism cannot bypass role limits. SDK clients remain private to
+[`src/services/modelGateway.ts`](src/services/modelGateway.ts).
 
-embedded = await self.runtime.models.embed(
-    "memory_embedder",
-    ["The user moved to Pune", "The user prefers aisle seats"],
-)
+Contexto's dynamic JSON crosses provider APIs as a typed tagged tree, then
+[`src/services/contextoWire.ts`](src/services/contextoWire.ts) deterministically converts it to the
+canonical `JsonValue`. This makes the same contract valid for OpenAI strict Structured Outputs and
+Gemini JSON Schema without putting free-form JSON strings in the response.
 
-final = await self.runtime.models.generate(
-    self.runtime.answer_role,
-    "Answer using the retrieved evidence...",
-)
+Each successful call is persisted before deterministic application under a stable key:
+
+```text
+contexto:batch:0001
+shino:window:0001
+answer:final
 ```
 
-## The four architecture entry points
+Resume parses and reuses that validated response without another provider request. Captured prompts,
+schemas, validated outputs, token usage, latency, request IDs, retries, and failures stay inside the
+case artifact namespace. The artifact layer redacts configured secret values and key-like strings.
 
-| Entry point | What arrives | Recommended responsibility |
-|---|---|---|
-| `create_agent(runtime)` | Named model gateway and architecture options | Construct stores and components |
-| `reset(case)` | Question ID and type, but not the question | Clear or namespace every per-case store |
-| `ingest(session)` | One complete timestamped session | Extract, consolidate, embed, and index memory |
-| `answer(question, question_date)` | Question after every session was ingested | Retrieve, reason, and call the final answer role |
-
-The agent receives sessions one at a time. It can process them online, retain them for deferred batch
-processing, or combine the two approaches.
-
-## Configuration
-
-The final benchmark answerer stays in the top-level `answer` block. It is automatically registered
-under the reserved role `answer` and remains visible in benchmark reports:
-
-```yaml
-answer:
-  provider: gemini
-  model: gemini-3.1-pro-preview
-  temperature: 0
-  max_output_tokens: 800
-```
-
-Internal architecture roles live under `agent.models`:
-
-```yaml
-agent:
-  entrypoint: agents.current:create_agent
-  models:
-    memory_writer:
-      kind: generation
-      provider: openai
-      model: gpt-4.1-mini-2025-04-14
-      temperature: 0
-      max_output_tokens: 1200
-
-    memory_embedder:
-      kind: embedding
-      provider: openai
-      model: text-embedding-3-small
-      dimensions: 1536
-
-    retrieval_document_embedder:
-      kind: embedding
-      provider: gemini
-      model: gemini-embedding-001
-      dimensions: 1536
-      task_type: RETRIEVAL_DOCUMENT
-
-    retrieval_query_embedder:
-      kind: embedding
-      provider: gemini
-      model: gemini-embedding-001
-      dimensions: 1536
-      task_type: RETRIEVAL_QUERY
-```
-
-A complete starting configuration is available at
-[`configs/examples/complex-agent.yaml`](configs/examples/complex-agent.yaml).
-
-OpenAI reasoning models can also pin `reasoning_effort` under a generation role. Keep the value
-explicit in benchmark configs because reasoning tokens count toward `max_output_tokens`:
-
-```yaml
-answer:
-  provider: openai
-  model: gpt-5-nano-2025-08-07
-  temperature: 1
-  reasoning_effort: minimal
-  max_output_tokens: 4000
-```
-
-## Guarantees
-
-- `answer`, `judge`, and canonical-judge variants are reserved role names.
-- The canonical GPT-4o judge is never added to `runtime.models`.
-- Model IDs cannot be `latest`, `default`, or another placeholder.
-- All declared provider clients are validated when the run starts, before benchmark cases execute.
-- Every successful call records role, provider/model, parameters, token usage, latency, request ID,
-  item count, and a SHA-256 input hash.
-- Prompts, session text, embedding inputs, and API keys are not written into model-call records.
-- Reports aggregate usage and user-supplied run-date pricing separately for every role.
-
-## Credentials
-
-- Any OpenAI generation or embedding role requires `OPENAI_API_KEY`.
-- Any Gemini generation or embedding role requires `GEMINI_API_KEY`.
-- Canonical judging independently requires `OPENAI_API_KEY`.
-
-Do not create SDK clients inside `agents/current`. Adding a new provider belongs in the harness
-gateway; building memory behavior belongs here.
+There is no query planner, reranker, BM25, embedding, retrieval, or repair call. The canonical
+GPT-4o judge is an external benchmark call after the agent run and is not an architecture role.

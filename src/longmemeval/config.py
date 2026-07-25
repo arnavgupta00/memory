@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 from pathlib import Path
 from typing import Annotated, Any, Literal
 
@@ -82,13 +83,25 @@ class JudgeConfig(BaseModel):
     temperature: Literal[0] = 0
 
 
+class ProviderModelLimitConfig(BaseModel):
+    provider: Literal["openai", "gemini"]
+    model: str = Field(min_length=1)
+    max_concurrency: int = Field(ge=1, le=64)
+    token_budget: int = Field(ge=1)
+    window_seconds: int = Field(ge=1, le=3600)
+
+    @field_validator("model")
+    @classmethod
+    def normalize_model(cls, value: str) -> str:
+        return ProviderConfig.reject_alias_placeholders(value)
+
+
 class AgentConfig(BaseModel):
-    entrypoint: str = Field(
-        min_length=3,
-        pattern=r"^[A-Za-z_]\w*(?:\.[A-Za-z_]\w*)*:[A-Za-z_]\w*$",
-    )
+    backend: Literal["python", "node"] = "python"
+    entrypoint: str = Field(min_length=3)
     models: dict[str, ModelRoleConfig] = Field(default_factory=dict)
     options: dict[str, Any] = Field(default_factory=dict)
+    provider_model_limits: list[ProviderModelLimitConfig] = Field(default_factory=list)
 
     @field_validator("models")
     @classmethod
@@ -112,9 +125,47 @@ class AgentConfig(BaseModel):
                 raise ValueError(f"model role name is reserved: {role}")
         return value
 
+    @model_validator(mode="after")
+    def entrypoint_matches_backend(self) -> AgentConfig:
+        python_entrypoint = re.fullmatch(
+            r"[A-Za-z_]\w*(?:\.[A-Za-z_]\w*)*:[A-Za-z_]\w*", self.entrypoint
+        )
+        node_entrypoint = re.fullmatch(r"[A-Za-z0-9_.\-/]+\.js", self.entrypoint)
+        if self.backend == "python" and python_entrypoint is None:
+            raise ValueError("Python agent entrypoint must use module:factory")
+        if self.backend == "node" and (
+            node_entrypoint is None or ".." in Path(self.entrypoint).parts
+        ):
+            raise ValueError("Node agent entrypoint must be a safe project-relative .js path")
+        if self.backend == "node" and any(
+            not isinstance(role, GenerationModelConfig) for role in self.models.values()
+        ):
+            raise ValueError("Node agent backends support generation roles only")
+        limit_keys = {(limit.provider, limit.model) for limit in self.provider_model_limits}
+        if len(limit_keys) != len(self.provider_model_limits):
+            raise ValueError("provider/model rate limits must use unique provider and model pairs")
+        if self.backend == "node":
+            missing = {
+                (role.provider, role.model)
+                for role in self.models.values()
+                if (role.provider, role.model) not in limit_keys
+            }
+            if missing:
+                formatted = ", ".join(f"{provider}/{model}" for provider, model in sorted(missing))
+                raise ValueError(
+                    f"Node agent roles are missing provider/model rate limits: {formatted}"
+                )
+        return self
+
 
 class SelectionConfig(BaseModel):
     strategy: Literal["all", "canonical-smoke", "canary-1", "canary-2"] = "all"
+
+
+class ExecutionConfig(BaseModel):
+    case_concurrency: int = Field(default=1, ge=1, le=32)
+    capture_model_io: bool = False
+    auto_export_final_svg: bool = False
 
 
 class RunConfig(BaseModel):
@@ -124,6 +175,7 @@ class RunConfig(BaseModel):
     answer: ProviderConfig
     judge: JudgeConfig = Field(default_factory=JudgeConfig)
     selection: SelectionConfig = Field(default_factory=SelectionConfig)
+    execution: ExecutionConfig = Field(default_factory=ExecutionConfig)
 
     @model_validator(mode="after")
     def selection_matches_dataset(self) -> RunConfig:

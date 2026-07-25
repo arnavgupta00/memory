@@ -49,7 +49,7 @@ markers = ["paid: makes real provider API calls and is opt-in"]
 [tool.ruff]
 line-length = 100
 target-version = "py312"
-extend-exclude = [".cache", "data", "runs", "submissions"]
+extend-exclude = [".cache", "data", "legacy", "runs", "submissions"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]

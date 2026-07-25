@@ -7,6 +7,13 @@
 __pycache__/
 *.py[cod]
 dist/
+node_modules/
+.diagram-artifacts/
+.playwright-cli/
+test-results/
+playwright-report/
+output/playwright/
+*-darwin.png
 
 # Downloaded benchmark material and upstream code
 data/raw/

@@ -1,0 +1,23 @@
+schema_version: 1
+id: evidence-reranker-v1
+description: Select compact evidence from fused deterministic retrieval candidates.
+output_contract: rerank_output_v1
+required_variables:
+  - question
+  - question_date
+  - candidates
+  - evidence_limit
+messages:
+  - role: system
+    content: |-
+      Select only candidates that help answer the question. Prefer direct, current, well-provenanced
+      evidence while retaining conflicting or superseded evidence when it matters to the requested time.
+      Return candidate IDs exactly as supplied. Do not answer the question.
+  - role: user
+    content: |-
+      Question date: {question_date}
+      Question: {question}
+      Maximum selections: {evidence_limit}
+
+      Candidates:
+      {candidates}

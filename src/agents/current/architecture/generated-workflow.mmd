@@ -1,0 +1,36 @@
+%%{init: {'flowchart': {'curve': 'linear'}}}%%
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	ingestSession(ingestSession)
+	contexto(contexto)
+	applyGraphMutation(applyGraphMutation)
+	markGraphTracked(markGraphTracked)
+	shino(shino)
+	markSummaryTracked(markSummaryTracked)
+	assembleRetrieval(assembleRetrieval)
+	readMemory(readMemory)
+	assembleContext(assembleContext)
+	finalAnswer(finalAnswer)
+	mapAnswerResult(mapAnswerResult)
+	__end__([<p>__end__</p>]):::last
+	applyGraphMutation --> markGraphTracked;
+	assembleContext --> finalAnswer;
+	assembleRetrieval --> readMemory;
+	contexto --> applyGraphMutation;
+	finalAnswer --> mapAnswerResult;
+	mapAnswerResult --> __end__;
+	markSummaryTracked --> __end__;
+	readMemory --> assembleContext;
+	shino --> markSummaryTracked;
+	__start__ -.-> ingestSession;
+	__start__ -.-> assembleRetrieval;
+	__start__ -.-> contexto;
+	__start__ -.-> shino;
+	__start__ -.-> __end__;
+	ingestSession -.-> contexto;
+	ingestSession -.-> __end__;
+	markGraphTracked -.-> shino;
+	markGraphTracked -.-> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2;
+	classDef first fill-opacity:0;
+	classDef last fill:#bfb6fc;

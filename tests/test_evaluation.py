@@ -5,7 +5,13 @@ from pathlib import Path
 import pytest
 from conftest import make_case
 
-from longmemeval.evaluation import _aggregate_model_usage, _build_cost_report, build_report
+from longmemeval.evaluation import (
+    _aggregate_model_usage,
+    _build_cost_report,
+    _expected_call_counts,
+    _phase_usage,
+    build_report,
+)
 from longmemeval.utils import append_jsonl, write_json
 
 
@@ -183,3 +189,29 @@ def test_multi_role_usage_and_cost_are_aggregated_without_double_counting() -> N
     assert usage["memory_embedder"]["item_count"] == 3
     assert usage["answer"]["total_tokens"] == 210
     assert cost["estimated_total"] == pytest.approx(0.00054)
+
+
+def test_architecture_0003_expected_calls_and_phases() -> None:
+    predictions = [
+        {
+            "trace": {
+                "architecture_id": "0003.1-contexto-semantic-memory",
+                "contexto_call_count": 16,
+                "shino_call_count": 5,
+            }
+        }
+    ]
+    usage = {
+        "contexto": {"call_count": 16, "total_tokens": 160, "latency_ms": 16.0},
+        "shino": {"call_count": 5, "total_tokens": 50, "latency_ms": 5.0},
+        "answer": {"call_count": 1, "total_tokens": 10, "latency_ms": 1.0},
+    }
+    expected = _expected_call_counts(predictions, usage)
+    phases = _phase_usage(usage)
+    assert expected == {
+        "answer": {"expected": 1, "actual": 1},
+        "contexto": {"expected": 16, "actual": 16},
+        "shino": {"expected": 5, "actual": 5},
+    }
+    assert phases["memory_construction"]["call_count"] == 21
+    assert phases["question_time"]["call_count"] == 1

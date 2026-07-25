@@ -158,6 +158,8 @@ def build_report(run_id: str) -> dict[str, Any]:
                 answer_latency_ms / answer_call_count if answer_call_count else None
             ),
             "by_role": usage_by_role,
+            "expected_vs_actual_calls": _expected_call_counts(predictions, usage_by_role),
+            "by_phase": _phase_usage(usage_by_role),
         },
         "cost": _build_cost_report(manifest, usage_by_role),
     }
@@ -273,6 +275,7 @@ def _aggregate_model_usage(
                     "output_tokens": 0,
                     "total_tokens": 0,
                     "latency_ms": 0.0,
+                    "retry_count": 0,
                 },
             )
             if (
@@ -287,7 +290,59 @@ def _aggregate_model_usage(
             summary["output_tokens"] += output_count
             summary["total_tokens"] += total_count
             summary["latency_ms"] += float(call.get("latency_ms") or 0.0)
+            summary["retry_count"] += int(call.get("retry_count") or 0)
     return dict(sorted(totals.items()))
+
+
+def _expected_call_counts(
+    predictions: list[dict[str, Any]],
+    usage_by_role: dict[str, dict[str, Any]],
+) -> dict[str, dict[str, int | None]]:
+    expected: defaultdict[str, int] = defaultdict(int)
+    for prediction in predictions:
+        trace = prediction.get("trace") or {}
+        if trace.get("architecture_id") == "0002-temporal-context-graph":
+            expected["memory_consolidator"] += int(trace.get("batch_count") or 0)
+            expected["query_planner"] += 1
+            expected["evidence_reranker"] += 1
+            expected["answer"] += 1
+        elif trace.get("architecture_id") in {
+            "0003-contexto-shino-langgraph",
+            "0003.1-contexto-semantic-memory",
+            "0003.2-hybrid-graph-reader",
+        }:
+            expected["contexto"] += int(trace.get("contexto_call_count") or 0)
+            expected["shino"] += int(trace.get("shino_call_count") or 0)
+            if trace.get("architecture_id") == "0003.2-hybrid-graph-reader":
+                expected["reader"] += int(trace.get("reader_call_count") or 1)
+            expected["answer"] += 1
+        else:
+            expected["answer"] += 1
+    roles = sorted(set(expected) | set(usage_by_role))
+    return {
+        role: {
+            "expected": expected.get(role),
+            "actual": int((usage_by_role.get(role) or {}).get("call_count", 0)),
+        }
+        for role in roles
+    }
+
+
+def _phase_usage(usage_by_role: dict[str, dict[str, Any]]) -> dict[str, dict[str, int | float]]:
+    phases: dict[str, dict[str, int | float]] = {
+        "memory_construction": {"call_count": 0, "total_tokens": 0, "latency_ms": 0.0},
+        "question_time": {"call_count": 0, "total_tokens": 0, "latency_ms": 0.0},
+    }
+    for role, usage in usage_by_role.items():
+        phase = (
+            "memory_construction"
+            if role in {"memory_consolidator", "contexto", "shino"}
+            else "question_time"
+        )
+        phases[phase]["call_count"] += int(usage["call_count"])
+        phases[phase]["total_tokens"] += int(usage["total_tokens"])
+        phases[phase]["latency_ms"] += float(usage["latency_ms"])
+    return phases
 
 
 def _role_configs(manifest: dict[str, Any]) -> dict[str, dict[str, Any]]:

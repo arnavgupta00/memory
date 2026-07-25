@@ -4,8 +4,10 @@ Agent code should import from this module rather than benchmark internals.
 """
 
 from longmemeval.models import (
+    AgentArtifactStore,
     AgentRuntime,
     AnswerResult,
+    ArtifactReceipt,
     CaseMetadata,
     EmbeddingProvider,
     EmbeddingRequest,
@@ -13,9 +15,14 @@ from longmemeval.models import (
     EvidenceReference,
     GenerationRequest,
     GenerationResponse,
+    JsonObject,
+    JsonValue,
     MemoryAgent,
     ModelGateway,
     ModelRoleInfo,
+    PromptEnvelope,
+    PromptMessage,
+    StructuredGenerationResponse,
     TextProvider,
     TimestampedSession,
     TokenUsage,
@@ -23,8 +30,10 @@ from longmemeval.models import (
 )
 
 __all__ = [
+    "AgentArtifactStore",
     "AgentRuntime",
     "AnswerResult",
+    "ArtifactReceipt",
     "CaseMetadata",
     "EmbeddingProvider",
     "EmbeddingRequest",
@@ -32,9 +41,14 @@ __all__ = [
     "EvidenceReference",
     "GenerationRequest",
     "GenerationResponse",
+    "JsonObject",
+    "JsonValue",
     "MemoryAgent",
     "ModelGateway",
     "ModelRoleInfo",
+    "PromptEnvelope",
+    "PromptMessage",
+    "StructuredGenerationResponse",
     "TextProvider",
     "TimestampedSession",
     "TokenUsage",

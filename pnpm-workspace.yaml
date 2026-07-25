@@ -1,0 +1,6 @@
+packages:
+  - src/agents/current
+  - src/agents/current/inspector/web
+
+onlyBuiltDependencies:
+  - esbuild

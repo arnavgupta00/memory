@@ -19,7 +19,9 @@ from longmemeval.settings import credential_status, load_environment
 
 app = typer.Typer(no_args_is_help=True, help="Reproducible LongMemEval-S benchmark harness.")
 data_app = typer.Typer(no_args_is_help=True, help="Manage pinned benchmark data.")
+ui_app = typer.Typer(no_args_is_help=True, help="Inspect live and historical memory graphs.")
 app.add_typer(data_app, name="data")
+app.add_typer(ui_app, name="ui")
 
 
 def _emit(value: object) -> None:
@@ -82,10 +84,18 @@ def run_command(
     run_id: Annotated[
         str | None, typer.Option("--run-id", help="Explicit run ID, especially for resume.")
     ] = None,
+    ui: Annotated[bool, typer.Option("--ui", help="Start the passive graph inspector.")] = False,
 ) -> None:
     """Generate answers with immutable per-question checkpoints."""
 
     loaded = load_config(config)
+    if ui:
+        try:
+            from longmemeval.ui import open_ui
+
+            open_ui(run_id)
+        except Exception as exc:
+            typer.echo(f"Inspector warning: {exc}", err=True)
     path = asyncio.run(
         execute_run(
             loaded,
@@ -96,6 +106,61 @@ def run_command(
         )
     )
     _emit({"run_id": path.name, "path": str(path)})
+
+
+@ui_app.command("build")
+def ui_build() -> None:
+    """Generate API contracts and build the inspector frontend."""
+
+    from longmemeval.ui import build_ui
+
+    _emit({"dist": str(build_ui())})
+
+
+@ui_app.command("start")
+def ui_start(
+    open_browser: Annotated[bool, typer.Option("--open/--no-open")] = True,
+    port: Annotated[int, typer.Option("--port", min=1024, max=65535)] = 8765,
+) -> None:
+    """Start or reuse the persistent localhost-only inspector."""
+
+    from longmemeval.ui import start_ui
+
+    _emit(start_ui(open_browser=open_browser, port=port))
+
+
+@ui_app.command("status")
+def ui_status() -> None:
+    from longmemeval.ui import status_ui
+
+    _emit(status_ui())
+
+
+@ui_app.command("open")
+def ui_open(
+    run_id: Annotated[str | None, typer.Option("--run")] = None,
+) -> None:
+    from longmemeval.ui import open_ui
+
+    _emit({"url": open_ui(run_id)})
+
+
+@ui_app.command("stop")
+def ui_stop() -> None:
+    from longmemeval.ui import stop_ui
+
+    _emit({"stopped": stop_ui()})
+
+
+@ui_app.command("export")
+def ui_export(
+    run_id: Annotated[str, typer.Option("--run")],
+    question_id: Annotated[str, typer.Option("--question-id")],
+    batch: Annotated[int | None, typer.Option("--batch", min=0)] = None,
+) -> None:
+    from longmemeval.ui import export_graph
+
+    _emit({"artifact": str(export_graph(run_id, question_id, batch))})
 
 
 @app.command()

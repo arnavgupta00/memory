@@ -1,96 +1,41 @@
-# Agents: start here
-
-This is the user-owned side of the repository. For architecture experiments, work only inside
-`current/`.
+# Agents: build here
 
 ```text
 agents/
-├── README.md
-└── current/
-    ├── __init__.py             # Dynamic factory export
-    ├── system.py               # reset / ingest / answer: primary implementation
-    ├── prompt.py               # YAML loading, validation, and rendering
-    ├── prompts/                # Editable architecture-owned prompt YAML
-    ├── config.py               # Architecture-specific option schema
-    ├── configs/                # Gemini/OpenAI smoke, canary, and full runs
-    ├── MODEL_ROLES.md          # Named generation/embedding API and configuration
-    └── architecture/           # Markdown + Excalidraw architecture history
+├── baselines/full_context/       # Frozen runnable Architecture 0001
+└── current/                      # Active TypeScript Architecture 0003.2
+    ├── src/
+    │   ├── host.ts               # Versioned Python↔Node NDJSON host
+    │   ├── workflow.ts           # LangGraph topology and routes only
+    │   ├── state.ts              # Zod StateSchema
+    │   ├── types.ts              # Shared runtime/domain contracts
+    │   ├── nodes/                # Small workflow nodes
+    │   └── services/             # Providers, prompts, graph gates, artifacts
+    ├── prompts/                  # Complete YAML instructions
+    ├── configs/                  # B3/C9, B9/C9, OpenAI, Gemini, mixed
+    ├── inspector/                # Hono SSE server + React/Cytoscape UI
+    ├── architecture/             # Versioned design and editable diagrams
+    └── tests/                    # Offline architecture tests
 ```
 
-## Your primary entrypoint
+## Where to start
 
-Start with [`current/system.py`](current/system.py). `CurrentAgent` receives a stable
-`AgentRuntime` containing an instrumented, named model gateway. LongMemEval then drives it as:
+Open [`current/src/workflow.ts`](current/src/workflow.ts), then follow each node into its service.
+LongMemEval still calls `reset`, `ingest`, and `answer` through the Node bridge, but architecture
+code never imports the dataset, evaluator, runner, or publication internals.
 
-1. `reset(case)` starts an isolated benchmark case.
-2. `ingest(session)` delivers one sanitized, timestamped session at a time.
-3. `answer(question, question_date)` returns an `AnswerResult`.
+What you normally edit:
 
-Gold answers, answer-session IDs, and `has_answer` labels never reach the agent.
+- orchestration: [`current/src/workflow.ts`](current/src/workflow.ts) and
+  [`current/src/nodes/`](current/src/nodes/);
+- memory structure and mutation safety:
+  [`current/src/services/graphMutations.ts`](current/src/services/graphMutations.ts);
+- model behavior: [`current/prompts/`](current/prompts/);
+- B/C/model experiments: [`current/configs/`](current/configs/);
+- visualization: [`current/inspector/`](current/inspector/).
 
-The final answerer is always available as `runtime.answer_role`. Extra generation and embedding
-roles are declared under `agent.models` in the architecture-owned YAML:
+What you should normally leave alone: `src/longmemeval/`. It sanitizes benchmark cases, runs the
+agent, owns manifests/predictions, and invokes the pinned canonical judge.
 
-```python
-draft = await self.runtime.models.generate("memory_writer", extraction_prompt)
-vectors = await self.runtime.models.embed("memory_embedder", memory_texts)
-answer = await self.runtime.models.generate(self.runtime.answer_role, answer_prompt)
-```
-
-Read [`current/MODEL_ROLES.md`](current/MODEL_ROLES.md) before adding a multi-stage architecture.
-
-Import public contracts only from `longmemeval.api`:
-
-```python
-from longmemeval.api import AgentRuntime, AnswerResult, CaseMetadata, TimestampedSession
-```
-
-Do not import `longmemeval.data`, `longmemeval.runner`, or evaluator internals into an architecture.
-
-## Dynamic loading
-
-Each YAML under [`current/configs/`](current/configs/) contains:
-
-```yaml
-agent:
-  entrypoint: agents.current:create_agent
-  models: {}
-  options: {}
-```
-
-`current/__init__.py` exports `create_agent`. The harness imports it dynamically, so architecture
-changes never require a benchmark registry edit. Architecture-specific settings belong under
-`agent.options` and are validated in `current/config.py`. Provider-backed model declarations belong
-under `agent.models`; the harness validates and instruments them without exposing the judge.
-
-## Editing the answer prompt
-
-The complete baseline prompt is
-[`current/prompts/full_history.yaml`](current/prompts/full_history.yaml). Static instructions and
-the `chain_of_note`/`direct` variants live there. Dynamic values are explicit `{history}`,
-`{question_date}`, `{question}`, `{answer_instruction}`, and `{answer_cue}` placeholders.
-
-`current/prompt.py` only serializes sessions, validates the YAML variable contract, and renders it.
-Select a different architecture-owned prompt from a run configuration with:
-
-```yaml
-agent:
-  options:
-    prompt_template: prompts/full_history.yaml
-```
-
-Relative paths resolve from `src/agents/current/`. A missing, misspelled, or undeclared placeholder
-stops the run before a model API call.
-
-## Architecture history
-
-The active design is summarized in [`current/ARCHITECTURE.md`](current/ARCHITECTURE.md). Versioned
-records live in [`current/architecture/`](current/architecture/), beginning with
-`0001-full-context.md` and `0001-full-context.excalidraw`.
-
-For each meaningful architecture revision:
-
-1. Add the next numbered Markdown and Excalidraw pair.
-2. Add one row to `architecture/LOG.md`.
-3. Update `current/ARCHITECTURE.md` to point at the latest pair.
-4. Keep old records immutable so benchmark results can name an exact architecture ID.
+Architecture 0002 is retained under [`../../legacy/python-architecture-0002/`](../../legacy/python-architecture-0002/)
+for audit and reference, not imported at runtime.

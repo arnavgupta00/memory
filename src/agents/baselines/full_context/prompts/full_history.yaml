@@ -1,0 +1,30 @@
+schema_version: 1
+id: full-history-answer-v1
+description: >-
+  Baseline answer prompt. It gives the answer model every sanitized LongMemEval
+  session, the question date, and the question.
+required_variables:
+  - answer_instruction
+  - history
+  - question_date
+  - question
+  - answer_cue
+template: |-
+  I will give you several history chats between you and a user. Please answer the question based on the relevant chat history.
+  {answer_instruction}
+
+  History Chats:
+  {history}
+
+  Current Date: {question_date}
+  Question: {question}
+  {answer_cue}
+variants:
+  chain_of_note:
+    answer_instruction: >-
+      Answer the question step by step: first extract all the relevant information,
+      and then reason over the information to get the answer.
+    answer_cue: "Answer (step by step):"
+  direct:
+    answer_instruction: ""
+    answer_cue: "Answer:"

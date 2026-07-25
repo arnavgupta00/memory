@@ -9,8 +9,9 @@ substitutes for the official 500-case result.
 | Canary 1 | 150 | Major architecture or model changes | about $35 |
 | Full benchmark | 500 | Release candidates and public results | about $115 |
 
-Costs use July 2026 standard pricing for Gemini 3.1 Pro or GPT-4.1 answers and the canonical
-GPT-4o judge. Actual memory architectures should cost less when they retrieve a compact context.
+Costs use July 2026 standard pricing for the frozen full-context baseline plus the canonical GPT-4o
+judge. Multi-call memory architectures must be estimated from their actual per-role token ledgers;
+reports separate memory-construction and question-time usage for that reason.
 
 ## Canary 2 design
 
@@ -45,16 +46,16 @@ gate.
 
 ```bash
 # Small changes
-uv run memorybench run --config src/agents/current/configs/canary-2-gemini.yaml
+uv run memorybench run --config src/agents/current/configs/architecture-0003-gemini-b3-c9.yaml
 uv run memorybench judge --run RUN_ID
 uv run memorybench report --run RUN_ID
 
 # Major changes
-uv run memorybench run --config src/agents/current/configs/canary-1-gemini.yaml
+# Copy a current architecture config and change only selection.strategy to canary-1.
 
 # OpenAI answerer variants
-uv run memorybench run --config src/agents/current/configs/canary-2-openai.yaml
-uv run memorybench run --config src/agents/current/configs/canary-1-openai.yaml
+uv run memorybench run --config src/agents/current/configs/architecture-0003-openai-b3-c9.yaml
+uv run memorybench run --config src/agents/current/configs/architecture-0003-openai-b9-c9.yaml
 ```
 
 Use the raw canary score to detect exact regressions against earlier runs on the same frozen IDs.

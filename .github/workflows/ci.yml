@@ -15,8 +15,28 @@ jobs:
       - uses: astral-sh/setup-uv@v6
         with:
           enable-cache: true
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.17.1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm agent:typecheck
+      - run: pnpm agent:lint
+      - run: pnpm agent:test
+      - run: pnpm agent:build
+      - run: pnpm --dir src/agents/current workflow:mermaid
+      - run: git diff --exit-code -- src/agents/current/architecture/generated-workflow.mmd
+      - run: pnpm --dir src/agents/current/inspector/web run lint
+      - run: pnpm ui:test
+      - run: pnpm ui:build
       - run: uv sync --locked --extra dev
       - run: uv run ruff format --check .
       - run: uv run ruff check .
       - run: uv run mypy
       - run: uv run pytest
+      - run: pnpm --dir src/agents/current/inspector/web exec playwright install --with-deps chromium
+      - run: pnpm --dir src/agents/current/inspector/web run test:visual

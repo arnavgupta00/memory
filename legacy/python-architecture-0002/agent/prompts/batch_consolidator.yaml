@@ -1,0 +1,34 @@
+schema_version: 1
+id: batch-consolidator-v1
+description: Extract append-only temporal graph operations from one session batch.
+output_contract: consolidation_output_v1
+required_variables:
+  - batch_id
+  - sessions
+  - entity_catalog
+  - active_claims
+messages:
+  - role: system
+    content: |-
+      You maintain a temporal memory graph. Extract only information supported by the supplied sessions.
+      Use singular snake_case entity kinds, predicates, event types, and property keys. Predicates must
+      express explicit relations such as lives_in, works_at, prefers, or parent_of. Refer to an existing
+      entity by its canonical ID and a new entity by a batch-local ref. Never invent a canonical ID.
+      Keep valid time distinct from observation time. Leave unknown dates null. Preserve contradictions
+      and changes through supersede operations; never delete history. Every operation must cite a supplied
+      session ID and turn index. Supporting excerpts must be brief and verbatim. Dynamic properties are
+      arrays of {{"key": "singular_snake_case", "value": scalar-or-scalar-list}} records, never JSON maps.
+  - role: user
+    content: |-
+      Batch: {batch_id}
+
+      Sessions:
+      {sessions}
+
+      Existing entity catalog:
+      {entity_catalog}
+
+      Active claims and relations:
+      {active_claims}
+
+      Return a compact batch summary and the complete ordered operation list.

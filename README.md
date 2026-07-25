@@ -1,136 +1,130 @@
 # MemoryBench
 
-MemoryBench is a reproducible LongMemEval-S harness with one deliberate source-code boundary:
+MemoryBench is a reproducible LongMemEval-S harness and a workspace for developing long-term-memory
+agents. The active agent is Architecture 0003.2: a strict TypeScript LangGraph workflow combining
+Contexto/Shino graph memory with lossless local retrieval and a dedicated Reader. The benchmark
+lifecycle and canonical evaluator remain in stable Python.
 
 ```text
 src/
-├── agents/          ← BUILD YOUR MEMORY ARCHITECTURE HERE
-└── longmemeval/     ← BENCHMARK HARNESS; DO NOT EDIT FOR AGENT EXPERIMENTS
+├── agents/current/      ← BUILD MEMORY ARCHITECTURES HERE (TypeScript)
+└── longmemeval/         ← STABLE BENCHMARK HARNESS (Python)
 ```
 
-## Start here
+## Architecture 0003.2 at a glance
 
-Open [`src/agents/README.md`](src/agents/README.md), then work inside
-[`src/agents/current/`](src/agents/current/). The active implementation, answer prompt, model/run
-configurations, architecture explanation, and versioned Excalidraw diagrams all live there.
+Sessions arrive one by one. Local code archives every session. Mr. Contexto extracts typed semantic
+memories after every complete B-session window; deterministic code owns graph paths, provenance,
+temporal history, and a coverage audit. Mr. Shino summarizes the graph after every complete
+C-session window. At question time, local BM25 searches complete raw sessions, graph cells, Shino
+summaries, uncovered signals, and the unprocessed tail. A dedicated Reader selects grounded
+evidence before the compact final answer call.
 
-The active answer prompt is
-[`src/agents/current/prompts/full_history.yaml`](src/agents/current/prompts/full_history.yaml). Its
-dynamic inputs are explicit `{variable}` placeholders; Python only validates and fills them.
+```text
+session → ingestSession
+              └─ every B → Contexto → per-memory validation/materialization → mutation ledger
+                              └─ every C → Shino → summary ledger
 
-You should not need to change `src/longmemeval/` while building retrieval, graph, consolidation,
-temporal, or reasoning systems. That package owns dataset validation, case isolation, annotation
-stripping, named provider calls, resumable runs, official judging, reporting, and publication checks.
-
-## How the boundary works
-
-Every architecture-owned YAML names a Python factory:
-
-```yaml
-agent:
-  entrypoint: agents.current:create_agent
-  models:
-    memory_writer:
-      kind: generation
-      provider: openai
-      model: gpt-4.1-mini-2025-04-14
-    memory_embedder:
-      kind: embedding
-      provider: openai
-      model: text-embedding-3-small
-  options:
-    chain_of_note: true
-    history_format: json
+question → local hybrid retrieval → Reader → compact evidence → final answer → AnswerResult
 ```
 
-The harness imports that entrypoint dynamically and supplies an `AgentRuntime`. It then calls only
-three methods:
+There are no embeddings, vector database, query-planner call, reranker call, partial-tail
+consolidation, or hidden repair calls. Retrieval and rank fusion are deterministic local
+operations. For `N` sessions, the exact agent call count is:
 
-```python
-async def reset(case): ...
-async def ingest(session): ...
-async def answer(question, question_date): ...
+```text
+floor(N / B) Contexto + floor(N / C) Shino + 1 Reader + 1 answer
 ```
 
-There is no architecture registry and no harness file to update. The stable types are exported by
-[`longmemeval.api`](src/longmemeval/api.py).
-
-Inside agent code, model access is role-based:
-
-```python
-memory = await self.runtime.models.generate("memory_writer", prompt)
-vectors = await self.runtime.models.embed("memory_embedder", texts)
-answer = await self.runtime.models.generate(self.runtime.answer_role, final_prompt)
-```
-
-The canonical judge is never present in this gateway. Successful calls are automatically recorded
-by role without serializing their prompt or input text. See
-[`src/agents/current/MODEL_ROLES.md`](src/agents/current/MODEL_ROLES.md) and the
-[`complex-agent.yaml`](src/agents/current/configs/examples/complex-agent.yaml) template.
+Read [`src/agents/README.md`](src/agents/README.md), then
+[`src/agents/current/ARCHITECTURE.md`](src/agents/current/ARCHITECTURE.md). The complete design is in
+[`0003-contexto-shino-langgraph.md`](src/agents/current/architecture/0003-contexto-shino-langgraph.md),
+with the graph-construction revision in
+[`0003.1-contexto-semantic-memory-study.md`](src/agents/current/architecture/0003.1-contexto-semantic-memory-study.md)
+and the active repair in
+[`0003.2-hybrid-graph-reader.md`](src/agents/current/architecture/0003.2-hybrid-graph-reader.md).
 
 ## Setup
 
-Prerequisites: Git and [`uv`](https://docs.astral.sh/uv/).
+Prerequisites: Python 3.12, [`uv`](https://docs.astral.sh/uv/), Node.js 22+, and pnpm 10.
 
 ```bash
-uv sync --extra dev
+uv sync --locked --extra dev
+pnpm install --frozen-lockfile
+pnpm agent:build
 cp environment.example .env
 uv run memorybench data fetch
 uv run memorybench doctor
+uv run memorybench ui build
 ```
 
-Add `OPENAI_API_KEY` and/or `GEMINI_API_KEY` to `.env`. The official judge always requires the
-OpenAI key. Secrets are never written into run artifacts.
+Put credentials only in `.env` as `OPENAI_API_KEY` and/or `GEMINI_API_KEY`. The canonical judge
+requires OpenAI. Keys are ignored, redacted from diagnostic artifacts, and never intentionally
+serialized.
 
-## Running the current agent
+## Controlled B3/C9 and B9/C9 runs
 
-All runnable configurations belong to the current architecture:
+The first pair uses `gpt-5-nano-2025-08-07` for Contexto, Shino, Reader, and Answer. The two OpenAI
+files differ semantically only in run name and `graph_batch_size`.
 
 ```bash
-# Five-case oracle plumbing check; not a comparable benchmark score
 uv run memorybench run \
-  --config src/agents/current/configs/oracle-smoke-gemini.yaml
+  --config src/agents/current/configs/architecture-0003-openai-b3-c9.yaml \
+  --ui
 
-# 60-case gate for small architecture changes
 uv run memorybench run \
-  --config src/agents/current/configs/canary-2-gemini.yaml
-
-# 60-case cost-efficient OpenAI baseline with pinned GPT-5 nano
-uv run memorybench run \
-  --config src/agents/current/configs/canary-2-gpt-5-nano.yaml
-
-# 150-case gate for major architecture changes
-uv run memorybench run \
-  --config src/agents/current/configs/canary-1-gemini.yaml
-
-# Full 500-case run
-uv run memorybench run \
-  --config src/agents/current/configs/full-context-gemini.yaml
+  --config src/agents/current/configs/architecture-0003-openai-b9-c9.yaml \
+  --ui
 ```
 
-Replace `gemini` with `openai` in the filename for the OpenAI answerer. Then judge and report:
+Equivalent Gemini templates and a mixed-provider example sit beside them. Commands never start a
+paid run unless invoked explicitly.
+
+An interrupted case replays accepted graph mutations, skips its durable session prefix, and reuses
+any validated provider response saved before a crash:
+
+```bash
+uv run memorybench run --config CONFIG_PATH --resume
+```
+
+Then run the pinned canonical evaluator and report:
 
 ```bash
 uv run memorybench judge --run RUN_ID
 uv run memorybench report --run RUN_ID
 ```
 
-Interrupted runs resume without repeating completed question IDs:
+## Memory Observatory
+
+The read-only observer is a Hono service on `127.0.0.1` with an SSE event stream and a
+React/Cytoscape interface. Closing or crashing the browser/server never controls the benchmark host.
 
 ```bash
-uv run memorybench run --config CONFIG_PATH --resume
+uv run memorybench ui start --open
+uv run memorybench ui status
+uv run memorybench ui open --run RUN_ID
+uv run memorybench ui export --run RUN_ID --question-id QUESTION_ID --batch 1
+uv run memorybench ui stop
 ```
 
-## Established baseline
+It displays the live Contexto → retrieval → Reader → Answer funnel, the nested semantic context
+graph, B-session coverage and memory updates, C-session Shino windows, ranked retrieval channels,
+Reader facts/conflicts, provenance and raw source turns, prompts/responses/usage, final answers, and
+historical Python runs.
 
-The first preserved Canary-2 baseline uses `gpt-5-nano-2025-08-07` for answers and the canonical
-`gpt-4o-2024-08-06` judge. It scored **37/60 (61.67%)**, including **8/10 abstention cases**.
+## Historical architectures and results
 
-The complete predictions, judgments, manifests, provider-error records, reports, and stabilization
-runs are tracked under [`runs/`](runs/README.md). The definitive result is
-[`baseline-canary-2-gpt-5-nano-20260722-v3`](runs/baseline-canary-2-gpt-5-nano-20260722-v3/report.json).
+- Architecture 0001 remains runnable in
+  [`src/agents/baselines/full_context/`](src/agents/baselines/full_context/).
+- Architecture 0002 and its tests are archived in
+  [`legacy/python-architecture-0002/`](legacy/python-architecture-0002/).
+- The definitive GPT-5 nano full-context Canary-2 baseline is preserved at
+  [`runs/baseline-canary-2-gpt-5-nano-20260722-v3/`](runs/baseline-canary-2-gpt-5-nano-20260722-v3/)
+  and scored 37/60 (61.67%), including 8/10 abstentions.
 
-## What is frozen
+Existing run directories are not migrated or rewritten.
+
+## Benchmark pins
 
 | Component | Pin |
 |---|---|
@@ -138,44 +132,20 @@ runs are tracked under [`runs/`](runs/README.md). The definitive result is
 | Cleaned dataset | `98d7416c24c778c2fee6e6f3006e7a073259d48f` |
 | Canonical judge | `gpt-4o-2024-08-06`, temperature `0` |
 
-The Gemini examples use `gemini-3.1-pro-preview` because HydraDB's original
-`gemini-3-pro-preview` was retired. Those runs are not model-identical reproductions of HydraDB's
-result.
-
-## Repository map
-
-| Path | Meaning | Should architecture work change it? |
-|---|---|---|
-| `src/agents/current/` | Active memory architecture and all its configs | **Yes** |
-| `src/agents/current/architecture/` | Architecture log and Excalidraw records | **Yes** |
-| `src/longmemeval/` | LongMemEval-specific harness | No |
-| `benchmark.lock.json` | Upstream revisions and checksums | No |
-| `data/raw/` | Downloaded ignored benchmark data | No |
-| `runs/` | Ignored mutable runs plus explicitly tracked verified baseline logs | Generated |
-| `submissions/` | Frozen complete 500-case result bundles | Generated |
-| `tests/` | Offline contract and harness tests | Only when behavior changes |
-
-See [`src/longmemeval/README.md`](src/longmemeval/README.md) for the harness internals and
-[`src/longmemeval/docs/CANARIES.md`](src/longmemeval/docs/CANARIES.md) for canary methodology.
-
-## Validation
+## Offline validation
 
 ```bash
 uv run ruff format --check .
 uv run ruff check .
 uv run mypy
 uv run pytest
-uv run memorybench data verify
+pnpm agent:typecheck
+pnpm agent:lint
+pnpm agent:test
+pnpm ui:test
+pnpm ui:build
 ```
 
-Paid tests are opt-in and never run in CI.
-
-## License
+CI is offline and requires no API key or dataset download.
 
 Apache-2.0. See [`LICENSE`](LICENSE).
-
-## Benchmark sources
-
-- [LongMemEval repository](https://github.com/xiaowu0162/LongMemEval)
-- [Cleaned dataset](https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned)
-- [ICLR 2025 paper](https://arxiv.org/abs/2410.10813)

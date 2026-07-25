@@ -3,11 +3,12 @@ from __future__ import annotations
 import asyncio
 import os
 from time import perf_counter
-from typing import Any
+from typing import Any, TypeVar, cast
 
 from google import genai
 from google.genai import types
-from openai import AsyncOpenAI
+from openai import AsyncOpenAI, LengthFinishReasonError
+from pydantic import BaseModel, ValidationError
 from tenacity import AsyncRetrying, retry_if_exception, stop_after_attempt, wait_exponential
 
 from longmemeval.config import EmbeddingModelConfig, ProviderConfig
@@ -17,9 +18,13 @@ from longmemeval.models import (
     EmbeddingResponse,
     GenerationRequest,
     GenerationResponse,
+    PromptEnvelope,
+    StructuredGenerationResponse,
     TextProvider,
     TokenUsage,
 )
+
+TStructured = TypeVar("TStructured", bound=BaseModel)
 
 
 class ProviderError(RuntimeError):
@@ -132,8 +137,11 @@ class _ProviderBase:
                 with attempt:
                     try:
                         await self._pacer.wait_for_slot()
-                        return await asyncio.wait_for(
+                        response = await asyncio.wait_for(
                             self._generate_once(request), timeout=self.config.timeout_seconds
+                        )
+                        return response.model_copy(
+                            update={"retry_count": attempt.retry_state.attempt_number - 1}
                         )
                     except TimeoutError as exc:
                         raise ProviderError("provider request timed out", retryable=True) from exc
@@ -146,6 +154,56 @@ class _ProviderBase:
         raise AssertionError("retry loop exited without returning or raising")
 
     async def _generate_once(self, request: GenerationRequest) -> GenerationResponse:
+        raise NotImplementedError
+
+    async def generate_structured(
+        self,
+        request: GenerationRequest,
+        prompt: PromptEnvelope,
+        response_model: type[TStructured],
+    ) -> StructuredGenerationResponse[TStructured]:
+        async with self._semaphore:
+            attempts = max(self.config.max_retries + 1, 1)
+            async for attempt in AsyncRetrying(
+                stop=stop_after_attempt(attempts),
+                wait=wait_exponential(multiplier=1, min=1, max=30),
+                retry=retry_if_exception(
+                    lambda exc: isinstance(exc, ProviderError) and exc.retryable
+                ),
+                reraise=True,
+            ):
+                with attempt:
+                    try:
+                        await self._pacer.wait_for_slot()
+                        response = await asyncio.wait_for(
+                            self._generate_structured_once(request, prompt, response_model),
+                            timeout=self.config.timeout_seconds,
+                        )
+                        return response.model_copy(
+                            update={
+                                "generation": response.generation.model_copy(
+                                    update={
+                                        "retry_count": response.generation.retry_count
+                                        + attempt.retry_state.attempt_number
+                                        - 1
+                                    }
+                                )
+                            }
+                        )
+                    except TimeoutError as exc:
+                        raise ProviderError("provider request timed out", retryable=True) from exc
+                    except ProviderError:
+                        raise
+                    except Exception as exc:
+                        raise _normalized_provider_error(exc, operation="provider request") from exc
+        raise AssertionError("retry loop exited without returning or raising")
+
+    async def _generate_structured_once(
+        self,
+        request: GenerationRequest,
+        prompt: PromptEnvelope,
+        response_model: type[TStructured],
+    ) -> StructuredGenerationResponse[TStructured]:
         raise NotImplementedError
 
 
@@ -169,8 +227,11 @@ class _EmbeddingProviderBase:
                 with attempt:
                     try:
                         await self._pacer.wait_for_slot()
-                        return await asyncio.wait_for(
+                        response = await asyncio.wait_for(
                             self._embed_once(request), timeout=self.config.timeout_seconds
+                        )
+                        return response.model_copy(
+                            update={"retry_count": attempt.retry_state.attempt_number - 1}
                         )
                     except TimeoutError as exc:
                         raise ProviderError(
@@ -232,6 +293,73 @@ class OpenAIProvider(_ProviderBase):
             request_id=getattr(response, "id", None),
         )
 
+    async def _generate_structured_once(
+        self,
+        request: GenerationRequest,
+        prompt: PromptEnvelope,
+        response_model: type[TStructured],
+    ) -> StructuredGenerationResponse[TStructured]:
+        started = perf_counter()
+        parameters: dict[str, Any] = {
+            "model": request.model,
+            "messages": [message.model_dump(mode="json") for message in prompt.messages],
+            "temperature": request.temperature,
+            "max_completion_tokens": request.max_output_tokens,
+            "response_format": response_model,
+        }
+        if request.reasoning_effort is not None:
+            parameters["reasoning_effort"] = request.reasoning_effort
+        length_retry_count = 0
+        failed_input_tokens = 0
+        failed_output_tokens = 0
+        failed_total_tokens = 0
+        while True:
+            try:
+                response = await self.client.chat.completions.parse(**parameters)
+                break
+            except LengthFinishReasonError as exc:
+                usage = exc.completion.usage
+                failed_input_tokens += getattr(usage, "prompt_tokens", 0) or 0
+                failed_output_tokens += getattr(usage, "completion_tokens", 0) or 0
+                failed_total_tokens += getattr(usage, "total_tokens", 0) or 0
+                if request.max_output_tokens >= 64_000:
+                    raise
+                request.max_output_tokens = min(request.max_output_tokens * 2, 64_000)
+                parameters["max_completion_tokens"] = request.max_output_tokens
+                length_retry_count += 1
+        message = response.choices[0].message
+        refusal = getattr(message, "refusal", None)
+        if refusal:
+            raise ProviderError(f"OpenAI refused structured generation: {str(refusal)[:500]}")
+        parsed = getattr(message, "parsed", None)
+        raw_text = getattr(message, "content", None) or ""
+        if parsed is None:
+            try:
+                parsed = response_model.model_validate_json(raw_text)
+            except ValidationError as exc:
+                raise ProviderError("OpenAI returned malformed structured output") from exc
+        value = cast(TStructured, parsed)
+        usage = response.usage
+        generation = GenerationResponse(
+            text=raw_text.strip() or value.model_dump_json(),
+            model=response.model or request.model,
+            provider="openai",
+            usage=TokenUsage(
+                input_tokens=failed_input_tokens + (getattr(usage, "prompt_tokens", None) or 0),
+                output_tokens=failed_output_tokens
+                + (getattr(usage, "completion_tokens", None) or 0),
+                total_tokens=failed_total_tokens + (getattr(usage, "total_tokens", None) or 0),
+            ),
+            latency_ms=(perf_counter() - started) * 1000,
+            request_id=getattr(response, "id", None),
+            retry_count=length_retry_count,
+        )
+        return StructuredGenerationResponse(
+            value=value,
+            generation=generation,
+            raw_text=generation.text,
+        )
+
 
 class GeminiProvider(_ProviderBase):
     def __init__(self, config: ProviderConfig, client: Any | None = None) -> None:
@@ -270,6 +398,62 @@ class GeminiProvider(_ProviderBase):
             ),
             latency_ms=(perf_counter() - started) * 1000,
             request_id=getattr(response, "response_id", None),
+        )
+
+    async def _generate_structured_once(
+        self,
+        request: GenerationRequest,
+        prompt: PromptEnvelope,
+        response_model: type[TStructured],
+    ) -> StructuredGenerationResponse[TStructured]:
+        if request.reasoning_effort is not None:
+            raise ProviderError("Gemini generation roles do not support reasoning_effort")
+        started = perf_counter()
+        system_instruction = "\n\n".join(
+            message.content for message in prompt.messages if message.role == "system"
+        )
+        response = await self.client.aio.models.generate_content(
+            model=request.model,
+            contents=[
+                types.Content(
+                    role="model" if message.role == "assistant" else "user",
+                    parts=[types.Part.from_text(text=message.content)],
+                )
+                for message in prompt.messages
+                if message.role != "system"
+            ],
+            config=types.GenerateContentConfig(
+                temperature=request.temperature,
+                max_output_tokens=request.max_output_tokens,
+                system_instruction=system_instruction or None,
+                response_mime_type="application/json",
+                response_schema=response_model,
+            ),
+        )
+        raw_text = getattr(response, "text", None)
+        if not raw_text:
+            raise ProviderError("Gemini returned an empty structured response")
+        try:
+            value = response_model.model_validate_json(raw_text)
+        except ValidationError as exc:
+            raise ProviderError("Gemini returned malformed structured output") from exc
+        usage = getattr(response, "usage_metadata", None)
+        generation = GenerationResponse(
+            text=raw_text.strip(),
+            model=getattr(response, "model_version", None) or request.model,
+            provider="gemini",
+            usage=TokenUsage(
+                input_tokens=getattr(usage, "prompt_token_count", None),
+                output_tokens=getattr(usage, "candidates_token_count", None),
+                total_tokens=getattr(usage, "total_token_count", None),
+            ),
+            latency_ms=(perf_counter() - started) * 1000,
+            request_id=getattr(response, "response_id", None),
+        )
+        return StructuredGenerationResponse(
+            value=value,
+            generation=generation,
+            raw_text=generation.text,
         )
 
 

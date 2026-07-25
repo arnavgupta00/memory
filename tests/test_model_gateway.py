@@ -1,7 +1,10 @@
 from __future__ import annotations
 
+from pathlib import Path
+
 import pytest
 
+from longmemeval.artifacts import FileArtifactStore
 from longmemeval.config import AgentConfig, ProviderConfig
 from longmemeval.model_gateway import create_model_gateway
 from longmemeval.models import (
@@ -51,7 +54,7 @@ async def test_gateway_dispatches_named_roles_and_records_sanitized_calls(
     )
     agent_config = AgentConfig.model_validate(
         {
-            "entrypoint": "agents.current:create_agent",
+            "entrypoint": "agents.baselines.full_context:create_agent",
             "models": {
                 "memory_writer": {
                     "kind": "generation",
@@ -105,3 +108,24 @@ async def test_gateway_rejects_wrong_operation_for_role(monkeypatch: pytest.Monk
         await gateway.embed("answer", ["text"])
     with pytest.raises(KeyError, match="unknown model role"):
         await gateway.generate("missing", "prompt")
+
+
+@pytest.mark.asyncio
+async def test_case_gateway_resumes_durable_call_ledger(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    monkeypatch.setattr(
+        "longmemeval.model_gateway.create_provider", lambda config: FakeGenerationProvider()
+    )
+    pool = create_model_gateway(ProviderConfig(provider="openai", model="gpt-answer"), {})
+    store = FileArtifactStore(tmp_path / "case")
+
+    first = pool.for_case(store, capture_model_io=True)
+    first.begin_case()
+    await first.generate("answer", "first")
+    assert [call.sequence for call in first.finish_case()] == [1]
+
+    resumed = pool.for_case(store, capture_model_io=True)
+    resumed.begin_case()
+    await resumed.generate("answer", "second")
+    assert [call.sequence for call in resumed.finish_case()] == [1, 2]

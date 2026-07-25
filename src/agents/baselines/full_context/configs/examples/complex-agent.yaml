@@ -1,0 +1,61 @@
+# Historical multi-provider gateway example retained with architecture 0001.
+# The top-level answer model is always the final benchmark answerer. Extra agent roles are private
+# to the architecture, automatically instrumented, and never include the canonical judge.
+name: complex-agent-canary-2
+mode: full-context
+agent:
+  entrypoint: agents.baselines.full_context:create_agent
+  models:
+    memory_writer:
+      kind: generation
+      provider: openai
+      model: gpt-4.1-mini-2025-04-14
+      temperature: 0
+      max_output_tokens: 1200
+      timeout_seconds: 120
+      concurrency: 4
+      max_retries: 5
+    alternate_reasoner:
+      kind: generation
+      provider: gemini
+      model: gemini-3.1-pro-preview
+      temperature: 0
+      max_output_tokens: 1200
+      timeout_seconds: 300
+      concurrency: 2
+      max_retries: 5
+    memory_embedder:
+      kind: embedding
+      provider: openai
+      model: text-embedding-3-small
+      dimensions: 1536
+      timeout_seconds: 120
+      concurrency: 8
+      max_retries: 5
+    gemini_memory_embedder:
+      kind: embedding
+      provider: gemini
+      model: gemini-embedding-001
+      dimensions: 1536
+      task_type: RETRIEVAL_DOCUMENT
+      timeout_seconds: 120
+      concurrency: 8
+      max_retries: 5
+  options:
+    chain_of_note: true
+    history_format: json
+    prompt_template: prompts/full_history.yaml
+answer:
+  provider: gemini
+  model: gemini-3.1-pro-preview
+  temperature: 0
+  max_output_tokens: 800
+  timeout_seconds: 300
+  concurrency: 1
+  max_retries: 5
+judge:
+  provider: openai
+  model: gpt-4o-2024-08-06
+  temperature: 0
+selection:
+  strategy: canary-2

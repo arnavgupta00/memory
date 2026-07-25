@@ -1,44 +1,40 @@
 # LongMemEval harness
 
-This package is the benchmark-owned side of MemoryBench. **Do not edit it when experimenting with
-the memory architecture.**
+This package is the benchmark-owned side of MemoryBench. Do not edit it for ordinary memory-agent
+experiments.
 
-It owns the stable execution boundary and LongMemEval-specific invariants:
+It owns:
 
-- pinned dataset downloads and checksums;
-- validation of all 500 cases and 30 abstentions;
-- removal of gold-answer annotations before agent ingestion;
-- one isolated agent instance state per question through `reset`;
-- named Gemini/OpenAI generation and embedding roles with provider normalization;
-- per-question model-call hashes, usage, latency, and role-level cost accounting;
-- immutable JSONL checkpoints and resume behavior;
-- frozen Canary 1 and Canary 2 selections;
-- the pinned upstream `gpt-4o-2024-08-06` evaluator;
-- weighted canary reports and complete-run publication guards.
+- pinned dataset downloads, checksums, all-500 validation, and 30 abstentions;
+- removal of `answer`, `answer_session_ids`, and `has_answer` before agent ingestion;
+- Python factory and versioned Node NDJSON agent backends;
+- one isolated state/artifact namespace per case and run-level case concurrency;
+- manifest, prediction, failure, judgment, report, resume, and publication behavior;
+- generic Python provider/model roles retained for frozen Python baselines;
+- the pinned `gpt-4o-2024-08-06` canonical evaluator.
 
 ## Internal map
 
 | File | Responsibility |
 |---|---|
-| `api.py` | Stable types agents may import |
-| `agent_loader.py` | Dynamically imports the factory named by agent YAML |
-| `config.py` | Run/provider/judge/selection schema |
-| `data.py` | Fetching, checksums, validation, and annotation stripping |
-| `model_gateway.py` | Named agent model roles and call instrumentation |
-| `runner.py` | Case isolation, ingestion lifecycle, checkpointing, resume |
-| `providers.py` | Gemini/OpenAI adapter normalization and retries |
-| `evaluation.py` | Canonical judge execution and report aggregation |
+| `api.py` | Stable contracts for Python baselines |
+| `agent_loader.py` | Selects Python factory or Node proxy |
+| `node_agent.py` | One host per run; concurrent versioned NDJSON RPC |
+| `artifacts.py` | Case-scoped redacting Python artifact store |
+| `config.py` | Run, backend, provider, judge, selection, execution schema |
+| `data.py` | Fetching, pins, validation, sanitization |
+| `runner.py` | Isolation, concurrency, checkpointing, prefix-aware resume |
+| `evaluation.py` | Canonical judge and role/phase/cost reporting |
+| `ui.py` | Hono/React observer build and process lifecycle |
 | `selection.py` | Frozen canary loading and validation |
-| `publication.py` | Complete 500-case result freezing and secret checks |
-| `slices/` | Tracked Canary 1 and Canary 2 manifests |
-| `tools/` | Benchmark-maintainer utilities such as canary generation |
+| `publication.py` | Complete 500-case freeze and secret guards |
 
-The only intended dependency direction is:
+The active direction is:
 
 ```text
-longmemeval runner ──loads──> agents.current:create_agent
-agents.current ──imports───> longmemeval.api
+LongMemEval runner → NodeAgentHost → src/agents/current/dist/host.js
 ```
 
-The agent must not import harness internals, and the harness must not contain architecture-specific
-branches.
+The harness sends only reset, sanitized timestamped sessions, question text/date, configuration,
+and isolated artifact paths. The Node agent returns the stable `AnswerResult` plus normalized model
+call records. Architecture logic and prompt prose remain entirely under `src/agents/current/`.

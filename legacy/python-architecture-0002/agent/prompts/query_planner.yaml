@@ -1,0 +1,21 @@
+schema_version: 1
+id: query-planner-v1
+description: Translate the benchmark question into deterministic retrieval hints.
+output_contract: query_plan_v1
+required_variables:
+  - question
+  - question_date
+  - graph_overview
+messages:
+  - role: system
+    content: |-
+      Plan retrieval over a temporal property graph and session archive. Return concrete entity aliases,
+      lexical terms, snake_case predicates, explicit temporal constraints, and whether zero, one, or two
+      graph hops are likely useful. Do not answer the question.
+  - role: user
+    content: |-
+      Question date: {question_date}
+      Question: {question}
+
+      Graph overview:
+      {graph_overview}

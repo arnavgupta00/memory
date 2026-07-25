@@ -5,9 +5,13 @@ from time import perf_counter
 from types import SimpleNamespace
 
 import pytest
+from openai import LengthFinishReasonError
+from openai.types.chat import ChatCompletion
+from openai.types.completion_usage import CompletionUsage
+from pydantic import BaseModel
 
 from longmemeval.config import EmbeddingModelConfig, ProviderConfig
-from longmemeval.models import EmbeddingRequest, GenerationRequest
+from longmemeval.models import EmbeddingRequest, GenerationRequest, PromptEnvelope, PromptMessage
 from longmemeval.providers import (
     GeminiEmbeddingProvider,
     GeminiProvider,
@@ -30,10 +34,64 @@ class FakeOpenAICompletions:
             usage=SimpleNamespace(prompt_tokens=10, completion_tokens=2, total_tokens=12),
         )
 
+    async def parse(self, **kwargs):  # type: ignore[no-untyped-def]
+        self.last_kwargs = kwargs
+        parsed = StructuredFixture(answer="Pune")
+        return SimpleNamespace(
+            id="openai-structured-request",
+            model=kwargs["model"],
+            choices=[
+                SimpleNamespace(
+                    message=SimpleNamespace(
+                        content=parsed.model_dump_json(), parsed=parsed, refusal=None
+                    )
+                )
+            ],
+            usage=SimpleNamespace(prompt_tokens=12, completion_tokens=4, total_tokens=16),
+        )
+
 
 class FakeOpenAIClient:
     def __init__(self) -> None:
         self.completions = FakeOpenAICompletions()
+        self.chat = SimpleNamespace(completions=self.completions)
+
+
+class LengthThenSuccessOpenAICompletions(FakeOpenAICompletions):
+    def __init__(self) -> None:
+        super().__init__()
+        self.attempts = 0
+
+    async def parse(self, **kwargs):  # type: ignore[no-untyped-def]
+        self.attempts += 1
+        if self.attempts == 1:
+            raise LengthFinishReasonError(
+                completion=ChatCompletion(
+                    id="length-limited",
+                    choices=[
+                        {
+                            "finish_reason": "length",
+                            "index": 0,
+                            "logprobs": None,
+                            "message": {"content": "", "role": "assistant"},
+                        }
+                    ],
+                    created=0,
+                    model=kwargs["model"],
+                    object="chat.completion",
+                    usage=CompletionUsage(
+                        prompt_tokens=10,
+                        completion_tokens=32_000,
+                        total_tokens=32_010,
+                    ),
+                )
+            )
+        return await super().parse(**kwargs)
+
+
+class LengthThenSuccessOpenAIClient:
+    def __init__(self) -> None:
+        self.completions = LengthThenSuccessOpenAICompletions()
         self.chat = SimpleNamespace(completions=self.completions)
 
 
@@ -58,8 +116,9 @@ class FakeOpenAIEmbeddingClient:
 
 class FakeGeminiModels:
     async def generate_content(self, **kwargs):  # type: ignore[no-untyped-def]
+        structured = getattr(kwargs.get("config"), "response_schema", None) is not None
         return SimpleNamespace(
-            text="Pune",
+            text='{"answer":"Pune"}' if structured else "Pune",
             model_version=kwargs["model"],
             response_id="gemini-request",
             usage_metadata=SimpleNamespace(
@@ -127,6 +186,10 @@ class RateLimitErrorForTest(Exception):
     request_id = "req_rate_limit"
 
 
+class StructuredFixture(BaseModel):
+    answer: str
+
+
 @pytest.mark.asyncio
 async def test_openai_normalization() -> None:
     config = ProviderConfig(provider="openai", model="gpt-test", max_retries=0)
@@ -167,6 +230,50 @@ async def test_gemini_normalization() -> None:
     assert response.text == "Pune"
     assert response.usage.total_tokens == 11
     assert response.request_id == "gemini-request"
+
+
+@pytest.mark.asyncio
+@pytest.mark.parametrize("provider_name", ["openai", "gemini"])
+async def test_provider_structured_output_is_schema_validated(provider_name: str) -> None:
+    prompt = PromptEnvelope(
+        prompt_id="fixture",
+        messages=[PromptMessage(role="user", content="Where?")],
+    )
+    request = GenerationRequest(prompt=prompt.as_text(), model=f"{provider_name}-test")
+    if provider_name == "openai":
+        provider = OpenAIProvider(
+            ProviderConfig(provider="openai", model="openai-test", max_retries=0),
+            client=FakeOpenAIClient(),  # type: ignore[arg-type]
+        )
+    else:
+        provider = GeminiProvider(
+            ProviderConfig(provider="gemini", model="gemini-test", max_retries=0),
+            client=FakeGeminiClient(),
+        )
+    response = await provider.generate_structured(request, prompt, StructuredFixture)
+    assert response.value.answer == "Pune"
+    assert response.generation.usage.total_tokens in {11, 16}
+
+
+@pytest.mark.asyncio
+async def test_openai_structured_output_adapts_to_length_limit_and_accounts_usage() -> None:
+    client = LengthThenSuccessOpenAIClient()
+    provider = OpenAIProvider(
+        ProviderConfig(provider="openai", model="gpt-test", max_retries=0),
+        client=client,  # type: ignore[arg-type]
+    )
+    prompt = PromptEnvelope(
+        prompt_id="fixture",
+        messages=[PromptMessage(role="user", content="Where?")],
+    )
+    request = GenerationRequest(prompt=prompt.as_text(), model="gpt-test", max_output_tokens=32_000)
+    response = await provider.generate_structured(request, prompt, StructuredFixture)
+    assert client.completions.attempts == 2
+    assert client.completions.last_kwargs["max_completion_tokens"] == 64_000
+    assert response.generation.retry_count == 1
+    assert response.generation.usage.input_tokens == 22
+    assert response.generation.usage.output_tokens == 32_004
+    assert response.generation.usage.total_tokens == 32_026
 
 
 @pytest.mark.asyncio

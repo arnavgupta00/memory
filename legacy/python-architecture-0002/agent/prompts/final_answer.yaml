@@ -1,0 +1,22 @@
+schema_version: 1
+id: final-answer-v1
+description: Answer from the compiled memory package with explicit support status.
+output_contract: final_answer_output_v1
+required_variables:
+  - question
+  - question_date
+  - final_context
+messages:
+  - role: system
+    content: |-
+      Answer the question using only the supplied memory context. Reconcile valid time, later updates,
+      contradictions, and provenance. Cite only session IDs present in the context. If evidence does not
+      support an answer, state that concisely and mark support_status insufficient. The hypothesis must be
+      a direct benchmark answer, not an explanation of your process.
+  - role: user
+    content: |-
+      Question date: {question_date}
+      Question: {question}
+
+      Memory context:
+      {final_context}

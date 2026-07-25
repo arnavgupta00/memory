@@ -2,9 +2,14 @@ from __future__ import annotations
 
 from collections.abc import Mapping, Sequence
 from dataclasses import dataclass
-from typing import Any, Literal, Protocol
+from typing import Any, Literal, Protocol, TypeVar
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator
+
+type JsonScalar = str | int | float | bool | None
+type JsonValue = JsonScalar | list[JsonValue] | dict[str, JsonValue]
+type JsonObject = dict[str, JsonValue]
+TStructured = TypeVar("TStructured", bound=BaseModel)
 
 
 class Turn(BaseModel):
@@ -70,6 +75,34 @@ class GenerationResponse(BaseModel):
     usage: TokenUsage = Field(default_factory=TokenUsage)
     latency_ms: float
     request_id: str | None = None
+    retry_count: int = Field(default=0, ge=0)
+
+
+class PromptMessage(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    role: Literal["system", "user", "assistant"]
+    content: str
+
+
+class PromptEnvelope(BaseModel):
+    """Rendered messages plus the stable prompt identity used for model-I/O replay."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    prompt_id: str
+    messages: list[PromptMessage] = Field(min_length=1)
+
+    def as_text(self) -> str:
+        return "\n\n".join(f"<{message.role}>\n{message.content}" for message in self.messages)
+
+
+class StructuredGenerationResponse[TStructured: BaseModel](BaseModel):
+    """Provider-normalized metadata paired with a schema-validated payload."""
+
+    value: TStructured
+    generation: GenerationResponse
+    raw_text: str
 
 
 class EmbeddingRequest(BaseModel):
@@ -93,6 +126,7 @@ class EmbeddingResponse(BaseModel):
     usage: TokenUsage = Field(default_factory=TokenUsage)
     latency_ms: float
     request_id: str | None = None
+    retry_count: int = Field(default=0, ge=0)
 
 
 class ModelRoleInfo(BaseModel):
@@ -113,6 +147,7 @@ class ModelCallRecord(BaseModel):
     usage: TokenUsage = Field(default_factory=TokenUsage)
     latency_ms: float
     request_id: str | None = None
+    retry_count: int = Field(default=0, ge=0)
 
 
 class AnswerResult(BaseModel):
@@ -145,6 +180,13 @@ class PredictionRecord(BaseModel):
 class TextProvider(Protocol):
     async def generate(self, request: GenerationRequest) -> GenerationResponse: ...
 
+    async def generate_structured(
+        self,
+        request: GenerationRequest,
+        prompt: PromptEnvelope,
+        response_model: type[TStructured],
+    ) -> StructuredGenerationResponse[TStructured]: ...
+
 
 class EmbeddingProvider(Protocol):
     async def embed(self, request: EmbeddingRequest) -> EmbeddingResponse: ...
@@ -165,6 +207,16 @@ class ModelGateway(Protocol):
         max_output_tokens: int | None = None,
     ) -> GenerationResponse: ...
 
+    async def generate_structured(
+        self,
+        role: str,
+        prompt: PromptEnvelope,
+        response_model: type[TStructured],
+        *,
+        temperature: float | None = None,
+        max_output_tokens: int | None = None,
+    ) -> StructuredGenerationResponse[TStructured]: ...
+
     async def embed(
         self,
         role: str,
@@ -175,12 +227,31 @@ class ModelGateway(Protocol):
     ) -> EmbeddingResponse: ...
 
 
+class ArtifactReceipt(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    relative_path: str
+    sequence: int | None = None
+    sha256: str
+
+
+class AgentArtifactStore(Protocol):
+    """Case-scoped durable storage. Implementations must redact secrets before writing."""
+
+    async def append(self, stream: str, record: JsonObject) -> ArtifactReceipt: ...
+
+    async def write_once(self, name: str, value: JsonValue | str) -> ArtifactReceipt: ...
+
+    def read_stream(self, stream: str) -> Sequence[JsonObject]: ...
+
+
 @dataclass(frozen=True)
 class AgentRuntime:
     """Dependencies supplied by the harness to a dynamically loaded agent."""
 
     models: ModelGateway
-    options: Mapping[str, Any]
+    artifacts: AgentArtifactStore
+    options: Mapping[str, JsonValue]
     answer_role: str = "answer"
 
 

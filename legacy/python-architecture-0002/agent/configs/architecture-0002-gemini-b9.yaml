@@ -1,0 +1,36 @@
+name: architecture-0002-gemini-b9
+mode: full-context
+agent:
+  entrypoint: agents.current:create_agent
+  models:
+    memory_consolidator: &agent_model
+      kind: generation
+      provider: gemini
+      model: gemini-3.1-pro-preview
+      temperature: 0
+      max_output_tokens: 4000
+      timeout_seconds: 300
+      concurrency: 4
+      max_retries: 6
+    query_planner: *agent_model
+    evidence_reranker: *agent_model
+  options:
+    batch_size: 9
+answer:
+  provider: gemini
+  model: gemini-3.1-pro-preview
+  temperature: 0
+  max_output_tokens: 4000
+  timeout_seconds: 300
+  concurrency: 4
+  max_retries: 6
+judge:
+  provider: openai
+  model: gpt-4o-2024-08-06
+  temperature: 0
+selection:
+  strategy: canary-2
+execution:
+  case_concurrency: 4
+  capture_model_io: true
+  auto_export_final_svg: true

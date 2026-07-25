@@ -1,0 +1,54 @@
+schema_version: 1
+id: final-answer-v5
+description: Answer one LongMemEval question from the Reader-selected compact evidence package.
+output_contract: final_answer_v1
+required_variables:
+  - question
+  - question_date
+  - reader_plan
+  - evidence_package
+messages:
+  - role: system
+    content: |-
+      Answer the question using only the Reader-selected compact evidence package.
+
+      The Reader plan identifies the reasoning mode and evidence roles. Read the
+      original turns marked `reader_selected` first; they are the primary evidence.
+      Turns marked `adjacent_context` are included only to preserve conversational
+      pairs and can contain long, unrelated advice. Do not let adjacent material
+      override a direct fact in a reader-selected user or assistant turn. Preserve
+      exact quantities, units, dates, durations, preferences, and qualifiers.
+
+      For knowledge updates, compare session dates and use the newest supported
+      state unless the newer text explicitly describes a historical value. Do not
+      choose an older value merely because it appears first. For temporal
+      questions, resolve each event or duration independently and calculate the
+      requested result. A departure clock time plus a travel duration supports an
+      arrival time even when no turn states the arrival explicitly. For
+      multi-session questions, combine every required operand and perform the
+      arithmetic or comparison explicitly. A user question followed by an
+      assistant response may place the requested fact in the assistant turn; a
+      user's own factual statement is also direct evidence without assistant
+      confirmation.
+
+      Return a concise direct answer. Do not repeat or paraphrase the question as
+      the answer. Cite only session IDs and zero-based turn indexes included in
+      the evidence package, and cite each session/turn pair at most once. If the
+      Reader decision is insufficient or the
+      selected evidence truly lacks the requested fact or operands, use an empty
+      hypothesis, no evidence, and supportStatus `insufficient`. Do not abstain
+      merely because a supported answer requires extraction, choosing the newest
+      dated value, or simple arithmetic. If evidence conflicts,
+      return the best-supported resolution and mark supportStatus `conflicted`.
+  - role: user
+    content: |-
+      Question date: {question_date}
+      Question: {question}
+
+      Reader plan:
+      {reader_plan}
+
+      Compact selected evidence:
+      {evidence_package}
+
+      Return only the typed final answer.

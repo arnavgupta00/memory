@@ -1,0 +1,14 @@
+{
+  "name": "memorybench-workspace",
+  "private": true,
+  "version": "0.2.0",
+  "packageManager": "pnpm@10.17.1",
+  "scripts": {
+    "agent:build": "pnpm --dir src/agents/current build",
+    "agent:typecheck": "pnpm --dir src/agents/current typecheck",
+    "agent:lint": "pnpm --dir src/agents/current lint",
+    "agent:test": "pnpm --dir src/agents/current test",
+    "ui:build": "pnpm --dir src/agents/current/inspector/web build",
+    "ui:test": "pnpm --dir src/agents/current/inspector/web test"
+  }
+}

@@ -1,0 +1,53 @@
+name: architecture-0002-openai-b9
+mode: full-context
+agent:
+  entrypoint: agents.current:create_agent
+  models:
+    memory_consolidator: &agent_model
+      kind: generation
+      provider: openai
+      model: gpt-5-nano-2025-08-07
+      temperature: 1
+      reasoning_effort: minimal
+      max_output_tokens: 32000
+      timeout_seconds: 300
+      concurrency: 4
+      max_retries: 6
+      input_price_per_million: 0.05
+      output_price_per_million: 0.40
+    query_planner: *agent_model
+    evidence_reranker: *agent_model
+  options:
+    batch_size: 9
+    batch_role: memory_consolidator
+    planner_role: query_planner
+    reranker_role: evidence_reranker
+    answer_role: answer
+    prompt_directory: prompts
+    candidate_limit: 30
+    evidence_limit: 12
+    historical_session_limit: 8
+    latest_session_count: 9
+    context_character_budget: 70000
+    rrf_k: 60
+answer:
+  provider: openai
+  model: gpt-5-nano-2025-08-07
+  temperature: 1
+  reasoning_effort: minimal
+  max_output_tokens: 32000
+  timeout_seconds: 300
+  concurrency: 4
+  max_retries: 6
+  input_price_per_million: 0.05
+  output_price_per_million: 0.40
+judge:
+  provider: openai
+  model: gpt-4o-2024-08-06
+  temperature: 0
+selection:
+  strategy: canary-2
+execution:
+  case_concurrency: 4
+  capture_model_io: true
+  auto_export_final_svg: true
