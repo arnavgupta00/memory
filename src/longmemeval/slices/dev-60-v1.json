@@ -1,0 +1,196 @@
+{
+  "abstention_by_type": {
+    "knowledge-update": 1,
+    "multi-session": 2,
+    "single-session-user": 1,
+    "temporal-reasoning": 2
+  },
+  "abstention_count": 6,
+  "coverage": {
+    "allocation": {
+      "knowledge-update": 12,
+      "multi-session": 14,
+      "single-session-assistant": 4,
+      "single-session-preference": 6,
+      "single-session-user": 10,
+      "temporal-reasoning": 14
+    },
+    "evidence_counts_by_type": {
+      "knowledge-update": [
+        2
+      ],
+      "multi-session": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "single-session-assistant": [
+        1
+      ],
+      "single-session-preference": [
+        1
+      ],
+      "single-session-user": [
+        1
+      ],
+      "temporal-reasoning": [
+        1,
+        2
+      ]
+    },
+    "excluded_pool_sizes": {
+      "all prior run question_ids": 132,
+      "canary-1": 150,
+      "canary-2": 60,
+      "dev-9-v1": 9
+    },
+    "excluded_pools": [
+      "all prior run question_ids",
+      "canary-1",
+      "canary-2",
+      "dev-9-v1"
+    ],
+    "remaining_unused_after_selection": 230,
+    "unused_pool_size_at_selection": 290
+  },
+  "dataset_file": "longmemeval_s_cleaned.json",
+  "dataset_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+  "name": "dev-60-v1",
+  "purpose": "Sixty-case development set for prompt A/B on Architecture 0004. Drawn from the unused pool after excluding canary-1, canary-2, dev-9-v1, and every question_id already present under runs/. Contaminated by design; never report as a blind result.",
+  "question_ids": [
+    "01493427",
+    "06db6396",
+    "07741c45",
+    "0edc2aef",
+    "10d9b85a",
+    "15745da0_abs",
+    "1da05512",
+    "22d2cb42",
+    "2311e44b_abs",
+    "35a27287",
+    "38146c39",
+    "3b6f954b",
+    "4c36ccef",
+    "4dfccbf7",
+    "4fd1909e",
+    "51b23612",
+    "577d4d32",
+    "57f827a0",
+    "5a4f22c0",
+    "6456829e_abs",
+    "65240037",
+    "67e0d0f2",
+    "6aeb4375_abs",
+    "71017277",
+    "76d63226",
+    "7e974930",
+    "89941a93",
+    "a4996e51",
+    "af8d2e46",
+    "b320f3f8",
+    "b5ef892d",
+    "b759caee",
+    "c19f7a0b",
+    "c4a1ceb8",
+    "c6853660",
+    "c7dc5443",
+    "caf9ead2",
+    "d24813b1",
+    "d851d5ba",
+    "e6041065",
+    "e61a7584",
+    "e66b632c",
+    "e831120c",
+    "edced276",
+    "efc3f7c2",
+    "f8c5f88b",
+    "gpt4_1d80365e",
+    "gpt4_2312f94c",
+    "gpt4_385a5000",
+    "gpt4_4fc4f797",
+    "gpt4_68e94287",
+    "gpt4_76048e76",
+    "gpt4_8279ba02",
+    "gpt4_85da3956",
+    "gpt4_93159ced",
+    "gpt4_93159ced_abs",
+    "gpt4_ab202e7f",
+    "gpt4_c27434e8_abs",
+    "gpt4_e414231e",
+    "gpt4_f2262a51"
+  ],
+  "question_type_counts": {
+    "knowledge-update": 12,
+    "multi-session": 14,
+    "single-session-assistant": 4,
+    "single-session-preference": 6,
+    "single-session-user": 10,
+    "temporal-reasoning": 14
+  },
+  "schema_version": 1,
+  "seed": 20260726,
+  "strata": [
+    {
+      "abstention": false,
+      "population_count": 72,
+      "question_type": "knowledge-update",
+      "sample_count": 11
+    },
+    {
+      "abstention": true,
+      "population_count": 6,
+      "question_type": "knowledge-update",
+      "sample_count": 1
+    },
+    {
+      "abstention": false,
+      "population_count": 121,
+      "question_type": "multi-session",
+      "sample_count": 12
+    },
+    {
+      "abstention": true,
+      "population_count": 12,
+      "question_type": "multi-session",
+      "sample_count": 2
+    },
+    {
+      "abstention": false,
+      "population_count": 56,
+      "question_type": "single-session-assistant",
+      "sample_count": 4
+    },
+    {
+      "abstention": false,
+      "population_count": 30,
+      "question_type": "single-session-preference",
+      "sample_count": 6
+    },
+    {
+      "abstention": false,
+      "population_count": 64,
+      "question_type": "single-session-user",
+      "sample_count": 9
+    },
+    {
+      "abstention": true,
+      "population_count": 6,
+      "question_type": "single-session-user",
+      "sample_count": 1
+    },
+    {
+      "abstention": false,
+      "population_count": 127,
+      "question_type": "temporal-reasoning",
+      "sample_count": 12
+    },
+    {
+      "abstention": true,
+      "population_count": 6,
+      "question_type": "temporal-reasoning",
+      "sample_count": 2
+    }
+  ],
+  "subset_of": null
+}

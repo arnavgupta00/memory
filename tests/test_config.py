@@ -8,11 +8,14 @@ from longmemeval.config import RunConfig, load_config
 
 def test_loads_example_configs() -> None:
     root = Path(__file__).parents[1]
-    config_dir = root / "src" / "agents" / "current" / "configs"
+    config_dir = root / "src" / "agents" / "architecture-0003.2-hybrid-graph-reader" / "configs"
     for path in sorted(config_dir.rglob("*.yaml")):
         config = load_config(path)
         assert config.agent.backend == "node"
-        assert config.agent.entrypoint == "src/agents/current/dist/host.js"
+        assert (
+            config.agent.entrypoint
+            == "src/agents/architecture-0003.2-hybrid-graph-reader/dist/host.js"
+        )
         assert set(config.agent.models) == {"contexto", "shino", "reader"}
         assert config.agent.provider_model_limits
         assert config.answer.model
@@ -29,7 +32,13 @@ def test_frozen_baseline_configs_remain_runnable() -> None:
 
 
 def test_b3_b9_experiment_differs_only_by_name_and_batch_size() -> None:
-    root = Path(__file__).parents[1] / "src" / "agents" / "current" / "configs"
+    root = (
+        Path(__file__).parents[1]
+        / "src"
+        / "agents"
+        / "architecture-0003.2-hybrid-graph-reader"
+        / "configs"
+    )
     b3 = load_config(root / "architecture-0003-openai-b3-c9.yaml").canonical_dict()
     b9 = load_config(root / "architecture-0003-openai-b9-c9.yaml").canonical_dict()
     b3["name"] = "experiment"
@@ -111,7 +120,7 @@ def test_named_generation_and_embedding_roles_are_validated() -> None:
 def test_node_roles_require_unique_provider_model_limits() -> None:
     base = {
         "backend": "node",
-        "entrypoint": "src/agents/current/dist/host.js",
+        "entrypoint": "src/agents/architecture-0003.2-hybrid-graph-reader/dist/host.js",
         "models": {
             "contexto": {
                 "kind": "generation",

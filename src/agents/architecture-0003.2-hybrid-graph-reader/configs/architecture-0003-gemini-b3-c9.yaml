@@ -1,16 +1,11 @@
-name: architecture-0003.2-mixed-b3-c9-example
+name: architecture-0003.2-gemini-b3-c9
 mode: full-context
 agent:
   backend: node
-  entrypoint: src/agents/current/dist/host.js
+  entrypoint: src/agents/architecture-0003.2-hybrid-graph-reader/dist/host.js
   provider_model_limits:
     - provider: gemini
       model: gemini-3.1-pro-preview
-      max_concurrency: 4
-      token_budget: 320000
-      window_seconds: 60
-    - provider: openai
-      model: gpt-5-nano-2025-08-07
       max_concurrency: 2
       token_budget: 160000
       window_seconds: 60
@@ -26,16 +21,13 @@ agent:
       max_retries: 6
     shino:
       kind: generation
-      provider: openai
-      model: gpt-5-nano-2025-08-07
-      temperature: 1
-      reasoning_effort: minimal
+      provider: gemini
+      model: gemini-3.1-pro-preview
+      temperature: 0
       max_output_tokens: 8000
       timeout_seconds: 300
       concurrency: 4
       max_retries: 6
-      input_price_per_million: 0.05
-      output_price_per_million: 0.40
     reader:
       kind: generation
       provider: gemini
@@ -51,16 +43,13 @@ agent:
     latest_raw_sessions: 9
     allow_graph_replacement: true
 answer:
-  provider: openai
-  model: gpt-5-nano-2025-08-07
-  temperature: 1
-  reasoning_effort: high
-  max_output_tokens: 8000
+  provider: gemini
+  model: gemini-3.1-pro-preview
+  temperature: 0
+  max_output_tokens: 32000
   timeout_seconds: 300
   concurrency: 4
   max_retries: 6
-  input_price_per_million: 0.05
-  output_price_per_million: 0.40
 judge:
   provider: openai
   model: gpt-4o-2024-08-06

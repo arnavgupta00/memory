@@ -1,12 +1,18 @@
 import { describe, expect, test } from "vitest";
 
 import { Bm25Index } from "../src/retrieval/bm25.js";
-import { renderSession } from "../src/retrieval/documents.js";
 import { tokenizeRetrievalText } from "../src/retrieval/tokenize.js";
 import type { RetrievalDocument } from "../src/retrieval/types.js";
 
 function document(id: string, text: string): RetrievalDocument {
-  return { id, text, channel: "session", sessionIds: [id], date: null };
+  return {
+    id,
+    text,
+    sessionId: id,
+    date: "2023/01/01",
+    startTurn: 0,
+    endTurn: 0,
+  };
 }
 
 describe("typed local BM25", () => {
@@ -43,22 +49,23 @@ describe("typed local BM25", () => {
   });
 
   test("rejects duplicate document IDs", () => {
-    expect(() => new Bm25Index([
-      document("same", "first"),
-      document("same", "second"),
-    ])).toThrow("duplicate retrieval document ID");
+    expect(
+      () =>
+        new Bm25Index([
+          document("same", "first"),
+          document("same", "second"),
+        ]),
+    ).toThrow("duplicate retrieval document ID");
   });
 
-  test("retains both user and assistant text in one session document", () => {
-    const text = renderSession({
-      session_id: "s1",
-      date: "2025/01/01",
-      turns: [
-        { role: "user", content: "Which option did you recommend?" },
-        { role: "assistant", content: "I recommended the amber package." },
-      ],
-    });
-    expect(text).toContain("[user] Which option did you recommend?");
-    expect(text).toContain("[assistant] I recommended the amber package.");
+  test("is deterministic for identical inputs", () => {
+    const docs = [
+      document("s1", "marathon training plan"),
+      document("s2", "cooking pasta recipes"),
+      document("s3", "marathon race day"),
+    ];
+    const first = new Bm25Index(docs).search("marathon", 3);
+    const second = new Bm25Index(docs).search("marathon", 3);
+    expect(first).toEqual(second);
   });
 });

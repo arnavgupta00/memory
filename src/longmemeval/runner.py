@@ -39,7 +39,8 @@ def _slug(value: str) -> str:
 
 
 def _new_run_id(config: RunConfig) -> str:
-    timestamp = utc_now().replace(":", "").replace("-", "").replace("+00:00", "Z")
+    # Replace the offset before stripping colons so "+00:00" becomes "Z", not "+0000".
+    timestamp = utc_now().replace("+00:00", "Z").replace(":", "").replace("-", "")
     return f"{timestamp}-{_slug(config.name)}"
 
 

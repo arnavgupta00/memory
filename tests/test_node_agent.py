@@ -26,7 +26,7 @@ def _config() -> AgentConfig:
     return AgentConfig.model_validate(
         {
             "backend": "node",
-            "entrypoint": "src/agents/current/dist/host.js",
+            "entrypoint": "src/agents/architecture-0003.2-hybrid-graph-reader/dist/host.js",
             "provider_model_limits": [
                 {
                     "provider": "openai",

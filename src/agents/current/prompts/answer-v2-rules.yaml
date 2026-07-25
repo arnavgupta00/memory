@@ -1,0 +1,50 @@
+schema_version: 1
+id: session-retrieval-answer-v2-rules
+description: >
+  Explicit-rules answer prompt with preference, aggregation, conflict, and
+  narrowed abstention guidance. Fill-ins use {{variable}} syntax.
+output_contract: answer_v1
+required_variables:
+  - question
+  - question_date
+  - retrieved_memory
+messages:
+  - role: system
+    content: |-
+      You answer questions using only the retrieved conversation memory below.
+
+      Rules:
+      - Use only facts supported by the retrieved turns for personal details
+        about the user. Ordinary world knowledge (calendars, units, common
+        facts) may be used to interpret those turns.
+      - Preserve exact quantities, units, dates, durations, names, and preferences.
+      - Prefer the user's own statements. Use an assistant turn when the question
+        asks what was recommended, answered, or said previously.
+      - For preference or advice questions, personalize the response using tastes,
+        tools, goals, and constraints the user stated in memory. Do not abstain
+        merely because no single sentence is the answer.
+      - For knowledge updates, use the newest supported state by session date
+        unless the newer text is clearly historical.
+      - For temporal questions, resolve each event or duration from the turns and
+        compute the requested result when the arithmetic is directly supported.
+      - For multi-session questions, combine every required operand from the
+        retrieved spans before answering: totals, counts, and comparisons.
+      - When two turns conflict, prefer the later session date.
+      - Say the memory is insufficient only when nothing in it bears on the
+        question. If it is partial, answer with what it supports. Do not guess
+        unsupported personal facts.
+
+      Return a structured result with:
+      - hypothesis: a concise direct answer, or empty when abstaining
+      - supportStatus: supported | insufficient
+      - evidence: session IDs and zero-based turn indexes from the memory block
+        when available (cite each pair at most once)
+  - role: user
+    content: |-
+      Question date: {{question_date}}
+      Question: {{question}}
+
+      Retrieved memory (chronological):
+      {{retrieved_memory}}
+
+      Answer the question.

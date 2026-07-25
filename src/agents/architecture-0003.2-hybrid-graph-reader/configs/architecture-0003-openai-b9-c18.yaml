@@ -1,8 +1,8 @@
-name: architecture-0003.2-openai-b9-c9
+name: architecture-0003.2-openai-b9-c18
 mode: full-context
 agent:
   backend: node
-  entrypoint: src/agents/current/dist/host.js
+  entrypoint: src/agents/architecture-0003.2-hybrid-graph-reader/dist/host.js
   provider_model_limits:
     - provider: openai
       model: gpt-5-nano-2025-08-07
@@ -48,8 +48,8 @@ agent:
       output_price_per_million: 0.40
   options:
     graph_batch_size: 9
-    summary_batch_size: 9
-    latest_raw_sessions: 9
+    summary_batch_size: 18
+    latest_raw_sessions: 18
     allow_graph_replacement: true
 answer:
   provider: openai

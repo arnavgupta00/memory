@@ -46,7 +46,7 @@ gate.
 
 ```bash
 # Small changes
-uv run memorybench run --config src/agents/current/configs/architecture-0003-gemini-b3-c9.yaml
+uv run memorybench run --config src/agents/architecture-0003.2-hybrid-graph-reader/configs/architecture-0003-gemini-b3-c9.yaml
 uv run memorybench judge --run RUN_ID
 uv run memorybench report --run RUN_ID
 
@@ -54,8 +54,8 @@ uv run memorybench report --run RUN_ID
 # Copy a current architecture config and change only selection.strategy to canary-1.
 
 # OpenAI answerer variants
-uv run memorybench run --config src/agents/current/configs/architecture-0003-openai-b3-c9.yaml
-uv run memorybench run --config src/agents/current/configs/architecture-0003-openai-b9-c9.yaml
+uv run memorybench run --config src/agents/architecture-0003.2-hybrid-graph-reader/configs/architecture-0003-openai-b3-c9.yaml
+uv run memorybench run --config src/agents/architecture-0003.2-hybrid-graph-reader/configs/architecture-0003-openai-b9-c9.yaml
 ```
 
 Use the raw canary score to detect exact regressions against earlier runs on the same frozen IDs.

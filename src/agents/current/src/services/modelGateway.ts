@@ -131,9 +131,6 @@ export class ModelGateway {
     this.#captureModelIo = captureModelIo;
     this.#executors = executors;
     this.#semaphores = {
-      contexto: new RoleSemaphore(roles.contexto.concurrency),
-      shino: new RoleSemaphore(roles.shino.concurrency),
-      reader: new RoleSemaphore(roles.reader.concurrency),
       answer: new RoleSemaphore(roles.answer.concurrency),
     };
     for (const configured of options.providerModelLimits ?? []) {
@@ -169,16 +166,11 @@ export class ModelGateway {
     const hydratedDispatches = (await recorder.events()).filter(
       (event): event is RateLimitDispatch => event.event_type === "model_attempt_dispatched",
     );
-    return new ModelGateway(
-      args.roles,
-      args.captureModelIo,
-      args.executors,
-      {
-        providerModelLimits: args.providerModelLimits,
-        scheduleRecorder: recorder,
-        hydratedDispatches,
-      },
-    );
+    return new ModelGateway(args.roles, args.captureModelIo, args.executors, {
+      providerModelLimits: args.providerModelLimits,
+      scheduleRecorder: recorder,
+      hydratedDispatches,
+    });
   }
 
   async generateStructured<T>(args: {
@@ -212,16 +204,12 @@ export class ModelGateway {
         cached.callKey === args.callKey ? null : "call_key",
         cached.promptId === args.prompt.promptId ? null : "prompt_id",
         cached.responseSchemaName === args.schemaName ? null : "response_schema_name",
-        sha256(cached.responseSchema) === sha256(expectedSchema)
-          ? null
-          : "response_schema",
+        sha256(cached.responseSchema) === sha256(expectedSchema) ? null : "response_schema",
         cachedCall.role === args.role ? null : "role",
         cachedCall.provider === config.provider ? null : "provider",
         cachedCall.model === config.model ? null : "model",
         cachedCall.input_sha256 === expectedInputSha ? null : "prompt_input",
-        sha256(cachedCall.parameters) === sha256(expectedParameters)
-          ? null
-          : "parameters",
+        sha256(cachedCall.parameters) === sha256(expectedParameters) ? null : "parameters",
       ].filter((reason): reason is string => reason !== null);
       if (staleReasons.length > 0) {
         throw new Error(
@@ -258,7 +246,8 @@ export class ModelGateway {
           await this.#pace(args.role, config);
           const limiter = this.#sharedLimiters.get(providerModelKey(config.provider, config.model));
           if (limiter) {
-            const requestBytes = Buffer.byteLength(promptText(args.prompt), "utf8")
+            const requestBytes =
+              Buffer.byteLength(promptText(args.prompt), "utf8")
               + Buffer.byteLength(JSON.stringify(z.toJSONSchema(args.schema)), "utf8");
             lease = await limiter.acquire({
               artifactScope: args.artifacts.root,
@@ -272,7 +261,12 @@ export class ModelGateway {
           try {
             const executor = this.#executors[config.provider];
             if (executor) {
-              const raw = await executor({ role: args.role, config, prompt: args.prompt, schemaName: args.schemaName });
+              const raw = await executor({
+                role: args.role,
+                config,
+                prompt: args.prompt,
+                schemaName: args.schemaName,
+              });
               if (raw.value === null || raw.value === undefined) {
                 throw new EmptyStructuredOutputError("provider returned no parsed structured output");
               }

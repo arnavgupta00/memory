@@ -32,9 +32,9 @@ It owns:
 The active direction is:
 
 ```text
-LongMemEval runner → NodeAgentHost → src/agents/current/dist/host.js
+LongMemEval runner → NodeAgentHost → <active agent package>/dist/host.js
 ```
 
 The harness sends only reset, sanitized timestamped sessions, question text/date, configuration,
 and isolated artifact paths. The Node agent returns the stable `AnswerResult` plus normalized model
-call records. Architecture logic and prompt prose remain entirely under `src/agents/current/`.
+call records. Architecture logic and prompt prose remain entirely under `src/agents/`.

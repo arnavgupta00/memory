@@ -6,7 +6,7 @@ export default tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.strictTypeChecked,
   {
-    ignores: ["dist/**", "inspector/web/**"],
+    ignores: ["dist/**"],
     languageOptions: {
       globals: globals.node,
       parserOptions: {
@@ -18,7 +18,7 @@ export default tseslint.config(
       "@typescript-eslint/consistent-type-imports": "error",
       "@typescript-eslint/no-confusing-void-expression": "off",
       "@typescript-eslint/no-dynamic-delete": "off",
-      "@typescript-eslint/restrict-template-expressions": ["error", { "allowNumber": true }]
-    }
-  }
+      "@typescript-eslint/restrict-template-expressions": ["error", { allowNumber: true }],
+    },
+  },
 );

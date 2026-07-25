@@ -4,7 +4,10 @@ import { fileURLToPath } from "node:url";
 import yaml from "js-yaml";
 import { z } from "zod";
 
-import { PromptMessageSchema, type PromptEnvelope } from "../types.js";
+const PromptMessageSchema = z.strictObject({
+  role: z.enum(["system", "user", "assistant"]),
+  content: z.string(),
+});
 
 const PromptDefinitionSchema = z.strictObject({
   schema_version: z.literal(1),
@@ -16,7 +19,13 @@ const PromptDefinitionSchema = z.strictObject({
 });
 type PromptDefinition = z.infer<typeof PromptDefinitionSchema>;
 
-const PLACEHOLDER = /\{([a-z][a-z0-9_]*)\}/g;
+/** Mustache-style fill-ins: {{variable_name}} */
+const PLACEHOLDER = /\{\{([a-z][a-z0-9_]*)\}\}/g;
+
+export type PromptEnvelope = {
+  promptId: string;
+  messages: Array<{ role: "system" | "user" | "assistant"; content: string }>;
+};
 
 export class PromptLoader {
   readonly #root: string;
@@ -33,13 +42,21 @@ export class PromptLoader {
     const missing = [...declared].filter((key) => !supplied.has(key));
     const extra = [...supplied].filter((key) => !declared.has(key));
     if (missing.length || extra.length) {
-      throw new Error(`prompt ${definition.id} variable mismatch: missing=${missing.join(",")} extra=${extra.join(",")}`);
+      throw new Error(
+        `prompt ${definition.id} variable mismatch: missing=${missing.join(",")} extra=${extra.join(",")}`,
+      );
     }
     return {
       promptId: definition.id,
       messages: definition.messages.map((message) => ({
         role: message.role,
-        content: message.content.replace(PLACEHOLDER, (_match, key: string) => variables[key] ?? ""),
+        content: message.content.replace(PLACEHOLDER, (_match, key: string) => {
+          const value = variables[key];
+          if (value === undefined) {
+            throw new Error(`prompt ${definition.id} missing value for {{${key}}}`);
+          }
+          return value;
+        }),
       })),
     };
   }
@@ -48,21 +65,21 @@ export class PromptLoader {
     const cached = this.#cache.get(name);
     if (cached) return cached;
     if (!/^[a-z][a-z0-9-]*$/.test(name)) throw new Error(`unsafe prompt name: ${name}`);
-    const raw = yaml.load(await readFile(`${this.#root}/${name}.yaml`, "utf8"));
+    const raw: unknown = yaml.load(await readFile(`${this.#root}/${name}.yaml`, "utf8"));
     const definition = PromptDefinitionSchema.parse(raw);
-    const occurrences = new Map<string, number>();
+    const found = new Set<string>();
     for (const message of definition.messages) {
       for (const match of message.content.matchAll(PLACEHOLDER)) {
-        if (match[1]) occurrences.set(match[1], (occurrences.get(match[1]) ?? 0) + 1);
+        if (match[1]) found.add(match[1]);
       }
     }
-    const found = new Set(occurrences.keys());
     const declared = new Set(definition.required_variables);
     const undeclared = [...found].filter((key) => !declared.has(key));
     const unused = [...declared].filter((key) => !found.has(key));
-    const repeated = [...occurrences].filter(([, count]) => count !== 1).map(([key]) => key);
-    if (undeclared.length || unused.length || repeated.length) {
-      throw new Error(`prompt ${definition.id} placeholder mismatch: undeclared=${undeclared.join(",")} unused=${unused.join(",")} repeated=${repeated.join(",")}`);
+    if (undeclared.length || unused.length) {
+      throw new Error(
+        `prompt ${definition.id} placeholder mismatch: undeclared=${undeclared.join(",")} unused=${unused.join(",")}`,
+      );
     }
     this.#cache.set(name, definition);
     return definition;

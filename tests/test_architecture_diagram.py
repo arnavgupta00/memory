@@ -5,8 +5,17 @@ from pathlib import Path
 from typing import Any
 
 
+ARCHITECTURE_DIR = (
+    Path(__file__).parents[1]
+    / "src"
+    / "agents"
+    / "architecture-0003.2-hybrid-graph-reader"
+    / "architecture"
+)
+
+
 def test_architecture_0003_excalidraw_is_native_and_internally_linked() -> None:
-    root = Path(__file__).parents[1] / "src" / "agents" / "current" / "architecture"
+    root = ARCHITECTURE_DIR
     path = root / "0003-contexto-shino-langgraph.excalidraw"
     drawing: dict[str, Any] = json.loads(path.read_text())
     assert drawing["type"] == "excalidraw"
@@ -40,7 +49,7 @@ def test_architecture_0003_excalidraw_is_native_and_internally_linked() -> None:
 
 
 def test_prior_architecture_records_and_user_draft_are_preserved() -> None:
-    root = Path(__file__).parents[1] / "src" / "agents" / "current" / "architecture"
+    root = ARCHITECTURE_DIR
     for name in (
         "0001-full-context.excalidraw",
         "0002-hierarchical-temporal-context-graph.excalidraw",

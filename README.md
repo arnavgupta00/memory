@@ -1,17 +1,23 @@
 # MemoryBench
 
 MemoryBench is a reproducible LongMemEval-S harness and a workspace for developing long-term-memory
-agents. The active agent is Architecture 0003.2: a strict TypeScript LangGraph workflow combining
-Contexto/Shino graph memory with lossless local retrieval and a dedicated Reader. The benchmark
-lifecycle and canonical evaluator remain in stable Python.
+agents. The benchmark lifecycle and canonical evaluator remain in stable Python.
 
 ```text
 src/
-├── agents/current/      ← BUILD MEMORY ARCHITECTURES HERE (TypeScript)
-└── longmemeval/         ← STABLE BENCHMARK HARNESS (Python)
+├── agents/
+│   ├── current/                                  ← BUILD HERE (active architecture)
+│   ├── architecture-0003.2-hybrid-graph-reader/  ← preserved, still runnable
+│   └── baselines/full_context/                   ← frozen Architecture 0001
+└── longmemeval/                                  ← STABLE BENCHMARK HARNESS (Python)
 ```
 
-## Architecture 0003.2 at a glance
+Architecture 0003.2 is preserved rather than active. Its fresh blind 18-case result was 11/18,
+statistically indistinguishable from the far simpler full-context baseline, so the active line of
+work restarts from a minimal retrieval backbone and adds layers only when a measured delta on a
+sufficiently large sample justifies them.
+
+## Architecture 0003.2 at a glance (preserved)
 
 Sessions arrive one by one. Local code archives every session. Mr. Contexto extracts typed semantic
 memories after every complete B-session window; deterministic code owns graph paths, provenance,
@@ -37,12 +43,13 @@ floor(N / B) Contexto + floor(N / C) Shino + 1 Reader + 1 answer
 ```
 
 Read [`src/agents/README.md`](src/agents/README.md), then
-[`src/agents/current/ARCHITECTURE.md`](src/agents/current/ARCHITECTURE.md). The complete design is in
-[`0003-contexto-shino-langgraph.md`](src/agents/current/architecture/0003-contexto-shino-langgraph.md),
+[`ARCHITECTURE.md`](src/agents/architecture-0003.2-hybrid-graph-reader/ARCHITECTURE.md). The complete
+design is in
+[`0003-contexto-shino-langgraph.md`](src/agents/architecture-0003.2-hybrid-graph-reader/architecture/0003-contexto-shino-langgraph.md),
 with the graph-construction revision in
-[`0003.1-contexto-semantic-memory-study.md`](src/agents/current/architecture/0003.1-contexto-semantic-memory-study.md)
-and the active repair in
-[`0003.2-hybrid-graph-reader.md`](src/agents/current/architecture/0003.2-hybrid-graph-reader.md).
+[`0003.1-contexto-semantic-memory-study.md`](src/agents/architecture-0003.2-hybrid-graph-reader/architecture/0003.1-contexto-semantic-memory-study.md)
+and the final repair in
+[`0003.2-hybrid-graph-reader.md`](src/agents/architecture-0003.2-hybrid-graph-reader/architecture/0003.2-hybrid-graph-reader.md).
 
 ## Setup
 
@@ -69,11 +76,11 @@ files differ semantically only in run name and `graph_batch_size`.
 
 ```bash
 uv run memorybench run \
-  --config src/agents/current/configs/architecture-0003-openai-b3-c9.yaml \
+  --config src/agents/architecture-0003.2-hybrid-graph-reader/configs/architecture-0003-openai-b3-c9.yaml \
   --ui
 
 uv run memorybench run \
-  --config src/agents/current/configs/architecture-0003-openai-b9-c9.yaml \
+  --config src/agents/architecture-0003.2-hybrid-graph-reader/configs/architecture-0003-openai-b9-c9.yaml \
   --ui
 ```
 

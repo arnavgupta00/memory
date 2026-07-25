@@ -28,9 +28,13 @@ jobs:
       - run: pnpm agent:lint
       - run: pnpm agent:test
       - run: pnpm agent:build
-      - run: pnpm --dir src/agents/current workflow:mermaid
-      - run: git diff --exit-code -- src/agents/current/architecture/generated-workflow.mmd
-      - run: pnpm --dir src/agents/current/inspector/web run lint
+      - run: pnpm backbone:typecheck
+      - run: pnpm backbone:lint
+      - run: pnpm backbone:test
+      - run: pnpm backbone:build
+      - run: pnpm --dir src/agents/architecture-0003.2-hybrid-graph-reader workflow:mermaid
+      - run: git diff --exit-code -- src/agents/architecture-0003.2-hybrid-graph-reader/architecture/generated-workflow.mmd
+      - run: pnpm --dir src/agents/architecture-0003.2-hybrid-graph-reader/inspector/web run lint
       - run: pnpm ui:test
       - run: pnpm ui:build
       - run: uv sync --locked --extra dev
@@ -38,5 +42,5 @@ jobs:
       - run: uv run ruff check .
       - run: uv run mypy
       - run: uv run pytest
-      - run: pnpm --dir src/agents/current/inspector/web exec playwright install --with-deps chromium
-      - run: pnpm --dir src/agents/current/inspector/web run test:visual
+      - run: pnpm --dir src/agents/architecture-0003.2-hybrid-graph-reader/inspector/web exec playwright install --with-deps chromium
+      - run: pnpm --dir src/agents/architecture-0003.2-hybrid-graph-reader/inspector/web run test:visual

@@ -1,0 +1,107 @@
+{
+  "abstention_by_type": {
+    "multi-session": 1
+  },
+  "abstention_count": 1,
+  "coverage": {
+    "evidence_counts_by_type": {
+      "knowledge-update": [
+        2
+      ],
+      "multi-session": [
+        2,
+        5
+      ],
+      "single-session-assistant": [
+        1
+      ],
+      "single-session-preference": [
+        1
+      ],
+      "single-session-user": [
+        1
+      ],
+      "temporal-reasoning": [
+        2,
+        3
+      ]
+    },
+    "excluded_pools": [
+      "all prior run question_ids",
+      "canary-1",
+      "canary-2"
+    ],
+    "remaining_unused_after_selection": 288,
+    "unused_pool_size_at_selection": 297
+  },
+  "dataset_file": "longmemeval_s_cleaned.json",
+  "dataset_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+  "name": "dev-9-v1",
+  "purpose": "Nine-case development set for the restarted simple backbone. Every case is unused by any prior run and disjoint from canary-1 and canary-2. This set is contaminated by design through repeated iteration and must never be reported as a blind result.",
+  "question_ids": [
+    "29f2956b",
+    "60bf93ed_abs",
+    "6613b389",
+    "72e3ee87",
+    "75f70248",
+    "dc439ea3",
+    "dcfa8644",
+    "dfde3500",
+    "gpt4_31ff4165"
+  ],
+  "question_type_counts": {
+    "knowledge-update": 2,
+    "multi-session": 2,
+    "single-session-assistant": 1,
+    "single-session-preference": 1,
+    "single-session-user": 1,
+    "temporal-reasoning": 2
+  },
+  "schema_version": 1,
+  "seed": 20260726,
+  "strata": [
+    {
+      "abstention": false,
+      "population_count": 72,
+      "question_type": "knowledge-update",
+      "sample_count": 2
+    },
+    {
+      "abstention": false,
+      "population_count": 121,
+      "question_type": "multi-session",
+      "sample_count": 1
+    },
+    {
+      "abstention": true,
+      "population_count": 12,
+      "question_type": "multi-session",
+      "sample_count": 1
+    },
+    {
+      "abstention": false,
+      "population_count": 56,
+      "question_type": "single-session-assistant",
+      "sample_count": 1
+    },
+    {
+      "abstention": false,
+      "population_count": 30,
+      "question_type": "single-session-preference",
+      "sample_count": 1
+    },
+    {
+      "abstention": false,
+      "population_count": 64,
+      "question_type": "single-session-user",
+      "sample_count": 1
+    },
+    {
+      "abstention": false,
+      "population_count": 127,
+      "question_type": "temporal-reasoning",
+      "sample_count": 2
+    }
+  ],
+  "subset_of": null
+}

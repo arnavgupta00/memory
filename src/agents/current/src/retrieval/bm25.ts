@@ -1,11 +1,5 @@
-import type {
-  Bm25SearchResult,
-  RetrievalDocument,
-} from "./types.js";
-import {
-  explicitTemporalTerms,
-  tokenizeRetrievalText,
-} from "./tokenize.js";
+import type { Bm25SearchResult, RetrievalDocument } from "./types.js";
+import { explicitTemporalTerms, tokenizeRetrievalText } from "./tokenize.js";
 
 export const BM25_K1 = 1.2 as const;
 export const BM25_B = 0.75 as const;
@@ -60,7 +54,9 @@ export class Bm25Index {
     limit: number,
     temporalBoost = DEFAULT_TEMPORAL_BOOST,
   ): Bm25SearchResult[] {
-    if (limit < 0 || !Number.isInteger(limit)) throw new Error("retrieval limit must be a nonnegative integer");
+    if (limit < 0 || !Number.isInteger(limit)) {
+      throw new Error("retrieval limit must be a nonnegative integer");
+    }
     if (temporalBoost < 0) throw new Error("temporal boost cannot be negative");
     const queryTerms = [...new Set(tokenizeRetrievalText(query))];
     const queryTemporal = explicitTemporalTerms(query);
@@ -77,8 +73,7 @@ export class Bm25Index {
           1 + (documentCount - documentFrequency + 0.5) / (documentFrequency + 0.5),
         );
         const lengthRatio = this.#averageLength === 0 ? 0 : indexed.length / this.#averageLength;
-        const denominator =
-          frequency + BM25_K1 * (1 - BM25_B + BM25_B * lengthRatio);
+        const denominator = frequency + BM25_K1 * (1 - BM25_B + BM25_B * lengthRatio);
         bm25Score += inverseDocumentFrequency * ((frequency * (BM25_K1 + 1)) / denominator);
       }
       const temporalMatches = [...queryTemporal].filter((term) =>

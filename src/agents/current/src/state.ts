@@ -2,51 +2,30 @@ import { StateSchema } from "@langchain/langgraph";
 import { z } from "zod";
 
 import {
+  AnswerOutputSchema,
   AnswerResultSchema,
-  ContextoMutationSchema,
-  ContextoSemanticRejectionSchema,
-  FinalAnswerSchema,
-  FinalContextSchema,
-  GraphMutationRecordSchema,
-  JsonValueSchema,
-  MasterContextGraphSchema,
   NormalizedGenerationSchema,
-  ReaderPlanSchema,
-  SessionSummaryRecordSchema,
-  ShinoOutputSchema,
   TimestampedSessionSchema,
 } from "./types.js";
-import {
-  RetrievalCandidatesSchema,
-  RetrievalIndexManifestSchema,
-} from "./retrieval/types.js";
+import { type RetrievalResult } from "./retrieval/types.js";
+
+const RetrievalResultSchema = z.custom<RetrievalResult>(
+  (value) => value !== null && typeof value === "object",
+);
 
 export const MemoryState = new StateSchema({
-  action: z.enum(["ingest", "answer", "resume"]),
+  action: z.enum(["ingest", "answer"]),
   caseId: z.string(),
   sessions: z.array(TimestampedSessionSchema),
   incomingSession: TimestampedSessionSchema.nullable(),
-  graph: MasterContextGraphSchema,
-  graphTrackedCount: z.number().int().nonnegative(),
-  summaryTrackedCount: z.number().int().nonnegative(),
-  pendingMutation: ContextoMutationSchema.nullable(),
-  pendingMutationRejection: ContextoSemanticRejectionSchema.nullable(),
-  mutationRecords: z.array(GraphMutationRecordSchema),
-  pendingSummary: ShinoOutputSchema.nullable(),
-  summaries: z.array(SessionSummaryRecordSchema),
   question: z.string(),
   questionDate: z.string(),
-  retrievalManifest: RetrievalIndexManifestSchema.nullable(),
-  retrievalCandidates: RetrievalCandidatesSchema.nullable(),
-  readerPlan: ReaderPlanSchema.nullable(),
-  readerGeneration: NormalizedGenerationSchema.nullable(),
-  finalContext: FinalContextSchema.nullable(),
-  finalAnswerOutput: FinalAnswerSchema.nullable(),
+  retrieval: RetrievalResultSchema.nullable(),
+  finalAnswerOutput: AnswerOutputSchema.nullable(),
   answerGeneration: NormalizedGenerationSchema.nullable(),
   answerResult: AnswerResultSchema.nullable(),
   warnings: z.array(z.string()),
   currentNode: z.string(),
-  extensionState: z.record(z.string(), JsonValueSchema).default({}),
 });
 
 export type MemoryStateType = typeof MemoryState.State;
@@ -58,26 +37,13 @@ export function emptyState(caseId: string): MemoryStateType {
     caseId,
     sessions: [],
     incomingSession: null,
-    graph: { schemaVersion: 1, revision: 0, context: {}, provenanceByPointer: {} },
-    graphTrackedCount: 0,
-    summaryTrackedCount: 0,
-    pendingMutation: null,
-    pendingMutationRejection: null,
-    mutationRecords: [],
-    pendingSummary: null,
-    summaries: [],
     question: "",
     questionDate: "",
-    retrievalManifest: null,
-    retrievalCandidates: null,
-    readerPlan: null,
-    readerGeneration: null,
-    finalContext: null,
+    retrieval: null,
     finalAnswerOutput: null,
     answerGeneration: null,
     answerResult: null,
     warnings: [],
     currentNode: "idle",
-    extensionState: {},
   };
 }

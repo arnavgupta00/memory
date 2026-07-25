@@ -1,10 +1,10 @@
-import type { ArchitectureOptions } from "./config.js";
+import type { z } from "zod";
+
+import type { ArchitectureOptions, RoleName } from "./config.js";
 import type { ArtifactStore, EventRecorder } from "./services/artifacts.js";
-import type { RoleName } from "./config.js";
 import type { StructuredGeneration } from "./services/modelGateway.js";
 import type { PromptLoader } from "./services/promptLoader.js";
 import type { PromptEnvelope } from "./types.js";
-import type { z } from "zod";
 
 export interface StructuredModelGateway {
   generateStructured<T>(args: {

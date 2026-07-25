@@ -15,20 +15,25 @@ def test_source_tree_has_only_harness_and_agent_packages() -> None:
     assert directories == {"agents", "longmemeval"}
 
 
-def test_active_architecture_contains_no_python_algorithm_modules() -> None:
-    current = Path(__file__).parents[1] / "src" / "agents" / "current"
-    python_sources = [path for path in current.rglob("*.py") if "node_modules" not in path.parts]
+def test_preserved_architecture_contains_no_python_algorithm_modules() -> None:
+    preserved = (
+        Path(__file__).parents[1]
+        / "src"
+        / "agents"
+        / "architecture-0003.2-hybrid-graph-reader"
+    )
+    python_sources = [path for path in preserved.rglob("*.py") if "node_modules" not in path.parts]
     assert not python_sources
-    assert (current / "src" / "workflow.ts").is_file()
-    assert (current / "src" / "state.ts").is_file()
-    assert (current / "src" / "host.ts").is_file()
+    assert (preserved / "src" / "workflow.ts").is_file()
+    assert (preserved / "src" / "state.ts").is_file()
+    assert (preserved / "src" / "host.ts").is_file()
 
 
 def test_node_agent_requires_the_run_scoped_host() -> None:
     config = AgentConfig.model_validate(
         {
             "backend": "node",
-            "entrypoint": "src/agents/current/dist/host.js",
+            "entrypoint": "src/agents/architecture-0003.2-hybrid-graph-reader/dist/host.js",
             "provider_model_limits": [
                 {
                     "provider": "openai",

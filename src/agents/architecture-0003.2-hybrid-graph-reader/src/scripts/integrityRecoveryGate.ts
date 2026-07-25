@@ -67,9 +67,9 @@ async function main(): Promise<void> {
     runId: argument("--run-id"),
     output: argument("--output"),
     redactionSource: argument("--redaction-source")
-      ?? resolve(PROJECT_ROOT, "src/agents/current/src/services/redaction.ts"),
+      ?? resolve(PROJECT_ROOT, "src/agents/architecture-0003.2-hybrid-graph-reader/src/services/redaction.ts"),
     redactionTest: argument("--redaction-test")
-      ?? resolve(PROJECT_ROOT, "src/agents/current/tests/artifactsAndCache.test.ts"),
+      ?? resolve(PROJECT_ROOT, "src/agents/architecture-0003.2-hybrid-graph-reader/tests/artifactsAndCache.test.ts"),
   });
   const runRoot = resolve(PROJECT_ROOT, "runs", args.runId);
   const outputRoot = resolve(args.output);

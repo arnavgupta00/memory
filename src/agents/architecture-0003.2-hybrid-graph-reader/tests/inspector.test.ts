@@ -21,7 +21,7 @@ describe("Hono Memory Observatory", () => {
     const run = join(root, "run-0003");
     const caseRoot = join(run, "agent-artifacts", "cases", "q1");
     await mkdir(join(caseRoot, "graph-mutations"), { recursive: true });
-    await json(join(run, "manifest.json"), { status: "completed", completed_count: 1, selected_count: 1, config: { agent: { entrypoint: "src/agents/current/dist/host.js" } } });
+    await json(join(run, "manifest.json"), { status: "completed", completed_count: 1, selected_count: 1, config: { agent: { entrypoint: "src/agents/architecture-0003.2-hybrid-graph-reader/dist/host.js" } } });
     const initial: MasterContextGraph = { schemaVersion: 1, revision: 0, context: {}, provenanceByPointer: {} };
     const mutation = { mode: "patch" as const, explanation: "fixture", operations: [{ op: "add" as const, path: "/context/jason", value: { home: "Pune" }, sources: [{ sessionId: "s1", turnIndex: 0, sessionDate: "2025/01/01", batchId: "b0001", excerpt: null }], reason: "fixture" }] };
     const applied = applyContextoMutation({ graph: initial, mutation, batchId: "b0001", sessions: [{ session_id: "s1", date: "2025/01/01", turns: [{}] }], allowReplacement: true });

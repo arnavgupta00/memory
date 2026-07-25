@@ -353,7 +353,7 @@ async function main(): Promise<void> {
     command: [
       "pnpm",
       "--dir",
-      "src/agents/current",
+      "src/agents/architecture-0003.2-hybrid-graph-reader",
       "gate:retrieval",
       datasetPath,
       slicePath,

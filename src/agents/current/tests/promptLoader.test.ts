@@ -4,43 +4,52 @@ import { join } from "node:path";
 
 import { describe, expect, test } from "vitest";
 
+import { formatRetrievedMemory } from "../src/answer/formatMemory.js";
+import { renderAnswerPrompt } from "../src/answer/renderAnswerPrompt.js";
 import { PromptLoader } from "../src/services/promptLoader.js";
+import type { RetrievalResult, SelectedSpan } from "../src/retrieval/types.js";
+import { DEFAULT_RETRIEVAL_OPTIONS } from "../src/retrieval/types.js";
 
-describe("YAML prompt ownership", () => {
-  test("renders all active prompts with only declared variables", async () => {
-    const loader = new PromptLoader();
-    const contexto = await loader.render("contexto", {
-      batch_id: "b0001",
-      memory_catalog: "[]",
-      personal_signals: "[]",
-      sessions: "[]",
+describe("YAML prompt loader with {{variables}}", () => {
+  test("renders answer.yaml fill-ins", async () => {
+    const rendered = await new PromptLoader().render("answer", {
+      question: "What degree did I graduate with?",
+      question_date: "2023/05/30 (Tue) 23:40",
+      retrieved_memory: "### session demo | date 2023/01/01 | turns 0-1\n[user turn=0]\nI got a BA.",
     });
-    const shino = await loader.render("shino", { master_graph: "{}", session_ids: "[]" });
-    const reader = await loader.render("reader", {
-      question: "Where?",
-      question_date: "2025/01/02",
-      session_candidates: "[]",
-      graph_candidates: "[]",
-      summary_candidates: "[]",
-      coverage_fallback_candidates: "[]",
-      tail_candidates: "[]",
-    });
-    const answer = await loader.render("final-answer", {
-      question: "Where?",
-      question_date: "2025/01/02",
-      reader_plan: "{}",
-      evidence_package: "{}",
-    });
-    expect(contexto.promptId).toBe("contexto-semantic-memory-v13");
-    expect(shino.messages.map((message) => message.content).join("\n")).not.toContain("secret session body");
-    expect(reader.promptId).toBe("hybrid-memory-reader-v1");
-    expect(answer.promptId).toBe("final-answer-v5");
-    expect(answer.messages.at(-1)?.content).toContain("Where?");
+    expect(rendered.promptId).toBe("session-retrieval-answer-v1");
+    const user = rendered.messages.find((message) => message.role === "user")?.content ?? "";
+    expect(user).toContain("What degree did I graduate with?");
+    expect(user).toContain("2023/05/30 (Tue) 23:40");
+    expect(user).toContain("I got a BA.");
+    expect(user).not.toContain("{{");
+    expect(user).not.toContain("}}");
   });
 
-  test("rejects missing, extra, undeclared, and repeated placeholders before a model call", async () => {
-    const root = await mkdtemp(join(tmpdir(), "memorybench-prompts-"));
-    await writeFile(join(root, "bad.yaml"), `
+  test("allows the same {{variable}} more than once", async () => {
+    const root = await mkdtemp(join(tmpdir(), "memorybench-double-brace-"));
+    await writeFile(
+      join(root, "echo.yaml"),
+      `
+schema_version: 1
+id: echo-v1
+description: fixture
+output_contract: fixture_v1
+required_variables: [name]
+messages:
+  - role: user
+    content: "Hello {{name}}. Again: {{name}}."
+`,
+    );
+    const rendered = await new PromptLoader(root).render("echo", { name: "Ada" });
+    expect(rendered.messages[0]?.content).toBe("Hello Ada. Again: Ada.");
+  });
+
+  test("rejects missing, extra, and undeclared placeholders", async () => {
+    const root = await mkdtemp(join(tmpdir(), "memorybench-bad-prompt-"));
+    await writeFile(
+      join(root, "bad.yaml"),
+      `
 schema_version: 1
 id: bad-v1
 description: invalid fixture
@@ -48,54 +57,71 @@ output_contract: fixture_v1
 required_variables: [question]
 messages:
   - role: user
-    content: "{question} {question} {undeclared}"
-`);
-    const loader = new PromptLoader(root);
-    await expect(loader.render("bad", { question: "?" })).rejects.toThrow("placeholder mismatch");
-    await expect(new PromptLoader().render("shino", { master_graph: "{}", session_ids: "[]", raw_sessions: "forbidden" })).rejects.toThrow("extra=raw_sessions");
+    content: "{{question}} {{undeclared}}"
+`,
+    );
+    await expect(new PromptLoader(root).render("bad", { question: "?" })).rejects.toThrow(
+      "placeholder mismatch",
+    );
+    await expect(
+      new PromptLoader().render("answer", {
+        question: "q",
+        question_date: "d",
+        retrieved_memory: "m",
+        extra: "nope",
+      }),
+    ).rejects.toThrow("extra=extra");
   });
 
-  test("keeps the Contexto policy query-blind and free of exposed-case tuning", async () => {
-    const rendered = await new PromptLoader().render("contexto", {
-      batch_id: "b0001",
-      memory_catalog: "[]",
-      personal_signals: "[]",
-      sessions: "[]",
-    });
-    const policy = rendered.messages.map((message) => message.content).join("\n").toLowerCase();
-    for (const leaked of [
-      "945e3d21",
-      "73d42213",
-      "9a707b81",
-      "three times per week",
-      "doctor's clinic",
-      "baking class",
-      "chocolate cake",
-    ]) {
-      expect(policy).not.toContain(leaked);
+  test("loads both v2 answer prompt variants", async () => {
+    const loader = new PromptLoader();
+    for (const name of ["answer-v2-simple", "answer-v2-rules"] as const) {
+      const rendered = await loader.render(name, {
+        question: "q",
+        question_date: "d",
+        retrieved_memory: "m",
+      });
+      expect(rendered.promptId).toContain("v2");
+      const user = rendered.messages.find((message) => message.role === "user")?.content ?? "";
+      expect(user).toContain("q");
+      expect(user).toContain("m");
+      expect(user).not.toContain("If the memory is insufficient, abstain.");
     }
   });
 
-  test("keeps the reader policy general rather than case-tuned", async () => {
-    const rendered = await new PromptLoader().render("reader", {
-      question: "What changed?",
-      question_date: "2025/01/02",
-      session_candidates: "[]",
-      graph_candidates: "[]",
-      summary_candidates: "[]",
-      coverage_fallback_candidates: "[]",
-      tail_candidates: "[]",
+  test("renderAnswerPrompt fills retrieved_memory from spans", async () => {
+    const spans: SelectedSpan[] = [
+      {
+        sessionId: "s1",
+        date: "2023/01/01",
+        startTurn: 0,
+        endTurn: 1,
+        bestRank: 1,
+        bestScore: 1,
+        matchedTerms: [],
+        characterCount: 20,
+        turns: [
+          { turnIndex: 0, role: "user", content: "I studied biology.", truncated: false },
+          { turnIndex: 1, role: "assistant", content: "Nice.", truncated: false },
+        ],
+      },
+    ];
+    const retrieval: RetrievalResult = {
+      windows: [],
+      ranked: [],
+      spans,
+      characterCount: 20,
+      estimatedTokens: 5,
+      options: DEFAULT_RETRIEVAL_OPTIONS,
+    };
+    const rendered = await renderAnswerPrompt({
+      question: "What did I study?",
+      questionDate: "2023/02/01",
+      retrieval,
     });
-    const policy = rendered.messages.map((message) => message.content).join("\n").toLowerCase();
-    for (const leaked of [
-      "195a1a1b",
-      "73d42213",
-      "945e3d21",
-      "yoga",
-      "clinic",
-      "baking",
-    ]) {
-      expect(policy).not.toContain(leaked);
-    }
+    const user = rendered.messages.find((message) => message.role === "user")?.content ?? "";
+    expect(user).toContain(formatRetrievedMemory(spans));
+    expect(user).toContain("[user turn=0]");
+    expect(user).toContain("I studied biology.");
   });
 });

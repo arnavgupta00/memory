@@ -8,7 +8,7 @@ importers:
 
   .: {}
 
-  src/agents/current:
+  src/agents/architecture-0003.2-hybrid-graph-reader:
     dependencies:
       '@google/genai':
         specifier: 2.13.0
@@ -63,7 +63,7 @@ importers:
         specifier: 4.0.15
         version: 4.0.15(@types/node@24.10.1)(jsdom@26.1.0)(tsx@4.21.0)
 
-  src/agents/current/inspector/web:
+  src/agents/architecture-0003.2-hybrid-graph-reader/inspector/web:
     dependencies:
       '@fontsource-variable/ibm-plex-sans':
         specifier: ^5.2.6
@@ -144,6 +144,55 @@ importers:
       vitest:
         specifier: ^3.2.4
         version: 3.2.7(@types/node@24.10.1)(jsdom@26.1.0)(tsx@4.21.0)
+
+  src/agents/current:
+    dependencies:
+      '@google/genai':
+        specifier: 2.13.0
+        version: 2.13.0
+      '@langchain/core':
+        specifier: 1.2.3
+        version: 1.2.3(openai@6.48.0(ws@8.21.1)(zod@4.4.3))(ws@8.21.1)
+      '@langchain/langgraph':
+        specifier: 1.4.8
+        version: 1.4.8(@langchain/core@1.2.3(openai@6.48.0(ws@8.21.1)(zod@4.4.3))(ws@8.21.1))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(zod@4.4.3)
+      js-yaml:
+        specifier: 4.1.1
+        version: 4.1.1
+      openai:
+        specifier: 6.48.0
+        version: 6.48.0(ws@8.21.1)(zod@4.4.3)
+      zod:
+        specifier: 4.4.3
+        version: 4.4.3
+    devDependencies:
+      '@eslint/js':
+        specifier: 9.39.1
+        version: 9.39.1
+      '@types/js-yaml':
+        specifier: 4.0.9
+        version: 4.0.9
+      '@types/node':
+        specifier: 24.10.1
+        version: 24.10.1
+      eslint:
+        specifier: 9.39.1
+        version: 9.39.1
+      globals:
+        specifier: 16.5.0
+        version: 16.5.0
+      tsx:
+        specifier: 4.21.0
+        version: 4.21.0
+      typescript:
+        specifier: 5.9.3
+        version: 5.9.3
+      typescript-eslint:
+        specifier: 8.48.1
+        version: 8.48.1(eslint@9.39.1)(typescript@5.9.3)
+      vitest:
+        specifier: 4.0.15
+        version: 4.0.15(@types/node@24.10.1)(jsdom@26.1.0)(tsx@4.21.0)
 
 packages:
 

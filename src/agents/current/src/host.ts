@@ -10,25 +10,19 @@ import {
 import { HostInitializationSchema, type HostInitialization } from "./config.js";
 import type { WorkflowRuntime } from "./runtime.js";
 import { ArtifactStore, EventRecorder } from "./services/artifacts.js";
-import { graphHash, replayMutationRecords } from "./services/graphMutations.js";
 import { ModelGateway } from "./services/modelGateway.js";
 import { PromptLoader } from "./services/promptLoader.js";
-import { renderGraphSvg } from "./services/svg.js";
+import { errorMessage } from "./services/redaction.js";
 import { emptyState, type MemoryStateType } from "./state.js";
 import {
   AnswerResultSchema,
   CaseMetadataSchema,
-  GraphMutationRecordSchema,
-  MasterContextGraphSchema,
   ModelCallRecordSchema,
-  SessionSummaryRecordSchema,
   TimestampedSessionSchema,
   type AnswerResult,
-  type JsonObject,
   type ModelCallRecord,
 } from "./types.js";
 import { createMemoryWorkflow } from "./workflow.js";
-import { errorMessage } from "./services/redaction.js";
 
 const PROTOCOL_VERSION = 1;
 const RpcRequestSchema = z.strictObject({
@@ -39,7 +33,10 @@ const RpcRequestSchema = z.strictObject({
 });
 
 const ResetParamsSchema = z.strictObject({ case: CaseMetadataSchema });
-const IngestParamsSchema = z.strictObject({ caseId: z.string(), session: TimestampedSessionSchema });
+const IngestParamsSchema = z.strictObject({
+  caseId: z.string(),
+  session: TimestampedSessionSchema,
+});
 const AnswerParamsSchema = z.strictObject({
   caseId: z.string(),
   question: z.string(),
@@ -48,7 +45,12 @@ const AnswerParamsSchema = z.strictObject({
 
 type RpcResponse =
   | { protocolVersion: 1; id: string; ok: true; result: unknown }
-  | { protocolVersion: 1; id: string; ok: false; error: { type: string; message: string } };
+  | {
+      protocolVersion: 1;
+      id: string;
+      ok: false;
+      error: { type: string; message: string };
+    };
 
 type CompiledWorkflow = ReturnType<typeof createMemoryWorkflow>;
 
@@ -56,19 +58,16 @@ class CaseRuntime {
   state: MemoryStateType;
   readonly artifacts: ArtifactStore;
   readonly workflow: CompiledWorkflow;
-  readonly #autoExportFinalSvg: boolean;
   #chain: Promise<void> = Promise.resolve();
 
   private constructor(
     state: MemoryStateType,
     artifacts: ArtifactStore,
     workflow: CompiledWorkflow,
-    autoExportFinalSvg: boolean,
   ) {
     this.state = state;
     this.artifacts = artifacts;
     this.workflow = workflow;
-    this.#autoExportFinalSvg = autoExportFinalSvg;
   }
 
   static async create(args: {
@@ -77,10 +76,14 @@ class CaseRuntime {
     models: ModelGateway;
     prompts: PromptLoader;
   }): Promise<CaseRuntime> {
-    if (!/^[A-Za-z0-9_.-]+$/.test(args.caseId)) throw new Error(`unsafe case ID: ${args.caseId}`);
+    if (!/^[A-Za-z0-9_.-]+$/.test(args.caseId)) {
+      throw new Error(`unsafe case ID: ${args.caseId}`);
+    }
     const casesRoot = resolve(args.initialization.runRoot, "agent-artifacts", "cases");
     const caseRoot = resolve(casesRoot, args.caseId);
-    if (!caseRoot.startsWith(`${casesRoot}${sep}`)) throw new Error("case artifact path escapes run root");
+    if (!caseRoot.startsWith(`${casesRoot}${sep}`)) {
+      throw new Error("case artifact path escapes run root");
+    }
     const artifacts = new ArtifactStore(caseRoot);
     await artifacts.initialize();
     const events = new EventRecorder(artifacts);
@@ -92,7 +95,7 @@ class CaseRuntime {
     if (architectureMarker === null) {
       if (committed.length > 0) {
         throw new Error(
-          "refusing to resume pre-0003.2 case artifacts without an architecture marker",
+          "refusing to resume case artifacts without an architecture marker",
         );
       }
       await artifacts.writeAtomic("architecture.json", {
@@ -110,24 +113,8 @@ class CaseRuntime {
     const sessions = committed
       .filter((event) => event.event_type === "session_ingested")
       .map((event) => TimestampedSessionSchema.parse(event.payload.session));
-    const mutationRecords = committed
-      .filter((event) => ["graph_mutation_applied", "graph_mutation_rejected"].includes(event.event_type))
-      .map((event) => GraphMutationRecordSchema.parse(event.payload));
-    const summaries = committed
-      .filter((event) => event.event_type === "summary_window_created")
-      .map((event) => SessionSummaryRecordSchema.parse(event.payload));
-    const graph = MasterContextGraphSchema.parse(replayMutationRecords(mutationRecords));
-    const snapshot = await artifacts.readJson("final-graph.json");
-    if (snapshot !== null && graphHash(MasterContextGraphSchema.parse(snapshot)) !== graphHash(graph)) {
-      await artifacts.writeAtomic("final-graph.json", graph as unknown as JsonObject);
-    }
     const state = emptyState(args.caseId);
     state.sessions = sessions;
-    state.graph = graph;
-    state.mutationRecords = mutationRecords;
-    state.summaries = summaries;
-    state.graphTrackedCount = mutationRecords.length * args.initialization.options.graph_batch_size;
-    state.summaryTrackedCount = summaries.length * args.initialization.options.summary_batch_size;
     const runtime: WorkflowRuntime = {
       options: args.initialization.options,
       artifacts,
@@ -135,45 +122,23 @@ class CaseRuntime {
       models: args.models,
       prompts: args.prompts,
     };
-    const caseRuntime = new CaseRuntime(
-      state,
-      artifacts,
-      createMemoryWorkflow(runtime),
-      args.initialization.autoExportFinalSvg,
-    );
-    const maximumResumeSteps = sessions.length * 2 + 2;
-    for (let step = 0; step < maximumResumeSteps; step += 1) {
-      const graphPending =
-        caseRuntime.state.sessions.length - caseRuntime.state.graphTrackedCount >=
-        args.initialization.options.graph_batch_size;
-      const summaryPending =
-        caseRuntime.state.sessions.length - caseRuntime.state.summaryTrackedCount >=
-        args.initialization.options.summary_batch_size;
-      if (!graphPending && !summaryPending) break;
-      caseRuntime.state = await caseRuntime.workflow.invoke({
-        ...caseRuntime.state,
-        action: "resume",
-        incomingSession: null,
-      });
-    }
-    if (
-      caseRuntime.state.sessions.length - caseRuntime.state.graphTrackedCount >=
-        args.initialization.options.graph_batch_size ||
-      caseRuntime.state.sessions.length - caseRuntime.state.summaryTrackedCount >=
-        args.initialization.options.summary_batch_size
-    ) {
-      throw new Error("case replay did not converge to committed B/C boundaries");
-    }
-    return caseRuntime;
+    return new CaseRuntime(state, artifacts, createMemoryWorkflow(runtime));
   }
 
   async ingest(session: z.infer<typeof TimestampedSessionSchema>): Promise<void> {
     await this.#serialized(async () => {
-      this.state = await this.workflow.invoke({ ...this.state, action: "ingest", incomingSession: session });
+      this.state = await this.workflow.invoke({
+        ...this.state,
+        action: "ingest",
+        incomingSession: session,
+      });
     });
   }
 
-  async answer(question: string, questionDate: string): Promise<{ answer: AnswerResult; modelCalls: ModelCallRecord[] }> {
+  async answer(
+    question: string,
+    questionDate: string,
+  ): Promise<{ answer: AnswerResult; modelCalls: ModelCallRecord[] }> {
     return this.#serialized(async () => {
       this.state = await this.workflow.invoke({
         ...this.state,
@@ -183,16 +148,6 @@ class CaseRuntime {
         questionDate,
       });
       const answer = AnswerResultSchema.parse(this.state.answerResult);
-      if (this.#autoExportFinalSvg) {
-        try {
-          await this.artifacts.writeAtomic("final.svg", renderGraphSvg(this.state.graph));
-        } catch (error) {
-          await this.artifacts.append("warnings", {
-            type: "final_svg_export_failed",
-            message: errorMessage(error),
-          }).catch(() => undefined);
-        }
-      }
       const modelCalls = (await this.artifacts.readJsonl("model-calls/calls")).map((item) =>
         ModelCallRecordSchema.parse(item),
       );
@@ -202,7 +157,10 @@ class CaseRuntime {
 
   async #serialized<T>(operation: () => Promise<T>): Promise<T> {
     const current = this.#chain.then(operation, operation);
-    this.#chain = current.then(() => undefined, () => undefined);
+    this.#chain = current.then(
+      () => undefined,
+      () => undefined,
+    );
     return current;
   }
 }
@@ -286,7 +244,10 @@ lines.on("line", (line) => {
         protocolVersion: PROTOCOL_VERSION,
         id,
         ok: false,
-        error: { type: error instanceof Error ? error.name : "Error", message: errorMessage(error) },
+        error: {
+          type: error instanceof Error ? error.name : "Error",
+          message: errorMessage(error),
+        },
       });
     }
   })();

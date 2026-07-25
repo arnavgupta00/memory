@@ -159,7 +159,9 @@ class AgentConfig(BaseModel):
 
 
 class SelectionConfig(BaseModel):
-    strategy: Literal["all", "canonical-smoke", "canary-1", "canary-2"] = "all"
+    strategy: Literal[
+        "all", "canonical-smoke", "canary-1", "canary-2", "dev-9-v1", "dev-60-v1"
+    ] = "all"
 
 
 class ExecutionConfig(BaseModel):

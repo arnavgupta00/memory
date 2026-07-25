@@ -1,31 +1,31 @@
+import { renderAnswerPrompt } from "../answer/renderAnswerPrompt.js";
 import type { WorkflowRuntime } from "../runtime.js";
-import { createCandidateConstrainedFinalAnswerSchema } from "../services/finalAnswerSchema.js";
-import { graphHash } from "../services/graphMutations.js";
 import type { MemoryStateType, MemoryStateUpdate } from "../state.js";
+import { AnswerOutputSchema } from "../types.js";
 
 export function createFinalAnswerNode(runtime: WorkflowRuntime) {
   return async (state: MemoryStateType): Promise<MemoryStateUpdate> => {
-    if (!state.finalContext) throw new Error("finalAnswer requires compiled context");
-    const context = state.finalContext;
+    if (!state.retrieval) throw new Error("finalAnswer requires retrieval");
     await runtime.events.record(
       "node_started",
       { node: "finalAnswer", call_key: "answer:final" },
-      graphHash(state.graph),
+      null,
     );
-    const prompt = await runtime.prompts.render("final-answer", {
-      question: context.question,
-      question_date: context.questionDate,
-      reader_plan: JSON.stringify(context.readerPlan, null, 2),
-      evidence_package: JSON.stringify(context.evidencePackage.payload, null, 2),
-    });
+    const prompt = await renderAnswerPrompt(
+      {
+        question: state.question,
+        questionDate: state.questionDate,
+        retrieval: state.retrieval,
+        promptName: runtime.options.answer_prompt,
+      },
+      runtime.prompts,
+    );
     const response = await runtime.models.generateStructured({
       role: "answer",
       callKey: "answer:final",
       prompt,
-      schemaName: "final_answer_v1",
-      schema: createCandidateConstrainedFinalAnswerSchema(
-        context.evidencePackage.payload,
-      ),
+      schemaName: "answer_v1",
+      schema: AnswerOutputSchema,
       artifacts: runtime.artifacts,
     });
     return {

@@ -31,7 +31,7 @@ class SelectionStratum(BaseModel):
 
 class SliceManifest(BaseModel):
     schema_version: Literal[1] = 1
-    name: Literal["canary-1", "canary-2"]
+    name: Literal["canary-1", "canary-2", "dev-9-v1", "dev-60-v1"]
     purpose: str
     dataset_file: Literal["longmemeval_s_cleaned.json"] = "longmemeval_s_cleaned.json"
     dataset_sha256: str = Field(pattern=r"^[0-9a-f]{64}$")
@@ -55,7 +55,7 @@ def _is_abstention(case: BenchmarkCase) -> bool:
 
 
 def _slice_path(name: str) -> Path:
-    if name not in {"canary-1", "canary-2"}:
+    if name not in {"canary-1", "canary-2", "dev-9-v1", "dev-60-v1"}:
         raise ValueError(f"unsupported benchmark slice: {name}")
     return SLICES_DIR / f"{name}.json"
 
@@ -166,7 +166,7 @@ def resolve_selection(
             "strategy": strategy,
             "population_count": EXPECTED_CASES,
             "sample_count": len(manifest.question_ids),
-            "is_canary": True,
+            "is_canary": manifest.name.startswith("canary-"),
             "manifest_sha256": manifest_sha256,
         }
     )
