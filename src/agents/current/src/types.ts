@@ -44,6 +44,8 @@ export const TokenUsageSchema = z.strictObject({
   input_tokens: z.number().int().nonnegative().nullable(),
   output_tokens: z.number().int().nonnegative().nullable(),
   total_tokens: z.number().int().nonnegative().nullable(),
+  /** OpenAI Responses API: tokens spent inside reasoning, billed as output. */
+  reasoning_tokens: z.number().int().nonnegative().nullable().optional(),
 });
 export type TokenUsage = z.infer<typeof TokenUsageSchema>;
 
@@ -109,7 +111,17 @@ export const AnswerEvidenceSchema = z.strictObject({
   turnIndex: z.number().int().nonnegative().nullable(),
 });
 
+/** Dated fact pulled from memory before committing to a hypothesis. */
+export const EvidenceTableEntrySchema = z.strictObject({
+  date: z.string(),
+  fact: z.string().min(1),
+  // OpenAI structured outputs require every key; use null when unknown.
+  sessionId: z.string().min(1).nullable(),
+  turnIndex: z.number().int().nonnegative().nullable(),
+});
+
 export const AnswerOutputSchema = z.strictObject({
+  evidenceTable: z.array(EvidenceTableEntrySchema).max(32),
   hypothesis: z.string(),
   evidence: z.array(AnswerEvidenceSchema).max(16),
   supportStatus: z.enum(["supported", "insufficient"]),

@@ -76,6 +76,7 @@ export function createMapAnswerResultNode(runtime: WorkflowRuntime) {
         session_count: state.sessions.length,
         answer_call_count: 1,
         support_status: state.finalAnswerOutput.supportStatus,
+        evidence_table: state.finalAnswerOutput.evidenceTable as unknown as JsonObject[],
         retrieval: {
           span_count: state.retrieval.spans.length,
           character_count: state.retrieval.characterCount,

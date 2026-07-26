@@ -82,6 +82,7 @@ describe("mapAnswerResult", () => {
       ];
       state.retrieval = retrieval();
       state.finalAnswerOutput = {
+        evidenceTable: [],
         hypothesis: "should be ignored",
         supportStatus: "insufficient",
         evidence: [

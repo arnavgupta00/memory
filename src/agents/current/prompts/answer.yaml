@@ -27,7 +27,10 @@ messages:
         spans before answering.
       - If the retrieved memory does not contain the requested fact, abstain. Do not guess.
 
-      Return a structured result with:
+      Return a structured result with fields in this order:
+      - evidenceTable: dated facts from the memory whose entities bear on the
+        question. Include sessionId/turnIndex when available. Empty only when
+        nothing in memory bears on the question.
       - hypothesis: a concise direct answer, or empty when abstaining
       - supportStatus: supported | insufficient
       - evidence: session IDs and zero-based turn indexes copied exactly from the memory

@@ -22,7 +22,7 @@ export const ArchitectureOptionsSchema = z.strictObject({
   answer_prompt: z
     .string()
     .regex(/^[a-z][a-z0-9-]*$/)
-    .default("answer-v2-simple"),
+    .default("answer-v2-evidence"),
 });
 export type ArchitectureOptions = z.infer<typeof ArchitectureOptionsSchema>;
 

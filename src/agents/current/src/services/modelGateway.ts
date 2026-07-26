@@ -392,6 +392,8 @@ export class ModelGateway {
       throw new EmptyStructuredOutputError("OpenAI returned no parsed structured output");
     }
     const value = schema.parse(parsedOutput);
+    const reasoningTokens =
+      response.usage?.output_tokens_details?.reasoning_tokens ?? null;
     return {
       value,
       rawText: response.output_text,
@@ -399,6 +401,7 @@ export class ModelGateway {
         input_tokens: response.usage?.input_tokens ?? null,
         output_tokens: response.usage?.output_tokens ?? null,
         total_tokens: response.usage?.total_tokens ?? null,
+        reasoning_tokens: reasoningTokens,
       },
       requestId: response._request_id ?? null,
     };
@@ -434,6 +437,7 @@ export class ModelGateway {
           input_tokens: usage?.promptTokenCount ?? null,
           output_tokens: usage?.candidatesTokenCount ?? null,
           total_tokens: usage?.totalTokenCount ?? null,
+          reasoning_tokens: null,
         },
         requestId: response.responseId ?? null,
       };

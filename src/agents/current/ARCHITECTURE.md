@@ -1,7 +1,9 @@
 # Current architecture
 
-**Architecture ID:** `0004-session-retrieval-backbone`
-**Status:** frozen — canary-2 with `answer-v2-simple` **35/60 (58.3%)** · [checkpoint](architecture/0004-CHECKPOINT-2026-07-26.md)
+**Architecture ID:** `0004-session-retrieval-backbone` (revision **0004.1**)
+**Status:** frozen — `dev-60-v1` with evidenceTable + medium reasoning **54/60 (90.0%)** · [checkpoint](architecture/0004.1-CHECKPOINT-2026-07-26.md)
+
+Prior canary-2 freeze (simple prompt, reasoning off): **35/60 (58.3%)** · [0004 checkpoint](architecture/0004-CHECKPOINT-2026-07-26.md). The 90% figure is a contaminated development reading, not a canary result.
 
 The smallest system that can answer a LongMemEval question at all. It exists to produce an honest
 number that every later layer must beat.
@@ -54,13 +56,16 @@ One call receives the question, the question date, and the selected windows. It 
 result carrying the answer, a support status, and the window references it used. Abstention is an
 explicit supported outcome, not a fallback.
 
-The frozen default prompt is `prompts/answer-v2-simple.yaml` (`options.answer_prompt` defaults to
-`answer-v2-simple`). It narrows abstention to “nothing in memory bears on the question,” asks the
-model to answer the question that was asked (including advice shaped by stated tastes), and allows
-ordinary world knowledge for calendars and units. On `dev-60-v1` it beat the original `answer.yaml`
-by 20 points (56.7% vs 36.7%) and beat an explicit-rules variant (46.7%). On canary-2 it scored
-**35/60**, up from **27/60** with the original prompt on the same model; abstention held at 9/10.
-Canonical end-to-end config: `configs/architecture-0004-canary2-simple.yaml`.
+The frozen default prompt is `prompts/answer-v2-evidence.yaml` (`options.answer_prompt` defaults to
+`answer-v2-evidence`). It keeps the simple-prompt abstention rules and adds a required
+`evidenceTable` of dated memory facts before the hypothesis, so selection vs composition failures
+are observable in one call. Recommended answer settings: `reasoning_effort: medium`,
+`max_output_tokens: 16000` on `gpt-5.4-nano-2026-03-17`.
+
+On `dev-60-v1` the ladder was: simple/none **56.7%** → simple/medium **88.3%** → evidence/medium
+**90.0%**. On canary-2 the earlier simple/none configuration scored **35/60**. Canonical
+development config: `configs/architecture-0004-dev60-evidence.yaml`. Canary confirmation config
+(not yet run): `configs/architecture-0004-canary2-evidence-medium.yaml`.
 
 ## Measurement discipline
 

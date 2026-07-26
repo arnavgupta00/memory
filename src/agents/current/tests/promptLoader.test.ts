@@ -75,7 +75,7 @@ messages:
 
   test("loads both v2 answer prompt variants", async () => {
     const loader = new PromptLoader();
-    for (const name of ["answer-v2-simple", "answer-v2-rules"] as const) {
+    for (const name of ["answer-v2-simple", "answer-v2-rules", "answer-v2-evidence"] as const) {
       const rendered = await loader.render(name, {
         question: "q",
         question_date: "d",

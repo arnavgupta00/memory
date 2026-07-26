@@ -1,8 +1,8 @@
 schema_version: 1
-id: session-retrieval-answer-v2-simple
+id: session-retrieval-answer-v2-evidence
 description: >
-  Simplified answer prompt that answers the asked question, personalizes advice
-  from memory, and narrows abstention. Fill-ins use {{variable}} syntax.
+  answer-v2-simple plus a required evidenceTable emitted before the hypothesis,
+  so selection failures can be separated from composition failures.
 output_contract: answer_v1
 required_variables:
   - question
@@ -30,9 +30,10 @@ messages:
       Return a structured result with fields in this order:
       - evidenceTable: dated facts from the memory whose entities bear on the
         question (names, amounts, dates, owned items, preferences). Prefer the
-        user's own statements. Include sessionId/turnIndex when available.
-        Use an empty list only when nothing in memory bears on the question.
-      - hypothesis: a concise direct answer, or empty when abstaining
+        user's own statements. Set sessionId/turnIndex when known, otherwise null.
+        Do not leave this empty if any such fact exists.
+      - hypothesis: a concise direct answer built from evidenceTable, or empty
+        when abstaining
       - supportStatus: supported | insufficient
       - evidence: session IDs and zero-based turn indexes from the memory block
         when available (cite each pair at most once)
@@ -44,4 +45,6 @@ messages:
       Memory from earlier conversations (oldest first):
       {{retrieved_memory}}
 
-      Answer the question.
+      First list evidenceTable facts that share entities with the question.
+      Then answer the question using only that list. Do not abstain if the
+      list is non-empty.

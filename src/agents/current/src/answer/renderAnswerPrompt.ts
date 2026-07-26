@@ -17,7 +17,7 @@ export async function renderAnswerPrompt(
   input: AnswerPromptInput,
   loader = new PromptLoader(),
 ): Promise<PromptEnvelope> {
-  return loader.render(input.promptName ?? "answer-v2-simple", {
+  return loader.render(input.promptName ?? "answer-v2-evidence", {
     question: input.question,
     question_date: input.questionDate,
     retrieved_memory: formatRetrievedMemory(input.retrieval.spans),
