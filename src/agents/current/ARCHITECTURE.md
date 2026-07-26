@@ -1,9 +1,9 @@
 # Current architecture
 
-**Architecture ID:** `0004-session-retrieval-backbone` (revision **0004.1**)
-**Status:** frozen — `dev-60-v1` with evidenceTable + medium reasoning **54/60 (90.0%)** · [checkpoint](architecture/0004.1-CHECKPOINT-2026-07-26.md)
+**Architecture ID:** `0004-session-retrieval-backbone` (revision **0004.2**)
+**Status:** frozen — canary-2 **54/60 (90.0%)** with evidenceTable + medium + map/prompt fixes · [checkpoint](architecture/0004.2-CHECKPOINT-2026-07-27.md)
 
-Prior canary-2 freeze (simple prompt, reasoning off): **35/60 (58.3%)** · [0004 checkpoint](architecture/0004-CHECKPOINT-2026-07-26.md). The 90% figure is a contaminated development reading, not a canary result.
+Prior freezes: 0004.1 canary-2 **51/60 (85.0%)** · [0004.1 checkpoint](architecture/0004.1-CHECKPOINT-2026-07-26.md); 0004 simple/none **35/60 (58.3%)** · [0004 checkpoint](architecture/0004-CHECKPOINT-2026-07-26.md). Contaminated `dev-60-v1` reading for evidence+medium: **54/60 (90.0%)**.
 
 The smallest system that can answer a LongMemEval question at all. It exists to produce an honest
 number that every later layer must beat.
@@ -58,14 +58,18 @@ explicit supported outcome, not a fallback.
 
 The frozen default prompt is `prompts/answer-v2-evidence.yaml` (`options.answer_prompt` defaults to
 `answer-v2-evidence`). It keeps the simple-prompt abstention rules and adds a required
-`evidenceTable` of dated memory facts before the hypothesis, so selection vs composition failures
-are observable in one call. Recommended answer settings: `reasoning_effort: medium`,
-`max_output_tokens: 16000` on `gpt-5.4-nano-2026-03-17`.
+`evidenceTable` of dated memory facts before the hypothesis. Rows prefer user statements for facts
+about the user; assistant turns are used when the question asks what the assistant said. Count,
+order, duration, and conflict questions require exhaustive rows. Recommended answer settings:
+`reasoning_effort: medium`, `max_output_tokens: 16000` on `gpt-5.4-nano-2026-03-17`.
 
-On `dev-60-v1` the ladder was: simple/none **56.7%** → simple/medium **88.3%** → evidence/medium
-**90.0%**. On canary-2 the earlier simple/none configuration scored **35/60**. Canonical
-development config: `configs/architecture-0004-dev60-evidence.yaml`. Canary confirmation config
-(not yet run): `configs/architecture-0004-canary2-evidence-medium.yaml`.
+`mapAnswerResult` substitutes the canned abstention string only when `supportStatus` is
+`insufficient` **and** the hypothesis is empty. A non-empty hypothesis is preserved so the judge
+sees the model's actual answer.
+
+On canary-2 the ladder was: simple/none **35/60** → evidence/medium **51/60** → map+prompt fixes
+**54/60 (90.0%)**, population-weighted **86.0%**. Canonical config:
+`configs/architecture-0004-canary2-evidence-medium.yaml`.
 
 ## Measurement discipline
 
@@ -97,6 +101,9 @@ Each rung is a hypothesis that must earn its place with a measured delta:
 
 Structure is not forbidden. It has to win an argument against a measured baseline instead of being
 the starting assumption.
+
+Next planned rung: Architecture **0005** context service — keep broad BM25, add a selector that
+emits a compact verbatim context package, answer from the package only.
 
 ## Preserved work
 

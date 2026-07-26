@@ -65,11 +65,16 @@ export function createMapAnswerResultNode(runtime: WorkflowRuntime) {
       });
     }
 
+    // Only substitute the canned abstention when the model left hypothesis empty.
+    // Overwriting a non-empty answer on `insufficient` hides correct work from the
+    // judge (e.g. a completed sum that the model then marked insufficient).
+    const rawHypothesis = state.finalAnswerOutput.hypothesis.trim();
     const insufficient = state.finalAnswerOutput.supportStatus === "insufficient";
     const answer: AnswerResult = {
-      hypothesis: insufficient
-        ? UNAVAILABLE_MEMORY_HYPOTHESIS
-        : state.finalAnswerOutput.hypothesis,
+      hypothesis:
+        insufficient && rawHypothesis.length === 0
+          ? UNAVAILABLE_MEMORY_HYPOTHESIS
+          : state.finalAnswerOutput.hypothesis,
       evidence,
       trace: {
         architecture_id: ARCHITECTURE_ID,

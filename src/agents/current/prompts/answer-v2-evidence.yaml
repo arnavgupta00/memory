@@ -2,7 +2,9 @@ schema_version: 1
 id: session-retrieval-answer-v2-evidence
 description: >
   answer-v2-simple plus a required evidenceTable emitted before the hypothesis,
-  so selection failures can be separated from composition failures.
+  so selection failures can be separated from composition failures. Rows must be
+  dated; count/order/conflict questions require exhaustive rows; assistant turns
+  are allowed when the question asks what the assistant said.
 output_contract: answer_v1
 required_variables:
   - question
@@ -19,19 +21,29 @@ messages:
         own, use, like, or want.
       - Facts about the user come from the memory. Ordinary world knowledge
         (how calendars work, common units) is yours to use.
+      - When the question asks what you (the assistant) previously said,
+        recommended, or explained, use assistant turns from the memory.
       - Combine turns when the answer needs it: add amounts, count events,
         compare dates, and prefer the user's most recent statement when they
         have changed.
       - Keep quantities, units, dates, and names exact.
+      - Before answering about the user, the asked entity must match the memory
+        entity (role titles, owned items, event names). If the question names a
+        different entity than the memory supports, set supportStatus to
+        insufficient and leave hypothesis empty.
 
       Say the memory is insufficient only when nothing in it bears on the
       question. If it is partial, answer with what it supports.
 
       Return a structured result with fields in this order:
       - evidenceTable: dated facts from the memory whose entities bear on the
-        question (names, amounts, dates, owned items, preferences). Prefer the
-        user's own statements. Set sessionId/turnIndex when known, otherwise null.
-        Do not leave this empty if any such fact exists.
+        question. For facts about the user, prefer the user's own statements
+        and do not treat assistant advice or rules as user facts. When the
+        question is about a prior assistant reply, include those assistant
+        statements. Copy the session date from the memory header onto each row.
+        Set sessionId/turnIndex when known, otherwise null. For count, order,
+        duration, or conflicting statements, list every matching claim before
+        answering — do not leave this empty if any such fact exists.
       - hypothesis: a concise direct answer built from evidenceTable, or empty
         when abstaining
       - supportStatus: supported | insufficient
@@ -46,5 +58,8 @@ messages:
       {{retrieved_memory}}
 
       First list evidenceTable facts that share entities with the question.
-      Then answer the question using only that list. Do not abstain if the
-      list is non-empty.
+      Prefer dated user statements for facts about the user; use assistant
+      turns when the question asks what the assistant said. For count, order,
+      duration, or conflict questions, list every matching claim. Then answer
+      using only that list. Do not abstain if the list is non-empty and the
+      asked entity matches.

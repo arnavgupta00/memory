@@ -44,31 +44,35 @@ function retrieval(): RetrievalResult {
   };
 }
 
+function makeRuntime(root: string): WorkflowRuntime {
+  const artifacts = new ArtifactStore(root);
+  return {
+    options: {
+      window_turns: 2,
+      window_stride: 1,
+      top_k: 48,
+      char_budget: 80_000,
+      max_turn_chars: 4_000,
+      temporal_boost: 0.15,
+      answer_prompt: "answer",
+    },
+    artifacts,
+    events: new EventRecorder(artifacts),
+    models: {
+      generateStructured: () => Promise.reject(new Error("unused")),
+    },
+    prompts: {
+      render: () => Promise.reject(new Error("unused")),
+    } as unknown as WorkflowRuntime["prompts"],
+  };
+}
+
 describe("mapAnswerResult", () => {
-  it("forces abstention text on insufficient and drops unknown citations", async () => {
+  it("uses canned abstention only when insufficient and hypothesis is empty", async () => {
     const root = await mkdtemp(join(tmpdir(), "backbone-map-"));
     try {
-      const artifacts = new ArtifactStore(root);
-      await artifacts.initialize();
-      const runtime: WorkflowRuntime = {
-        options: {
-          window_turns: 2,
-          window_stride: 1,
-          top_k: 48,
-          char_budget: 80_000,
-          max_turn_chars: 4_000,
-          temporal_boost: 0.15,
-          answer_prompt: "answer",
-        },
-        artifacts,
-        events: new EventRecorder(artifacts),
-        models: {
-          generateStructured: () => Promise.reject(new Error("unused")),
-        },
-        prompts: {
-          render: () => Promise.reject(new Error("unused")),
-        } as unknown as WorkflowRuntime["prompts"],
-      };
+      const runtime = makeRuntime(root);
+      await runtime.artifacts.initialize();
       const state = emptyState("case-1");
       state.sessions = [
         {
@@ -83,7 +87,7 @@ describe("mapAnswerResult", () => {
       state.retrieval = retrieval();
       state.finalAnswerOutput = {
         evidenceTable: [],
-        hypothesis: "should be ignored",
+        hypothesis: "   ",
         supportStatus: "insufficient",
         evidence: [
           { sessionId: "s1", turnIndex: 0 },
@@ -109,6 +113,53 @@ describe("mapAnswerResult", () => {
           "dropped_duplicate_evidence:s1:0",
         ]),
       );
+    } finally {
+      await rm(root, { recursive: true, force: true });
+    }
+  });
+
+  it("preserves a non-empty hypothesis even when supportStatus is insufficient", async () => {
+    const root = await mkdtemp(join(tmpdir(), "backbone-map-keep-"));
+    try {
+      const runtime = makeRuntime(root);
+      await runtime.artifacts.initialize();
+      const state = emptyState("case-2");
+      state.sessions = [
+        {
+          session_id: "s1",
+          date: "2023-01-01",
+          turns: [
+            { role: "user", content: "hi" },
+            { role: "assistant", content: "hello" },
+          ],
+        },
+      ];
+      state.retrieval = retrieval();
+      state.finalAnswerOutput = {
+        evidenceTable: [
+          {
+            date: "2023-01-01",
+            fact: "17 poems",
+            sessionId: "s1",
+            turnIndex: 0,
+          },
+        ],
+        hypothesis: "17 + 5 + 1 = 23 pieces completed.",
+        supportStatus: "insufficient",
+        evidence: [{ sessionId: "s1", turnIndex: 0 }],
+      };
+      state.answerGeneration = {
+        text: "{}",
+        model: "test",
+        provider: "openai",
+        usage: { input_tokens: 1, output_tokens: 1, total_tokens: 2 },
+        latency_ms: 1,
+        request_id: null,
+        retry_count: 0,
+      };
+      const update = await createMapAnswerResultNode(runtime)(state);
+      expect(update.answerResult?.hypothesis).toBe("17 + 5 + 1 = 23 pieces completed.");
+      expect(update.answerResult?.trace?.support_status).toBe("insufficient");
     } finally {
       await rm(root, { recursive: true, force: true });
     }
