@@ -89,6 +89,32 @@ messages:
     }
   });
 
+  test("loads select-v4 and answer-v5-package prompts", async () => {
+    const loader = new PromptLoader();
+    const select = await loader.render("select-v4", {
+      question: "q",
+      question_date: "d",
+      retrieved_memory: "m",
+      package_max_turns: "24",
+    });
+    expect(select.promptId).toContain("select");
+    expect(select.messages.some((message) => message.content.includes("candidateStatus"))).toBe(
+      true,
+    );
+    expect(
+      select.messages.some((message) => message.content.includes("SESSION level")),
+    ).toBe(true);
+    const answer = await loader.render("answer-v5-package", {
+      question: "q",
+      question_date: "d",
+      context_package: "pkg",
+    });
+    expect(answer.promptId).toContain("package");
+    const system = answer.messages.find((message) => message.role === "system")?.content ?? "";
+    expect(system).toContain('substitute "0"');
+    expect(system).toContain("Advice / tips / suggestions / recommendations");
+  });
+
   test("renderAnswerPrompt fills retrieved_memory from spans", async () => {
     const spans: SelectedSpan[] = [
       {
@@ -121,7 +147,7 @@ messages:
     });
     const user = rendered.messages.find((message) => message.role === "user")?.content ?? "";
     expect(user).toContain(formatRetrievedMemory(spans));
-    expect(user).toContain("[user turn=0]");
+    expect(user).toContain("[user sessionId=s1 turnIndex=0]");
     expect(user).toContain("I studied biology.");
   });
 });

@@ -1,0 +1,57 @@
+name: architecture-0005-canary2-context-service
+mode: full-context
+agent:
+  backend: node
+  entrypoint: src/agents/current/dist/host.js
+  provider_model_limits:
+    - provider: openai
+      model: gpt-5.4-nano-2026-03-17
+      max_concurrency: 2
+      token_budget: 200000
+      window_seconds: 60
+  models:
+    select:
+      kind: generation
+      provider: openai
+      model: gpt-5.4-nano-2026-03-17
+      temperature: 1
+      reasoning_effort: low
+      max_output_tokens: 8000
+      timeout_seconds: 300
+      concurrency: 2
+      max_retries: 6
+      input_price_per_million: 0.20
+      output_price_per_million: 1.25
+  options:
+    window_turns: 2
+    window_stride: 1
+    top_k: 48
+    char_budget: 80000
+    max_turn_chars: 4000
+    temporal_boost: 0.15
+    select_enabled: true
+    select_prompt: select-v1
+    package_max_turns: 40
+    package_char_budget: 40000
+    answer_prompt: answer-v3-package
+answer:
+  provider: openai
+  model: gpt-5.4-nano-2026-03-17
+  temperature: 1
+  reasoning_effort: medium
+  max_output_tokens: 16000
+  timeout_seconds: 300
+  concurrency: 2
+  max_retries: 6
+  input_price_per_million: 0.20
+  output_price_per_million: 1.25
+judge:
+  provider: openai
+  model: gpt-4o-2024-08-06
+  temperature: 0
+selection:
+  strategy: canary-2
+execution:
+  case_concurrency: 2
+  capture_model_io: true
+  auto_export_final_svg: false

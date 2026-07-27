@@ -4,6 +4,7 @@ import { z } from "zod";
 import {
   AnswerOutputSchema,
   AnswerResultSchema,
+  ContextPackageSchema,
   NormalizedGenerationSchema,
   TimestampedSessionSchema,
 } from "./types.js";
@@ -21,6 +22,8 @@ export const MemoryState = new StateSchema({
   question: z.string(),
   questionDate: z.string(),
   retrieval: RetrievalResultSchema.nullable(),
+  contextPackage: ContextPackageSchema.nullable(),
+  selectGeneration: NormalizedGenerationSchema.nullable(),
   finalAnswerOutput: AnswerOutputSchema.nullable(),
   answerGeneration: NormalizedGenerationSchema.nullable(),
   answerResult: AnswerResultSchema.nullable(),
@@ -40,6 +43,8 @@ export function emptyState(caseId: string): MemoryStateType {
     question: "",
     questionDate: "",
     retrieval: null,
+    contextPackage: null,
+    selectGeneration: null,
     finalAnswerOutput: null,
     answerGeneration: null,
     answerResult: null,

@@ -55,6 +55,13 @@ function makeRuntime(root: string): WorkflowRuntime {
       max_turn_chars: 4_000,
       temporal_boost: 0.15,
       answer_prompt: "answer",
+      select_enabled: false,
+      select_prompt: "select-v2",
+      package_max_turns: 24,
+      package_char_budget: 12_000,
+      package_supporting_enabled: true,
+      package_sibling_sessions_enabled: true,
+      package_sibling_session_max: 12,
     },
     artifacts,
     events: new EventRecorder(artifacts),
@@ -159,7 +166,9 @@ describe("mapAnswerResult", () => {
       };
       const update = await createMapAnswerResultNode(runtime)(state);
       expect(update.answerResult?.hypothesis).toBe("17 + 5 + 1 = 23 pieces completed.");
-      expect(update.answerResult?.trace?.support_status).toBe("insufficient");
+      expect((update.answerResult?.trace as { support_status?: string }).support_status).toBe(
+        "insufficient",
+      );
     } finally {
       await rm(root, { recursive: true, force: true });
     }

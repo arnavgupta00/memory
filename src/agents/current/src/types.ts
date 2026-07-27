@@ -128,6 +128,46 @@ export const AnswerOutputSchema = z.strictObject({
 });
 export type AnswerOutput = z.infer<typeof AnswerOutputSchema>;
 
+/** Selector model emits references; the node resolves verbatim text from sessions. */
+export const SelectOutputSchema = z.strictObject({
+  queryShape: z.enum(["lookup", "aggregate", "order", "update-conflict"]),
+  setBoundary: z.string(),
+  candidateStatus: z.enum(["found", "none_found"]),
+  missingRisk: z.string(),
+  items: z
+    .array(
+      z.strictObject({
+        sessionId: z.string().min(1),
+        turnIndex: z.number().int().nonnegative(),
+        why: z.string(),
+      }),
+    )
+    .max(48),
+});
+export type SelectOutput = z.infer<typeof SelectOutputSchema>;
+
+export const ContextPackageItemSchema = z.strictObject({
+  sessionId: z.string().min(1),
+  turnIndex: z.number().int().nonnegative(),
+  date: z.string().min(1),
+  role: z.enum(["user", "assistant"]),
+  text: z.string(),
+  why: z.string(),
+  tier: z.enum(["selected", "supporting"]),
+});
+export type ContextPackageItem = z.infer<typeof ContextPackageItemSchema>;
+
+export const ContextPackageSchema = z.strictObject({
+  queryShape: z.enum(["lookup", "aggregate", "order", "update-conflict"]),
+  setBoundary: z.string(),
+  candidateStatus: z.enum(["found", "none_found"]),
+  missingRisk: z.string(),
+  items: z.array(ContextPackageItemSchema).max(48),
+  characterCount: z.number().int().nonnegative(),
+  estimatedTokens: z.number().int().nonnegative(),
+});
+export type ContextPackage = z.infer<typeof ContextPackageSchema>;
+
 export const AnswerResultSchema = z.strictObject({
   hypothesis: z.string(),
   evidence: z.array(

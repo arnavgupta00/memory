@@ -316,6 +316,9 @@ def _expected_call_counts(
             if trace.get("architecture_id") == "0003.2-hybrid-graph-reader":
                 expected["reader"] += int(trace.get("reader_call_count") or 1)
             expected["answer"] += 1
+        elif trace.get("architecture_id") == "0005-context-service":
+            expected["select"] += int(trace.get("select_call_count") or 0)
+            expected["answer"] += int(trace.get("answer_call_count") or 1)
         else:
             expected["answer"] += 1
     roles = sorted(set(expected) | set(usage_by_role))

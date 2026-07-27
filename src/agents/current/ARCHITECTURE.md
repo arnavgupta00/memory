@@ -1,12 +1,13 @@
 # Current architecture
 
-**Architecture ID:** `0004-session-retrieval-backbone` (revision **0004.2**)
-**Status:** frozen — canary-2 **54/60 (90.0%)** with evidenceTable + medium + map/prompt fixes · [checkpoint](architecture/0004.2-CHECKPOINT-2026-07-27.md)
+**Architecture ID:** `0005-context-service` (revision **0005.3**)
+**Status:** frozen — canary-2 **54/60 (90.0%)**, abstention **10/10**, pop-weighted **92.0%**, cost **~$0.29** · [0005.3 checkpoint](architecture/0005.3-CHECKPOINT-2026-07-27.md) · [0005.2](architecture/0005.2-CHECKPOINT-2026-07-27.md) · [0004.2](architecture/0004.2-CHECKPOINT-2026-07-27.md)
 
-Prior freezes: 0004.1 canary-2 **51/60 (85.0%)** · [0004.1 checkpoint](architecture/0004.1-CHECKPOINT-2026-07-26.md); 0004 simple/none **35/60 (58.3%)** · [0004 checkpoint](architecture/0004-CHECKPOINT-2026-07-26.md). Contaminated `dev-60-v1` reading for evidence+medium: **54/60 (90.0%)**.
+Prior freezes: 0004.2 **54/60**; 0004.1 **51/60**; 0004 simple/none **35/60**. Contaminated `dev-60-v1` evidence+medium: **54/60 (90.0%)**.
 
-The smallest system that can answer a LongMemEval question at all. It exists to produce an honest
-number that every later layer must beat.
+Active line: broad BM25 retrieval, then a selector that emits a compact verbatim context
+package for a separate answerer. The 0004.2 single-call answerer remains available when
+`select_enabled` is false.
 
 ## Decision
 
@@ -16,13 +17,13 @@ available to guide it.
 
 ```text
 ingest(session)   → append verbatim to the case store        (zero model calls)
-answer(question)  → BM25 over turn windows
-                  → top-K windows into one prompt
-                  → answer with explicit abstention          (one model call)
+answer(question)  → BM25 over turn windows (broad bundle)
+                  → selectContext → verbatim context package (one model call)
+                  → answer from package only                 (one model call)
 ```
 
-For `N` sessions the agent makes exactly **one** model call per question and **zero** during
-ingestion, against `floor(N/B) + floor(N/C) + 2` in Architecture 0003.2.
+For `N` sessions with `select_enabled`, the agent makes **two** model calls per question and
+**zero** during ingestion. With `select_enabled: false`, it falls back to the 0004.2 single call.
 
 ## Why this shape
 

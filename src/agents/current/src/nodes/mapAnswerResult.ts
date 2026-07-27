@@ -80,8 +80,34 @@ export function createMapAnswerResultNode(runtime: WorkflowRuntime) {
         architecture_id: ARCHITECTURE_ID,
         session_count: state.sessions.length,
         answer_call_count: 1,
+        select_call_count: state.selectGeneration ? 1 : 0,
         support_status: state.finalAnswerOutput.supportStatus,
         evidence_table: state.finalAnswerOutput.evidenceTable as unknown as JsonObject[],
+        context_package: state.contextPackage
+          ? ({
+              query_shape: state.contextPackage.queryShape,
+              set_boundary: state.contextPackage.setBoundary,
+              candidate_status: state.contextPackage.candidateStatus,
+              missing_risk: state.contextPackage.missingRisk,
+              item_count: state.contextPackage.items.length,
+              selected_count: state.contextPackage.items.filter(
+                (item) => item.tier === "selected",
+              ).length,
+              supporting_count: state.contextPackage.items.filter(
+                (item) => item.tier === "supporting",
+              ).length,
+              character_count: state.contextPackage.characterCount,
+              estimated_tokens: state.contextPackage.estimatedTokens,
+              items: state.contextPackage.items.map((item) => ({
+                session_id: item.sessionId,
+                turn_index: item.turnIndex,
+                date: item.date,
+                role: item.role,
+                why: item.why,
+                tier: item.tier,
+              })),
+            } as unknown as JsonObject)
+          : null,
         retrieval: {
           span_count: state.retrieval.spans.length,
           character_count: state.retrieval.characterCount,

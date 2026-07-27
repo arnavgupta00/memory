@@ -178,8 +178,14 @@ class AgentHost {
       const scheduleStore = new ArtifactStore(
         resolve(this.#initialization.runRoot, "agent-artifacts"),
       );
+      const roles = {
+        answer: this.#initialization.roles.answer,
+        ...(this.#initialization.roles.select
+          ? { select: this.#initialization.roles.select }
+          : {}),
+      };
       this.#models = await ModelGateway.create({
-        roles: this.#initialization.roles,
+        roles,
         captureModelIo: this.#initialization.captureModelIo,
         providerModelLimits: this.#initialization.providerModelLimits,
         scheduleStore,

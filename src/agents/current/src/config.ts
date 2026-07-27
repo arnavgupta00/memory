@@ -23,6 +23,17 @@ export const ArchitectureOptionsSchema = z.strictObject({
     .string()
     .regex(/^[a-z][a-z0-9-]*$/)
     .default("answer-v2-evidence"),
+  select_enabled: z.boolean().default(false),
+  select_prompt: z
+    .string()
+    .regex(/^[a-z][a-z0-9-]*$/)
+    .default("select-v2"),
+  package_max_turns: z.number().int().positive().max(64).default(40),
+  package_char_budget: z.number().int().positive().max(200_000).default(40_000),
+  package_supporting_enabled: z.boolean().default(true),
+  /** For aggregate/order: pull entity-overlapping sibling sessions into SUPPORTING. */
+  package_sibling_sessions_enabled: z.boolean().default(true),
+  package_sibling_session_max: z.number().int().positive().max(32).default(12),
 });
 export type ArchitectureOptions = z.infer<typeof ArchitectureOptionsSchema>;
 
@@ -32,6 +43,7 @@ export const HostInitializationSchema = z
     runRoot: z.string().min(1),
     roles: z.strictObject({
       answer: ProviderRoleConfigSchema,
+      select: ProviderRoleConfigSchema.optional(),
     }),
     providerModelLimits: z.array(ProviderModelLimitSchema).min(1),
     options: ArchitectureOptionsSchema,
@@ -51,6 +63,7 @@ export const HostInitializationSchema = z
     }
     const available = new Set(keys);
     for (const [role, config] of Object.entries(value.roles)) {
+      if (!config) continue;
       if (!available.has(`${config.provider}\u0000${config.model}`)) {
         context.addIssue({
           code: "custom",
@@ -59,8 +72,18 @@ export const HostInitializationSchema = z
         });
       }
     }
+    if (value.options.select_enabled && value.roles.select === undefined) {
+      context.addIssue({
+        code: "custom",
+        path: ["roles", "select"],
+        message: "select_enabled requires a select role configuration",
+      });
+    }
   });
 export type HostInitialization = z.infer<typeof HostInitializationSchema>;
 
-export type RoleName = "answer";
-export type RoleConfigs = Record<RoleName, ProviderRoleConfig>;
+export type RoleName = "answer" | "select";
+export type RoleConfigs = {
+  answer: ProviderRoleConfig;
+  select?: ProviderRoleConfig;
+};

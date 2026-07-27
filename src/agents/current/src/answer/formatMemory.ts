@@ -7,7 +7,10 @@ export function formatRetrievedMemory(spans: SelectedSpan[]): string {
     .map((span) => {
       const header = `### session ${span.sessionId} | date ${span.date} | turns ${String(span.startTurn)}-${String(span.endTurn)}`;
       const turns = span.turns
-        .map((turn) => `[${turn.role} turn=${String(turn.turnIndex)}]\n${turn.content}`)
+        .map(
+          (turn) =>
+            `[${turn.role} sessionId=${span.sessionId} turnIndex=${String(turn.turnIndex)}]\n${turn.content}`,
+        )
         .join("\n\n");
       return `${header}\n${turns}`;
     })

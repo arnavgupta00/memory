@@ -115,7 +115,7 @@ export class ModelGateway {
   readonly #roles: RoleConfigs;
   readonly #captureModelIo: boolean;
   readonly #executors: ProviderExecutors;
-  readonly #semaphores: Record<RoleName, RoleSemaphore>;
+  readonly #semaphores: Partial<Record<RoleName, RoleSemaphore>>;
   readonly #sharedLimiters = new Map<string, ProviderModelRateLimiter>();
   readonly #lastRequestAt: Partial<Record<RoleName, number>> = {};
   #openai: OpenAI | null = null;
@@ -133,6 +133,9 @@ export class ModelGateway {
     this.#semaphores = {
       answer: new RoleSemaphore(roles.answer.concurrency),
     };
+    if (roles.select) {
+      this.#semaphores.select = new RoleSemaphore(roles.select.concurrency);
+    }
     for (const configured of options.providerModelLimits ?? []) {
       const limit: ProviderModelLimit = {
         provider: configured.provider,
@@ -182,6 +185,9 @@ export class ModelGateway {
     artifacts: ArtifactStore;
   }): Promise<StructuredGeneration<T>> {
     const config = this.#roles[args.role];
+    if (!config) {
+      throw new Error(`model role is not configured: ${args.role}`);
+    }
     const artifactName = `model-calls/${safeCallKey(args.callKey)}.json`;
     const cached = await args.artifacts.readJson<{
       schemaVersion: number;
@@ -356,7 +362,11 @@ export class ModelGateway {
       this.#lastRequestAt[args.role] = performance.now();
       return { value: result.value, rawText: result.rawText, generation, call, reused: false };
     };
-    return this.#semaphores[args.role].use(execute);
+    const semaphore = this.#semaphores[args.role];
+    if (!semaphore) {
+      throw new Error(`model role semaphore is not configured: ${args.role}`);
+    }
+    return semaphore.use(execute);
   }
 
   async #pace(role: RoleName, config: ProviderRoleConfig): Promise<void> {
