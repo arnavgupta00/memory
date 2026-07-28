@@ -9,6 +9,9 @@ export function createFinalAnswerNode(runtime: WorkflowRuntime) {
     if (runtime.options.select_enabled && !state.contextPackage) {
       throw new Error("finalAnswer requires a context package when select_enabled");
     }
+    if (runtime.options.format_enabled && !state.contextDigest) {
+      throw new Error("finalAnswer requires a context digest when format_enabled");
+    }
     await runtime.events.record(
       "node_started",
       { node: "finalAnswer", call_key: "answer:final" },
@@ -30,6 +33,7 @@ export function createFinalAnswerNode(runtime: WorkflowRuntime) {
         questionDate: state.questionDate,
         retrieval: state.retrieval,
         contextPackage: state.contextPackage,
+        contextDigest: state.contextDigest,
         promptName,
       },
       runtime.prompts,

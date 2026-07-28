@@ -129,7 +129,7 @@ export const AnswerOutputSchema = z.strictObject({
 export type AnswerOutput = z.infer<typeof AnswerOutputSchema>;
 
 /** Selector model emits references; the node resolves verbatim text from sessions. */
-export const SelectOutputSchema = z.strictObject({
+export const SelectOutputBaseSchema = z.strictObject({
   queryShape: z.enum(["lookup", "aggregate", "order", "update-conflict"]),
   setBoundary: z.string(),
   candidateStatus: z.enum(["found", "none_found"]),
@@ -144,7 +144,17 @@ export const SelectOutputSchema = z.strictObject({
     )
     .max(48),
 });
-export type SelectOutput = z.infer<typeof SelectOutputSchema>;
+
+export const SelectOutputSchema = SelectOutputBaseSchema;
+export type SelectOutput = z.infer<typeof SelectOutputSchema> & {
+  expandSessions?: string[];
+};
+
+/** Select-v5 / session-routing: includes expandSessions. */
+export const SelectOutputWithExpandSchema = SelectOutputBaseSchema.extend({
+  expandSessions: z.array(z.string().min(1)).max(16),
+});
+export type SelectOutputWithExpand = z.infer<typeof SelectOutputWithExpandSchema>;
 
 export const ContextPackageItemSchema = z.strictObject({
   sessionId: z.string().min(1),
@@ -167,6 +177,35 @@ export const ContextPackageSchema = z.strictObject({
   estimatedTokens: z.number().int().nonnegative(),
 });
 export type ContextPackage = z.infer<typeof ContextPackageSchema>;
+
+/** Call-1.5 formatter output: normalized dated facts from the ContextPackage. */
+export const ContextDigestFactSchema = z.strictObject({
+  id: z.string().min(1),
+  date: z.string(),
+  sessionId: z.string().min(1).nullable(),
+  turnIndex: z.number().int().nonnegative().nullable(),
+  statement: z.string().min(1),
+});
+
+export const ContextDigestConflictSchema = z.strictObject({
+  entity: z.string().min(1),
+  factIds: z.array(z.string().min(1)).min(2).max(8),
+  note: z.string(),
+});
+
+export const ContextDigestSetMemberSchema = z.strictObject({
+  member: z.string().min(1),
+  factId: z.string().min(1).nullable(),
+  date: z.string(),
+});
+
+export const ContextDigestSchema = z.strictObject({
+  facts: z.array(ContextDigestFactSchema).max(48),
+  conflicts: z.array(ContextDigestConflictSchema).max(16),
+  setMembers: z.array(ContextDigestSetMemberSchema).max(48),
+  omittedNote: z.string(),
+});
+export type ContextDigest = z.infer<typeof ContextDigestSchema>;
 
 export const AnswerResultSchema = z.strictObject({
   hypothesis: z.string(),

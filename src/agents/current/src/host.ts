@@ -183,6 +183,9 @@ class AgentHost {
         ...(this.#initialization.roles.select
           ? { select: this.#initialization.roles.select }
           : {}),
+        ...(this.#initialization.roles.format
+          ? { format: this.#initialization.roles.format }
+          : {}),
       };
       this.#models = await ModelGateway.create({
         roles,

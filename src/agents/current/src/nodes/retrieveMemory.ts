@@ -19,6 +19,8 @@ export function createRetrieveMemoryNode(runtime: WorkflowRuntime) {
         maxTurnChars: runtime.options.max_turn_chars,
         temporalBoost: runtime.options.temporal_boost,
       },
+      seriesExpandEnabled: runtime.options.series_expand_enabled,
+      seriesExpandMax: runtime.options.series_expand_max,
     });
     await runtime.artifacts.writeAtomic("retrieval.json", {
       span_count: retrieval.spans.length,

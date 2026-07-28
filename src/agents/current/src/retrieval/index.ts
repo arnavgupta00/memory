@@ -27,3 +27,14 @@ export {
   normalizeRetrievalText,
   tokenizeRetrievalText,
 } from "./tokenize.js";
+export {
+  buildSessionIndex,
+  formatSessionIndex,
+  type SessionIndexEntry,
+  type SessionIndexOptions,
+} from "./sessionIndex.js";
+export {
+  expandSeriesSiblingSpans,
+  seriesPrefix,
+  sessionToFullSpan,
+} from "./seriesExpand.js";

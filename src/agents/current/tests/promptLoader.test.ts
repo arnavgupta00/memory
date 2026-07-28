@@ -89,7 +89,7 @@ messages:
     }
   });
 
-  test("loads select-v4 and answer-v5-package prompts", async () => {
+  test("loads select-v4/v5 and answer-v6-package prompts", async () => {
     const loader = new PromptLoader();
     const select = await loader.render("select-v4", {
       question: "q",
@@ -104,7 +104,19 @@ messages:
     expect(
       select.messages.some((message) => message.content.includes("SESSION level")),
     ).toBe(true);
-    const answer = await loader.render("answer-v5-package", {
+    const selectV5 = await loader.render("select-v5", {
+      question: "q",
+      question_date: "d",
+      retrieved_memory: "m",
+      session_index: "idx",
+      package_max_turns: "24",
+      session_expand_max: "8",
+    });
+    expect(selectV5.messages.some((message) => message.content.includes("expandSessions"))).toBe(
+      true,
+    );
+    expect(selectV5.messages.some((message) => message.content.includes("idx"))).toBe(true);
+    const answer = await loader.render("answer-v6-package", {
       question: "q",
       question_date: "d",
       context_package: "pkg",
@@ -112,6 +124,8 @@ messages:
     expect(answer.promptId).toContain("package");
     const system = answer.messages.find((message) => message.role === "system")?.content ?? "";
     expect(system).toContain('substitute "0"');
+    expect(system).toContain("Aggregate / count");
+    expect(system).toContain("explicit date arithmetic");
     expect(system).toContain("Advice / tips / suggestions / recommendations");
   });
 

@@ -1,12 +1,14 @@
 # Current architecture
 
-**Architecture ID:** `0005-context-service` (revision **0005.3**)
-**Status:** frozen — canary-2 **54/60 (90.0%)**, abstention **10/10**, pop-weighted **92.0%**, cost **~$0.29** · [0005.3 checkpoint](architecture/0005.3-CHECKPOINT-2026-07-27.md) · [0005.2](architecture/0005.2-CHECKPOINT-2026-07-27.md) · [0004.2](architecture/0004.2-CHECKPOINT-2026-07-27.md)
+**Architecture ID:** `0005-context-service` (revision **0005.4** — active)
+**Status:** active — canary-1 **124/150 (82.7%)**, abstention **14/15**, pop-weighted **83.3%**, cost **~$0.75** · [0005.4 freeze 2026-07-28](architecture/0005.4-CHECKPOINT-2026-07-28.md) · [prior](architecture/0005.4-CHECKPOINT-2026-07-27.md) · [0005.3](architecture/0005.3-CHECKPOINT-2026-07-27.md)
 
-Prior freezes: 0004.2 **54/60**; 0004.1 **51/60**; 0004 simple/none **35/60**. Contaminated `dev-60-v1` evidence+medium: **54/60 (90.0%)**.
+Preserved (not active): Luna low Call-2 **127/150** (rolled back); format middle-agent killed on canary-2; [0005.5 answer-v6](architecture/0005.5-CHECKPOINT-2026-07-27.md); [0006 session-routing](architecture/0006-CHECKPOINT-2026-07-28.md) (122/150). Prior freezes: 0005.3 canary-2 **54/60**; 0004.2 **54/60**.
 
 Active line: broad BM25 retrieval, then a selector that emits a compact verbatim context
-package for a separate answerer. The 0004.2 single-call answerer remains available when
+package for a separate answerer. Package assembly may resolve any turn from a session that
+contributed at least one BM25 span (full-session reach). Session index / series expand /
+answer-v6 stay off. The 0004.2 single-call answerer remains available when
 `select_enabled` is false.
 
 ## Decision

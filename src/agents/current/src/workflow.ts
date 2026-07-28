@@ -1,6 +1,7 @@
 import { END, START, StateGraph } from "@langchain/langgraph";
 
 import { createFinalAnswerNode } from "./nodes/finalAnswer.js";
+import { createFormatContextNode } from "./nodes/formatContext.js";
 import { createIngestSessionNode } from "./nodes/ingestSession.js";
 import { createMapAnswerResultNode } from "./nodes/mapAnswerResult.js";
 import { createRetrieveMemoryNode } from "./nodes/retrieveMemory.js";
@@ -15,10 +16,14 @@ export function createMemoryWorkflow(runtime: WorkflowRuntime) {
   const afterRetrieve = () =>
     runtime.options.select_enabled ? "selectContext" : "finalAnswer";
 
+  const afterSelect = () =>
+    runtime.options.format_enabled ? "formatContext" : "finalAnswer";
+
   return new StateGraph(MemoryState)
     .addNode("ingestSession", createIngestSessionNode(runtime))
     .addNode("retrieveMemory", createRetrieveMemoryNode(runtime))
     .addNode("selectContext", createSelectContextNode(runtime))
+    .addNode("formatContext", createFormatContextNode(runtime))
     .addNode("finalAnswer", createFinalAnswerNode(runtime))
     .addNode("mapAnswerResult", createMapAnswerResultNode(runtime))
     .addConditionalEdges(START, routeAction, {
@@ -31,7 +36,11 @@ export function createMemoryWorkflow(runtime: WorkflowRuntime) {
       selectContext: "selectContext",
       finalAnswer: "finalAnswer",
     })
-    .addEdge("selectContext", "finalAnswer")
+    .addConditionalEdges("selectContext", afterSelect, {
+      formatContext: "formatContext",
+      finalAnswer: "finalAnswer",
+    })
+    .addEdge("formatContext", "finalAnswer")
     .addEdge("finalAnswer", "mapAnswerResult")
     .addEdge("mapAnswerResult", END)
     .compile();

@@ -210,6 +210,8 @@ function main(): void {
       question: raw.question,
       siblingSessionsEnabled: true,
       siblingSessionMax: 12,
+      fullSessionEnabled: true,
+      sessionTurnMax: 24,
     });
 
     const gold = answerTurnKeys(raw);

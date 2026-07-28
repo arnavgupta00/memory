@@ -15,7 +15,8 @@
     "gate:recall": "node --import tsx --max-old-space-size=8192 src/scripts/recallGate.ts",
     "gate:context": "node --import tsx --max-old-space-size=8192 src/scripts/contextGate.ts",
     "report:package": "node --import tsx --max-old-space-size=8192 src/scripts/packageReport.ts",
-    "gate:package-rebuild": "node --import tsx --max-old-space-size=8192 src/scripts/packageRebuildGate.ts"
+    "gate:package-rebuild": "node --import tsx --max-old-space-size=8192 src/scripts/packageRebuildGate.ts",
+    "gate:session-routing": "node --import tsx --max-old-space-size=8192 src/scripts/sessionRoutingGate.ts"
   },
   "dependencies": {
     "@google/genai": "2.13.0",

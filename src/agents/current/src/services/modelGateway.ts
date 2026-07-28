@@ -136,6 +136,9 @@ export class ModelGateway {
     if (roles.select) {
       this.#semaphores.select = new RoleSemaphore(roles.select.concurrency);
     }
+    if (roles.format) {
+      this.#semaphores.format = new RoleSemaphore(roles.format.concurrency);
+    }
     for (const configured of options.providerModelLimits ?? []) {
       const limit: ProviderModelLimit = {
         provider: configured.provider,

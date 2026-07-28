@@ -36,6 +36,9 @@ class NodeAgentHost:
         self._stderr_task = stderr_task
         self._reader_task = asyncio.create_task(self._read_responses())
         self._write_lock = asyncio.Lock()
+        # Serialize full request/response cycles. Concurrent reset/answer replies can
+        # each be hundreds of KB; overlapping stdout writes deadlocked the pipe.
+        self._request_lock = asyncio.Lock()
         self._pending: dict[str, asyncio.Future[JsonValue]] = {}
         self._next_id = 0
 
@@ -58,6 +61,9 @@ class NodeAgentHost:
             raise FileNotFoundError(
                 f"Node agent is not built: {entrypoint}. Run `pnpm agent:build`."
             )
+        # Reset/answer payloads can be multi‑MB (full resumed sessions). The default
+        # asyncio StreamReader limit is 64KiB; exceeding it kills the reader task and
+        # permanently hangs the pending RPC.
         process = await asyncio.create_subprocess_exec(
             "node",
             str(entrypoint),
@@ -65,6 +71,7 @@ class NodeAgentHost:
             stdin=asyncio.subprocess.PIPE,
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE,
+            limit=16 * 1024 * 1024,
         )
         stderr_task = asyncio.create_task(_capture_stderr(process, run_path / "agent-host.log"))
         host = cls(process, stderr_task)
@@ -110,24 +117,25 @@ class NodeAgentHost:
     async def request(self, method: str, params: JsonObject) -> JsonValue:
         if self._process.returncode is not None:
             raise NodeAgentError(f"Node agent host exited with code {self._process.returncode}")
-        self._next_id += 1
-        request_id = str(self._next_id)
-        loop = asyncio.get_running_loop()
-        future: asyncio.Future[JsonValue] = loop.create_future()
-        self._pending[request_id] = future
-        request = {
-            "protocolVersion": PROTOCOL_VERSION,
-            "id": request_id,
-            "method": method,
-            "params": params,
-        }
-        stdin = self._process.stdin
-        if stdin is None:
-            raise NodeAgentError("Node agent host stdin is unavailable")
-        async with self._write_lock:
-            stdin.write((json.dumps(request, separators=(",", ":")) + "\n").encode())
-            await stdin.drain()
-        return await future
+        async with self._request_lock:
+            self._next_id += 1
+            request_id = str(self._next_id)
+            loop = asyncio.get_running_loop()
+            future: asyncio.Future[JsonValue] = loop.create_future()
+            self._pending[request_id] = future
+            request = {
+                "protocolVersion": PROTOCOL_VERSION,
+                "id": request_id,
+                "method": method,
+                "params": params,
+            }
+            stdin = self._process.stdin
+            if stdin is None:
+                raise NodeAgentError("Node agent host stdin is unavailable")
+            async with self._write_lock:
+                stdin.write((json.dumps(request, separators=(",", ":")) + "\n").encode())
+                await stdin.drain()
+            return await future
 
     async def close(self) -> None:
         if self._process.returncode is None:
@@ -146,30 +154,42 @@ class NodeAgentHost:
         stdout = self._process.stdout
         if stdout is None:
             return
-        while line := await stdout.readline():
-            try:
-                response = json.loads(line)
-                request_id = str(response["id"])
-                future = self._pending.pop(request_id, None)
-                if future is None:
-                    continue
-                if response.get("protocolVersion") != PROTOCOL_VERSION:
-                    future.set_exception(NodeAgentError("Node agent protocol version mismatch"))
-                elif response.get("ok") is True:
-                    future.set_result(response.get("result"))
-                else:
-                    error = response.get("error") or {}
-                    future.set_exception(
-                        NodeAgentError(
-                            f"{error.get('type', 'NodeAgentError')}: "
-                            f"{error.get('message', 'unknown Node agent failure')}"
+        try:
+            while line := await stdout.readline():
+                try:
+                    response = json.loads(line)
+                    request_id = str(response["id"])
+                    future = self._pending.pop(request_id, None)
+                    if future is None:
+                        continue
+                    if response.get("protocolVersion") != PROTOCOL_VERSION:
+                        future.set_exception(
+                            NodeAgentError("Node agent protocol version mismatch")
                         )
-                    )
-            except Exception as exc:
-                for future in self._pending.values():
-                    if not future.done():
-                        future.set_exception(NodeAgentError(f"invalid Node host response: {exc}"))
-                self._pending.clear()
+                    elif response.get("ok") is True:
+                        future.set_result(response.get("result"))
+                    else:
+                        error = response.get("error") or {}
+                        future.set_exception(
+                            NodeAgentError(
+                                f"{error.get('type', 'NodeAgentError')}: "
+                                f"{error.get('message', 'unknown Node agent failure')}"
+                            )
+                        )
+                except Exception as exc:
+                    for future in self._pending.values():
+                        if not future.done():
+                            future.set_exception(
+                                NodeAgentError(f"invalid Node host response: {exc}")
+                            )
+                    self._pending.clear()
+        except Exception as exc:
+            error = NodeAgentError(f"Node agent host stdout reader failed: {exc}")
+            for future in self._pending.values():
+                if not future.done():
+                    future.set_exception(error)
+            self._pending.clear()
+            return
         if self._pending:
             error = NodeAgentError(
                 f"Node agent host closed stdout with code {self._process.returncode}"

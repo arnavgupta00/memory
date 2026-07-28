@@ -12,6 +12,7 @@ const sessions: TimestampedSession[] = [
       { role: "user", content: "I bought three apples." },
       { role: "assistant", content: "Nice." },
       { role: "user", content: "Then two more." },
+      { role: "user", content: "Also a pear later that day." },
     ],
   },
   {
@@ -31,11 +32,10 @@ const spans: SelectedSpan[] = [
     sessionId: "s1",
     date: "2023-01-01",
     startTurn: 0,
-    endTurn: 2,
+    endTurn: 1,
     turns: [
       { turnIndex: 0, role: "user", content: "I bought three apples.", truncated: false },
       { turnIndex: 1, role: "assistant", content: "Nice.", truncated: false },
-      { turnIndex: 2, role: "user", content: "Then two more.", truncated: false },
     ],
     bestRank: 1,
     bestScore: 1,
@@ -148,11 +148,77 @@ describe("buildContextPackage", () => {
       packageSupportingEnabled: true,
       question: "How many apples did I buy?",
       siblingSessionsEnabled: true,
+      fullSessionEnabled: true,
     });
     const keys = built.package.items.map((item) => `${item.sessionId}:${String(item.turnIndex)}`);
-    expect(keys).toEqual(expect.arrayContaining(["s1:0", "s1:2"]));
+    expect(keys).toEqual(expect.arrayContaining(["s1:0", "s1:2", "s1:3"]));
     expect(keys).not.toContain("s2:0");
     expect(keys).not.toContain("s3:0");
+  });
+
+  it("full-session mode resolves selected turns outside matched BM25 windows", () => {
+    const built = buildContextPackage({
+      selectOutput: {
+        queryShape: "lookup",
+        setBoundary: "pear",
+        candidateStatus: "found",
+        missingRisk: "n/a",
+        items: [{ sessionId: "s1", turnIndex: 3, why: "pear outside window" }],
+      },
+      sessions,
+      spans,
+      packageMaxTurns: 24,
+      packageCharBudget: 12_000,
+      packageSupportingEnabled: false,
+      fullSessionEnabled: true,
+    });
+    expect(built.package.items.map((item) => `${item.sessionId}:${String(item.turnIndex)}`)).toEqual([
+      "s1:3",
+    ]);
+    expect(built.warnings).not.toContain("dropped_unknown_select:s1:3");
+  });
+
+  it("full-session mode can be disabled to keep turn-in-span gating", () => {
+    const built = buildContextPackage({
+      selectOutput: {
+        queryShape: "lookup",
+        setBoundary: "pear",
+        candidateStatus: "found",
+        missingRisk: "n/a",
+        items: [{ sessionId: "s1", turnIndex: 3, why: "pear outside window" }],
+      },
+      sessions,
+      spans,
+      packageMaxTurns: 24,
+      packageCharBudget: 12_000,
+      packageSupportingEnabled: false,
+      fullSessionEnabled: false,
+    });
+    expect(built.package.items).toHaveLength(0);
+    expect(built.warnings).toContain("dropped_unknown_select:s1:3");
+  });
+
+  it("respects package_session_turn_max under full-session expansion", () => {
+    const built = buildContextPackage({
+      selectOutput: {
+        queryShape: "lookup",
+        setBoundary: "apples",
+        candidateStatus: "found",
+        missingRisk: "n/a",
+        items: [{ sessionId: "s1", turnIndex: 0, why: "three" }],
+      },
+      sessions,
+      spans,
+      packageMaxTurns: 24,
+      packageCharBudget: 12_000,
+      packageSupportingEnabled: true,
+      question: "How many apples did I buy?",
+      siblingSessionsEnabled: false,
+      fullSessionEnabled: true,
+      sessionTurnMax: 1,
+    });
+    const supporting = built.package.items.filter((item) => item.tier === "supporting");
+    expect(supporting).toHaveLength(0);
   });
 
   it("aggregate pulls entity-overlapping sibling sessions into supporting", () => {
@@ -172,9 +238,10 @@ describe("buildContextPackage", () => {
       question: "How many apples did I buy?",
       siblingSessionsEnabled: true,
       siblingSessionMax: 12,
+      fullSessionEnabled: true,
     });
     const keys = built.package.items.map((item) => `${item.sessionId}:${String(item.turnIndex)}`);
-    expect(keys).toEqual(expect.arrayContaining(["s1:0", "s1:2", "s2:0"]));
+    expect(keys).toEqual(expect.arrayContaining(["s1:0", "s1:2", "s1:3", "s2:0"]));
     expect(keys).not.toContain("s3:0");
     expect(built.package.items.find((item) => item.sessionId === "s2")?.tier).toBe("supporting");
     expect(built.package.items.find((item) => item.sessionId === "s2")?.why).toContain("sibling");
@@ -196,6 +263,7 @@ describe("buildContextPackage", () => {
       packageSupportingEnabled: true,
       question: "How many apples did I buy?",
       siblingSessionsEnabled: false,
+      fullSessionEnabled: true,
     });
     const keys = built.package.items.map((item) => `${item.sessionId}:${String(item.turnIndex)}`);
     expect(keys).not.toContain("s2:0");
@@ -219,6 +287,7 @@ describe("buildContextPackage", () => {
       packageMaxTurns: 1,
       packageCharBudget: 12_000,
       packageSupportingEnabled: false,
+      fullSessionEnabled: true,
     });
     expect(built.package.items).toHaveLength(1);
     expect(built.warnings).toContain("dropped_package_max_turns");

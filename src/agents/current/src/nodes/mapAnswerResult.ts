@@ -81,8 +81,18 @@ export function createMapAnswerResultNode(runtime: WorkflowRuntime) {
         session_count: state.sessions.length,
         answer_call_count: 1,
         select_call_count: state.selectGeneration ? 1 : 0,
+        format_call_count: state.formatGeneration ? 1 : 0,
+        format_mode: runtime.options.format_enabled ? runtime.options.format_mode : null,
         support_status: state.finalAnswerOutput.supportStatus,
         evidence_table: state.finalAnswerOutput.evidenceTable as unknown as JsonObject[],
+        context_digest: state.contextDigest
+          ? ({
+              fact_count: state.contextDigest.facts.length,
+              conflict_count: state.contextDigest.conflicts.length,
+              set_member_count: state.contextDigest.setMembers.length,
+              omitted_note: state.contextDigest.omittedNote,
+            } as unknown as JsonObject)
+          : null,
         context_package: state.contextPackage
           ? ({
               query_shape: state.contextPackage.queryShape,
