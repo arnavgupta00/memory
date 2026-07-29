@@ -1,0 +1,45 @@
+{
+  "session_id": "sharegpt_J9HjTMU_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have an existing repository that contains a render.yml used for infrastructure.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to use my existing repository with render.yml instead of creating a new repository.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want the Nginx container to run on HTTPS publicly.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "existing repository",
+    "render.yml",
+    "Render Blueprint",
+    "nginx container",
+    "port setting",
+    "HTTPS public deployment",
+    "render.com services URL",
+    "docker run port mapping"
+  ],
+  "events": [
+    {
+      "text": "User asks whether an existing repository with render.yml can be used instead of creating a new repository.",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "User asks what port should be used for the Render Blueprint/container.",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "User requests running the Nginx container on HTTPS publicly.",
+      "date_hint": "",
+      "turn_index": 6
+    }
+  ]
+}

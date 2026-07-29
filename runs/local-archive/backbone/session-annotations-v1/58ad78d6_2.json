@@ -1,0 +1,96 @@
+{
+  "session_id": "58ad78d6_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to visit my alma mater.",
+      "turn_index": 0
+    },
+    {
+      "text": "I visited my alma mater in early April for my friend Rachel's Master's graduation ceremony.",
+      "turn_index": 0
+    },
+    {
+      "text": "My alma mater is the same university where Rachel got her Master's degree.",
+      "turn_index": 2
+    },
+    {
+      "text": "My alma mater is located in the downtown area.",
+      "turn_index": 2
+    },
+    {
+      "text": "I walked around the campus with Rachel after her Master's graduation ceremony.",
+      "turn_index": 2
+    },
+    {
+      "text": "I grabbed coffee at an old favorite café where we used to study for exams.",
+      "turn_index": 2
+    },
+    {
+      "text": "I attended Rachel's Master's graduation ceremony in early April.",
+      "turn_index": 4
+    },
+    {
+      "text": "I attended the graduation ceremony in early April so I am familiar with the campus layout.",
+      "turn_index": 4
+    },
+    {
+      "text": "I would rather not mention the university's name.",
+      "turn_index": 6
+    },
+    {
+      "text": "The campus is surrounded by a mix of old and new buildings.",
+      "turn_index": 6
+    },
+    {
+      "text": "There is a big park nearby where students often hang out.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been thinking about graduations a lot lately.",
+      "turn_index": 8
+    },
+    {
+      "text": "Rachel's Master's graduation ceremony in early April was a great celebration.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "trip to alma mater",
+    "coffee spots near campus",
+    "early April",
+    "Rachel's Master's graduation ceremony",
+    "downtown campus",
+    "walking distance",
+    "old favorite café",
+    "studied for exams",
+    "campus layout",
+    "old and new buildings",
+    "big park nearby",
+    "students hang out",
+    "insider knowledge",
+    "what to do on campus"
+  ],
+  "events": [
+    {
+      "text": "Rachel's Master's graduation ceremony at the alma mater",
+      "date_hint": "early April",
+      "turn_index": 0
+    },
+    {
+      "text": "Walking around the campus with Rachel after the ceremony and grabbing coffee",
+      "date_hint": "after early April ceremony",
+      "turn_index": 2
+    },
+    {
+      "text": "Attending Rachel's Master's graduation ceremony",
+      "date_hint": "early April",
+      "turn_index": 4
+    },
+    {
+      "text": "Thinking about graduations after Rachel's Master's graduation ceremony",
+      "date_hint": "lately (after early April)",
+      "turn_index": 8
+    }
+  ]
+}

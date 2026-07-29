@@ -1,0 +1,89 @@
+{
+  "session_id": "75621e39_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am working on a thesis about AI in healthcare.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need help finding relevant articles on deep learning applications in cancer diagnosis.",
+      "turn_index": 0
+    },
+    {
+      "text": "I sent out 50 survey requests to medical professionals to gather their opinions on the current state of AI in healthcare.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in exploring the application of deep learning in cancer diagnosis.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am specifically interested in deep learning for cancer diagnosis using medical imaging.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want insights on how to get started building a deep learning model for medical image analysis.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am interested in key considerations and best practices for building a deep learning model for medical image analysis.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am interested in the data preprocessing step for medical image analysis.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want information on data augmentation techniques to increase the size and diversity of a medical imaging dataset.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want more information on how to implement data augmentation techniques in PyTorch.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want examples of how to use the Albumentations library for data augmentation.",
+      "turn_index": 8
+    },
+    {
+      "text": "I provided additional Albumentations examples including Random rotation with A.Rotate(limit=30, p=0.5).",
+      "turn_index": 10
+    },
+    {
+      "text": "I provided additional Albumentations examples including RandomBrightnessContrast with brightness_limit=0.2, contrast_limit=0.2, p=0.5.",
+      "turn_index": 10
+    },
+    {
+      "text": "I provided additional Albumentations examples including Gaussian blur with blur_limit=5, p=0.5.",
+      "turn_index": 10
+    },
+    {
+      "text": "I provided additional Albumentations examples including GridDistortion with num_steps=5, distort_limit=0.3, p=0.5.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "AI in healthcare thesis",
+    "deep learning applications",
+    "cancer diagnosis",
+    "medical imaging",
+    "survey requests to medical professionals",
+    "current state of AI in healthcare",
+    "data preprocessing medical images",
+    "data augmentation techniques",
+    "PyTorch data augmentation",
+    "Albumentations library",
+    "Random rotation A.Rotate",
+    "RandomBrightnessContrast",
+    "Gaussian blur A.GaussianBlur",
+    "Grid distortion A.GridDistortion"
+  ],
+  "events": [
+    {
+      "text": "Sent out 50 survey requests to medical professionals about the current state of AI in healthcare.",
+      "date_hint": "",
+      "turn_index": 0
+    }
+  ]
+}

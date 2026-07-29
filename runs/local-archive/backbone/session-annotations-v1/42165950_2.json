@@ -1,0 +1,80 @@
+{
+  "session_id": "42165950_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to keep track of Max's vet appointments and medication.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need reminders for when to apply flea and tick prevention medication to Max again.",
+      "turn_index": 0
+    },
+    {
+      "text": "I recently got Max a new collar and leash set about a month ago.",
+      "turn_index": 2
+    },
+    {
+      "text": "The new collar and leash set has been convenient for Max's daily walks.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to set up a calendar for Max's vet appointments and medication.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to track when I need to order more of Luna's favorite wet food.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to track when I need to wash Max's favorite toys.",
+      "turn_index": 4
+    },
+    {
+      "text": "I need to order Luna's favorite wet food every month.",
+      "turn_index": 6
+    },
+    {
+      "text": "I need to apply flea and tick prevention medication to Max every month.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to set up multiple recurring events in Pet Calendar.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to use Pet Calendar to track Max's daily walks and playtime.",
+      "turn_index": 10
+    },
+    {
+      "text": "I think I will try out Pet Calendar because it seems simple and easy to use.",
+      "turn_index": 4
+    }
+  ],
+  "keyphrases": [
+    "Max vet appointments",
+    "Max medication tracking",
+    "flea and tick prevention medication",
+    "recurring events",
+    "Pet Calendar app",
+    "digital calendars for pet care",
+    "Luna favorite wet food",
+    "ordering wet food monthly",
+    "washing Max favorite toys",
+    "collar and leash set",
+    "daily walks tracking",
+    "playtime tracking"
+  ],
+  "events": [
+    {
+      "text": "Order Luna's favorite wet food every month",
+      "date_hint": "every month",
+      "turn_index": 6
+    },
+    {
+      "text": "Apply flea and tick prevention medication to Max every month",
+      "date_hint": "every month",
+      "turn_index": 8
+    }
+  ]
+}

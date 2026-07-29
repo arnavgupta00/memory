@@ -1,0 +1,61 @@
+{
+  "session_id": "e4201b70",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning to plant my tomato seedlings outside this weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am in the Northern Hemisphere.",
+      "turn_index": 2
+    },
+    {
+      "text": "My zip code is 29651.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of planting marigolds with my tomatoes to deter nematodes.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am planning to plant my peas on a trellis.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been experimenting with making my own potting soil using a mix of peat moss, vermiculite, and perlite.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "tomato seedlings",
+    "average temperature",
+    "sunlight hours",
+    "planting this weekend",
+    "zip code 29651",
+    "Northern Hemisphere spring",
+    "companion planting",
+    "marigolds with tomatoes",
+    "deter nematodes",
+    "plant spacing marigolds",
+    "crop rotation",
+    "garden crop rotation plan",
+    "peas trellis support",
+    "additional support for peas",
+    "homemade potting soil",
+    "peat moss vermiculite perlite mix",
+    "potting soil for peas"
+  ],
+  "events": [
+    {
+      "text": "Planning to plant tomato seedlings outside this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 0
+    },
+    {
+      "text": "It is currently spring",
+      "date_hint": "spring",
+      "turn_index": 2
+    }
+  ]
+}

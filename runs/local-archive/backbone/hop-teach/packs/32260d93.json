@@ -1,0 +1,718 @@
+{
+  "question_id": "32260d93",
+  "question_type": "single-session-preference",
+  "question": "Can you recommend a show or movie for me to watch tonight?",
+  "question_date": "2023/05/30 (Tue) 23:43",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_0250ae1c"
+  ],
+  "haystack_session_count": 46,
+  "notes_coverage": "full",
+  "annotated_session_count": 46,
+  "gold_sessions": [
+    {
+      "session_id": "answer_0250ae1c",
+      "date": "2023/05/29 (Mon) 04:39",
+      "has_notes": true,
+      "notes_text": "[session_id] answer_0250ae1c\n[session_date] 2023/05/29 (Mon) 04:39\n[facts]\n- I am an aspiring stand-up comedian.\n- I am looking for advice on how to improve my stand-up comedy craft.\n- I want stand-up comedy specials on Netflix with strong storytelling abilities like John Mulaney's 'Kid Gorgeous'.\n- I am thinking about recording a video of myself performing my jokes.\n- I plan to put the video on YouTube.\n- I want tips on how to set up a good home recording studio for comedy videos.\n- I want online resources or books on comedy writing and storytelling to improve my craft.\n- I want online resources or books on building a personal brand as a comedian and creating an online presence.\n- I am thinking of attending a comedy writing workshop at a local writing center on Friday.\n- I am going to attend the comedy writing workshop on Friday.\n- I am looking forward to learning from experienced instructors at the workshop.\n- I am looking forward to getting feedback on my work at the workshop.\n- I am looking forward to networking with other writers at the workshop.\n[keyphrases] aspiring stand-up comedian; Netflix stand-up specials; John Mulaney Kid Gorgeous; comedy storytelling; home recording studio setup; recording comedy videos; YouTube posting; comedy writing resources; comedy storytelling books; personal brand for comedians; online presence; comedy writing workshop; local writing center; networking with writers; feedback from instructors\n[events]\n- Attending a comedy writing workshop at a local writing center (Friday)\n- Considering attending a comedy writing workshop at a local writing center (Friday)",
+      "user_turns": "[turn 0] As an aspiring stand-up comedian, I'm looking for some advice on how to improve my craft. Can you recommend some stand-up comedy specials on Netflix with strong storytelling abilities like John Mulaney's 'Kid Gorgeous'?\n\n[turn 2] I've been thinking about recording a video of myself performing some of my jokes and putting it up on YouTube. Do you have any tips on how to set up a good home recording studio for comedy videos?\n\n[turn 4] Can you recommend some online resources or books on comedy writing and storytelling that can help me improve my craft?\n\n[turn 6] Can you recommend some online resources or books on building a personal brand as a comedian and creating a online presence?\n\n[turn 8] I'm thinking of attending a comedy writing workshop at a local writing center on Friday. Do you think that's a good idea?\n\n[turn 10] I'm going to attend the comedy writing workshop on Friday. I'm looking forward to learning from experienced instructors, getting feedback on my work, and networking with other writers."
+    }
+  ],
+  "luna_h6_trace": {
+    "full_gold_in_bag": false,
+    "bag": [
+      "573dc24b_1",
+      "6d3f5c68_4"
+    ],
+    "steps": [
+      {
+        "hop": 1,
+        "tool": "bm25_notes",
+        "args": {
+          "query": "shows movies to watch tonight streaming recommendations favorite genres",
+          "top_k": 10
+        },
+        "result_summary": "10 hits",
+        "hits": [
+          {
+            "sessionId": "ultrachat_507667",
+            "rank": 1,
+            "score": 7.8377890129809575,
+            "snippet": "I am looking for Chinese restaurant recommendations in San Francisco. | I think I will try Z & Y Restaurant first. | I love spicy food. | keyphrases: Chinese restaurants; San Francisco; Z & Y Restaurant; personal favorite dish; spicy food; Chongqing Spicy Chicken",
+            "matchedTerms": [
+              "recommendation",
+              "favorite"
+            ]
+          },
+          {
+            "sessionId": "573dc24b_1",
+            "rank": 2,
+            "score": 5.3876341600689654,
+            "snippet": "I finished binging the entire \"Crime Junkie\" podcast in 5 days. | I am hooked on the true crime genre. | I listened to \"Crime Junkie\" for 5 days straight. | keyphrases: true crime podcasts; Crime Junkie; binge in 5 days; self-improvement podcasts; How I Built This; personal deve…",
+            "matchedTerms": [
+              "recommendation",
+              "genre"
+            ]
+          },
+          {
+            "sessionId": "ultrachat_136348",
+            "rank": 3,
+            "score": 4.285279055149764,
+            "snippet": "keyphrases: CFL marketing approach; CFL branding; North American sports leagues comparison; expand reach beyond Canada; CFL popularity expansion; develop star players",
+            "matchedTerms": [
+              "stream"
+            ]
+          },
+          {
+            "sessionId": "sharegpt_8jxRz9U_0",
+            "rank": 4,
+            "score": 2.738560158947873,
+            "snippet": "I want a WordPress function that allows me to use a shortcode to display a list of custom posts. | I want the shortcode to let me specify how many posts to display. | I want the shortcode to let me specify a category. | keyphrases: WordPress shortcode; custom post type; custom p…",
+            "matchedTerms": [
+              "show"
+            ]
+          },
+          {
+            "sessionId": "ultrachat_486807",
+            "rank": 5,
+            "score": 2.3853256916906056,
+            "snippet": "keyphrases: Thai cuisine ingredients; typical ingredients in Thai cooking; popular Thai dishes; Thai restaurant recommendation; good Thai restaurant in the area; Thai cookbooks",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "551c9f06",
+            "rank": 6,
+            "score": 2.062379464521154,
+            "snippet": "I am trying to get more organized with my snack planning. | I want a weekly snack schedule so I can prep healthy options on the weekends. | I want recommendations for healthy sweet treats that I can make at home. | keyphrases: weekly snack schedule; snack prep on weekends; healt…",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "6d3f5c68_4",
+            "rank": 7,
+            "score": 2.0147990602764434,
+            "snippet": "I am looking for book recommendations on ancient civilizations. | I attended a lecture series at the History Museum later in February. | I am particularly interested in ancient Egypt. | keyphrases: ancient civilizations book recommendations; History Museum lecture series; ancien…",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "ultrachat_339024",
+            "rank": 8,
+            "score": 1.7440992860971287,
+            "snippet": "I want to train my dog to stop barking excessively. | I have been consistent with my training. | Sometimes my dog does not seem to listen. | keyphrases: train dog stop excessive barking; dog barking training; consistent dog training; dog not listening; training timing; enticing …",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "5ace29d7_1",
+            "rank": 9,
+            "score": 1.2944184834064805,
+            "snippet": "I am looking for recommendations on mindfulness apps that can complement my daily podcast routine. | I have been dedicating a significant amount of time to listening to podcasts. | I have a consistent weekly routine for listening to podcasts. | keyphrases: mindfulness apps; podc…",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "1b26bdd5_5",
+            "rank": 10,
+            "score": 1.191976151717886,
+            "snippet": "I am trying to visualize my travel history on a calendar over the past few months. | I am flying to Denver, Colorado for a family vacation today. | I think I have location history enabled in Google Timeline. | keyphrases: visualize travel history; calendar travel history; Google…",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          }
+        ]
+      },
+      {
+        "hop": 1,
+        "tool": "add_sessions",
+        "args": {
+          "session_ids": [
+            "573dc24b_1"
+          ]
+        },
+        "result_summary": "added=[\"573dc24b_1\"] bag_size=1 rejected=[]",
+        "added": [
+          "573dc24b_1"
+        ]
+      },
+      {
+        "hop": 2,
+        "tool": "bm25_notes",
+        "args": {
+          "query": "shows movies watch tonight recommendations streaming preferences favorite genres",
+          "top_k": 10
+        },
+        "result_summary": "10 hits",
+        "hits": [
+          {
+            "sessionId": "ultrachat_507667",
+            "rank": 1,
+            "score": 7.8377890129809575,
+            "snippet": "I am looking for Chinese restaurant recommendations in San Francisco. | I think I will try Z & Y Restaurant first. | I love spicy food. | keyphrases: Chinese restaurants; San Francisco; Z & Y Restaurant; personal favorite dish; spicy food; Chongqing Spicy Chicken",
+            "matchedTerms": [
+              "recommendation",
+              "favorite"
+            ]
+          },
+          {
+            "sessionId": "573dc24b_1",
+            "rank": 2,
+            "score": 5.3876341600689654,
+            "snippet": "I finished binging the entire \"Crime Junkie\" podcast in 5 days. | I am hooked on the true crime genre. | I listened to \"Crime Junkie\" for 5 days straight. | keyphrases: true crime podcasts; Crime Junkie; binge in 5 days; self-improvement podcasts; How I Built This; personal deve…",
+            "matchedTerms": [
+              "recommendation",
+              "genre"
+            ]
+          },
+          {
+            "sessionId": "ultrachat_136348",
+            "rank": 3,
+            "score": 4.285279055149764,
+            "snippet": "keyphrases: CFL marketing approach; CFL branding; North American sports leagues comparison; expand reach beyond Canada; CFL popularity expansion; develop star players",
+            "matchedTerms": [
+              "stream"
+            ]
+          },
+          {
+            "sessionId": "sharegpt_8jxRz9U_0",
+            "rank": 4,
+            "score": 2.738560158947873,
+            "snippet": "I want a WordPress function that allows me to use a shortcode to display a list of custom posts. | I want the shortcode to let me specify how many posts to display. | I want the shortcode to let me specify a category. | keyphrases: WordPress shortcode; custom post type; custom p…",
+            "matchedTerms": [
+              "show"
+            ]
+          },
+          {
+            "sessionId": "ultrachat_486807",
+            "rank": 5,
+            "score": 2.3853256916906056,
+            "snippet": "keyphrases: Thai cuisine ingredients; typical ingredients in Thai cooking; popular Thai dishes; Thai restaurant recommendation; good Thai restaurant in the area; Thai cookbooks",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "551c9f06",
+            "rank": 6,
+            "score": 2.062379464521154,
+            "snippet": "I am trying to get more organized with my snack planning. | I want a weekly snack schedule so I can prep healthy options on the weekends. | I want recommendations for healthy sweet treats that I can make at home. | keyphrases: weekly snack schedule; snack prep on weekends; healt…",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "6d3f5c68_4",
+            "rank": 7,
+            "score": 2.0147990602764434,
+            "snippet": "I am looking for book recommendations on ancient civilizations. | I attended a lecture series at the History Museum later in February. | I am particularly interested in ancient Egypt. | keyphrases: ancient civilizations book recommendations; History Museum lecture series; ancien…",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "ultrachat_339024",
+            "rank": 8,
+            "score": 1.7440992860971287,
+            "snippet": "I want to train my dog to stop barking excessively. | I have been consistent with my training. | Sometimes my dog does not seem to listen. | keyphrases: train dog stop excessive barking; dog barking training; consistent dog training; dog not listening; training timing; enticing …",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "5ace29d7_1",
+            "rank": 9,
+            "score": 1.2944184834064805,
+            "snippet": "I am looking for recommendations on mindfulness apps that can complement my daily podcast routine. | I have been dedicating a significant amount of time to listening to podcasts. | I have a consistent weekly routine for listening to podcasts. | keyphrases: mindfulness apps; podc…",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "1b26bdd5_5",
+            "rank": 10,
+            "score": 1.191976151717886,
+            "snippet": "I am trying to visualize my travel history on a calendar over the past few months. | I am flying to Denver, Colorado for a family vacation today. | I think I have location history enabled in Google Timeline. | keyphrases: visualize travel history; calendar travel history; Google…",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          }
+        ]
+      },
+      {
+        "hop": 2,
+        "tool": "add_sessions",
+        "args": {
+          "session_ids": [
+            "573dc24b_1"
+          ]
+        },
+        "result_summary": "added=[] bag_size=1 rejected=[\"573dc24b_1\"]",
+        "added": []
+      },
+      {
+        "hop": 3,
+        "tool": "bm25_notes",
+        "args": {
+          "query": "favorite shows movies watch recommendation tonight TV series films genres",
+          "top_k": 10
+        },
+        "result_summary": "10 hits",
+        "hits": [
+          {
+            "sessionId": "6d3f5c68_4",
+            "rank": 1,
+            "score": 7.887484970521365,
+            "snippet": "I am looking for book recommendations on ancient civilizations. | I attended a lecture series at the History Museum later in February. | I am particularly interested in ancient Egypt. | keyphrases: ancient civilizations book recommendations; History Museum lecture series; ancien…",
+            "matchedTerms": [
+              "recommendation",
+              "sery"
+            ]
+          },
+          {
+            "sessionId": "ultrachat_507667",
+            "rank": 2,
+            "score": 7.8377890129809575,
+            "snippet": "I am looking for Chinese restaurant recommendations in San Francisco. | I think I will try Z & Y Restaurant first. | I love spicy food. | keyphrases: Chinese restaurants; San Francisco; Z & Y Restaurant; personal favorite dish; spicy food; Chongqing Spicy Chicken",
+            "matchedTerms": [
+              "favorite",
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "d6bbe94d_3",
+            "rank": 3,
+            "score": 6.168004342146605,
+            "snippet": "I am considering buying a new board game. | I have been into train-themed games lately. | I have been playing Ticket to Ride with my siblings every Sunday evening for the past month. | keyphrases: train-themed board games; Ticket to Ride; 18xx series; game complexity for sibling…",
+            "matchedTerms": [
+              "sery"
+            ]
+          },
+          {
+            "sessionId": "573dc24b_1",
+            "rank": 4,
+            "score": 5.3876341600689654,
+            "snippet": "I finished binging the entire \"Crime Junkie\" podcast in 5 days. | I am hooked on the true crime genre. | I listened to \"Crime Junkie\" for 5 days straight. | keyphrases: true crime podcasts; Crime Junkie; binge in 5 days; self-improvement podcasts; How I Built This; personal deve…",
+            "matchedTerms": [
+              "recommendation",
+              "genre"
+            ]
+          },
+          {
+            "sessionId": "sharegpt_8jxRz9U_0",
+            "rank": 5,
+            "score": 2.738560158947873,
+            "snippet": "I want a WordPress function that allows me to use a shortcode to display a list of custom posts. | I want the shortcode to let me specify how many posts to display. | I want the shortcode to let me specify a category. | keyphrases: WordPress shortcode; custom post type; custom p…",
+            "matchedTerms": [
+              "show"
+            ]
+          },
+          {
+            "sessionId": "ultrachat_486807",
+            "rank": 6,
+            "score": 2.3853256916906056,
+            "snippet": "keyphrases: Thai cuisine ingredients; typical ingredients in Thai cooking; popular Thai dishes; Thai restaurant recommendation; good Thai restaurant in the area; Thai cookbooks",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "551c9f06",
+            "rank": 7,
+            "score": 2.062379464521154,
+            "snippet": "I am trying to get more organized with my snack planning. | I want a weekly snack schedule so I can prep healthy options on the weekends. | I want recommendations for healthy sweet treats that I can make at home. | keyphrases: weekly snack schedule; snack prep on weekends; healt…",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "ultrachat_339024",
+            "rank": 8,
+            "score": 1.7440992860971287,
+            "snippet": "I want to train my dog to stop barking excessively. | I have been consistent with my training. | Sometimes my dog does not seem to listen. | keyphrases: train dog stop excessive barking; dog barking training; consistent dog training; dog not listening; training timing; enticing …",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "5ace29d7_1",
+            "rank": 9,
+            "score": 1.2944184834064805,
+            "snippet": "I am looking for recommendations on mindfulness apps that can complement my daily podcast routine. | I have been dedicating a significant amount of time to listening to podcasts. | I have a consistent weekly routine for listening to podcasts. | keyphrases: mindfulness apps; podc…",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "1b26bdd5_5",
+            "rank": 10,
+            "score": 1.191976151717886,
+            "snippet": "I am trying to visualize my travel history on a calendar over the past few months. | I am flying to Denver, Colorado for a family vacation today. | I think I have location history enabled in Google Timeline. | keyphrases: visualize travel history; calendar travel history; Google…",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          }
+        ]
+      },
+      {
+        "hop": 3,
+        "tool": "add_sessions",
+        "args": {
+          "session_ids": [
+            "573dc24b_1"
+          ]
+        },
+        "result_summary": "added=[] bag_size=1 rejected=[\"573dc24b_1\"]",
+        "added": []
+      },
+      {
+        "hop": 4,
+        "tool": "bm25_notes",
+        "args": {
+          "query": "show movie watch tonight recommendations TV films streaming preferences",
+          "top_k": 10
+        },
+        "result_summary": "10 hits",
+        "hits": [
+          {
+            "sessionId": "ultrachat_136348",
+            "rank": 1,
+            "score": 4.285279055149764,
+            "snippet": "keyphrases: CFL marketing approach; CFL branding; North American sports leagues comparison; expand reach beyond Canada; CFL popularity expansion; develop star players",
+            "matchedTerms": [
+              "stream"
+            ]
+          },
+          {
+            "sessionId": "sharegpt_8jxRz9U_0",
+            "rank": 2,
+            "score": 2.738560158947873,
+            "snippet": "I want a WordPress function that allows me to use a shortcode to display a list of custom posts. | I want the shortcode to let me specify how many posts to display. | I want the shortcode to let me specify a category. | keyphrases: WordPress shortcode; custom post type; custom p…",
+            "matchedTerms": [
+              "show"
+            ]
+          },
+          {
+            "sessionId": "ultrachat_507667",
+            "rank": 3,
+            "score": 2.6471524452946613,
+            "snippet": "I am looking for Chinese restaurant recommendations in San Francisco. | I think I will try Z & Y Restaurant first. | I love spicy food. | keyphrases: Chinese restaurants; San Francisco; Z & Y Restaurant; personal favorite dish; spicy food; Chongqing Spicy Chicken",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "ultrachat_486807",
+            "rank": 4,
+            "score": 2.3853256916906056,
+            "snippet": "keyphrases: Thai cuisine ingredients; typical ingredients in Thai cooking; popular Thai dishes; Thai restaurant recommendation; good Thai restaurant in the area; Thai cookbooks",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "551c9f06",
+            "rank": 5,
+            "score": 2.062379464521154,
+            "snippet": "I am trying to get more organized with my snack planning. | I want a weekly snack schedule so I can prep healthy options on the weekends. | I want recommendations for healthy sweet treats that I can make at home. | keyphrases: weekly snack schedule; snack prep on weekends; healt…",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "6d3f5c68_4",
+            "rank": 6,
+            "score": 2.0147990602764434,
+            "snippet": "I am looking for book recommendations on ancient civilizations. | I attended a lecture series at the History Museum later in February. | I am particularly interested in ancient Egypt. | keyphrases: ancient civilizations book recommendations; History Museum lecture series; ancien…",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "573dc24b_1",
+            "rank": 7,
+            "score": 1.991018277465346,
+            "snippet": "I finished binging the entire \"Crime Junkie\" podcast in 5 days. | I am hooked on the true crime genre. | I listened to \"Crime Junkie\" for 5 days straight. | keyphrases: true crime podcasts; Crime Junkie; binge in 5 days; self-improvement podcasts; How I Built This; personal deve…",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "ultrachat_339024",
+            "rank": 8,
+            "score": 1.7440992860971287,
+            "snippet": "I want to train my dog to stop barking excessively. | I have been consistent with my training. | Sometimes my dog does not seem to listen. | keyphrases: train dog stop excessive barking; dog barking training; consistent dog training; dog not listening; training timing; enticing …",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "5ace29d7_1",
+            "rank": 9,
+            "score": 1.2944184834064805,
+            "snippet": "I am looking for recommendations on mindfulness apps that can complement my daily podcast routine. | I have been dedicating a significant amount of time to listening to podcasts. | I have a consistent weekly routine for listening to podcasts. | keyphrases: mindfulness apps; podc…",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "1b26bdd5_5",
+            "rank": 10,
+            "score": 1.191976151717886,
+            "snippet": "I am trying to visualize my travel history on a calendar over the past few months. | I am flying to Denver, Colorado for a family vacation today. | I think I have location history enabled in Google Timeline. | keyphrases: visualize travel history; calendar travel history; Google…",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          }
+        ]
+      },
+      {
+        "hop": 5,
+        "tool": "bm25_notes",
+        "args": {
+          "query": "shows movies true crime Crime Junkie watch recommendation",
+          "top_k": 10
+        },
+        "result_summary": "10 hits",
+        "hits": [
+          {
+            "sessionId": "573dc24b_1",
+            "rank": 1,
+            "score": 19.791428062407444,
+            "snippet": "I finished binging the entire \"Crime Junkie\" podcast in 5 days. | I am hooked on the true crime genre. | I listened to \"Crime Junkie\" for 5 days straight. | keyphrases: true crime podcasts; Crime Junkie; binge in 5 days; self-improvement podcasts; How I Built This; personal deve…",
+            "matchedTerms": [
+              "true",
+              "crime",
+              "junkie",
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "sharegpt_8jxRz9U_0",
+            "rank": 2,
+            "score": 2.738560158947873,
+            "snippet": "I want a WordPress function that allows me to use a shortcode to display a list of custom posts. | I want the shortcode to let me specify how many posts to display. | I want the shortcode to let me specify a category. | keyphrases: WordPress shortcode; custom post type; custom p…",
+            "matchedTerms": [
+              "show"
+            ]
+          },
+          {
+            "sessionId": "ultrachat_507667",
+            "rank": 3,
+            "score": 2.6471524452946613,
+            "snippet": "I am looking for Chinese restaurant recommendations in San Francisco. | I think I will try Z & Y Restaurant first. | I love spicy food. | keyphrases: Chinese restaurants; San Francisco; Z & Y Restaurant; personal favorite dish; spicy food; Chongqing Spicy Chicken",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "sharegpt_H4jw5s7_39",
+            "rank": 4,
+            "score": 2.409174264909602,
+            "snippet": "I want 20 metaphors to describe escaping the ranking recession and building a 6 figure Amazon business. | I want to describe working 3-4 hours a week while living a dream lifestyle and being richer than 99% of the world. | I want 50 nicknames for a situation where my Amazon FBA …",
+            "matchedTerms": [
+              "true"
+            ]
+          },
+          {
+            "sessionId": "ultrachat_486807",
+            "rank": 5,
+            "score": 2.3853256916906056,
+            "snippet": "keyphrases: Thai cuisine ingredients; typical ingredients in Thai cooking; popular Thai dishes; Thai restaurant recommendation; good Thai restaurant in the area; Thai cookbooks",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "551c9f06",
+            "rank": 6,
+            "score": 2.062379464521154,
+            "snippet": "I am trying to get more organized with my snack planning. | I want a weekly snack schedule so I can prep healthy options on the weekends. | I want recommendations for healthy sweet treats that I can make at home. | keyphrases: weekly snack schedule; snack prep on weekends; healt…",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "6d3f5c68_4",
+            "rank": 7,
+            "score": 2.0147990602764434,
+            "snippet": "I am looking for book recommendations on ancient civilizations. | I attended a lecture series at the History Museum later in February. | I am particularly interested in ancient Egypt. | keyphrases: ancient civilizations book recommendations; History Museum lecture series; ancien…",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "ultrachat_339024",
+            "rank": 8,
+            "score": 1.7440992860971287,
+            "snippet": "I want to train my dog to stop barking excessively. | I have been consistent with my training. | Sometimes my dog does not seem to listen. | keyphrases: train dog stop excessive barking; dog barking training; consistent dog training; dog not listening; training timing; enticing …",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "5ace29d7_1",
+            "rank": 9,
+            "score": 1.2944184834064805,
+            "snippet": "I am looking for recommendations on mindfulness apps that can complement my daily podcast routine. | I have been dedicating a significant amount of time to listening to podcasts. | I have a consistent weekly routine for listening to podcasts. | keyphrases: mindfulness apps; podc…",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "1b26bdd5_5",
+            "rank": 10,
+            "score": 1.191976151717886,
+            "snippet": "I am trying to visualize my travel history on a calendar over the past few months. | I am flying to Denver, Colorado for a family vacation today. | I think I have location history enabled in Google Timeline. | keyphrases: visualize travel history; calendar travel history; Google…",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          }
+        ]
+      },
+      {
+        "hop": 6,
+        "tool": "bm25_notes",
+        "args": {
+          "query": "true crime TV shows movies watch recommendation thriller mystery documentary",
+          "top_k": 10
+        },
+        "result_summary": "10 hits",
+        "hits": [
+          {
+            "sessionId": "573dc24b_1",
+            "rank": 1,
+            "score": 13.202898809508833,
+            "snippet": "I finished binging the entire \"Crime Junkie\" podcast in 5 days. | I am hooked on the true crime genre. | I listened to \"Crime Junkie\" for 5 days straight. | keyphrases: true crime podcasts; Crime Junkie; binge in 5 days; self-improvement podcasts; How I Built This; personal deve…",
+            "matchedTerms": [
+              "true",
+              "crime",
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "6d3f5c68_4",
+            "rank": 2,
+            "score": 8.28509743041012,
+            "snippet": "I am looking for book recommendations on ancient civilizations. | I attended a lecture series at the History Museum later in February. | I am particularly interested in ancient Egypt. | keyphrases: ancient civilizations book recommendations; History Museum lecture series; ancien…",
+            "matchedTerms": [
+              "recommendation",
+              "documentary"
+            ]
+          },
+          {
+            "sessionId": "sharegpt_8jxRz9U_0",
+            "rank": 3,
+            "score": 2.738560158947873,
+            "snippet": "I want a WordPress function that allows me to use a shortcode to display a list of custom posts. | I want the shortcode to let me specify how many posts to display. | I want the shortcode to let me specify a category. | keyphrases: WordPress shortcode; custom post type; custom p…",
+            "matchedTerms": [
+              "show"
+            ]
+          },
+          {
+            "sessionId": "ultrachat_507667",
+            "rank": 4,
+            "score": 2.6471524452946613,
+            "snippet": "I am looking for Chinese restaurant recommendations in San Francisco. | I think I will try Z & Y Restaurant first. | I love spicy food. | keyphrases: Chinese restaurants; San Francisco; Z & Y Restaurant; personal favorite dish; spicy food; Chongqing Spicy Chicken",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "sharegpt_H4jw5s7_39",
+            "rank": 5,
+            "score": 2.409174264909602,
+            "snippet": "I want 20 metaphors to describe escaping the ranking recession and building a 6 figure Amazon business. | I want to describe working 3-4 hours a week while living a dream lifestyle and being richer than 99% of the world. | I want 50 nicknames for a situation where my Amazon FBA …",
+            "matchedTerms": [
+              "true"
+            ]
+          },
+          {
+            "sessionId": "ultrachat_486807",
+            "rank": 6,
+            "score": 2.3853256916906056,
+            "snippet": "keyphrases: Thai cuisine ingredients; typical ingredients in Thai cooking; popular Thai dishes; Thai restaurant recommendation; good Thai restaurant in the area; Thai cookbooks",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "551c9f06",
+            "rank": 7,
+            "score": 2.062379464521154,
+            "snippet": "I am trying to get more organized with my snack planning. | I want a weekly snack schedule so I can prep healthy options on the weekends. | I want recommendations for healthy sweet treats that I can make at home. | keyphrases: weekly snack schedule; snack prep on weekends; healt…",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "ultrachat_339024",
+            "rank": 8,
+            "score": 1.7440992860971287,
+            "snippet": "I want to train my dog to stop barking excessively. | I have been consistent with my training. | Sometimes my dog does not seem to listen. | keyphrases: train dog stop excessive barking; dog barking training; consistent dog training; dog not listening; training timing; enticing …",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "5ace29d7_1",
+            "rank": 9,
+            "score": 1.2944184834064805,
+            "snippet": "I am looking for recommendations on mindfulness apps that can complement my daily podcast routine. | I have been dedicating a significant amount of time to listening to podcasts. | I have a consistent weekly routine for listening to podcasts. | keyphrases: mindfulness apps; podc…",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          },
+          {
+            "sessionId": "1b26bdd5_5",
+            "rank": 10,
+            "score": 1.191976151717886,
+            "snippet": "I am trying to visualize my travel history on a calendar over the past few months. | I am flying to Denver, Colorado for a family vacation today. | I think I have location history enabled in Google Timeline. | keyphrases: visualize travel history; calendar travel history; Google…",
+            "matchedTerms": [
+              "recommendation"
+            ]
+          }
+        ]
+      },
+      {
+        "hop": 6,
+        "tool": "add_sessions",
+        "args": {
+          "session_ids": [
+            "573dc24b_1",
+            "6d3f5c68_4"
+          ]
+        },
+        "result_summary": "added=[\"6d3f5c68_4\"] bag_size=2 rejected=[\"573dc24b_1\"]",
+        "added": [
+          "6d3f5c68_4"
+        ]
+      },
+      {
+        "hop": 6,
+        "tool": "bm25_notes",
+        "args": {
+          "query": "show movie watch recommendation tonight streaming preferences",
+          "top_k": 10
+        },
+        "result_summary": "error: hop budget exhausted; call add_sessions on last hits or done"
+      },
+      {
+        "hop": 6,
+        "tool": "done",
+        "args": {
+          "reason": "The current bag already contains the available relevant sessions, and the hop budget is exhausted; no additional searchable hits are available to add."
+        },
+        "result_summary": "The current bag already contains the available relevant sessions, and the hop budget is exhausted; no additional searchable hits are available to add."
+      }
+    ]
+  },
+  "in_teach38": true,
+  "hop27_stratum": "mid"
+}

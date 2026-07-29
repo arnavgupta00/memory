@@ -1,0 +1,117 @@
+{
+  "session_id": "00765cfd_5",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am thinking of buying a new winter coat.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am torn between a Canada Goose parka and a J.Crew peacoat.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been wearing my dark jeans nonstop since I got them to fit just right.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to make sure the winter coat will go well with my dark jeans.",
+      "turn_index": 0
+    },
+    {
+      "text": "I will try on both coats with my dark jeans.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been wearing the dark jeans nonstop since then.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want recommendations for other clothing items that would go well with my dark jeans.",
+      "turn_index": 2
+    },
+    {
+      "text": "I like pairing my dark jeans with a white or light-colored blouse.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want suggestions for a good brand or style for a blouse that would fit well with my dark jeans.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will check out the brands and styles that were suggested.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want tips on how to prevent losing socks in the washing machine.",
+      "turn_index": 6
+    },
+    {
+      "text": "I use the laundromat down the street.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think the laundromat might be eating my socks.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want advice on how to properly care for delicate or special-care items.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to take some dry cleaning to the tailor down the street.",
+      "turn_index": 8
+    },
+    {
+      "text": "I recently cleaned out my closet and got rid of a bunch of old clothes.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am thinking of going to my favorite thrift store next weekend.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want tips on how to thrift shop like a pro.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "winter coat",
+    "Canada Goose parka",
+    "J.Crew peacoat",
+    "dark jeans",
+    "coat matching",
+    "white blouse",
+    "light-colored blouse",
+    "sock loss in washing machine",
+    "laundromat",
+    "dry cleaning",
+    "delicate clothing care",
+    "special-care items",
+    "tailor down the street",
+    "thrift store",
+    "thrift shopping tips"
+  ],
+  "events": [
+    {
+      "text": "Try on both coats with dark jeans",
+      "date_hint": "next",
+      "turn_index": 2
+    },
+    {
+      "text": "Take dry cleaning to the tailor down the street",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Clean out closet and get rid of old clothes",
+      "date_hint": "recently",
+      "turn_index": 10
+    },
+    {
+      "text": "Go to favorite thrift store next weekend",
+      "date_hint": "next weekend",
+      "turn_index": 10
+    }
+  ]
+}

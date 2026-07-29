@@ -1,0 +1,90 @@
+{
+  "session_id": "answer_c862f65a_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning my grocery shopping trip for this week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to find good deals or sales on diapers at ShopRite.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to find good deals or sales on formula at ShopRite.",
+      "turn_index": 0
+    },
+    {
+      "text": "I signed up for ShopRite's rewards program today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to maximize my points and savings with ShopRite's rewards program.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am tracking my coupon usage and savings.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been using a spreadsheet to organize and keep track of coupons, rewards programs, and sales.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am considering using a coupon app to make it easier to find digital coupons.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know whether I can use digital coupons in addition to the rewards points I earn.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering using both a store-specific app and a general coupon app.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want an app that allows me to track my rewards points across multiple stores and programs.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to try AwardWallet.",
+      "turn_index": 10
+    },
+    {
+      "text": "I plan to try Loyalty Card Manager.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want a single app that shows my rewards balances and expiration dates.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "grocery shopping trip",
+    "ShopRite weekly ad",
+    "digital coupons",
+    "rewards points",
+    "diapers deals",
+    "formula deals",
+    "ShopRite rewards program",
+    "coupon organization",
+    "coupon expiration reminders",
+    "coupon app",
+    "RetailMeNot",
+    "AwardWallet",
+    "Loyalty Card Manager",
+    "track rewards points across stores"
+  ],
+  "events": [
+    {
+      "text": "Signed up for ShopRite rewards program.",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to try AwardWallet and Loyalty Card Manager.",
+      "date_hint": "this week (planning)",
+      "turn_index": 10
+    }
+  ]
+}

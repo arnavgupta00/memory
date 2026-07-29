@@ -1,0 +1,83 @@
+{
+  "session_id": "812ccbd8_4",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to organize all my documents and files with my new name, Emily Patel.",
+      "turn_index": 0
+    },
+    {
+      "text": "I took a half-day off from work on a Tuesday to finish paperwork.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am missing some documents, including my new passport.",
+      "turn_index": 2
+    },
+    {
+      "text": "I applied for a new passport on April 10th.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am still waiting for my new passport to arrive.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have a trip planned in a few weeks.",
+      "turn_index": 4
+    },
+    {
+      "text": "I updated my driver's license with my new name.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have not updated the address on my driver's license yet.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to update my driver's license address soon.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "organize documents and files",
+    "new name Emily Patel",
+    "paperwork finished Tuesday half-day off",
+    "missing documents",
+    "new passport application",
+    "passport processing time",
+    "passport status tracking",
+    "applied April 10",
+    "trip planned in a few weeks",
+    "update driver's license new address",
+    "driver's license address update time",
+    "state requirements processing times"
+  ],
+  "events": [
+    {
+      "text": "Finished paperwork after taking a half-day off from work on a Tuesday",
+      "date_hint": "Tuesday",
+      "turn_index": 0
+    },
+    {
+      "text": "Applied for a new passport",
+      "date_hint": "April 10th",
+      "turn_index": 4
+    },
+    {
+      "text": "Still waiting for the new passport to arrive",
+      "date_hint": "after April 10th",
+      "turn_index": 4
+    },
+    {
+      "text": "Trip planned in a few weeks",
+      "date_hint": "in a few weeks",
+      "turn_index": 4
+    },
+    {
+      "text": "Updated driver's license with new name but not address yet",
+      "date_hint": "before the address update",
+      "turn_index": 8
+    }
+  ]
+}

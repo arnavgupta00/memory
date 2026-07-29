@@ -1,0 +1,25 @@
+{
+  "question_id": "gpt4_468eb064",
+  "question_type": "temporal-reasoning",
+  "question": "Who did I meet with during the lunch last Tuesday?",
+  "question_date": "2023/04/18 (Tue) 16:50",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_9b09d95b_1"
+  ],
+  "haystack_session_count": 48,
+  "notes_coverage": "full",
+  "annotated_session_count": 48,
+  "gold_sessions": [
+    {
+      "session_id": "answer_9b09d95b_1",
+      "date": "2023/04/11 (Tue) 22:13",
+      "has_notes": true,
+      "notes_text": "[session_id] answer_9b09d95b_1\n[session_date] 2023/04/11 (Tue) 22:13\n[facts]\n- I attended a digital marketing workshop last week.\n- The digital marketing workshop speaker was Rachel Lee.\n- I catch up with Emma, a freelance writer, over lunch today.\n- Emma is now a potential collaborator for a project I am working on.\n- I am interested in learning more about Facebook ads.\n- I want tutorials on how to set up a Facebook ads campaign.\n- I want tutorials on how to target the right audience for Facebook ads.\n- I want to learn more about Facebook's Audience Insights tool.\n- I am interested in learning more about Instagram ads.\n- Emma mentioned she has seen great results with Instagram ads.\n- I want tutorials on how to set up an Instagram ad campaign.\n- I want to learn about Instagram targeting options.\n- Emma mentioned she had success targeting specific interests and behaviors.\n- I want to target Instagram ads to people interested in sustainable living.\n- I want to target Instagram ads to people interested in eco-friendly products.\n- I want to learn how to use Instagram's automatic targeting feature.\n- I want to use Instagram automatic targeting to reach people likely to be interested in sustainable living and eco-friendly products.\n[keyphrases] social media advertising tips; digital marketing workshop; Rachel Lee strategies; online resources for advertising; Facebook ads campaign setup; Facebook ads audience targeting; Facebook Audience Insights tool; Instagram ad campaign setup; Instagram targeting options; sustainable living targeting; eco-friendly products targeting; Instagram automatic targeting feature\n[events]\n- Attended a digital marketing workshop (last week)\n- Had lunch with Emma, a freelance writer (today)",
+      "user_turns": "[turn 0] I'm looking for some tips on social media advertising. I just attended a digital marketing workshop last week and the speaker, Rachel Lee, mentioned some interesting strategies. I was wondering if you could recommend some online resources or tutorials on the topic. By the way, I catch up with Emma, a freelance writer, over lunch today and she's now a potential collaborator for a project I'm working on.\n\n[turn 2] I'm actually interested in learning more about Facebook ads, can you show me some tutorials on how to set up a campaign and target the right audience?\n\n[turn 4] I'd like to know more about Facebook's Audience Insights tool, can you show me how to use it to gather information about my target audience?\n\n[turn 6] I'm also interested in learning more about Instagram ads, since Emma mentioned she's seen some great results with them. Can you show me some tutorials on how to set up an Instagram ad campaign?\n\n[turn 8] I'd like to know more about Instagram's targeting options, especially since Emma mentioned she's had success with targeting specific interests and behaviors. Can you show me how to target my ads to people who are interested in sustainable living and eco-friendly products?\n\n[turn 10] I'd like to know more about Instagram's automatic targeting feature. Can you show me how to use it to reach people who are likely to be interested in my sustainable living and eco-friendly products?"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

@@ -1,0 +1,69 @@
+{
+  "session_id": "answer_c862f65a_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a shopping trip to Target this weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I redeemed $12 cashback for a $10 Amazon gift card from Ibotta today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been using manufacturer coupons for household essentials like toiletries and cleaning supplies.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been using the cashback app Ibotta for a while.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been using Fetch Rewards.",
+      "turn_index": 6
+    },
+    {
+      "text": "I use Fetch Rewards for my gas purchases.",
+      "turn_index": 8
+    },
+    {
+      "text": "I do a lot of online shopping.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering trying out Rakuten.",
+      "turn_index": 10
+    },
+    {
+      "text": "I just redeemed some cashback from Ibotta today.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Target sales and promotions",
+    "shopping trip to Target",
+    "Ibotta cashback",
+    "$12 cashback for $10 Amazon gift card",
+    "Amazon gift card",
+    "household essentials savings",
+    "toiletries and cleaning supplies",
+    "manufacturer coupons",
+    "cashback apps",
+    "Fetch Rewards",
+    "gas purchases",
+    "Rakuten cashback",
+    "online shopping savings"
+  ],
+  "events": [
+    {
+      "text": "Redeemed $12 cashback for a $10 Amazon gift card from Ibotta",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Redeemed some cashback from Ibotta",
+      "date_hint": "today",
+      "turn_index": 10
+    }
+  ]
+}

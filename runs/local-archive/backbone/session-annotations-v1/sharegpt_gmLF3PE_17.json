@@ -1,0 +1,189 @@
+{
+  "session_id": "sharegpt_gmLF3PE_17",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "We need to rearrange statements A, B, C and D to form a coherent paragraph with statements 1 and 6.",
+      "turn_index": 1
+    },
+    {
+      "text": "Statement 1 is the first sentence of a paragraph.",
+      "turn_index": 1
+    },
+    {
+      "text": "Statement 6 is the last sentence of a paragraph.",
+      "turn_index": 1
+    },
+    {
+      "text": "The paragraph question is about whether India should manufacture nuclear weapons or not.",
+      "turn_index": 1
+    },
+    {
+      "text": "Statement A says India has no alternative but to make atomic weapons.",
+      "turn_index": 1
+    },
+    {
+      "text": "Statement B says Pakistan has already declared its intention to make the atom bomb.",
+      "turn_index": 1
+    },
+    {
+      "text": "Statement C says India needs to strengthen defence and security to maintain the morale of the people.",
+      "turn_index": 1
+    },
+    {
+      "text": "Statement D says the vast majority of the population is always afraid of a fresh attack by that nation.",
+      "turn_index": 1
+    },
+    {
+      "text": "Statement 6 says that even though the production of an atom bomb is very expensive, India cannot give the proposal.",
+      "turn_index": 1
+    },
+    {
+      "text": "Tarun walks from his house at 4 km/hr.",
+      "turn_index": 3
+    },
+    {
+      "text": "Tarun reaches his school 5 minutes late when walking at 4 km/hr.",
+      "turn_index": 3
+    },
+    {
+      "text": "Tarun walks at 5 km/hr the next day.",
+      "turn_index": 3
+    },
+    {
+      "text": "Tarun reaches 15 minutes early when walking at 5 km/hr.",
+      "turn_index": 3
+    },
+    {
+      "text": "The question asks for the distance from Tarun's school to his house.",
+      "turn_index": 3
+    },
+    {
+      "text": "Two trains travel on parallel tracks in the same direction.",
+      "turn_index": 5
+    },
+    {
+      "text": "One train travels at 50 km/hr.",
+      "turn_index": 5
+    },
+    {
+      "text": "The other train travels at 32 km/hr.",
+      "turn_index": 5
+    },
+    {
+      "text": "The faster train crosses the last bogie of the slower train.",
+      "turn_index": 5
+    },
+    {
+      "text": "The faster train crosses a distance of 18 m in 18 seconds.",
+      "turn_index": 5
+    },
+    {
+      "text": "The question asks for the length of the slower train.",
+      "turn_index": 5
+    },
+    {
+      "text": "In the school admission test, there are 500 questions.",
+      "turn_index": 9
+    },
+    {
+      "text": "Yash answered only 80% of the initial 250 questions correctly.",
+      "turn_index": 9
+    },
+    {
+      "text": "Yash needs an overall score of 60% in the test.",
+      "turn_index": 9
+    },
+    {
+      "text": "The question asks how many questions Yash needs to attend without mistake in the remaining questions.",
+      "turn_index": 9
+    },
+    {
+      "text": "A card is drawn at random from a well shuffled pack of 52 cards.",
+      "turn_index": 11
+    },
+    {
+      "text": "The question asks for the probability that the drawn card is a king or a queen.",
+      "turn_index": 11
+    },
+    {
+      "text": "There are statements: All halls are tyres.",
+      "turn_index": 13
+    },
+    {
+      "text": "There are statements: Some tyres are wheels.",
+      "turn_index": 13
+    },
+    {
+      "text": "There are statements: All wheels are cars.",
+      "turn_index": 13
+    },
+    {
+      "text": "Conclusion I is: Some cars are wheels.",
+      "turn_index": 13
+    },
+    {
+      "text": "Conclusion II is: Some cars are tyres.",
+      "turn_index": 13
+    },
+    {
+      "text": "Conclusion III is: Some wheels are halls.",
+      "turn_index": 13
+    }
+  ],
+  "keyphrases": [
+    "rearrange paragraph sentences",
+    "India nuclear weapons",
+    "atomic weapons alternative",
+    "Pakistan atom bomb intention",
+    "defence and security morale",
+    "fresh attack fear",
+    "Tarun walking speed",
+    "school to house distance",
+    "train crossing last bogie",
+    "parallel tracks same direction",
+    "faster train 18 m 18 seconds",
+    "length of slower train",
+    "grand admission test 500 questions",
+    "Yash 80% of 250 questions",
+    "overall score 60%",
+    "probability king or queen",
+    "52 cards probability",
+    "All halls are tyres",
+    "Some tyres are wheels",
+    "All wheels are cars",
+    "logical conclusion follows"
+  ],
+  "events": [
+    {
+      "text": "Rearrangement question about ordering statements A, B, C, D with statements 1 and 6",
+      "date_hint": "",
+      "turn_index": 1
+    },
+    {
+      "text": "Tarun changes walking speed from 4 km/hr to 5 km/hr and changes arrival time from 5 minutes late to 15 minutes early",
+      "date_hint": "next day",
+      "turn_index": 3
+    },
+    {
+      "text": "Train problem where the faster train crosses the last bogie of the slower train in 18 seconds over 18 m",
+      "date_hint": "",
+      "turn_index": 5
+    },
+    {
+      "text": "School admission test problem with 500 questions and Yash's scoring requirement",
+      "date_hint": "",
+      "turn_index": 9
+    },
+    {
+      "text": "Probability problem drawing a card from a 52-card deck asking for king or queen",
+      "date_hint": "",
+      "turn_index": 11
+    },
+    {
+      "text": "Logical conclusion problem with statements about halls, tyres, wheels, and cars",
+      "date_hint": "",
+      "turn_index": 13
+    }
+  ]
+}

@@ -33,24 +33,48 @@ export function parseWindowDocumentId(documentId: string): {
   return { sessionId, startTurn, endTurn };
 }
 
+export type RenderWindowTextOptions = {
+  indexUserTurnsOnly?: boolean;
+  /** Session-wide expansion blob appended to every window. */
+  sessionExpansion?: string;
+  /** Turn-anchored expansion lines for turns inside this window. */
+  turnExpansions?: string[];
+};
+
 export function renderWindowText(
   session: TimestampedSession,
   startTurn: number,
   endTurn: number,
+  options: RenderWindowTextOptions = {},
 ): string {
+  const indexUserTurnsOnly = options.indexUserTurnsOnly ?? false;
   const lines = [`[session_date] ${session.date}`];
   for (let index = startTurn; index <= endTurn; index += 1) {
     const turn = session.turns[index];
     if (!turn) throw new Error(`missing turn ${String(index)} in session ${session.session_id}`);
+    if (indexUserTurnsOnly && turn.role !== "user") continue;
     lines.push(`[${turn.role}] ${turn.content}`);
+  }
+  if (options.sessionExpansion?.trim()) {
+    lines.push(`[expansion] ${options.sessionExpansion.trim()}`);
+  }
+  for (const extra of options.turnExpansions ?? []) {
+    if (extra.trim()) lines.push(`[expansion] ${extra.trim()}`);
   }
   return lines.join("\n");
 }
+
+export type BuildTurnWindowsOptions = {
+  indexUserTurnsOnly?: boolean;
+  expansionBySessionId?: Record<string, string>;
+  expansionBySessionTurn?: Record<string, Record<string, string>>;
+};
 
 export function buildTurnWindows(
   sessions: TimestampedSession[],
   windowTurns: number,
   windowStride: number,
+  options: BuildTurnWindowsOptions = {},
 ): TurnWindow[] {
   if (!Number.isInteger(windowTurns) || windowTurns < 1) {
     throw new Error("windowTurns must be a positive integer");
@@ -59,17 +83,30 @@ export function buildTurnWindows(
     throw new Error("windowStride must be a positive integer");
   }
 
+  const indexUserTurnsOnly = options.indexUserTurnsOnly ?? false;
   const windows: TurnWindow[] = [];
   for (const session of sessions) {
     const turnCount = session.turns.length;
     if (turnCount === 0) continue;
-    if (turnCount <= windowTurns) {
-      const startTurn = 0;
-      const endTurn = turnCount - 1;
+    const sessionExpansion = options.expansionBySessionId?.[session.session_id];
+    const turnMap = options.expansionBySessionTurn?.[session.session_id];
+
+    const pushWindow = (startTurn: number, endTurn: number): void => {
+      const turnExpansions: string[] = [];
+      if (turnMap) {
+        for (let index = startTurn; index <= endTurn; index += 1) {
+          const extra = turnMap[String(index)];
+          if (extra) turnExpansions.push(extra);
+        }
+      }
       windows.push({
         document: {
           id: windowDocumentId(session.session_id, startTurn, endTurn),
-          text: renderWindowText(session, startTurn, endTurn),
+          text: renderWindowText(session, startTurn, endTurn, {
+            indexUserTurnsOnly,
+            ...(sessionExpansion !== undefined ? { sessionExpansion } : {}),
+            turnExpansions,
+          }),
           sessionId: session.session_id,
           date: session.date,
           startTurn,
@@ -77,22 +114,16 @@ export function buildTurnWindows(
         },
         turns: session.turns.slice(startTurn, endTurn + 1),
       });
+    };
+
+    if (turnCount <= windowTurns) {
+      pushWindow(0, turnCount - 1);
       continue;
     }
 
     for (let startTurn = 0; startTurn < turnCount; startTurn += windowStride) {
       const endTurn = Math.min(startTurn + windowTurns - 1, turnCount - 1);
-      windows.push({
-        document: {
-          id: windowDocumentId(session.session_id, startTurn, endTurn),
-          text: renderWindowText(session, startTurn, endTurn),
-          sessionId: session.session_id,
-          date: session.date,
-          startTurn,
-          endTurn,
-        },
-        turns: session.turns.slice(startTurn, endTurn + 1),
-      });
+      pushWindow(startTurn, endTurn);
       if (endTurn === turnCount - 1) break;
     }
   }

@@ -1,0 +1,89 @@
+{
+  "session_id": "bd3880f4",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for new workout playlists to listen to at the gym.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of doing a bike ride this Saturday.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am not sure about the weather for this Saturday.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am in the 92109 zip code.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of joining a recreational volleyball league that is starting up in a few weeks.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to find recreational volleyball leagues in the La Jolla area.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want more information about the La Jolla Recreation Center's volleyball league, including the cost, schedule, and skill level.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of registering a team for the La Jolla Recreation Center's volleyball league.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know whether the La Jolla Recreation Center's volleyball league allows individuals to sign up as free agents.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know whether I need to find a full team to register for the La Jolla Recreation Center's volleyball league.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "workout playlists",
+    "gym music",
+    "create workout playlists",
+    "bike ride this Saturday",
+    "weather forecast",
+    "92109 zip code",
+    "recreational volleyball league",
+    "La Jolla area",
+    "La Jolla Recreation Center",
+    "volleyball league cost",
+    "volleyball league schedule",
+    "volleyball skill level",
+    "register a team",
+    "free agent sign up"
+  ],
+  "events": [
+    {
+      "text": "Bike ride planned for this Saturday",
+      "date_hint": "this Saturday",
+      "turn_index": 2
+    },
+    {
+      "text": "Request to check the forecast for Saturday in the 92109 zip code",
+      "date_hint": "Saturday",
+      "turn_index": 4
+    },
+    {
+      "text": "Recreational volleyball league starting up in a few weeks",
+      "date_hint": "in a few weeks",
+      "turn_index": 6
+    },
+    {
+      "text": "Request for information about La Jolla Recreation Center volleyball league (cost, schedule, skill level)",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Request about registering a team and whether free agents are allowed for La Jolla Recreation Center volleyball league",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

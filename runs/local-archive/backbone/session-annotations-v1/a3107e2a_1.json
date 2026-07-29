@@ -1,0 +1,84 @@
+{
+  "session_id": "a3107e2a_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to brush up on my Python skills, specifically with TensorFlow.",
+      "turn_index": 0
+    },
+    {
+      "text": "I just started attending a 3-day workshop on data science and machine learning today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am excited to apply what I am learning to some projects.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in exploring more about deep learning, especially neural networks.",
+      "turn_index": 2
+    },
+    {
+      "text": "I asked about convolutional neural networks (CNNs) and how they are used in image classification tasks.",
+      "turn_index": 2
+    },
+    {
+      "text": "I asked about the concept of transfer learning in deep learning.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to apply transfer learning to my projects using pre-trained models like VGG16 or ResNet50.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am interested in exploring more about the applications of transfer learning in computer vision.",
+      "turn_index": 6
+    },
+    {
+      "text": "I asked how transfer learning is used in object detection tasks such as YOLO, SSD, and Faster R-CNN.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am interested in exploring more about the applications of transfer learning in natural language processing (NLP).",
+      "turn_index": 8
+    },
+    {
+      "text": "I asked how transfer learning is used in language models like BERT, RoBERTa, and XLNet.",
+      "turn_index": 8
+    },
+    {
+      "text": "I apologized because it seemed like I exceeded the character limit for a single response.",
+      "turn_index": 10
+    },
+    {
+      "text": "I said I would keep my responses concise and within the limit from now on.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Python skills",
+    "TensorFlow practice",
+    "3-day workshop data science machine learning",
+    "convolutional neural networks CNN",
+    "image classification tasks",
+    "transfer learning deep learning",
+    "pre-trained models VGG16",
+    "pre-trained models ResNet50",
+    "object detection transfer learning",
+    "YOLO SSD Faster R-CNN",
+    "natural language processing NLP",
+    "language models BERT RoBERTa XLNet"
+  ],
+  "events": [
+    {
+      "text": "Started attending a 3-day workshop on data science and machine learning",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Exceeded a character limit for a single response and apologized",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

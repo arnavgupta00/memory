@@ -1,0 +1,93 @@
+{
+  "session_id": "4b117c0c_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to organize my mom's grocery list.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am not feeling up to going to the store myself.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been helping my mother with errands and cooking meals for her.",
+      "turn_index": 0
+    },
+    {
+      "text": "I needed to take a break from caring for my mother on that day.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am located in 32801, Orlando.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think I will try Instacart.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know how to use Instacart.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know what fees I can expect with Instacart.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to schedule delivery for a specific time.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to choose a 2-hour delivery window.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am going to place my order now.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to add special instructions for the shopper.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to instruct the shopper to pick the freshest produce.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to instruct the shopper to make no substitutions for an item.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am going to place my order now.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "organize mom's grocery list",
+    "grocery delivery or curbside pickup",
+    "not feeling up to go to store",
+    "helping mother with errands",
+    "helping mother with cooking meals",
+    "32801 Orlando",
+    "Instacart process",
+    "Instacart fees",
+    "schedule delivery time",
+    "2-hour delivery window",
+    "special instructions for shopper",
+    "freshest produce",
+    "no substitutions"
+  ],
+  "events": [
+    {
+      "text": "User planned to place an Instacart order and asked about adding shopper special instructions",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "User planned to place an order now",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

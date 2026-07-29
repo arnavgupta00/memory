@@ -1,0 +1,89 @@
+{
+  "session_id": "4b637e89_4",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for gift wrapping ideas.",
+      "turn_index": 0
+    },
+    {
+      "text": "I just finished all my shopping.",
+      "turn_index": 0
+    },
+    {
+      "text": "I feel organized and relieved that I got all my shopping done on time.",
+      "turn_index": 0
+    },
+    {
+      "text": "I like the monochromatic idea for gift wrapping.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want suggestions for a ribbon or bow that complements a red and green color scheme.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think I will go with the red velvet ribbon.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want suggestions for a gift tag or card idea that complements a monochromatic red and green theme.",
+      "turn_index": 4
+    },
+    {
+      "text": "I think I will go with simple red and green labels for the gift tags.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want suggestions for a holiday message or phrase to write inside the gifts.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of writing a simple yet heartfelt message inside the gifts.",
+      "turn_index": 8
+    },
+    {
+      "text": "I proposed the phrase \"Wishing you a holiday season filled with love, laughter, and all your favorite things\" for inside the gifts.",
+      "turn_index": 8
+    },
+    {
+      "text": "Now that I have the gift wrapping and message figured out, I am thinking about organizing my holiday schedule.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want tips on how to prioritize and manage my time during the holiday season.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "gift wrapping ideas",
+    "finished shopping on time",
+    "monochromatic gift wrapping",
+    "red and green color scheme",
+    "red velvet ribbon",
+    "gift tag or card idea",
+    "red and green labels",
+    "holiday message phrase",
+    "heartfelt holiday message",
+    "holiday schedule organization",
+    "prioritize and manage time",
+    "holiday season filled with love laughter"
+  ],
+  "events": [
+    {
+      "text": "Finished all shopping on time",
+      "date_hint": "just finished (relative to session)",
+      "turn_index": 0
+    },
+    {
+      "text": "Proposed holiday message phrase to write inside gifts",
+      "date_hint": "relative to session",
+      "turn_index": 8
+    },
+    {
+      "text": "Planning to organize holiday schedule after gift wrapping and message",
+      "date_hint": "relative to session",
+      "turn_index": 10
+    }
+  ]
+}

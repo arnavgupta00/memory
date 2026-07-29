@@ -1,0 +1,102 @@
+{
+  "session_id": "2ea6fda4_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am having issues with my bathroom fan.",
+      "turn_index": 0
+    },
+    {
+      "text": "My bathroom fan has been making a weird noise lately.",
+      "turn_index": 0
+    },
+    {
+      "text": "I think my bathroom fan might need to be replaced.",
+      "turn_index": 0
+    },
+    {
+      "text": "I replaced my bathroom towels on the same day I did my laundry.",
+      "turn_index": 0
+    },
+    {
+      "text": "I bought a new set of four bathroom towels from Bed Bath & Beyond.",
+      "turn_index": 0
+    },
+    {
+      "text": "My bathroom fan makes a weird rattling sound.",
+      "turn_index": 2
+    },
+    {
+      "text": "The rattling sound from my bathroom fan happens only when the fan is turned on.",
+      "turn_index": 2
+    },
+    {
+      "text": "The rattling sound from my bathroom fan has been happening for a few weeks.",
+      "turn_index": 2
+    },
+    {
+      "text": "I will try cleaning the fan and checking for loose screws.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have two blue and two white towels.",
+      "turn_index": 6
+    },
+    {
+      "text": "My towels are really soft.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am still having issues with my hair.",
+      "turn_index": 8
+    },
+    {
+      "text": "My hair has been falling out a lot lately.",
+      "turn_index": 8
+    },
+    {
+      "text": "I started using a hair mask once a week.",
+      "turn_index": 10
+    },
+    {
+      "text": "Using a hair mask once a week seems to be helping my hair.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am still looking for a good shampoo.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "bathroom fan issues",
+    "weird noise bathroom fan",
+    "bathroom fan rattling sound",
+    "bathroom fan loose screws",
+    "bathroom fan cleaning",
+    "towel set four",
+    "Bed Bath & Beyond towels",
+    "blue and white towels",
+    "soft towels",
+    "hair falling out",
+    "moisturizing shampoo recommendations",
+    "hair mask once a week",
+    "good shampoo"
+  ],
+  "events": [
+    {
+      "text": "Replaced bathroom towels on the same day as doing laundry",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Bathroom fan rattling sound started and has been happening for a few weeks",
+      "date_hint": "for a few weeks",
+      "turn_index": 2
+    },
+    {
+      "text": "Started using a hair mask once a week",
+      "date_hint": "once a week",
+      "turn_index": 10
+    }
+  ]
+}

@@ -38,3 +38,15 @@ export {
   seriesPrefix,
   sessionToFullSpan,
 } from "./seriesExpand.js";
+export {
+  buildNotesBm25Index,
+  buildNotesDocuments,
+  formatNotesDocumentText,
+  grepNotes,
+  loadAnnotations,
+  searchNotesBm25,
+  type NotesHit,
+  type SessionAnnotation,
+  type SessionEvent,
+  type SessionFact,
+} from "./notesIndex.js";

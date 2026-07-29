@@ -1,0 +1,115 @@
+{
+  "session_id": "b10d0907_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Los Angeles soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am trying to pack smart for my trip to Los Angeles.",
+      "turn_index": 0
+    },
+    {
+      "text": "On my last trip to New York City, I packed 5 pairs of shoes.",
+      "turn_index": 0
+    },
+    {
+      "text": "On my last trip to New York City, I only wore one pair of shoes the entire time.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of packing a few dresses for Los Angeles.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know if I could get away with just one pair of shoes for the entire Los Angeles trip.",
+      "turn_index": 2
+    },
+    {
+      "text": "My trusty sneakers are the one pair of shoes I want to bring for the entire trip.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of packing tops and jeans for Los Angeles.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am considering packing other types of bottoms like shorts or skirts instead of only jeans.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of packing a few skirts for Los Angeles.",
+      "turn_index": 6
+    },
+    {
+      "text": "I tend to overpack on shoes when traveling.",
+      "turn_index": 6
+    },
+    {
+      "text": "On my last trip to New York City, I packed 5 pairs of shoes but only wore one pair the entire time.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of packing toiletries for Los Angeles, including shampoo, conditioner, and a toothbrush.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of packing electronics for Los Angeles, including my laptop and phone.",
+      "turn_index": 10
+    },
+    {
+      "text": "On my last trip to Chicago, I brought a laptop, tablet, portable charger, camera, and power bank.",
+      "turn_index": 10
+    },
+    {
+      "text": "On my last trip to Chicago, carrying all my electronics was a real hassle.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am trying to cut down on the number of electronics I bring.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "packing tips for Los Angeles",
+    "what to wear in LA",
+    "minimizing shoe collection",
+    "5 pairs of shoes",
+    "one pair of shoes",
+    "trusty sneakers",
+    "packing dresses for LA",
+    "tops and jeans",
+    "shorts or skirts",
+    "packing skirts for warm weather",
+    "toiletries packing shampoo conditioner toothbrush",
+    "efficiently packing toiletries",
+    "electronics packing laptop phone",
+    "packing electronics safely",
+    "cutting down electronics",
+    "last trip to New York City shoes",
+    "last trip to Chicago electronics hassle"
+  ],
+  "events": [
+    {
+      "text": "Trip planning for Los Angeles",
+      "date_hint": "soon",
+      "turn_index": 0
+    },
+    {
+      "text": "Last trip to New York City: packed 5 pairs of shoes and wore only one pair",
+      "date_hint": "last trip",
+      "turn_index": 0
+    },
+    {
+      "text": "Last trip to New York City: overpacked shoes (5 pairs) but wore only one pair",
+      "date_hint": "last trip",
+      "turn_index": 6
+    },
+    {
+      "text": "Last trip to Chicago: brought laptop, tablet, portable charger, camera, and power bank; carrying was a hassle",
+      "date_hint": "last trip",
+      "turn_index": 10
+    }
+  ]
+}

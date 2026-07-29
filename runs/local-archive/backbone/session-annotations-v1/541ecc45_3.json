@@ -1,0 +1,108 @@
+{
+  "session_id": "541ecc45_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am working on a project to launch a new product line of reusable water bottles.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need help analyzing customer data to inform my marketing strategy.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am planning to take 2 more courses in the next quarter to enhance my data analysis skills.",
+      "turn_index": 0
+    },
+    {
+      "text": "I plan to use Google Analytics to track website traffic and customer interactions.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to set up and track key metrics including conversion rates and bounce rates to measure the success of marketing campaigns.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in setting up conversion tracking for a reusable water bottle product launch.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to set up event tracking code to track when a customer adds the product to their cart or makes a purchase.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am not sure how to trigger the event tracking code when a customer adds the product to their cart or makes a purchase.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am not sure whether the event tracking code needs to be added to a specific button or form on my website.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am not sure how to handle when a customer adds multiple products to their cart for event tracking.",
+      "turn_index": 8
+    },
+    {
+      "text": "I need to decide whether to send a separate event for each product added to the cart or send a single event listing all products.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I need to take a course on Google Analytics to enhance my skills, especially with ecommerce tracking.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "reusable water bottles",
+    "new product line launch",
+    "customer data analysis",
+    "marketing strategy",
+    "data analysis courses next quarter",
+    "Google Analytics setup",
+    "website traffic tracking",
+    "customer interactions",
+    "conversion rates",
+    "bounce rates",
+    "conversion tracking",
+    "event tracking code",
+    "ecommerce tracking",
+    "cart add to cart event",
+    "purchase tracking"
+  ],
+  "events": [
+    {
+      "text": "Planning to take 2 more courses in the next quarter to enhance data analysis skills",
+      "date_hint": "next quarter",
+      "turn_index": 0
+    },
+    {
+      "text": "Using Google Analytics to track website traffic and customer interactions",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Setting up conversion tracking for a reusable water bottle product launch",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Setting up event tracking code for add-to-cart and purchase events",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Deciding how to trigger event tracking code on cart add or purchase",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Deciding how to handle multiple products added to cart in event tracking",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Taking a course on Google Analytics for ecommerce tracking",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

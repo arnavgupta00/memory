@@ -1,0 +1,64 @@
+{
+  "session_id": "5e906cb0_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I attended a charity gala for children's education at the Marriott Hotel downtown last weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I bid on a painting at a silent auction and won it for $500.",
+      "turn_index": 2
+    },
+    {
+      "text": "I met the founder of the organization, Dr. Patel.",
+      "turn_index": 2
+    },
+    {
+      "text": "Dr. Patel gave an inspiring speech about the impact of their work on underprivileged children.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to get involved with organizations that provide educational resources for underprivileged children.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of organizing a charity event myself, possibly a charity run or walk.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of reaching out to local businesses to sponsor my charity event or donate items for a silent auction.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to follow up on the sponsorship proposal package.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "children's education",
+    "charity gala",
+    "Marriott Hotel downtown",
+    "silent auction",
+    "painting bid",
+    "$500 painting",
+    "Dr. Patel",
+    "underprivileged children",
+    "educational resources",
+    "getting involved",
+    "charity run or walk",
+    "sponsorship proposal package"
+  ],
+  "events": [
+    {
+      "text": "Attended a charity gala for children's education at the Marriott Hotel downtown",
+      "date_hint": "last weekend",
+      "turn_index": 0
+    },
+    {
+      "text": "Won a painting at a silent auction for $500",
+      "date_hint": "",
+      "turn_index": 2
+    }
+  ]
+}

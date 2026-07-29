@@ -1,0 +1,96 @@
+{
+  "session_id": "2def525b_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to plan a trip to visit my mom's best friend who is terminally ill.",
+      "turn_index": 0
+    },
+    {
+      "text": "I attended my best friend's father's funeral today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am planning to visit my mom's best friend in Denver, Colorado.",
+      "turn_index": 2
+    },
+    {
+      "text": "I live near Chicago.",
+      "turn_index": 2
+    },
+    {
+      "text": "I prefer to fly out of O'Hare or Midway airport.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am flexible with my travel dates.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to go within the next two weeks.",
+      "turn_index": 2
+    },
+    {
+      "text": "My budget for flights and accommodations is around $500 total.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think I will go with the Frontier Airlines option.",
+      "turn_index": 4
+    },
+    {
+      "text": "I think I will use an Airbnb accommodation.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have never been to a wildlife refuge before.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want information about the Rocky Mountain Arsenal National Wildlife Refuge.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have never seen bison up close before.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will keep a safe distance and respect bison space.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have heard that bison can be unpredictable.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want recommendations for a good coffee shop or cafe near the refuge.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "terminally ill friend visit",
+    "best friend's father's funeral",
+    "Denver Colorado trip",
+    "affordable flights",
+    "Airbnb accommodation",
+    "Frontier Airlines",
+    "Rocky Mountain Arsenal National Wildlife Refuge",
+    "wildlife refuge expectations",
+    "bison viewing areas",
+    "bison safety distance",
+    "restaurants near the refuge",
+    "coffee shop near the refuge"
+  ],
+  "events": [
+    {
+      "text": "Attended my best friend's father's funeral",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Plan to travel to Denver within the next two weeks",
+      "date_hint": "within the next two weeks",
+      "turn_index": 2
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "session_id": "31702c20_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to organize my closet and want to get storage bins.",
+      "turn_index": 0
+    },
+    {
+      "text": "I just got my favorite white shirt back from the dry cleaner's on the 10th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of storing my favorite white shirt in a special container to keep it looking its best.",
+      "turn_index": 0
+    },
+    {
+      "text": "I plan to look into clothing storage cubes.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want tips on how to keep my closet organized once I have storage solutions in place.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have a question about storing out-of-season clothing in vacuum storage bags.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am considering using breathable storage bags or storage bins with dividers instead of vacuum storage bags.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to organize my accessories like hats, scarves, and belts.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have questions about storing my favorite white shirt in a breathable storage container to prevent yellowing.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know how often to check my favorite white shirt to make sure it is not yellowing or developing musty smells.",
+      "turn_index": 8
+    },
+    {
+      "text": "I need to get my favorite white shirt cleaned again soon.",
+      "turn_index": 10
+    },
+    {
+      "text": "It has been a few weeks since I got my favorite white shirt back from the dry cleaner's on the 10th.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "closet organization",
+    "storage bins",
+    "storage solutions",
+    "favorite white shirt",
+    "dry cleaner",
+    "clothing storage cubes",
+    "out-of-season clothing",
+    "vacuum storage bags",
+    "breathable storage bags",
+    "storage bins with dividers",
+    "accessories storage",
+    "hats scarves belts",
+    "shirt yellowing prevention",
+    "musty smells",
+    "check shirt regularly"
+  ],
+  "events": [
+    {
+      "text": "Got favorite white shirt back from the dry cleaner's",
+      "date_hint": "on the 10th",
+      "turn_index": 0
+    },
+    {
+      "text": "Need to get favorite white shirt cleaned again soon (a few weeks after the 10th)",
+      "date_hint": "a few weeks since the 10th",
+      "turn_index": 10
+    }
+  ]
+}

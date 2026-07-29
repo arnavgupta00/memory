@@ -1,0 +1,107 @@
+{
+  "session_id": "7bb01253",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I wake up at 6:30 AM every day.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want help organizing my tasks by prioritizing them based on urgency and importance.",
+      "turn_index": 0
+    },
+    {
+      "text": "I like the Eisenhower Matrix as a tool for prioritizing daily tasks.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need help planning my commute to work.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want the bus schedule for the 7:45 AM bus on Mondays and Tuesdays.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want the bus schedule for the 8:00 AM bus on Wednesdays.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to meal prep this weekend for the entire week.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want healthy lunch ideas that are easy to prepare and can be reheated at work.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been pretty busy lately.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am worried I might forget some of my tasks.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want help setting reminders for my upcoming events.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have a breakfast meeting on Wednesday.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have a doctor's appointment next week.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want tips on how to stay focused and avoid procrastination during work hours.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to use the Pomodoro Technique to stay focused.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want help calculating how much time I spend on my commute to work.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to allocate enough time for my morning routine.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "task prioritization",
+    "urgency and importance",
+    "Eisenhower Matrix",
+    "daily tasks",
+    "commute to work",
+    "bus schedule",
+    "7:45 AM bus Mondays and Tuesdays",
+    "8:00 AM bus Wednesdays",
+    "meal prepping",
+    "healthy lunch ideas",
+    "reheated at work",
+    "reminders for events",
+    "breakfast meeting Wednesday",
+    "doctor's appointment next week",
+    "avoid procrastination",
+    "stay focused at work",
+    "Pomodoro Technique",
+    "calculate commute time",
+    "morning routine time allocation"
+  ],
+  "events": [
+    {
+      "text": "Breakfast meeting",
+      "date_hint": "Wednesday",
+      "turn_index": 6
+    },
+    {
+      "text": "Doctor's appointment",
+      "date_hint": "next week",
+      "turn_index": 6
+    }
+  ]
+}

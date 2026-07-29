@@ -1,0 +1,112 @@
+{
+  "session_id": "sharegpt_yXAlFu3_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am traveling with my wife to Tokyo.",
+      "turn_index": 0
+    },
+    {
+      "text": "We will land at Narita airport at 14:30 on 3/16/2023.",
+      "turn_index": 0
+    },
+    {
+      "text": "We need to arrive at my hotel, Andaz Tokyo Toranomon Hills.",
+      "turn_index": 0
+    },
+    {
+      "text": "After a short break, we need to find a restaurant for dinner with local Japanese foods.",
+      "turn_index": 0
+    },
+    {
+      "text": "We want to see night views in Tokyo ideally close to the hotel.",
+      "turn_index": 0
+    },
+    {
+      "text": "After 5 days, we will depart Tokyo from Narita international airport at 13:30.",
+      "turn_index": 0
+    },
+    {
+      "text": "We want an itinerary that includes how to get from Narita airport to the hotel and back.",
+      "turn_index": 0
+    },
+    {
+      "text": "We want tourism attractions to visit in Tokyo.",
+      "turn_index": 0
+    },
+    {
+      "text": "We want to eat at restaurants near the tourism attractions at specific times.",
+      "turn_index": 0
+    },
+    {
+      "text": "We want to shop in Ginza Tokyo for fashion apparels and accessories.",
+      "turn_index": 0
+    },
+    {
+      "text": "We want to shop in Omotesandō for fashion apparels and accessories.",
+      "turn_index": 0
+    },
+    {
+      "text": "We want to see cherry blossoms in Tokyo because it is cherry blossom season.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to replace Day 4 with a trip to Kamakura.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to visit the most famous locations in Kamakura.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to try the best food in Kamakura.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to take the train by the sea in Kamakura.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want the Day 2 and Day 3 itineraries regenerated so each day stays in one area without taking long subways back and forth.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "Tokyo itinerary",
+    "Narita airport arrival 14:30",
+    "Andaz Tokyo Toranomon Hills",
+    "Japanese dinner near attractions",
+    "night views near hotel",
+    "Narita departure 13:30",
+    "Ginza shopping fashion accessories",
+    "Omotesandō shopping fashion accessories",
+    "cherry blossom season Tokyo",
+    "Day 4 Kamakura trip",
+    "Kamakura famous locations",
+    "train by the sea",
+    "regenerate Day 2 Day 3 itinerary",
+    "avoid long subway rides"
+  ],
+  "events": [
+    {
+      "text": "Fly to Tokyo and land at Narita airport at 14:30",
+      "date_hint": "3/16/2023",
+      "turn_index": 0
+    },
+    {
+      "text": "Depart Tokyo from Narita international airport at 13:30 after 5 days",
+      "date_hint": "after 5 days (from 3/16/2023)",
+      "turn_index": 0
+    },
+    {
+      "text": "Replace Day 4 with a trip to Kamakura",
+      "date_hint": "Day 4",
+      "turn_index": 4
+    },
+    {
+      "text": "Regenerate Day 2 and Day 3 itineraries to minimize long subway rides",
+      "date_hint": "Day 2 and Day 3",
+      "turn_index": 6
+    }
+  ]
+}

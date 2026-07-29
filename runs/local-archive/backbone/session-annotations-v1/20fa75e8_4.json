@@ -1,0 +1,96 @@
+{
+  "session_id": "20fa75e8_4",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to New Zealand and Australia next year.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of spending at least two weeks in each country (New Zealand and Australia).",
+      "turn_index": 0
+    },
+    {
+      "text": "I just got back from a family vacation in Cancun, Mexico.",
+      "turn_index": 0
+    },
+    {
+      "text": "I went on a solo trip to Portland, Oregon from May 28th to May 31st to attend a friend's wedding.",
+      "turn_index": 0
+    },
+    {
+      "text": "I explored Portland, Oregon during my solo trip and had an amazing time.",
+      "turn_index": 0
+    },
+    {
+      "text": "In Portland, I tried Voodoo Doughnut for the first time.",
+      "turn_index": 2
+    },
+    {
+      "text": "In Portland, I had the Voodoo Doll doughnut at Voodoo Doughnut.",
+      "turn_index": 2
+    },
+    {
+      "text": "In Portland, I stayed in the Hawthorne neighborhood.",
+      "turn_index": 4
+    },
+    {
+      "text": "The Hawthorne neighborhood was super hip and had cool cafes and vintage shops.",
+      "turn_index": 4
+    },
+    {
+      "text": "In Cancun, I visited the ancient Mayan ruins of Chichen Itza.",
+      "turn_index": 6
+    },
+    {
+      "text": "Our guide in Chichen Itza was named Carlos.",
+      "turn_index": 6
+    },
+    {
+      "text": "In Portland, I hiked in Forest Park.",
+      "turn_index": 8
+    },
+    {
+      "text": "In Portland, I stayed in an Airbnb in the Hawthorne neighborhood.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "New Zealand and Australia trip",
+    "guided hikes and outdoor adventures",
+    "two weeks in each country",
+    "family vacation Cancun Mexico",
+    "solo trip Portland Oregon May 28 31",
+    "friend's wedding Portland",
+    "Voodoo Doughnut Voodoo Doll",
+    "must-try food and drinks",
+    "local markets and street food",
+    "Hawthorne neighborhood Portland",
+    "Chichen Itza Mayan ruins",
+    "Forest Park hiking",
+    "Airbnb accommodations",
+    "history and culture experiences"
+  ],
+  "events": [
+    {
+      "text": "Solo trip to Portland, Oregon to attend a friend's wedding",
+      "date_hint": "May 28th to May 31st",
+      "turn_index": 0
+    },
+    {
+      "text": "Family vacation in Cancun, Mexico",
+      "date_hint": "just got back (relative to session)",
+      "turn_index": 0
+    },
+    {
+      "text": "Visited Chichen Itza ancient Mayan ruins in Cancun",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Hiked in Forest Park in Portland",
+      "date_hint": "",
+      "turn_index": 8
+    }
+  ]
+}

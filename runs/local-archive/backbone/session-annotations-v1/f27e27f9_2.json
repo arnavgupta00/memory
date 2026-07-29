@@ -1,0 +1,88 @@
+{
+  "session_id": "f27e27f9_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a business trip to New York.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to create a packing list for a formal event.",
+      "turn_index": 0
+    },
+    {
+      "text": "I just got back from a business trip to Chicago.",
+      "turn_index": 0
+    },
+    {
+      "text": "I forgot to pack a belt on my last business trip to Chicago.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am concerned about business attire for a formal event in New York.",
+      "turn_index": 2
+    },
+    {
+      "text": "I asked for specific fabrics or styles for suits suitable for a formal event in New York.",
+      "turn_index": 2
+    },
+    {
+      "text": "I asked for suggestions on dress shirts for a formal event in New York.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will opt for a white or light blue dress shirt with a point collar and French cuffs.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will stick with an Oxford weave for my dress shirt.",
+      "turn_index": 6
+    },
+    {
+      "text": "I asked for tie styles and materials that would complement my suit and shirt.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will opt for a navy blue tie with a simple stripe pattern.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to be reminded to pack my belt.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to pack my clothes to minimize wrinkles and creases.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want my suit and dress shirt to look their best when I arrive in New York.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "business trip to New York",
+    "packing list for formal event",
+    "business trip to Chicago",
+    "forgot to pack a belt",
+    "suit fabrics and styles",
+    "dress shirt collars",
+    "French cuffs",
+    "Oxford weave",
+    "tie styles and materials",
+    "navy blue tie with stripe pattern",
+    "minimize wrinkles and creases",
+    "packing clothes to prevent creases"
+  ],
+  "events": [
+    {
+      "text": "Got back from a business trip to Chicago and forgot to pack a belt",
+      "date_hint": "just got back (relative to session)",
+      "turn_index": 0
+    },
+    {
+      "text": "Plan to pack a belt for the New York business trip after forgetting it on the Chicago trip",
+      "date_hint": "upcoming trip (relative to session)",
+      "turn_index": 8
+    }
+  ]
+}

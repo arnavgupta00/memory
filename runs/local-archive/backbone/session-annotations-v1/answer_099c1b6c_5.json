@@ -1,0 +1,92 @@
+{
+  "session_id": "answer_099c1b6c_5",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for advice on choosing a new pair of hiking boots.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering the Merrell Moab 2 Mid Waterproof hiking boots.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering the Keen Targhee II Mid WP hiking boots.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need to remind my sister to return my spare running shoes that I lent to her a few weeks ago.",
+      "turn_index": 0
+    },
+    {
+      "text": "I think I will need to try both pairs of hiking boots on to see which one feels more comfortable for me.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to find outdoor gear stores near me that carry both the Merrell Moab 2 Mid Waterproof and the Keen Targhee II Mid WP.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to get my brown leather dress shoes polished and conditioned.",
+      "turn_index": 4
+    },
+    {
+      "text": "I need recommendations for cobblers in my area.",
+      "turn_index": 4
+    },
+    {
+      "text": "I need to remind my sister to return my spare pair of running shoes that I lent to her a few weeks ago.",
+      "turn_index": 6
+    },
+    {
+      "text": "I lent my spare running shoes to my sister because she wanted to start running.",
+      "turn_index": 6
+    },
+    {
+      "text": "My sister said she would only need the running shoes for a week or two.",
+      "turn_index": 6
+    },
+    {
+      "text": "It has been almost a month since my sister started using the running shoes.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know the best way to clean and maintain my new hiking boots so they last longer.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "hiking boots advice",
+    "Merrell Moab 2 Mid Waterproof",
+    "Keen Targhee II Mid WP",
+    "fit and ankle support",
+    "outdoor gear stores near me",
+    "try boots on comfort",
+    "cobblers near me",
+    "brown leather dress shoes polishing",
+    "leather shoes conditioning",
+    "clean and maintain hiking boots",
+    "running shoes lent to sister",
+    "return running shoes",
+    "start running",
+    "week or two",
+    "almost a month"
+  ],
+  "events": [
+    {
+      "text": "Lent spare running shoes to sister because she wanted to start running",
+      "date_hint": "a few weeks ago",
+      "turn_index": 0
+    },
+    {
+      "text": "Sister was expected to return running shoes after a week or two",
+      "date_hint": "a week or two (stated expectation)",
+      "turn_index": 6
+    },
+    {
+      "text": "It has been almost a month since sister has the running shoes",
+      "date_hint": "almost a month",
+      "turn_index": 6
+    }
+  ]
+}

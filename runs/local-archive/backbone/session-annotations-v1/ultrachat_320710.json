@@ -1,0 +1,76 @@
+{
+  "session_id": "ultrachat_320710",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I will check the University of Exeter website or call to find out more about the historical buildings on campus.",
+      "turn_index": 2
+    },
+    {
+      "text": "I just got off the phone with Visitor Services.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to book a tour of the historical buildings on the University of Exeter campus.",
+      "turn_index": 4
+    },
+    {
+      "text": "I definitely want to visit the Old Library.",
+      "turn_index": 6
+    },
+    {
+      "text": "I definitely want to visit Reed Hall.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will check with Visitor Services to see when I can book a tour of the Old Library and Reed Hall.",
+      "turn_index": 8
+    },
+    {
+      "text": "I booked a tour for next week.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am excited to check out the Old Library and Reed Hall.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want suggestions for other things to do in Exeter while I am there.",
+      "turn_index": 12
+    }
+  ],
+  "keyphrases": [
+    "University of Exeter campus",
+    "historical buildings",
+    "open to the public tours",
+    "booking process",
+    "Visitor Services",
+    "Old Library",
+    "Reed Hall",
+    "next available tour",
+    "tour next week",
+    "things to do in Exeter"
+  ],
+  "events": [
+    {
+      "text": "Got off the phone with Visitor Services.",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Checked with Visitor Services about booking a tour for the Old Library and Reed Hall.",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Booked a tour for next week.",
+      "date_hint": "next week",
+      "turn_index": 10
+    },
+    {
+      "text": "Next week's tour for the Old Library and Reed Hall.",
+      "date_hint": "next week",
+      "turn_index": 12
+    }
+  ]
+}

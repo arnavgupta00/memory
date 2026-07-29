@@ -1,0 +1,33 @@
+{
+  "question_id": "61f8c8f8",
+  "question_type": "multi-session",
+  "question": "How much faster did I finish the 5K run compared to my previous year's time?",
+  "question_date": "2023/10/01 (Sun) 23:53",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_872e8da2_1",
+    "answer_872e8da2_2"
+  ],
+  "haystack_session_count": 48,
+  "notes_coverage": "partial",
+  "annotated_session_count": 6,
+  "gold_sessions": [
+    {
+      "session_id": "answer_872e8da2_1",
+      "date": "2023/10/01 (Sun) 16:16",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_872e8da2_1\n[session_date] 2023/10/01 (Sun) 16:16\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm training for a 5K run and I'm trying to create a training plan. Can you help me with that?\n\n[turn 2] I was thinking of starting with a base building phase, but I'm not sure how to pace myself. I've done a 5K run last year, but it took me 45 minutes to complete.\n\n[turn 4] That sounds like a good plan. I'll try to maintain a pace of around 16 minutes per mile for my base building phase.\n\n[turn 6] I think that sounds like a good plan. I'm also wondering if you can provide some tips on how to stay motivated during the base building phase.\n\n[turn 8] Those tips are really helpful. I think I've got a good understanding of how to stay motivated during the base building phase. I'm looking forward to getting started and tracking my progress.\n\n[turn 10] I'm ready to move forward with the base building phase. I'll make sure to stay consistent, listen to my body, and track my progress. Thanks for the tips and guidance!"
+    },
+    {
+      "session_id": "answer_872e8da2_2",
+      "date": "2023/10/01 (Sun) 11:48",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_872e8da2_2\n[session_date] 2023/10/01 (Sun) 11:48\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm planning a charity bake sale to support the local women's shelter on Dec 15th. Can you help me with some ideas for baked goods and pricing? By the way, I just got back into running and recently finished a 5K in 35 minutes.\n\n[turn 2] Can you help me come up with a catchy name for the bake sale event? Something that incorporates the idea of supporting the women's shelter and maybe the holiday season?\n\n[turn 4] I like \"Sweet Support for the Season\". Do you have any ideas on how to make the event more engaging and festive? Maybe some music, decorations, or activities for kids?\n\n[turn 6] That's a great list of ideas! I think the letter to Santa station and the hot cocoa bar will be a big hit with the kids. Can you also suggest some ways to promote the event through social media and local newspapers?\n\n[turn 8] I think I'll also create a Facebook event page and invite all my friends and family to join and share it with their networks. Can you help me draft a post to kick off the promotion of the event? Maybe something that mentions my recent 5K run and how it inspired me to organize this charity event?\n\n[turn 10] I think I'll modify the post to make it a bit more concise and focused on the event itself. Here's a revised version:\n\n**Post:**\n\n\"Exciting news! I'm hosting a charity bake sale, \"Sweet Support for the Season,\" on Dec 15th to benefit our local women's shelter!\n\nJoin me for a festive afternoon of delicious baked goods, hot cocoa, and holiday cheer! Your support will make a real difference in the lives of these amazing individuals.\n\n**Event Details:**\n\n* Date: Dec 15th\n* Time: [Insert time]\n* Location: [Insert location]\n\n**How you can help:**\n\n* Attend the event and bring friends!\n* Share this post to spread the word!\n* Consider volunteering or donating baked goods!\n\nLet's come together to make a difference in our community! Mark your calendars for Dec 15th!\n\n**Event Page:** [Insert event page link]\n\n**Hashtags:** #SweetSupportForTheSeason #Charity"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

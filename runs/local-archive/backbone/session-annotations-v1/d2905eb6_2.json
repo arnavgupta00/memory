@@ -1,0 +1,103 @@
+{
+  "session_id": "d2905eb6_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am having trouble navigating the city and need directions to the nearest grocery store from my apartment.",
+      "turn_index": 0
+    },
+    {
+      "text": "I got lost getting to my language class today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I felt overwhelmed and homesick after getting lost on the way to my language class.",
+      "turn_index": 0
+    },
+    {
+      "text": "I live near 33rd street and 3rd avenue.",
+      "turn_index": 2
+    },
+    {
+      "text": "Getting lost was the most challenging part.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am not used to the streets here.",
+      "turn_index": 2
+    },
+    {
+      "text": "My English is not good enough to ask for help when I need it.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to try the Duane Reade option because it is the closest.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want phrases I can use when I get to the store, including how to ask where something is or how much it costs.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am planning to buy ingredients for a traditional dish from my home country.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am looking for harder-to-find ingredients in the city, including berbere spice.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am looking for harder-to-find ingredients in the city, including injera bread.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have heard that some Ethiopian restaurants in the city sell injera bread.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to contact some Ethiopian restaurants to see if they sell injera bread.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know whether Ethiopian restaurants would also have berbere spice or other ingredients I need for my recipe.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "directions to nearest grocery store",
+    "language class",
+    "getting lost",
+    "homesick",
+    "33rd street and 3rd avenue",
+    "English not good enough to ask for help",
+    "Duane Reade",
+    "phrases to ask where something is",
+    "ask how much it costs",
+    "traditional dish ingredients",
+    "berbere spice",
+    "injera bread",
+    "Ethiopian restaurants selling injera"
+  ],
+  "events": [
+    {
+      "text": "Got lost getting to a language class and felt overwhelmed and homesick",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Plans to try Duane Reade as the closest grocery option",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Plans to buy traditional dish ingredients including berbere spice and injera bread",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Plans to contact Ethiopian restaurants to see if they sell injera bread",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

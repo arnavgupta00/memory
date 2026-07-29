@@ -1,0 +1,156 @@
+{
+  "session_id": "sharegpt_E6mafmR_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am creating a Vehicle Owner and User Management service for Polestar.",
+      "turn_index": 0
+    },
+    {
+      "text": "The Vehicle Owner and User Management service has four modules: the Registration number, owner, primary driver, and market modules.",
+      "turn_index": 0
+    },
+    {
+      "text": "I will focus on the Primary Driver module.",
+      "turn_index": 0
+    },
+    {
+      "text": "The Primary Driver module tracks the user identified with a Polestar ID who is the primary driver of a car.",
+      "turn_index": 0
+    },
+    {
+      "text": "A car can only have one primary driver.",
+      "turn_index": 0
+    },
+    {
+      "text": "The primary driver is captured from Polestar's Order Management System (POMS).",
+      "turn_index": 0
+    },
+    {
+      "text": "The service listens to order events from POMS.",
+      "turn_index": 0
+    },
+    {
+      "text": "If an order event contains a valid VIN and a Polestar ID in the \"Driver\" field, the service saves that Polestar ID as the car's primary driver.",
+      "turn_index": 0
+    },
+    {
+      "text": "A Polestar ID is valid if it exists in the Polestar ID service, which can be confirmed with an API call.",
+      "turn_index": 0
+    },
+    {
+      "text": "A VIN is valid if it exists in Volvo's factory order system, the Vehicle Internet Sale & Traceability Application (VISTA).",
+      "turn_index": 0
+    },
+    {
+      "text": "The service stores all the events it receives in an \"event store\" for replay purposes.",
+      "turn_index": 0
+    },
+    {
+      "text": "The service allows other systems to change a car's primary driver through an API.",
+      "turn_index": 0
+    },
+    {
+      "text": "There are two versions of the API: one with M2M authentication and one with Polestar ID authentication (OAuth).",
+      "turn_index": 0
+    },
+    {
+      "text": "Using the Polestar ID Auth. version, the user can only edit a car's primary driver if they have access to the logged-in primary driver's credentials.",
+      "turn_index": 0
+    },
+    {
+      "text": "The service saves the system that made the update for primary driver changes.",
+      "turn_index": 0
+    },
+    {
+      "text": "The service saves the timestamp of when the primary driver was registered.",
+      "turn_index": 0
+    },
+    {
+      "text": "The service saves the user ID if the change was made using the Polestar ID auth API.",
+      "turn_index": 0
+    },
+    {
+      "text": "The service saves the client ID of the service that made the change if the change was made using M2M auth API.",
+      "turn_index": 0
+    },
+    {
+      "text": "The service saves the event ID that caused the change.",
+      "turn_index": 0
+    },
+    {
+      "text": "If the update was made based on an event, the service also saves the timestamp when the event was emitted.",
+      "turn_index": 0
+    },
+    {
+      "text": "If the primary driver is registered based on an event from POMS, the service stores the order ID from the event.",
+      "turn_index": 0
+    },
+    {
+      "text": "A POMS update can only overwrite an API update if the order ID is new.",
+      "turn_index": 0
+    },
+    {
+      "text": "The service maintains a history for primary drivers.",
+      "turn_index": 0
+    },
+    {
+      "text": "When a new primary driver is registered, the previous primary driver is given an end timestamp.",
+      "turn_index": 0
+    },
+    {
+      "text": "Using the APIs, it is possible to remove a primary driver from a car without registering a new one.",
+      "turn_index": 0
+    },
+    {
+      "text": "I asked to create a data model in DynamoDB for the primary driver module.",
+      "turn_index": 2
+    },
+    {
+      "text": "The service will save the name of the system that initiated the change.",
+      "turn_index": 4
+    },
+    {
+      "text": "If the change was made based on an event, the service will save the name of the system that emitted the event.",
+      "turn_index": 4
+    },
+    {
+      "text": "If the change was made through the API, the service will save the name of the system that made the request.",
+      "turn_index": 4
+    },
+    {
+      "text": "I asked for all attributes in a list with descriptions.",
+      "turn_index": 6
+    },
+    {
+      "text": "System and SystemName shall be the same attribute.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "Vehicle Owner and User Management service",
+    "Polestar Primary Driver module",
+    "Polestar ID",
+    "POMS order events",
+    "VIN validation VISTA",
+    "event store replay",
+    "primary driver API",
+    "M2M authentication",
+    "Polestar ID authentication OAuth",
+    "DynamoDB data model",
+    "primary driver history end timestamp",
+    "SystemName attribute"
+  ],
+  "events": [
+    {
+      "text": "Create a data model in DynamoDB for the primary driver module",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "SystemName shall be the same attribute as System",
+      "date_hint": "",
+      "turn_index": 8
+    }
+  ]
+}

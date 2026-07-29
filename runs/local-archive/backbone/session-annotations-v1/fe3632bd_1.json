@@ -1,0 +1,95 @@
+{
+  "session_id": "fe3632bd_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for new jogging routes in my area.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been doing the same 30-minute jog around the block on Saturday for a while now.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am located in the 12345 zip code.",
+      "turn_index": 2
+    },
+    {
+      "text": "I prefer flat routes with minimal traffic.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to stay within a 10-15 minute drive from my place.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want access to restrooms and water fountains.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to try the Local Park Loop at Oakwood Park this weekend.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know whether I should bring water or whether water fountains are available throughout the Local Park Loop.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will bring some water with me.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been jogging for 30 minutes on Saturdays.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to maintain a 30-minute duration for this new route.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think I will add an extra lap to make it a 5-mile jog.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want tips on how to stay motivated to jog regularly.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I will try to find a jogging buddy to keep me motivated.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want tips on how to find a jogging buddy.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "new jogging routes",
+    "30-minute jog",
+    "around the block",
+    "Saturday jogging",
+    "12345 zip code",
+    "flat routes",
+    "minimal traffic",
+    "10-15 minute drive",
+    "restrooms",
+    "water fountains",
+    "Local Park Loop",
+    "Oakwood Park",
+    "5-mile jog",
+    "jogging motivation",
+    "jogging buddy"
+  ],
+  "events": [
+    {
+      "text": "Plan to try the Local Park Loop at Oakwood Park",
+      "date_hint": "this weekend",
+      "turn_index": 4
+    },
+    {
+      "text": "Jogging on Saturdays for 30 minutes",
+      "date_hint": "Saturdays",
+      "turn_index": 6
+    }
+  ]
+}

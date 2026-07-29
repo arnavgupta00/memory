@@ -1,0 +1,33 @@
+{
+  "question_id": "9aaed6a3",
+  "question_type": "multi-session",
+  "question": "How much cashback did I earn at SaveMart last Thursday?",
+  "question_date": "2023/05/30 (Tue) 23:17",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_353d3c6d_1",
+    "answer_353d3c6d_2"
+  ],
+  "haystack_session_count": 51,
+  "notes_coverage": "partial",
+  "annotated_session_count": 6,
+  "gold_sessions": [
+    {
+      "session_id": "answer_353d3c6d_1",
+      "date": "2023/05/23 (Tue) 19:31",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_353d3c6d_1\n[session_date] 2023/05/23 (Tue) 19:31\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm trying to get a sense of my expenses for the month. Can you help me track my grocery expenses? I spent $75 on groceries at SaveMart last Thursday.\n\n[turn 2] I also had some coffee expenses last week. I spent $15 on coffee and snacks at The Daily Grind, and then another $12.99 on a sandwich and salad with their 20% off offer.\n\n[turn 4] I also spent some money at Office Depot last month for printer ink and paper, it was $50.\n\n[turn 6] I think keeping them together is fine for now, thanks.\n\n[turn 8] I also spent $100 at Gap last weekend on a new pair of jeans and a sweater.\n\n[turn 10] I also spent $50 at Sephora last week on skincare products."
+    },
+    {
+      "session_id": "answer_353d3c6d_2",
+      "date": "2023/05/22 (Mon) 17:21",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_353d3c6d_2\n[session_date] 2023/05/22 (Mon) 17:21\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm trying to plan my grocery shopping trip for the week. Can you help me make a list of the items I need to buy at SaveMart? I have a membership there and can earn 1% cashback on all purchases.\n\n[turn 2] I'm planning to buy some basic items like milk, eggs, bread, and a few snacks. I don't have any dietary restrictions, and I'm shopping for myself. I'd like to stay within a budget of $50. Can you suggest some items that would fit within that range and also tell me how much cashback I'd earn?\n\n[turn 4] What about some pasta and marinara sauce? I have a digital coupon from the SaveMart app that gives me $1 off a jar of pasta sauce. Would that fit within my budget?\n\n[turn 6] What about some ground beef to go with the pasta? How much would that cost?\n\n[turn 8] Can you tell me how much I'd save if I were to buy the ground beef in bulk, say 3 pounds, instead of just 1 pound?\n\n[turn 10] I'd like to know if SaveMart has any sales or promotions on ground beef this week. Can you check if there are any deals I can take advantage of?"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

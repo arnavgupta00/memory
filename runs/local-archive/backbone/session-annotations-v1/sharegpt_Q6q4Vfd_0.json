@@ -1,0 +1,97 @@
+{
+  "session_id": "sharegpt_Q6q4Vfd_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to build a web application using Laravel and Tailwind.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have basic programming experience.",
+      "turn_index": 2
+    },
+    {
+      "text": "I use XAMPP for MySQL as the database.",
+      "turn_index": 4
+    },
+    {
+      "text": "I use the VS Code editor.",
+      "turn_index": 4
+    },
+    {
+      "text": "I finished installing Laravel.",
+      "turn_index": 4
+    },
+    {
+      "text": "My project name is webgem.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to add my project to GitHub so I can work on it from anywhere.",
+      "turn_index": 8
+    },
+    {
+      "text": "I ran a Git command to access a GitHub repository URL that failed with 'fatal: unable to access ... Could not resolve host: https'.",
+      "turn_index": 10
+    },
+    {
+      "text": "Webgem needs to store different stocks by different sellers.",
+      "turn_index": 12
+    },
+    {
+      "text": "Webgem needs to record orders received to sellers on a different online marketplace named 'gem to webgem'.",
+      "turn_index": 12
+    },
+    {
+      "text": "Webgem needs to allow later review of profit.",
+      "turn_index": 12
+    },
+    {
+      "text": "Webgem needs to record sellers accounts registered on 'gem'.",
+      "turn_index": 12
+    },
+    {
+      "text": "I want suggestions and answers to be based on the possibility of adding more features in the future.",
+      "turn_index": 12
+    },
+    {
+      "text": "I said 'you got it wrong'.",
+      "turn_index": 14
+    }
+  ],
+  "keyphrases": [
+    "Laravel project",
+    "Tailwind",
+    "basic programming experience",
+    "XAMPP MySQL",
+    "VS Code",
+    "installing Laravel",
+    "webgem project name",
+    "GitHub repository",
+    "fatal unable to access Could not resolve host https",
+    "store stocks by sellers",
+    "record orders received",
+    "online marketplace gem to webgem",
+    "profit review",
+    "record sellers accounts",
+    "future feature expansion",
+    "blueprint of web application"
+  ],
+  "events": [
+    {
+      "text": "Attempted to add the webgem repository to GitHub and encountered a fatal host resolution error.",
+      "date_hint": "",
+      "turn_index": 10
+    },
+    {
+      "text": "Requested a blueprint for the webgem web application based on initial requirements and future feature expansion.",
+      "date_hint": "",
+      "turn_index": 12
+    },
+    {
+      "text": "Corrected the assistant by saying it got it wrong.",
+      "date_hint": "",
+      "turn_index": 14
+    }
+  ]
+}

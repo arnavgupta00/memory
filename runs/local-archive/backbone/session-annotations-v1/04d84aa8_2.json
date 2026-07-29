@@ -1,0 +1,73 @@
+{
+  "session_id": "04d84aa8_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I changed my tea break time to 2:30 pm instead of 3 pm.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a reminder for my tea break today at 2:30 pm.",
+      "turn_index": 0
+    },
+    {
+      "text": "I had chamomile tea last week during a stressful meeting.",
+      "turn_index": 2
+    },
+    {
+      "text": "I experimented with different sweeteners in my tea and coffee.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know the difference between honey and stevia.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think I might like honey more.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I will try Earl Grey with Acacia Honey.",
+      "turn_index": 10
+    },
+    {
+      "text": "I really liked the Earl Grey from the local café last week.",
+      "turn_index": 10
+    },
+    {
+      "text": "The bergamot flavor sounds like it would pair well with the delicate sweetness of Acacia Honey.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "tea break reminder",
+    "2:30 pm tea break",
+    "digital calendar method",
+    "chamomile tea benefits",
+    "stressful meeting",
+    "earl grey vs green tea",
+    "honey vs stevia",
+    "tea and coffee sweeteners",
+    "tea flavors with honey",
+    "Earl Grey with Acacia Honey",
+    "bergamot flavor pairing",
+    "local café Earl Grey"
+  ],
+  "events": [
+    {
+      "text": "Changed tea break time to 2:30 pm instead of 3 pm and requested a reminder at the new time",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Had chamomile tea last week during a stressful meeting",
+      "date_hint": "last week",
+      "turn_index": 2
+    },
+    {
+      "text": "Liked Earl Grey from the local café last week",
+      "date_hint": "last week",
+      "turn_index": 10
+    }
+  ]
+}

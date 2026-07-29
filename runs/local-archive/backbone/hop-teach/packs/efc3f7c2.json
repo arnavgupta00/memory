@@ -1,0 +1,33 @@
+{
+  "question_id": "efc3f7c2",
+  "question_type": "multi-session",
+  "question": "How much earlier do I wake up on Fridays compared to other weekdays?",
+  "question_date": "2023/05/30 (Tue) 16:24",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_fc81d1a2_2",
+    "answer_fc81d1a2_1"
+  ],
+  "haystack_session_count": 48,
+  "notes_coverage": "partial",
+  "annotated_session_count": 3,
+  "gold_sessions": [
+    {
+      "session_id": "answer_fc81d1a2_2",
+      "date": "2023/05/29 (Mon) 07:46",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_fc81d1a2_2\n[session_date] 2023/05/29 (Mon) 07:46\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm trying to plan out my day and I'm wondering if you can help me create a schedule for today. I have a lot on my plate and I want to make sure I can fit everything in. By the way, on Fridays, I like to get a head start, so I wake up at 6:00 AM.\n\n[turn 2] I need to fit in a 45-minute workout, meditate for 30 minutes, and get ready for work. I also need to prepare my lunch, which takes about 20 minutes. My top priority is to finish a project that's due by the end of the day, so I'll need a few hours to focus on that. I have our daily team meeting at 9:00 AM, and I'd like to grab a coffee and catch up on some news beforehand.\n\n[turn 4] I think this schedule looks good, but I'm worried I might need more time to finish my project. Can I move my lunch break to 12:30 PM and use that extra 30 minutes to work on my project?\n\n[turn 6] I think this revised schedule should work for me. I'm glad I could fit in that extra 30 minutes to work on my project.\n\n[turn 8] I think I'll also need to make time to respond to some urgent emails before our team meeting. Can I squeeze in 15 minutes of email time between getting ready for work and grabbing a coffee?\n\n[turn 10] I think this revised schedule should work perfectly for me. I'm glad I could fit in that extra 15 minutes to respond to those urgent emails."
+    },
+    {
+      "session_id": "answer_fc81d1a2_1",
+      "date": "2023/05/24 (Wed) 12:46",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_fc81d1a2_1\n[session_date] 2023/05/24 (Wed) 12:46\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm trying to plan out my morning routine for the week. Can you help me set reminders for my meditation and gym sessions? I usually do them right after waking up at 6:30 AM on weekdays.\n\n[turn 2] I'd also like to add preparing my lunch to the routine. It usually takes me about 20 minutes to do that. Can you suggest a good time slot for that?\n\n[turn 4] I think the first option sounds good. Thanks for the suggestion!\n\n[turn 6] I'm also thinking of tracking my daily commute to optimize my route and schedule. Can you help me with that?\n\n[turn 8] I already mentioned that I take the 8:05 AM bus to work, which gets me to the office by 8:40 AM. I actually started taking a different route to work last week, which adds about 10 minutes to my commute, but I prefer it because it's less crowded.\n\n[turn 10] No, that's all for now. Thanks for your help!"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

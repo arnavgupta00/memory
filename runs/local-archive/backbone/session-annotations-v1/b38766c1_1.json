@@ -1,0 +1,75 @@
+{
+  "session_id": "b38766c1_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I take dance classes at Rhythm and Soul.",
+      "turn_index": 0
+    },
+    {
+      "text": "I twisted my ankle two weeks ago during a Salsa class on Monday.",
+      "turn_index": 0
+    },
+    {
+      "text": "My ankle injury was a minor sprain.",
+      "turn_index": 2
+    },
+    {
+      "text": "I focus on my technique, especially in Salsa class on Mondays, to avoid future injuries.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to perform in the studio's upcoming recital in two months.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am nervous about performing because I have never performed on stage before.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am worried about my ankle and whether it is okay to perform with a minor ankle sprain.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to consult my instructor, Jamal, about whether I should perform with a minor ankle sprain.",
+      "turn_index": 8
+    },
+    {
+      "text": "Jamal has been teaching at Rhythm and Soul for a while.",
+      "turn_index": 8
+    },
+    {
+      "text": "I trust Jamal's judgment.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of asking Jamal for additional private lessons to help me prepare for the recital.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "prevent injuries while dancing",
+    "dance classes at Rhythm and Soul",
+    "twisted ankle minor sprain",
+    "Salsa class on Mondays",
+    "ankle sprain prevention",
+    "high-impact dance styles",
+    "upcoming recital in two months",
+    "first time performing on stage",
+    "perform with minor ankle sprain",
+    "consult instructor Jamal",
+    "private lessons for recital"
+  ],
+  "events": [
+    {
+      "text": "Twisted ankle during a Salsa class on Monday",
+      "date_hint": "two weeks ago (Monday)",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to perform in the studio's upcoming recital",
+      "date_hint": "in two months",
+      "turn_index": 4
+    }
+  ]
+}

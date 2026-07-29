@@ -1,0 +1,73 @@
+{
+  "session_id": "sharegpt_PSpasm6_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user is planning a two-week holiday to Tanzania.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user is traveling with a young couple.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user wants a detailed 2-week day-to-day agenda for the trip.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user wants the itinerary to include cocktails, clubbing, museums, good food, music, and possibly ocean-related activities.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user does not want climbing mountains, nature, or hiking included in the itinerary.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user wants the itinerary to take weather forecasts, price, Google reviews, time of day, and proximity into account.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user asked to include addresses and the distance/time needed to move between places on the agenda.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user said the holiday is two weeks long.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user said the assistant only gave two days.",
+      "turn_index": 4
+    }
+  ],
+  "keyphrases": [
+    "2 week itinerary",
+    "Tanzania travel planning",
+    "young couple",
+    "cocktails",
+    "clubbing",
+    "museums",
+    "good food",
+    "music",
+    "ocean activities",
+    "no hiking",
+    "weather forecasts",
+    "addresses and travel time"
+  ],
+  "events": [
+    {
+      "text": "User requested a detailed 2-week day-to-day agenda for a Tanzania trip starting tomorrow morning",
+      "date_hint": "tomorrow morning",
+      "turn_index": 0
+    },
+    {
+      "text": "User asked to include addresses and distance/time between itinerary stops",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "User corrected that the holiday is two weeks long and noted only two days were provided",
+      "date_hint": "",
+      "turn_index": 4
+    }
+  ]
+}

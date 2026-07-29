@@ -1,0 +1,33 @@
+{
+  "question_id": "e5ba910e_abs",
+  "question_type": "multi-session",
+  "question": "What is the total cost of my recently purchased headphones and the iPad?",
+  "question_date": "2023/05/30 (Tue) 17:19",
+  "is_abstention": true,
+  "gold_session_ids": [
+    "answer_e49ed9d3_abs_2",
+    "answer_e49ed9d3_abs_1"
+  ],
+  "haystack_session_count": 48,
+  "notes_coverage": "partial",
+  "annotated_session_count": 5,
+  "gold_sessions": [
+    {
+      "session_id": "answer_e49ed9d3_abs_2",
+      "date": "2023/05/29 (Mon) 14:57",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_e49ed9d3_abs_2\n[session_date] 2023/05/29 (Mon) 14:57\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm thinking of getting a new laptop and was wondering if you could help me compare prices for the Dell XPS 13. By the way, I just got a new phone case for my Samsung Galaxy S22 from Case-Mate for $30, and it's been working out great.\n\n[turn 2] Can you tell me more about the Samsung Galaxy Watch Active2? I just got one recently and I'm still exploring its features.\n\n[turn 4] I've been using the watch to track my daily activities and sleep, and it's been really helpful in keeping me motivated to stay active. I also got it on sale for $200, which was a great deal. Do you think there are any other features I should explore or tips you can share to get the most out of my watch?\n\n[turn 6] That's really helpful, thanks! I'll definitely explore some of those features and tips. By the way, do you know if there are any good apps for tracking my daily commute? I've been using my new headphones a lot during my daily bus rides, and it would be great if I could track my commute time and route.\n\n[turn 8] I got the Sony WH-1000XM4 wireless noise-cancelling headphones. They're amazing! The noise-cancelling feature is so effective, and the sound quality is top-notch. I've been using them to listen to music and podcasts during my daily commute, and it's been a game-changer."
+    },
+    {
+      "session_id": "answer_e49ed9d3_abs_1",
+      "date": "2023/05/25 (Thu) 23:54",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_e49ed9d3_abs_1\n[session_date] 2023/05/25 (Thu) 23:54\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm considering buying a new laptop and I'm looking for some recommendations. I've been eyeing the Dell XPS 13, but I want to know if it's worth the investment. By the way, I recently got a new pair of Sony WH-1000XM4 headphones that I use for my daily commute. The headphones costed me $378, but they've been a game-changer.\n\n[turn 2] I'm actually looking for a laptop that can handle video editing software, so the XPS 13's performance sounds appealing. However, I'm a bit concerned about the limited ports. Do you think it's worth considering a laptop with more ports, even if it means sacrificing some of the portability?\n\n[turn 4] I think I'll look into laptops with a mix of USB-C and USB-A ports, as you suggested. That way, I can still have some flexibility without sacrificing too much portability. By the way, I've been using my new smartwatch to track my daily activities, and it's been really helpful in keeping me motivated to stay active.\n\n[turn 6] I'm also considering getting a portable power bank to keep my devices charged on the go. Do you think a 20,000mAh capacity is sufficient for most users, or is it better to opt for a higher capacity?\n\n[turn 8] I think I'll go with a 20,000mAh power bank for now, as it should be sufficient for my daily needs. By the way, I've been really enjoying my Sony WH-1000XM4 headphones, and the noise-cancelling feature has been a game-changer for my daily commute.\n\n[turn 10] I'd like to ask about Apple TV+. I've been thinking of trying it out, but I'm not sure if it's worth the $4.99 monthly subscription. What kind of content does it offer, and is it worth the price?"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

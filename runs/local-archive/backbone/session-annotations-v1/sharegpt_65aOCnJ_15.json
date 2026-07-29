@@ -1,0 +1,71 @@
+{
+  "session_id": "sharegpt_65aOCnJ_15",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I got an error message saying the number of levels of each grouping factor must be less than the number of observations (problems: participant).",
+      "turn_index": 1
+    },
+    {
+      "text": "I said this is a mixed factorial design.",
+      "turn_index": 3
+    },
+    {
+      "text": "I said participants might be changed.",
+      "turn_index": 3
+    },
+    {
+      "text": "I asked to fix errors for a mixed factor ANOVA analysis.",
+      "turn_index": 5
+    },
+    {
+      "text": "I provided R code that generates sample data with set.seed(123).",
+      "turn_index": 5
+    },
+    {
+      "text": "I created a data frame named data with participant as a factor from 1 to 30.",
+      "turn_index": 5
+    },
+    {
+      "text": "I set group to 15 control participants and 15 experimental participants.",
+      "turn_index": 5
+    },
+    {
+      "text": "I set time to morning, afternoon, and evening repeated 5 times for each group half.",
+      "turn_index": 5
+    },
+    {
+      "text": "I generated performance values using rnorm with mean 50 and sd 10 for the control group.",
+      "turn_index": 5
+    },
+    {
+      "text": "I generated performance values using rnorm with mean 55 and sd 10 for the experimental group.",
+      "turn_index": 5
+    },
+    {
+      "text": "I used the lme4 package in R.",
+      "turn_index": 5
+    },
+    {
+      "text": "I fit a mixed-effects model with lmer(performance ~ group + time + (1|participant), data = data).",
+      "turn_index": 5
+    },
+    {
+      "text": "I asked to fix the R codes again.",
+      "turn_index": 7
+    }
+  ],
+  "keyphrases": [
+    "number of levels of each grouping factor",
+    "mixed factorial design",
+    "participant factor",
+    "mixed factor ANOVA errors",
+    "R lme4",
+    "lmer performance model",
+    "random intercept (1|participant)",
+    "group control experimental",
+    "time morning afternoon evening",
+    "set.seed(123) sample data"
+  ],
+  "events": []
+}

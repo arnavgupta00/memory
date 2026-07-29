@@ -1,0 +1,63 @@
+{
+  "session_id": "sharegpt_JHGwlee_33",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user asked whether the code in /etc/freeradius/3.0/sites-enabled/default is still needed.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user asked which part they need to add: $INCLUDE sites-enabled/my_virtual_server.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user asked whether $INCLUDE should be placed in radiusd.conf or in /etc/freeradius/3.0/sites-enabled/default.",
+      "turn_index": 5
+    },
+    {
+      "text": "The user said the configuration was messed up and that the conversation needs to be started over.",
+      "turn_index": 7
+    },
+    {
+      "text": "The user asked for code for post-auth in /etc/freeradius/3.0/sites-available/default.",
+      "turn_index": 9
+    }
+  ],
+  "keyphrases": [
+    "FreeRADIUS configuration",
+    "/etc/freeradius/3.0/sites-enabled/default",
+    "$INCLUDE sites-enabled/my_virtual_server",
+    "radiusd.conf include directive",
+    "post-auth configuration",
+    "/etc/freeradius/3.0/sites-available/default",
+    "FreeRADIUS 3.0 sites-enabled",
+    "FreeRADIUS post-auth code"
+  ],
+  "events": [
+    {
+      "text": "User asked whether to keep existing code in /etc/freeradius/3.0/sites-enabled/default.",
+      "date_hint": "",
+      "turn_index": 1
+    },
+    {
+      "text": "User asked which part to add: $INCLUDE sites-enabled/my_virtual_server.",
+      "date_hint": "",
+      "turn_index": 3
+    },
+    {
+      "text": "User asked where to put the $INCLUDE directive (radiusd.conf vs sites-enabled/default).",
+      "date_hint": "",
+      "turn_index": 5
+    },
+    {
+      "text": "User said the configuration was messed up and requested restarting the conversation.",
+      "date_hint": "",
+      "turn_index": 7
+    },
+    {
+      "text": "User requested code for post-auth in /etc/freeradius/3.0/sites-available/default.",
+      "date_hint": "",
+      "turn_index": 9
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "session_id": "43f16b2b_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for healthy meal prep ideas.",
+      "turn_index": 0
+    },
+    {
+      "text": "I recently got a new cookbook that focuses on healthy recipes from Walmart.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am trying to stick to my Sunday meal prep routine.",
+      "turn_index": 0
+    },
+    {
+      "text": "I like the quinoa salad jars idea.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought quinoa at Trader Joe's last week.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want a citrus vinaigrette recipe to use with quinoa.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been meaning to get more into meal prep.",
+      "turn_index": 4
+    },
+    {
+      "text": "I bought a bunch of containers at Walmart recently.",
+      "turn_index": 4
+    },
+    {
+      "text": "I got the containers along with a new cookbook that focuses on healthy recipes.",
+      "turn_index": 6
+    },
+    {
+      "text": "I did not mention the name of the cookbook.",
+      "turn_index": 8
+    },
+    {
+      "text": "The cookbook is not a specific one; it is a general healthy recipes cookbook.",
+      "turn_index": 8
+    },
+    {
+      "text": "The containers are working out great for meal prep.",
+      "turn_index": 8
+    },
+    {
+      "text": "The containers seem really durable.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "healthy meal prep ideas",
+    "Walmart healthy recipes cookbook",
+    "Sunday meal prep routine",
+    "quinoa salad jars",
+    "Trader Joe's quinoa",
+    "citrus vinaigrette recipe",
+    "portioning quinoa and veggies",
+    "individual meal prep containers",
+    "Walmart meal prep containers",
+    "durable containers",
+    "general healthy recipes cookbook"
+  ],
+  "events": [
+    {
+      "text": "Bought quinoa at Trader Joe's",
+      "date_hint": "last week",
+      "turn_index": 2
+    },
+    {
+      "text": "Bought a bunch of containers at Walmart",
+      "date_hint": "recently",
+      "turn_index": 4
+    },
+    {
+      "text": "Got containers along with a new healthy recipes cookbook from Walmart",
+      "date_hint": "recently",
+      "turn_index": 6
+    }
+  ]
+}

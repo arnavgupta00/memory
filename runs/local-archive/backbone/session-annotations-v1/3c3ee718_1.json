@@ -1,0 +1,124 @@
+{
+  "session_id": "3c3ee718_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a 5-day trip to Seattle.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am trying to decide what to pack for my Seattle trip.",
+      "turn_index": 0
+    },
+    {
+      "text": "On my last trip to Chicago, I packed 7 shirts.",
+      "turn_index": 0
+    },
+    {
+      "text": "On my last trip to Chicago, packing 7 shirts was way too many.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am planning to visit Seattle in the spring.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think a light jacket or a water-repellent windbreaker would be a good choice for my Seattle trip.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to visit Pike Place Market.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am planning to visit the Space Needle.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think I will buy my Space Needle tickets online in advance to avoid the long lines.",
+      "turn_index": 8
+    },
+    {
+      "text": "I noticed that I packed 7 shirts on my last trip to Chicago.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am trying to pack more efficiently this time around.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I have a better idea of what to pack now.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will plan my outfits for my trip.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will pack multipurpose items to reduce the amount of luggage I bring.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to find good coffee shops near the Space Needle.",
+      "turn_index": 10
+    },
+    {
+      "text": "I would love to grab a coffee before or after my visit to the Space Needle.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "5-day trip to Seattle",
+    "what to pack Seattle",
+    "light jacket vs heavier coat",
+    "spring in Seattle",
+    "water-repellent windbreaker",
+    "Pike Place Market food options",
+    "Space Needle tickets online",
+    "buy tickets at ticket counter",
+    "avoid long lines",
+    "pack 7 shirts Chicago",
+    "pack more efficiently",
+    "plan outfits multipurpose items",
+    "reduce luggage",
+    "coffee shops near Space Needle",
+    "coffee before or after Space Needle"
+  ],
+  "events": [
+    {
+      "text": "Planning a 5-day trip to Seattle",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to visit Seattle in the spring",
+      "date_hint": "spring",
+      "turn_index": 2
+    },
+    {
+      "text": "Planning to visit Pike Place Market",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Planning to visit the Space Needle",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Buying Space Needle tickets online in advance to avoid long lines",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Last trip to Chicago where 7 shirts were packed",
+      "date_hint": "last trip",
+      "turn_index": 8
+    },
+    {
+      "text": "Planning to plan outfits and pack multipurpose items to reduce luggage",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "session_id": "bff03174",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a road trip to the mountains.",
+      "turn_index": 0
+    },
+    {
+      "text": "I went skiing with friends on February 15th earlier this year.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am planning to visit the same mountain range where I went skiing with friends earlier this year.",
+      "turn_index": 2
+    },
+    {
+      "text": "I spent two days on the slopes during the skiing trip.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am mostly interested in scenic drives and hiking for this trip.",
+      "turn_index": 4
+    },
+    {
+      "text": "I started taking longer walks in the morning on March 1st.",
+      "turn_index": 8
+    },
+    {
+      "text": "I enjoyed sunny days on March 1st.",
+      "turn_index": 8
+    },
+    {
+      "text": "I watched the snow melting away on March 1st.",
+      "turn_index": 8
+    },
+    {
+      "text": "I need more information to pinpoint the exact location.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "road trip to the mountains",
+    "scenic routes",
+    "mountain range skiing",
+    "skiing with friends",
+    "February 15",
+    "two days on the slopes",
+    "scenic drives",
+    "hiking",
+    "longer morning walks",
+    "March 1",
+    "sunny days",
+    "snow melting away"
+  ],
+  "events": [
+    {
+      "text": "Went skiing with friends.",
+      "date_hint": "February 15th",
+      "turn_index": 4
+    },
+    {
+      "text": "Spent two days on the slopes during the skiing trip.",
+      "date_hint": "earlier this year (around Feb 15)",
+      "turn_index": 6
+    },
+    {
+      "text": "Started taking longer walks in the morning and watched snow melt away.",
+      "date_hint": "March 1st",
+      "turn_index": 8
+    }
+  ]
+}

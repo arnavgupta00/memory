@@ -1,0 +1,128 @@
+{
+  "session_id": "e2cd250e_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to prioritize my tasks for the week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need help organizing my to-do list.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a proposal that has been taking a lot of my time.",
+      "turn_index": 0
+    },
+    {
+      "text": "I spent at least three hours on the proposal on Thursday.",
+      "turn_index": 0
+    },
+    {
+      "text": "The proposal is still not done.",
+      "turn_index": 0
+    },
+    {
+      "text": "The deadline for the proposal is the end of this week.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think the proposal will take at least a few more hours to complete.",
+      "turn_index": 2
+    },
+    {
+      "text": "The budget breakdown section is holding me back on the proposal.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am not sure how to estimate the costs for the project.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to go to the grocery store.",
+      "turn_index": 4
+    },
+    {
+      "text": "I need to do meal prep for the week.",
+      "turn_index": 4
+    },
+    {
+      "text": "It has been a while since I cooked a proper meal.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to make time for the gym 2-3 times this week.",
+      "turn_index": 4
+    },
+    {
+      "text": "I might need to adjust my schedule depending on how the proposal work goes.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to catch up on my TV show this week.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think I can fit TV breaks during the week.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to take TV breaks of about 30 minutes per day.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am feeling more confident about getting everything done.",
+      "turn_index": 10
+    },
+    {
+      "text": "I feel thankful for help organizing my tasks and prioritizing my time.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "prioritize tasks for the week",
+    "to-do list organization",
+    "proposal deadline end of this week",
+    "spent three hours on Thursday",
+    "budget breakdown",
+    "estimate project costs",
+    "grocery store",
+    "meal prep for the week",
+    "gym 2-3 times this week",
+    "catch up on TV show",
+    "30 minutes TV breaks per day",
+    "adjust schedule based on proposal"
+  ],
+  "events": [
+    {
+      "text": "Spent at least three hours working on the proposal",
+      "date_hint": "Thursday",
+      "turn_index": 0
+    },
+    {
+      "text": "Proposal deadline at the end of this week",
+      "date_hint": "end of this week",
+      "turn_index": 2
+    },
+    {
+      "text": "Plan to go to the grocery store and do meal prep for the week",
+      "date_hint": "this week",
+      "turn_index": 4
+    },
+    {
+      "text": "Plan to go to the gym 2-3 times this week",
+      "date_hint": "this week",
+      "turn_index": 4
+    },
+    {
+      "text": "Plan to catch up on a TV show during the week with 30 minutes per day",
+      "date_hint": "this week",
+      "turn_index": 6
+    },
+    {
+      "text": "Plan to take TV breaks during the week",
+      "date_hint": "this week",
+      "turn_index": 8
+    }
+  ]
+}

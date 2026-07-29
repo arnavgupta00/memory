@@ -1,0 +1,137 @@
+{
+  "session_id": "b21bd3e2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Denver next week and need to book a hotel.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want recommendations for good Hilton hotels in the Denver area.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am planning to book a flight to Denver.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want help finding the best deals on Delta flights from New York to Denver.",
+      "turn_index": 2
+    },
+    {
+      "text": "I will be flying out of JFK.",
+      "turn_index": 4
+    },
+    {
+      "text": "My travel dates are flexible.",
+      "turn_index": 4
+    },
+    {
+      "text": "I need to be in Denver by next Wednesday.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am traveling solo.",
+      "turn_index": 4
+    },
+    {
+      "text": "I do not have a preferred flight time.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am a Delta frequent flyer.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to stick with Delta to accumulate more miles.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been flying so much lately.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been able to rack up miles.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to use my Gold Medallion status to upgrade my seat on this flight.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to choose a non-stop flight, Delta Flight 2422.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to upgrade to Comfort+ using my miles.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want a walkthrough of the process of upgrading my seat.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have taken around 5 domestic flights in the past month.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have been on a plane every 2-3 weeks for the past 3 months.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want help keeping track of my travel history and expenses.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Hilton hotels Denver",
+    "Denver trip next week",
+    "Delta flights deals New York",
+    "JFK to Denver flight",
+    "travel dates flexible",
+    "be in Denver by next Wednesday",
+    "Delta frequent flyer miles",
+    "Gold Medallion seat upgrade",
+    "Delta Flight 2422 non-stop",
+    "upgrade to Comfort+ using miles",
+    "track travel history expenses",
+    "5 domestic flights past month"
+  ],
+  "events": [
+    {
+      "text": "Planning a trip to Denver next week and booking a hotel",
+      "date_hint": "next week",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to book Delta flights from New York to Denver",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Flying out of JFK with flexible dates and needing to be in Denver by next Wednesday",
+      "date_hint": "next Wednesday",
+      "turn_index": 4
+    },
+    {
+      "text": "Considering using Gold Medallion status to upgrade the seat",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Choosing non-stop Delta Flight 2422 and upgrading to Comfort+ using miles",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Taking around 5 domestic flights in the past month",
+      "date_hint": "past month",
+      "turn_index": 10
+    },
+    {
+      "text": "Being on a plane every 2-3 weeks for the past 3 months",
+      "date_hint": "past 3 months",
+      "turn_index": 10
+    }
+  ]
+}

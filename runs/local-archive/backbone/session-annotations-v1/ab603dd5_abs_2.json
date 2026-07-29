@@ -1,0 +1,110 @@
+{
+  "session_id": "ab603dd5_abs_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to San Francisco for next month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I was in San Francisco exactly two months ago for my best friend's wedding.",
+      "turn_index": 0
+    },
+    {
+      "text": "My best friend's wedding trip to San Francisco lasted 5 days.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for a place to grab breakfast in San Francisco.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know whether The Pork Store Cafe serves breakfast all day or only until a certain time.",
+      "turn_index": 2
+    },
+    {
+      "text": "I wore a new navy blue suit to my best friend's wedding.",
+      "turn_index": 4
+    },
+    {
+      "text": "I bought the navy blue suit specifically for the occasion from a local tailor in my hometown.",
+      "turn_index": 4
+    },
+    {
+      "text": "I took a short 3-day road trip to nearby mountains with my family a week after returning from San Francisco.",
+      "turn_index": 6
+    },
+    {
+      "text": "We drove for about 4 hours to reach the campsite.",
+      "turn_index": 6
+    },
+    {
+      "text": "At the campsite, we pitched our tent.",
+      "turn_index": 6
+    },
+    {
+      "text": "At the campsite, we spent the evening roasting marshmallows and telling ghost stories.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning to rent a car for my upcoming San Francisco trip.",
+      "turn_index": 8
+    },
+    {
+      "text": "About six weeks ago, I drove to my sister's place to help her move into her new apartment.",
+      "turn_index": 10
+    },
+    {
+      "text": "My sister's place is about 2 hours away from my hometown.",
+      "turn_index": 10
+    },
+    {
+      "text": "I spent the entire day packing and unpacking boxes at my sister's place.",
+      "turn_index": 10
+    },
+    {
+      "text": "In the evening, we ordered pizza and watched a movie together.",
+      "turn_index": 10
+    },
+    {
+      "text": "On my way back, I had to take a detour due to a road closure caused by a landslide.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "San Francisco trip next month",
+    "Haight-Ashbury neighborhood restaurants",
+    "best friend's wedding 5-day trip",
+    "The Pork Store Cafe breakfast all day",
+    "navy blue suit local tailor",
+    "vintage or thrift stores",
+    "3-day road trip nearby mountains",
+    "camping gear tips",
+    "rent a car San Francisco",
+    "scenic drives Bay Area",
+    "road closures unexpected detours",
+    "landslide road closure detour"
+  ],
+  "events": [
+    {
+      "text": "Trip to San Francisco for my best friend's wedding",
+      "date_hint": "exactly two months ago",
+      "turn_index": 0
+    },
+    {
+      "text": "3-day road trip to nearby mountains with my family",
+      "date_hint": "a week after returning from San Francisco",
+      "turn_index": 6
+    },
+    {
+      "text": "Drove to my sister's place to help her move into her new apartment",
+      "date_hint": "about six weeks ago",
+      "turn_index": 10
+    },
+    {
+      "text": "Detour on the way back due to a road closure caused by a landslide",
+      "date_hint": "about six weeks ago (during the return trip)",
+      "turn_index": 10
+    }
+  ]
+}

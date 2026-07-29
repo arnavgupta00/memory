@@ -1,0 +1,68 @@
+{
+  "session_id": "243ca32d",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have binged The Morning Show on Apple TV+ and loved it.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have already seen Servant and it is really good.",
+      "turn_index": 2
+    },
+    {
+      "text": "I started my free trial of Apple TV+ three weeks ago.",
+      "turn_index": 2
+    },
+    {
+      "text": "I renewed my Apple TV+ free trial for another month.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking about canceling my Amazon Prime Video subscription.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been loving Apple TV+ so far.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have already seen Our Planet on Netflix and loved it.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Apple TV+ recommendations",
+    "The Morning Show",
+    "Servant Apple TV+",
+    "upcoming Apple TV+ shows",
+    "Apple TV+ release dates",
+    "Apple TV+ free trial",
+    "Apple TV+ renewed for another month",
+    "Netflix premium tier vs standard tier",
+    "Netflix 4K streaming",
+    "HBO Max launch date",
+    "HBO Max cost",
+    "Amazon Prime Video cancellation",
+    "content missing after canceling Prime Video",
+    "Netflix documentary recommendations",
+    "Our Planet documentary"
+  ],
+  "events": [
+    {
+      "text": "Started an Apple TV+ free trial.",
+      "date_hint": "three weeks ago",
+      "turn_index": 2
+    },
+    {
+      "text": "Renewed the Apple TV+ free trial for another month.",
+      "date_hint": "three weeks ago (renewed for another month)",
+      "turn_index": 2
+    },
+    {
+      "text": "Thinking about canceling an Amazon Prime Video subscription.",
+      "date_hint": "",
+      "turn_index": 8
+    }
+  ]
+}

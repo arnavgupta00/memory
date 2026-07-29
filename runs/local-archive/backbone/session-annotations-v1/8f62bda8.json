@@ -1,0 +1,110 @@
+{
+  "session_id": "8f62bda8",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a fall hike.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want hiking boots that are waterproof.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want hiking boots with good traction.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of doing a hike with some friends soon.",
+      "turn_index": 2
+    },
+    {
+      "text": "One of my friends is a total newbie to hiking.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was thinking of doing a hike in a nearby state park.",
+      "turn_index": 4
+    },
+    {
+      "text": "I went to that nearby state park last year.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am wondering whether the foliage will be good by the time I go.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of doing a hike with amazing foliage views.",
+      "turn_index": 6
+    },
+    {
+      "text": "Last year I started noticing the days getting shorter around late August.",
+      "turn_index": 6
+    },
+    {
+      "text": "I realized summer was officially coming to an end around late August last year.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am wondering whether noticing days getting shorter is a good indicator for when foliage will start to change.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of doing a hike that is about 5 miles long.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want great views of the surrounding area on that hike.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering whether a 5-mile hike is a good idea for a newbie hiker.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of starting with something shorter for my first hike.",
+      "turn_index": 8
+    },
+    {
+      "text": "I don't want to overexert myself on my first hike.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am looking for hiking apps to help me navigate trails and track my progress.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "fall hike",
+    "waterproof hiking boots",
+    "hiking boots traction",
+    "beginner hiking tips",
+    "state park hike",
+    "foliage timing",
+    "late August days getting shorter",
+    "foliage will start to change",
+    "5 mile hike",
+    "newbie hiker",
+    "shorter first hike",
+    "hiking navigation apps",
+    "track my progress hiking apps"
+  ],
+  "events": [
+    {
+      "text": "Started noticing the days getting shorter around late August",
+      "date_hint": "late August (last year)",
+      "turn_index": 6
+    },
+    {
+      "text": "Realized summer was officially coming to an end around late August (last year)",
+      "date_hint": "late August (last year)",
+      "turn_index": 6
+    },
+    {
+      "text": "Went to the nearby state park last year",
+      "date_hint": "last year",
+      "turn_index": 4
+    }
+  ]
+}

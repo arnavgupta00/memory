@@ -1,0 +1,33 @@
+{
+  "session_id": "sharegpt_XKH6h44_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user wants a TypeScript function to accept an arbitrary array of keys and return an array of results with the same length as the input array.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user wants to specify the value type for each kv entry result using a generic argument.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user cannot pass `as const` arrays to the function now.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user asked whether the returned array is still mutable.",
+      "turn_index": 4
+    }
+  ],
+  "keyphrases": [
+    "TypeScript getMany function",
+    "arbitrary array of keys",
+    "generic argument value type",
+    "KV entries result types",
+    "output array same length as input",
+    "type-safe mapping of keys to values",
+    "as const arrays",
+    "returned array mutability"
+  ],
+  "events": []
+}

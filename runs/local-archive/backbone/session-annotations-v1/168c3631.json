@@ -1,0 +1,101 @@
+{
+  "session_id": "168c3631",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have a snake plant that has been dropping leaves lately.",
+      "turn_index": 0
+    },
+    {
+      "text": "I think I might be watering my snake plant too much.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been watering my snake plant every 4 days since the weather got hotter.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have a succulent that has been doing well.",
+      "turn_index": 4
+    },
+    {
+      "text": "I got my succulent about three weeks ago from the farmers' market.",
+      "turn_index": 4
+    },
+    {
+      "text": "My succulent is an aloe vera type.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been watering my aloe vera type succulent once a week.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want tips on how to care for succulents.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am curious about fertilization for my plants.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know whether I should use a specific brand or type of balanced fertilizer.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of getting a humidifier for my plants.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have a fiddle leaf fig tree.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of repotting my peace lily.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have had my peace lily for about 2 years.",
+      "turn_index": 10
+    },
+    {
+      "text": "I already have a new pot for repotting my peace lily.",
+      "turn_index": 10
+    },
+    {
+      "text": "I already have fresh potting mix for repotting my peace lily.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "snake plant dropping leaves",
+    "watering frequency",
+    "watering every 4 days",
+    "succulent care tips",
+    "aloe vera type succulent",
+    "watering once a week",
+    "balanced fertilizer for plants",
+    "humidifier for plants",
+    "fiddle leaf fig tree humidity",
+    "repotting peace lily",
+    "peace lily potting mix",
+    "repotting tips"
+  ],
+  "events": [
+    {
+      "text": "Got an aloe vera type succulent from the farmers' market",
+      "date_hint": "about three weeks ago",
+      "turn_index": 4
+    },
+    {
+      "text": "Watering schedule changed since the weather got hotter (watering every 4 days)",
+      "date_hint": "since the weather got hotter",
+      "turn_index": 2
+    },
+    {
+      "text": "Had a peace lily for about 2 years",
+      "date_hint": "about 2 years",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "question_id": "6456829e_abs",
+  "question_type": "multi-session",
+  "question": "How many plants did I initially plant for tomatoes and chili peppers?",
+  "question_date": "2023/05/30 (Tue) 14:24",
+  "is_abstention": true,
+  "gold_session_ids": [
+    "answer_743f03a1_abs_1",
+    "answer_743f03a1_abs_2"
+  ],
+  "haystack_session_count": 53,
+  "notes_coverage": "partial",
+  "annotated_session_count": 6,
+  "gold_sessions": [
+    {
+      "session_id": "answer_743f03a1_abs_1",
+      "date": "2023/05/22 (Mon) 23:14",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_743f03a1_abs_1\n[session_date] 2023/05/22 (Mon) 23:14\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm looking for some recipe ideas that feature fresh tomatoes as the main ingredient.\n\n[turn 2] That's quite a list! I think I'll try the Bruschetta and Tomato and Mozzarella Salad recipes first. Do you have any tips on how to store fresh tomatoes to keep them fresh for a longer period?\n\n[turn 4] I've been using my fresh tomatoes in salads and sandwiches, but I was thinking of trying to make some homemade pasta sauce. Do you have any tips on how to make a good pasta sauce from scratch using fresh tomatoes?\n\n[turn 6] I've heard that using fresh tomatoes can make a huge difference in the flavor of the pasta sauce. I'm excited to try out this recipe. I've been getting a lot of tomatoes from my garden lately, so this is perfect timing. Speaking of which, do you have any tips on how to keep my tomato plants healthy and productive throughout the season?\n\n[turn 8] I've been doing my best to keep my tomato plants healthy, but I did notice that some of the leaves started to turn yellow and wilt recently. I did some research and realized I might be overwatering them. So, I cut back on the watering schedule, and it seems to be working - the plants are looking healthier again.\n\n[turn 10] I've been enjoying the harvest immensely! I planted 5 tomato plants initially, and they've been producing like crazy. I've been harvesting tomatoes almost daily, and they're so delicious and flavorful. I've been using them in salads, sandwiches, and cooking up a storm in the kitchen. It's amazing how much more flavorful homegrown tomatoes are compared to store-bought ones."
+    },
+    {
+      "session_id": "answer_743f03a1_abs_2",
+      "date": "2023/05/29 (Mon) 18:56",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_743f03a1_abs_2\n[session_date] 2023/05/29 (Mon) 18:56\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm trying to plan out my meals for the week and was wondering if you have any recipe suggestions that feature cucumbers as the main ingredient? By the way, I've been growing my own cucumbers in my garden, and I've got 3 plants that are producing a lot of them!\n\n[turn 2] Can you give me some suggestions on how to store my cucumbers to keep them fresh for a longer period?\n\n[turn 4] I've been looking for a good recipe for pickling cucumbers. Do you have any recommendations for a simple recipe for dill pickles?\n\n[turn 6] I'm excited to try this recipe. I've been harvesting cucumbers from my garden daily, and I think this will be a great way to preserve some of them. Do you have any suggestions on how to adjust the recipe for smaller batches, like if I just want to make a few jars at a time?\n\n[turn 8] Can you tell me more about the lacto-fermentation process and how it helps preserve the pickles?\n\n[turn 10] I'd like to ask about the importance of using kosher salt in the pickling process. Is it really necessary, or can I use regular table salt instead?"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

@@ -1,0 +1,119 @@
+{
+  "session_id": "sharegpt_gPFzM9v_153",
+  "prompt": "session-annotate-v1",
+  "facts": [],
+  "keyphrases": [
+    "non-standard drive",
+    "target machine drive",
+    "CD-ROM drive",
+    "total size on disk in bytes",
+    "C:\\Users\\Offsec\\Desktop",
+    "subdirectories",
+    "files on Windows using cmd",
+    "create new user using cmd",
+    "add user to administrators group",
+    "see users in groups",
+    "see user permissions on directory or file",
+    "create second administrative account",
+    "new admin account called hacker",
+    "log in as new user",
+    "file containing administrator password",
+    "see which permissions a user has on cmd",
+    "give account full permissions to a file",
+    "run a file as administrator using cmd",
+    "trigger before logon trigger",
+    "types of logon triggers",
+    "malicious process",
+    "stop malware",
+    "halting.exe binary",
+    "Administrator's Desktop",
+    "contents of the flag"
+  ],
+  "events": [
+    {
+      "text": "Find the non-standard drive on the target machine and locate the flag",
+      "date_hint": "",
+      "turn_index": 1
+    },
+    {
+      "text": "Identify which drive on the target machine contains the CD-ROM",
+      "date_hint": "",
+      "turn_index": 3
+    },
+    {
+      "text": "Determine the total size on disk in bytes of C:\\Users\\Offsec\\Desktop and all subdirectories",
+      "date_hint": "",
+      "turn_index": 5
+    },
+    {
+      "text": "Look for files on Windows using cmd",
+      "date_hint": "",
+      "turn_index": 7
+    },
+    {
+      "text": "Create a new user using cmd",
+      "date_hint": "",
+      "turn_index": 9
+    },
+    {
+      "text": "Add the new user to the administrators group",
+      "date_hint": "",
+      "turn_index": 11
+    },
+    {
+      "text": "See users in groups",
+      "date_hint": "",
+      "turn_index": 13
+    },
+    {
+      "text": "See which users have what permissions on a directory or a file",
+      "date_hint": "",
+      "turn_index": 15
+    },
+    {
+      "text": "Create a second administrative account called \"hacker\" and log in as this new user",
+      "date_hint": "",
+      "turn_index": 17
+    },
+    {
+      "text": "Find the file containing the administrator's password",
+      "date_hint": "",
+      "turn_index": 17
+    },
+    {
+      "text": "See which permissions a user has on cmd",
+      "date_hint": "",
+      "turn_index": 19
+    },
+    {
+      "text": "Give an account full permissions to a file using an administrator account on cmd",
+      "date_hint": "",
+      "turn_index": 21
+    },
+    {
+      "text": "Run a file as administrator using cmd",
+      "date_hint": "",
+      "turn_index": 23
+    },
+    {
+      "text": "Determine what trigger happens before a logon trigger",
+      "date_hint": "",
+      "turn_index": 25
+    },
+    {
+      "text": "List types of logon triggers",
+      "date_hint": "",
+      "turn_index": 27
+    },
+    {
+      "text": "Stop a malicious process using halting.exe on the Administrator's Desktop and verify malware termination",
+      "date_hint": "",
+      "turn_index": 29
+    },
+    {
+      "text": "Retrieve the contents of the flag after malware is terminated",
+      "date_hint": "",
+      "turn_index": 29
+    }
+  ]
+}

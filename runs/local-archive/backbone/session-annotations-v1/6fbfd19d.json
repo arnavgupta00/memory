@@ -1,0 +1,88 @@
+{
+  "session_id": "6fbfd19d",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planting new flowers in my garden.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need help finding a good companion plant for my tomatoes.",
+      "turn_index": 0
+    },
+    {
+      "text": "I planted marigolds with my tomatoes.",
+      "turn_index": 2
+    },
+    {
+      "text": "I planted peas a month ago.",
+      "turn_index": 2
+    },
+    {
+      "text": "I built a new trellis for my peas a month ago.",
+      "turn_index": 4
+    },
+    {
+      "text": "I started planning my garden layout on January 15th.",
+      "turn_index": 6
+    },
+    {
+      "text": "I downloaded a gardening app to write down my garden planning date.",
+      "turn_index": 6
+    },
+    {
+      "text": "I use the gardening app to keep track of my progress and remind me of important tasks like when to plant and prune.",
+      "turn_index": 8
+    },
+    {
+      "text": "I use the gardening app to take notes and add photos of my garden.",
+      "turn_index": 8
+    },
+    {
+      "text": "I like the weather integration feature in the gardening app.",
+      "turn_index": 10
+    },
+    {
+      "text": "The weather integration feature gives me a forecast for the upcoming week.",
+      "turn_index": 10
+    },
+    {
+      "text": "If the forecast is a rainy week, I might postpone pruning or mulching.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "companion plant for tomatoes",
+    "planting new flowers",
+    "marigolds with tomatoes",
+    "peas trellis training",
+    "peas climbing trellis",
+    "built trellis for peas",
+    "garden layout planning date",
+    "January 15th",
+    "gardening app",
+    "take notes and add photos",
+    "weather integration feature",
+    "forecast for upcoming week",
+    "postpone pruning",
+    "postpone mulching",
+    "rainy week gardening tasks"
+  ],
+  "events": [
+    {
+      "text": "Started planning my garden layout",
+      "date_hint": "January 15th",
+      "turn_index": 6
+    },
+    {
+      "text": "Planted peas",
+      "date_hint": "a month ago",
+      "turn_index": 2
+    },
+    {
+      "text": "Built a new trellis for my peas",
+      "date_hint": "a month ago",
+      "turn_index": 4
+    }
+  ]
+}

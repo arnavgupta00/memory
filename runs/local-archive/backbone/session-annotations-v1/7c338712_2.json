@@ -1,0 +1,96 @@
+{
+  "session_id": "7c338712_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I try to exercise in the morning but it has been tough to establish a consistent morning routine.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a 45-minute train ride to work.",
+      "turn_index": 2
+    },
+    {
+      "text": "I usually leave the house at 8:45 AM to grab a coffee before my train ride.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have trouble sleeping.",
+      "turn_index": 4
+    },
+    {
+      "text": "I often lie awake in bed between 2:00 AM and 3:00 AM.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been trying to establish a consistent sleep schedule but it has been challenging.",
+      "turn_index": 4
+    },
+    {
+      "text": "I sometimes still lie awake in bed even after trying some sleep techniques.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am worried that my inconsistent sleep schedule might be affecting my morning workouts.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have noticed that my sleep patterns are affected by my daily commute.",
+      "turn_index": 8
+    },
+    {
+      "text": "I leave the house at 8:45 AM to grab a coffee before my train ride.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am wondering if listening to calming music or nature sounds during my commute could help signal to my body that it is time to wind down before bed.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am going to try incorporating calming music into my commute to see if it helps me wind down before bed.",
+      "turn_index": 10
+    },
+    {
+      "text": "I try to make the most of my 45-minute train ride by listening to podcasts or audiobooks.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "morning exercise habit",
+    "consistent morning routine",
+    "45-minute train ride",
+    "daily commute",
+    "leave house at 8:45 AM",
+    "grab a coffee",
+    "sleep schedule",
+    "lying awake 2:00 AM to 3:00 AM",
+    "wind down before bed",
+    "calming music during commute",
+    "nature sounds commute",
+    "podcast or audiobook recommendations",
+    "productivity podcasts",
+    "learn something new"
+  ],
+  "events": [
+    {
+      "text": "I often lie awake in bed between 2:00 AM and 3:00 AM.",
+      "date_hint": "between 2:00 AM and 3:00 AM",
+      "turn_index": 4
+    },
+    {
+      "text": "I leave the house at 8:45 AM to grab a coffee before my train ride.",
+      "date_hint": "8:45 AM",
+      "turn_index": 2
+    },
+    {
+      "text": "I leave the house at 8:45 AM to grab a coffee before my train ride.",
+      "date_hint": "8:45 AM",
+      "turn_index": 8
+    },
+    {
+      "text": "I am going to try incorporating calming music into my commute to wind down before bed.",
+      "date_hint": "next",
+      "turn_index": 10
+    }
+  ]
+}

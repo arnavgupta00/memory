@@ -1,0 +1,104 @@
+{
+  "session_id": "b304b283_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I went to an amazing jazz concert at the Blue Note Jazz Club.",
+      "turn_index": 0
+    },
+    {
+      "text": "I saw Kamasi Washington perform live at the Blue Note Jazz Club today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for music recommendations similar to what I heard at the jazz concert.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to explore more of Robert Glasper's music.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want a specific Robert Glasper album or track to start with.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to check out \"Black Radio\" by Robert Glasper.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am curious about Robert Glasper's collaborations with other artists.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want information about Robert Glasper's work with Kendrick Lamar.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been to a few concerts at smaller venues like the Blue Note Jazz Club.",
+      "turn_index": 6
+    },
+    {
+      "text": "I saw Kamasi Washington perform live at the Blue Note Jazz Club today.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning a trip to Tokyo soon.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to check out the jazz scene in Tokyo.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am planning to check out Blue Note Tokyo.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am planning to check out Cotton Club.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want recommendations for local Japanese jazz musicians to check out while in Tokyo.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "music recommendations",
+    "jazz concert",
+    "Blue Note Jazz Club",
+    "Kamasi Washington live",
+    "Robert Glasper",
+    "Black Radio",
+    "Robert Glasper collaborations",
+    "Kendrick Lamar",
+    "famous jazz clubs",
+    "jazz clubs around the world",
+    "trip to Tokyo",
+    "Blue Note Tokyo",
+    "Cotton Club",
+    "Japanese jazz musicians"
+  ],
+  "events": [
+    {
+      "text": "Saw Kamasi Washington perform live at the Blue Note Jazz Club.",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Saw Kamasi Washington perform live at the Blue Note Jazz Club.",
+      "date_hint": "today",
+      "turn_index": 6
+    },
+    {
+      "text": "Planning a trip to Tokyo soon.",
+      "date_hint": "soon",
+      "turn_index": 8
+    },
+    {
+      "text": "Planning to check out Blue Note Tokyo and Cotton Club.",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

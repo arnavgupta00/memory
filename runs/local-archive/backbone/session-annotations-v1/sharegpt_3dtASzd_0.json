@@ -1,0 +1,114 @@
+{
+  "session_id": "sharegpt_3dtASzd_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user requested generating text labeled from week 1 through week 20.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user requested adding calendar dates to all weeks.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user specified that week 1 starts on 6 February 2023, on a Monday.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user requested putting each week on a separate line of text.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user requested a schedule for an Intellectual Property Law lecture.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user specified that weeks 1 to 8 include a seminar plus a workshop each week.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user specified that week 9 includes an oral exam.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user specified that information for week 9 is to be announced.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user specified that weeks 10 to 16 include a seminar plus a workshop each week.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user specified that week 17 is a study week with no classes to prepare for assignments.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user specified that week 18 is a submission deadline for a written professional assignment.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user specified that week 19 is a study week with no classes.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user specified that week 20 is a re-sit oral exam with a presentation to the client.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "week 1 to week 20",
+    "calendaristic dates",
+    "week 1 starts 6 February 2023 Monday",
+    "each week on a separate line",
+    "Schedule of Intellectual Property Law Lecture",
+    "seminar and workshop weeks 1-8",
+    "oral exam week 9",
+    "information to be announced",
+    "seminar and workshop weeks 10-16",
+    "study week no classes week 17",
+    "written professional assignment submission deadline week 18",
+    "re-sit oral exams week 20 presentation to the client"
+  ],
+  "events": [
+    {
+      "text": "Week 1 starts on 6 February 2023 (Monday)",
+      "date_hint": "6th of february 2023",
+      "turn_index": 2
+    },
+    {
+      "text": "Intellectual Property Law lecture schedule: weeks 1-8 seminar + workshop",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Intellectual Property Law lecture schedule: week 9 oral exam (information to be announced)",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Intellectual Property Law lecture schedule: weeks 10-16 seminar + workshop",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Intellectual Property Law lecture schedule: week 17 study week (no classes, prepare for assignments)",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Intellectual Property Law lecture schedule: week 18 submission deadline (written professional assignment)",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Intellectual Property Law lecture schedule: week 19 study week (no classes)",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Intellectual Property Law lecture schedule: week 20 re-sit oral exams (presentation to the client)",
+      "date_hint": "",
+      "turn_index": 6
+    }
+  ]
+}

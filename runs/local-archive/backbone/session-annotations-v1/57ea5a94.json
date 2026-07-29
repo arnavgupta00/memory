@@ -1,0 +1,101 @@
+{
+  "session_id": "57ea5a94",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to the mall this weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need help finding a good place to grab lunch near H&M.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am going to the same mall where I got distressed denim jeans last week.",
+      "turn_index": 2
+    },
+    {
+      "text": "I got distressed denim jeans at the mall last week.",
+      "turn_index": 2
+    },
+    {
+      "text": "The mall has a food court with a Subway and a Sbarro's.",
+      "turn_index": 4
+    },
+    {
+      "text": "I think the mall is in the same city where I live.",
+      "turn_index": 6
+    },
+    {
+      "text": "I live in the same city as the mall.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think the mall is one of the bigger malls in the area.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am not sure what type of cuisine I want.",
+      "turn_index": 6
+    },
+    {
+      "text": "I do not want to eat at the food court.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want restaurants inside the mall that are not in the food court.",
+      "turn_index": 6
+    },
+    {
+      "text": "Last week at the mall, I saw a huge Forever 21 store right across from H&M.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am planning to stop by Sephora after lunch.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to stock up on skincare products at Sephora.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know whether Sephora has any sales or promotions going on right now.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "mall trip this weekend",
+    "lunch near H&M",
+    "restaurants near H&M",
+    "distressed denim jeans",
+    "food court Subway Sbarro's",
+    "bigger mall in the area",
+    "restaurants inside mall not food court",
+    "Forever 21 store across from H&M",
+    "Sephora after lunch",
+    "skincare products",
+    "Sephora sales promotions"
+  ],
+  "events": [
+    {
+      "text": "Planning a trip to the mall this weekend for lunch near H&M",
+      "date_hint": "this weekend",
+      "turn_index": 0
+    },
+    {
+      "text": "Went to the mall last week and bought distressed denim jeans",
+      "date_hint": "last week",
+      "turn_index": 2
+    },
+    {
+      "text": "Saw a huge Forever 21 store right across from H&M at the mall",
+      "date_hint": "last week",
+      "turn_index": 8
+    },
+    {
+      "text": "Planning to stop by Sephora after lunch to stock up on skincare products",
+      "date_hint": "after lunch (this trip)",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "question_id": "cc6d1ec1",
+  "question_type": "temporal-reasoning",
+  "question": "How long had I been bird watching when I attended the bird watching workshop?",
+  "question_date": "2023/05/21 (Sun) 19:31",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_be73098b_1",
+    "answer_be73098b_2"
+  ],
+  "haystack_session_count": 46,
+  "notes_coverage": "partial",
+  "annotated_session_count": 3,
+  "gold_sessions": [
+    {
+      "session_id": "answer_be73098b_1",
+      "date": "2023/05/21 (Sun) 08:56",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_be73098b_1\n[session_date] 2023/05/21 (Sun) 08:56\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm looking to set up a bird feeder in my backyard, can you recommend some good types of seed that would attract a variety of birds? By the way, I've been getting into bird watching for about three months now, and it's been really fascinating so far.\n\n[turn 2] I'm thinking of getting a feeder that can hold suet as well, since I've seen woodpeckers in my area. Do you think that would be a good idea?\n\n[turn 4] I've been trying to spot a Red-headed Woodpecker, but no luck so far. Do you think offering suet would increase my chances of attracting this species to my yard?\n\n[turn 6] I've seen Downy Woodpeckers in my area, so I'll definitely consider offering suet to attract more of them. I've also been trying to learn more about bird calls, and I've been listening to recordings on my phone to help me identify birds by ear. Do you have any tips on how to improve my bird call recognition skills?\n\n[turn 8] I've been trying to recognize bird calls in my backyard, but it's been a challenge. I've been focusing on the Downy Woodpecker's call, which I've heard is a pretty distinctive \"pik\" sound. Do you think that's a good starting point?\n\n[turn 10] I'm glad I could help you with that! Now, let's talk about my life list. I've been keeping track of the birds I've seen, and I'm up to 35 species so far. I'm curious, are there any birds that are particularly difficult to spot in my area?"
+    },
+    {
+      "session_id": "answer_be73098b_2",
+      "date": "2023/05/21 (Sun) 20:08",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_be73098b_2\n[session_date] 2023/05/21 (Sun) 20:08\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm considering getting a bird feeder for my backyard, but I'm not sure what type of seed to use. Can you recommend a good all-purpose seed mix that will attract a variety of birds? By the way, I recently attended a bird watching workshop at the local Audubon society a month ago, and I learned a lot about attracting birds to my yard.\n\n[turn 2] I'm also thinking of getting a birdbath to go along with my feeder. Do you have any recommendations for a birdbath that's easy to clean and maintain?\n\n[turn 4] I'm also thinking of getting a field guide to learn more about the different bird species and their habits. Do you have any recommendations for a field guide that's good for beginners?\n\n[turn 6] I've been meaning to learn more about bird calls, and I've been listening to recordings on my phone to help me identify birds by ear. Do you have any tips on how to improve my skills in this area?\n\n[turn 8] I've been thinking about attending a birder's meetup next weekend, where we'll be going on a guided walk at a local nature preserve.\n\n[turn 10] I'm looking forward to the meetup and learning more about the local bird species. I've been trying to get out more to spot some birds, and this guided walk will be a great opportunity to see some new species."
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

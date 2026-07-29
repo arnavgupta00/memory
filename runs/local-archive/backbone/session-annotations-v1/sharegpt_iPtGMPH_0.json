@@ -1,0 +1,118 @@
+{
+  "session_id": "sharegpt_iPtGMPH_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I need to set up multifactor authentication for my Mikrotik VPN.",
+      "turn_index": 0
+    },
+    {
+      "text": "My multifactor authentication requirements include Radius.",
+      "turn_index": 0
+    },
+    {
+      "text": "My multifactor authentication requirements include OpenLDAP.",
+      "turn_index": 0
+    },
+    {
+      "text": "My multifactor authentication requirements include MFA.",
+      "turn_index": 0
+    },
+    {
+      "text": "I asked for a detailed configuration explanation for requirement number 1 (Radius).",
+      "turn_index": 2
+    },
+    {
+      "text": "I asked for a detailed configuration explanation for requirement number 2 (OpenLDAP).",
+      "turn_index": 4
+    },
+    {
+      "text": "I asked to explain a specific FreeRADIUS configuration code in the mode-available/default configuration.",
+      "turn_index": 6
+    },
+    {
+      "text": "The code snippet I provided includes an 'ldap' section.",
+      "turn_index": 6
+    },
+    {
+      "text": "The code snippet I provided checks NAS-Port==1.",
+      "turn_index": 6
+    },
+    {
+      "text": "The code snippet I provided uses a regular expression matching Ldap-Group-Name against cn=.*,cn=.*,ou=Client,dc=dev-ldap,dc=fnsmalaysia,dc=com.",
+      "turn_index": 6
+    },
+    {
+      "text": "The code snippet I provided updates reply attributes including Fortinet-Group-Name and Reply-Message.",
+      "turn_index": 6
+    },
+    {
+      "text": "The code snippet I provided rejects authentication when the group name is unknown.",
+      "turn_index": 6
+    },
+    {
+      "text": "The code snippet I provided uses conditions on reply:Auth-Type being 'Accept'.",
+      "turn_index": 6
+    },
+    {
+      "text": "The code snippet I provided includes bsa and bsa_cancel logic.",
+      "turn_index": 6
+    },
+    {
+      "text": "The code snippet I provided includes a second 'ldap' section.",
+      "turn_index": 8
+    },
+    {
+      "text": "The second code snippet checks if Ldap-Group-Name matches the same cn=.*,cn=.*,ou=Client,dc=dev-ldap,dc=fnsmalaysia,dc=com pattern.",
+      "turn_index": 8
+    },
+    {
+      "text": "The second code snippet updates reply attributes including Ldap-Group-Name and Reply-Message.",
+      "turn_index": 8
+    },
+    {
+      "text": "The second code snippet includes logic for reply:Auth-Type being 'Reject'.",
+      "turn_index": 8
+    },
+    {
+      "text": "The second code snippet rejects authentication when the group name is unknown.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "Mikrotik VPN",
+    "multifactor authentication",
+    "MFA setup",
+    "FreeRADIUS",
+    "Radius configuration",
+    "OpenLDAP integration",
+    "mode-available/default configuration",
+    "FreeRADIUS ldap module",
+    "NAS-Port==1",
+    "Ldap-Group-Name regex",
+    "ou=Client,dc=dev-ldap,dc=fnsmalaysia,dc=com",
+    "Fortinet-Group-Name mapping"
+  ],
+  "events": [
+    {
+      "text": "User requested detailed configuration for requirement #1 (Radius).",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "User requested detailed configuration for requirement #2 (OpenLDAP).",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "User asked to explain provided FreeRADIUS code in mode-available/default configuration.",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "User provided a second FreeRADIUS ldap code snippet for explanation.",
+      "date_hint": "",
+      "turn_index": 8
+    }
+  ]
+}

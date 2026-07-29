@@ -1,0 +1,90 @@
+{
+  "session_id": "97220361",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am considering getting a new air filter for my car.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am not sure whether a high-performance air filter is worth the extra cost.",
+      "turn_index": 0
+    },
+    {
+      "text": "I replaced my air filter myself last Saturday.",
+      "turn_index": 2
+    },
+    {
+      "text": "My car had trouble accelerating uphill during my road trip to Vegas last month.",
+      "turn_index": 2
+    },
+    {
+      "text": "I suspected the trouble accelerating uphill was due to a dirty air filter.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been driving my current car, a silver Honda Civic, for about 5 years.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering replacing my spark plugs soon.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of doing the air filter replacement myself.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am not sure if I have the right tools or experience to do it myself.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been meaning to call Progressive to get a quote for my car insurance.",
+      "turn_index": 4
+    },
+    {
+      "text": "I saw a leather steering wheel cover at an accessory store near the mall.",
+      "turn_index": 6
+    },
+    {
+      "text": "The leather steering wheel cover I saw cost $40.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering getting a steering wheel cover to protect my wheel from the sun's UV rays.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "new air filter",
+    "high-performance air filter",
+    "worth the extra cost",
+    "replaced air filter last Saturday",
+    "trouble accelerating uphill",
+    "road trip to Vegas",
+    "dirty air filter",
+    "silver Honda Civic",
+    "replacing spark plugs",
+    "DIY air filter",
+    "right tools and experience",
+    "Progressive car insurance quote",
+    "Progressive phone number",
+    "steering wheel cover",
+    "UV rays protection",
+    "leather steering wheel cover",
+    "accessory store near the mall",
+    "$40 steering wheel cover"
+  ],
+  "events": [
+    {
+      "text": "Replaced the air filter myself",
+      "date_hint": "last Saturday",
+      "turn_index": 2
+    },
+    {
+      "text": "Road trip to Vegas with trouble accelerating uphill",
+      "date_hint": "last month",
+      "turn_index": 2
+    }
+  ]
+}

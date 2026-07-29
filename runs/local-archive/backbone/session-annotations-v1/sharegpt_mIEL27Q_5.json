@@ -1,0 +1,34 @@
+{
+  "session_id": "sharegpt_mIEL27Q_5",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user wants to add jq installation to the certbot container.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user is asking whether the certbot command runs once a day from the container's CRON.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user wants to modify the docker-compose file to include the CRON and jq.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user wants to include CRON and jq in docker-compose without using a Dockerfile.",
+      "turn_index": 3
+    }
+  ],
+  "keyphrases": [
+    "jq installation",
+    "certbot container",
+    "certbot command",
+    "container CRON",
+    "runs once a day",
+    "docker-compose modification",
+    "include CRON",
+    "include jq",
+    "without Dockerfile"
+  ],
+  "events": []
+}

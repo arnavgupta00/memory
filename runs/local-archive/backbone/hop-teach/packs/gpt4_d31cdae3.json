@@ -1,0 +1,33 @@
+{
+  "question_id": "gpt4_d31cdae3",
+  "question_type": "temporal-reasoning",
+  "question": "Which trip did the narrator take first, the solo trip to Europe or the family road trip across the American Southwest?",
+  "question_date": "2023/05/22 (Mon) 16:56",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_8464304d_1",
+    "answer_8464304d_2"
+  ],
+  "haystack_session_count": 50,
+  "notes_coverage": "partial",
+  "annotated_session_count": 8,
+  "gold_sessions": [
+    {
+      "session_id": "answer_8464304d_1",
+      "date": "2023/05/22 (Mon) 11:56",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_8464304d_1\n[session_date] 2023/05/22 (Mon) 11:56\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm planning a trip to Germany and was wondering if you could recommend some good hostels in Munich.\n\n[turn 2] I did visit Germany last summer. I'm planning to visit in late September, and I'll be staying for 3-4 nights. Can you tell me more about the Oktoberfest grounds, and whether I should try to catch the festival if I can?\n\n[turn 4] I'm thinking of visiting the Nymphenburg Palace while I'm in Munich. Do you know if it's easy to get to from the city center, and are there any particular parts of the palace or gardens that I shouldn't miss?\n\n[turn 6] That sounds great, thanks for the information. I'm also thinking of visiting the Dachau Concentration Camp Memorial Site while I'm in Munich. Is it possible to get to Dachau from the city center, and are there any guided tours that you would recommend?\n\n[turn 8] That sounds like a great plan. I've heard that the guided tours at Dachau are really informative and help to put the history of the camp into perspective. I'm actually thinking of visiting the Deutsches Museum as well, since I'm interested in science and technology. Do you know if it's possible to get to the museum from the city center, and are there any particular exhibits that I shouldn't miss?\n\n[turn 10] I think I'll spend at least half a day at the Deutsches Museum, there's just so much to see and learn. By the way, speaking of my travels, I was just thinking about my solo trip to Europe last summer, where I spent two weeks backpacking through Italy, Switzerland, and Germany. It was such an amazing experience, and I'm so glad I got to visit Munich during that trip. Anyway, back to the Deutsches Museum - are there any restaurants or cafes near the museum that you'd recommend for lunch?"
+    },
+    {
+      "session_id": "answer_8464304d_2",
+      "date": "2023/05/22 (Mon) 00:37",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_8464304d_2\n[session_date] 2023/05/22 (Mon) 00:37\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm trying to plan a trip to Arizona and I was wondering if you could recommend some must-see attractions and activities. By the way, I've been to the Grand Canyon before with my family on a road trip across the American Southwest a few years ago, but I'm looking to explore more of the state on my own this time.\n\n[turn 2] I'm really interested in exploring Sedona and Monument Valley, since I've already seen the Grand Canyon. Can you recommend any specific hiking trails in Sedona that are suitable for solo travelers?\n\n[turn 4] I'll definitely keep those safety tips in mind. I was thinking of staying in Sedona for a few days, and then heading to Monument Valley for a guided tour. Do you think that's a good amount of time to see both places, or should I plan for more days?\n\n[turn 6] I think that sounds like a good plan. I was also thinking about visiting the Hoover Dam on my way from Monument Valley back to Phoenix. Do you think that's doable, or would that be too much of a detour?\n\n[turn 8] I think I'll take the detour to the Hoover Dam! It sounds like a great way to break up the drive and see another amazing landmark. Plus, I've always been fascinated by engineering and history, so I think I'd really enjoy the tour. Thanks for the advice and itinerary suggestions!"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

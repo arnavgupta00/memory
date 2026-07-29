@@ -1,0 +1,115 @@
+{
+  "session_id": "c7772f2d_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to New York City.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for must-try food spots in New York City.",
+      "turn_index": 0
+    },
+    {
+      "text": "I recently found a quaint little coffee shop in the West Village that served delicious avocado toast.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for good yoga studios in Brooklyn.",
+      "turn_index": 2
+    },
+    {
+      "text": "I took a yoga class while I was in Brooklyn during my solo trip to NYC.",
+      "turn_index": 2
+    },
+    {
+      "text": "I loved the yoga class I took in Brooklyn.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to visit local markets and try island's famous cuisine.",
+      "turn_index": 4
+    },
+    {
+      "text": "I did a family trip to Hawaii last month.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am looking for recommendations for markets or food halls in NYC.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am looking for local cuisine in NYC, not Hawaiian cuisine.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am excited to try classic New York-style food including bagels.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am excited to try classic New York-style food including pastrami sandwiches.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am excited to try classic New York-style food including black-and-white cookies.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of taking a day trip to the Hamptons.",
+      "turn_index": 8
+    },
+    {
+      "text": "I took a day trip to the Hamptons on a whim during my solo trip to NYC.",
+      "turn_index": 8
+    },
+    {
+      "text": "The Hamptons day trip was one of the highlights of my trip.",
+      "turn_index": 8
+    },
+    {
+      "text": "I would like more information about the Pollock-Krasner House and Study Center.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know what kind of exhibits the Pollock-Krasner House and Study Center has.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know whether the Pollock-Krasner House and Study Center is suitable for children.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "must-try food spots",
+    "New York City trip",
+    "West Village coffee shop",
+    "avocado toast",
+    "yoga studios in Brooklyn",
+    "solo trip to NYC",
+    "local markets",
+    "food halls in NYC",
+    "bagels",
+    "pastrami sandwiches",
+    "black-and-white cookies",
+    "day trip to the Hamptons",
+    "Pollock-Krasner House and Study Center",
+    "exhibits for children"
+  ],
+  "events": [
+    {
+      "text": "Family trip to Hawaii",
+      "date_hint": "last month",
+      "turn_index": 4
+    },
+    {
+      "text": "Solo trip to NYC",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Solo trip to NYC included a day trip to the Hamptons",
+      "date_hint": "",
+      "turn_index": 8
+    }
+  ]
+}

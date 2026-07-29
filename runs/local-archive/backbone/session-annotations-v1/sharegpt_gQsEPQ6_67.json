@@ -1,0 +1,36 @@
+{
+  "session_id": "sharegpt_gQsEPQ6_67",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user used mean imputation on a dataset and obtained MSE 14760.4953 and MAE 42.6963.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user used KNN imputation with k=1 on a dataset and obtained MSE 14403.9691 and MAE 42.2959.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user used interpolation imputation on a dataset and obtained MSE 15514.4099 and MAE 43.4511.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user used regression imputation on a dataset and obtained MSE 14403.9691 and MAE 42.2959.",
+      "turn_index": 1
+    }
+  ],
+  "keyphrases": [
+    "mean imputation",
+    "KNN imputation k=1",
+    "interpolation imputation",
+    "regression imputation",
+    "dataset missing value imputation",
+    "MSE 14760.4953",
+    "MAE 42.6963",
+    "MSE 14403.9691",
+    "MAE 42.2959",
+    "MSE 15514.4099",
+    "MAE 43.4511"
+  ],
+  "events": []
+}

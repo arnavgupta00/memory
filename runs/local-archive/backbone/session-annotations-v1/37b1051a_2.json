@@ -1,0 +1,110 @@
+{
+  "session_id": "37b1051a_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to track my expenses.",
+      "turn_index": 0
+    },
+    {
+      "text": "I got a new pair of sneakers from Adidas today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I spent $120 on the Adidas sneakers.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think the Adidas sneakers should be categorized as Footwear.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought a handbag from Coach last week.",
+      "turn_index": 2
+    },
+    {
+      "text": "I spent $250 on the Coach handbag.",
+      "turn_index": 4
+    },
+    {
+      "text": "I bought items from Amazon during Prime Day.",
+      "turn_index": 2
+    },
+    {
+      "text": "I got a smartwatch from Amazon during Prime Day.",
+      "turn_index": 4
+    },
+    {
+      "text": "I got a wireless charging pad from Amazon during Prime Day.",
+      "turn_index": 4
+    },
+    {
+      "text": "I got a set of kitchen utensils from Amazon during Prime Day.",
+      "turn_index": 4
+    },
+    {
+      "text": "I spent around $200 in total for the Amazon Prime Day items.",
+      "turn_index": 4
+    },
+    {
+      "text": "I spent $50 on the kitchen utensils.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think the smartwatch and wireless charging pad cost $150 in total.",
+      "turn_index": 6
+    },
+    {
+      "text": "I bought a bunch of stuff from ASOS on the 20th of last month.",
+      "turn_index": 6
+    },
+    {
+      "text": "I bought three dresses from ASOS on the 20th of last month.",
+      "turn_index": 6
+    },
+    {
+      "text": "I bought a pair of boots from ASOS on the 20th of last month.",
+      "turn_index": 6
+    },
+    {
+      "text": "I spent around $350 on the ASOS purchase.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "expense tracking",
+    "categorize purchases",
+    "Adidas sneakers",
+    "Footwear category",
+    "Coach handbag",
+    "Amazon Prime Day",
+    "smartwatch",
+    "wireless charging pad",
+    "kitchen utensils",
+    "ASOS purchase",
+    "three dresses",
+    "boots"
+  ],
+  "events": [
+    {
+      "text": "Bought a new pair of Adidas sneakers.",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Bought a Coach handbag.",
+      "date_hint": "last week",
+      "turn_index": 2
+    },
+    {
+      "text": "Bought items from Amazon during Prime Day (smartwatch, wireless charging pad, kitchen utensils).",
+      "date_hint": "Prime Day",
+      "turn_index": 2
+    },
+    {
+      "text": "Bought items from ASOS on the 20th of last month (three dresses and boots).",
+      "date_hint": "20th of last month",
+      "turn_index": 6
+    }
+  ]
+}

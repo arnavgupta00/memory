@@ -1,0 +1,82 @@
+{
+  "session_id": "f9207c1f",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am redecorating my living room.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a new antique vase that I want to use as the centerpiece on my coffee table.",
+      "turn_index": 0
+    },
+    {
+      "text": "My vase is from an estate sale I went to last month.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have an antique desk lamp that I got from an estate sale on the 22nd of last month.",
+      "turn_index": 4
+    },
+    {
+      "text": "My antique desk lamp has a bronze finish.",
+      "turn_index": 4
+    },
+    {
+      "text": "My antique desk lamp has an ornate design on the shade.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to place the lamp behind the vase.",
+      "turn_index": 6
+    },
+    {
+      "text": "I got the vase on the 15th of last month at an estate sale.",
+      "turn_index": 6
+    },
+    {
+      "text": "I paid $50 for the vase.",
+      "turn_index": 6
+    },
+    {
+      "text": "My vase is made of porcelain.",
+      "turn_index": 8
+    },
+    {
+      "text": "My vase has intricate designs.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to ask the seller about the vase's origins.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to add decorative books to the coffee table.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "redecorating living room",
+    "coffee table styling",
+    "antique vase centerpiece",
+    "estate sale vase",
+    "vignette styling",
+    "antique desk lamp",
+    "bronze finish lamp",
+    "ornate lamp shade",
+    "porcelain vase intricate design",
+    "decorative books for coffee table"
+  ],
+  "events": [
+    {
+      "text": "Bought an antique vase at an estate sale",
+      "date_hint": "15th of last month",
+      "turn_index": 6
+    },
+    {
+      "text": "Bought an antique desk lamp at an estate sale",
+      "date_hint": "22nd of last month",
+      "turn_index": 4
+    }
+  ]
+}

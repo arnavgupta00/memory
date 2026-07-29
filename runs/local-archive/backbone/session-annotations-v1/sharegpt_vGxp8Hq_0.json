@@ -1,0 +1,65 @@
+{
+  "session_id": "sharegpt_vGxp8Hq_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I provided hotel context text and asked the assistant to respond with \"read\" only.",
+      "turn_index": 0
+    },
+    {
+      "text": "I provided additional hotel context text and asked the assistant to respond with \"read\" only.",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided additional hotel context text and asked the assistant to respond with \"read\" only.",
+      "turn_index": 4
+    },
+    {
+      "text": "I asked a follow-up question to answer hotel chatbot FAQs professionally, helpful, and detailed.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "Hotel Moderne Saint Germain",
+    "Facilities",
+    "Non-smoking rooms",
+    "Facilities for disabled guests",
+    "Room service",
+    "Free WiFi",
+    "Airport shuttle",
+    "24-hour front desk",
+    "Check-in 15:00",
+    "Check-out 12:00",
+    "Pets not allowed",
+    "Breakfast 7 to 10.30",
+    "Continental buffet breakfast",
+    "Paris 950 m from centre",
+    "Multilingual reception 24/7",
+    "Private balcony 6th floor stairs only",
+    "Fax/photocopying service",
+    "Business centre meeting/banquet facilities",
+    "Covid-19 face mask mandatory indoor common areas",
+    "Room types single triple double twin",
+    "Children under 2 free in parents’ room",
+    "No extra beds available",
+    "No parking available",
+    "Accepted payment methods Mastercard Visa American Express cash"
+  ],
+  "events": [
+    {
+      "text": "Check-in time at Hotel Moderne Saint Germain",
+      "date_hint": "15:00",
+      "turn_index": 0
+    },
+    {
+      "text": "Check-out time at Hotel Moderne Saint Germain",
+      "date_hint": "12:00",
+      "turn_index": 0
+    },
+    {
+      "text": "Breakfast served in the breakfast room",
+      "date_hint": "7 to 10.30",
+      "turn_index": 2
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "session_id": "0dde26d4_4",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am having issues with my laptop's performance.",
+      "turn_index": 0
+    },
+    {
+      "text": "I recently calibrated my laptop's battery last weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "Calibrating my laptop's battery helped with battery life.",
+      "turn_index": 0
+    },
+    {
+      "text": "My laptop takes a long time to launch programs.",
+      "turn_index": 2
+    },
+    {
+      "text": "My laptop sometimes freezes when I have multiple tabs open in my browser.",
+      "turn_index": 2
+    },
+    {
+      "text": "My laptop's storage space is a bit low.",
+      "turn_index": 2
+    },
+    {
+      "text": "I cleaned up my laptop's storage by deleting old files and uninstalling unused apps.",
+      "turn_index": 2
+    },
+    {
+      "text": "My storage cleanup freed up about 100GB of space.",
+      "turn_index": 2
+    },
+    {
+      "text": "My laptop has a 512GB SSD.",
+      "turn_index": 4
+    },
+    {
+      "text": "I currently have about 200GB of free space left on my laptop.",
+      "turn_index": 4
+    },
+    {
+      "text": "My laptop has 8GB of RAM.",
+      "turn_index": 4
+    },
+    {
+      "text": "My laptop has an Intel Core i5 processor.",
+      "turn_index": 4
+    },
+    {
+      "text": "I usually use Chrome with around 10-15 tabs open.",
+      "turn_index": 4
+    },
+    {
+      "text": "I haven't noticed any error messages when my laptop freezes.",
+      "turn_index": 4
+    },
+    {
+      "text": "I haven't tried restarting in Safe Mode yet.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will try restarting in Safe Mode.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will try disabling unnecessary startup programs.",
+      "turn_index": 6
+    },
+    {
+      "text": "Since calibrating my battery last weekend, my laptop has been performing much better.",
+      "turn_index": 6
+    },
+    {
+      "text": "I was worried that dwindling battery life would affect my productivity.",
+      "turn_index": 6
+    },
+    {
+      "text": "My battery life is back to normal now.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will monitor my system resources to identify patterns or bottlenecks.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been using resource-intensive programs like video editing software lately.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think it is possible that my laptop's processor is getting overwhelmed by the tasks I'm running.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will try closing unnecessary programs and lowering the program's settings to improve performance.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am considering adding more RAM to my laptop to help with multitasking and resource-intensive tasks.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "laptop performance issues",
+    "battery calibration last weekend",
+    "battery life improved",
+    "slow program launch",
+    "laptop freezes with browser tabs",
+    "low storage space",
+    "deleted old files",
+    "uninstalled unused apps",
+    "freed up 100GB",
+    "512GB SSD",
+    "200GB free space",
+    "8GB RAM",
+    "Intel Core i5",
+    "Chrome 10-15 tabs",
+    "no error messages",
+    "Safe Mode restart",
+    "disable startup programs",
+    "monitor system resources",
+    "processor overwhelmed",
+    "video editing software",
+    "close unnecessary programs",
+    "lower program settings",
+    "add more RAM",
+    "multitasking",
+    "resource-intensive tasks"
+  ],
+  "events": [
+    {
+      "text": "Calibrated laptop battery",
+      "date_hint": "last weekend",
+      "turn_index": 0
+    },
+    {
+      "text": "Cleaned up laptop storage by deleting old files and uninstalling unused apps",
+      "date_hint": "recently",
+      "turn_index": 2
+    },
+    {
+      "text": "Restarted in Safe Mode (planned)",
+      "date_hint": "next",
+      "turn_index": 6
+    },
+    {
+      "text": "Disabled unnecessary startup programs (planned)",
+      "date_hint": "next",
+      "turn_index": 6
+    },
+    {
+      "text": "Monitored system resources to identify patterns or bottlenecks (planned)",
+      "date_hint": "next",
+      "turn_index": 8
+    },
+    {
+      "text": "Closed unnecessary programs and lowered program settings (planned)",
+      "date_hint": "next",
+      "turn_index": 10
+    },
+    {
+      "text": "Considered adding more RAM",
+      "date_hint": "next",
+      "turn_index": 10
+    }
+  ]
+}

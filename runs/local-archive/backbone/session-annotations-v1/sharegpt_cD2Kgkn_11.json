@@ -1,0 +1,63 @@
+{
+  "session_id": "sharegpt_cD2Kgkn_11",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user asked to revise the chronology based on the rule that if Brother Day dies, a clone of Brother Day can replace him even within the same generation.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user described a genetic dynasty succession where Brother Day is succeeded by Brother Dawn at a certain old age.",
+      "turn_index": 5
+    },
+    {
+      "text": "The user said that Brother Dawn is then renamed to Brother Day.",
+      "turn_index": 5
+    },
+    {
+      "text": "The user said the former Brother Day becomes Brother Dusk.",
+      "turn_index": 5
+    },
+    {
+      "text": "The user said the former Brother Dusk becomes Brother Darkness.",
+      "turn_index": 5
+    },
+    {
+      "text": "The user said that Brother Darkness is vapourised.",
+      "turn_index": 5
+    },
+    {
+      "text": "The user said that the ashes of Brother Darkness are used to bless the new infant Cleon I clone.",
+      "turn_index": 5
+    },
+    {
+      "text": "The user said that the new infant Cleon I clone becomes Brother Dawn.",
+      "turn_index": 5
+    }
+  ],
+  "keyphrases": [
+    "revise chronology",
+    "Brother Day dies",
+    "clone of Brother Day",
+    "same generation replacement",
+    "genetic dynasty",
+    "Brother Dawn renamed to Brother Day",
+    "Brother Dusk",
+    "Brother Darkness vapourised",
+    "ashes used to bless",
+    "Cleon I clone",
+    "new infant becomes Brother Dawn"
+  ],
+  "events": [
+    {
+      "text": "Brother Day dies and is replaced by a clone of Brother Day within the same generation (chronology revision requested).",
+      "date_hint": "",
+      "turn_index": 3
+    },
+    {
+      "text": "Brother Day reaches a certain old age and is succeeded by Brother Dawn, who is renamed to Brother Day; the former Brother Day becomes Brother Dusk, then Brother Darkness, which is vapourised; ashes bless the new infant Cleon I clone, which becomes Brother Dawn.",
+      "date_hint": "",
+      "turn_index": 5
+    }
+  ]
+}

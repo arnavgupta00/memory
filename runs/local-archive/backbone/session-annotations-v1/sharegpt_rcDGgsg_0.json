@@ -1,0 +1,70 @@
+{
+  "session_id": "sharegpt_rcDGgsg_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user asked for help summarizing a relational data model.",
+      "turn_index": 0
+    },
+    {
+      "text": "The domain is farmer-suppliers booking kills at meatwork plants.",
+      "turn_index": 2
+    },
+    {
+      "text": "A company is the top level unit of organisation.",
+      "turn_index": 4
+    },
+    {
+      "text": "A season has a start and end and is the broadest unit of time organisation.",
+      "turn_index": 6
+    },
+    {
+      "text": "A season belongs to a company.",
+      "turn_index": 6
+    },
+    {
+      "text": "A season has many programmes.",
+      "turn_index": 8
+    },
+    {
+      "text": "A programme is a smaller subset of time.",
+      "turn_index": 8
+    },
+    {
+      "text": "A programme has a species, such as a lamb.",
+      "turn_index": 10
+    },
+    {
+      "text": "A programme is a smaller subset of time within a season.",
+      "turn_index": 12
+    },
+    {
+      "text": "A week is a subset of time within a programme.",
+      "turn_index": 14
+    },
+    {
+      "text": "A booking is on a week.",
+      "turn_index": 16
+    },
+    {
+      "text": "A booking has a specific programme.",
+      "turn_index": 16
+    }
+  ],
+  "keyphrases": [
+    "relational data model",
+    "farmer-suppliers booking kills",
+    "meatwork plants",
+    "company entity",
+    "season start and end",
+    "season belongs to company",
+    "programmes within a season",
+    "programme subset of time",
+    "programme species",
+    "lamb species example",
+    "week within programme",
+    "booking on a week",
+    "booking has programme"
+  ],
+  "events": []
+}

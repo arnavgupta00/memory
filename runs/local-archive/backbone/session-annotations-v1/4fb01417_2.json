@@ -1,0 +1,104 @@
+{
+  "session_id": "4fb01417_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to reduce my daily commute expenses.",
+      "turn_index": 0
+    },
+    {
+      "text": "I tracked my commute costs.",
+      "turn_index": 0
+    },
+    {
+      "text": "Last Wednesday I missed my train by 5 minutes.",
+      "turn_index": 0
+    },
+    {
+      "text": "Last Wednesday I had to take a taxi after missing my train.",
+      "turn_index": 0
+    },
+    {
+      "text": "Last Wednesday my taxi cost $12.",
+      "turn_index": 0
+    },
+    {
+      "text": "I like planning ahead for my commute.",
+      "turn_index": 2
+    },
+    {
+      "text": "I usually take the 7:45 am train.",
+      "turn_index": 2
+    },
+    {
+      "text": "I missed my train by 5 minutes last Wednesday.",
+      "turn_index": 10
+    },
+    {
+      "text": "Last Wednesday my taxi ride cost me $12.",
+      "turn_index": 10
+    },
+    {
+      "text": "The $12 taxi cost was the amount I had to pay when I missed the train by 5 minutes.",
+      "turn_index": 10
+    },
+    {
+      "text": "I like building in a buffer for my commute.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been trying to get into a routine for my commute.",
+      "turn_index": 4
+    },
+    {
+      "text": "I think leaving earlier will help me.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to use extra commute time to catch up on reading.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been trying to read at least 20 pages every day.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am currently reading a novel.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am on chapter 7 of the novel.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am trying to make the most of my commute time to finish the novel as soon as possible.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "reduce daily commute expenses",
+    "missed train by 5 minutes",
+    "taxi ride cost $12",
+    "7:45 am train",
+    "planning ahead commute",
+    "building in a buffer",
+    "leave earlier routine",
+    "read at least 20 pages daily",
+    "catch up on reading commute time",
+    "currently reading novel",
+    "chapter 7 novel",
+    "finish novel quickly"
+  ],
+  "events": [
+    {
+      "text": "Missed the train and took a taxi after missing it by 5 minutes",
+      "date_hint": "last Wednesday",
+      "turn_index": 0
+    },
+    {
+      "text": "Taxi ride cost $12 after missing the train by 5 minutes",
+      "date_hint": "last Wednesday",
+      "turn_index": 10
+    }
+  ]
+}

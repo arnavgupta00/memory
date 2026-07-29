@@ -1,0 +1,75 @@
+{
+  "session_id": "819dfad7_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am considering trying out a Pilates class at a local studio.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a Pilates workout routine for beginners that I can do at home before I start the class.",
+      "turn_index": 0
+    },
+    {
+      "text": "I prioritize my physical activities.",
+      "turn_index": 0
+    },
+    {
+      "text": "I reserve my walking days for Tuesdays, Thursdays, and Saturdays.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want recommendations for good Pilates YouTube channels or online resources with videos or tutorials to supplement my practice.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to sign up for a kickboxing class at Fitness Frenzy gym.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to incorporate cardio exercises into my Pilates routine to improve my endurance for kickboxing.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want Pilates exercises that improve my flexibility and range of motion, especially in my hips and legs.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to plan out my week and schedule my walks, Pilates, and kickboxing classes in advance.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "Pilates class",
+    "beginner Pilates routine",
+    "Pilates at home",
+    "walking schedule",
+    "Tuesdays Thursdays Saturdays",
+    "Pilates YouTube channels",
+    "online Pilates resources",
+    "kickboxing class",
+    "Fitness Frenzy gym",
+    "cardio exercises for kickboxing",
+    "endurance for kickboxing",
+    "hip and leg flexibility",
+    "range of motion",
+    "schedule physical activities in advance"
+  ],
+  "events": [
+    {
+      "text": "User reserves walking days for Tuesdays, Thursdays, and Saturdays.",
+      "date_hint": "Tuesdays, Thursdays, and Saturdays",
+      "turn_index": 0
+    },
+    {
+      "text": "User plans to sign up for a kickboxing class at Fitness Frenzy gym.",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "User plans to start incorporating Pilates exercises into a routine and schedule walks, Pilates, and kickboxing in advance.",
+      "date_hint": "",
+      "turn_index": 8
+    }
+  ]
+}

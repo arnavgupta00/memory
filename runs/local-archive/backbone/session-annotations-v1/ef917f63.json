@@ -1,0 +1,136 @@
+{
+  "session_id": "ef917f63",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to plan out my day and I asked what the weather forecast is like for today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need to make a grocery list and I asked for healthy breakfast options.",
+      "turn_index": 0
+    },
+    {
+      "text": "I make oatmeal with fruit and nuts every morning.",
+      "turn_index": 2
+    },
+    {
+      "text": "I do a 10-minute yoga routine every morning.",
+      "turn_index": 4
+    },
+    {
+      "text": "I do 5 minutes of meditation every morning.",
+      "turn_index": 4
+    },
+    {
+      "text": "I feel more energized and focused throughout the day because of my morning yoga and meditation routine.",
+      "turn_index": 4
+    },
+    {
+      "text": "I wake up around 7:30 am every weekday.",
+      "turn_index": 6
+    },
+    {
+      "text": "I try to get at least 7-8 hours of sleep each night.",
+      "turn_index": 6
+    },
+    {
+      "text": "I feel rested and focused for the day ahead because I get 7-8 hours of sleep.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to create a more consistent sleep schedule.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to establish a more relaxing bedtime routine.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to create a sleep-conducive environment.",
+      "turn_index": 8
+    },
+    {
+      "text": "I mean to try out new essential oils to help me wind down before bed.",
+      "turn_index": 8
+    },
+    {
+      "text": "I mean to try out calming teas to help me wind down before bed.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will keep my bedroom cooler and darker to improve the quality of my sleep.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will avoid checking my phone or computer at least an hour before bed to minimize blue light exposure.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will set my alarm for the same time every day, including weekends, to help regulate my body's internal clock.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "weather forecast today",
+    "healthy breakfast options",
+    "grocery list",
+    "oatmeal with fruit and nuts",
+    "beginner yoga routines",
+    "meditation best way",
+    "10-minute yoga routine",
+    "5 minutes of meditation",
+    "consistent sleep schedule",
+    "relaxing bedtime routine",
+    "essential oils for wind down",
+    "calming teas",
+    "bedroom cooler and darker",
+    "avoid phone or computer before bed",
+    "blue light exposure",
+    "set alarm same time every day including weekends",
+    "wake up 7:30 am weekdays",
+    "7-8 hours of sleep"
+  ],
+  "events": [
+    {
+      "text": "Asked for the weather forecast for today.",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Asked for healthy breakfast options for a grocery list.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Started doing a 10-minute yoga routine and 5 minutes of meditation every morning.",
+      "date_hint": "every morning",
+      "turn_index": 4
+    },
+    {
+      "text": "Wakes up around 7:30 am every weekday.",
+      "date_hint": "weekdays",
+      "turn_index": 6
+    },
+    {
+      "text": "Plans to try essential oils and calming teas as part of a bedtime routine.",
+      "date_hint": "before bed",
+      "turn_index": 8
+    },
+    {
+      "text": "Plans to keep the bedroom cooler and darker to improve sleep quality.",
+      "date_hint": "before bed",
+      "turn_index": 8
+    },
+    {
+      "text": "Plans to avoid checking phone or computer at least an hour before bed.",
+      "date_hint": "at least an hour before bed",
+      "turn_index": 10
+    },
+    {
+      "text": "Plans to set the alarm for the same time every day including weekends.",
+      "date_hint": "daily including weekends",
+      "turn_index": 10
+    }
+  ]
+}

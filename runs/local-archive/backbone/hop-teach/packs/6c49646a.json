@@ -1,0 +1,33 @@
+{
+  "question_id": "6c49646a",
+  "question_type": "multi-session",
+  "question": "What is the total distance I covered in my four road trips?",
+  "question_date": "2023/05/30 (Tue) 22:17",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_cc1ced21_1",
+    "answer_cc1ced21_2"
+  ],
+  "haystack_session_count": 43,
+  "notes_coverage": "partial",
+  "annotated_session_count": 6,
+  "gold_sessions": [
+    {
+      "session_id": "answer_cc1ced21_1",
+      "date": "2023/05/26 (Fri) 14:27",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_cc1ced21_1\n[session_date] 2023/05/26 (Fri) 14:27\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm planning another road trip and I'd like to know the best route from Denver to Mount Rushmore. By the way, speaking of road trips, I just got back from an amazing 4-day trip to Yellowstone National Park with my family last month, where we covered a total of 1,200 miles.\n\n[turn 2] That sounds like a great route. Can you recommend any good camping sites near Mount Rushmore? We're considering camping instead of staying in a hotel.\n\n[turn 4] I'm interested in the Mount Rushmore National Memorial KOA. Can you tell me more about the amenities and activities they offer? Also, do they have any RV rentals available?\n\n[turn 6] I think we'll go with the deluxe cabin rental. Can you tell me more about the shuttle service to Mount Rushmore National Memorial? Is it free, and how often does it run?\n\n[turn 8] I'm glad I could get some helpful information about the shuttle service. By the way, I was thinking about our Yellowstone trip last month, and I realized that we drove around 300 miles on the first day to reach Jackson, Wyoming. That was a long drive, but the scenic views were totally worth it.\n\n[turn 10] I'm thinking about the food options near Mount Rushmore. Are there any good restaurants or cafes in the area that you would recommend?"
+    },
+    {
+      "session_id": "answer_cc1ced21_2",
+      "date": "2023/05/23 (Tue) 16:14",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_cc1ced21_2\n[session_date] 2023/05/23 (Tue) 16:14\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm planning a road trip from Denver to Aspen, Colorado, and I'm wondering if you can help me with the best route and any scenic stops along the way.\n\n[turn 2] I'm thinking of taking the scenic route and stopping at Loveland Pass and Copper Mountain. How's the road condition on CO-82 E, especially during this time of the year?\n\n[turn 4] I'll definitely check the road conditions before I leave. I'm also thinking of stopping at Maroon Lake, but I'm not sure if I have enough time. How long does it take to get to Maroon Lake from Aspen, and is it worth the detour?\n\n[turn 6] I think I'll try to fit in Maroon Lake, it sounds amazing. How's the parking situation like, and are there any shuttle buses available?\n\n[turn 8] I'm glad I could fit in Maroon Lake. Since I've covered a total of 1,800 miles on my recent three road trips, including a solo trip to Durango, a weekend trip to Breckenridge, and a family trip to Santa Fe, I'm comfortable with the drive and exploring new scenic spots. What are some tips for taking good photos at Maroon Lake?\n\n[turn 10] I think I'll try to get to Maroon Lake early to capture the golden hour. Do you have any recommendations for lunch spots in Aspen? I'd love to grab a bite to eat after visiting the lake."
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

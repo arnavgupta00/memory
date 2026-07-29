@@ -12,11 +12,16 @@
     "lint": "eslint src tests",
     "test": "vitest run",
     "test:watch": "vitest",
+    "gate:rank": "python3 src/scripts/rankGate.py",
+    "annotate:sessions": "node --import tsx --max-old-space-size=8192 src/scripts/sessionAnnotate.ts",
+    "infer:dates": "node --import tsx --max-old-space-size=8192 src/scripts/questionDateInfer.ts",
     "gate:recall": "node --import tsx --max-old-space-size=8192 src/scripts/recallGate.ts",
     "gate:context": "node --import tsx --max-old-space-size=8192 src/scripts/contextGate.ts",
     "report:package": "node --import tsx --max-old-space-size=8192 src/scripts/packageReport.ts",
     "gate:package-rebuild": "node --import tsx --max-old-space-size=8192 src/scripts/packageRebuildGate.ts",
-    "gate:session-routing": "node --import tsx --max-old-space-size=8192 src/scripts/sessionRoutingGate.ts"
+    "gate:session-routing": "node --import tsx --max-old-space-size=8192 src/scripts/sessionRoutingGate.ts",
+    "gate:hop": "node --import tsx --max-old-space-size=8192 src/scripts/hopRetrieveGate.ts",
+    "gate:hop-packs": "node --import tsx --max-old-space-size=8192 src/scripts/buildHopTeacherPacks.ts"
   },
   "dependencies": {
     "@google/genai": "2.13.0",

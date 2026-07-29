@@ -1,0 +1,104 @@
+{
+  "session_id": "92509977_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to plan my next Instagram post.",
+      "turn_index": 0
+    },
+    {
+      "text": "I just got back from a vacation in Hawaii.",
+      "turn_index": 0
+    },
+    {
+      "text": "My last Instagram post about my Hawaii vacation got 127 likes.",
+      "turn_index": 0
+    },
+    {
+      "text": "My last Instagram post about my Hawaii vacation got 23 comments.",
+      "turn_index": 0
+    },
+    {
+      "text": "My last Instagram post about my Hawaii vacation helped me gain 25 new followers last week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I like the idea of sharing a tip or recommendation.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in trying out the Instagram Reels feature.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to create a Reel that showcases my favorite spot in Hawaii.",
+      "turn_index": 6
+    },
+    {
+      "text": "My favorite spot in Hawaii is a local cafe that serves amazing coffee and has a great atmosphere.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to share a personal story about why I love this cafe and what makes it special.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to focus my Reel on the cafe's interior and the coffee itself.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will add B-roll footage of the cafe and transitions to make the video flow smoothly.",
+      "turn_index": 8
+    },
+    {
+      "text": "I can mention that I gained 25 new followers on Instagram last week.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will add a shot of the cafe's menu board to show the types of coffee drinks they offer.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will use a microphone to capture clear audio.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Instagram post planning",
+    "Hawaii vacation post",
+    "engagement metrics",
+    "127 likes",
+    "23 comments",
+    "25 new followers",
+    "Instagram formats",
+    "Instagram recommendation tip",
+    "Instagram Reels",
+    "engaging Reel tips",
+    "favorite cafe Hawaii",
+    "B-roll footage",
+    "menu board shot",
+    "microphone clear audio"
+  ],
+  "events": [
+    {
+      "text": "Returned from a vacation in Hawaii.",
+      "date_hint": "just got back (relative to session)",
+      "turn_index": 0
+    },
+    {
+      "text": "Previous Hawaii vacation Instagram post received 127 likes and 23 comments and gained 25 new followers last week.",
+      "date_hint": "last week",
+      "turn_index": 0
+    },
+    {
+      "text": "Planned to create an Instagram Reel featuring a favorite Hawaii cafe.",
+      "date_hint": "next post (relative)",
+      "turn_index": 6
+    },
+    {
+      "text": "Planned to mention gaining 25 new followers on Instagram last week in the Reel.",
+      "date_hint": "last week",
+      "turn_index": 8
+    }
+  ]
+}

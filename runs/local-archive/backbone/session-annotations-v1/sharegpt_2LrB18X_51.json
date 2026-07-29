@@ -1,0 +1,38 @@
+{
+  "session_id": "sharegpt_2LrB18X_51",
+  "prompt": "session-annotate-v1",
+  "facts": [],
+  "keyphrases": [
+    "daughter protest",
+    "mother puts clothing in toilet",
+    "clothing flushed",
+    "mother responds to protest",
+    "clothing needs to be flushed",
+    "mother goes #1 and #2",
+    "protest and goodbyes separately",
+    "shirt and overalls",
+    "separate goodbyes"
+  ],
+  "events": [
+    {
+      "text": "Daughter protests mildly as her mom puts her clothing in the toilet",
+      "date_hint": "",
+      "turn_index": 1
+    },
+    {
+      "text": "Mother responds to the daughter's protest, explaining why her clothing needs to be flushed",
+      "date_hint": "",
+      "turn_index": 3
+    },
+    {
+      "text": "Reorder the scene so the mother going #1 and #2 happens before flushing the clothing",
+      "date_hint": "",
+      "turn_index": 5
+    },
+    {
+      "text": "Mother and daughter go through the protest and goodbyes separately for the shirt then the overalls",
+      "date_hint": "",
+      "turn_index": 7
+    }
+  ]
+}

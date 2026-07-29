@@ -1,0 +1,89 @@
+{
+  "session_id": "9345f7dc_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I take the 7:45 am bus to work every weekday morning.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of stopping by a coffee shop on the way to work.",
+      "turn_index": 0
+    },
+    {
+      "text": "My bus route starts near my home.",
+      "turn_index": 2
+    },
+    {
+      "text": "My bus route ends at the city center where my office is located.",
+      "turn_index": 2
+    },
+    {
+      "text": "I usually get off at the Main St stop.",
+      "turn_index": 2
+    },
+    {
+      "text": "The Main St stop is about a 5-minute walk from my office.",
+      "turn_index": 2
+    },
+    {
+      "text": "I don't mind walking a short distance to get to the coffee shop.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been going to \"The Daily Grind\" on Main St for the past two weeks.",
+      "turn_index": 4
+    },
+    {
+      "text": "Last Thursday, I tried \"Brew-tiful Day\" on Elm St.",
+      "turn_index": 4
+    },
+    {
+      "text": "I preferred the coffee at \"Brew-tiful Day\" over \"The Daily Grind\".",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to make sure I have enough time to grab a coffee and get to the office on time.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to listen to my podcast during my commute.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been enjoying the podcast \"How I Built This\".",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of trying out a different podcast.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want a podcast that is more focused on self-improvement.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "7:45 am bus",
+    "weekday morning commute",
+    "coffee shop near bus route",
+    "Main St stop",
+    "5-minute walk to office",
+    "The Daily Grind",
+    "Brew-tiful Day",
+    "Elm St coffee shop",
+    "morning routine planning",
+    "wake up time",
+    "leave for bus stop",
+    "listen to podcast on commute",
+    "How I Built This",
+    "self-improvement podcast"
+  ],
+  "events": [
+    {
+      "text": "Tried \"Brew-tiful Day\" on Elm St instead of \"The Daily Grind\"",
+      "date_hint": "last Thursday",
+      "turn_index": 4
+    }
+  ]
+}

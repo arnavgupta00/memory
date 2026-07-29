@@ -1,0 +1,72 @@
+{
+  "session_id": "sharegpt_AlhEEqa_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to organise a 3 on 3 basketball game with 29 people.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to draft round-robin match-ups for a 3 on 3 basketball game.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a schedule for a total of 9 teams of 3 players.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want a schedule where two teams have 4 players.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to play 2 matches a day.",
+      "turn_index": 4
+    },
+    {
+      "text": "Each match should be 15 minutes each.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want matches every Saturday from 8:15pm to 9pm.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want the schedule to start from Jan 21st, 2023.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want a full table of game match.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want the match-ups filled up in a table for 9 teams.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "3 on 3 basketball game",
+    "round-robin match-ups",
+    "29 people",
+    "9 teams of 3 players",
+    "two teams with 4 players",
+    "basketball schedule",
+    "2 matches a day",
+    "15 minute matches",
+    "every Saturday 8:15pm to 9pm",
+    "start Jan 21st 2023",
+    "full match table",
+    "9 teams match-ups"
+  ],
+  "events": [
+    {
+      "text": "Start playing matches every Saturday from 8:15pm to 9pm",
+      "date_hint": "every Sat 8:15pm to 9pm",
+      "turn_index": 4
+    },
+    {
+      "text": "Schedule starts from Jan 21st, 2023",
+      "date_hint": "Jan 21st, 2023",
+      "turn_index": 4
+    }
+  ]
+}

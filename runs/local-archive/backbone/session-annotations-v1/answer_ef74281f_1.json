@@ -1,0 +1,94 @@
+{
+  "session_id": "answer_ef74281f_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to get a better handle on my spending habits.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want help tracking my expenses.",
+      "turn_index": 0
+    },
+    {
+      "text": "I splurged on a designer handbag from Gucci for $1,200.",
+      "turn_index": 0
+    },
+    {
+      "text": "I tend to splurge on luxury items every few months.",
+      "turn_index": 2
+    },
+    {
+      "text": "I splurge on luxury items when I am feeling stressed or celebratory.",
+      "turn_index": 2
+    },
+    {
+      "text": "I do not set a budget beforehand.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want an expense tracker template.",
+      "turn_index": 2
+    },
+    {
+      "text": "I splurge on high-end accessories like handbags and shoes.",
+      "turn_index": 6
+    },
+    {
+      "text": "I also splurge on occasional luxury clothing items like evening gowns.",
+      "turn_index": 6
+    },
+    {
+      "text": "I try to justify my purchases by telling myself they are investment pieces.",
+      "turn_index": 6
+    },
+    {
+      "text": "I know my luxury purchases are often an emotional response to a particular occasion or mood.",
+      "turn_index": 6
+    },
+    {
+      "text": "I like the idea of setting a \"treat yourself\" budget.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to determine how much to allocate for my \"treat yourself\" budget.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know whether leftover money from my \"treat yourself\" budget at the end of the month can be rolled over to the next month.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "expense tracker template",
+    "spending habits",
+    "track my expenses",
+    "Gucci designer handbag",
+    "luxury items splurge",
+    "designer handbag $1,200",
+    "splurge every few months",
+    "stressed or celebratory spending",
+    "no budget beforehand",
+    "high-end accessories handbags and shoes",
+    "luxury clothing evening gowns",
+    "\"treat yourself\" budget",
+    "roll over leftover budget end of month"
+  ],
+  "events": [
+    {
+      "text": "Splurged on a Gucci designer handbag for $1,200",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Splurges on luxury items every few months when feeling stressed or celebratory",
+      "date_hint": "every few months",
+      "turn_index": 2
+    },
+    {
+      "text": "Wants to use a \"treat yourself\" budget and asks about rolling over leftover money at the end of the month",
+      "date_hint": "end of the month",
+      "turn_index": 10
+    }
+  ]
+}

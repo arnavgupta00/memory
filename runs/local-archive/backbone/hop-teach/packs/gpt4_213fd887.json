@@ -1,0 +1,33 @@
+{
+  "question_id": "gpt4_213fd887",
+  "question_type": "temporal-reasoning",
+  "question": "Which event did I participate in first, the volleyball league or the charity 5K run to raise money for a local children's hospital?",
+  "question_date": "2023/05/24 (Wed) 14:01",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_53582e7e_1",
+    "answer_53582e7e_2"
+  ],
+  "haystack_session_count": 45,
+  "notes_coverage": "partial",
+  "annotated_session_count": 7,
+  "gold_sessions": [
+    {
+      "session_id": "answer_53582e7e_1",
+      "date": "2023/05/24 (Wed) 23:16",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_53582e7e_1\n[session_date] 2023/05/24 (Wed) 23:16\n[notes] (empty)",
+      "user_turns": "[turn 0] I've been trying to get more into fitness lately and was wondering if you could recommend some exercises to improve my serve in volleyball.\n\n[turn 2] I've been playing volleyball in a recreational league with some friends from work for about 2 months now, and I've been trying to improve my serves. I've managed to get a few aces in the last few games, but I still want to get better. Do you have any tips on how to practice my serve on my own, without a partner or a court?\n\n[turn 4] I've been trying to improve my overall fitness lately, and I think it all started about 2 months ago when I joined a recreational volleyball league with some friends from work. We've been playing every Thursday evening at the local community center, and I've really been enjoying it. I've been trying to get to the gym more regularly to improve my overall fitness, focusing on cardio and strength training. I've noticed that my endurance has improved significantly, and I feel more confident on the volleyball court. Do you have any tips on how to incorporate strength training exercises into my volleyball practice routine?\n\n[turn 6] Can you provide more information on plyometric exercises, specifically box jumps and depth jumps? I want to make sure I'm doing them correctly to get the most out of my training.\n\n[turn 8] I'm thinking of incorporating some agility ladder drills into my training to improve my speed and quickness on the volleyball court. Do you have any recommendations for drills I can try?\n\n[turn 10] I'm thinking of joining a tennis league in the spring. I used to play tennis a lot in high school, and I've been missing it lately. I've been looking into local options and trying to find a partner to play with. I'll need to dust off my old racket and get back into practice, but I'm looking forward to it."
+    },
+    {
+      "session_id": "answer_53582e7e_2",
+      "date": "2023/05/24 (Wed) 16:56",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_53582e7e_2\n[session_date] 2023/05/24 (Wed) 16:56\n[notes] (empty)",
+      "user_turns": "[turn 0] Hi! I'm looking for some tips on how to improve my overall fitness. I've been playing volleyball regularly and trying to get to the gym more often, but I want to take it to the next level. By the way, I recently did a charity 5K run for a local children's hospital about a month ago, and it was a great experience.\n\n[turn 2] I think I need to work on my endurance, especially since I signed up for a 20-mile cycling event next month. Do you have any tips on how to improve my cycling endurance?\n\n[turn 4] I think I need to focus on my cycling endurance, especially with the 20-mile ride coming up. I'm glad I got some experience with the charity 5K, which helped me build some endurance. Do you think I should try to incorporate some strength training exercises specifically for my legs and glutes to help with my cycling?\n\n[turn 6] I think I understand how strength training can help my cycling. I'll definitely try to incorporate those exercises into my routine. Speaking of my charity 5K run, I was thinking about how it was a great way to challenge myself and push my limits. Have you got any tips on how to stay motivated and set realistic goals for my cycling event?\n\n[turn 8] I think those tips are really helpful. I'll definitely try to celebrate my small victories and set specific, achievable goals. I'm also going to find a cycling buddy to keep me accountable. By the way, I'm thinking of joining a tennis league in the spring. Do you have any advice on how to prepare for that?\n\n[turn 10] I think I need to clarify something. I'm not sure if I'm ready to commit to a tennis league just yet. I was just thinking about joining one in the spring, but I haven't made a final decision. Can we talk about something else? I was thinking about my charity 5K run and how it was a great experience. Do you have any tips on how to find more charity events like that?"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

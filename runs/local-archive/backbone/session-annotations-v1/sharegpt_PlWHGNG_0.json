@@ -1,0 +1,52 @@
+{
+  "session_id": "sharegpt_PlWHGNG_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am designing an online course about forklift safety for workers in a fish factory.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a speed sensor installed on the factory forklift.",
+      "turn_index": 2
+    },
+    {
+      "text": "The speed sensor sends velocity data to our Learning Record Store at doughahn.net/LRS.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want three xAPI statements for when the forklift is in motion, stopped, and going over 5 miles an hour.",
+      "turn_index": 2
+    },
+    {
+      "text": "I asked to regenerate the third response because it looked clipped.",
+      "turn_index": 4
+    }
+  ],
+  "keyphrases": [
+    "forklift safety online course",
+    "fish factory workers",
+    "speed sensor",
+    "factory forklift",
+    "velocity data",
+    "Learning Record Store",
+    "doughahn.net/LRS",
+    "xAPI statements",
+    "forklift in motion",
+    "forklift stopped",
+    "over 5 miles an hour",
+    "regenerate clipped response"
+  ],
+  "events": [
+    {
+      "text": "Asked for three xAPI statements for forklift states including going over 5 miles an hour",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Requested regeneration of the third response because it looked clipped",
+      "date_hint": "",
+      "turn_index": 4
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "session_id": "aeab3296",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I need help tracking my shoe maintenance.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a reminder to get my black boots' buckle fixed.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to be reminded in a week.",
+      "turn_index": 2
+    },
+    {
+      "text": "I prefer a digital reminder on my phone.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to keep track of when I wear my shoes.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to make sure I'm not over-wearing certain pairs.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to maintain my shoes properly.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to use Method 2: Shoe Wear Log.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want help setting up a spreadsheet for the shoe wear log.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to add my existing shoe wear data to the spreadsheet.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have existing shoe wear entries for my black boots.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have existing shoe wear entries for my brown loafers.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have existing shoe wear entries for my old sneakers.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have worn my black boots 5 times.",
+      "turn_index": 10
+    },
+    {
+      "text": "I bought my black boots on February 10th.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "shoe maintenance tracking",
+    "reminder to fix buckle",
+    "black boots buckle",
+    "digital reminder on phone",
+    "remind in a week",
+    "shoe wear log",
+    "spreadsheet setup",
+    "track when I wear shoes",
+    "avoid over-wearing",
+    "existing shoe wear data",
+    "black boots wear count",
+    "brown loafers",
+    "old sneakers",
+    "February 10th purchase date"
+  ],
+  "events": [
+    {
+      "text": "Set up a reminder to get the black boots' buckle fixed",
+      "date_hint": "in a week",
+      "turn_index": 2
+    },
+    {
+      "text": "Bought black boots",
+      "date_hint": "February 10th",
+      "turn_index": 10
+    }
+  ]
+}

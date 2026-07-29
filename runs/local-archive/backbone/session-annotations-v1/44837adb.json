@@ -1,0 +1,92 @@
+{
+  "session_id": "44837adb",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to plan out meals for the week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want healthy recipe suggestions that use chicken breasts and ground beef.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have all the ingredients at home already for Chicken and Beef Fajita Casserole.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am trying to use up pantry staples before they expire.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want recipe ideas that use canned beans and pasta.",
+      "turn_index": 2
+    },
+    {
+      "text": "I made a big pot of chili last Sunday using leftover veggies and beans that were getting old.",
+      "turn_index": 4
+    },
+    {
+      "text": "I froze some chili for later.",
+      "turn_index": 4
+    },
+    {
+      "text": "I still have some canned beans and pasta left over from my grocery trip to Walmart last Saturday morning.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have spaghetti and cannellini beans.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will make Spaghetti with Cannellini Bean Sauce.",
+      "turn_index": 8
+    },
+    {
+      "text": "I love the sound of a hearty and comforting Italian-inspired dish.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I will add dried basil to the recipe for extra flavor.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want tips on how to store leftovers to keep my food fresh for as long as possible.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "healthy meal planning",
+    "chicken breast recipes",
+    "ground beef recipes",
+    "Chicken and Beef Fajita Casserole",
+    "pantry staples before they expire",
+    "canned beans and pasta",
+    "big pot of chili",
+    "freezing chili leftovers",
+    "Walmart grocery trip",
+    "canned beans and pasta leftovers",
+    "spaghetti and cannellini beans",
+    "Spaghetti with Cannellini Bean Sauce",
+    "Italian-inspired dish",
+    "dried basil",
+    "leftover storage tips"
+  ],
+  "events": [
+    {
+      "text": "Made a big pot of chili using leftover veggies and beans that were getting old",
+      "date_hint": "last Sunday",
+      "turn_index": 4
+    },
+    {
+      "text": "Froze some chili for later",
+      "date_hint": "last Sunday",
+      "turn_index": 4
+    },
+    {
+      "text": "Grocery trip to Walmart",
+      "date_hint": "last Saturday morning",
+      "turn_index": 4
+    }
+  ]
+}

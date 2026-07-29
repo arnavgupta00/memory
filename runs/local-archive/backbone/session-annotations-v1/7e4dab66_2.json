@@ -1,0 +1,116 @@
+{
+  "session_id": "7e4dab66_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am organizing my new backpack and need to update my packing list for meetings.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a new slim RFID-blocking wallet.",
+      "turn_index": 0
+    },
+    {
+      "text": "My slim RFID-blocking wallet stores my credit cards and cash.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a portable power bank that I find useful during long days out.",
+      "turn_index": 2
+    },
+    {
+      "text": "I used my portable power bank for the first time on the 15th.",
+      "turn_index": 2
+    },
+    {
+      "text": "On the 15th, I was at the park with friends for a picnic.",
+      "turn_index": 2
+    },
+    {
+      "text": "I store my driver's license, credit cards, and some cash in my wallet.",
+      "turn_index": 2
+    },
+    {
+      "text": "I recently took a trip and need to organize my bag after that trip.",
+      "turn_index": 4
+    },
+    {
+      "text": "I bought a new eyeshadow palette at the airport on the way back from my trip.",
+      "turn_index": 4
+    },
+    {
+      "text": "I took my gym bag with me to the gym last week.",
+      "turn_index": 6
+    },
+    {
+      "text": "I needed to restock gym supplies like my water bottle and towel.",
+      "turn_index": 6
+    },
+    {
+      "text": "I went to a sporting goods store on the 18th to pick up new gym gear.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have new earbuds that I use daily.",
+      "turn_index": 8
+    },
+    {
+      "text": "I use my earbuds during my morning commutes.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of adding a small first-aid kit to my gym bag.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want my gym bag first-aid kit to include band-aids, antiseptic wipes, and pain relievers.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "new backpack",
+    "packing list for meetings",
+    "slim RFID-blocking wallet",
+    "credit cards and cash",
+    "portable power bank",
+    "picnic at the park",
+    "wallet organization",
+    "driver's license storage",
+    "eyesahdow palette",
+    "travel makeup packing",
+    "gym bag organization",
+    "restock gym supplies",
+    "sporting goods store",
+    "new earbuds",
+    "morning commutes",
+    "gym bag first-aid kit",
+    "band-aids antiseptic wipes pain relievers"
+  ],
+  "events": [
+    {
+      "text": "Used portable power bank for the first time",
+      "date_hint": "on the 15th",
+      "turn_index": 2
+    },
+    {
+      "text": "Was at the park with friends for a picnic",
+      "date_hint": "on the 15th",
+      "turn_index": 2
+    },
+    {
+      "text": "Bought a new eyeshadow palette at the airport on the way back",
+      "date_hint": "recent trip (date not specified)",
+      "turn_index": 4
+    },
+    {
+      "text": "Took gym bag to the gym",
+      "date_hint": "last week",
+      "turn_index": 6
+    },
+    {
+      "text": "Went to a sporting goods store to pick up new gym gear",
+      "date_hint": "on the 18th",
+      "turn_index": 6
+    }
+  ]
+}

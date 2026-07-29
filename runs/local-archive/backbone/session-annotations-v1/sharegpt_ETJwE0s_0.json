@@ -1,0 +1,63 @@
+{
+  "session_id": "sharegpt_ETJwE0s_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I need to compress a LiFePo4 battery cell to meet manufacture specifications.",
+      "turn_index": 0
+    },
+    {
+      "text": "The LiFePo4 battery cell is in the shape of a rectangular cube.",
+      "turn_index": 0
+    },
+    {
+      "text": "The LiFePo4 battery cell dimensions are 205 mm height, 174 mm width, and 72 mm thickness.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to compress the cell on both sides of its largest face.",
+      "turn_index": 0
+    },
+    {
+      "text": "The cell needs to experience 300 kgf of fixturing.",
+      "turn_index": 2
+    },
+    {
+      "text": "The cell will be sandwiched between two steel compression plates.",
+      "turn_index": 2
+    },
+    {
+      "text": "At each corner of the steel plate there will be a grade 5 steel 1/4 threaded rod.",
+      "turn_index": 2
+    },
+    {
+      "text": "The rods run straight through the cell and connect to the opposite steel compression plate on the opposite side.",
+      "turn_index": 2
+    },
+    {
+      "text": "The steel plate measures 205 mm x 174 mm.",
+      "turn_index": 2
+    },
+    {
+      "text": "I asked whether the compression factor accounts for compression being applied to two faces.",
+      "turn_index": 4
+    },
+    {
+      "text": "I asked how tight the threaded rods must be to achieve the required compression, measured in ft/lbs.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "LiFePo4 battery cell compression",
+    "rectangular cube cell dimensions",
+    "205 mm height 174 mm width 72 mm thick",
+    "compress on both sides of largest face",
+    "300 kgf fixturing",
+    "steel compression plates",
+    "grade 5 steel 1/4 threaded rods",
+    "threaded rod torque ft/lbs",
+    "compression applied to two faces",
+    "plate size 205mm x 174mm"
+  ],
+  "events": []
+}

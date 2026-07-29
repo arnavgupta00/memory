@@ -1,0 +1,93 @@
+{
+  "session_id": "e0bfe67a_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning to make a stir-fry for dinner tonight.",
+      "turn_index": 0
+    },
+    {
+      "text": "I placed an online grocery order from Instacart that was delivered to my doorstep.",
+      "turn_index": 0
+    },
+    {
+      "text": "I spent around $60 today on my Instacart grocery order.",
+      "turn_index": 0
+    },
+    {
+      "text": "I bought chicken breasts last Saturday when I went grocery shopping.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have frozen veggies in my freezer.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of using frozen peas and carrots from my freezer.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have leftover almond milk from my Instacart delivery today.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to use the leftover almond milk to make a smoothie for dessert.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am looking forward to making the smoothie for dessert.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have leftover chicken breasts in my fridge.",
+      "turn_index": 10
+    },
+    {
+      "text": "I plan to make chicken salad for lunch tomorrow using the leftover chicken breasts.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "stir-fry sauce suggestions",
+    "Instacart delivery",
+    "online grocery order",
+    "$60 grocery spend",
+    "chicken breasts",
+    "frozen veggies",
+    "frozen peas and carrots",
+    "sweet and sour sauce",
+    "soy sauce with garlic and ginger",
+    "almond milk smoothie",
+    "frozen fruit smoothie",
+    "chicken salad recipe",
+    "leftover chicken breasts",
+    "chicken salad for lunch tomorrow"
+  ],
+  "events": [
+    {
+      "text": "Instacart grocery order delivered to my doorstep",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Bought chicken breasts last Saturday during grocery shopping",
+      "date_hint": "last Saturday",
+      "turn_index": 2
+    },
+    {
+      "text": "Plan to make stir-fry for dinner tonight",
+      "date_hint": "tonight",
+      "turn_index": 0
+    },
+    {
+      "text": "Plan to make a smoothie for dessert using leftover almond milk",
+      "date_hint": "today",
+      "turn_index": 8
+    },
+    {
+      "text": "Plan to make chicken salad for lunch tomorrow using leftover chicken breasts",
+      "date_hint": "tomorrow",
+      "turn_index": 10
+    }
+  ]
+}

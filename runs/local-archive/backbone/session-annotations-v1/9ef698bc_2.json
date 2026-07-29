@@ -1,0 +1,92 @@
+{
+  "session_id": "9ef698bc_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I bought chicken breasts at Walmart last Sunday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I received my first meal kit delivery from Blue Apron.",
+      "turn_index": 0
+    },
+    {
+      "text": "My Blue Apron meal kit included ingredients for salmon with roasted veggies.",
+      "turn_index": 0
+    },
+    {
+      "text": "My Blue Apron meal kit included ingredients for chicken fajitas.",
+      "turn_index": 0
+    },
+    {
+      "text": "My Blue Apron meal kit included ingredients for a veggie stir-fry.",
+      "turn_index": 0
+    },
+    {
+      "text": "I already have a fajita recipe from my Blue Apron meal kit.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to modify the Lemon Garlic Chicken recipe to make it more substantial by adding some veggies or potatoes.",
+      "turn_index": 2
+    },
+    {
+      "text": "I asked what type of potatoes would work well with the Lemon Garlic Chicken recipe.",
+      "turn_index": 4
+    },
+    {
+      "text": "I decided to use Yukon Gold potatoes.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have a bottle of Cabernet Sauvignon from Trader Joe's called the two-buck Chuck.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to try the wine with the meal.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will let the wine breathe before pairing it with the potatoes.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "chicken breasts recipe ideas",
+    "Walmart chicken breasts",
+    "Blue Apron first meal kit",
+    "salmon with roasted veggies",
+    "chicken fajitas",
+    "veggie stir-fry",
+    "Lemon Garlic Chicken recipe",
+    "modify recipe with veggies or potatoes",
+    "potato types for Lemon Garlic Chicken",
+    "Yukon Gold potatoes",
+    "wine pairing suggestions",
+    "Cabernet Sauvignon two-buck Chuck Trader Joe's",
+    "letting wine breathe",
+    "pairing wine with potatoes"
+  ],
+  "events": [
+    {
+      "text": "Bought chicken breasts at Walmart",
+      "date_hint": "last Sunday",
+      "turn_index": 0
+    },
+    {
+      "text": "Received first Blue Apron meal kit delivery",
+      "date_hint": "last Sunday (implied by 'last Sunday' and 'just got')",
+      "turn_index": 0
+    },
+    {
+      "text": "Chose Yukon Gold potatoes for the meal",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Planned to try Cabernet Sauvignon with the meal and let it breathe",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

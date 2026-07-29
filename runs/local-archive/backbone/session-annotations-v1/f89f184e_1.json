@@ -1,0 +1,104 @@
+{
+  "session_id": "f89f184e_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to plan gifts for the upcoming holidays.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want gift ideas in the $20-$50 range.",
+      "turn_index": 0
+    },
+    {
+      "text": "I spent around $120 on gifts last month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for gifts for my nieces and nephews.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have friends who are into photography.",
+      "turn_index": 2
+    },
+    {
+      "text": "My nieces and nephews are between 5-12 years old.",
+      "turn_index": 4
+    },
+    {
+      "text": "My friends who are into photography are mostly beginners.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am considering gifting my nieces and nephews an experience instead of a physical gift.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been considering tickets to an amusement park as an experience gift.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think I will consider gifting my nieces and nephews an experience instead of a physical gift.",
+      "turn_index": 8
+    },
+    {
+      "text": "I still want to get my nieces and nephews something small to open on the day of the gift-giving.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to get them a small gift to go along with the experience.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am trying to be more budget-friendly this time around.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to cut back or make adjustments in specific areas to stay within my budget.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "upcoming holidays gifts",
+    "$20-$50 gift ideas",
+    "budget-friendly gifts",
+    "spent $120 on gifts last month",
+    "gifts for nieces and nephews",
+    "kids ages 5-12",
+    "photography gifts",
+    "beginner photography enthusiasts",
+    "experience gifts",
+    "amusement park tickets",
+    "small gift to open on gift day",
+    "gift-giving day",
+    "cut back on gift budget"
+  ],
+  "events": [
+    {
+      "text": "Planning gifts for the upcoming holidays",
+      "date_hint": "upcoming holidays",
+      "turn_index": 0
+    },
+    {
+      "text": "Spending around $120 on gifts last month",
+      "date_hint": "last month",
+      "turn_index": 0
+    },
+    {
+      "text": "Considering experience gifts for nieces and nephews (e.g., amusement park tickets)",
+      "date_hint": "upcoming holidays planning",
+      "turn_index": 6
+    },
+    {
+      "text": "Deciding to consider an experience gift plus a small gift to open on gift-giving day",
+      "date_hint": "upcoming holidays planning",
+      "turn_index": 8
+    },
+    {
+      "text": "Revisiting budget adjustments to stay within the gift budget",
+      "date_hint": "current planning",
+      "turn_index": 10
+    }
+  ]
+}

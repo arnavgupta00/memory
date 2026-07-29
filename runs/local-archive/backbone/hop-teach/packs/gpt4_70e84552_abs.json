@@ -1,0 +1,33 @@
+{
+  "question_id": "gpt4_70e84552_abs",
+  "question_type": "temporal-reasoning",
+  "question": "Which task did I complete first, fixing the fence or purchasing three cows from Peter?",
+  "question_date": "2023/05/21 (Sun) 10:40",
+  "is_abstention": true,
+  "gold_session_ids": [
+    "answer_b3070ec4_abs_1",
+    "answer_b3070ec4_abs_2"
+  ],
+  "haystack_session_count": 50,
+  "notes_coverage": "partial",
+  "annotated_session_count": 4,
+  "gold_sessions": [
+    {
+      "session_id": "answer_b3070ec4_abs_1",
+      "date": "2023/05/21 (Sun) 17:30",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_b3070ec4_abs_1\n[session_date] 2023/05/21 (Sun) 17:30\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm thinking of hosting a farm open house event soon and I want to make sure everything is perfect. Can you help me come up with some ideas for activities and also give me some tips on how to promote it on social media? By the way, I just fixed that broken fence on the east side of my property three weeks ago, where my goats like to graze, and it's been a huge relief to have them safe and secure.\n\n[turn 2] I like the idea of a petting zoo, but I'm worried about the logistics of keeping all the animals contained and safe. Do you have any advice on how to set that up? By the way, I've also been meaning to get my goats vaccinated against parasites, and I finally managed to do that last Thursday.\n\n[turn 4] That's really helpful, thanks! I'm also thinking of having a farm-to-table section, where I can sell some of my fresh produce and baked goods. Do you have any ideas on how to set that up and what kind of products I could offer?\n\n[turn 6] That's really helpful, thanks! Speaking of fresh produce, I've been selling some of my eggs to my coworkers and they've been loving them. I've also been experimenting with different recipes using the eggs, and I recently made a delicious quiche with some fresh herbs from my garden. Do you have any other recipe ideas that I could try out?\n\n[turn 8] That's great, thanks for the ideas! I'll definitely try out some of those recipes. By the way, I've been thinking of getting a new cow, maybe a brown Swiss or a jersey, to increase my milk production. I've been doing some research online and talking to some other farmers in the area, and I think I might be ready to make the investment soon. Do you have any advice on what to consider when selecting a breed and how to care for them?\n\n[turn 10] I think I'll stop here for now. I've got a lot to think about with the farm open house event and selecting a new cow breed. Thanks for all the advice and guidance! I feel more confident about making a decision and preparing for the event."
+    },
+    {
+      "session_id": "answer_b3070ec4_abs_2",
+      "date": "2023/05/21 (Sun) 11:30",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_b3070ec4_abs_2\n[session_date] 2023/05/21 (Sun) 11:30\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm thinking of hosting a farm open house event soon and I was wondering if you could help me come up with some fun activities for kids and adults alike. By the way, speaking of the farm, I've been doing a great job of keeping up with the goat's hoove trimming, I did it two weeks ago and it was a success, no mess at all!\n\n[turn 2] I really like the idea of a petting zoo and farm-themed crafts for kids. I was thinking of also offering some fresh produce and eggs for sale, maybe even some quiche or other baked goods made with the eggs from my chickens. Do you have any suggestions on how to price these items?\n\n[turn 4] I'm thinking of also offering some milk and cheese products if I can finalize the purchase of a new cow soon. Do you have any advice on how to choose the right breed for dairy production?\n\n[turn 6] Thanks for the advice! I was thinking of getting a Brown Swiss or a Jersey, as I've heard they're both great for dairy production. I've also been doing some research online and talking to other farmers in the area, and I think I might be ready to make the investment soon. By the way, speaking of my farm, I've also been trying to trim their hooves more regularly, and I've gotten much better at it with practice. The last time I did it was about two weeks ago, and I was proud of myself for not making a mess of it.\n\n[turn 8] I'm thinking of selling some of the milk and cheese products at my farm open house event. Do you have any suggestions on how to market and promote the event to attract more visitors?\n\n[turn 10] I'm thinking of setting up a small farm store on my property where customers can purchase my dairy products, eggs, and other farm-fresh goods. Do you have any advice on how to design and stock the store?"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

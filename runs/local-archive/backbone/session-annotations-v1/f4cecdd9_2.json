@@ -1,0 +1,90 @@
+{
+  "session_id": "f4cecdd9_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Disneyland soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I rode \"Snow White's Enchanted Wish\" during Mickey's Halloween Party on October 10th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I attended Mickey's Halloween Party on October 10th.",
+      "turn_index": 2
+    },
+    {
+      "text": "I rode Space Mountain: Ghost Galaxy during the event on October 10th.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am definitely going back to Disneyland this year for Mickey's Halloween Party.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have never seen the Frightfully Fun Parade before.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am interested in Mickey's Trick & Treat stage show.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of bringing my friend Emily to Mickey's Halloween Party this year.",
+      "turn_index": 10
+    },
+    {
+      "text": "Emily is a huge Disney fan.",
+      "turn_index": 10
+    },
+    {
+      "text": "We had a blast together during the event on October 10th.",
+      "turn_index": 10
+    },
+    {
+      "text": "I think Emily would love the Trick & Treat show.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am wondering whether Emily would enjoy the Cadaver Dans performances as well.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Snow White's Enchanted Wish dark ride",
+    "Fantasyland dark ride",
+    "Mickey's Halloween Party",
+    "Halloween decorations and events",
+    "October 10th",
+    "Haunted Mansion Holiday overlay",
+    "Guardians of the Galaxy - Monsters After Dark overlay",
+    "Space Mountain: Ghost Galaxy",
+    "Frightfully Fun Parade",
+    "Mickey's Trick & Treat stage show",
+    "Cadaver Dans performances",
+    "Disneyland Fantasyland"
+  ],
+  "events": [
+    {
+      "text": "Rode \"Snow White's Enchanted Wish\" during Mickey's Halloween Party",
+      "date_hint": "October 10th",
+      "turn_index": 0
+    },
+    {
+      "text": "Attended Mickey's Halloween Party",
+      "date_hint": "October 10th",
+      "turn_index": 2
+    },
+    {
+      "text": "Rode Space Mountain: Ghost Galaxy during the event",
+      "date_hint": "October 10th",
+      "turn_index": 4
+    },
+    {
+      "text": "Attended Mickey's Halloween Party with friend Emily",
+      "date_hint": "October 10th",
+      "turn_index": 10
+    }
+  ]
+}

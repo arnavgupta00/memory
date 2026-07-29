@@ -1,0 +1,116 @@
+{
+  "session_id": "sharegpt_knx1ayE_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I asked what can be told from the following TiDB execution plan.",
+      "turn_index": 0
+    },
+    {
+      "text": "The TiDB execution plan shows an ActRows value of 1000000 at the Projection_7 root node.",
+      "turn_index": 0
+    },
+    {
+      "text": "The Projection_7 root node has a time of 6.09s and loops:1 with Concurrency:5.",
+      "turn_index": 0
+    },
+    {
+      "text": "The Projection_7 root node reports memory usage of 675.6 KB and disk as N/A.",
+      "turn_index": 0
+    },
+    {
+      "text": "The Limit_9 root node in the plan has offset:0 and time:6.09s with loops:1.",
+      "turn_index": 0
+    },
+    {
+      "text": "The plan includes an index_task with total_time:6.08s, fetch_handle:373ms, build:339µs, and wait:5.71s.",
+      "turn_index": 0
+    },
+    {
+      "text": "The plan includes a table_task with total_time:30s, num:253, and concurrency:5.",
+      "turn_index": 0
+    },
+    {
+      "text": "The plan includes an IndexRangeScan_14 on table:bbbb using index:f_bookmark(f_bookmark) with range values starting with \"Y2JVSG81V2sxcmNHRlpWM1J5VFVaU1ZscEhSbE5XYlRrMldWVmtSMVl4U25KV2FrNVhVbXhhVkZacVNrZFNhekZaVW14S2FWZEdTbEpXVjNSaFVtMVdWMXBJVG1GU2F6VnZWVzB4TkZkV1drZGhSemxWVFZad1NWZFVUbXRXVmxsNlVXeGtZVkpGUlhoV01GcFRWbFpLYzJOR1pGTldNMUV4Vm10U1ExVXlSWGxUYkZwUVZteGFWVlpyVmt0WlZ\".",
+      "turn_index": 0
+    },
+    {
+      "text": "The IndexRangeScan_14 reports time:154.2ms and loops:5027.",
+      "turn_index": 0
+    },
+    {
+      "text": "The IndexRangeScan_14 cop_task reports num:20, max:189.9ms, min:29.5ms, avg:160.5ms, p95:189.9ms, max_proc_keys:276567, p95_proc_keys:276567, tot_proc:3.06s, tot_wait:4ms, rpc_num:20, and rpc_time:3.21s.",
+      "turn_index": 0
+    },
+    {
+      "text": "The IndexRangeScan_14 scan_detail reports total_process_keys:5191584, total_process_keys_size:1874161824, and total_keys:5216628.",
+      "turn_index": 0
+    },
+    {
+      "text": "The IndexRangeScan_14 scan_detail reports rocksdb delete_skipped_count:2712 and key_skipped_count:5219319.",
+      "turn_index": 0
+    },
+    {
+      "text": "The IndexRangeScan_14 scan_detail reports rocksdb block cache_hit_count:144, read_count:4910, and read_byte:46.0 MB.",
+      "turn_index": 0
+    },
+    {
+      "text": "The plan includes a Limit_17 cop[tikv] node with offset:0, time:28.7s, and loops:253.",
+      "turn_index": 0
+    },
+    {
+      "text": "The Limit_17 cop_task reports num:1422, max:188.1ms, min:1.1ms, avg:71ms, p95:127.6ms, max_proc_keys:7433, p95_proc_keys:6307, tot_proc:1m37.2s, tot_wait:64ms, rpc_num:1422, and rpc_time:1m41s.",
+      "turn_index": 0
+    },
+    {
+      "text": "The Limit_17 tikv_task reports proc max:184ms, min:0s, p80:96ms, p95:124ms, iters:11225, and tasks:1422.",
+      "turn_index": 0
+    },
+    {
+      "text": "The Limit_17 scan_detail reports total_process_keys:5006611, total_process_keys_size:13373169845, and total_keys:7151465.",
+      "turn_index": 0
+    },
+    {
+      "text": "The Limit_17 scan_detail reports rocksdb delete_skipped_count:835 and key_skipped_count:7630678.",
+      "turn_index": 0
+    },
+    {
+      "text": "The Limit_17 scan_detail reports rocksdb block cache_hit_count:38085740, read_count:79423, and read_byte:1.17 GB.",
+      "turn_index": 0
+    },
+    {
+      "text": "The plan includes a Selection_16 cop[tikv] node with an equality condition on aaaa_feed_bbbb.f_bookmark.",
+      "turn_index": 0
+    },
+    {
+      "text": "The Selection_16 condition compares aaaa_feed_bbbb.f_bookmark to a long string value starting with \"Y2JVSG81V2sxcmNHRlpWM1J5VFVaU1ZscEhSbE5XYlRrMldWVmtSMVl4U25KV2FrNVhVbXhhVkZacVNrZFNhekZaVW14S2FWZEdTbEpXVjNSaFVtMVdWMXBJVG1GU2F6VnZWVzB4TkZkV1drZGhSemxWVFZad1NWZFVUbXRXVmxsNlVXeGtZVkpGUlhoV01GcFRWbFpLYzJOR1pGTldNMUV4Vm10U1ExVXlSWGxUYkZwUVZteGFWVlpyVmt0WlZsSllaRWhrYVUxV1NuaFZNbmhQWVZaS2RWRnNiRmRXZWtVd1ZrZDRTMU5IUmtsVGJGWllVMFZLVUZaSGVHRmpNVnBZVW10b2ExSnVRazlaYTJoRFpVWmFSMkZJWkZWaVZscFlXVEJhVjFWdFJuUmhSbHBhVmtWYWFGWXhXbmRqYkVwVllrWkdWbFpFUVRWYWExcFhVMWRLTmxWdGVGTk5XRUpIVmxSSmVHTXhVbk5UV0doWVltdEtWbGxyWkZOVVJteFdWbFJHV0ZKck5UQlVWbVJIVmpGS2NtTkVRbGRTUlZwVVdUSnpNVlpyT1ZaV2JGSllVMFZLVWxadGRHRlNhekZYVld4YVlWSnJjSE5WYkZKWFUxWlZlVTFJYUZWaVJuQkhWbTF3VjFkSFNrZFRhMDVoVmpOTk1WVXdXa3RrUjBaR1RsZDRhRTFJUWpSV2Frb3dWVEZKZVZKc1pHcFNiRnBYVm10YVMxVldWbkphUms1cVlrWktNRmt3Vmt0aVIwWTJVbTVvVm1KR1NrUldNbk40WTJzeFJWSnNWbWhoTTBKUlYxZDRWbVZIVWtkWGJrWm9VbXhhYjFSV1duZFhiR1IwWkVWYVVGWnJTbE5WUmxGNFQwVXhTRmRZYUU5U01WcHZWMWh3VjJFd09WaFdWRUpQVWtaV00xUXdaRkpOUlRWVllrY3hVRll3TUhkVVZ6RmhZVVpzZEZkWWJGcFdNRFZ5VkZjeFNtVldhM2xXYld4T1pXdGFiMVJzVWxwbGJHdDVWRzFzV2sxcmNISlhhMlJHVFZVeGNWWnRNV0ZTUlRBd1ZHMHhVMkZGTVVsbFJUbFRWbTFSTkdaRVVtaFplbEpyV1cxV2JGcEVXbXhQUkZVd1QxUkJlRnBFVm10UFYxVjVXbGRSTWxreVNtdE9Na3ByV21wb2EwMVhWWHBhVkdNeVRtMUZlbHBIV210WlYxa3dUV3BPYlUxdFdtdE9SMUY0VFdwbmQxcFVVamhVYTFaWVprRTlQUT09fFVIbzVhbVZIT1RSaFZXaDVWak5HTTFsNk1XWk9iRGg0WmtSb2FGbHRXbTFOUkUwMVdtcHJNazFxVFhwTmFsbDVXVlJCZVUxcVp6Rk9WRlpzVGtSQ2FFMUVSbXRPVjFVd1RqSlJNMDVFWkd0TlJHUnRXa2RKTVU1dFVUQlpWRlp0V1dwTk5VMXRXbXhaVkZKdFQxUktPRlJyVmxobVFUMDl8YWM0NDViNDIzZTE0ZmE3Y2UwNjUwMzlhMDYyY2MyOWI3NTUxZjI3OWIyYjA4OWNkNTg3MzEzNDhmOGNmNmRhNXxORVd8\".",
+      "turn_index": 0
+    },
+    {
+      "text": "The Selection_16 node reports time:0 and tikv_task proc max:184ms, min:0s, p80:96ms, p95:124ms, iters:11225, and tasks:1422.",
+      "turn_index": 0
+    },
+    {
+      "text": "The plan includes a TableRowIDScan_15 cop[tikv] node on table:bbbb with keep:5006611.",
+      "turn_index": 0
+    },
+    {
+      "text": "The TableRowIDScan_15 node reports tikv_task proc max:176ms, min:0s, p80:92ms, p95:120ms, iters:11225, and tasks:1422.",
+      "turn_index": 0
+    }
+  ],
+  "keyphrases": [
+    "TiDB execution plan",
+    "Projection_7",
+    "Limit_9 offset 0",
+    "Concurrency 5",
+    "index_task fetch_handle 373ms",
+    "table_task num 253 concurrency 5",
+    "IndexRangeScan_14",
+    "IndexRangeScan range Y2JVSG81V2sxcmNHRlpWM1J5VFVaU1ZscEhSbE5XYlRrMldWVmtSMVl4U25KV2FrNVhVbXhhVkZacVNrZFNhekZaVW14S2FWZEdTbEpXVjNSaFVtMVdWMXBJVG1GU2F6VnZWVzB4TkZkV1drZGhSemxWVFZad1NWZFVUbXRXVmxsNlVXeGtZVkpGUlhoV01GcFRWbFpLYzJOR1pGTldNMUV4Vm10U1ExVXlSWGxUYkZwUVZteGFWVlpyVmt0WlZ",
+    "Selection_16 f_bookmark eq",
+    "TableRowIDScan_15 keep 5006611",
+    "rocksdb cache_hit_count read_byte 1.17 GB"
+  ],
+  "events": []
+}

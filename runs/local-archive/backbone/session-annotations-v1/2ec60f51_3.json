@@ -1,0 +1,113 @@
+{
+  "session_id": "2ec60f51_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to keep track of my expenses.",
+      "turn_index": 0
+    },
+    {
+      "text": "I saved $2 on my favorite coffee creamer by using a coupon on the 5th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I store my physical coupons in an envelope on my kitchen counter.",
+      "turn_index": 2
+    },
+    {
+      "text": "I store digital coupons in my email inbox.",
+      "turn_index": 2
+    },
+    {
+      "text": "I save digital coupons to my phone's notes app.",
+      "turn_index": 2
+    },
+    {
+      "text": "I like the idea of using a binder or a digital tool to organize coupons and discounts.",
+      "turn_index": 2
+    },
+    {
+      "text": "I love pasta.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have a 10% off coupon for pasta products from my favorite grocery store.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan my meals around what is on sale at the grocery store and what ingredients I already have at home.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am not too picky about brands as long as the quality is good.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have a favorite pasta recipe: simple spaghetti Bolognese with ground beef and tomatoes.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am looking for ways to make my favorite pasta recipe more cost-effective.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am looking for discounts on skincare products.",
+      "turn_index": 6
+    },
+    {
+      "text": "I used a 20% off coupon on skincare products from my local pharmacy last week.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am eyeing a skincare brand that offers a buy one get one free deal on their facial moisturizers.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I should stock up on facial moisturizers because I use them regularly and I have enough storage space.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want tips on how to keep track of my skincare products' expiration dates.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have a lot of skincare products, and it can get overwhelming to keep track of when they expire.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "expense tracking",
+    "organize coupons and discounts",
+    "coffee creamer coupon",
+    "saved $2",
+    "coupon on the 5th",
+    "physical coupons envelope",
+    "kitchen counter",
+    "digital coupons email inbox",
+    "phone notes app",
+    "binder for coupons",
+    "maximize savings pasta",
+    "10% off pasta coupon",
+    "meal planning grocery store sales",
+    "spaghetti bolognese",
+    "ground beef and tomatoes",
+    "find more coupons for favorite brands",
+    "skincare product discounts",
+    "20% off coupon local pharmacy",
+    "buy one get one free facial moisturizers",
+    "stock up skincare products",
+    "expiration dates skincare products"
+  ],
+  "events": [
+    {
+      "text": "Used a coupon on coffee creamer and saved $2",
+      "date_hint": "on the 5th",
+      "turn_index": 0
+    },
+    {
+      "text": "Used a 20% off coupon on skincare products from a local pharmacy",
+      "date_hint": "last week",
+      "turn_index": 8
+    }
+  ]
+}

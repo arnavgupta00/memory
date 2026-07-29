@@ -1,0 +1,111 @@
+{
+  "session_id": "fc005760",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to a nearby state park with Rachel soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to know the best hiking trail for beginners.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am going to Red Rock State Park.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of doing a 2-3 hour hike at Red Rock State Park.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to see scenic views during the hike.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to go abroad soon.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to stay connected with friends and family while traveling.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to keep in touch with loved ones back home while abroad.",
+      "turn_index": 4
+    },
+    {
+      "text": "My mom usually sends a good morning message around 7:15 am.",
+      "turn_index": 6
+    },
+    {
+      "text": "I respond to my mom's good morning message immediately.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been waking up at 7:30 am every day.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want an alarm clock app to help me wake up on time even when traveling.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want a travel adapter for international travel.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to make sure I can keep my devices charged while abroad.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "beginner hiking trail",
+    "nearby state park trip",
+    "Rachel",
+    "Red Rock State Park",
+    "2-3 hour hike",
+    "scenic views",
+    "going abroad",
+    "stay connected with friends and family",
+    "messaging apps",
+    "good morning message 7:15 am",
+    "alarm clock app",
+    "wake up 7:30 am",
+    "travel adapter",
+    "international travel power adapter",
+    "keep devices charged abroad"
+  ],
+  "events": [
+    {
+      "text": "Planning a trip to Red Rock State Park with Rachel",
+      "date_hint": "soon",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning a 2-3 hour beginner hike at Red Rock State Park",
+      "date_hint": "soon",
+      "turn_index": 2
+    },
+    {
+      "text": "Going abroad soon",
+      "date_hint": "soon",
+      "turn_index": 4
+    },
+    {
+      "text": "Mom sends a good morning message around 7:15 am (daily routine)",
+      "date_hint": "7:15 am",
+      "turn_index": 6
+    },
+    {
+      "text": "Waking up at 7:30 am every day (daily routine)",
+      "date_hint": "7:30 am",
+      "turn_index": 8
+    },
+    {
+      "text": "Planning to use a travel adapter for international travel to charge devices abroad",
+      "date_hint": "soon",
+      "turn_index": 10
+    }
+  ]
+}

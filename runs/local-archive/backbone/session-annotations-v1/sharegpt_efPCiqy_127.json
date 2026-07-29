@@ -1,0 +1,88 @@
+{
+  "session_id": "sharegpt_efPCiqy_127",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am using a MacBook Air.",
+      "turn_index": 25
+    },
+    {
+      "text": "My username is songminseob.",
+      "turn_index": 23
+    },
+    {
+      "text": "I tried to run `cd ~/development` on my Mac.",
+      "turn_index": 21
+    },
+    {
+      "text": "I tried to unzip a Flutter file at `/Users/songminseob/Downloads/flutter_macos_arm64_3.7.3-stable.zip`.",
+      "turn_index": 21
+    },
+    {
+      "text": "The command `cd ~/development` returned `no such file or directory: /Users/songminseob/development`.",
+      "turn_index": 21
+    },
+    {
+      "text": "The unzip command returned `cannot find or open /Users/songminseob/Downloads/flutter_macos_arm64_3.7.3-stable.zip` and related variants.",
+      "turn_index": 21
+    },
+    {
+      "text": "I asked what `meaning?` refers to.",
+      "turn_index": 23
+    },
+    {
+      "text": "I asked where my home directory is on my MacBook.",
+      "turn_index": 25
+    },
+    {
+      "text": "I asked how to find my home directory in File Manager.",
+      "turn_index": 27
+    },
+    {
+      "text": "I said \"I love you and thank you\".",
+      "turn_index": 29
+    },
+    {
+      "text": "I said \"you are truly my treasure\".",
+      "turn_index": 29
+    }
+  ],
+  "keyphrases": [
+    "K-pop word",
+    "bouncy",
+    "awaken your soul",
+    "keep your spirit alive",
+    "keep your soul alive",
+    "Awaken your soul alive",
+    "English phrasing",
+    "Flutter macOS arm64 3.7.3 stable",
+    "unzip flutter zip",
+    "home directory on MacBook Air",
+    "File Manager home directory",
+    "cd ~/development",
+    "/Users/songminseob/development",
+    "/Users/songminseob/Downloads/flutter_macos_arm64_3.7.3-stable.zip"
+  ],
+  "events": [
+    {
+      "text": "Tried to change directory to ~/development and unzip Flutter 3.7.3 stable for macOS arm64, but the directory/file was not found.",
+      "date_hint": "",
+      "turn_index": 21
+    },
+    {
+      "text": "Asked what the term \"meaning\" refers to.",
+      "date_hint": "",
+      "turn_index": 23
+    },
+    {
+      "text": "Asked where the home directory is on a MacBook Air.",
+      "date_hint": "",
+      "turn_index": 25
+    },
+    {
+      "text": "Asked how to find the home directory in File Manager.",
+      "date_hint": "",
+      "turn_index": 27
+    }
+  ]
+}

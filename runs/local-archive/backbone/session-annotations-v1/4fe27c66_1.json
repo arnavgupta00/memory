@@ -1,0 +1,109 @@
+{
+  "session_id": "4fe27c66_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to reduce my daily commute expenses.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been taking the 7:15 AM train to work over the past month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been spending a lot of money on transportation.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want alternative commute options such as monthly passes or bike-sharing programs.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to calculate the daily commute cost for an unlimited ride monthly pass.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think the daily commute cost might be the cost of my current train ticket multiplied by the number of days I take the train in a month.",
+      "turn_index": 2
+    },
+    {
+      "text": "My daily commute cost is around $200 per month.",
+      "turn_index": 4
+    },
+    {
+      "text": "I get ready for work around 6:30 AM.",
+      "turn_index": 6
+    },
+    {
+      "text": "I make myself a cup of coffee for breakfast before heading out the door.",
+      "turn_index": 6
+    },
+    {
+      "text": "I eat a slice of toast with avocado for breakfast before heading out the door.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking about switching from the train to bike-sharing.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been taking the 7:15 AM train to work over the past month.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been adjusting my morning routine to accommodate the extra time it takes to get to work.",
+      "turn_index": 8
+    },
+    {
+      "text": "I stay safe while biking in heavy traffic by wearing the right gear and following traffic rules.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been sitting in the quiet car most days.",
+      "turn_index": 10
+    },
+    {
+      "text": "Sitting in the quiet car helps me get some work done or respond to emails before I get to the office.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "reduce daily commute expenses",
+    "7:15 AM train",
+    "monthly passes",
+    "unlimited ride monthly pass",
+    "daily commute cost calculation",
+    "bike-sharing programs",
+    "bike commute planning",
+    "estimate time to bike to work",
+    "navigate heavy traffic",
+    "bike safety gear",
+    "follow traffic rules",
+    "quiet car train",
+    "respond to emails",
+    "breakfast coffee toast avocado",
+    "6:30 AM morning routine"
+  ],
+  "events": [
+    {
+      "text": "Taking the 7:15 AM train to work over the past month",
+      "date_hint": "past month",
+      "turn_index": 0
+    },
+    {
+      "text": "Taking the 7:15 AM train to work over the past month",
+      "date_hint": "past month",
+      "turn_index": 8
+    },
+    {
+      "text": "Getting ready for work around 6:30 AM",
+      "date_hint": "around 6:30 AM",
+      "turn_index": 6
+    },
+    {
+      "text": "Sitting in the quiet car most days",
+      "date_hint": "most days",
+      "turn_index": 10
+    }
+  ]
+}

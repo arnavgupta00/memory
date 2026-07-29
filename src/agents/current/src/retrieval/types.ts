@@ -49,6 +49,19 @@ export type RetrievalOptions = {
   charBudget: number;
   maxTurnChars: number;
   temporalBoost: number;
+  /**
+   * When true, BM25 indexes only user-turn text inside each window (assistant
+   * turns remain in the span for packaging). Phase-1 winner on canary-1.
+   * Defaults to true via DEFAULT_RETRIEVAL_OPTIONS / resolveRetrievalOptions.
+   */
+  indexUserTurnsOnly?: boolean;
+  /** Optional session_id -> expansion text appended to every window of that session. */
+  expansionBySessionId?: Record<string, string>;
+  /**
+   * Optional session_id -> turn_index -> expansion text for turn-anchored facts.
+   * Appended only to windows that contain that turn.
+   */
+  expansionBySessionTurn?: Record<string, Record<string, string>>;
 };
 
 export const DEFAULT_RETRIEVAL_OPTIONS: RetrievalOptions = {
@@ -58,6 +71,7 @@ export const DEFAULT_RETRIEVAL_OPTIONS: RetrievalOptions = {
   charBudget: 40_000,
   maxTurnChars: 4_000,
   temporalBoost: 0.15,
+  indexUserTurnsOnly: true,
 };
 
 export type RetrievalInput = {

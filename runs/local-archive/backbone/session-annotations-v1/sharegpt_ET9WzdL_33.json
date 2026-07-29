@@ -1,0 +1,39 @@
+{
+  "session_id": "sharegpt_ET9WzdL_33",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user says the calculation of the interest charge by the organization is wrong.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user states the correct interest charge calculation is 90% * S$90,000 * (14/365) * 10% = S$310.68.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user states there are 52 invoices.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user states that for 52 invoices the total is S$310.68 * 52 = S$16,155.62.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user asks to replace the interest charge and re-generate the Kingsman's Cost of Finance Comparison table.",
+      "turn_index": 3
+    }
+  ],
+  "keyphrases": [
+    "interest charge calculation",
+    "S$90,000 principal",
+    "14/365 day fraction",
+    "10% interest rate",
+    "90% factor",
+    "S$310.68 per invoice",
+    "52 invoices",
+    "S$16,155.62 total",
+    "Kingsman's Cost of Finance Comparison table",
+    "cost of finance comparison"
+  ],
+  "events": []
+}

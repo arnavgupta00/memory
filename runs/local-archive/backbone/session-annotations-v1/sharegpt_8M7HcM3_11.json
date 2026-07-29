@@ -1,0 +1,63 @@
+{
+  "session_id": "sharegpt_8M7HcM3_11",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I checked that AppArmor is on and installed and running/enforcing on my program.",
+      "turn_index": 1
+    },
+    {
+      "text": "I ran the command \"sudo snap debug sandbox-features discord\" and it returned an error saying \"too many arguments for command\".",
+      "turn_index": 3
+    },
+    {
+      "text": "I ran the command \"sudo aa-status\" and it showed proper context and that it is a group of processes in \"enforce mode\".",
+      "turn_index": 11
+    },
+    {
+      "text": "I did not find a relevant Discord file in /etc/apparmor.d/.",
+      "turn_index": 13
+    },
+    {
+      "text": "I found that the AppArmor profile exists at a location that was mentioned in the conversation.",
+      "turn_index": 15
+    }
+  ],
+  "keyphrases": [
+    "AppArmor blocking Discord",
+    "AppArmor settings files locations",
+    "/etc/apparmor.d",
+    "snap debug sandbox-features discord",
+    "aa-status enforce mode",
+    "Discord AppArmor profile",
+    "dynamically creating AppArmor profile",
+    "grep command"
+  ],
+  "events": [
+    {
+      "text": "Checked AppArmor status and confirmed it is installed and running/enforcing.",
+      "date_hint": "",
+      "turn_index": 1
+    },
+    {
+      "text": "Ran \"sudo snap debug sandbox-features discord\" and received \"too many arguments for command\" error.",
+      "date_hint": "",
+      "turn_index": 3
+    },
+    {
+      "text": "Ran \"sudo aa-status\" and it showed proper context with processes in enforce mode.",
+      "date_hint": "",
+      "turn_index": 11
+    },
+    {
+      "text": "Checked /etc/apparmor.d/ and found no relevant Discord file.",
+      "date_hint": "",
+      "turn_index": 13
+    },
+    {
+      "text": "Confirmed the AppArmor profile exists and asked how to change it if modification is not recommended there.",
+      "date_hint": "",
+      "turn_index": 15
+    }
+  ]
+}

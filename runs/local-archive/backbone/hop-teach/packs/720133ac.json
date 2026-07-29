@@ -1,0 +1,33 @@
+{
+  "question_id": "720133ac",
+  "question_type": "multi-session",
+  "question": "What is the total cost of Lola's vet visit and flea medication?",
+  "question_date": "2023/05/30 (Tue) 18:40",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_c9dfeaea_1",
+    "answer_c9dfeaea_2"
+  ],
+  "haystack_session_count": 47,
+  "notes_coverage": "partial",
+  "annotated_session_count": 6,
+  "gold_sessions": [
+    {
+      "session_id": "answer_c9dfeaea_1",
+      "date": "2023/05/25 (Thu) 00:43",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_c9dfeaea_1\n[session_date] 2023/05/25 (Thu) 00:43\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm thinking of getting a new dog bed for Max, can you recommend some popular brands or types of dog beds that are comfortable and durable? By the way, I just took Lola to the vet last week and got a discounted consultation fee of $50 as a regular customer, which was nice.\n\n[turn 2] I'm looking for something durable and comfortable, so maybe orthopedic or memory foam would be a good option. Do you have any recommendations for dog beds in the $40-$50 price range?\n\n[turn 4] I'm also looking for a pet grooming kit, do you have any recommendations for a good one that's around $80?\n\n[turn 6] I'm actually looking for a pet grooming kit because my friend Rachel borrowed mine, and I need to groom Lola soon. I hope she returns it soon, but I might need to buy a new one if she doesn't.\n\n[turn 8] I need to check the prices of dog beds and pet grooming kits at Petco, maybe they have some good deals on them.\n\n[turn 10] I'm thinking of checking out the prices of dog beds and pet grooming kits at Petco, maybe they have some good deals on them. By the way, I remember when I took Lola to the vet last week, the consultation fee was $50, which was a discounted price for regular customers."
+    },
+    {
+      "session_id": "answer_c9dfeaea_2",
+      "date": "2023/05/30 (Tue) 14:21",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_c9dfeaea_2\n[session_date] 2023/05/30 (Tue) 14:21\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm looking for some advice on cat litter. I just got a new one from Petco last Saturday, but I'm not sure if it's the best one for Lola. Can you recommend any good brands or types of litter that are good for odor control? By the way, I also got her flea and tick prevention medication, it was $25 for a 3-month supply.\n\n[turn 2] I'm open to trying different textures and types, but I do want something that's easy to scoop and clean. I'm not too concerned about the budget, as long as it's effective. Lola doesn't have any sensitivities or allergies that I'm aware of. I usually scoop the litter box every other day, and it's just Lola who uses it.\n\n[turn 4] I think I'll try the Arm & Hammer Super Scoop Cat Litter. I've heard of it before and it sounds like a good all-around option. By the way, I also got Lola a bag of cat food from Petco, it was $35 for a 20-pound bag, and she seems to be doing fine with it.\n\n[turn 6] It's the same brand and type she's been eating for a while now, so I'm glad it's still agreeing with her. I've been thinking about getting a new dog bed for Max, actually. I saw a nice one at the pet store down the street for $40. Do you have any recommendations for dog beds?\n\n[turn 8] I'll definitely consider those factors when choosing a bed for Max. I think I'll go to the pet store this weekend and check out their selection. Do you have any advice on how to get Max to eat more vegetables? I've been adding steamed carrots and green beans to his dog food, but I'm not sure if it's making a difference.\n\n[turn 10] I also wanted to ask, have you considered a pet grooming kit for Max? I have one that I use for Lola, it was $80 when I bought it last year, and it's been a good investment since I use it regularly."
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

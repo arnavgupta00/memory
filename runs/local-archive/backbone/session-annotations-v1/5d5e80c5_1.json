@@ -1,0 +1,115 @@
+{
+  "session_id": "5d5e80c5_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Chicago.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want restaurant recommendations near the Hyatt Regency O'Hare.",
+      "turn_index": 0
+    },
+    {
+      "text": "I flew into O'Hare on January 28th on United Airlines from Boston.",
+      "turn_index": 0
+    },
+    {
+      "text": "I received a first class upgrade on my January 28th United Airlines flight from Boston to O'Hare.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am attending a business conference at the Hyatt Regency O'Hare.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need tips on how to get to the city center from O'Hare.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering using my credit card points to book a domestic round-trip ticket.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking about using my points to book a trip to Miami in April for a friend's wedding.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am deciding whether to book flights now or wait for sales or error fares.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have enough points to book a domestic round-trip ticket on any airline.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have flexibility with my travel dates.",
+      "turn_index": 8
+    },
+    {
+      "text": "I need to attend the wedding and want a confirmed flight.",
+      "turn_index": 8
+    },
+    {
+      "text": "I decided to book the flight now.",
+      "turn_index": 10
+    },
+    {
+      "text": "I flew from Boston to Chicago on United Airlines on January 28th.",
+      "turn_index": 10
+    },
+    {
+      "text": "I was upgraded to first class due to my frequent flyer status.",
+      "turn_index": 10
+    },
+    {
+      "text": "The lie-flat bed on my first class upgrade was amazing.",
+      "turn_index": 10
+    },
+    {
+      "text": "The gourmet meal service on my first class upgrade was amazing.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Hyatt Regency O'Hare",
+    "restaurants near Hyatt Regency O'Hare",
+    "Chicago trip",
+    "O'Hare to city center",
+    "United Airlines",
+    "January 28 flight",
+    "Boston to Chicago",
+    "first class upgrade",
+    "credit card points",
+    "domestic round-trip ticket",
+    "maximize points value",
+    "Miami trip April wedding"
+  ],
+  "events": [
+    {
+      "text": "Flight from Boston to Chicago via O'Hare on United Airlines with a first class upgrade",
+      "date_hint": "January 28",
+      "turn_index": 0
+    },
+    {
+      "text": "Attending a business conference at Hyatt Regency O'Hare",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Considering booking flights using credit card points for a domestic round-trip ticket",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Planning a trip to Miami in April for a friend's wedding",
+      "date_hint": "April",
+      "turn_index": 6
+    },
+    {
+      "text": "Deciding to book the flight now for a confirmed seat",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

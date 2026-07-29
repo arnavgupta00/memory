@@ -1,0 +1,88 @@
+{
+  "session_id": "90928b75_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a new road trip to the Grand Canyon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I just got back from an epic road trip to Yellowstone last month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I drove 2,500 miles on my road trip to Yellowstone.",
+      "turn_index": 0
+    },
+    {
+      "text": "I returned from my Yellowstone road trip on June 25th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I live in a city near Los Angeles, California.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to visit the South Rim of the Grand Canyon.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want a route that is not too long but offers scenic views.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want a route that passes through Utah because I didn't get to see much of Utah on my way back from Yellowstone.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to stay at one of the lodges within the Grand Canyon park, even if it is more expensive.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to wake up to views of the Grand Canyon every morning.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to check the park's website for special events or holidays that might affect my trip.",
+      "turn_index": 10
+    },
+    {
+      "text": "I plan to book my accommodations early to avoid sold-out situations.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am considering whether to book a guided tour or hike with a ranger during my stay or explore the park on my own.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "road trip to Grand Canyon",
+    "best route from home to Grand Canyon",
+    "Grand Canyon South Rim",
+    "scenic views route",
+    "route through Utah",
+    "Yellowstone road trip",
+    "drove 2,500 miles",
+    "returned June 25",
+    "city near Los Angeles",
+    "Grand Canyon lodges within the park",
+    "Tusayan",
+    "Flagstaff",
+    "booking accommodations dates to avoid",
+    "park website special events holidays",
+    "guided tour ranger hike",
+    "book accommodations early"
+  ],
+  "events": [
+    {
+      "text": "Returned from Yellowstone road trip",
+      "date_hint": "June 25th",
+      "turn_index": 0
+    },
+    {
+      "text": "Road trip to Yellowstone (just got back last month)",
+      "date_hint": "last month",
+      "turn_index": 0
+    }
+  ]
+}

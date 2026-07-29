@@ -41,6 +41,15 @@ export function retrieveMemory(input: RetrievalInput & {
     sessions,
     options.windowTurns,
     options.windowStride,
+    {
+      indexUserTurnsOnly: options.indexUserTurnsOnly ?? true,
+      ...(options.expansionBySessionId !== undefined
+        ? { expansionBySessionId: options.expansionBySessionId }
+        : {}),
+      ...(options.expansionBySessionTurn !== undefined
+        ? { expansionBySessionTurn: options.expansionBySessionTurn }
+        : {}),
+    },
   );
   const index = new Bm25Index(windows.map((window) => window.document));
   const ranked = index.search(input.question, options.topK, options.temporalBoost);

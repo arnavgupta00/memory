@@ -1,0 +1,25 @@
+{
+  "question_id": "gpt4_e072b769",
+  "question_type": "temporal-reasoning",
+  "question": "How many weeks ago did I start using the cashback app 'Ibotta'?",
+  "question_date": "2023/05/06 (Sat) 09:18",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_c19bd2bf_1"
+  ],
+  "haystack_session_count": 45,
+  "notes_coverage": "partial",
+  "annotated_session_count": 4,
+  "gold_sessions": [
+    {
+      "session_id": "answer_c19bd2bf_1",
+      "date": "2023/04/16 (Sun) 02:19",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_c19bd2bf_1\n[session_date] 2023/04/16 (Sun) 02:19\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm trying to plan my next grocery trip and I was wondering if you could help me make a list of essentials I should pick up. I've just downloaded Ibotta, a cashback app that gives you rebates on certain grocery items, and I want to make sure I get the most out of it.\n\n[turn 2] I don't have any dietary restrictions or preferences, and I'm the only one in my household. I usually buy a mix of everything, like fresh produce, meat, dairy, canned goods, and snacks. I don't have a preferred store, but I do try to shop at places that offer cashback through Ibotta. I've been eyeing that rebate on eggs, so I'll probably prioritize that.\n\n[turn 4] I'm also thinking of trying to reduce my plastic usage, so do you think I could get some reusable bags or containers that would be suitable for grocery shopping?\n\n[turn 6] I've been carrying reusable bags with me whenever I go shopping, and it's become a habit now. I feel good about not contributing to the plastic waste. Do you think I could also use these reusable bags for bulk shopping at places like Costco?\n\n[turn 8] I was thinking of trying out a new grocery delivery service, something similar to FreshToDoor, which I tried a few weeks ago. Do you know of any other services that offer similar promotions or discounts, especially for first-time users?\n\n[turn 10] I'm thinking of trying out Thrive Market, as I've been trying to incorporate more organic and natural products into my diet. Do you think I could get cashback on my Thrive Market purchases through Ibotta?"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

@@ -1,0 +1,42 @@
+{
+  "session_id": "ultrachat_94624",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want natural remedies for treating dark circles under the eyes.",
+      "turn_index": 0
+    },
+    {
+      "text": "I plan to consult with my doctor before trying these remedies.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to book an appointment with my doctor next week.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am excited to try some of these remedies in the meantime.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "natural remedies",
+    "dark circles under the eyes",
+    "under-eye dark circles",
+    "consult with my doctor",
+    "doctor appointment next week",
+    "try remedies in the meantime"
+  ],
+  "events": [
+    {
+      "text": "Plan to consult with my doctor before trying the remedies",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Book an appointment with my doctor next week",
+      "date_hint": "next week",
+      "turn_index": 6
+    }
+  ]
+}

@@ -1,8 +1,9 @@
 import type { Bm25SearchResult, RetrievalDocument } from "./types.js";
 import { explicitTemporalTerms, tokenizeRetrievalText } from "./tokenize.js";
 
-export const BM25_K1 = 1.2 as const;
-export const BM25_B = 0.75 as const;
+/** Phase-1 rank-gate winner on canary-1 answerable (with user-only indexing). */
+export const BM25_K1 = 1.5 as const;
+export const BM25_B = 0.9 as const;
 export const DEFAULT_TEMPORAL_BOOST = 0.15;
 
 type IndexedDocument = {

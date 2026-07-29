@@ -1,0 +1,106 @@
+{
+  "session_id": "c937aab6",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am having trouble adjusting to a new wake-up time since the clocks fell back.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to set a smart alarm on my phone that can monitor my sleep patterns.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the smart alarm to wake me up during a light sleep phase.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have tried a few sleep tracking apps before.",
+      "turn_index": 2
+    },
+    {
+      "text": "Before the clocks fell back, I used to wake up at 7:00 am.",
+      "turn_index": 2
+    },
+    {
+      "text": "Since the clocks fell back, it has been a struggle for me to wake up at my previous time.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been trying to eat healthier.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been bringing a salad or leftovers from last night's dinner instead of buying a sandwich or wrap from the café down the street.",
+      "turn_index": 6
+    },
+    {
+      "text": "Bringing a salad or leftovers has been good for my waistline.",
+      "turn_index": 6
+    },
+    {
+      "text": "Bringing a salad or leftovers has been helping me save around $5-6 per day.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want healthy snack options that I can keep at my desk or in my bag.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want snacks to curb my cravings and stay energized throughout the day.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I need to get some snacks for my desk.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want a good energy-boosting snack that is easy to prepare and doesn't make a mess.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "smart alarm phone",
+    "monitor sleep patterns",
+    "light sleep phase wake up",
+    "clocks fell back",
+    "sleep tracking apps accuracy",
+    "Fitbit Apple Watch Garmin",
+    "wake up 7:00 am",
+    "healthy lunch prep night before",
+    "healthy lunch made the night before",
+    "salad or leftovers instead of sandwich wrap",
+    "save $5-6 per day",
+    "healthy snacks desk bag",
+    "curb cravings stay energized",
+    "energy-boosting snack easy to prepare",
+    "no-mess snack for desk"
+  ],
+  "events": [
+    {
+      "text": "Clocks fell back and I had trouble adjusting to the new wake-up time.",
+      "date_hint": "since the clocks fell back",
+      "turn_index": 0
+    },
+    {
+      "text": "Before the clocks fell back, I used to wake up at 7:00 am.",
+      "date_hint": "before the clocks fell back",
+      "turn_index": 2
+    },
+    {
+      "text": "Since the clocks fell back, waking up has been a struggle for me.",
+      "date_hint": "since the clocks fell back",
+      "turn_index": 2
+    },
+    {
+      "text": "I started bringing a salad or leftovers from last night's dinner instead of buying a sandwich or wrap from the café down the street.",
+      "date_hint": "ongoing (since I started eating healthier)",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to get snacks for my desk to curb cravings and stay energized.",
+      "date_hint": "upcoming",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "session_id": "c4251d8d_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a road trip to the Grand Canyon with my friends next month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I just got back from a road trip to Yellowstone National Park with my family.",
+      "turn_index": 0
+    },
+    {
+      "text": "I drove around 100 miles within Yellowstone National Park.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am planning to drive my friend's Ford F-150.",
+      "turn_index": 2
+    },
+    {
+      "text": "My friend's Ford F-150 has a lot of space for camping gear.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to hike the Bright Angel Trail in the Grand Canyon.",
+      "turn_index": 6
+    },
+    {
+      "text": "We will be driving from San Francisco to the Grand Canyon.",
+      "turn_index": 8
+    },
+    {
+      "text": "I was thinking of stopping at the Hoover Dam on the way to the Grand Canyon.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think we can squeeze in a visit to the Hoover Dam on the way to the Grand Canyon.",
+      "turn_index": 10
+    },
+    {
+      "text": "We can leave San Francisco a bit earlier to account for the extra stop.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Grand Canyon road trip",
+    "scenic stops and viewpoints",
+    "Yellowstone National Park road trip",
+    "drove 100 miles in Yellowstone",
+    "Ford F-150 camping gear space",
+    "road conditions",
+    "fuel economy on the highway",
+    "routes to avoid",
+    "Bright Angel Trail hiking",
+    "Hoover Dam stop",
+    "driving from San Francisco",
+    "leaving San Francisco earlier"
+  ],
+  "events": [
+    {
+      "text": "Road trip to Yellowstone National Park with family",
+      "date_hint": "just got back (relative to session)",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning a road trip to the Grand Canyon with friends",
+      "date_hint": "next month",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to hike the Bright Angel Trail",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Planning to stop at Hoover Dam on the way from San Francisco to the Grand Canyon",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Planning to squeeze in a Hoover Dam visit and leave San Francisco earlier",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

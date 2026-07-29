@@ -1,0 +1,83 @@
+{
+  "session_id": "4067bede",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to organize my digital life.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want help setting up a folder system on my laptop to store photos and contacts.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to store photos and contacts from people I have met recently.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to create a subfolder for contacts under \"Individuals\".",
+      "turn_index": 2
+    },
+    {
+      "text": "I am waiting for some photos from a freelance photographer I met on a flight to LA a few weeks ago named Jack.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want help creating a simple spreadsheet to keep track of books I want to read.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want the spreadsheet to include columns for the book title, author, and a priority level.",
+      "turn_index": 4
+    },
+    {
+      "text": "I got book recommendations from Margaret, a retired librarian I met at the grocery store.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to add a column for the date I want to finish reading each book.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of organizing my writing group meetings with Alex.",
+      "turn_index": 8
+    },
+    {
+      "text": "Alex is a writer I met at a book reading.",
+      "turn_index": 8
+    },
+    {
+      "text": "I need to check my calendar to schedule the meeting with Alex.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "digital life organization",
+    "folder system on laptop",
+    "photos and contacts",
+    "Individuals subfolder",
+    "freelance photographer Jack",
+    "flight to LA",
+    "waiting for photos",
+    "books to read spreadsheet",
+    "book title author priority level",
+    "date to finish reading",
+    "writing group meetings",
+    "Alex writer",
+    "schedule meeting calendar",
+    "Margaret retired librarian",
+    "grocery store book recommendations"
+  ],
+  "events": [
+    {
+      "text": "Waiting for photos from freelance photographer Jack after meeting him on a flight to LA",
+      "date_hint": "a few weeks ago",
+      "turn_index": 2
+    },
+    {
+      "text": "Meeting with Alex needs to be scheduled after checking the calendar",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "session_id": "32cf110f_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning to buy a house soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am not sure about the whole process of getting a mortgage.",
+      "turn_index": 0
+    },
+    {
+      "text": "I just paid off my student loans a few months ago.",
+      "turn_index": 0
+    },
+    {
+      "text": "Paying off my student loans made me feel a massive weight off my shoulders.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to understand how my credit score affects mortgage interest rate and mortgage approval.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know how to check my credit report.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know what errors to look for on my credit report.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to understand how credit utilization ratio affects my credit score.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know how to improve my credit utilization ratio.",
+      "turn_index": 6
+    },
+    {
+      "text": "I recently paid off my student loans.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to improve my credit utilization ratio.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering diversifying my credit by opening a new credit account such as a credit card or personal loan.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to determine whether I should prioritize paying off high-interest debt or building an emergency fund.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "buy a house",
+    "mortgage process steps",
+    "student loans paid off",
+    "credit score impact",
+    "mortgage interest rate",
+    "mortgage approval",
+    "check credit report",
+    "credit report errors",
+    "credit utilization ratio",
+    "improve credit utilization",
+    "diversify credit",
+    "open new credit account",
+    "credit card or personal loan",
+    "prioritize paying off high-interest debt",
+    "build an emergency fund"
+  ],
+  "events": [
+    {
+      "text": "Paid off student loans",
+      "date_hint": "a few months ago",
+      "turn_index": 0
+    },
+    {
+      "text": "Recently paid off student loans",
+      "date_hint": "recently (a few months ago)",
+      "turn_index": 8
+    }
+  ]
+}

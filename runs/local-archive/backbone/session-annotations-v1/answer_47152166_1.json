@@ -1,0 +1,94 @@
+{
+  "session_id": "answer_47152166_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I attend Zumba classes on Tuesdays at 6:30 pm.",
+      "turn_index": 0
+    },
+    {
+      "text": "I attend Zumba classes on Thursdays at 6:30 pm.",
+      "turn_index": 0
+    },
+    {
+      "text": "I attend a weightlifting class on Saturdays at 10 am.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want reminders to log my workouts on my fitness app after each class.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to try a new playlist for my Zumba classes.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to create a playlist with a mix of Latin-inspired tracks and upbeat pop anthems.",
+      "turn_index": 6
+    },
+    {
+      "text": "My instructor, Maria, loves to play energetic songs that get everyone moving.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to track my progress and set fitness goals for myself.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to set specific goals for each class.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Zumba classes",
+    "Tuesdays 6:30 pm",
+    "Thursdays 6:30 pm",
+    "weightlifting class",
+    "Saturdays 10 am",
+    "fitness app workout logging",
+    "after each class reminders",
+    "new Zumba playlist",
+    "Latin-inspired tracks",
+    "upbeat pop anthems",
+    "energetic songs",
+    "fitness goals tracking",
+    "specific goals for each class"
+  ],
+  "events": [
+    {
+      "text": "Zumba class on Tuesday at 6:30 pm",
+      "date_hint": "Tuesdays at 6:30 pm",
+      "turn_index": 0
+    },
+    {
+      "text": "Zumba class on Thursday at 6:30 pm",
+      "date_hint": "Thursdays at 6:30 pm",
+      "turn_index": 0
+    },
+    {
+      "text": "Weightlifting class on Saturday at 10 am",
+      "date_hint": "Saturdays at 10 am",
+      "turn_index": 0
+    },
+    {
+      "text": "Remind to log workouts on fitness app after each class",
+      "date_hint": "after each class",
+      "turn_index": 2
+    },
+    {
+      "text": "Create a new playlist for Zumba classes",
+      "date_hint": "upcoming",
+      "turn_index": 4
+    },
+    {
+      "text": "Track progress and set fitness goals",
+      "date_hint": "upcoming",
+      "turn_index": 8
+    },
+    {
+      "text": "Set specific goals for each class",
+      "date_hint": "upcoming",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "session_id": "sharegpt_UM2wLW9_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I need help playing Wordle.",
+      "turn_index": 0
+    },
+    {
+      "text": "I will enter the guessed 5-letter word on the Wordle website.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have 6 attempts in total to guess the Wordle word.",
+      "turn_index": 0
+    },
+    {
+      "text": "I will provide the result after each attempt as a sequence of 5 characters using X, O, and V.",
+      "turn_index": 0
+    },
+    {
+      "text": "X means a letter is not found.",
+      "turn_index": 0
+    },
+    {
+      "text": "O means a letter is found but not in the right position.",
+      "turn_index": 0
+    },
+    {
+      "text": "V means a letter is in the right position.",
+      "turn_index": 0
+    },
+    {
+      "text": "The goal of the game is to get VVVVV as the result.",
+      "turn_index": 0
+    },
+    {
+      "text": "I received the result XXXOV after one of the attempts.",
+      "turn_index": 2
+    },
+    {
+      "text": "I received the result XVXXX after one of the attempts.",
+      "turn_index": 4
+    },
+    {
+      "text": "I received the result OVXOX after one of the attempts.",
+      "turn_index": 6
+    },
+    {
+      "text": "I received the result XOOOX after one of the attempts.",
+      "turn_index": 8
+    },
+    {
+      "text": "I received the result VVVXV after one of the attempts.",
+      "turn_index": 10
+    },
+    {
+      "text": "I asked why that was the guess.",
+      "turn_index": 12
+    },
+    {
+      "text": "I said the guess didn't change the fourth letter.",
+      "turn_index": 14
+    },
+    {
+      "text": "I said that alters the third letter when it shouldn't.",
+      "turn_index": 16
+    },
+    {
+      "text": "I asked whether that is a word.",
+      "turn_index": 18
+    },
+    {
+      "text": "I said the guess ignores the previous correct placement of the last letter.",
+      "turn_index": 20
+    },
+    {
+      "text": "I said the first three letters should always be GLO.",
+      "turn_index": 22
+    },
+    {
+      "text": "I said the last letter should always be E.",
+      "turn_index": 22
+    }
+  ],
+  "keyphrases": [
+    "Wordle help",
+    "5-letter word",
+    "Wordle website",
+    "6 attempts",
+    "result format X O V",
+    "VVVVV goal",
+    "XXXOV",
+    "XVXXX",
+    "OVXOX",
+    "XOOOX",
+    "VVVVX",
+    "first three letters GLO",
+    "last letter E"
+  ],
+  "events": [
+    {
+      "text": "Wordle attempt result was XXXOV",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Wordle attempt result was XVXXX",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Wordle attempt result was OVXOX",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Wordle attempt result was XOOOX",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Wordle attempt result was VVVXV",
+      "date_hint": "",
+      "turn_index": 10
+    },
+    {
+      "text": "User stated first three letters should always be GLO and last letter should always be E",
+      "date_hint": "",
+      "turn_index": 22
+    }
+  ]
+}

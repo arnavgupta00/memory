@@ -1,0 +1,70 @@
+{
+  "session_id": "sharegpt_gfhUw40_17",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I asked to change the SQL field name 'state' to 'status'.",
+      "turn_index": 1
+    },
+    {
+      "text": "I asked to rewrite a SQL query to use the table 'payments' instead of 'allmpayments'.",
+      "turn_index": 3
+    },
+    {
+      "text": "I asked to rename 'payers' to 'backers' in the SQL query output aliases.",
+      "turn_index": 3
+    },
+    {
+      "text": "I said the 'contributions' table is the only table that has the user_id needed for the query.",
+      "turn_index": 3
+    },
+    {
+      "text": "I said the contributions table has a field called 'id' that is equivalent to the field 'contribution_id' on the payments table.",
+      "turn_index": 3
+    },
+    {
+      "text": "I asked for a YTD SQL query with columns for current year payers up to today, last year YTD, and growth.",
+      "turn_index": 5
+    },
+    {
+      "text": "I asked to get the year using DATE_TRUNC('year', CURRENT_DATE - INTERVAL '1 year') instead of EXTRACT.",
+      "turn_index": 7
+    }
+  ],
+  "keyphrases": [
+    "change state to status",
+    "SQL query rewrite",
+    "payments table",
+    "allmpayments",
+    "backers vs payers",
+    "JOIN contributions for user_id",
+    "contributions.id equals payments.contribution_id",
+    "YTD query",
+    "current year up to today",
+    "last year YTD",
+    "growth percentage",
+    "DATE_TRUNC year instead of EXTRACT"
+  ],
+  "events": [
+    {
+      "text": "Requested changing 'state' to 'status' in a query.",
+      "date_hint": "",
+      "turn_index": 1
+    },
+    {
+      "text": "Requested rewriting the payers query using payments and contributions join, renaming payers to backers.",
+      "date_hint": "",
+      "turn_index": 3
+    },
+    {
+      "text": "Requested a YTD query with current year, last year, and growth columns.",
+      "date_hint": "",
+      "turn_index": 5
+    },
+    {
+      "text": "Requested using DATE_TRUNC('year', CURRENT_DATE - INTERVAL '1 year') instead of EXTRACT.",
+      "date_hint": "",
+      "turn_index": 7
+    }
+  ]
+}

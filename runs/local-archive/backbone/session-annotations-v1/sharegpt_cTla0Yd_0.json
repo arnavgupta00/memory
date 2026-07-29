@@ -1,0 +1,114 @@
+{
+  "session_id": "sharegpt_cTla0Yd_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I need four characters for a fantasy RPG game: a reluctant hero main character, two supporting friend characters, and one evil villain who has emerged after a long dormant period to execute a plan for world domination.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want character descriptions that include each character's name, age, race, personality, and backstory.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to generate RPG-style quests when I ask.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want quests to be short stories that include a problem the three hero characters need to overcome.",
+      "turn_index": 2
+    },
+    {
+      "text": "I distinguish between main story quests and side quests.",
+      "turn_index": 2
+    },
+    {
+      "text": "A main story quest should advance the primary plot of the game.",
+      "turn_index": 2
+    },
+    {
+      "text": "The main story quest should involve finding and defeating the evil villain Malakar.",
+      "turn_index": 2
+    },
+    {
+      "text": "A side quest should not advance the main plot.",
+      "turn_index": 2
+    },
+    {
+      "text": "Side quests may allude to the effects Malakar has had on the world and reveal lore about past events.",
+      "turn_index": 2
+    },
+    {
+      "text": "Malakar should not appear at any point during a side quest.",
+      "turn_index": 2
+    },
+    {
+      "text": "Quests should be generated in chronological order.",
+      "turn_index": 2
+    },
+    {
+      "text": "Quests should respect events, character development, and world-building that occur in previous quests.",
+      "turn_index": 2
+    },
+    {
+      "text": "When I ask to generate a new quest, I specify whether it is a main story quest or a side quest.",
+      "turn_index": 2
+    },
+    {
+      "text": "If I do not specify, the quest should be assumed to be a side quest.",
+      "turn_index": 2
+    },
+    {
+      "text": "I asked to generate a main story quest.",
+      "turn_index": 4
+    },
+    {
+      "text": "I asked to generate a side quest.",
+      "turn_index": 6
+    },
+    {
+      "text": "I asked to generate another side quest.",
+      "turn_index": 8
+    },
+    {
+      "text": "I asked to generate a side quest.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "fantasy RPG characters",
+    "reluctant hero",
+    "supporting friends",
+    "evil villain",
+    "world domination",
+    "character description",
+    "name age race personality backstory",
+    "RPG quest generation",
+    "main story quest",
+    "side quest",
+    "Malakar villain",
+    "chronological order quests"
+  ],
+  "events": [
+    {
+      "text": "Generate a main story quest",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Generate a side quest",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Generate another side quest",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Generate a side quest",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

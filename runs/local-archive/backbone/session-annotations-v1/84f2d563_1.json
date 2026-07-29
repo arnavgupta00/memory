@@ -1,0 +1,100 @@
+{
+  "session_id": "84f2d563_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a new photography project.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need advice on low-light photography.",
+      "turn_index": 0
+    },
+    {
+      "text": "I wanted to experiment with wider apertures.",
+      "turn_index": 0
+    },
+    {
+      "text": "I bought a Canon 24-70mm f/2.8 lens on February 10th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a Nikon D750 camera body.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have had the Nikon D750 since 2018.",
+      "turn_index": 2
+    },
+    {
+      "text": "I used a Canon 24-70mm f/2.8 lens.",
+      "turn_index": 4
+    },
+    {
+      "text": "I used my Nikon D750 camera body on a recent trip to Yosemite.",
+      "turn_index": 4
+    },
+    {
+      "text": "I attended a photography workshop in San Francisco.",
+      "turn_index": 6
+    },
+    {
+      "text": "The photography workshop taught portrait photography.",
+      "turn_index": 6
+    },
+    {
+      "text": "Our instructor was named Rachel.",
+      "turn_index": 8
+    },
+    {
+      "text": "Rachel gave tips on using natural light.",
+      "turn_index": 8
+    },
+    {
+      "text": "I was interested in learning how to work with available light to create flattering portraits.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been struggling with adjusting to changing light conditions when shooting outdoors.",
+      "turn_index": 10
+    },
+    {
+      "text": "I often find myself fumbling with my camera settings to compensate for changing light.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "low-light photography",
+    "wider aperture",
+    "Canon 24-70mm f/2.8 lens",
+    "February 10th lens purchase",
+    "ISO settings",
+    "ideal ISO range",
+    "Nikon D750",
+    "camera settings",
+    "trip to Yosemite",
+    "photography workshop",
+    "San Francisco portrait photography",
+    "natural light tips",
+    "available light portraits",
+    "changing light conditions outdoors",
+    "adjusting ISO quickly"
+  ],
+  "events": [
+    {
+      "text": "Bought a Canon 24-70mm f/2.8 lens",
+      "date_hint": "February 10th",
+      "turn_index": 0
+    },
+    {
+      "text": "Used Nikon D750 on a trip to Yosemite",
+      "date_hint": "recent trip",
+      "turn_index": 4
+    },
+    {
+      "text": "Attended a photography workshop in San Francisco",
+      "date_hint": "recently",
+      "turn_index": 6
+    }
+  ]
+}

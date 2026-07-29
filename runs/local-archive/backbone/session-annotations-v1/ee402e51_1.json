@@ -1,0 +1,144 @@
+{
+  "session_id": "ee402e51_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I went to Walmart yesterday to buy grocery essentials.",
+      "turn_index": 0
+    },
+    {
+      "text": "I spent $120 at Walmart yesterday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I overspent my grocery budget by spending $120 when I budgeted less.",
+      "turn_index": 0
+    },
+    {
+      "text": "I spent around $30 on produce.",
+      "turn_index": 2
+    },
+    {
+      "text": "I spent around $20 on dairy products.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought Greek yogurt as part of the $20 dairy products.",
+      "turn_index": 2
+    },
+    {
+      "text": "I spent around $40 on canned goods and pantry items.",
+      "turn_index": 2
+    },
+    {
+      "text": "My original grocery budget was $80.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am trying to aim for around $100 per week for groceries.",
+      "turn_index": 2
+    },
+    {
+      "text": "I usually make a grocery list.",
+      "turn_index": 2
+    },
+    {
+      "text": "I tend to add impulse buys, especially non-perishable items that are on sale.",
+      "turn_index": 2
+    },
+    {
+      "text": "I had a mixed experience with ShopRite last week.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have heard good things about Peapod.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have heard good things about Instacart.",
+      "turn_index": 4
+    },
+    {
+      "text": "Price is a big concern for me when choosing an online grocery store.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want an online grocery store with competitive pricing.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want an online grocery store that offers discounts or promotions.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to reduce my environmental impact when shopping for groceries.",
+      "turn_index": 6
+    },
+    {
+      "text": "I prefer a store that uses eco-friendly packaging or has sustainable practices.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to explore meal prep and cooking in bulk.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been trying to reduce food waste by cooking in bulk and freezing individual portions.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to save time during the week by cooking in bulk and freezing individual portions.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been trying to reduce food waste by planning my meals.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have been trying to reduce food waste by using up leftovers.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have been trying to reduce food waste by freezing individual portions.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to save time during the week by reducing food waste.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "grocery budget",
+    "Walmart grocery shopping",
+    "$120 grocery spend",
+    "produce $30",
+    "dairy $20 Greek yogurt",
+    "canned goods pantry items $40",
+    "original budget $80",
+    "$100 per week grocery target",
+    "impulse buys non-perishable items",
+    "online grocery shopping",
+    "ShopRite mixed experience",
+    "Peapod",
+    "Instacart",
+    "competitive pricing discounts promotions",
+    "eco-friendly packaging sustainable practices",
+    "meal prep cooking in bulk",
+    "freezing individual portions",
+    "reduce food waste",
+    "planning meals using leftovers",
+    "save time during the week"
+  ],
+  "events": [
+    {
+      "text": "Went to Walmart to buy grocery essentials and spent $120.",
+      "date_hint": "yesterday",
+      "turn_index": 0
+    },
+    {
+      "text": "Mixed experience with ShopRite.",
+      "date_hint": "last week",
+      "turn_index": 4
+    }
+  ]
+}

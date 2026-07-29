@@ -1,0 +1,138 @@
+{
+  "session_id": "11e9d591_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have a regular rehearsal schedule on Tuesdays from 7 pm to 10 pm at the local community theater.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a regular rehearsal schedule on Thursdays from 7 pm to 10 pm at the local community theater.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have dance classes every Saturday morning at the dance studio near my house.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have costume fittings every other Wednesday at the theater's costume department.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have costume fittings on April 5th.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have costume fittings on April 19th.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have set construction on Sundays at the theater's workshop.",
+      "turn_index": 4
+    },
+    {
+      "text": "I volunteer at the box office on Fridays.",
+      "turn_index": 4
+    },
+    {
+      "text": "My set construction on Sundays is usually from 2 pm to 5 pm.",
+      "turn_index": 6
+    },
+    {
+      "text": "My volunteering at the box office on Fridays is from 5 pm to 8 pm.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have a script reading session with the cast on April 12th at the director's house.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am not sure what time the April 12th script reading session starts.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to be reminded to check with the director about the time for the April 12th script reading session.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want directions from my house to the director's house for the April 12th script reading session.",
+      "turn_index": 8
+    },
+    {
+      "text": "I sometimes take the bus to the community theater for my Tuesday and Thursday rehearsals.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want a transit app or website to help me plan my bus route and schedule.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "schedule organization",
+    "Tuesdays rehearsals 7 pm to 10 pm",
+    "Thursdays rehearsals 7 pm to 10 pm",
+    "local community theater",
+    "dance classes Saturday morning",
+    "dance studio near my house",
+    "costume fittings every other Wednesday",
+    "theater costume department",
+    "costume fitting April 5",
+    "costume fitting April 19",
+    "set construction Sundays 2 pm to 5 pm",
+    "theater workshop",
+    "volunteering box office Fridays 5 pm to 8 pm",
+    "script reading April 12",
+    "director's house",
+    "check director for time",
+    "bus to community theater",
+    "transit app for bus route and schedule",
+    "directions from my house to director's house"
+  ],
+  "events": [
+    {
+      "text": "Rehearsals at the local community theater on Tuesdays (7 pm to 10 pm)",
+      "date_hint": "Tuesdays",
+      "turn_index": 0
+    },
+    {
+      "text": "Rehearsals at the local community theater on Thursdays (7 pm to 10 pm)",
+      "date_hint": "Thursdays",
+      "turn_index": 0
+    },
+    {
+      "text": "Dance classes at the dance studio near my house",
+      "date_hint": "every Saturday morning",
+      "turn_index": 2
+    },
+    {
+      "text": "Costume fittings at the theater's costume department",
+      "date_hint": "every other Wednesday",
+      "turn_index": 2
+    },
+    {
+      "text": "Costume fitting on April 5th",
+      "date_hint": "April 5th",
+      "turn_index": 4
+    },
+    {
+      "text": "Costume fitting on April 19th",
+      "date_hint": "April 19th",
+      "turn_index": 4
+    },
+    {
+      "text": "Set construction at the theater's workshop",
+      "date_hint": "Sundays (usually 2 pm to 5 pm)",
+      "turn_index": 6
+    },
+    {
+      "text": "Volunteering at the box office",
+      "date_hint": "Fridays (5 pm to 8 pm)",
+      "turn_index": 6
+    },
+    {
+      "text": "Script reading session with the cast at the director's house",
+      "date_hint": "April 12th",
+      "turn_index": 6
+    }
+  ]
+}

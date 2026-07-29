@@ -1,0 +1,149 @@
+{
+  "session_id": "4e77dbbe_6",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to create a budget plan for my farm.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been doing pretty well selling produce at the farmer's market.",
+      "turn_index": 0
+    },
+    {
+      "text": "I sold a calf to a neighboring farm.",
+      "turn_index": 0
+    },
+    {
+      "text": "My total income has been around $3,500.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been tracking my expenses in a spreadsheet.",
+      "turn_index": 2
+    },
+    {
+      "text": "My total expenses for the past three months have been around $5,000.",
+      "turn_index": 2
+    },
+    {
+      "text": "My past three months of expenses include the cost of feed.",
+      "turn_index": 2
+    },
+    {
+      "text": "My past three months of expenses include vet bills.",
+      "turn_index": 2
+    },
+    {
+      "text": "My past three months of expenses include equipment costs.",
+      "turn_index": 2
+    },
+    {
+      "text": "I spent around $500 on new feeding troughs for the cows last week.",
+      "turn_index": 4
+    },
+    {
+      "text": "I spent around $120 on vet bills for Luna's broken wing.",
+      "turn_index": 4
+    },
+    {
+      "text": "I got a discount on a bulk purchase of hay.",
+      "turn_index": 4
+    },
+    {
+      "text": "The bulk purchase of hay should last for the next two months.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been selling around 20 dozen eggs at the farmer's market.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been selling around 5 pounds of fresh cheese made from the cow's milk at the farmer's market.",
+      "turn_index": 6
+    },
+    {
+      "text": "I priced the eggs at $3 per dozen.",
+      "turn_index": 6
+    },
+    {
+      "text": "I priced the cheese at $10 per pound.",
+      "turn_index": 6
+    },
+    {
+      "text": "My total revenue from the eggs and cheese was $160.",
+      "turn_index": 6
+    },
+    {
+      "text": "I wanted to adjust the Livestock Expenses category to reflect the $120 vet bill for Luna's broken wing.",
+      "turn_index": 8
+    },
+    {
+      "text": "I made a mistake and did not subtract the $500 feed expense from the total Livestock Expenses.",
+      "turn_index": 10
+    },
+    {
+      "text": "My Livestock Expenses total was $657.",
+      "turn_index": 10
+    },
+    {
+      "text": "In my revised Livestock Expenses breakdown, Vet bills were $120.",
+      "turn_index": 10
+    },
+    {
+      "text": "In my revised Livestock Expenses breakdown, Feed was $500.",
+      "turn_index": 10
+    },
+    {
+      "text": "In my revised Livestock Expenses breakdown, Breeding and genetics was $20.",
+      "turn_index": 10
+    },
+    {
+      "text": "In my revised Livestock Expenses breakdown, Other livestock-related expenses was $17.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "farm budget plan",
+    "farmer's market produce sales",
+    "selling a calf to neighboring farm",
+    "total income $3,500",
+    "expense spreadsheet",
+    "total expenses past three months $5,000",
+    "feed vet bills equipment costs",
+    "Livestock Expenses category",
+    "new feeding troughs $500",
+    "Luna broken wing vet bill $120",
+    "bulk purchase hay discount",
+    "hay lasts next two months",
+    "eggs sales 20 dozen",
+    "fresh cheese sales 5 pounds",
+    "egg price $3 per dozen",
+    "cheese price $10 per pound",
+    "revenue $160",
+    "breeding and genetics expense $20",
+    "other livestock-related expenses $17"
+  ],
+  "events": [
+    {
+      "text": "Spent around $500 on new feeding troughs for the cows",
+      "date_hint": "last week",
+      "turn_index": 4
+    },
+    {
+      "text": "Spent around $120 on vet bills for Luna's broken wing",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Got a discount on a bulk purchase of hay that should last for the next two months",
+      "date_hint": "next two months",
+      "turn_index": 4
+    },
+    {
+      "text": "Fixed a mistake by subtracting the $500 feed expense from the total Livestock Expenses",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

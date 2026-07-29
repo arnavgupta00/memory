@@ -1,0 +1,70 @@
+{
+  "session_id": "4056f920",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user is looking for new brunch spots to try out with friends.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user wants popular brunch spots in the city.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user is in the city where Alex had her birthday party.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user describes the city as downtown with trendy bars and cafes.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user wants popular brunch spots in downtown.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user wants popular brunch spots in the city and expects to recognize the names.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user wants brunch spots known for avocado toast.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user has had amazing avocado toast at a new cafe Emily and the user went to.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user wants ideas for a fun activity to do with friends this weekend.",
+      "turn_index": 10
+    },
+    {
+      "text": "The user and friends are laid-back and want to hang out and have a good time.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "new brunch spots",
+    "popular brunch spots",
+    "downtown city",
+    "trendy bars and cafes",
+    "brunch spots with avocado toast",
+    "avocado toast",
+    "new cafe Emily",
+    "fun activity with friends",
+    "this weekend activity",
+    "laid-back friends hang out"
+  ],
+  "events": [
+    {
+      "text": "Alex had her birthday party in the city",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "The user plans to do a fun activity with friends this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 10
+    }
+  ]
+}

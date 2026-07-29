@@ -1,0 +1,39 @@
+{
+  "session_id": "sharegpt_jBwwg7B_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I asked to rewrite an answer about generating a chirp signal in MATLAB.",
+      "turn_index": 0
+    },
+    {
+      "text": "I asked to rewrite the text to sound more like a human wrote it.",
+      "turn_index": 2
+    },
+    {
+      "text": "I asked to make the text more formal while keeping a human writing style.",
+      "turn_index": 4
+    },
+    {
+      "text": "I said I like the text.",
+      "turn_index": 6
+    },
+    {
+      "text": "I asked to explain why the frequency vector formula f = f1 + (f2 - f1)/(length(t)-1) * (0:length(t)-1) is correct instead of writing the specific formula expression.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "chirp signal",
+    "digital signal processing",
+    "MATLAB function chirpTone",
+    "chirp tone sine wave",
+    "time vector t",
+    "sampling rate fs",
+    "sampling period ts=1/fs",
+    "frequency vector linear growth",
+    "frequency sweep f1 to f2",
+    "soundsc function"
+  ],
+  "events": []
+}

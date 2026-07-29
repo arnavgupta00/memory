@@ -1,0 +1,33 @@
+{
+  "question_id": "gpt4_0a05b494",
+  "question_type": "temporal-reasoning",
+  "question": "Who did I meet first, the woman selling jam at the farmer's market or the tourist from Australia?",
+  "question_date": "2023/05/23 (Tue) 00:30",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_a68db5db_2",
+    "answer_a68db5db_1"
+  ],
+  "haystack_session_count": 45,
+  "notes_coverage": "partial",
+  "annotated_session_count": 4,
+  "gold_sessions": [
+    {
+      "session_id": "answer_a68db5db_2",
+      "date": "2023/05/23 (Tue) 01:01",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_a68db5db_2\n[session_date] 2023/05/23 (Tue) 01:01\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm planning a trip to Australia soon and I'm looking for some travel recommendations. Do you have any tips on what to do and see in Sydney?\n\n[turn 2] Speaking of Sydney, I actually met a tourist from Australia last Thursday on the subway when I was on my way to work. He was lost in the city and I helped him navigate the subway map. We ended up chatting about our jobs and hobbies, and he even sent me a photo of the Sydney Opera House the next day. Do you have any recommendations for must-try food or drinks while I'm in Sydney?\n\n[turn 4] That's really helpful, thanks! I'm actually planning to try out some of the local coffee shops while I'm in Sydney. Speaking of coffee, I met a barista a few weeks ago at a coffee shop near my place, and we ended up talking about our shared love for coffee and experimenting with different brewing methods at home. She recommended a few coffee shops in the area that I should try out. Do you have any recommendations for must-visit coffee shops in Sydney?\n\n[turn 6] I'll definitely check out some of those coffee shops. By the way, speaking of meeting new people, I've been trying to be more intentional about striking up conversations with strangers lately, and it's been really rewarding. I've met some amazing people and learned so much from them. Do you have any tips on how to make the most of my interactions with locals while I'm in Sydney?\n\n[turn 8] That's really helpful, thanks! Speaking of meeting new people, I actually met a new personal trainer at the gym a few days ago who was giving out free consultations. We talked about my fitness goals and she showed me some exercises to help me achieve them. I was impressed by her knowledge and enthusiasm, so I ended up signing up for a few sessions with her. She's been checking in with me daily to see how my progress is going. Do you have any recommendations for staying active and healthy while I'm in Sydney?\n\n[turn 10] That's really helpful, thanks! Speaking of fitness goals, I actually met a woman at a networking event for professionals in my industry last month, and we ended up talking for hours about the latest trends and challenges in our field. We exchanged business cards and have been in touch over email since then. She's been sending me some valuable insights and resources that have really helped me in my job. Do you have any recommendations for professional networking opportunities in Sydney?"
+    },
+    {
+      "session_id": "answer_a68db5db_1",
+      "date": "2023/05/23 (Tue) 05:32",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_a68db5db_1\n[session_date] 2023/05/23 (Tue) 05:32\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm looking for some new recipe ideas that incorporate fresh berries.\n\n[turn 2] That's great! I'm definitely going to try out some of these recipes. I had a lovely conversation with a jam maker at the farmer's market two weeks ago on a Saturday morning, and it got me inspired to try out some new dishes. He also recommended some flavor combinations that I want to try out. Speaking of which, do you have any suggestions on how to pair different types of jam with cheeses and crackers?\n\n[turn 4] That's really helpful! I'm excited to try out some of these pairings. I've been meaning to host a dinner party soon, and this will be a great opportunity to experiment with different jam and cheese combinations. Do you have any advice on how to plan a successful dinner party, like how to create a guest list, plan the menu, and set the atmosphere?\n\n[turn 6] That's really helpful! I think I have a good idea of how to plan my dinner party now. I'm excited to experiment with different jam and cheese pairings and create a memorable evening for my guests. Speaking of guests, I've been meaning to catch up with a few people I met recently, including the personal trainer I met at the gym a few days ago. Do you have any advice on how to stay in touch with new acquaintances and build meaningful relationships?\n\n[turn 8] That's really helpful! I think I have a better idea of how to stay in touch with my new acquaintances now. I'm excited to reach out to the personal trainer and catch up with her. Speaking of catching up, I've been meaning to follow up with the woman I met at the networking event last month. She sent me some valuable insights and resources that have really helped me in my job. Do you have any advice on how to express gratitude and show appreciation to someone who has helped me?\n\n[turn 10] I think I have a good idea of how to express gratitude and show appreciation to the woman who helped me. I'll make sure to be specific, sincere, and genuine in my approach. Thank you for the advice!"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

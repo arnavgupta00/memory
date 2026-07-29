@@ -1,0 +1,104 @@
+{
+  "session_id": "e201572a",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to San Francisco and need help finding a good hotel near the city center.",
+      "turn_index": 0
+    },
+    {
+      "text": "I think I will go with the Hotel Zeppelin.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been traveling so much lately and feel like I am always on the go.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to visit Alcatraz Island.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am planning to check out the Golden Gate Bridge.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of visiting the Exploratorium too.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am also thinking of visiting LA soon.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been to LA a few times already this year.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am thinking of visiting LA again because I have a friend who is getting married there soon.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have taken 5 flights in the past 2 months.",
+      "turn_index": 10
+    },
+    {
+      "text": "Taking 5 flights in the past 2 months is a personal record for me.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "San Francisco hotel near city center",
+    "Hotel Zeppelin",
+    "Alcatraz Island visit",
+    "Golden Gate Bridge",
+    "Exploratorium",
+    "visit LA soon",
+    "friend wedding in LA",
+    "frequent travel",
+    "5 flights in 2 months",
+    "personal travel record"
+  ],
+  "events": [
+    {
+      "text": "Planning a trip to San Francisco and looking for a hotel near the city center",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Choosing Hotel Zeppelin for the San Francisco trip",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Planning to visit Alcatraz Island",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Planning to check out the Golden Gate Bridge",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Thinking about visiting the Exploratorium",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Thinking about visiting LA soon",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Friend's wedding in LA soon",
+      "date_hint": "soon",
+      "turn_index": 10
+    },
+    {
+      "text": "Taking 5 flights in the past 2 months (personal record)",
+      "date_hint": "past 2 months",
+      "turn_index": 10
+    }
+  ]
+}

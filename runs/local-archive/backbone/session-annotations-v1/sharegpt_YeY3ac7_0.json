@@ -1,0 +1,56 @@
+{
+  "session_id": "sharegpt_YeY3ac7_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user requested to make the phrase \"Rare worker drone, rare oil, shy, may be hunted\" shorter.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user wrote the word \"shoter\".",
+      "turn_index": 2
+    },
+    {
+      "text": "The user wrote the word \"shoter\".",
+      "turn_index": 4
+    },
+    {
+      "text": "The user wrote the word \"shoter\".",
+      "turn_index": 6
+    },
+    {
+      "text": "The user requested to make it shorter.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user requested to make it 2 words.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "make it shorter",
+    "Rare worker drone",
+    "rare oil",
+    "shy",
+    "may be hunted",
+    "shoter",
+    "2 words"
+  ],
+  "events": [
+    {
+      "text": "User requested to shorten the phrase \"Rare worker drone, rare oil, shy, may be hunted\".",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "User requested again to make it shorter.",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "User requested the output be exactly 2 words.",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

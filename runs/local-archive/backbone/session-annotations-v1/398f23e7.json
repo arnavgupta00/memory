@@ -1,0 +1,99 @@
+{
+  "session_id": "398f23e7",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I usually do my chores on Sundays.",
+      "turn_index": 2
+    },
+    {
+      "text": "I do all my laundry on Sundays.",
+      "turn_index": 2
+    },
+    {
+      "text": "I clean my apartment on Sundays.",
+      "turn_index": 2
+    },
+    {
+      "text": "I prep meals for the week on Sundays.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to prepare for a meeting on Monday.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have a gym session on Tuesday evening.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have a doctor's appointment on Wednesday.",
+      "turn_index": 8
+    },
+    {
+      "text": "I need to meet up with my book club later on Wednesday.",
+      "turn_index": 8
+    },
+    {
+      "text": "I need to work from home on Friday.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have a language exchange session in the afternoon on Friday.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "organizing tasks for the week",
+    "reminder of usual chore day",
+    "Sunday chores",
+    "laundry",
+    "clean apartment",
+    "meal prep",
+    "meeting on Monday",
+    "gym session Tuesday evening",
+    "appointments on Wednesday",
+    "doctor's appointment Wednesday",
+    "book club Wednesday",
+    "work from home Friday",
+    "language exchange session afternoon",
+    "weekly schedule"
+  ],
+  "events": [
+    {
+      "text": "Chore day (laundry, apartment cleaning, meal prep)",
+      "date_hint": "Sundays",
+      "turn_index": 2
+    },
+    {
+      "text": "Prepare for a meeting",
+      "date_hint": "Monday",
+      "turn_index": 4
+    },
+    {
+      "text": "Gym session",
+      "date_hint": "Tuesday evening",
+      "turn_index": 4
+    },
+    {
+      "text": "Doctor's appointment",
+      "date_hint": "Wednesday",
+      "turn_index": 8
+    },
+    {
+      "text": "Meet up with book club",
+      "date_hint": "Wednesday (later that day)",
+      "turn_index": 8
+    },
+    {
+      "text": "Work from home",
+      "date_hint": "Friday",
+      "turn_index": 10
+    },
+    {
+      "text": "Language exchange session",
+      "date_hint": "Friday afternoon",
+      "turn_index": 10
+    }
+  ]
+}

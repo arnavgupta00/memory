@@ -1,0 +1,94 @@
+{
+  "session_id": "47183c60_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning to buy pasta for the week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I used a 10% off coupon on the 15th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I received a 10% off coupon in the mail from my favorite grocery store.",
+      "turn_index": 2
+    },
+    {
+      "text": "The 10% off coupon I received was specifically for all pasta products.",
+      "turn_index": 2
+    },
+    {
+      "text": "I used a $2 off coupon on the 5th for coffee creamer.",
+      "turn_index": 4
+    },
+    {
+      "text": "I used a 20% off coupon on the 19th for beauty products.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been using meal kit delivery services more frequently.",
+      "turn_index": 8
+    },
+    {
+      "text": "I used a 20% off coupon on the 15th for meal kit delivery services.",
+      "turn_index": 8
+    },
+    {
+      "text": "I remember using a 10% off coupon on the 15th when I bought pasta.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am hoping to find similar coupons for meal kit delivery services.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want coupons for specific meal kit brands, like the one I used on the 15th.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "pasta coupons",
+    "10% off coupon",
+    "coupon in the mail",
+    "all pasta products",
+    "coffee creamer $2 off",
+    "beauty products 20% off",
+    "meal kit delivery services coupons",
+    "20% off meal kit coupon",
+    "meal kit brand coupons",
+    "grocery store coupons"
+  ],
+  "events": [
+    {
+      "text": "Used a 10% off coupon on the 15th for pasta.",
+      "date_hint": "15th",
+      "turn_index": 0
+    },
+    {
+      "text": "Received a 10% off coupon in the mail from favorite grocery store for all pasta products.",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Used a $2 off coupon on the 5th for coffee creamer.",
+      "date_hint": "5th",
+      "turn_index": 4
+    },
+    {
+      "text": "Used a 20% off coupon on the 19th for beauty products.",
+      "date_hint": "19th",
+      "turn_index": 6
+    },
+    {
+      "text": "Used a 20% off coupon on the 15th for meal kit delivery services.",
+      "date_hint": "15th",
+      "turn_index": 8
+    },
+    {
+      "text": "Remembered using a 10% off coupon on the 15th when buying pasta.",
+      "date_hint": "15th",
+      "turn_index": 10
+    }
+  ]
+}

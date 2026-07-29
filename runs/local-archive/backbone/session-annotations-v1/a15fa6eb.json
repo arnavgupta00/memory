@@ -1,0 +1,57 @@
+{
+  "session_id": "a15fa6eb",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Europe in July.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for food recommendations in London.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for popular food markets or streets in Paris.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am looking for unique restaurants or cafes in Rome that serve traditional Italian dishes with a twist.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am looking for popular day trips from Rome.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am looking for day trips from Paris to must-see destinations outside of the city.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am looking for popular day trips from London.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Europe trip July",
+    "food recommendations London",
+    "must-try dishes London",
+    "restaurants London",
+    "food markets Paris",
+    "streets in Paris",
+    "food markets or streets Paris",
+    "unique restaurants Rome",
+    "cafes Rome",
+    "traditional Italian dishes with a twist",
+    "day trips from Rome",
+    "day trips from Paris",
+    "must-see destinations outside the city",
+    "day trips from London"
+  ],
+  "events": [
+    {
+      "text": "Planning a trip to Europe in July",
+      "date_hint": "July",
+      "turn_index": 0
+    }
+  ]
+}

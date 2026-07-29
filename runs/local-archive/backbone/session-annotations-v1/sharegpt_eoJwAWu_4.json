@@ -1,0 +1,47 @@
+{
+  "session_id": "sharegpt_eoJwAWu_4",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user asked to refactor code that prepares notification requests.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user said the code checks for notifications in a queue.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user said the code sets all existing notification queue status to True.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user said the code upserts notifications that are not created in the database.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user said the code sets queued to True for newly added notifications.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user said the code deactivates notifications that are not in notification_ids.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user asked to add improvements to the code.",
+      "turn_index": 2
+    }
+  ],
+  "keyphrases": [
+    "prepare_notification_requests",
+    "notification requests refactor",
+    "default_system_notification_temp_queue",
+    "notification_id upsert",
+    "bulk_write UpdateOne",
+    "queued status True",
+    "timestamp datetime.utcnow",
+    "deactivate notifications active False",
+    "notification_ids list",
+    "modify_request function"
+  ],
+  "events": []
+}

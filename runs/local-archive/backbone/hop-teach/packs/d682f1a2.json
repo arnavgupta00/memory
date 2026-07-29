@@ -1,0 +1,41 @@
+{
+  "question_id": "d682f1a2",
+  "question_type": "multi-session",
+  "question": "How many different types of food delivery services have I used recently?",
+  "question_date": "2023/05/30 (Tue) 23:30",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_c008e5df_3",
+    "answer_c008e5df_1",
+    "answer_c008e5df_2"
+  ],
+  "haystack_session_count": 47,
+  "notes_coverage": "partial",
+  "annotated_session_count": 7,
+  "gold_sessions": [
+    {
+      "session_id": "answer_c008e5df_3",
+      "date": "2023/05/30 (Tue) 10:38",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_c008e5df_3\n[session_date] 2023/05/30 (Tue) 10:38\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm looking for some healthy recipe ideas for lunch. Do you have any suggestions? By the way, I've been really busy lately and have been relying on food delivery services, like this new one I found called Fresh Fusion - they have some great pre-made meals.\n\n[turn 2] I like the Quinoa and Black Bean Salad idea, as I actually made something similar recently. Do you have any recipe suggestions for a healthy dinner option that's quick to make and doesn't require a lot of ingredients?\n\n[turn 4] That sounds like a great option. I actually have all the ingredients at home, so I'll give it a try tonight. By the way, do you have any recommendations for healthy breakfast options that can be meal-prepped on the weekends?\n\n[turn 6] I think I'll try the Breakfast Burritos. I've been wanting to meal prep more on the weekends, and this seems like a convenient and healthy option.\n\n[turn 8] What's the best way to reheat the frozen breakfast burritos? Should I microwave them or use the oven?\n\n[turn 10] I'm thinking of trying out some new ingredients in my Breakfast Burritos. Do you have any suggestions for some unique fillings or toppings that I could add to give them an extra boost of flavor and nutrition?"
+    },
+    {
+      "session_id": "answer_c008e5df_1",
+      "date": "2023/05/22 (Mon) 01:26",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_c008e5df_1\n[session_date] 2023/05/22 (Mon) 01:26\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm looking for some healthy meal ideas for my busy weekdays. Do you have any recommendations? By the way, I've been relying on food delivery services a lot lately - I had Domino's Pizza three times last week!\n\n[turn 2] I like the overnight oats idea, but I'm not a big fan of nuts. Can you recommend some other toppings I could use instead?\n\n[turn 4] I like the idea of adding seeds like chia or flaxseeds. But I'm not sure how to incorporate them into the oats. Can you give me a simple recipe to get started?\n\n[turn 6] I'm thinking of trying out the flaxseeds version, but I'm not sure how to grind them. Can I just use a regular blender or do I need a special grinder?\n\n[turn 8] I think I'll try using a coffee grinder to grind the flaxseeds. Thanks for the tips! By the way, I was thinking of making a batch of quinoa and black bean salad with grilled chicken for lunch this week. Do you have any suggestions on how to make it more flavorful?\n\n[turn 10] I like the idea of adding a cilantro lime dressing to the quinoa and black bean salad. I'll definitely give that a try. By the way, do you have any suggestions on how to cook the chicken breast to make it more flavorful? I've been grilling it lately, but it sometimes turns out a bit dry."
+    },
+    {
+      "session_id": "answer_c008e5df_2",
+      "date": "2023/05/27 (Sat) 21:06",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_c008e5df_2\n[session_date] 2023/05/27 (Sat) 21:06\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm looking for some new recipe ideas, something quick and easy for weeknights. By the way, my weekends have been all about Uber Eats lately, it's been a lifesaver.\n\n[turn 2] That's a great list! I'm definitely going to try out that Chicken Fajita Pasta. Do you have any suggestions for some healthy snack options? I've been relying on Uber Eats for convenience, but I want to make some healthier choices.\n\n[turn 4] That's a great list of healthy snack options. Can you give me some recommendations for meal prep containers? I want to start meal prepping for the week, but I don't know what kind of containers to use.\n\n[turn 6] I'm considering getting a cookbook stand to make cooking and following recipes easier. Do you have any recommendations for a good cookbook stand?\n\n[turn 8] What are some good apps for organizing and keeping track of recipes? I have a bunch of cookbooks and online recipes that I want to consolidate and make easier to access.\n\n[turn 10] I'm interested in learning more about meal planning and grocery lists. Can you show me some examples of how to plan meals for the week and create a grocery list based on those meals?"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

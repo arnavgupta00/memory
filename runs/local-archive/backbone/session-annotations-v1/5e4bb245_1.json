@@ -1,0 +1,102 @@
+{
+  "session_id": "5e4bb245_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I redeemed 1,000 points from Fetch Rewards for a $10 gift card to Target last week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have 2,000 points left in my Fetch Rewards account.",
+      "turn_index": 2
+    },
+    {
+      "text": "I haven't earned any other rewards besides the $10 gift card in Fetch Rewards.",
+      "turn_index": 2
+    },
+    {
+      "text": "For my SaveMore loyalty program, I have earned 500 points.",
+      "turn_index": 2
+    },
+    {
+      "text": "For my SaveMore loyalty program, I redeemed 500 points for a $5 discount on my last grocery bill.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have over 10,000 points in my Walgreens loyalty program.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have redeemed some of my Walgreens points for discounts on my prescription medication.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been using Walgreens digital coupons.",
+      "turn_index": 4
+    },
+    {
+      "text": "Walgreens digital coupons saved me an additional $10 over the past month.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have earned 200 points so far in my Petco loyalty program.",
+      "turn_index": 6
+    },
+    {
+      "text": "I received a $5 welcome reward when I signed up for Petco.",
+      "turn_index": 6
+    },
+    {
+      "text": "I used the $5 welcome reward from Petco to buy a new toy for my cat.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have earned 10 stamps so far in my loyalty program at The Daily Grind.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am halfway to getting a free drink at The Daily Grind.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have a loyalty program at my local grocery store.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "loyalty programs and rewards organization",
+    "Fetch Rewards points",
+    "Target $10 gift card",
+    "SaveMore loyalty program",
+    "500 points redeemed for $5 discount",
+    "Walgreens loyalty program",
+    "10,000 points Walgreens",
+    "Walgreens digital coupons $10 savings",
+    "Petco loyalty program",
+    "$5 welcome reward Petco",
+    "The Daily Grind coffee shop stamps",
+    "free drink halfway"
+  ],
+  "events": [
+    {
+      "text": "Redeemed 1,000 Fetch Rewards points for a $10 gift card to Target",
+      "date_hint": "last week",
+      "turn_index": 0
+    },
+    {
+      "text": "Redeemed 500 SaveMore points for a $5 discount on the last grocery bill",
+      "date_hint": "last grocery bill",
+      "turn_index": 2
+    },
+    {
+      "text": "Used Walgreens digital coupons that saved an additional $10 over the past month",
+      "date_hint": "past month",
+      "turn_index": 4
+    },
+    {
+      "text": "Signed up for Petco loyalty program and received a $5 welcome reward",
+      "date_hint": "when I signed up",
+      "turn_index": 6
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "session_id": "4cb841a8_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I need tips on how to clean my car's interior, specifically the center console, because it is getting dusty and dirty.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want recommendations for a good interior cleaning product for my car.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering using a microfiber cloth with a slightly abrasive side to remove stubborn stains on the center console.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to get my car's oil changed soon.",
+      "turn_index": 4
+    },
+    {
+      "text": "My car's oil change is overdue by about 1000 miles.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am looking for a good oil change interval tracking tool or app.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been keeping a log of all the work I have done on my car.",
+      "turn_index": 6
+    },
+    {
+      "text": "My log includes oil changes.",
+      "turn_index": 6
+    },
+    {
+      "text": "My log includes tire rotations.",
+      "turn_index": 6
+    },
+    {
+      "text": "My log includes brake pad replacements.",
+      "turn_index": 6
+    },
+    {
+      "text": "Keeping a log has been helpful for me in keeping track of when things need to be done.",
+      "turn_index": 6
+    },
+    {
+      "text": "Keeping a log has been helpful for me for resale value.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning to get a dash cam soon.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been researching different dash cam models and reading reviews.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I will end up getting a dash cam that costs around $150.",
+      "turn_index": 8
+    },
+    {
+      "text": "The dash cam I am considering has collision detection and parking mode features.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of getting a detailing spray to keep my car's exterior clean.",
+      "turn_index": 10
+    },
+    {
+      "text": "I previously had good experiences with a detailing spray I got from Amazon for $20.",
+      "turn_index": 10
+    },
+    {
+      "text": "The Amazon detailing spray removed tar and bug stains from my car's paint.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "car interior cleaning",
+    "center console cleaning",
+    "interior cleaning product",
+    "microfiber cloth abrasive side",
+    "stubborn stains",
+    "oil change overdue 1000 miles",
+    "oil change interval tracking tool",
+    "oil change tracking app",
+    "car maintenance log",
+    "tire rotations",
+    "brake pad replacements",
+    "dash cam collision detection",
+    "dash cam parking mode",
+    "dash cam $150",
+    "detailing spray exterior clean",
+    "Amazon detailing spray $20",
+    "tar and bug stain remover"
+  ],
+  "events": [
+    {
+      "text": "Plan to get car oil changed (overdue by about 1000 miles)",
+      "date_hint": "soon; overdue by about 1000 miles",
+      "turn_index": 4
+    },
+    {
+      "text": "Planning to get a dash cam after researching models and reviews",
+      "date_hint": "soon",
+      "turn_index": 8
+    },
+    {
+      "text": "Planning to get a detailing spray for the car's exterior",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

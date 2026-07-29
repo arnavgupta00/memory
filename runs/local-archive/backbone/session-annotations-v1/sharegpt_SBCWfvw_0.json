@@ -1,0 +1,68 @@
+{
+  "session_id": "sharegpt_SBCWfvw_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want the assistant to act as an IT expert to solve my technical problems.",
+      "turn_index": 0
+    },
+    {
+      "text": "I provided information about my technical problems to the assistant.",
+      "turn_index": 0
+    },
+    {
+      "text": "My network adapter stops working after some time even though it works properly right after I restart my laptop.",
+      "turn_index": 0
+    },
+    {
+      "text": "I tried updating drivers for my network adapter.",
+      "turn_index": 0
+    },
+    {
+      "text": "I tried doing a system restore for my network adapter issue.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am out of ideas on how to fix the network adapter issue.",
+      "turn_index": 0
+    },
+    {
+      "text": "I asked for additional ideas.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think unchecking the Internet Protocol Version 6 (TCP/IPv6) option fixed the issue.",
+      "turn_index": 4
+    },
+    {
+      "text": "The driver has not failed yet after unchecking Internet Protocol Version 6 (TCP/IPv6).",
+      "turn_index": 4
+    },
+    {
+      "text": "I will do what was suggested.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "network adapter stops working",
+    "driver update",
+    "system restore",
+    "works after restart",
+    "uncheck IPv6 TCP/IPv6",
+    "Internet Protocol Version 6",
+    "driver hasn't failed yet",
+    "additional ideas"
+  ],
+  "events": [
+    {
+      "text": "Network adapter works properly after restarting the laptop but stops working after some time",
+      "date_hint": "after some time",
+      "turn_index": 0
+    },
+    {
+      "text": "Unchecking Internet Protocol Version 6 (TCP/IPv6) appears to fix the issue",
+      "date_hint": "",
+      "turn_index": 4
+    }
+  ]
+}

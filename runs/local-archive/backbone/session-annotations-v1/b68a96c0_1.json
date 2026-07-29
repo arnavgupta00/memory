@@ -1,0 +1,124 @@
+{
+  "session_id": "b68a96c0_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to improve my gas mileage.",
+      "turn_index": 0
+    },
+    {
+      "text": "I started a new commute to the office in the city.",
+      "turn_index": 0
+    },
+    {
+      "text": "My new commute added about 20 miles to my daily drive.",
+      "turn_index": 0
+    },
+    {
+      "text": "I did an oil change on my car.",
+      "turn_index": 2
+    },
+    {
+      "text": "I did a tire rotation on my car.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking about carpooling with coworkers to reduce the number of days I have to drive.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking about getting a bike rack for my car.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to start riding my bike more as the weather gets warmer.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am considering roof-mounted racks for my car.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want a roof-mounted rack that can hold two bikes.",
+      "turn_index": 6
+    },
+    {
+      "text": "My wife and I want to take our bikes on trips together.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of selling my old motorcycle.",
+      "turn_index": 8
+    },
+    {
+      "text": "My old motorcycle has been sitting in the garage for years.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am not sure how to price my old motorcycle.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am not sure where to list my old motorcycle for sale.",
+      "turn_index": 10
+    },
+    {
+      "text": "My old motorcycle has been sitting in the garage for years.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "improve gas mileage",
+    "new commute to the office",
+    "city commute",
+    "20 miles daily drive",
+    "oil change",
+    "tire rotation",
+    "carpooling with coworkers",
+    "carpooling apps and websites",
+    "bike rack for car",
+    "roof-mounted bike rack",
+    "rack holds two bikes",
+    "selling old motorcycle",
+    "pricing a motorcycle",
+    "where to sell a motorcycle",
+    "determine motorcycle value"
+  ],
+  "events": [
+    {
+      "text": "Started a new commute to the office in the city",
+      "date_hint": "recently (no exact date given)",
+      "turn_index": 0
+    },
+    {
+      "text": "Oil change and tire rotation performed",
+      "date_hint": "already done (no exact date given)",
+      "turn_index": 2
+    },
+    {
+      "text": "Considering carpooling apps and websites",
+      "date_hint": "no exact date given",
+      "turn_index": 4
+    },
+    {
+      "text": "Considering getting a bike rack and riding more as weather warms",
+      "date_hint": "as the weather gets warmer (no exact date given)",
+      "turn_index": 4
+    },
+    {
+      "text": "Considering roof-mounted racks for two bikes for trips with wife",
+      "date_hint": "no exact date given",
+      "turn_index": 6
+    },
+    {
+      "text": "Thinking about selling an old motorcycle that has been sitting in the garage for years",
+      "date_hint": "no exact date given",
+      "turn_index": 8
+    },
+    {
+      "text": "Considering how to determine value and where to list the old motorcycle for sale",
+      "date_hint": "no exact date given",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "question_id": "a346bb18",
+  "question_type": "multi-session",
+  "question": "How many minutes did I exceed my target time by in the marathon?",
+  "question_date": "2023/05/30 (Tue) 22:30",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_4934b2d7_1",
+    "answer_4934b2d7_2"
+  ],
+  "haystack_session_count": 49,
+  "notes_coverage": "partial",
+  "annotated_session_count": 3,
+  "gold_sessions": [
+    {
+      "session_id": "answer_4934b2d7_1",
+      "date": "2023/05/25 (Thu) 13:48",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_4934b2d7_1\n[session_date] 2023/05/25 (Thu) 13:48\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm planning to travel to a new city for a work trip and I was wondering if you could recommend some good running routes in the area. By the way, I just completed my first full marathon in 4h 22min, so I'm looking for routes that can help me keep my endurance up while I'm away.\n\n[turn 2] I'm heading to San Francisco for my work trip. I'd prefer routes that are around 6-8 miles, as I want to keep my endurance up but also don't want to overdo it while I'm away. I'm comfortable running on roads and don't have a preference for specific areas of the city.\n\n[turn 4] I'm considering getting a bike for my daily commute to work. Do you think my experience from the charity cycling event would be helpful in preparing me for daily commuting?\n\n[turn 6] I do have some cycling experience from the charity cycling event, Pedal for a Purpose, where I completed 30 miles in 2 hours and 15 minutes. I was wondering if that experience would be helpful in preparing me for daily commuting.\n\n[turn 8] I'm planning to start my daily commute by bike soon, so I'm thinking of investing in some gear, such as a helmet, lights, and reflectors. Do you have any recommendations for good brands or specific products that would be suitable for commuting?\n\n[turn 10] I'm planning to get a bike with a comfortable riding position and good gear system, as I'll be carrying some gear and clothes during my daily commute. Would you recommend a hybrid bike or a commuter bike for this purpose?"
+    },
+    {
+      "session_id": "answer_4934b2d7_2",
+      "date": "2023/05/20 (Sat) 14:05",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_4934b2d7_2\n[session_date] 2023/05/20 (Sat) 14:05\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm planning to start training for a triathlon two months later, and I was wondering if you could help me create a workout schedule that incorporates running, cycling, and swimming. Oh, and by the way, my target time for the marathon was 4 hours and 10 minutes, so I'm hoping to apply some of that endurance to my triathlon training.\n\n[turn 2] I'd say I'm a beginner in swimming, but I've been attending masters swimming sessions at the community pool every Wednesday evening since mid-January, so I've seen some improvement. As for cycling, I've got some experience from the charity cycling event \"Pedal for a Purpose\" in February, where I completed 30 miles in 2 hours and 15 minutes. I can dedicate 4-5 days a week for training, and I have access to a pool every Wednesday evening. I don't have a road bike yet, but I'm planning to invest in one soon. I've got about 12 weeks until my triathlon. I'd prefer a structured plan with specific workouts and distances.\n\n[turn 4] I'm glad you provided a structured plan. I have a few questions to clarify. For the swimming sessions on Wednesdays, can I focus on building up my endurance to swim 750 meters without stopping, or should I aim to complete the entire swim segment of the triathlon, which is 750 meters, in a certain time? Also, how much time should I allocate for the transition practice during the brick workouts, and are there any specific drills you recommend to practice transitions efficiently?\n\n[turn 6] I'm glad you provided more details on the swimming and transition practice. I have a few more questions to clarify. For the brick workouts, should I focus on a specific pace or heart rate zone during the bike and run segments, or just aim to complete the distance at a comfortable pace? Also, are there any specific strength training exercises you recommend to improve my overall endurance and reduce the risk of injury?\n\n[turn 8] Can you explain more about what you mean by \"interval training\" in the swimming context, and are there any specific drills or techniques I can use to improve my swimming efficiency and speed?\n\n[turn 10] I think I've got it! Thanks for explaining the swimming drills and interval training in more detail. I feel more confident now about incorporating these into my swim sessions. I'll make sure to focus on proper body position, engage my core, and use the drills to improve my swimming efficiency and speed."
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

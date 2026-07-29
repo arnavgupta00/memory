@@ -1,0 +1,33 @@
+{
+  "question_id": "6aeb4375",
+  "question_type": "knowledge-update",
+  "question": "How many Korean restaurants have I tried in my city?",
+  "question_date": "2023/10/22 (Sun) 15:38",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_3f9693b7_1",
+    "answer_3f9693b7_2"
+  ],
+  "haystack_session_count": 47,
+  "notes_coverage": "full",
+  "annotated_session_count": 47,
+  "gold_sessions": [
+    {
+      "session_id": "answer_3f9693b7_1",
+      "date": "2023/08/11 (Fri) 09:09",
+      "has_notes": true,
+      "notes_text": "[session_id] answer_3f9693b7_1\n[session_date] 2023/08/11 (Fri) 09:09\n[facts]\n- I am planning a dinner party and need help with the menu.\n- I want popular Korean BBQ dishes that are easy to make in large quantities.\n- I am planning to serve a variety of dishes from different cuisines.\n- I want Indian dishes that are easy to make in large quantities.\n- I am thinking of making falafel as a Middle Eastern option.\n- I want tips to make falafel crispy on the outside and fluffy on the inside.\n- I have been experimenting with different types of noodles lately.\n- I want recommendations for popular Korean noodle dishes to make at home.\n- I have tried three different Korean restaurants recently.\n- I tried a place with an amazing bibimbap.\n- I tried a place with a really spicy kimchi stew.\n- I tried a third place with a unique take on Japchae using sweet potato noodles.\n[keyphrases] dinner party menu; Korean BBQ dishes; easy to make in large quantities; Indian dishes; falafel crispy fluffy; Middle Eastern falafel; Korean noodle dishes; Korean restaurants; bibimbap; spicy kimchi stew; Japchae sweet potato noodles\n[events]\n- Tried three different Korean restaurants recently (recently)\n- Tried a place with an amazing bibimbap\n- Tried a place with a really spicy kimchi stew\n- Tried a third place with a unique take on Japchae with sweet potato noodles",
+      "user_turns": "[turn 0] I'm planning a dinner party and need some help with the menu. Can you suggest some popular Korean BBQ dishes that are easy to make in large quantities?\n\n[turn 2] I'm thinking of serving a variety of dishes from different cuisines, so I'll take a few of these Korean BBQ options and pair them with some Indian and Middle Eastern dishes. Do you have any suggestions for Indian dishes that are easy to make in large quantities?\n\n[turn 4] I'm actually thinking of making falafel as one of the Middle Eastern options. Do you have any tips on how to make it crispy on the outside and fluffy on the inside?\n\n[turn 6] I've been experimenting with different types of noodles lately, and I was wondering if you could recommend some popular Korean noodle dishes that I could try making at home?\n\n[turn 8] By the way, speaking of noodles, have you tried any good Korean restaurants in your city lately? I've tried three different ones recently, and each has its own unique flavor and style.\n\n[turn 10] Sounds good! So, I tried this one place that had an amazing bibimbap, and then this other place that had a really spicy kimchi stew. And then there was this third place that had a unique take on Japchae, with a sweet potato noodle that was really tasty. Each place had its own unique flavor and style, you know?"
+    },
+    {
+      "session_id": "answer_3f9693b7_2",
+      "date": "2023/09/30 (Sat) 15:06",
+      "has_notes": true,
+      "notes_text": "[session_id] answer_3f9693b7_2\n[session_date] 2023/09/30 (Sat) 15:06\n[facts]\n- I am planning a dinner party.\n- I am thinking of making Korean-style BBQ beef for my dinner party.\n- I think I will go with kimchi and bokkeumbap as side dishes.\n- I have tried four different Korean restaurants in my city so far.\n- I am looking for new Korean restaurant recommendations in my city.\n- I am thinking of making Indian-inspired dishes to complement Korean BBQ beef and Middle Eastern falafel.\n- I am making Middle Eastern falafel as part of my dinner party menu.\n- I think I will go with samosas and saag aloo.\n- I have been trying out different types of rice lately.\n- I have been using an authentic Japanese short-grain rice brand lately.\n- I plan to stick with traditional Indian basmati rice.\n- I will pick up a bag of traditional Indian basmati rice from the store later today.\n- I have a new Indian restaurant in my neighborhood that just opened.\n- I have been meaning to try the new Indian restaurant in my neighborhood.\n- I heard their chicken tikka masala is amazing.\n[keyphrases] dinner party menu; Korean-style BBQ beef; Korean side dishes; kimchi; bokkeumbap; Korean restaurants in my city; Indian-inspired dishes; Middle Eastern falafel; samosas; saag aloo; basmati rice brand; Japanese short-grain rice; chicken tikka masala; new Indian restaurant in my neighborhood\n[events]\n- Planning a dinner party and choosing a menu\n- Choosing kimchi and bokkeumbap for the menu\n- Considering Indian-inspired dishes to complement Korean BBQ beef and falafel\n- Choosing samosas and saag aloo\n- Deciding to stick with traditional Indian basmati rice and buying it later today (later today)\n- Hearing about a new Indian restaurant that just opened in the neighborhood (just opened)",
+      "user_turns": "[turn 0] I'm planning a dinner party and need some help with the menu. I was thinking of making Korean-style BBQ beef, but I want to know if you have any recommendations for side dishes that would complement it well.\n\n[turn 2] I think I'll go with kimchi and bokkeumbap. By the way, have you tried any good Korean restaurants in my city lately? I've tried four different ones so far, and I'm always looking for new recommendations.\n\n[turn 4] I'm actually thinking of making some changes to my dinner party menu. Do you have any recipe ideas for Indian-inspired dishes that would complement the Korean BBQ beef and Middle Eastern falafel well?\n\n[turn 6] I think I'll go with the samosas and saag aloo. Do you have any recommendations for a good brand of basmati rice? I've been trying out different types of rice lately, and I want to make sure I get the best one for this dish.\n\n[turn 8] I actually have a brand that I've been using lately, it's an authentic Japanese short-grain rice, but I'm not sure if it would be suitable for this dish. Do you think it would work, or should I stick with a traditional Indian basmati rice?\n\n[turn 10] I think I'll stick with the traditional Indian basmati rice. I'll pick up a bag from the store later today. By the way, have you heard about that new Indian restaurant that just opened up in my neighborhood? I've been meaning to try it out, and I heard their chicken tikka masala is amazing."
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

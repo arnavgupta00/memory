@@ -1,0 +1,98 @@
+{
+  "session_id": "24f78a31_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Tokyo in mid-April.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for must-see attractions and restaurants in the Shinjuku area.",
+      "turn_index": 0
+    },
+    {
+      "text": "I recently took a road trip to the beach with my family over the Presidents' Day weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I spent three days unwinding by the ocean during my beach trip.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in trying local snacks.",
+      "turn_index": 2
+    },
+    {
+      "text": "I took surfing lessons during my beach trip.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering getting a GoPro for my Tokyo trip to capture footage.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to learn more about the Shinjuku Gyoen National Garden.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am considering visiting the Shinjuku Gyoen National Garden during cherry blossom season.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am considering visiting the Tokyo Metropolitan Government Building for the free observation decks.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am curious about the Shinjuku area's shopping scene.",
+      "turn_index": 8
+    },
+    {
+      "text": "I need to edit the GoPro footage from my surfing lessons during my beach trip over the Presidents' Day weekend.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking about getting new gear for my trip to Tokyo.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am looking for electronic stores in Shinjuku to find good deals.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Tokyo mid-April trip",
+    "Shinjuku attractions",
+    "Shinjuku restaurants",
+    "yakitori in Shinjuku",
+    "local snacks",
+    "surfing lessons",
+    "GoPro footage editing",
+    "Shinjuku Gyoen National Garden",
+    "cherry blossom season crowds",
+    "Tokyo Metropolitan Government Building free observation decks",
+    "Shinjuku shopping districts",
+    "electronic stores Shinjuku deals"
+  ],
+  "events": [
+    {
+      "text": "Road trip to the beach with family over the Presidents' Day weekend",
+      "date_hint": "Presidents' Day weekend",
+      "turn_index": 0
+    },
+    {
+      "text": "Spent three days unwinding by the ocean during the beach trip",
+      "date_hint": "Presidents' Day weekend (three days)",
+      "turn_index": 0
+    },
+    {
+      "text": "Surfing lessons taken during the beach trip",
+      "date_hint": "Presidents' Day weekend",
+      "turn_index": 2
+    },
+    {
+      "text": "Editing GoPro footage from surfing lessons after the Presidents' Day weekend beach trip",
+      "date_hint": "after Presidents' Day weekend",
+      "turn_index": 8
+    }
+  ]
+}

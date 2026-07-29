@@ -1,15 +1,19 @@
 # Current architecture
 
-**Architecture ID:** `0005-context-service` (revision **0005.4** — active)
-**Status:** active — canary-1 **124/150 (82.7%)**, abstention **14/15**, pop-weighted **83.3%**, cost **~$0.75** · [0005.4 freeze 2026-07-28](architecture/0005.4-CHECKPOINT-2026-07-28.md) · [prior](architecture/0005.4-CHECKPOINT-2026-07-27.md) · [0005.3](architecture/0005.3-CHECKPOINT-2026-07-27.md)
+**Architecture ID:** `0005-context-service` (revision **0005.4.4** — active)
+**Status:** active — BM25 **K96/140k** + Call-2 **`answer-v8-preference`** · canary-1 **126/150 (84.0%)** pref **12/15** abs **13/15** (+9/−7 vs 0005.4) · [resume checkpoint](architecture/0005.4.4-RESUME-CHECKPOINT-2026-07-29.md) · [0005.4.4 freeze](architecture/0005.4.4-CHECKPOINT-2026-07-29.md) · [0005.4.3](architecture/0005.4.3-CHECKPOINT-2026-07-29.md)
 
-Preserved (not active): Luna low Call-2 **127/150** (rolled back); format middle-agent killed on canary-2; [0005.5 answer-v6](architecture/0005.5-CHECKPOINT-2026-07-27.md); [0006 session-routing](architecture/0006-CHECKPOINT-2026-07-28.md) (122/150). Prior freezes: 0005.3 canary-2 **54/60**; 0004.2 **54/60**.
+Active configs: `configs/architecture-0005.4.4-canary1-breadth.yaml`,
+`configs/architecture-0005.4.4-canary2-breadth.yaml`.
 
-Active line: broad BM25 retrieval, then a selector that emits a compact verbatim context
-package for a separate answerer. Package assembly may resolve any turn from a session that
-contributed at least one BM25 span (full-session reach). Session index / series expand /
-answer-v6 stay off. The 0004.2 single-call answerer remains available when
-`select_enabled` is false.
+Preserved (not active): 0005.4.3 K48/80k + v8; 0005.4 + `answer-v5-package` **124/150**; Luna low **127/150** (rolled back); format middle-agent killed; [0005.5 answer-v6](architecture/0005.5-CHECKPOINT-2026-07-27.md); [0006 session-routing](architecture/0006-CHECKPOINT-2026-07-28.md). Rejected this cycle: U-WINDOW, U-CAP, U-FLOOR (net +1 only).
+
+Active line: broad BM25 retrieval (top_k 96, char_budget 140k), then a selector that emits a
+compact verbatim context package for a separate answerer. Package assembly may resolve any
+turn from a session that contributed at least one BM25 span (full-session reach). Call-2 uses
+an advice-only preference procedure on top of the v5 factual rules. Session index / series
+expand / answer-v6 / lexical floor stay off. The 0004.2 single-call answerer remains available
+when `select_enabled` is false.
 
 ## Decision
 
@@ -46,7 +50,8 @@ Each session is indexed as overlapping role-tagged turn windows rather than as o
 unit retrieved is already the unit the answerer needs. Every window carries its session ID, session
 date, and turn index range; dates travel with the text because temporal questions depend on them.
 
-Ranking is BM25 with `k1=1.2`, `b=0.75`, Unicode tokenization, and stable tie-breaking. Selected
+Ranking is BM25 with `k1=1.5`, `b=0.9`, Unicode tokenization, user-turn-only
+window indexing (`index_user_turns_only`), and stable tie-breaking. Selected
 windows are coalesced when adjacent, ordered chronologically in the prompt, and truncated only at
 window boundaries.
 

@@ -1,0 +1,111 @@
+{
+  "session_id": "29695e1c_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a 4-day trip to New York City.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am trying to pack light for my 4-day trip to New York City.",
+      "turn_index": 0
+    },
+    {
+      "text": "I used to be an overpacker.",
+      "turn_index": 0
+    },
+    {
+      "text": "I once packed an entire wardrobe for a 3-day trip.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to pack clothes that can be mixed and matched to create multiple outfits.",
+      "turn_index": 2
+    },
+    {
+      "text": "I previously mixed and matched clothes to create multiple outfits in Paris.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to pack clothes for a 4-day trip to NYC in the spring.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to bring a portable charger for my phone.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to use Google Maps a lot to navigate the city.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have a phone case with card storage.",
+      "turn_index": 6
+    },
+    {
+      "text": "I had not thought about a portable Wi-Fi hotspot before.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan on working remotely during my trip.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering the Verizon MiFi 8800L.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering the AT&T Netgear Nighthawk M1.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have heard good things about both the Verizon MiFi 8800L and the AT&T Netgear Nighthawk M1.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think the portable Wi-Fi hotspot will be a lifesaver for my remote work during the trip.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to avoid overpriced airport snacks.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "4-day trip",
+    "New York City",
+    "pack light",
+    "overpacker",
+    "mix and match outfits",
+    "Paris packing",
+    "NYC spring outfits",
+    "portable charger",
+    "Google Maps navigation",
+    "tech essentials",
+    "portable Wi-Fi hotspot",
+    "Verizon MiFi 8800L",
+    "AT&T Netgear Nighthawk M1",
+    "working remotely",
+    "portable Wi-Fi hotspot recommendations",
+    "phone case with card storage",
+    "avoid overpriced airport snacks",
+    "packing snacks"
+  ],
+  "events": [
+    {
+      "text": "Planning a 4-day trip to New York City",
+      "date_hint": "4-day trip (spring implied)",
+      "turn_index": 0
+    },
+    {
+      "text": "Considering Verizon MiFi 8800L and AT&T Netgear Nighthawk M1 for a portable Wi-Fi hotspot",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Planning to pack snacks while avoiding overpriced airport snacks",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

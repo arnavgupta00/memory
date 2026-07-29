@@ -1,0 +1,94 @@
+{
+  "session_id": "10857212_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a 4-day trip to Rome.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to pack light for my 4-day trip to Rome.",
+      "turn_index": 0
+    },
+    {
+      "text": "On my last 5-day trip to Paris, I only ended up wearing half of the clothes I packed.",
+      "turn_index": 0
+    },
+    {
+      "text": "On my last trip to Paris, I packed a lot of clothes.",
+      "turn_index": 2
+    },
+    {
+      "text": "On my last 5-day trip to Paris, I wore 2 shirts the entire trip.",
+      "turn_index": 2
+    },
+    {
+      "text": "On my last 5-day trip to Paris, I wore 2 pairs of pants the entire trip.",
+      "turn_index": 2
+    },
+    {
+      "text": "On my last 5-day trip to Paris, I wore 1 dress the entire trip.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am worried about not having enough clothes.",
+      "turn_index": 2
+    },
+    {
+      "text": "I tend to pack clothes that I haven't worn in months.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want advice on how to be more ruthless about getting rid of old clothes and not packing them.",
+      "turn_index": 4
+    },
+    {
+      "text": "I tend to overpack.",
+      "turn_index": 6
+    },
+    {
+      "text": "I started using packing cubes since my last trip to Paris.",
+      "turn_index": 8
+    },
+    {
+      "text": "I find that packing cubes keep my clothes organized and easy to find.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "4-day trip to Rome",
+    "pack light",
+    "packing list",
+    "last 5-day trip to Paris",
+    "wore half the clothes",
+    "packing cubes",
+    "packing habits",
+    "overpacking",
+    "ruthless about old clothes",
+    "getting rid of old clothes",
+    "clothes not worn in months",
+    "clothes organized and easy to find"
+  ],
+  "events": [
+    {
+      "text": "Planning a 4-day trip to Rome",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Last 5-day trip to Paris (wore half the clothes; wore 2 shirts, 2 pairs of pants, and 1 dress)",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Last trip to Paris (packed a lot of clothes but wore only half)",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Started using packing cubes since the last trip to Paris",
+      "date_hint": "",
+      "turn_index": 8
+    }
+  ]
+}

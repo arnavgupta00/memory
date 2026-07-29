@@ -1,0 +1,84 @@
+{
+  "session_id": "69a9211c_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I commute 5 days a week.",
+      "turn_index": 2
+    },
+    {
+      "text": "This month has 4 weeks.",
+      "turn_index": 2
+    },
+    {
+      "text": "A single train ticket costs $5 for me.",
+      "turn_index": 2
+    },
+    {
+      "text": "I usually buy a monthly pass for $100.",
+      "turn_index": 2
+    },
+    {
+      "text": "I usually do not work from home.",
+      "turn_index": 2
+    },
+    {
+      "text": "Last week I was supposed to arrive at 8:30 AM but I arrived at 9:00 AM due to a delayed train.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of carpooling with a coworker to reduce my expenses.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking we will split the fuel cost 50/50.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking the fuel cost will be around $100 per month for both of us.",
+      "turn_index": 6
+    },
+    {
+      "text": "A new bike-sharing program just launched in my city.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want information about how the bike-sharing program works and how much it costs.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know about bike stations near my office and apartment.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to find bike stations nearby and know how to find them.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "commute costs",
+    "train tickets",
+    "monthly pass",
+    "delayed train",
+    "8:30 AM arrival",
+    "9:00 AM arrival",
+    "carpooling with coworker",
+    "split fuel cost 50/50",
+    "fuel cost $100 per month",
+    "bike-sharing program",
+    "bike stations near office and apartment",
+    "bike station locations"
+  ],
+  "events": [
+    {
+      "text": "Delayed train caused late arrival from 8:30 AM to 9:00 AM.",
+      "date_hint": "last week",
+      "turn_index": 0
+    },
+    {
+      "text": "New bike-sharing program launched in the user's city.",
+      "date_hint": "just launched",
+      "turn_index": 8
+    }
+  ]
+}

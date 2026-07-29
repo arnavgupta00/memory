@@ -1,0 +1,108 @@
+{
+  "session_id": "sharegpt_8jxRz9U_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want a WordPress function that allows me to use a shortcode to display a list of custom posts.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the shortcode to let me specify how many posts to display.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the shortcode to let me specify a category.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the shortcode to let me specify a taxonomy.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the code updated to display a custom post type named \"policy\" instead of showing posts.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want the shortcode updated to use a taxonomy's category instead of the WordPress post category.",
+      "turn_index": 4
+    },
+    {
+      "text": "For the Policy custom post type, I have a taxonomy called \"Topic\".",
+      "turn_index": 4
+    },
+    {
+      "text": "I need the shortcode to list the Policies within a given Topic such as \"academic-affairs\" or \"student-life\".",
+      "turn_index": 4
+    },
+    {
+      "text": "I want a WordPress shortcode that could display the first 5 policies of each topic.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want the topic to be displayed as an unspecified element.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want the custom post type policies to be a hyperlinked list.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want a WordPress PHP single template for a custom post type called \"Policy\".",
+      "turn_index": 8
+    },
+    {
+      "text": "The Policy single template should display associated Advanced Custom Fields for Title.",
+      "turn_index": 8
+    },
+    {
+      "text": "The Policy single template should display associated Advanced Custom Fields for Published Date.",
+      "turn_index": 8
+    },
+    {
+      "text": "The Policy single template should display associated Advanced Custom Fields for Unit (a custom taxonomy).",
+      "turn_index": 8
+    },
+    {
+      "text": "The Policy single template should display associated Advanced Custom Fields for Topic (a custom taxonomy).",
+      "turn_index": 8
+    },
+    {
+      "text": "The Policy single template should display Body content.",
+      "turn_index": 8
+    },
+    {
+      "text": "The Policy single template should display Additional Resources in a collapsible row.",
+      "turn_index": 8
+    },
+    {
+      "text": "The Policy single template should display History in a collapsible row.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "WordPress shortcode",
+    "custom post type",
+    "custom posts list",
+    "taxonomy filter",
+    "category parameter",
+    "policy custom post type",
+    "Topic taxonomy",
+    "academic-affairs",
+    "student-life",
+    "first 5 policies per topic",
+    "hyperlinked list",
+    "single template Policy",
+    "Advanced Custom Fields",
+    "Published Date",
+    "Unit taxonomy",
+    "Additional Resources collapsible row",
+    "History collapsible row"
+  ],
+  "events": [
+    {
+      "text": "Create a WordPress PHP single template for a custom post type called \"Policy\"",
+      "date_hint": "",
+      "turn_index": 8
+    }
+  ]
+}

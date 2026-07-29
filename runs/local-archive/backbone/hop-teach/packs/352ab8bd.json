@@ -1,0 +1,25 @@
+{
+  "question_id": "352ab8bd",
+  "question_type": "single-session-assistant",
+  "question": "Can you remind me what was the average improvement in framerate when using the Hardware-Aware Modular Training (HAMT) agent in the 'To Adapt or Not to Adapt? Real-Time Adaptation for Semantic Segmentation' submission?",
+  "question_date": "2023/05/30 (Tue) 23:31",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_sharegpt_NoDZzot_7"
+  ],
+  "haystack_session_count": 49,
+  "notes_coverage": "partial",
+  "annotated_session_count": 4,
+  "gold_sessions": [
+    {
+      "session_id": "answer_sharegpt_NoDZzot_7",
+      "date": "2023/05/22 (Mon) 11:51",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_sharegpt_NoDZzot_7\n[session_date] 2023/05/22 (Mon) 11:51\n[notes] (empty)",
+      "user_turns": "[turn 1] Based on all sections I've provided already (Abstract, Introduction, Methods, Experimental Results, Discussion and Conclusions), write an academic review of the CVPR submissions.\n\nStructure the review in the following structure:\n- short summary\n- strengths\n- weaknesses\n- typos\n- score = {score} (1-10, where: 1-3 strong reject, 4-5: weak reject/borderline, 6-7: weak accept, 8-10: strong accept) Justify your score.\n- reviewer confidence = {score} (1-10, where 1: I have very low confidence in my review as I'm not an expert in the field, 10: absolute certain in my evaluation) Justify your score.\n\n(please structure the review in markdown sections)\n\n[turn 3] Write again the review, but much harsher\n\n[turn 5] continue\n\n[turn 7] write a borderline review\n\n[turn 9] continue\n\n[turn 11] Now, acting as Program Chair, based on the whole paper text and each provided review, summarie the reviews into one and deciding whether the paper will be accepted or not.\n\n[turn 13] noooooooooooooooooo"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

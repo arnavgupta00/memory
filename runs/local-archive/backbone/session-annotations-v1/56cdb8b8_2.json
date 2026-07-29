@@ -1,0 +1,151 @@
+{
+  "session_id": "56cdb8b8_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am thinking of getting a maintenance schedule for my car.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a reminder for when I need to replace my brake pads.",
+      "turn_index": 0
+    },
+    {
+      "text": "I just got new floor mats.",
+      "turn_index": 0
+    },
+    {
+      "text": "My new floor mats arrived on the 17th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am really happy with the quality of my new floor mats.",
+      "turn_index": 0
+    },
+    {
+      "text": "My car is a 2015 Toyota Camry.",
+      "turn_index": 2
+    },
+    {
+      "text": "I just got an oil change on March 2nd.",
+      "turn_index": 2
+    },
+    {
+      "text": "My odometer reading is current.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to check the manual for the recommended brake pad replacement interval.",
+      "turn_index": 2
+    },
+    {
+      "text": "My mechanic told me my brake pads are a bit worn out.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to get brake pad replacement done soon.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want a reminder to schedule a car appointment in a few weeks.",
+      "turn_index": 2
+    },
+    {
+      "text": "I will go with option B, 6 weeks from now.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of getting a car inspection for my wife's Subaru Outback.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know whether the inspection can be done at any dealership.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know whether I need to go back to where my wife bought the Subaru Outback.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of selling my old motorcycle.",
+      "turn_index": 8
+    },
+    {
+      "text": "My old motorcycle is a 2007 Honda CBR600RR.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want tips on how to price my motorcycle competitively.",
+      "turn_index": 8
+    },
+    {
+      "text": "I listed my motorcycle on Craigslist on March 10th.",
+      "turn_index": 10
+    },
+    {
+      "text": "I haven't gotten any serious offers yet for my motorcycle.",
+      "turn_index": 10
+    },
+    {
+      "text": "I think I might need to lower the price if I don't get any bites by the end of the month.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am considering listing my motorcycle on other platforms like eBay or Facebook Marketplace.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "maintenance schedule",
+    "brake pads replacement reminder",
+    "new floor mats",
+    "floor mats arrived on the 17th",
+    "2015 Toyota Camry",
+    "oil change March 2",
+    "brake pad replacement interval manual",
+    "schedule appointment in a few weeks",
+    "option B 6 weeks from now",
+    "car inspection",
+    "Subaru Outback dealership",
+    "sell motorcycle",
+    "2007 Honda CBR600RR",
+    "price competitively",
+    "Craigslist listing March 10",
+    "no serious offers",
+    "lower price end of the month",
+    "eBay listing",
+    "Facebook Marketplace listing"
+  ],
+  "events": [
+    {
+      "text": "Floor mats arrived",
+      "date_hint": "the 17th",
+      "turn_index": 0
+    },
+    {
+      "text": "Oil change performed",
+      "date_hint": "March 2nd",
+      "turn_index": 2
+    },
+    {
+      "text": "Motorcycle listed on Craigslist",
+      "date_hint": "March 10th",
+      "turn_index": 10
+    },
+    {
+      "text": "Plan to schedule appointment",
+      "date_hint": "in a few weeks / 6 weeks from now (option B)",
+      "turn_index": 2
+    },
+    {
+      "text": "Plan to schedule appointment",
+      "date_hint": "6 weeks from now (option B)",
+      "turn_index": 4
+    },
+    {
+      "text": "Consider lowering motorcycle price if no serious offers by end of the month",
+      "date_hint": "by the end of the month",
+      "turn_index": 10
+    }
+  ]
+}

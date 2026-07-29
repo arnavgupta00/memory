@@ -1,0 +1,64 @@
+{
+  "session_id": "sharegpt_mcuPM3P_7",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user asked whether Charles Ogden and Ivor Richards published \"The Meaning of Meaning\" in 1923.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user asked for confirmation of the accuracy of dates for works produced by prominent figures mentioned in the conversation.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user asked for the written work of Peter Abelard with probable years of publication.",
+      "turn_index": 7
+    },
+    {
+      "text": "The user asked for the written work of Thomas Aquinas with probable years of publication.",
+      "turn_index": 7
+    },
+    {
+      "text": "The user asked which section is in \"Summa Theologica\".",
+      "turn_index": 11
+    }
+  ],
+  "keyphrases": [
+    "The Meaning of Meaning",
+    "Charles Ogden",
+    "Ivor Richards",
+    "1923 publication date",
+    "accuracy of dates",
+    "Peter Abelard written work",
+    "probable years of publication",
+    "Thomas Aquinas written work",
+    "Summa Theologica section"
+  ],
+  "events": [
+    {
+      "text": "Question about whether \"The Meaning of Meaning\" was published in 1923",
+      "date_hint": "1923",
+      "turn_index": 1
+    },
+    {
+      "text": "Request to confirm accuracy of dates for works produced by prominent figures mentioned",
+      "date_hint": "",
+      "turn_index": 3
+    },
+    {
+      "text": "Request for probable years of publication for works by Peter Abelard",
+      "date_hint": "",
+      "turn_index": 7
+    },
+    {
+      "text": "Request for probable years of publication for works by Thomas Aquinas",
+      "date_hint": "",
+      "turn_index": 7
+    },
+    {
+      "text": "Question about which section is in \"Summa Theologica\"",
+      "date_hint": "",
+      "turn_index": 11
+    }
+  ]
+}

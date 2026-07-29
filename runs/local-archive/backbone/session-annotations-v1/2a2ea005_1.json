@@ -1,0 +1,104 @@
+{
+  "session_id": "2a2ea005_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have a silver Honda Civic.",
+      "turn_index": 0
+    },
+    {
+      "text": "I washed my silver Honda Civic last Sunday.",
+      "turn_index": 0
+    },
+    {
+      "text": "The last oil change was done at 0 miles.",
+      "turn_index": 0
+    },
+    {
+      "text": "I bought the car when the last oil change was done, so it was essentially brand new.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to use conventional oil for my oil change.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to find a good mechanic or service center near me to do the oil change.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to search online for mechanics in my area and check their reviews.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to ask about promotions or discounts for oil changes.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have 4,500 miles on my car since the last oil change.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to get the oil change done as soon as possible.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to ask the mechanic about their experience with Honda vehicles and oil changes.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to ask for a breakdown of the costs involved for the oil change.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want the price of the oil change included in the cost breakdown.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know any additional services the mechanic recommends.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know if there are any fees for disposal of the used oil and filter.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want a clear idea of what I will be paying so I can plan accordingly.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "silver Honda Civic",
+    "oil change scheduling",
+    "recommended oil change interval",
+    "washed last Sunday",
+    "last oil change at 0 miles",
+    "conventional oil",
+    "mechanic near me",
+    "service center near me",
+    "search online reviews",
+    "promotions or discounts",
+    "4,500 miles since last oil change",
+    "ask about Honda experience",
+    "cost breakdown",
+    "price of oil change",
+    "disposal fees used oil and filter"
+  ],
+  "events": [
+    {
+      "text": "Washed the silver Honda Civic.",
+      "date_hint": "last Sunday",
+      "turn_index": 0
+    },
+    {
+      "text": "Last oil change was done at 0 miles when the car was essentially brand new (at purchase).",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Has accumulated 4,500 miles since the last oil change and wants to get it done as soon as possible.",
+      "date_hint": "",
+      "turn_index": 6
+    }
+  ]
+}

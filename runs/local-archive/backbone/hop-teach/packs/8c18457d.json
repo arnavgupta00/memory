@@ -1,0 +1,33 @@
+{
+  "question_id": "8c18457d",
+  "question_type": "temporal-reasoning",
+  "question": "How many days had passed between the day I bought a gift for my brother's graduation ceremony and the day I bought a birthday gift for my best friend?",
+  "question_date": "2023/03/29 (Wed) 13:43",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_124f5dc3_2",
+    "answer_124f5dc3_1"
+  ],
+  "haystack_session_count": 41,
+  "notes_coverage": "full",
+  "annotated_session_count": 41,
+  "gold_sessions": [
+    {
+      "session_id": "answer_124f5dc3_2",
+      "date": "2023/03/29 (Wed) 21:48",
+      "has_notes": true,
+      "notes_text": "[session_id] answer_124f5dc3_2\n[session_date] 2023/03/29 (Wed) 21:48\n[facts]\n- I am looking for gift ideas for a friend who is into fashion.\n- I recently got a silver necklace with a tiny pendant for another friend.\n- I want suggestions for something similar to the silver necklace with a tiny pendant.\n- I am particularly interested in minimalist chic earrings.\n- I recently got a silver necklace with a tiny pendant for my best friend's 30th birthday.\n- My best friend's 30th birthday was on the 15th of March.\n- I got the silver necklace with a tiny pendant for my best friend's 30th birthday on the 15th of March.\n- I have been trying to be more thoughtful and intentional with my gift purchasing habits.\n- I am interested in getting a gift for my neighbor who helped me with dog-sitting while I was away on a trip last month.\n- I got a $10 gift card to a coffee shop for my neighbor who helped me with dog-sitting while I was away on a trip last month.\n- I am still interested in getting those earrings.\n[keyphrases] gift ideas for fashion friend; silver necklace tiny pendant; minimalist chic earrings; online stores for earrings; best friend's 30th birthday gift; March 15; gift purchasing habits; thoughtful intentional gift purchasing; neighbor dog-sitting gift; $10 coffee shop gift card; minimalist earrings price range around $80; similar earrings to silver necklace\n[events]\n- Got a silver necklace with a tiny pendant for my best friend's 30th birthday (15th of March)\n- Got a $10 gift card to a coffee shop for my neighbor who helped with dog-sitting while I was away on a trip (last month)",
+      "user_turns": "[turn 0] I'm looking for some gift ideas for a friend who's into fashion. I recently got a silver necklace with a tiny pendant for another friend, and it was a hit. Do you have any suggestions for something similar?\n\n[turn 2] That's a great list! I'm particularly interested in the minimalist chic earrings. Can you recommend some online stores that sell earrings similar to what you described?\n\n[turn 4] I've been trying to be more thoughtful and intentional with my gift purchasing habits, and it's been a fun and rewarding experience. Speaking of which, I recently got a silver necklace with a tiny pendant for my best friend's 30th birthday on the 15th of March, and it was a hit. Can you suggest some online stores that sell minimalist chic earrings in a similar price range, around $80?\n\n[turn 6] I'm also interested in getting a gift for my neighbor who helped me with dog-sitting while I was away on a trip last month. Do you have any gift ideas for a good neighbor?\n\n[turn 8] I think a gift card to a popular coffee shop would be a great idea. I actually got a $10 gift card to a coffee shop for my neighbor who helped me with dog-sitting while I was away on a trip last month. It was a small token of appreciation, but I'm sure they'll enjoy it.\n\n[turn 10] Yeah, I'm still interested in getting those earrings. Can you show me some options that are similar to the silver necklace I got for my best friend's 30th birthday on the 15th of March?"
+    },
+    {
+      "session_id": "answer_124f5dc3_1",
+      "date": "2023/03/29 (Wed) 21:27",
+      "has_notes": true,
+      "notes_text": "[session_id] answer_124f5dc3_1\n[session_date] 2023/03/29 (Wed) 21:27\n[facts]\n- I am looking for recommendations on gifts for a friend who is into music.\n- I got a wireless headphone for my brother as a graduation gift on 3/8.\n- I think the wireless headphone was a big hit.\n- I think a portable speaker would be a great gift option.\n- I think a music subscription would be a great gift option.\n- I asked whether there are good deals on portable speakers or music subscriptions right now.\n- I am considering getting a gift for my neighbor who helped me with dog-sitting last month.\n- I want gift ideas under $20 for my neighbor.\n- I was thinking of getting a gift card to a popular coffee shop for my neighbor.\n- I previously got a gift card for my neighbor last month.\n- I want the neighbor to be able to treat themselves to a coffee or snack on me.\n- I asked whether getting a coffee shop gift card is a good idea.\n[keyphrases] music gift recommendations; wireless headphone; graduation gift 3/8; portable speaker gift; music subscription; good deals right now; neighbor dog-sitting; gift ideas under $20; coffee shop gift card; coffee or snack gift\n[events]\n- Bought a wireless headphone for my brother as a graduation gift (3/8)\n- Neighbor helped with dog-sitting (last month)\n- I got a gift card for my neighbor last month (last month)",
+      "user_turns": "[turn 0] I'm looking for some recommendations on gifts for a friend who's into music. I recently got a wireless headphone for my brother as a graduation gift on the 3/8, and it was a big hit.\n\n[turn 2] I think the portable speaker or music subscription would be great options. Do you know any good deals on those items right now?\n\n[turn 4] I'm also considering getting a gift for my neighbor who helped me with dog-sitting last month. Do you have any ideas for gifts under $20 that would be suitable for a neighbor?\n\n[turn 6] I was thinking of getting a gift card to a popular coffee shop, like the one I got for my neighbor last month. That way, they can treat themselves to a coffee or snack on me. Do you think that's a good idea?"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

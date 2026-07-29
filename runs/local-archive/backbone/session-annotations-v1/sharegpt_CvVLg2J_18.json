@@ -1,0 +1,197 @@
+{
+  "session_id": "sharegpt_CvVLg2J_18",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user discusses SAV deployment results for packets outbound from and inbound to a measured network for the year ending 1 August 2019.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user presents deployment statistics by IPv4/24 and IPv6/40 prefixes and by AS.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that an AS with partial SAV deployment originates some prefixes where the Spoofer system did not receive spoofed packets and other prefixes where the Spoofer system did receive spoofed packets.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that 25.2% of tested IPv4 ASes had at least one prefix where operators had not deployed SAV to block outbound spoofed packets to the Internet.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that 32.1% of tested IPv6 ASes had at least one prefix where operators had not deployed SAV to block outbound spoofed packets to the Internet.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that 14.9% of IPv4 prefixes had no filtering when a NAT router was not present.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that 12.3% of tested IPv6 prefixes did not filter.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that inbound filtering of spoofed packets is even less deployed than outbound filtering.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that 67.0% of IPv4 ASes had at least one prefix where they were not filtering inbound packets.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that 74.2% of IPv6 ASes had at least one prefix where they were not filtering inbound packets.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user compares IPv4 tests for the year ending August 2019 where the client was not behind a NAT to tests from 1 May 2006 to 7 May 2006.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that during 1 May 2006 to 7 May 2006 the project received 1057 tests.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that 18.3% of IPv4/24 prefixes and 20.4% of ASes tested did not block spoofed-source packets during the first week of May 2006.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that for the year ending August 2019, 14.9% of IPv4/24 prefixes and 30.5% of ASes tested did not block spoofed-source packets.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that for Spoofer tests collected between May 2016 and August 2019 there was no correlation between prefix age and its probability of SAV deployment.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that the user-generated radix trie of prefix ages uses monthly snapshots of Routeviews and RIPE RIS from January 2000 to August 2019.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that the prefix age is defined as how long a prefix has been observable in the global BGP routing table.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that for each Spoofer client using a routed source address, the age of the corresponding client prefix was determined.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that results were binned into months and the relative fraction of tests within each age bin that could successfully spoof the routed IPv4 address was determined.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that using Pearson’s correlation, there was no meaningful relationship between age and spoofability.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that even with periodic weekly probing by the client, only 8% of IPv4 /24 prefixes and 23% of ASes reported measurements in 20 or more weeks in data collected between May 2016 and August 2019.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that the user attempted to mitigate sampling concerns by daemonizing the Spoofer client.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that the daemonized Spoofer client runs in the background after installation and executes measurements when the client detects a new attached network.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that the daemonized client repeats tests weekly on previously seen networks.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that because no client identifier is used, it is not possible to determine whether a specific client continues to probe after its initial installation.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that even with the daemon, 44% of IPv4 /24 prefixes and 32% of ASes reported measurements in only a single week between May 2016 and August 2019.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that for large providers, tests were obtained in every week, and gives examples of AT&T, Comcast, Verizon, Deutsche Telekom, Charter, and Cox.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that in the year ending August 2019 the testing client received reports from 2,783 ASes using IPv4.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that 2,418 (86.8%) of those ASes had tests involving a NAT.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that in the year ending August 2019, 6.4% of IPv4 /24 prefixes tested from clients behind a NAT did not filter packets with spoofed source addresses.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that NAT use is rare in IPv6 because unique addresses are plentiful.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that in the year ending August 2019, 12.3% of tested IPv6 /40 prefixes did not filter packets with spoofed source addresses.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that there are two failure modes where a NAT will forward packets with spoofed source addresses.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that in the first NAT failure mode, the NAT forwards packets with the spoofed source address intact to the amplifier.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user states that the first NAT failure mode is hypothesized to occur when the NAT does not rewrite the source address because the address is not in the local network served by the NAT.",
+      "turn_index": 0
+    }
+  ],
+  "keyphrases": [
+    "SAV deployment",
+    "Spoofer Project",
+    "outbound spoofed packets",
+    "inbound spoofed packets",
+    "IPv4 /24 prefixes",
+    "IPv6 /40 prefixes",
+    "NAT routers",
+    "no filtering",
+    "partial deployment",
+    "year ending August 2019",
+    "May 2006 Spoofer test",
+    "daemonized Spoofer client"
+  ],
+  "events": [
+    {
+      "text": "Year ending 1 August 2019 Spoofer Project summary statistics for SAV deployment",
+      "date_hint": "year ending August 2019",
+      "turn_index": 0
+    },
+    {
+      "text": "Comparison period for IPv4 tests when the client was not behind a NAT: 1 May 2006 to 7 May 2006",
+      "date_hint": "1 May 2006 to 7 May 2006",
+      "turn_index": 0
+    },
+    {
+      "text": "First week of May 2006 IPv4/24 prefixes and ASes tested did not block spoofed-source packets",
+      "date_hint": "first week of May 2006",
+      "turn_index": 0
+    },
+    {
+      "text": "Spoofer tests collected between May 2016 and August 2019 used to analyze correlation with prefix age",
+      "date_hint": "May 2016 to August 2019",
+      "turn_index": 0
+    },
+    {
+      "text": "Data collected between May 2016 and August 2019 for weekly probing coverage (20+ weeks)",
+      "date_hint": "May 2016 to August 2019",
+      "turn_index": 0
+    },
+    {
+      "text": "Daemonized Spoofer client longitudinal measurement coverage between May 2016 and August 2019",
+      "date_hint": "May 2016 to August 2019",
+      "turn_index": 0
+    },
+    {
+      "text": "Year ending August 2019 reports from 2,783 ASes using IPv4 and NAT-related test involvement",
+      "date_hint": "year ending August 2019",
+      "turn_index": 0
+    }
+  ]
+}

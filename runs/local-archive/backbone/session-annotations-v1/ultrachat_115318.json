@@ -1,0 +1,78 @@
+{
+  "session_id": "ultrachat_115318",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user asked for natural remedies to ease anxiety before going to bed.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user planned to try lavender oil before going to bed tonight.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user planned to take a warm bath before going to bed tonight.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user reported that lavender oil and a warm bath worked well.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user reported feeling relaxed after using lavender oil and a warm bath.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user reported sleeping well after using lavender oil and a warm bath.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user planned to incorporate lavender oil and a warm bath into a nightly routine.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user asked for other tips for improving sleep quality.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user planned to incorporate the remedies into a routine to see if they help sleep quality.",
+      "turn_index": 10
+    },
+    {
+      "text": "The user asked whether it is best to stick to just one natural remedy or try a combination.",
+      "turn_index": 10
+    },
+    {
+      "text": "The user said they want to make sleep a priority.",
+      "turn_index": 12
+    },
+    {
+      "text": "The user planned to give the sleep tips a try.",
+      "turn_index": 12
+    }
+  ],
+  "keyphrases": [
+    "natural remedies for anxiety",
+    "before going to bed",
+    "lavender oil",
+    "warm bath",
+    "nightly routine",
+    "sleep quality tips",
+    "improving sleep quality",
+    "combination of natural remedies",
+    "one natural remedy vs combination",
+    "sleep priority"
+  ],
+  "events": [
+    {
+      "text": "Tried lavender oil and a warm bath before going to bed",
+      "date_hint": "tonight",
+      "turn_index": 2
+    },
+    {
+      "text": "Reported that lavender oil and warm bath worked and slept well",
+      "date_hint": "after trying tonight",
+      "turn_index": 6
+    }
+  ]
+}

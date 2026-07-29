@@ -1,0 +1,82 @@
+{
+  "session_id": "91d847c1_6",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I was at the grocery store two days ago.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am running low on some staples.",
+      "turn_index": 0
+    },
+    {
+      "text": "I like making pasta with tomato sauce.",
+      "turn_index": 2
+    },
+    {
+      "text": "I like making grilled cheese sandwiches.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have sweetened condensed milk at home.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have chocolate chips at home.",
+      "turn_index": 4
+    },
+    {
+      "text": "I met Sophia at the grocery store two days ago.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to invite Sophia over for dinner.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will invite Sophia over for dinner on Friday evening.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to ask Sophia about her favorite travel destinations or hobbies.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "meal planning for the week",
+    "grocery store two days ago",
+    "common ingredients recipes",
+    "pasta with tomato sauce",
+    "grilled cheese sandwiches",
+    "simple dessert recipes",
+    "5-minute fudge",
+    "sweetened condensed milk",
+    "chocolate chips",
+    "dinner party hosting tips",
+    "Sophia dinner invitation",
+    "Friday evening dinner",
+    "light casual conversation topics",
+    "favorite travel destinations",
+    "hobbies",
+    "polite questions about occupation",
+    "asking about work without prying"
+  ],
+  "events": [
+    {
+      "text": "Went to the grocery store.",
+      "date_hint": "two days ago",
+      "turn_index": 0
+    },
+    {
+      "text": "Met Sophia at the grocery store.",
+      "date_hint": "two days ago",
+      "turn_index": 6
+    },
+    {
+      "text": "Invited Sophia over for dinner on Friday evening.",
+      "date_hint": "Friday evening",
+      "turn_index": 8
+    }
+  ]
+}

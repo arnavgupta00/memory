@@ -1,0 +1,135 @@
+{
+  "session_id": "c11fb634_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for advice on organizing my closet.",
+      "turn_index": 0
+    },
+    {
+      "text": "I picked up a pair of boots from Macy's during their Black Friday sale.",
+      "turn_index": 0
+    },
+    {
+      "text": "I picked up a sweater from Macy's during their Black Friday sale.",
+      "turn_index": 0
+    },
+    {
+      "text": "I managed to snag a deal on the boots that were originally $150 and I got them for $90 with a 40% discount.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought the sweater for $40 instead of $50 with a 20% discount.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want advice on how to keep track of my purchases and stay within my budget.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought skincare items during Sephora's VIB sale.",
+      "turn_index": 4
+    },
+    {
+      "text": "I bought some other items on sale at Target.",
+      "turn_index": 4
+    },
+    {
+      "text": "I bought some other items on sale at Nordstrom Rack.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want advice on how to organize my skincare routine and keep track of when to repurchase products.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been trying to cut back on shopping and focus on saving money.",
+      "turn_index": 6
+    },
+    {
+      "text": "I bought a handbag at a garage sale a month ago for $10.",
+      "turn_index": 6
+    },
+    {
+      "text": "I bought a pair of sunglasses for $5.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want advice on how to organize my accessories, like handbags and sunglasses, and keep them from getting cluttered.",
+      "turn_index": 6
+    },
+    {
+      "text": "I recently bought a dress and trousers from Banana Republic during their friends and family sale.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want advice on how to organize my clothes and keep them from getting wrinkled or damaged.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to use a color-coded system to organize my clothes.",
+      "turn_index": 10
+    },
+    {
+      "text": "I plan to invest in quality hangers and storage bins to keep my clothes organized and protected.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "closet organization advice",
+    "Macy's Black Friday sale boots",
+    "Macy's Black Friday sale sweater",
+    "boots discount 40%",
+    "sweater 20% off $40",
+    "budget tracking purchases",
+    "budgeting app",
+    "Sephora VIB sale skincare",
+    "Target sale items",
+    "Nordstrom Rack sale items",
+    "skincare routine repurchase tracking",
+    "garage sale handbag $10",
+    "sunglasses $5",
+    "accessories organization handbags sunglasses",
+    "Banana Republic friends and family sale dress trousers",
+    "wrinkle prevention clothes storage",
+    "color-coded clothing organization",
+    "quality hangers storage bins"
+  ],
+  "events": [
+    {
+      "text": "Bought boots and a sweater from Macy's during their Black Friday sale.",
+      "date_hint": "Black Friday (year not specified)",
+      "turn_index": 0
+    },
+    {
+      "text": "Bought boots for $90 (originally $150) with a 40% discount.",
+      "date_hint": "today (context: after returning from the mall)",
+      "turn_index": 2
+    },
+    {
+      "text": "Bought a sweater for $40 instead of $50 with a 20% discount.",
+      "date_hint": "today (context: after returning from the mall)",
+      "turn_index": 2
+    },
+    {
+      "text": "Bought skincare items during Sephora's VIB sale.",
+      "date_hint": "VIB sale (date not specified)",
+      "turn_index": 4
+    },
+    {
+      "text": "Bought a handbag at a garage sale a month ago for $10.",
+      "date_hint": "a month ago",
+      "turn_index": 6
+    },
+    {
+      "text": "Bought a pair of sunglasses for $5.",
+      "date_hint": "date not specified",
+      "turn_index": 6
+    },
+    {
+      "text": "Bought a dress and trousers from Banana Republic during their friends and family sale.",
+      "date_hint": "friends and family sale (date not specified)",
+      "turn_index": 8
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "session_id": "7613d5ec_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to keep track of my grocery expenses for the past few months.",
+      "turn_index": 0
+    },
+    {
+      "text": "I spent around $120 on a shopping trip to Costco.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want help organizing my grocery trips in a spreadsheet.",
+      "turn_index": 0
+    },
+    {
+      "text": "I went to FreshMarket on January 28th.",
+      "turn_index": 2
+    },
+    {
+      "text": "I cancelled my FarmFresh subscription on January 5th.",
+      "turn_index": 2
+    },
+    {
+      "text": "I made an online grocery order from Instacart on February 28th.",
+      "turn_index": 4
+    },
+    {
+      "text": "I spent around $60 on the Instacart order on February 28th.",
+      "turn_index": 4
+    },
+    {
+      "text": "I stopped by Whole Foods on March 4th.",
+      "turn_index": 4
+    },
+    {
+      "text": "I spent around $25 at Whole Foods on March 4th.",
+      "turn_index": 4
+    },
+    {
+      "text": "I went grocery shopping on March 11th.",
+      "turn_index": 4
+    },
+    {
+      "text": "I spent around $85 on March 11th grocery shopping.",
+      "turn_index": 4
+    },
+    {
+      "text": "I went to a regular grocery store on March 11th.",
+      "turn_index": 6
+    },
+    {
+      "text": "I bought chicken breasts for the week.",
+      "turn_index": 6
+    },
+    {
+      "text": "I bought ground beef for the week.",
+      "turn_index": 6
+    },
+    {
+      "text": "I bought apples for the week.",
+      "turn_index": 6
+    },
+    {
+      "text": "I bought carrots for the week.",
+      "turn_index": 6
+    },
+    {
+      "text": "I bought almond milk for the week.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to calculate the total amount I have spent on groceries so far this year.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I spent around $40 at FreshMarket on January 28th.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "grocery expenses tracking",
+    "spreadsheet organization",
+    "Costco shopping trip",
+    "FreshMarket January 28",
+    "FarmFresh subscription cancellation",
+    "Instacart online grocery order",
+    "Whole Foods March 4",
+    "grocery shopping March 11",
+    "regular grocery store",
+    "grocery list items",
+    "chicken breasts",
+    "ground beef",
+    "apples",
+    "carrots",
+    "almond milk",
+    "total groceries so far this year"
+  ],
+  "events": [
+    {
+      "text": "Shopping trip to Costco",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "FreshMarket trip on January 28th",
+      "date_hint": "January 28th",
+      "turn_index": 2
+    },
+    {
+      "text": "Cancelled FarmFresh subscription on January 5th",
+      "date_hint": "January 5th",
+      "turn_index": 2
+    },
+    {
+      "text": "Instacart online grocery order on February 28th",
+      "date_hint": "February 28th",
+      "turn_index": 4
+    },
+    {
+      "text": "Stopped by Whole Foods on March 4th",
+      "date_hint": "March 4th",
+      "turn_index": 4
+    },
+    {
+      "text": "Grocery shopping on March 11th (last Saturday)",
+      "date_hint": "March 11th",
+      "turn_index": 4
+    },
+    {
+      "text": "FreshMarket spending amount remembered for January 28th",
+      "date_hint": "January 28th",
+      "turn_index": 10
+    }
+  ]
+}

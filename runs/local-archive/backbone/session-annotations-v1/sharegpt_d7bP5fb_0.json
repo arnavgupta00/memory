@@ -1,0 +1,118 @@
+{
+  "session_id": "sharegpt_d7bP5fb_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want the AI to behave as a well known content writer on Mathematics.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the AI to write questions in Mathematics.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want questions for year level 10 students that focus on Pythagoras Theorem given one of the sides.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want the questions to be difficult.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want the questions to be innovative.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am not happy with the questions.",
+      "turn_index": 6
+    },
+    {
+      "text": "Question 3 is wrong.",
+      "turn_index": 8
+    },
+    {
+      "text": "Question 5 and 6 are not needed.",
+      "turn_index": 8
+    },
+    {
+      "text": "Other questions are fine but those are very common type of questions.",
+      "turn_index": 10
+    },
+    {
+      "text": "I need something new.",
+      "turn_index": 10
+    },
+    {
+      "text": "I like the objective part of the questions.",
+      "turn_index": 12
+    },
+    {
+      "text": "I want another variations of question 3.",
+      "turn_index": 14
+    },
+    {
+      "text": "I want LaTeX for mathematical terms.",
+      "turn_index": 16
+    },
+    {
+      "text": "I want to reframe the question differently.",
+      "turn_index": 18
+    },
+    {
+      "text": "In a right triangle, one leg has length 7.",
+      "turn_index": 20
+    },
+    {
+      "text": "In a right triangle, the hypotenuse has length 24.",
+      "turn_index": 20
+    },
+    {
+      "text": "I want to use the Pythagorean theorem to find the length of the other leg.",
+      "turn_index": 20
+    },
+    {
+      "text": "I want to reframe this question differently.",
+      "turn_index": 20
+    },
+    {
+      "text": "I want to know what prompt I should give to generate questions like above.",
+      "turn_index": 22
+    }
+  ],
+  "keyphrases": [
+    "year level 10 math questions",
+    "Pythagoras Theorem",
+    "right triangle side lengths",
+    "difficult innovative questions",
+    "objective part of questions",
+    "question 3 wrong",
+    "question 5 and 6 not needed",
+    "common question types",
+    "LaTeX for mathematical terms",
+    "reframe question differently",
+    "prompt to generate questions",
+    "leg length 7 hypotenuse 24"
+  ],
+  "events": [
+    {
+      "text": "User requests another variations of question 3.",
+      "date_hint": "",
+      "turn_index": 14
+    },
+    {
+      "text": "User asks to reframe the given Pythagorean theorem question differently.",
+      "date_hint": "",
+      "turn_index": 18
+    },
+    {
+      "text": "User provides a right-triangle problem: leg length 7 and hypotenuse length 24, and asks to reframe it differently.",
+      "date_hint": "",
+      "turn_index": 20
+    },
+    {
+      "text": "User asks what prompt to give to generate questions like above.",
+      "date_hint": "",
+      "turn_index": 22
+    }
+  ]
+}

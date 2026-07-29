@@ -1,0 +1,108 @@
+{
+  "session_id": "1a5369b9",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I usually wake up at 6:30 am on weekdays.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was still in bed until 8:30 am on Saturday, which is unusual for me.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to try a new recipe this weekend.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want simple and healthy recipes to try this weekend.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want recipes that include chicken or fish.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want a recipe that combines chicken and pasta.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been taking a cooking class.",
+      "turn_index": 6
+    },
+    {
+      "text": "I learned how to make pasta from scratch in my cooking class.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want chicken pasta recipes that work well with homemade pasta.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will try the Creamy Chicken Fettuccine recipe.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been meaning to try a creamy sauce with my homemade pasta.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want tips on how to cook the perfect al dente pasta.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want suggestions on how to meal prep for the week ahead.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am prioritizing my fitness goals.",
+      "turn_index": 10
+    },
+    {
+      "text": "I think meal prep helps me stay on track.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "wake up time weekdays",
+    "6:30 am wake up",
+    "Saturday wake up 8:30 am",
+    "weather forecast this week",
+    "simple healthy recipes",
+    "chicken or fish recipes",
+    "chicken pasta recipe",
+    "homemade pasta",
+    "pasta from scratch",
+    "Creamy Chicken Fettuccine",
+    "al dente pasta tips",
+    "meal prep for the week ahead",
+    "fitness goals meal prep"
+  ],
+  "events": [
+    {
+      "text": "Wake up at 6:30 am on weekdays",
+      "date_hint": "weekdays",
+      "turn_index": 2
+    },
+    {
+      "text": "Wake up at 8:30 am on Saturday (unusual)",
+      "date_hint": "Saturday",
+      "turn_index": 2
+    },
+    {
+      "text": "Try a new recipe this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 4
+    },
+    {
+      "text": "Try the Creamy Chicken Fettuccine recipe",
+      "date_hint": "this weekend",
+      "turn_index": 8
+    },
+    {
+      "text": "Meal prep for the week ahead",
+      "date_hint": "this week ahead",
+      "turn_index": 10
+    }
+  ]
+}

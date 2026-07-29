@@ -1,0 +1,115 @@
+{
+  "session_id": "499798f6",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I need help with a shopping list and I want a reminder of what to pick up from Petco.",
+      "turn_index": 0
+    },
+    {
+      "text": "I bought a cat bed from Petco a while back.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought a litter box from Petco a while back.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought food bowls from Petco a while back.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought water bowls from Petco a while back.",
+      "turn_index": 2
+    },
+    {
+      "text": "I got my kitten on February 10th.",
+      "turn_index": 4
+    },
+    {
+      "text": "I ordered a scratching post online.",
+      "turn_index": 4
+    },
+    {
+      "text": "My scratching post arrived on February 20th.",
+      "turn_index": 4
+    },
+    {
+      "text": "I asked what Luna's favorite toy or activity is.",
+      "turn_index": 6
+    },
+    {
+      "text": "Luna loves playing with a little mouse toy.",
+      "turn_index": 8
+    },
+    {
+      "text": "Luna loves chasing the laser pointer around the room.",
+      "turn_index": 8
+    },
+    {
+      "text": "I got Luna a feather wand on March 1st.",
+      "turn_index": 8
+    },
+    {
+      "text": "Luna enjoys freeze-dried chicken treats when she behaves well or does something cute.",
+      "turn_index": 8
+    },
+    {
+      "text": "Luna is playful and energetic.",
+      "turn_index": 10
+    },
+    {
+      "text": "Luna loves to chase toys around the room.",
+      "turn_index": 10
+    },
+    {
+      "text": "Luna loves to climb up high.",
+      "turn_index": 10
+    },
+    {
+      "text": "Luna is affectionate and loves to cuddle.",
+      "turn_index": 10
+    },
+    {
+      "text": "Luna sometimes gets mischievous and knocks over things.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "shopping list reminder",
+    "Petco",
+    "cat bed",
+    "litter box",
+    "food and water bowls",
+    "flea prevention medication for kittens",
+    "kitten February 10",
+    "scratching post",
+    "scratching post introduction",
+    "Luna favorite toy",
+    "mouse toy",
+    "laser pointer",
+    "feather wand March 1",
+    "freeze-dried chicken treats",
+    "kitten playful energetic",
+    "climbs up high",
+    "affectionate cuddles",
+    "mischievous knocks over things"
+  ],
+  "events": [
+    {
+      "text": "I got my kitten on February 10th.",
+      "date_hint": "February 10th",
+      "turn_index": 4
+    },
+    {
+      "text": "I ordered a scratching post online and it arrived on February 20th.",
+      "date_hint": "February 20th",
+      "turn_index": 4
+    },
+    {
+      "text": "I got Luna a feather wand on March 1st.",
+      "date_hint": "March 1st",
+      "turn_index": 8
+    }
+  ]
+}

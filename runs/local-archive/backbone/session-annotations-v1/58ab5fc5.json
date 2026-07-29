@@ -1,0 +1,105 @@
+{
+  "session_id": "58ab5fc5",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have a puppy named Rocky.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have puppy training classes for Rocky.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have puppy training classes on Saturdays.",
+      "turn_index": 2
+    },
+    {
+      "text": "My puppy training classes are usually in the morning.",
+      "turn_index": 2
+    },
+    {
+      "text": "I reserve Sundays for relaxation and errands.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to brush Luna's teeth daily.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am slowly teaching Rocky to sit and stay.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want a habit-tracking app to remember daily tasks like brushing Luna's teeth.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to use Habitica for habit tracking.",
+      "turn_index": 6
+    },
+    {
+      "text": "I clean Luna's litter box every 7-10 days.",
+      "turn_index": 8
+    },
+    {
+      "text": "I scoop out solid waste from Luna's litter box daily.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to do dog-friendly activities with Rocky and my friend's dog, Bella.",
+      "turn_index": 10
+    },
+    {
+      "text": "Rocky and Bella played together last week.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to plan more playdates with Rocky and Bella.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "schedule for the week",
+    "puppy training classes",
+    "Rocky",
+    "Saturdays morning training",
+    "reserve Sundays for relaxation and errands",
+    "brush Luna's teeth daily",
+    "habit-tracking app",
+    "Habitica",
+    "clean Luna's litter box",
+    "scoop solid waste daily",
+    "clean litter box every 7-10 days",
+    "dog-friendly activities",
+    "playdates",
+    "Rocky and Bella"
+  ],
+  "events": [
+    {
+      "text": "Puppy training classes for Rocky on Saturdays (usually in the morning)",
+      "date_hint": "Saturdays (morning)",
+      "turn_index": 2
+    },
+    {
+      "text": "Rocky is slowly learning to sit and stay",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Set a reminder in Habitica for daily tasks",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Plan to clean Luna's litter box every 7-10 days and scoop solid waste daily",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Rocky and Bella played together last week",
+      "date_hint": "last week",
+      "turn_index": 10
+    }
+  ]
+}

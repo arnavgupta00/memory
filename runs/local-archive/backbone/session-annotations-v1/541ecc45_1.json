@@ -1,0 +1,87 @@
+{
+  "session_id": "541ecc45_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to analyze website traffic data for our new product launch.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am having trouble setting up a dashboard in Google Analytics to track conversions.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been taking online courses through Coursera to improve my data analysis skills.",
+      "turn_index": 0
+    },
+    {
+      "text": "My Coursera courses focus specifically on Google Analytics and Excel.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to track form submissions as a goal in Google Analytics.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have used Google Tag Manager before for other tracking purposes.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to use Option 1 using Google Tag Manager.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to set up a new tag in GTM for the form submission event.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to create a trigger in GTM that fires when the form is submitted.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to link the GTM tag to the trigger and publish the GTM container.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am wondering whether I need to add additional settings in Google Analytics to track the event.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to test the GTM setup to ensure the event is being sent to Google Analytics correctly.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to test the setup without actually submitting the form on my live website.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to use Method 1: Google Tag Manager Debug Mode to test the setup.",
+      "turn_index": 10
+    },
+    {
+      "text": "I plan to enable Debug Mode, fill out the form, and submit it to see if the tag fires correctly.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "website traffic data analysis",
+    "new product launch",
+    "Google Analytics dashboard",
+    "track conversions",
+    "Coursera online courses",
+    "Google Analytics and Excel",
+    "goal trigger setup",
+    "form submission tracking",
+    "Google Tag Manager (GTM)",
+    "GTM tag and trigger",
+    "GTM container publish",
+    "Debug Mode testing"
+  ],
+  "events": [
+    {
+      "text": "Plan to test GTM setup using Google Tag Manager Debug Mode",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

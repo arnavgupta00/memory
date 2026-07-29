@@ -1,0 +1,85 @@
+{
+  "session_id": "c734e31e_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have an interview for my green card application next Wednesday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am getting nervous about my green card interview.",
+      "turn_index": 0
+    },
+    {
+      "text": "I waited for almost 6 months for this green card interview appointment.",
+      "turn_index": 0
+    },
+    {
+      "text": "My husband will be accompanying me to the green card interview.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know whether the immigration officer will ask my husband questions.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know whether my husband's role is mainly moral support.",
+      "turn_index": 2
+    },
+    {
+      "text": "I will brief my husband on what to expect during the green card interview.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will review my application and supporting documents to make sure I am familiar with everything.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will brief my husband on what to expect during the green card interview.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will make sure my husband is prepared to answer any questions he might be asked.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have waited for almost 6 months for this green card interview.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know whether I can get a sense of how the interview went from the officer's demeanor or body language.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "green card interview",
+    "next Wednesday",
+    "immigration officer questions",
+    "what to expect during interview",
+    "common mistakes during interview",
+    "supporting documents",
+    "brief husband",
+    "husband role moral support",
+    "interview outcomes",
+    "decision timeline after interview",
+    "officer demeanor body language",
+    "waited almost 6 months"
+  ],
+  "events": [
+    {
+      "text": "Green card application interview scheduled for next Wednesday",
+      "date_hint": "next Wednesday",
+      "turn_index": 0
+    },
+    {
+      "text": "Green card interview appointment waited for almost 6 months",
+      "date_hint": "almost 6 months",
+      "turn_index": 0
+    },
+    {
+      "text": "Green card interview appointment waited for almost 6 months",
+      "date_hint": "almost 6 months",
+      "turn_index": 8
+    }
+  ]
+}

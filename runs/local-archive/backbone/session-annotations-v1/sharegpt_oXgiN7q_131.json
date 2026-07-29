@@ -1,0 +1,90 @@
+{
+  "session_id": "sharegpt_oXgiN7q_131",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user requested adding one brief interaction with a museum employee who works with his mother.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user requested adding one memory of going to the museum with his mother and father when he was much younger.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user requested removing the part about feeling at peace because it has already been said.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user said the character is actually there after school.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user said this happens in the fall.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user requested about 200 words between the story and Jack coming back to the museum on his first day of Christmas break.",
+      "turn_index": 5
+    },
+    {
+      "text": "The user said Jack will spend all day at the museum on his first day of Christmas break.",
+      "turn_index": 5
+    },
+    {
+      "text": "The user said Jack will wander into a storage room and see the mirror for the first time.",
+      "turn_index": 5
+    },
+    {
+      "text": "The user instructed not to mention the mirror in any of the 200 words.",
+      "turn_index": 5
+    },
+    {
+      "text": "The user said the goal is to create a transition between Jack's museum experience in the fall and coming back at Christmas break.",
+      "turn_index": 5
+    },
+    {
+      "text": "The user requested a better transition at the start that bridges the last section ending with \"He was lost in his own world, exploring the museum's secrets and wondering what stories lay behind each artifact\".",
+      "turn_index": 7
+    },
+    {
+      "text": "The user said the character has still not processed or dealt with his grief over the loss of his father.",
+      "turn_index": 7
+    }
+  ],
+  "keyphrases": [
+    "museum employee interaction",
+    "museum memory with mom and dad",
+    "remove feeling at peace",
+    "after school at the museum",
+    "in the fall",
+    "Jack first day of Christmas break",
+    "spend all day at the museum",
+    "wander into a storage room",
+    "see the mirror for the first time",
+    "transition between fall and Christmas break",
+    "grief over loss of his father",
+    "better transition from exploring the museum's secrets"
+  ],
+  "events": [
+    {
+      "text": "Jack comes back to the museum on his first day of Christmas break",
+      "date_hint": "first day of Christmas break",
+      "turn_index": 5
+    },
+    {
+      "text": "Jack spends all day at the museum on his first day of Christmas break",
+      "date_hint": "first day of Christmas break",
+      "turn_index": 5
+    },
+    {
+      "text": "Jack wanders into a storage room and sees the mirror for the first time",
+      "date_hint": "during Christmas break first day at the museum",
+      "turn_index": 5
+    },
+    {
+      "text": "The character is at the museum after school in the fall",
+      "date_hint": "in the fall",
+      "turn_index": 3
+    }
+  ]
+}

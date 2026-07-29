@@ -1,0 +1,117 @@
+{
+  "session_id": "0cf86cbe_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to find new TV shows to watch.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been really into Netflix lately.",
+      "turn_index": 0
+    },
+    {
+      "text": "I finished the first season of \"Lupin\" around mid-January.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am intrigued by \"Money Heist\".",
+      "turn_index": 2
+    },
+    {
+      "text": "I am intrigued by \"Killing Eve\".",
+      "turn_index": 2
+    },
+    {
+      "text": "I usually watch 2-3 episodes a day during my lunch breaks.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have a packed schedule with other shows I am watching.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am still keeping up with the latest episodes of \"The Office\" (US) on Hulu.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am trying to finish the entire series of \"The Office\" before the end of February.",
+      "turn_index": 4
+    },
+    {
+      "text": "I usually watch TV shows on Netflix.",
+      "turn_index": 6
+    },
+    {
+      "text": "I started watching \"Lupin\" around mid-January.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think I can fit \"Money Heist\" or \"Killing Eve\" into my routine.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am already watching \"The Expanse\".",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I will start with \"Money Heist\".",
+      "turn_index": 8
+    },
+    {
+      "text": "I am still trying to finish \"The Office\" before the end of February.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will have to juggle my viewing schedule.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want tips on how to stay organized and keep track of multiple shows at once.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "new TV shows to watch",
+    "Netflix",
+    "Lupin first season",
+    "mid-January",
+    "Money Heist",
+    "Killing Eve",
+    "2-3 episodes a day",
+    "lunch breaks",
+    "finish before end of February",
+    "The Office US Hulu",
+    "entire series",
+    "The Expanse",
+    "watching schedule",
+    "stay organized multiple shows"
+  ],
+  "events": [
+    {
+      "text": "Finished the first season of \"Lupin\"",
+      "date_hint": "around mid-January",
+      "turn_index": 0
+    },
+    {
+      "text": "Started watching \"Lupin\"",
+      "date_hint": "around mid-January",
+      "turn_index": 6
+    },
+    {
+      "text": "Wants to finish shows before the end of February",
+      "date_hint": "before the end of February",
+      "turn_index": 2
+    },
+    {
+      "text": "Wants to finish the entire series of \"The Office\" before the end of February",
+      "date_hint": "before the end of February",
+      "turn_index": 4
+    },
+    {
+      "text": "Wants tips to stay organized while juggling multiple shows before the end of February",
+      "date_hint": "before the end of February",
+      "turn_index": 10
+    }
+  ]
+}

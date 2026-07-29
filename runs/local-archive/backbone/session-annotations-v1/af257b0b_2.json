@@ -1,0 +1,101 @@
+{
+  "session_id": "af257b0b_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a birthday gift for my aunt.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering getting my aunt a kitchen appliance.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering kitchen appliances that cost around $100 or less.",
+      "turn_index": 0
+    },
+    {
+      "text": "I recently got a coffee maker for my mom.",
+      "turn_index": 0
+    },
+    {
+      "text": "The coffee maker I got for my mom cost around $80.",
+      "turn_index": 0
+    },
+    {
+      "text": "My mom loves the coffee maker I got her.",
+      "turn_index": 0
+    },
+    {
+      "text": "I think a slow cooker would be a great option.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think an immersion blender would be a great option.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think my aunt would appreciate the convenience and ease of use of a slow cooker.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want beginner-friendly slow cooker recipes for my aunt.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think my aunt will appreciate the variety of options and the simplicity of the recipes.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will choose a 5-quart slow cooker.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want a slow cooker with multiple heat settings.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want a slow cooker with a timer.",
+      "turn_index": 10
+    },
+    {
+      "text": "I think my aunt can easily make a variety of recipes with the slow cooker.",
+      "turn_index": 10
+    },
+    {
+      "text": "I think my aunt can adjust the cooking time to her liking.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "birthday gift for aunt",
+    "kitchen appliance under $100",
+    "coffee maker for mom",
+    "slow cooker vs immersion blender",
+    "beginner cooking",
+    "slow cooker recipes",
+    "simple slow cooker recipes",
+    "choose slow cooker size",
+    "slow cooker features",
+    "5-quart slow cooker",
+    "multiple heat settings",
+    "slow cooker timer"
+  ],
+  "events": [
+    {
+      "text": "Planning a birthday gift for my aunt",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Choosing a slow cooker as the gift",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Selecting slow cooker size and features (5-quart, multiple heat settings, timer)",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

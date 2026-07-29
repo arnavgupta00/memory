@@ -1,0 +1,73 @@
+{
+  "session_id": "sharegpt_iwYf36y_5",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I asked where GOOGLE_APPLICATION_CREDENTIALS is used and whether it is needed.",
+      "turn_index": 1
+    },
+    {
+      "text": "I asked to set the CRON in the renew-cert.sh file to renew at 3:15 am every day.",
+      "turn_index": 1
+    },
+    {
+      "text": "I asked to include the last part regarding the CRON process in the renew-cert.sh file.",
+      "turn_index": 3
+    },
+    {
+      "text": "I said the process is automated.",
+      "turn_index": 5
+    },
+    {
+      "text": "I asked to replace the docker-compose.yml file and include the changes there.",
+      "turn_index": 5
+    },
+    {
+      "text": "I said the certbot iteration loop was totally changed and that the previous version is better.",
+      "turn_index": 5
+    },
+    {
+      "text": "I said the original instructions were lost and that the result is totally wrong.",
+      "turn_index": 7
+    }
+  ],
+  "keyphrases": [
+    "GOOGLE_APPLICATION_CREDENTIALS usage",
+    "GOOGLE_APPLICATION_CREDENTIALS needed",
+    "renew-cert.sh CRON",
+    "CRON renew at 3:15 am",
+    "renew-cert.sh CRON process",
+    "docker-compose.yml replacement",
+    "automated cert renewal",
+    "certbot iteration loop",
+    "previous certbot loop",
+    "original instructions lost"
+  ],
+  "events": [
+    {
+      "text": "Set CRON in renew-cert.sh to renew at 3:15 am every day",
+      "date_hint": "",
+      "turn_index": 1
+    },
+    {
+      "text": "Requested inclusion of the last part regarding the CRON process in renew-cert.sh",
+      "date_hint": "",
+      "turn_index": 3
+    },
+    {
+      "text": "Requested replacing docker-compose.yml and including the changes there",
+      "date_hint": "",
+      "turn_index": 5
+    },
+    {
+      "text": "Reported that certbot iteration loop was changed and preferred the previous version",
+      "date_hint": "",
+      "turn_index": 5
+    },
+    {
+      "text": "Reported that original instructions were lost and the result is totally wrong",
+      "date_hint": "",
+      "turn_index": 7
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "session_id": "sharegpt_u67Oja3_13",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user wants to write a newsletter about a newly launched centre.",
+      "turn_index": 1
+    },
+    {
+      "text": "The centre has been operating for 1 year as of the day the user wrote the request.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user says key achievements include hiring residents.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user says the centre has brought residents in.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user says the centre is run completely on donations.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user says the donations come from selfless individuals.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user wants a copy to get more public donations.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user wants the donation copy to be shareable over WhatsApp.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user wants an email sent to companies.",
+      "turn_index": 5
+    }
+  ],
+  "keyphrases": [
+    "newsletter for newly launched centre",
+    "centre progress update",
+    "1 year anniversary",
+    "hiring residents",
+    "bringing residents",
+    "run on donations",
+    "public donations",
+    "WhatsApp donation message",
+    "email to companies",
+    "company outreach email"
+  ],
+  "events": [
+    {
+      "text": "Anniversary update for the centre being 1 year old",
+      "date_hint": "as of today (1 year)",
+      "turn_index": 1
+    },
+    {
+      "text": "Request to create WhatsApp-ready copy to get more public donations",
+      "date_hint": "",
+      "turn_index": 3
+    },
+    {
+      "text": "Request to send an email to companies",
+      "date_hint": "",
+      "turn_index": 5
+    }
+  ]
+}

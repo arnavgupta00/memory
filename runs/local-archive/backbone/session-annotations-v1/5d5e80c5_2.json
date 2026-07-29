@@ -1,0 +1,93 @@
+{
+  "session_id": "5d5e80c5_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Miami in April for a friend's wedding.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering using my credit card points to book a domestic round-trip ticket.",
+      "turn_index": 0
+    },
+    {
+      "text": "I just got back from LA.",
+      "turn_index": 0
+    },
+    {
+      "text": "I flew from New York to Los Angeles on American Airlines on February 10th.",
+      "turn_index": 0
+    },
+    {
+      "text": "My American Airlines flight on February 10th was delayed by an hour due to air traffic control issues.",
+      "turn_index": 0
+    },
+    {
+      "text": "I was seated in economy class on the American Airlines flight.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was seated in row 17 on the American Airlines flight.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was seated in seat C on the American Airlines flight.",
+      "turn_index": 2
+    },
+    {
+      "text": "I watched the movie \"La La Land\" during the flight.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering booking a morning flight from JFK to MIA.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am still deciding between American Airlines and Delta for my morning flight from JFK to MIA.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I will go with American Airlines for my morning flight from JFK to MIA.",
+      "turn_index": 10
+    },
+    {
+      "text": "On my previous flight from New York to Los Angeles on American Airlines on February 10th, I had a turkey sandwich as my in-flight meal.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to Miami in April",
+    "friend's wedding",
+    "credit card points",
+    "domestic round-trip ticket",
+    "New York to Los Angeles flight",
+    "American Airlines February 10",
+    "flight delayed by an hour",
+    "air traffic control issues",
+    "economy class row 17 seat C",
+    "La La Land movie",
+    "direct flights JFK to Miami",
+    "in-flight meal services",
+    "average flight duration JFK to MIA",
+    "free checked bags",
+    "priority boarding with credit cards",
+    "morning flight JFK to MIA",
+    "free breakfast on morning flights",
+    "American Airlines vs Delta",
+    "Wi-Fi on flights",
+    "American Airlines turkey sandwich in-flight meal",
+    "JFK to MIA morning flight"
+  ],
+  "events": [
+    {
+      "text": "Flight from New York to Los Angeles on American Airlines delayed by an hour due to air traffic control issues",
+      "date_hint": "February 10th",
+      "turn_index": 0
+    },
+    {
+      "text": "Seated in economy class, row 17, seat C, and watched \"La La Land\" during the flight",
+      "date_hint": "February 10th",
+      "turn_index": 2
+    }
+  ]
+}

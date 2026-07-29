@@ -1,0 +1,120 @@
+{
+  "session_id": "d1f30ac6_5",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I signed up for the CVS loyalty program and received a $5 off $25 coupon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I used the CVS $5 off $25 coupon on May 25th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I bought shampoo with the May 25th purchase using the CVS coupon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I bought conditioner with the May 25th purchase using the CVS coupon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I bought a magazine with the May 25th purchase using the CVS coupon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I saved $5 on my May 25th purchase using the CVS $5 off $25 coupon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I received a 20% off coupon from H&M in April.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to create a coupon binder and categorize coupons by expiration date and store.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been earning cashback from Ibotta.",
+      "turn_index": 4
+    },
+    {
+      "text": "I joined the CVS loyalty program and received a $5 off $25 coupon for joining.",
+      "turn_index": 4
+    },
+    {
+      "text": "I got a $5 off $25 coupon just for joining CVS's loyalty program.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to include receipts in my binder for purchases like my H&M purchase in April.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to create a separate section in my binder for receipts.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been earning cashback from Ibotta.",
+      "turn_index": 6
+    },
+    {
+      "text": "I just joined the loyalty program at CVS.",
+      "turn_index": 6
+    },
+    {
+      "text": "I used the CVS $5 off $25 coupon on May 25th when I bought shampoo, conditioner, and a magazine.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am planning my next shopping trip to CVS.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "coupon organization",
+    "coupon binder",
+    "expiration date",
+    "store categories",
+    "CVS loyalty program",
+    "$5 off $25 coupon",
+    "May 25 purchase",
+    "shampoo conditioner magazine",
+    "H&M 20% off coupon",
+    "Ibotta cashback",
+    "receipts in binder",
+    "maximize CVS savings"
+  ],
+  "events": [
+    {
+      "text": "Signed up for the CVS loyalty program and received a $5 off $25 coupon",
+      "date_hint": "last week",
+      "turn_index": 0
+    },
+    {
+      "text": "Used the CVS $5 off $25 coupon on a May 25th purchase (shampoo, conditioner, magazine)",
+      "date_hint": "May 25th",
+      "turn_index": 0
+    },
+    {
+      "text": "Received a 20% off coupon from H&M",
+      "date_hint": "April",
+      "turn_index": 2
+    },
+    {
+      "text": "Joined the CVS loyalty program and received a $5 off $25 coupon for joining",
+      "date_hint": "recently",
+      "turn_index": 4
+    },
+    {
+      "text": "Used the CVS $5 off $25 coupon on a May 25th purchase (shampoo, conditioner, magazine)",
+      "date_hint": "May 25th",
+      "turn_index": 8
+    },
+    {
+      "text": "Planning next shopping trip to CVS",
+      "date_hint": "next shopping trip",
+      "turn_index": 10
+    }
+  ]
+}

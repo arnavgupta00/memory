@@ -1,0 +1,110 @@
+{
+  "session_id": "c63b2c8f",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to get a better handle on my grocery spending.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want help tracking my expenses.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want tips on how to save money.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to track my expenses using a simple notebook.",
+      "turn_index": 2
+    },
+    {
+      "text": "I buy non-grocery items at stores like Walmart.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought Diet Coke and cereal at Walmart last Saturday.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to start tracking my expenses today.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to plan my meals and make a shopping list before I go to the store.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to plan my meals for the week and make a shopping list.",
+      "turn_index": 6
+    },
+    {
+      "text": "I still need to pick up milk.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning my meals for the next few days.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am making a shopping list based on what I need.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am trying to remember what I have at home.",
+      "turn_index": 8
+    },
+    {
+      "text": "I need to pick up milk and a few other things.",
+      "turn_index": 8
+    },
+    {
+      "text": "I went to Walmart last Saturday.",
+      "turn_index": 8
+    },
+    {
+      "text": "I got chicken breasts at Walmart last Saturday.",
+      "turn_index": 8
+    },
+    {
+      "text": "I used the chicken breasts to make chicken sandwiches yesterday.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "grocery spending tracking",
+    "expense tracking notebook",
+    "non-grocery items at Walmart",
+    "Diet Coke",
+    "cereal",
+    "meal planning",
+    "shopping list",
+    "plan meals for the week",
+    "pick up milk",
+    "Walmart last Saturday",
+    "chicken breasts",
+    "chicken sandwiches"
+  ],
+  "events": [
+    {
+      "text": "Bought Diet Coke and cereal at Walmart",
+      "date_hint": "last Saturday",
+      "turn_index": 2
+    },
+    {
+      "text": "Started tracking expenses today",
+      "date_hint": "today",
+      "turn_index": 4
+    },
+    {
+      "text": "Went to Walmart and bought chicken breasts",
+      "date_hint": "last Saturday",
+      "turn_index": 8
+    },
+    {
+      "text": "Made chicken sandwiches using chicken breasts",
+      "date_hint": "yesterday",
+      "turn_index": 8
+    }
+  ]
+}

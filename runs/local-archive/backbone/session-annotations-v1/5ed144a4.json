@@ -1,0 +1,125 @@
+{
+  "session_id": "5ed144a4",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a beach vacation in April.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering the Bahamas for a relaxing beach vacation.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering Jamaica for a relaxing beach vacation.",
+      "turn_index": 2
+    },
+    {
+      "text": "I recently got an email about a sale on flights to the Caribbean.",
+      "turn_index": 2
+    },
+    {
+      "text": "I flew on United Airlines for the first time in over a year on January 10th.",
+      "turn_index": 2
+    },
+    {
+      "text": "I flew on United Airlines to visit my sister in Chicago.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was surprised that United Airlines still offers complimentary snacks and drinks.",
+      "turn_index": 2
+    },
+    {
+      "text": "I decided to go with the Bahamas.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want seclusion on my Bahamas vacation.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been collecting airline miles.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am trying to maximize my rewards.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been using my credit card to earn miles on American Airlines.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am flexible with my travel plans.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am looking for a good deal on flights.",
+      "turn_index": 8
+    },
+    {
+      "text": "I redeemed 20,000 miles for a free flight on Southwest Airlines.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will take my Southwest Airlines free flight to Las Vegas in March.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have flown with Southwest Airlines a few times before.",
+      "turn_index": 10
+    },
+    {
+      "text": "I generally like Southwest Airlines service.",
+      "turn_index": 10
+    },
+    {
+      "text": "I appreciate that Southwest Airlines flight attendants are usually friendly.",
+      "turn_index": 10
+    },
+    {
+      "text": "I appreciate Southwest Airlines free checked bags.",
+      "turn_index": 10
+    },
+    {
+      "text": "I appreciate Southwest Airlines no-change-fee policy.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "beach vacation April",
+    "Caribbean destinations",
+    "Bahamas vs Jamaica",
+    "flight sale email",
+    "United Airlines January 10",
+    "complimentary snacks and drinks",
+    "airline miles collection",
+    "maximize rewards",
+    "American Airlines miles credit card",
+    "Southwest Airlines 20,000 miles",
+    "free flight to Las Vegas",
+    "Southwest Airlines March trip",
+    "Southwest Airlines friendly flight attendants",
+    "free checked bags",
+    "no-change-fee policy",
+    "relaxing vacation seclusion"
+  ],
+  "events": [
+    {
+      "text": "Flew on United Airlines to visit my sister in Chicago",
+      "date_hint": "January 10th",
+      "turn_index": 2
+    },
+    {
+      "text": "Redeemed 20,000 miles for a free Southwest Airlines flight to Las Vegas",
+      "date_hint": "recently",
+      "turn_index": 8
+    },
+    {
+      "text": "Will take the Southwest Airlines free flight to Las Vegas",
+      "date_hint": "in March",
+      "turn_index": 8
+    }
+  ]
+}

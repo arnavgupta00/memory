@@ -1,0 +1,45 @@
+{
+  "session_id": "sharegpt_0mXdmE3_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I asked which functions are common to ERC-721 and which are custom.",
+      "turn_index": 0
+    },
+    {
+      "text": "I listed a set of contract functions by 4-byte selectors, including buyAlbum(bytes32[]), buySong(bytes32[]), publicMint(), destroyPublic(uint256,uint256), claimAlbum(uint256,uint256), tokenURI(uint256), setImportantURIs(string,string), reclaimERC20Token(address), reclaimERC721(address,uint256), setStartTimes(uint256,uint256,uint256,uint256), setMerkleRoot(bytes32,bytes32), setArtistWallet(address), setNFTContract(address), setRoyalty(address,uint96), setQuorum(uint256), setPricePerToken(uint256,uint256), setSplitsWallet(address), withdrawToSplits(), _isContract(address), _startTokenId(), supportsInterface(bytes4), isProofValid(address,uint256,bytes32[]), and isProofValid2(address,uint256,bytes32[]).",
+      "turn_index": 0
+    },
+    {
+      "text": "I described contract variables including baseURI, imageURL, contractURI, root, root2, ablumSaleStartTime, songSaleStartTime, publicStartTime, destroyExperienceStartTime, albumPrice, songPrice, belongsToAlbum, MAX_SUPPLY, quorum, songCounter, tokenTypesMap, destoryExperinceVotes, isRestricted, splitsWallet, nftContract, and artistWallet.",
+      "turn_index": 0
+    },
+    {
+      "text": "I asked to put all of these functions in a table with a column indicating whether each function is standard or custom.",
+      "turn_index": 2
+    },
+    {
+      "text": "I asked why tokenURI is considered custom and whether tokenURI is part of a standard.",
+      "turn_index": 4
+    },
+    {
+      "text": "I asked for a brief description of what each function does in a separate column, to the extent that the assistant knows.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "ERC-721 standard vs custom functions",
+    "function selector list",
+    "buyAlbum(bytes32[])",
+    "buySong(bytes32[])",
+    "publicMint()",
+    "destroyPublic(uint256,uint256)",
+    "claimAlbum(uint256,uint256)",
+    "tokenURI(uint256)",
+    "setImportantURIs(string,string)",
+    "reclaimERC20Token(address)",
+    "reclaimERC721(address,uint256)",
+    "supportsInterface(bytes4)"
+  ],
+  "events": []
+}

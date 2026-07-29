@@ -1,0 +1,80 @@
+{
+  "session_id": "2640c1b0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user is looking for new grill recipes.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user wants a BBQ sauce that is sweet and spicy.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user tried a spicy BBQ sauce with a hint of honey at a friend's party recently.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user wants to know whether recipes come close to that sweet-and-spicy honey flavor profile.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user wants to use the Sweet Heat BBQ Sauce recipe for chicken breasts.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user is asking whether the Sweet Heat BBQ Sauce recipe is better suited for ribs or burgers.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user wants to use the Sweet Heat BBQ Sauce recipe for slow-cooked ribs.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user is asking whether ingredient adjustments are needed for a long cooking time.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user wants to use the adjusted sauce for beef brisket as well.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user is asking whether further changes are needed for beef brisket.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user is thinking of trying the BBQ sauce on chicken breasts this weekend.",
+      "turn_index": 10
+    },
+    {
+      "text": "The user is asking whether to grill or bake chicken breasts with the BBQ sauce.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "new grill recipes",
+    "sweet and spicy BBQ sauce",
+    "BBQ sauce with honey",
+    "Sweet Heat BBQ Sauce recipe",
+    "chicken breasts BBQ sauce",
+    "ribs BBQ sauce",
+    "burgers BBQ sauce",
+    "slow-cooked ribs sauce adjustment",
+    "beef brisket BBQ sauce",
+    "grilling vs baking chicken breasts",
+    "this weekend chicken breasts",
+    "friend's party BBQ sauce"
+  ],
+  "events": [
+    {
+      "text": "Tried a spicy BBQ sauce with a hint of honey at a friend's party.",
+      "date_hint": "recently",
+      "turn_index": 2
+    },
+    {
+      "text": "Plans to try the BBQ sauce on chicken breasts this weekend.",
+      "date_hint": "this weekend",
+      "turn_index": 10
+    }
+  ]
+}

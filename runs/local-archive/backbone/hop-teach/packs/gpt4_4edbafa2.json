@@ -1,0 +1,33 @@
+{
+  "question_id": "gpt4_4edbafa2",
+  "question_type": "temporal-reasoning",
+  "question": "What was the date on which I attended the first BBQ event in June?",
+  "question_date": "2023/07/01 (Sat) 02:36",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_0a00c163_1",
+    "answer_0a00c163_2"
+  ],
+  "haystack_session_count": 41,
+  "notes_coverage": "partial",
+  "annotated_session_count": 5,
+  "gold_sessions": [
+    {
+      "session_id": "answer_0a00c163_1",
+      "date": "2023/07/01 (Sat) 22:07",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_0a00c163_1\n[session_date] 2023/07/01 (Sat) 22:07\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm looking for some recommendations on BBQ sauce brands. I recently used up my favorite Sweet Baby Ray's at my friend's place last Saturday, which was on the 17th of June, and I need to restock.\n\n[turn 2] I've been trying out different marinades and seasoning combinations lately, do you have any recommendations for a good Korean-style BBQ marinade? I recently made some delicious Korean-style BBQ beef short ribs using a recipe I found online, and I'd love to try out some new flavors.\n\n[turn 4] I've been experimenting with different types of wood chips to add smoky flavors to my BBQ dishes. I recently tried using apple wood chips for the first time, and it added a lovely fruity flavor to my grilled chicken. Do you have any recommendations for other types of wood chips that would pair well with Korean-style BBQ?\n\n[turn 6] I've been thinking of hosting my own BBQ party soon and I'm planning to invest in a new patio set that can accommodate a large group of people. Do you have any recommendations for outdoor furniture that's durable, comfortable, and easy to clean?\n\n[turn 8] I'm thinking of having a variety of BBQ dishes at my party, including some vegetarian options for my non-meat-eating friends. Do you have any recommendations for some delicious vegetarian BBQ dishes that are easy to make and will impress my guests?\n\n[turn 10] I'm thinking of making some Korean-style BBQ dishes for my party, like bulgogi and galbi. Do you have any recommendations for some delicious Korean-style BBQ vegetarian options that I could serve alongside the meat dishes?"
+    },
+    {
+      "session_id": "answer_0a00c163_2",
+      "date": "2023/07/01 (Sat) 06:18",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_0a00c163_2\n[session_date] 2023/07/01 (Sat) 06:18\n[notes] (empty)",
+      "user_turns": "[turn 0] Hi! I'm looking for some recommendations on BBQ sauce brands. I've been using Sweet Baby Ray's and love it, but I want to try something new. I attended a backyard BBQ party at my colleague's house on the 3rd of June, and they had an amazing selection of BBQ sauces.\n\n[turn 2] What's the difference between Kansas City Masterpiece and Gates BBQ Sauce? They both seem to have a thick and sweet flavor profile.\n\n[turn 4] I think I'll try out Kansas City Masterpiece. Since I've been experimenting with different BBQ recipes at home, I want to ask, do you have any tips on how to achieve that perfect smoky flavor when grilling?\n\n[turn 6] I've been experimenting with different types of wood chips lately, and I tried apple wood chips last weekend. It added a lovely fruity flavor to my grilled chicken. I'm thinking of trying out hickory wood chips next. Do you have any tips on how to use hickory wood chips effectively?\n\n[turn 8] I've been meaning to try out some BBQ recipes with a Korean twist, like the one I made on the 10th of June. Do you have any recommendations for Korean-style BBQ sauces or marinades that I could use?\n\n[turn 10] I'm thinking of hosting my own BBQ party soon, and I want to make sure I have a variety of dishes to cater to my guests' different tastes. I was thinking of making some Korean-style BBQ dishes, like the one I made on the 10th of June, as well as some more traditional BBQ favorites. Do you have any tips on how to plan a successful BBQ party?"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

@@ -1,0 +1,33 @@
+{
+  "question_id": "73d42213",
+  "question_type": "multi-session",
+  "question": "What time did I reach the clinic on Monday?",
+  "question_date": "2023/05/30 (Tue) 22:10",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_1881e7db_1",
+    "answer_1881e7db_2"
+  ],
+  "haystack_session_count": 49,
+  "notes_coverage": "partial",
+  "annotated_session_count": 8,
+  "gold_sessions": [
+    {
+      "session_id": "answer_1881e7db_1",
+      "date": "2023/05/20 (Sat) 23:43",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_1881e7db_1\n[session_date] 2023/05/20 (Sat) 23:43\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm feeling a bit overwhelmed with work after the long weekend. Can you help me organize my tasks and prioritize them based on the project deadline?\n\n[turn 2] I had a doctor's appointment last Monday, so I took a half-day off from work and got back to the office around 1:00 PM. I've been playing catch-up since then. As for my projects, I have a deadline approaching fast, and I'm not sure where to start. Can you help me break down my tasks into smaller steps?\n\n[turn 4] I left home at 7 AM on Monday for my doctor's appointment, and I'm still trying to get my rhythm back. As for the project, it's a marketing campaign, and the deadline is in two weeks. I'm not sure where to start, but I know I need to finalize the content, design the visuals, and coordinate with the team for the launch.\n\n[turn 6] That's a great start. I think I can work with this outline. However, I'm still feeling a bit overwhelmed. Can you help me create a schedule or timeline for these tasks? I want to make sure I'm allocating enough time for each task and avoiding last-minute rushes.\n\n[turn 8] I think the schedule looks good, but I'm concerned about fitting in some extra hours to account for unexpected tasks or delays. Can you suggest some strategies for building in some buffer time or flexibility into the schedule? Also, are there any tools or apps that you recommend for tracking progress and staying organized?\n\n[turn 10] I think I'll try to allocate some buffer days and pad my task estimates by 10-20%. I've used Trello before, so I might stick with that for task management. I'm also curious about RescueTime, as I've heard it can help me optimize my productivity.\n\nOne more thing - since I have a lot of meetings and calls scheduled, can you suggest some strategies for taking effective notes during those meetings, and then translating those notes into actionable tasks?"
+    },
+    {
+      "session_id": "answer_1881e7db_2",
+      "date": "2023/05/30 (Tue) 00:00",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_1881e7db_2\n[session_date] 2023/05/30 (Tue) 00:00\n[notes] (empty)",
+      "user_turns": "[turn 0] I need to reschedule my follow-up doctor's appointment. Can you help me find nearby clinics with available slots? By the way, I'm coming from my home, and it took me two hours to get to the clinic last time, so I'd like to find something closer.\n\n[turn 2] I'm located in 12345, and I need to see my primary care doctor. I'm available anytime on weekdays, but I'd prefer morning slots. As I mentioned earlier, it took me two hours to get to the clinic from my home last time, so if I could find something within an hour's drive, that would be great.\n\n[turn 4] I think I'll try to contact Family Care Medical Center first. Can you help me prepare a list of questions to ask when I call them?\n\n[turn 6] I'll ask them about the wait time for new patients. How long do they expect me to wait before seeing the doctor, and do they offer any kind of reminder system to minimize wait times?\n\n[turn 8] Is it possible to request a doctor who has experience with my specific condition, and would that affect the wait time or availability?\n\n[turn 10] I think I'll ask them about the doctor's experience with my condition. Can I request to see a specific doctor, and would that affect the wait time or availability?"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

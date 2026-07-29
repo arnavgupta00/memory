@@ -1,0 +1,32 @@
+{
+  "session_id": "sharegpt_qCpHDRF_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user wants a PowerShell script to count the number of PDF files within an array of multiple subfolders.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user wants the script to export results using Export-CSV.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user wants the output to include the folder name and the number of PDF files within each folder.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user wants a progress bar that updates once for each subfolder.",
+      "turn_index": 0
+    }
+  ],
+  "keyphrases": [
+    "PowerShell script",
+    "count PDF files",
+    "array of subfolders",
+    "Export-CSV output",
+    "folder name and PDF count",
+    "progress bar per subfolder",
+    "count files in folders"
+  ],
+  "events": []
+}

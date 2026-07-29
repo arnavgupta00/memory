@@ -1,0 +1,53 @@
+{
+  "session_id": "sharegpt_4PwGTCZ_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user asked where additional image links are in SQL for PrestaShop.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user wanted an SQL query to select all images for all product_id and additional images.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user wanted the main image in a column named \"main_image\" and additional gallery images in other columns with each picture in a single column.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user reported that the images column values are NULL.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user wanted to select all id_product with id_lang 7 from ps_product_lang.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user wanted a query that outputs different columns including id_products, description, description_short, link_rewrite, meta_description, meta_title, and name.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user asked to create a SQL query that exports all information for each product in a single column.",
+      "turn_index": 10
+    },
+    {
+      "text": "The user wanted the export to include product images, attributes and options of the product, and categories.",
+      "turn_index": 12
+    }
+  ],
+  "keyphrases": [
+    "PrestaShop SQL additional images",
+    "additional image links",
+    "SQL query select all images",
+    "product_id additional images",
+    "main_image column",
+    "additional gallery columns",
+    "images column NULL",
+    "id_product id_lang 7",
+    "ps_product_lang",
+    "link_rewrite meta_description meta_title",
+    "export all product information single column",
+    "include product attributes options categories"
+  ],
+  "events": []
+}

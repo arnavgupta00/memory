@@ -1,0 +1,110 @@
+{
+  "session_id": "09d021e7_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I upgraded my router to a TP-Link Archer AX50.",
+      "turn_index": 0
+    },
+    {
+      "text": "I bought the TP-Link Archer AX50 online from Amazon for around $150.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been having issues with my internet connection lately.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am experiencing slow internet speeds.",
+      "turn_index": 2
+    },
+    {
+      "text": "The slow internet speeds are especially in the evening.",
+      "turn_index": 2
+    },
+    {
+      "text": "The slow speeds happen when multiple devices are connected.",
+      "turn_index": 2
+    },
+    {
+      "text": "The issues started a few days ago.",
+      "turn_index": 2
+    },
+    {
+      "text": "The slow internet speeds affect all devices connected to the router.",
+      "turn_index": 2
+    },
+    {
+      "text": "I restarted the router a few times.",
+      "turn_index": 2
+    },
+    {
+      "text": "Restarting the router temporarily fixed the slow internet issue.",
+      "turn_index": 2
+    },
+    {
+      "text": "I checked my ISP's status page.",
+      "turn_index": 4
+    },
+    {
+      "text": "My ISP's status page showed no reported outages or maintenance in my area.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am not sure about the router configuration or firmware updates.",
+      "turn_index": 4
+    },
+    {
+      "text": "I asked for a step-by-step process to update the firmware on my TP-Link Archer AX50 router.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am not very tech-savvy.",
+      "turn_index": 8
+    },
+    {
+      "text": "I believe I should download the firmware file from TP-Link's website and upload it to my router through the router's web interface.",
+      "turn_index": 8
+    },
+    {
+      "text": "I believe I should not interrupt the update process or turn off the router during the update.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know whether there have been changes in my internet speed since upgrading to the TP-Link Archer AX50 router.",
+      "turn_index": 10
+    },
+    {
+      "text": "I mentioned troubleshooting steps such as checking for channel congestion or device interference.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "TP-Link Archer AX50",
+    "router firmware update",
+    "Amazon purchase",
+    "slow internet speeds",
+    "evening slow speeds",
+    "multiple devices connected",
+    "restart router",
+    "ISP status page",
+    "no outages",
+    "router configuration",
+    "firmware file from TP-Link",
+    "router web interface",
+    "channel congestion",
+    "device interference"
+  ],
+  "events": [
+    {
+      "text": "Checked ISP status page for outages or maintenance",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Restarted the router a few times to temporarily fix slow speeds",
+      "date_hint": "a few days ago",
+      "turn_index": 2
+    }
+  ]
+}

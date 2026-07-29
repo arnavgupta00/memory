@@ -1,0 +1,92 @@
+{
+  "session_id": "d12d5a98_5",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking into getting an airline credit card to earn more miles and rewards.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been hearing good things about the Chase Sapphire card.",
+      "turn_index": 0
+    },
+    {
+      "text": "I just got back from a trip to Chicago.",
+      "turn_index": 0
+    },
+    {
+      "text": "I had to check a bag on my trip to Chicago because I had a lot of winter gear.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in transferring points to airline loyalty programs.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to maximize the value of my points if I transfer them to a specific airline program.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of transferring my points to United MileagePlus.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have had good experiences with United MileagePlus before.",
+      "turn_index": 4
+    },
+    {
+      "text": "I had a return flight from LA.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am planning to book a flight to Miami soon.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning to pack more snacks for my next flight.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am not sure what types of food are allowed in my carry-on.",
+      "turn_index": 8
+    },
+    {
+      "text": "I asked about the TSA's rules on snacks in carry-on bags.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "airline credit card",
+    "Chase Sapphire card",
+    "earn more miles and rewards",
+    "trip to Chicago",
+    "checked a bag winter gear",
+    "transfer points to airline loyalty programs",
+    "maximize value of points",
+    "United MileagePlus",
+    "return flight from LA",
+    "award seats to Miami",
+    "United award seats",
+    "ExpertFlyer",
+    "TSA rules snacks carry-on",
+    "allowed food in carry-on",
+    "pack snacks for next flight"
+  ],
+  "events": [
+    {
+      "text": "Trip to Chicago with a checked bag for winter gear",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to book a flight to Miami soon",
+      "date_hint": "soon",
+      "turn_index": 6
+    },
+    {
+      "text": "Planning to pack more snacks for the next flight and checking TSA carry-on snack rules",
+      "date_hint": "",
+      "turn_index": 8
+    }
+  ]
+}

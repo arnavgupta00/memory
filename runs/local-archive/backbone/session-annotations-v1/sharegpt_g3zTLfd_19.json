@@ -1,0 +1,54 @@
+{
+  "session_id": "sharegpt_g3zTLfd_19",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user tried an approach already and it did not work.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user is working on making graph figures compatible with a canvas_widget in a scrollable Tkinter setup.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user wants the figure height to be any height between a minimum and the canvas_widget height.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user wants the scroll bar linked to the canvas_widget so scrolling works regardless of any maximum height.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user has been prompting since the morning for the same issue and has made no progress.",
+      "turn_index": 5
+    },
+    {
+      "text": "The user wants to try another approach by first saving the figures and then showing the figures in a Tkinter window.",
+      "turn_index": 5
+    }
+  ],
+  "keyphrases": [
+    "canvas_widget",
+    "graph figures",
+    "Tkinter window",
+    "scroll bar linked",
+    "figure height",
+    "min to canvas_widget height",
+    "scrolling no matter max height",
+    "save figures first",
+    "show figures in tkinter",
+    "prompting since morning"
+  ],
+  "events": [
+    {
+      "text": "The user tried an approach and it did not work.",
+      "date_hint": "",
+      "turn_index": 1
+    },
+    {
+      "text": "The user has been prompting since the morning with no progress.",
+      "date_hint": "morning",
+      "turn_index": 5
+    }
+  ]
+}

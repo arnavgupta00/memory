@@ -1,0 +1,85 @@
+{
+  "session_id": "e9c1ef4b_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a business trip to New York next week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to create a packing list for a formal event.",
+      "turn_index": 0
+    },
+    {
+      "text": "I forgot to pack a belt on my last business trip to Chicago.",
+      "turn_index": 0
+    },
+    {
+      "text": "For my next trip, I plan to pack a few dress shirts.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering bringing a portable steamer or a travel iron to keep clothes looking their best.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to bring a portable steamer because I have a few delicate fabrics.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am shopping for new clothes and want to look for wrinkle-resistant or quick-drying fabrics.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to add a travel-sized lint roller to my packing list.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am still thinking about my last business trip to Chicago when I forgot to pack a belt.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering packing a travel-sized sewing kit with basic threads and needles for quick repairs.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to pack a small packet of stain remover wipes.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know whether packing stain remover wipes is a good idea.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "business trip packing list",
+    "formal event packing list",
+    "New York next week",
+    "last business trip Chicago belt",
+    "dress shirts for meetings",
+    "portable steamer vs travel iron",
+    "delicate fabrics",
+    "wrinkle-resistant fabrics",
+    "quick-drying fabrics",
+    "travel-sized lint roller",
+    "travel-sized sewing kit",
+    "stain remover wipes"
+  ],
+  "events": [
+    {
+      "text": "Planning a business trip to New York next week",
+      "date_hint": "next week",
+      "turn_index": 0
+    },
+    {
+      "text": "Last business trip to Chicago where a belt was forgotten",
+      "date_hint": "last business trip",
+      "turn_index": 0
+    },
+    {
+      "text": "Last business trip to Chicago where a belt was forgotten (rementioned)",
+      "date_hint": "last business trip",
+      "turn_index": 8
+    }
+  ]
+}

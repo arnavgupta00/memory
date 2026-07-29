@@ -1,0 +1,89 @@
+{
+  "session_id": "e3150810",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning out my weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a quick and easy breakfast recipe to make on Sunday morning.",
+      "turn_index": 0
+    },
+    {
+      "text": "I will try avocado toast this Sunday.",
+      "turn_index": 2
+    },
+    {
+      "text": "I wipe down my kitchen counters every evening.",
+      "turn_index": 2
+    },
+    {
+      "text": "I follow a one-touch rule in the kitchen.",
+      "turn_index": 4
+    },
+    {
+      "text": "I take out the trash and recycling on a day of the week I usually do.",
+      "turn_index": 4
+    },
+    {
+      "text": "I set reminders on my phone.",
+      "turn_index": 6
+    },
+    {
+      "text": "I started my daily cleaning routine about three weeks ago.",
+      "turn_index": 8
+    },
+    {
+      "text": "My daily cleaning routine has been making a huge difference in my apartment's cleanliness and organization.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want a quick and easy lunch recipe to make on a weekday.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will try a grilled cheese sandwich with ham and tomato.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want suggestions for a side dish that would go well with the grilled cheese sandwich with ham and tomato.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "weekend planning",
+    "quick and easy breakfast recipe",
+    "Sunday morning breakfast",
+    "avocado toast",
+    "keep kitchen counters clean",
+    "wipe down counters every evening",
+    "one-touch rule in the kitchen",
+    "take out trash and recycling day of week",
+    "phone reminders",
+    "daily cleaning routine",
+    "three weeks ago",
+    "apartment cleanliness and organization",
+    "quick and easy lunch recipe",
+    "weekday lunch",
+    "grilled cheese sandwich with ham and tomato",
+    "side dish for grilled cheese"
+  ],
+  "events": [
+    {
+      "text": "Trying avocado toast this Sunday",
+      "date_hint": "this Sunday",
+      "turn_index": 2
+    },
+    {
+      "text": "Starting a daily cleaning routine about three weeks ago",
+      "date_hint": "about three weeks ago",
+      "turn_index": 8
+    },
+    {
+      "text": "Trying a grilled cheese sandwich with ham and tomato",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

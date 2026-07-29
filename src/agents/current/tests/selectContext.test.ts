@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { buildContextPackage } from "../src/nodes/selectContext.js";
+import { buildContextPackage, lexicalFloorRefs } from "../src/nodes/selectContext.js";
 import type { SelectedSpan } from "../src/retrieval/types.js";
 import type { TimestampedSession } from "../src/types.js";
 
@@ -291,5 +291,66 @@ describe("buildContextPackage", () => {
     });
     expect(built.package.items).toHaveLength(1);
     expect(built.warnings).toContain("dropped_package_max_turns");
+  });
+
+  it("lexicalFloorRefs orders by bestRank and prefers user turns", () => {
+    const refs = lexicalFloorRefs(spans, 2);
+    expect(refs.map((ref) => `${ref.sessionId}:${String(ref.turnIndex)}`)).toEqual([
+      "s1:0",
+      "s2:0",
+    ]);
+  });
+
+  it("lexical floor recovers none_found with BM25 supporting turns", () => {
+    const built = buildContextPackage({
+      selectOutput: {
+        queryShape: "lookup",
+        setBoundary: "apples",
+        candidateStatus: "none_found",
+        missingRisk: "selector empty",
+        items: [],
+      },
+      sessions,
+      spans,
+      packageMaxTurns: 40,
+      packageCharBudget: 40_000,
+      packageSupportingEnabled: true,
+      lexicalFloorEnabled: true,
+      lexicalFloorMax: 2,
+    });
+    expect(built.package.candidateStatus).toBe("found");
+    expect(built.package.items.map((item) => `${item.sessionId}:${String(item.turnIndex)}`)).toEqual([
+      "s1:0",
+      "s2:0",
+    ]);
+    expect(built.package.items.every((item) => item.tier === "supporting")).toBe(true);
+  });
+
+  it("lexical floor unions into supporting ahead of sibling expansion budget", () => {
+    const built = buildContextPackage({
+      selectOutput: {
+        queryShape: "lookup",
+        setBoundary: "apples",
+        candidateStatus: "found",
+        missingRisk: "n/a",
+        items: [{ sessionId: "s1", turnIndex: 0, why: "three" }],
+      },
+      sessions,
+      spans,
+      packageMaxTurns: 3,
+      packageCharBudget: 40_000,
+      packageSupportingEnabled: true,
+      question: "How many apples?",
+      siblingSessionsEnabled: false,
+      fullSessionEnabled: false,
+      lexicalFloorEnabled: true,
+      lexicalFloorMax: 3,
+    });
+    const keys = built.package.items.map((item) => `${item.sessionId}:${String(item.turnIndex)}`);
+    expect(keys[0]).toBe("s1:0");
+    expect(keys).toEqual(expect.arrayContaining(["s2:0"]));
+    expect(built.package.items.some((item) => item.tier === "supporting" && item.sessionId === "s2")).toBe(
+      true,
+    );
   });
 });

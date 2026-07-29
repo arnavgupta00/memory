@@ -1,0 +1,89 @@
+{
+  "session_id": "b7dca8f1_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I planned to make a list for my next grocery run.",
+      "turn_index": 0
+    },
+    {
+      "text": "I had a coupon for 10% off on all dairy products at Walmart last week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I like the creamy tomato soup and grilled cheese sandwich combo.",
+      "turn_index": 2
+    },
+    {
+      "text": "I planned to shop at Walmart again this week.",
+      "turn_index": 4
+    },
+    {
+      "text": "I planned to use mozzarella and Monterey Jack cheese for the grilled cheese this time.",
+      "turn_index": 6
+    },
+    {
+      "text": "I planned to use white bread for the grilled cheese this time.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have a loaf of Great Value white bread from Walmart that I have been meaning to use up.",
+      "turn_index": 8
+    },
+    {
+      "text": "I was considering shopping for fruits and veggies at Walmart.",
+      "turn_index": 8
+    },
+    {
+      "text": "I wanted suggestions for apples for snacking and for use in recipes.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "grocery run list",
+    "10% off dairy coupon",
+    "Walmart dairy section",
+    "creamy tomato soup",
+    "grilled cheese sandwich",
+    "heavy cream brands",
+    "cheddar cheese",
+    "mozzarella and Monterey Jack",
+    "bread for grilled cheese",
+    "Great Value white bread",
+    "fresh produce selection",
+    "apples for snacking",
+    "apples for recipes"
+  ],
+  "events": [
+    {
+      "text": "Had a coupon for 10% off on all dairy products at Walmart.",
+      "date_hint": "last week",
+      "turn_index": 0
+    },
+    {
+      "text": "Planned to shop at Walmart again this week.",
+      "date_hint": "this week",
+      "turn_index": 4
+    },
+    {
+      "text": "Planned to use mozzarella and Monterey Jack combo for grilled cheese.",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Planned to use Great Value white bread from Walmart for grilled cheese.",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Planned to shop for fruits and veggies at Walmart.",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Planned to pick up apples for snacking and recipes.",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

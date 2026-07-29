@@ -1,0 +1,25 @@
+{
+  "question_id": "gpt4_b5700ca0",
+  "question_type": "temporal-reasoning",
+  "question": "Where did I attend the religious activity last week?",
+  "question_date": "2023/04/10 (Mon) 13:35",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_a17423e8_1"
+  ],
+  "haystack_session_count": 50,
+  "notes_coverage": "full",
+  "annotated_session_count": 50,
+  "gold_sessions": [
+    {
+      "session_id": "answer_a17423e8_1",
+      "date": "2023/04/06 (Thu) 05:36",
+      "has_notes": true,
+      "notes_text": "[session_id] answer_a17423e8_1\n[session_date] 2023/04/06 (Thu) 05:36\n[facts]\n- I helped out at an Easter Egg Hunt event last week.\n- I am interested in finding more ways to give back to the community.\n- I prefer volunteer opportunities related to community service or helping the underprivileged.\n- I am available on weekdays, preferably in the evenings.\n- I don't mind committing to a regular schedule for volunteering.\n- I think the Food Bank Volunteer opportunity sounds interesting.\n- I want information about the food bank's location.\n- I want information about the types of tasks I would be doing as a food bank volunteer.\n- I want information about the time commitment required for food bank volunteering.\n- I want to know whether the food bank has volunteer requirements such as training or background checks.\n- I want to take the next step to volunteer at the food bank.\n- I want the food bank's contact information and the application form.\n- I attended the Maundy Thursday service at the Episcopal Church.\n- I want opportunities to volunteer with a group from my church or community.\n- I want to invite friends to join me in volunteering at the food bank.\n- I want opportunities for my church group to adopt a specific project or program at the food bank.\n- I want my church group to consider organizing a food drive or helping with a special event at the food bank.\n[keyphrases] local volunteer opportunities; Easter Egg Hunt event; community service volunteering; helping the underprivileged; weekday evenings availability; regular schedule volunteering; Food Bank Volunteer; food bank location; volunteer tasks; time commitment required; volunteer requirements training background checks; Maundy Thursday service Episcopal Church; church group volunteer opportunities; adopt a project at the food bank; organizing a food drive; helping with a special event\n[events]\n- Helped out at an Easter Egg Hunt event (last week)\n- Attended the Maundy Thursday service at the Episcopal Church",
+      "user_turns": "[turn 0] I'm looking for some information on local volunteer opportunities. I just helped out at an Easter Egg Hunt event last week and I'm interested in finding more ways to give back to the community.\n\n[turn 2] I'm open to various causes, but I think I'd prefer something related to community service or helping the underprivileged. I'm available on weekdays, preferably in the evenings, and I don't mind committing to a regular schedule.\n\n[turn 4] I think the Food Bank Volunteer opportunity sounds interesting. Can you provide me with more information on the food bank's location, the types of tasks I'd be doing, and the time commitment required? Also, do they have any requirements for volunteers, such as training or background checks?\n\n[turn 6] Yes, I'd like to take the next step. Please provide me with the contact information and application form. I'm looking forward to volunteering at the food bank and making a difference in my community. By the way, I'm glad I got to attend the Maundy Thursday service at the Episcopal Church, it was a beautiful and moving experience.\n\n[turn 8] I'd like to ask, are there any opportunities to volunteer with a group from my church or community? I'd love to invite some friends to join me in volunteering at the food bank.\n\n[turn 10] I'd like to ask, are there any opportunities for my church group to adopt a specific project or program at the food bank, such as organizing a food drive or helping with a special event? We're looking for ways to make a more significant impact and contribute to the food bank's mission."
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

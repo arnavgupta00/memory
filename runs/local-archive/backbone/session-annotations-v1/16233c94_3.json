@@ -1,0 +1,113 @@
+{
+  "session_id": "16233c94_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am hosting a dinner party this weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been taking Japanese cooking classes since April.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in making Salmon Teriyaki.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in making Chicken Yakitori.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want tips on how to make teriyaki sauce from scratch.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know what type of skewers to use for Yakitori.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want the best way to prepare chicken for Yakitori.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know whether to marinate the chicken beforehand or season it right before grilling.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want recommendations for the type of salmon to use for Salmon Teriyaki.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know how to prepare salmon fillets before grilling.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to serve steamed vegetables and Japanese rice on the side.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want a Japanese-inspired dessert to complete the menu.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will go with Mochi Brownies as the Japanese-inspired dessert.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have been experimenting with different ingredients in my Japanese cooking classes.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have worked with mochiko flour before.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want tips on how to make a good mochi topping for the brownies.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am not sure how to get the right consistency for a mochi topping.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Japanese-inspired dinner party",
+    "Japanese cooking classes since April",
+    "Salmon Teriyaki",
+    "teriyaki sauce from scratch",
+    "Chicken Yakitori",
+    "Yakitori skewers",
+    "chicken preparation for Yakitori",
+    "marinate vs season before grilling",
+    "salmon fillets before grilling",
+    "Japanese rice",
+    "steamed vegetables",
+    "Japanese-inspired dessert",
+    "Mochi Brownies",
+    "mochi topping",
+    "mochiko flour consistency"
+  ],
+  "events": [
+    {
+      "text": "Hosting a dinner party this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 0
+    },
+    {
+      "text": "Taking Japanese cooking classes since April",
+      "date_hint": "since April",
+      "turn_index": 0
+    },
+    {
+      "text": "Taking Japanese cooking classes since April (mentioned again)",
+      "date_hint": "since April",
+      "turn_index": 8
+    },
+    {
+      "text": "Planning to serve Mochi Brownies with a mochi topping",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

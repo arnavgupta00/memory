@@ -1,0 +1,94 @@
+{
+  "session_id": "2a17ea02_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for mental health resources in my area.",
+      "turn_index": 0
+    },
+    {
+      "text": "I recently got back from a meditation retreat at the local Buddhist center.",
+      "turn_index": 0
+    },
+    {
+      "text": "I met a kind-hearted monk named Bhante at the meditation retreat.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of reaching out to the local Buddhist center where I attended the meditation retreat for therapist or counseling recommendations.",
+      "turn_index": 2
+    },
+    {
+      "text": "I attended a Sunday morning mass at St. Mary's Church recently.",
+      "turn_index": 6
+    },
+    {
+      "text": "Father Johnson's sermon on forgiveness resonated with me.",
+      "turn_index": 6
+    },
+    {
+      "text": "I recently caught up with my friend Emily after the Sunday morning mass.",
+      "turn_index": 8
+    },
+    {
+      "text": "I exchanged numbers with Emily to grab coffee soon.",
+      "turn_index": 8
+    },
+    {
+      "text": "I attended a midnight mass on New Year's Eve with my colleague Rachel and her family.",
+      "turn_index": 10
+    },
+    {
+      "text": "I exchanged wishes and hugs with Rachel at the midnight mass on New Year's Eve.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have had conflicts with Rachel in the past.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "mental health resources",
+    "therapists and counseling services",
+    "mindfulness and self-reflection",
+    "meditation retreat",
+    "local Buddhist center",
+    "monk Bhante",
+    "online directories",
+    "professional associations",
+    "connection between mindfulness and spirituality",
+    "Christianity and Buddhism mindfulness",
+    "St. Mary's Church",
+    "Father Johnson sermon on forgiveness",
+    "mindfulness and forgiveness",
+    "Sunday morning mass",
+    "relationships and conflicts",
+    "friend Emily",
+    "grab coffee soon",
+    "midnight mass New Year's Eve",
+    "conflict resolution tips",
+    "mindfulness for conflict resolution"
+  ],
+  "events": [
+    {
+      "text": "Meditation retreat at the local Buddhist center",
+      "date_hint": "recently (before turn 0)",
+      "turn_index": 0
+    },
+    {
+      "text": "Sunday morning mass at St. Mary's Church",
+      "date_hint": "recently (before turn 6)",
+      "turn_index": 6
+    },
+    {
+      "text": "Caught up with friend Emily after the Sunday morning mass and exchanged numbers",
+      "date_hint": "recently (after Sunday morning mass)",
+      "turn_index": 8
+    },
+    {
+      "text": "Midnight mass on New Year's Eve with colleague Rachel and her family",
+      "date_hint": "New Year's Eve (midnight)",
+      "turn_index": 10
+    }
+  ]
+}

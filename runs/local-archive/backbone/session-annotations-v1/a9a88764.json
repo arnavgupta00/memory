@@ -1,0 +1,93 @@
+{
+  "session_id": "a9a88764",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking to improve my car's performance, specifically the suspension.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am in the Speed Dome area.",
+      "turn_index": 2
+    },
+    {
+      "text": "I drive a 2018 Mustang GT.",
+      "turn_index": 2
+    },
+    {
+      "text": "I placed 3rd in the amateur category at the Turbocharged event at the Speed Dome racing track.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to attend another track day at Riverside Speedway soon.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am planning to attend a track day at Riverside Speedway on January 15th.",
+      "turn_index": 6
+    },
+    {
+      "text": "I installed new performance tires on my Mustang.",
+      "turn_index": 6
+    },
+    {
+      "text": "I tuned the suspension on my Mustang.",
+      "turn_index": 6
+    },
+    {
+      "text": "I attended a workshop on throttle control and braking techniques at a local racing school before the Turbocharged event.",
+      "turn_index": 10
+    },
+    {
+      "text": "The instructor at the workshop was a professional racing driver.",
+      "turn_index": 10
+    },
+    {
+      "text": "The workshop helped me improve my skills.",
+      "turn_index": 10
+    },
+    {
+      "text": "The instructor provided tips to improve my acceleration and cornering skills.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "high-performance suspension setup",
+    "tuning shops",
+    "Speed Dome area",
+    "2018 Mustang GT",
+    "track performance",
+    "auto racking events",
+    "Turbocharged event",
+    "Riverside Speedway track day",
+    "safety gear for track",
+    "performance tires",
+    "tuning the suspension",
+    "brake pads upgrade",
+    "cooling system upgrade",
+    "throttle control workshop",
+    "racing school instructor"
+  ],
+  "events": [
+    {
+      "text": "Turbocharged event at the Speed Dome racing track (placed 3rd in amateur category)",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Track day at Riverside Speedway",
+      "date_hint": "soon",
+      "turn_index": 4
+    },
+    {
+      "text": "Track day at Riverside Speedway",
+      "date_hint": "January 15th",
+      "turn_index": 6
+    },
+    {
+      "text": "Workshop on throttle control and braking techniques at a local racing school",
+      "date_hint": "before the Turbocharged event",
+      "turn_index": 10
+    }
+  ]
+}

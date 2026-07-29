@@ -1,0 +1,104 @@
+{
+  "session_id": "2655efcc_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a team-building event for my colleagues.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of organizing a friendly game of basketball for my colleagues.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for venues that can accommodate a group of 10-12 people.",
+      "turn_index": 0
+    },
+    {
+      "text": "I participated in the company's annual basketball tournament three weeks ago.",
+      "turn_index": 0
+    },
+    {
+      "text": "My team, \"Slam Dunkers,\" made it to the semifinals in the tournament.",
+      "turn_index": 2
+    },
+    {
+      "text": "My team, \"Slam Dunkers,\" lost to the eventual champions, \"Hoop Heroes.\"",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of keeping the budget under $200.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want the budget under $200 to include equipment rental and refreshments.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of having the event on a Saturday morning.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to book a basketball court for 2 hours.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of inviting a few friends to join the game.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am not sure whether the venue will allow non-colleagues to join.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think it is a good idea to invite a few friends to join us.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will check with the venue first to see if inviting friends is allowed.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering having a small tournament with prizes or awards to make the event more engaging.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think it would be a lot of fun to have a small tournament with prizes or awards.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will check with the venue to see if they have any restrictions or recommendations for tournament formats.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am looking for tips to improve my free throw shooting.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "team-building event",
+    "friendly basketball game",
+    "venues for 10-12 people",
+    "company annual basketball tournament",
+    "budget under $200",
+    "equipment rental and refreshments",
+    "Saturday morning basketball event",
+    "book a court for 2 hours",
+    "invite friends non-colleagues",
+    "small tournament with prizes",
+    "tournament formats restrictions",
+    "improve free throw shooting"
+  ],
+  "events": [
+    {
+      "text": "Participated in the company's annual basketball tournament",
+      "date_hint": "three weeks ago",
+      "turn_index": 0
+    },
+    {
+      "text": "Team \"Slam Dunkers\" reached the semifinals and lost to \"Hoop Heroes\"",
+      "date_hint": "three weeks ago",
+      "turn_index": 2
+    }
+  ]
+}

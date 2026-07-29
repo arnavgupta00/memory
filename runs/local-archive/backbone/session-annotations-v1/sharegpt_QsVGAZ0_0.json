@@ -1,0 +1,49 @@
+{
+  "session_id": "sharegpt_QsVGAZ0_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user asked about turnover rate.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user asked how to calculate the average number of employees during a certain period of time.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user provided the numbers 177 and 700 and asked what the turnover rate is.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user asked what the best reat is.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user provided employee numbers for Jan22 as 741 and Dec22 as 809.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user provided the number 169 in the same context as Jan22 and Dec22.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "turnover rate",
+    "average number of employees",
+    "employee headcount period",
+    "turnover rate formula",
+    "best rate",
+    "Jan22 employees 741",
+    "Dec22 employees 809",
+    "left 169",
+    "left 177",
+    "700 turnover rate"
+  ],
+  "events": [
+    {
+      "text": "Provided employee counts for Jan22 and Dec22 (Jan22: 741, Dec22: 809).",
+      "date_hint": "Jan22 and Dec22",
+      "turn_index": 8
+    }
+  ]
+}

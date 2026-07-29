@@ -1,0 +1,87 @@
+{
+  "session_id": "acda6a4e_4",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to plan a day out in the city.",
+      "turn_index": 0
+    },
+    {
+      "text": "I attended a lecture series at the National Gallery in early February.",
+      "turn_index": 0
+    },
+    {
+      "text": "I attended a lecture series at the National Gallery in early February.",
+      "turn_index": 6
+    },
+    {
+      "text": "One of the lectures I attended at the National Gallery in early February was by Dr. Rodriguez.",
+      "turn_index": 6
+    },
+    {
+      "text": "Dr. Rodriguez spoke about the intersection of art and politics in the 20th century.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have seen stunning works by up-and-coming artists at the Modern Art Gallery downtown about three weeks ago.",
+      "turn_index": 4
+    },
+    {
+      "text": "I saw street art in my neighborhood that addressed issues like gentrification and police brutality.",
+      "turn_index": 8
+    },
+    {
+      "text": "I volunteered at the Children's Art Festival held at the local art museum last weekend.",
+      "turn_index": 10
+    },
+    {
+      "text": "I assisted with art workshops for kids at the Children's Art Festival.",
+      "turn_index": 10
+    },
+    {
+      "text": "I got to assist with art workshops for kids at the Children's Art Festival.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "day out in the city",
+    "art galleries",
+    "museums to visit",
+    "National Gallery lecture series",
+    "early February lecture",
+    "Dr. Rodriguez art and politics",
+    "intersection of art and politics",
+    "contemporary photography",
+    "Tate Modern photography exhibitions",
+    "Modern Art Gallery downtown",
+    "up-and-coming artists",
+    "Street Art and Graffiti",
+    "gentrification",
+    "police brutality",
+    "Children's Art Festival",
+    "local art museum",
+    "art workshops for kids"
+  ],
+  "events": [
+    {
+      "text": "Attended a lecture series at the National Gallery",
+      "date_hint": "early February",
+      "turn_index": 0
+    },
+    {
+      "text": "Lecture by Dr. Rodriguez at the National Gallery about art and politics in the 20th century",
+      "date_hint": "early February",
+      "turn_index": 6
+    },
+    {
+      "text": "Saw stunning works by up-and-coming artists at the Modern Art Gallery downtown",
+      "date_hint": "about three weeks ago",
+      "turn_index": 4
+    },
+    {
+      "text": "Volunteered at the Children's Art Festival at the local art museum",
+      "date_hint": "last weekend",
+      "turn_index": 10
+    }
+  ]
+}

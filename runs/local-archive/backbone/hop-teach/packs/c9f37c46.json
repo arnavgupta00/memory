@@ -1,0 +1,33 @@
+{
+  "question_id": "c9f37c46",
+  "question_type": "temporal-reasoning",
+  "question": "How long had I been watching stand-up comedy specials regularly when I attended the open mic night at the local comedy club?",
+  "question_date": "2023/05/20 (Sat) 00:44",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_cdba3d9f_1",
+    "answer_cdba3d9f_2"
+  ],
+  "haystack_session_count": 50,
+  "notes_coverage": "partial",
+  "annotated_session_count": 9,
+  "gold_sessions": [
+    {
+      "session_id": "answer_cdba3d9f_1",
+      "date": "2023/05/20 (Sat) 12:45",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_cdba3d9f_1\n[session_date] 2023/05/20 (Sat) 12:45\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm looking for some comedy recommendations. I've been really into stand-up lately - I think it started about 3 months ago when I watched that Netflix special by John Mulaney, and I've been watching stand-ups regularly ever since. Can you suggest some comedians or specials I might enjoy?\n\n[turn 2] I'll definitely check those out. Are there any comedy clubs or open mics in my area that you'd recommend? I'd love to see some live comedy and maybe even try my hand at it.\n\n[turn 4] I'll definitely try out those methods to find some live comedy events in my area. Do you think it's a good idea to attend a few open mics before taking a comedy class, or should I just dive right in and sign up for a class?\n\n[turn 6] That's really helpful, thanks! I think I'll try attending a few open mics first to get a feel for the scene and see how I like it. Do you think it's better to try to come up with new material for each open mic, or should I focus on refining a few jokes and trying to make them better?\n\n[turn 8] That makes sense. I think I'll try to come up with some new material for the first few open mics, and then start refining my best jokes as I get more comfortable. Do you think it's a good idea to record my performances and watch them to see what I can improve on?\n\n[turn 10] I think I'll definitely start recording my performances and reviewing them to see what I can improve on. It's also helpful to remember not to be too hard on myself and to focus on learning from my mistakes. Do you think it's a good idea to share my recordings with other comedians or mentors to get their feedback and insights?"
+    },
+    {
+      "session_id": "answer_cdba3d9f_2",
+      "date": "2023/05/20 (Sat) 09:41",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_cdba3d9f_2\n[session_date] 2023/05/20 (Sat) 09:41\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm looking for some advice on writing jokes. I've recently gotten into stand-up comedy and I'm trying to improve my craft. Last month, I finally worked up the courage to attend an open mic night at a local comedy club, and it was amazing to see people trying out their material in front of a live audience.\n\n[turn 2] Can you give me some tips on how to structure a joke? I've been trying to write jokes, but I'm not sure how to make them flow properly.\n\n[turn 4] I've been trying to write jokes, but I'm not really sure how to make them relatable. I've been carrying a small notebook with me everywhere and jotting down ideas as they come to me. Some of them are terrible, but a few have potential. I've been testing them out on my friends and family, and it's been great to see what works and what doesn't.\n\n[turn 6] That's really helpful. I've been trying to write jokes about my everyday experiences, but I'm not sure how to make them funny. Can you give me some tips on how to find the humor in mundane situations?\n\n[turn 8] I've been trying to write jokes about my everyday experiences, but I'm struggling to make them funny. Last month, I finally worked up the courage to attend an open mic night at a local comedy club, and it was amazing to see people trying out their material in front of a live audience. I've been trying to apply what I learned from that experience to my own writing, but I'm still having trouble finding the humor in mundane situations. Do you have any tips on how to make my jokes more relatable and funny?"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

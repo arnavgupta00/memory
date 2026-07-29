@@ -1,0 +1,111 @@
+{
+  "session_id": "4dc59c52_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am thinking of getting a bike rack for my car.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a bike rack that is sturdy.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a bike rack that is easy to install.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need to schedule an appointment to get my car's air conditioning system serviced before summer hits.",
+      "turn_index": 0
+    },
+    {
+      "text": "I asked for more information about the maintenance process for my car's air conditioning system.",
+      "turn_index": 2
+    },
+    {
+      "text": "I asked what they check and fix during air conditioning service.",
+      "turn_index": 2
+    },
+    {
+      "text": "I asked whether some air conditioning service tasks are possible to do myself.",
+      "turn_index": 4
+    },
+    {
+      "text": "I asked whether cleaning the air filter and condenser coils is recommended to do myself.",
+      "turn_index": 4
+    },
+    {
+      "text": "I said I will leave the refrigerant level check and component replacements to a professional.",
+      "turn_index": 6
+    },
+    {
+      "text": "I said I might try cleaning the air filter and condenser coils myself.",
+      "turn_index": 6
+    },
+    {
+      "text": "I asked whether I should schedule the AC system service soon or wait longer.",
+      "turn_index": 6
+    },
+    {
+      "text": "I said I will schedule the appointment for the AC system service soon.",
+      "turn_index": 8
+    },
+    {
+      "text": "I asked for help finding a good car wash near my new place.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been putting off getting a car wash for weeks.",
+      "turn_index": 8
+    },
+    {
+      "text": "My car could really use a good cleaning.",
+      "turn_index": 8
+    },
+    {
+      "text": "I moved to a new apartment.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am not really familiar with the area yet.",
+      "turn_index": 10
+    },
+    {
+      "text": "I asked for car wash options near my new place.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "bike rack for car",
+    "sturdy bike rack",
+    "easy to install bike rack",
+    "car air conditioning system service",
+    "AC maintenance process",
+    "what they check and fix",
+    "cleaning air filter",
+    "cleaning condenser coils",
+    "refrigerant level check",
+    "component replacements by professional",
+    "schedule AC service before summer",
+    "car wash near new apartment",
+    "car wash options",
+    "car cleaning after weeks"
+  ],
+  "events": [
+    {
+      "text": "Schedule an appointment for car air conditioning system service before summer hits",
+      "date_hint": "before summer hits",
+      "turn_index": 0
+    },
+    {
+      "text": "Schedule the appointment for the AC system service soon",
+      "date_hint": "soon",
+      "turn_index": 8
+    },
+    {
+      "text": "Moved to a new apartment",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "session_id": "db1aefb6_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have been feeling sluggish lately.",
+      "turn_index": 0
+    },
+    {
+      "text": "I recently had a mild fever that lasted for 5 days.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am trying to get back into my normal routine after the fever.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to incorporate strength training exercises into my routine.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering starting with light workouts like push-ups, squats, and lunges.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am not sure whether I should wait longer before adding strength training.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been trying to eat healthier.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am not sure if I am getting enough protein.",
+      "turn_index": 4
+    },
+    {
+      "text": "My doctor has been keeping an eye on my sugar levels since my appointment 2 months ago.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been monitoring my sugar levels closely with my new blood glucose meter, the Accu-Chek Aviva.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been experiencing allergy issues lately.",
+      "turn_index": 8
+    },
+    {
+      "text": "I use my nasal aspirator, the Nasaline, every morning and night.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to reduce sugar intake to see if it helps alleviate my allergy symptoms.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will try to cut back on sugary drinks and foods and see how my body reacts.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want tips on how to reduce sugar cravings.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "sluggish feeling",
+    "mild fever 5 days",
+    "boost energy exercises",
+    "strength training",
+    "light workouts push-ups squats lunges",
+    "protein intake",
+    "high protein foods",
+    "sugar levels",
+    "doctor appointment 2 months ago",
+    "Accu-Chek Aviva blood glucose meter",
+    "allergy symptoms",
+    "Nasaline nasal aspirator",
+    "reduce sugar intake",
+    "sugary drinks and foods",
+    "reduce sugar cravings"
+  ],
+  "events": [
+    {
+      "text": "Mild fever lasted for 5 days",
+      "date_hint": "recently (duration: 5 days)",
+      "turn_index": 0
+    },
+    {
+      "text": "Doctor appointment to monitor sugar levels",
+      "date_hint": "2 months ago",
+      "turn_index": 6
+    },
+    {
+      "text": "Using Nasaline every morning and night",
+      "date_hint": "every morning and night (ongoing)",
+      "turn_index": 8
+    },
+    {
+      "text": "Trying to cut back on sugary drinks and foods",
+      "date_hint": "now / upcoming trial",
+      "turn_index": 10
+    }
+  ]
+}

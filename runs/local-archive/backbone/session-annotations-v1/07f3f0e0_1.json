@@ -1,0 +1,104 @@
+{
+  "session_id": "07f3f0e0_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to track my expenses for the past month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I bought a gift for my sister's birthday last month on the 15th.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought my sister a silver necklace from a new jewelry store downtown.",
+      "turn_index": 2
+    },
+    {
+      "text": "The silver necklace cost around $80.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought my sister chocolates from a Belgian chocolatier on Main St.",
+      "turn_index": 2
+    },
+    {
+      "text": "The chocolates cost $20.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought baby clothes and a soft toy from Baby Gap for my friend Emily's baby shower.",
+      "turn_index": 6
+    },
+    {
+      "text": "The baby clothes and soft toy cost around $50.",
+      "turn_index": 6
+    },
+    {
+      "text": "I bought a personalized baby blanket from Etsy for my friend Emily's baby shower.",
+      "turn_index": 8
+    },
+    {
+      "text": "The personalized baby blanket cost $30.",
+      "turn_index": 8
+    },
+    {
+      "text": "I got office Secret Santa gifts for my coworkers.",
+      "turn_index": 10
+    },
+    {
+      "text": "I got Sarah a scented candle as an office Secret Santa gift.",
+      "turn_index": 10
+    },
+    {
+      "text": "I got Tom a funny mug as an office Secret Santa gift.",
+      "turn_index": 10
+    },
+    {
+      "text": "I got Rachel a Starbucks gift card as an office Secret Santa gift.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "track expenses",
+    "past month spending habits",
+    "Gifts category",
+    "sister's birthday gift",
+    "silver necklace",
+    "jewelry store downtown",
+    "Belgian chocolatier",
+    "Main St chocolates",
+    "clothing and accessories",
+    "Baby Gap baby clothes",
+    "soft toy",
+    "Emily's baby shower",
+    "personalized baby blanket",
+    "Etsy",
+    "office Secret Santa gifts",
+    "scented candle Sarah",
+    "funny mug Tom",
+    "Starbucks gift card Rachel"
+  ],
+  "events": [
+    {
+      "text": "Bought a gift for sister's birthday (silver necklace and chocolates)",
+      "date_hint": "last month, on the 15th",
+      "turn_index": 2
+    },
+    {
+      "text": "Bought baby clothes and a soft toy for Emily's baby shower",
+      "date_hint": "last month",
+      "turn_index": 6
+    },
+    {
+      "text": "Bought a personalized baby blanket for Emily's baby shower",
+      "date_hint": "last month",
+      "turn_index": 8
+    },
+    {
+      "text": "Received/handled office Secret Santa gifts for coworkers",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

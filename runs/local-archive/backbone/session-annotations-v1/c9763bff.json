@@ -1,0 +1,64 @@
+{
+  "session_id": "c9763bff",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I presented a report on Monday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I had a team meeting at 10 am.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was exhausted that morning.",
+      "turn_index": 4
+    },
+    {
+      "text": "I was up late the night before binge-watching my favorite TV show.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to go to the gym regularly.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been trying to go to the gym at least three times a week.",
+      "turn_index": 6
+    },
+    {
+      "text": "It has been tough for me to go to the gym because of my schedule lately.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think I need to work on my schedule and make the gym a priority.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "report presented on Monday",
+    "topic of the report",
+    "team meeting 10 am",
+    "rushed to get ready",
+    "exhausted morning",
+    "binge-watching favorite TV show",
+    "up late the night before",
+    "best day of the week for binge-watching",
+    "motivation to go to the gym",
+    "go to the gym three times a week",
+    "gym schedule priority",
+    "morning vs evening gym"
+  ],
+  "events": [
+    {
+      "text": "Team meeting at 10 am",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Report presented on Monday",
+      "date_hint": "Monday",
+      "turn_index": 0
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "session_id": "0ae4c9b0_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Chicago soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for restaurant recommendations near the Hilton Hotel in downtown Chicago.",
+      "turn_index": 0
+    },
+    {
+      "text": "I stayed at the Hilton Hotel in downtown Chicago last month for a business conference.",
+      "turn_index": 2
+    },
+    {
+      "text": "My room was on the 23rd floor at the Hilton Hotel in downtown Chicago.",
+      "turn_index": 2
+    },
+    {
+      "text": "My room number was 2305 at the Hilton Hotel in downtown Chicago.",
+      "turn_index": 2
+    },
+    {
+      "text": "My room was exactly 23 floors above the ground floor at the Hilton Hotel in downtown Chicago.",
+      "turn_index": 2
+    },
+    {
+      "text": "I liked the convenience of the Hilton Hotel location in downtown Chicago.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am looking for recommendations for good coffee shops or cafes near the Hilton Hotel in downtown Chicago for quick breakfast or coffee before meetings.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been to Intelligentsia Coffee before.",
+      "turn_index": 4
+    },
+    {
+      "text": "I think Intelligentsia Coffee is really good.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will sign up for Intelligentsia Rewards next time I am in Chicago.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am looking for recommendations for good places to visit or things to do near the Hilton Hotel in downtown Chicago.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think I will check out the Art Institute of Chicago.",
+      "turn_index": 8
+    },
+    {
+      "text": "I stayed on the 23rd floor, room 2305, at the Hilton Hotel in downtown Chicago last month.",
+      "turn_index": 8
+    },
+    {
+      "text": "I had a great view of the city skyline from my room at the Hilton Hotel in downtown Chicago.",
+      "turn_index": 8
+    },
+    {
+      "text": "I worked out at the Hilton Hotel gym twice during my stay.",
+      "turn_index": 10
+    },
+    {
+      "text": "The Hilton Hotel gym was really nice to me.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to Chicago",
+    "restaurants near Hilton Hotel downtown Chicago",
+    "Hilton Hotel downtown Chicago",
+    "23rd floor room 2305",
+    "coffee shops or cafes near Hilton",
+    "quick breakfast or coffee",
+    "Intelligentsia Coffee",
+    "Intelligentsia Rewards loyalty program",
+    "places to visit near Hilton",
+    "things to do near Hilton",
+    "Art Institute of Chicago",
+    "Hilton Hotel gym"
+  ],
+  "events": [
+    {
+      "text": "Stayed at the Hilton Hotel in downtown Chicago for a business conference",
+      "date_hint": "last month",
+      "turn_index": 2
+    },
+    {
+      "text": "Worked out at the Hilton Hotel gym twice during the stay",
+      "date_hint": "during last month stay",
+      "turn_index": 10
+    }
+  ]
+}

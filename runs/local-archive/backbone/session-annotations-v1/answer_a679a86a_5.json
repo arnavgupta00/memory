@@ -1,0 +1,84 @@
+{
+  "session_id": "answer_a679a86a_5",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am in the process of buying a house.",
+      "turn_index": 0
+    },
+    {
+      "text": "I put in an offer on a 3-bedroom townhouse in the Brookside neighborhood on February 25th.",
+      "turn_index": 0
+    },
+    {
+      "text": "After negotiations, I agreed on a price of $340,000 for the townhouse.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am planning to put 20% down on the townhouse.",
+      "turn_index": 2
+    },
+    {
+      "text": "My planned down payment amount is $68,000.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am looking at a 30-year mortgage.",
+      "turn_index": 2
+    },
+    {
+      "text": "The interest rate I am considering is around 4%.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am worried about property taxes and insurance costs.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am worried about the total estimated monthly mortgage payment.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering improving my credit score to qualify for a lower interest rate.",
+      "turn_index": 8
+    },
+    {
+      "text": "I saw the 3-bedroom townhouse in the Brookside neighborhood on February 22nd.",
+      "turn_index": 10
+    },
+    {
+      "text": "I put in an offer on February 25th for the townhouse.",
+      "turn_index": 10
+    },
+    {
+      "text": "After negotiations, we agreed on a price of $340,000 for the townhouse.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "buying a house",
+    "3-bedroom townhouse",
+    "Brookside neighborhood",
+    "offer date February 25",
+    "purchase price $340,000",
+    "20% down payment",
+    "down payment $68,000",
+    "30-year mortgage",
+    "interest rate around 4%",
+    "PMI explanation",
+    "property taxes and insurance",
+    "improve credit score for lower mortgage rate"
+  ],
+  "events": [
+    {
+      "text": "I put in an offer on a 3-bedroom townhouse in the Brookside neighborhood.",
+      "date_hint": "February 25th",
+      "turn_index": 0
+    },
+    {
+      "text": "I saw the 3-bedroom townhouse in the Brookside neighborhood.",
+      "date_hint": "February 22nd",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "session_id": "e6b6353d",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a 20-mile bike ride this weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want tips on how to stay hydrated during long rides.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am planning to track my ride with a new Garmin bike computer.",
+      "turn_index": 2
+    },
+    {
+      "text": "I replaced the old bike's chain and cassette on February 1st.",
+      "turn_index": 4
+    },
+    {
+      "text": "I replaced the old bike's chain and cassette on February 1st, and it improved the bike's performance.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am planning a 20-mile ride and want bike safety tips to keep in mind.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of getting a new bike helmet to replace my old one.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am planning to order a new bike helmet from Specialized soon.",
+      "turn_index": 10
+    },
+    {
+      "text": "My current bike helmet is a bit outdated.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "20-mile bike ride",
+    "hydration tips for long rides",
+    "staying hydrated during cycling",
+    "Garmin bike computer setup",
+    "accurate distance and speed readings",
+    "bike chain and cassette replacement",
+    "February 1st bike maintenance",
+    "bike-friendly routes apps",
+    "bike safety tips",
+    "new bike helmet brands models",
+    "Specialized bike helmet order",
+    "outdated bike helmet"
+  ],
+  "events": [
+    {
+      "text": "Replaced the old bike's chain and cassette",
+      "date_hint": "February 1st",
+      "turn_index": 4
+    },
+    {
+      "text": "Planning to order a new bike helmet from Specialized",
+      "date_hint": "soon",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "session_id": "sharegpt_GHsZ4fd_11",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to access a system using a computer name.",
+      "turn_index": 1
+    },
+    {
+      "text": "I want to access a system without using an IP address.",
+      "turn_index": 3
+    },
+    {
+      "text": "I am using Windows 10.",
+      "turn_index": 5
+    },
+    {
+      "text": "I want to configure DNS settings in Windows 10 network connection settings.",
+      "turn_index": 5
+    },
+    {
+      "text": "I am working in a domain environment.",
+      "turn_index": 7
+    },
+    {
+      "text": "In my domain environment, pinging from a computer name to a wrong IP is detected.",
+      "turn_index": 7
+    },
+    {
+      "text": "I want to resolve a DNS/name resolution issue in a domain environment from a Windows 10 system.",
+      "turn_index": 9
+    }
+  ],
+  "keyphrases": [
+    "access system by computer name",
+    "access system without IP",
+    "Windows 10 DNS settings",
+    "network connection settings Windows 10",
+    "domain environment DNS",
+    "ping computer name wrong IP detected",
+    "prevent incorrect IP name resolution",
+    "resolve DNS issue Windows 10",
+    "name resolution incorrect IP addresses"
+  ],
+  "events": [
+    {
+      "text": "Configuring DNS settings in Windows 10 network connection settings",
+      "date_hint": "",
+      "turn_index": 5
+    },
+    {
+      "text": "Ping from computer name to wrong IP is detected in a domain environment",
+      "date_hint": "",
+      "turn_index": 7
+    }
+  ]
+}

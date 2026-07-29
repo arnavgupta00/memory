@@ -1,0 +1,84 @@
+{
+  "session_id": "3e59ee68_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have a spider plant with new growth that I think needs to be fertilized soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "On the same day, I pruned some dead leaves from my snake plant.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering getting a humidifier for my plants.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want a humidifier especially for my fern and peace lily because they seem to thrive in humid environments.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of propagating a new succulent from a leaf cutting.",
+      "turn_index": 4
+    },
+    {
+      "text": "My succulent leaf cutting has been sitting in water for three weeks.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have an African violet that has been struggling with spider mites.",
+      "turn_index": 6
+    },
+    {
+      "text": "I attended a houseplant workshop recently where I learned about using neem oil to deal with spider mites.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have a basil plant and I am using a general-purpose potting mix for it.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have heard that basil prefers a more well-draining potting mix.",
+      "turn_index": 8
+    },
+    {
+      "text": "I recently bought a new Phalaenopsis orchid.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to use an orchid potting mix designed specifically for orchids for my Phalaenopsis orchid.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "spider plant fertilizer",
+    "snake plant pruning dead leaves",
+    "humidifier for indoor plants",
+    "fern and peace lily humidity",
+    "succulent leaf cutting propagation",
+    "three weeks in water succulent",
+    "African violet spider mites",
+    "neem oil for spider mites",
+    "basil potting mix well-draining",
+    "orchid potting mix Phalaenopsis",
+    "Phalaenopsis orchid growing medium"
+  ],
+  "events": [
+    {
+      "text": "Pruned dead leaves from a snake plant.",
+      "date_hint": "on the same day as noticing spider plant new growth",
+      "turn_index": 0
+    },
+    {
+      "text": "Attended a houseplant workshop and learned about using neem oil for spider mites.",
+      "date_hint": "recently",
+      "turn_index": 6
+    },
+    {
+      "text": "Kept a succulent leaf cutting in water for three weeks and saw roots forming.",
+      "date_hint": "three weeks",
+      "turn_index": 4
+    }
+  ]
+}

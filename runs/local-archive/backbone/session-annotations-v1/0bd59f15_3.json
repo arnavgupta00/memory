@@ -1,0 +1,114 @@
+{
+  "session_id": "0bd59f15_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a big grocery trip this weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want help finding good deals on non-perishable items at ShopRite.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have accumulated a total of 2,500 points so far.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am hoping to earn even more points this weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for canned goods and pasta, rice, and other grains.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to use my points to get a discount on my purchase this weekend.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to use my loyalty card to earn points on my purchase this weekend.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will load the digital coupons and shop during sales to maximize my points earnings.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know if there are any double points days coming up at ShopRite.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know if I can use my loyalty card at the self-checkout lane to earn points.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know if I need to go to a regular checkout lane to earn points and redeem my rewards.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to use my loyalty card to earn points at other stores like CVS Pharmacy.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have earned $5 in extrabucks rewards over the past month at CVS Pharmacy.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "ShopRite deals",
+    "non-perishable items",
+    "grocery trip this weekend",
+    "2,500 points",
+    "points discount",
+    "canned goods",
+    "pasta rice grains",
+    "loyalty card points",
+    "digital coupons",
+    "double points days",
+    "self-checkout lane points",
+    "CVS Pharmacy extrabucks"
+  ],
+  "events": [
+    {
+      "text": "Planning a big grocery trip at ShopRite this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 0
+    },
+    {
+      "text": "Looking to use points for a discount on a ShopRite purchase this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 2
+    },
+    {
+      "text": "Using a loyalty card to earn points on a ShopRite purchase this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 4
+    },
+    {
+      "text": "Loading digital coupons and shopping during sales to maximize points earnings",
+      "date_hint": "this weekend",
+      "turn_index": 6
+    },
+    {
+      "text": "Checking for double points days coming up at ShopRite",
+      "date_hint": "coming up",
+      "turn_index": 6
+    },
+    {
+      "text": "Using loyalty card at self-checkout lane vs regular checkout lane to earn points and redeem rewards",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Using loyalty card to earn points at CVS Pharmacy",
+      "date_hint": "",
+      "turn_index": 10
+    },
+    {
+      "text": "Earning $5 in extrabucks rewards over the past month at CVS Pharmacy",
+      "date_hint": "over the past month",
+      "turn_index": 10
+    }
+  ]
+}

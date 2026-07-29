@@ -1,0 +1,74 @@
+{
+  "session_id": "3c8e7c0e_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to learn more about the current demographics of my company.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want information on the current ratio of male to female employees at my company.",
+      "turn_index": 0
+    },
+    {
+      "text": "In the past month, five new employees started at my company.",
+      "turn_index": 0
+    },
+    {
+      "text": "Out of the five new employees who started at my company in the past month, four are women.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want resources to help me better support and mentor new female employees.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want resources to help me better support and mentor new female employees who are in leadership positions.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in unconscious bias training.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to learn how unconscious bias training can help me become a better ally and mentor to new female employees.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want strategies or tips to create a more inclusive environment for women in leadership positions.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want strategies or tips for creating a more inclusive environment for women in leadership positions in male-dominated industries.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want resources or organizations recommended for women in leadership positions in male-dominated industries.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want recommendations for books or articles on gender dynamics, diversity, and inclusion in the workplace.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "current demographics of company",
+    "male to female employee ratio",
+    "new employees past month",
+    "unconscious bias training",
+    "support and mentor new female employees",
+    "women in leadership positions",
+    "inclusive environment strategies",
+    "male-dominated industries",
+    "resources and organizations for women leaders",
+    "books and articles on gender dynamics",
+    "diversity and inclusion workplace"
+  ],
+  "events": [
+    {
+      "text": "Five new employees started at the company in the past month, and four of them are women.",
+      "date_hint": "past month",
+      "turn_index": 0
+    }
+  ]
+}

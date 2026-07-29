@@ -1,0 +1,126 @@
+{
+  "session_id": "46bab85b",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning my meals for the week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want recipe ideas using carrots, broccoli, and bell peppers.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am planning my meals for the next two weeks.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought marinara sauce at Costco a couple of weeks before the conversation.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want recipe ideas that incorporate marinara sauce.",
+      "turn_index": 2
+    },
+    {
+      "text": "I got vegetables from Walmart three weeks before the conversation.",
+      "turn_index": 4
+    },
+    {
+      "text": "I was thinking of making a stir-fry with the vegetables I got from Walmart.",
+      "turn_index": 4
+    },
+    {
+      "text": "I might use marinara sauce to make a pasta dish instead of a stir-fry.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know whether marinara sauce would go well with sautéed broccoli, carrots, and bell peppers.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to add cooked chicken to the pasta dish to make it more filling.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want suggestions for meal planning apps.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want suggestions for budgeting apps.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to track my grocery expenses with apps.",
+      "turn_index": 6
+    },
+    {
+      "text": "My budget for groceries is $80 per week.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been using a budgeting app to track my expenses.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been averaging around $100 per week on groceries.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am hoping to reduce my grocery spending to $80 per week.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been trying to reduce my plastic usage.",
+      "turn_index": 10
+    },
+    {
+      "text": "I remember to bring my reusable bags when I shop.",
+      "turn_index": 10
+    },
+    {
+      "text": "I need to be more mindful of my grocery spending.",
+      "turn_index": 10
+    },
+    {
+      "text": "I need to plan my meals better.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "meal planning",
+    "weekly meal ideas",
+    "carrots broccoli bell peppers recipes",
+    "marinara sauce recipes",
+    "Costco marinara sauce",
+    "Walmart vegetables",
+    "stir-fry vs pasta dish",
+    "sautéed broccoli carrots bell peppers",
+    "chicken pasta meal",
+    "meal planning apps",
+    "budgeting apps",
+    "grocery budget $80 per week"
+  ],
+  "events": [
+    {
+      "text": "Bought marinara sauce at Costco",
+      "date_hint": "a couple of weeks ago",
+      "turn_index": 2
+    },
+    {
+      "text": "Got vegetables from Walmart",
+      "date_hint": "three weeks ago",
+      "turn_index": 4
+    },
+    {
+      "text": "Averaging around $100 per week on groceries",
+      "date_hint": "current ongoing average",
+      "turn_index": 8
+    },
+    {
+      "text": "Trying to reduce plastic usage and bring reusable bags when shopping",
+      "date_hint": "ongoing",
+      "turn_index": 10
+    }
+  ]
+}

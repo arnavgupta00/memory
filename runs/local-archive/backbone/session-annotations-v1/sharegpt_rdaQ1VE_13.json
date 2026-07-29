@@ -1,0 +1,48 @@
+{
+  "session_id": "sharegpt_rdaQ1VE_13",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user asked whether the Nmap command \"nmap 192.168.1.1 - 192.168.2.243\" is valid.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user asked what the Nmap option \"-T\" does.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user asked what the Nmap option \"-sL\" does.",
+      "turn_index": 5
+    },
+    {
+      "text": "The user asked what the Nmap option \"-P0\" does.",
+      "turn_index": 7
+    },
+    {
+      "text": "The user asked about excluding targets in Nmap.",
+      "turn_index": 9
+    },
+    {
+      "text": "The user asked what a DNS zone transfer is.",
+      "turn_index": 11
+    },
+    {
+      "text": "The user asked how to use Nmap to find all hosts running a specific version of a web server and generate a report with IP addresses, ports, and server version.",
+      "turn_index": 13
+    }
+  ],
+  "keyphrases": [
+    "valid nmap command",
+    "nmap IP range",
+    "nmap -T option",
+    "nmap -sL",
+    "nmap -P0",
+    "nmap excluding targets",
+    "exclude targets nmap",
+    "DNS zone transfer",
+    "find hosts running web server version",
+    "Nmap report IP addresses ports server version",
+    "specific version web server scan"
+  ],
+  "events": []
+}

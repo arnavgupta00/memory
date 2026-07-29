@@ -1,0 +1,100 @@
+{
+  "session_id": "9db30f1c_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have been buying a lot of stuff online lately.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have made at least 10 online purchases in the past month.",
+      "turn_index": 0
+    },
+    {
+      "text": "Most of my online purchases have been from Amazon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I tend to buy things on impulse.",
+      "turn_index": 2
+    },
+    {
+      "text": "I buy things on impulse especially on weekends when I am bored.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to unsubscribe from promotional emails.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to declutter my email inbox and make it more organized.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to set up filters for my online shopping emails, including Amazon and Sephora.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to organize my online shopping emails into one place.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to set up a filter for my grocery shopping emails from Walmart.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have been using Walmart's grocery pickup service a lot lately.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "online shopping habits",
+    "track online spending",
+    "Amazon purchases",
+    "10 purchases past month",
+    "impulse buying online",
+    "weekend boredom",
+    "avoid impulse buying",
+    "30-day rule",
+    "unsubscribe promotional emails",
+    "declutter email inbox",
+    "email filters and labels",
+    "online shopping email filters",
+    "Amazon and Sephora emails",
+    "grocery pickup emails",
+    "Walmart grocery pickup service",
+    "Walmart grocery shopping emails"
+  ],
+  "events": [
+    {
+      "text": "Made at least 10 online purchases in the past month",
+      "date_hint": "past month",
+      "turn_index": 0
+    },
+    {
+      "text": "Buys things on impulse especially on weekends when bored",
+      "date_hint": "weekends",
+      "turn_index": 2
+    },
+    {
+      "text": "Plans to unsubscribe from promotional emails",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Plans to set up email filters for Amazon and Sephora online shopping emails",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Plans to set up an email filter for Walmart grocery shopping emails",
+      "date_hint": "",
+      "turn_index": 10
+    },
+    {
+      "text": "Has been using Walmart grocery pickup service a lot lately",
+      "date_hint": "lately",
+      "turn_index": 10
+    }
+  ]
+}

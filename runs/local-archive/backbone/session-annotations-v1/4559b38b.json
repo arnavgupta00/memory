@@ -1,0 +1,125 @@
+{
+  "session_id": "4559b38b",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I need help organizing my calendar for the next few months.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a bunch of baby-related events coming up.",
+      "turn_index": 0
+    },
+    {
+      "text": "I don't want to miss baby-related due dates and birthdays.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to keep track of due dates and birthdays.",
+      "turn_index": 0
+    },
+    {
+      "text": "My sister-in-law just had a baby boy named Ethan on February 12th.",
+      "turn_index": 2
+    },
+    {
+      "text": "I visited my sister-in-law and her newborn baby boy Ethan at the hospital.",
+      "turn_index": 2
+    },
+    {
+      "text": "My college friend Rachel adopted a baby girl from China named Emily.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to visit Rachel soon.",
+      "turn_index": 2
+    },
+    {
+      "text": "My high school friend Mike's wife is pregnant and due in late July.",
+      "turn_index": 2
+    },
+    {
+      "text": "I attended a baby shower for my coworker's wife.",
+      "turn_index": 2
+    },
+    {
+      "text": "My coworker's wife is having a boy named Lucas.",
+      "turn_index": 2
+    },
+    {
+      "text": "My cousin's wife is due to give birth to their third child in early April.",
+      "turn_index": 2
+    },
+    {
+      "text": "Another cousin is due to give birth in mid-May.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to use a separate calendar just for birthdays.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want help setting up a reminder for my sister-in-law's baby boy Ethan since his birthday is on February 12th.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to add my college friend Rachel's adopted daughter Emily's birthday to the calendar.",
+      "turn_index": 8
+    },
+    {
+      "text": "I don't know the exact birthdate of Emily.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am planning to visit Emily soon.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "organizing calendar",
+    "baby-related events",
+    "due dates",
+    "birthdays",
+    "sister-in-law Ethan February 12",
+    "hospital visit",
+    "college friend Rachel",
+    "adopted baby girl from China",
+    "Emily birthday",
+    "high school friend Mike wife due late July",
+    "baby shower coworker's wife Lucas",
+    "cousin third child early April",
+    "cousin due mid-May",
+    "separate birthday calendar",
+    "birthday reminders",
+    "organize birthdays by category",
+    "family friends coworkers",
+    "colors labels calendar"
+  ],
+  "events": [
+    {
+      "text": "Sister-in-law's baby boy Ethan birthday",
+      "date_hint": "February 12th",
+      "turn_index": 6
+    },
+    {
+      "text": "Sister-in-law had a baby boy named Ethan",
+      "date_hint": "February 12th",
+      "turn_index": 2
+    },
+    {
+      "text": "High school friend Mike's wife due date",
+      "date_hint": "late July",
+      "turn_index": 2
+    },
+    {
+      "text": "Cousin's wife due to give birth to third child",
+      "date_hint": "early April",
+      "turn_index": 2
+    },
+    {
+      "text": "Another cousin due to give birth",
+      "date_hint": "mid-May",
+      "turn_index": 2
+    }
+  ]
+}

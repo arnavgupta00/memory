@@ -1,0 +1,128 @@
+{
+  "session_id": "sharegpt_CLjyR25_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to plan a trip in Dubai and Abu Dhabi for 1 week for a couple.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to visit different cool places during the trip.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want all days of the trip to be planned.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to visit both Dubai and Abu Dhabi.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a low budget for the trip.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the answer in a markdown format.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want one day per table.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to indicate a cost of visit if it is not free.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the most important places marked with a star.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to spend several days on a beach.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to redesign the schedule.",
+      "turn_index": 2
+    },
+    {
+      "text": "The first and last days of the schedule are fully available.",
+      "turn_index": 2
+    },
+    {
+      "text": "The first and last days have no transfers and travels.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want an extra table with middle budget activities.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want an extra table with low and middle budget cafe, street food, or restaurants recommended to visit.",
+      "turn_index": 2
+    },
+    {
+      "text": "In the cafe/food table, I want the format to be place, average check, and the most famous dish.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want x3 more options added to the last 2 tables.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want additional low budget activities.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want links that will make Google Calendar events with all-day schedules.",
+      "turn_index": 8
+    },
+    {
+      "text": "The first day for the Google Calendar events is 22th April 2023.",
+      "turn_index": 8
+    },
+    {
+      "text": "The last day for the Google Calendar events is 29th April 2023.",
+      "turn_index": 8
+    },
+    {
+      "text": "For each place, I want geo information, cost, and working time.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "Dubai and Abu Dhabi trip",
+    "1 week itinerary",
+    "low budget travel",
+    "all-day schedule",
+    "one day one table",
+    "star important places",
+    "beach days",
+    "middle budget activities",
+    "low and middle budget cafes",
+    "street food restaurants",
+    "average check most famous dish",
+    "Google Calendar all-day events",
+    "April 22 2023",
+    "April 29 2023",
+    "geo cost working time"
+  ],
+  "events": [
+    {
+      "text": "Plan a trip in Dubai and Abu Dhabi for 1 week for a couple.",
+      "date_hint": "1 week (no specific date given)",
+      "turn_index": 0
+    },
+    {
+      "text": "Redesign the schedule with first and last days fully available and no transfers/travels.",
+      "date_hint": "(no specific date given)",
+      "turn_index": 2
+    },
+    {
+      "text": "Create Google Calendar all-day event links for the trip from 22th April 2023 to 29th April 2023.",
+      "date_hint": "22 April 2023 to 29 April 2023",
+      "turn_index": 8
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "session_id": "sharegpt_E3FiZj3_62",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user preferred a specific project folder structure with app/authentication, app/case_management, app/image_review, app/logging, app/utils, plus app/main.py, requirements.txt, and README.md.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user asked what the datastore model of a case would look like.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user said the app should be able to collect correct labels of an implant system predicted by it.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user asked what changes would be required to the existing design to collect correct implant system labels.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user said the case needs the ability to be archived.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user asked for an example of a comments property in a case.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user asked what properties could be associated with a comment.",
+      "turn_index": 10
+    },
+    {
+      "text": "The user asked to create the datastore model for the above requirements.",
+      "turn_index": 12
+    }
+  ],
+  "keyphrases": [
+    "project folder structure",
+    "app/authentication",
+    "app/case_management",
+    "app/image_review",
+    "app/logging",
+    "app/utils",
+    "datastore model of case",
+    "implant system labels",
+    "collect correct labels",
+    "case archiving",
+    "comments property",
+    "comment properties",
+    "datastore model"
+  ],
+  "events": []
+}

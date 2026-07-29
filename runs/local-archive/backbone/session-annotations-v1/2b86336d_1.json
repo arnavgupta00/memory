@@ -1,0 +1,128 @@
+{
+  "session_id": "2b86336d_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for fashion advice for a formal event.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a formal event coming up.",
+      "turn_index": 0
+    },
+    {
+      "text": "I attended a charity gala at the downtown Marriott hotel.",
+      "turn_index": 0
+    },
+    {
+      "text": "The dress code for the charity gala at the downtown Marriott hotel was black-tie.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am assuming my upcoming event will be similar to a black-tie event.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am wondering what kind of car service would be suitable for a black-tie event.",
+      "turn_index": 2
+    },
+    {
+      "text": "I took a limousine to the charity gala at the downtown Marriott hotel.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering accommodations because the event will run late.",
+      "turn_index": 4
+    },
+    {
+      "text": "I do not want to worry about driving home after the event.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know whether the downtown Marriott hotel offers special packages or discounts for event attendees.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking about getting a haircut before the event.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want recommendations for barber shops or salons near the downtown Marriott hotel.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking about getting a new watch to wear to the event.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want a stylish and elegant watch that would complement my outfit.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering a watch with a metal strap for a black-tie event.",
+      "turn_index": 10
+    },
+    {
+      "text": "I remember wearing a metal strap watch to the charity gala at the downtown Marriott hotel.",
+      "turn_index": 10
+    },
+    {
+      "text": "I remember that the metal strap watch seemed to work well with my outfit at the charity gala.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "fashion advice",
+    "formal event outfit",
+    "black-tie dress code",
+    "charity gala",
+    "downtown Marriott hotel",
+    "limousine car service",
+    "car service for events",
+    "accommodations for late event",
+    "hotel packages or discounts",
+    "haircut before event",
+    "barber shops near hotel",
+    "salons near hotel",
+    "new watch for black-tie",
+    "metal strap watch",
+    "elegant watch recommendations"
+  ],
+  "events": [
+    {
+      "text": "Attended a charity gala at the downtown Marriott hotel with a black-tie dress code",
+      "date_hint": "a while back",
+      "turn_index": 0
+    },
+    {
+      "text": "Took a limousine to the charity gala at the downtown Marriott hotel",
+      "date_hint": "a while back",
+      "turn_index": 2
+    },
+    {
+      "text": "Upcoming formal event (assumed black-tie)",
+      "date_hint": "coming up",
+      "turn_index": 0
+    },
+    {
+      "text": "Event runs late and may require accommodations",
+      "date_hint": "upcoming event",
+      "turn_index": 4
+    },
+    {
+      "text": "Considering getting a haircut before the event",
+      "date_hint": "before the event",
+      "turn_index": 6
+    },
+    {
+      "text": "Considering buying a new watch to wear to the event",
+      "date_hint": "before the event",
+      "turn_index": 8
+    },
+    {
+      "text": "Considering wearing a metal strap watch to a black-tie event",
+      "date_hint": "before the event",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "session_id": "e760dc71_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to find a new yoga studio to try out.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been going to yoga classes with my friend Emily.",
+      "turn_index": 0
+    },
+    {
+      "text": "After yoga classes, I and Emily always grab smoothies.",
+      "turn_index": 0
+    },
+    {
+      "text": "I recently went to Mike and Sarah's party.",
+      "turn_index": 0
+    },
+    {
+      "text": "Mike did an impression of someone who was supposed to attend Mike and Sarah's party but cancelled at the last minute.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want tips on how to convince my friend Rachel to join me for yoga classes.",
+      "turn_index": 2
+    },
+    {
+      "text": "My friend Rachel has been hesitant to join me for yoga classes so far.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been telling Rachel about my experiences with Emily.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been telling Rachel that we always grab smoothies after class.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am trying to convince my coworker Jack to try yoga with me.",
+      "turn_index": 6
+    },
+    {
+      "text": "My coworker Jack has been more interested in going on a hike instead of trying yoga.",
+      "turn_index": 6
+    },
+    {
+      "text": "I might join Jack for a hike instead of yoga.",
+      "turn_index": 8
+    },
+    {
+      "text": "I recently went to Mike and Sarah's party.",
+      "turn_index": 8
+    },
+    {
+      "text": "Mike did an impression of someone who was supposed to attend but cancelled at the last minute at Mike and Sarah's party.",
+      "turn_index": 8
+    },
+    {
+      "text": "I went on a hike with Jack or plan to go on a hike with Jack.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have been meaning to catch up with my friend Alex.",
+      "turn_index": 10
+    },
+    {
+      "text": "I had a falling out with my friend Alex a few weeks ago.",
+      "turn_index": 10
+    },
+    {
+      "text": "I and my friend Alex have been texting regularly again.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want tips on how to make the most out of a coffee meetup.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "new yoga studio",
+    "yoga classes with Emily",
+    "smoothies after yoga",
+    "Mike and Sarah's party",
+    "impression of cancelled attendee",
+    "convince friend Rachel to join yoga",
+    "coworker Jack try yoga",
+    "hike with Jack",
+    "bonding on a hike",
+    "catch up with friend Alex",
+    "falling out with Alex",
+    "coffee meetup tips"
+  ],
+  "events": [
+    {
+      "text": "Went to Mike and Sarah's party",
+      "date_hint": "recently",
+      "turn_index": 0
+    },
+    {
+      "text": "Mike did an impression of a cancelled attendee at Mike and Sarah's party",
+      "date_hint": "recently",
+      "turn_index": 0
+    },
+    {
+      "text": "Went to Mike and Sarah's party",
+      "date_hint": "recently",
+      "turn_index": 8
+    },
+    {
+      "text": "Mike did an impression of a cancelled attendee at Mike and Sarah's party",
+      "date_hint": "recently",
+      "turn_index": 8
+    },
+    {
+      "text": "Had a falling out with friend Alex",
+      "date_hint": "a few weeks ago",
+      "turn_index": 10
+    }
+  ]
+}

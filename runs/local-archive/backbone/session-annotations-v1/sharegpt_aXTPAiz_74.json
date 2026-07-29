@@ -1,0 +1,164 @@
+{
+  "session_id": "sharegpt_aXTPAiz_74",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "We can use Amazon S3 (Simple Storage Service) to store educational content for the Amazon Cockatoo application.",
+      "turn_index": 0
+    },
+    {
+      "text": "The educational content stored in Amazon S3 can include videos, images, documents, and audio files.",
+      "turn_index": 0
+    },
+    {
+      "text": "Amazon S3 is highly scalable and durable.",
+      "turn_index": 0
+    },
+    {
+      "text": "Amazon S3 is reliable.",
+      "turn_index": 0
+    },
+    {
+      "text": "We can use Amazon API Gateway for the backend of the application.",
+      "turn_index": 0
+    },
+    {
+      "text": "Amazon API Gateway creates and manages a RESTful API for the application.",
+      "turn_index": 0
+    },
+    {
+      "text": "Amazon API Gateway makes it easy to create, test, and deploy APIs.",
+      "turn_index": 0
+    },
+    {
+      "text": "Amazon API Gateway has built-in support for securing APIs using OAuth and other authentication methods.",
+      "turn_index": 0
+    },
+    {
+      "text": "We can use Amazon Lambda to execute backend code for the application.",
+      "turn_index": 0
+    },
+    {
+      "text": "Amazon Lambda is a serverless compute service.",
+      "turn_index": 0
+    },
+    {
+      "text": "Amazon Lambda allows developers to write code in response to events without worrying about underlying infrastructure.",
+      "turn_index": 0
+    },
+    {
+      "text": "When a user requests content, Lambda can retrieve content from Amazon S3 and serve it to the user.",
+      "turn_index": 0
+    },
+    {
+      "text": "We can use Amazon Cognito to manage user authentication and authorization.",
+      "turn_index": 0
+    },
+    {
+      "text": "Amazon Cognito supports user sign-up, sign-in, and access control.",
+      "turn_index": 0
+    },
+    {
+      "text": "Amazon Cognito integrates with other AWS services like API Gateway and Lambda.",
+      "turn_index": 0
+    },
+    {
+      "text": "We can use Amazon CloudWatch to monitor and analyze the application's performance.",
+      "turn_index": 0
+    },
+    {
+      "text": "Amazon CloudWatch provides metrics and logs to monitor the health and performance of the application.",
+      "turn_index": 0
+    },
+    {
+      "text": "Amazon CloudWatch can trigger alarms and notifications based on specific metrics.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user wants AWS Internal FAQ questions to be less like 'What is (service)' and more like internal questions such as how to store contents in AWS.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user wants a question for AWS Amplify Studio in the same manner as the internal FAQ and an answer in the same manner as above.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user suggests AWS Amplify Studio can take on some functions from Amazon CloudFront and replace it.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user wants the part explaining AWS Amplify Studio removed and replaced with an answer that applies AWS Amplify Studio to the current app.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user wants a one-paragraph AWS narrative focused on the background/inception of the application.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user wants the narrative to explain that the application's idea came about because the pandemic affected children's reading comprehension abilities.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user wants the narrative to include a scholarly article proving that the pandemic had effects on children's reading comprehension.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user wants a section titled 'approach' that explains the complication or change.",
+      "turn_index": 10
+    },
+    {
+      "text": "The user wants the 'approach' section to include data, details, arguments, and evidence supporting the background/inception.",
+      "turn_index": 10
+    },
+    {
+      "text": "The user wants the 'approach' section to address a reading comprehension app made for children to increase reading comprehension.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "AWS Internal FAQ",
+    "Amazon S3 educational content storage",
+    "Amazon Cockatoo application",
+    "Amazon API Gateway RESTful API",
+    "OAuth API security",
+    "Amazon Lambda serverless backend",
+    "Amazon Cognito user authentication authorization",
+    "Amazon CloudWatch metrics logs alarms",
+    "AWS Amplify Studio internal question",
+    "AWS Amplify Studio vs Amazon CloudFront",
+    "pandemic effects on children's reading comprehension",
+    "reading comprehension app for children approach"
+  ],
+  "events": [
+    {
+      "text": "Create an AWS Internal FAQ with services: Amazon S3, Amazon API Gateway, Amazon Lambda, Amazon Cognito, Amazon CloudWatch.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Revise FAQ questions to be internal questions like how to store contents in AWS.",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Add an AWS Amplify Studio question and answer in the same FAQ style, including possible replacement of some CloudFront functions.",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Remove the generic explanation of AWS Amplify Studio and tailor it to the current app.",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Write a one-paragraph AWS narrative about the app's inception, citing scholarly evidence about pandemic effects on children's reading comprehension.",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Write an 'approach' section with a heading, describing the problem/complication and proposed initiative with evidence for a children's reading comprehension app.",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "session_id": "bcfd4ab7",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I need help finding a good groomer in my area.",
+      "turn_index": 0
+    },
+    {
+      "text": "I will start by asking around my neighborhood to see if anyone has recommendations.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to get a new dog leash.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been using the same dog food and water bowls for Max for 3 months.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think it is time to replace Max's dog food and water bowls because they are showing signs of wear and tear.",
+      "turn_index": 6
+    },
+    {
+      "text": "I bought a 20-pound bag of dog food at Petco last week.",
+      "turn_index": 8
+    },
+    {
+      "text": "The 20-pound bag of dog food should last about 6 weeks.",
+      "turn_index": 8
+    },
+    {
+      "text": "Max is doing great.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have been trying to brush Max's coat more regularly to reduce shedding.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have been keeping an eye on Max's nails.",
+      "turn_index": 10
+    },
+    {
+      "text": "Max's nails need to be trimmed soon.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "good groomer",
+    "groomer in my area",
+    "ask around neighborhood",
+    "durable dog leash",
+    "easy-to-clean bowls",
+    "dog food and water bowls",
+    "20-pound bag of dog food",
+    "Petco",
+    "dog food lasts 6 weeks",
+    "reduce shedding brushing",
+    "trim nails soon",
+    "Max dog care"
+  ],
+  "events": [
+    {
+      "text": "Bought a 20-pound bag of dog food at Petco.",
+      "date_hint": "last week",
+      "turn_index": 8
+    },
+    {
+      "text": "Plan to ask around the neighborhood for groomer recommendations.",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Need to trim Max's nails soon.",
+      "date_hint": "soon",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "session_id": "b12d0498",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I need help updating my doll collection inventory list.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to organize my doll collection inventory list by category.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a template to make it easier to add new doll items.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to add a column for purchase price to my inventory template.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to add a column for purchase date to my inventory template.",
+      "turn_index": 2
+    },
+    {
+      "text": "I got a vintage 1960s Barbie doll last weekend for $120.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to add a Sailor Moon figurine to the template.",
+      "turn_index": 4
+    },
+    {
+      "text": "My Sailor Moon figurine is a limited edition.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to add my vintage comic books to the template.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to create a category for vintage comic books in the template.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have a near-mint condition copy of The Avengers #4 (1964).",
+      "turn_index": 6
+    },
+    {
+      "text": "I got The Avengers #4 (1964) for $80.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to add my vinyl record collection to the template.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to create a category for vinyl records in the template.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to organize my vinyl record collection by genre and decade.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to add my first pressing of The Beatles' Sgt. Pepper's Lonely Hearts Club Band to the template.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "doll collection inventory list",
+    "inventory template",
+    "organize by category",
+    "purchase price column",
+    "purchase date column",
+    "vintage 1960s Barbie doll",
+    "Sailor Moon figurine limited edition",
+    "vintage comic books category",
+    "The Avengers #4 1964 near-mint",
+    "vinyl record collection category",
+    "organize by genre and decade",
+    "first pressing Sgt. Pepper's Lonely Hearts Club Band"
+  ],
+  "events": [
+    {
+      "text": "Got a vintage 1960s Barbie doll",
+      "date_hint": "last weekend",
+      "turn_index": 2
+    },
+    {
+      "text": "Got a near-mint copy of The Avengers #4 (1964)",
+      "date_hint": "",
+      "turn_index": 6
+    }
+  ]
+}

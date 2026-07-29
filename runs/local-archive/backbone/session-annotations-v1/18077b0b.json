@@ -1,0 +1,97 @@
+{
+  "session_id": "18077b0b",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for new hot chocolate recipes to try out.",
+      "turn_index": 0
+    },
+    {
+      "text": "I love the sound of the Spicy Mayan Hot Chocolate.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been craving warm drinks a lot lately.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been craving warm drinks especially since the weather started cooling down in early October.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been drinking a lot of apple cider.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been meaning to try out a new camera lens for my photography class.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am not sure what type of lens would be best for capturing fall foliage.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been trying to get some good shots of the fall foliage on my daily commute.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am not sure whether I should be using a tripod or a monopod.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been meaning to try out some night photography.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want tips on how to capture the stars or cityscapes at night.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of experimenting with nighttime photography on my daily commute home from work.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have noticed that the stars are more visible now that the days are getting shorter.",
+      "turn_index": 10
+    },
+    {
+      "text": "I would love to capture shots of the cityscape at night.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want recommendations for camera settings or techniques to help me get started with nighttime photography.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "hot chocolate recipes",
+    "Spicy Mayan Hot Chocolate",
+    "warm drinks",
+    "early October weather cooling down",
+    "apple cider recipes",
+    "camera lens for photography class",
+    "fall foliage photography",
+    "tripod vs monopod",
+    "daily commute fall foliage shots",
+    "night photography tips",
+    "capturing stars at night",
+    "cityscape at night camera settings"
+  ],
+  "events": [
+    {
+      "text": "Weather started cooling down in early October.",
+      "date_hint": "early October",
+      "turn_index": 2
+    },
+    {
+      "text": "Days are getting shorter (seasonal cue for night photography).",
+      "date_hint": "now that the days are getting shorter",
+      "turn_index": 8
+    },
+    {
+      "text": "Stars are more visible now that the days are getting shorter.",
+      "date_hint": "now that the days are getting shorter",
+      "turn_index": 10
+    }
+  ]
+}

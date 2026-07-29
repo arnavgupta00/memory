@@ -1,0 +1,108 @@
+{
+  "session_id": "3ac6fe4c",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Seattle next month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am trying to decide what to pack for my trip to Seattle.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking about packing clothes that can be easily mixed and matched.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am trying to improve my packing habits.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been paying attention to what I packed for my last few trips.",
+      "turn_index": 4
+    },
+    {
+      "text": "On my last trip to Chicago, I packed 7 shirts.",
+      "turn_index": 6
+    },
+    {
+      "text": "On my last trip to Chicago, I ended up wearing 3 of the 7 shirts.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of packing lighter this time around.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering packing clothes that can be easily hand-washed and dried if needed.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to pack a few hand-washable clothes.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to pack a couple of quick-drying t-shirts.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to pack a pair of travel pants.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want recommendations for good travel-sized toiletries.",
+      "turn_index": 8
+    },
+    {
+      "text": "I do not want to pack full-sized toiletries.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of decanting my favorite toiletries into smaller containers.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to pack a few travel-sized toiletries options.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want recommendations for packing shoes.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want comfortable shoes for walking around Seattle.",
+      "turn_index": 10
+    },
+    {
+      "text": "I do not want to pack too many pairs of shoes.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to Seattle next month",
+    "average weather in Seattle",
+    "packing list based on previous trips",
+    "mix and match clothes",
+    "dark colors vs light colors",
+    "dark and neutral tops and bottoms",
+    "hand-washable clothes",
+    "quick-drying t-shirts",
+    "travel pants",
+    "travel-sized toiletries",
+    "decant toiletries into smaller containers",
+    "packing shoes for walking"
+  ],
+  "events": [
+    {
+      "text": "Trip planning for Seattle next month",
+      "date_hint": "next month",
+      "turn_index": 0
+    },
+    {
+      "text": "Last trip to Chicago (packed 7 shirts, wore 3)",
+      "date_hint": "last trip",
+      "turn_index": 6
+    }
+  ]
+}

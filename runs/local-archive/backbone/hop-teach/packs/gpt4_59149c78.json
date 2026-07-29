@@ -1,0 +1,33 @@
+{
+  "question_id": "gpt4_59149c78",
+  "question_type": "temporal-reasoning",
+  "question": "I mentioned that I participated in an art-related event two weeks ago. Where was that event held at?",
+  "question_date": "2023/02/01 (Wed) 08:41",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_d00ba6d1_1",
+    "answer_d00ba6d1_2"
+  ],
+  "haystack_session_count": 51,
+  "notes_coverage": "partial",
+  "annotated_session_count": 4,
+  "gold_sessions": [
+    {
+      "session_id": "answer_d00ba6d1_1",
+      "date": "2023/01/08 (Sun) 17:59",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_d00ba6d1_1\n[session_date] 2023/01/08 (Sun) 17:59\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm looking for some information on modern art movements. I just got back from a guided tour at the Museum of Modern Art focused on 20th-century modern art movements, and it really sparked my interest. Can you tell me more about the key artists associated with Cubism?\n\n[turn 2] That's really helpful, thanks for the information. I'm curious about Frida Kahlo's works, which I learned about during my MoMA tour. Can you tell me more about her artistic style and what inspired her?\n\n[turn 4] I'd like to know more about her relationship with Diego Rivera. How did they meet, and what was their marriage like?\n\n[turn 6] I'd like to know more about Frida's views on feminism and her role as a female artist in a male-dominated field.\n\n[turn 8] I'd like to explore Frida's cultural heritage and how it influenced her art. I'm particularly interested in her connection to Mexican folk art and how it shaped her unique style.\n\n[turn 10] I think I'll take a break from Frida Kahlo for now. I'd like to explore more about modern art movements. Can you tell me about Fauvism and its key artists?"
+    },
+    {
+      "session_id": "answer_d00ba6d1_2",
+      "date": "2023/01/15 (Sun) 13:43",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_d00ba6d1_2\n[session_date] 2023/01/15 (Sun) 13:43\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm trying to learn more about ancient cultures. Can you tell me more about the significance of mummification in ancient Egyptian culture?\n\n[turn 2] That's really interesting! I had no idea that the Egyptians believed the heart was the seat of the soul. I was particularly fascinated by the sarcophagi at the exhibit, can you tell me more about their significance and symbolism?\n\n[turn 4] That's amazing! I didn't know that the sarcophagus symbolized the womb and represented Isis. I was also surprised to learn that the heart was considered the seat of the soul. Speaking of which, I was wondering, are there any other ancient civilizations that also believed in mummification or similar practices?\n\n[turn 6] That's fascinating! I had no idea that mummification was practiced in so many ancient cultures. I've always been interested in ancient civilizations, which is why I attended the \"Ancient Civilizations\" exhibit at the Metropolitan Museum of Art today. Speaking of which, I was wondering, are there any other exhibits or museums in New York City that you would recommend for someone interested in ancient cultures?\n\n[turn 8] That's great, thank you for the recommendations! I'll definitely check them out. I'm particularly interested in the American Museum of Natural History, as I've heard their dinosaur exhibits are amazing. I've also been meaning to visit the Brooklyn Museum, as I've heard great things about their collection of ancient artifacts. Do you know if any of these museums offer guided tours or special programs for adults?"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

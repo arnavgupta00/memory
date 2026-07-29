@@ -1,0 +1,82 @@
+{
+  "session_id": "42e69993_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am moving to Vancouver for university.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am trying to finalize my accommodation in Vancouver.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am planning to move to Vancouver around mid-August.",
+      "turn_index": 2
+    },
+    {
+      "text": "My semester starts on September 1st.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to buy winter clothes before I leave my hometown.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am planning to explore the city before classes start.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want recommendations for must-see places and things to do in Vancouver.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know more about popular neighborhoods to check out before classes start on September 1st.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want recommendations for neighborhoods worth visiting before classes start on September 1st.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want an idea of how to get to recommended neighborhoods using public transportation.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Fairview neighborhood Vancouver",
+    "moving to Vancouver for university",
+    "accommodation in Vancouver",
+    "mid-August move-in",
+    "Vancouver weather August",
+    "Vancouver weather September",
+    "winter clothes for Vancouver",
+    "what winter clothes to buy",
+    "popular attractions Vancouver",
+    "must-see places Vancouver",
+    "popular neighborhoods Vancouver",
+    "public transportation to neighborhoods"
+  ],
+  "events": [
+    {
+      "text": "Move to Vancouver around mid-August",
+      "date_hint": "mid-August",
+      "turn_index": 2
+    },
+    {
+      "text": "Semester starts on September 1st",
+      "date_hint": "September 1st",
+      "turn_index": 2
+    },
+    {
+      "text": "Explore the city before classes start on September 1st",
+      "date_hint": "before September 1st",
+      "turn_index": 8
+    },
+    {
+      "text": "Explore the city before classes start on September 1st and visit popular neighborhoods",
+      "date_hint": "before September 1st",
+      "turn_index": 10
+    }
+  ]
+}

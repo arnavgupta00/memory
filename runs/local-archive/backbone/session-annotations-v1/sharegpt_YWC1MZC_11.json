@@ -1,0 +1,51 @@
+{
+  "session_id": "sharegpt_YWC1MZC_11",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user set refresh_interval to 1min.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user connected a model to a dsl_drf document.",
+      "turn_index": 5
+    },
+    {
+      "text": "The user inserted rows into a table and they were automatically indexed to Elasticsearch.",
+      "turn_index": 5
+    },
+    {
+      "text": "The user wants 10 rows to get indexed at a time.",
+      "turn_index": 5
+    }
+  ],
+  "keyphrases": [
+    "Elasticsearch storage options",
+    "mmapfs",
+    "niofs",
+    "hybridfs",
+    "refresh interval",
+    "refresh_interval 1min",
+    "automatic indexing",
+    "dsl_drf document",
+    "indexing inserted rows",
+    "index 10 rows at a time"
+  ],
+  "events": [
+    {
+      "text": "User set refresh_interval to 1min.",
+      "date_hint": "1min",
+      "turn_index": 3
+    },
+    {
+      "text": "User set refresh_interval to 1min and observed automatic indexing when inserting rows.",
+      "date_hint": "1min",
+      "turn_index": 5
+    },
+    {
+      "text": "User repeated the same refresh_interval and automatic indexing question.",
+      "date_hint": "1min",
+      "turn_index": 7
+    }
+  ]
+}

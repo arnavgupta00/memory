@@ -1,0 +1,108 @@
+{
+  "session_id": "68396ed3_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to cancel an Amazon order I placed yesterday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I make around 3 to 4 online purchases a week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been making online purchases for the past two months.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to find good cashback credit cards suitable for online shopping.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in the Amazon Prime Rewards Visa Signature Card.",
+      "turn_index": 4
+    },
+    {
+      "text": "I already have an Amazon Prime membership.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know more about the fees associated with the Amazon Prime Rewards Visa Signature Card.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know more about the travel protection and insurance benefits that come with the Amazon Prime Rewards Visa Signature Card.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of getting a new laptop soon.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know if there are good deals or discounts on laptops available right now.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of getting a laptop with at least 8GB of RAM.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am thinking of getting a laptop with an SSD.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am not sure about the processor yet.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am considering whether to get a 2-in-1 laptop or a traditional clamshell laptop.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "cancel Amazon order",
+    "Amazon order cancellation",
+    "online purchases per week",
+    "cashback credit cards",
+    "Amazon Prime Rewards Visa Signature Card",
+    "Prime membership",
+    "credit card fees",
+    "travel protection benefits",
+    "insurance benefits",
+    "laptop deals discounts",
+    "laptop 8GB RAM",
+    "2-in-1 vs clamshell laptop"
+  ],
+  "events": [
+    {
+      "text": "Placed an Amazon order yesterday and wants to cancel it",
+      "date_hint": "yesterday",
+      "turn_index": 0
+    },
+    {
+      "text": "Has been making online purchases for the past two months",
+      "date_hint": "past two months",
+      "turn_index": 0
+    },
+    {
+      "text": "Wants to cancel the Amazon order and then look for cashback credit cards",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Wants details on fees for the Amazon Prime Rewards Visa Signature Card",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Wants details on travel protection and insurance benefits for the Amazon Prime Rewards Visa Signature Card",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Wants to find laptop deals or discounts available right now",
+      "date_hint": "right now",
+      "turn_index": 8
+    }
+  ]
+}

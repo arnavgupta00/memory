@@ -1,0 +1,79 @@
+{
+  "session_id": "325c2005",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user is looking for new TV show recommendations.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user wants sci-fi shows similar to \"The Expanse\".",
+      "turn_index": 0
+    },
+    {
+      "text": "The user has already seen \"Battlestar Galactica\".",
+      "turn_index": 2
+    },
+    {
+      "text": "The user has already seen \"Stargate SG-1\".",
+      "turn_index": 2
+    },
+    {
+      "text": "The user has heard good things about \"Raised by Wolves\".",
+      "turn_index": 4
+    },
+    {
+      "text": "The user wants to get into more sci-fi shows.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user is considering whether \"Raised by Wolves\" is suitable to watch with their family.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user has kids.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user plans to wait until their kids are a bit older before watching \"Raised by Wolves\" with them.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user wants to check out \"Star Trek: Discovery\".",
+      "turn_index": 8
+    },
+    {
+      "text": "The user has heard good things about \"Star Trek: Discovery\".",
+      "turn_index": 8
+    },
+    {
+      "text": "The user is a fan of the Star Trek franchise.",
+      "turn_index": 10
+    },
+    {
+      "text": "The user will probably start with \"Star Trek: Discovery\".",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "TV show recommendations",
+    "sci-fi shows similar to The Expanse",
+    "Battlestar Galactica",
+    "Stargate SG-1",
+    "newer sci-fi shows past few years",
+    "Raised by Wolves",
+    "family-friendly sci-fi",
+    "adult geared sci-fi",
+    "wait until kids are older",
+    "Star Trek: Discovery",
+    "Star Trek franchise fan",
+    "premise and characters"
+  ],
+  "events": [
+    {
+      "text": "The user plans to wait until their kids are a bit older before watching \"Raised by Wolves\" with them.",
+      "date_hint": "in the future (when kids are a bit older)",
+      "turn_index": 8
+    }
+  ]
+}

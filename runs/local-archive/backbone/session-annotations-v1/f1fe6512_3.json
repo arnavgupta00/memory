@@ -1,0 +1,115 @@
+{
+  "session_id": "f1fe6512_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to organize my shopping expenses for the month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I sometimes buy multiple items of the same product, like two pairs of jeans.",
+      "turn_index": 0
+    },
+    {
+      "text": "I find it hard to keep track of the total cost when the price is not listed separately for each item.",
+      "turn_index": 0
+    },
+    {
+      "text": "I bought a few camisoles from H&M.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought a pair of ankle boots from Zara.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought a set of notecards from The Paperie.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought a custom planner from Etsy.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought an eyeshadow palette from Sephora.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought a few travel-sized skincare products from Drunk Elephant.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought two pairs of jeans from Levi's at Macy's.",
+      "turn_index": 2
+    },
+    {
+      "text": "I checked my receipts to find prices for some items.",
+      "turn_index": 4
+    },
+    {
+      "text": "I spent $60 on the ankle boots from Zara.",
+      "turn_index": 6
+    },
+    {
+      "text": "I spent $40 on the eyeshadow palette from Sephora.",
+      "turn_index": 6
+    },
+    {
+      "text": "I spent $20 on the notecards from The Paperie.",
+      "turn_index": 6
+    },
+    {
+      "text": "I spent $80 on the custom planner from Etsy.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want help calculating the total cost of the jeans from Levi's at Macy's.",
+      "turn_index": 8
+    },
+    {
+      "text": "I bought two pairs of jeans and want to make sure the total cost is correct.",
+      "turn_index": 8
+    },
+    {
+      "text": "I got 30% off the jeans.",
+      "turn_index": 10
+    },
+    {
+      "text": "I do not recall the original price of the jeans.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to calculate the price per pair if I provide the total amount spent after the discount.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "organize shopping expenses",
+    "monthly shopping expenses",
+    "categorize purchases",
+    "total amount spent",
+    "multiple items same product",
+    "two pairs of jeans",
+    "H&M camisoles",
+    "Zara ankle boots",
+    "The Paperie notecards",
+    "Etsy custom planner",
+    "Sephora eyeshadow palette",
+    "Drunk Elephant travel-sized skincare",
+    "Levi's jeans at Macy's",
+    "30% off jeans",
+    "price per pair after discount"
+  ],
+  "events": [
+    {
+      "text": "Checked receipts to find prices for some items.",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Found prices for ankle boots, eyeshadow palette, notecards, and custom planner on receipts.",
+      "date_hint": "",
+      "turn_index": 6
+    }
+  ]
+}

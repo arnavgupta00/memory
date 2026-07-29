@@ -1,0 +1,86 @@
+{
+  "session_id": "058f17e5_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Europe with my girlfriend in September.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am deciding between visiting the Louvre or the Orsay museum in Paris.",
+      "turn_index": 0
+    },
+    {
+      "text": "I visited the Met in New York City during a 4-day trip last month.",
+      "turn_index": 0
+    },
+    {
+      "text": "My 4-day trip to New York City was from March 15th to March 19th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I think we will prioritize the Orsay Museum because we are short on time.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have already seen similar artwork at the Met.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to visit the Eiffel Tower during my trip to Paris.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am planning to visit the Arc de Triomphe while I am in Paris.",
+      "turn_index": 6
+    },
+    {
+      "text": "I visited the Washington Monument during my 4-day trip to New York City last month.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning to visit the Champs-Élysées while I am in Paris.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of visiting the Montmartre neighborhood while I am in Paris.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to Europe",
+    "September travel",
+    "Orsay Museum",
+    "Louvre Museum",
+    "Met in New York City",
+    "4-day trip March 15 to March 19",
+    "Eiffel Tower tickets in advance",
+    "avoiding long lines",
+    "Arc de Triomphe",
+    "Washington Monument comparison",
+    "Champs-Élysées attractions",
+    "Montmartre landmarks"
+  ],
+  "events": [
+    {
+      "text": "4-day trip to New York City",
+      "date_hint": "March 15th to March 19th",
+      "turn_index": 0
+    },
+    {
+      "text": "Visiting the Met in New York City during the 4-day trip",
+      "date_hint": "last month (March 15th–19th)",
+      "turn_index": 0
+    },
+    {
+      "text": "Visiting the Washington Monument during the 4-day trip to New York City",
+      "date_hint": "last month (March 15th–19th)",
+      "turn_index": 6
+    },
+    {
+      "text": "Planning a trip to Europe with girlfriend in September",
+      "date_hint": "September",
+      "turn_index": 0
+    }
+  ]
+}

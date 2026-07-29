@@ -1,0 +1,112 @@
+{
+  "session_id": "02b99ec3_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to get my wardrobe organized.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a system to keep track of my clothes, like a spreadsheet.",
+      "turn_index": 0
+    },
+    {
+      "text": "I just got back a bunch of dry cleaning.",
+      "turn_index": 0
+    },
+    {
+      "text": "I got back black pants from dry cleaning.",
+      "turn_index": 0
+    },
+    {
+      "text": "I wore the black pants to our company party in January.",
+      "turn_index": 0
+    },
+    {
+      "text": "I loan out clothes to friends and family.",
+      "turn_index": 2
+    },
+    {
+      "text": "My sister still has my bright yellow sundress.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am trying to figure out what happened to a white button-down shirt with a small coffee stain on the sleeve.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to use the spreadsheet to track where I last wore certain items.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to add a \"Last Worn Date\" column to the spreadsheet.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to add a \"Location\" column to the spreadsheet.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to add a \"Notes\" column to jot down specific details about the last time I wore an item.",
+      "turn_index": 6
+    },
+    {
+      "text": "I remember wearing the white shirt to my friend Sarah's house for dinner.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to add a \"Purchased\" column to track when and where I bought each item.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been trying to be more mindful of my spending.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to add a \"Special Occasions\" column to track which items I have worn to special events.",
+      "turn_index": 10
+    },
+    {
+      "text": "I wore the black pants to a company party in January.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "wardrobe organization",
+    "clothes tracking system",
+    "spreadsheet for clothes",
+    "dry cleaning",
+    "black pants",
+    "company party January",
+    "Lent to column",
+    "loaned clothes to sister",
+    "bright yellow sundress",
+    "white button-down shirt",
+    "coffee stain on sleeve",
+    "Last Worn Date column",
+    "Location column",
+    "Notes column",
+    "friend Sarah's house dinner",
+    "Purchased column",
+    "mindful spending",
+    "Special Occasions column",
+    "outfit planning"
+  ],
+  "events": [
+    {
+      "text": "Wore black pants to a company party",
+      "date_hint": "January",
+      "turn_index": 0
+    },
+    {
+      "text": "Got back a bunch of dry cleaning including black pants",
+      "date_hint": "just got back",
+      "turn_index": 0
+    },
+    {
+      "text": "Wore the white shirt to friend Sarah's house for dinner",
+      "date_hint": "",
+      "turn_index": 6
+    }
+  ]
+}

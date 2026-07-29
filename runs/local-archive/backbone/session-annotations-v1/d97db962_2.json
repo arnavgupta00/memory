@@ -1,0 +1,81 @@
+{
+  "session_id": "d97db962_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am thinking of starting a succulent arrangement on my dining table.",
+      "turn_index": 0
+    },
+    {
+      "text": "I will be getting succulents online.",
+      "turn_index": 0
+    },
+    {
+      "text": "I do not know what condition the succulents will be in when they arrive.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need to turn my compost pile in the backyard this weekend.",
+      "turn_index": 4
+    },
+    {
+      "text": "It has been a month since I last turned my compost pile.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will inspect my succulents carefully when they arrive.",
+      "turn_index": 8
+    },
+    {
+      "text": "I gave my neighbor, Mrs. Johnson, a few cuttings from my spider plant today.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of getting Mrs. Johnson a small planter and some potting mix to help her get started with her indoor garden.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of getting Mrs. Johnson a small ceramic planter with a cute design.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am thinking of getting Mrs. Johnson a bag of organic potting mix specifically formulated for indoor plants.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "succulent arrangement",
+    "dining table succulents",
+    "buy succulents online",
+    "succulent care tips",
+    "potting mix for succulents",
+    "cacti and succulents potting mix",
+    "general-purpose potting soil perlite sand",
+    "fertilize succulents",
+    "fertilization needs houseplants",
+    "inspect succulents on arrival",
+    "signs of healthy succulents",
+    "turn compost pile backyard",
+    "spider plant cuttings",
+    "indoor garden planter",
+    "small ceramic planter",
+    "organic potting mix for indoor plants"
+  ],
+  "events": [
+    {
+      "text": "Turn the backyard compost pile",
+      "date_hint": "this weekend",
+      "turn_index": 4
+    },
+    {
+      "text": "It has been a month since the last time the compost pile was turned",
+      "date_hint": "a month since last time",
+      "turn_index": 4
+    },
+    {
+      "text": "Give Mrs. Johnson a few spider plant cuttings",
+      "date_hint": "today",
+      "turn_index": 8
+    }
+  ]
+}

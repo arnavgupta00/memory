@@ -1,0 +1,113 @@
+{
+  "session_id": "56053258_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a road trip to Yellowstone National Park.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been to Grand Teton National Park before.",
+      "turn_index": 0
+    },
+    {
+      "text": "I drove to Grand Teton National Park on the third day of my trip last month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I hiked the Hidden Falls trail in Grand Teton National Park.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in the Mammoth Hot Springs trails in Yellowstone National Park.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want information about the Wraith Falls Trail in Yellowstone National Park.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want information about the Beaver Ponds Trail in Yellowstone National Park.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want the elevation gain and difficulty level for the Wraith Falls Trail and the Beaver Ponds Trail.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of hiking the Beaver Ponds Trail.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know if there is a place to grab lunch or snacks near the Beaver Ponds Trailhead.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am planning to hike the Beaver Ponds Trail early in the morning to avoid crowds.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know if the Beaver Ponds Trailhead is easily accessible by car.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know if there is parking available near the Beaver Ponds Trailhead.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know about road conditions on the Grand Loop Road around the Beaver Ponds Trailhead.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know whether the Grand Loop Road is paved and well-maintained near the Beaver Ponds Trailhead.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know whether there are potholes or rough sections on the Grand Loop Road near the Beaver Ponds Trailhead.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of driving to the Mount Washburn Trailhead after finishing my hike on the Beaver Ponds Trail.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know whether the road to the Mount Washburn Trailhead is paved and well-maintained.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know whether there are any rough sections on the road to the Mount Washburn Trailhead.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Yellowstone National Park road trip",
+    "best hiking trails in Yellowstone",
+    "Grand Teton National Park Hidden Falls trail",
+    "Mammoth Hot Springs trails",
+    "Wraith Falls Trail elevation gain difficulty",
+    "Beaver Ponds Trail elevation gain difficulty",
+    "Beaver Ponds Trailhead lunch snacks",
+    "Beaver Ponds Trailhead parking",
+    "early morning hike Beaver Ponds Trail",
+    "Grand Loop Road conditions Beaver Ponds Trailhead",
+    "paved well-maintained road potholes rough sections",
+    "Mount Washburn Trailhead road conditions"
+  ],
+  "events": [
+    {
+      "text": "Drove to Grand Teton National Park on the third day of the trip last month.",
+      "date_hint": "third day of the trip last month",
+      "turn_index": 0
+    },
+    {
+      "text": "Hiked the Hidden Falls trail in Grand Teton National Park.",
+      "date_hint": "last month (third day of trip)",
+      "turn_index": 0
+    },
+    {
+      "text": "Planned to hike the Beaver Ponds Trail early in the morning to avoid crowds.",
+      "date_hint": "early in the morning",
+      "turn_index": 6
+    }
+  ]
+}

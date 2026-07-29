@@ -1,0 +1,52 @@
+{
+  "session_id": "sharegpt_jm1c5JI_21",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user asked to redo an output and add a description at the start.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user said they would write the words 'breakfast' and 'dinner' and then provide a URL of a new image of food.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user asked the assistant to generate an output in the same format as the last response with the word included before the URL at the top of the response.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user confirmed they wanted the word included before the URL to appear at the top of the response.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user provided a breakfast image URL: https://realfood.tesco.com/media/images/Smashed-avocado-v2-LGH-568ba110-4d9e-4023-a2bd-5ffd7528e72a-0-1400x919.jpg.",
+      "turn_index": 5
+    },
+    {
+      "text": "The user provided a dinner image URL: https://media.healthyfood.com/wp-content/uploads/2016/11/Teriyaki-salmon-with-stir-fried-greens-and-brown-rice-1.jpg.",
+      "turn_index": 7
+    },
+    {
+      "text": "The user provided a snack image URL: https://www.roastycoffee.com/wp-content/uploads/Cheese-In-Coffee.jpg.",
+      "turn_index": 9
+    },
+    {
+      "text": "The user provided a dinner image URL: https://loveincorporated.blob.core.windows.net/contentimages/main/394979f2-e0e9-4fdd-b474-19daa0474195-prawn-chicken-pad-thai.jpg.",
+      "turn_index": 11
+    }
+  ],
+  "keyphrases": [
+    "add description at the start",
+    "same format as last response",
+    "breakfast image URL",
+    "dinner image URL",
+    "snack image URL",
+    "food image generation",
+    "word at the top of the response",
+    "Tesco realfood smashed avocado",
+    "healthyfood teriyaki salmon",
+    "Roastycoffee cheese in coffee",
+    "loveincorporated prawn chicken pad thai"
+  ],
+  "events": []
+}

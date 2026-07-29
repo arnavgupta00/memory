@@ -1,0 +1,72 @@
+{
+  "session_id": "f849dd04",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have been having issues with my sleep lately.",
+      "turn_index": 0
+    },
+    {
+      "text": "I use my Fitbit to track my sleep.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have had my Fitbit for 6 months.",
+      "turn_index": 2
+    },
+    {
+      "text": "I use my Fitbit to track my daily activity.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have a daily step goal of 10,000 steps.",
+      "turn_index": 6
+    },
+    {
+      "text": "I incorporate more yoga into my routine.",
+      "turn_index": 8
+    },
+    {
+      "text": "I bought my yoga mat online last month.",
+      "turn_index": 8
+    },
+    {
+      "text": "I do yoga at least 3 times a week.",
+      "turn_index": 8
+    },
+    {
+      "text": "I follow along with YouTube videos.",
+      "turn_index": 10
+    },
+    {
+      "text": "My favorite yoga instructor is Adriene.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "sleep issues",
+    "sleep quality tips",
+    "Fitbit sleep tracking",
+    "Fitbit sleep patterns",
+    "Fitbit duration tracking",
+    "Fitbit daily activity tracking",
+    "10,000 steps daily goal",
+    "yoga routine",
+    "yoga mat bought online",
+    "yoga 3 times a week",
+    "YouTube yoga videos",
+    "Adriene yoga instructor"
+  ],
+  "events": [
+    {
+      "text": "Bought a yoga mat online",
+      "date_hint": "last month",
+      "turn_index": 8
+    },
+    {
+      "text": "Has had Fitbit for 6 months",
+      "date_hint": "6 months",
+      "turn_index": 2
+    }
+  ]
+}

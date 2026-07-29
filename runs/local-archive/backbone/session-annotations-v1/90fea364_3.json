@@ -1,0 +1,91 @@
+{
+  "session_id": "90fea364_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Chicago soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I had a great lunch at a trendy cafe in Wicker Park with my friend Rachel during a layover on the way back from San Francisco.",
+      "turn_index": 0
+    },
+    {
+      "text": "I walked to the cafe from the Damen stop on the Blue Line.",
+      "turn_index": 2
+    },
+    {
+      "text": "I met up with my friend Rachel in Chicago during a layover on the way back from San Francisco.",
+      "turn_index": 4
+    },
+    {
+      "text": "I grabbed lunch at a trendy cafe in Wicker Park during that layover.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to check out Lulabelle's.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to check out Hewn Bakery & Cafe.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning to stay in the West Loop area during my trip to Chicago.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am planning a solo trip to Europe next year.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am considering Italy or Spain for my solo trip to Europe next year.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Chicago trip",
+    "Wicker Park cafes",
+    "trendy cafe",
+    "layover from San Francisco",
+    "Rachel",
+    "Damen stop Blue Line",
+    "Instagrammable cafe",
+    "new cafes opened in past year",
+    "lunch menu",
+    "Lulabelle's",
+    "Hewn Bakery & Cafe",
+    "interior design decor",
+    "West Loop area",
+    "solo trip to Europe",
+    "Italy or Spain",
+    "transportation options itinerary"
+  ],
+  "events": [
+    {
+      "text": "Lunch at a trendy cafe in Wicker Park with friend Rachel during a layover on the way back from San Francisco",
+      "date_hint": "during a layover (date not specified)",
+      "turn_index": 0
+    },
+    {
+      "text": "Walked from the Damen stop on the Blue Line to the cafe in Wicker Park",
+      "date_hint": "during that layover (date not specified)",
+      "turn_index": 2
+    },
+    {
+      "text": "Met up with friend Rachel and grabbed lunch at a trendy cafe in Wicker Park during a layover on the way back from San Francisco",
+      "date_hint": "during a layover (date not specified)",
+      "turn_index": 4
+    },
+    {
+      "text": "Planning to stay in the West Loop area during the Chicago trip",
+      "date_hint": "during the upcoming Chicago trip (date not specified)",
+      "turn_index": 8
+    },
+    {
+      "text": "Planning a solo trip to Europe next year, possibly Italy or Spain",
+      "date_hint": "next year",
+      "turn_index": 10
+    }
+  ]
+}

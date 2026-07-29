@@ -1,0 +1,131 @@
+{
+  "session_id": "c625cff4_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have been having trouble with my sleep lately.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been trying to establish a consistent sleep schedule.",
+      "turn_index": 0
+    },
+    {
+      "text": "Last night, I went to bed around 11:45 PM.",
+      "turn_index": 0
+    },
+    {
+      "text": "I usually start getting ready for bed around 11:15 PM.",
+      "turn_index": 2
+    },
+    {
+      "text": "Last night, I went to bed around 11:45 PM.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to fit relaxation techniques into a 15–20 minute window before bed.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to incorporate reading into my bedtime routine for 10–15 minutes.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been trying to read for at least 20 minutes before bed.",
+      "turn_index": 4
+    },
+    {
+      "text": "I often get too engrossed in my book and end up staying up later than intended.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to stick to a 10-minute reading limit before bed.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to follow reading with quick relaxation techniques to calm my mind.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering whether it is better to read a physical book or an e-book before bed.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have heard that blue light from e-books can interfere with sleep.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to use a physical book for now.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to make a rule to avoid screens for at least an hour before bedtime.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to set a reminder on my phone to put screens away at 10:15 PM every night.",
+      "turn_index": 10
+    },
+    {
+      "text": "I plan to find a comfortable spot in my bedroom to read or relax before bed.",
+      "turn_index": 10
+    },
+    {
+      "text": "I plan to avoid checking my phone or watching TV before bed.",
+      "turn_index": 10
+    },
+    {
+      "text": "I might ask a friend or family member to hold me accountable and check in with me every few days about my \"no screens\" rule.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trouble sleeping",
+    "consistent sleep schedule",
+    "wind down before bed",
+    "fall asleep faster",
+    "bedtime routine",
+    "getting ready for bed 11:15 PM",
+    "go to bed 11:45 PM",
+    "15-20 minutes relaxation techniques",
+    "reading before bed 10-15 minutes",
+    "reading for at least 20 minutes",
+    "physical book vs e-book",
+    "avoid screens 1 hour before bedtime",
+    "no screens rule",
+    "phone reminder 10:15 PM",
+    "accountability check-in every few days"
+  ],
+  "events": [
+    {
+      "text": "Went to bed around 11:45 PM (later than desired).",
+      "date_hint": "last night",
+      "turn_index": 0
+    },
+    {
+      "text": "Went to bed around 11:45 PM (later than desired).",
+      "date_hint": "last night",
+      "turn_index": 2
+    },
+    {
+      "text": "Usually starts getting ready for bed around 11:15 PM.",
+      "date_hint": "typical routine",
+      "turn_index": 2
+    },
+    {
+      "text": "Plans to put screens away at 10:15 PM every night using a phone reminder.",
+      "date_hint": "every night",
+      "turn_index": 10
+    },
+    {
+      "text": "Plans to avoid screens for at least an hour before bedtime.",
+      "date_hint": "before bedtime (rule)",
+      "turn_index": 8
+    },
+    {
+      "text": "Plans to read for 10 minutes before bed and then do quick relaxation techniques.",
+      "date_hint": "upcoming routine",
+      "turn_index": 6
+    }
+  ]
+}

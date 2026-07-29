@@ -1,0 +1,84 @@
+{
+  "session_id": "d49b1a24_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for skincare routine tips.",
+      "turn_index": 0
+    },
+    {
+      "text": "I stocked up on my favorite products from Sephora on the 19th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have dry skin.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to incorporate favorite products from my Sephora haul into a morning routine.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to incorporate my favorite moisturizer, facial cleanser, and eye cream from Sephora.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to use my moisturizer in the morning.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to use my eye cream in the morning.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want a sunscreen that won't clog my pores.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want a sunscreen that won't make my skin look greasy.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am worried about sunscreen accentuating dryness because I have dry skin.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to try the EltaMD UV Clear Broad-Spectrum SPF 46.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am planning to do some online shopping this weekend.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am thinking of checking out kitchen utensils on Williams-Sonoma's website.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "skincare routine tips",
+    "dry skin",
+    "Sephora haul",
+    "morning routine",
+    "facial cleanser",
+    "moisturizer",
+    "eye cream",
+    "sunscreen for dry skin",
+    "won't clog pores sunscreen",
+    "EltaMD UV Clear SPF 46",
+    "kitchen utensils",
+    "Williams-Sonoma online shopping"
+  ],
+  "events": [
+    {
+      "text": "Stocked up on favorite Sephora products",
+      "date_hint": "on the 19th",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to do online shopping this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 10
+    }
+  ]
+}

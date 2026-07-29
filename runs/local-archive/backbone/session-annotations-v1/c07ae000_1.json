@@ -1,0 +1,107 @@
+{
+  "session_id": "c07ae000_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for book recommendations.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been reading a lot lately.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in finding authors similar to Emma Taylor.",
+      "turn_index": 0
+    },
+    {
+      "text": "I saw Emma Taylor at a book reading event at the local library on February 10th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I remember Emma Taylor read from her new novel at the book reading event at the local library on February 10th.",
+      "turn_index": 2
+    },
+    {
+      "text": "I did not catch the title of Emma Taylor's new novel.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in attending more book reading events and literary festivals in my area.",
+      "turn_index": 4
+    },
+    {
+      "text": "I attended a literary festival at the university campus on January 25th.",
+      "turn_index": 6
+    },
+    {
+      "text": "At the January 25th literary festival, I saw a poetry collective.",
+      "turn_index": 6
+    },
+    {
+      "text": "At the January 25th literary festival, I saw a debut author.",
+      "turn_index": 6
+    },
+    {
+      "text": "At the January 25th literary festival, I saw a panel discussion on diversity in literature.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am interested in attending more events like the January 25th festival.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering starting my own book club.",
+      "turn_index": 8
+    },
+    {
+      "text": "My book club would focus on books by authors of color.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have attended a few literary festivals and book reading events recently.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have already spoken to a few friends who are interested in joining the book club.",
+      "turn_index": 10
+    },
+    {
+      "text": "We are planning to meet for the first time in March to discuss the details of the book club.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "book recommendations",
+    "authors similar to Emma Taylor",
+    "Emma Taylor",
+    "book reading event",
+    "local library February 10",
+    "new novel title",
+    "literary festivals",
+    "upcoming book reading events",
+    "university campus January 25",
+    "poetry collective",
+    "panel discussion on diversity in literature",
+    "starting a book club",
+    "books by authors of color",
+    "book club meeting in March"
+  ],
+  "events": [
+    {
+      "text": "Emma Taylor read from her new novel at a book reading event at the local library",
+      "date_hint": "February 10th",
+      "turn_index": 2
+    },
+    {
+      "text": "Literary festival at the university campus",
+      "date_hint": "January 25th",
+      "turn_index": 6
+    },
+    {
+      "text": "First meeting planned for the book club",
+      "date_hint": "in March",
+      "turn_index": 10
+    }
+  ]
+}

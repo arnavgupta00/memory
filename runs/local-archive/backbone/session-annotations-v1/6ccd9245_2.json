@@ -1,0 +1,134 @@
+{
+  "session_id": "6ccd9245_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for skincare product recommendations.",
+      "turn_index": 0
+    },
+    {
+      "text": "I recently reached VIB status at Sephora.",
+      "turn_index": 0
+    },
+    {
+      "text": "I earned 100 points from H&M.",
+      "turn_index": 0
+    },
+    {
+      "text": "My H&M 100 points can be redeemed for a $5 discount on my next purchase.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for a moisturizer that can help with dryness and fine lines.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering the Protini Polypeptide Cream as a moisturizer for dryness and fine lines.",
+      "turn_index": 2
+    },
+    {
+      "text": "I will give the Protini Polypeptide Cream a try.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have heard great things about Drunk Elephant.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am excited to see how Drunk Elephant products work on my skin.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am looking for a good coffee shop near me.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been doing well with my loyalty program at The Daily Grind.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will try out the Protini Polypeptide Cream.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am looking for good clothing stores with a loyalty program.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been doing well with my H&M Member loyalty program.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of checking out Madewell's Insider program.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have heard great things about Madewell's denim.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am always looking for new places to shop.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am going to ask about Page & Co.'s loyalty program.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to join Page & Co.'s loyalty program.",
+      "turn_index": 10
+    },
+    {
+      "text": "I haven't gotten around to joining Page & Co.'s loyalty program yet.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "skincare product recommendations",
+    "Sephora VIB status",
+    "H&M loyalty program",
+    "100 points",
+    "$5 discount",
+    "Drunk Elephant products",
+    "Protini Polypeptide Cream",
+    "moisturizer for dryness",
+    "fine lines moisturizer",
+    "coffee shop near me",
+    "The Daily Grind loyalty program",
+    "clothing stores loyalty program",
+    "Madewell Insider program",
+    "Page & Co. loyalty program"
+  ],
+  "events": [
+    {
+      "text": "Reached VIB status at Sephora",
+      "date_hint": "recently",
+      "turn_index": 0
+    },
+    {
+      "text": "Earned 100 points from H&M",
+      "date_hint": "recently",
+      "turn_index": 0
+    },
+    {
+      "text": "Redeemed/eligible to redeem H&M points for a $5 discount on next purchase",
+      "date_hint": "next purchase",
+      "turn_index": 0
+    },
+    {
+      "text": "Decided to try Protini Polypeptide Cream",
+      "date_hint": "this conversation",
+      "turn_index": 4
+    },
+    {
+      "text": "Thinking about checking out Madewell's Insider program",
+      "date_hint": "this conversation",
+      "turn_index": 8
+    },
+    {
+      "text": "Haven't gotten around to joining Page & Co.'s loyalty program yet",
+      "date_hint": "this conversation",
+      "turn_index": 10
+    }
+  ]
+}

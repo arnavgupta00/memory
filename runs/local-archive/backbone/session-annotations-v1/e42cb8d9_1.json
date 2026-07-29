@@ -1,0 +1,106 @@
+{
+  "session_id": "e42cb8d9_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a family trip to Hawaii.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am trying to finalize accommodation options for my family trip to Hawaii.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am flying out to Honolulu on June 15th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to stay close to the beach and all the action in Waikiki.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering the Hilton Hawaiian Village Waikiki Beach Resort for my stay.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want amenities for families with kids at the Hilton Hawaiian Village Waikiki Beach Resort.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of booking a luau for my family during our stay.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am looking for popular luaus in the Waikiki area that are kid-friendly.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want transportation options from the airport to our hotel.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am flying into Honolulu on June 15th.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to get to our hotel safely and efficiently.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think I will book a shuttle service from the airport to our hotel.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want a shuttle service that operates from the airport to the Hilton Hawaiian Village Waikiki Beach Resort.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have booked a shuttle service from the airport to our hotel.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to book a snorkeling tour for my family.",
+      "turn_index": 10
+    },
+    {
+      "text": "My family wants to explore the reefs and marine life of Hawaii.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "family trip to Hawaii",
+    "hotel booking tips",
+    "Waikiki hotel",
+    "Hilton Hawaiian Village Waikiki Beach Resort",
+    "family amenities with kids",
+    "luau kid-friendly",
+    "popular luaus Waikiki",
+    "transportation from airport",
+    "Honolulu airport to hotel",
+    "shuttle service",
+    "snorkeling tour",
+    "June 15 Honolulu flight"
+  ],
+  "events": [
+    {
+      "text": "Flying out to Honolulu for the trip",
+      "date_hint": "June 15th",
+      "turn_index": 0
+    },
+    {
+      "text": "Flying into Honolulu for the trip",
+      "date_hint": "June 15th",
+      "turn_index": 6
+    },
+    {
+      "text": "Booking a shuttle service from the airport to the hotel",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Shuttle service booking completed",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

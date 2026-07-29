@@ -1,0 +1,73 @@
+{
+  "session_id": "12be262f_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking to improve my public speaking skills.",
+      "turn_index": 0
+    },
+    {
+      "text": "I attended a half-day speechcraft workshop at a local community center today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in exploring the Agile methodology further.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am particularly interested in the Agile Fundamentals course on Pluralsight.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to understand the basics of Agile, including its core values and principles.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am planning to apply Agile principles to my writing project.",
+      "turn_index": 6
+    },
+    {
+      "text": "I started my writing project during a 2-day writing workshop at a coffee shop downtown in late February.",
+      "turn_index": 6
+    },
+    {
+      "text": "I attended a writing workshop at a coffee shop downtown in late February.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to learn more about the writing process and what I learned from that workshop.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "public speaking skills",
+    "online resources for speechcraft training",
+    "half-day speechcraft workshop",
+    "local community center",
+    "Agile methodology",
+    "Agile Fundamentals course",
+    "Pluralsight",
+    "Agile core values and principles",
+    "apply Agile to writing project",
+    "2-day writing workshop",
+    "coffee shop downtown",
+    "late February writing workshop"
+  ],
+  "events": [
+    {
+      "text": "Attended a half-day speechcraft workshop at a local community center",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Started a writing project during a 2-day writing workshop at a coffee shop downtown",
+      "date_hint": "late February",
+      "turn_index": 6
+    },
+    {
+      "text": "Writing workshop at a coffee shop downtown",
+      "date_hint": "late February",
+      "turn_index": 10
+    }
+  ]
+}

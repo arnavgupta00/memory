@@ -1,0 +1,106 @@
+{
+  "session_id": "203a48bb_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning back-to-school shopping.",
+      "turn_index": 0
+    },
+    {
+      "text": "I made a big purchase at Target last week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I earned 500 points on my Target RedCard.",
+      "turn_index": 0
+    },
+    {
+      "text": "I plan to make a list and stick to it for back-to-school shopping.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to look out for sales and discounts at Target because I have 500 points on my RedCard.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have heard of Rakuten and RetailMeNot.",
+      "turn_index": 4
+    },
+    {
+      "text": "I use the loyalty program at The Daily Grind.",
+      "turn_index": 6
+    },
+    {
+      "text": "I redeemed 100 points for a free latte at The Daily Grind last Friday.",
+      "turn_index": 6
+    },
+    {
+      "text": "I get 10% off all my purchases at The Daily Grind because I linked my loyalty account to their mobile app.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking about canceling my loyalty membership at Barnes & Noble.",
+      "turn_index": 8
+    },
+    {
+      "text": "I received an email from Barnes & Noble offering a $10 reward if I spend $50 within the next two weeks.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering keeping the Barnes & Noble membership and using the $10 reward to buy a new book.",
+      "turn_index": 8
+    },
+    {
+      "text": "I decided to keep the Barnes & Noble membership.",
+      "turn_index": 10
+    },
+    {
+      "text": "I plan to use the $10 reward to buy a new book.",
+      "turn_index": 10
+    },
+    {
+      "text": "I signed up for the Gap's loyalty program.",
+      "turn_index": 10
+    },
+    {
+      "text": "I got a discount on my first purchase from the Gap's loyalty program.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "back-to-school shopping",
+    "save money tips",
+    "Target RedCard",
+    "Target points",
+    "Target sales and discounts",
+    "cashback apps",
+    "Rakuten",
+    "RetailMeNot",
+    "organize loyalty programs",
+    "rewards tracking apps",
+    "The Daily Grind loyalty program",
+    "redeemed 100 points free latte",
+    "10% off linked loyalty mobile app",
+    "Barnes & Noble loyalty membership",
+    "spend $50 get $10 reward",
+    "Gap loyalty program",
+    "Gap first purchase discount"
+  ],
+  "events": [
+    {
+      "text": "Made a big purchase at Target and earned 500 points on Target RedCard",
+      "date_hint": "last week",
+      "turn_index": 0
+    },
+    {
+      "text": "Redeemed 100 points for a free latte at The Daily Grind",
+      "date_hint": "last Friday",
+      "turn_index": 6
+    },
+    {
+      "text": "Received an email from Barnes & Noble offering a $10 reward for spending $50 within the next two weeks",
+      "date_hint": "within the next two weeks",
+      "turn_index": 8
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "session_id": "6c29f175",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have therapy appointments with Dr. Smith.",
+      "turn_index": 0
+    },
+    {
+      "text": "My first appointment with Dr. Smith was on February 27th.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have anxiety that I manage with therapy.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been journaling my emotions and feelings more regularly.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been journaling for a bit now.",
+      "turn_index": 6
+    },
+    {
+      "text": "Journaling has helped me identify my triggers and patterns.",
+      "turn_index": 6
+    },
+    {
+      "text": "I had a major falling out with my best friend in early February.",
+      "turn_index": 6
+    },
+    {
+      "text": "The falling out with my best friend took a toll on my self-esteem.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want tips on reframe negative thoughts and focus on self-compassion.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want suggestions on prioritizing self-care and setting boundaries with social invitations that feel overwhelming or stressful.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been thinking about my daily routine and making time for self-care.",
+      "turn_index": 10
+    },
+    {
+      "text": "I started taking daily walks around my neighborhood.",
+      "turn_index": 10
+    },
+    {
+      "text": "Daily walks have been really helpful in clearing my head.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want suggestions to incorporate more physical activity into my daily routine, especially on days when I feel anxious or overwhelmed.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "therapy appointments",
+    "Dr. Smith",
+    "February 27",
+    "anxiety management",
+    "mindfulness exercises",
+    "journaling emotions",
+    "self-esteem",
+    "major falling out with best friend",
+    "self-compassion",
+    "self-care boundaries",
+    "social invitations",
+    "daily walks neighborhood"
+  ],
+  "events": [
+    {
+      "text": "First therapy appointment with Dr. Smith",
+      "date_hint": "February 27th",
+      "turn_index": 2
+    },
+    {
+      "text": "Major falling out with best friend",
+      "date_hint": "early February",
+      "turn_index": 6
+    }
+  ]
+}

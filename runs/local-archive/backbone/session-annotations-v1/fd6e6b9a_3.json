@@ -1,0 +1,135 @@
+{
+  "session_id": "fd6e6b9a_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for organization tips for my closet.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been putting away my clean laundry.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need to get back into the habit of storing my shoes properly.",
+      "turn_index": 0
+    },
+    {
+      "text": "I was visiting my family last weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am back in town after visiting my family last weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to designate a shoe zone.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to get a shoe rack.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been keeping my morning routine on track.",
+      "turn_index": 2
+    },
+    {
+      "text": "I make my bed.",
+      "turn_index": 2
+    },
+    {
+      "text": "I tidy up the living room during lunch breaks from work.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to get back into the habit of wiping down the bathroom sink after use.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to get back into the habit of wiping down the toilet after use.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to set up a recurring reminder to vacuum the stairs every two weeks.",
+      "turn_index": 4
+    },
+    {
+      "text": "I haven't gotten around to setting up the recurring reminder to vacuum the stairs yet.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to set a reminder to do laundry every Sunday morning.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been doing laundry consistently.",
+      "turn_index": 6
+    },
+    {
+      "text": "I skipped laundry last weekend when I was out of town visiting my family.",
+      "turn_index": 6
+    },
+    {
+      "text": "I take out the trash every Thursday morning.",
+      "turn_index": 8
+    },
+    {
+      "text": "I take out the recycling every Thursday morning.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to make sure I don't forget to take out the trash and recycling.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "closet organization tips",
+    "shoe storage",
+    "shoe zone",
+    "shoe rack",
+    "morning routine",
+    "make the bed",
+    "tidy living room",
+    "bathroom sink wipe down",
+    "toilet wipe down",
+    "vacuum stairs reminder",
+    "every two weeks",
+    "laundry reminder Sunday morning",
+    "trash and recycling schedule",
+    "take out trash Thursday morning",
+    "take out recycling Thursday morning"
+  ],
+  "events": [
+    {
+      "text": "Visited family last weekend",
+      "date_hint": "last weekend",
+      "turn_index": 0
+    },
+    {
+      "text": "Back in town after visiting family",
+      "date_hint": "after last weekend",
+      "turn_index": 0
+    },
+    {
+      "text": "Skipped laundry last weekend while out of town visiting family",
+      "date_hint": "last weekend",
+      "turn_index": 6
+    },
+    {
+      "text": "Vacuum the stairs reminder every two weeks (recurring plan)",
+      "date_hint": "every two weeks",
+      "turn_index": 4
+    },
+    {
+      "text": "Do laundry reminder every Sunday morning (recurring plan)",
+      "date_hint": "every Sunday morning",
+      "turn_index": 6
+    },
+    {
+      "text": "Take out trash and recycling every Thursday morning (recurring routine)",
+      "date_hint": "every Thursday morning",
+      "turn_index": 8
+    }
+  ]
+}

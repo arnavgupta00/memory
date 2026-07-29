@@ -1,0 +1,78 @@
+{
+  "session_id": "3dfdabbf",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to plan a day out with my sister who is visiting soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I live in the city where I am asking for art museum suggestions.",
+      "turn_index": 2
+    },
+    {
+      "text": "My sister is a big fan of Monet's Water Lilies series.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am in the city where the City Art Museum is.",
+      "turn_index": 4
+    },
+    {
+      "text": "I visited the City Art Museum a few weeks ago with my friend Rachel.",
+      "turn_index": 6
+    },
+    {
+      "text": "I saw Impressionist pieces at the City Art Museum.",
+      "turn_index": 6
+    },
+    {
+      "text": "I saw Monet's Water Lilies series at the City Art Museum.",
+      "turn_index": 6
+    },
+    {
+      "text": "I visited the City Art Museum on Saturday, March 12th with Rachel.",
+      "turn_index": 8
+    },
+    {
+      "text": "I spent about 2.5 hours at the City Art Museum.",
+      "turn_index": 8
+    },
+    {
+      "text": "There was an Impressionist exhibit at the City Art Museum.",
+      "turn_index": 8
+    },
+    {
+      "text": "I was captivated by Monet's Water Lilies series at the City Art Museum.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am looking for art museums in my area that might have Impressionist exhibits or similar collections.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "day out with sister",
+    "art museums in the city",
+    "Monet's Water Lilies series",
+    "City Art Museum",
+    "Impressionist exhibit",
+    "visiting soon",
+    "friend Rachel",
+    "Saturday March 12",
+    "2.5 hours at museum",
+    "museums with similar exhibits"
+  ],
+  "events": [
+    {
+      "text": "Visited the City Art Museum with Rachel",
+      "date_hint": "a few weeks ago",
+      "turn_index": 6
+    },
+    {
+      "text": "Visited the City Art Museum on Saturday, March 12th with Rachel",
+      "date_hint": "Saturday, March 12th",
+      "turn_index": 8
+    }
+  ]
+}

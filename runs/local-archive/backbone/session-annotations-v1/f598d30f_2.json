@@ -1,0 +1,119 @@
+{
+  "session_id": "f598d30f_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking to schedule a bike maintenance class.",
+      "turn_index": 0
+    },
+    {
+      "text": "I asked whether Cycle World offers bike maintenance classes.",
+      "turn_index": 0
+    },
+    {
+      "text": "I took my mountain bike out for a 25-mile ride.",
+      "turn_index": 0
+    },
+    {
+      "text": "I noticed my mountain bike was making strange noises today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I plan to troubleshoot the rear derailleur issue myself first.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to check the derailleur hanger for misalignment.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to adjust the limit screws on the rear derailleur.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to inspect the cassette and identify worn-out teeth.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to clean the cassette effectively.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am worried about damaging the cassette.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think I will take my bike to a local bike shop for a professional assessment and cleaning.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know how often to replace my cassette.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want a general rule of thumb for cassette replacement.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will take my bike to the local bike shop to have them inspect the cassette and rear derailleur.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will ask the local bike shop to check the bike overall to make sure everything is in good condition.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know whether the local bike shop will be able to fix the strange noise issue with the rear derailleur or whether I will need to replace it.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will ask the local bike shop to give me an estimate of the cost of the repairs before they start working on the bike.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "bike maintenance class",
+    "Cycle World classes",
+    "rear derailleur strange noises",
+    "mountain bike 25-mile ride",
+    "derailleur hanger misalignment",
+    "adjust limit screws",
+    "inspect cassette worn teeth",
+    "clean cassette",
+    "cassette replacement frequency",
+    "local bike shop assessment",
+    "rear derailleur repair cost estimate"
+  ],
+  "events": [
+    {
+      "text": "Noticed strange noises from the rear derailleur after a 25-mile mountain bike ride",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Planned to troubleshoot the rear derailleur issue by checking derailleur hanger alignment and adjusting limit screws",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Planned to inspect the cassette for worn teeth and clean the cassette",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Planned to take the bike to a local bike shop for professional assessment and cleaning",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Planned to have the local bike shop inspect the cassette and rear derailleur and check the bike overall",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Planned to request a cost estimate before the local bike shop starts repairs",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

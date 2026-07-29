@@ -1,0 +1,108 @@
+{
+  "session_id": "1d6e01e8",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to find my grandmother's silver locket that she gave me on my 18th birthday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I last wore my grandmother's silver locket to my cousin's wedding last month.",
+      "turn_index": 0
+    },
+    {
+      "text": "My grandmother's silver locket is now missing.",
+      "turn_index": 0
+    },
+    {
+      "text": "I took my watch to a jewelry store last week to get the battery replaced.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have not picked up my watch yet.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think I could have left the locket at the jewelry store by mistake.",
+      "turn_index": 2
+    },
+    {
+      "text": "I organized my jewelry box about three weeks ago.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am missing a few pieces from my jewelry collection.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to create a jewelry inventory.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have pearl earrings that I got from a small boutique downtown.",
+      "turn_index": 6
+    },
+    {
+      "text": "I lent a silver necklace to my best friend Sarah.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to clean my engagement ring safely and effectively.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to get my ears pierced again.",
+      "turn_index": 10
+    },
+    {
+      "text": "I got my ears pierced when I was 16.",
+      "turn_index": 10
+    },
+    {
+      "text": "My ear piercing holes closed up after I stopped wearing earrings for a few years.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am considering whether to get my ears pierced in the same spot or a different location.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "grandmother silver locket",
+    "18th birthday locket",
+    "cousin wedding last month",
+    "missing jewelry pieces",
+    "jewelry box organized three weeks ago",
+    "jewelry inventory",
+    "pearl earrings boutique downtown",
+    "silver necklace loaned to Sarah",
+    "watch battery replaced jewelry store",
+    "engagement ring cleaning",
+    "safe engagement ring cleaning",
+    "getting ears pierced again",
+    "ear piercing holes closed",
+    "pierce same spot vs different location"
+  ],
+  "events": [
+    {
+      "text": "Last wore the grandmother's silver locket to a cousin's wedding.",
+      "date_hint": "last month",
+      "turn_index": 0
+    },
+    {
+      "text": "Took a watch to a jewelry store to get the battery replaced.",
+      "date_hint": "last week",
+      "turn_index": 2
+    },
+    {
+      "text": "Organized the jewelry box.",
+      "date_hint": "about three weeks ago",
+      "turn_index": 4
+    },
+    {
+      "text": "Ear piercing holes closed after stopping wearing earrings for a few years.",
+      "date_hint": "after a few years",
+      "turn_index": 10
+    }
+  ]
+}

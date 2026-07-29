@@ -1,0 +1,119 @@
+{
+  "session_id": "ea27c6f5_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Grand Teton National Park.",
+      "turn_index": 0
+    },
+    {
+      "text": "I was wondering if someone could recommend good hiking trails and campsites for Grand Teton National Park.",
+      "turn_index": 0
+    },
+    {
+      "text": "I just got back from an amazing solo road trip to Utah.",
+      "turn_index": 0
+    },
+    {
+      "text": "On my Utah trip, I visited Zion National Park.",
+      "turn_index": 0
+    },
+    {
+      "text": "On my Utah trip, I visited Bryce Canyon.",
+      "turn_index": 0
+    },
+    {
+      "text": "On my Utah trip, I visited Arches National Park.",
+      "turn_index": 0
+    },
+    {
+      "text": "I drove over 1,200 miles on my Utah trip.",
+      "turn_index": 2
+    },
+    {
+      "text": "I loved the scenic routes through Zion, Bryce Canyon, and Arches during my Utah trip.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to rent a car for my trip to Grand Teton National Park.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want car rentals that offer 4-wheel drive vehicles.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want recommendations for car rentals that offer 4-wheel drive vehicles.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know more about the road conditions in Grand Teton National Park.",
+      "turn_index": 6
+    },
+    {
+      "text": "I drove on rough roads during my Utah trip.",
+      "turn_index": 6
+    },
+    {
+      "text": "I drove on rough roads during my Utah trip, especially in Bryce Canyon.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to make sure I am prepared for whatever Grand Teton has in store.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning to hike the Teton Crest Trail.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have heard that the Teton Crest Trail is a challenging multi-day backpacking trip.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want recommendations for guide services or outfitters that offer guided hikes and gear rentals.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of bringing my bear spray on the Teton Crest Trail hike.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am not sure if bear spray is really necessary for the Teton Crest Trail hike.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know more about bear safety in Grand Teton National Park.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Grand Teton National Park hiking trails",
+    "Grand Teton campsites",
+    "solo road trip to Utah",
+    "Zion National Park scenic routes",
+    "Bryce Canyon scenic routes",
+    "Arches National Park scenic routes",
+    "scenic drives in Grand Teton",
+    "car rental 4-wheel drive",
+    "road conditions Grand Teton",
+    "rough roads Bryce Canyon",
+    "Teton Crest Trail",
+    "multi-day backpacking trip",
+    "guided hikes and gear rentals",
+    "bear safety Grand Teton",
+    "bear spray necessity"
+  ],
+  "events": [
+    {
+      "text": "Solo road trip to Utah visiting Zion National Park, Bryce Canyon, and Arches National Park",
+      "date_hint": "just got back (relative to session)",
+      "turn_index": 0
+    },
+    {
+      "text": "Drove over 1,200 miles on the Utah trip",
+      "date_hint": "during the Utah trip (relative)",
+      "turn_index": 2
+    }
+  ]
+}

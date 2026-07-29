@@ -1,0 +1,51 @@
+{
+  "session_id": "sharegpt_5pIFvuH_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to write a new Calendly plugin in TypeScript.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to deploy the plugin on my servers.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a basic setup.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want the plugin to get user details.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want the plugin to include methods named getUserDetails, getUsersAllMeetings, getUsersAllPartMeetings, and getUsersAllUpcomingMeetings.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want the plugin to include a method named getUsersAllPastMeetings.",
+      "turn_index": 8
+    },
+    {
+      "text": "I asked whether the assistant has an idea how Calendly APIs work.",
+      "turn_index": 10
+    },
+    {
+      "text": "I asked whether the assistant is making things up.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Calendly plugin",
+    "TypeScript plugin",
+    "deploy on servers",
+    "getUserDetails",
+    "getUsersAllMeetings",
+    "getUsersAllPartMeetings",
+    "getUsersAllUpcomingMeetings",
+    "getUsersAllPastMeetings",
+    "Calendly API",
+    "Calendly user details"
+  ],
+  "events": []
+}

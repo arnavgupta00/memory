@@ -1,0 +1,84 @@
+{
+  "session_id": "2dfc1443_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Frankfurt in March.",
+      "turn_index": 0
+    },
+    {
+      "text": "I received my TSA Pre-Check approval today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering the Hilton Frankfurt Airport hotel.",
+      "turn_index": 2
+    },
+    {
+      "text": "A fellow traveler recommended Hilton hotels to me on my recent flight from New York to LA.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering applying for a new credit card.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering the Hilton Honors Aspire Card from American Express.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of applying for the Hilton Honors Aspire Card.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to understand how the $250 annual resort credit works for the Hilton Honors Aspire Card.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know whether the $250 annual resort credit is limited to specific Hilton resorts.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know whether there are restrictions on how the $250 annual resort credit can be used.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am also considering applying for the Chase Sapphire card.",
+      "turn_index": 10
+    },
+    {
+      "text": "The Chase Sapphire card offers a 60,000-point bonus after meeting the minimum spend requirement.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know how the Chase Sapphire points can be redeemed for travel.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to Frankfurt March",
+    "hotels near Frankfurt airport",
+    "TSA Pre-Check approval",
+    "Hilton Frankfurt Airport",
+    "Hilton loyalty program",
+    "Hilton Honors points",
+    "Hilton Honors Aspire Card",
+    "American Express Hilton Honors Aspire",
+    "$250 annual resort credit",
+    "Hilton resort credit restrictions",
+    "Chase Sapphire 60,000-point bonus",
+    "redeeming points for travel"
+  ],
+  "events": [
+    {
+      "text": "Received TSA Pre-Check approval.",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Recent flight from New York to LA (prompting Hilton hotel recommendations).",
+      "date_hint": "recent",
+      "turn_index": 2
+    }
+  ]
+}

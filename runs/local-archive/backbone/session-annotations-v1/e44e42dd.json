@@ -1,0 +1,124 @@
+{
+  "session_id": "e44e42dd",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to plan out my schedule for the upcoming week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have lunch with Alex on Tuesday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have lunch with Alex on Thursday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a weekly coffee break with my coworkers.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of planning a family dinner tonight.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am looking for recipe suggestions for family dinner.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of making something Italian.",
+      "turn_index": 4
+    },
+    {
+      "text": "My mom wants to try making pasta from scratch.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want a simple pasta recipe that serves 4-5 people.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am looking forward to our Sunday morning breakfast tradition this week.",
+      "turn_index": 4
+    },
+    {
+      "text": "I really enjoy our Sunday morning breakfast tradition.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want advice on how to prioritize tasks and manage my workload better.",
+      "turn_index": 6
+    },
+    {
+      "text": "My friend Alex has been giving me tips about prioritizing tasks.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been trying to manage my workload better.",
+      "turn_index": 8
+    },
+    {
+      "text": "I need to work on setting clear goals and prioritizing tasks more effectively.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want suggestions on how to create a task list or planner that works well for me.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I will try a digital tool like Todoist or Trello to create my task list.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want tips on how to organize tasks within Todoist or Trello.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am considering creating separate boards or lists for work and personal tasks.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "upcoming week schedule",
+    "reminders for meetups",
+    "lunch with Alex Tuesday",
+    "lunch with Alex Thursday",
+    "weekly coffee break",
+    "family dinner tonight",
+    "Italian pasta from scratch",
+    "simple pasta recipe for 4-5",
+    "Sunday morning breakfast tradition",
+    "prioritize tasks workload management",
+    "task list planner",
+    "Todoist or Trello task organization",
+    "separate boards work and personal"
+  ],
+  "events": [
+    {
+      "text": "Lunch with Alex",
+      "date_hint": "Tuesday",
+      "turn_index": 0
+    },
+    {
+      "text": "Lunch with Alex",
+      "date_hint": "Thursday",
+      "turn_index": 0
+    },
+    {
+      "text": "Weekly coffee break with coworkers",
+      "date_hint": "weekly",
+      "turn_index": 2
+    },
+    {
+      "text": "Family dinner",
+      "date_hint": "tonight",
+      "turn_index": 2
+    },
+    {
+      "text": "Sunday morning breakfast tradition",
+      "date_hint": "this week",
+      "turn_index": 4
+    }
+  ]
+}

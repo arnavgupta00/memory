@@ -1,0 +1,49 @@
+{
+  "session_id": "sharegpt_ifL401O_13",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am in Portugal.",
+      "turn_index": 1
+    },
+    {
+      "text": "The time in Portugal is 4:20am.",
+      "turn_index": 1
+    },
+    {
+      "text": "I am in Portugal and the time is 4:21am on February 28.",
+      "turn_index": 3
+    },
+    {
+      "text": "I have a Pisces friend.",
+      "turn_index": 5
+    },
+    {
+      "text": "My Pisces friend has a birthday today.",
+      "turn_index": 5
+    }
+  ],
+  "keyphrases": [
+    "time in Boston",
+    "time in Portugal",
+    "daylight savings",
+    "February 28",
+    "4:20am Portugal",
+    "4:21am Portugal",
+    "Pisces friend",
+    "birthday today",
+    "birthday wishes"
+  ],
+  "events": [
+    {
+      "text": "Pisces friend birthday",
+      "date_hint": "today",
+      "turn_index": 5
+    },
+    {
+      "text": "February 28 time in Portugal (4:21am)",
+      "date_hint": "February 28",
+      "turn_index": 3
+    }
+  ]
+}

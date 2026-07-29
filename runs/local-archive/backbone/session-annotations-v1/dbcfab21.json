@@ -1,0 +1,106 @@
+{
+  "session_id": "dbcfab21",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a road trip to the mountains soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am really glad summer is finally here.",
+      "turn_index": 0
+    },
+    {
+      "text": "I feel like it was just yesterday that I was bundled up in my winter coat.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am already three weeks into summer mode.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am planning to visit the Rocky Mountains in Colorado.",
+      "turn_index": 2
+    },
+    {
+      "text": "My preferred hiking difficulty level is moderate.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am looking for hiking trails with scenic views.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to do a few day hikes that are around 5-7 miles long.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to try summer-themed cocktails on my trip.",
+      "turn_index": 4
+    },
+    {
+      "text": "I had some amazing summer-themed cocktails at an outdoor music festival recently.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want recommendations for good road trip playlists.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have already started making a road trip playlist.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to make a playlist that captures the essence of summer.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am looking forward to my summer vacation.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am looking forward to getting away from the city.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am looking forward to spending quality time with my family.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want tips on how to make the most of my road trip and summer vacation.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "road trip to the mountains",
+    "hiking trails",
+    "Rocky Mountains Colorado",
+    "moderate hiking difficulty",
+    "scenic views trails",
+    "day hikes 5-7 miles",
+    "summer-themed cocktails",
+    "outdoor music festival cocktails",
+    "road trip playlists",
+    "summer-themed songs",
+    "summer vacation tips",
+    "getting away from the city",
+    "quality time with family"
+  ],
+  "events": [
+    {
+      "text": "Summer officially started three weeks ago (user is three weeks into summer mode).",
+      "date_hint": "three weeks into summer mode",
+      "turn_index": 0
+    },
+    {
+      "text": "Outdoor music festival where the user had amazing cocktails (recently).",
+      "date_hint": "recently",
+      "turn_index": 4
+    },
+    {
+      "text": "User plans summer vacation and road trip to get away from the city and spend time with family.",
+      "date_hint": "summer vacation (upcoming)",
+      "turn_index": 10
+    }
+  ]
+}

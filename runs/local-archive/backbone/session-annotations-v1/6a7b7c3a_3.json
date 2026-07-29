@@ -1,0 +1,149 @@
+{
+  "session_id": "6a7b7c3a_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I need help planning out my day.",
+      "turn_index": 0
+    },
+    {
+      "text": "I decided to give myself an extra hour of sleep.",
+      "turn_index": 0
+    },
+    {
+      "text": "I started waking up at 7:30 AM.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am trying to adjust my schedule accordingly.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a busy day ahead with a lot of tasks to tackle.",
+      "turn_index": 2
+    },
+    {
+      "text": "My main priority is to finish a project report that is due by the end of the day.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to respond to some urgent emails.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to make a few phone calls.",
+      "turn_index": 2
+    },
+    {
+      "text": "If I have time, I want to fit in data analysis.",
+      "turn_index": 2
+    },
+    {
+      "text": "If I have time, I want to review documents for an upcoming meeting.",
+      "turn_index": 2
+    },
+    {
+      "text": "I usually have breakfast around 8:00 AM.",
+      "turn_index": 2
+    },
+    {
+      "text": "My breakfast is oatmeal with fruit.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have a cup of coffee with breakfast.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to fit in 10-15 minute breaks every hour to stretch and move around.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want time to grab a snack or lunch.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to take a longer break at 12:00 PM to grab lunch.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to take a short walk outside around 12:00 PM.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to plan my afternoon assuming I will be done with my project report by then.",
+      "turn_index": 6
+    },
+    {
+      "text": "In the afternoon, I want to do more data analysis and document review.",
+      "turn_index": 6
+    },
+    {
+      "text": "In the afternoon, I want to respond to some non-urgent emails.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to take a longer break around 2:30 PM to go for a walk outside and get fresh air.",
+      "turn_index": 8
+    },
+    {
+      "text": "I realized I might need extra time to review and finalize my project report before the end of the day.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want the plan updated to give me an extra 30 minutes to review and finalize my project report.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "planning my day",
+    "extra hour of sleep",
+    "waking up at 7:30 AM",
+    "prioritize tasks",
+    "project report due end of day",
+    "urgent emails",
+    "phone calls",
+    "data analysis",
+    "review documents for upcoming meeting",
+    "breaks every hour 10-15 minutes",
+    "snack or lunch",
+    "longer break 12:00 PM lunch walk",
+    "afternoon plan",
+    "non-urgent emails",
+    "longer break around 2:30 PM walk fresh air",
+    "extra 30 minutes to finalize project report",
+    "breakfast 8:00 AM oatmeal with fruit coffee"
+  ],
+  "events": [
+    {
+      "text": "Started waking up at 7:30 AM after deciding to give an extra hour of sleep",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Breakfast routine around 8:00 AM (oatmeal with fruit and coffee)",
+      "date_hint": "around 8:00 AM",
+      "turn_index": 2
+    },
+    {
+      "text": "Requested 10-15 minute hourly breaks to stretch and move around",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Planned a longer break at 12:00 PM for lunch and a short walk outside",
+      "date_hint": "12:00 PM",
+      "turn_index": 6
+    },
+    {
+      "text": "Adjusted the plan to take a longer break around 2:30 PM for a walk outside and fresh air",
+      "date_hint": "around 2:30 PM",
+      "turn_index": 8
+    },
+    {
+      "text": "Requested an extra 30 minutes to review and finalize the project report before end of day",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

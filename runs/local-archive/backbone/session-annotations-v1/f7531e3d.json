@@ -1,0 +1,108 @@
+{
+  "session_id": "f7531e3d",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Paris in June.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for affordable hotels in the city center of Paris.",
+      "turn_index": 0
+    },
+    {
+      "text": "I booked my flight through Expedia.",
+      "turn_index": 0
+    },
+    {
+      "text": "I got a great deal on a package with Air France.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering booking a private guided tour in Paris.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering booking a customized tour in Europe with Explore Earth.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of purchasing a travel rewards credit card to earn points and miles.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want information about the Chase Sapphire Preferred card.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to redeem my points for travel bookings.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know whether I can book directly with airlines or if I need to go through the Chase portal.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking about booking a private guided tour in Paris.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering booking the tour through Explore Earth or looking into other options.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of comparing prices and services on Viator and GetYourGuide.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know whether Viator and GetYourGuide offer discounts or promotions for first-time customers.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Paris trip June",
+    "affordable hotels city center",
+    "Expedia flight booking",
+    "Air France package deal",
+    "private guided tour Paris",
+    "Explore Earth customized tours",
+    "travel rewards credit card",
+    "Chase Sapphire Preferred",
+    "redeem points travel bookings",
+    "Chase portal vs airline booking",
+    "Viator discounts first-time customers",
+    "GetYourGuide promotions first-time customers"
+  ],
+  "events": [
+    {
+      "text": "Planning a trip to Paris in June",
+      "date_hint": "in June",
+      "turn_index": 0
+    },
+    {
+      "text": "Considering booking a private guided tour in Paris",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Considering purchasing a travel rewards credit card (Chase Sapphire Preferred)",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Planning how to redeem points for travel bookings (Chase portal vs booking directly with airlines)",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Deciding whether to book a private guided tour through Explore Earth or other options",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Comparing Viator and GetYourGuide for private guided tour prices and services",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

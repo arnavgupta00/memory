@@ -1,0 +1,83 @@
+{
+  "session_id": "f6246b5f",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Tokyo in October.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am staying in the Shinjuku district.",
+      "turn_index": 2
+    },
+    {
+      "text": "I booked a round-trip ticket to Tokyo three weeks ago.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am excited for my Tokyo trip.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to try ramen shops in the Shinjuku area.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have heard that Ichiran is popular.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to learn more about Tsukiji Fish Market.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have heard Tsukiji Fish Market is a great place to try fresh sushi.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to get to Tsukiji Outer Market early to try fresh sushi and explore the stalls.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am considering taking a cooking class in Tokyo to learn how to make Japanese dishes like ramen and udon.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Tokyo trip October",
+    "onsen near Tokyo",
+    "Shinjuku district",
+    "Otemba Hot Spring",
+    "must-see places Shinjuku",
+    "restaurants around Shinjuku",
+    "round-trip ticket to Tokyo",
+    "Shinjuku to Tsukiji Fish Market",
+    "Tsukiji Fish Market inner market",
+    "Tsukiji Outer Market early",
+    "ramen shops Shinjuku",
+    "Ichiran ramen",
+    "Tokyo cooking class ramen and udon"
+  ],
+  "events": [
+    {
+      "text": "Planning a trip to Tokyo in October",
+      "date_hint": "October",
+      "turn_index": 0
+    },
+    {
+      "text": "Staying in Shinjuku district",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Booked a round-trip ticket to Tokyo three weeks ago",
+      "date_hint": "three weeks ago",
+      "turn_index": 4
+    },
+    {
+      "text": "Plan to get to Tsukiji Outer Market early",
+      "date_hint": "early",
+      "turn_index": 10
+    }
+  ]
+}

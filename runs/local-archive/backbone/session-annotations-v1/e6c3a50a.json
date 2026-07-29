@@ -1,0 +1,107 @@
+{
+  "session_id": "e6c3a50a",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to get back into my yoga routine.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am worried about my lower back pain.",
+      "turn_index": 0
+    },
+    {
+      "text": "I took a month off from yoga.",
+      "turn_index": 2
+    },
+    {
+      "text": "I had a cold that lasted for three weeks.",
+      "turn_index": 2
+    },
+    {
+      "text": "My stomach issues flared up again after the cold.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have digestive issues.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of consulting a nutritionist for personalized dietary advice.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of switching to a health insurance plan that covers more comprehensive wellness services.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want a health insurance plan that covers acupuncture and massage therapy.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am going to start by researching insurance providers that offer comprehensive wellness services, including acupuncture and massage therapy.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will check Healthcare.gov to compare plans and prices.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will check eHealthInsurance to compare plans and prices.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will look into individual insurance provider websites, including Blue Cross Blue Shield.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will look into individual insurance provider websites, including UnitedHealthcare.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will check online reviews and ratings from Consumer Reports.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will check online reviews and ratings from Healthgrades.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "yoga routine",
+    "lower back pain",
+    "gentle stretches",
+    "return to yoga after break",
+    "cold lasted three weeks",
+    "stomach issues flare-up",
+    "probiotics for digestive issues",
+    "personalized dietary advice",
+    "registered dietitian online resources",
+    "nutritionist consultation",
+    "health insurance wellness services",
+    "acupuncture and massage therapy",
+    "Healthcare.gov plan comparison",
+    "eHealthInsurance",
+    "Blue Cross Blue Shield wellness coverage",
+    "UnitedHealthcare wellness coverage",
+    "Consumer Reports health insurance reviews",
+    "Healthgrades ratings"
+  ],
+  "events": [
+    {
+      "text": "Took a month off from yoga due to a cold and stomach issues flaring up again",
+      "date_hint": "about a month (relative)",
+      "turn_index": 2
+    },
+    {
+      "text": "Cold lasted for three weeks",
+      "date_hint": "three weeks (relative)",
+      "turn_index": 2
+    },
+    {
+      "text": "Plans to research insurance providers and compare plans and prices using Healthcare.gov and eHealthInsurance",
+      "date_hint": "upcoming (relative)",
+      "turn_index": 10
+    }
+  ]
+}

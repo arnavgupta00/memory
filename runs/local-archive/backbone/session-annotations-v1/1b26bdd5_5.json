@@ -1,0 +1,105 @@
+{
+  "session_id": "1b26bdd5_5",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to visualize my travel history on a calendar over the past few months.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am flying to Denver, Colorado for a family vacation today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I think I have location history enabled in Google Timeline.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want tips on how to filter or categorize my trips in Google Timeline.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think I will categorize my trips using the label feature.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to see a summary of my total travel time or distance traveled over a certain period.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been on a plane at least once a week for the past three months.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to be more mindful of my travel schedule and pace myself better.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking about grouping my trips together or leaving more buffer time between trips to avoid burnout.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking about using alternative modes of transportation like trains or buses for shorter trips to reduce my carbon footprint.",
+      "turn_index": 8
+    },
+    {
+      "text": "I forgot to pack my charger for my portable power bank.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to pick up a charger at the Denver airport if needed.",
+      "turn_index": 10
+    },
+    {
+      "text": "I do not want to be stuck without a way to keep my devices charged during my trip.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want recommendations for things to do or see in Denver.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have been to the city of Denver a few times before.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "visualize travel history",
+    "calendar travel history",
+    "Google Timeline",
+    "location history enabled",
+    "filter trips",
+    "categorize trips",
+    "label feature",
+    "total travel time summary",
+    "distance traveled summary",
+    "plane at least once a week",
+    "family vacation Denver",
+    "portable power bank charger",
+    "Denver airport charger",
+    "things to do in Denver",
+    "carbon footprint trains buses"
+  ],
+  "events": [
+    {
+      "text": "Flying to Denver, Colorado for a family vacation",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Forgot to pack the charger for a portable power bank",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Plans to pick up a charger at the airport if needed",
+      "date_hint": "",
+      "turn_index": 10
+    },
+    {
+      "text": "Been on a plane at least once a week for the past three months",
+      "date_hint": "past three months",
+      "turn_index": 6
+    }
+  ]
+}

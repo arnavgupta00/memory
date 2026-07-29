@@ -1,0 +1,115 @@
+{
+  "session_id": "sharegpt_SQzWPKF_34",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "We need an SVG component named \"Caster Wheel Footprint\" with a rectangular footprint measuring 31mm by 37mm.",
+      "turn_index": 0
+    },
+    {
+      "text": "The \"Caster Wheel Footprint\" has 4 mounting holes within the 31mm by 37mm rectangle.",
+      "turn_index": 0
+    },
+    {
+      "text": "Each of the 4 mounting holes in the \"Caster Wheel Footprint\" has a 2mm radius.",
+      "turn_index": 0
+    },
+    {
+      "text": "In the \"Caster Wheel Footprint\", there is a mounting hole in each corner set in from the sides by 4mm.",
+      "turn_index": 0
+    },
+    {
+      "text": "We need an SVG component named \"Infrared Footprint\" with a rectangular footprint measuring 96.5mm by 20.5mm.",
+      "turn_index": 0
+    },
+    {
+      "text": "For the \"Infrared Footprint\", the 96.5mm and 20.5mm measurements are the x and y axis, respectively.",
+      "turn_index": 0
+    },
+    {
+      "text": "The \"Infrared Footprint\" has 4 mounting holes within the 96.5mm by 20.5mm rectangle.",
+      "turn_index": 0
+    },
+    {
+      "text": "Each of the 4 mounting holes in the \"Infrared Footprint\" has a 1.5mm radius.",
+      "turn_index": 0
+    },
+    {
+      "text": "In the \"Infrared Footprint\", all 4 mounting holes are in a line at y = 4.25mm.",
+      "turn_index": 0
+    },
+    {
+      "text": "In the \"Infrared Footprint\", the mounting holes along the x axis are at x locations 7mm, 24mm, 72.5mm, and 89.5mm.",
+      "turn_index": 0
+    },
+    {
+      "text": "We need an SVG component named \"Arduino footprint\" with dimensions 68.6mm by 53.4mm.",
+      "turn_index": 0
+    },
+    {
+      "text": "The \"Arduino footprint\" mounting holes have a radius of 1.3mm.",
+      "turn_index": 0
+    },
+    {
+      "text": "The \"Arduino footprint\" mounting holes are at coordinates (15.24, 2.54), (15.24, 50.8), (66.04, 17.78), and (66.04, 45.72).",
+      "turn_index": 0
+    },
+    {
+      "text": "We need an SVG component named \"motor bracket footprint\" with dimensions 15mm by 5mm.",
+      "turn_index": 0
+    },
+    {
+      "text": "The \"motor bracket footprint\" has 2 mounting holes.",
+      "turn_index": 0
+    },
+    {
+      "text": "Each mounting hole in the \"motor bracket footprint\" has a radius of 1.5mm.",
+      "turn_index": 0
+    },
+    {
+      "text": "The \"motor bracket footprint\" mounting holes are at coordinates (3.5, 2.5) and (11.5, 2.5).",
+      "turn_index": 0
+    },
+    {
+      "text": "The previously created SVG files only included circles for the mounting holes and did not include rectangles around the border.",
+      "turn_index": 4
+    },
+    {
+      "text": "All 4 SVG files should be enclosed by rectangles at the border.",
+      "turn_index": 4
+    }
+  ],
+  "keyphrases": [
+    "Caster Wheel Footprint",
+    "31mm by 37mm",
+    "4 mounting holes 2mm radius",
+    "Infrared Footprint",
+    "96.5mm by 20.5mm",
+    "y = 4.25mm mounting holes",
+    "Arduino footprint 68.6mm by 53.4mm",
+    "motor bracket footprint 15mm by 5mm",
+    "rectangles border enclosure"
+  ],
+  "events": [
+    {
+      "text": "User requests additional SVG files for Caster Wheel Footprint, Infrared Footprint, Arduino footprint, and motor bracket footprint.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "User asks for the motor bracket footprint again after running out of space.",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "User asks to edit all 4 files to enclose them with border rectangles.",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "User asks to finish writing the infrared and motor bracket files.",
+      "date_hint": "",
+      "turn_index": 6
+    }
+  ]
+}

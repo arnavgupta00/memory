@@ -1,0 +1,95 @@
+{
+  "session_id": "cf021b36_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for gift ideas for my cousin Alex.",
+      "turn_index": 0
+    },
+    {
+      "text": "My cousin Alex graduated with a degree in engineering from college about two weeks ago.",
+      "turn_index": 0
+    },
+    {
+      "text": "My cousin Alex has been job hunting.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a gift that can help Alex with his job search.",
+      "turn_index": 0
+    },
+    {
+      "text": "I will go with a professional online course or certification as the gift.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering Coursera's Machine Learning by Andrew Ng as the gift course.",
+      "turn_index": 4
+    },
+    {
+      "text": "Alex has mentioned his interest in machine learning/engineering field.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am considering gifting the course through Coursera.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of purchasing the course as a gift directly from Coursera's website.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will enter Alex's email address correctly when purchasing the gift course.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will include a personalized message with the gift course.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of reaching out to Alex to check in on his job search.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am considering whether to give Alex a call or send him a message on LinkedIn.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "gift ideas for cousin",
+    "engineering degree graduation",
+    "job hunting",
+    "professional online course",
+    "engineering certification",
+    "Coursera Machine Learning",
+    "Andrew Ng course",
+    "personalized message for gift",
+    "gifting a Coursera course",
+    "purchase directly from Coursera",
+    "enter recipient email address",
+    "message on LinkedIn",
+    "check in on job search"
+  ],
+  "events": [
+    {
+      "text": "Alex graduated with an engineering degree from college (about two weeks ago).",
+      "date_hint": "about two weeks ago",
+      "turn_index": 0
+    },
+    {
+      "text": "User decides to gift Coursera's Machine Learning by Andrew Ng.",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "User plans to purchase the Coursera course as a gift directly from Coursera's website.",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "User plans to reach out to Alex to check in on his job search.",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

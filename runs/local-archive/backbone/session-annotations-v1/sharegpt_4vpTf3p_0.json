@@ -1,0 +1,53 @@
+{
+  "session_id": "sharegpt_4vpTf3p_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have a table called sales_transaction_summary.",
+      "turn_index": 0
+    },
+    {
+      "text": "The sales_transaction_summary table includes columns for region, merchandise week, customer type, department, and sales number.",
+      "turn_index": 0
+    },
+    {
+      "text": "The customer type values in the sales_transaction_summary table include commercial and consumer.",
+      "turn_index": 0
+    },
+    {
+      "text": "The data includes merchandise week 202323.",
+      "turn_index": 0
+    },
+    {
+      "text": "The data includes regions Victoria East and Victoria West.",
+      "turn_index": 0
+    },
+    {
+      "text": "The data includes departments Timber, Garden, and Power Tool.",
+      "turn_index": 0
+    },
+    {
+      "text": "I asked for the total sales number across all regions.",
+      "turn_index": 2
+    },
+    {
+      "text": "I asked to break down sales by customer type.",
+      "turn_index": 4
+    },
+    {
+      "text": "I asked to show the SQL query that generates the result.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "sales_transaction_summary table",
+    "total sales across all regions",
+    "breakdown by customer type",
+    "customer type commercial consumer",
+    "merchandise week 202323",
+    "region Victoria East Victoria West",
+    "department Timber Garden Power Tool",
+    "SQL query for result"
+  ],
+  "events": []
+}

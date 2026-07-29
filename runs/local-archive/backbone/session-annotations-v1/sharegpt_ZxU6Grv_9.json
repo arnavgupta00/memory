@@ -1,0 +1,88 @@
+{
+  "session_id": "sharegpt_ZxU6Grv_9",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I computed skewness for the df2['asyl_app'] column using scipy.stats.skew.",
+      "turn_index": 3
+    },
+    {
+      "text": "I computed kurtosis for the df2['asyl_app'] column using scipy.stats.kurtosis.",
+      "turn_index": 3
+    },
+    {
+      "text": "I printed the skewness value as \"Skewness: {skewness}\".",
+      "turn_index": 3
+    },
+    {
+      "text": "I printed the kurtosis value as \"Kurtosis: {kurt}\".",
+      "turn_index": 3
+    },
+    {
+      "text": "I reported skewness for the rejection rate column as 1.821810350836957.",
+      "turn_index": 5
+    },
+    {
+      "text": "I reported kurtosis for the rejection rate column as 4.923385055185659.",
+      "turn_index": 5
+    },
+    {
+      "text": "I want to learn statistics.",
+      "turn_index": 7
+    },
+    {
+      "text": "I computed a Spearman correlation coefficient of 0.5279774779169797.",
+      "turn_index": 9
+    },
+    {
+      "text": "I reported a Spearman p-value of 4.723444400024076e-157.",
+      "turn_index": 9
+    },
+    {
+      "text": "I mentioned an asylum application column after a second method of manipulation with an STD of 6590.878187.",
+      "turn_index": 1
+    }
+  ],
+  "keyphrases": [
+    "asylum application column",
+    "second method of manipulation",
+    "STD 6590.878187",
+    "box plot outliers",
+    "far right of the grass",
+    "scipy.stats skew",
+    "scipy.stats kurtosis",
+    "asyl_app column",
+    "rejection rate column",
+    "skewness 1.821810350836957",
+    "kurtosis 4.923385055185659",
+    "Spearman correlation",
+    "Spearman p-value 4.723444400024076e-157"
+  ],
+  "events": [
+    {
+      "text": "User referenced an asylum application column after a second method of manipulation with an STD of 6590.878187",
+      "date_hint": "",
+      "turn_index": 1
+    },
+    {
+      "text": "User computed skewness and kurtosis for df2['asyl_app'] using scipy.stats and printed the results",
+      "date_hint": "",
+      "turn_index": 3
+    },
+    {
+      "text": "User reported skewness and kurtosis values for the rejection rate column",
+      "date_hint": "",
+      "turn_index": 5
+    },
+    {
+      "text": "User asked for a simple explanation of why Spearman is more appropriate to learn statistics",
+      "date_hint": "",
+      "turn_index": 7
+    },
+    {
+      "text": "User reported Spearman correlation coefficient and p-value",
+      "date_hint": "",
+      "turn_index": 9
+    }
+  ]
+}

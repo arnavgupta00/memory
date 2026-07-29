@@ -1,0 +1,75 @@
+{
+  "session_id": "4798296c_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking to update my LinkedIn profile.",
+      "turn_index": 0
+    },
+    {
+      "text": "I graduated with a master's degree in business administration last month.",
+      "turn_index": 0
+    },
+    {
+      "text": "It took me two and a half years to finish my MBA.",
+      "turn_index": 0
+    },
+    {
+      "text": "I received a recent promotion to a senior manager role.",
+      "turn_index": 2
+    },
+    {
+      "text": "My boss and I discussed my career goals and objectives for the next quarter during a celebratory lunch.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have a partner named Rachel.",
+      "turn_index": 6
+    },
+    {
+      "text": "My partner Rachel and I are planning to buy a house together.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "update LinkedIn profile",
+    "professional summary",
+    "MBA achievement",
+    "master's degree in business administration",
+    "graduated last month",
+    "two and a half years MBA",
+    "promotion to senior manager",
+    "work experience",
+    "career goals and objectives",
+    "next quarter",
+    "celebratory lunch",
+    "buy a house together"
+  ],
+  "events": [
+    {
+      "text": "Graduated with an MBA (master's degree in business administration).",
+      "date_hint": "last month",
+      "turn_index": 0
+    },
+    {
+      "text": "Promotion to senior manager role.",
+      "date_hint": "recent",
+      "turn_index": 2
+    },
+    {
+      "text": "Discussed career goals and objectives for the next quarter with boss during a celebratory lunch.",
+      "date_hint": "during celebratory lunch (relative to next quarter)",
+      "turn_index": 4
+    },
+    {
+      "text": "Anniversary with partner Rachel (mentioned as recent).",
+      "date_hint": "recent anniversary",
+      "turn_index": 6
+    },
+    {
+      "text": "Planning to buy a house together with partner Rachel.",
+      "date_hint": "planning (no date given)",
+      "turn_index": 6
+    }
+  ]
+}

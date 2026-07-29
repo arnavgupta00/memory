@@ -1,0 +1,29 @@
+{
+  "session_id": "sharegpt_ljMj9Uo_15",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user wants to update the nonprofit board of directors (BOD) and officers with the Texas SOS without filing an annual filing.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user was approved in Texas two days before the user asked the question.",
+      "turn_index": 3
+    }
+  ],
+  "keyphrases": [
+    "update nonprofit BOD and officers",
+    "Texas SOS",
+    "annual filing",
+    "annual report",
+    "nonprofit approval in Texas",
+    "board of directors update"
+  ],
+  "events": [
+    {
+      "text": "Nonprofit approval in Texas",
+      "date_hint": "two days ago",
+      "turn_index": 3
+    }
+  ]
+}

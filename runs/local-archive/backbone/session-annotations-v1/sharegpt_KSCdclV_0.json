@@ -1,0 +1,40 @@
+{
+  "session_id": "sharegpt_KSCdclV_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user asked for 15 physical examination items for abdominal pain.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user requested the answer be in English.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user asked for 20 physical examination items for abdominal pain.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user requested the answer be in English.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user requested the response use the example format \"Rebouding pain(None/Rebounding pain +)\".",
+      "turn_index": 0
+    },
+    {
+      "text": "The user requested the response use the example format \"Rebouding pain(None/Rebounding pain +)\".",
+      "turn_index": 2
+    }
+  ],
+  "keyphrases": [
+    "15 abdominal pain physical examination items",
+    "20 abdominal pain physical examination items",
+    "English answer",
+    "Rebouding pain format",
+    "Rebounding pain",
+    "physical examination for abdominal pain",
+    "abdominal pain exam items"
+  ],
+  "events": []
+}

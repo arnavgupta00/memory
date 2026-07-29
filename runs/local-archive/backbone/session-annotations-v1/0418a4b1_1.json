@@ -1,0 +1,92 @@
+{
+  "session_id": "0418a4b1_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I recently got married to my husband Alex.",
+      "turn_index": 0
+    },
+    {
+      "text": "I changed my last name from Smith to Wells about three months ago.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am a doctor.",
+      "turn_index": 2
+    },
+    {
+      "text": "I updated my medical license with the state medical board.",
+      "turn_index": 2
+    },
+    {
+      "text": "I updated my malpractice insurance on May 1st.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to update my business cards with my new name.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to order new checks with my new name.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to focus on updating financial institutions first.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to visit my bank's branch in person to update my bank account information.",
+      "turn_index": 8
+    },
+    {
+      "text": "I prefer doing bank updates in person to ensure everything is done correctly.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know whether I need to update my investment accounts such as my 401(k) or IRA.",
+      "turn_index": 8
+    },
+    {
+      "text": "I already updated my medical license with the state medical board.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know if there are other licenses or certifications I should update besides my medical license.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "name change",
+    "married to Alex",
+    "last name Smith to Wells",
+    "to-do list for accounts and documents",
+    "update medical license",
+    "state medical board",
+    "malpractice insurance May 1",
+    "business cards update",
+    "order new checks",
+    "prioritize updates urgency importance",
+    "government documents",
+    "financial institutions",
+    "update bank accounts",
+    "update credit cards",
+    "bank branch in person",
+    "update investment accounts",
+    "401(k)",
+    "IRA",
+    "professional licenses",
+    "medical license certifications"
+  ],
+  "events": [
+    {
+      "text": "Malpractice insurance updated",
+      "date_hint": "May 1st",
+      "turn_index": 2
+    },
+    {
+      "text": "Last name changed from Smith to Wells",
+      "date_hint": "about three months ago",
+      "turn_index": 0
+    }
+  ]
+}

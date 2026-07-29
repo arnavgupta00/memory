@@ -1,0 +1,140 @@
+{
+  "session_id": "89c7a48a_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I washed my car today at the local car wash.",
+      "turn_index": 0
+    },
+    {
+      "text": "I spent $15 on the deluxe package at the local car wash.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a 2018 Honda Civic.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want a fuel injector cleaner compatible with gasoline for my 2018 Honda Civic.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think I should choose a budget-friendly fuel injector cleaner for now.",
+      "turn_index": 4
+    },
+    {
+      "text": "I don't drive aggressively.",
+      "turn_index": 4
+    },
+    {
+      "text": "My car is not that old.",
+      "turn_index": 4
+    },
+    {
+      "text": "I got my car serviced on February 10th.",
+      "turn_index": 6
+    },
+    {
+      "text": "The mechanic told me I needed to replace the air filter during my February 10th service.",
+      "turn_index": 6
+    },
+    {
+      "text": "I replaced the air filter for $25.",
+      "turn_index": 6
+    },
+    {
+      "text": "I filled up the gas tank around the same time as my February 10th service.",
+      "turn_index": 6
+    },
+    {
+      "text": "Filling up the gas tank cost me $30.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have a bike named Specialized Sirrus.",
+      "turn_index": 8
+    },
+    {
+      "text": "I took my Specialized Sirrus to a bike shop on January 25th to get the gears adjusted.",
+      "turn_index": 8
+    },
+    {
+      "text": "The repair guy told me the cables were worn out and needed to be replaced.",
+      "turn_index": 8
+    },
+    {
+      "text": "Replacing the cables cost me $40.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been riding my bike regularly since the repair.",
+      "turn_index": 10
+    },
+    {
+      "text": "My bike's shifting has been smooth since the repair.",
+      "turn_index": 10
+    },
+    {
+      "text": "My bike's braking has been responsive since the repair.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to sell my old motorcycle online.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am trying to sell my old motorcycle, a Yamaha FZ6R, on Craigslist.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am not sure what kind of photos to take for my Craigslist listing.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am not sure what kind of information to include in my Craigslist listing.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "fuel injector cleaners",
+    "STP Fuel Injector Cleaner",
+    "2018 Honda Civic",
+    "gasoline compatible cleaner",
+    "high-performance fuel injector cleaner",
+    "budget-friendly fuel injector cleaner",
+    "car wash deluxe package",
+    "air filter replacement",
+    "February 10 service",
+    "gas tank fill-up cost",
+    "Specialized Sirrus bike",
+    "gears adjusted January 25",
+    "cables replacement $40",
+    "bike maintenance history",
+    "selling cars online",
+    "Craigslist motorcycle listing",
+    "Yamaha FZ6R photos for listing",
+    "motorcycle listing information"
+  ],
+  "events": [
+    {
+      "text": "Washed my car at the local car wash and bought the deluxe package.",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Car serviced and air filter replaced; air filter cost $25.",
+      "date_hint": "February 10th",
+      "turn_index": 6
+    },
+    {
+      "text": "Filled up the gas tank around the same time as the February 10th service; gas cost $30.",
+      "date_hint": "around February 10th",
+      "turn_index": 6
+    },
+    {
+      "text": "Took the Specialized Sirrus to a bike shop for gear adjustment; cables replaced.",
+      "date_hint": "January 25th",
+      "turn_index": 8
+    }
+  ]
+}

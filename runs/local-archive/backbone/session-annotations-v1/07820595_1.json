@@ -1,0 +1,102 @@
+{
+  "session_id": "07820595_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to plan out my day and prioritize my tasks.",
+      "turn_index": 0
+    },
+    {
+      "text": "On Tuesdays and Thursdays, I have a more relaxed morning routine without any early meetings.",
+      "turn_index": 0
+    },
+    {
+      "text": "I wake up at 6:30 AM on Tuesdays and Thursdays.",
+      "turn_index": 2
+    },
+    {
+      "text": "My relaxed morning routine on Tuesdays and Thursdays is chill and I take my time getting ready for work.",
+      "turn_index": 2
+    },
+    {
+      "text": "I do not allocate a specific amount of time for my morning routine.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have three tasks to accomplish today.",
+      "turn_index": 4
+    },
+    {
+      "text": "Task A is the most urgent task I need to complete by the end of the day.",
+      "turn_index": 4
+    },
+    {
+      "text": "Task B needs to be completed by tomorrow.",
+      "turn_index": 4
+    },
+    {
+      "text": "Task C can be completed anytime this week.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to move the 3:00 PM to 4:00 PM block to 2:00 PM to 3:00 PM.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want extra time to unwind before heading home.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to allocate 30 minutes of my lunch break to respond to urgent emails and messages.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to stay on top of my communication by responding to urgent emails and messages during lunch.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think the revised schedule looks good.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will stick to the revised schedule and make the most of my relaxed morning routine on Tuesdays and Thursdays.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "plan out my day",
+    "prioritize tasks",
+    "relaxed morning routine",
+    "Tuesdays and Thursdays",
+    "wake up 6:30 AM",
+    "no early meetings",
+    "three tasks",
+    "Task A urgent end of day",
+    "Task B due tomorrow",
+    "Task C anytime this week",
+    "schedule adjustment 3:00 PM 4:00 PM",
+    "move to 2:00 PM 3:00 PM",
+    "unwind before heading home",
+    "30 minutes lunch break",
+    "respond to urgent emails and messages",
+    "stay on top of communication",
+    "stay organized throughout the day"
+  ],
+  "events": [
+    {
+      "text": "Wake up at 6:30 AM on Tuesdays and Thursdays",
+      "date_hint": "Tuesdays and Thursdays",
+      "turn_index": 2
+    },
+    {
+      "text": "Move the scheduled block from 3:00 PM–4:00 PM to 2:00 PM–3:00 PM",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Allocate 30 minutes of lunch break to respond to urgent emails and messages",
+      "date_hint": "",
+      "turn_index": 8
+    }
+  ]
+}

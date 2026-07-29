@@ -1,0 +1,87 @@
+{
+  "session_id": "5c2f41a0_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking to organize a team project.",
+      "turn_index": 0
+    },
+    {
+      "text": "I attended a 3-day project management workshop last month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I learned about Agile methodologies at the 3-day project management workshop.",
+      "turn_index": 0
+    },
+    {
+      "text": "I learned about the Scrum framework at the 3-day project management workshop.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering using Jira for my team project.",
+      "turn_index": 2
+    },
+    {
+      "text": "My team has 5 people.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering using the free plan for Jira for now.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am worried about the limitations of Jira's free plan.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am interested in the differences between Jira's free and standard plans.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am particularly interested in the custom fields feature in Jira's Standard plan.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to create a custom field in Jira to capture the estimated time required to complete each task.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to create a field in Jira to track the dependencies between tasks.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to use Jira's workflow editor to create custom workflows and automate tasks.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to create custom workflows in Jira that incorporate custom fields for estimated time and task dependencies.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to use Jira's workflow editor conditions, validators, and post-functions to automate tasks and update custom fields.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "team project organization",
+    "project management workshop",
+    "Agile methodologies",
+    "Scrum framework",
+    "Jira scalability",
+    "Jira pricing",
+    "team of 5 people",
+    "Jira free plan limitations",
+    "Jira free vs standard plans",
+    "Jira custom fields",
+    "Jira workflow editor",
+    "conditions validators post-functions"
+  ],
+  "events": [
+    {
+      "text": "Attended a 3-day project management workshop",
+      "date_hint": "last month",
+      "turn_index": 0
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "session_id": "sharegpt_AtYlMSy_15",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to calculate the percentage of words in each label.",
+      "turn_index": 1
+    },
+    {
+      "text": "I want to see a word that accounts for more than 3 percent of all labels.",
+      "turn_index": 1
+    },
+    {
+      "text": "I get a KeyError.",
+      "turn_index": 3
+    },
+    {
+      "text": "There is 'aal' in label 1.",
+      "turn_index": 3
+    },
+    {
+      "text": "There is no 'aal' in label 2.",
+      "turn_index": 3
+    },
+    {
+      "text": "I want to auto tune the percentage to be more than 100 common words.",
+      "turn_index": 5
+    }
+  ],
+  "keyphrases": [
+    "percentage of words per label",
+    "word accounts for more than 3 percent",
+    "KeyError",
+    "missing token 'aal'",
+    "label 1 contains 'aal'",
+    "label 2 missing 'aal'",
+    "auto tune percentage",
+    "more than 100 common words",
+    "word frequency threshold"
+  ],
+  "events": []
+}

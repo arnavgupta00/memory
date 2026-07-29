@@ -1,0 +1,75 @@
+{
+  "session_id": "f0849925_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning to do grocery shopping at Target this weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I know the usual price of a pack of Tide laundry detergent at Target is $12.99.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a coupon for $2 off Gain dish soap that I want to use at Target.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have a coupon for 50 cents off Crest toothpaste that I want to use at Target.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of buying black beans at Target.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been using the Ibotta app to earn cash back on certain grocery items.",
+      "turn_index": 10
+    },
+    {
+      "text": "I saw that Ibotta has an offer on marinara sauce.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Target grocery shopping",
+    "laundry detergent deals",
+    "Tide laundry detergent $12.99",
+    "Gain dish soap coupon $2 off",
+    "Crest toothpaste coupon 50 cents off",
+    "household essentials sales",
+    "dish soap sales at Target",
+    "toilet paper deals",
+    "black beans at Target",
+    "marinara sauce sales",
+    "Ibotta cash back offer",
+    "Ibotta marinara sauce offer"
+  ],
+  "events": [
+    {
+      "text": "Planning grocery shopping at Target this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 0
+    },
+    {
+      "text": "Using a $2 off coupon for Gain dish soap at Target",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Using a 50 cents off coupon for Crest toothpaste at Target",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Considering buying black beans at Target",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Using Ibotta cash back offer on marinara sauce",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

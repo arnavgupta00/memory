@@ -1,0 +1,115 @@
+{
+  "session_id": "sharegpt_4512LSp_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am working with a mock census dataset generated in Python using the Faker package.",
+      "turn_index": 0
+    },
+    {
+      "text": "The mock census dataset is designed to emulate the format of the 1881 census of the UK.",
+      "turn_index": 0
+    },
+    {
+      "text": "The dataset includes fields for Street Number, Street Name, First Name, Surname, Age, Relationship to the Head of House, Marital Status, Gender, Occupation, Infirmity, and Religion.",
+      "turn_index": 0
+    },
+    {
+      "text": "In the dataset, Street Number is set to \"1\" if it is a unique dwelling.",
+      "turn_index": 0
+    },
+    {
+      "text": "In the dataset, Relationship to the Head of House can be any person aged over 18, and the Head is the person responsible for filling in the census details.",
+      "turn_index": 0
+    },
+    {
+      "text": "In the dataset, Marital Status values are Single, Married, Divorced, Widowed, or \"NA\" for minors.",
+      "turn_index": 0
+    },
+    {
+      "text": "In the dataset, Gender values are Male or Female, and other responses were not implemented in 1881.",
+      "turn_index": 0
+    },
+    {
+      "text": "In the dataset, Occupation is implemented in a modern style rather than typical 1881 occupations.",
+      "turn_index": 0
+    },
+    {
+      "text": "In the dataset, Infirmity uses a limited set of infirmities following the style of 1881.",
+      "turn_index": 0
+    },
+    {
+      "text": "In the dataset, Religion uses a set of real-world religions.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need to clean the dataset because it has missing entries and some responses that are outright lies.",
+      "turn_index": 0
+    },
+    {
+      "text": "Part of the grading for the assignment assesses the cleaning details.",
+      "turn_index": 0
+    },
+    {
+      "text": "The town in the census is modestly sized and is sandwiched between two much larger cities connected by motorways.",
+      "turn_index": 0
+    },
+    {
+      "text": "The town does not have a university, but students live in the town and commute to nearby cities.",
+      "turn_index": 0
+    },
+    {
+      "text": "After cleaning, I must decide what should be built on an unoccupied plot of land the local government wishes to develop.",
+      "turn_index": 0
+    },
+    {
+      "text": "One development choice is high-density housing if the population is significantly expanding.",
+      "turn_index": 0
+    },
+    {
+      "text": "One development choice is low-density housing if the population is affluent and there is demand for large family housing.",
+      "turn_index": 0
+    },
+    {
+      "text": "One development choice is a train station to take pressure off the roads by serving commuters.",
+      "turn_index": 0
+    },
+    {
+      "text": "One development choice is a religious building, considering demand for a second Church for Catholics or a different denomination or religious building.",
+      "turn_index": 0
+    },
+    {
+      "text": "One development choice is an emergency medical building (a minor injuries centre) if there are many injuries or likely future pregnancies.",
+      "turn_index": 0
+    },
+    {
+      "text": "I can also choose \"Something else\" as a development option.",
+      "turn_index": 0
+    },
+    {
+      "text": "I must justify whichever development choice I make using the data provided and argue it is a priority against other choices.",
+      "turn_index": 0
+    }
+  ],
+  "keyphrases": [
+    "mock census dataset",
+    "Python Faker package",
+    "1881 census UK format",
+    "data cleaning missing entries",
+    "outright lies in data",
+    "Street Number unique dwelling",
+    "Relationship to Head of House",
+    "Marital Status NA for minors",
+    "Gender Male Female",
+    "Occupation modern style",
+    "Infirmity limited set",
+    "Religion real-world religions"
+  ],
+  "events": [
+    {
+      "text": "Assignment task: clean the mock census dataset and decide a development priority for an unoccupied plot of land using the provided data.",
+      "date_hint": "",
+      "turn_index": 0
+    }
+  ]
+}

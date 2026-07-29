@@ -1,0 +1,117 @@
+{
+  "session_id": "fa858208_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for help organizing my shopping expenses.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am trying to stick to my budget.",
+      "turn_index": 0
+    },
+    {
+      "text": "I went over my monthly allowance in April.",
+      "turn_index": 0
+    },
+    {
+      "text": "I made an impulse purchase on Amazon during their Prime Day sale in April.",
+      "turn_index": 0
+    },
+    {
+      "text": "I like the idea of setting up a 30-day rule.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think a 30-day rule would help me avoid impulse purchases like the one I made on Amazon during their Prime Day sale in April.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to set up a wishlist on Amazon.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to add items I want to purchase to my Amazon wishlist.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to set a reminder for 30 days and revisit the item to see if I still want it.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to track my expenses more closely.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to see where my money is going.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to make adjustments as needed to my spending.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to set a reminder to review my expenses every week.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to avoid temptation by removing shopping apps from my phone.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to avoid certain websites during peak sale periods.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to treat myself to a free coffee from my favorite coffee shop.",
+      "turn_index": 8
+    },
+    {
+      "text": "My favorite coffee shop is running a \"buy one get one free\" promotion on all drinks every Thursday in May.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to celebrate my progress and stay motivated.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "organizing shopping expenses",
+    "monthly allowance",
+    "April impulse purchase",
+    "Amazon Prime Day sale",
+    "30-day rule",
+    "Amazon wishlist",
+    "30-day reminder",
+    "weekly expense review",
+    "tracking expenses",
+    "remove shopping apps",
+    "avoid certain websites",
+    "free coffee promotion",
+    "buy one get one free",
+    "favorite coffee shop",
+    "every Thursday in May"
+  ],
+  "events": [
+    {
+      "text": "Impulse purchase on Amazon during Prime Day sale",
+      "date_hint": "April",
+      "turn_index": 0
+    },
+    {
+      "text": "Plan to revisit Amazon wishlist items after a 30-day reminder",
+      "date_hint": "30 days (recurring plan)",
+      "turn_index": 4
+    },
+    {
+      "text": "Plan to review expenses every week",
+      "date_hint": "every week (recurring plan)",
+      "turn_index": 6
+    },
+    {
+      "text": "Free coffee from favorite coffee shop during \"buy one get one free\" promotion every Thursday in May",
+      "date_hint": "every Thursday in May",
+      "turn_index": 8
+    }
+  ]
+}

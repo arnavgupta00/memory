@@ -1,0 +1,83 @@
+{
+  "session_id": "b951f8c6_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning to move to Melbourne for university.",
+      "turn_index": 0
+    },
+    {
+      "text": "I started the visa application process on February 15th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for accommodation in Melbourne.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been browsing Student.com for accommodation.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been browsing Homestay for accommodation.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering staying in a shared apartment with other international students.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to make it easier to settle in by staying in a shared apartment.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am considering whether the University of Melbourne offers accommodation services for international students.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have already started the visa application process on February 15th.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to make sure I have a place to stay lined up for when I arrive in Melbourne.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering homestay as an option.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am exploring both homestay and shared accommodation options further.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to make sure I have a solid plan in place for my accommodation because I started the visa application process.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "move to Melbourne for university",
+    "documents needed for visa application",
+    "visa application started February 15",
+    "international student accommodation Melbourne",
+    "Student.com accommodation",
+    "Homestay accommodation",
+    "shared apartment international students",
+    "settling in shared accommodation",
+    "University of Melbourne accommodation services",
+    "homestay vs shared accommodation",
+    "finding shared accommodation resources"
+  ],
+  "events": [
+    {
+      "text": "Started the visa application process",
+      "date_hint": "February 15th",
+      "turn_index": 0
+    },
+    {
+      "text": "Started the visa application process",
+      "date_hint": "February 15th",
+      "turn_index": 8
+    }
+  ]
+}

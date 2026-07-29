@@ -1,0 +1,199 @@
+{
+  "session_id": "sharegpt_TymNw01_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I asked for an explanation of Python code in steps in easy language.",
+      "turn_index": 0
+    },
+    {
+      "text": "I asked what each step is getting used for in the code.",
+      "turn_index": 0
+    },
+    {
+      "text": "I provided a Python snippet that imports re, azure.durable_functions as df, and logging.",
+      "turn_index": 0
+    },
+    {
+      "text": "I provided a Python function named orchestrator_function that takes a DurableOrchestrationContext parameter.",
+      "turn_index": 0
+    },
+    {
+      "text": "I provided code that gets input from context.get_input()['id'] into workspace_ids.",
+      "turn_index": 0
+    },
+    {
+      "text": "I provided code that creates an empty list named tasks.",
+      "turn_index": 0
+    },
+    {
+      "text": "I provided code that loops over workspace_ids and appends context.call_activity('ScrapingTask', workspace) to tasks.",
+      "turn_index": 0
+    },
+    {
+      "text": "I provided code that yields context.task_all(tasks) into outputs.",
+      "turn_index": 0
+    },
+    {
+      "text": "I provided code that logs the message 'Finnished' and returns the string 'Success'.",
+      "turn_index": 0
+    },
+    {
+      "text": "I provided code that creates main using df.Orchestrator.create(orchestrator_function).",
+      "turn_index": 0
+    },
+    {
+      "text": "I asked for an explanation of another Python code in steps in easy language.",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided a __init__.py code snippet that imports pandas as pd, traceback, datetime, logging, json, time, and typing Any and Dict.",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that imports azure.functions as func, azure.durable_functions as df, and BlobServiceClient from azure.storage.blob.",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that imports config and crawler from the current package using from . import config and from . import crawler.",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided a main function that takes a parameter transfer of type Dict[str, Any] and returns Dict[str, Any].",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that logs 'Python HTTP trigger function processed a request.' inside main.",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that reads transfer['Source_Name'] into source_type.",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that reads transfer['rss_url'] into rss_feeds.",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that sets config.source_name = source_type.",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that builds file_name as f'source/{source_type}/{source_type}_newsroom.json'.",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that creates a BlobServiceClient using BlobServiceClient.from_connection_string(config.blob_connection_string).",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that gets a blob client using container=config.blob_container_name and blob=file_name.",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that downloads the blob and parses it with json.loads(blob_data.content_as_bytes()).",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that sets have_news_dict = 1 in the try block.",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that sets have_news_dict = 0 in the except block.",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that logs the exception exp.",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that sets news_dict to {\"Source_Name\": source_type, \"newsroom_link\": {}} when an exception occurs.",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that defines config.ERROR_DICT with keys ERROR_100 through ERROR_111, each mapped to an empty list.",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that sets start_date = datetime.datetime.now() and logs source_type.",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that sets config.news_dict = news_dict and config.source_name = source_type.",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that calls crawler.func(rss_feeds, source_type).",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that sets final_date = datetime.datetime.now() after calling the crawler.",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that uploads config.news_dict to the blob when have_news_dict != 1 using overwrite=True.",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that sets todays_date = str(datetime.datetime.now().date()).",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that builds log_file_name as f'source/{source_type}/{todays_date}_logs.json'.",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that gets a log blob client using container=config.blob_container_name and blob=log_file_name.",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that computes time_taken as str((final_date - start_date).seconds).",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that sets config.ERROR_DICT['Time_Taken'] = [time_taken].",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that uploads config.ERROR_DICT to the log blob using overwrite=True.",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that logs exceptions and logs traceback.format_exc().",
+      "turn_index": 2
+    },
+    {
+      "text": "I provided code that returns transfer at the end of main.",
+      "turn_index": 2
+    }
+  ],
+  "keyphrases": [
+    "Python code explanation",
+    "orchestrator_function",
+    "azure durable functions",
+    "DurableOrchestrationContext",
+    "context.get_input()['id']",
+    "context.call_activity('ScrapingTask')",
+    "context.task_all(tasks)",
+    "df.Orchestrator.create",
+    "__init__.py Azure Function",
+    "BlobServiceClient.from_connection_string",
+    "download_blob and json.loads",
+    "config.ERROR_DICT",
+    "crawler.func(rss_feeds, source_type)",
+    "upload_blob overwrite=True",
+    "Time_Taken logs json"
+  ],
+  "events": [
+    {
+      "text": "Requested step-by-step explanation of the first Python code snippet.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Requested step-by-step explanation of the __init__.py Python code snippet.",
+      "date_hint": "",
+      "turn_index": 2
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "session_id": "f01feb31",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Japan.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for good restaurants in Tokyo that serve authentic Japanese cuisine.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am staying in Shinjuku.",
+      "turn_index": 2
+    },
+    {
+      "text": "I will check out Yakiniku Jumbo Han.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to visit Tokyo in March.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am really looking forward to trying out Yakiniku Jumbo Han.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am planning to spend a few days in Tokyo.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning to head to Kyoto for a few days.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning to end my trip in Osaka.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am looking for travel agencies that offer guided tours in Japan.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been looking at Intrepid Travel.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been looking at G Adventures.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am not sure if I want to commit to a group tour yet.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I will look into Intrepid Travel and G Adventures more.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to make sure I find a tour that fits my interests and budget.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to Japan",
+    "Tokyo authentic Japanese cuisine",
+    "restaurants in Tokyo",
+    "staying in Shinjuku",
+    "Yakiniku Jumbo Han",
+    "must-see attractions in Shinjuku",
+    "hidden gems in Shinjuku",
+    "best times to visit Tokyo attractions",
+    "avoid crowds in March",
+    "Tokyo to Kyoto itinerary",
+    "Kyoto and Osaka attractions",
+    "guided tours in Japan",
+    "travel agencies",
+    "Intrepid Travel",
+    "G Adventures",
+    "group tour decision",
+    "tour interests and budget"
+  ],
+  "events": [
+    {
+      "text": "Plan to visit Tokyo in March to avoid crowds",
+      "date_hint": "March",
+      "turn_index": 4
+    },
+    {
+      "text": "Plan to spend a few days in Tokyo, then head to Kyoto for a few days, then end in Osaka",
+      "date_hint": "",
+      "turn_index": 6
+    }
+  ]
+}

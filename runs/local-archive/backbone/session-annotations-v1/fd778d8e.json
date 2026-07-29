@@ -1,0 +1,96 @@
+{
+  "session_id": "fd778d8e",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to establish a consistent morning routine.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want strategies to stop hitting the snooze button and get out of bed on time.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want morning routines that help me feel more energized and focused for the day.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want a simple morning routine I can realistically follow given my current schedule and habits.",
+      "turn_index": 4
+    },
+    {
+      "text": "I wake up at 6:30 am on a typical weekday.",
+      "turn_index": 6
+    },
+    {
+      "text": "I can dedicate 30 minutes to a morning routine.",
+      "turn_index": 6
+    },
+    {
+      "text": "I already do some meditation and journaling, but it is not consistent.",
+      "turn_index": 6
+    },
+    {
+      "text": "My top priority is to feel more energized and focused for the day.",
+      "turn_index": 6
+    },
+    {
+      "text": "I enjoy reading and want to include it in my morning routine.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want suggestions to improve my sleep habits.",
+      "turn_index": 8
+    },
+    {
+      "text": "I feel like I have been staying up too late lately.",
+      "turn_index": 8
+    },
+    {
+      "text": "I feel that staying up too late is affecting my morning routine.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want strategies to stay on track with my morning routine and sleep habits.",
+      "turn_index": 10
+    },
+    {
+      "text": "On weekends, I tend to sleep in later.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "morning routine",
+    "snooze button",
+    "get out of bed on time",
+    "morning routines",
+    "energized and focused",
+    "simple morning routine",
+    "current schedule and habits",
+    "wake up 6:30 am",
+    "30-minute morning routine",
+    "meditation and journaling",
+    "reading in morning routine",
+    "sleep habits",
+    "staying up too late",
+    "weekend sleep in",
+    "stay on track strategies"
+  ],
+  "events": [
+    {
+      "text": "User wakes up at 6:30 am on a typical weekday.",
+      "date_hint": "typical weekday",
+      "turn_index": 6
+    },
+    {
+      "text": "User stays up too late lately, affecting the morning routine.",
+      "date_hint": "lately",
+      "turn_index": 8
+    },
+    {
+      "text": "User tends to sleep in later on weekends.",
+      "date_hint": "weekends",
+      "turn_index": 10
+    }
+  ]
+}

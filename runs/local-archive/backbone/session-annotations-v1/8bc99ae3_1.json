@@ -1,0 +1,110 @@
+{
+  "session_id": "8bc99ae3_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to cut down on coffee.",
+      "turn_index": 0
+    },
+    {
+      "text": "I started taking a daily tea break to help me stay focused.",
+      "turn_index": 0
+    },
+    {
+      "text": "I picked up a pack of Earl Grey tea bags from a local café that I really like.",
+      "turn_index": 0
+    },
+    {
+      "text": "I take my tea with honey.",
+      "turn_index": 2
+    },
+    {
+      "text": "I tried stevia in my coffee the other day.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think I prefer honey over stevia.",
+      "turn_index": 2
+    },
+    {
+      "text": "I had a stressful meeting on Wednesday.",
+      "turn_index": 4
+    },
+    {
+      "text": "I feel like the tea break helps me relax and refocus.",
+      "turn_index": 4
+    },
+    {
+      "text": "I feel more focused and less jittery since switching to tea.",
+      "turn_index": 6
+    },
+    {
+      "text": "I bought the Earl Grey tea bags from a local café that I really like.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am sticking to Earl Grey for now.",
+      "turn_index": 8
+    },
+    {
+      "text": "I might try other tea flavors in the future.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have my tea break at 2:30 pm instead of 3 pm.",
+      "turn_index": 8
+    },
+    {
+      "text": "I feel more productive and energized after my 2:30 pm tea break.",
+      "turn_index": 10
+    },
+    {
+      "text": "I tried honey in my tea on Monday.",
+      "turn_index": 10
+    },
+    {
+      "text": "I tried stevia in my coffee on Tuesday.",
+      "turn_index": 10
+    },
+    {
+      "text": "I think I prefer honey.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "cut down on coffee",
+    "daily tea break",
+    "Earl Grey tea bags",
+    "local café",
+    "honey sweetener",
+    "stevia in coffee",
+    "less jittery",
+    "stressful meetings",
+    "Wednesday meeting",
+    "2:30 pm tea break",
+    "3 pm tea break",
+    "trying other tea flavors"
+  ],
+  "events": [
+    {
+      "text": "Stressful meeting on Wednesday",
+      "date_hint": "Wednesday",
+      "turn_index": 4
+    },
+    {
+      "text": "Tea break time changed to 2:30 pm instead of 3 pm",
+      "date_hint": "2:30 pm vs 3 pm",
+      "turn_index": 8
+    },
+    {
+      "text": "Tried honey in tea on Monday",
+      "date_hint": "Monday",
+      "turn_index": 10
+    },
+    {
+      "text": "Tried stevia in coffee on Tuesday",
+      "date_hint": "Tuesday",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "session_id": "109e07e8_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I had a meeting with Rachel on March 3rd that went really well.",
+      "turn_index": 0
+    },
+    {
+      "text": "I received an invitation to attend a leadership development program after the meeting with Rachel on March 3rd.",
+      "turn_index": 2
+    },
+    {
+      "text": "I attended a leadership development program on April 12th and April 13th.",
+      "turn_index": 4
+    },
+    {
+      "text": "I received an update about my promotion from Rachel on May 1st.",
+      "turn_index": 6
+    },
+    {
+      "text": "The May 1st update from Rachel confirmed my promotion to Senior Marketing Specialist.",
+      "turn_index": 8
+    },
+    {
+      "text": "The May 1st update confirmed that the company's leadership team had approved my promotion.",
+      "turn_index": 8
+    },
+    {
+      "text": "My promotion was effective June 1st.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have been working hard to prepare for the new role since June 1st.",
+      "turn_index": 10
+    },
+    {
+      "text": "Since June 1st, I have been attending training sessions.",
+      "turn_index": 10
+    },
+    {
+      "text": "Since June 1st, I have been meeting with my team to discuss our goals and objectives.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "meeting with Rachel",
+    "March 3rd",
+    "leadership development program",
+    "invitation to leadership program",
+    "April 12th and 13th",
+    "leadership styles",
+    "strategic planning",
+    "promotion update",
+    "May 1st",
+    "promotion to Senior Marketing Specialist",
+    "company leadership team approval",
+    "promotion effective June 1st",
+    "training sessions",
+    "meeting with my team",
+    "goals and objectives"
+  ],
+  "events": [
+    {
+      "text": "Meeting with Rachel",
+      "date_hint": "March 3rd",
+      "turn_index": 0
+    },
+    {
+      "text": "Invitation to attend a leadership development program",
+      "date_hint": "after March 3rd (few weeks later)",
+      "turn_index": 2
+    },
+    {
+      "text": "Leadership development program attendance",
+      "date_hint": "April 12th and 13th",
+      "turn_index": 4
+    },
+    {
+      "text": "Promotion update from Rachel",
+      "date_hint": "May 1st",
+      "turn_index": 6
+    },
+    {
+      "text": "Promotion confirmed to Senior Marketing Specialist (company leadership team approved)",
+      "date_hint": "May 1st",
+      "turn_index": 8
+    },
+    {
+      "text": "Promotion effective date",
+      "date_hint": "June 1st",
+      "turn_index": 10
+    }
+  ]
+}

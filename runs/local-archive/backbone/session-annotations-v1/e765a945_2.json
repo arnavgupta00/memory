@@ -1,0 +1,180 @@
+{
+  "session_id": "e765a945_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am hosting a dinner party this weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of making a dinner party recipe with chicken.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am open to other ideas besides chicken for the dinner party.",
+      "turn_index": 0
+    },
+    {
+      "text": "I recently got back from a bridal shower.",
+      "turn_index": 0
+    },
+    {
+      "text": "I helped the bride-to-be pick out gifts from her registry at Bed Bath & Beyond.",
+      "turn_index": 0
+    },
+    {
+      "text": "I took advantage of Bed Bath & Beyond’s 20% off entire purchase sale.",
+      "turn_index": 0
+    },
+    {
+      "text": "I chose the Chicken Fajitas recipe for my dinner party.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want a more detailed Chicken Fajitas recipe with ingredient quantities and cooking instructions.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want suggestions for sides to serve with Chicken Fajitas.",
+      "turn_index": 2
+    },
+    {
+      "text": "I chose Mexican Street Corn as a side dish.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been doing holiday shopping.",
+      "turn_index": 4
+    },
+    {
+      "text": "I use the cashback app Rakuten to earn rewards.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have earned over $100 this quarter on Rakuten.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am using Rakuten rewards to fund gift purchases.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want gift ideas for a nephew who loves video games.",
+      "turn_index": 4
+    },
+    {
+      "text": "I think a gaming headset or a new game release would be a great gift for my nephew.",
+      "turn_index": 6
+    },
+    {
+      "text": "I recently scored a great deal on a designer handbag at the Nordstrom Rack private sale event.",
+      "turn_index": 6
+    },
+    {
+      "text": "I found a pair of boots on sale for 50% off.",
+      "turn_index": 6
+    },
+    {
+      "text": "I wore the boots to a friend’s wedding the following weekend.",
+      "turn_index": 6
+    },
+    {
+      "text": "I recently got a new winter coat from ASOS during their 30% off sale.",
+      "turn_index": 6
+    },
+    {
+      "text": "I helped a friend pick out gifts from her registry at Bed Bath & Beyond.",
+      "turn_index": 8
+    },
+    {
+      "text": "We took advantage of Bed Bath & Beyond’s 20% off entire purchase sale.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want ideas for a centerpiece or decorations for my dinner party.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to create a warm and inviting atmosphere for my dinner party.",
+      "turn_index": 8
+    },
+    {
+      "text": "I apologized for a mistake earlier because I repeated some information.",
+      "turn_index": 10
+    },
+    {
+      "text": "I asked to start fresh.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "dinner party this weekend",
+    "chicken recipe",
+    "Chicken Fajitas",
+    "ingredient quantities",
+    "cooking instructions",
+    "Mexican Street Corn",
+    "Bed Bath & Beyond registry gifts",
+    "20% off entire purchase sale",
+    "Rakuten cashback app",
+    "earned over $100 this quarter",
+    "gift ideas for nephew video games",
+    "Nordstrom Rack private sale designer handbag",
+    "boots 50% off",
+    "ASOS 30% off winter coat",
+    "centerpiece dinner party decorations",
+    "warm and inviting atmosphere"
+  ],
+  "events": [
+    {
+      "text": "Got back from a bridal shower.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Took advantage of Bed Bath & Beyond’s 20% off entire purchase sale for bridal shower registry gifts.",
+      "date_hint": "today (relative to session)",
+      "turn_index": 0
+    },
+    {
+      "text": "Chose the Chicken Fajitas recipe for the dinner party.",
+      "date_hint": "this weekend (relative)",
+      "turn_index": 2
+    },
+    {
+      "text": "Chose Mexican Street Corn as a side dish.",
+      "date_hint": "this weekend (relative)",
+      "turn_index": 4
+    },
+    {
+      "text": "Earned over $100 this quarter on Rakuten cashback.",
+      "date_hint": "this quarter (relative)",
+      "turn_index": 4
+    },
+    {
+      "text": "Scored a deal on a designer handbag at the Nordstrom Rack private sale event.",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Found boots on sale for 50% off and wore them to a friend’s wedding the following weekend.",
+      "date_hint": "following weekend (relative)",
+      "turn_index": 6
+    },
+    {
+      "text": "Got a new winter coat from ASOS during their 30% off sale.",
+      "date_hint": "30% off sale (relative)",
+      "turn_index": 6
+    },
+    {
+      "text": "Helped a friend pick out gifts from her Bed Bath & Beyond registry and used the 20% off entire purchase sale.",
+      "date_hint": "relative to session",
+      "turn_index": 8
+    },
+    {
+      "text": "Started fresh after apologizing for repeating information.",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "session_id": "3cb41ab8_4",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to plan out my week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want reminders for my gym sessions on Monday, Wednesday, and Friday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to schedule time to read before bed each evening.",
+      "turn_index": 0
+    },
+    {
+      "text": "On weekends, I tend to relax more and take things easy.",
+      "turn_index": 2
+    },
+    {
+      "text": "I might not stick to the same routine on weekends.",
+      "turn_index": 2
+    },
+    {
+      "text": "I enjoy the historical fiction novel I am currently reading.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in historical fiction novels set in ancient civilizations like Greece or Rome.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am interested in historical fiction novels set in ancient civilizations.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am interested in the daily life aspect of ancient civilizations.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to learn more about how people lived their daily lives in ancient civilizations.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to learn more about ancient civilizations' customs and traditions.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am interested in learning more about social hierarchies and relationships in ancient civilizations.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know how people interacted with each other in ancient civilizations, especially between different social classes.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know more about the daily life of women in ancient civilizations.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know about women's roles and responsibilities within the household and society in ancient civilizations.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "weekly planning",
+    "gym reminders",
+    "Monday Wednesday Friday gym",
+    "read before bed",
+    "evening reading time",
+    "weekend routine",
+    "historical fiction novels",
+    "ancient civilizations",
+    "historical fiction set in Greece or Rome",
+    "daily life in ancient civilizations",
+    "social hierarchies and relationships",
+    "daily life of women in ancient civilizations"
+  ],
+  "events": [
+    {
+      "text": "Plan reminders for gym sessions on Monday, Wednesday, and Friday and schedule reading before bed each evening",
+      "date_hint": "Monday, Wednesday, Friday (weekdays)",
+      "turn_index": 0
+    },
+    {
+      "text": "Adjust routine on weekends by relaxing and taking things easy",
+      "date_hint": "weekends",
+      "turn_index": 2
+    }
+  ]
+}

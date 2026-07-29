@@ -1,0 +1,216 @@
+{
+  "session_id": "sharegpt_AqgYTct_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The payment-service is Payment Server V2.",
+      "turn_index": 0
+    },
+    {
+      "text": "The first-data-xtp-mux is First Data XTP Mux.",
+      "turn_index": 0
+    },
+    {
+      "text": "The deployment plan includes DC1.",
+      "turn_index": 0
+    },
+    {
+      "text": "The deployment plan diverts all traffic to DC2 so there is no traffic in DC1.",
+      "turn_index": 0
+    },
+    {
+      "text": "The deployment plan stops payment-service in DC1.",
+      "turn_index": 0
+    },
+    {
+      "text": "The deployment plan stops first-data-xtp-mux in DC1.",
+      "turn_index": 0
+    },
+    {
+      "text": "The deployment plan deploys first-data-xtp-mux in DC1.",
+      "turn_index": 0
+    },
+    {
+      "text": "The deployment plan deploys payment-service in DC1.",
+      "turn_index": 0
+    },
+    {
+      "text": "The deployment plan starts first-data-xtp-mux in DC1.",
+      "turn_index": 0
+    },
+    {
+      "text": "The deployment plan starts payment-service in DC1.",
+      "turn_index": 0
+    },
+    {
+      "text": "The deployment plan includes PVT in DC1.",
+      "turn_index": 0
+    },
+    {
+      "text": "The deployment plan includes sign-off on PVT in DC1.",
+      "turn_index": 0
+    },
+    {
+      "text": "The deployment plan includes DC2.",
+      "turn_index": 0
+    },
+    {
+      "text": "The deployment plan diverts all traffic to DC1 so there is no traffic in DC2.",
+      "turn_index": 0
+    },
+    {
+      "text": "The deployment plan stops payment-service in DC2.",
+      "turn_index": 0
+    },
+    {
+      "text": "The deployment plan stops first-data-xtp-mux in DC2.",
+      "turn_index": 0
+    },
+    {
+      "text": "The deployment plan deploys first-data-xtp-mux in DC2.",
+      "turn_index": 0
+    },
+    {
+      "text": "The deployment plan deploys payment-service in DC2.",
+      "turn_index": 0
+    },
+    {
+      "text": "The deployment plan starts first-data-xtp-mux in DC2.",
+      "turn_index": 0
+    },
+    {
+      "text": "The deployment plan starts payment-service in DC2.",
+      "turn_index": 0
+    },
+    {
+      "text": "The deployment plan includes PVT in DC2.",
+      "turn_index": 0
+    },
+    {
+      "text": "The deployment plan includes sign-off on PVT in DC2.",
+      "turn_index": 0
+    },
+    {
+      "text": "The deployment plan finalises by switching to load balanced traffic.",
+      "turn_index": 0
+    },
+    {
+      "text": "The deployment plan includes monitoring after switching to load balanced traffic.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user wants the deployment plan to be generic.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user wants the application names removed.",
+      "turn_index": 2
+    }
+  ],
+  "keyphrases": [
+    "payment-service",
+    "Payment Server V2",
+    "first-data-xtp-mux",
+    "First Data XTP Mux",
+    "DC1",
+    "DC2",
+    "divert all traffic",
+    "stop payment-service",
+    "deploy payment-service",
+    "PVT in DC1",
+    "PVT in DC2",
+    "load balanced traffic"
+  ],
+  "events": [
+    {
+      "text": "Divert all traffic to DC2 so there is no traffic in DC1.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Stop payment-service in DC1.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Stop first-data-xtp-mux in DC1.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Deploy first-data-xtp-mux in DC1.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Deploy payment-service in DC1.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Start first-data-xtp-mux in DC1.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Start payment-service in DC1.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "PVT in DC1 and sign-off on PVT.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Divert all traffic to DC1 so there is no traffic in DC2.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Stop payment-service in DC2.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Stop first-data-xtp-mux in DC2.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Deploy first-data-xtp-mux in DC2.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Deploy payment-service in DC2.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Start first-data-xtp-mux in DC2.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Start payment-service in DC2.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "PVT in DC2 and sign-off on PVT.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Switch to load balanced traffic.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Monitor after switching to load balanced traffic.",
+      "date_hint": "",
+      "turn_index": 0
+    }
+  ]
+}

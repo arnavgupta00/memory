@@ -1,0 +1,99 @@
+{
+  "session_id": "answer_a25d4a91_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to plan out my fitness schedule for the next few weeks.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a reminder about when my next soccer game is with my coworkers.",
+      "turn_index": 0
+    },
+    {
+      "text": "My next soccer game is in two weeks.",
+      "turn_index": 2
+    },
+    {
+      "text": "I recently set a personal best time in a charity 5K run with a time of 27:12.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been doing some running lately.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been focusing on strengthening my core and legs.",
+      "turn_index": 6
+    },
+    {
+      "text": "I recently scored a goal in a recreational soccer game with my coworkers.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am not typically a goal-scorer.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking about signing up for a tennis tournament happening on May 6th.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been playing tennis casually for a few years.",
+      "turn_index": 8
+    },
+    {
+      "text": "This will be my first real tennis tournament.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been practicing my serve and volleys.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am hoping to make it to at least the quarterfinals in the tennis tournament.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will work on my footwork and returns.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "fitness schedule planning",
+    "next soccer game with coworkers",
+    "soccer endurance training",
+    "charity 5K 27:12 personal best",
+    "running technique",
+    "core and leg strengthening",
+    "soccer goal scored",
+    "soccer shooting technique",
+    "tennis tournament May 6",
+    "first tennis tournament",
+    "tennis serve and volleys",
+    "quarterfinals goal",
+    "choosing tennis racket and strings"
+  ],
+  "events": [
+    {
+      "text": "Next soccer game with coworkers",
+      "date_hint": "in two weeks",
+      "turn_index": 2
+    },
+    {
+      "text": "Personal best in a charity 5K run (27:12)",
+      "date_hint": "recently",
+      "turn_index": 4
+    },
+    {
+      "text": "Scored a goal in a recreational soccer game with coworkers",
+      "date_hint": "recently",
+      "turn_index": 6
+    },
+    {
+      "text": "Tennis tournament sign-up consideration",
+      "date_hint": "May 6th",
+      "turn_index": 8
+    }
+  ]
+}

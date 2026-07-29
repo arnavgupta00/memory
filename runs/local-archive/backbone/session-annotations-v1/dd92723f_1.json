@@ -1,0 +1,77 @@
+{
+  "session_id": "dd92723f_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am having issues with my home computer running really slow lately.",
+      "turn_index": 0
+    },
+    {
+      "text": "I think my home computer slowness might be due to a virus.",
+      "turn_index": 0
+    },
+    {
+      "text": "I upgraded my home internet plan to 500 Mbps today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am concerned about my files.",
+      "turn_index": 2
+    },
+    {
+      "text": "I haven't backed up my files in a while.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am an Amazon Prime member.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to set up automatic backups of my files to a cloud storage service.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want automatic cloud backups to create a separate copy of my data that I can restore from if something goes wrong.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want automatic cloud backups to not affect the original files on my computer or other devices.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to use a NAS device like the Western Digital My Cloud to store and access my files locally in addition to using a cloud storage service.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "home computer running slow",
+    "full system scan",
+    "update antivirus software",
+    "virus on computer",
+    "home internet plan 500 Mbps",
+    "back up files external hard drive",
+    "cloud storage services",
+    "Google Drive",
+    "Dropbox",
+    "pCloud",
+    "Amazon Drive",
+    "syncing vs backing up",
+    "automatic backups to cloud",
+    "restore separate copy",
+    "NAS network attached storage",
+    "Western Digital My Cloud",
+    "Amazon Prime member"
+  ],
+  "events": [
+    {
+      "text": "Upgraded home internet plan to 500 Mbps",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Haven't backed up files in a while",
+      "date_hint": "in a while",
+      "turn_index": 2
+    }
+  ]
+}

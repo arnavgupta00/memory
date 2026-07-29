@@ -1,0 +1,63 @@
+{
+  "session_id": "0232f77d",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have been trying to get into a consistent sleep schedule.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been trying to establish a bedtime routine to wake up feeling more refreshed.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been trying to do yoga in the evenings to unwind.",
+      "turn_index": 2
+    },
+    {
+      "text": "I skip yoga on Fridays and Mondays.",
+      "turn_index": 2
+    },
+    {
+      "text": "I watch TV around 8 pm every evening after finishing dinner.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been trying to reduce my screen time before bed.",
+      "turn_index": 6
+    },
+    {
+      "text": "It is hard for me to reduce screen time before bed when I am in the middle of a good show.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to set reminders on my phone to remind me to start winding down for bed.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "consistent sleep schedule",
+    "bedtime routine",
+    "wake up refreshed",
+    "evening yoga",
+    "skipping yoga Fridays and Mondays",
+    "yoga morning instead",
+    "healthy dinner recipes",
+    "watching TV at 8 pm",
+    "screen time before bed",
+    "winding down for bed",
+    "phone reminders"
+  ],
+  "events": [
+    {
+      "text": "Watching TV around 8 pm every evening after finishing dinner",
+      "date_hint": "around 8 pm every evening",
+      "turn_index": 4
+    },
+    {
+      "text": "Skipping yoga on Fridays and Mondays",
+      "date_hint": "Fridays and Mondays",
+      "turn_index": 2
+    }
+  ]
+}

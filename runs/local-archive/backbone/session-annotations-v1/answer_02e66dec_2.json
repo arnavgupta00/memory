@@ -1,0 +1,89 @@
+{
+  "session_id": "answer_02e66dec_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Europe.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want tips on how to plan a family-friendly itinerary for Europe.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of going to Paris.",
+      "turn_index": 2
+    },
+    {
+      "text": "I went to Paris as a family last month.",
+      "turn_index": 2
+    },
+    {
+      "text": "My kids loved Paris.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of planning a solo trip to Tokyo.",
+      "turn_index": 4
+    },
+    {
+      "text": "I recently went to Paris with my family.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want unique and off-the-beaten-path experiences in Tokyo.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to compare and contrast traveling with family versus solo.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am planning a solo trip to Tokyo.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want affordable accommodation options in Tokyo.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to stay within a budget of around $30-50 per night for Tokyo accommodation.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have heard that Tokyo can be quite expensive.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "family-friendly itinerary",
+    "trip to Europe",
+    "Paris family trip",
+    "kids loved Paris",
+    "solo trip to Tokyo",
+    "first-time visitor to Tokyo",
+    "off-the-beaten-path experiences",
+    "hidden gems in Tokyo",
+    "compare family vs solo travel",
+    "affordable accommodation Tokyo",
+    "budget $30-50 per night",
+    "Tokyo expensive"
+  ],
+  "events": [
+    {
+      "text": "Family trip to Paris",
+      "date_hint": "last month",
+      "turn_index": 2
+    },
+    {
+      "text": "Planning a solo trip to Tokyo",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Planning a solo trip to Tokyo and looking for affordable accommodation",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

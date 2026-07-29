@@ -1,0 +1,117 @@
+{
+  "session_id": "e2cdd030",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Boston soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been trying to optimize my packing list.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have taken four trips in the past three months.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in history.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to do the Freedom Trail.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in ancient civilizations.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am interested in the Art of the Ancient World collection.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am drawn to Impressionist art.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am planning to spend 4 days in Boston.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have a harbor cruise on my itinerary.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have a visit to Fenway Park on my itinerary.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of exploring the North End.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to try local cuisine in Boston.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering visiting the Samuel Adams Brewery.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am a beer enthusiast.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am looking forward to the brewery tour and sampling famous beers.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will book my Samuel Adams Brewery tour in advance.",
+      "turn_index": 10
+    },
+    {
+      "text": "I plan to spend a fun afternoon beer tasting and learning about the brewing process.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to Boston",
+    "packing list optimization",
+    "four trips in past three months",
+    "Freedom Trail",
+    "Museum of Fine Arts highlights",
+    "Art of the Ancient World collection",
+    "Impressionist art collection",
+    "4 days in Boston",
+    "harbor cruise",
+    "Fenway Park",
+    "North End cuisine",
+    "Samuel Adams Brewery",
+    "beer enthusiast",
+    "brewery tour booking in advance",
+    "beer tasting and brewing process"
+  ],
+  "events": [
+    {
+      "text": "Planning a trip to Boston",
+      "date_hint": "soon",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to spend 4 days in Boston",
+      "date_hint": "4 days",
+      "turn_index": 6
+    },
+    {
+      "text": "Considering visiting Samuel Adams Brewery",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Booking the brewery tour in advance",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

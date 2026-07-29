@@ -1,0 +1,165 @@
+{
+  "session_id": "sharegpt_SPbMLCl_14",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I provided sample data in JSON format that includes fields like _id, specialtyAreas, experience, status, npi, staffCostId, specializationId, aboutDoctor, userId, calendarId, createdAt, updatedAt, and __v.",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes an experience array with the strings \"test hdjkhj dsadas \", \"test2jjjj\", \"jhbhghj\", \"kkkkkk\", and \"Cambridge_AQA\".",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data sets status to \"active\".",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes npi value \"12345\".",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes aboutDoctor value \"Doctor cookie\".",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes calendarId value \"egvqisi9w4br2rcl3wa8m6eja\".",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes createdAt as a $date with $numberLong \"1634556408189\".",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes updatedAt as a $date with $numberLong \"1676968769579\".",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes workHours entries with queue and appointments booleans and startTime/endTime numeric values.",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes an overRide object with an available array containing startTime \"2021-11-07T02:00:00.000Z\" and endTime \"2021-11-06T04:00:00.000Z\" and queue false and appointments true.",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes an overRide object with an unavailable array containing dates \"2022-01-03\", \"2022-01-10\", and \"2022-01-17\".",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes rating value 3.75.",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes specialization value \"Family Medicine\".",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes isEmailUpdating value false.",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes notificationPreferences.notifyWhenOnline set to true.",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes notificationPreferences.emailNotification.patientAssignment set to true.",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes notificationPreferences.emailNotification.appointmentCreation set to true.",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes notificationPreferences.emailNotification.appointmentCancelation set to true.",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes notificationPreferences.emailNotification.appointmentUpdation set to true.",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes notificationPreferences.emailNotification.appointmentReminderFirst set to true.",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes notificationPreferences.emailNotification.appointmentReminderSecond set to true.",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes notificationPreferences.textNotification.patientAssignment set to true.",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes notificationPreferences.textNotification.appointmentCreation set to true.",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes notificationPreferences.textNotification.appointmentCancelation set to true.",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes notificationPreferences.textNotification.appointmentUpdation set to true.",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes notificationPreferences.textNotification.appointmentReminderFirst set to true.",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes notificationPreferences.textNotification.appointmentReminderSecond set to true.",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes shortBio as an empty string.",
+      "turn_index": 0
+    },
+    {
+      "text": "The sample data includes nonWorkingDays array with values 1 and 5.",
+      "turn_index": 0
+    },
+    {
+      "text": "I asked for a few sample documents matching the given sample that have valid 40 hour work weeks with various upcoming exceptions.",
+      "turn_index": 2
+    },
+    {
+      "text": "I said the FE format should be used and that the DB format should be used for work hours.",
+      "turn_index": 4
+    },
+    {
+      "text": "I said \"continue\".",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "sample documents",
+    "valid 40 hour work weeks",
+    "upcoming exceptions",
+    "workHours DB format",
+    "FE format",
+    "DB format for work hours",
+    "overRide available",
+    "overRide unavailable",
+    "notificationPreferences",
+    "nonWorkingDays",
+    "Family Medicine",
+    "npi 12345"
+  ],
+  "events": [
+    {
+      "text": "Requested sample documents with valid 40 hour work weeks and various upcoming exceptions.",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Noted that FE format is being used and work hours should use DB format.",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Asked to continue.",
+      "date_hint": "",
+      "turn_index": 6
+    }
+  ]
+}

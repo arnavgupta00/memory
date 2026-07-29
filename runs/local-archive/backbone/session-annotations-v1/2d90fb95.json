@@ -1,0 +1,83 @@
+{
+  "session_id": "2d90fb95",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I attended a conference last Thursday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to organize my contacts from the conference I attended last Thursday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a spreadsheet template to keep track of my networking contacts.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to reach out to Rachel Lee, the keynote speaker from the conference, about a potential collaboration.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to reach out to the founder of EcoCycle, Alex, about potential partnerships.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want information about current trends and innovations in the plastic waste reduction industry.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want information about the current state of the influencer marketing industry in the context of social media.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of potentially collaborating with Rachel Lee on a project.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of attending a speed networking event next week to expand my professional network.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to prepare by suggesting potential questions to ask during 5-minute conversations at the speed networking event.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to reach out to Emily Chen, an old acquaintance who works as a product manager at a fintech company.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to draft a simple email to catch up with Emily Chen and explore potential opportunities for collaboration.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "conference contacts",
+    "spreadsheet template",
+    "networking contacts tracking",
+    "Rachel Lee keynote speaker",
+    "simple email draft",
+    "EcoCycle founder Alex",
+    "plastic waste reduction trends",
+    "plastic waste reduction innovations",
+    "influencer marketing industry",
+    "social media influencer marketing",
+    "speed networking event",
+    "5-minute conversation questions",
+    "professional network expansion",
+    "Emily Chen product manager fintech",
+    "catch up email collaboration"
+  ],
+  "events": [
+    {
+      "text": "Attended a conference last Thursday",
+      "date_hint": "last Thursday",
+      "turn_index": 0
+    },
+    {
+      "text": "Attending a speed networking event next week",
+      "date_hint": "next week",
+      "turn_index": 8
+    }
+  ]
+}

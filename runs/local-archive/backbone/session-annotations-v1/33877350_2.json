@@ -1,0 +1,105 @@
+{
+  "session_id": "33877350_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am thinking of trying out a new gym near my work.",
+      "turn_index": 0
+    },
+    {
+      "text": "I commute to the gym by bus.",
+      "turn_index": 0
+    },
+    {
+      "text": "My bus commute to the gym would be about 45 minutes.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for a new water bottle.",
+      "turn_index": 2
+    },
+    {
+      "text": "The water bottle I want should hold at least 32 oz.",
+      "turn_index": 2
+    },
+    {
+      "text": "The water bottle I want should be BPA-free.",
+      "turn_index": 2
+    },
+    {
+      "text": "I lost my favorite water bottle during a recent road trip.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering taking up rock climbing as a new hobby.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am interested in indoor climbing gyms in my area that offer introductory courses.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of signing up for an introductory course soon.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am deciding between an introductory course focused on belaying and climbing techniques versus one focused on overall fitness and conditioning.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am more interested in learning proper techniques and safety protocols.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to opt for a course that focuses on belaying and climbing techniques.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know whether gyms offer membership discounts or promotions for new members, especially if I sign up for a course.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will ask about membership promotions and discounts when I sign up for the course.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will take the bus to the gym.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am considering investing in a backpack or duffel bag to carry my climbing gear and other essentials.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "new gym near work",
+    "45 minutes bus commute",
+    "water bottle 32 oz",
+    "BPA-free water bottle",
+    "lost water bottle road trip",
+    "rock climbing hobby",
+    "indoor climbing gym",
+    "introductory course",
+    "belaying and climbing techniques",
+    "climbing safety protocols",
+    "membership discounts promotions",
+    "backpack or duffel bag for climbing gear"
+  ],
+  "events": [
+    {
+      "text": "Lost my favorite water bottle during a road trip.",
+      "date_hint": "recent road trip",
+      "turn_index": 2
+    },
+    {
+      "text": "Considering signing up for an introductory rock climbing course soon.",
+      "date_hint": "soon",
+      "turn_index": 6
+    },
+    {
+      "text": "Plan to ask about membership discounts or promotions when signing up for the course.",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

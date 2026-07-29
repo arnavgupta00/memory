@@ -1,0 +1,50 @@
+{
+  "session_id": "ultrachat_163197",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have a holly tree in my backyard.",
+      "turn_index": 2
+    },
+    {
+      "text": "I often have harsh winters where I live.",
+      "turn_index": 2
+    },
+    {
+      "text": "I will water my holly tree well before winter.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will wrap the trunk of my holly tree with burlap.",
+      "turn_index": 4
+    },
+    {
+      "text": "I love having my holly tree in my backyard because it adds character to the space.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "holly tree survival",
+    "extreme temperatures",
+    "freezing winters",
+    "scorching summers",
+    "backyard holly tree",
+    "harsh winter care",
+    "watering before winter",
+    "wrapping trunk with burlap",
+    "hot summer care",
+    "tree winter protection"
+  ],
+  "events": [
+    {
+      "text": "User plans to water the holly tree well before winter.",
+      "date_hint": "before winter",
+      "turn_index": 4
+    },
+    {
+      "text": "User plans to wrap the holly tree trunk with burlap for winter.",
+      "date_hint": "before winter",
+      "turn_index": 4
+    }
+  ]
+}

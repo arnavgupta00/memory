@@ -1,0 +1,102 @@
+{
+  "session_id": "4d8941ae_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want help setting up a reminder system to reorder my pet supplies.",
+      "turn_index": 0
+    },
+    {
+      "text": "I ordered a new batch of dog treats for Max from Chewy.com on February 15th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to reorder dog treats for Max when they run out.",
+      "turn_index": 0
+    },
+    {
+      "text": "I think digital calendar reminders would work best for my reorder reminder system.",
+      "turn_index": 2
+    },
+    {
+      "text": "The current batch of dog treats typically lasts around 4-5 weeks.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to track when I need to reorder cat food for Luna.",
+      "turn_index": 4
+    },
+    {
+      "text": "The current batch of cat food typically lasts around 6-7 weeks.",
+      "turn_index": 6
+    },
+    {
+      "text": "I do not have a record of the exact last order date for Luna's cat food.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been keeping track of how much cat food I have left.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to set the reorder threshold for Luna's cat food to 6 weeks for now.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to track my cat litter supply as well.",
+      "turn_index": 8
+    },
+    {
+      "text": "I got a new cat litter box on January 10th.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want help figuring out how often I need to reorder cat litter.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to track when I need to give Luna her joint supplements.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have been giving Luna joint supplements since the vet recommended them on February 1st.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to make sure I don't forget to give Luna her joint supplements.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "pet supplies reminder system",
+    "reorder dog treats",
+    "Max dog treats",
+    "Chewy.com order February 15",
+    "digital calendar reminders",
+    "dog treats reorder threshold 4-5 weeks",
+    "reorder cat food",
+    "Luna cat food",
+    "cat food reorder threshold 6 weeks",
+    "cat litter supply tracking",
+    "cat litter box January 10",
+    "Luna joint supplements",
+    "vet recommended February 1"
+  ],
+  "events": [
+    {
+      "text": "Ordered a new batch of dog treats for Max from Chewy.com",
+      "date_hint": "February 15th",
+      "turn_index": 0
+    },
+    {
+      "text": "Started giving Luna joint supplements after vet recommendation",
+      "date_hint": "February 1st",
+      "turn_index": 10
+    },
+    {
+      "text": "Got a new cat litter box",
+      "date_hint": "January 10th",
+      "turn_index": 8
+    }
+  ]
+}

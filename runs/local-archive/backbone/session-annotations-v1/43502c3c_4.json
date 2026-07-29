@@ -1,0 +1,101 @@
+{
+  "session_id": "43502c3c_4",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am working on a short story.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to finish my short story by the end of April.",
+      "turn_index": 0
+    },
+    {
+      "text": "I started my short story project on March 15th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been working on the story in 30-minute increments, 3 times a week.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have already been writing in 30-minute sessions, 3 times a week.",
+      "turn_index": 2
+    },
+    {
+      "text": "I like the writing schedule but need adjustments because I have already been working in 30-minute increments, 3 times a week.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been writing consistently for the past 3 months.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have noticed my writing speed has improved over time.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think 250-300 words per 30-minute session is too low for me.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think I can manage around 400-450 words per 30-minute session.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to dedicate specific days to reviewing and revising my short story.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to dedicate every Sunday to reviewing and revising my work.",
+      "turn_index": 10
+    },
+    {
+      "text": "I discuss my project with Rachel, my writing buddy.",
+      "turn_index": 10
+    },
+    {
+      "text": "Rachel and I usually meet every Sunday at a coffee shop to discuss our projects and provide feedback to each other.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "short story writing schedule",
+    "finish by end of April",
+    "deadline end of April",
+    "project start date March 15",
+    "30-minute writing sessions",
+    "3 times a week",
+    "words per 30-minute session",
+    "average words per session 250-300",
+    "writing speed improved",
+    "400-450 words per 30 minutes",
+    "review and revise days",
+    "Sunday review and revision",
+    "writing buddy Rachel",
+    "Sunday coffee shop meeting",
+    "words already written calculation"
+  ],
+  "events": [
+    {
+      "text": "Started the short story project",
+      "date_hint": "March 15th",
+      "turn_index": 0
+    },
+    {
+      "text": "Writing schedule deadline target: finish by the end of April",
+      "date_hint": "end of April",
+      "turn_index": 0
+    },
+    {
+      "text": "Writing consistently for the past 3 months",
+      "date_hint": "past 3 months",
+      "turn_index": 6
+    },
+    {
+      "text": "Weekly meeting with writing buddy Rachel at a coffee shop",
+      "date_hint": "every Sunday",
+      "turn_index": 10
+    }
+  ]
+}

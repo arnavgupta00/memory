@@ -1,0 +1,112 @@
+{
+  "session_id": "dd3d8e73_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want advice on stretching exercises to help my leg muscles.",
+      "turn_index": 0
+    },
+    {
+      "text": "I start playing in a recreational soccer league with my colleagues from work today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to avoid injuries when playing recreational soccer.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have played soccer before.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want specific warm-up exercises to get my heart rate up and loosen my muscles before the game.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of getting back into tennis.",
+      "turn_index": 4
+    },
+    {
+      "text": "I used to love playing tennis when I was younger.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want tips on how to get started again after a long break from tennis.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been taking swimming lessons at a community center.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of taking tennis lessons at the community center where I have been taking swimming lessons.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of asking my colleagues from work to hit some balls with me during our lunch break.",
+      "turn_index": 8
+    },
+    {
+      "text": "We can use the tennis courts near the office.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am excited to hit some balls with my colleagues during lunch.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am starting a recreational soccer league with my colleagues from work today.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am really looking forward to starting the recreational soccer league.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "stretching exercises",
+    "leg muscles",
+    "recreational soccer league",
+    "warm-up exercises",
+    "heart rate up",
+    "loosen muscles",
+    "injury prevention",
+    "tennis after a long break",
+    "tennis lessons",
+    "community center",
+    "lunch break tennis",
+    "tennis courts near the office"
+  ],
+  "events": [
+    {
+      "text": "Starts playing in a recreational soccer league with colleagues from work",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Asks for warm-up exercises before the soccer game",
+      "date_hint": "before the game today",
+      "turn_index": 2
+    },
+    {
+      "text": "Plans to get back into tennis after a long break",
+      "date_hint": "unspecified",
+      "turn_index": 4
+    },
+    {
+      "text": "Considers taking tennis lessons at the community center while taking swimming lessons there",
+      "date_hint": "unspecified",
+      "turn_index": 6
+    },
+    {
+      "text": "Plans to ask colleagues to hit tennis balls during lunch break at tennis courts near the office",
+      "date_hint": "during lunch break",
+      "turn_index": 8
+    },
+    {
+      "text": "Starts a recreational soccer league with colleagues from work",
+      "date_hint": "today",
+      "turn_index": 10
+    }
+  ]
+}

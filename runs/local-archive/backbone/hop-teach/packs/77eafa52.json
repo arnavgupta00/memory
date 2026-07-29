@@ -1,0 +1,33 @@
+{
+  "question_id": "77eafa52",
+  "question_type": "multi-session",
+  "question": "How much more did I have to pay for the trip after the initial quote?",
+  "question_date": "2023/05/30 (Tue) 20:07",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_33c251f0_1",
+    "answer_33c251f0_2"
+  ],
+  "haystack_session_count": 51,
+  "notes_coverage": "partial",
+  "annotated_session_count": 8,
+  "gold_sessions": [
+    {
+      "session_id": "answer_33c251f0_1",
+      "date": "2023/05/27 (Sat) 00:38",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_33c251f0_1\n[session_date] 2023/05/27 (Sat) 00:38\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm planning a trip to Japan and I'm trying to finalize some details. I need to pay the outstanding balance for my hotel booking by March 1st, can you help me check if my credit card has enough funds in my account?\n\n[turn 2] I'm also trying to finalize the payment for my flight tickets with Sakura Travel Agency. They initially quoted me $2,500 for the entire trip, but I'm still waiting for them to confirm my tickets. Do you have any tips on how to follow up with travel agencies or what I can do if they're not responding promptly?\n\n[turn 4] I'll try to follow up with them again, thanks for the tips. By the way, do you have any recommendations for travel insurance providers? I got a quote from AXA Insurance for around $50 for the entire trip, but I'm not sure if it's a good deal.\n\n[turn 6] I'll definitely look into those insurance providers, thanks for the suggestions. I'm still not sure if I should go with AXA or explore other options. My friend Sarah told me that she got a better deal with Allianz, so I might look into that as well.\n\n[turn 8] I'm still waiting to hear back from Sakura Travel Agency about my flight tickets, and I'm getting a bit worried. Do you think I should consider looking into alternative flight options, just in case they don't come through?\n\n[turn 10] I'll definitely start looking into alternative flight options, thanks for the advice. I'm still hoping that Sakura Travel Agency will come through, though. I did get a good deal with them initially, after all - they quoted me $2,500 for the entire trip, which seemed reasonable."
+    },
+    {
+      "session_id": "answer_33c251f0_2",
+      "date": "2023/05/21 (Sun) 05:47",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_33c251f0_2\n[session_date] 2023/05/21 (Sun) 05:47\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm planning a trip to Japan and I'm trying to finalize my travel arrangements. I've booked a trip with Sakura Travel Agency, but I'm still waiting to hear back about my flight tickets. Do you know if there's anything I can do to speed up the process? By the way, the corrected price for the entire trip was $2,800.\n\n[turn 2] I didn't pay by credit card, I paid by bank transfer, so I'm not sure if I can dispute the charge. Do you think I should contact Sakura Travel Agency again and ask for an update on my flight tickets, or should I just wait a bit longer?\n\n[turn 4] I'm also concerned about my hotel booking in Tokyo. I booked it through Expedia and I need to pay the outstanding balance by March 1st to avoid cancellation. Can you remind me when March 1st is in relation to today's date?\n\n[turn 6] What's the best way to pay the outstanding balance for my hotel booking on Expedia? Should I use my credit card or is there another payment method I can use?\n\n[turn 8] I think I'll use my credit card to pay the outstanding balance. Can you remind me how much I need to pay for the entire trip to Japan, including the hotel booking?\n\n[turn 10] I remember that the corrected price for the entire trip was $2,800. I'm not sure how much of that is attributed to the hotel booking, but I should probably review my booking details to get a clear breakdown of the costs."
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

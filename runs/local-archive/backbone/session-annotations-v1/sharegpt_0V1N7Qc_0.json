@@ -1,0 +1,103 @@
+{
+  "session_id": "sharegpt_0V1N7Qc_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am working in an Ignition tag event change scripting window to push data on value change of a tag using named queries to a database.",
+      "turn_index": 0
+    },
+    {
+      "text": "I read the tag \"[System]Gateway/CurrentDateTime\" into p1.",
+      "turn_index": 0
+    },
+    {
+      "text": "I read the tag \"[.]Machine Name\" into p2.",
+      "turn_index": 0
+    },
+    {
+      "text": "I read the tag \"[.]Stage\" into p3.",
+      "turn_index": 0
+    },
+    {
+      "text": "I read the tag \"[.]Shift\" into p4.",
+      "turn_index": 0
+    },
+    {
+      "text": "I read the tag \"[.]MIS_Running_Recipe\" into p5.",
+      "turn_index": 0
+    },
+    {
+      "text": "I read step sequence names from \"[.]../step_sequence_name/step1\" through \"[.]../step_sequence_name/step14\" into p6s1 through p6s14.",
+      "turn_index": 0
+    },
+    {
+      "text": "I read step sequence codes from \"[.]../step_sequence_number/step1\" through \"[.]../step_sequence_number/step14\" into p7s1 through p7s14.",
+      "turn_index": 0
+    },
+    {
+      "text": "I read step sequence times from \"[.]../step_sequence_value/step1\" through \"[.]../step_sequence_value/step14\" into p8s1 through p8s14.",
+      "turn_index": 0
+    },
+    {
+      "text": "I read the tag \"[.]CT_SEC\" into p9.",
+      "turn_index": 0
+    },
+    {
+      "text": "I build parameter dictionaries params_s1 through params_s14 for named query execution.",
+      "turn_index": 0
+    },
+    {
+      "text": "Each params_sN dictionary includes keys \"R_Datetime\", \"Machine_Name\", \"Stage\", \"R_Shift\", \"Building_Recipe\", \"Sequence_Name\", \"Sequence_Code\", \"Sequence_Time\", and \"Cycle_Time\".",
+      "turn_index": 0
+    },
+    {
+      "text": "I call system.db.runNamedQuery with project \"Tag_Details\" and named query path \"Throughput_Building_MS/SeqWise_Data_Push\".",
+      "turn_index": 0
+    },
+    {
+      "text": "I execute the named query for step N only when previousValue.value != currentValue.value, currentValue.value == False, and p8sN > 0.00.",
+      "turn_index": 0
+    },
+    {
+      "text": "I execute the named query separately for steps 1 through 14 using params_s1 through params_s14.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to optimize the code to avoid executing system.db.runnamedquery multiple times.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to optimize the Params sequence-wise.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to optimize the final if conditions and the checking with p8 before running the named query.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the output as text instead of a code screen because the code is lengthy and output generation gets stuck.",
+      "turn_index": 0
+    }
+  ],
+  "keyphrases": [
+    "Ignition tag event change scripting",
+    "system.db.runNamedQuery",
+    "Throughput_Building_MS/SeqWise_Data_Push",
+    "Tag_Details named query",
+    "step_sequence_name",
+    "step_sequence_number",
+    "step_sequence_value",
+    "params_s1 to params_s14",
+    "R_Datetime Machine_Name Stage R_Shift Building_Recipe",
+    "previousValue currentValue False",
+    "p8s1 p8s14 > 0.00",
+    "optimize named query execution"
+  ],
+  "events": [
+    {
+      "text": "Named query execution condition check and run for each step when previousValue differs and currentValue is False and p8sN > 0.00",
+      "date_hint": "",
+      "turn_index": 0
+    }
+  ]
+}

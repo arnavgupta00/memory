@@ -1,0 +1,102 @@
+{
+  "session_id": "7f12db5f",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am shopping around for new car insurance quotes.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want information about GEICO's rates.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to know what is usually included in GEICO's policies.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking about getting roadside assistance coverage.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know whether GEICO offers roadside assistance coverage.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know how much roadside assistance would add to my premium.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am wondering whether GEICO offers special discounts for people who take good care of their cars.",
+      "turn_index": 4
+    },
+    {
+      "text": "I take good care of my car with regular oil changes and maintenance.",
+      "turn_index": 4
+    },
+    {
+      "text": "I recently got my car's oil changed at Jiffy Lube.",
+      "turn_index": 6
+    },
+    {
+      "text": "I got my car's oil changed at Jiffy Lube on Main St.",
+      "turn_index": 6
+    },
+    {
+      "text": "Jiffy Lube told me I need to replace my air filter soon.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am wondering whether replacing my air filter would affect my insurance rates.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking about getting a GPS navigation system upgrade.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know whether GEICO offers discounts for drivers with advanced safety features like GPS or lane departure warnings.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking about getting a quote from GEICO for my car insurance.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know the process for getting a GEICO car insurance quote.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know what I will need to provide to get a GEICO car insurance quote.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "GEICO car insurance rates",
+    "GEICO policy coverage included",
+    "roadside assistance coverage",
+    "roadside assistance premium cost",
+    "GEICO discounts",
+    "regular oil changes maintenance discount",
+    "Jiffy Lube oil change",
+    "air filter replacement",
+    "insurance rates impact",
+    "GPS navigation system upgrade",
+    "advanced safety features discount",
+    "lane departure warnings discount",
+    "GEICO quote process",
+    "information needed for car insurance quote"
+  ],
+  "events": [
+    {
+      "text": "Car oil change at Jiffy Lube on Main St",
+      "date_hint": "recently",
+      "turn_index": 6
+    },
+    {
+      "text": "Jiffy Lube told me I need to replace my air filter soon",
+      "date_hint": "recently",
+      "turn_index": 6
+    }
+  ]
+}

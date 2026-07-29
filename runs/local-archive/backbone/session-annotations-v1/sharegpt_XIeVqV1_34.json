@@ -1,0 +1,149 @@
+{
+  "session_id": "sharegpt_XIeVqV1_34",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I successfully downloaded files using FTP.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to save downloaded files in a specified directory.",
+      "turn_index": 0
+    },
+    {
+      "text": "When I download nothidden, it replaces my hidden files.",
+      "turn_index": 0
+    },
+    {
+      "text": "I used an FTP command to change directories to nothidden.",
+      "turn_index": 0
+    },
+    {
+      "text": "In the nothidden directory, I saw files named flag3, passwd, and shadow.",
+      "turn_index": 0
+    },
+    {
+      "text": "I downloaded the file flag3 via FTP.",
+      "turn_index": 0
+    },
+    {
+      "text": "I downloaded the file passwd via FTP.",
+      "turn_index": 0
+    },
+    {
+      "text": "I downloaded the file shadow via FTP.",
+      "turn_index": 0
+    },
+    {
+      "text": "I think the password size is 500 instead of 1800.",
+      "turn_index": 2
+    },
+    {
+      "text": "I successfully completed unshadowing and cracking setup before moving to task 5.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am supposed to use John the Ripper for a brute force attack.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am supposed to crack the remainder of the passwords from passwd or hashes.txt.",
+      "turn_index": 2
+    },
+    {
+      "text": "The largest password size for the brute force task is set to six characters.",
+      "turn_index": 2
+    },
+    {
+      "text": "Passwords may contain lowercase, uppercase, numbers, and special characters.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to provide screenshots and a description of any configuration files I change.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was told that after unshadowing there are 60 different accounts and lines 1-55 should be removed.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was told to remove the line that starts with cfinnigan from the unshadow file.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was told the remaining users should be frustratedemployee, user1, user2, and user3.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was told user1 passwords are 8 characters long with uppercase and lowercase.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was told user2 passwords are 4 characters long with uppercase, lowercase, and symbols.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was told user3 passwords are 6 characters long with uppercase, lowercase, numbers, and symbols.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was told frustratedemployee passwords are 6 characters long with uppercase, lowercase, numbers, and symbols.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was told to attack the weakest passwords first by changing John the Ripper incremental settings such as [Incremental: Alphanum] with MinLen and MaxLen.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was told that changing [Incremental: Alphanum] MinLen and MaxLen to 4 and 4 would attack the user1 password only.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was told that changing [Incremental: ASCII] MinLen and MaxLen to 4 and 4 would attack passwords for user1 and user2.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was told that for the stronger passwords (frustratedemployee and user3), I only need to demonstrate how to crack them without actually cracking them.",
+      "turn_index": 2
+    },
+    {
+      "text": "I asked what to use instead of Incremental Alphanum because John the Ripper doesn't have it.",
+      "turn_index": 2
+    },
+    {
+      "text": "I asked what else can be used instead of Incremental Alphanum since it was only used as an example.",
+      "turn_index": 2
+    }
+  ],
+  "keyphrases": [
+    "FTP download",
+    "specified directory",
+    "hidden files replaced",
+    "nothidden directory",
+    "flag3 passwd shadow",
+    "John the Ripper",
+    "brute force attack",
+    "unshadow file",
+    "hashes.txt",
+    "Incremental Alphanum",
+    "MinLen MaxLen",
+    "Incremental ASCII"
+  ],
+  "events": [
+    {
+      "text": "FTP directory listing and navigation to nothidden",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "FTP downloads of flag3, passwd, and shadow",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Moving to task 5 brute force attack after unshadowing/cracking setup",
+      "date_hint": "",
+      "turn_index": 2
+    }
+  ]
+}

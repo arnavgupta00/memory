@@ -1,0 +1,106 @@
+{
+  "session_id": "1410aa4b_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for recommendations for good Italian restaurants in downtown.",
+      "turn_index": 0
+    },
+    {
+      "text": "I went to a new Italian place before the play at the community theater last Saturday.",
+      "turn_index": 0
+    },
+    {
+      "text": "The new Italian place I went to before the community theater play was decent.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am heading to the children's theater company today to attend my niece's acting showcase.",
+      "turn_index": 2
+    },
+    {
+      "text": "My niece has been taking classes at the children's theater company.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am super excited to see my niece perform.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want kid-friendly Italian restaurant recommendations around the children's theater company.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to grab lunch after the show with my niece.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to search online for kid-friendly Italian restaurants near the children's theater company.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want tips on how to find out if a restaurant has a kid's menu or is family-friendly from their website.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to search online and check the websites of Italian restaurants near the children's theater company.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want advice on how to get my niece to relax and have fun during her acting showcase today.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am hoping to grab lunch with my niece after the showcase.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want tips on how to make the most of our lunchtime conversation so we can chat about my niece's experience and what she thought of the showcase.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want recommendations for kid-friendly Italian restaurants that have a play area or activities for kids.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want a play area or activities to keep my niece entertained while we wait for our food.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Italian restaurants downtown",
+    "community theater play",
+    "new Italian place",
+    "kid-friendly Italian restaurants",
+    "children's theater company",
+    "niece acting showcase",
+    "kid's menu",
+    "family-friendly restaurant website",
+    "relax and have fun",
+    "lunch after the show",
+    "play area for kids",
+    "activities for kids"
+  ],
+  "events": [
+    {
+      "text": "Attending my niece's acting showcase at the children's theater company",
+      "date_hint": "today",
+      "turn_index": 2
+    },
+    {
+      "text": "Going to a new place before the play at the community theater",
+      "date_hint": "last Saturday",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to attend my niece's acting showcase today and then grab lunch after the showcase",
+      "date_hint": "today",
+      "turn_index": 6
+    },
+    {
+      "text": "Planning to grab lunch with my niece after the showcase",
+      "date_hint": "after the showcase (today)",
+      "turn_index": 8
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "session_id": "2def525b_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to plan a trip to visit my mom's best friend who has been diagnosed with terminal cancer.",
+      "turn_index": 0
+    },
+    {
+      "text": "My ex-boyfriend texted me to inform me that his mother passed away today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I live in New York.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to visit my mom's best friend in San Francisco.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am flexible with dates but want to go as soon as possible.",
+      "turn_index": 2
+    },
+    {
+      "text": "I prefer to fly out of JFK or LaGuardia.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to spend around $500 for flights.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to spend $100-200 per night for accommodations.",
+      "turn_index": 2
+    },
+    {
+      "text": "I prefer to stay in a hotel near my mom's best friend's place.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want recommendations for comforting books or podcasts to listen to during the trip.",
+      "turn_index": 2
+    },
+    {
+      "text": "I decided to book an American Airlines non-stop flight from JFK to SFO on the earliest available date.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to book the Hotel Zeppelin for 3 nights starting from the day I arrive.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to download \"The Nightingale\" on my e-reader.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to download \"A Man Called Ove\" on my e-reader.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to check out \"How I Built This\" on my podcast app.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to check out \"Stuff You Should Know\" on my podcast app.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to send a care package to my mom's best friend.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want the care package to include a cozy blanket, a favorite book, and soothing teas.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to check out Amazon and Barnes & Noble for the items I want to send.",
+      "turn_index": 8
+    },
+    {
+      "text": "I decided to get the Boll & Branch Soft Fleece Blanket.",
+      "turn_index": 10
+    },
+    {
+      "text": "I decided to include the book \"When Breath Becomes Air\" by Paul Kalanithi.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am considering including a gift certificate for a massage or spa treatment in the care package.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am thinking about sending a condolence gift or card to my ex-boyfriend even though we haven't been in touch for years.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am still trying to process the news that my ex-boyfriend's mother passed away.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am worried about whether sending a condolence gift or card to my ex-boyfriend would be awkward or inappropriate.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "terminal cancer visit",
+    "mom's best friend",
+    "ex-boyfriend text",
+    "mother passed away",
+    "San Francisco trip",
+    "fly from JFK or LaGuardia",
+    "American Airlines non-stop JFK to SFO",
+    "earliest available date",
+    "Hotel Zeppelin",
+    "3 nights hotel booking",
+    "comforting books",
+    "The Nightingale",
+    "A Man Called Ove",
+    "How I Built This",
+    "Stuff You Should Know",
+    "care package delivery",
+    "cozy blanket",
+    "soothing teas",
+    "Boll & Branch Soft Fleece Blanket",
+    "When Breath Becomes Air",
+    "Paul Kalanithi",
+    "massage or spa gift certificate",
+    "condolence gift or card",
+    "Amazon",
+    "Barnes & Noble"
+  ],
+  "events": [
+    {
+      "text": "My ex-boyfriend texted me that his mother passed away.",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "I plan to travel to San Francisco to visit my mom's best friend as soon as possible.",
+      "date_hint": "next few weeks (as soon as possible)",
+      "turn_index": 2
+    },
+    {
+      "text": "I planned to book an American Airlines non-stop flight from JFK to SFO on the earliest available date.",
+      "date_hint": "earliest available date",
+      "turn_index": 4
+    },
+    {
+      "text": "I planned to book the Hotel Zeppelin for 3 nights starting from the day I arrive.",
+      "date_hint": "starting from arrival date",
+      "turn_index": 4
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "session_id": "47183c60_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning to cook pasta dishes this week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I received a 10% off coupon on all pasta products on the 10th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in the One-Pot Pasta recipe.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want detailed instructions for the One-Pot Pasta recipe.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want suggestions for pasta brands that are on sale with my 10% off coupon.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think I will use the Barilla brand for pasta.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want suggestions for what to serve with the one-pot pasta dish.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of making garlic bread to go with the one-pot pasta.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want a simple garlic bread recipe to try.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of making a dessert to go with the meal.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering a fruit salad as a simple dessert.",
+      "turn_index": 8
+    },
+    {
+      "text": "I received a 10% off coupon on all pasta products on the 10th.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am making pasta for dinner tonight because of the 10% off coupon.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "pasta dishes this week",
+    "10% off coupon on pasta products",
+    "One-Pot Pasta recipe",
+    "detailed one-pot pasta recipe",
+    "pasta brands on sale",
+    "Barilla pasta",
+    "what to serve with one-pot pasta",
+    "garlic bread recipe",
+    "simple garlic bread",
+    "quick and easy fruit salad",
+    "dessert fruit salad recipe",
+    "pasta for dinner tonight"
+  ],
+  "events": [
+    {
+      "text": "Received a 10% off coupon on all pasta products.",
+      "date_hint": "on the 10th",
+      "turn_index": 0
+    },
+    {
+      "text": "Received a 10% off coupon on all pasta products.",
+      "date_hint": "on the 10th",
+      "turn_index": 10
+    },
+    {
+      "text": "Making pasta for dinner tonight using the 10% off coupon.",
+      "date_hint": "tonight",
+      "turn_index": 10
+    }
+  ]
+}

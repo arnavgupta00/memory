@@ -1,0 +1,80 @@
+{
+  "session_id": "fd1830c6",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to plan out my week ahead.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a reminder of what day I have off from meditation.",
+      "turn_index": 0
+    },
+    {
+      "text": "I usually go to the gym on a specific day of the week.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning my workouts for the week.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know if I have any conflicting events on Saturday morning.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am trying to plan out my meals for the week.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know if I have any leftovers from last week that I can use.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of planning a dinner with Rachel this Friday.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know if I have any other plans on Friday that I should adjust for.",
+      "turn_index": 8
+    },
+    {
+      "text": "Friday is my admin day.",
+      "turn_index": 10
+    },
+    {
+      "text": "I need to wrap up my tasks before dinner with Rachel.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "plan out my week",
+    "day off from meditation",
+    "gym day of the week",
+    "workouts for the week",
+    "conflicting events Saturday morning",
+    "meals for the week",
+    "leftovers from last week",
+    "dinner with Rachel",
+    "plans on Friday",
+    "admin day Friday",
+    "wrap up tasks before dinner"
+  ],
+  "events": [
+    {
+      "text": "Dinner with Rachel",
+      "date_hint": "this Friday",
+      "turn_index": 8
+    },
+    {
+      "text": "Admin day",
+      "date_hint": "Friday",
+      "turn_index": 10
+    },
+    {
+      "text": "Conflicting events on Saturday morning",
+      "date_hint": "Saturday morning",
+      "turn_index": 4
+    }
+  ]
+}

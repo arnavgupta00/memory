@@ -1,0 +1,77 @@
+{
+  "session_id": "c3052781",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am having trouble establishing a consistent sleep routine.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want tips on how to wake up feeling more refreshed and energized.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been trying to wake up earlier lately for my new job.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am trying a new alarm clock app that simulates a sunrise.",
+      "turn_index": 4
+    },
+    {
+      "text": "I wake up at 7:15 am to get ready for my new job.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been having trouble falling asleep at night.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been lying awake in bed for at least 30 minutes before falling asleep.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been thinking about starting a wake-up journal to track my progress and identify patterns.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to start my wake-up journal this week.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am considering whether to set a specific wake-up time for weekends as well.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "consistent sleep routine",
+    "wake up refreshed and energized",
+    "wake up earlier for new job",
+    "sunrise alarm clock app",
+    "wake up at 7:15 am",
+    "adjust to new wake-up time",
+    "falling asleep trouble",
+    "lying awake 30 minutes",
+    "sleep faster tips",
+    "wake-up journal",
+    "track progress patterns",
+    "weekend wake-up time"
+  ],
+  "events": [
+    {
+      "text": "Waking up at 7:15 am to get ready for a new job",
+      "date_hint": "7:15 am (ongoing)",
+      "turn_index": 4
+    },
+    {
+      "text": "Lying awake in bed for at least 30 minutes before falling asleep",
+      "date_hint": "at night (ongoing)",
+      "turn_index": 6
+    },
+    {
+      "text": "Starting a wake-up journal this week",
+      "date_hint": "this week",
+      "turn_index": 10
+    }
+  ]
+}

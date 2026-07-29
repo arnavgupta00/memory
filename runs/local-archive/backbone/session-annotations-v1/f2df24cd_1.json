@@ -1,0 +1,72 @@
+{
+  "session_id": "f2df24cd_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for advice on how to take care of my new silver earrings.",
+      "turn_index": 0
+    },
+    {
+      "text": "I got my silver earrings pierced again a few weeks ago.",
+      "turn_index": 0
+    },
+    {
+      "text": "I was 15 when I first got my earrings pierced.",
+      "turn_index": 0
+    },
+    {
+      "text": "I hadn't worn earrings in years before getting them pierced again.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering getting a pair of pearl studs for my mom's birthday.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking about getting a gold chain to pair with the pearl studs.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking about getting my watch fixed.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been putting off getting my watch fixed for months.",
+      "turn_index": 8
+    },
+    {
+      "text": "I bought the silver earrings last weekend.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "silver earrings care",
+    "newly pierced earrings",
+    "pierced again a few weeks ago",
+    "pearl studs quality",
+    "buying pearl studs",
+    "mom's birthday pearl studs",
+    "gold chain to pair with pearls",
+    "watch repair services",
+    "how long watch repair takes",
+    "prevent watch battery dying",
+    "silver earrings bought last weekend"
+  ],
+  "events": [
+    {
+      "text": "Got silver earrings pierced again",
+      "date_hint": "a few weeks ago",
+      "turn_index": 0
+    },
+    {
+      "text": "Bought silver earrings last weekend",
+      "date_hint": "last weekend",
+      "turn_index": 10
+    },
+    {
+      "text": "Put off getting watch fixed for months, then decided to proceed",
+      "date_hint": "for months (now)",
+      "turn_index": 8
+    }
+  ]
+}

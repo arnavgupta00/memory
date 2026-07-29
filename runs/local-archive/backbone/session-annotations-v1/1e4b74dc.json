@@ -1,0 +1,93 @@
+{
+  "session_id": "1e4b74dc",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for new movies to watch.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want highly-rated historical dramas like \"The Crown\".",
+      "turn_index": 0
+    },
+    {
+      "text": "I have seen \"The King's Speech\" before.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have seen \"Pride and Prejudice\" before.",
+      "turn_index": 2
+    },
+    {
+      "text": "I recently finished \"The Crown\" in June.",
+      "turn_index": 2
+    },
+    {
+      "text": "I watched \"Stranger Things\" in May before finishing \"The Crown\".",
+      "turn_index": 2
+    },
+    {
+      "text": "I recently re-watched \"The Shawshank Redemption\" for the fifth time.",
+      "turn_index": 2
+    },
+    {
+      "text": "Re-watching \"The Shawshank Redemption\" still gets me emotional.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am open to movie suggestions.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am not sure whether the suggested movies are on Netflix.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to check whether the movies are available on Netflix or Amazon Prime.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am interested in historical dramas because they balance historical accuracy with engaging storytelling and character development.",
+      "turn_index": 8
+    },
+    {
+      "text": "When historical dramas are done well, they feel like I am learning something new while also being invested in the characters' journeys.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "new movies to watch",
+    "highly-rated historical dramas",
+    "The Crown",
+    "The King's Speech",
+    "Pride and Prejudice",
+    "movie marathon",
+    "Stranger Things",
+    "June",
+    "May",
+    "The Shawshank Redemption",
+    "fifth time re-watch",
+    "Netflix availability",
+    "Amazon Prime availability",
+    "historical accuracy",
+    "engaging storytelling",
+    "character development"
+  ],
+  "events": [
+    {
+      "text": "Finished watching \"The Crown\"",
+      "date_hint": "in June",
+      "turn_index": 2
+    },
+    {
+      "text": "Watched \"Stranger Things\"",
+      "date_hint": "in May",
+      "turn_index": 2
+    },
+    {
+      "text": "Re-watched \"The Shawshank Redemption\" for the fifth time",
+      "date_hint": "recently",
+      "turn_index": 2
+    }
+  ]
+}

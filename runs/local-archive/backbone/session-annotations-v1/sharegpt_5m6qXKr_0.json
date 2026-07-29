@@ -1,0 +1,98 @@
+{
+  "session_id": "sharegpt_5m6qXKr_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I played chess as black and you played chess as white.",
+      "turn_index": 0
+    },
+    {
+      "text": "I responded to the move 1. e4 with 1... e5.",
+      "turn_index": 2
+    },
+    {
+      "text": "I responded to 1. e4 e5 with 2... Nc6.",
+      "turn_index": 6
+    },
+    {
+      "text": "I responded with 3... exd4.",
+      "turn_index": 8
+    },
+    {
+      "text": "I responded with 4... Nf6.",
+      "turn_index": 10
+    },
+    {
+      "text": "I responded with 5... Bb4.",
+      "turn_index": 12
+    },
+    {
+      "text": "I responded with 6... bxc6.",
+      "turn_index": 14
+    },
+    {
+      "text": "I responded with 7... O-O.",
+      "turn_index": 16
+    },
+    {
+      "text": "I responded with 8... d5.",
+      "turn_index": 18
+    },
+    {
+      "text": "I responded with 9... Re8.",
+      "turn_index": 20
+    },
+    {
+      "text": "I responded with 10... Bg4.",
+      "turn_index": 22
+    },
+    {
+      "text": "I responded with 11... Bxc3+.",
+      "turn_index": 26
+    },
+    {
+      "text": "I responded with 12... Bxe2.",
+      "turn_index": 28
+    },
+    {
+      "text": "I responded with 13... Bxd3+.",
+      "turn_index": 34
+    },
+    {
+      "text": "I responded with 14... Be2+.",
+      "turn_index": 60
+    },
+    {
+      "text": "I played Qd1# and checkmated.",
+      "turn_index": 64
+    }
+  ],
+  "keyphrases": [
+    "chess game",
+    "play as black and white",
+    "illegal move",
+    "in check",
+    "move order",
+    "1. e4 e5",
+    "Nc6",
+    "exd4",
+    "Nf6",
+    "Bb4",
+    "bxc6",
+    "O-O",
+    "Re8",
+    "Bg4",
+    "Bxc3+",
+    "Bxe2",
+    "Bxd3+",
+    "Be2+",
+    "Qd1# checkmate"
+  ],
+  "events": [
+    {
+      "text": "Chess game ended with checkmate after the move Qd1#.",
+      "date_hint": "",
+      "turn_index": 64
+    }
+  ]
+}

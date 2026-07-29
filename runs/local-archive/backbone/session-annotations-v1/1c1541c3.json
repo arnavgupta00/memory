@@ -1,0 +1,64 @@
+{
+  "session_id": "1c1541c3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am thinking of trying a new grocery delivery service that partners with local farmers.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to know whether the grocery delivery service offers discounts for first-time customers.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a lot of fresh carrots left over from when my niece was visiting us last month.",
+      "turn_index": 2
+    },
+    {
+      "text": "I do not want the leftover carrots to go to waste.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have a loaf of gluten-free bread at home.",
+      "turn_index": 6
+    },
+    {
+      "text": "The gluten-free bread I have was bought from Trader Joe's.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of meal planning and making a grocery list every week.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to start meal planning and making a grocery list this weekend.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "grocery delivery service",
+    "local farmers partnership",
+    "first-time customer discount",
+    "fresh carrots recipe",
+    "leftover carrots",
+    "roasted carrots",
+    "gluten-free bread",
+    "Trader Joe's gluten-free bread",
+    "meal planning",
+    "weekly grocery list",
+    "getting started meal planning",
+    "plan meals for entire week"
+  ],
+  "events": [
+    {
+      "text": "My niece was visiting us last month and I ended up with a lot of fresh carrots left over.",
+      "date_hint": "last month",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to start meal planning and making a grocery list this weekend.",
+      "date_hint": "this weekend",
+      "turn_index": 10
+    }
+  ]
+}

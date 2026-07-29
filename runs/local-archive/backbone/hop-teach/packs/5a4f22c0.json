@@ -1,0 +1,33 @@
+{
+  "question_id": "5a4f22c0",
+  "question_type": "knowledge-update",
+  "question": "What company is Rachel, an old colleague from my previous company, currently working at?",
+  "question_date": "2023/06/21 (Wed) 13:02",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_b0f3dfff_1",
+    "answer_b0f3dfff_2"
+  ],
+  "haystack_session_count": 49,
+  "notes_coverage": "partial",
+  "annotated_session_count": 1,
+  "gold_sessions": [
+    {
+      "session_id": "answer_b0f3dfff_1",
+      "date": "2023/05/23 (Tue) 20:06",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_b0f3dfff_1\n[session_date] 2023/05/23 (Tue) 20:06\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm trying to organize my contacts and reach out to some people I met at recent events. Can you help me create a spreadsheet to track my connections and the events where I met them?\n\n[turn 2] I think this template is a good starting point. I'll start filling it out. By the way, I met Rachel, an old colleague from my previous company, at the TechConnect conference on February 10th and 11th. I should catch up with her soon. Do you think I should add a column for \"Company\" to track the companies my contacts are working at?\n\n[turn 4] I think I'll add the \"Last Contacted\" column to keep track of when I last reached out to each person. I met Jason, the CEO of StartupX, at the same TechConnect conference, and I should follow up with him about potential collaboration opportunities. Can you help me craft a follow-up email to send to him?\n\n[turn 6] I'll update Jason's contact information in my spreadsheet. By the way, I also met Alex, the founder of a new startup in the edtech space, at the startup mixer at WeWork. I should add him to my spreadsheet as well.\n\n[turn 8] I think I'll add David, my friend, to the spreadsheet as well. I met him at the same startup mixer at WeWork, and he introduced me to some of his colleagues from Google.\n\n[turn 10] I've had a few more connections since then. I attended a speed networking event organized by the local chamber of commerce, where I met Tom, a marketing expert who offered to provide feedback on my startup's marketing strategy. I also met a few other professionals from various industries."
+    },
+    {
+      "session_id": "answer_b0f3dfff_2",
+      "date": "2023/05/26 (Fri) 20:48",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_b0f3dfff_2\n[session_date] 2023/05/26 (Fri) 20:48\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm looking for some advice on marketing strategies for my startup. I recently met Tom, a marketing expert, and he offered to provide feedback on my marketing strategy. Do you know any other resources or experts in the field that could help me? By the way, speaking of networking, I was just thinking about catching up with Rachel, an old colleague from my previous company, who's currently at TechCorp.\n\n[turn 2] I'd love to learn more about the latest trends in AI and machine learning. Can you recommend any online courses or webinars on this topic, similar to the one I attended hosted by Women in Tech with Dr. Maria Hernandez?\n\n[turn 4] I've been meaning to reach out to Dr. Maria Hernandez again, she was really informative during that webinar. In the meantime, I'd like to explore more on the applications of AI in education. Do you know any startups or companies that are working on AI-powered edtech solutions?\n\n[turn 6] I've actually had a chance to meet Alex, the founder of a new startup in the edtech space, and we talked about our shared passion for education. I should reach out to him again to learn more about his startup and see if there are any potential collaboration opportunities.\n\n[turn 8] I'll reach out to Alex and ask him about his startup, focusing on the questions you recommended. I'll also be clear about my goals and what I hope to achieve from the conversation. Thanks for the advice!\n\n[turn 10] I've been attending weekly networking meetings organized by BNI, where I've met several entrepreneurs and small business owners. One of the members, Jack, has been providing me with valuable feedback on my elevator pitch, and I've been able to offer him some insights on digital marketing in return. Do you know any online resources or tools that can help me improve my pitch and make it more engaging?"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

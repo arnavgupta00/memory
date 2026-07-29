@@ -1,0 +1,95 @@
+{
+  "session_id": "e9e19917_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning to host a dinner party for my friend group's monthly potluck soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want recipe ideas that can serve around 10-12 people.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have dinner with my family every Wednesday.",
+      "turn_index": 0
+    },
+    {
+      "text": "My mom's famous chicken parmesan has been a hit.",
+      "turn_index": 0
+    },
+    {
+      "text": "I will make lasagna and garlic bread for the dinner party.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want a lasagna recipe that serves 10-12 people.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of asking my family to come over for a little get-together before the dinner party.",
+      "turn_index": 4
+    },
+    {
+      "text": "My family get-together would be especially on Wednesdays when we have dinner together.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan the family gathering for around 2-3 hours before the dinner party.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want suggestions for fun activities or games for the family gathering.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will choose family trivia and board games for the family gathering.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been trying to call my grandma every Sunday evening to chat with her for at least 30 minutes.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want suggestions to make my conversations with my grandma more engaging and meaningful.",
+      "turn_index": 8
+    },
+    {
+      "text": "I still need to make a shopping list and prep some ingredients for the lasagna.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "monthly potluck dinner party",
+    "recipes for 10-12 people",
+    "Wednesday family dinner",
+    "chicken parmesan",
+    "lasagna recipe",
+    "garlic bread",
+    "family get-together before dinner party",
+    "2-3 hours before dinner party",
+    "family trivia",
+    "board games",
+    "call grandma Sunday evening",
+    "30 minutes conversation",
+    "shopping list for lasagna",
+    "prep lasagna ingredients"
+  ],
+  "events": [
+    {
+      "text": "Dinner with family every Wednesday",
+      "date_hint": "every Wednesday",
+      "turn_index": 0
+    },
+    {
+      "text": "Call grandma every Sunday evening for at least 30 minutes",
+      "date_hint": "every Sunday evening",
+      "turn_index": 8
+    },
+    {
+      "text": "Plan a family get-together 2-3 hours before the dinner party",
+      "date_hint": "2-3 hours before the dinner party",
+      "turn_index": 6
+    }
+  ]
+}

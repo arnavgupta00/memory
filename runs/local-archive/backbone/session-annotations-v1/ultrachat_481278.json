@@ -1,0 +1,65 @@
+{
+  "session_id": "ultrachat_481278",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user is planning a trip to Italy next year.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user wants to visit vineyards in Tuscany.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user wants suggestions for good restaurants in Tuscany that pair well with local wine.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user is interested in truffle hunting in Tuscany.",
+      "turn_index": 10
+    },
+    {
+      "text": "The user wants to know whether truffle hunting in Tuscany is only available during certain seasons.",
+      "turn_index": 10
+    },
+    {
+      "text": "The user loves the idea of relaxing in hot springs.",
+      "turn_index": 12
+    },
+    {
+      "text": "The user wants recommendations for hot springs to visit in Tuscany.",
+      "turn_index": 12
+    }
+  ],
+  "keyphrases": [
+    "wine in Tuscany",
+    "wine in Piedmont",
+    "soil in Tuscany for grapes",
+    "trip to Italy next year",
+    "visit vineyards in Tuscany",
+    "Tuscan wine restaurants",
+    "pair local wine with restaurants",
+    "things to do in Tuscany",
+    "truffle hunting in Tuscany",
+    "truffle hunting seasons",
+    "hot springs in Tuscany",
+    "relaxing in hot springs"
+  ],
+  "events": [
+    {
+      "text": "Planning a trip to Italy next year with a focus on visiting vineyards in Tuscany",
+      "date_hint": "next year",
+      "turn_index": 4
+    },
+    {
+      "text": "Asking about truffle hunting availability by season in Tuscany",
+      "date_hint": "",
+      "turn_index": 10
+    },
+    {
+      "text": "Seeking recommendations for hot springs in Tuscany",
+      "date_hint": "",
+      "turn_index": 12
+    }
+  ]
+}

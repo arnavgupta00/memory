@@ -1,0 +1,94 @@
+{
+  "session_id": "c1e170f0_5",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to get my road bike serviced.",
+      "turn_index": 0
+    },
+    {
+      "text": "I lent my old cycling helmet to Mike.",
+      "turn_index": 0
+    },
+    {
+      "text": "I will get my old cycling helmet back.",
+      "turn_index": 0
+    },
+    {
+      "text": "My city is Springfield.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am looking for routine maintenance and a tune-up for my road bike.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think I will check out Springfield Cycleworks first.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am looking for specific routine maintenance packages for road bikes.",
+      "turn_index": 4
+    },
+    {
+      "text": "I think I will go with the Deluxe Tune-Up package.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know any specific requirements or recommendations for preparing my bike before bringing it in.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning to drop off my bike tomorrow morning.",
+      "turn_index": 8
+    },
+    {
+      "text": "My brakes were feeling a bit spongy during my charity bike ride last weekend.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will ask the bike shop to check my brakes.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will ask them to take a close look at my brakes and diagnose the issue.",
+      "turn_index": 10
+    },
+    {
+      "text": "I lent my old cycling helmet to Mike.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will get my old cycling helmet back.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "road bike service",
+    "bike shop near my apartment",
+    "Springfield",
+    "routine maintenance",
+    "tune-up",
+    "Springfield Cycleworks",
+    "routine maintenance packages",
+    "Deluxe Tune-Up package",
+    "preparing my bike before bringing it in",
+    "drop off tomorrow morning",
+    "brakes feeling spongy",
+    "charity bike ride last weekend",
+    "diagnose brake issue",
+    "cycling helmet lent to Mike"
+  ],
+  "events": [
+    {
+      "text": "Planning to drop off my bike tomorrow morning.",
+      "date_hint": "tomorrow morning",
+      "turn_index": 8
+    },
+    {
+      "text": "Charity bike ride where my brakes felt spongy.",
+      "date_hint": "last weekend",
+      "turn_index": 8
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "session_id": "32973dad",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to adjust the brewing time for a new coffee blend I am using.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am using a medium roast coffee blend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am trying to cut down on sugar in my coffee.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have a daily coffee break at the same time every weekday.",
+      "turn_index": 4
+    },
+    {
+      "text": "My coffee break is at 10 am every weekday.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am trying to set a recurring reminder for my coffee break.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am meaning to try new coffee and food pairings.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want sweet treats that go well with medium roast coffee.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "brewing time guidelines",
+    "medium roast coffee",
+    "new coffee blend",
+    "cut down on sugar",
+    "alternatives to stevia",
+    "recurring reminder",
+    "daily coffee break",
+    "10 am every weekday",
+    "coffee and food pairings",
+    "sweet treats with medium roast"
+  ],
+  "events": [
+    {
+      "text": "Set a recurring reminder for the coffee break at 10 am every weekday",
+      "date_hint": "10 am every weekday",
+      "turn_index": 6
+    }
+  ]
+}

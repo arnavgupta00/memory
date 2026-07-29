@@ -1,0 +1,105 @@
+{
+  "session_id": "37e50ff6_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I took a short 10-minute break at 10:30 am on Monday to grab a green tea from the office cafeteria.",
+      "turn_index": 0
+    },
+    {
+      "text": "I think Todoist and Trello are great options.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to set reminders for my morning coffee break at 6:30 am.",
+      "turn_index": 2
+    },
+    {
+      "text": "I can use Todoist's scheduled tasks feature to set reminders for my morning coffee break at 6:30 am.",
+      "turn_index": 4
+    },
+    {
+      "text": "I took a short 10-minute break at 10:30 am on Monday to grab a green tea from the office cafeteria.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to use Todoist to track my coffee breaks throughout the day.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want Todoist to help me keep track of breaks and suggest the best times for me to take breaks based on my tasks and schedule.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will create a \"Break\" project in Todoist.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will start logging my breaks in Todoist, including the 10-minute green tea break at 10:30 am on Monday.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want Todoist to help me set reminders for recurring breaks, like my morning coffee break at 6:30 am.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want Todoist to suggest alternative break times if I need to reschedule a task or meeting.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been having trouble staying on track during my afternoon work sessions.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to block social media during my most productive hours from 2 pm to 4 pm.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to block distracting websites or apps during certain times of the day.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "reminder system",
+    "daily tasks organization",
+    "10-minute break",
+    "green tea",
+    "office cafeteria",
+    "Todoist",
+    "Trello",
+    "calendar integration",
+    "morning coffee break",
+    "6:30 am reminders",
+    "scheduled tasks feature",
+    "track coffee breaks",
+    "Break project",
+    "recurring breaks",
+    "suggest best break times",
+    "block distracting websites",
+    "block social media",
+    "2 pm to 4 pm",
+    "afternoon work sessions"
+  ],
+  "events": [
+    {
+      "text": "Took a 10-minute green tea break at 10:30 am on Monday",
+      "date_hint": "Monday 10:30 am",
+      "turn_index": 0
+    },
+    {
+      "text": "Took a 10-minute green tea break at 10:30 am on Monday",
+      "date_hint": "Monday 10:30 am",
+      "turn_index": 4
+    },
+    {
+      "text": "Plan to create a \"Break\" project and log breaks in Todoist",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Plan to block social media from 2 pm to 4 pm",
+      "date_hint": "2 pm to 4 pm",
+      "turn_index": 8
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "session_id": "f0cb130e_4",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want help checking my car's maintenance schedule.",
+      "turn_index": 0
+    },
+    {
+      "text": "I received a parking ticket on February 28th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I paid a $50 fine for the parking ticket.",
+      "turn_index": 0
+    },
+    {
+      "text": "My car is a 2023 Honda Civic.",
+      "turn_index": 2
+    },
+    {
+      "text": "My car's mileage is around 2,500 miles.",
+      "turn_index": 2
+    },
+    {
+      "text": "According to the dealership maintenance schedule booklet, the next scheduled maintenance is an oil change at 5,000 miles.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to get a car cover to protect my new Honda Civic from the elements.",
+      "turn_index": 4
+    },
+    {
+      "text": "I already ordered a car cover online on March 10th.",
+      "turn_index": 6
+    },
+    {
+      "text": "My car cover is supposed to arrive by the end of the week.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to protect my car's paint job from the elements.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to get a dash cam for my car.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want recommendations or advice on what to look for when buying a dash cam.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of checking dash cam reviews and comparing prices.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am considering a dash cam with Wi-Fi connectivity and smartphone app integration.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "car maintenance schedule",
+    "parking ticket February 28",
+    "$50 fine",
+    "2023 Honda Civic",
+    "2,500 miles",
+    "maintenance schedule booklet",
+    "oil change at 5,000 miles",
+    "car cover",
+    "protect car paint",
+    "car cover ordered March 10",
+    "dash cam recommendations",
+    "dash cam buying considerations",
+    "dash cam Wi-Fi smartphone app integration",
+    "dash cam reviews and price comparison"
+  ],
+  "events": [
+    {
+      "text": "Received a parking ticket",
+      "date_hint": "February 28th",
+      "turn_index": 0
+    },
+    {
+      "text": "Paid a $50 fine for the parking ticket",
+      "date_hint": "February 28th",
+      "turn_index": 0
+    },
+    {
+      "text": "Ordered a car cover online",
+      "date_hint": "March 10th",
+      "turn_index": 6
+    },
+    {
+      "text": "Car cover expected to arrive by the end of the week",
+      "date_hint": "end of the week (after March 10th)",
+      "turn_index": 6
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "session_id": "63c75b13_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for recommendations on outdoor activities for the upcoming spring season.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been enjoying winter sports like skiing.",
+      "turn_index": 0
+    },
+    {
+      "text": "I managed to ski down the beginner's slope without falling on January 17th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in hiking.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want tips on what I should wear for hiking.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want tips on what I should bring with me for hiking.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to start with shorter trails and gradually move to more challenging ones.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want easy trails near my location.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am in the same area where I took my morning walks in the park to enjoy the fall foliage.",
+      "turn_index": 6
+    },
+    {
+      "text": "The park is about an hour's walk from my place.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to start with a loop trail around 2-3 miles long.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want scenic views on the trail.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to see a lake or a stream on the trail.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to try the Ridgeview Loop Trail.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am excited to see the scenic views and the lake on the Ridgeview Loop Trail.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want the best way to get to the trailhead from my location.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "spring outdoor activities",
+    "skiing beginner slope",
+    "January 17th skiing",
+    "hiking tips",
+    "what to wear hiking",
+    "what to bring hiking",
+    "easy trails near me",
+    "shorter trails",
+    "loop trail 2-3 miles",
+    "scenic views hiking",
+    "lake or stream trail",
+    "Ridgeview Loop Trail",
+    "trailhead directions"
+  ],
+  "events": [
+    {
+      "text": "Skiing down the beginner's slope without falling",
+      "date_hint": "January 17th",
+      "turn_index": 0
+    },
+    {
+      "text": "Morning walks in the park to enjoy the fall foliage",
+      "date_hint": "in the fall (relative)",
+      "turn_index": 6
+    },
+    {
+      "text": "Planning to start with shorter trails and gradually move to more challenging ones",
+      "date_hint": "upcoming hiking season (relative)",
+      "turn_index": 4
+    },
+    {
+      "text": "Planning to try the Ridgeview Loop Trail",
+      "date_hint": "upcoming (relative)",
+      "turn_index": 10
+    }
+  ]
+}

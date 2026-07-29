@@ -1,0 +1,83 @@
+{
+  "session_id": "e84415e5",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for volunteer opportunities in my area.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want suggestions for upcoming charity events or organizations that need help in my area.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want information about upcoming charity cycling events in my area.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want charity cycling events in my area that support disabilities or children's organizations.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want charity cycling events happening in my area in the next few months.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want more information about charity cycling events in my area based on national organizations and events that take place throughout the year.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to learn more about the Pelotonia charity ride.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have heard of Pelotonia before.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to learn more about the Pelotonia organization and the event itself.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "volunteer opportunities",
+    "upcoming charity events",
+    "charity organizations needing help",
+    "charity cycling events",
+    "cycling events in my area",
+    "disabilities charity",
+    "children's organizations",
+    "next few months",
+    "national organizations",
+    "Pelotonia charity ride",
+    "Pelotonia organization",
+    "event itself"
+  ],
+  "events": [
+    {
+      "text": "Request for upcoming charity cycling events in my area",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Request for charity cycling events supporting disabilities or children's organizations",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Request for charity cycling events happening in my area in the next few months",
+      "date_hint": "next few months",
+      "turn_index": 6
+    },
+    {
+      "text": "Request for charity cycling events based on national organizations and year-round events",
+      "date_hint": "throughout the year",
+      "turn_index": 8
+    },
+    {
+      "text": "Request to learn more about the Pelotonia charity ride",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

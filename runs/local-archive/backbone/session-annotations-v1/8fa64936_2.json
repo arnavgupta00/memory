@@ -1,0 +1,91 @@
+{
+  "session_id": "8fa64936_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Asia.",
+      "turn_index": 0
+    },
+    {
+      "text": "I stayed in a tiny hostel room in Shinjuku, Tokyo for 5 days.",
+      "turn_index": 0
+    },
+    {
+      "text": "My solo trip to Tokyo lasted 5 days.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for budget-friendly accommodations in Tokyo, Japan.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want must-try food recommendations when I am in Tokyo.",
+      "turn_index": 2
+    },
+    {
+      "text": "I already tried delicious food during my 5-day solo trip to Tokyo, Japan.",
+      "turn_index": 2
+    },
+    {
+      "text": "I spent my 5 days in Tokyo exploring the city.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am curious about day trips from Tokyo.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am interested in visiting Nikko.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have heard about ornate temples and shrines in Nikko.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to see the ornate temples and shrines in Nikko up close.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to learn more about how to get to Nikko.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want must-see attractions in Nikko.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to learn more about the history and significance of Toshogu Shrine.",
+      "turn_index": 8
+    },
+    {
+      "text": "Toshogu Shrine is a UNESCO World Heritage site.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "budget-friendly accommodations Tokyo",
+    "tiny hostel room Shinjuku",
+    "solo trip Tokyo 5 days",
+    "must-try food Tokyo",
+    "day trips from Tokyo",
+    "visiting Nikko",
+    "Nikko ornate temples and shrines",
+    "how to get to Nikko",
+    "must-see attractions Nikko",
+    "Toshogu Shrine history significance",
+    "UNESCO World Heritage site Toshogu Shrine"
+  ],
+  "events": [
+    {
+      "text": "Solo trip to Tokyo for 5 days and stayed in a tiny hostel room in Shinjuku",
+      "date_hint": "5 days (date not specified)",
+      "turn_index": 0
+    },
+    {
+      "text": "Explored Tokyo for 5 days",
+      "date_hint": "5 days (date not specified)",
+      "turn_index": 4
+    }
+  ]
+}

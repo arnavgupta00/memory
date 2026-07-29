@@ -1,0 +1,90 @@
+{
+  "session_id": "c4e5d969_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I bought my coffee maker about three weeks ago.",
+      "turn_index": 0
+    },
+    {
+      "text": "My coffee maker is a black and stainless steel machine.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been using my coffee maker every morning since I bought it.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have used about 20 of the 50 coffee pods I bought with the machine.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought coffee pods with the coffee maker.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have leftover peppers and onions in my fridge.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been trying to cook more at home.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of making a slow cooker recipe this weekend.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering making chili con carne for this weekend.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have made chili con carne before.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of making a slow cooker recipe this weekend that incorporates peppers and onions.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "coffee maker performance issues",
+    "coffee maker cleaning and maintenance",
+    "black and stainless steel coffee maker",
+    "coffee pods compartment cleaning",
+    "coffee pods 50 count",
+    "leftover peppers and onions",
+    "cook more at home",
+    "slow cooker recipe this weekend",
+    "chili con carne",
+    "pepper and onion chicken taco recipe",
+    "slow cooker peppers and onions recipes"
+  ],
+  "events": [
+    {
+      "text": "Using the coffee maker every morning since purchase",
+      "date_hint": "since about three weeks ago",
+      "turn_index": 0
+    },
+    {
+      "text": "Using about 20 of the 50 coffee pods",
+      "date_hint": "about three weeks after purchase",
+      "turn_index": 2
+    },
+    {
+      "text": "Planning to make a slow cooker recipe this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 6
+    },
+    {
+      "text": "Considering chili con carne for the slow cooker recipe",
+      "date_hint": "this weekend",
+      "turn_index": 8
+    },
+    {
+      "text": "Planning a slow cooker recipe with peppers and onions",
+      "date_hint": "this weekend",
+      "turn_index": 10
+    }
+  ]
+}

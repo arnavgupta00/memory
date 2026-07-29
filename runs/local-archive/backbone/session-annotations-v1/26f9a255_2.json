@@ -1,0 +1,90 @@
+{
+  "session_id": "26f9a255_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am interested in learning more about Python for data analysis.",
+      "turn_index": 0
+    },
+    {
+      "text": "I participated in a half-day workshop titled \"Introduction to Data Analysis with Python\" recently.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering taking an online course to learn more about Python for data analysis.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in exploring data visualization with Python.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in data analysis with Python.",
+      "turn_index": 4
+    },
+    {
+      "text": "I participated in a half-day workshop titled \"Introduction to Data Analysis with Python\" recently.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am interested in practicing data analysis with popular datasets.",
+      "turn_index": 4
+    },
+    {
+      "text": "I think I will start with beginner-friendly datasets like the Iris Dataset and the Titanic Dataset.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want resources or tutorials on how to import and explore the Iris Dataset and Titanic Dataset using Python with Pandas and NumPy.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think I will start by importing the Iris Dataset using Pandas.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I will explore the Iris Dataset using Pandas methods like info(), head(), and describe().",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I will visualize the Iris Dataset using Matplotlib and Seaborn.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I will create a scatter plot using Matplotlib to visualize the relationship between sepal length and sepal width of the Iris flowers.",
+      "turn_index": 10
+    },
+    {
+      "text": "I think I will use Seaborn to create a pairplot to visualize relationships between all variables in the Iris dataset.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Python for data analysis",
+    "Introduction to Data Analysis with Python workshop",
+    "online course for beginners",
+    "data visualization with Python",
+    "interactive visualizations",
+    "data analysis datasets",
+    "Iris Dataset",
+    "Titanic Dataset",
+    "import and explore datasets",
+    "Pandas and NumPy",
+    "Pandas info head describe",
+    "Matplotlib and Seaborn",
+    "Matplotlib scatter plot sepal length sepal width",
+    "Seaborn pairplot"
+  ],
+  "events": [
+    {
+      "text": "Half-day workshop participation: \"Introduction to Data Analysis with Python\"",
+      "date_hint": "recently",
+      "turn_index": 0
+    },
+    {
+      "text": "Half-day workshop participation: \"Introduction to Data Analysis with Python\"",
+      "date_hint": "recently",
+      "turn_index": 4
+    }
+  ]
+}

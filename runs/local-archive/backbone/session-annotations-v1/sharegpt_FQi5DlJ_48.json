@@ -1,0 +1,73 @@
+{
+  "session_id": "sharegpt_FQi5DlJ_48",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have JavaScript/jQuery code that submits a form with fields dvdTitle, maxPrice, and category.",
+      "turn_index": 0
+    },
+    {
+      "text": "My code sends a GET request to http://localhost:8081/filmtitle when maxPrice is empty and category is null.",
+      "turn_index": 0
+    },
+    {
+      "text": "My code sends a GET request to http://localhost:8081/categoryname when maxPrice is not empty or category is not null.",
+      "turn_index": 0
+    },
+    {
+      "text": "My code stores the AJAX response data in sessionStorage under the key searchResults.",
+      "turn_index": 0
+    },
+    {
+      "text": "My code navigates to searchResults.html after storing searchResults in sessionStorage.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have code that reads searchResults from sessionStorage and loops through it to build HTML cards.",
+      "turn_index": 2
+    },
+    {
+      "text": "My code creates a \"View Film Details\" button as a link to viewUsers.html with userid from user.userid.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want the \"View Film Details\" button to go to filmDetails.html and pass searchResults into that page.",
+      "turn_index": 2
+    },
+    {
+      "text": "I modified the \"View Film Details\" button to link to filmDetails.html with a query parameter searchResults containing JSON.stringify(searchResults).",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to save the data stored in var user into sessionStorage when the \"View Film Details\" button is pressed and then send the data into filmDetails.html.",
+      "turn_index": 4
+    },
+    {
+      "text": "I asked where to insert code that sets sessionStorage.setItem(\"selectedFilm\", JSON.stringify(user)) on click of elements with class .View.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have code that sets up a click handler for elements with class .View inside a loop over searchResults.",
+      "turn_index": 8
+    },
+    {
+      "text": "When I click \"View Film Details\" on another card, I only get the same index.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "jQuery submit form",
+    "sessionStorage searchResults",
+    "AJAX GET /filmtitle",
+    "AJAX GET /categoryname",
+    "searchResults.html",
+    "filmDetails.html",
+    "passing JSON.stringify searchResults",
+    "query parameter searchResults",
+    "sessionStorage selectedFilm",
+    "click handler .View",
+    "loop over searchResults",
+    "same index on click"
+  ],
+  "events": []
+}

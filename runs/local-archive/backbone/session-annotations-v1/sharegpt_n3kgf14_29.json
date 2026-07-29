@@ -1,0 +1,49 @@
+{
+  "session_id": "sharegpt_n3kgf14_29",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The primary module is part of the \"Vehicle owner and user management service\".",
+      "turn_index": 1
+    },
+    {
+      "text": "The user expects there could be multiple PreviousOrderIDs if the car is sold multiple times.",
+      "turn_index": 5
+    },
+    {
+      "text": "When a change is made through the API, the system creating the change must submit the name of the system.",
+      "turn_index": 7
+    },
+    {
+      "text": "The system name must be valid and match the client Id.",
+      "turn_index": 7
+    },
+    {
+      "text": "The system name is entered into \"System\" in the database.",
+      "turn_index": 7
+    },
+    {
+      "text": "Examples of system names include \"Change of Ownership\" and \"Polestar app\".",
+      "turn_index": 7
+    },
+    {
+      "text": "The user requested a table with example data for \"PrimaryDrivers\" (not in code format).",
+      "turn_index": 9
+    }
+  ],
+  "keyphrases": [
+    "Vehicle owner and user management service",
+    "primary module",
+    "DynamoDB attribute description",
+    "Dynamo Db attributes purpose",
+    "PreviousOrderIDs",
+    "car sold multiple times",
+    "API change system name",
+    "system name valid match client Id",
+    "System field in db",
+    "Change of Ownership",
+    "Polestar app",
+    "PrimaryDrivers example data table"
+  ],
+  "events": []
+}

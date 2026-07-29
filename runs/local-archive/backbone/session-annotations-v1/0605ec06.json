@@ -1,0 +1,77 @@
+{
+  "session_id": "0605ec06",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Japan.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a package deal that includes flights, hotel, and guided tours.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want a room with an ocean view when booking a package with travel agencies.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am interested in booking a package with All Japan Tours.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want a quote for a 7-night package.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want the 7-night package to include flights, hotel, and guided tours.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want an ocean-view room in Tokyo for the 7-night package.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want the hotel room to have an ocean view that faces east so I can see the sunrise.",
+      "turn_index": 8
+    },
+    {
+      "text": "When booking, I want a Tokyo Bay View Room with Balcony or a Premium Ocean View Room that faces east.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want a room with a great view of the sunrise.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Japan trip planning",
+    "Japan tour travel agencies",
+    "Japan tour package deal",
+    "flights hotel guided tours",
+    "ocean view room",
+    "All Japan Tours",
+    "7-night package quote",
+    "Tokyo ocean-view room",
+    "east-facing room",
+    "sunrise view",
+    "Tokyo Bay View Room with Balcony",
+    "Premium Ocean View Room"
+  ],
+  "events": [
+    {
+      "text": "Requesting a quote for a 7-night Japan package with flights, hotel, and guided tours including an ocean-view room in Tokyo from All Japan Tours",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Requesting the hotel room to have an ocean view facing east to see the sunrise",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Requesting a Tokyo Bay View Room with Balcony or a Premium Ocean View Room facing east when booking",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

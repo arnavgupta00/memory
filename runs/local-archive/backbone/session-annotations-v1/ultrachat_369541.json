@@ -1,0 +1,32 @@
+{
+  "session_id": "ultrachat_369541",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The restaurant is called \"Mama's Kitchen\".",
+      "turn_index": 2
+    },
+    {
+      "text": "\"Mama's Kitchen\" is in downtown.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user will try giving the restaurant a call.",
+      "turn_index": 4
+    }
+  ],
+  "keyphrases": [
+    "Mama's Kitchen",
+    "restaurant hours of operation",
+    "downtown restaurant",
+    "check their hours",
+    "calling the restaurant"
+  ],
+  "events": [
+    {
+      "text": "User plans to call the restaurant to check hours",
+      "date_hint": "",
+      "turn_index": 4
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "session_id": "ea8bb4f8_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning to host a dinner party soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of making desserts for my dinner party.",
+      "turn_index": 0
+    },
+    {
+      "text": "I recently got a great deal on a KitchenAid stand mixer.",
+      "turn_index": 0
+    },
+    {
+      "text": "I bought my KitchenAid stand mixer on sale at Bed Bath & Beyond for $250.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of making the classic vanilla cake.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am making the classic vanilla cake for my sister's birthday dinner this weekend.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to top my cake with a simple powdered sugar glaze.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of adding some fresh flowers on top of the cake to make it look more festive.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "dinner party desserts",
+    "stand mixer recipes",
+    "KitchenAid stand mixer",
+    "Bed Bath & Beyond sale $250",
+    "classic vanilla cake",
+    "types of flour",
+    "all-purpose flour",
+    "bread flour vs cake flour",
+    "granulated sugar vs brown sugar",
+    "room temperature ingredients",
+    "powdered sugar glaze",
+    "fresh flowers cake decoration"
+  ],
+  "events": [
+    {
+      "text": "Buying a KitchenAid stand mixer on sale at Bed Bath & Beyond for $250",
+      "date_hint": "recently",
+      "turn_index": 0
+    },
+    {
+      "text": "Making classic vanilla cake for sister's birthday dinner this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 6
+    }
+  ]
+}

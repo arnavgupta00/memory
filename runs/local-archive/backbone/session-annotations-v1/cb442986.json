@@ -1,0 +1,76 @@
+{
+  "session_id": "cb442986",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for advice on creating a routine to help me stay consistent with my sleep schedule.",
+      "turn_index": 0
+    },
+    {
+      "text": "I go to bed around 11:30 pm.",
+      "turn_index": 2
+    },
+    {
+      "text": "I wake up around 7:30 am.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am stuck on the train for 30 minutes during my morning commute.",
+      "turn_index": 2
+    },
+    {
+      "text": "I take a power nap during the day around 2:30 pm.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want podcast recommendations for my morning commute to help me stay engaged and awake.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want podcast recommendations that are around 15-20 minutes long for some days with a shorter commute.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want the best way to prioritize getting enough sleep while also fitting in time for exercise and other activities I enjoy.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "sleep schedule routine",
+    "consistent sleep schedule",
+    "bedtime 11:30 pm",
+    "wake up 7:30 am",
+    "morning commute train 30 minutes",
+    "staying awake on train",
+    "morning commute podcasts",
+    "podcast recommendations",
+    "podcasts 15-20 minutes",
+    "power nap 2:30 pm",
+    "power nap tips",
+    "prioritizing sleep with exercise",
+    "exercise and activities",
+    "shorter commute days"
+  ],
+  "events": [
+    {
+      "text": "Going to bed around 11:30 pm",
+      "date_hint": "around 11:30 pm",
+      "turn_index": 2
+    },
+    {
+      "text": "Waking up around 7:30 am",
+      "date_hint": "around 7:30 am",
+      "turn_index": 2
+    },
+    {
+      "text": "Being stuck on the train for 30 minutes during the morning commute",
+      "date_hint": "morning commute",
+      "turn_index": 2
+    },
+    {
+      "text": "Taking a power nap around 2:30 pm",
+      "date_hint": "around 2:30 pm",
+      "turn_index": 8
+    }
+  ]
+}

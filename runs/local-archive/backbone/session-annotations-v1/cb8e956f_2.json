@@ -1,0 +1,139 @@
+{
+  "session_id": "cb8e956f_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a dinner party this weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need help with the dinner party menu and grocery list.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of having around 10 guests at my dinner party.",
+      "turn_index": 0
+    },
+    {
+      "text": "About a month ago, I helped my mom shop for groceries for our family dinner party.",
+      "turn_index": 0
+    },
+    {
+      "text": "About a month ago, helping my mom shop for groceries for our family dinner party was a huge success.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of a classic American-style dinner for my dinner party.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want appetizers, a main course, and desserts for my dinner party.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have no specific dietary restrictions for my dinner party.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want options for everyone at my dinner party.",
+      "turn_index": 2
+    },
+    {
+      "text": "My dinner party is a casual gathering with friends.",
+      "turn_index": 2
+    },
+    {
+      "text": "About a month ago, we bought a lot of meat, veggies, and essentials from Costco.",
+      "turn_index": 2
+    },
+    {
+      "text": "About a month ago, we got wine and champagne from Costco.",
+      "turn_index": 2
+    },
+    {
+      "text": "The wine and champagne were a big hit at the earlier gathering.",
+      "turn_index": 2
+    },
+    {
+      "text": "I will check what I already have in my pantry before I head out to buy everything for the dinner party.",
+      "turn_index": 4
+    },
+    {
+      "text": "Since we bought a lot of essentials from Costco last month, I am hoping to use some of the leftover items for this dinner party.",
+      "turn_index": 4
+    },
+    {
+      "text": "I asked for suggestions on how to set up the dining area and make it look nice for the party.",
+      "turn_index": 6
+    },
+    {
+      "text": "I asked for suggestions on how to manage the wine and champagne during the party.",
+      "turn_index": 8
+    },
+    {
+      "text": "I said I was all set with the menu and grocery list.",
+      "turn_index": 6
+    },
+    {
+      "text": "I said I was all set with the setup and decorations.",
+      "turn_index": 8
+    },
+    {
+      "text": "I said I was all set with the wine and champagne management.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "dinner party menu",
+    "grocery list",
+    "10 guests",
+    "classic American-style dinner",
+    "appetizers main course desserts",
+    "no dietary restrictions",
+    "casual gathering with friends",
+    "Costco grocery shopping",
+    "leftover items from Costco",
+    "wine and champagne",
+    "dining area setup",
+    "party decorations",
+    "wine and champagne management",
+    "check pantry before shopping"
+  ],
+  "events": [
+    {
+      "text": "Planning a dinner party for this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 0
+    },
+    {
+      "text": "Helping mom shop for groceries for a family dinner party",
+      "date_hint": "about a month ago",
+      "turn_index": 0
+    },
+    {
+      "text": "Buying meat, veggies, and essentials from Costco and getting wine and champagne",
+      "date_hint": "about a month ago",
+      "turn_index": 2
+    },
+    {
+      "text": "Checking pantry before heading out to buy groceries",
+      "date_hint": "before shopping (relative)",
+      "turn_index": 4
+    },
+    {
+      "text": "Using leftover Costco essentials for the dinner party",
+      "date_hint": "last month leftovers (relative)",
+      "turn_index": 4
+    },
+    {
+      "text": "Setting up dining area and decorations for the party",
+      "date_hint": "during the party (relative)",
+      "turn_index": 6
+    },
+    {
+      "text": "Managing wine and champagne during the party",
+      "date_hint": "during the party (relative)",
+      "turn_index": 8
+    }
+  ]
+}

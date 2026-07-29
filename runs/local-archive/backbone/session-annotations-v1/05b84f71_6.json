@@ -1,0 +1,124 @@
+{
+  "session_id": "05b84f71_6",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to finalize my shopping list for today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have an annual family gathering at my aunt's place today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need to make sure I don't forget anything important for the family gathering.",
+      "turn_index": 0
+    },
+    {
+      "text": "My mom is handling the food for the family gathering.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to bring a few drinks to the family gathering.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to bring some extra snacks to the family gathering.",
+      "turn_index": 2
+    },
+    {
+      "text": "There will be around 20-25 people at the family gathering.",
+      "turn_index": 2
+    },
+    {
+      "text": "There are a few cousins who are vegetarian at the family gathering.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to grab birthday gifts for my cousins' kids.",
+      "turn_index": 4
+    },
+    {
+      "text": "My cousins' kids always seem to grow out of their clothes fast.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want gift ideas suitable for kids around 5-7 years old.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have 3 cousins' kids to buy gifts for.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to keep the budget around $20-30 per gift.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know what else I need to pick up for the family gathering today.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want the best way to get to my aunt's place.",
+      "turn_index": 10
+    },
+    {
+      "text": "I don't want to get lost on the way to my aunt's place.",
+      "turn_index": 10
+    },
+    {
+      "text": "I don't want to get stuck in traffic on the way to my aunt's place.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "shopping list",
+    "annual family gathering",
+    "aunt's place",
+    "drinks for gathering",
+    "extra snacks",
+    "20-25 people",
+    "vegetarian options",
+    "birthday gifts",
+    "cousins' kids",
+    "kids age 5-7",
+    "gift ideas",
+    "budget $20-30 per gift",
+    "what else to pick up",
+    "best way to get to aunt's place",
+    "avoid traffic",
+    "avoid getting lost"
+  ],
+  "events": [
+    {
+      "text": "Annual family gathering at my aunt's place",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Shopping list planning for the family gathering",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Need to pick up drinks and extra snacks for the family gathering",
+      "date_hint": "today",
+      "turn_index": 2
+    },
+    {
+      "text": "Need to buy birthday gifts for cousins' kids (ages 5-7)",
+      "date_hint": "today",
+      "turn_index": 4
+    },
+    {
+      "text": "Need to pick up additional items for the family gathering",
+      "date_hint": "today",
+      "turn_index": 8
+    },
+    {
+      "text": "Plan best route to get to aunt's place without getting lost or stuck in traffic",
+      "date_hint": "today",
+      "turn_index": 10
+    }
+  ]
+}

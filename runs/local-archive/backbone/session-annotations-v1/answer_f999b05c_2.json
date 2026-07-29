@@ -1,0 +1,80 @@
+{
+  "session_id": "answer_f999b05c_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have been listening to a lot of indie music lately.",
+      "turn_index": 0
+    },
+    {
+      "text": "I just got back from a music festival in Brooklyn.",
+      "turn_index": 0
+    },
+    {
+      "text": "I went to the music festival in Brooklyn with a group of friends.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have seen Glass Animals live at the music festival in Brooklyn.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in exploring more psychedelic indie-rock.",
+      "turn_index": 2
+    },
+    {
+      "text": "I had a great time seeing Glass Animals at the festival.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of checking out local music events in my neighborhood.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering a free outdoor concert series in the park.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering a jazz night at a local bar.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am looking forward to discovering new artists and enjoying live music in a more low-key setting.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of checking out local music events including a free outdoor concert series in the park or a jazz night at a local bar.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want general tips on how to make the most of free outdoor concert series and jazz nights at local bars.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "song recommendations",
+    "indie music",
+    "music festival in Brooklyn",
+    "Glass Animals live",
+    "psychedelic indie-rock",
+    "live presence",
+    "local music events",
+    "free outdoor concert series",
+    "concert series in the park",
+    "jazz night at a local bar",
+    "low-key live music",
+    "discover new artists"
+  ],
+  "events": [
+    {
+      "text": "Music festival in Brooklyn (with a group of friends)",
+      "date_hint": "just got back (relative to session)",
+      "turn_index": 0
+    },
+    {
+      "text": "Seeing Glass Animals live at the music festival in Brooklyn",
+      "date_hint": "at the Brooklyn music festival (relative)",
+      "turn_index": 2
+    }
+  ]
+}

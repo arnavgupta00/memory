@@ -1,0 +1,83 @@
+{
+  "session_id": "5df2f487",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I need help booking a hotel room for an upcoming weekend trip.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want recommendations for hotel booking websites or tips for finding deals.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to make sure the hotel room is booked under my new last name, Smith.",
+      "turn_index": 2
+    },
+    {
+      "text": "I got married last July.",
+      "turn_index": 4
+    },
+    {
+      "text": "I need to update my account information and double-check my booking form because I recently changed my last name.",
+      "turn_index": 4
+    },
+    {
+      "text": "I need travel tips for a beach trip.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want tips on what essentials to pack for the beach trip.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning to go on the beach trip in April or May.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am hoping the weather will be nice in April or May.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want tips for finding good restaurants or activities in the area for the beach trip.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of trying water sports like surfing or paddleboarding.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want tips for surfing or paddleboarding.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "hotel room booking",
+    "weekend trip",
+    "hotel deals websites",
+    "booking under new last name",
+    "last name Smith",
+    "married last July",
+    "update account information",
+    "beach trip travel tips",
+    "beach packing essentials",
+    "April or May beach weather",
+    "find restaurants and activities",
+    "water sports tips",
+    "surfing",
+    "paddleboarding",
+    "ask locals for recommendations"
+  ],
+  "events": [
+    {
+      "text": "Marriage and last-name change process begins (account updates needed).",
+      "date_hint": "last July",
+      "turn_index": 4
+    },
+    {
+      "text": "Planning a beach trip for April or May.",
+      "date_hint": "April or May",
+      "turn_index": 8
+    }
+  ]
+}

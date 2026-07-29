@@ -1,0 +1,117 @@
+{
+  "session_id": "b18cbb8b_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for sports bars in my area that show live football matches.",
+      "turn_index": 0
+    },
+    {
+      "text": "I watched the Champions League final at a sports bar with my friends two weeks ago.",
+      "turn_index": 0
+    },
+    {
+      "text": "I stayed at the sports bar for over four hours while watching the Champions League final.",
+      "turn_index": 0
+    },
+    {
+      "text": "I ordered wings and beers at the sports bar while watching the Champions League final.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering searching online directories like Yelp and TripAdvisor.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to filter results by whether a bar shows Champions League or has European football matches.",
+      "turn_index": 2
+    },
+    {
+      "text": "I met my friends at a sports bar two weeks ago to watch the Champions League final.",
+      "turn_index": 6
+    },
+    {
+      "text": "I stayed at the sports bar for over four hours and ordered tons of wings and beers.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am hoping to find a similar sports bar for future matches.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am interested in sports bars known for showing European football matches or having a strong following of European football fans.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am considering looking for sports bars with a dedicated area for fans of a particular team, like a Liverpool FC fan section.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am interested in watching NBA games, especially the Lakers.",
+      "turn_index": 8
+    },
+    {
+      "text": "I watched the Western Conference semifinals between the Lakers and the Nuggets last month.",
+      "turn_index": 10
+    },
+    {
+      "text": "I woke up early on a Saturday morning to catch the 10 am game.",
+      "turn_index": 10
+    },
+    {
+      "text": "My wife was surprised to see me cheering so loudly at 11 am when the Lakers made a comeback in the fourth quarter.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "sports bars",
+    "live football matches",
+    "Champions League final",
+    "sports bar wings and beers",
+    "Yelp",
+    "TripAdvisor",
+    "filter by shows Champions League",
+    "European football matches",
+    "European football fans",
+    "Liverpool FC fan section",
+    "NBA games",
+    "Lakers vs Nuggets Western Conference semifinals"
+  ],
+  "events": [
+    {
+      "text": "Watched the Champions League final at a sports bar with friends",
+      "date_hint": "two weeks ago",
+      "turn_index": 0
+    },
+    {
+      "text": "Stayed over four hours at the sports bar for the Champions League final",
+      "date_hint": "two weeks ago",
+      "turn_index": 0
+    },
+    {
+      "text": "Met friends at a sports bar to watch the Champions League final",
+      "date_hint": "two weeks ago",
+      "turn_index": 6
+    },
+    {
+      "text": "Stayed over four hours and ordered wings and beers for the Champions League final",
+      "date_hint": "two weeks ago",
+      "turn_index": 6
+    },
+    {
+      "text": "Watched the Western Conference semifinals between the Lakers and the Nuggets",
+      "date_hint": "last month",
+      "turn_index": 10
+    },
+    {
+      "text": "Caught the 10 am game on a Saturday morning",
+      "date_hint": "last month (Saturday)",
+      "turn_index": 10
+    },
+    {
+      "text": "Cheered loudly at 11 am when the Lakers made a comeback in the fourth quarter",
+      "date_hint": "last month (Saturday)",
+      "turn_index": 10
+    }
+  ]
+}

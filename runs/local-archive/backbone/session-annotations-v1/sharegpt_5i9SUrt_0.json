@@ -1,0 +1,25 @@
+{
+  "session_id": "sharegpt_5i9SUrt_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I asked how the email verification functionality in my code can be exploited by an adversary when the generated links never expire.",
+      "turn_index": 0
+    },
+    {
+      "text": "I asked how to mitigate the issue of non-expiring email verification links in my code.",
+      "turn_index": 0
+    }
+  ],
+  "keyphrases": [
+    "email verification links never expire",
+    "adversary exploitation",
+    "mitigation for non-expiring verification links",
+    "Django email verification",
+    "Django PasswordResetTokenGenerator",
+    "urlsafe_base64_encode decode",
+    "VerificationView uid parameter",
+    "ResetPasswordView token redirect"
+  ],
+  "events": []
+}

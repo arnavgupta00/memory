@@ -1,0 +1,130 @@
+{
+  "session_id": "4d1125f9_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want help prioritizing my tasks for the day.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a few important meetings scheduled for this afternoon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need to make time for a 30-minute walk during my lunch break.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to be in bed by 11:30 pm at the latest today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I usually start my workday at 9:00 am sharp.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have a meeting scheduled from 1:00 pm to 2:00 pm.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have another meeting scheduled from 3:00 pm to 4:00 pm.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to finish a report due by the end of the day.",
+      "turn_index": 2
+    },
+    {
+      "text": "I estimate the report will take about 2 hours to complete.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am most productive during the morning hours.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was concerned about leaving only 2 hours to finish the report in the evening.",
+      "turn_index": 4
+    },
+    {
+      "text": "I asked to allocate 3.5 hours to work on the report during the morning.",
+      "turn_index": 4
+    },
+    {
+      "text": "I asked to take a longer lunch break to fit in the walk.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to read the news during my lunch break for 15-20 minutes.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think the revised schedule should work out well for me.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of meal prepping for the week ahead.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "prioritize tasks",
+    "meetings this afternoon",
+    "30-minute walk",
+    "lunch break schedule",
+    "bed by 11:30 pm",
+    "workday start 9:00 am",
+    "meeting 1:00 pm to 2:00 pm",
+    "meeting 3:00 pm to 4:00 pm",
+    "report due end of day",
+    "report 2 hours",
+    "morning productivity",
+    "report 3.5 hours morning",
+    "longer lunch break",
+    "read the news 15-20 minutes",
+    "meal prep ideas",
+    "healthy meal prep recipes"
+  ],
+  "events": [
+    {
+      "text": "Plan a day schedule with meetings, a 30-minute lunch walk, and being in bed by 11:30 pm",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Workday starts at 9:00 am",
+      "date_hint": "today",
+      "turn_index": 2
+    },
+    {
+      "text": "Meeting from 1:00 pm to 2:00 pm",
+      "date_hint": "today",
+      "turn_index": 2
+    },
+    {
+      "text": "Meeting from 3:00 pm to 4:00 pm",
+      "date_hint": "today",
+      "turn_index": 2
+    },
+    {
+      "text": "Report due by end of the day",
+      "date_hint": "today",
+      "turn_index": 2
+    },
+    {
+      "text": "Request to allocate 3.5 hours to the report during the morning and take a longer lunch break",
+      "date_hint": "today",
+      "turn_index": 4
+    },
+    {
+      "text": "Read the news during lunch break for 15-20 minutes",
+      "date_hint": "today",
+      "turn_index": 6
+    },
+    {
+      "text": "Meal prepping for the week ahead",
+      "date_hint": "this week ahead",
+      "turn_index": 10
+    }
+  ]
+}

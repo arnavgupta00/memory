@@ -1,0 +1,86 @@
+{
+  "session_id": "762a8b45_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to set a reminder for my recreational volleyball league game at 2 pm today.",
+      "turn_index": 0
+    },
+    {
+      "text": "My recreational volleyball league team is named \"The Spikers\".",
+      "turn_index": 0
+    },
+    {
+      "text": "I want healthy snack ideas to have before and after my volleyball game.",
+      "turn_index": 2
+    },
+    {
+      "text": "I participated in a charity 5K run a few weeks ago.",
+      "turn_index": 4
+    },
+    {
+      "text": "I finished the charity 5K run with a personal best time of 27 minutes and 15 seconds.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want recovery tips after my volleyball game.",
+      "turn_index": 4
+    },
+    {
+      "text": "After the volleyball game, I usually go to a nearby bar with my teammates.",
+      "turn_index": 6
+    },
+    {
+      "text": "After the volleyball game, I catch up with my teammates on each other's weeks at the bar.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of getting in a tennis lesson with my coach Mark on Saturday morning.",
+      "turn_index": 10
+    },
+    {
+      "text": "My tennis lessons with Mark focus on my forehand and backhand strokes.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am hoping to start playing in local tournaments soon.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want tips on how to improve my serves.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "recreational volleyball league game",
+    "2 pm reminder",
+    "The Spikers",
+    "healthy snacks before and after game",
+    "charity 5K run",
+    "personal best 27 minutes 15 seconds",
+    "post-game recovery tips",
+    "teammates nearby bar",
+    "tennis lesson Saturday morning",
+    "coach Mark",
+    "forehand and backhand strokes",
+    "improve tennis serves",
+    "local tournaments"
+  ],
+  "events": [
+    {
+      "text": "Recreational volleyball league game reminder at 2 pm today with The Spikers",
+      "date_hint": "2 pm today",
+      "turn_index": 0
+    },
+    {
+      "text": "Charity 5K run participation",
+      "date_hint": "a few weeks ago",
+      "turn_index": 4
+    },
+    {
+      "text": "Tennis lesson with coach Mark on Saturday morning",
+      "date_hint": "Saturday morning",
+      "turn_index": 10
+    }
+  ]
+}

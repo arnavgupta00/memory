@@ -1,0 +1,99 @@
+{
+  "session_id": "sharegpt_m2jtopG_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have tickers inside of a TradingView watchlist code block.",
+      "turn_index": 0
+    },
+    {
+      "text": "My TradingView watchlist code includes \"BITFINEX:XMRBTCLONGS\".",
+      "turn_index": 0
+    },
+    {
+      "text": "My TradingView watchlist code includes \"BITFINEX:XMRBTCSHORTS\".",
+      "turn_index": 0
+    },
+    {
+      "text": "My TradingView watchlist code includes \"KRAKEN:XMRBTC\".",
+      "turn_index": 0
+    },
+    {
+      "text": "My TradingView watchlist code includes \"KRAKEN:BTCUSD\".",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a new TradingView watchlist code block that includes the tickers: TOTAL, BTCUSD, BCHBTC, XMRBTC, XMRUSD, ETHUSD, AVAXBTC, AVAXUSD, AAVEBTC, KNCBTC, ETHBTC, MKRUSDT, CAKEBTC, SOLBTC, SOLUSD, TRXBTC, LBCUSD, DOGEBTC, DOGEUSD, ADAUSD, XMREUR, BNBBUSD, UNIUSD, COMPBTC, ALGOBTC, BCHUSD, XRPUSD, PFE, DXY, DJI, QQQ, SPY, CORN, COFFEE, USOIL, WHEAT, LBS1!, GOLD, SILVER, BTCRUB, RUBUSD.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need the new watchlist tickers formatted like the code I provided.",
+      "turn_index": 0
+    },
+    {
+      "text": "For the crypto tickers, I want to use Kraken instead of Binance when available.",
+      "turn_index": 2
+    },
+    {
+      "text": "The symbols TOTAL, LBCUSDT, XMREUR, DJI, SPY, SORN1!, COFFEE, W1!, and RUBUSDT are invalid on TradingView.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to find a different exchange for the invalid TradingView symbols, which could involve different ticker symbols for the same coin or commodity.",
+      "turn_index": 2
+    },
+    {
+      "text": "TOTAL2 doesn't work on TradingView.",
+      "turn_index": 4
+    },
+    {
+      "text": "AVAXXBT doesn't work on TradingView.",
+      "turn_index": 4
+    },
+    {
+      "text": "DJIA doesn't work on TradingView.",
+      "turn_index": 4
+    },
+    {
+      "text": "SPYG doesn't work on TradingView.",
+      "turn_index": 4
+    },
+    {
+      "text": "C1! doesn't work on TradingView.",
+      "turn_index": 4
+    },
+    {
+      "text": "RUBBUSD doesn't work on TradingView.",
+      "turn_index": 4
+    },
+    {
+      "text": "DXY seems to be there on TradingView, but when I click it I see \"This symbol is only available on tradingview\".",
+      "turn_index": 4
+    }
+  ],
+  "keyphrases": [
+    "TradingView watchlist code",
+    "BITFINEX XMRBTCLONGS",
+    "BITFINEX XMRBTCSHORTS",
+    "Kraken XMRBTC",
+    "Kraken BTCUSD",
+    "crypto tickers Kraken vs Binance",
+    "invalid TradingView symbols",
+    "TOTAL ticker",
+    "LBCUSDT",
+    "XMREUR",
+    "DJI symbol",
+    "SPY symbol",
+    "DXY symbol only available on tradingview",
+    "TOTAL2",
+    "AVAXXBT",
+    "RUBBUSD"
+  ],
+  "events": [
+    {
+      "text": "User reports multiple TradingView symbols that do not work (TOTAL2, AVAXXBT, DJIA, SPYG, C1!, RUBBUSD) and notes DXY shows a message when clicked.",
+      "date_hint": "",
+      "turn_index": 4
+    }
+  ]
+}

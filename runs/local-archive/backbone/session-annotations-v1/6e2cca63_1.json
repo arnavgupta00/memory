@@ -1,0 +1,100 @@
+{
+  "session_id": "6e2cca63_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I took a trip to Europe on June 15th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I sent 12 messages to a particular fitness influencer on July 15th.",
+      "turn_index": 4
+    },
+    {
+      "text": "I started following some fitness influencers on Instagram recently.",
+      "turn_index": 4
+    },
+    {
+      "text": "I got back from my trip to Europe on June 15th.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will focus on yoga for now.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been feeling more relaxed and centered after practicing yoga.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will start with YogaGlo.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to practice yoga three times a week.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to practice yoga for at least 30 minutes per session.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to focus on Hatha yoga.",
+      "turn_index": 10
+    },
+    {
+      "text": "I plan to focus on Hatha yoga for the next six weeks.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "travel inspiration",
+    "trip to Europe June 15",
+    "travel blogs",
+    "travel Instagram accounts",
+    "fitness influencers Instagram",
+    "workout routine tips",
+    "sending messages to influencer",
+    "yoga vs weightlifting",
+    "yoga apps",
+    "online yoga resources",
+    "YogaGlo",
+    "yoga goals",
+    "practice yoga three times a week",
+    "Hatha yoga",
+    "Vinyasa yoga",
+    "consistent yoga routine"
+  ],
+  "events": [
+    {
+      "text": "Trip to Europe",
+      "date_hint": "June 15th",
+      "turn_index": 0
+    },
+    {
+      "text": "Sent 12 messages to a fitness influencer asking about workout routine",
+      "date_hint": "July 15th",
+      "turn_index": 4
+    },
+    {
+      "text": "Started following fitness influencers on Instagram",
+      "date_hint": "recently (after June 15th)",
+      "turn_index": 4
+    },
+    {
+      "text": "Began focusing on yoga",
+      "date_hint": "after practicing yoga (post-trip)",
+      "turn_index": 6
+    },
+    {
+      "text": "Started with YogaGlo",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Set yoga goals: three times a week for at least 30 minutes and focus on Hatha yoga for six weeks",
+      "date_hint": "next six weeks (starting now)",
+      "turn_index": 10
+    }
+  ]
+}

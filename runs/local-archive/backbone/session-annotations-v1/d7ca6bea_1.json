@@ -1,0 +1,81 @@
+{
+  "session_id": "d7ca6bea_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for tips on suspension tuning.",
+      "turn_index": 0
+    },
+    {
+      "text": "I attended a workshop on suspension tuning at the Auto Racking Championship in Las Vegas last month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I practiced my drifting techniques for the entire week leading up to the Auto Racking Championship event at a local track.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am planning to attend the Regional Drifting Championship in two months.",
+      "turn_index": 2
+    },
+    {
+      "text": "I struggle with throttle control and transitions in my drifting.",
+      "turn_index": 2
+    },
+    {
+      "text": "I tend to struggle with maintaining a consistent speed throughout the course.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been trying to improve my speed management during my drifts.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think car setup affects my speed.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want tips on adjusting my suspension to improve my car's stability and speed.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been trying to improve my speed management during my drifts.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think car setup affects my speed.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "suspension tuning tips",
+    "Auto Racking Championship",
+    "Las Vegas workshop",
+    "drifting techniques practice",
+    "local track",
+    "Regional Drifting Championship",
+    "throttle control",
+    "transitions",
+    "speed management during drift",
+    "consistent speed",
+    "car setup",
+    "adjust suspension for stability"
+  ],
+  "events": [
+    {
+      "text": "Attended a suspension tuning workshop at the Auto Racking Championship in Las Vegas",
+      "date_hint": "last month",
+      "turn_index": 0
+    },
+    {
+      "text": "Practiced drifting techniques for the entire week leading up to the event at a local track",
+      "date_hint": "entire week leading up to last month’s event",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to attend the Regional Drifting Championship",
+      "date_hint": "in two months",
+      "turn_index": 2
+    }
+  ]
+}

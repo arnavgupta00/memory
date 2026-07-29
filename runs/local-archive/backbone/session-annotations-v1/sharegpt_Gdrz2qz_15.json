@@ -1,0 +1,60 @@
+{
+  "session_id": "sharegpt_Gdrz2qz_15",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want a pitch for sunstoney that would be good for certain publications.",
+      "turn_index": 3
+    },
+    {
+      "text": "I want to update the pitch to include the official release date for 2079 as March 8.",
+      "turn_index": 5
+    },
+    {
+      "text": "I am dropping the music video for Ride today at 12 PM EST.",
+      "turn_index": 5
+    },
+    {
+      "text": "I have the private SoundCloud link for the music video.",
+      "turn_index": 5
+    },
+    {
+      "text": "I provided a SoundCloud short link: https://on.soundcloud.com/jkpTVH4zkTVHc2uHA.",
+      "turn_index": 5
+    },
+    {
+      "text": "I want to update the pitch so it does not include the release date of the music video.",
+      "turn_index": 7
+    },
+    {
+      "text": "I want the pitch to ask for editorial coverage as well as an interview.",
+      "turn_index": 7
+    }
+  ],
+  "keyphrases": [
+    "emerging artists",
+    "sunstoney",
+    "pitch",
+    "writers list",
+    "editorial coverage",
+    "interview request",
+    "official release date 2079",
+    "March 8",
+    "music video Ride",
+    "12 PM EST",
+    "private SoundCloud link",
+    "SoundCloud on.soundcloud.com/jkpTVH4zkTVHc2uHA"
+  ],
+  "events": [
+    {
+      "text": "Official release date for 2079 is March 8.",
+      "date_hint": "March 8",
+      "turn_index": 5
+    },
+    {
+      "text": "Dropping the music video for Ride at 12 PM EST.",
+      "date_hint": "today at 12 PM EST",
+      "turn_index": 5
+    }
+  ]
+}

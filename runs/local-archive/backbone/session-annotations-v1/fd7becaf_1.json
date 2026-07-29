@@ -1,0 +1,93 @@
+{
+  "session_id": "fd7becaf_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to plan out meals for the week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been relying on takeout too much lately.",
+      "turn_index": 0
+    },
+    {
+      "text": "For the past two weeks, I have been having oats with fruits and nuts for breakfast instead of toast with scrambled eggs.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in one-pot pasta and stir-fry dinner ideas.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am trying to cut down on carbs.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in a one-pot pasta recipe with chicken breast, cherry tomatoes, and spinach.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want tips for cooking chicken breast so it is tender and juicy and not dry.",
+      "turn_index": 4
+    },
+    {
+      "text": "For the past two weeks, I have been having oats with fruits and nuts for breakfast instead of toast with scrambled eggs.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am excited to try a one-pot pasta recipe with chicken breast.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want suggestions for what type of cherry tomatoes to use for the recipe.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning to make the one-pot pasta dish for dinner tonight.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know whether frozen spinach can be used instead of fresh spinach for the dish.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of using leftover chicken breast from my fridge for this recipe.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know whether leftover chicken breast would work or if fresh chicken breast is better.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "meal planning for the week",
+    "healthy quick dinner ideas",
+    "takeout reduction",
+    "oats with fruits and nuts breakfast",
+    "one-pot pasta",
+    "stir-fry options",
+    "low-carb protein sources",
+    "chicken breast one-pot pasta",
+    "cherry tomatoes",
+    "spinach fresh vs frozen",
+    "tender juicy chicken breast",
+    "leftover chicken breast"
+  ],
+  "events": [
+    {
+      "text": "Started having oats with fruits and nuts for breakfast instead of toast with scrambled eggs",
+      "date_hint": "past two weeks",
+      "turn_index": 0
+    },
+    {
+      "text": "Started having oats with fruits and nuts for breakfast instead of toast with scrambled eggs",
+      "date_hint": "past two weeks",
+      "turn_index": 6
+    },
+    {
+      "text": "Planning to make the one-pot pasta dish for dinner",
+      "date_hint": "tonight",
+      "turn_index": 8
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "session_id": "7073a9cd_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to stay on top of my fitness goals.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am having a hard time tracking my progress.",
+      "turn_index": 0
+    },
+    {
+      "text": "I missed my Wednesday workouts and my Friday workouts during one week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I missed my Wednesday and Friday workouts during the third week.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to use a mobile app to track my progress.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want the mobile app to also help with nutrition tracking.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been trying to eat healthier to support my fitness goals.",
+      "turn_index": 2
+    },
+    {
+      "text": "I decided to try out MyFitnessPal.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want exercises or workouts to improve my flexibility.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want exercises or workouts to improve my core strength.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have noticed that my core muscles are still a bit weak.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to incorporate core exercises into my routine.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to do planks in my routine.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to do Russian twists in my routine.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to do glute-strengthening exercises to improve my overall lower body strength.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of setting a goal to do a 30-minute jog without stopping by the end of the month.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been doing 30-minute jogs three times a week for the past month.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "fitness goals tracking",
+    "workout logging routine",
+    "missed Wednesday and Friday workouts",
+    "third week missed workouts",
+    "mobile app workout tracking",
+    "nutrition tracking app",
+    "MyFitnessPal",
+    "flexibility exercises",
+    "core strength workouts",
+    "plank",
+    "Russian twists",
+    "glute strengthening",
+    "30-minute jog goal",
+    "jogging three times a week"
+  ],
+  "events": [
+    {
+      "text": "Missed Wednesday and Friday workouts during one week",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Missed Wednesday and Friday workouts during the third week",
+      "date_hint": "third week",
+      "turn_index": 2
+    },
+    {
+      "text": "Plans to try MyFitnessPal",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Plans to incorporate planks and Russian twists into the routine",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Goal to do a 30-minute jog without stopping by the end of the month",
+      "date_hint": "end of the month",
+      "turn_index": 8
+    }
+  ]
+}

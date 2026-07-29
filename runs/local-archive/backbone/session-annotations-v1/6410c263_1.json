@@ -1,0 +1,107 @@
+{
+  "session_id": "6410c263_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I wake up 15 minutes earlier on Mondays, Wednesdays, and Fridays.",
+      "turn_index": 0
+    },
+    {
+      "text": "I do a quick 20-minute yoga session before showering and getting dressed on Mondays, Wednesdays, and Fridays.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want healthy breakfast ideas that I can prepare quickly after my yoga routine.",
+      "turn_index": 0
+    },
+    {
+      "text": "I take a daily bus ride.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want language learning podcasts or audio materials to listen to during my daily bus ride.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want a way to ensure I get enough practice and review time for my language learning given my daily schedule.",
+      "turn_index": 4
+    },
+    {
+      "text": "I aim to be in bed by 11 pm.",
+      "turn_index": 6
+    },
+    {
+      "text": "Some nights I stay up later to finish work tasks or respond to messages.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have trouble staying on track with my bedtime routine when I have a lot of work to do.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want ways to prioritize my tasks and manage my workload more effectively to avoid working late into the night.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am trying to prioritize my tasks and manage my workload more effectively to avoid working late into the night.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have trouble staying on track with my bedtime routine, especially when I have a lot of work to do.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want suggestions on how to automate repetitive tasks or delegate tasks to free up more time for focused work.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "morning routine",
+    "exercise",
+    "20-minute yoga",
+    "breakfast ideas",
+    "quick breakfast",
+    "Mondays Wednesdays Fridays",
+    "daily bus ride",
+    "language learning podcasts",
+    "audio materials",
+    "bedtime routine",
+    "11 pm bedtime goal",
+    "work tasks",
+    "respond to messages",
+    "prioritize tasks",
+    "manage workload",
+    "avoid working late",
+    "automate repetitive tasks",
+    "delegate tasks",
+    "focused work",
+    "practice and review time"
+  ],
+  "events": [
+    {
+      "text": "Wake up 15 minutes earlier on Mondays, Wednesdays, and Fridays to do a 20-minute yoga session before showering and getting dressed.",
+      "date_hint": "Mondays, Wednesdays, and Fridays",
+      "turn_index": 0
+    },
+    {
+      "text": "Daily bus ride for commuting.",
+      "date_hint": "daily",
+      "turn_index": 2
+    },
+    {
+      "text": "Aim to be in bed by 11 pm but sometimes stay up later to finish work tasks or respond to messages.",
+      "date_hint": "ongoing nightly routine",
+      "turn_index": 6
+    },
+    {
+      "text": "Trouble staying on track with bedtime routine when there is a lot of work to do.",
+      "date_hint": "ongoing",
+      "turn_index": 8
+    },
+    {
+      "text": "Trying to automate repetitive tasks or delegate tasks to free up time for focused work to avoid working late into the night.",
+      "date_hint": "ongoing",
+      "turn_index": 10
+    }
+  ]
+}

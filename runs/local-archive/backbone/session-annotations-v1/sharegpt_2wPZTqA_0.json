@@ -1,0 +1,71 @@
+{
+  "session_id": "sharegpt_2wPZTqA_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have one table named t1 with columns code and punchdatetime.",
+      "turn_index": 0
+    },
+    {
+      "text": "The table t1 does not identify whether punchdatetime is an in punch or an out punch.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have another table named t2 with columns code, calendardate, start time, and end time.",
+      "turn_index": 0
+    },
+    {
+      "text": "The table t2 has each date shift start and end datetime in start time and endtime columns for that date.",
+      "turn_index": 0
+    },
+    {
+      "text": "For weekly offs in t2, the start time and end time are null.",
+      "turn_index": 0
+    },
+    {
+      "text": "If punches are available for a working day or weekly off, I want to pair the punches and show details including code, calendardate, start datetime, end datetime, punching, and punchout.",
+      "turn_index": 0
+    },
+    {
+      "text": "Punches can be picked before 4 hours of the start time and after 4 hours of the end time.",
+      "turn_index": 0
+    },
+    {
+      "text": "For weekly off, the previous day endtime after 4 hours should be paired to the next-day.",
+      "turn_index": 0
+    },
+    {
+      "text": "If punches are not available in t1, I want the result to display as null.",
+      "turn_index": 2
+    },
+    {
+      "text": "Or conditions in my SQL query are taking time and giving many records, and the data is not correct.",
+      "turn_index": 4
+    },
+    {
+      "text": "If punchnot is not available, it should return null.",
+      "turn_index": 6
+    },
+    {
+      "text": "Punchdatetime should exist in t1, otherwise the employee may have forgotten to punch.",
+      "turn_index": 8
+    },
+    {
+      "text": "If a record does not exist in t1, I want it to show null.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "SQL Server query",
+    "pair punches in and out",
+    "t1 table code punchdatetime",
+    "t2 table code calendardate start time endtime",
+    "weekly off start time end time null",
+    "4 hours window before start and after end",
+    "punching and punchout columns",
+    "check for nulls instead of OR",
+    "NOT EXISTS for missing punches",
+    "employee forgot to punch"
+  ],
+  "events": []
+}

@@ -1,0 +1,74 @@
+{
+  "session_id": "9216c4d3_4",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Chicago.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been to Chicago before.",
+      "turn_index": 0
+    },
+    {
+      "text": "I stayed at a hotel in downtown Chicago during a previous trip.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for good Italian restaurants in the Loop area.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am looking for a good spot to grab lunch near Millennium Park.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been to Millennium Park before.",
+      "turn_index": 6
+    },
+    {
+      "text": "I visited Millennium Park about a week after I got back from a family trip.",
+      "turn_index": 6
+    },
+    {
+      "text": "I really enjoyed my time at Millennium Park.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning to visit the Art Institute of Chicago.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will check the museum's website and social media to see what is happening during my trip.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know whether I should plan to spend a whole day at the museum or just see the highlights in a few hours.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to Chicago",
+    "Loop area restaurants",
+    "Italian restaurants in the Loop",
+    "lunch near Millennium Park",
+    "Millennium Park attractions",
+    "museums near Millennium Park",
+    "Art Institute of Chicago",
+    "special exhibitions at Art Institute",
+    "museum website and social media",
+    "spend a whole day at the museum"
+  ],
+  "events": [
+    {
+      "text": "Visited Millennium Park about a week after getting back from a family trip",
+      "date_hint": "about a week after I got back from a family trip",
+      "turn_index": 6
+    },
+    {
+      "text": "Planning to visit the Art Institute of Chicago",
+      "date_hint": "",
+      "turn_index": 8
+    }
+  ]
+}

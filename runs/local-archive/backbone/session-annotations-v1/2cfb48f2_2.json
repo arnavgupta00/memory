@@ -1,0 +1,131 @@
+{
+  "session_id": "2cfb48f2_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to plan out my week ahead.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want reminders for my tasks and appointments.",
+      "turn_index": 0
+    },
+    {
+      "text": "I aim to go to bed between 10:30 and 11 pm every night.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have work meetings on Monday, Wednesday, and Friday.",
+      "turn_index": 2
+    },
+    {
+      "text": "My work meetings are scheduled for 2 pm.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to finish a project by the end of the week.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to cook dinner at home on Tuesday, Thursday, and Saturday.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want reminders for grocery shopping and meal prep for those dinner days.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want reminders to take breaks throughout the day.",
+      "turn_index": 4
+    },
+    {
+      "text": "I tend to get focused on my work and forget to take short breaks to stretch and refresh my mind.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want reminders every hour or so to take a 5-10 minute break.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want reminders to drink water throughout the day.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want water reminders every hour or so to grab a glass of water and stay hydrated.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want a reminder to review my schedule for the next day every evening around 9 pm.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want a reminder to pack my lunch for tomorrow around 9:15 pm.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am trying to save money by bringing my lunch to work.",
+      "turn_index": 10
+    },
+    {
+      "text": "I often forget to pack my lunch the night before.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "set reminders for tasks and appointments",
+    "bedtime reminder 10:30-11 pm",
+    "work meetings Monday Wednesday Friday 2 pm",
+    "finish project by end of week",
+    "cook dinner at home Tuesday Thursday Saturday",
+    "grocery shopping reminder",
+    "meal prep reminder",
+    "take breaks every hour 5-10 minutes",
+    "stretch and refresh breaks",
+    "drink water reminder every hour",
+    "review schedule next day 9 pm",
+    "pack lunch reminder 9:15 pm",
+    "bring lunch to work to save money"
+  ],
+  "events": [
+    {
+      "text": "Set reminders to go to bed between 10:30-11 pm every night",
+      "date_hint": "every night",
+      "turn_index": 0
+    },
+    {
+      "text": "Work meetings scheduled for 2 pm on Monday, Wednesday, and Friday",
+      "date_hint": "Monday/Wednesday/Friday at 2 pm",
+      "turn_index": 2
+    },
+    {
+      "text": "Finish a project by the end of the week",
+      "date_hint": "end of the week",
+      "turn_index": 2
+    },
+    {
+      "text": "Cook dinner at home on Tuesday, Thursday, and Saturday (with grocery shopping and meal prep reminders)",
+      "date_hint": "Tuesday/Thursday/Saturday",
+      "turn_index": 2
+    },
+    {
+      "text": "Take a 5-10 minute break with reminders every hour or so",
+      "date_hint": "every hour or so",
+      "turn_index": 4
+    },
+    {
+      "text": "Drink water with reminders every hour or so",
+      "date_hint": "every hour or so",
+      "turn_index": 6
+    },
+    {
+      "text": "Review the schedule for the next day every evening around 9 pm",
+      "date_hint": "around 9 pm",
+      "turn_index": 8
+    },
+    {
+      "text": "Pack lunch for tomorrow around 9:15 pm",
+      "date_hint": "around 9:15 pm",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "session_id": "2ae4f277_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have morning meetings on Mondays and Thursdays at 9:00 am.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need to leave the house by 8:15 am on Mondays and Thursdays to make it to my 9:00 am meetings on time.",
+      "turn_index": 2
+    },
+    {
+      "text": "I usually have oatmeal with fruit for breakfast around 8:15 am every day.",
+      "turn_index": 2
+    },
+    {
+      "text": "I usually work out in the evenings around 6:30 pm or 7:00 pm.",
+      "turn_index": 4
+    },
+    {
+      "text": "I like to take a relaxing walk on Sundays around 8:00 pm.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to block out time for TV or streaming shows in the evenings.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to add a bedtime routine to make sure I am getting enough sleep.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to adjust my bedtime routine to start earlier so I am in bed by 11:00 pm on most nights.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "daily routine schedule",
+    "morning meetings Mondays and Thursdays",
+    "9:00 am meetings",
+    "leave house by 8:15 am",
+    "oatmeal with fruit breakfast",
+    "evening workout 6:30 pm",
+    "evening workout 7:00 pm",
+    "relaxing walk Sundays 8:00 pm",
+    "TV or streaming shows evenings",
+    "bedtime routine",
+    "in bed by 11:00 pm"
+  ],
+  "events": [
+    {
+      "text": "Morning meetings on Mondays and Thursdays at 9:00 am",
+      "date_hint": "Mondays and Thursdays at 9:00 am",
+      "turn_index": 0
+    },
+    {
+      "text": "Leave the house by 8:15 am on Mondays and Thursdays for 9:00 am meetings",
+      "date_hint": "Mondays and Thursdays (by 8:15 am)",
+      "turn_index": 2
+    },
+    {
+      "text": "Breakfast of oatmeal with fruit around 8:15 am every day",
+      "date_hint": "around 8:15 am daily",
+      "turn_index": 2
+    },
+    {
+      "text": "Evening workout around 6:30 pm or 7:00 pm",
+      "date_hint": "evenings around 6:30 pm or 7:00 pm",
+      "turn_index": 4
+    },
+    {
+      "text": "Relaxing walk on Sundays around 8:00 pm",
+      "date_hint": "Sundays around 8:00 pm",
+      "turn_index": 4
+    },
+    {
+      "text": "Bedtime routine aiming to be in bed by 11:00 pm on most nights",
+      "date_hint": "most nights by 11:00 pm",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "session_id": "sharegpt_c2LF3xK_12",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am working with an Entity Relationship Model that includes Restaurant, Queue, Customer, Table, Branch, and Period entities.",
+      "turn_index": 0
+    },
+    {
+      "text": "The Restaurant entity has attributes restaurant_id, name, location, contact_details, and branch_id.",
+      "turn_index": 0
+    },
+    {
+      "text": "The Queue entity has attributes queue_id, restaurant_id, status, expected_waiting_time, and period_id.",
+      "turn_index": 0
+    },
+    {
+      "text": "The Customer entity has attributes customer_id, queue_id, name, contact_details, and time_joined.",
+      "turn_index": 0
+    },
+    {
+      "text": "The Table entity has attributes table_id, restaurant_id, table_number, seats, and status.",
+      "turn_index": 0
+    },
+    {
+      "text": "The Branch entity has attributes branch_id, name, location, and contact_details.",
+      "turn_index": 0
+    },
+    {
+      "text": "The Period entity has attributes period_id, start_time, and end_time.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need to create an Entity Relationship Model to represent the relationships between the data entities and their attributes.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to build a MySQL database that implements the ER model according to relational database design principles and populate it with sample data.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want the work to be written in English language.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the work to be written in English language.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want the work to be written in English language.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want the work to be written in English language.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "Entity Relationship Model",
+    "Restaurant entity",
+    "Queue entity",
+    "Customer entity",
+    "Table entity",
+    "Branch entity",
+    "Period entity",
+    "MySQL database",
+    "relational database design principles",
+    "sample data",
+    "ER model relationships"
+  ],
+  "events": []
+}

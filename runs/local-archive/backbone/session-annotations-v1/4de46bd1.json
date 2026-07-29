@@ -1,0 +1,91 @@
+{
+  "session_id": "4de46bd1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Hawaii.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for good seafood restaurants in Waikiki.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been to Hawaii before with my family.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of planning another trip soon to somewhere in Asia.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am looking for good hostels in Tokyo.",
+      "turn_index": 2
+    },
+    {
+      "text": "I got back from Tokyo last month.",
+      "turn_index": 4
+    },
+    {
+      "text": "I stayed in a small hostel in Shibuya while in Tokyo.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of planning another trip to Asia.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering visiting Seoul or Bangkok.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am interested in trying Korean BBQ in Seoul.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want specific recommendations for Korean BBQ restaurants in Seoul.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am planning to visit Seoul soon.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am excited to try Korean BBQ in Seoul.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am a solo traveler.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want tips on how to navigate the city as a solo traveler.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "seafood restaurants",
+    "Waikiki",
+    "Hawaii trip",
+    "hostels in Tokyo",
+    "small hostel in Shibuya",
+    "Tokyo last month",
+    "Seoul or Bangkok",
+    "Korean BBQ",
+    "BBQ restaurants in Seoul",
+    "solo traveler tips",
+    "navigate the city"
+  ],
+  "events": [
+    {
+      "text": "Got back from Tokyo",
+      "date_hint": "last month",
+      "turn_index": 4
+    },
+    {
+      "text": "Planning to visit Seoul soon",
+      "date_hint": "soon",
+      "turn_index": 10
+    }
+  ]
+}

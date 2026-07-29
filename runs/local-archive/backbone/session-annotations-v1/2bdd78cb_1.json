@@ -1,0 +1,72 @@
+{
+  "session_id": "2bdd78cb_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to get organized with my grandmother's estate.",
+      "turn_index": 0
+    },
+    {
+      "text": "My grandmother passed away recently on January 15th.",
+      "turn_index": 0
+    },
+    {
+      "text": "My grandmother passed away after a long battle with Alzheimer's disease.",
+      "turn_index": 0
+    },
+    {
+      "text": "My grandmother was 85 years old.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to make a memory book or scrapbook to honor my grandmother's memory.",
+      "turn_index": 2
+    },
+    {
+      "text": "I spent time with my grandmother on New Year's Eve.",
+      "turn_index": 2
+    },
+    {
+      "text": "My grandmother had been struggling with Alzheimer's disease.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking about including some of my grandmother's belongings in the memory book, like a piece of her jewelry or a favorite scarf.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to include a timeline of my grandmother's life in the memory book.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to create a timeline of my grandmother's life while considering that she struggled with Alzheimer's disease.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "grandmother's estate organization",
+    "sorting through belongings",
+    "keep donate sell",
+    "memory book scrapbook",
+    "honor grandmother's memory",
+    "New Year's Eve with grandmother",
+    "Alzheimer's disease",
+    "include jewelry in scrapbook",
+    "favorite scarf",
+    "digitize belongings photos",
+    "timeline of grandmother's life",
+    "timeline gaps inconsistencies memory"
+  ],
+  "events": [
+    {
+      "text": "My grandmother passed away.",
+      "date_hint": "January 15th",
+      "turn_index": 0
+    },
+    {
+      "text": "I spent time with my grandmother on New Year's Eve.",
+      "date_hint": "New Year's Eve",
+      "turn_index": 2
+    }
+  ]
+}

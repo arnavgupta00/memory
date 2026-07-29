@@ -1,0 +1,56 @@
+{
+  "session_id": "sharegpt_kizKRm6_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user wants a cocktail made with mezcal called \"Sancho\".",
+      "turn_index": 0
+    },
+    {
+      "text": "The user wants the cocktail recipe to be given a name.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user wants another cocktail with \"Sancho\".",
+      "turn_index": 2
+    },
+    {
+      "text": "The user wants a drink that could be found in Nayarit.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user wants the recipe to be integrated with Sancho mezcal.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "Sancho mezcal cocktail",
+    "cocktail recipe name",
+    "another cocktail with Sancho",
+    "drink found in Nayarit",
+    "integrate Sancho mezcal into recipe",
+    "Nayarit drink"
+  ],
+  "events": [
+    {
+      "text": "User requests a cocktail made with mezcal called \"Sancho\" and asks to give it a name",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "User requests another cocktail with \"Sancho\"",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "User asks for a drink that could be found in Nayarit",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "User asks to integrate Sancho mezcal into a recipe",
+      "date_hint": "",
+      "turn_index": 6
+    }
+  ]
+}

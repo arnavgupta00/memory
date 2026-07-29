@@ -1,0 +1,115 @@
+{
+  "session_id": "6593cb8b_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have a 2018 Honda Civic Si.",
+      "turn_index": 0
+    },
+    {
+      "text": "I broke the 60-second barrier on the slalom course at an autocross event.",
+      "turn_index": 0
+    },
+    {
+      "text": "I participated in an autocross event at the San Bernardino County Fairgrounds.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am planning to upgrade my car's suspension further.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of going back to the San Bernardino County Fairgrounds for another autocross event.",
+      "turn_index": 2
+    },
+    {
+      "text": "I participated in a 3-day \"Turbocharged\" autocross event at the San Bernardino County Fairgrounds.",
+      "turn_index": 2
+    },
+    {
+      "text": "I participated in the first weekend of May for the 3-day \"Turbocharged\" autocross event.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was part of the \"Novice\" group at the 3-day \"Turbocharged\" autocross event.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of trying different tire pressures to see how it affects my lap times.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am considering starting with small tire pressure changes of 1-2 psi.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am considering more aggressive tire pressure changes of 5-10 psi.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am planning to try out different tire pressures.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want tips on how to measure tire temperatures.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have heard that accurate tire temperature readings are important for making informed tire pressure decisions.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want recommendations for a good GPS logger and an OBD-II reader.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of getting a GPS logger and an OBD-II reader to help analyze my driving and identify areas for improvement.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am planning to use the GPS logger and OBD-II reader to track my car's performance data during autocross events.",
+      "turn_index": 10
+    },
+    {
+      "text": "I recently participated in the 3-day \"Turbocharged\" autocross event at the San Bernardino County Fairgrounds.",
+      "turn_index": 10
+    },
+    {
+      "text": "I broke the 60-second barrier on the slalom course with my 2018 Honda Civic Si.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "2018 Honda Civic Si",
+    "coilovers recommendation",
+    "car suspension upgrade",
+    "autocross event",
+    "San Bernardino County Fairgrounds",
+    "slalom course 60-second barrier",
+    "Turbocharged autocross event",
+    "first weekend of May",
+    "Novice group",
+    "tire pressure lap times",
+    "tire temperature measurement",
+    "GPS logger",
+    "OBD-II reader",
+    "car performance data tracking"
+  ],
+  "events": [
+    {
+      "text": "Broke the 60-second barrier on the slalom course at an autocross event",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Participated in a 3-day \"Turbocharged\" autocross event at the San Bernardino County Fairgrounds (first weekend of May)",
+      "date_hint": "first weekend of May",
+      "turn_index": 2
+    },
+    {
+      "text": "Broke the 60-second barrier on the slalom course with a 2018 Honda Civic Si during the 3-day \"Turbocharged\" autocross event",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "session_id": "0bcf2555_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I bought dragon fruit and pomegranate at Walmart last Saturday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I spent around $120 on groceries at Walmart last Saturday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am trying to plan out my meals for the week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want suggestions on how to store dragon fruit and pomegranate to keep them fresh longer.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been trying to cut costs by opting for plant-based alternatives to meat and dairy products.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want plant-based alternatives to meat and dairy products for recipes provided earlier.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been trying to cook in bulk and save time during the week.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want tips on how to meal prep with plant-based ingredients.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning to make a big batch of chili this weekend.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want plant-based alternatives to ground beef for a chili recipe.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am planning to make a big batch of chili this weekend and freeze it for later.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know if leftover dragon fruit and pomegranate bought at Walmart last Saturday can be used in the chili.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "meal planning for the week",
+    "dragon fruit recipes",
+    "pomegranate recipes",
+    "Walmart grocery shopping",
+    "storing dragon fruit",
+    "storing pomegranate",
+    "plant-based alternatives to meat",
+    "plant-based alternatives to dairy",
+    "meal prep tips",
+    "cook in bulk",
+    "big batch chili",
+    "plant-based ground beef substitute",
+    "freezing chili leftovers",
+    "using dragon fruit in chili",
+    "using pomegranate in chili"
+  ],
+  "events": [
+    {
+      "text": "Bought dragon fruit and pomegranate at Walmart and spent around $120 on groceries",
+      "date_hint": "last Saturday",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to make a big batch of chili this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 8
+    },
+    {
+      "text": "Planning to freeze a big batch of chili for later",
+      "date_hint": "this weekend",
+      "turn_index": 10
+    }
+  ]
+}

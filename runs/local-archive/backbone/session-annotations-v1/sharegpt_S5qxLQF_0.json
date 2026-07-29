@@ -1,0 +1,59 @@
+{
+  "session_id": "sharegpt_S5qxLQF_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "Water is the working fluid in a regenerative Rankine cycle with one closed feedwater heater.",
+      "turn_index": 0
+    },
+    {
+      "text": "Superheated vapor enters the turbine at 10 MPa and 480°C.",
+      "turn_index": 0
+    },
+    {
+      "text": "The condenser pressure is 6 kPa.",
+      "turn_index": 0
+    },
+    {
+      "text": "Steam expands through the first stage turbine where some energy is extracted and diverted to a closed feedwater heater at 0.7 MPa.",
+      "turn_index": 0
+    },
+    {
+      "text": "Condensate drains from the feedwater heater as saturated liquid at 0.7 MPa and is trapped into the condenser.",
+      "turn_index": 0
+    },
+    {
+      "text": "The feedwater leaves the heater at 10 MPa and a temperature equal to the saturation temperature at 0.7 MPa.",
+      "turn_index": 0
+    },
+    {
+      "text": "The pump has an efficiency of 0.85.",
+      "turn_index": 0
+    },
+    {
+      "text": "Both turbines have an efficiency of 0.8.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user asks how to know the saturation temperature is 158.16°C.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user asks whether there is a standard radius for nuclear fuel rods.",
+      "turn_index": 4
+    }
+  ],
+  "keyphrases": [
+    "regenerative Rankine cycle",
+    "closed feedwater heater",
+    "superheated vapor 10 MPa 480°C",
+    "condenser pressure 6 kPa",
+    "first-stage turbine extraction",
+    "feedwater heater pressure 0.7 MPa",
+    "saturation temperature 158.16 C",
+    "pump efficiency 0.85",
+    "turbine efficiency 0.8",
+    "nuclear fuel rod standard radius"
+  ],
+  "events": []
+}

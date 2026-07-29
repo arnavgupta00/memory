@@ -1,0 +1,117 @@
+{
+  "session_id": "6e672b84_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I need help planning an upcoming trip to New York City.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want recommendations for popular attractions in New York City.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want recommendations for restaurants in New York City.",
+      "turn_index": 0
+    },
+    {
+      "text": "I spent the first Saturday of the month relaxing at home and doing reading.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in visiting museums during my trip to New York City.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to learn more about The Metropolitan Museum of Art.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to learn more about MoMA.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know which museum to visit first: The Metropolitan Museum of Art or MoMA.",
+      "turn_index": 2
+    },
+    {
+      "text": "I spent the first Saturday of the month catching up on reading.",
+      "turn_index": 2
+    },
+    {
+      "text": "I felt rejuvenated after spending the first Saturday of the month reading.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of visiting the 9/11 Memorial & Museum during my trip.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know how long it usually takes to go through the 9/11 Memorial & Museum.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know if there are specific exhibits or areas to focus on at the 9/11 Memorial & Museum.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will plan to visit the 9/11 Memorial & Museum.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am interested in visiting Central Park during my trip.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know specific areas or attractions within Central Park that I shouldn't miss.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of visiting the Brooklyn Bridge during my trip.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know what to expect during my walk across the Brooklyn Bridge.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am glad that spending the Saturday catching up on reading helped me clear my mind before my trip.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "planning trip to New York City",
+    "popular attractions",
+    "restaurants to try",
+    "first Saturday reading at home",
+    "The Metropolitan Museum of Art",
+    "Metropolitan Museum of Art vs MoMA",
+    "MoMA museum visit",
+    "9/11 Memorial & Museum",
+    "how long to visit 9/11 Memorial Museum",
+    "Central Park attractions",
+    "Brooklyn Bridge walk expectations"
+  ],
+  "events": [
+    {
+      "text": "Spent the first Saturday of the month relaxing at home and doing reading",
+      "date_hint": "first Saturday of the month",
+      "turn_index": 0
+    },
+    {
+      "text": "Spent the first Saturday of the month catching up on reading and felt rejuvenated after a busy week",
+      "date_hint": "first Saturday of the month",
+      "turn_index": 2
+    },
+    {
+      "text": "Planned to visit the 9/11 Memorial & Museum",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Spent the Saturday catching up on reading and it helped clear my mind before the trip",
+      "date_hint": "Saturday before the trip",
+      "turn_index": 8
+    }
+  ]
+}

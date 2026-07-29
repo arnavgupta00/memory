@@ -1,0 +1,85 @@
+{
+  "session_id": "b70ac29f_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a weekend in NYC with my friend to visit museums.",
+      "turn_index": 0
+    },
+    {
+      "text": "I attended the Impressionist exhibit at the Met with my friend Sarah last Saturday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I loved the Impressionist exhibit at the Met, especially the Monet collection.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in visiting the Museum of Modern Art (MoMA).",
+      "turn_index": 2
+    },
+    {
+      "text": "I visited the Museum of Modern Art last month with my sister, Emily, to see the retrospective of Frida Kahlo's work.",
+      "turn_index": 4
+    },
+    {
+      "text": "I spent about four hours exploring the Frida Kahlo retrospective at MoMA.",
+      "turn_index": 4
+    },
+    {
+      "text": "I was struck by the vibrant colors and emotional depth of Frida Kahlo's paintings.",
+      "turn_index": 4
+    },
+    {
+      "text": "I attended the Impressionist exhibit at the Met with my friend Sarah last Saturday.",
+      "turn_index": 8
+    },
+    {
+      "text": "I was impressed by the Claude Monet collection at the Impressionist exhibit at the Met.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am planning to visit the American Museum of Natural History soon.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know if the American Museum of Natural History has exhibits on dinosaurs.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "weekend in NYC",
+    "Met museum tips",
+    "Impressionist exhibit at the Met",
+    "Monet collection",
+    "Claude Monet",
+    "MoMA special exhibits",
+    "Frida Kahlo retrospective",
+    "vibrant colors",
+    "emotional depth",
+    "American Museum of Natural History",
+    "dinosaurs exhibit"
+  ],
+  "events": [
+    {
+      "text": "Attended the Impressionist exhibit at the Met with friend Sarah.",
+      "date_hint": "last Saturday",
+      "turn_index": 0
+    },
+    {
+      "text": "Visited MoMA to see the retrospective of Frida Kahlo's work with sister Emily.",
+      "date_hint": "last month",
+      "turn_index": 4
+    },
+    {
+      "text": "Attended the Impressionist exhibit at the Met with friend Sarah.",
+      "date_hint": "last Saturday",
+      "turn_index": 8
+    },
+    {
+      "text": "Planning to visit the American Museum of Natural History soon.",
+      "date_hint": "soon",
+      "turn_index": 10
+    }
+  ]
+}

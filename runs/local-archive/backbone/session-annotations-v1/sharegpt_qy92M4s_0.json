@@ -1,0 +1,63 @@
+{
+  "session_id": "sharegpt_qy92M4s_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "Person A is a landlord selling his house in 6 months time.",
+      "turn_index": 0
+    },
+    {
+      "text": "Person A wants the house empty in 6 months time so he can sell it.",
+      "turn_index": 0
+    },
+    {
+      "text": "Person A wants to rent the house over the 6 months.",
+      "turn_index": 0
+    },
+    {
+      "text": "Person A wants £700 a month for the rent of the home.",
+      "turn_index": 0
+    },
+    {
+      "text": "Person B needs a place for longer than 6 months.",
+      "turn_index": 0
+    },
+    {
+      "text": "Person B can move again easily in 6 months time out of the house that is being offered for rent.",
+      "turn_index": 0
+    },
+    {
+      "text": "Person B only wants to pay £500 a month.",
+      "turn_index": 0
+    }
+  ],
+  "keyphrases": [
+    "UK landlord selling house",
+    "renting for 6 months",
+    "evict someone from a rented home",
+    "negotiating rent price",
+    "£700 per month rent",
+    "£500 per month rent",
+    "tenant moving in 6 months",
+    "arguments in favour of tenant",
+    "unconventional negotiation arguments",
+    "UK house buying and renting market"
+  ],
+  "events": [
+    {
+      "text": "Person A plans to sell the house in 6 months time.",
+      "date_hint": "in 6 months",
+      "turn_index": 0
+    },
+    {
+      "text": "Person A wants the house empty in 6 months time to sell it.",
+      "date_hint": "in 6 months",
+      "turn_index": 0
+    },
+    {
+      "text": "Person B can move again easily in 6 months time.",
+      "date_hint": "in 6 months",
+      "turn_index": 0
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "session_id": "sharegpt_3fMCWSX_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I did an analysis of a covid call centre for medical professionals.",
+      "turn_index": 0
+    },
+    {
+      "text": "The first dataset in my analysis counts calls containing the keyword \"Error\".",
+      "turn_index": 0
+    },
+    {
+      "text": "The \"Error\" keyword in my analysis referred to Vaccine Errors.",
+      "turn_index": 0
+    },
+    {
+      "text": "The second dataset in my analysis outlines the number of webinars for medical professionals.",
+      "turn_index": 0
+    },
+    {
+      "text": "The second dataset in my analysis also includes the number of newsletters sent out related to Covid 19 Vaccine Errors.",
+      "turn_index": 0
+    },
+    {
+      "text": "The third dataset in my analysis is the number of Covid vaccines given in relation to date.",
+      "turn_index": 0
+    },
+    {
+      "text": "I asked for trends and for how the three data sets might relate to each other.",
+      "turn_index": 0
+    }
+  ],
+  "keyphrases": [
+    "covid call centre analysis",
+    "medical professionals",
+    "keyword \"Error\"",
+    "Vaccine Errors",
+    "webinars for medical professionals",
+    "newsletters about Covid 19 Vaccine Errors",
+    "Covid vaccine administration",
+    "weekly covid vaccinations",
+    "time series by date",
+    "call centre error trends"
+  ],
+  "events": [
+    {
+      "text": "Analysis requested for trends across three time-series datasets (Error calls, Covid communications, and weekly Covid vaccinations).",
+      "date_hint": "",
+      "turn_index": 0
+    }
+  ]
+}

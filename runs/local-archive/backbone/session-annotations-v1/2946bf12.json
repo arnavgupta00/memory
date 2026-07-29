@@ -1,0 +1,77 @@
+{
+  "session_id": "2946bf12",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking to improve my 5K time.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want effective interval training workouts to boost my speed and endurance for a 5K.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to incorporate strength training into my running routine.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have IT band issues.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have hip flexor issues.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want a warm-up routine for cycling.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want specific stretches to help prevent tightness in my IT band and hip flexors.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been experiencing tightness in my IT band and hip flexors lately.",
+      "turn_index": 6
+    },
+    {
+      "text": "My IT band and hip flexor tightness is especially after my Saturday morning bike rides.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want a cool-down routine after a bike ride to help with recovery and reduce muscle soreness.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am feeling tight in my IT band and hip flexors after my Saturday morning bike ride.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "5K time improvement",
+    "interval training workouts",
+    "speed and endurance",
+    "strength training for runners",
+    "IT band issues",
+    "hip flexor issues",
+    "running routine",
+    "cycling warm-up routine",
+    "stretches for IT band",
+    "foam rolling exercises",
+    "Saturday morning bike rides",
+    "bike ride cool-down routine",
+    "muscle soreness recovery"
+  ],
+  "events": [
+    {
+      "text": "Tightness in IT band and hip flexors after Saturday morning bike rides",
+      "date_hint": "Saturday morning",
+      "turn_index": 6
+    },
+    {
+      "text": "Feeling tight in IT band and hip flexors after a Saturday morning bike ride",
+      "date_hint": "Saturday morning",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "session_id": "ebeb4c51",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a bike trip with friends soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I went to a local state park with friends on April 17th.",
+      "turn_index": 2
+    },
+    {
+      "text": "I did about 12 miles of trails at the state park on April 17th.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to get my Cannondale serviced soon.",
+      "turn_index": 4
+    },
+    {
+      "text": "My Cannondale suspension has been feeling sticky.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am located in the same city where I commute to work three times a week.",
+      "turn_index": 6
+    },
+    {
+      "text": "I commute to work three times a week on my Trek hybrid bike.",
+      "turn_index": 6
+    },
+    {
+      "text": "My Trek hybrid bike was in the shop for a tune-up and cleaning recently.",
+      "turn_index": 8
+    },
+    {
+      "text": "I took my Trek hybrid bike to the local bike shop on March 15th for a tune-up and cleaning.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "bike trip with friends",
+    "bike trails in the area",
+    "local state park",
+    "April 17th bike trails",
+    "12 miles of trails",
+    "flat and hilly trails",
+    "nothing too technical",
+    "scenery",
+    "Cannondale servicing",
+    "sticky suspension",
+    "Trek hybrid bike",
+    "commute to work three times a week",
+    "bike shop tune-up and cleaning",
+    "March 15th tune-up",
+    "local bike shop"
+  ],
+  "events": [
+    {
+      "text": "Went to a local state park with friends.",
+      "date_hint": "April 17th",
+      "turn_index": 2
+    },
+    {
+      "text": "Did about 12 miles of trails at the state park.",
+      "date_hint": "April 17th",
+      "turn_index": 2
+    },
+    {
+      "text": "Took a Trek hybrid bike to the local bike shop for a tune-up and cleaning.",
+      "date_hint": "March 15th",
+      "turn_index": 10
+    },
+    {
+      "text": "Trek hybrid bike was in the shop for a tune-up and cleaning recently.",
+      "date_hint": "recently",
+      "turn_index": 8
+    }
+  ]
+}

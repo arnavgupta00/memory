@@ -1,0 +1,93 @@
+{
+  "session_id": "0254514e_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning to cook a meal for a family in need this weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I volunteer at a local food bank.",
+      "turn_index": 0
+    },
+    {
+      "text": "I help sort and package donations for families in need at the food bank.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want recipe ideas that are easy to make and don't require a lot of ingredients.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want suggestions on how to package the meal so it's easy for the family to reheat and serve.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think I will choose the pasta with tomato sauce option for the meal.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want a simple dessert to go along with the pasta.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want the dessert to be packaged individually.",
+      "turn_index": 4
+    },
+    {
+      "text": "I think I will choose fresh fruit cups as the dessert.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want suggestions for how to arrange the fruit in the cups to make them look appealing.",
+      "turn_index": 6
+    },
+    {
+      "text": "I add a few fresh mint leaves to the fruit cups.",
+      "turn_index": 8
+    },
+    {
+      "text": "I had a great experience at the food bank today.",
+      "turn_index": 8
+    },
+    {
+      "text": "I helped to sort and package donations for families in need at the food bank today.",
+      "turn_index": 8
+    },
+    {
+      "text": "I believe volunteering for a few hours makes a difference in my community.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "meal for a family in need",
+    "easy recipes",
+    "few ingredients",
+    "local food bank volunteering",
+    "sort and package donations",
+    "meal packaging for reheating",
+    "pasta with tomato sauce",
+    "simple dessert",
+    "individually packaged dessert",
+    "fresh fruit cups",
+    "arranging fruit in cups",
+    "fresh mint leaves"
+  ],
+  "events": [
+    {
+      "text": "Volunteered at a local food bank, helping to sort and package donations for families in need.",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Had a great experience at the food bank, helping to sort and package donations for families in need.",
+      "date_hint": "today",
+      "turn_index": 8
+    },
+    {
+      "text": "Planning to cook a meal for a family in need this weekend.",
+      "date_hint": "this weekend",
+      "turn_index": 0
+    }
+  ]
+}

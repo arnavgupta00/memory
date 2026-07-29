@@ -1,0 +1,96 @@
+{
+  "session_id": "8fa624b2_9",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to get organized for the community theater production of Les Misérables.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need to pick up my script from the theater office today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a reminder of what the rehearsal schedule looks like for this week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want tips on how to quickly memorize lines.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have a lot to learn for the role of Éponine.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want suggestions for how to create a compelling bio for the program.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to highlight my relevant experience in my bio.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to add a personal touch to my bio.",
+      "turn_index": 6
+    },
+    {
+      "text": "I attended a workshop on stage combat last month.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering mentioning my upcoming workshop on dialect coaching in my bio.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to brainstorm ideas for my costume and props.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have a costume fitting coming up.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to discuss my costume and props ideas with my costume designer and director.",
+      "turn_index": 10
+    },
+    {
+      "text": "I should review the script again to refresh my memory on Éponine's scenes and costume requirements.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "community theater production",
+    "Les Misérables",
+    "script pickup",
+    "theater office",
+    "rehearsal schedule this week",
+    "memorize lines",
+    "Éponine role",
+    "program bio",
+    "stage combat workshop",
+    "dialect coaching workshop",
+    "costume and props",
+    "costume fitting",
+    "review script",
+    "Éponine scenes",
+    "costume requirements"
+  ],
+  "events": [
+    {
+      "text": "Pick up script from the theater office",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Attend a workshop on stage combat",
+      "date_hint": "last month",
+      "turn_index": 6
+    },
+    {
+      "text": "Costume fitting coming up",
+      "date_hint": "coming up",
+      "turn_index": 8
+    }
+  ]
+}

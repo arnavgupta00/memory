@@ -1,0 +1,89 @@
+{
+  "session_id": "bfe8bb0e",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Japan.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for restaurant recommendations in Osaka.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for restaurant recommendations in Kyoto.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am planning to take a guided Tokyo city tour.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want recommendations for things to do in Nara.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am adding a day trip to Nara to my Japan itinerary.",
+      "turn_index": 4
+    },
+    {
+      "text": "I booked my Japan trip last month with Happy Trails Travel Agency.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am excited about my Japan trip.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want recommendations for places to stay in Osaka and Kyoto.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am looking for something convenient and comfortable to stay in Osaka and Kyoto.",
+      "turn_index": 6
+    },
+    {
+      "text": "I was thinking of using Kayak to compare prices on hotels.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been using Kayak to compare prices on flights to Rome.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have a price alert set up for flights to Rome.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am getting notifications every few days for my flight price alert.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Japan trip planning",
+    "Osaka restaurant recommendations",
+    "Kyoto restaurant recommendations",
+    "guided Tokyo city tour",
+    "things to do in Nara",
+    "day trip to Nara",
+    "Happy Trails Travel Agency",
+    "Osaka and Kyoto places to stay",
+    "convenient comfortable hotel",
+    "Kayak hotel price comparison",
+    "Kayak flight price comparison",
+    "price alert notifications",
+    "flights to Rome"
+  ],
+  "events": [
+    {
+      "text": "Booked a Japan trip with Happy Trails Travel Agency",
+      "date_hint": "last month",
+      "turn_index": 4
+    },
+    {
+      "text": "Received flight price alert notifications every few days",
+      "date_hint": "every few days",
+      "turn_index": 10
+    }
+  ]
+}

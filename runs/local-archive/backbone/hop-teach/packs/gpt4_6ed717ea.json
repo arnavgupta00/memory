@@ -1,0 +1,33 @@
+{
+  "question_id": "gpt4_6ed717ea",
+  "question_type": "temporal-reasoning",
+  "question": "Which item did I purchase first, the dog bed for Max or the training pads for Luna?",
+  "question_date": "2023/05/29 (Mon) 08:51",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_d50a8a33_2",
+    "answer_d50a8a33_1"
+  ],
+  "haystack_session_count": 46,
+  "notes_coverage": "partial",
+  "annotated_session_count": 3,
+  "gold_sessions": [
+    {
+      "session_id": "answer_d50a8a33_2",
+      "date": "2023/05/29 (Mon) 19:41",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_d50a8a33_2\n[session_date] 2023/05/29 (Mon) 19:41\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm thinking of getting some more supplies for my puppy, Luna. She's still in potty-training, and I've been using those eco-friendly training pads from Chewy.com. I got a set of 10 for $25 about a month ago, and they've been a lifesaver. Do you have any recommendations for other potty-training aids or tips?\n\n[turn 2] I'm also interested in getting a better handle on flea and tick prevention for both Luna and my golden retriever, Max. I ordered a 6-month supply of the generic version of Frontline from Chewy.com last month, but I'm wondering if there are any other effective products or methods you'd recommend?\n\n[turn 4] I'm also considering switching Max to a grain-free, high-protein dog food. I recently got him a 30-pound bag of Acana dog food from PetSmart for $70. Do you have any other recommendations for grain-free dog foods or tips on how to make the transition smoother?\n\n[turn 6] I'm also concerned about keeping Max's food and water bowls clean. I recently got a new set of pet-safe cleaning products from Amazon, which included a bowl cleaner, a brush, and a scrubber for around $20. Do you have any other recommendations for keeping his bowls clean and germ-free?\n\n[turn 8] I'd like to ask about dental care for Luna. I recently got a pack of 20 dental chews from the vet's office for $15, and they seem to be helping with her teething. Do you have any other recommendations for dental chews or toys that can help with her oral health?\n\n[turn 10] I'm also curious about the cat tree I got for my cat, Whiskers, from Walmart for $40. It's a 5-tier tree with scratching posts and multiple perches. Do you have any tips on how to encourage Whiskers to use it more, or any recommendations for other cat toys or accessories that might keep her engaged and active?"
+    },
+    {
+      "session_id": "answer_d50a8a33_1",
+      "date": "2023/05/29 (Mon) 21:15",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_d50a8a33_1\n[session_date] 2023/05/29 (Mon) 21:15\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm looking for some advice on dog arthritis. I recently got a new Orthopedic Memory Foam dog bed for my golden retriever, Max, about three weeks ago from Petco, and it seems to be helping with his arthritis. Do you have any other recommendations for managing his condition?\n\n[turn 2] I've been trying to get Max to lose a bit of weight, but it's tough when he loves treats so much. Do you have any recommendations for healthy dog treats that can help with weight management?\n\n[turn 4] I've been trying to get Max to eat his new grain-free dog food, but he's been a bit picky. Do you have any tips on how to transition him to the new food without upsetting his stomach?\n\n[turn 6] I'm also considering getting some healthy chews for Max to help with his teething and dental health. Since I recently got a pack of dental chews for my new puppy, Luna, I was wondering if you could recommend some healthy chews for Max that are suitable for his age and breed.\n\n[turn 8] I was thinking of getting Max a new chew toy, something that would last him a while and be good for his teeth. I got a new dog bed for him 3 weeks ago, an Orthopedic Memory Foam dog bed from Petco, and it's been helping with his arthritis.\n\n[turn 10] I think I'll get Max a Kong Toy. I've heard great things about them, and I like that I can fill it with treats or peanut butter to keep him occupied. Plus, it'll be good for his teeth and mental stimulation."
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

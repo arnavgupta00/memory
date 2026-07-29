@@ -1,0 +1,119 @@
+{
+  "session_id": "db65997e",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to organize my concert memories from the past few months.",
+      "turn_index": 0
+    },
+    {
+      "text": "I saw Arctic Monkeys at Red Rocks.",
+      "turn_index": 0
+    },
+    {
+      "text": "The Arctic Monkeys show at Red Rocks was already two months ago.",
+      "turn_index": 0
+    },
+    {
+      "text": "I went to a music festival in San Francisco a week after the Arctic Monkeys show.",
+      "turn_index": 2
+    },
+    {
+      "text": "I went to a Phoebe Bridgers concert at The Fillmore the following weekend.",
+      "turn_index": 2
+    },
+    {
+      "text": "I went to a music festival where Tame Impala performed.",
+      "turn_index": 4
+    },
+    {
+      "text": "I went to a music festival where Billie Eilish performed.",
+      "turn_index": 4
+    },
+    {
+      "text": "I went to a music festival where The 1975 performed.",
+      "turn_index": 4
+    },
+    {
+      "text": "I met a girl named Rachel at the music festival.",
+      "turn_index": 4
+    },
+    {
+      "text": "Rachel shared her portable charger with me.",
+      "turn_index": 4
+    },
+    {
+      "text": "I went to see The Who at the Oakland Arena about a month ago.",
+      "turn_index": 6
+    },
+    {
+      "text": "I attended an outdoor concert at the Greek Theatre in Berkeley.",
+      "turn_index": 8
+    },
+    {
+      "text": "I saw the electronic duo Disclosure at the Greek Theatre in Berkeley.",
+      "turn_index": 8
+    },
+    {
+      "text": "I went to see Bon Iver at the Orpheum Theatre in San Francisco a few days ago.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "concert memories",
+    "Arctic Monkeys",
+    "Red Rocks",
+    "music festival San Francisco",
+    "Phoebe Bridgers",
+    "The Fillmore",
+    "Tame Impala",
+    "Billie Eilish",
+    "The 1975",
+    "Rachel portable charger",
+    "The Who",
+    "Oakland Arena",
+    "Greek Theatre Berkeley",
+    "Disclosure",
+    "outdoor concert",
+    "Bon Iver",
+    "Orpheum Theatre San Francisco",
+    "concert template"
+  ],
+  "events": [
+    {
+      "text": "Arctic Monkeys show at Red Rocks",
+      "date_hint": "two months ago",
+      "turn_index": 0
+    },
+    {
+      "text": "Music festival in San Francisco (a week after the Arctic Monkeys show)",
+      "date_hint": "a week after the Arctic Monkeys show",
+      "turn_index": 2
+    },
+    {
+      "text": "Phoebe Bridgers concert at The Fillmore (following weekend)",
+      "date_hint": "the following weekend",
+      "turn_index": 2
+    },
+    {
+      "text": "Music festival performances by Tame Impala, Billie Eilish, and The 1975; met Rachel who shared a portable charger",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "The Who at Oakland Arena",
+      "date_hint": "about a month ago",
+      "turn_index": 6
+    },
+    {
+      "text": "Outdoor concert at Greek Theatre in Berkeley featuring Disclosure",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Bon Iver at Orpheum Theatre in San Francisco",
+      "date_hint": "a few days ago",
+      "turn_index": 10
+    }
+  ]
+}

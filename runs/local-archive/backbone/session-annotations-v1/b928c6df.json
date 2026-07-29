@@ -1,0 +1,90 @@
+{
+  "session_id": "b928c6df",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Japan.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want restaurant recommendations in Tokyo that serve authentic Japanese cuisine.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want day trip recommendations from Tokyo.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in visiting Nikko.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am interested in visiting the Futarasan Shrine.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know how far Futarasan Shrine is from Toshogu Shrine.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know whether I can walk between Futarasan Shrine and Toshogu Shrine.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want information about the Nikko Botanical Garden that was mentioned.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know whether the Nikko Botanical Garden is worth visiting.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know what I can expect to see at the Nikko Botanical Garden.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to Japan",
+    "Tokyo authentic Japanese restaurants",
+    "day trips from Tokyo",
+    "Nikko temples and shrines",
+    "Futarasan Shrine",
+    "Toshogu Shrine",
+    "walking distance between shrines",
+    "Nikko Botanical Garden",
+    "is Nikko Botanical Garden worth visiting",
+    "what to see at Nikko Botanical Garden"
+  ],
+  "events": [
+    {
+      "text": "Planning a trip to Japan",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Considering day trips from Tokyo",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Planning to visit Nikko",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Planning to visit Futarasan Shrine",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Checking distance and walking possibility between Futarasan Shrine and Toshogu Shrine",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Evaluating whether to visit Nikko Botanical Garden and what to expect there",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

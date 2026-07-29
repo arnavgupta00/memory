@@ -1,0 +1,112 @@
+{
+  "session_id": "8297fefd_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am turning 30 today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am planning a birthday dinner tonight.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want restaurant recommendations for a birthday dinner tonight.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am open to any cuisine.",
+      "turn_index": 2
+    },
+    {
+      "text": "My friends and I are big fans of Italian food.",
+      "turn_index": 2
+    },
+    {
+      "text": "There are about 8 people in my group.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am flexible on the restaurant location as long as it is within the city limits.",
+      "turn_index": 2
+    },
+    {
+      "text": "My budget is around $50–75 per person.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want a lively atmosphere for the birthday dinner.",
+      "turn_index": 2
+    },
+    {
+      "text": "No one in my group has any dietary restrictions.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think Scarpetta sounds like a great choice.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want a reservation for 8 people at 7:30 PM tonight at Scarpetta.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know whether Scarpetta has a special dessert or drink recommended for birthdays.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know whether Scarpetta has a private dining area or a special section to celebrate my birthday without disturbing other diners.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know whether Scarpetta has a dress code or specific rules.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to ask about Scarpetta's private dining options when I make the reservation.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to confirm Scarpetta's dress code and rules when I make the reservation.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know whether Scarpetta has a parking garage or valet parking available.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "birthday dinner",
+    "turning 30",
+    "restaurant recommendations",
+    "Italian cuisine",
+    "group of 8",
+    "within city limits",
+    "$50-75 per person budget",
+    "lively atmosphere",
+    "no dietary restrictions",
+    "Scarpetta reservation",
+    "7:30 PM tonight",
+    "private dining area",
+    "birthday dessert or drink",
+    "dress code",
+    "valet parking or parking garage"
+  ],
+  "events": [
+    {
+      "text": "Turning 30 (birthday)",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning a birthday dinner tonight",
+      "date_hint": "tonight",
+      "turn_index": 0
+    },
+    {
+      "text": "Reservation request for 8 people at 7:30 PM tonight at Scarpetta",
+      "date_hint": "7:30 PM tonight",
+      "turn_index": 4
+    }
+  ]
+}

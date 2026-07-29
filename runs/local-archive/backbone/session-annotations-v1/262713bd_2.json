@@ -1,0 +1,108 @@
+{
+  "session_id": "262713bd_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want reminders for my daily tasks.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a conference call at 3:00 PM on Tuesdays and Thursdays.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a yoga class at 4:30 PM on Tuesdays.",
+      "turn_index": 0
+    },
+    {
+      "text": "I like to sleep in on weekends until around 9:00 AM.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the reminders to not go off on Saturdays and Sundays.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have meditation sessions on Mondays, Wednesdays, and Fridays.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want a reminder at 7:15 AM on Mondays, Wednesdays, and Fridays to fit in a 10-minute meditation session before getting out of bed.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want a reminder for my lunch break at 12:30 PM every day from Monday through Friday.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want a reminder at 9:30 PM every day from Monday through Friday to start reading for at least 30 minutes before bed.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want a reminder for my coffee break on Fridays at 3:00 PM to grab a coffee and take a short walk outside.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want a reminder at 9:00 AM every Monday through Friday to start my most important tasks.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "daily task reminders",
+    "3:00 PM conference call Tuesdays Thursdays",
+    "4:30 PM yoga class Tuesdays",
+    "sleep in weekends until 9:00 AM",
+    "no reminders Saturdays Sundays",
+    "meditation reminder 7:15 AM",
+    "10-minute meditation before getting out of bed",
+    "lunch break reminder 12:30 PM",
+    "reading reminder 9:30 PM",
+    "30 minutes before bed",
+    "coffee break reminder 3:00 PM Fridays",
+    "short walk outside",
+    "morning routine reminder 9:00 AM",
+    "most important tasks Monday through Friday"
+  ],
+  "events": [
+    {
+      "text": "Set reminder for 3:00 PM conference call on Tuesdays and Thursdays",
+      "date_hint": "Tuesdays and Thursdays",
+      "turn_index": 0
+    },
+    {
+      "text": "Set reminder for 4:30 PM yoga class on Tuesdays",
+      "date_hint": "Tuesdays",
+      "turn_index": 0
+    },
+    {
+      "text": "Set reminders to not go off on Saturdays and Sundays",
+      "date_hint": "Saturdays and Sundays",
+      "turn_index": 0
+    },
+    {
+      "text": "Set reminder for 7:15 AM meditation sessions on Mondays, Wednesdays, and Fridays",
+      "date_hint": "Mondays, Wednesdays, and Fridays",
+      "turn_index": 2
+    },
+    {
+      "text": "Set reminder for 12:30 PM lunch break every day Monday through Friday",
+      "date_hint": "12:30 PM, Monday through Friday",
+      "turn_index": 4
+    },
+    {
+      "text": "Set reminder for 9:30 PM reading before bed every day Monday through Friday",
+      "date_hint": "9:30 PM, Monday through Friday",
+      "turn_index": 6
+    },
+    {
+      "text": "Set reminder for 3:00 PM coffee break on Fridays",
+      "date_hint": "Fridays",
+      "turn_index": 8
+    },
+    {
+      "text": "Set reminder for 9:00 AM morning routine every Monday through Friday",
+      "date_hint": "9:00 AM, Monday through Friday",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "session_id": "b66c6397_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am thinking of upgrading my road bike's pedals to clipless ones.",
+      "turn_index": 0
+    },
+    {
+      "text": "I fixed the flat tire on my mountain bike today by replacing the inner tube.",
+      "turn_index": 0
+    },
+    {
+      "text": "I inflated the mountain bike inner tube to the recommended pressure.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of scheduling a maintenance check for my road bike at the local bike shop.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am concerned that the brakes on my road bike have been feeling a bit spongy lately.",
+      "turn_index": 4
+    },
+    {
+      "text": "I recently fixed the flat tire on my mountain bike that had been sitting in the garage for months.",
+      "turn_index": 6
+    },
+    {
+      "text": "Replacing the inner tube and inflating it to the recommended pressure made a huge difference in my mountain bike's performance.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of lending my hybrid bike to my sister again.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to make sure my hybrid bike is in good condition before lending it out.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering giving my hybrid bike a quick once-over to check the tire pressure, brakes, and chain before lending it out.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to remind my sister to wear a helmet while riding.",
+      "turn_index": 10
+    },
+    {
+      "text": "I plan to remind my sister to follow basic road safety rules while riding.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "upgrading road bike pedals",
+    "clipless pedals for beginners",
+    "fixing a flat tire",
+    "replacing inner tube",
+    "recommended tire pressure",
+    "road bike maintenance check",
+    "local bike shop inspection",
+    "spongy road bike brakes",
+    "adjusting brake pads",
+    "replacing brake pads",
+    "upgrading to hydraulic disc brakes",
+    "hybrid bike quick once-over",
+    "lending hybrid bike to sister",
+    "helmet and road safety rules"
+  ],
+  "events": [
+    {
+      "text": "Fixed the flat tire on the mountain bike by replacing the inner tube and inflating to recommended pressure.",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Considering scheduling a maintenance check for the road bike at the local bike shop.",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Noted that the road bike brakes have been feeling spongy lately.",
+      "date_hint": "lately",
+      "turn_index": 4
+    },
+    {
+      "text": "Fixed a mountain bike flat tire that had been sitting in the garage for months.",
+      "date_hint": "recently",
+      "turn_index": 6
+    },
+    {
+      "text": "Planning to lend the hybrid bike to the sister again after checking tire pressure, brakes, and chain.",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Planning to remind the sister to wear a helmet and follow basic road safety rules.",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

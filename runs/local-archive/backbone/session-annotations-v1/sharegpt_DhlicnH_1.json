@@ -1,0 +1,112 @@
+{
+  "session_id": "sharegpt_DhlicnH_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user asked what the probable root cause of an outage was.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user said there was a change request that happened right before the outage.",
+      "turn_index": 3
+    },
+    {
+      "text": "The change request status was In Progress.",
+      "turn_index": 3
+    },
+    {
+      "text": "The change request key was CHS52223992.",
+      "turn_index": 3
+    },
+    {
+      "text": "The change request summary was \"Update storage security policy IAMPOLye62kt31 to limit access to SAP-946-/dev/xvda\".",
+      "turn_index": 3
+    },
+    {
+      "text": "The change request start time was \"Today, 12:16am\".",
+      "turn_index": 3
+    },
+    {
+      "text": "The change request end time was \"Today, 12:23am\".",
+      "turn_index": 3
+    },
+    {
+      "text": "The change request started 2 minutes before the incident.",
+      "turn_index": 3
+    },
+    {
+      "text": "The change request approval was Approved.",
+      "turn_index": 3
+    },
+    {
+      "text": "The approving manager was Bob Jack.",
+      "turn_index": 3
+    },
+    {
+      "text": "The change request assignee was Shunyun.",
+      "turn_index": 3
+    },
+    {
+      "text": "The change location was east-2a.",
+      "turn_index": 3
+    },
+    {
+      "text": "The change environment was Production.",
+      "turn_index": 3
+    },
+    {
+      "text": "The change risk impact was Medium.",
+      "turn_index": 3
+    },
+    {
+      "text": "The instance was pod/mongodb-5ff4fb1895-bqrcd.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user asked how to fix the issue if the change request was the root cause.",
+      "turn_index": 5
+    },
+    {
+      "text": "The user asked what type of issue users would have when trying to access the web application.",
+      "turn_index": 7
+    },
+    {
+      "text": "The user asked for steps to restore an IAM user policy in AWS for the storage security policy.",
+      "turn_index": 9
+    },
+    {
+      "text": "The user asked to list documentation that would help them out.",
+      "turn_index": 11
+    },
+    {
+      "text": "The user asked what the root cause was after providing context of the change that caused the outage.",
+      "turn_index": 13
+    }
+  ],
+  "keyphrases": [
+    "probable root cause of outage",
+    "change request",
+    "CHS52223992",
+    "update storage security policy",
+    "IAMPOLye62kt31",
+    "SAP-946-/dev/xvda",
+    "incident timing",
+    "east-2a",
+    "production environment",
+    "IAM user policy restore steps",
+    "AWS storage security policy",
+    "web application access issues"
+  ],
+  "events": [
+    {
+      "text": "Change request CHS52223992 to update storage security policy IAMPOLye62kt31 to limit access to SAP-946-/dev/xvda",
+      "date_hint": "Today, 12:16am to Today, 12:23am",
+      "turn_index": 3
+    },
+    {
+      "text": "Change request started 2 minutes before the incident",
+      "date_hint": "2 minutes before the incident",
+      "turn_index": 3
+    }
+  ]
+}

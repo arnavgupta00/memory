@@ -1,0 +1,107 @@
+{
+  "session_id": "1b133cc2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to get more organized with my daily tasks.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want reminders for my online meetings on Tuesdays and Thursdays at 2:00 PM.",
+      "turn_index": 0
+    },
+    {
+      "text": "I love my morning yoga classes that I attend before work.",
+      "turn_index": 0
+    },
+    {
+      "text": "I plan out my daily routine better.",
+      "turn_index": 2
+    },
+    {
+      "text": "I start my day with a morning yoga class at 7:00 AM.",
+      "turn_index": 2
+    },
+    {
+      "text": "I wake up at 6:30 AM.",
+      "turn_index": 2
+    },
+    {
+      "text": "I usually start my day with a morning yoga class at 7:00 AM after waking up at 6:30 AM.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want apps or tools to track my time and stay focused during my morning work sessions.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want popular podcasts that might interest me, especially during my lunch break.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am exploring podcasts on self-improvement and productivity.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want recommended episodes from the podcasts mentioned earlier to help me stay focused during my morning work sessions.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am most productive during my morning work sessions.",
+      "turn_index": 8
+    },
+    {
+      "text": "My most productive time is usually between 8:30 AM and 12:00 PM.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering implementing a \"stop doing\" list mentioned by Neil Strauss in one of the podcast episodes.",
+      "turn_index": 10
+    },
+    {
+      "text": "I think a \"stop doing\" list could help me optimize my daily routine and reduce distractions.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "daily task organization",
+    "online meeting reminders",
+    "Tuesdays and Thursdays",
+    "2:00 PM meetings",
+    "morning yoga classes",
+    "morning routine planning",
+    "time tracking apps",
+    "stay focused",
+    "morning work sessions",
+    "lunch break podcasts",
+    "self-improvement and productivity podcasts",
+    "stop doing list"
+  ],
+  "events": [
+    {
+      "text": "Morning yoga class before work",
+      "date_hint": "before work (time varies)",
+      "turn_index": 0
+    },
+    {
+      "text": "Morning yoga class at 7:00 AM",
+      "date_hint": "7:00 AM",
+      "turn_index": 2
+    },
+    {
+      "text": "Waking up at 6:30 AM",
+      "date_hint": "6:30 AM",
+      "turn_index": 2
+    },
+    {
+      "text": "Most productive morning work sessions between 8:30 AM and 12:00 PM",
+      "date_hint": "8:30 AM to 12:00 PM",
+      "turn_index": 8
+    },
+    {
+      "text": "Considering implementing a \"stop doing\" list mentioned by Neil Strauss",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

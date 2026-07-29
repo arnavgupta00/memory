@@ -1,0 +1,101 @@
+{
+  "session_id": "c9dfeaea_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am thinking of getting a new dog bed for Max.",
+      "turn_index": 0
+    },
+    {
+      "text": "I took Lola to the vet last week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I got a discounted consultation fee of $50 for Lola as a regular customer.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for a durable and comfortable dog bed for Max.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering orthopedic or memory foam dog beds.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am looking for a dog bed in the $40-$50 price range.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am looking for a pet grooming kit around $80.",
+      "turn_index": 4
+    },
+    {
+      "text": "I need a pet grooming kit because my friend Rachel borrowed mine.",
+      "turn_index": 6
+    },
+    {
+      "text": "I need to groom Lola soon.",
+      "turn_index": 6
+    },
+    {
+      "text": "I hope Rachel returns the borrowed grooming kit soon.",
+      "turn_index": 6
+    },
+    {
+      "text": "I might need to buy a new grooming kit if Rachel does not return it soon.",
+      "turn_index": 6
+    },
+    {
+      "text": "I need to check the prices of dog beds and pet grooming kits at Petco.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of checking out the prices of dog beds and pet grooming kits at Petco.",
+      "turn_index": 10
+    },
+    {
+      "text": "I remember that when I took Lola to the vet last week, the consultation fee was $50.",
+      "turn_index": 10
+    },
+    {
+      "text": "The $50 consultation fee was a discounted price for regular customers.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Max dog bed",
+    "Lola vet visit",
+    "discounted vet consultation fee $50",
+    "orthopedic dog bed",
+    "memory foam dog bed",
+    "dog beds $40-$50",
+    "pet grooming kit $80",
+    "grooming Lola soon",
+    "Rachel borrowed grooming kit",
+    "Petco dog bed prices",
+    "Petco grooming kit deals"
+  ],
+  "events": [
+    {
+      "text": "Took Lola to the vet and received a discounted consultation fee of $50 as a regular customer",
+      "date_hint": "last week",
+      "turn_index": 0
+    },
+    {
+      "text": "Need to groom Lola soon because friend Rachel borrowed the grooming kit",
+      "date_hint": "soon",
+      "turn_index": 6
+    },
+    {
+      "text": "Checked or plans to check Petco prices for dog beds and pet grooming kits",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Plans to check Petco prices for dog beds and pet grooming kits",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

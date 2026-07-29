@@ -1,0 +1,43 @@
+{
+  "session_id": "sharegpt_1FQUTKz_45",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The ip_addresses array returned ['1.2.3.4', '13.250.2.198'].",
+      "turn_index": 1
+    },
+    {
+      "text": "The user said the code stops at the check for OK and doesn't fail.",
+      "turn_index": 1
+    },
+    {
+      "text": "The IP address for the ENI and the IP address for the DNS record need to be in their own separate variables, then matched.",
+      "turn_index": 1
+    },
+    {
+      "text": "The dns_public_ips array still returned ['1.2.3.4', '13.250.2.198'].",
+      "turn_index": 3
+    },
+    {
+      "text": "The user said dns_public_ips should only return the DNS record.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user said to remove the append.",
+      "turn_index": 3
+    }
+  ],
+  "keyphrases": [
+    "ip_addresses array",
+    "ENI IP address",
+    "DNS record IP address",
+    "separate variables",
+    "matched IPs",
+    "check for OK",
+    "dns_public_ips array",
+    "append removal",
+    "DNS record only",
+    "IP address list ['1.2.3.4','13.250.2.198']"
+  ],
+  "events": []
+}

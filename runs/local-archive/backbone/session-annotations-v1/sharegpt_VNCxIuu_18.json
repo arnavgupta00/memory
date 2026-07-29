@@ -1,0 +1,69 @@
+{
+  "session_id": "sharegpt_VNCxIuu_18",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I explained how to get the value of 1 # 3 using rules above.",
+      "turn_index": 0
+    },
+    {
+      "text": "I used notational shorthand WN(x): x'.",
+      "turn_index": 4
+    },
+    {
+      "text": "I listed steps with rule numbers in parentheses to compute 1 # 3.",
+      "turn_index": 2
+    },
+    {
+      "text": "I applied a process I called Ninduction to get to the value of 1 # 3 by applying rule 11 repeatedly until rule 10.",
+      "turn_index": 8
+    },
+    {
+      "text": "I asked to apply ninduction to find the value of 2 # 4.",
+      "turn_index": 10
+    },
+    {
+      "text": "I said the other person missed calculating 2 # 2'.",
+      "turn_index": 12
+    }
+  ],
+  "keyphrases": [
+    "value of 1 # 3",
+    "WN(x) shorthand",
+    "x' notation",
+    "rule 11 repeatedly",
+    "rule 10",
+    "Ninduction",
+    "ninduction",
+    "compute 2 # 4",
+    "2 # 2'",
+    "step-by-step rules"
+  ],
+  "events": [
+    {
+      "text": "Explained the method to compute the value of 1 # 3 using rules.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Defined shorthand WN(x): x'.",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Applied Ninduction (rule 11 repeatedly until rule 10) to compute 1 # 3.",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Asked to apply ninduction to find the value of 2 # 4.",
+      "date_hint": "",
+      "turn_index": 10
+    },
+    {
+      "text": "Claimed a mistake at step 11: missed calculating 2 # 2'.",
+      "date_hint": "",
+      "turn_index": 12
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "session_id": "f4e2933b",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for fashion advice.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a pair of ankle boots that will go well with my new red bodycon dress.",
+      "turn_index": 0
+    },
+    {
+      "text": "I was thinking of getting a pair of black ankle boots.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am not sure if black ankle boots will go well with my white blouse from Zara.",
+      "turn_index": 2
+    },
+    {
+      "text": "I will go with the black ankle boots.",
+      "turn_index": 4
+    },
+    {
+      "text": "I got the white blouse from Zara last weekend when I was at the mall with my friends.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to try the black ankle boots with both my red bodycon dress and my white blouse.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking about getting some of my old clothes altered.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to find good tailors in the area.",
+      "turn_index": 6
+    },
+    {
+      "text": "I was thinking about getting my winter clothes washed and stored away since the weather is getting warmer.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am curious whether I ended up storing winter clothes last weekend when I was decluttering my closet.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "fashion advice",
+    "ankle boots",
+    "red bodycon dress",
+    "black ankle boots",
+    "white blouse from Zara",
+    "mall with friends",
+    "clothes alteration",
+    "tailors in the area",
+    "winter clothes washing",
+    "storing winter clothes",
+    "decluttering closet",
+    "weather getting warmer"
+  ],
+  "events": [
+    {
+      "text": "Got the white blouse from Zara at the mall with friends.",
+      "date_hint": "last weekend",
+      "turn_index": 4
+    },
+    {
+      "text": "Was thinking about washing and storing winter clothes as the weather gets warmer.",
+      "date_hint": "as the weather's getting warmer",
+      "turn_index": 8
+    },
+    {
+      "text": "Decluttering closet and considering whether winter clothes were stored last weekend.",
+      "date_hint": "last weekend",
+      "turn_index": 10
+    }
+  ]
+}

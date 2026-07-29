@@ -1,0 +1,148 @@
+{
+  "session_id": "4b9ed528_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have a meeting at my company's downtown office today.",
+      "turn_index": 0
+    },
+    {
+      "text": "My company's downtown office is at 123 Main St.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am starting from my new apartment.",
+      "turn_index": 2
+    },
+    {
+      "text": "I prefer to take the bus and train to get to the downtown office.",
+      "turn_index": 2
+    },
+    {
+      "text": "I do not have a specific time constraint for arriving before the meeting.",
+      "turn_index": 2
+    },
+    {
+      "text": "I would like to arrive with some time to spare before the meeting.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am not familiar with the public transportation system in the city because I just moved here recently.",
+      "turn_index": 2
+    },
+    {
+      "text": "I recently moved to the city.",
+      "turn_index": 2
+    },
+    {
+      "text": "My new neighborhood has more restaurants and shops within walking distance.",
+      "turn_index": 2
+    },
+    {
+      "text": "My commute should take around 45 minutes.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to double-check the bus and train schedules to arrive on time for my meeting.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want the schedules for Bus Route 12.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want the schedules for the Red Line Train.",
+      "turn_index": 4
+    },
+    {
+      "text": "I recently fixed my bike.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been trying to use my bike to get around the neighborhood and to the gym.",
+      "turn_index": 6
+    },
+    {
+      "text": "The gym is closer to my new apartment.",
+      "turn_index": 6
+    },
+    {
+      "text": "For this meeting, I think taking the bus and train is the better option.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am enjoying my new neighborhood.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am still unpacking and organizing in my new apartment.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have not had a chance to explore much beyond the immediate area around my apartment.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am looking forward to discovering more of the neighborhood's hidden gems.",
+      "turn_index": 10
+    },
+    {
+      "text": "There is a vintage bookstore I have been wanting to check out.",
+      "turn_index": 10
+    },
+    {
+      "text": "There is a local coffee shop within walking distance that I want to check out.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am excited to try Korean BBQ.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am excited to try an Indian restaurant.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "public transportation route planning",
+    "downtown office meeting",
+    "123 Main St",
+    "new apartment commute",
+    "bus and train",
+    "arrive with time to spare",
+    "public transportation system unfamiliar",
+    "just moved to the city",
+    "45 minutes commute",
+    "Bus Route 12 schedule",
+    "Red Line Train schedule",
+    "bike fixed recently",
+    "gym near apartment",
+    "restaurants and shops within walking distance",
+    "vintage bookstore",
+    "local coffee shop",
+    "Korean BBQ place",
+    "Indian restaurant"
+  ],
+  "events": [
+    {
+      "text": "Meeting at the company's downtown office",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to commute to the downtown office from the new apartment using bus and train",
+      "date_hint": "today",
+      "turn_index": 2
+    },
+    {
+      "text": "Double-checking bus and train schedules for Bus Route 12 and the Red Line Train",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Fixing the bike recently",
+      "date_hint": "recently",
+      "turn_index": 6
+    }
+  ]
+}

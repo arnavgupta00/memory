@@ -1,0 +1,104 @@
+{
+  "session_id": "7badf4f3_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want advice on how to organize my jewelry box.",
+      "turn_index": 0
+    },
+    {
+      "text": "I cleaned out my jewelry box and got rid of some old stuff.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to store my jewelry properly to prevent tangling and damage.",
+      "turn_index": 0
+    },
+    {
+      "text": "I lost my favorite silver necklace with a small pendant at the beach last weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I think my silver necklace was on my towel when I went swimming and I forgot to pick it up.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am still bummed about losing my necklace.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am looking for a good jewelry cleaner and want recommendations.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to take my engagement ring in to be cleaned and inspected soon.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know how often I should clean and inspect my engagement ring.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will make an appointment at the jeweler's this week to get my engagement ring cleaned and inspected.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know whether I should mention my lost silver necklace to the jeweler in case someone turns it in.",
+      "turn_index": 6
+    },
+    {
+      "text": "I took my grandmother's old gold earrings to be repaired.",
+      "turn_index": 8
+    },
+    {
+      "text": "I remember the left earring had a loose backing and I was worried it would fall off.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will ask the jeweler to take a look at my grandmother's earrings when I take my engagement ring in for cleaning and inspection.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "organize jewelry box",
+    "prevent tangling and damage",
+    "lost silver necklace",
+    "small pendant necklace",
+    "beach last weekend",
+    "jewelry cleaner recommendations",
+    "engagement ring cleaning",
+    "engagement ring inspection frequency",
+    "appointment at the jeweler",
+    "mention lost necklace to jeweler",
+    "grandmother's old gold earrings",
+    "loose backing left earring",
+    "fixing earrings repair"
+  ],
+  "events": [
+    {
+      "text": "Lost a favorite silver necklace with a small pendant at the beach",
+      "date_hint": "last weekend",
+      "turn_index": 0
+    },
+    {
+      "text": "Made plans to take an engagement ring in for cleaning and inspection",
+      "date_hint": "soon",
+      "turn_index": 4
+    },
+    {
+      "text": "Scheduled an appointment at the jeweler's to clean and inspect the engagement ring",
+      "date_hint": "this week",
+      "turn_index": 6
+    },
+    {
+      "text": "Took grandmother's old gold earrings in for repair",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Asked the jeweler to look at grandmother's earrings when taking the engagement ring in",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

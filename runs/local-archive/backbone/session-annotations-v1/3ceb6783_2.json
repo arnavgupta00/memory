@@ -1,0 +1,82 @@
+{
+  "session_id": "3ceb6783_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking to find a new tennis court to play at.",
+      "turn_index": 0
+    },
+    {
+      "text": "I played five games in a charity basketball tournament a few weeks ago.",
+      "turn_index": 0
+    },
+    {
+      "text": "I played in a charity basketball tournament a few weeks ago.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want resources for tracking my tennis performance, such as a scorekeeper or a stats tracker.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want similar resources for tracking basketball performance, such as stats trackers or scorekeepers.",
+      "turn_index": 4
+    },
+    {
+      "text": "I was thinking about organizing a charity event.",
+      "turn_index": 6
+    },
+    {
+      "text": "I was thinking about organizing a 3-on-3 basketball tournament as a charity event.",
+      "turn_index": 6
+    },
+    {
+      "text": "In the charity basketball tournament I played in a few weeks ago, our team finished in third place.",
+      "turn_index": 8
+    },
+    {
+      "text": "In the charity basketball tournament I played in a few weeks ago, I averaged 10 points per game.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want ways to improve my shooting percentage, especially from the three-point line.",
+      "turn_index": 8
+    },
+    {
+      "text": "I was thinking about organizing a charity run or walk event in addition to my 3-on-3 basketball tournament.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "new tennis court",
+    "tennis performance tracking",
+    "scorekeeper for tennis",
+    "stats tracker for tennis",
+    "basketball performance tracking",
+    "basketball stats tracker",
+    "charity event planning",
+    "3-on-3 basketball tournament",
+    "charity basketball tournament",
+    "third place finish",
+    "average 10 points per game",
+    "improve three-point shooting percentage",
+    "charity run or walk event"
+  ],
+  "events": [
+    {
+      "text": "Played five games in a charity basketball tournament",
+      "date_hint": "a few weeks ago",
+      "turn_index": 0
+    },
+    {
+      "text": "Charity basketball tournament: team finished in third place",
+      "date_hint": "a few weeks ago",
+      "turn_index": 8
+    },
+    {
+      "text": "Charity basketball tournament: averaged 10 points per game",
+      "date_hint": "a few weeks ago",
+      "turn_index": 8
+    }
+  ]
+}

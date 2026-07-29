@@ -1,0 +1,119 @@
+{
+  "session_id": "9b1b9069_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to plan my day and prioritize my tasks.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a report to finish by the end of the day.",
+      "turn_index": 0
+    },
+    {
+      "text": "I attended an amazing concert on Saturday night.",
+      "turn_index": 0
+    },
+    {
+      "text": "The band at the concert was incredible.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want tips on how to stay focused and productive.",
+      "turn_index": 0
+    },
+    {
+      "text": "I plan to break down the report into smaller tasks.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to set specific goals for the report.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning a trip to the beach.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to find good deals on flights to the beach for next Friday.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to book my flights ASAP.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to be flexible with my travel dates.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want recommendations for a packing list for a beach trip.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to make sure I don't forget anything important for the beach trip.",
+      "turn_index": 4
+    },
+    {
+      "text": "I attended the concert on Saturday night.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am still feeling the energy from the concert.",
+      "turn_index": 6
+    },
+    {
+      "text": "The concert was truly amazing.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to stay focused and break down the report into smaller tasks.",
+      "turn_index": 8
+    },
+    {
+      "text": "The lead singer took a selfie with me.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to put on some of the band's music and get to work on the report.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to find good restaurants near my location that serve a great breakfast.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am thinking of grabbing breakfast before I dive into the report.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "planning my day",
+    "prioritize tasks",
+    "finish report by end of day",
+    "stay focused and productive",
+    "amazing concert Saturday night",
+    "band incredible",
+    "flight deals to the beach",
+    "next Friday flights",
+    "book flights ASAP",
+    "packing list for beach trip",
+    "be flexible with travel dates",
+    "lead singer selfie",
+    "restaurants near my location",
+    "great breakfast near me",
+    "breakfast before report"
+  ],
+  "events": [
+    {
+      "text": "Attended an amazing concert on Saturday night",
+      "date_hint": "Saturday night",
+      "turn_index": 0
+    },
+    {
+      "text": "Lead singer took a selfie with me at the concert",
+      "date_hint": "Saturday night",
+      "turn_index": 8
+    }
+  ]
+}

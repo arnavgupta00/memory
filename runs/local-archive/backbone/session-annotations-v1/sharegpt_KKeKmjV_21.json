@@ -1,0 +1,60 @@
+{
+  "session_id": "sharegpt_KKeKmjV_21",
+  "prompt": "session-annotate-v1",
+  "facts": [],
+  "keyphrases": [
+    "grammar rules",
+    "definite article",
+    "indefinite article",
+    "definite article change",
+    "past tense definition",
+    "translation examples",
+    "\"The dog eats a cat\"",
+    "\"The dog ate a cat\"",
+    "\"The woman ate a cat\"",
+    "\"the house's dog\"",
+    "\"flomi fash\""
+  ],
+  "events": [
+    {
+      "text": "User asks about grammar wording: \"flomi fash\"",
+      "date_hint": "",
+      "turn_index": 1
+    },
+    {
+      "text": "User asks about possessive phrase: \"the house's dog\"",
+      "date_hint": "",
+      "turn_index": 3
+    },
+    {
+      "text": "User requests an update to grammar rules to add definite and indefinite articles",
+      "date_hint": "",
+      "turn_index": 5
+    },
+    {
+      "text": "User changes the definite article to \"fi\" instead of \"f\"",
+      "date_hint": "",
+      "turn_index": 7
+    },
+    {
+      "text": "User asks for translation of \"The dog eats a cat\" after grammar updates",
+      "date_hint": "",
+      "turn_index": 9
+    },
+    {
+      "text": "User asks whether past tense has been defined",
+      "date_hint": "",
+      "turn_index": 11
+    },
+    {
+      "text": "User asks for translation of \"The dog ate a cat\"",
+      "date_hint": "",
+      "turn_index": 13
+    },
+    {
+      "text": "User asks for translation of \"The woman ate a cat\"",
+      "date_hint": "",
+      "turn_index": 15
+    }
+  ]
+}

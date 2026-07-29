@@ -1,0 +1,121 @@
+{
+  "session_id": "9cb9ec29_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning to go shopping at Target this weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I redeemed 1,000 points for a $10 gift card to Target on Fetch Rewards today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am trying to decide what to buy at Target.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want current deals and discounts at Target on household items like laundry detergent and paper towels.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for Target sales on granola bars or peanut butter this week.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know if Target has digital coupons available for granola bars and peanut butter that I can use in addition to sales.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am looking for Target sales on laundry detergent and paper towels this week.",
+      "turn_index": 6
+    },
+    {
+      "text": "I used some of my coupons from the Sunday paper on my last shopping trip.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of using my $10 Fetch Rewards gift card to buy laundry detergent and paper towels.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have used Tide before.",
+      "turn_index": 8
+    },
+    {
+      "text": "The Arm & Hammer Plus OxiClean laundry detergent is on sale for a lower price.",
+      "turn_index": 8
+    },
+    {
+      "text": "I decided to buy the Arm & Hammer Plus OxiClean laundry detergent.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am looking for other deals on paper towels that I can combine with the laundry detergent purchase.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Target shopping",
+    "Target deals and discounts",
+    "household items",
+    "laundry detergent",
+    "paper towels",
+    "Fetch Rewards",
+    "$10 gift card",
+    "1,000 points",
+    "granola bars sales",
+    "peanut butter sales",
+    "digital coupons",
+    "Arm & Hammer Plus OxiClean",
+    "Tide laundry detergent",
+    "Sunday paper coupons"
+  ],
+  "events": [
+    {
+      "text": "Redeemed 1,000 Fetch Rewards points for a $10 Target gift card",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to go shopping at Target this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 0
+    },
+    {
+      "text": "Looking for Target sales on granola bars or peanut butter this week",
+      "date_hint": "this week",
+      "turn_index": 2
+    },
+    {
+      "text": "Looking for Target digital coupons for granola bars and peanut butter this week",
+      "date_hint": "this week",
+      "turn_index": 4
+    },
+    {
+      "text": "Looking for Target sales on laundry detergent and paper towels this week",
+      "date_hint": "this week",
+      "turn_index": 6
+    },
+    {
+      "text": "Used Sunday paper coupons on last shopping trip",
+      "date_hint": "last shopping trip",
+      "turn_index": 6
+    },
+    {
+      "text": "Thinking of using the $10 Fetch Rewards gift card for laundry detergent and paper towels",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Chose Arm & Hammer Plus OxiClean laundry detergent",
+      "date_hint": "",
+      "turn_index": 10
+    },
+    {
+      "text": "Looking for additional paper towel deals to combine with laundry detergent purchase",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

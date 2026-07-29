@@ -1,0 +1,67 @@
+{
+  "session_id": "sharegpt_Z7M15Pp_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I reinstalled XAMPP.",
+      "turn_index": 0
+    },
+    {
+      "text": "Earlier ProFTP was running but now ProFTP is not running.",
+      "turn_index": 0
+    },
+    {
+      "text": "My Apache and ProFTP are not running.",
+      "turn_index": 2
+    },
+    {
+      "text": "Last time I added one line to the ProFTP configuration file and it was running.",
+      "turn_index": 4
+    },
+    {
+      "text": "On port 80 some programs are automatically running.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am using a Mac.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "reinstall XAMPP",
+    "ProFTP not running",
+    "Apache not running",
+    "ProFTP configuration file",
+    "added one line to proftp config",
+    "port 80 programs running",
+    "kill programs on port 80",
+    "Mac proftp apache"
+  ],
+  "events": [
+    {
+      "text": "Reinstalled XAMPP.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "ProFTP stopped running after previously running.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Apache and ProFTP were not running.",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Added one line to ProFTP config file and ProFTP started running.",
+      "date_hint": "last time",
+      "turn_index": 4
+    },
+    {
+      "text": "Programs started automatically running on port 80.",
+      "date_hint": "",
+      "turn_index": 6
+    }
+  ]
+}

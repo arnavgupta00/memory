@@ -1,0 +1,107 @@
+{
+  "session_id": "4162afef_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want help organizing my car expenses.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a bunch of receipts lying around that I want to keep track of better.",
+      "turn_index": 0
+    },
+    {
+      "text": "I ordered a custom-fit car cover from Amazon on April 5th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have not paid for the custom-fit car cover because it has not arrived yet.",
+      "turn_index": 0
+    },
+    {
+      "text": "The cost of the custom-fit car cover is $0.",
+      "turn_index": 0
+    },
+    {
+      "text": "I will use the spreadsheet option to organize my car expenses.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am familiar with Google Sheets.",
+      "turn_index": 2
+    },
+    {
+      "text": "I got my oil changed on March 18th for $35.",
+      "turn_index": 2
+    },
+    {
+      "text": "I got my tires rotated and balanced on March 18th for $20.",
+      "turn_index": 2
+    },
+    {
+      "text": "I got a flat tire on February 22nd and had it repaired for $15.",
+      "turn_index": 2
+    },
+    {
+      "text": "I got my car detailed on April 1st.",
+      "turn_index": 4
+    },
+    {
+      "text": "My car detailing expense on April 1st cost $120.",
+      "turn_index": 6
+    },
+    {
+      "text": "I had a parking ticket on March 28th.",
+      "turn_index": 8
+    },
+    {
+      "text": "My parking ticket on March 28th cost $40.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "car expenses organization",
+    "receipts tracking",
+    "custom-fit car cover",
+    "Amazon order April 5",
+    "Google Sheets spreadsheet",
+    "oil change March 18",
+    "tire rotation and balancing",
+    "flat tire repair February 22",
+    "car detailing April 1",
+    "parking ticket March 28",
+    "fuel expenses tracking"
+  ],
+  "events": [
+    {
+      "text": "Ordered a custom-fit car cover from Amazon",
+      "date_hint": "April 5th",
+      "turn_index": 0
+    },
+    {
+      "text": "Oil change",
+      "date_hint": "March 18th",
+      "turn_index": 2
+    },
+    {
+      "text": "Tires rotated and balanced",
+      "date_hint": "March 18th",
+      "turn_index": 2
+    },
+    {
+      "text": "Flat tire repair",
+      "date_hint": "February 22nd",
+      "turn_index": 2
+    },
+    {
+      "text": "Car detailing",
+      "date_hint": "April 1st",
+      "turn_index": 4
+    },
+    {
+      "text": "Parking ticket",
+      "date_hint": "March 28th",
+      "turn_index": 8
+    }
+  ]
+}

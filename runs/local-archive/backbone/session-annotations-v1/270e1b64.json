@@ -1,0 +1,105 @@
+{
+  "session_id": "270e1b64",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to organize my loyalty programs and rewards.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a Walgreens Balance Rewards $5 reward that expires on October 15th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a $5 coupon from CVS Pharmacy that is good on a purchase of $15 or more.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have a 20% off entire purchase coupon from Bed Bath & Beyond that expires on November 1st.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been a member of the Bed Bath & Beyond loyalty program for a while.",
+      "turn_index": 4
+    },
+    {
+      "text": "I think I have been a member of the Walgreens Balance Rewards program for over a year.",
+      "turn_index": 4
+    },
+    {
+      "text": "I need to check my rewards balance on my Starbucks app.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think I have a free drink reward waiting for me on my Starbucks app.",
+      "turn_index": 6
+    },
+    {
+      "text": "I earned a $10 reward on my Dick's Sporting Goods SCORECARD rewards program.",
+      "turn_index": 8
+    },
+    {
+      "text": "I got the Dick's Sporting Goods $10 reward by spending over $200 in the past 90 days on sporting goods and apparel.",
+      "turn_index": 8
+    },
+    {
+      "text": "I need to keep track of my points on my H&M loyalty card.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have earned 100 points on my H&M loyalty card.",
+      "turn_index": 10
+    },
+    {
+      "text": "My 100 H&M loyalty points are halfway to getting a $5 reward.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "loyalty programs organization",
+    "rewards expirations",
+    "Walgreens Balance Rewards $5",
+    "October 15 reward expiration",
+    "CVS Pharmacy $5 coupon",
+    "purchase of $15 or more",
+    "Bed Bath & Beyond 20% off coupon",
+    "November 1 coupon expiration",
+    "Starbucks app free drink reward",
+    "Dick's Sporting Goods SCORECARD $10 reward",
+    "spending over $200 past 90 days",
+    "H&M loyalty card 100 points",
+    "$5 reward halfway"
+  ],
+  "events": [
+    {
+      "text": "Walgreens Balance Rewards $5 reward expires",
+      "date_hint": "October 15th",
+      "turn_index": 0
+    },
+    {
+      "text": "CVS Pharmacy $5 coupon added (good on $15+ purchase)",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Bed Bath & Beyond 20% off entire purchase coupon expires",
+      "date_hint": "November 1st",
+      "turn_index": 4
+    },
+    {
+      "text": "Check Starbucks app rewards balance for a free drink reward",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Earned Dick's Sporting Goods SCORECARD $10 reward",
+      "date_hint": "past 90 days (spending over $200)",
+      "turn_index": 8
+    },
+    {
+      "text": "H&M loyalty card points progress toward $5 reward",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

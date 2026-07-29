@@ -1,0 +1,69 @@
+{
+  "session_id": "sharegpt_ADJyeqs_43",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user referenced a /subscribe route that reads a website URL from a url query parameter in the request.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user referenced calling hub.subscribe() with the subscribed website URL and the request headers.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user referenced redirecting the user to the website they subscribed to after a successful subscription.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user referenced rendering an error page with an error message if an error occurs during the subscription process.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user provided an example /subscribe URL in the form https://www.mywebsite.com/subscribe?url=https://www.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user referenced a /notify route implementation in websub-hub code.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user referenced an app.post('/notify', ...) webhook route triggered when new content is published on a website.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user referenced getting url and summary from req.body in the /notify route.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user referenced calling hub.publish(url, { summary }) to notify the hub of updated content.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user referenced returning 'Notification sent to hub' on successful hub.publish().",
+      "turn_index": 1
+    },
+    {
+      "text": "The user referenced returning HTTP 500 with 'Error sending notification to hub' if hub.publish() fails.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user referenced that the /notify route sends notifications to all subscribed users via the hub.",
+      "turn_index": 1
+    }
+  ],
+  "keyphrases": [
+    "/subscribe route",
+    "url query parameter",
+    "hub.subscribe()",
+    "request headers",
+    "redirect to subscribed website",
+    "error page with error message",
+    "/notify route",
+    "websub-hub code",
+    "webhook triggered by new content",
+    "hub.publish()",
+    "req.body url and summary",
+    "example subscribe URL"
+  ],
+  "events": []
+}

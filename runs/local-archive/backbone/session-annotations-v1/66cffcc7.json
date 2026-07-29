@@ -1,0 +1,99 @@
+{
+  "session_id": "66cffcc7",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to plan my week and asked for reminders of upcoming events or holidays this month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am trying to plan a volunteer event at my church.",
+      "turn_index": 2
+    },
+    {
+      "text": "I volunteered at a food drive at my church last month.",
+      "turn_index": 4
+    },
+    {
+      "text": "I attended Sunday mass on March 12th.",
+      "turn_index": 4
+    },
+    {
+      "text": "I attended Sunday mass on March 12th at St. Mary's Church.",
+      "turn_index": 6
+    },
+    {
+      "text": "Father John gave a powerful sermon on forgiveness at St. Mary's Church on March 12th.",
+      "turn_index": 6
+    },
+    {
+      "text": "I ran into my old friend Rachel at St. Mary's Church on March 12th.",
+      "turn_index": 6
+    },
+    {
+      "text": "I was impressed by the new choir member Emily.",
+      "turn_index": 8
+    },
+    {
+      "text": "Emily sang a beautiful solo during the offertory hymn.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering attending a cultural or religious event this weekend.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am not sure what's happening in my area this weekend.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "planning my week",
+    "upcoming events and holidays this month",
+    "volunteer event at my church",
+    "food drive ideas",
+    "sorting canned goods",
+    "Sunday mass March 12",
+    "St. Mary's Church",
+    "Father John sermon on forgiveness",
+    "old friend Rachel",
+    "new choir member Emily",
+    "offertory hymn solo",
+    "get involved in church choir",
+    "singing or music programs",
+    "cultural or religious event this weekend",
+    "notable events this weekend"
+  ],
+  "events": [
+    {
+      "text": "Planning a volunteer event at my church (food drive brainstorming)",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Volunteered at a food drive at my church",
+      "date_hint": "last month",
+      "turn_index": 4
+    },
+    {
+      "text": "Attended Sunday mass at St. Mary's Church",
+      "date_hint": "March 12th",
+      "turn_index": 4
+    },
+    {
+      "text": "Father John gave a sermon on forgiveness during Sunday mass at St. Mary's Church",
+      "date_hint": "March 12th",
+      "turn_index": 6
+    },
+    {
+      "text": "Emily sang a solo during the offertory hymn",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Considering attending a cultural or religious event this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 10
+    }
+  ]
+}

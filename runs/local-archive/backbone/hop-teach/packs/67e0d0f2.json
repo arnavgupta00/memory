@@ -1,0 +1,33 @@
+{
+  "question_id": "67e0d0f2",
+  "question_type": "multi-session",
+  "question": "What is the total number of online courses I've completed?",
+  "question_date": "2023/05/30 (Tue) 23:23",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_3a5010af_1",
+    "answer_3a5010af_2"
+  ],
+  "haystack_session_count": 52,
+  "notes_coverage": "partial",
+  "annotated_session_count": 8,
+  "gold_sessions": [
+    {
+      "session_id": "answer_3a5010af_1",
+      "date": "2023/05/27 (Sat) 15:53",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_3a5010af_1\n[session_date] 2023/05/27 (Sat) 15:53\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm looking to improve my data analysis skills and was wondering if you could recommend some online resources or courses that could help me take my skills to the next level. By the way, I've already taken some courses on Coursera, so I'm hoping to find something that builds on that foundation.\n\n[turn 2] I'm interested in the DataCamp courses, especially the ones on data visualization. Can you recommend any specific courses that focus on visualization using Python libraries like Matplotlib and Seaborn?\n\n[turn 4] That's a great list of courses! I think I'll start with the \"Data Visualization with Python: Matplotlib and Seaborn\" course, since it covers both libraries. Do you have any tips on how to best utilize the course, such as how to approach the exercises or projects?\n\n[turn 6] I have a question about the course. Can you tell me more about the type of projects we'll be working on in the course? Are they based on real-world datasets, and will we have the opportunity to work on projects that align with our own interests?\n\n[turn 8] That sounds great! I'm excited to start working on the projects and exercises in the course. Since I've already completed 12 courses on Coursera, I'm confident that I have a solid foundation in data analysis, and I'm looking forward to building on that foundation with this course.\n\n[turn 10] I think I'll start by reviewing the basics of Python and familiarizing myself with Jupyter Notebooks before diving into the course. I want to make sure I have a solid foundation in Python before working on the projects and exercises. Can you recommend any resources for reviewing Python basics or learning more about Jupyter Notebooks?"
+    },
+    {
+      "session_id": "answer_3a5010af_2",
+      "date": "2023/05/21 (Sun) 17:49",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_3a5010af_2\n[session_date] 2023/05/21 (Sun) 17:49\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm considering pursuing a Master's degree in data science, and I was wondering if you could help me explore some online resources that can help me prepare for the program. By the way, I've already built a solid foundation in data analysis through online courses on edX.\n\n[turn 2] I appreciate the extensive list of resources you've provided. I'm particularly interested in exploring the machine learning course by Andrew Ng on Coursera. Can you tell me more about the course, such as its duration and the topics covered?\n\n[turn 4] I'm glad I already have a solid foundation in data analysis from my previous 8 edX courses, so I'm confident that I can focus on machine learning concepts in this course. Can you tell me more about the assignments and how they will help me apply the concepts to real-world problems?\n\n[turn 6] That sounds like a great way to learn machine learning concepts. I'm excited to dive into the course and start working on the assignments. Can you recommend any additional resources or tips for staying organized and managing my time effectively throughout the course?\n\n[turn 8] I think I've got a good handle on the resources and tips for staying organized and managing my time effectively. Thanks for the help! I'm looking forward to diving into the course and starting to work on those assignments. One more question - do you think it's a good idea to try to work on personal projects or apply machine learning concepts to my own interests while taking the course, or should I focus solely on the coursework?\n\n[turn 10] I think I've got a good handle on balancing coursework and personal projects. Thanks for the advice! I'm excited to dive into the course and start working on assignments and personal projects."
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

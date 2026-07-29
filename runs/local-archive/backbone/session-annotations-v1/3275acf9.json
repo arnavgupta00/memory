@@ -1,0 +1,124 @@
+{
+  "session_id": "3275acf9",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to organize my loyalty programs and rewards.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want help keeping track of the expiration dates for my rewards.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want reminders to use my rewards before they expire.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have Walgreens Balance Rewards with 10,000 points so far.",
+      "turn_index": 2
+    },
+    {
+      "text": "I redeemed 5,000 points for a $5 reward last week in Walgreens Balance Rewards.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have CVS ExtraCare Rewards.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to use my CVS ExtraCare ExtraBucks reward by April 15th.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have Target RedCard.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have Starbucks Rewards.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have ShopRite Price Plus.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have Fetch Rewards.",
+      "turn_index": 2
+    },
+    {
+      "text": "I signed up for Walgreens Balance Rewards around early February.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want the best way to keep track of my loyalty programs and rewards.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to set up reminders for expiration dates for my loyalty programs.",
+      "turn_index": 4
+    },
+    {
+      "text": "I think I will use a spreadsheet to track my loyalty programs.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want help setting up a basic spreadsheet template with the columns mentioned earlier.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to fill in the rest of the information for my loyalty programs in the spreadsheet.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want help sorting and filtering the spreadsheet data to see which rewards are expiring soon.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am not super familiar with spreadsheets.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to set up reminders or notifications within the spreadsheet to alert me when rewards are expiring soon.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "loyalty programs",
+    "rewards expiration dates",
+    "reminders for rewards",
+    "Walgreens Balance Rewards",
+    "10,000 points",
+    "redeemed 5,000 points",
+    "$5 reward",
+    "CVS ExtraCare Rewards",
+    "ExtraBucks reward",
+    "April 15th",
+    "Target RedCard",
+    "Starbucks Rewards",
+    "ShopRite Price Plus",
+    "Fetch Rewards",
+    "spreadsheet template",
+    "columns for tracking",
+    "sort and filter",
+    "rewards expiring soon",
+    "spreadsheet reminders notifications"
+  ],
+  "events": [
+    {
+      "text": "Redeemed 5,000 Walgreens Balance Rewards points for a $5 reward",
+      "date_hint": "last week",
+      "turn_index": 2
+    },
+    {
+      "text": "Need to use CVS ExtraCare ExtraBucks reward by April 15th",
+      "date_hint": "April 15th",
+      "turn_index": 2
+    },
+    {
+      "text": "Signed up for Walgreens Balance Rewards around early February",
+      "date_hint": "early February",
+      "turn_index": 4
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "session_id": "e789afdb_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am working on a research project.",
+      "turn_index": 0
+    },
+    {
+      "text": "I recently changed my research focus to natural language processing in education.",
+      "turn_index": 0
+    },
+    {
+      "text": "Changing my research focus added an extra month to my project timeline.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am working on a Master's thesis.",
+      "turn_index": 2
+    },
+    {
+      "text": "My original thesis deadline was tight.",
+      "turn_index": 2
+    },
+    {
+      "text": "After changing my research focus, I added an extra month to my thesis timeline.",
+      "turn_index": 2
+    },
+    {
+      "text": "My thesis focus is developing an NLP model to analyze student essays.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have already collected and cleaned a dataset of over 10,000 essays.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have read and summarized relevant research papers.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have a meeting with my thesis committee next month to discuss my project proposal.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want help creating an outline for a presentation to my thesis committee.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have already read the paper by Jeremy Howard and Sebastian Ruder.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want suggestions for specific papers or sources to include in my literature review.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want help brainstorming potential research questions or objectives for my study.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to focus on the most important aspects of NLP in education.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want guidance on how to design an evaluation framework for my NLP model.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "natural language processing in education",
+    "project timeline",
+    "Master's thesis",
+    "NLP model for student essays",
+    "dataset of over 10,000 essays",
+    "literature review papers",
+    "Jeremy Howard Sebastian Ruder paper",
+    "thesis committee meeting next month",
+    "project proposal presentation outline",
+    "research questions and objectives",
+    "evaluation framework for NLP model"
+  ],
+  "events": [
+    {
+      "text": "Meeting with thesis committee to discuss project proposal",
+      "date_hint": "next month",
+      "turn_index": 4
+    }
+  ]
+}

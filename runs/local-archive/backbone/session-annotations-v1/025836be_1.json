@@ -1,0 +1,75 @@
+{
+  "session_id": "025836be_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to create a spreadsheet to track my sales and expenses for my small business.",
+      "turn_index": 0
+    },
+    {
+      "text": "I sold homemade jams and candles at the Downtown Farmers Market on Saturday, March 18th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I sold 12 jars of strawberry jam on March 18th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to use Google Sheets Templates because I am already familiar with Google Drive.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want my sales tracker to distinguish between different products, like my jams and candles.",
+      "turn_index": 2
+    },
+    {
+      "text": "I sold 8 candles on March 18th in addition to the 12 jars of strawberry jam.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to create a separate table to track my expenses, including the cost of ingredients and supplies.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to add a column to track the vendor or supplier for my expenses.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to create a separate table to track my inventory levels.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "sales and expenses spreadsheet",
+    "small business sales tracker",
+    "homemade jams",
+    "homemade candles",
+    "Downtown Farmers Market",
+    "March 18th sales",
+    "strawberry jam jars",
+    "Google Sheets Templates",
+    "Google Drive familiarity",
+    "sales by product and date",
+    "expenses table",
+    "vendor or supplier column",
+    "inventory levels table",
+    "restock inventory"
+  ],
+  "events": [
+    {
+      "text": "Selling homemade jams and candles at the Downtown Farmers Market",
+      "date_hint": "Saturday, March 18th",
+      "turn_index": 0
+    },
+    {
+      "text": "Sold 12 jars of strawberry jam at the Downtown Farmers Market",
+      "date_hint": "March 18th",
+      "turn_index": 0
+    },
+    {
+      "text": "Sold 8 candles at the Downtown Farmers Market",
+      "date_hint": "March 18th",
+      "turn_index": 4
+    }
+  ]
+}

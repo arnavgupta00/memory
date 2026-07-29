@@ -1,0 +1,25 @@
+{
+  "question_id": "6222b6eb",
+  "question_type": "single-session-assistant",
+  "question": "I was going through our previous conversation about atmospheric correction methods, and I wanted to confirm - you mentioned that 6S, MAJA, and Sen2Cor are all algorithms for atmospheric correction of remote sensing images. Can you remind me which one is implemented in the SIAC_GEE tool?",
+  "question_date": "2023/05/30 (Tue) 23:32",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_sharegpt_H9PiM5G_0"
+  ],
+  "haystack_session_count": 46,
+  "notes_coverage": "full",
+  "annotated_session_count": 46,
+  "gold_sessions": [
+    {
+      "session_id": "answer_sharegpt_H9PiM5G_0",
+      "date": "2023/05/27 (Sat) 13:33",
+      "has_notes": true,
+      "notes_text": "[session_id] answer_sharegpt_H9PiM5G_0\n[session_date] 2023/05/27 (Sat) 13:33\n[keyphrases] AI consciousness; atmospheric correction; data availability level 2; Sentinel-2 Level 2 coverage; SIAC_GEE; Sen2core; MarcYin; SEN2COR; 6S atmospheric correction; MAJA atmospheric correction; environmental journals; fastest first decision time",
+      "user_turns": "[turn 0] How are you\n\n[turn 2] could Ai be consious\n\n[turn 4] what is the easiest way to correct the data atmospherically\n\n[turn 6] is the level 2 data are always available\n\n[turn 8] What is the coverage of sentinel 2 level 2 data\n\n[turn 10] What is the difference between SIAC\\_GEE by MarcYin an Sen2core ?\n\n[turn 12] compare between 6S, MAJA and SEN2COR for atmospheric correction\n\n[turn 14] What are the best Environmental journals with the least firdt decision time"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

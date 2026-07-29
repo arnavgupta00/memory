@@ -1,0 +1,111 @@
+{
+  "session_id": "a53fdd02_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am considering trading in my Toyota Corolla for a newer model.",
+      "turn_index": 0
+    },
+    {
+      "text": "I recently got a parking ticket because I misunderstood the parking rules.",
+      "turn_index": 0
+    },
+    {
+      "text": "I was parked in a 2-hour spot that was only valid until 6 pm.",
+      "turn_index": 0
+    },
+    {
+      "text": "I arrived at 5:45 pm and ended up staying for 3 hours.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to get quotes for insurance before trading in my car.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a list of factors that affect my insurance premiums.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know how much a parking ticket can increase my insurance rates.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to understand the process of trading in my car.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to trade in my Toyota Corolla for a newer model.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to find used motorcycles in my price range.",
+      "turn_index": 6
+    },
+    {
+      "text": "My budget for a used motorcycle is around $5,000 to $7,000.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am interested in a cruiser-style motorcycle.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am possibly interested in a Harley-Davidson.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am possibly interested in a Yamaha.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am open to considering different years for the motorcycle.",
+      "turn_index": 8
+    },
+    {
+      "text": "I prefer a motorcycle from the past 10-15 years.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am looking for a motorcycle with around 10,000 to 30,000 miles.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am open to buying from a dealership or a private seller.",
+      "turn_index": 8
+    },
+    {
+      "text": "I prefer to buy a used motorcycle from a dealership if possible.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "trading in Toyota Corolla",
+    "insurance quotes comparison",
+    "parking ticket impact on insurance",
+    "2-hour parking spot until 6 pm",
+    "arrived 5:45 pm stayed 3 hours",
+    "factors affecting insurance premiums",
+    "car trade-in steps",
+    "used motorcycles",
+    "used motorcycle budget $5,000 to $7,000",
+    "cruiser-style motorcycle",
+    "Harley-Davidson or Yamaha",
+    "preferred years past 10-15 years",
+    "mileage 10,000 to 30,000 miles",
+    "buying from dealership vs private seller",
+    "used bike buying process"
+  ],
+  "events": [
+    {
+      "text": "Received a parking ticket after misunderstanding parking rules for a 2-hour spot valid until 6 pm",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Arrived at 5:45 pm and stayed in the 2-hour spot for 3 hours",
+      "date_hint": "5:45 pm (until 6 pm)",
+      "turn_index": 0
+    }
+  ]
+}

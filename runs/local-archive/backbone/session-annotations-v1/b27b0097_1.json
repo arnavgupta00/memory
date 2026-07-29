@@ -1,0 +1,103 @@
+{
+  "session_id": "b27b0097_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Tokyo.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have already booked an economy ticket for my trip to Tokyo.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering upgrading my economy ticket to business class if the price is right.",
+      "turn_index": 0
+    },
+    {
+      "text": "I paid a deposit of $500 to Japan Holidays travel agency for my trip.",
+      "turn_index": 0
+    },
+    {
+      "text": "My economy ticket is with Japan Airlines.",
+      "turn_index": 2
+    },
+    {
+      "text": "My economy ticket departs on March 15.",
+      "turn_index": 2
+    },
+    {
+      "text": "I still need to pay a balance of $2,000 by the end of this month.",
+      "turn_index": 2
+    },
+    {
+      "text": "I do not have any loyalty programs that offer upgrade options.",
+      "turn_index": 2
+    },
+    {
+      "text": "I do not have any credit cards that offer upgrade options.",
+      "turn_index": 2
+    },
+    {
+      "text": "I received an email from my credit card company about earning triple points if I book a flight or hotel through their travel portal.",
+      "turn_index": 2
+    },
+    {
+      "text": "I received an email from Japan Holidays about a guided tour package that may include a free upgrade to a 4-star hotel.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to contact Japan Airlines to see if they have upgrade options for my flight.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to contact Japan Holidays about the guided tour package and the hotel upgrade offer.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to contact Japan Airlines about upgrading my flight to business class.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want tips on how to negotiate with Japan Airlines and Japan Holidays to get the best deal possible.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will contact Japan Airlines and Japan Holidays and keep the negotiation tips in mind.",
+      "turn_index": 8
+    },
+    {
+      "text": "I forgot to ask whether I should get recommendations for good restaurants or attractions in Tokyo that I shouldn't miss.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Tokyo trip",
+    "business class flight deals",
+    "economy ticket upgrade",
+    "Japan Holidays travel agency",
+    "$500 deposit",
+    "Japan Airlines",
+    "March 15 departure",
+    "$2,000 balance",
+    "end of this month",
+    "triple points travel portal",
+    "credit card travel portal",
+    "guided tour package",
+    "free upgrade 4-star hotel",
+    "negotiating upgrade price",
+    "Tokyo restaurants and attractions"
+  ],
+  "events": [
+    {
+      "text": "Departure of economy ticket with Japan Airlines",
+      "date_hint": "March 15",
+      "turn_index": 2
+    },
+    {
+      "text": "Paying remaining balance for the economy ticket",
+      "date_hint": "by the end of this month",
+      "turn_index": 2
+    }
+  ]
+}

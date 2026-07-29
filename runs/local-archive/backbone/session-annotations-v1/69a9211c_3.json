@@ -1,0 +1,92 @@
+{
+  "session_id": "69a9211c_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am thinking of trying out a new transportation method, possibly carpooling with a coworker or using a bike-sharing program.",
+      "turn_index": 0
+    },
+    {
+      "text": "I was on the train last Friday.",
+      "turn_index": 0
+    },
+    {
+      "text": "My train was delayed by 20 minutes due to mechanical issues.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of trying out the bike-sharing program this weekend.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to try out the bike-sharing program this weekend.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to compare the cost-effectiveness of the bike-sharing program versus my current train commute.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of trying out the bike-sharing program for my daily commute.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am concerned about the safety aspect of riding a bike in the city.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of trying out a different route to work using the bike-sharing program.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering carpooling with a coworker who lives nearby.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "carpooling with a coworker",
+    "bike-sharing program",
+    "cost-effectiveness calculation",
+    "train commute cost",
+    "train delay 20 minutes",
+    "mechanical issues train",
+    "bike-sharing this weekend",
+    "bike safety tips city",
+    "planning a bike route",
+    "safe and efficient bike route",
+    "carpooling success tips",
+    "daily commute bike-sharing"
+  ],
+  "events": [
+    {
+      "text": "Train delayed by 20 minutes due to mechanical issues",
+      "date_hint": "last Friday",
+      "turn_index": 0
+    },
+    {
+      "text": "Thinking of trying out the bike-sharing program this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 2
+    },
+    {
+      "text": "Planning to try out the bike-sharing program this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 4
+    },
+    {
+      "text": "Trying out the bike-sharing program for daily commute",
+      "date_hint": "daily commute",
+      "turn_index": 6
+    },
+    {
+      "text": "Trying a different route to work using the bike-sharing program",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Considering carpooling with a coworker who lives nearby",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

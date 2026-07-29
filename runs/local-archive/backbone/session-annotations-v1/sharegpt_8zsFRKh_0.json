@@ -1,0 +1,97 @@
+{
+  "session_id": "sharegpt_8zsFRKh_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "Casper is a color with hex value #ACBFCD.",
+      "turn_index": 0
+    },
+    {
+      "text": "Pickled Bluewood is a color with hex value #324558.",
+      "turn_index": 0
+    },
+    {
+      "text": "Comet is a color with hex value #545B70.",
+      "turn_index": 0
+    },
+    {
+      "text": "Finlandia is a color with hex value #56745E.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a comma-delimited list that includes both color names and their hex values.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want the format to be [name] [hex], ...",
+      "turn_index": 4
+    },
+    {
+      "text": "I want the commas moved to after the hex values and carriage returns removed.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want a function named \"delim\" that takes a load of text in the given format and returns a list like the one previously written.",
+      "turn_index": 8
+    },
+    {
+      "text": "I need the function to process colors in the format \"[name]\\n#HEX\" repeated for multiple colors.",
+      "turn_index": 10
+    },
+    {
+      "text": "Fountain Blue is a color with hex value #68C0C2.",
+      "turn_index": 12
+    },
+    {
+      "text": "Dune is a color with hex value #292423.",
+      "turn_index": 12
+    },
+    {
+      "text": "Petite Orchid is a color with hex value #D9A189.",
+      "turn_index": 12
+    },
+    {
+      "text": "Shadow is a color with hex value #856A56.",
+      "turn_index": 12
+    },
+    {
+      "text": "I want the output as a comma-delimited list like: [name] [hex], ...",
+      "turn_index": 14
+    },
+    {
+      "text": "Mirage is a color with hex value #131625.",
+      "turn_index": 16
+    },
+    {
+      "text": "Picton Blue is a color with hex value #25B4E4.",
+      "turn_index": 16
+    },
+    {
+      "text": "Bouquet is a color with hex value #B389A0.",
+      "turn_index": 16
+    },
+    {
+      "text": "Fun Blue is a color with hex value #1F65B6.",
+      "turn_index": 16
+    }
+  ],
+  "keyphrases": [
+    "Casper #ACBFCD",
+    "Pickled Bluewood #324558",
+    "Comet #545B70",
+    "Finlandia #56745E",
+    "comma delimited list",
+    "name hex format",
+    "move commas after hex",
+    "remove carriage returns",
+    "function delim",
+    "process colors from text",
+    "Fountain Blue #68C0C2",
+    "Petite Orchid #D9A189",
+    "Mirage #131625",
+    "Picton Blue #25B4E4",
+    "Bouquet #B389A0",
+    "Fun Blue #1F65B6"
+  ],
+  "events": []
+}

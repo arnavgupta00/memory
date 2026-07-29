@@ -1,0 +1,153 @@
+{
+  "session_id": "sharegpt_IuLT3VI_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want you to act as a travel guide for a trip.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the travel guide response to be brief and concise.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the travel guide response to provide must-visit tourist destinations and information about cities, local culture and customs, and other relevant information.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the travel guide response to not provide personal opinions or recommendations.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the travel guide response to be limited to facts and information.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a 7-day trip to Hangzhou, Zhejiang Province, China in the winter season.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want recommended scenic spots for each day of the 7-day trip to Hangzhou in winter.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want West Lake (Xi Hu) included as a recommended scenic spot for Day 1 of the 7-day trip.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want Xixi National Wetland Park included as a recommended scenic spot for Day 1 of the 7-day trip.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am traveling as a group of friends for tourism.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to travel for 3 days in Hangzhou, Zhejiang Province, China in winter.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want 1-2 scenic spots recommended for each day.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want scenic spots suitable for winter.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want descriptions that show features of the scenic spots in winter.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want descriptions that attract friends to the scenic spots.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am traveling as a family with small kids for tourism.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to travel for 3 days in Hangzhou, Zhejiang Province, China in summer.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want 1-2 scenic spots recommended for each day.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want scenic spots suitable for winter.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want descriptions that show features of the scenic spots in summer.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want descriptions that attract a family with small kids to the scenic spots.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am traveling as a family with small kids for tourism.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to travel for 3 days in Hangzhou, Zhejiang Province, China in summer.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want 1-2 scenic spots recommended for each day.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want scenic spots suitable for winter.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want descriptions that show features of the scenic spots in summer.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want descriptions that attract a family with small kids to the scenic spots.",
+      "turn_index": 8
+    },
+    {
+      "text": "Lingyin Temple must appear in the recommendations.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "travel guide",
+    "Hangzhou Zhejiang China",
+    "3-day trip",
+    "7-day trip",
+    "winter season",
+    "summer season",
+    "scenic spots",
+    "West Lake Xi Hu",
+    "Xixi National Wetland Park",
+    "Lingyin Temple",
+    "local culture and customs"
+  ],
+  "events": [
+    {
+      "text": "Request for a 7-day trip scenic spot plan for Hangzhou in the winter season (Day 1 includes West Lake and Xixi National Wetland Park).",
+      "date_hint": "winter season",
+      "turn_index": 2
+    },
+    {
+      "text": "Request for a 3-day Hangzhou trip with 1-2 winter-suitable scenic spots per day for a group of friends.",
+      "date_hint": "winter",
+      "turn_index": 4
+    },
+    {
+      "text": "Request for a 3-day Hangzhou trip for a family with small kids, with summer features described and winter-suitable scenic spots recommended.",
+      "date_hint": "summer",
+      "turn_index": 6
+    },
+    {
+      "text": "Request for a 3-day Hangzhou trip for a family with small kids, with summer features described and winter-suitable scenic spots recommended; Lingyin Temple must be included.",
+      "date_hint": "summer",
+      "turn_index": 8
+    }
+  ]
+}

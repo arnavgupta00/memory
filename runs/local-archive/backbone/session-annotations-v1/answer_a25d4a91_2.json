@@ -1,0 +1,65 @@
+{
+  "session_id": "answer_a25d4a91_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am training for another charity 5K run coming up.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to beat my personal best time of 25:50 in the charity 5K run.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am getting ready for a tennis tournament coming up on May 6th.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am working on my serve for the tennis tournament.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think I need to focus on my toss consistency for my serve.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am getting ready for a charity 5K run.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am hoping to beat my personal best time this time around.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "charity 5K run training",
+    "endurance improvement",
+    "personal best time 25:50",
+    "interval training focus",
+    "consistent pace during intervals",
+    "strength training for running",
+    "running performance exercises",
+    "tennis tournament May 6",
+    "improve my serve",
+    "serve toss consistency",
+    "serve drills",
+    "charity 5K endurance tips"
+  ],
+  "events": [
+    {
+      "text": "Charity 5K run training",
+      "date_hint": "coming up",
+      "turn_index": 0
+    },
+    {
+      "text": "Tennis tournament",
+      "date_hint": "May 6th",
+      "turn_index": 6
+    },
+    {
+      "text": "Charity 5K run training (repeat mention)",
+      "date_hint": "coming up",
+      "turn_index": 10
+    }
+  ]
+}

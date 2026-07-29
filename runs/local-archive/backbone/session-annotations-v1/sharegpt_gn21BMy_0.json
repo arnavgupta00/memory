@@ -1,0 +1,81 @@
+{
+  "session_id": "sharegpt_gn21BMy_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I used an ExtraTreesClassifier for groundwater quality classification for irrigation purposes.",
+      "turn_index": 0
+    },
+    {
+      "text": "My model achieved an accuracy of 90.62%.",
+      "turn_index": 0
+    },
+    {
+      "text": "My model achieved an F1 score of 90.20%.",
+      "turn_index": 0
+    },
+    {
+      "text": "I used 6 physiochemical parameters as inputs out of 22 before feature selection.",
+      "turn_index": 0
+    },
+    {
+      "text": "My abstract title for a conference was \"Comparison of the ensemble algorithms with the multiple layer perceptron for classification of groundwater quality.\"",
+      "turn_index": 8
+    },
+    {
+      "text": "My abstract compared ensemble algorithms with a multiple layer perceptron (MLP) for classification of groundwater quality.",
+      "turn_index": 8
+    },
+    {
+      "text": "My abstract used tabular data representing groundwater water quality parameters for classification purposes.",
+      "turn_index": 8
+    },
+    {
+      "text": "My abstract evaluated machine learning algorithms using accuracy and F1 score as evaluation metrics.",
+      "turn_index": 8
+    },
+    {
+      "text": "My abstract reported ExtraTreesClassifier accuracy of 90.62% and F1 score of 90.20%.",
+      "turn_index": 8
+    },
+    {
+      "text": "My abstract reported RandomForestClassifier accuracy of 89.72% and F1 score of 89.56%.",
+      "turn_index": 8
+    },
+    {
+      "text": "My abstract reported Multiple Layer Perceptron (MLP) accuracy of 86.29% and F1 score of 85.72%.",
+      "turn_index": 8
+    },
+    {
+      "text": "My abstract concluded that ensemble algorithms performed better than the artificial neural network on tabular data.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "groundwater quality classification",
+    "irrigation purpose",
+    "ExtraTreesClassifier",
+    "ensemble algorithms",
+    "multiple layer perceptron (MLP)",
+    "accuracy 90.62%",
+    "F1 score 90.20%",
+    "6 physiochemical parameters",
+    "feature selection from 22",
+    "RandomForestClassifier",
+    "conference abstract",
+    "presentation outline",
+    "remote presentation"
+  ],
+  "events": [
+    {
+      "text": "Conference abstract title and abstract content were provided for a conference presentation.",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "The user asked for a presentation outline and possible questions that might be asked.",
+      "date_hint": "",
+      "turn_index": 8
+    }
+  ]
+}

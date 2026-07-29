@@ -1,0 +1,106 @@
+{
+  "session_id": "668a301e",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning meals for the week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want recipe ideas that use kale and carrots.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have leftover kale and carrots.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to make soup using leftover kale and carrots.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want suggestions on how to store leftover kale and carrots to keep them fresh.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to make a stir-fry with kale and carrots.",
+      "turn_index": 4
+    },
+    {
+      "text": "I bought almond milk.",
+      "turn_index": 4
+    },
+    {
+      "text": "I bought whole wheat bread.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want recipes that incorporate almond milk and whole wheat bread.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to use almond milk to make a smoothie with bananas.",
+      "turn_index": 6
+    },
+    {
+      "text": "I bought bananas on Saturday.",
+      "turn_index": 6
+    },
+    {
+      "text": "I went to the new store downtown on Saturday.",
+      "turn_index": 8
+    },
+    {
+      "text": "I was impressed by the new store downtown's selection of organic produce.",
+      "turn_index": 10
+    },
+    {
+      "text": "I bought fresh vegetables and fruits on Saturday.",
+      "turn_index": 10
+    },
+    {
+      "text": "I bought kale on Saturday.",
+      "turn_index": 10
+    },
+    {
+      "text": "I bought carrots on Saturday.",
+      "turn_index": 10
+    },
+    {
+      "text": "I bought apples on Saturday.",
+      "turn_index": 10
+    },
+    {
+      "text": "I bought bananas on Saturday.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "meal planning for the week",
+    "kale and carrots recipes",
+    "leftover kale and carrots soup",
+    "storing leftover produce",
+    "kale and carrot stir-fry",
+    "almond milk recipes",
+    "whole wheat bread recipes",
+    "almond milk smoothie",
+    "banana smoothie",
+    "grocery shopping trip Saturday",
+    "new store downtown",
+    "organic produce selection",
+    "fresh vegetables and fruits",
+    "kale carrots apples bananas"
+  ],
+  "events": [
+    {
+      "text": "Grocery shopping trip to the new store downtown",
+      "date_hint": "on Saturday",
+      "turn_index": 8
+    },
+    {
+      "text": "Bought fresh vegetables and fruits including kale, carrots, apples, and bananas",
+      "date_hint": "on Saturday",
+      "turn_index": 10
+    }
+  ]
+}

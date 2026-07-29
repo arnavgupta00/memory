@@ -1,0 +1,101 @@
+{
+  "session_id": "58ec258f_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to a new city and I want recommendations for affordable, centrally-located accommodations.",
+      "turn_index": 0
+    },
+    {
+      "text": "I recently visited Paris.",
+      "turn_index": 0
+    },
+    {
+      "text": "I stayed in a cozy hostel in the Latin Quarter in Paris.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in visiting Barcelona.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to visit Spain.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know whether the Gothic Quarter or El Raval is more suitable for a solo traveler like me.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am looking for a lively and social experience.",
+      "turn_index": 4
+    },
+    {
+      "text": "I had a great time staying in a hostel in the Latin Quarter in Paris.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am hoping for something similar in Barcelona.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of taking a day trip to Montserrat from Barcelona.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have heard that Montserrat is a beautiful mountain range.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of visiting Montserrat on my own.",
+      "turn_index": 8
+    },
+    {
+      "text": "I visited Versailles on a solo trip in Paris.",
+      "turn_index": 8
+    },
+    {
+      "text": "I found exploring on my own schedule to be really liberating.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know if it is safe for a solo female traveler to visit Montserrat.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "planning a trip to a new city",
+    "affordable centrally-located accommodations",
+    "Paris Latin Quarter hostel",
+    "Barcelona accommodations",
+    "Gothic Quarter vs El Raval",
+    "solo traveler neighborhood",
+    "lively social experience",
+    "day trip to Montserrat",
+    "Montserrat mountain range",
+    "solo female traveler safety",
+    "solo trip to Versailles"
+  ],
+  "events": [
+    {
+      "text": "Trip to Paris and stay in a cozy hostel in the Latin Quarter",
+      "date_hint": "recently",
+      "turn_index": 0
+    },
+    {
+      "text": "Considering Barcelona and comparing Gothic Quarter and El Raval for a solo traveler",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Planning a day trip to Montserrat from Barcelona",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Solo trip to Versailles in Paris",
+      "date_hint": "in Paris (timing not specified)",
+      "turn_index": 8
+    }
+  ]
+}

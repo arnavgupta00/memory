@@ -1,0 +1,69 @@
+{
+  "session_id": "2769b367_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Tokyo.",
+      "turn_index": 0
+    },
+    {
+      "text": "I stayed overnight at the Grand Hyatt Incheon on January 20.",
+      "turn_index": 0
+    },
+    {
+      "text": "I had good experiences with Hyatt hotels.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for traditional Japanese breakfast options near the Hilton Tokyo Shinjuku.",
+      "turn_index": 2
+    },
+    {
+      "text": "I used the hotel's fitness center a few times during my stay at Hilton Tokyo Shinjuku.",
+      "turn_index": 6
+    },
+    {
+      "text": "I used loyalty points to book a room at the Grand Hyatt DFW on my way back from Chicago.",
+      "turn_index": 6
+    },
+    {
+      "text": "I got upgraded to a suite at the Grand Hyatt DFW.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering booking a room at the Fontainebleau Miami Beach for a weekend getaway in April.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "Hilton Tokyo Shinjuku restaurants",
+    "Tokyo trip",
+    "Grand Hyatt Incheon Korean restaurant",
+    "January 20 overnight stay",
+    "traditional Japanese breakfast near hotel",
+    "Hilton Tokyo Shinjuku fitness center",
+    "loyalty points room booking",
+    "Grand Hyatt DFW suite upgrade",
+    "loyalty program benefits upgrades",
+    "Fontainebleau Miami Beach loyalty program",
+    "weekend getaway April",
+    "pool and beach facilities"
+  ],
+  "events": [
+    {
+      "text": "Stayed overnight at the Grand Hyatt Incheon",
+      "date_hint": "January 20",
+      "turn_index": 0
+    },
+    {
+      "text": "Used loyalty points to book a room at the Grand Hyatt DFW and received a suite upgrade",
+      "date_hint": "on my way back from Chicago",
+      "turn_index": 6
+    },
+    {
+      "text": "Considering booking a weekend getaway at the Fontainebleau Miami Beach in April",
+      "date_hint": "April",
+      "turn_index": 8
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "session_id": "9334f70b_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for healthy breakfast ideas to refuel after a big workout.",
+      "turn_index": 0
+    },
+    {
+      "text": "I just got back from the annual \"Run for Hunger\" 5K charity event.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am starving after the \"Run for Hunger\" 5K charity event.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am going to choose avocado toast with poached eggs.",
+      "turn_index": 2
+    },
+    {
+      "text": "I crave something with protein and complex carbs.",
+      "turn_index": 2
+    },
+    {
+      "text": "I raised $250 in donations for the \"Run for Hunger\" 5K charity event.",
+      "turn_index": 4
+    },
+    {
+      "text": "I exceeded my initial fundraising goal of $200 for the \"Run for Hunger\" 5K charity event.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have a busy schedule and often grab quick meals or snacks when on-the-go.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have a busy week ahead.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have a charity walk for cancer research coming up on Saturday.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to make sure I am well-rested and fueled for the charity walk for cancer research.",
+      "turn_index": 6
+    },
+    {
+      "text": "I feel anxious or stressed about an upcoming event.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning to wear my favorite running shoes for the charity walk.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have already laid out my outfit for Saturday morning.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am feeling pretty confident about the event.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am looking forward to seeing other walkers and supporters.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want advice on how to stay motivated and focused during a long walk or run.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "healthy breakfast ideas",
+    "post-workout refuel",
+    "Run for Hunger 5K",
+    "avocado toast with poached eggs",
+    "protein and complex carbs",
+    "hydration after a run",
+    "fundraising donations",
+    "raised $250",
+    "goal $200",
+    "busy schedule quick meals",
+    "meal prep and snacks",
+    "charity walk for cancer research",
+    "good night's sleep anxiety",
+    "favorite running shoes",
+    "outfit laid out Saturday morning",
+    "stay motivated during long walk or run"
+  ],
+  "events": [
+    {
+      "text": "Annual \"Run for Hunger\" 5K charity event",
+      "date_hint": "annual (date not specified)",
+      "turn_index": 0
+    },
+    {
+      "text": "Fundraising for \"Run for Hunger\" 5K charity event (raised $250, exceeded $200 goal)",
+      "date_hint": "date not specified",
+      "turn_index": 4
+    },
+    {
+      "text": "Charity walk for cancer research",
+      "date_hint": "Saturday",
+      "turn_index": 6
+    },
+    {
+      "text": "Charity walk outfit planned for Saturday morning",
+      "date_hint": "Saturday morning",
+      "turn_index": 8
+    }
+  ]
+}

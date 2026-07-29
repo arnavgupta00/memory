@@ -1,0 +1,110 @@
+{
+  "session_id": "4e8b74ca_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for fashion advice.",
+      "turn_index": 0
+    },
+    {
+      "text": "I just got back from a trip to Paris.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am trying to decide what to wear to a casual dinner this weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I bought a black turtleneck sweater from a vintage clothing store on the Champs-Élysées.",
+      "turn_index": 0
+    },
+    {
+      "text": "I like the casual-cool option.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought a few pieces from a vintage clothing store on the Champs-Élysées.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought a pair of distressed denim jeans from the vintage clothing store on the Champs-Élysées.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have worn the distressed denim jeans twice since getting back from Paris.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have a high-waisted floral skirt from the same vintage store.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have not worn the high-waisted floral skirt yet.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of getting a tailor to alter a few pieces in my closet.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have a silk blouse that is too loose and needs alterations.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have a pair of trousers that are too long and need alterations.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have a leather jacket that is too snug and needs alterations.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been meaning to get my pieces fixed for a while but I haven't had the time.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am looking forward to getting these pieces altered and refreshing my wardrobe.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have been meaning to organize my closet.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have been meaning to donate some old bags that I no longer use.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "fashion advice",
+    "trip to Paris",
+    "casual dinner outfit",
+    "black turtleneck sweater",
+    "vintage clothing store",
+    "Champs-Élysées",
+    "distressed denim jeans",
+    "high-waisted floral skirt",
+    "styling a high-waisted skirt",
+    "choosing a tailor",
+    "silk blouse alterations",
+    "closet declutter and organize",
+    "donate old bags"
+  ],
+  "events": [
+    {
+      "text": "Trip to Paris",
+      "date_hint": "just got back from Paris",
+      "turn_index": 0
+    },
+    {
+      "text": "Casual dinner this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 0
+    },
+    {
+      "text": "Wore distressed denim jeans twice since returning from Paris",
+      "date_hint": "since getting back from Paris",
+      "turn_index": 2
+    }
+  ]
+}

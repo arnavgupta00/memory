@@ -1,0 +1,96 @@
+{
+  "session_id": "de11db87_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning workouts for the next week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been doing yoga and weightlifting.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a workout schedule that balances upper body workouts with cardio and flexibility exercises.",
+      "turn_index": 0
+    },
+    {
+      "text": "I recently started incorporating stretching exercises into my daily routine.",
+      "turn_index": 0
+    },
+    {
+      "text": "My stretching exercises focus on my legs and hips.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am concerned about doing lower body weightlifting on Wednesdays.",
+      "turn_index": 2
+    },
+    {
+      "text": "I do a 3-mile walk or jog on weekends.",
+      "turn_index": 2
+    },
+    {
+      "text": "I chose to swap lower body weightlifting on Wednesdays with another day (option 1).",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to get cardio in on Thursday.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to have a rest day on Friday.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to do a weekend walk or jog.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to add 2-3 core exercises to my weightlifting sessions.",
+      "turn_index": 6
+    },
+    {
+      "text": "My planned core exercises are planks, Russian twists, and leg raises.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have heard that planks are great for building overall core strength and stability.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to start with 20-30 second holds for planks.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to gradually increase the duration of my planks as I build endurance.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "workout schedule next week",
+    "yoga and weightlifting",
+    "upper body workouts",
+    "cardio and flexibility",
+    "daily stretching legs and hips",
+    "lower body weightlifting Wednesday",
+    "3-mile walk or jog weekends",
+    "core exercises",
+    "planks hold duration",
+    "Russian twists",
+    "leg raises",
+    "cardio Thursday rest day Friday"
+  ],
+  "events": [
+    {
+      "text": "Plan cardio on Thursday and rest on Friday before the weekend walk or jog",
+      "date_hint": "Thursday and Friday (relative to next weekend)",
+      "turn_index": 4
+    },
+    {
+      "text": "Start with 20-30 second holds for planks and gradually increase duration",
+      "date_hint": "starting now / next routine",
+      "turn_index": 8
+    }
+  ]
+}

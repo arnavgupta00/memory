@@ -1,0 +1,95 @@
+{
+  "session_id": "cca30919",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am moving to Melbourne soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need help finding good coffee shops near the University of Melbourne campus.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to know when the semester starts at UniMelb.",
+      "turn_index": 2
+    },
+    {
+      "text": "I received my acceptance letter from UniMelb on February 10th.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am looking for good places to buy winter clothing in Melbourne.",
+      "turn_index": 4
+    },
+    {
+      "text": "My family and I went shopping last weekend for winter clothing in Melbourne.",
+      "turn_index": 6
+    },
+    {
+      "text": "I bought thermal tops.",
+      "turn_index": 6
+    },
+    {
+      "text": "I bought a warm coat.",
+      "turn_index": 6
+    },
+    {
+      "text": "I bought waterproof boots.",
+      "turn_index": 6
+    },
+    {
+      "text": "I need to know more about the public transportation system in Melbourne.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know whether I will need to buy a car.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know if there are student discounts or deals on Myki cards or public transport fares.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to apply for the Student Concession Myki and a PTV Tertiary Student ID.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know about student discounts or deals on health insurance in Australia.",
+      "turn_index": 10
+    },
+    {
+      "text": "I already have a health insurance policy with Allianz Care Australia.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "moving to Melbourne",
+    "University of Melbourne campus coffee shops",
+    "UniMelb semester start date",
+    "acceptance letter February 10",
+    "winter clothing shops Melbourne",
+    "thermal tops",
+    "warm coat",
+    "waterproof boots",
+    "public transportation system Melbourne",
+    "need to buy a car",
+    "Myki card student discounts",
+    "PTV Tertiary Student ID",
+    "Student Concession Myki",
+    "health insurance student discounts Australia",
+    "Allianz Care Australia"
+  ],
+  "events": [
+    {
+      "text": "Received UniMelb acceptance letter",
+      "date_hint": "February 10th",
+      "turn_index": 4
+    },
+    {
+      "text": "Went shopping for winter clothing with family",
+      "date_hint": "last weekend",
+      "turn_index": 6
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "session_id": "sharegpt_EvgMYt3_8",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have a WordPress website.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to create a paraphrasing tool on my WordPress website with fully frontend and backend.",
+      "turn_index": 0
+    },
+    {
+      "text": "My frontend is written in HTML, CSS, and JavaScript.",
+      "turn_index": 0
+    },
+    {
+      "text": "My frontend has two boxes on the first page where the user enters text to paraphrase and sees the paraphrased result.",
+      "turn_index": 0
+    },
+    {
+      "text": "My frontend has a button named \"Paraphrase\" that paraphrases the content entered in the first box.",
+      "turn_index": 0
+    },
+    {
+      "text": "In my UI, the two boxes are along side each other and the button is under the first box.",
+      "turn_index": 0
+    },
+    {
+      "text": "My frontend UI and UX are advanced and the interface is good.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the backend to use NLP algorithms, machine learning, and a paraphrasing algorithm.",
+      "turn_index": 0
+    },
+    {
+      "text": "The frontend sends the user-entered paragraph or line to the backend for paraphrasing.",
+      "turn_index": 0
+    },
+    {
+      "text": "After paraphrasing, the backend returns the paraphrased content to the frontend to display in the second box.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user can copy the paraphrased content from the second box.",
+      "turn_index": 0
+    },
+    {
+      "text": "My JavaScript frontend sends a POST request to the API URL \"/paraphrase.php\".",
+      "turn_index": 0
+    },
+    {
+      "text": "My JavaScript frontend appends the input text to the request using FormData with the key 'text'.",
+      "turn_index": 0
+    },
+    {
+      "text": "My JavaScript frontend expects the backend response as JSON and reads data.paraphrasedText.",
+      "turn_index": 0
+    },
+    {
+      "text": "My JavaScript code includes loading a T5 model using tf.loadGraphModel('path/to/t5/model.json').",
+      "turn_index": 0
+    },
+    {
+      "text": "My JavaScript code uses a Tokenizer to encode input text.",
+      "turn_index": 0
+    },
+    {
+      "text": "My JavaScript code uses model.executeAsync with parameters max_length: 50 and num_beams: 10.",
+      "turn_index": 0
+    },
+    {
+      "text": "My JavaScript code uses early_stopping: true and return_tensors: true.",
+      "turn_index": 0
+    },
+    {
+      "text": "I asked how to integrate the given frontend with the given backend code on a WordPress website page.",
+      "turn_index": 2
+    }
+  ],
+  "keyphrases": [
+    "WordPress paraphrasing tool",
+    "frontend HTML CSS JavaScript",
+    "backend paraphrase.php",
+    "NLP paraphrasing algorithm",
+    "machine learning backend",
+    "T5 model GraphModel",
+    "tf.loadGraphModel",
+    "JavaScript fetch POST",
+    "FormData text parameter",
+    "paraphrasedText JSON response",
+    "WordPress page integration"
+  ],
+  "events": []
+}

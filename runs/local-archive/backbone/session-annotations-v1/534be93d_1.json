@@ -1,0 +1,122 @@
+{
+  "session_id": "534be93d_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have a yoga class every Tuesday from 8:30 PM to 9:30 PM.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need to send a report to my manager on Wednesday by 5 PM.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have a meeting on Thursday at 2 PM that is expected to last an hour.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to work on a project on Saturday.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to dedicate 3 hours to the project on Saturday in the morning.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want a reminder for the Wednesday report at 4 PM.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want a 1-hour reminder for the Thursday meeting.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want a reminder for the Saturday project at 8:30 AM.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have a video call with my sister on Wednesdays.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to do relaxing activities after my video call with my sister on Wednesdays.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think I might read or listen to music on Wednesdays after my video call with my sister.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want a reminder to start winding down at 10 PM on Wednesdays.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to aim to be in bed by 10:30 PM on Wednesdays.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to avoid using my phone at least an hour before sleeping on Wednesdays.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to put my phone away by 9:30 PM on Wednesdays.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "yoga class Tuesday 8:30 PM 9:30 PM",
+    "weekly planning reminders",
+    "Wednesday report to manager 5 PM",
+    "Thursday meeting 2 PM one hour",
+    "Saturday project 3 hours morning",
+    "Wednesday reminder 4 PM report",
+    "Thursday reminder 1 hour before meeting",
+    "Saturday reminder 8:30 AM project",
+    "Wednesday video call with sister",
+    "Wednesday wind down reminder 10 PM",
+    "bedtime 10:30 PM",
+    "no phone before sleeping 9:30 PM"
+  ],
+  "events": [
+    {
+      "text": "Yoga class",
+      "date_hint": "every Tuesday 8:30 PM to 9:30 PM",
+      "turn_index": 0
+    },
+    {
+      "text": "Send report to manager",
+      "date_hint": "Wednesday by 5 PM",
+      "turn_index": 2
+    },
+    {
+      "text": "Meeting",
+      "date_hint": "Thursday at 2 PM for about an hour",
+      "turn_index": 2
+    },
+    {
+      "text": "Work on project",
+      "date_hint": "Saturday morning for 3 hours",
+      "turn_index": 2
+    },
+    {
+      "text": "Video call with sister",
+      "date_hint": "Wednesdays (after video call)",
+      "turn_index": 6
+    },
+    {
+      "text": "Start winding down",
+      "date_hint": "Wednesdays at 10 PM",
+      "turn_index": 8
+    },
+    {
+      "text": "Aim to be in bed",
+      "date_hint": "Wednesdays by 10:30 PM",
+      "turn_index": 8
+    },
+    {
+      "text": "Put phone away",
+      "date_hint": "Wednesdays by 9:30 PM",
+      "turn_index": 10
+    }
+  ]
+}

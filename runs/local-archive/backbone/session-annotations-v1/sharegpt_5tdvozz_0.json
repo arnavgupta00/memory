@@ -1,0 +1,69 @@
+{
+  "session_id": "sharegpt_5tdvozz_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want the assistant to keep responses nice and concise.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am planning a Discord bot project that listens to JIRA webhooks.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want the Discord bot to determine who to mention in a Discord server based on the type of JIRA events invoked.",
+      "turn_index": 2
+    },
+    {
+      "text": "I asked for suggestions on the minimum viable product requirements for the project.",
+      "turn_index": 4
+    },
+    {
+      "text": "I designed a draft data model for the project.",
+      "turn_index": 6
+    },
+    {
+      "text": "My draft data model includes a User entity with fields: jira id, discord id, type, and excludedRules.",
+      "turn_index": 6
+    },
+    {
+      "text": "My draft data model includes an EventRule entity with fields: type, targets, exclusion, and includeInvokedUser.",
+      "turn_index": 6
+    },
+    {
+      "text": "My draft data model includes a UserType entity with fields: users, name, and registeredRules.",
+      "turn_index": 6
+    },
+    {
+      "text": "In my draft data model, the relationship between User and EventRule is many to many.",
+      "turn_index": 6
+    },
+    {
+      "text": "In my draft data model, the relationship between UserType and EventRule is many to many.",
+      "turn_index": 6
+    },
+    {
+      "text": "In my draft data model, the relationship between UserType and User is one to many.",
+      "turn_index": 6
+    },
+    {
+      "text": "I asked whether there are any issues with the basic design I provided.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "Discord bot project",
+    "JIRA webhook listener",
+    "mention users in Discord",
+    "event type based routing",
+    "minimum viable product requirements",
+    "data model draft",
+    "User entity jira id discord id",
+    "EventRule webhook event type",
+    "UserType mapping rules",
+    "many to many relationships",
+    "includeInvokedUser boolean",
+    "excludedRules and registeredRules"
+  ],
+  "events": []
+}

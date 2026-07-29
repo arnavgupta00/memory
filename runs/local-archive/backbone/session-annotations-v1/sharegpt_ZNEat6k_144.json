@@ -1,0 +1,53 @@
+{
+  "session_id": "sharegpt_ZNEat6k_144",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user wants the JSON field named FieldTypes renamed back to Constraints in the ResourceAccesses portion.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user says none of the user accesses specify a specific resource.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user says Resources of a resource type should not be subnodes of the AzLocalRight.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user says resource types have AzLocalRights.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user says AzLocalRights have FieldTypes with possible assignable fieldtypevalues.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user says the application can have a list of resources of each type.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user says each resource in the application list has single values for properties of their objects that match FieldTypes.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user says the values for those properties match the FieldTypes values defined.",
+      "turn_index": 4
+    }
+  ],
+  "keyphrases": [
+    "ResourceAccesses JSON",
+    "Rename FieldTypes to Constraints",
+    "FieldTypes",
+    "Constraints field",
+    "user accesses",
+    "specific resource",
+    "resource type",
+    "AzLocalRight",
+    "subnodes",
+    "AzLocalRights",
+    "assignable fieldtypevalues",
+    "application list of resources"
+  ],
+  "events": []
+}

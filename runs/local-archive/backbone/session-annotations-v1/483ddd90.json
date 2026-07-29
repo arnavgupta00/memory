@@ -1,0 +1,98 @@
+{
+  "session_id": "483ddd90",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I need help keeping track of my vehicle maintenance.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need a reminder for my next oil change.",
+      "turn_index": 0
+    },
+    {
+      "text": "My car is a Honda Civic.",
+      "turn_index": 2
+    },
+    {
+      "text": "My car's current mileage is around 72,000 miles.",
+      "turn_index": 2
+    },
+    {
+      "text": "The recommended oil change interval for my car is every 7,500 miles.",
+      "turn_index": 2
+    },
+    {
+      "text": "My last oil change was about three weeks ago.",
+      "turn_index": 2
+    },
+    {
+      "text": "My last oil change was around 71,500 miles.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need tips on how to wash my car properly.",
+      "turn_index": 4
+    },
+    {
+      "text": "I used a new brand of wax I bought from an auto parts store last time I washed my car.",
+      "turn_index": 6
+    },
+    {
+      "text": "That wax made the paint job pop.",
+      "turn_index": 6
+    },
+    {
+      "text": "I need help maintaining the wax job between washes.",
+      "turn_index": 6
+    },
+    {
+      "text": "I need to get my bike's tires pumped up.",
+      "turn_index": 8
+    },
+    {
+      "text": "I need a reminder on how to properly inflate my bike tires and what pressure to use.",
+      "turn_index": 8
+    },
+    {
+      "text": "I need help with how to properly clean my bike chain.",
+      "turn_index": 10
+    },
+    {
+      "text": "I ride my bike to work on Fridays.",
+      "turn_index": 10
+    },
+    {
+      "text": "My bike chain has been getting pretty dirty.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "vehicle maintenance tracking",
+    "oil change reminder",
+    "Honda Civic",
+    "72,000 miles",
+    "7,500-mile oil change interval",
+    "last oil change three weeks ago",
+    "car washing tips",
+    "auto parts store wax",
+    "maintain wax job between washes",
+    "bike tire inflation",
+    "bike tire pressure",
+    "clean bike chain",
+    "bike chain cleaning",
+    "ride bike to work Fridays"
+  ],
+  "events": [
+    {
+      "text": "Last oil change",
+      "date_hint": "about three weeks ago",
+      "turn_index": 2
+    },
+    {
+      "text": "Riding bike to work on Fridays",
+      "date_hint": "Fridays",
+      "turn_index": 10
+    }
+  ]
+}

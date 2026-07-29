@@ -1,0 +1,36 @@
+{
+  "session_id": "sharegpt_5m7gg5F_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am asking to predict the entities of an article one sentence at a time.",
+      "turn_index": 0
+    }
+  ],
+  "keyphrases": [
+    "fusion ignition",
+    "Lawrence Livermore National Laboratory",
+    "National Ignition Facility (NIF)",
+    "scientific energy breakeven",
+    "controlled fusion experiment",
+    "December 5, 2022",
+    "U.S. Department of Energy (DOE)",
+    "National Nuclear Security Administration (NNSA)",
+    "Stockpile Stewardship Program",
+    "clean power",
+    "net-zero carbon economy",
+    "President Biden goal"
+  ],
+  "events": [
+    {
+      "text": "A team at LLNL’s National Ignition Facility (NIF) conducted the first controlled fusion experiment to reach fusion ignition / scientific energy breakeven.",
+      "date_hint": "December 5, 2022",
+      "turn_index": 0
+    },
+    {
+      "text": "The U.S. Department of Energy (DOE) and NNSA announced the achievement of fusion ignition at Lawrence Livermore National Laboratory (LLNL).",
+      "date_hint": "today (relative to the article)",
+      "turn_index": 0
+    }
+  ]
+}

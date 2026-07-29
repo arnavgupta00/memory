@@ -1,0 +1,93 @@
+{
+  "session_id": "8c652eb0_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Miami.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been to Miami before.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been traveling a lot recently.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have taken 2 personal vacation flights in the past month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking to stay in a hotel near the airport.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have an early morning flight out of MIA.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am looking for a hotel that offers shuttle services to the airport.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to rent a car for a day to explore the surrounding areas of Miami.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want car rental companies conveniently located near the airport.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want car rental companies that offer a wide range of vehicles.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have experience with car rentals.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of renting an SUV for the day.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of visiting Everglades National Park during my day trip.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of booking the Everglades National Park Guided Tour.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to Miami",
+    "travel recommendations",
+    "hotel near airport",
+    "early morning flight out of MIA",
+    "airport shuttle hotel",
+    "car rental near airport",
+    "wide range of vehicles",
+    "rent an SUV for a day",
+    "SUV models for day trip",
+    "Everglades National Park day trip",
+    "Everglades National Park guided tour",
+    "route to see park highlights"
+  ],
+  "events": [
+    {
+      "text": "Took 2 personal vacation flights in the past month.",
+      "date_hint": "past month",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to visit Everglades National Park during a day trip.",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Planning to book the Everglades National Park Guided Tour.",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

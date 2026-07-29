@@ -1,0 +1,121 @@
+{
+  "session_id": "87252d80_5",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have been traveling a lot lately.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to keep track of my trips by making a list of all the places I've been to recently.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to focus on the last 3 months.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to list domestic trips within the US.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to organize my list by city.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want my list to include dates and modes of transportation if possible.",
+      "turn_index": 2
+    },
+    {
+      "text": "I spent 5 days at my aunt's house in Miami.",
+      "turn_index": 2
+    },
+    {
+      "text": "I went to Chicago on February 10th for a business meeting.",
+      "turn_index": 4
+    },
+    {
+      "text": "I flew with United Airlines to Chicago.",
+      "turn_index": 4
+    },
+    {
+      "text": "I went to New York City on February 17th for a friend's birthday party.",
+      "turn_index": 6
+    },
+    {
+      "text": "I stayed in New York City for 3 nights.",
+      "turn_index": 6
+    },
+    {
+      "text": "I took the subway to get around New York City.",
+      "turn_index": 6
+    },
+    {
+      "text": "I took a quick 3-day trip to Los Angeles for a conference on March 1st.",
+      "turn_index": 8
+    },
+    {
+      "text": "I flew with American Airlines to Los Angeles.",
+      "turn_index": 8
+    },
+    {
+      "text": "I flew to Miami on April 12th.",
+      "turn_index": 10
+    },
+    {
+      "text": "My Miami trip dates should be April 12th - 17th.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "travel tracking",
+    "list of trips",
+    "last 3 months",
+    "domestic trips within the US",
+    "organize by city",
+    "include dates and modes of transportation",
+    "Miami aunt's house",
+    "Chicago business meeting February 10",
+    "United Airlines",
+    "New York City friend's birthday party February 17",
+    "3 nights in New York City",
+    "subway in New York City",
+    "Los Angeles conference March 1",
+    "American Airlines",
+    "3-day trip to Los Angeles",
+    "Miami trip April 12 17",
+    "flying to Miami"
+  ],
+  "events": [
+    {
+      "text": "Trip to Chicago for a business meeting",
+      "date_hint": "February 10th",
+      "turn_index": 4
+    },
+    {
+      "text": "Trip to New York City for a friend's birthday party",
+      "date_hint": "February 17th",
+      "turn_index": 6
+    },
+    {
+      "text": "3-night stay in New York City",
+      "date_hint": "February 17th (3 nights)",
+      "turn_index": 6
+    },
+    {
+      "text": "3-day trip to Los Angeles for a conference",
+      "date_hint": "March 1st",
+      "turn_index": 8
+    },
+    {
+      "text": "Trip to Miami",
+      "date_hint": "April 12th - 17th",
+      "turn_index": 10
+    },
+    {
+      "text": "Spent 5 days at aunt's house in Miami",
+      "date_hint": "(implied within last 3 months)",
+      "turn_index": 2
+    }
+  ]
+}

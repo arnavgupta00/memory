@@ -1,0 +1,87 @@
+{
+  "session_id": "e2cd250e_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to organize my schedule for the week ahead.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to set a reminder for a follow-up call with a client I spoke with on Thursday afternoon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I scheduled the follow-up call for next Thursday afternoon.",
+      "turn_index": 2
+    },
+    {
+      "text": "I had a conference call with the client in the afternoon on Thursday.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to catch up on TV shows over the weekend.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been binge-watching a favorite show for weeks.",
+      "turn_index": 4
+    },
+    {
+      "text": "My favorite show is a mix of drama and mystery.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been watching episode 12 or episode 13 of my favorite show.",
+      "turn_index": 6
+    },
+    {
+      "text": "I do not remember the title of my show right now.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want recommendations for new movies on Netflix to watch.",
+      "turn_index": 8
+    },
+    {
+      "text": "I started watching a movie on Wednesday evening on Netflix.",
+      "turn_index": 8
+    },
+    {
+      "text": "I fell asleep halfway through the movie I started watching on Wednesday evening.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "organize schedule",
+    "week ahead",
+    "reminder follow-up call",
+    "client conference call",
+    "Thursday afternoon",
+    "next Thursday afternoon",
+    "same time slot",
+    "catch up on TV shows",
+    "weekend binge-watching",
+    "favorite show drama mystery",
+    "episode 12 or 13",
+    "Netflix movie recommendations",
+    "Wednesday evening movie",
+    "fell asleep halfway through"
+  ],
+  "events": [
+    {
+      "text": "Follow-up call reminder scheduled for next Thursday afternoon",
+      "date_hint": "next Thursday afternoon",
+      "turn_index": 2
+    },
+    {
+      "text": "Conference call with the client held in the afternoon on Thursday",
+      "date_hint": "Thursday afternoon",
+      "turn_index": 2
+    },
+    {
+      "text": "Started watching a Netflix movie on Wednesday evening and fell asleep halfway through",
+      "date_hint": "Wednesday evening",
+      "turn_index": 8
+    }
+  ]
+}

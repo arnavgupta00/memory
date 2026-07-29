@@ -1,0 +1,106 @@
+{
+  "session_id": "sharegpt_VQ0Td3t_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am going on a vacation to San Juan, Puerto Rico from June 29, 2023 through July 4, 2023.",
+      "turn_index": 0
+    },
+    {
+      "text": "There are 2 of us on this vacation.",
+      "turn_index": 0
+    },
+    {
+      "text": "We are staying at the Courtyard by Marriott Isla Verde Beach Resort.",
+      "turn_index": 0
+    },
+    {
+      "text": "Our flight arrives at San Juan airport on June 29, 2023 at 1:30am.",
+      "turn_index": 0
+    },
+    {
+      "text": "We return home on a flight that leaves San Juan airport on July 4, 2023 at 2pm.",
+      "turn_index": 0
+    },
+    {
+      "text": "We want to spend 60% of our time exploring downtown San Juan and the surrounding area.",
+      "turn_index": 0
+    },
+    {
+      "text": "We want to spend 40% of our time at the beaches.",
+      "turn_index": 0
+    },
+    {
+      "text": "We would like at least 4 hours to see the rain forest.",
+      "turn_index": 0
+    },
+    {
+      "text": "We would like to see various castles in downtown San Juan.",
+      "turn_index": 0
+    },
+    {
+      "text": "We want at least 4 hours to see the rain forest on one day.",
+      "turn_index": 0
+    },
+    {
+      "text": "We want the majority of our time within 30 minutes of drive time from our hotel, except for 1 day when we go to the rain forest.",
+      "turn_index": 0
+    },
+    {
+      "text": "I made a mistake in my original prompt about the arrival date.",
+      "turn_index": 2
+    },
+    {
+      "text": "We arrive late June 28 at 1:30am instead of on June 29.",
+      "turn_index": 2
+    },
+    {
+      "text": "We would like to regenerate our itinerary.",
+      "turn_index": 2
+    },
+    {
+      "text": "We would like additional details about what we should explore when in downtown San Jaun.",
+      "turn_index": 2
+    },
+    {
+      "text": "We would like to go to some local bars for drinks scattered throughout our vacation.",
+      "turn_index": 2
+    }
+  ],
+  "keyphrases": [
+    "San Juan Puerto Rico vacation",
+    "June 29 2023 July 4 2023 itinerary",
+    "Courtyard by Marriott Isla Verde Beach Resort",
+    "San Juan airport arrival 1:30am",
+    "San Juan airport departure 2pm July 4",
+    "downtown San Juan exploration",
+    "beach time 40%",
+    "rain forest 4 hours",
+    "castles in downtown San Juan",
+    "within 30 minutes drive time from hotel",
+    "lunch and dinner restaurant plans",
+    "local bars for drinks"
+  ],
+  "events": [
+    {
+      "text": "Vacation in San Juan, Puerto Rico from June 29, 2023 through July 4, 2023",
+      "date_hint": "June 29, 2023 through July 4, 2023",
+      "turn_index": 0
+    },
+    {
+      "text": "Flight arrival at San Juan airport at 1:30am",
+      "date_hint": "June 29, 2023 1:30am (original)",
+      "turn_index": 0
+    },
+    {
+      "text": "Flight departure from San Juan airport at 2pm",
+      "date_hint": "July 4, 2023 2pm",
+      "turn_index": 0
+    },
+    {
+      "text": "Arrival date correction: arrive late June 28 at 1:30am instead of June 29",
+      "date_hint": "late June 28, 2023 1:30am",
+      "turn_index": 2
+    }
+  ]
+}

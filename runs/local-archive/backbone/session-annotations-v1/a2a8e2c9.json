@@ -1,0 +1,72 @@
+{
+  "session_id": "a2a8e2c9",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Tokyo, Japan.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need to apply for a visa soon for my trip to Tokyo, Japan.",
+      "turn_index": 0
+    },
+    {
+      "text": "I booked my trip to Tokyo on January 15th.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning to depart on April 1st.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of buying a Suica card online.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to make sure I have all the necessary documents ready for my visa application first.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to exchange some currency at the airport just in case.",
+      "turn_index": 10
+    },
+    {
+      "text": "I plan to use an ATM to withdraw more Japanese yen as needed.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have heard that some places in Japan still don't accept credit cards.",
+      "turn_index": 10
+    },
+    {
+      "text": "I think it is good to have some cash on hand.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Tokyo trip",
+    "Japanese visa application documents",
+    "Suica card",
+    "buy Suica online",
+    "visa processing time",
+    "January 15 trip booking",
+    "April 1 departure",
+    "exchange currency for Japanese yen",
+    "exchange at airport",
+    "use ATM for yen",
+    "credit cards not accepted in Japan",
+    "have cash on hand"
+  ],
+  "events": [
+    {
+      "text": "Booked a trip to Tokyo",
+      "date_hint": "January 15th",
+      "turn_index": 6
+    },
+    {
+      "text": "Planned departure from Tokyo trip",
+      "date_hint": "April 1st",
+      "turn_index": 6
+    }
+  ]
+}

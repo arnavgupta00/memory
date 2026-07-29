@@ -1,0 +1,116 @@
+{
+  "session_id": "d22a462a_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to book a tennis court at the local community center for this Saturday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I played tennis with my colleague Rachel at the local community center last weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to get more practice playing tennis with Rachel.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to book the tennis court first to make sure I can get a good time slot.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been trying to improve my volleys.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of booking the tennis court for 10 am.",
+      "turn_index": 4
+    },
+    {
+      "text": "I usually do a warm-up before playing as part of my routine.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been doing forehand volley drills where my partner hits a forehand and I try to volley it back.",
+      "turn_index": 6
+    },
+    {
+      "text": "The forehand volley drills help me develop my reaction time and hand-eye coordination.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been working on keeping my racquet in front of the ball.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been using a lighter grip pressure.",
+      "turn_index": 8
+    },
+    {
+      "text": "Keeping my racquet in front of the ball and using a lighter grip pressure helps me be more precise and consistent with my volleys.",
+      "turn_index": 8
+    },
+    {
+      "text": "I should work on my backhand volleys too.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been playing in a doubles tournament at the club recently.",
+      "turn_index": 10
+    },
+    {
+      "text": "My doubles team made it to the semi-finals.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am planning to play in another tournament next month.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am trying to get as much practice as possible to prepare for the next tournament.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "book tennis court",
+    "local community center",
+    "this Saturday",
+    "10 am court booking",
+    "tennis volleys practice",
+    "warm-up routine",
+    "forehand volley drills",
+    "reaction time",
+    "hand-eye coordination",
+    "racquet in front of the ball",
+    "lighter grip pressure",
+    "doubles tournament semi-finals",
+    "next month tournament"
+  ],
+  "events": [
+    {
+      "text": "Book a tennis court at the local community center for this Saturday",
+      "date_hint": "this Saturday",
+      "turn_index": 0
+    },
+    {
+      "text": "Plan to focus on improving volleys this Saturday",
+      "date_hint": "this Saturday",
+      "turn_index": 2
+    },
+    {
+      "text": "Book the tennis court for 10 am",
+      "date_hint": "10 am",
+      "turn_index": 4
+    },
+    {
+      "text": "Play in a doubles tournament at the club and reach the semi-finals",
+      "date_hint": "recently",
+      "turn_index": 10
+    },
+    {
+      "text": "Plan to play in another tournament next month",
+      "date_hint": "next month",
+      "turn_index": 10
+    }
+  ]
+}

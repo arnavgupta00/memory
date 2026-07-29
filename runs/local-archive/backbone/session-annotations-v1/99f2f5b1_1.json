@@ -1,0 +1,64 @@
+{
+  "session_id": "99f2f5b1_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a family trip to Disneyland soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I visited Disneyland on Easter Sunday with my family.",
+      "turn_index": 0
+    },
+    {
+      "text": "I had an amazing time at Disneyland on Easter Sunday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I rode the \"It's a Small World\" ride at Disneyland on Easter Sunday.",
+      "turn_index": 0
+    },
+    {
+      "text": "My niece's favorite ride at Disneyland on Easter Sunday was \"It's a Small World\".",
+      "turn_index": 4
+    },
+    {
+      "text": "My niece couldn't get enough of the \"It's a Small World\" ride.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of attending Halloween Horror Nights at Universal Studios Hollywood soon.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "family trip to Disneyland",
+    "Star Wars: Galaxy's Edge food",
+    "Disneyland Easter Sunday",
+    "It's a Small World ride",
+    "holiday special features",
+    "Christmas holiday at Disneyland",
+    "holiday season events and activities",
+    "must-ride attractions for all ages",
+    "young kids Disneyland attractions",
+    "Halloween Horror Nights tips",
+    "Universal Studios Hollywood Halloween Horror Nights"
+  ],
+  "events": [
+    {
+      "text": "Visited Disneyland on Easter Sunday with my family",
+      "date_hint": "Easter Sunday",
+      "turn_index": 0
+    },
+    {
+      "text": "My niece's favorite ride was \"It's a Small World\" during the Easter Sunday visit",
+      "date_hint": "Easter Sunday",
+      "turn_index": 4
+    },
+    {
+      "text": "Attending Halloween Horror Nights at Universal Studios Hollywood soon",
+      "date_hint": "soon",
+      "turn_index": 8
+    }
+  ]
+}

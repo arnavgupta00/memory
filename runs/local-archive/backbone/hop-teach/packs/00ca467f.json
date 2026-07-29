@@ -1,0 +1,41 @@
+{
+  "question_id": "00ca467f",
+  "question_type": "multi-session",
+  "question": "How many doctor's appointments did I go to in March?",
+  "question_date": "2023/03/27 (Mon) 23:35",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_39900a0a_1",
+    "answer_39900a0a_2",
+    "answer_39900a0a_3"
+  ],
+  "haystack_session_count": 47,
+  "notes_coverage": "partial",
+  "annotated_session_count": 7,
+  "gold_sessions": [
+    {
+      "session_id": "answer_39900a0a_1",
+      "date": "2023/03/27 (Mon) 20:56",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_39900a0a_1\n[session_date] 2023/03/27 (Mon) 20:56\n[notes] (empty)",
+      "user_turns": "[turn 0] I've been dealing with a lingering cough for six weeks now, and I'm wondering if you can recommend some natural remedies to help soothe my symptoms. By the way, I finally went to see my primary care physician, Dr. Smith, on March 3rd, and he diagnosed me with bronchitis.\n\n[turn 2] I've been doing some of those remedies already, especially the steam inhalation and honey. But I'm still experiencing some discomfort at night, so I was wondering if you could suggest some ways to help me sleep better with bronchitis?\n\n[turn 4] I've been trying some of those tips, but I still wake up with a pretty bad cough. I've been thinking about getting a chest x-ray to rule out any other issues. Do you think that's a good idea?\n\n[turn 6] That's a great point. I'm also concerned about the numbness in my left hand, which I noticed around March 15th. Do you think it could be related to my bronchitis or is it a separate issue that I should discuss with Dr. Smith or maybe even my neurologist, Dr. Johnson?\n\n[turn 8] I'll schedule an appointment with Dr. Smith and Dr. Johnson to discuss the numbness in my left hand. I'll also make sure to keep a symptom journal to track the numbness and any other symptoms I'm experiencing. Thanks for the advice!\n\n[turn 10] I'd like to ask about the possibility of a connection between my bronchitis and the numbness in my left hand. Could there be a connection between the two, or are they separate issues?"
+    },
+    {
+      "session_id": "answer_39900a0a_2",
+      "date": "2023/03/27 (Mon) 08:05",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_39900a0a_2\n[session_date] 2023/03/27 (Mon) 08:05\n[notes] (empty)",
+      "user_turns": "[turn 0] I've been dealing with a lingering cough for weeks, and I'm still trying to figure out what's going on. I had an appointment with my primary care physician, but the antibiotic didn't fully clear it up. I'm also dealing with some weird numbness in my left hand, which is why I have an EMG test scheduled with my neurologist, Dr. Johnson, on April 1st. Can you help me find some information on what could be causing these symptoms?\n\n[turn 2] I'm also experiencing some heartburn and acid reflux symptoms, which started around late January. I've been trying to adjust my diet and taking antacids as needed. Do you have any information on how diet changes can help alleviate these symptoms?\n\n[turn 4] I want to ask, can you provide some information on EMG tests? What should I expect during the test, and how long does it usually take?\n\n[turn 6] I'm scheduled to have an EMG test with Dr. Johnson on April 1st to rule out any nerve damage, so I'm a bit anxious about what to expect. Thanks for the information. Can you tell me more about nerve compression or damage, which you mentioned earlier?\n\n[turn 8] Thanks for explaining nerve compression and damage in more detail. I'm still a bit worried about my upcoming EMG test, but at least I have a better understanding of what to expect. Can you tell me more about physical therapy and how it can help with nerve damage or compression?\n\n[turn 10] I'm scheduled to start physical therapy sessions twice a week since March 25th to strengthen my leg muscles after my orthopedic surgeon, Dr. Thompson, cleared me to do so. I'm hoping it will help me recover from my torn ACL."
+    },
+    {
+      "session_id": "answer_39900a0a_3",
+      "date": "2023/03/27 (Mon) 00:55",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_39900a0a_3\n[session_date] 2023/03/27 (Mon) 00:55\n[notes] (empty)",
+      "user_turns": "[turn 0] I've been dealing with this lingering cough for weeks, and I'm getting a bit frustrated. Can you help me find some information on bronchitis and its common symptoms? By the way, I recently had a follow-up appointment with my orthopedic surgeon, Dr. Thompson, on March 20th, and it was a relief to hear that my knee is healing well.\n\n[turn 2] I've been taking some over-the-counter medications, but they don't seem to be working as well as I'd like. Can you tell me more about expectorants and how they work?\n\n[turn 4] That's really helpful, thanks! I've been taking guaifenesin, but I'm not sure if it's doing much for me. I might need to talk to my doctor about other options. By the way, I'm also experiencing some occasional heartburn and acid reflux symptoms. Can you tell me more about what might be causing it and how I can manage it?\n\n[turn 6] I'm considering scheduling an appointment with my gastroenterologist, Dr. Patel, to discuss further treatment options for my heartburn and acid reflux. Do you think it's worth exploring natural remedies like ginger or aloe vera juice to help manage my symptoms?\n\n[turn 8] I'll definitely ask Dr. Patel about trying some natural remedies, but I also want to make sure I'm not overlooking any other potential causes of my heartburn and acid reflux. Can you tell me more about how stress might be contributing to my symptoms?\n\n[turn 10] I think I'll ask Dr. Patel about stress management techniques that can help alleviate my heartburn and acid reflux symptoms. Maybe I can start with some relaxation exercises and see if that makes a difference. Thanks for the advice!"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

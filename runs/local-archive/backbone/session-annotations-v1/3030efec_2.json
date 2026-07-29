@@ -1,0 +1,123 @@
+{
+  "session_id": "3030efec_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to schedule a tire rotation for my car.",
+      "turn_index": 0
+    },
+    {
+      "text": "I washed my car last weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I used a new soap on my car that my friend recommended.",
+      "turn_index": 0
+    },
+    {
+      "text": "The soap I used is called \"ShinePro\".",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know whether I should replace my car's air filter soon.",
+      "turn_index": 2
+    },
+    {
+      "text": "A mechanic mentioned my car's air filter needs to be done soon.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking about selling my old motorcycle.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to list my old motorcycle on Craigslist.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to list my old motorcycle on Facebook Marketplace.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will take good photos of my motorcycle this weekend to prepare the listing.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking about renewing my car's registration this week.",
+      "turn_index": 6
+    },
+    {
+      "text": "My car's registration is due at the end of the month.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning to take photos of my motorcycle this weekend.",
+      "turn_index": 8
+    },
+    {
+      "text": "I might check out a new bike model at a bike shop down the street.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering getting the new bike serviced before buying it.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have never bought anything from the bike shop before.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have walked by the bike shop a few times.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have seen the new model in the window of the bike shop.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will ask the bike shop about the maintenance history before making a decision.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will inspect the bike thoroughly before making a decision.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "tire rotation schedule",
+    "tire rotation reminder",
+    "car coupons or deals",
+    "car wash last weekend",
+    "ShinePro car soap",
+    "air filter replacement",
+    "mechanic air filter needs to be done soon",
+    "sell old motorcycle",
+    "Craigslist motorcycle listing",
+    "Facebook Marketplace motorcycle listing",
+    "motorcycle photos this weekend",
+    "car registration renewal",
+    "registration due end of the month",
+    "bike shop down the street",
+    "new bike model in window",
+    "ask about maintenance history",
+    "inspect bike thoroughly",
+    "bike servicing before buying"
+  ],
+  "events": [
+    {
+      "text": "Washed my car using a new soap recommended by a friend",
+      "date_hint": "last weekend",
+      "turn_index": 0
+    },
+    {
+      "text": "Planned to take good photos of my motorcycle this weekend to prepare the listing",
+      "date_hint": "this weekend",
+      "turn_index": 6
+    },
+    {
+      "text": "Planned to take photos of my motorcycle this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 8
+    }
+  ]
+}

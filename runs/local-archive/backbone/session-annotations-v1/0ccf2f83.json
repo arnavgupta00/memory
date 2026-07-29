@@ -1,0 +1,108 @@
+{
+  "session_id": "0ccf2f83",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I need help scheduling a maintenance check for my car.",
+      "turn_index": 0
+    },
+    {
+      "text": "My car's maintenance check has been overdue for a month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a reminder of the last time I got a full tank of gas.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to know how much my last full tank of gas cost.",
+      "turn_index": 0
+    },
+    {
+      "text": "I think I have the receipt somewhere.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have Bluetooth connectivity issues in my car.",
+      "turn_index": 2
+    },
+    {
+      "text": "My car has problems connecting to my phone lately.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was thinking of getting my car washed this weekend.",
+      "turn_index": 4
+    },
+    {
+      "text": "I wanted to know how long it's been since my last car wash.",
+      "turn_index": 4
+    },
+    {
+      "text": "I last washed my car three weeks ago.",
+      "turn_index": 6
+    },
+    {
+      "text": "I got a deluxe wash at the car wash place near my house.",
+      "turn_index": 6
+    },
+    {
+      "text": "I paid $15 for the deluxe car wash.",
+      "turn_index": 6
+    },
+    {
+      "text": "I was thinking of getting a new air freshener for my car.",
+      "turn_index": 6
+    },
+    {
+      "text": "I was considering lavender as a scent for a car air freshener.",
+      "turn_index": 6
+    },
+    {
+      "text": "I already have a lavender air freshener.",
+      "turn_index": 8
+    },
+    {
+      "text": "I got the lavender air freshener from the auto shop near my office.",
+      "turn_index": 8
+    },
+    {
+      "text": "I paid $5.99 for the lavender air freshener.",
+      "turn_index": 8
+    },
+    {
+      "text": "I need to schedule a maintenance check for my car.",
+      "turn_index": 10
+    },
+    {
+      "text": "I asked for help scheduling a maintenance check for my car.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "car maintenance check scheduling",
+    "maintenance overdue for a month",
+    "last full tank of gas",
+    "gas receipt",
+    "Bluetooth connectivity issues",
+    "car phone connection problems",
+    "car wash this weekend",
+    "last car wash three weeks ago",
+    "deluxe car wash $15",
+    "car wash near my house",
+    "lavender air freshener",
+    "auto shop near my office $5.99"
+  ],
+  "events": [
+    {
+      "text": "Last car wash (deluxe wash)",
+      "date_hint": "three weeks ago",
+      "turn_index": 6
+    },
+    {
+      "text": "Bought lavender air freshener",
+      "date_hint": "last week",
+      "turn_index": 8
+    }
+  ]
+}

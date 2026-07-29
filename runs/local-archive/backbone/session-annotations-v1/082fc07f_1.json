@@ -1,0 +1,98 @@
+{
+  "session_id": "082fc07f_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am training for a triathlon on June 19th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been doing runs in the downtown area recently.",
+      "turn_index": 0
+    },
+    {
+      "text": "I ran in a charity marathon on April 17th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I got a personal best time of 55 minutes and 22 seconds in the charity marathon on April 17th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of cycling routes around 20 miles.",
+      "turn_index": 2
+    },
+    {
+      "text": "I prefer cycling routes with minimal traffic and bike lanes.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been doing shopping in the downtown area recently.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought new running shoes at a sports store on 5th street.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of incorporating strength training exercises 2 times a week.",
+      "turn_index": 6
+    },
+    {
+      "text": "My strength training focus is my core and legs.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been doing yoga classes at the gym on Saturdays.",
+      "turn_index": 8
+    },
+    {
+      "text": "The yoga instructor Rachel is excellent.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to ask Rachel for recommendations for strength training classes or personal training sessions in the downtown area.",
+      "turn_index": 10
+    },
+    {
+      "text": "I plan to ask Rachel about any discounts or promotions that might be available.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "triathlon June 19",
+    "cycling routes downtown",
+    "minimal traffic bike lanes",
+    "20 mile cycling route",
+    "charity marathon April 17",
+    "personal best 55:22",
+    "running shoes sports store 5th street",
+    "strength training 2 times a week",
+    "core and legs exercises",
+    "triathlete strength training routine",
+    "local gyms fitness studios downtown",
+    "yoga classes Saturdays Rachel"
+  ],
+  "events": [
+    {
+      "text": "Triathlon training for the triathlon on June 19th",
+      "date_hint": "June 19th",
+      "turn_index": 0
+    },
+    {
+      "text": "Charity marathon on April 17th",
+      "date_hint": "April 17th",
+      "turn_index": 0
+    },
+    {
+      "text": "Yoga classes at the gym on Saturdays",
+      "date_hint": "Saturdays",
+      "turn_index": 8
+    },
+    {
+      "text": "Asking Rachel for strength training recommendations and promotions",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

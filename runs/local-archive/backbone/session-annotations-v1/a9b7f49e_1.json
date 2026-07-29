@@ -1,0 +1,97 @@
+{
+  "session_id": "a9b7f49e_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for gift ideas for my niece's birthday.",
+      "turn_index": 0
+    },
+    {
+      "text": "My niece's birthday is coming up in a few weeks.",
+      "turn_index": 0
+    },
+    {
+      "text": "I was thinking of getting my niece a new doll or a craft set.",
+      "turn_index": 0
+    },
+    {
+      "text": "I like art supplies and building toys as gift ideas.",
+      "turn_index": 2
+    },
+    {
+      "text": "I like browsing at local toy stores to get a feel for the products.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have had good experiences with online stores for gifts.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want suggestions on where to buy art supplies and building toys.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to stay organized when buying gifts for multiple people.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to keep track of the gifts I have already bought.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to make sure I don't forget anyone when buying gifts.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of using a spreadsheet to keep track of my gifts.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have already bought a funny mug for my coworker's birthday.",
+      "turn_index": 6
+    },
+    {
+      "text": "My coworker's birthday is on the 25th of this month.",
+      "turn_index": 6
+    },
+    {
+      "text": "The funny mug cost me $15.",
+      "turn_index": 6
+    },
+    {
+      "text": "I bought the funny mug at the mall.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think I will add more columns or rows to the spreadsheet as needed.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "niece birthday gift ideas",
+    "new doll",
+    "craft set",
+    "art supplies",
+    "building toys",
+    "where to buy gifts",
+    "online stores",
+    "local toy stores",
+    "stay organized gift shopping",
+    "spreadsheet for gifts",
+    "funny mug",
+    "coworker birthday 25th",
+    "$15 mug at the mall"
+  ],
+  "events": [
+    {
+      "text": "My coworker's birthday",
+      "date_hint": "25th of this month",
+      "turn_index": 6
+    },
+    {
+      "text": "I bought a funny mug for my coworker's birthday at the mall",
+      "date_hint": "25th of this month",
+      "turn_index": 6
+    }
+  ]
+}

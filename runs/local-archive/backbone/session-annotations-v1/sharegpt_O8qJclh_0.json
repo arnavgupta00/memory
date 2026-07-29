@@ -1,0 +1,162 @@
+{
+  "session_id": "sharegpt_O8qJclh_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I will provide English text written for company internal purposes and want it rewritten in a polite and respectful tone for a formal business proposal in Spanish.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am helping write sections of a formal proposal to the government of Mexico.",
+      "turn_index": 0
+    },
+    {
+      "text": "I referenced a document section titled \"Tabla 4. Requisitos minimos de la Aplicacion, Sistema Operativo\" when discussing browser requirements.",
+      "turn_index": 2
+    },
+    {
+      "text": "I noted that the listed browser versions are extremely outdated and that some versions are over 15 years old.",
+      "turn_index": 2
+    },
+    {
+      "text": "I specifically mentioned Opera 9 as an example of an outdated browser version released in June 2006.",
+      "turn_index": 2
+    },
+    {
+      "text": "I stated that the requirement says the software should be \"accessible\".",
+      "turn_index": 2
+    },
+    {
+      "text": "I advised against supporting very old browser versions.",
+      "turn_index": 2
+    },
+    {
+      "text": "I stated that outdated browser versions do not protect against current security vulnerabilities.",
+      "turn_index": 2
+    },
+    {
+      "text": "I stated that outdated browser versions do not support modern web security protocols such as TLS 1.2.",
+      "turn_index": 2
+    },
+    {
+      "text": "I stated that the software uses modern web technologies to provide a dynamic and responsive user experience.",
+      "turn_index": 2
+    },
+    {
+      "text": "I stated that modern web technologies require a modern web browser.",
+      "turn_index": 2
+    },
+    {
+      "text": "I stated that in other spectrum auction projects, support is limited to the latest versions of common browsers where all functionalities work reliably.",
+      "turn_index": 2
+    },
+    {
+      "text": "I stated that support can be extended to allow recent versions previous to the latest one if needed.",
+      "turn_index": 2
+    },
+    {
+      "text": "I suggested changing the browser requirement to support current versions of Microsoft Edge, Mozilla Firefox, Opera, Google Chrome, and Safari.",
+      "turn_index": 2
+    },
+    {
+      "text": "I referenced a document section titled \"3.3 Fechas de eventos relevantes y entrega de la prestación de los Servicios, Modulo II\" when discussing the software development timeline.",
+      "turn_index": 6
+    },
+    {
+      "text": "I stated that the time required for the project phase depends on the auction design chosen.",
+      "turn_index": 6
+    },
+    {
+      "text": "I stated that the development of use cases/traceability matrix takes 20 working days.",
+      "turn_index": 6
+    },
+    {
+      "text": "I stated that delivery of the application in a QA environment takes 20 working days.",
+      "turn_index": 6
+    },
+    {
+      "text": "I stated that additional time may be required if a bespoke auction design or a very complex auction process is chosen.",
+      "turn_index": 6
+    },
+    {
+      "text": "I suggested allowing flexibility to explicitly extend the development timeline later in the project.",
+      "turn_index": 6
+    },
+    {
+      "text": "I gave an example milestone name: \"Selección de mecanismo de asignación por parte del Instituto\".",
+      "turn_index": 6
+    },
+    {
+      "text": "I stated that comments about the implications of choosing a given auction design recommendation for the development timeline can be given in the report delivered in Modulo I.",
+      "turn_index": 6
+    },
+    {
+      "text": "I referenced a specific software requirement example on page 9 involving a bidder receiving a text message or a digital file in a \"Bandeja de Trabajo\" and it appearing as a pop-up requiring an acceptance action (checkbox) to proceed with reading, downloading, and unlocking the application.",
+      "turn_index": 4
+    },
+    {
+      "text": "I stated that the example describes a general feature of notifying the bidder that a message has been received and ensuring that the message is read.",
+      "turn_index": 4
+    },
+    {
+      "text": "I stated that there are alternative ways to implement the message notification and reading requirement, which may or may not include a pop-up window.",
+      "turn_index": 4
+    },
+    {
+      "text": "I stated that the provider may have an alternative workflow designed, built, and tested thoroughly and proven effective in previous auctions.",
+      "turn_index": 4
+    },
+    {
+      "text": "I stated that forcing the provider to change the workflow will increase implementation cost and introduce an opportunity for software defects.",
+      "turn_index": 4
+    },
+    {
+      "text": "I suggested allowing tenderers to suggest alternative implementations for software requirements that achieve the same goals when responding to the RFP.",
+      "turn_index": 4
+    },
+    {
+      "text": "I stated that being very specific about implementation details can favor a vendor who already implemented a feature in a particular way.",
+      "turn_index": 4
+    },
+    {
+      "text": "I stated that giving vendors more flexibility for implementing software feature details allows for a more fair and competitive process when selecting a vendor.",
+      "turn_index": 4
+    },
+    {
+      "text": "I stated that giving vendors more flexibility helps protect IFT from perceptions of favoritism.",
+      "turn_index": 4
+    }
+  ],
+  "keyphrases": [
+    "formal proposal to the government of Mexico",
+    "rewrite in Spanish",
+    "browser requirements",
+    "Tabla 4 Requisitos minimos de la Aplicacion Sistema Operativo",
+    "outdated browser versions",
+    "TLS 1.2",
+    "modern web technologies",
+    "support current browser versions",
+    "Microsoft Edge",
+    "Mozilla Firefox",
+    "Opera 9 June 2006",
+    "software dev timeline 3.3 Fechas de eventos relevantes Modulo II",
+    "use cases traceability matrix 20 working days",
+    "QA environment delivery 20 working days",
+    "Selección de mecanismo de asignación por parte del Instituto",
+    "alternative implementations RFP",
+    "pop-up window checkbox Bandeja de Trabajo",
+    "IFT perceptions of favoritism"
+  ],
+  "events": [
+    {
+      "text": "Opera 9 release mentioned as an example of an outdated browser version",
+      "date_hint": "June 2006",
+      "turn_index": 2
+    },
+    {
+      "text": "Development timeline flexibility suggested with milestone \"Selección de mecanismo de asignación por parte del Instituto\"",
+      "date_hint": "",
+      "turn_index": 6
+    }
+  ]
+}

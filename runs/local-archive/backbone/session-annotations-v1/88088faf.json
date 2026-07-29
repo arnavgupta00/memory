@@ -1,0 +1,76 @@
+{
+  "session_id": "88088faf",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Europe in November.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need help finding a hotel in Paris with a great view of the Eiffel Tower.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have accumulated enough points for a free night's stay at any Hilton property.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to redeem my Hilton points for a weekend getaway to Las Vegas.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to stay at the Hilton Lake Las Vegas Resort.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have stayed at three different hotels in the past month.",
+      "turn_index": 4
+    },
+    {
+      "text": "I stayed at the Westin New York at Times Square back in June.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have a TripAdvisor account.",
+      "turn_index": 6
+    },
+    {
+      "text": "I need to organize my hotel loyalty program points.",
+      "turn_index": 8
+    },
+    {
+      "text": "I already mentioned that I have enough points for a free night's stay at any Hilton property.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Europe trip November",
+    "hotel in Paris",
+    "Eiffel Tower view",
+    "Hilton points free night",
+    "Hilton Lake Las Vegas Resort",
+    "weekend getaway Las Vegas",
+    "Pullman Paris Montparnasse loyalty program",
+    "Westin New York at Times Square",
+    "TripAdvisor login",
+    "organize hotel loyalty points",
+    "three different hotels past month"
+  ],
+  "events": [
+    {
+      "text": "Planning a trip to Europe in November and looking for a Paris hotel with an Eiffel Tower view",
+      "date_hint": "in November",
+      "turn_index": 0
+    },
+    {
+      "text": "Staying at the Westin New York at Times Square",
+      "date_hint": "back in June",
+      "turn_index": 6
+    },
+    {
+      "text": "Stayed at three different hotels in the past month",
+      "date_hint": "in the past month",
+      "turn_index": 4
+    }
+  ]
+}

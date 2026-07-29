@@ -1,0 +1,91 @@
+{
+  "session_id": "c81d1a7b_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to improve my tennis serves.",
+      "turn_index": 0
+    },
+    {
+      "text": "I play tennis with a friend every Friday afternoon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for tips to increase my serve speed and accuracy.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want suggestions on how to track my progress and measure the speed of my serve.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to try out a serve journal and video analysis to track my progress.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want tips on how to improve my forehand in tennis.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to try out forehand improvement tips during my next game on Friday.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want suggestions on how to stay hydrated and fueled during my tennis matches.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to stay hydrated and fueled during my match on Friday.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want suggestions on how to improve my mental toughness and focus during tennis matches.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to work on my mental toughness and focus during my match on Friday.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "tennis serve improvement",
+    "serve speed",
+    "serve accuracy",
+    "Friday afternoon tennis",
+    "track serve progress",
+    "measure serve speed",
+    "serve journal",
+    "video analysis",
+    "forehand improvement",
+    "tennis hydration",
+    "tennis fueling",
+    "mental toughness and focus"
+  ],
+  "events": [
+    {
+      "text": "Playing tennis with a friend every Friday afternoon",
+      "date_hint": "every Friday afternoon",
+      "turn_index": 0
+    },
+    {
+      "text": "Next game on Friday",
+      "date_hint": "Friday",
+      "turn_index": 2
+    },
+    {
+      "text": "Next game on Friday (forehand tips)",
+      "date_hint": "Friday",
+      "turn_index": 6
+    },
+    {
+      "text": "Match on Friday (hydration and fueling)",
+      "date_hint": "Friday",
+      "turn_index": 8
+    },
+    {
+      "text": "Match on Friday (mental toughness and focus)",
+      "date_hint": "Friday",
+      "turn_index": 10
+    }
+  ]
+}

@@ -19,6 +19,11 @@ export const ArchitectureOptionsSchema = z.strictObject({
   char_budget: z.number().int().positive().max(500_000).default(80_000),
   max_turn_chars: z.number().int().positive().max(50_000).default(4_000),
   temporal_boost: z.number().min(0).max(2).default(0.15),
+  /**
+   * BM25 indexes user-turn text only (assistant turns still packaged).
+   * Phase-1 rank-gate winner on canary-1 answerable.
+   */
+  index_user_turns_only: z.boolean().default(true),
   answer_prompt: z
     .string()
     .regex(/^[a-z][a-z0-9-]*$/)
@@ -41,6 +46,13 @@ export const ArchitectureOptionsSchema = z.strictObject({
   package_full_session_enabled: z.boolean().default(true),
   /** Cap supporting turns pulled from each allowed session under full-session mode. */
   package_session_turn_max: z.number().int().positive().max(64).default(24),
+  /**
+   * U-FLOOR: always attach top-N BM25 span turns as SUPPORTING, even when Call-1
+   * under-picks or returns none_found. Deterministic lexical guard; never enters
+   * as selected.
+   */
+  package_lexical_floor_enabled: z.boolean().default(false),
+  package_lexical_floor_max: z.number().int().positive().max(64).default(12),
   /** Call 1 session-routing index over the full haystack (Architecture 0006). */
   session_index_enabled: z.boolean().default(false),
   session_expand_max: z.number().int().positive().max(16).default(8),

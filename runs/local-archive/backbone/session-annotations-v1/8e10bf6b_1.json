@@ -1,0 +1,95 @@
+{
+  "session_id": "8e10bf6b_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I need help with meal planning for the week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I was thinking of making something for lunch on Thursday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I prepared for meal planning on Wednesday when I went to the store at 6 pm.",
+      "turn_index": 0
+    },
+    {
+      "text": "I like the sandwich ideas, especially grilled chicken sandwiches.",
+      "turn_index": 2
+    },
+    {
+      "text": "I like the sandwich ideas, especially grilled turkey sandwiches.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want suggestions for sides that would go well with grilled chicken or turkey sandwiches.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think I'll go with carrot sticks with hummus.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want a simple recipe for hummus.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want a recipe for grilled chicken breast for my sandwich.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want the grilled chicken breast recipe to be simple and flavorful.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want ideas for planning my meals for the rest of the week.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to use up the ingredients I bought on Wednesday when I went to the store at 6 pm.",
+      "turn_index": 8
+    },
+    {
+      "text": "I like the ideas for Friday, Saturday, and Sunday.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want suggestions for Monday's breakfast and lunch.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to use up some ingredients before they go bad.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "meal planning for the week",
+    "Thursday lunch ideas",
+    "store trip Wednesday 6 pm",
+    "grilled chicken sandwich",
+    "grilled turkey sandwich",
+    "side dishes for sandwiches",
+    "carrot sticks with hummus",
+    "simple hummus recipe",
+    "grilled chicken breast recipe",
+    "simple and flavorful grilled chicken",
+    "use up ingredients",
+    "meal planning rest of the week",
+    "Friday Saturday Sunday meal ideas",
+    "Monday breakfast and lunch ideas",
+    "use up ingredients before they go bad"
+  ],
+  "events": [
+    {
+      "text": "Went to the store on Wednesday at 6 pm to buy ingredients for meal planning.",
+      "date_hint": "Wednesday 6 pm",
+      "turn_index": 0
+    },
+    {
+      "text": "Planned to use up the ingredients bought on Wednesday at 6 pm for meals for the rest of the week.",
+      "date_hint": "Wednesday 6 pm",
+      "turn_index": 8
+    }
+  ]
+}

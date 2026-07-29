@@ -1,0 +1,86 @@
+{
+  "session_id": "answer_e3892371_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I need help setting up automatic backups for my working files on my laptop.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to set up a backup system on my laptop.",
+      "turn_index": 0
+    },
+    {
+      "text": "I plan to use a cloud backup service for my working files.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to use Google Drive because I already use it for other things.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to set up versioning in Google Drive.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think I will go with the 100 GB storage plan for Google Drive.",
+      "turn_index": 4
+    },
+    {
+      "text": "I realized I misplaced the small screwdriver I use to upgrade the RAM in my laptop.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will need to pick up a small screwdriver next time I'm out.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will probably check out an electronics store near my place for tools and accessories.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to select which files and folders to back up on Google Drive.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think I have everything set up for my Google Drive backup.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know how to check whether my files are being backed up correctly.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know if there is a way to check backup status or get notifications if something goes wrong.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I have everything set up for my Google Drive backup now.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "automatic backups",
+    "working files",
+    "backup system setup",
+    "laptop backup",
+    "cloud backup service",
+    "Google Drive versioning",
+    "Google Drive storage plan",
+    "100 GB plan",
+    "upgrade laptop RAM",
+    "small screwdriver",
+    "electronics store near my place",
+    "select files and folders to back up",
+    "check backup status",
+    "backup notifications",
+    "files backed up correctly"
+  ],
+  "events": [
+    {
+      "text": "Plan to upgrade laptop RAM but misplaced the small screwdriver used for it",
+      "date_hint": "next time I'm out",
+      "turn_index": 4
+    }
+  ]
+}

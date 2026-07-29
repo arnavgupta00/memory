@@ -1,0 +1,71 @@
+{
+  "session_id": "bf3aebdb_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning to make another purchase on Amazon soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I received a coupon in my email inbox a few days prior to March 15th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to receive more offers like the coupon I received in the future.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have an Amazon Rewards Visa card.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know whether I can use a coupon and a cashback offer from my Amazon Rewards Visa card on the same purchase.",
+      "turn_index": 4
+    },
+    {
+      "text": "I earned rewards points from my Amazon Rewards Visa card.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know whether I can redeem my Amazon Rewards Visa card rewards points for a statement credit or an Amazon gift card.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know whether I can redeem my points for a statement credit and then use that credit to pay for a future Amazon purchase.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know whether statement credit from redeeming points can only be used to pay off an existing balance.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know whether I can earn points on purchases made with my Amazon Rewards Visa card at other merchants.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know whether points are only earned on Amazon purchases.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Amazon coupons",
+    "promo codes for Amazon account",
+    "email coupon received",
+    "March 15 coupon",
+    "Amazon coupon policy",
+    "combining coupons with discounts",
+    "cashback offer",
+    "Amazon Rewards Visa card",
+    "redeem rewards points",
+    "statement credit",
+    "Amazon gift card",
+    "earn points at other merchants"
+  ],
+  "events": [
+    {
+      "text": "Received a coupon in email inbox a few days prior to March 15th",
+      "date_hint": "a few days prior to March 15th",
+      "turn_index": 0
+    }
+  ]
+}

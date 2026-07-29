@@ -1,0 +1,88 @@
+{
+  "session_id": "answer_70dc7d08_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to upgrade my phone case and screen protector.",
+      "turn_index": 0
+    },
+    {
+      "text": "I bought an iPhone 13 Pro at a discounted price of $800 from Best Buy on Black Friday.",
+      "turn_index": 0
+    },
+    {
+      "text": "The regular price of the iPhone 13 Pro was $1,000.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want waterproof phone cases to protect my phone from water and dust.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to buy a new TV.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want a 4K TV in the range of $800-$1,200.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want a TV with good picture quality and HDR support.",
+      "turn_index": 6
+    },
+    {
+      "text": "I got a deal on a 4K TV from Amazon on Cyber Monday.",
+      "turn_index": 6
+    },
+    {
+      "text": "I got 30% off the original price of $1,200 for the Cyber Monday 4K TV deal.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want TV models with similar features and price points to my Cyber Monday deal.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want a TV with a similar price point to my Cyber Monday deal, around $800-$1,000.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want a TV with good picture quality and HDR support in the $800-$1,000 price range.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am looking for a soundbar to complement my new TV.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want soundbar options with good sound quality and a budget of around $200-$300.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "iPhone 13 Pro case",
+    "screen protector",
+    "Black Friday iPhone 13 Pro deal",
+    "waterproof phone case",
+    "water and dust protection",
+    "4K TV options",
+    "TV price range $800-$1,200",
+    "HDR support",
+    "Cyber Monday 4K TV deal",
+    "TV price range $800-$1,000",
+    "soundbar options",
+    "soundbar budget $200-$300"
+  ],
+  "events": [
+    {
+      "text": "Bought an iPhone 13 Pro at a discounted price from Best Buy on Black Friday",
+      "date_hint": "Black Friday",
+      "turn_index": 0
+    },
+    {
+      "text": "Got a 4K TV deal from Amazon on Cyber Monday with 30% off the original $1,200 price",
+      "date_hint": "Cyber Monday",
+      "turn_index": 6
+    }
+  ]
+}

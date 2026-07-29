@@ -1,0 +1,119 @@
+{
+  "session_id": "a1ba2213_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Dubai.",
+      "turn_index": 0
+    },
+    {
+      "text": "I arrived in Dubai today with Emirates Airlines from New York.",
+      "turn_index": 0
+    },
+    {
+      "text": "My flight from New York to Dubai was delayed by 2 hours due to weather conditions.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in visiting the Burj Khalifa.",
+      "turn_index": 2
+    },
+    {
+      "text": "My seatmate on the Emirates flight from New York, Maria, recommended a nice dinner place.",
+      "turn_index": 2
+    },
+    {
+      "text": "I forgot the name of the dinner place Maria recommended.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in visiting the Dubai Mall.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am interested in movie theaters or entertainment options within the Dubai Mall.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of taking a taxi from the mall to my hotel later.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know whether taxi payment is possible by credit card or if it is cash only.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of visiting the Dubai Museum later today.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know whether the Dubai Museum is within walking distance from the Burj Khalifa or if I should take a taxi or metro.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will take a taxi from the Burj Khalifa to the Dubai Museum.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am seated in an aisle seat, 17C, on my Emirates flight from New York.",
+      "turn_index": 10
+    },
+    {
+      "text": "I had extra legroom on my Emirates flight and was glad about it.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to Dubai",
+    "Emirates Airlines",
+    "New York to Dubai flight",
+    "2-hour weather delay",
+    "Burj Khalifa",
+    "restaurants near Burj Khalifa",
+    "Maria seatmate recommendation",
+    "Dubai Mall",
+    "movie theaters in Dubai Mall",
+    "taxi payment credit card or cash",
+    "Dubai Museum",
+    "walking distance from Burj Khalifa",
+    "taxi vs metro",
+    "aisle seat 17C extra legroom"
+  ],
+  "events": [
+    {
+      "text": "Arrived in Dubai today on an Emirates flight from New York",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Flight delayed by 2 hours due to weather conditions",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Plan to visit Burj Khalifa",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Plan to visit Dubai Mall",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Plan to take a taxi from the mall to the hotel later",
+      "date_hint": "later today",
+      "turn_index": 6
+    },
+    {
+      "text": "Plan to visit Dubai Museum later today",
+      "date_hint": "later today",
+      "turn_index": 8
+    },
+    {
+      "text": "Take a taxi from Burj Khalifa to the Dubai Museum",
+      "date_hint": "later today",
+      "turn_index": 10
+    }
+  ]
+}

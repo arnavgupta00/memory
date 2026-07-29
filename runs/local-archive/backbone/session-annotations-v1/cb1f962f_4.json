@@ -1,0 +1,105 @@
+{
+  "session_id": "cb1f962f_4",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to create a budget.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been attending a weekly lecture series on \"Personal Finance\" at the library.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to put tips from the weekly \"Personal Finance\" lecture series into practice.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to focus on building an emergency fund first.",
+      "turn_index": 2
+    },
+    {
+      "text": "The last lecture in the series emphasized the importance of having an emergency fund.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want help determining how much I should aim to save for my emergency fund.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think setting up automatic transfers sounds like a good idea for saving for my emergency fund.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of selling items I no longer need to put the money toward my emergency fund.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have an old laptop that still works well.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have a bunch of CDs that I no longer listen to.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have gently used clothing that is still in good condition.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I can get around $500 to $700 for all of the items I plan to sell.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to list my items on Facebook Marketplace and local online selling groups.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have had good experiences with Facebook Marketplace and local online selling groups in the past.",
+      "turn_index": 10
+    },
+    {
+      "text": "I plan to list my laptop on eBay or Craigslist to reach a wider audience.",
+      "turn_index": 10
+    },
+    {
+      "text": "I plan to use Discogs to sell my CDs.",
+      "turn_index": 10
+    },
+    {
+      "text": "I plan to use Poshmark to sell my clothing.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "create a budget",
+    "weekly lecture series",
+    "Personal Finance lecture",
+    "library personal finance",
+    "emergency fund",
+    "automatic transfers",
+    "sell items for emergency fund",
+    "Facebook Marketplace",
+    "local online selling groups",
+    "sell laptop on eBay",
+    "sell laptop on Craigslist",
+    "Discogs for CDs",
+    "Poshmark for clothing",
+    "sell CDs",
+    "sell gently used clothing",
+    "old laptop for sale",
+    "emergency fund savings goal"
+  ],
+  "events": [
+    {
+      "text": "Attended a weekly lecture series on \"Personal Finance\" at the library",
+      "date_hint": "weekly (ongoing)",
+      "turn_index": 0
+    },
+    {
+      "text": "Last lecture in the series emphasized the importance of having an emergency fund",
+      "date_hint": "last lecture (relative)",
+      "turn_index": 2
+    }
+  ]
+}

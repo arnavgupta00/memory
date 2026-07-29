@@ -1,0 +1,108 @@
+{
+  "session_id": "396238f9",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I was planning out my weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I asked for the schedule for Premier League matches this Sunday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I asked when the next tennis Grand Slam tournament is.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was thinking of organizing a friendly tennis match with my friends soon.",
+      "turn_index": 4
+    },
+    {
+      "text": "I asked for good tennis courts near me.",
+      "turn_index": 4
+    },
+    {
+      "text": "I played tennis with my coworker John last weekend.",
+      "turn_index": 6
+    },
+    {
+      "text": "I and John are planning to play tennis again this weekend.",
+      "turn_index": 6
+    },
+    {
+      "text": "I won last weekend.",
+      "turn_index": 8
+    },
+    {
+      "text": "John is looking to even the score this time around.",
+      "turn_index": 8
+    },
+    {
+      "text": "We are planning to play at the local park again.",
+      "turn_index": 8
+    },
+    {
+      "text": "I attended a Super Bowl party at my friends' place last month.",
+      "turn_index": 8
+    },
+    {
+      "text": "The Super Bowl party date was February 12th.",
+      "turn_index": 10
+    },
+    {
+      "text": "I watched the Kansas City Chiefs win against the Philadelphia Eagles at the Super Bowl party.",
+      "turn_index": 10
+    },
+    {
+      "text": "I had way too many beers at the Super Bowl party.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Premier League match schedule",
+    "this Sunday",
+    "next tennis Grand Slam tournament",
+    "friendly tennis match",
+    "tennis courts near me",
+    "played tennis with coworker John",
+    "play again this weekend",
+    "local park tennis",
+    "Super Bowl party",
+    "February 12th",
+    "Kansas City Chiefs vs Philadelphia Eagles",
+    "had too many beers"
+  ],
+  "events": [
+    {
+      "text": "Played tennis with coworker John",
+      "date_hint": "last weekend",
+      "turn_index": 6
+    },
+    {
+      "text": "Planned to play tennis again this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 6
+    },
+    {
+      "text": "Won tennis match last weekend",
+      "date_hint": "last weekend",
+      "turn_index": 8
+    },
+    {
+      "text": "Planned to play at the local park again",
+      "date_hint": "this weekend",
+      "turn_index": 8
+    },
+    {
+      "text": "Attended a Super Bowl party at friends' place",
+      "date_hint": "last month",
+      "turn_index": 8
+    },
+    {
+      "text": "Super Bowl party on February 12th",
+      "date_hint": "February 12th",
+      "turn_index": 10
+    }
+  ]
+}

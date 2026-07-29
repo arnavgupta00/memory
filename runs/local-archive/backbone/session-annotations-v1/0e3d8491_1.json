@@ -1,0 +1,60 @@
+{
+  "session_id": "0e3d8491_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am thinking of changing my bank accounts to my new name, Emily Anne Patel.",
+      "turn_index": 0
+    },
+    {
+      "text": "I filed a petition with the court on September 6th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to update my credit card information.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to update my credit report with the three major credit reporting agencies.",
+      "turn_index": 4
+    },
+    {
+      "text": "I already updated my social security card.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know whether I need to notify the Social Security Administration again about my name change.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to notify the IRS about my name change.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to update my voter registration with my new name.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "change bank accounts",
+    "new name Emily Anne Patel",
+    "court petition September 6",
+    "update credit card information",
+    "online credit card update",
+    "update credit report",
+    "three major credit reporting agencies",
+    "Social Security card name change",
+    "Social Security Administration notification",
+    "notify IRS name change",
+    "tax obligations after name change",
+    "voter registration update",
+    "new voter registration name"
+  ],
+  "events": [
+    {
+      "text": "Filed a petition with the court for a name change",
+      "date_hint": "September 6th",
+      "turn_index": 0
+    }
+  ]
+}

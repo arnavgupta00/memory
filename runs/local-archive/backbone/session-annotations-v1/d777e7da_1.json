@@ -1,0 +1,110 @@
+{
+  "session_id": "d777e7da_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a weekend getaway with my siblings.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of doing a road trip to visit my grandparents who live a few hours away.",
+      "turn_index": 0
+    },
+    {
+      "text": "I recently did a similar road trip with my siblings to visit my grandparents who live a few hours away.",
+      "turn_index": 2
+    },
+    {
+      "text": "I went on a road trip with my siblings to visit my grandparents who live a few hours away recently.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to plan outdoor activities like going for walks with my grandparents.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to plan outdoor activities like playing games in the backyard with my grandparents.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of asking my grandparents to share stories about their childhood and parents.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of asking my grandparents about their parents, my great-grandparents.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to ask my grandparents if they have stories or photos from the time period of my great-grandparents.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to ask my grandparents about old family recipes or traditions passed down.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of asking my grandparents about their parents, my great-grandparents, and their experiences during World War II.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have always been fascinated by history.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am going to ask my grandparents about their parents, my great-grandparents, and their experiences during World War II.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have always been fascinated by history.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "weekend getaway",
+    "road trip",
+    "siblings",
+    "grandparents",
+    "few hours away",
+    "drive tips",
+    "outdoor activities",
+    "walks with grandparents",
+    "backyard games",
+    "childhood stories",
+    "family recipes",
+    "World War II stories",
+    "great-grandparents photos",
+    "family traditions"
+  ],
+  "events": [
+    {
+      "text": "Planning a weekend road trip with siblings to visit grandparents a few hours away",
+      "date_hint": "weekend getaway (no specific date)",
+      "turn_index": 0
+    },
+    {
+      "text": "Recently went on a road trip with siblings to visit grandparents a few hours away",
+      "date_hint": "recently",
+      "turn_index": 2
+    },
+    {
+      "text": "Asking grandparents about childhood and parents stories",
+      "date_hint": "no specific date",
+      "turn_index": 4
+    },
+    {
+      "text": "Asking grandparents about great-grandparents stories or photos and old family recipes/traditions",
+      "date_hint": "no specific date",
+      "turn_index": 6
+    },
+    {
+      "text": "Asking grandparents about great-grandparents experiences during World War II",
+      "date_hint": "no specific date",
+      "turn_index": 8
+    },
+    {
+      "text": "Going to ask grandparents about great-grandparents experiences during World War II",
+      "date_hint": "no specific date",
+      "turn_index": 10
+    }
+  ]
+}

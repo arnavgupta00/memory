@@ -1,0 +1,57 @@
+{
+  "session_id": "sharegpt_6E4LLxD_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to provide a bunch of data that could be used to extract interesting statistics for a business development manager or sales manager.",
+      "turn_index": 0
+    },
+    {
+      "text": "My goal is to sell more Terms and Conditions.",
+      "turn_index": 2
+    },
+    {
+      "text": "My data is about newly registered businesses in specific areas in Auckland.",
+      "turn_index": 4
+    },
+    {
+      "text": "I do not know the demographics of the areas in Auckland.",
+      "turn_index": 4
+    },
+    {
+      "text": "I can provide 6 months worth of new registrations in each sector of business.",
+      "turn_index": 4
+    },
+    {
+      "text": "I can provide the date of registrations.",
+      "turn_index": 4
+    },
+    {
+      "text": "I asked what the best format for the data is.",
+      "turn_index": 6
+    },
+    {
+      "text": "I asked whether csv would work ok because it is text based.",
+      "turn_index": 8
+    },
+    {
+      "text": "I provided the format of the data with columns including nzbn, entityName, changeDateTime, createdAt, classificationDescription, and postCodes.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "business development manager statistics",
+    "sales manager",
+    "sell more terms and conditions",
+    "newly registered businesses",
+    "Auckland",
+    "6 months of new registrations",
+    "business sector registrations",
+    "registration dates",
+    "best data format",
+    "CSV text based",
+    "data schema columns",
+    "timestamp with time zone"
+  ],
+  "events": []
+}

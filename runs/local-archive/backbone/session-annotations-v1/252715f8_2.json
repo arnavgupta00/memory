@@ -1,0 +1,105 @@
+{
+  "session_id": "252715f8_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I plan out my meals for the week ahead.",
+      "turn_index": 0
+    },
+    {
+      "text": "I stick to oatmeal with banana and honey on weekdays for breakfast.",
+      "turn_index": 0
+    },
+    {
+      "text": "I had a grilled cheese on Tuesday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want healthy lunch ideas that I can make at home and bring to work.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want healthy snacks that are easy to prepare and pack.",
+      "turn_index": 2
+    },
+    {
+      "text": "I eat a mid-morning granola bar.",
+      "turn_index": 2
+    },
+    {
+      "text": "I eat a mid-afternoon apple with peanut butter.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want easy and healthy dinner recipes that can be cooked in under 30 minutes.",
+      "turn_index": 4
+    },
+    {
+      "text": "I made chicken fajitas last Saturday.",
+      "turn_index": 4
+    },
+    {
+      "text": "I like one-pot pasta with tomato sauce, vegetables, and lean ground turkey.",
+      "turn_index": 6
+    },
+    {
+      "text": "I try to cook at home most nights.",
+      "turn_index": 8
+    },
+    {
+      "text": "I order takeout or eat out on Fridays.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want recommendations for healthy takeout options or restaurants that serve nutritious food.",
+      "turn_index": 8
+    },
+    {
+      "text": "I try to cut down on snacks in between meals.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have been indulging in a mid-morning granola bar most days.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have been indulging in a mid-afternoon apple with peanut butter most days.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want healthier snack options that are easy to prepare and pack.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "meal planning for the week",
+    "weekday breakfast oatmeal banana honey",
+    "healthy lunch ideas to bring to work",
+    "grilled cheese Tuesday",
+    "easy healthy snacks to pack",
+    "mid-morning granola bar",
+    "mid-afternoon apple peanut butter",
+    "easy healthy dinner under 30 minutes",
+    "chicken fajitas last Saturday",
+    "one-pot pasta tomato sauce vegetables lean ground turkey",
+    "healthy takeout options Fridays",
+    "cut down on snacks between meals"
+  ],
+  "events": [
+    {
+      "text": "I had a grilled cheese.",
+      "date_hint": "Tuesday",
+      "turn_index": 0
+    },
+    {
+      "text": "I made chicken fajitas.",
+      "date_hint": "last Saturday",
+      "turn_index": 4
+    },
+    {
+      "text": "I order takeout or eat out on Fridays.",
+      "date_hint": "Fridays",
+      "turn_index": 8
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "session_id": "5a78688d_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am thinking of backing up my phone data.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am not sure where to start backing up my phone data.",
+      "turn_index": 0
+    },
+    {
+      "text": "I got my new phone case about a month ago.",
+      "turn_index": 0
+    },
+    {
+      "text": "My new phone case has been doing a great job protecting my phone.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am not sure which backup option to choose.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want pros and cons of each backup option, especially regarding storage space and security.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am leaning towards backing up to Google Drive.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am concerned about storage space limitations when backing up to Google Drive.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want information about paid plans for Google Drive and how much they cost.",
+      "turn_index": 4
+    },
+    {
+      "text": "I decided to go with the 200GB plan.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been meaning to back up my phone data for a while.",
+      "turn_index": 6
+    },
+    {
+      "text": "The 200GB plan will give me enough space to store all my photos and videos.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been really happy with my new phone case.",
+      "turn_index": 6
+    },
+    {
+      "text": "My new phone case has been protecting my phone, especially with all the photos I took on my recent beach trip.",
+      "turn_index": 6
+    },
+    {
+      "text": "I went on a beach trip with some friends.",
+      "turn_index": 8
+    },
+    {
+      "text": "On my beach trip, I spent most of my time soaking up the sun.",
+      "turn_index": 8
+    },
+    {
+      "text": "On my beach trip, I played beach volleyball.",
+      "turn_index": 8
+    },
+    {
+      "text": "On my beach trip, I took tons of photos.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am looking forward to backing up all the photos to Google Drive now that I have decided on a plan.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "phone data backup",
+    "backup process",
+    "phone case protection",
+    "Google Drive backup",
+    "storage space limitations",
+    "paid plans cost",
+    "200GB plan",
+    "photos and videos storage",
+    "beach trip",
+    "beach volleyball",
+    "back up photos to Google Drive"
+  ],
+  "events": [
+    {
+      "text": "Got a new phone case",
+      "date_hint": "about a month ago",
+      "turn_index": 0
+    },
+    {
+      "text": "Went on a beach trip with friends",
+      "date_hint": "recent beach trip",
+      "turn_index": 6
+    },
+    {
+      "text": "Went on a beach trip with friends",
+      "date_hint": "recent beach trip",
+      "turn_index": 8
+    }
+  ]
+}

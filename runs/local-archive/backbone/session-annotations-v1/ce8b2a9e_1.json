@@ -1,0 +1,104 @@
+{
+  "session_id": "ce8b2a9e_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning to visit the Modern Art Museum again soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I attended a guided tour at the Modern Art Museum recently.",
+      "turn_index": 0
+    },
+    {
+      "text": "I attended a guided tour focused on a specific section of the Modern Art Museum's collection.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am more interested in the guided tour I attended at the Modern Art Museum.",
+      "turn_index": 2
+    },
+    {
+      "text": "The guided tour I attended was led by Rachel.",
+      "turn_index": 4
+    },
+    {
+      "text": "The guided tour I attended was focused on the contemporary section of the Modern Art Museum's collection.",
+      "turn_index": 4
+    },
+    {
+      "text": "Rachel mentioned new artists from Berlin during the guided tour.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to contact Rachel or the museum directly to get more information about the tour.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am interested in whether the museum offers audio guides or mobile apps for more information about the artworks on display.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am interested in visiting the Natural History Museum soon.",
+      "turn_index": 8
+    },
+    {
+      "text": "I planned to visit the Natural History Museum exhibit that I went to three weeks ago on a Sunday with my family.",
+      "turn_index": 10
+    },
+    {
+      "text": "I visited the Natural History Museum with my family on a Sunday three weeks ago.",
+      "turn_index": 10
+    },
+    {
+      "text": "I spent around four hours at the Natural History Museum.",
+      "turn_index": 10
+    },
+    {
+      "text": "I saw the new dinosaur exhibit at the Natural History Museum.",
+      "turn_index": 10
+    },
+    {
+      "text": "The new dinosaur exhibit at the Natural History Museum was amazing to me.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Modern Art Museum",
+    "contemporary collection",
+    "guided tour",
+    "specific section of the collection",
+    "Rachel tour guide",
+    "new artists from Berlin",
+    "audio guides",
+    "mobile apps",
+    "Natural History Museum",
+    "dinosaur exhibit",
+    "new dinosaur exhibit",
+    "visited three weeks ago Sunday",
+    "four hours",
+    "with my family"
+  ],
+  "events": [
+    {
+      "text": "Attended a guided tour at the Modern Art Museum focused on a specific section of the collection",
+      "date_hint": "recently",
+      "turn_index": 0
+    },
+    {
+      "text": "Guided tour led by Rachel focused on the contemporary section; Rachel mentioned new artists from Berlin",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Planned to contact Rachel or the museum directly to get more information about the tour",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Visited the Natural History Museum on a Sunday with my family and saw the new dinosaur exhibit",
+      "date_hint": "three weeks ago",
+      "turn_index": 10
+    }
+  ]
+}

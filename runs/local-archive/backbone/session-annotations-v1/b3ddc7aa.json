@@ -1,0 +1,88 @@
+{
+  "session_id": "b3ddc7aa",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user is planning a trip to Seattle.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user is looking for a hotel with a great view.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user wants Marriott hotel recommendations in downtown Seattle.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user wants to book a room at The Seattle Marriott Waterfront.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user wants a high floor at The Seattle Marriott Waterfront.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user wants a balcony at The Seattle Marriott Waterfront.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user plans to check out Intelligentsia Coffee at Pike Place Market.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user has had a good experience with Intelligentsia Coffee in Chicago.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user plans to check out Seattle Coffee Works for a quick breakfast.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user plans to try Pike Place Chowder for lunch today.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to Seattle",
+    "hotel with great view",
+    "Marriott hotel recommendations",
+    "downtown Seattle",
+    "The Seattle Marriott Waterfront",
+    "high floor room",
+    "balcony",
+    "local coffee shops near hotel",
+    "Intelligentsia Coffee Pike Place Market",
+    "Seattle Coffee Works",
+    "quick breakfast",
+    "Pike Place Chowder",
+    "lunch spot near hotel"
+  ],
+  "events": [
+    {
+      "text": "Planning a trip to Seattle and looking for a hotel with a great view",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Booking a room at The Seattle Marriott Waterfront with a high floor and a balcony",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Checking out Intelligentsia Coffee at Pike Place Market",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Checking out Seattle Coffee Works for a quick breakfast",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Trying Pike Place Chowder for lunch today",
+      "date_hint": "today",
+      "turn_index": 10
+    }
+  ]
+}

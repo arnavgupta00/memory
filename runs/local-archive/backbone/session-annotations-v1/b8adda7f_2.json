@@ -1,0 +1,98 @@
+{
+  "session_id": "b8adda7f_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Hawaii.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for the best flights from LAX to HNL.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering booking a direct flight on Hawaiian Airlines from LAX to HNL.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering other flight options with layovers from LAX to HNL.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am an MVP Gold member on Alaska Airlines.",
+      "turn_index": 2
+    },
+    {
+      "text": "I might be able to get priority boarding as an Alaska Airlines MVP Gold member.",
+      "turn_index": 2
+    },
+    {
+      "text": "I might be able to get extra baggage allowance as an Alaska Airlines MVP Gold member.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering flying with Alaska Airlines because of my MVP Gold status.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to check whether Alaska Airlines non-stop flights from LAX to HNL are available on my preferred travel dates in mid-January.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to check for error fares or sales on Alaska Airlines non-stop flights from LAX to HNL for mid-January.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to book the error fare on AS142 (LAX-HNL) on January 17.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am going to book the error fare on AS142 (LAX-HNL) on January 17.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want confirmation that I will get priority boarding as an MVP Gold member on AS142 on January 17.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want confirmation that I will get extra baggage allowance as an MVP Gold member on AS142 on January 17.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Hawaii trip",
+    "best flights LAX to HNL",
+    "direct flight Hawaiian Airlines",
+    "layover options",
+    "Alaska Airlines MVP Gold",
+    "priority boarding",
+    "extra baggage allowance",
+    "non-stop flights availability",
+    "mid-January travel dates",
+    "error fares or sales",
+    "AS142 LAX-HNL",
+    "January 17 booking"
+  ],
+  "events": [
+    {
+      "text": "Check availability of Alaska Airlines non-stop flights from LAX to HNL for mid-January",
+      "date_hint": "mid-January",
+      "turn_index": 4
+    },
+    {
+      "text": "Check for error fares or sales on Alaska Airlines non-stop flights for mid-January",
+      "date_hint": "mid-January",
+      "turn_index": 6
+    },
+    {
+      "text": "Book the error fare on AS142 (LAX-HNL)",
+      "date_hint": "January 17",
+      "turn_index": 8
+    },
+    {
+      "text": "Confirm priority boarding and extra baggage allowance for AS142 (LAX-HNL) on January 17",
+      "date_hint": "January 17",
+      "turn_index": 10
+    }
+  ]
+}

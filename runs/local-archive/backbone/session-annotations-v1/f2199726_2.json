@@ -1,0 +1,111 @@
+{
+  "session_id": "f2199726_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I eat oatmeal with banana and honey at 7:30 am every morning.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been eating oatmeal with banana and honey at 7:30 am every morning for the past three weeks.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for snack ideas that keep me full until lunch.",
+      "turn_index": 0
+    },
+    {
+      "text": "I prep snacks on Sundays along with my meal prep.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want tips on how to store and keep snacks fresh for a few days.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to pack my lunch more often to save money and eat healthier.",
+      "turn_index": 4
+    },
+    {
+      "text": "I do a big batch of quinoa and roasted veggies on Sundays.",
+      "turn_index": 6
+    },
+    {
+      "text": "I portion my quinoa and roasted veggies for the next three days.",
+      "turn_index": 6
+    },
+    {
+      "text": "I eat quinoa and roasted veggies on Tuesdays and Thursdays when I have back-to-back meetings at work.",
+      "turn_index": 6
+    },
+    {
+      "text": "I usually grab a protein shake and a piece of fruit on Tuesdays and Thursdays to hold me over until lunch.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been doing the same quinoa and roasted veggies lunch prep on Sundays and portioning it for the next three days.",
+      "turn_index": 8
+    },
+    {
+      "text": "I usually grab a protein shake and a piece of fruit on Tuesdays and Thursdays when I have back-to-back meetings at work.",
+      "turn_index": 8
+    },
+    {
+      "text": "I use whey protein powder for my protein shake.",
+      "turn_index": 10
+    },
+    {
+      "text": "I mix my whey protein powder with almond milk.",
+      "turn_index": 10
+    },
+    {
+      "text": "I add a bit of honey to my whey protein shake.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "snack ideas",
+    "keep full until lunch",
+    "breakfast routine",
+    "oatmeal banana honey",
+    "7:30 am breakfast",
+    "meal prep Sundays",
+    "store snacks fresh",
+    "lunch prep efficiency",
+    "pack lunch to save money",
+    "quinoa roasted veggies",
+    "portion for three days",
+    "back-to-back meetings",
+    "protein shake",
+    "whey protein powder",
+    "almond milk honey protein shake",
+    "fruit with protein shake"
+  ],
+  "events": [
+    {
+      "text": "Eating oatmeal with banana and honey at 7:30 am every morning for the past three weeks",
+      "date_hint": "past three weeks",
+      "turn_index": 0
+    },
+    {
+      "text": "Prepping snacks on Sundays along with meal prep",
+      "date_hint": "Sundays",
+      "turn_index": 2
+    },
+    {
+      "text": "Batch cooking quinoa and roasted veggies on Sundays and portioning for the next three days",
+      "date_hint": "Sundays; next three days",
+      "turn_index": 6
+    },
+    {
+      "text": "Using protein shake and fruit on Tuesdays and Thursdays for back-to-back meetings at work",
+      "date_hint": "Tuesdays and Thursdays",
+      "turn_index": 6
+    },
+    {
+      "text": "Using whey protein powder mixed with almond milk and a bit of honey in a protein shake",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

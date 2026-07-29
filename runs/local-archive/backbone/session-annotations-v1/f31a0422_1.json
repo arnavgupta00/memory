@@ -1,0 +1,81 @@
+{
+  "session_id": "f31a0422_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for advice on organizing my garage.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been putting off cleaning out my garage for a while.",
+      "turn_index": 0
+    },
+    {
+      "text": "I found my grandmother's antique locket while cleaning out my dresser today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I thought I had lost my grandmother's antique locket forever.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of donating some items I no longer need to Goodwill.",
+      "turn_index": 2
+    },
+    {
+      "text": "I already have a receipt for $75 in tax-deductible donations from last month.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to donate 3 pairs of shoes that I no longer wear.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am planning to organize my closet this weekend.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning to get rid of some clothes that I no longer wear.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of using some of the space in my closet to create a little reading nook.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of adding decorative items to my reading nook, like framed photos or artwork.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "organizing a garage",
+    "clean out garage tips",
+    "decide what to keep donate",
+    "Goodwill donation receipt",
+    "tax-deductible donations process",
+    "$75 tax-deductible donations",
+    "keep receipt for taxes",
+    "donate 3 pairs of shoes",
+    "organize closet this weekend",
+    "reading nook in closet",
+    "make reading nook cozy",
+    "decorative items framed photos artwork"
+  ],
+  "events": [
+    {
+      "text": "Found grandmother's antique locket while cleaning out dresser",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Have $75 tax-deductible donations receipt from last month",
+      "date_hint": "last month",
+      "turn_index": 2
+    },
+    {
+      "text": "Planning to organize closet and get rid of clothes this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 6
+    }
+  ]
+}

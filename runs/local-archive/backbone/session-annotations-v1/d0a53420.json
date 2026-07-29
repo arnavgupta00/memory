@@ -1,0 +1,90 @@
+{
+  "session_id": "d0a53420",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning to try a new recipe for dinner tonight.",
+      "turn_index": 0
+    },
+    {
+      "text": "My dinner recipe will include chicken and vegetables.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a healthy and easy stir-fry recipe.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a yoga class at 7:30 pm.",
+      "turn_index": 0
+    },
+    {
+      "text": "I was thinking of planning my week ahead and making a to-do list for the next few days.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have a yoga class tonight.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want calming music or nature sounds to help me relax after my yoga class.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to try out some calming music after my yoga class.",
+      "turn_index": 6
+    },
+    {
+      "text": "I need to get home from work and start cooking dinner before my yoga class.",
+      "turn_index": 6
+    },
+    {
+      "text": "I usually get home from work around 6:30 pm.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want suggestions for good true crime podcasts to listen to.",
+      "turn_index": 10
+    },
+    {
+      "text": "I just finished listening to a series on Ted Bundy.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "healthy easy chicken vegetable stir-fry",
+    "dinner tonight",
+    "yoga class 7:30 pm",
+    "planning my week to-do list",
+    "day of the week today",
+    "calming music",
+    "nature sounds",
+    "relax after yoga class",
+    "quickly cook chicken for stir-fry",
+    "get home from work 6:30 pm",
+    "true crime podcasts",
+    "Ted Bundy series"
+  ],
+  "events": [
+    {
+      "text": "Yoga class at 7:30 pm",
+      "date_hint": "7:30 pm",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to cook dinner before the yoga class",
+      "date_hint": "tonight (before yoga)",
+      "turn_index": 6
+    },
+    {
+      "text": "Usually getting home from work around 6:30 pm",
+      "date_hint": "around 6:30 pm",
+      "turn_index": 8
+    },
+    {
+      "text": "Finished listening to a Ted Bundy true crime series",
+      "date_hint": "just finished",
+      "turn_index": 10
+    }
+  ]
+}

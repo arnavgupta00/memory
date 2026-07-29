@@ -1,0 +1,90 @@
+{
+  "session_id": "6387e969",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Europe in the fall.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering visiting Paris.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering visiting Rome.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in seeing a Broadway-style show in both Paris and Rome.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in historical sites and cultural experiences in Paris and Rome.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in a unique perspective on the city's history in Paris, similar to the USS Arizona Memorial in Hawaii.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am interested in learning more about the French Resistance during WWII.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am looking for guided tours or museums in Paris that focus on the French Resistance during WWII.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am interested in good restaurants in Paris that serve traditional French cuisine.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want Paris restaurants that focus on seasonal ingredients.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want Paris restaurants with a cozy atmosphere.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want wine to go with the meal in Paris.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am looking for wine bars or shops in Paris with a good selection of French wines.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to Europe fall",
+    "Paris historical sites",
+    "Rome cultural experiences",
+    "Broadway-style show Paris",
+    "Broadway-style show Rome",
+    "USS Arizona Memorial Hawaii",
+    "French Resistance WWII",
+    "guided tours Paris Resistance",
+    "museums Paris Resistance",
+    "traditional French cuisine Paris",
+    "seasonal ingredients cozy atmosphere",
+    "wine bars Paris French wines",
+    "wine shops Paris French wines"
+  ],
+  "events": [
+    {
+      "text": "Planning a trip to Europe in the fall",
+      "date_hint": "in the fall",
+      "turn_index": 0
+    },
+    {
+      "text": "Considering visiting Paris or Rome for the trip",
+      "date_hint": "in the fall",
+      "turn_index": 0
+    },
+    {
+      "text": "Interest in learning about the French Resistance during WWII",
+      "date_hint": "WWII period",
+      "turn_index": 6
+    }
+  ]
+}

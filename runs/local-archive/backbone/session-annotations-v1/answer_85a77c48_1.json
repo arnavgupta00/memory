@@ -1,0 +1,114 @@
+{
+  "session_id": "answer_85a77c48_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to get a gift for my mom's anniversary.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering personalized photo albums as a gift option for my mom's anniversary.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering customized jewelry as a gift option for my mom's anniversary.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a more local jewelry option.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been doing a lot of online shopping lately.",
+      "turn_index": 4
+    },
+    {
+      "text": "I prefer to shop in-store for a more personal gift.",
+      "turn_index": 4
+    },
+    {
+      "text": "I couldn't resist a sale at my favorite bookstore last week.",
+      "turn_index": 4
+    },
+    {
+      "text": "The new release from my favorite author was originally priced at $30.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am looking forward to diving into the new release from my favorite author.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think a customized message would be a nice touch for my mom's gift.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think my mom's birthstone would be a nice touch for my mom's gift.",
+      "turn_index": 8
+    },
+    {
+      "text": "My mom loves sentimental gifts.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want a gift that shows I put thought into it.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know whether local jewelers can create a custom piece like that.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of checking out a new jewelry store that just opened up downtown.",
+      "turn_index": 10
+    },
+    {
+      "text": "I got my sister's birthday present at the jewelry store that just opened up downtown.",
+      "turn_index": 10
+    },
+    {
+      "text": "The jewelry store had unique pieces.",
+      "turn_index": 10
+    },
+    {
+      "text": "I think the jewelry store might be able to create a custom piece for my mom.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "mom's anniversary gift",
+    "personalized photo albums",
+    "customized jewelry",
+    "local jewelry stores",
+    "customization services",
+    "shop in-store",
+    "online shopping sales",
+    "favorite bookstore sale last week",
+    "new release from favorite author",
+    "original price $30",
+    "customized message",
+    "birthstone jewelry",
+    "sentimental gifts",
+    "custom piece for mom",
+    "jewelry store opened downtown",
+    "unique pieces",
+    "sister's birthday present"
+  ],
+  "events": [
+    {
+      "text": "Sale at my favorite bookstore",
+      "date_hint": "last week",
+      "turn_index": 4
+    },
+    {
+      "text": "New release from my favorite author (originally priced at $30)",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "New jewelry store opened up downtown",
+      "date_hint": "just opened",
+      "turn_index": 10
+    }
+  ]
+}

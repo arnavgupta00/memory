@@ -1,0 +1,104 @@
+{
+  "session_id": "6b137bce_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a camping trip near my cabin soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I went on a solo hunting trip to the woods near my cabin the following weekend after my Lake Michigan fishing trip.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a cabin.",
+      "turn_index": 0
+    },
+    {
+      "text": "I went on a Lake Michigan fishing trip.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of bringing my fly fishing gear on the camping trip.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want good spots near my cabin to catch trout.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of fishing the local river where I went with my dad last weekend.",
+      "turn_index": 4
+    },
+    {
+      "text": "I went with my dad last weekend to fish the local river.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to check the water levels and conditions before I head out.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to get insight from local fishermen or guides.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been practicing my casting skills for fly fishing.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am hoping to try out my new fly fishing casting skills on this trip.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of bringing my trail camera to capture wildlife photos during my camping trip.",
+      "turn_index": 8
+    },
+    {
+      "text": "I recently attended a hunting seminar at the local outdoors store.",
+      "turn_index": 10
+    },
+    {
+      "text": "The speaker at the hunting seminar mentioned a new brand of trail cameras that I have been considering investing in for next season.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "camping trip near my cabin",
+    "solo hunting trip",
+    "woods near my cabin",
+    "Lake Michigan fishing trip",
+    "fly fishing gear",
+    "catch trout near cabin",
+    "local river for trout",
+    "fishing with my dad last weekend",
+    "check water levels and conditions",
+    "local fishermen or guides",
+    "practicing fly fishing casting skills",
+    "trail camera for wildlife photos",
+    "hunting seminar at local outdoors store",
+    "new brand of trail cameras next season"
+  ],
+  "events": [
+    {
+      "text": "Solo hunting trip to the woods near my cabin",
+      "date_hint": "the following weekend after my Lake Michigan fishing trip",
+      "turn_index": 0
+    },
+    {
+      "text": "Lake Michigan fishing trip",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Fishing the local river with my dad",
+      "date_hint": "last weekend",
+      "turn_index": 4
+    },
+    {
+      "text": "Attended a hunting seminar at the local outdoors store",
+      "date_hint": "recently",
+      "turn_index": 10
+    }
+  ]
+}

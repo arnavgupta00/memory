@@ -1,0 +1,33 @@
+{
+  "question_id": "6aeb4375_abs",
+  "question_type": "knowledge-update",
+  "question": "How many Italian restaurants have I tried in my city?",
+  "question_date": "2023/06/15 (Thu) 13:37",
+  "is_abstention": true,
+  "gold_session_ids": [
+    "answer_3f9693b7_abs_1",
+    "answer_3f9693b7_abs_2"
+  ],
+  "haystack_session_count": 46,
+  "notes_coverage": "partial",
+  "annotated_session_count": 7,
+  "gold_sessions": [
+    {
+      "session_id": "answer_3f9693b7_abs_1",
+      "date": "2023/05/20 (Sat) 08:03",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_3f9693b7_abs_1\n[session_date] 2023/05/20 (Sat) 08:03\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm planning a dinner party and need some help with the menu. Can you suggest some popular Korean BBQ dishes that are easy to make in large quantities?\n\n[turn 2] I'm thinking of serving a variety of dishes from different cuisines, so I'll take a few of these Korean BBQ options and pair them with some Indian and Middle Eastern dishes. Do you have any suggestions for Indian dishes that are easy to make in large quantities?\n\n[turn 4] I'm actually thinking of making falafel as one of the Middle Eastern options. Do you have any tips on how to make it crispy on the outside and fluffy on the inside?\n\n[turn 6] I've been experimenting with different types of noodles lately, and I was wondering if you could recommend some popular Korean noodle dishes that I could try making at home?\n\n[turn 8] By the way, speaking of noodles, have you tried any good Korean restaurants in your city lately? I've tried three different ones recently, and each has its own unique flavor and style.\n\n[turn 10] Sounds good! So, I tried this one place that had an amazing bibimbap, and then this other place that had a really spicy kimchi stew. And then there was this third place that had a unique take on Japchae, with a sweet potato noodle that was really tasty. Each place had its own unique flavor and style, you know?"
+    },
+    {
+      "session_id": "answer_3f9693b7_abs_2",
+      "date": "2023/05/26 (Fri) 13:19",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_3f9693b7_abs_2\n[session_date] 2023/05/26 (Fri) 13:19\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm planning a dinner party and need some help with the menu. I was thinking of making Korean-style BBQ beef, but I want to know if you have any recommendations for side dishes that would complement it well.\n\n[turn 2] I think I'll go with kimchi and bokkeumbap. By the way, have you tried any good Korean restaurants in my city lately? I've tried four different ones so far, and I'm always looking for new recommendations.\n\n[turn 4] I'm actually thinking of making some changes to my dinner party menu. Do you have any recipe ideas for Indian-inspired dishes that would complement the Korean BBQ beef and Middle Eastern falafel well?\n\n[turn 6] I think I'll go with the samosas and saag aloo. Do you have any recommendations for a good brand of basmati rice? I've been trying out different types of rice lately, and I want to make sure I get the best one for this dish.\n\n[turn 8] I actually have a brand that I've been using lately, it's an authentic Japanese short-grain rice, but I'm not sure if it would be suitable for this dish. Do you think it would work, or should I stick with a traditional Indian basmati rice?\n\n[turn 10] I think I'll stick with the traditional Indian basmati rice. I'll pick up a bag from the store later today. By the way, have you heard about that new Indian restaurant that just opened up in my neighborhood? I've been meaning to try it out, and I heard their chicken tikka masala is amazing."
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

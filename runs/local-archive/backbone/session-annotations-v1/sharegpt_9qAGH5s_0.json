@@ -1,0 +1,140 @@
+{
+  "session_id": "sharegpt_9qAGH5s_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to create a web portal project named Smart Reservation System for Multiple Venues.",
+      "turn_index": 2
+    },
+    {
+      "text": "The Smart Reservation System for Multiple Venues should develop a reservation system for hotels, restaurants, and entertainment venues.",
+      "turn_index": 2
+    },
+    {
+      "text": "The system should allow users to search for available spaces.",
+      "turn_index": 2
+    },
+    {
+      "text": "The system should allow users to make bookings.",
+      "turn_index": 2
+    },
+    {
+      "text": "The system should allow users to manage their reservations.",
+      "turn_index": 2
+    },
+    {
+      "text": "The system should include payment processing features.",
+      "turn_index": 2
+    },
+    {
+      "text": "The system should include event scheduling features.",
+      "turn_index": 2
+    },
+    {
+      "text": "The system should include user feedback features.",
+      "turn_index": 2
+    },
+    {
+      "text": "The project will be a microservices web application.",
+      "turn_index": 2
+    },
+    {
+      "text": "The front end should use Angular and Bootstrap.",
+      "turn_index": 2
+    },
+    {
+      "text": "The backend should use Spring Boot and Spring Cloud Eureka.",
+      "turn_index": 2
+    },
+    {
+      "text": "User data should be stored in MySQL.",
+      "turn_index": 2
+    },
+    {
+      "text": "A distributed database like Cassandra could be used to store reservation-related data such as user information, reservation details, and availability across multiple hotels.",
+      "turn_index": 2
+    },
+    {
+      "text": "The system should use a GraphQL API for hotel search functionality.",
+      "turn_index": 2
+    },
+    {
+      "text": "The system should use a REST API for users and a gateway.",
+      "turn_index": 2
+    },
+    {
+      "text": "API testing should use MuleSoft.",
+      "turn_index": 2
+    },
+    {
+      "text": "The project should include a machine learning microservice using TensorFlow in Java.",
+      "turn_index": 2
+    },
+    {
+      "text": "The CI/CD code should be hosted on GitHub.",
+      "turn_index": 2
+    },
+    {
+      "text": "The build process should use Maven.",
+      "turn_index": 2
+    },
+    {
+      "text": "The packaging process should use Docker.",
+      "turn_index": 2
+    },
+    {
+      "text": "Docker images should be published as part of the pipeline.",
+      "turn_index": 2
+    },
+    {
+      "text": "Deployment should be done with Jenkins.",
+      "turn_index": 2
+    },
+    {
+      "text": "The project should use the Scrum methodology.",
+      "turn_index": 2
+    },
+    {
+      "text": "The project should be composed of 5 sprints.",
+      "turn_index": 2
+    },
+    {
+      "text": "Each sprint should be one week.",
+      "turn_index": 2
+    },
+    {
+      "text": "There are only two developers on the project.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "web portal definition",
+    "Smart Reservation System for Multiple Venues",
+    "microservices web application",
+    "Angular Bootstrap frontend",
+    "Spring Boot Spring Cloud Eureka backend",
+    "MySQL user database",
+    "Cassandra distributed database",
+    "GraphQL hotels search",
+    "REST API users gateway",
+    "MuleSoft API testing",
+    "TensorFlow Java machine learning microservice",
+    "CI/CD GitHub Maven Docker Jenkins",
+    "Scrum methodology 5 sprints",
+    "product backlog",
+    "sprint backlog",
+    "two developers"
+  ],
+  "events": [
+    {
+      "text": "Request for product backlog for the project.",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Request for sprint backlog for a project composed of 5 one-week sprints with only two developers.",
+      "date_hint": "",
+      "turn_index": 8
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "session_id": "564761aa",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for a good jewelry cleaning solution for my diamond bracelet.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of getting my silver necklace repaired.",
+      "turn_index": 2
+    },
+    {
+      "text": "I wore my silver necklace to an office party on a Friday.",
+      "turn_index": 4
+    },
+    {
+      "text": "I took my silver necklace off in the bathroom.",
+      "turn_index": 4
+    },
+    {
+      "text": "I left my silver necklace on a counter in the bathroom.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have not asked my colleagues if anyone has seen my silver necklace yet.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of getting a new watch for everyday wear.",
+      "turn_index": 6
+    },
+    {
+      "text": "My current watch is a bit old.",
+      "turn_index": 6
+    },
+    {
+      "text": "My current watch does not go with many of my outfits.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been browsing online for watch options.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have shortlisted a few watch options.",
+      "turn_index": 6
+    },
+    {
+      "text": "I lost my silver necklace three weeks ago.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am hoping to find my silver necklace.",
+      "turn_index": 8
+    },
+    {
+      "text": "If I cannot find my silver necklace, I might consider getting a new one.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering whether to get a similar design or try something different for a replacement silver necklace.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will start by asking my colleagues if anyone has seen my silver necklace.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will send out an email to the team to see if anyone has information about my silver necklace.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "diamond bracelet cleaning solution",
+    "jewelry cleaning recommendations",
+    "silver necklace repair",
+    "silver necklace lost",
+    "office party Friday",
+    "left on bathroom counter",
+    "asking colleagues",
+    "email to the team",
+    "new watch for everyday wear",
+    "watch buying tips",
+    "shortlisted watch options online",
+    "similar design vs different design necklace"
+  ],
+  "events": [
+    {
+      "text": "Wore the silver necklace to an office party on a Friday and left it on a bathroom counter",
+      "date_hint": "Friday (relative to last time worn)",
+      "turn_index": 4
+    },
+    {
+      "text": "Lost the silver necklace",
+      "date_hint": "three weeks ago",
+      "turn_index": 8
+    },
+    {
+      "text": "Asked colleagues and planned to email the team about the missing silver necklace",
+      "date_hint": "next step (no specific date)",
+      "turn_index": 10
+    }
+  ]
+}

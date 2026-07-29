@@ -1,0 +1,90 @@
+{
+  "session_id": "773287dc_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a bigger trip later this year, possibly to Japan or New Zealand.",
+      "turn_index": 0
+    },
+    {
+      "text": "I just got back from a 7-day international trip to Paris, France with my family today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of staying in Tokyo for 7 days and then heading to Kyoto for the remaining 3 days.",
+      "turn_index": 2
+    },
+    {
+      "text": "I tried escargots for the first time on my recent trip to Paris, France.",
+      "turn_index": 4
+    },
+    {
+      "text": "I loved escargots.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am planning to use a Kyoto City Bus Pass.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am looking forward to trying local food in Kyoto, especially kaiseki meals.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning a 5 days in Tokyo and 5 days in Kyoto split.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am particularly excited to try kaiseki and shojin-ryori.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to check out Nishiki Market in Kyoto.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to check out Kyoto Central Market for fresh seafood and local snacks.",
+      "turn_index": 8
+    },
+    {
+      "text": "I had an amazing seafood dinner at a traditional French restaurant in Paris during my recent trip.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "bigger trip later this year",
+    "flight deals",
+    "accommodation deals",
+    "Japan itinerary",
+    "New Zealand trip",
+    "7-day international trip",
+    "Paris France family trip",
+    "Tokyo 7 days Kyoto 3 days",
+    "Tokyo Kyoto 5 days split",
+    "Kyoto City Bus Pass",
+    "kaiseki meals",
+    "shojin-ryori",
+    "Nishiki Market",
+    "Kyoto Central Market",
+    "escargots",
+    "seafood platter",
+    "traditional French restaurant Paris"
+  ],
+  "events": [
+    {
+      "text": "Returned from a 7-day international trip to Paris, France with family",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Tried escargots for the first time on the recent trip to Paris, France",
+      "date_hint": "recent trip (date not specified)",
+      "turn_index": 4
+    },
+    {
+      "text": "Had an amazing seafood dinner at a traditional French restaurant in Paris during the recent trip",
+      "date_hint": "recent trip (date not specified)",
+      "turn_index": 8
+    }
+  ]
+}

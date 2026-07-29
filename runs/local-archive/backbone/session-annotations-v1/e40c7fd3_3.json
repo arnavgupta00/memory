@@ -1,0 +1,147 @@
+{
+  "session_id": "e40c7fd3_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a summer vacation to Europe with my family.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have taken flights to New York in the past three months.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have taken flights to Los Angeles in the past three months.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have taken flights to Dallas in the past three months.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am planning to travel from San Francisco.",
+      "turn_index": 2
+    },
+    {
+      "text": "There will be four of us traveling together.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am flexible with my travel dates.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of traveling in July or August.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am looking for economy tickets.",
+      "turn_index": 2
+    },
+    {
+      "text": "I do not have a preferred airline.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to keep the total cost under $5,000.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want flight options that involve a layover in Chicago.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am familiar with O'Hare airport.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am interested in Option 4.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have United Airlines premier silver status.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know if I can use my United Airlines premier silver status to upgrade my seats or get perks on the layover in Chicago.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to explore upgrade options for the Chicago to Paris leg.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to check if there are available upgrades to Business Class using my miles or upgrade certificates.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know the cost in miles or certificates for Business Class upgrades on the Chicago to Paris leg.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know the typical experience in United's Business Class on this route.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to explore upgrading to Business Class using my miles.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know how many miles I have available in my United Airlines account.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know if I have enough miles to upgrade all four of us.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "summer vacation Europe",
+    "booking flights",
+    "flights to Paris Rome Barcelona",
+    "travel from San Francisco",
+    "four travelers",
+    "July or August travel dates",
+    "economy tickets",
+    "total cost under $5,000",
+    "layover in Chicago",
+    "O'Hare airport",
+    "United Airlines premier silver status",
+    "upgrade to Business Class using miles or upgrade certificates",
+    "Chicago to Paris leg",
+    "United Business Class experience",
+    "miles available in United account"
+  ],
+  "events": [
+    {
+      "text": "Planning a summer vacation to Europe with family and looking for flight booking options to Paris, Rome, and Barcelona",
+      "date_hint": "summer (year not specified)",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to travel from San Francisco with four people in July or August; looking for economy tickets under $5,000",
+      "date_hint": "July or August",
+      "turn_index": 2
+    },
+    {
+      "text": "Requesting flight options with a layover in Chicago (O'Hare)",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Exploring whether United Airlines premier silver status can be used for seat upgrades or layover perks in Chicago (Option 4)",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Checking Business Class upgrade availability for the Chicago to Paris leg using miles or upgrade certificates and asking about typical United Business Class experience",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Asking how many miles are available in the United Airlines account and whether there are enough miles to upgrade all four travelers",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

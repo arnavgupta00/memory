@@ -1,0 +1,116 @@
+{
+  "session_id": "6ff9e355",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I wake up at 6:30 am on weekdays.",
+      "turn_index": 2
+    },
+    {
+      "text": "I wake up later on weekends.",
+      "turn_index": 2
+    },
+    {
+      "text": "My top three priorities are work, exercise, and personal development.",
+      "turn_index": 2
+    },
+    {
+      "text": "I check my phone after waking up.",
+      "turn_index": 4
+    },
+    {
+      "text": "I go to the kitchen to grab a coffee after checking my phone.",
+      "turn_index": 4
+    },
+    {
+      "text": "My morning routine takes around 30 minutes.",
+      "turn_index": 4
+    },
+    {
+      "text": "I work from 9:00 am to 5:00 pm.",
+      "turn_index": 6
+    },
+    {
+      "text": "I take an hour lunch break from 12:00 pm to 1:00 pm.",
+      "turn_index": 6
+    },
+    {
+      "text": "I fit in exercise during my lunch break.",
+      "turn_index": 6
+    },
+    {
+      "text": "I go for a 30-minute walk around the block during my lunch break.",
+      "turn_index": 6
+    },
+    {
+      "text": "I read at around 9:30 pm before bed.",
+      "turn_index": 6
+    },
+    {
+      "text": "I aim to do at least 30 minutes of reading per day.",
+      "turn_index": 6
+    },
+    {
+      "text": "In my free time, I watch TV or scroll through my phone.",
+      "turn_index": 8
+    },
+    {
+      "text": "I feel most relaxed during my lunch break when I am walking outside.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to establish a more consistent sleep schedule.",
+      "turn_index": 10
+    },
+    {
+      "text": "I get to bed consistently around 10:30 pm on weekdays.",
+      "turn_index": 10
+    },
+    {
+      "text": "I get to bed consistently around 11:30 pm on weekends.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to move my bedtime up by 15-30 minutes.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "daily routine tracking",
+    "wake up time 6:30 am",
+    "weekday vs weekend schedule",
+    "top priorities work exercise personal development",
+    "morning phone check",
+    "morning coffee in kitchen",
+    "30-minute morning routine",
+    "work 9:00 am to 5:00 pm",
+    "lunch break 12:00 pm to 1:00 pm",
+    "30-minute walk around the block",
+    "reading before bed 9:30 pm",
+    "30 minutes reading per day",
+    "free time watching TV",
+    "scrolling through phone",
+    "relaxed during lunch break walking outside",
+    "consistent sleep schedule",
+    "bedtime 10:30 pm weekdays",
+    "bedtime 11:30 pm weekends",
+    "move bedtime up 15-30 minutes"
+  ],
+  "events": [
+    {
+      "text": "I get to bed around 10:30 pm on weekdays.",
+      "date_hint": "weekdays",
+      "turn_index": 10
+    },
+    {
+      "text": "I get to bed around 11:30 pm on weekends.",
+      "date_hint": "weekends",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to move my bedtime up by 15-30 minutes.",
+      "date_hint": "next change",
+      "turn_index": 10
+    }
+  ]
+}

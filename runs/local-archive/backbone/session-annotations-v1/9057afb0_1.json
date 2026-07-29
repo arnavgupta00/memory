@@ -1,0 +1,83 @@
+{
+  "session_id": "9057afb0_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to find low-carb dessert recipes.",
+      "turn_index": 0
+    },
+    {
+      "text": "I crave baked goods all the time.",
+      "turn_index": 0
+    },
+    {
+      "text": "I baked a chocolate cake for my sister's birthday last weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I like the sound of a flourless chocolate cake.",
+      "turn_index": 2
+    },
+    {
+      "text": "I used apple cider vinegar in an apple pie I made for Thanksgiving.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of trying to make croissants from scratch.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been intimidated by the laminating process for croissants.",
+      "turn_index": 6
+    },
+    {
+      "text": "I recently watched a video that made the laminating process seem more manageable.",
+      "turn_index": 6
+    },
+    {
+      "text": "I found a recipe online that I am planning to try out.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am worried about getting the croissant layers to flake properly.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering using a stand mixer to help with the laminating process.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "low-carb dessert recipes",
+    "craving baked goods",
+    "chocolate cake",
+    "sister's birthday",
+    "flourless chocolate cake",
+    "make it more moist",
+    "apple cider vinegar",
+    "apple pie",
+    "Thanksgiving",
+    "croissants from scratch",
+    "laminating process",
+    "layers to flake properly",
+    "stand mixer for laminating",
+    "recipe online"
+  ],
+  "events": [
+    {
+      "text": "Baked a chocolate cake for my sister's birthday",
+      "date_hint": "last weekend",
+      "turn_index": 0
+    },
+    {
+      "text": "Made an apple pie for Thanksgiving using apple cider vinegar",
+      "date_hint": "Thanksgiving",
+      "turn_index": 4
+    },
+    {
+      "text": "Planning to try an online croissant recipe",
+      "date_hint": "upcoming",
+      "turn_index": 8
+    }
+  ]
+}

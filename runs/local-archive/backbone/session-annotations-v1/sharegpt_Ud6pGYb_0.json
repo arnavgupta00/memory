@@ -1,0 +1,115 @@
+{
+  "session_id": "sharegpt_Ud6pGYb_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I work for a label.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to use a GCP bucket to upload various files containing literature on music artists.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to fine-tune GPT-3 eventually to write marketing copy.",
+      "turn_index": 0
+    },
+    {
+      "text": "I will save the uploaded files as PDFs, Word documents, text files, and jpegs.",
+      "turn_index": 0
+    },
+    {
+      "text": "I created a GCP bucket.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know whether the bucket is the same as a dataset.",
+      "turn_index": 4
+    },
+    {
+      "text": "After uploading files, I want to make sure the data is prepared for fine-tuning a GPT-3 model.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to use the AutoML tool.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want alternatives to AutoML.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to create a dataset from a bucket containing PDFs, JPEGS, and Word documents.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to label the data to make it clear what the document types are.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to label which artist each document relates to.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to label which release each document relates to.",
+      "turn_index": 8
+    },
+    {
+      "text": "Some document labeling could be discerned automatically from file names.",
+      "turn_index": 8
+    },
+    {
+      "text": "Long term, I want to use the structure of the files to show what the files are and what artists they relate to.",
+      "turn_index": 10
+    },
+    {
+      "text": "I may play around with a small amount of data to get a feel for the tools first.",
+      "turn_index": 10
+    },
+    {
+      "text": "I may label a small amount of data manually for now.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want a database that has labels for document type, date published, author, publication, artist, and release.",
+      "turn_index": 10
+    },
+    {
+      "text": "My document type labels include CD booklet.",
+      "turn_index": 10
+    },
+    {
+      "text": "My document type labels include Artist biography.",
+      "turn_index": 10
+    },
+    {
+      "text": "My document type labels include Press article.",
+      "turn_index": 10
+    },
+    {
+      "text": "My document type labels include Infomail (a company-wide email with info about the release sent by the campaign manager).",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "GCP bucket",
+    "upload files",
+    "fine-tune GPT-3",
+    "marketing copy",
+    "AutoML tool",
+    "dataset from bucket",
+    "AutoML NLP",
+    "labeling data",
+    "document type labels",
+    "press articles",
+    "artist biography",
+    "release metadata"
+  ],
+  "events": [
+    {
+      "text": "Session started (session_date).",
+      "date_hint": "2023/05/27",
+      "turn_index": 0
+    }
+  ]
+}

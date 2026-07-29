@@ -1,0 +1,112 @@
+{
+  "session_id": "8a834aee_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for wine pairing recommendations for beef bourguignon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I made beef bourguignon for my family dinner today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I learned how to make beef bourguignon in a cooking class I have been taking.",
+      "turn_index": 2
+    },
+    {
+      "text": "Beef bourguignon has become a new favorite dish of mine.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have made beef bourguignon three times already, including today's family dinner.",
+      "turn_index": 2
+    },
+    {
+      "text": "My family dinner last Sunday was loved by my family.",
+      "turn_index": 4
+    },
+    {
+      "text": "I was introduced to roasted sweet potatoes as a new favorite ingredient in class.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been adding roasted sweet potatoes to almost every meal since then.",
+      "turn_index": 6
+    },
+    {
+      "text": "I add roasted sweet potatoes as a side dish or mixed into a salad.",
+      "turn_index": 6
+    },
+    {
+      "text": "I season roasted sweet potatoes with a blend I got from a farmer's market called 'Moorish magic'.",
+      "turn_index": 8
+    },
+    {
+      "text": "The 'Moorish magic' blend adds a smoky, slightly sweet flavor that I love.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have used the 'Moorish magic' blend on roasted vegetables and quinoa.",
+      "turn_index": 10
+    },
+    {
+      "text": "I started meal prepping on Sundays.",
+      "turn_index": 10
+    },
+    {
+      "text": "Last weekend I made a big batch of quinoa and roasted vegetables.",
+      "turn_index": 10
+    },
+    {
+      "text": "My go-to lunch all week has been the big batch of quinoa and roasted vegetables I made last weekend.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "wine pairing recommendations",
+    "beef bourguignon",
+    "family dinner",
+    "cooking class",
+    "roasted sweet potatoes",
+    "farmer's market spice blend",
+    "Moorish magic",
+    "smoky slightly sweet flavor",
+    "roasted vegetables",
+    "quinoa",
+    "meal prepping on Sundays",
+    "go-to lunch"
+  ],
+  "events": [
+    {
+      "text": "Made beef bourguignon for a family dinner today",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Made beef bourguignon three times already, including today's family dinner",
+      "date_hint": "today (third time)",
+      "turn_index": 2
+    },
+    {
+      "text": "Family dinner last Sunday was loved by my family",
+      "date_hint": "last Sunday",
+      "turn_index": 4
+    },
+    {
+      "text": "Introduced to roasted sweet potatoes in a cooking class",
+      "date_hint": "since then (timing not specified)",
+      "turn_index": 6
+    },
+    {
+      "text": "Seasoned roasted sweet potatoes with 'Moorish magic' from a farmer's market",
+      "date_hint": "since getting the blend (timing not specified)",
+      "turn_index": 8
+    },
+    {
+      "text": "Meal prepping on Sundays; last weekend made a big batch of quinoa and roasted vegetables",
+      "date_hint": "last weekend",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "session_id": "4b495a04_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have a dog named Max.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of getting new interactive puzzle toys for my dog Max.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a cat named Luna.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of getting new interactive toys for my cat Luna.",
+      "turn_index": 4
+    },
+    {
+      "text": "I bought a new food bowl for my cat Luna from Petco on January 10th.",
+      "turn_index": 6
+    },
+    {
+      "text": "I bought the new food bowl for Luna because her old one was getting rusty.",
+      "turn_index": 6
+    },
+    {
+      "text": "The new food bowl for Luna cost $15.99.",
+      "turn_index": 6
+    },
+    {
+      "text": "I also picked up a new litter scoop and bags for Luna at Petco.",
+      "turn_index": 6
+    },
+    {
+      "text": "I ordered a 3-month supply of Frontline for my dog Max from 1800PetMeds on January 20th.",
+      "turn_index": 2
+    },
+    {
+      "text": "The 3-month supply of Frontline cost $49.99.",
+      "turn_index": 2
+    },
+    {
+      "text": "The 3-month supply of Frontline from 1800PetMeds included free shipping.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am looking for tips on how to apply Frontline effectively to my dog Max.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need advice on flea and tick prevention for my dog Max.",
+      "turn_index": 8
+    },
+    {
+      "text": "I ordered a 3-month supply of Frontline from 1800PetMeds on January 20th.",
+      "turn_index": 10
+    },
+    {
+      "text": "The 3-month supply of Frontline cost $49.99 with free shipping.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am looking for tips on how to apply Frontline effectively.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "interactive puzzle toys",
+    "dog Max stimulation",
+    "flea and tick prevention",
+    "Frontline application tips",
+    "3-month supply Frontline",
+    "1800PetMeds",
+    "free shipping",
+    "cat Luna interactive toys",
+    "Petco food bowl",
+    "litter box clean and odor-free",
+    "litter scoop and bags",
+    "January 10 Petco",
+    "January 20 Frontline order"
+  ],
+  "events": [
+    {
+      "text": "Ordered a 3-month supply of Frontline from 1800PetMeds.",
+      "date_hint": "January 20th",
+      "turn_index": 2
+    },
+    {
+      "text": "Bought a new food bowl for Luna from Petco.",
+      "date_hint": "January 10th",
+      "turn_index": 6
+    }
+  ]
+}

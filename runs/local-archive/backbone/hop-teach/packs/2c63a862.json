@@ -1,0 +1,33 @@
+{
+  "question_id": "2c63a862",
+  "question_type": "temporal-reasoning",
+  "question": "How many days did it take for me to find a house I loved after starting to work with Rachel?",
+  "question_date": "2022/03/02 (Wed) 10:19",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_d39b7977_1",
+    "answer_d39b7977_2"
+  ],
+  "haystack_session_count": 54,
+  "notes_coverage": "partial",
+  "annotated_session_count": 9,
+  "gold_sessions": [
+    {
+      "session_id": "answer_d39b7977_1",
+      "date": "2022/03/02 (Wed) 06:05",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_d39b7977_1\n[session_date] 2022/03/02 (Wed) 06:05\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm looking for some advice on neighborhoods near my workplace. I've been working with a real estate agent, Rachel, and she's been helping me find a place that fits my needs. I'd love to know more about the areas within a 30-minute drive from my office.\n\n[turn 2] I work in the city of Irvine, California. I'm looking for a family-friendly area with good schools and parks. I've already got a pretty good sense of what I'm looking for, thanks to Rachel's help, but I'd love to get your take on some of the neighborhoods in the area.\n\n[turn 4] I'm actually pre-approved for a mortgage up to $350,000, so I'm looking for something that fits within that budget. Do you think any of these neighborhoods have homes available in that price range?\n\n[turn 6] Can you tell me more about the types of properties available in these neighborhoods? Are there many new constructions, or are they mostly resale homes?\n\n[turn 8] I'd like to ask Rachel about the new construction listings in these areas. Since I started working with her on 2/15, I'm hoping she can give me a better sense of what's available in my budget. Do you think I should also ask her about any upcoming developments or projects in the pipeline?\n\n[turn 10] I'll ask Rachel about the new construction listings in these areas and get her insights on the current market trends. I'll also ask her about any upcoming developments or projects in the pipeline and how they might impact the local market and property values. Thanks for the suggestions!"
+    },
+    {
+      "session_id": "answer_d39b7977_2",
+      "date": "2022/03/02 (Wed) 04:42",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_d39b7977_2\n[session_date] 2022/03/02 (Wed) 04:42\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm looking to get some advice on homebuying. I recently saw a house that I really love on 3/1, and I'm considering making an offer. Can you tell me what are some things I should consider before making an offer?\n\n[turn 2] I've already got pre-approved for a mortgage, actually, on February 10th. The amount was $350,000, which is slightly higher than I expected. I've been working with an agent, Rachel, who's been helping me find homes that fit my criteria. The house I saw on March 1st really checks all the boxes, so I'm hoping to make a strong offer. What do you think about including an inspection contingency in my offer?\n\n[turn 4] I was thinking of offering around $320,000. The asking price is $335,000. Do you think that's a reasonable offer?\n\n[turn 6] I think I'll make the offer contingent on the inspection, as you suggested. I'll also attach my pre-approval letter to the offer. What are some common mistakes that buyers make when making an offer, so I can avoid them?\n\n[turn 8] I feel good about the offer. I've done my research, and I think $320,000 is a fair price considering the market value of the property. I'm also confident that the inspection contingency will protect me in case any issues are found. I'm prepared to negotiate, and I'm hoping to come to a mutually beneficial agreement with the seller.\n\n[turn 10] I'll submit the offer today, and Rachel will present it to the seller. I'll also make sure to include all the necessary documents, including the pre-approval letter and the inspection contingency. Fingers crossed that the seller accepts the offer or is willing to negotiate a deal that works for both of us!"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

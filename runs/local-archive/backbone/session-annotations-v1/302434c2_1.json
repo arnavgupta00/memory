@@ -1,0 +1,52 @@
+{
+  "session_id": "302434c2_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I bought an abstract oil painting from a local artist at an art fair in downtown last October.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a few art prints.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have a sculpture.",
+      "turn_index": 2
+    },
+    {
+      "text": "My sister and I made ceramic vases in a pottery class.",
+      "turn_index": 4
+    },
+    {
+      "text": "I recently inherited an antique vase from my grandmother's estate.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "abstract oil painting care",
+    "art fair downtown",
+    "art prints care",
+    "sculpture care",
+    "ceramic vases care",
+    "pottery class ceramic vases",
+    "inherited antique vase",
+    "grandmother's estate",
+    "history of ceramics",
+    "ceramic materials",
+    "ceramic glazes",
+    "time periods ceramic glazes"
+  ],
+  "events": [
+    {
+      "text": "Bought an abstract oil painting from a local artist at an art fair in downtown.",
+      "date_hint": "last October",
+      "turn_index": 0
+    },
+    {
+      "text": "Inherited an antique vase from grandmother's estate.",
+      "date_hint": "recently",
+      "turn_index": 6
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "question_id": "gpt4_385a5000",
+  "question_type": "temporal-reasoning",
+  "question": "Which seeds were started first, the tomatoes or the marigolds?",
+  "question_date": "2023/03/10 (Fri) 15:30",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_7a4a93f1_2",
+    "answer_7a4a93f1_1"
+  ],
+  "haystack_session_count": 51,
+  "notes_coverage": "partial",
+  "annotated_session_count": 9,
+  "gold_sessions": [
+    {
+      "session_id": "answer_7a4a93f1_2",
+      "date": "2023/03/10 (Fri) 17:13",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_7a4a93f1_2\n[session_date] 2023/03/10 (Fri) 17:13\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm planning to plant some seedlings in my backyard soon. Can you tell me what's the ideal temperature for planting them outside? By the way, I just started some marigold seeds that arrived on March 3rd, and they're already germinating - excited to see them grow!\n\n[turn 2] I'm thinking of transplanting my seedlings, including the marigolds, into larger pots soon. What's the best way to do it without shocking them?\n\n[turn 4] I've been using a mix of peat moss, vermiculite, and perlite for my potting soil, and it seems to be working well for my seedlings. Do you think this mix would be suitable for the marigolds and other plants I'll be transplanting, or should I consider a different mix?\n\n[turn 6] I'm also thinking of adding some support for my marigolds as they grow. Do you have any suggestions for DIY trellises or stakes that I could use?\n\n[turn 8] I'm thinking of using a combination of stakes and twine to provide support for my marigolds. Would it be better to tie the stems to the stakes individually, or to create a sort of \"grid\" using twine to connect multiple stems together?"
+    },
+    {
+      "session_id": "answer_7a4a93f1_1",
+      "date": "2023/03/10 (Fri) 17:13",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_7a4a93f1_1\n[session_date] 2023/03/10 (Fri) 17:13\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm planning to plant out my seedlings soon and I'm wondering if you can tell me the average soil temperature for my area. By the way, I've been starting seeds indoors under grow lights in my basement since February 20th - tomatoes, peppers, and cucumbers are all doing well, about 2-3 inches tall now.\n\n[turn 2] I'm in the 23456 zip code. Also, I've been fertilizing my seedlings with a balanced fertilizer and making sure the soil is moist but not soggy.\n\n[turn 4] Now that I know the average soil temperature in my area, I'm wondering if it's too early to plant out my tomatoes, peppers, and cucumbers. Should I wait for the soil temperature to reach a certain threshold or are they okay to go out now?\n\n[turn 5] I've been preparing the raised bed in my backyard by adding a 2-inch layer of compost and mixing it into the soil, so I'm hoping that will help warm up the soil a bit. Do you think the compost will make a significant difference in soil temperature?\n\n[turn 7] What's the best way to support the peas I've planted, as they're already sprouting? Should I add some kind of trellis or cage to help them grow upwards?"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

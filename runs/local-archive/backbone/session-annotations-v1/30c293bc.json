@@ -1,0 +1,92 @@
+{
+  "session_id": "30c293bc",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user is looking for book recommendations.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user wants more information about Celeste Ng's latest novel.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user wants to get in touch with publishers.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user has a friend who is an editor at a publishing house.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user wants to connect the user's friend with a freelance writer the user met recently.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user met a woman on a bus last week.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user had a conversation with the woman on a bus.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user remembers the woman mentioned loving Celeste Ng's latest novel.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user met the woman on a bus ride home from work.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user met the woman on a Tuesday.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user is interested in The Mothers.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user is interested in The Immortalists.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user wants to learn about the writing styles of Brit Bennett and Chloe Benjamin.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user is interested in learning about the themes of motherhood and identity in The Mothers.",
+      "turn_index": 10
+    },
+    {
+      "text": "The user wants to know how Brit Bennett explores themes of motherhood and identity in The Mothers.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "book recommendations",
+    "Celeste Ng latest novel",
+    "getting in touch with publishers",
+    "editor at a publishing house",
+    "connect editor with freelance writer",
+    "met a woman on the bus",
+    "bus ride home from work",
+    "Tuesday conversation",
+    "The Mothers",
+    "The Immortalists",
+    "writing styles Brit Bennett",
+    "themes of motherhood and identity"
+  ],
+  "events": [
+    {
+      "text": "Conversation with a woman on a bus about Celeste Ng's latest novel",
+      "date_hint": "last week (Tuesday)",
+      "turn_index": 4
+    },
+    {
+      "text": "Bus ride home from work where the user met the woman and it was a Tuesday",
+      "date_hint": "Tuesday",
+      "turn_index": 6
+    }
+  ]
+}

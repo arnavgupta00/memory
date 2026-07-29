@@ -1,0 +1,96 @@
+{
+  "session_id": "53fe2138",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to plan out my day and want to know what traffic is like on my usual route to work.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to check whether there is any roadwork or congestion on my usual route to work.",
+      "turn_index": 0
+    },
+    {
+      "text": "I usually leave the house by 7:45 AM these days.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to wake up earlier to fit in meditation and breakfast prep.",
+      "turn_index": 2
+    },
+    {
+      "text": "I usually wake up at 6:30 AM on weekdays.",
+      "turn_index": 4
+    },
+    {
+      "text": "On Tuesdays and Thursdays, I hit the gym before work.",
+      "turn_index": 4
+    },
+    {
+      "text": "On Tuesdays and Thursdays, I need to wake up at 5:50 AM to fit in a 45-minute workout.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to fit in a 10-minute meditation session in my morning routine.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of meal prepping on the weekends to save time during the week.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want tips on how to meal prep efficiently.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want healthy breakfast options that I can prep ahead of time.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know the best way to store and reheat the prepped meals.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of trying out a new breakfast recipe this weekend.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want suggestions for a healthy and easy-to-make breakfast that I can prep ahead of time.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "traffic on usual route to work",
+    "roadwork and congestion",
+    "leave house 7:45 AM",
+    "guided meditation apps",
+    "morning meditation routine",
+    "wake up 6:30 AM weekdays",
+    "gym before work Tuesdays and Thursdays",
+    "wake up 5:50 AM 45-minute workout",
+    "10-minute meditation session",
+    "weekend meal prepping",
+    "efficient meal prep tips",
+    "healthy breakfast options",
+    "store and reheat prepped meals",
+    "new breakfast recipe this weekend",
+    "healthy easy breakfast prep ahead"
+  ],
+  "events": [
+    {
+      "text": "Wake up at 5:50 AM on Tuesdays and Thursdays for a 45-minute gym workout",
+      "date_hint": "Tuesdays and Thursdays",
+      "turn_index": 4
+    },
+    {
+      "text": "Meal prepping on the weekends",
+      "date_hint": "weekends",
+      "turn_index": 6
+    },
+    {
+      "text": "Trying a new breakfast recipe this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 10
+    }
+  ]
+}

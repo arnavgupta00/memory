@@ -1,0 +1,55 @@
+{
+  "session_id": "sharegpt_CIOACts_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user asked for a list of all 50 United States in a Mermaid diagram.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user received a Mermaid viewer parse error mentioning line 30 and the token 'ALPHA'.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user received another Mermaid parse error mentioning line 16 and the token 'ALPHA'.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user asked for a new Mermaid chart with Michael as the parent and three little pigs as children.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "50 United States list",
+    "Mermaid diagram",
+    "Mermaid viewer parse error",
+    "line 30 parse error",
+    "line 16 parse error",
+    "token ALPHA",
+    "Michael parent",
+    "three little pigs children",
+    "Mermaid chart"
+  ],
+  "events": [
+    {
+      "text": "User requested a Mermaid diagram listing all 50 United States.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "User reported a Mermaid viewer parse error on line 30 with 'ALPHA'.",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "User reported a Mermaid parse error on line 16 with 'ALPHA'.",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "User requested a new Mermaid chart with Michael as parent and three little pigs as children.",
+      "date_hint": "",
+      "turn_index": 6
+    }
+  ]
+}

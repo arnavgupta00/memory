@@ -1,0 +1,81 @@
+{
+  "session_id": "5a6b1065",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for new meal prep ideas for healthy lunches to try this Sunday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in trying the Grilled Chicken and Veggie Containers.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want suggestions for other veggies to use besides bell peppers, zucchini, and carrots.",
+      "turn_index": 2
+    },
+    {
+      "text": "I overcooked chicken breast last week.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want suggestions on how to cook chicken breast so I get it right this time.",
+      "turn_index": 4
+    },
+    {
+      "text": "I think I will pan-sear the chicken breast this time.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want suggestions for seasonings and oils to use for pan-searing chicken breast.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of using Italian-Style seasoning with olive oil this time.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want suggestions on how to cook the veggies for the Grilled Chicken and Veggie Containers.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of adding mushrooms to my Grilled Chicken and Veggie Containers.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want suggestions on how to cook mushrooms for the Grilled Chicken and Veggie Containers.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "meal prep ideas",
+    "healthy lunch recipes",
+    "this Sunday",
+    "Grilled Chicken and Veggie Containers",
+    "other veggies",
+    "bell peppers",
+    "zucchini",
+    "carrots",
+    "chicken breast cooking",
+    "overcooked chicken breast",
+    "pan-searing chicken breast",
+    "seasonings and oils",
+    "Italian-Style seasoning",
+    "olive oil",
+    "cooking veggies",
+    "mushrooms",
+    "how to cook mushrooms"
+  ],
+  "events": [
+    {
+      "text": "User plans to try healthy lunch meal prep ideas this Sunday.",
+      "date_hint": "this Sunday",
+      "turn_index": 0
+    },
+    {
+      "text": "User overcooked chicken breast last week.",
+      "date_hint": "last week",
+      "turn_index": 4
+    }
+  ]
+}

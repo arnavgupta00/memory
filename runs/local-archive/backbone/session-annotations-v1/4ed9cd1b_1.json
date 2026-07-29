@@ -1,0 +1,109 @@
+{
+  "session_id": "4ed9cd1b_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I lost my old favorite water bottle on a road trip to the mountains.",
+      "turn_index": 0
+    },
+    {
+      "text": "I drove 200 miles to reach the mountains on the first day of my road trip.",
+      "turn_index": 0
+    },
+    {
+      "text": "My old water bottle was made of stainless steel.",
+      "turn_index": 2
+    },
+    {
+      "text": "My old water bottle had insulation.",
+      "turn_index": 2
+    },
+    {
+      "text": "My old water bottle was around 27 oz in size.",
+      "turn_index": 2
+    },
+    {
+      "text": "I liked the durability of my old insulated stainless steel water bottle.",
+      "turn_index": 2
+    },
+    {
+      "text": "My old water bottle kept my drinks cold for hours.",
+      "turn_index": 2
+    },
+    {
+      "text": "I decided to go with Hydro Flask.",
+      "turn_index": 4
+    },
+    {
+      "text": "I chose the Hydro Flask Standard Mouth 24 oz water bottle.",
+      "turn_index": 6
+    },
+    {
+      "text": "I like the Hydro Flask Standard Mouth 24 oz because it is a classic choice and easy to carry.",
+      "turn_index": 6
+    },
+    {
+      "text": "I went on a 4-day road trip to the mountains with my family.",
+      "turn_index": 8
+    },
+    {
+      "text": "We drove around 200 miles each way on the road trip.",
+      "turn_index": 8
+    },
+    {
+      "text": "We stopped at 3 different scenic spots along the way.",
+      "turn_index": 8
+    },
+    {
+      "text": "On the second day, we hiked for about 5 miles to reach a beautiful waterfall.",
+      "turn_index": 8
+    },
+    {
+      "text": "I completed the hike without too much trouble.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am not exactly an avid hiker.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to explore more hiking spots in the Pacific Northwest.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want hiking spots around Oregon or Washington.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "new water bottle",
+    "stainless steel insulated water bottle",
+    "27 oz water bottle",
+    "keep drinks cold for hours",
+    "Hydro Flask",
+    "Hydro Flask Standard Mouth 24 oz",
+    "hiking and outdoor activities",
+    "4-day road trip to the mountains",
+    "200 miles road trip",
+    "5-mile hike to a waterfall",
+    "Pacific Northwest hiking",
+    "Oregon or Washington hikes and parks"
+  ],
+  "events": [
+    {
+      "text": "Road trip to the mountains (first day drive)",
+      "date_hint": "first day",
+      "turn_index": 0
+    },
+    {
+      "text": "4-day road trip to the mountains with family",
+      "date_hint": "4-day",
+      "turn_index": 8
+    },
+    {
+      "text": "Hike to a waterfall",
+      "date_hint": "second day",
+      "turn_index": 8
+    }
+  ]
+}

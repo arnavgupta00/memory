@@ -1,0 +1,54 @@
+{
+  "session_id": "ultrachat_3387",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to make campfire recipes on a camping trip.",
+      "turn_index": 0
+    },
+    {
+      "text": "I love the idea of making s'mores dip.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to try making the Dutch Oven Peach Cobbler.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want suggestions for drinks to pair with the Dutch Oven Peach Cobbler.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will pair the peach cobbler with hot cocoa.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want tips for making hot cocoa over the fire.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "campfire recipes",
+    "camping trip",
+    "s'mores dip",
+    "dessert recipes",
+    "Dutch Oven Peach Cobbler",
+    "peach cobbler over the fire",
+    "drinks to pair",
+    "hot cocoa",
+    "hot cocoa over the fire",
+    "campfire dessert"
+  ],
+  "events": [
+    {
+      "text": "User plans to try making Dutch Oven Peach Cobbler on a next camping trip.",
+      "date_hint": "next camping trip",
+      "turn_index": 6
+    },
+    {
+      "text": "User decides to pair peach cobbler with hot cocoa.",
+      "date_hint": "",
+      "turn_index": 8
+    }
+  ]
+}

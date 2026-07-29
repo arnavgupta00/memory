@@ -1,0 +1,61 @@
+{
+  "session_id": "sharegpt_k31ZA2H_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user wants the assistant to act as an SVG designer.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user will ask the assistant to create images.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user wants the assistant to convert SVG code to a base64 data URL.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user wants the assistant to respond with only a markdown image tag referencing the base64 data URL.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user requested an image of a red nosed deer.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user requested an image of the Earth seen from the Moon.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user requested an image of the Earth seen from the Moon with an atmosphere.",
+      "turn_index": 4
+    }
+  ],
+  "keyphrases": [
+    "SVG designer",
+    "base64 data URL",
+    "markdown image tag",
+    "red nosed deer",
+    "Earth seen from the moon",
+    "Earth from the Moon",
+    "Earth seen from the moon with atmosphere",
+    "atmosphere effect"
+  ],
+  "events": [
+    {
+      "text": "Requested an image of a red nosed deer.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Requested an image of the Earth seen from the Moon.",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Requested an image of the Earth seen from the Moon with atmosphere.",
+      "date_hint": "",
+      "turn_index": 4
+    }
+  ]
+}

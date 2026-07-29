@@ -1,0 +1,90 @@
+{
+  "session_id": "sharegpt_OjTxA7k_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "Marlene Zamora sent multiple messages from marlene_zamora@yahoo.com in the ticketing-system and mail channels.",
+      "turn_index": 0
+    },
+    {
+      "text": "Marlene Zamora referenced ticket #pol-0003 titled \"Questioning Autonomous Car Safety\" and included the message \"We've done nothing. I'm so sorry\".",
+      "turn_index": 0
+    },
+    {
+      "text": "Marlene Zamora referenced ticket #pol-0004 titled \"Uncertainty Regarding Mobius Autonomous Cars\" and wrote \"Need to jump on this people!\".",
+      "turn_index": 0
+    },
+    {
+      "text": "Marlene Zamora referenced ticket #pol-0006 titled \"Knowledge of Autonomous Car Bugs?\" and wrote \"I'm really sorry to hear this Charli. Is Marlene Zamora\" and \"We'll get right on it.\".",
+      "turn_index": 0
+    },
+    {
+      "text": "Marlene Zamora forwarded an email titled \"What is Being Done About Autonomous Car Bugs?\" and asked Chelsea if she was aware of it.",
+      "turn_index": 0
+    },
+    {
+      "text": "Marlene Zamora replied \"Everything we can do is being addressed\" in response to ticket #pol-0007 titled \"What is Being Done About Autonomous Car Bugs?\".",
+      "turn_index": 0
+    },
+    {
+      "text": "Marlene Zamora assigned ticket #pol-0011 titled \"Autonomous Car Safety in Question\" to Kyson Terry.",
+      "turn_index": 0
+    },
+    {
+      "text": "Marlene Zamora wrote a note asking \"@Kez- anything you can go about this?\" for ticket #pol-0011.",
+      "turn_index": 0
+    },
+    {
+      "text": "Marlene Zamora referenced ticket #pol-0008 titled \"Safety Concerns About Mobius Autonomous Cars\" and wrote \"Hey Dylan,Yes we're working on it!\".",
+      "turn_index": 0
+    },
+    {
+      "text": "Kyson Terry sent multiple messages from terry.kyson@mobius.com in the ticketing-system and mail channels.",
+      "turn_index": 0
+    },
+    {
+      "text": "Kyson Terry referenced ticket #pol-0011 titled \"Autonomous Car Safety in Question\" and wrote \"No info is available right now Hollie but we'll\".",
+      "turn_index": 0
+    },
+    {
+      "text": "Kyson Terry referenced ticket #pol-0012 titled \"Urgent Request for Information on Autonomous Car Bugs\" and wrote \"Yep, we're on it!\".",
+      "turn_index": 0
+    },
+    {
+      "text": "Kyson Terry referenced ticket #pol-0002 titled \"Request for Information on Autonomous Car Bugs\" and wrote \"Nothing is being done\".",
+      "turn_index": 0
+    },
+    {
+      "text": "Kyson Terry referenced ticket #pol-0001 titled \"Concerning Erratic Road Behaviour\" with priority \"minor\" and wrote \"Sorry about this Alex. We'll investigate\".",
+      "turn_index": 0
+    },
+    {
+      "text": "Kyson Terry replied to a mail message for ticket #pol-0002 with \"Nothing is being done\".",
+      "turn_index": 0
+    }
+  ],
+  "keyphrases": [
+    "15min intervals",
+    "sender name timestamps",
+    "Number of Interactions",
+    "Tickets Closed or Solved",
+    "Message Tone",
+    "Marlene Zamora",
+    "Kyson Terry",
+    "ticketing-system",
+    "mail channel",
+    "Mobius autonomous cars",
+    "autonomous car safety",
+    "erratic road behaviour",
+    "ticket #pol-0011",
+    "ticket #pol-0012",
+    "ticket #pol-0007"
+  ],
+  "events": [
+    {
+      "text": "Exercise start and end are determined by the oldest and newest timestamps in the provided data.",
+      "date_hint": "oldest timestamp to newest timestamp",
+      "turn_index": 0
+    }
+  ]
+}

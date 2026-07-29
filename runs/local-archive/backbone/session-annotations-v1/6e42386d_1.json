@@ -1,0 +1,118 @@
+{
+  "session_id": "6e42386d_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Europe this summer.",
+      "turn_index": 0
+    },
+    {
+      "text": "I will be flying out to visit my family on April 10th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in finding a good deal on flights.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to look at Skyscanner to find flight deals.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to look at Google Flights to find flight deals.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want suggestions on how to stay productive while traveling, especially during long flights or layovers.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will be visiting my family for Easter.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking about what gifts to bring for my family for Easter.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want gift ideas that are easy to pack and won’t take up too much space in my luggage.",
+      "turn_index": 6
+    },
+    {
+      "text": "I decided to bring gourmet snacks as gifts.",
+      "turn_index": 8
+    },
+    {
+      "text": "I decided to bring travel-sized toiletries as gifts.",
+      "turn_index": 8
+    },
+    {
+      "text": "My family loves trying new foods.",
+      "turn_index": 8
+    },
+    {
+      "text": "My family loves taking care of their skin.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking about what to pack for my trip.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want tips on how to pack lightly and efficiently.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will be visiting my family for Easter and I won’t need to bring a lot of clothing.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want tips on how to stay connected with my family and friends back home while I am away, especially during Easter.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to Europe this summer",
+    "flight deals",
+    "Skyscanner",
+    "Google Flights",
+    "best time to book flight",
+    "April 10th flight",
+    "stay productive while traveling",
+    "long flights and layovers",
+    "Easter gifts",
+    "easy to pack gifts",
+    "gourmet snacks",
+    "travel-sized toiletries",
+    "pack lightly and efficiently",
+    "stay connected while traveling",
+    "Easter travel planning"
+  ],
+  "events": [
+    {
+      "text": "Flying out to visit family",
+      "date_hint": "April 10th",
+      "turn_index": 0
+    },
+    {
+      "text": "Visiting family for Easter",
+      "date_hint": "Easter",
+      "turn_index": 4
+    },
+    {
+      "text": "Planning and choosing Easter gifts",
+      "date_hint": "Easter",
+      "turn_index": 6
+    },
+    {
+      "text": "Packing for Easter trip",
+      "date_hint": "Easter",
+      "turn_index": 8
+    },
+    {
+      "text": "Staying connected during Easter while away",
+      "date_hint": "Easter",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "session_id": "sharegpt_IwWZEe4_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user asked to put a list of themes into a table with three columns: Theme, Sector, and Description.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user said the header for each separate list is a Sector.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user said the Description column should be left blank initially.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user provided multiple theme lists under the sectors Retail and Consumer, Real Estate, Energy / Utilities, and Financial Services.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user asked to fill the first column with the relevant sector.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user clarified that the whole column should be filled so every cell has a Sector.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user said the Description column should be completed with a description of each theme.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user specified that the themes are ESG-related themes.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "ESG themes table",
+    "Theme column",
+    "Sector column",
+    "Description column",
+    "Retail and Consumer sector",
+    "Real Estate sector",
+    "Energy / Utilities sector",
+    "Financial Services sector",
+    "alcoholic beverages theme",
+    "appliance manufacturing theme",
+    "casinos & gaming theme",
+    "water & utilities theme"
+  ],
+  "events": []
+}

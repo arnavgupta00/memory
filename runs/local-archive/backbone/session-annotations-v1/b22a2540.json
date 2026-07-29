@@ -1,0 +1,82 @@
+{
+  "session_id": "b22a2540",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am thinking of buying a bike to commute to work.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am in the city center.",
+      "turn_index": 2
+    },
+    {
+      "text": "I live in ZIP code 10021.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been trying to get out the door earlier to avoid crowds.",
+      "turn_index": 4
+    },
+    {
+      "text": "My train has been delayed, making it hard to get out earlier.",
+      "turn_index": 4
+    },
+    {
+      "text": "Yesterday, my train was delayed by 20 minutes.",
+      "turn_index": 6
+    },
+    {
+      "text": "Yesterday, I was late for a meeting because my train was delayed by 20 minutes.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been trying to get to bed earlier.",
+      "turn_index": 8
+    },
+    {
+      "text": "Netflix keeps releasing new episodes of my favorite shows, which makes it hard for me to get to bed earlier.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been using Citymapper.",
+      "turn_index": 6
+    },
+    {
+      "text": "I listen to audiobooks on my commute to make the time pass more quickly.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am currently listening to a thriller novel.",
+      "turn_index": 10
+    },
+    {
+      "text": "The thriller novel I am listening to is really gripping.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "buy a bike",
+    "commute to work",
+    "bike shops",
+    "city center",
+    "stay cool commuting in summer",
+    "ZIP code 10021",
+    "avoid crowds",
+    "train delayed",
+    "Citymapper",
+    "train delay 20 minutes",
+    "late for meeting",
+    "get to bed earlier",
+    "Netflix new episodes",
+    "audiobooks on commute",
+    "thriller novel"
+  ],
+  "events": [
+    {
+      "text": "My train was delayed by 20 minutes and I was late for a meeting.",
+      "date_hint": "yesterday",
+      "turn_index": 6
+    }
+  ]
+}

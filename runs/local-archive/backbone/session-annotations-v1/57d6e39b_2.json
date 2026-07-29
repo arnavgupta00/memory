@@ -1,0 +1,110 @@
+{
+  "session_id": "57d6e39b_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am thinking of doing some bike maintenance this weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to check whether my road bike's brake pads need to be replaced.",
+      "turn_index": 0
+    },
+    {
+      "text": "I do not have my hybrid bike with me right now.",
+      "turn_index": 0
+    },
+    {
+      "text": "I lent my hybrid bike to my sister today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I meant that the bike is a road bike.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking about upgrading my road bike's pedals to clipless pedals.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know whether Shimano Ultegra pedals are compatible with my road bike.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have a road bike and a hybrid bike.",
+      "turn_index": 6
+    },
+    {
+      "text": "I lent my hybrid bike to my sister.",
+      "turn_index": 6
+    },
+    {
+      "text": "My sister mentioned that the hybrid bike was a bit heavy for her.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking about getting a lighter hybrid bike for my sister.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering getting a women's specific hybrid bike for my sister.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering whether a unisex hybrid bike would work just as well for my sister.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will take my sister to a local bike shop to test ride some hybrid bikes.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering getting a bike with suspension forks or a rigid fork for my sister.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will ask bike shop staff about the pros and cons of suspension forks vs rigid forks.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will get recommendations based on my sister's riding style and preferences.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "road bike brake pads inspection",
+    "bike maintenance this weekend",
+    "hybrid bike lent to sister",
+    "clipless pedals upgrade",
+    "Shimano Ultegra pedals compatibility",
+    "lighter hybrid bike for sister",
+    "women's specific hybrid bike",
+    "unisex hybrid bike",
+    "local bike shop test ride",
+    "suspension forks vs rigid fork",
+    "bike shop recommendations",
+    "sister riding style preferences"
+  ],
+  "events": [
+    {
+      "text": "Lent my hybrid bike to my sister",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Plan to check road bike brake pads this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 0
+    },
+    {
+      "text": "Plan to take my sister to a local bike shop to test ride hybrid bikes",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Plan to ask bike shop staff about suspension forks vs rigid forks",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

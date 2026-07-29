@@ -1,0 +1,80 @@
+{
+  "session_id": "sharegpt_ToxFax1_56",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user asked to improve a paragraph they provided.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user said some ideas seemed repetitive on several sentences.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user asked to fix repetitive thoughts and sentence structure.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user said the assistant added more words.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user asked to fix the paragraph without adding any other thoughts or ideas within the paragraph.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user asked for synonyms of the word \"sanctuary\".",
+      "turn_index": 8
+    },
+    {
+      "text": "The user asked to create content for the topic \"Plan Your Next Maui Trip with Family Vacation Rentals\".",
+      "turn_index": 10
+    },
+    {
+      "text": "The user specified the content order to include a summary, an introduction to Family Vacation Rentals, and a call to action.",
+      "turn_index": 10
+    },
+    {
+      "text": "The user said Family Vacation Rentals should be introduced as offering the best kid-friendly hotels and family-friendly rentals.",
+      "turn_index": 10
+    },
+    {
+      "text": "The user said Family Vacation Rentals has over 10 million listings to choose from.",
+      "turn_index": 10
+    },
+    {
+      "text": "The user said the listings can be filtered and compared for family amenities and services.",
+      "turn_index": 10
+    },
+    {
+      "text": "The user asked to change the perspective to use \"we\" as in \"we at Family Vacation Rentals\".",
+      "turn_index": 12
+    }
+  ],
+  "keyphrases": [
+    "repetitive sentences",
+    "sentence structure",
+    "Hawaiian Islands Humpback Whale National Marine Sanctuary",
+    "Kihei Maui",
+    "boat deck whale breaching",
+    "family vacation rentals",
+    "kid-friendly hotels",
+    "family-friendly rentals",
+    "10 million listings",
+    "filter and compare amenities",
+    "call to action",
+    "use we perspective"
+  ],
+  "events": [
+    {
+      "text": "User requested synonym suggestions for the word \"sanctuary\".",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "User requested creation of content in a specific order for \"Plan Your Next Maui Trip with Family Vacation Rentals\".",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

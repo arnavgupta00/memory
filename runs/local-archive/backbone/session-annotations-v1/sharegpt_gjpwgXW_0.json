@@ -1,0 +1,83 @@
+{
+  "session_id": "sharegpt_gjpwgXW_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want an 800-word SEO blog about counting from 1 to 10 in different languages.",
+      "turn_index": 0
+    },
+    {
+      "text": "The blog should include Spanish.",
+      "turn_index": 0
+    },
+    {
+      "text": "The blog should include French.",
+      "turn_index": 0
+    },
+    {
+      "text": "The blog should mention why learning to count in different languages is useful.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the rewrite to use a more engaging tone.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want the rewrite to use UK English.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want a paragraph about volunteering in Tenerife, Spain, with GVI.",
+      "turn_index": 4
+    },
+    {
+      "text": "GVI offers cetacean conservation in Tenerife.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want a paragraph about volunteering as an Enligh teacher in Madagascar with GVI.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want the whole blog to have a title.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want an SEO blurb for this blog.",
+      "turn_index": 12
+    }
+  ],
+  "keyphrases": [
+    "counting 1 to 10",
+    "SEO blog",
+    "different languages",
+    "Spanish counting",
+    "French counting",
+    "UK English",
+    "engaging tone",
+    "why learn to count",
+    "volunteering Tenerife",
+    "GVI cetacean conservation",
+    "volunteering English teacher",
+    "Madagascar volunteering",
+    "SEO blurb",
+    "blog title"
+  ],
+  "events": [
+    {
+      "text": "Volunteering paragraph requested for Tenerife, Spain with GVI.",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Correction requested: GVI offers cetacean conservation in Tenerife.",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Volunteering paragraph requested for an English teacher role in Madagascar with GVI.",
+      "date_hint": "",
+      "turn_index": 8
+    }
+  ]
+}

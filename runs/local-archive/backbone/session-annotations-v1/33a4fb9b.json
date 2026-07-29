@@ -1,0 +1,128 @@
+{
+  "session_id": "33a4fb9b",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a summer vacation.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a 4-day trip.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering Austin for my trip.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering San Diego for my trip.",
+      "turn_index": 2
+    },
+    {
+      "text": "Last week, I commented on a lot of posts on social media.",
+      "turn_index": 2
+    },
+    {
+      "text": "Last week, I liked around 10 posts on Instagram.",
+      "turn_index": 2
+    },
+    {
+      "text": "Most of the Instagram posts I liked were from friends and family sharing their summer vacation updates.",
+      "turn_index": 2
+    },
+    {
+      "text": "Last week, on Wednesday, I commented on a friend's Instagram post about her new job.",
+      "turn_index": 4
+    },
+    {
+      "text": "The friend's name is Rachel.",
+      "turn_index": 4
+    },
+    {
+      "text": "I congratulated Rachel on her achievement.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of visiting the USS Midway Museum in San Diego.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to take a ride-hailing service to get to the USS Midway Museum from my hotel.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to check out The Fish Market for lunch near the USS Midway Museum.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to check out Anthony's Fish Grotto for lunch near the USS Midway Museum.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to take Instagram-worthy photos near the USS Midway Museum.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to take photos on the flight deck at the USS Midway Museum.",
+      "turn_index": 10
+    },
+    {
+      "text": "I plan to take photos near the Unconditional Surrender Statue at the USS Midway Museum.",
+      "turn_index": 10
+    },
+    {
+      "text": "I plan to capture good shots of my lunch at The Fish Market or Anthony's Fish Grotto.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "summer vacation planning",
+    "4-day trip",
+    "popular US destinations",
+    "Austin",
+    "San Diego",
+    "Instagram activity",
+    "liked around 10 posts",
+    "commented on friend's new job post",
+    "Rachel",
+    "USS Midway Museum",
+    "ride-hailing service",
+    "The Fish Market",
+    "Anthony's Fish Grotto",
+    "Instagram-worthy photos",
+    "flight deck photos",
+    "Unconditional Surrender Statue"
+  ],
+  "events": [
+    {
+      "text": "I liked around 10 Instagram posts from friends and family sharing summer vacation updates.",
+      "date_hint": "last week",
+      "turn_index": 2
+    },
+    {
+      "text": "I commented on Rachel's Instagram post about her new job on Wednesday.",
+      "date_hint": "last week, Wednesday",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to visit the USS Midway Museum in San Diego.",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to take a ride-hailing service from my hotel to the USS Midway Museum.",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to take Instagram-worthy photos near the USS Midway Museum.",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to take photos on the flight deck and near the Unconditional Surrender Statue.",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

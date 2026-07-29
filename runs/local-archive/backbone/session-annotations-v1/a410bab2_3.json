@@ -1,0 +1,107 @@
+{
+  "session_id": "a410bab2_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to India.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need help with travel requirements for my trip to India.",
+      "turn_index": 0
+    },
+    {
+      "text": "My passport expires in about 6 months.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to renew my passport soon before I apply for my visa.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know whether I need to get a new passport before applying for a visa or whether I can apply for both simultaneously.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to gather documents for my passport renewal.",
+      "turn_index": 4
+    },
+    {
+      "text": "I think my birth certificate is stored in a file at my parents' house.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know what other documents are required for a passport renewal.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know whether there is any way to expedite the passport renewal process.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know whether India requires a certain number of blank pages in a passport for visa stamps.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know how many blank pages I need in my new passport for India.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will check my passport and apply for a new one if necessary.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am wondering whether there are specific vaccinations or medications I need to take before traveling to India.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I will consult my doctor to figure out which vaccinations and medications I need before my trip to India.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know how far in advance I should schedule my doctor's appointment to get necessary shots and medications on time.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to India",
+    "travel requirements documents",
+    "passport renewal",
+    "passport expires in 6 months",
+    "visa application simultaneously",
+    "birth certificate",
+    "expedite passport renewal",
+    "blank pages for visa stamps",
+    "India passport blank page requirement",
+    "vaccinations for India travel",
+    "medications before traveling to India",
+    "doctor appointment timing for vaccinations"
+  ],
+  "events": [
+    {
+      "text": "Passport renewal planning before applying for an India visa",
+      "date_hint": "before applying for my visa (passport expires in about 6 months)",
+      "turn_index": 2
+    },
+    {
+      "text": "Gathering documents for passport renewal including birth certificate at parents' house",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Checking passport blank page requirement for India visa stamps",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Planning to check passport and apply for a new one if necessary",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Scheduling a doctor appointment in advance for India travel vaccinations and medications",
+      "date_hint": "in advance (timing not specified)",
+      "turn_index": 10
+    }
+  ]
+}

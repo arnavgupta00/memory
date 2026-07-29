@@ -1,0 +1,102 @@
+{
+  "session_id": "0ebe7344_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a weekend getaway to Miami with friends.",
+      "turn_index": 0
+    },
+    {
+      "text": "I booked a round-trip ticket from NY to Miami on JetBlue for this trip.",
+      "turn_index": 0
+    },
+    {
+      "text": "I will be flying in on the 14th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want recommendations for bars or clubs in the Miami area close to the airport.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of booking a hotel near the airport.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have a layover at Fort Lauderdale Airport on the way back.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want hotel recommendations convenient for both MIA and FLL airports.",
+      "turn_index": 4
+    },
+    {
+      "text": "I think I will look into hotels in the Doral area because it is close to both airports.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want recommendations for good restaurants or bars in the Doral area during our layover.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am curious about the layover at Fort Lauderdale Airport on the way back.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know what gate we will be arriving at during the layover.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know how long our layover will be.",
+      "turn_index": 8
+    },
+    {
+      "text": "I remember I booked a round-trip ticket from NY to Miami on JetBlue for this trip.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have a layover at Fort Lauderdale Airport on the way back.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know if we will have enough time to grab a bite or do some shopping during the layover.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "weekend getaway Miami",
+    "JetBlue round-trip NY to Miami",
+    "fly in on the 14th",
+    "Miami airport bars clubs",
+    "hotel near MIA and FLL",
+    "Fort Lauderdale Airport layover",
+    "Doral area hotels",
+    "restaurants bars Doral layover",
+    "Fort Lauderdale Airport gate",
+    "layover duration",
+    "grab a bite during layover",
+    "shopping during layover"
+  ],
+  "events": [
+    {
+      "text": "Flying from NY to Miami on JetBlue for the trip",
+      "date_hint": "on the 14th",
+      "turn_index": 0
+    },
+    {
+      "text": "Layover at Fort Lauderdale Airport on the way back",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Planning activities during the Fort Lauderdale Airport layover (gate and duration)",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Planning whether there is enough time to eat or shop during the Fort Lauderdale Airport layover",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

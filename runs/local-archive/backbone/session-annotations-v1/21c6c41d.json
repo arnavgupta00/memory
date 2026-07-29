@@ -1,0 +1,85 @@
+{
+  "session_id": "21c6c41d",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for advice on how to optimize my Instagram posts to reach more customers.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have upcoming market events.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am unsure about using hashtags on Instagram.",
+      "turn_index": 2
+    },
+    {
+      "text": "I sell handmade candles and soaps.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am selling jewelry at these events.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am confused about how often I should post on Instagram.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want advice on how often to post on Instagram.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want advice on what type of content to post on Instagram.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am unsure about how to prioritize my content based on upcoming events.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am planning to participate in a craft fair next weekend.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to promote my handmade candles and soaps at the craft fair.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want advice on what type of content to post on Instagram to attract attendees to my stall.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "optimize Instagram posts",
+    "reach more customers",
+    "upcoming market events",
+    "Instagram hashtags",
+    "handmade candles",
+    "handmade soaps",
+    "jewelry hashtags",
+    "how often to post on Instagram",
+    "content types for Instagram",
+    "prioritize content for events",
+    "craft fair next weekend",
+    "promote stall on Instagram"
+  ],
+  "events": [
+    {
+      "text": "Planning to participate in a craft fair",
+      "date_hint": "next weekend",
+      "turn_index": 10
+    },
+    {
+      "text": "Upcoming market events",
+      "date_hint": "upcoming",
+      "turn_index": 0
+    },
+    {
+      "text": "Events where jewelry is being sold",
+      "date_hint": "these events",
+      "turn_index": 4
+    }
+  ]
+}

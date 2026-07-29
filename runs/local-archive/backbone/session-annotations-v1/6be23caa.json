@@ -1,0 +1,83 @@
+{
+  "session_id": "6be23caa",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for information on upcoming cultural events in my area.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want information about museum exhibits or lectures happening in the next few weeks.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to organize the suggestions into a list of websites and apps I can check.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to search for specific museums I have visited before.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have visited the Natural History Museum before.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have visited the Modern Art Museum before.",
+      "turn_index": 4
+    },
+    {
+      "text": "I took notes during the \"Women in History\" lecture series at the History Museum.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am interested in revisiting the notes I took during the \"Women in History\" lecture series.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know if the History Museum has a digital archive of past lectures or events.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to ask the museum if they have any upcoming lectures or events related to women's history or similar topics.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to ask the museum about upcoming lectures or events related to women's history or similar topics.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to ask if the museum has special events or exhibitions planned to commemorate International Women's Day or Women's History Month.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "upcoming cultural events",
+    "museum exhibits",
+    "museum lectures",
+    "next few weeks",
+    "websites and apps",
+    "specific museums",
+    "Natural History Museum",
+    "Modern Art Museum",
+    "Women in History lecture series",
+    "History Museum",
+    "digital archive",
+    "past lectures",
+    "women's history lectures",
+    "International Women's Day",
+    "Women's History Month"
+  ],
+  "events": [
+    {
+      "text": "\"Women in History\" lecture series at the History Museum",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Commemoration of International Women's Day or Women's History Month (special events/exhibitions)",
+      "date_hint": "International Women's Day / Women's History Month",
+      "turn_index": 10
+    }
+  ]
+}

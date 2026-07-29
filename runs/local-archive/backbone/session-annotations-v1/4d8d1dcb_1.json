@@ -1,0 +1,88 @@
+{
+  "session_id": "4d8d1dcb_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Tokyo, Japan in March.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for good restaurants near my hotel in Shibuya.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have Ichiran Shibuya in mind as a restaurant.",
+      "turn_index": 0
+    },
+    {
+      "text": "Ichiran Shibuya is famous for a specific type of Japanese noodle dish.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in visiting the Tsukiji Fish Market.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know the best way to get to Tsukiji Fish Market from Shibuya.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know the best time to visit Tsukiji Fish Market to avoid crowds and long lines.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have heard that the fish auction at Tsukiji has moved to Toyosu Market.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am still interested in visiting the outer market at Tsukiji.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want recommendations for specific sushi restaurants at Tsukiji.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning to visit Shinjuku Gyoen National Garden during my trip to Tokyo.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to learn more about Shinjuku Gyoen National Garden and what I can expect to see there.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am planning to try ramen at Ichiran Shibuya.",
+      "turn_index": 10
+    },
+    {
+      "text": "Ichiran Shibuya is famous for a specific type of Japanese noodle dish.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Tokyo trip March",
+    "restaurants near hotel Shibuya",
+    "Ichiran Shibuya",
+    "Japanese noodle dish ramen",
+    "Tsukiji Fish Market",
+    "get to Tsukiji from Shibuya",
+    "best time to visit Tsukiji",
+    "avoid crowds long lines",
+    "outer market Tsukiji",
+    "Toyosu Market fish auction",
+    "sushi restaurants Tsukiji",
+    "Shinjuku Gyoen National Garden"
+  ],
+  "events": [
+    {
+      "text": "Planning a trip to Tokyo, Japan in March",
+      "date_hint": "March",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to visit Shinjuku Gyoen National Garden during the Tokyo trip",
+      "date_hint": "during the trip (March)",
+      "turn_index": 8
+    }
+  ]
+}

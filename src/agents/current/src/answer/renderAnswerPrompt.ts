@@ -19,6 +19,7 @@ const PACKAGE_ONLY_PROMPTS = new Set([
   "answer-v4-package",
   "answer-v5-package",
   "answer-v6-package",
+  "answer-v8-preference",
 ]);
 
 const DIGEST_ONLY_PROMPTS = new Set(["answer-v7-digest"]);

@@ -1,0 +1,33 @@
+{
+  "question_id": "dd2973ad",
+  "question_type": "multi-session",
+  "question": "What time did I go to bed on the day before I had a doctor's appointment?",
+  "question_date": "2023/05/30 (Tue) 21:28",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_f9de4602_1",
+    "answer_f9de4602_2"
+  ],
+  "haystack_session_count": 49,
+  "notes_coverage": "partial",
+  "annotated_session_count": 5,
+  "gold_sessions": [
+    {
+      "session_id": "answer_f9de4602_1",
+      "date": "2023/05/29 (Mon) 15:16",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_f9de4602_1\n[session_date] 2023/05/29 (Mon) 15:16\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm feeling a bit sluggish today and I think it's because I didn't get to bed until 2 AM last Wednesday, which made Thursday morning a struggle. Can you suggest some healthy breakfast recipes to help me boost my energy levels?\n\n[turn 2] I think I'll try the Avocado Toast with Poached Eggs. Do you have any suggestions for a quick and easy lunch that I can prepare in advance, something that will keep me full until my yoga class on Tuesday evening?\n\n[turn 4] Can you suggest some healthy snack options that I can keep at my desk to curb my cravings throughout the day?\n\n[turn 6] I'm thinking of trying to meal prep for the rest of the week, especially since I have a busy Monday ahead. Do you have any suggestions for healthy dinner recipes that can be reheated and are easy to portion out?\n\n[turn 8] I think I'll try the Quinoa and Black Bean Bowl. Can you suggest some healthy drink options that I can have throughout the day to stay hydrated?\n\n[turn 10] I think I'll try the Infused Water with lemon and cucumber slices. It sounds refreshing!"
+    },
+    {
+      "session_id": "answer_f9de4602_2",
+      "date": "2023/05/24 (Wed) 08:18",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_f9de4602_2\n[session_date] 2023/05/24 (Wed) 08:18\n[notes] (empty)",
+      "user_turns": "[turn 0] I need help with meal planning. I just got my blood test results back and my cholesterol levels are a bit high, so I want to make some changes to my diet. By the way, I had a doctor's appointment at 10 AM last Thursday, and that's when I got the results. Can you give me some healthy recipe ideas or suggest a meal planning app?\n\n[turn 2] I think I'll try out MyFitnessPal and see how it goes. Do you have any healthy breakfast ideas that can help lower cholesterol?\n\n[turn 4] I need some help with planning my day on Tuesday. I have a yoga class in the evening, and I want to make sure I get everything done before that. Can you help me prioritize my tasks and create a schedule for the day? I was pretty exhausted after my doctor's appointment, so I spent the rest of the day researching healthy recipes and making a meal plan for the week.\n\n[turn 6] I have a few meetings scheduled at work, and I need to finish a report that's due by the end of the week. I also want to make a grocery list and do some online shopping for the healthy ingredients I need for my new meal plan. Can you help me fit everything in?\n\n[turn 8] That looks like a solid plan. I think I can fit everything in. I'm glad I have my yoga class to look forward to in the evening. Thanks for the help!\n\n[turn 10] I need some help with meal prep for the week. Can you give me some tips on how to prep healthy meals in advance? I'm trying to stick to my new meal plan and make healthy eating easier."
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

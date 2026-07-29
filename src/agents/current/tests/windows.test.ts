@@ -20,15 +20,26 @@ function session(id: string, turnCount: number): TimestampedSession {
 
 describe("turn windows", () => {
   test("emits stable document IDs and date-prefixed role-tagged text", () => {
-    const windows = buildTurnWindows([session("s1", 2)], 4, 2);
+    const windows = buildTurnWindows([session("s1", 2)], 4, 2, {
+      indexUserTurnsOnly: false,
+    });
     expect(windows).toHaveLength(1);
     expect(windows[0]?.document.id).toBe(windowDocumentId("s1", 0, 1));
     expect(windows[0]?.document.text).toBe(
-      renderWindowText(session("s1", 2), 0, 1),
+      renderWindowText(session("s1", 2), 0, 1, { indexUserTurnsOnly: false }),
     );
     expect(windows[0]?.document.text).toContain("[session_date] 2023/05/01 (Mon) 10:00");
     expect(windows[0]?.document.text).toContain("[user] turn-0");
     expect(windows[0]?.document.text).toContain("[assistant] turn-1");
+  });
+
+  test("indexes user turns only when requested, keeping assistant turns in the span", () => {
+    const windows = buildTurnWindows([session("s1", 2)], 4, 2, {
+      indexUserTurnsOnly: true,
+    });
+    expect(windows[0]?.document.text).toContain("[user] turn-0");
+    expect(windows[0]?.document.text).not.toContain("[assistant]");
+    expect(windows[0]?.turns.map((turn) => turn.role)).toEqual(["user", "assistant"]);
   });
 
   test("keeps short sessions as a single window", () => {

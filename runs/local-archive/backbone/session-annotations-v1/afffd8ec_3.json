@@ -1,0 +1,128 @@
+{
+  "session_id": "afffd8ec_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to plan my TV show schedule for the next month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to keep track of what I want to watch.",
+      "turn_index": 0
+    },
+    {
+      "text": "I asked whether there are 30 days in a month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am mostly interested in watching shows on Netflix and Apple TV+.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to finish the rest of \"Servant\" on Apple TV+.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to start a new show on Netflix.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to start \"The Crown\" on Netflix.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have 5 episodes left to watch in the current season of \"Servant\" on Apple TV+.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to dedicate 2 days a week to watching \"Servant\".",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to watch 2 episodes of \"The Crown\" per week on Netflix.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want flexibility in my schedule in case I don't have time to watch on certain days.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want alternative days to watch in case I miss a day or two.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of starting a new documentary series on Netflix called \"When We Left Earth: The NASA Missions\".",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know if I can fit \"When We Left Earth: The NASA Missions\" into my schedule.",
+      "turn_index": 8
+    },
+    {
+      "text": "I watched a documentary like \"When We Left Earth\" in one sitting last month.",
+      "turn_index": 10
+    },
+    {
+      "text": "I think I might be able to finish the whole series in just a few days if I want to.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to decide whether to finish the series in a few days or stick to the one episode per week schedule.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "TV show schedule",
+    "next month",
+    "30 days in a month",
+    "Netflix",
+    "Apple TV+",
+    "Servant",
+    "finish the rest of Servant",
+    "The Crown",
+    "start The Crown",
+    "5 episodes left",
+    "2 days a week",
+    "2 episodes per week",
+    "schedule flexibility",
+    "alternative days",
+    "miss a day or two",
+    "When We Left Earth: The NASA Missions",
+    "documentary series",
+    "one sitting last month",
+    "finish whole series in a few days",
+    "one episode per week schedule"
+  ],
+  "events": [
+    {
+      "text": "Planning a TV show schedule for the next month and confirming there are 30 days in a month",
+      "date_hint": "next month",
+      "turn_index": 0
+    },
+    {
+      "text": "Finishing the rest of \"Servant\" on Apple TV+ and starting \"The Crown\" on Netflix",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Setting a weekly viewing plan: 2 days/week for \"Servant\" and 2 episodes/week for \"The Crown\"",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Considering alternative viewing days to allow flexibility if days are missed",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Considering adding the Netflix documentary series \"When We Left Earth: The NASA Missions\" to the schedule",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Watching a documentary like \"When We Left Earth\" in one sitting last month",
+      "date_hint": "last month",
+      "turn_index": 10
+    }
+  ]
+}

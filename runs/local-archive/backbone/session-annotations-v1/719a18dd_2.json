@@ -1,0 +1,85 @@
+{
+  "session_id": "719a18dd_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to optimize my daily routine to be more productive.",
+      "turn_index": 0
+    },
+    {
+      "text": "I noticed that a daily routine activity takes up about 30 minutes of my time.",
+      "turn_index": 0
+    },
+    {
+      "text": "I wake up at 6:30 am.",
+      "turn_index": 2
+    },
+    {
+      "text": "I respond to urgent messages on social media while my coffee is brewing.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am not scrolling through social media; I am responding to urgent messages.",
+      "turn_index": 4
+    },
+    {
+      "text": "The daily routine activity of responding to urgent messages takes up about 30 minutes of my time.",
+      "turn_index": 4
+    },
+    {
+      "text": "I do a 30-minute run or jog on Sundays.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to prioritize exercise in my daily routine.",
+      "turn_index": 6
+    },
+    {
+      "text": "I was thinking of doing stretching or yoga in the morning.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am not sure I can commit to a 30-minute stretching or yoga session.",
+      "turn_index": 8
+    },
+    {
+      "text": "I might start with 10-15 minutes of stretching or yoga and see how it goes.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to incorporate morning stretching or yoga right after I respond to urgent messages.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "optimize daily routine",
+    "time-wasting activities",
+    "30 minutes daily routine",
+    "responding to urgent messages",
+    "social media urgent messages",
+    "wake up 6:30 am",
+    "coffee brewing",
+    "exercise in daily routine",
+    "30-minute run or jog Sundays",
+    "morning stretching or yoga",
+    "10-15 minutes stretching yoga",
+    "combine activities time block"
+  ],
+  "events": [
+    {
+      "text": "Wake up at 6:30 am and respond to urgent messages on social media while coffee is brewing",
+      "date_hint": "daily",
+      "turn_index": 2
+    },
+    {
+      "text": "Do a 30-minute run or jog on Sundays",
+      "date_hint": "Sundays",
+      "turn_index": 6
+    },
+    {
+      "text": "Plan to start morning stretching or yoga with 10-15 minutes instead of 30 minutes",
+      "date_hint": "in the morning (unspecified day)",
+      "turn_index": 8
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "session_id": "e4234ec8_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have an animal care schedule that I want help keeping track of.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a horse named Max.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a vet visit coming up for Max next month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I built a new enclosure for Max.",
+      "turn_index": 0
+    },
+    {
+      "text": "I spent around $800 on fencing materials for Max’s enclosure.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to ask about the best type of high-calorie feed for Max to help him gain weight.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want recommendations for high-calorie feed options and specific brands for Max.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking about expanding my chicken flock.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want recommendations for heritage chicken breeds known for egg-laying abilities and relatively easy care.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking about getting Marans or Ameraucanas for my flock.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know whether Marans or Ameraucanas are relatively quiet or prone to making a lot of noise.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering getting more goats.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering Nigerian Dwarfs or Pygmy Goats.",
+      "turn_index": 8
+    },
+    {
+      "text": "I currently have goats named Luna and Leo.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know whether Nigerian Dwarfs or Pygmy Goats are relatively low-maintenance compared to my current goats, Luna and Leo.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of getting Nigerian Dwarfs or Pygmy Goats to add to my existing herd.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know whether Nigerian Dwarfs or Pygmy Goats are prone to specific health issues.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "animal care schedule",
+    "vet visit reminder",
+    "Max the horse",
+    "horse enclosure",
+    "fencing materials $800",
+    "high-calorie feed for weight gain",
+    "heritage chicken breeds",
+    "egg-laying abilities",
+    "easy to care for chickens",
+    "Marans vs Ameraucanas noise level",
+    "Nigerian Dwarf goats",
+    "Pygmy goats",
+    "low-maintenance goats",
+    "goat health issues"
+  ],
+  "events": [
+    {
+      "text": "Vet visit for Max scheduled for next month",
+      "date_hint": "next month",
+      "turn_index": 0
+    },
+    {
+      "text": "Built a new enclosure for Max",
+      "date_hint": "",
+      "turn_index": 0
+    }
+  ]
+}

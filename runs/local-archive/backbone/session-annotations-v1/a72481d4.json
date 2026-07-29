@@ -1,0 +1,103 @@
+{
+  "session_id": "a72481d4",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to get my new apartment organized.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want suggestions for apps or tools to help me keep track of my belongings.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want suggestions for apps or tools to help me decorate my space.",
+      "turn_index": 0
+    },
+    {
+      "text": "I think I will try out Sortly to get started.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think I will try out Planner 5D to get started.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am looking for recommendations for good coffee spots around my neighborhood.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have already found a great coffee spot near my apartment.",
+      "turn_index": 4
+    },
+    {
+      "text": "I go to my go-to coffee spot to grab a coffee and catch up on emails in the morning.",
+      "turn_index": 4
+    },
+    {
+      "text": "I feel more energized since I moved closer to work.",
+      "turn_index": 4
+    },
+    {
+      "text": "My daily commute is so much shorter now.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been exploring the neighborhood more.",
+      "turn_index": 6
+    },
+    {
+      "text": "I started taking daily walks about 3 weeks ago.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have found great little parks and cafes that I wouldn't have known about otherwise.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been meaning to get back into journaling.",
+      "turn_index": 8
+    },
+    {
+      "text": "I might start a walking journal to track my progress and note interesting things I come across.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been getting into yoga again.",
+      "turn_index": 10
+    },
+    {
+      "text": "I might start incorporating outdoor yoga sessions in one of the parks I have discovered.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "new apartment organization",
+    "apps for tracking belongings",
+    "decorating my space",
+    "Sortly",
+    "Planner 5D",
+    "coffee spots near my apartment",
+    "catch up on emails in the morning",
+    "moved closer to work",
+    "shorter daily commute",
+    "daily walks",
+    "parks and cafes",
+    "walking journal",
+    "getting back into journaling",
+    "outdoor yoga sessions",
+    "yoga again"
+  ],
+  "events": [
+    {
+      "text": "Started taking daily walks",
+      "date_hint": "about 3 weeks ago",
+      "turn_index": 6
+    },
+    {
+      "text": "Moved closer to work",
+      "date_hint": "before the morning coffee and shorter commute (relative)",
+      "turn_index": 4
+    }
+  ]
+}

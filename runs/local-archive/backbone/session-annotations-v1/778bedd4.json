@@ -1,0 +1,89 @@
+{
+  "session_id": "778bedd4",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to plan out my day today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a recommendation for a good coffee shop near my location.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to stop by a coffee shop after my morning workout.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of adjusting my morning workout routine to start around 8:00 am.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to have time to grab coffee and get ready for the day before my meetings start.",
+      "turn_index": 2
+    },
+    {
+      "text": "I usually do a mix of cardio and strength training.",
+      "turn_index": 4
+    },
+    {
+      "text": "My cardio and strength training routine is not too intense.",
+      "turn_index": 4
+    },
+    {
+      "text": "My workout routine is meant to get my blood pumping and energize me for the day.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been waking up earlier than usual lately.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am not sure if I can sustain this new wake-up time.",
+      "turn_index": 10
+    },
+    {
+      "text": "I feel more productive and energized when I get a head start on the day.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am considering whether to stick to the new wake-up time even on weekends.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am considering allowing myself to sleep in a bit later on Saturdays and Sundays.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "coffee shop near me",
+    "morning workout",
+    "after workout coffee",
+    "8:00 am workout",
+    "meetings start time",
+    "cardio and strength training",
+    "not too intense workout",
+    "blood pumping energize",
+    "waking up earlier",
+    "new wake-up time",
+    "weekend sleep in",
+    "productive and energized"
+  ],
+  "events": [
+    {
+      "text": "Planning out the day and looking for a coffee shop after a morning workout",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Considering adjusting the morning workout to start around 8:00 am",
+      "date_hint": "around 8:00 am",
+      "turn_index": 2
+    },
+    {
+      "text": "Waking up earlier than usual lately and considering whether to keep it on weekends",
+      "date_hint": "lately",
+      "turn_index": 10
+    }
+  ]
+}

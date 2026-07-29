@@ -1,0 +1,89 @@
+{
+  "session_id": "d298714d_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning to buy a new laptop.",
+      "turn_index": 0
+    },
+    {
+      "text": "I used a $5 off $20 coupon from Subway last month to buy lunch for myself and a colleague.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of buying household essentials soon.",
+      "turn_index": 2
+    },
+    {
+      "text": "I used a $10 off $50 coupon at Target a while back to buy household essentials like toilet paper, laundry detergent, and paper towels.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of buying kitchenware soon.",
+      "turn_index": 6
+    },
+    {
+      "text": "I used a 20% off coupon from Bed Bath & Beyond's coupon book to buy a new set of pots and pans.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning to buy beauty products soon.",
+      "turn_index": 8
+    },
+    {
+      "text": "I used a 15% off coupon from Sephora's email last month to buy a new eyeshadow palette.",
+      "turn_index": 8
+    },
+    {
+      "text": "I recently used a digital coupon from my grocery store loyalty program to buy two gallons of milk for $4 each, saving $4 in total.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know more about current deals on milk and coffee.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "new laptop deals",
+    "electronics coupons",
+    "Subway $5 off $20 coupon",
+    "Target $10 off $50 coupon",
+    "household essentials",
+    "toilet paper laundry detergent paper towels",
+    "Bed Bath & Beyond 20% off coupon book",
+    "pots and pans set",
+    "kitchenware deals",
+    "Sephora 15% off email coupon",
+    "eyeshadow palette",
+    "milk and coffee deals",
+    "grocery store loyalty digital coupon",
+    "two gallons of milk $4 each"
+  ],
+  "events": [
+    {
+      "text": "Used a $5 off $20 Subway coupon to buy lunch for myself and a colleague.",
+      "date_hint": "last month",
+      "turn_index": 0
+    },
+    {
+      "text": "Used a $10 off $50 Target coupon to buy household essentials (toilet paper, laundry detergent, paper towels).",
+      "date_hint": "a while back",
+      "turn_index": 4
+    },
+    {
+      "text": "Used a 20% off Bed Bath & Beyond coupon book to buy a new set of pots and pans.",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Used a 15% off Sephora email coupon to buy a new eyeshadow palette.",
+      "date_hint": "last month",
+      "turn_index": 8
+    },
+    {
+      "text": "Used a digital coupon from a grocery store loyalty program to buy two gallons of milk for $4 each and saved $4 total.",
+      "date_hint": "recently",
+      "turn_index": 10
+    }
+  ]
+}

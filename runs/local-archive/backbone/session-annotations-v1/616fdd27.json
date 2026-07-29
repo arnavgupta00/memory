@@ -1,0 +1,124 @@
+{
+  "session_id": "616fdd27",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for recommendations on cashback apps.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to know which cashback apps are the most popular and offer the best rewards.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am already using Rakuten.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in trying out Ibotta.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in trying out Fetch Rewards.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been shopping online more frequently lately.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to track my online orders and expenses.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to track my online orders from the last week.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to see how much I spent and what I bought from the last week.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think I will try Method 1 and check my email first.",
+      "turn_index": 8
+    },
+    {
+      "text": "I remember getting a few order confirmations from Amazon and ASOS last week.",
+      "turn_index": 8
+    },
+    {
+      "text": "I placed three orders last week.",
+      "turn_index": 10
+    },
+    {
+      "text": "Two of my orders last week were on Amazon.",
+      "turn_index": 10
+    },
+    {
+      "text": "One of my orders last week was on ASOS.",
+      "turn_index": 10
+    },
+    {
+      "text": "My Amazon orders were for a new pair of sneakers.",
+      "turn_index": 10
+    },
+    {
+      "text": "My Amazon orders were for a wireless charging pad.",
+      "turn_index": 10
+    },
+    {
+      "text": "I got the Amazon items with a 20% discount using a coupon code I found online.",
+      "turn_index": 10
+    },
+    {
+      "text": "My ASOS order was for a birthday gift for my sister.",
+      "turn_index": 10
+    },
+    {
+      "text": "My ASOS order included a dress.",
+      "turn_index": 10
+    },
+    {
+      "text": "My ASOS order included a pair of earrings.",
+      "turn_index": 10
+    },
+    {
+      "text": "I hope my sister will like the dress and earrings.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "cashback apps recommendations",
+    "most popular cashback apps",
+    "best rewards cashback",
+    "Rakuten",
+    "Ibotta",
+    "Fetch Rewards",
+    "track online orders",
+    "track online expenses",
+    "online orders last week",
+    "order confirmations email",
+    "Amazon order confirmations",
+    "ASOS order confirmations",
+    "Method 1",
+    "coupon code",
+    "20% discount",
+    "new pair of sneakers",
+    "wireless charging pad",
+    "birthday gift for sister",
+    "ASOS dress",
+    "ASOS earrings"
+  ],
+  "events": [
+    {
+      "text": "Placed three online orders last week (two on Amazon, one on ASOS).",
+      "date_hint": "last week",
+      "turn_index": 10
+    },
+    {
+      "text": "Received order confirmations from Amazon and ASOS via email last week.",
+      "date_hint": "last week",
+      "turn_index": 8
+    }
+  ]
+}

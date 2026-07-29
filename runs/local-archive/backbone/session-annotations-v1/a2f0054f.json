@@ -1,0 +1,112 @@
+{
+  "session_id": "a2f0054f",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Los Angeles (LA).",
+      "turn_index": 0
+    },
+    {
+      "text": "I want recommendations for good coffee shops near LAX airport.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want tips on how to maximize frequent flyer miles.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have accumulated frequent flyer miles from recent trips.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have frequent flights to New York City.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have frequent flights to Chicago.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am focusing on American Airlines.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have accumulated over 50,000 miles with American Airlines.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want redemption options for a free trip to Hawaii later this year.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am focusing on the economy option for now.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to find a good deal for a 5-day trip to Hawaii in September.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to search for an award ticket.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been traveling so much lately that I lost track of how many trips I have taken.",
+      "turn_index": 8
+    },
+    {
+      "text": "I remember that the average is 3 trips per month for the past 6 months.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "coffee shops near LAX",
+    "LAX airport",
+    "maximize frequent flyer miles",
+    "American Airlines miles",
+    "50,000 miles",
+    "redemption options",
+    "free trip to Hawaii",
+    "economy option",
+    "5-day trip to Hawaii",
+    "September Hawaii deal",
+    "award ticket",
+    "average trips per month",
+    "3 trips per month",
+    "past 6 months",
+    "frequent flights to New York City",
+    "frequent flights to Chicago"
+  ],
+  "events": [
+    {
+      "text": "Planning a trip to Los Angeles (LA) and looking for coffee shops near LAX airport",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Seeking tips to maximize frequent flyer miles after recent trips",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Looking for American Airlines redemption options for a free trip to Hawaii later this year",
+      "date_hint": "later this year",
+      "turn_index": 4
+    },
+    {
+      "text": "Searching for a good deal for a 5-day trip to Hawaii in September (economy option)",
+      "date_hint": "September",
+      "turn_index": 6
+    },
+    {
+      "text": "Trying to determine how many trips were taken on average per month for the past 6 months",
+      "date_hint": "past 6 months",
+      "turn_index": 8
+    },
+    {
+      "text": "Confirming an average of 3 trips per month for the past 6 months",
+      "date_hint": "past 6 months",
+      "turn_index": 10
+    }
+  ]
+}

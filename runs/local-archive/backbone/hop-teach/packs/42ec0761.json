@@ -1,0 +1,33 @@
+{
+  "question_id": "42ec0761",
+  "question_type": "knowledge-update",
+  "question": "Do I have a spare screwdriver for opening up my laptop?",
+  "question_date": "2023/08/31 (Thu) 00:39",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_e3892371_1",
+    "answer_e3892371_2"
+  ],
+  "haystack_session_count": 48,
+  "notes_coverage": "full",
+  "annotated_session_count": 48,
+  "gold_sessions": [
+    {
+      "session_id": "answer_e3892371_1",
+      "date": "2023/08/11 (Fri) 07:22",
+      "has_notes": true,
+      "notes_text": "[session_id] answer_e3892371_1\n[session_date] 2023/08/11 (Fri) 07:22\n[facts]\n- I need help setting up automatic backups for my working files on my laptop.\n- I want to set up a backup system on my laptop.\n- I plan to use a cloud backup service for my working files.\n- I plan to use Google Drive because I already use it for other things.\n- I want to set up versioning in Google Drive.\n- I think I will go with the 100 GB storage plan for Google Drive.\n- I realized I misplaced the small screwdriver I use to upgrade the RAM in my laptop.\n- I will need to pick up a small screwdriver next time I'm out.\n- I will probably check out an electronics store near my place for tools and accessories.\n- I want to select which files and folders to back up on Google Drive.\n- I think I have everything set up for my Google Drive backup.\n- I want to know how to check whether my files are being backed up correctly.\n- I want to know if there is a way to check backup status or get notifications if something goes wrong.\n- I think I have everything set up for my Google Drive backup now.\n[keyphrases] automatic backups; working files; backup system setup; laptop backup; cloud backup service; Google Drive versioning; Google Drive storage plan; 100 GB plan; upgrade laptop RAM; small screwdriver; electronics store near my place; select files and folders to back up; check backup status; backup notifications; files backed up correctly\n[events]\n- Plan to upgrade laptop RAM but misplaced the small screwdriver used for it (next time I'm out)",
+      "user_turns": "[turn 0] I need help setting up automatic backups for my working files. Can you walk me through the process of setting up a backup system on my laptop?\n\n[turn 2] I think I'll go with a cloud backup service, probably Google Drive since I already use it for other things. Can you tell me more about how to set up versioning in Google Drive, and do I need to upgrade my storage plan for that?\n\n[turn 4] I think I'll go ahead with the 100 GB plan, that should be enough for my working files. By the way, I've been meaning to open up my laptop to upgrade the RAM, but I realized I misplaced the small screwdriver I use for that. I'll need to pick one up next time I'm out.\n\n[turn 6] I'll probably check out the electronics store near my place, they usually have a variety of tools and accessories. Anyway, back to the backup setup, can you walk me through the process of selecting which files and folders to back up on Google Drive?\n\n[turn 8] I think I've got everything set up for my Google Drive backup. One more thing, how do I know if my files are being backed up correctly? Is there a way to check the backup status or get notifications if something goes wrong?\n\n[turn 10] I think I've got everything set up for my Google Drive backup now. Thanks for your help!"
+    },
+    {
+      "session_id": "answer_e3892371_2",
+      "date": "2023/08/15 (Tue) 13:22",
+      "has_notes": true,
+      "notes_text": "[session_id] answer_e3892371_2\n[session_date] 2023/08/15 (Tue) 13:22\n[facts]\n- I need help setting up automatic backups for my working files.\n- I am leaning towards Backblaze for backup software.\n- I need to organize my computer bag.\n- I think I will go with Backblaze.\n- I need to open up my laptop to clean the fans soon.\n- I have a spare screwdriver that I picked up when I organized my computer desk a while back.\n- I think I will go with the Anker cable organizer.\n- My wireless mouse is freezing.\n- I plan to reset the wireless mouse using the manufacturer's instructions.\n- If resetting the mouse does not work, I will update the mouse drivers.\n[keyphrases] automatic backups; backup software options; Backblaze file versioning; file versioning; computer bag organization; cable organizers; Anker cable organizer; clean laptop fans; spare screwdriver; wireless mouse freezing; reset mouse; update drivers\n[events]\n- Open up the laptop to clean the fans (soon)\n- Reset the wireless mouse using the manufacturer's instructions\n- Update the mouse drivers if resetting does not work",
+      "user_turns": "[turn 0] I need help setting up automatic backups for my working files. What are some good options for backup software?\n\n[turn 2] I'm leaning towards Backblaze, but how does it handle file versioning? I also need to organize my computer bag, do you have any recommendations for cable organizers?\n\n[turn 4] I think I'll go with Backblaze, thanks for the info. By the way, I need to open up my laptop to clean the fans soon, do I have a spare screwdriver for that?\n\n[turn 6] I actually have a spare screwdriver that I picked up when I organized my computer desk a while back, so I'm all set there. Now, about that cable organizer... I think I'll go with the Anker one, it seems like it'll fit nicely in my bag.\n\n[turn 8] What's the best way to troubleshoot my wireless mouse's freezing issue? Should I try resetting the mouse or updating the drivers?\n\n[turn 10] Let me try to reset the mouse using the manufacturer's instructions. If that doesn't work, I'll update the drivers and see if that resolves the issue."
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

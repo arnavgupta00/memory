@@ -1,0 +1,67 @@
+{
+  "session_id": "sharegpt_Pwr1WrI_29",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am seeing an error when running a script that outputs StartTime: 11:55:46:87 and Generate try: 1.",
+      "turn_index": 3
+    },
+    {
+      "text": "The script attempts to download metadata from http://localhost:6800/service using WS-Metadata Exchange or DISCO.",
+      "turn_index": 3
+    },
+    {
+      "text": "The error message says it cannot obtain metadata from http://localhost:6800/service.",
+      "turn_index": 3
+    },
+    {
+      "text": "The output includes Microsoft Service Model Metadata Tool and Microsoft Windows Communication Foundation version 4.8.3928.0.",
+      "turn_index": 3
+    },
+    {
+      "text": "The error message says metadata contains a reference that cannot be resolved: http://localhost:6800/service.",
+      "turn_index": 3
+    },
+    {
+      "text": "The error message says there was no endpoint listening on http://localhost:6800/service that could accept the SOAP message.",
+      "turn_index": 3
+    },
+    {
+      "text": "The error message indicates the server returned HTTP 404 Not Found for http://localhost:6800/service.",
+      "turn_index": 3
+    },
+    {
+      "text": "The output includes an HTTP GET error for http://localhost:6800/service and says the operation timed out.",
+      "turn_index": 3
+    },
+    {
+      "text": "The script suggests using svcutil /? for more help.",
+      "turn_index": 3
+    },
+    {
+      "text": "The script returns code 3.",
+      "turn_index": 3
+    }
+  ],
+  "keyphrases": [
+    "erreur script",
+    "StartTime 11:55:46:87",
+    "Generate try 1",
+    "svcutil",
+    "Service Model Metadata Tool",
+    "Windows Communication Foundation 4.8.3928.0",
+    "WS-Metadata Exchange",
+    "DISCO",
+    "http://localhost:6800/service",
+    "metadata publishing",
+    "HTTP GET timeout",
+    "Return code 3"
+  ],
+  "events": [
+    {
+      "text": "The script fails to download WCF service metadata from http://localhost:6800/service and returns code 3.",
+      "date_hint": "",
+      "turn_index": 3
+    }
+  ]
+}

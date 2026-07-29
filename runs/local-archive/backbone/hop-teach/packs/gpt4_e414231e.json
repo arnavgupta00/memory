@@ -1,0 +1,33 @@
+{
+  "question_id": "gpt4_e414231e",
+  "question_type": "temporal-reasoning",
+  "question": "How many days passed between the day I fixed my mountain bike and the day I decided to upgrade my road bike's pedals?",
+  "question_date": "2023/04/10 (Mon) 20:29",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_e28c1f0d_1",
+    "answer_e28c1f0d_2"
+  ],
+  "haystack_session_count": 46,
+  "notes_coverage": "partial",
+  "annotated_session_count": 9,
+  "gold_sessions": [
+    {
+      "session_id": "answer_e28c1f0d_1",
+      "date": "2023/03/15 (Wed) 11:17",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_e28c1f0d_1\n[session_date] 2023/03/15 (Wed) 11:17\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm thinking of planning a longer bike ride this weekend, maybe around 60 miles or so. Can you help me find some routes around my area that would be suitable for a road bike? Oh, and by the way, I finally got around to fixing that flat tire on my mountain bike today - replaced the inner tube, cleaned the chain, and it's been running smoothly.\n\n[turn 2] That's really helpful, thanks for the tips! I think I'll try out MapMyRide to find a route that suits my needs. By the way, I've been meaning to take my road bike in for a maintenance check, the brakes have been feeling a bit spongy lately and I don't want to risk any accidents. Do you know if there's a checklist I can follow to prepare my bike for a maintenance check?\n\n[turn 4] I'm thinking of upgrading my road bike's pedals to clipless pedals. I've heard that clipless pedals can improve my pedaling efficiency and reduce fatigue. Can you tell me more about clipless pedals and what I should consider when choosing the right ones for my bike?\n\n[turn 6] That's really helpful! I've been doing some research and think I've found a good option - the Shimano Ultegra pedals seem to get great reviews. I'll need to order them online and install them myself, which might be a bit of a challenge, but I'm up for the task.\n\n[turn 8] That's great advice! I think I'll be able to handle the installation myself, but it's good to know that I can always take it to a local bike shop if I need help. By the way, do you have any tips on how to keep my mountain bike's chain clean and well-lubricated?"
+    },
+    {
+      "session_id": "answer_e28c1f0d_2",
+      "date": "2023/03/19 (Sun) 16:29",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_e28c1f0d_2\n[session_date] 2023/03/19 (Sun) 16:29\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm thinking of scheduling a maintenance check for my road bike at the local bike shop, but I'm also considering upgrading my pedals to clipless pedals first. Speaking of which, I decided to upgrade my road bike's pedals to clipless pedals today, specifically the Shimano Ultegra pedals. Can you walk me through the process of installing them?\n\n[turn 2] I'm also concerned about the brakes on my road bike feeling a bit spongy lately, do you think I should get them adjusted or replaced during the maintenance check?\n\n[turn 4] Can I also ask the mechanic to check the brake pads for wear and contamination while they're at it, and give me an estimate for replacing them if needed?\n\n[turn 6] Can I also ask the mechanic to check the chain and gears for wear and give me an estimate for replacing the chain if it's worn out? I've been noticing some skipping and hesitation when shifting gears lately.\n\n[turn 8] Can I also ask the mechanic to check the tire pressure and make any necessary adjustments while they're at it? I want to make sure my tires are properly inflated for the new clipless pedals.\n\n[turn 10] I'd like to ask the mechanic to also check the quick releases and bolts on my bike to make sure they're tightened properly. I've heard that loose quick releases can be a safety hazard, and I want to make sure everything is secure before I start riding with my new clipless pedals."
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

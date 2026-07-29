@@ -1,0 +1,80 @@
+{
+  "session_id": "sharegpt_U8CljCM_315",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The circular Knitting workshop and factory is called KnitSuite.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user wants to design a wireframe with help for different software domains related to KnitSuite.",
+      "turn_index": 3
+    },
+    {
+      "text": "Each domain should include some forms based on features described above.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user wants each form name to follow the format {Form Name: Name of for}.",
+      "turn_index": 3
+    },
+    {
+      "text": "When the user sends a form name, the assistant should design the form in table format with fields: Category, Field title, Field type, Required, and Description.",
+      "turn_index": 3
+    },
+    {
+      "text": "If a field is a drop-down list, the options should be specified.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user provided a form name: Customer Registering.",
+      "turn_index": 5
+    },
+    {
+      "text": "The user provided a form name: order Registering.",
+      "turn_index": 7
+    },
+    {
+      "text": "The user provided a form name: Add New Machine.",
+      "turn_index": 9
+    }
+  ],
+  "keyphrases": [
+    "KnitSuite",
+    "circular knitting workshop and factory",
+    "software domains wireframe",
+    "form design table format",
+    "Category field title field type required description",
+    "drop-down list options",
+    "Customer Registering form",
+    "order Registering form",
+    "Add New Machine form"
+  ],
+  "events": [
+    {
+      "text": "User asks to convert the above table into markdown form",
+      "date_hint": "",
+      "turn_index": 1
+    },
+    {
+      "text": "User requests wireframe and form design for KnitSuite software domains",
+      "date_hint": "",
+      "turn_index": 3
+    },
+    {
+      "text": "User sends form name 'Customer Registering'",
+      "date_hint": "",
+      "turn_index": 5
+    },
+    {
+      "text": "User sends form name 'order Registering'",
+      "date_hint": "",
+      "turn_index": 7
+    },
+    {
+      "text": "User sends form name 'Add New Machine'",
+      "date_hint": "",
+      "turn_index": 9
+    }
+  ]
+}

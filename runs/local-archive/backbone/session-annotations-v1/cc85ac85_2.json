@@ -1,0 +1,81 @@
+{
+  "session_id": "cc85ac85_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user is planning a beach day with their family.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user is embarking on a 7-day family trip to Hawaii today.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user wants sunscreen recommendations for kids.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user wants the best way to apply sunscreen to kids' faces.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user is asking whether there are sunscreen sticks or sprays specifically designed for facial use.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user wants must-try dishes or restaurants in Maui for a family dinner.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user is looking for a romantic dinner spot for their wife and them tonight.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user wants restaurants in Lahaina that offer a nice sunset view.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user is looking for bars or lounges in Lahaina with live music and a relaxed atmosphere.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user wants a spot to grab a drink and enjoy music after dinner.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "kids sunscreen recommendations",
+    "7-day family trip to Hawaii",
+    "sunscreen application for kids' faces",
+    "sunscreen sticks for face",
+    "sunscreen sprays for face",
+    "Maui family dinner restaurants",
+    "romantic dinner spot",
+    "Lahaina sunset view restaurants",
+    "Lahaina live music bars",
+    "Lahaina lounges relaxed atmosphere",
+    "after dinner drinks and music"
+  ],
+  "events": [
+    {
+      "text": "Embarking on a 7-day family trip to Hawaii",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning a beach day with family",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Looking for a romantic dinner spot for tonight",
+      "date_hint": "tonight",
+      "turn_index": 6
+    },
+    {
+      "text": "Looking for bars or lounges with live music after dinner",
+      "date_hint": "after dinner",
+      "turn_index": 8
+    }
+  ]
+}

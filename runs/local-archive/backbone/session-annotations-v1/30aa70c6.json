@@ -1,0 +1,91 @@
+{
+  "session_id": "30aa70c6",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Japan.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want restaurant recommendations in Tokyo and Kyoto.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am going to Japan in spring.",
+      "turn_index": 2
+    },
+    {
+      "text": "I booked my trip three months ago.",
+      "turn_index": 4
+    },
+    {
+      "text": "I booked my trip with Tokyo Travel Agency.",
+      "turn_index": 4
+    },
+    {
+      "text": "I opted for a 7-day Tokyo and Kyoto package.",
+      "turn_index": 4
+    },
+    {
+      "text": "I monitored flight prices for my Japan trip.",
+      "turn_index": 6
+    },
+    {
+      "text": "The flight prices increased by $200 since I booked.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering purchasing travel insurance for my Japan trip.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering a policy from Allianz Travel Insurance.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering purchasing travel insurance from Allianz Travel Insurance.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know the cost and what is covered by the Allianz Travel Insurance policy.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to Japan",
+    "restaurants in Tokyo",
+    "restaurants in Kyoto",
+    "packing tips for Japan",
+    "spring season packing",
+    "Tokyo Travel Agency",
+    "7-day Tokyo and Kyoto package",
+    "flight prices increased $200",
+    "currency exchange in Japan",
+    "withdraw cash in Japan",
+    "travel insurance options",
+    "Allianz Travel Insurance policy details",
+    "Allianz Travel Insurance cost and coverage"
+  ],
+  "events": [
+    {
+      "text": "Booked a 7-day Tokyo and Kyoto package with Tokyo Travel Agency.",
+      "date_hint": "three months ago",
+      "turn_index": 4
+    },
+    {
+      "text": "Flight prices increased by $200 since booking.",
+      "date_hint": "since booking",
+      "turn_index": 6
+    },
+    {
+      "text": "Considering purchasing travel insurance from Allianz Travel Insurance.",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Asked for Allianz Travel Insurance policy details, prices, and coverage.",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

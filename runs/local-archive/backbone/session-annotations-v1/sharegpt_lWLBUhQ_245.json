@@ -1,0 +1,81 @@
+{
+  "session_id": "sharegpt_lWLBUhQ_245",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "MK is too hungry and cold to sleep at night.",
+      "turn_index": 1
+    },
+    {
+      "text": "MK looks up at the stars at night.",
+      "turn_index": 1
+    },
+    {
+      "text": "MK thinks about praying at night.",
+      "turn_index": 1
+    },
+    {
+      "text": "MK remembers that the gods are scared of Wukong and can't help him.",
+      "turn_index": 1
+    },
+    {
+      "text": "MK wakes up in the morning as several monkeys throw food into his prison.",
+      "turn_index": 5
+    },
+    {
+      "text": "MK is starving in the morning.",
+      "turn_index": 5
+    },
+    {
+      "text": "MK begins to devour everything that the monkeys throw into his prison.",
+      "turn_index": 5
+    },
+    {
+      "text": "MK briefly wonders whether the monkeys have an ulterior motive.",
+      "turn_index": 5
+    },
+    {
+      "text": "Wukong comes by later and grabs MK.",
+      "turn_index": 9
+    },
+    {
+      "text": "Wukong inspects MK and says MK is a bit scrawny.",
+      "turn_index": 9
+    },
+    {
+      "text": "MK realizes that Wukong probably wants to eat him.",
+      "turn_index": 9
+    }
+  ],
+  "keyphrases": [
+    "MK hungry cold to sleep",
+    "looking up at the stars",
+    "thinking about praying",
+    "gods scared of Wukong",
+    "Wukong can't help",
+    "monkeys throw food into prison",
+    "MK starving",
+    "devour everything",
+    "ulterior motive",
+    "Wukong grabs MK",
+    "Wukong inspects MK",
+    "MK realizes Wukong wants to eat him"
+  ],
+  "events": [
+    {
+      "text": "MK is too hungry and cold to sleep at night and looks up at the stars while thinking about praying",
+      "date_hint": "night",
+      "turn_index": 1
+    },
+    {
+      "text": "MK wakes up in the morning as several monkeys throw food into his prison and he devours everything",
+      "date_hint": "morning",
+      "turn_index": 5
+    },
+    {
+      "text": "Wukong comes by later, grabs MK, inspects him, and MK realizes Wukong probably wants to eat him",
+      "date_hint": "later",
+      "turn_index": 9
+    }
+  ]
+}

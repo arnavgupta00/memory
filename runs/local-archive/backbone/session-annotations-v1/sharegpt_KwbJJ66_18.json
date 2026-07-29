@@ -1,0 +1,65 @@
+{
+  "session_id": "sharegpt_KwbJJ66_18",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user asked for a live-style report in 3 lines of a current event using provided tweets.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user requested the report to focus on the term \"di maria\".",
+      "turn_index": 0
+    },
+    {
+      "text": "The provided tweets describe Angel Di Maria scoring Argentina's second goal against France.",
+      "turn_index": 0
+    },
+    {
+      "text": "The provided tweets describe the score as Argentina 2-0 France.",
+      "turn_index": 0
+    },
+    {
+      "text": "The provided tweets mention the FIFA World Cup and the Argentina vs France match.",
+      "turn_index": 0
+    },
+    {
+      "text": "The provided tweets mention the FIFA World Cup final and Qatar 2022 hashtags.",
+      "turn_index": 0
+    },
+    {
+      "text": "The provided tweets mention Lionel Messi assisting Di Maria's goal.",
+      "turn_index": 0
+    },
+    {
+      "text": "The provided tweets mention Mac Allister assisting Di Maria's goal.",
+      "turn_index": 0
+    },
+    {
+      "text": "The provided tweets describe the goal as a counterattack goal.",
+      "turn_index": 0
+    },
+    {
+      "text": "The provided tweets mention the goal time as around 35' or 36'.",
+      "turn_index": 0
+    }
+  ],
+  "keyphrases": [
+    "live report in 3 lines",
+    "di maria",
+    "Argentina vs France",
+    "FIFA World Cup final",
+    "Qatar 2022",
+    "Argentina 2-0 France",
+    "Angel Di Maria second goal",
+    "counterattack goal",
+    "Lionel Messi assist",
+    "Mac Allister assist"
+  ],
+  "events": [
+    {
+      "text": "Angel Di Maria scores Argentina's second goal vs France, making it 2-0",
+      "date_hint": "around 35'–36' (from tweets)",
+      "turn_index": 0
+    }
+  ]
+}

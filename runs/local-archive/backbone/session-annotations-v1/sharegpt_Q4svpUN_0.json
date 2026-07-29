@@ -1,0 +1,74 @@
+{
+  "session_id": "sharegpt_Q4svpUN_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to use evidence to check whether a given sentence is correct.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the evidence to be summarized and noisy or irrelevant information to be filtered out.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the answer to be a list.",
+      "turn_index": 0
+    },
+    {
+      "text": "I do not need to choose the evidence.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want a list of useful information.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to summarize useful information and also do reasoning with the evidence.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to edit wrong information in the evidence.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to filter irrelevant information in the evidence.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want reasoning, filtering, and summarizing to be done simultaneously.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want the output to be only a list.",
+      "turn_index": 6
+    },
+    {
+      "text": "I asked to polish my instruction that describes using evidence to check if a sentence is correct.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want the conclusion to be one of SUPPORTS, REFUTES, or NOT ENOUGH INFORMATION.",
+      "turn_index": 12
+    },
+    {
+      "text": "I want the conclusion to be chosen because the evidence may not contain enough information to determine whether the sentence is correct.",
+      "turn_index": 12
+    },
+    {
+      "text": "I want the information list to start with the relevant title from the original evidence.",
+      "turn_index": 14
+    }
+  ],
+  "keyphrases": [
+    "evidence-based sentence verification",
+    "filter noisy evidence",
+    "summarize useful information",
+    "reasoning with evidence",
+    "edit wrong information",
+    "conclusion labels SUPPORTS REFUTES NOT ENOUGH INFORMATION",
+    "output as a list",
+    "instruction polishing",
+    "start list with relevant title"
+  ],
+  "events": []
+}

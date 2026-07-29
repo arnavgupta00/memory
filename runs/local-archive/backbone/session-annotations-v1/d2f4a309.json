@@ -1,0 +1,91 @@
+{
+  "session_id": "d2f4a309",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have issues with fin nipping in my community tank.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have an aggressive fish in my community tank that is nipping fins.",
+      "turn_index": 0
+    },
+    {
+      "text": "My tank has been set up for about a month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I already have corydoras catfish in my tank.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering adding harlequin rasboras to my tank.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering adding zebra danios to my tank.",
+      "turn_index": 2
+    },
+    {
+      "text": "I do bi-weekly water changes.",
+      "turn_index": 6
+    },
+    {
+      "text": "I monitor the water parameters closely.",
+      "turn_index": 6
+    },
+    {
+      "text": "I noticed a slight increase in nitrate levels.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking about setting up a separate breeding tank for my platies.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have already set up a separate breeding tank.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am researching the best breeding techniques and tank conditions for platies.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am excited to learn more and try breeding platies.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "fin nipping",
+    "community tank",
+    "aggressive fish",
+    "tankmates for nipping",
+    "corydoras catfish",
+    "harlequin rasboras",
+    "zebra danios",
+    "schooling fish",
+    "water change schedule",
+    "water parameters to monitor",
+    "nitrate levels increase",
+    "breeding tank for platies",
+    "platy breeding techniques",
+    "bi-weekly water changes"
+  ],
+  "events": [
+    {
+      "text": "Tank set up for about a month",
+      "date_hint": "about a month ago (relative to session)",
+      "turn_index": 0
+    },
+    {
+      "text": "Noticed a slight increase in nitrate levels while doing bi-weekly water changes",
+      "date_hint": "recently (relative to session)",
+      "turn_index": 6
+    },
+    {
+      "text": "Set up a separate breeding tank for platies",
+      "date_hint": "before turn 10 (relative to session)",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "session_id": "fee8e72a_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Miami.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of redeeming my Delta SkyMiles for a free flight.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to check the availability of flights from Boston to Miami in March.",
+      "turn_index": 0
+    },
+    {
+      "text": "I previously flew on Delta from Boston to Orlando.",
+      "turn_index": 0
+    },
+    {
+      "text": "On my previous Delta flight from Boston to Orlando, I sat next to a really chatty passenger.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in a non-stop flight on March 12th.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of booking the Delta Comfort+ seat for extra legroom.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know the difference in cost between redeeming my miles for a Main Cabin seat versus a Delta Comfort+ seat.",
+      "turn_index": 4
+    },
+    {
+      "text": "I think I will go for the Delta Comfort+ seat.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want extra legroom and priority boarding on my flight.",
+      "turn_index": 6
+    },
+    {
+      "text": "My previous experience on Delta from Boston to Orlando involved sitting next to a really chatty passenger.",
+      "turn_index": 6
+    },
+    {
+      "text": "I couldn't get much rest on my previous Delta flight from Boston to Orlando.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know the process for selecting my seat on Delta's website or mobile app.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know whether I can choose my seat immediately after booking or must wait for a specific time frame.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to request a specific meal option such as a vegetarian or gluten-free meal.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Delta SkyMiles redemption",
+    "free flight",
+    "Boston to Miami flights",
+    "March flight availability",
+    "non-stop flight March 12",
+    "Delta Comfort+ extra legroom",
+    "Main Cabin vs Delta Comfort+ cost",
+    "priority boarding",
+    "seat selection Delta website",
+    "seat selection mobile app",
+    "choose seat after booking time frame",
+    "request vegetarian meal",
+    "request gluten-free meal"
+  ],
+  "events": [
+    {
+      "text": "Planning a trip to Miami and checking Delta SkyMiles flight availability from Boston to Miami in March",
+      "date_hint": "in March",
+      "turn_index": 0
+    },
+    {
+      "text": "Interested in a non-stop flight on March 12",
+      "date_hint": "March 12",
+      "turn_index": 2
+    },
+    {
+      "text": "Considering booking Delta Comfort+ for extra legroom and comparing miles cost vs Main Cabin",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Deciding to book Delta Comfort+ due to extra legroom and priority boarding after prior Delta experience",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Asking about seat selection timing on Delta website or mobile app",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Asking about requesting vegetarian or gluten-free meal options",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

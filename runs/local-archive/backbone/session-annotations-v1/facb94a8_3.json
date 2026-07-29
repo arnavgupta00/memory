@@ -1,0 +1,115 @@
+{
+  "session_id": "facb94a8_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "My museum membership expired in December.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering renewing my museum membership.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to check out the \"Contemporary Photography\" exhibit at the Modern Art Museum.",
+      "turn_index": 0
+    },
+    {
+      "text": "I had a great time at the \"Museum Late Night\" event at the Science Museum last month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I enjoy the variety of exhibits at museums.",
+      "turn_index": 2
+    },
+    {
+      "text": "My favorite type of exhibit is Impressionist art.",
+      "turn_index": 2
+    },
+    {
+      "text": "I loved the \"Impressionist Masters\" exhibition at the Modern Art Museum a few weeks ago.",
+      "turn_index": 2
+    },
+    {
+      "text": "I like museums because they offer a chance to learn something new.",
+      "turn_index": 4
+    },
+    {
+      "text": "I like museums because they help me appreciate beautiful art.",
+      "turn_index": 4
+    },
+    {
+      "text": "I like museums because they give me a sense of nostalgia or wonder.",
+      "turn_index": 4
+    },
+    {
+      "text": "At the Natural History Museum, I felt like a kid again when I saw the dinosaur fossils.",
+      "turn_index": 4
+    },
+    {
+      "text": "I think my favorite museum memory is from the \"Museum Late Night\" event at the Science Museum last month.",
+      "turn_index": 8
+    },
+    {
+      "text": "At the \"Museum Late Night\" event, there were live DJ sets and food trucks.",
+      "turn_index": 8
+    },
+    {
+      "text": "At the \"Museum Late Night\" event, I won a prize at the science-themed trivia game.",
+      "turn_index": 8
+    },
+    {
+      "text": "I went to the \"Museum Late Night\" event with a group of friends.",
+      "turn_index": 10
+    },
+    {
+      "text": "I danced and explored the exhibits together with my friends at the \"Museum Late Night\" event.",
+      "turn_index": 10
+    },
+    {
+      "text": "The \"Museum Late Night\" event was a fun and memorable night out for me.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "museum membership renewal",
+    "membership expired in December",
+    "Contemporary Photography exhibit",
+    "Modern Art Museum",
+    "Museum Late Night event",
+    "Science Museum",
+    "open until midnight",
+    "Impressionist art",
+    "Impressionist Masters exhibition",
+    "Natural History Museum dinosaur fossils",
+    "science-themed trivia game",
+    "live DJ sets and food trucks"
+  ],
+  "events": [
+    {
+      "text": "Museum membership expired",
+      "date_hint": "December",
+      "turn_index": 0
+    },
+    {
+      "text": "\"Museum Late Night\" event at the Science Museum",
+      "date_hint": "last month",
+      "turn_index": 0
+    },
+    {
+      "text": "\"Impressionist Masters\" exhibition at the Modern Art Museum",
+      "date_hint": "a few weeks ago",
+      "turn_index": 2
+    },
+    {
+      "text": "\"Museum Late Night\" event at the Science Museum (live DJ sets, food trucks, prize at trivia game)",
+      "date_hint": "last month",
+      "turn_index": 8
+    },
+    {
+      "text": "Went with friends, danced, and explored exhibits at \"Museum Late Night\" event",
+      "date_hint": "last month",
+      "turn_index": 10
+    }
+  ]
+}

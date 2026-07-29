@@ -1,0 +1,98 @@
+{
+  "session_id": "42234f98",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user is looking for new TV show recommendations.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user just finished binge-watching \"Stranger Things\".",
+      "turn_index": 0
+    },
+    {
+      "text": "The user wants to watch the recommended TV shows in their living room.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user is interested in \"The Haunting of Hill House\".",
+      "turn_index": 2
+    },
+    {
+      "text": "The user is interested in \"The Witcher\".",
+      "turn_index": 2
+    },
+    {
+      "text": "The user wants to know how many seasons are out for \"The Haunting of Hill House\" and \"The Witcher\".",
+      "turn_index": 2
+    },
+    {
+      "text": "The user wants to know how many episodes are in each season for \"The Haunting of Hill House\" and \"The Witcher\".",
+      "turn_index": 2
+    },
+    {
+      "text": "The user wants recommendations for cozy throw blankets.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user just got a throw blanket from Target.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user wants to scatter throw blankets around their living room.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user is interested in the \"Ugg Ansley Throw Blanket\".",
+      "turn_index": 6
+    },
+    {
+      "text": "The user wants to know more about the materials used in the \"Ugg Ansley Throw Blanket\".",
+      "turn_index": 6
+    },
+    {
+      "text": "The user wants to know how to care for the \"Ugg Ansley Throw Blanket\".",
+      "turn_index": 6
+    },
+    {
+      "text": "The user is thinking of rearranging their living room furniture to make it feel more spacious.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user is thinking of moving their TV to a different wall to create more space.",
+      "turn_index": 10
+    },
+    {
+      "text": "The user wants advice on whether moving the TV to a different wall is a good idea.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "TV show recommendations",
+    "Stranger Things",
+    "living room TV",
+    "The Haunting of Hill House seasons",
+    "The Haunting of Hill House episodes",
+    "The Witcher seasons",
+    "The Witcher episodes",
+    "cozy throw blankets",
+    "Target throw blanket",
+    "Ugg Ansley Throw Blanket",
+    "throw blanket care instructions",
+    "rearrange living room furniture",
+    "make living room more spacious",
+    "move TV to different wall"
+  ],
+  "events": [
+    {
+      "text": "Finished binge-watching \"Stranger Things\"",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Got a throw blanket from Target",
+      "date_hint": "",
+      "turn_index": 4
+    }
+  ]
+}

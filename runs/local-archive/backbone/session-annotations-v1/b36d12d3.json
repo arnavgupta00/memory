@@ -1,0 +1,128 @@
+{
+  "session_id": "b36d12d3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Berlin in August.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for average high and low temperatures for Berlin during August.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking about getting a new suitcase.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been eyeing Rimowa hard-shell cases.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have heard mixed reviews about Rimowa.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been using packing cubes to keep my clothes organized.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am looking for packing lists or strategies to help me avoid overpacking.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been having issues with my old Samsonite suitcase.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering replacing my old Samsonite suitcase with a hard-shell case.",
+      "turn_index": 6
+    },
+    {
+      "text": "On my last trip to Paris, I brought way too many clothes.",
+      "turn_index": 6
+    },
+    {
+      "text": "On my last trip to Paris, I brought 7 tops.",
+      "turn_index": 6
+    },
+    {
+      "text": "On my last trip to Paris, I brought 5 bottoms.",
+      "turn_index": 6
+    },
+    {
+      "text": "On my last trip to Paris, I only ended up wearing 3 tops.",
+      "turn_index": 6
+    },
+    {
+      "text": "On my last trip to Paris, I only ended up wearing 3 bottoms.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering a Rimowa hard-shell case.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have heard mixed reviews about Rimowa.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering whether a Rimowa hard-shell case is worth the investment.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am looking for other suitcase brands that offer similar quality at a lower price point.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I will take a closer look at Samsonite.",
+      "turn_index": 10
+    },
+    {
+      "text": "I think I will take a closer look at Delsey.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have heard good things about Samsonite durability and style.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have heard good things about Delsey durability and style.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am looking for specific Samsonite models or collections to recommend.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am looking for specific Delsey models or collections to recommend.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Berlin August weather",
+    "average high and low temperatures",
+    "hard-shell suitcase",
+    "Rimowa hard-shell case",
+    "mixed reviews Rimowa",
+    "packing cubes",
+    "packing list strategies",
+    "avoid overpacking",
+    "Samsonite suitcase issues",
+    "Paris overpacking 7 tops 5 bottoms",
+    "Samsonite durability style",
+    "Delsey suitcase models"
+  ],
+  "events": [
+    {
+      "text": "Planning a trip to Berlin in August.",
+      "date_hint": "August",
+      "turn_index": 0
+    },
+    {
+      "text": "Last trip to Paris where overpacking happened (7 tops, 5 bottoms, only wore 3 each).",
+      "date_hint": "",
+      "turn_index": 6
+    }
+  ]
+}

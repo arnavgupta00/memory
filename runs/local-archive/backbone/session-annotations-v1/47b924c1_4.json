@@ -1,0 +1,107 @@
+{
+  "session_id": "47b924c1_4",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am considering expanding my farm to include sheep.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want resources on the cost of caring for sheep, specifically vaccinations and feed.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need to schedule vaccinations for my horses next month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking about ordering organic feed for my chickens.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want suppliers or online stores that sell organic feed for chickens.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want a reminder about the typical vaccination schedule for horses.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to make sure I don't forget to schedule horse vaccinations next month.",
+      "turn_index": 4
+    },
+    {
+      "text": "I need to schedule vaccinations for my horses next month.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know what exactly needs to be done to prepare for horse vaccinations.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know whether I need to clean my horses' living area before vaccinations.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know whether I need to separate my horses from other horses before vaccinations.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to prepare everything beforehand and follow post-vaccination instructions carefully.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know if there are specific products or supplements that can help boost my horses' immune systems before vaccinations.",
+      "turn_index": 8
+    },
+    {
+      "text": "I was thinking about adding supplements to my horses' diet to help boost their immune systems before vaccinations.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know if there are specific supplements that can help reduce the risk of adverse reactions to the vaccinations.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "sheep farming",
+    "cost of caring for sheep",
+    "sheep vaccinations",
+    "sheep feed",
+    "horse vaccination schedule",
+    "horse vaccinations next month",
+    "horse vaccination preparation",
+    "cleaning living area for horses",
+    "separating horses before vaccination",
+    "post-vaccination instructions",
+    "immune system supplements for horses",
+    "organic chicken feed suppliers"
+  ],
+  "events": [
+    {
+      "text": "Schedule vaccinations for horses",
+      "date_hint": "next month",
+      "turn_index": 0
+    },
+    {
+      "text": "Check typical vaccination schedule for horses",
+      "date_hint": "next month",
+      "turn_index": 4
+    },
+    {
+      "text": "Prepare for horse vaccinations (cleaning living area, separating horses)",
+      "date_hint": "next month",
+      "turn_index": 6
+    },
+    {
+      "text": "Boost horses' immune system before vaccinations (products/supplements)",
+      "date_hint": "before next month vaccinations",
+      "turn_index": 8
+    },
+    {
+      "text": "Add supplements to horses' diet before vaccinations to reduce adverse reaction risk",
+      "date_hint": "before next month vaccinations",
+      "turn_index": 10
+    }
+  ]
+}

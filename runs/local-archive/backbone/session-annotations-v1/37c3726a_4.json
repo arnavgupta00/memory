@@ -1,0 +1,99 @@
+{
+  "session_id": "37c3726a_4",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning to buy a new kitchen appliance from Bed Bath & Beyond this weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I used a 20% off entire purchase coupon from Bed Bath & Beyond two days before it expired.",
+      "turn_index": 0
+    },
+    {
+      "text": "The Bed Bath & Beyond coupon expired on the 15th of this month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I used the Bed Bath & Beyond coupon on the 14th of this month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am especially interested in the online deals section.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in discounted kitchen appliances that are available right now online.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know if I can use my Bed Bath & Beyond credit card to get additional discounts or rewards on my purchase.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of getting a stand mixer.",
+      "turn_index": 6
+    },
+    {
+      "text": "I saw a KitchenAid stand mixer that I like.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know if Bed Bath & Beyond carries KitchenAid.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know if Bed Bath & Beyond has current deals on KitchenAid stand mixers.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning to visit the store this weekend.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to ask the sales associate if they have additional discounts or promotions that are not advertised online.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want the sales associate to check if there are any digital coupons or loyalty rewards I can use on top of other discounts.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Bed Bath & Beyond sales promotions",
+    "20% off entire purchase coupon",
+    "coupon expiration 15th",
+    "used coupon on 14th",
+    "online deals section",
+    "discounted kitchen appliances",
+    "Bed Bath & Beyond credit card rewards",
+    "stand mixer",
+    "KitchenAid stand mixer",
+    "KitchenAid deals",
+    "in-store sales associate discounts",
+    "digital coupons",
+    "loyalty rewards"
+  ],
+  "events": [
+    {
+      "text": "Used a 20% off entire purchase coupon on the 14th of this month",
+      "date_hint": "14th",
+      "turn_index": 0
+    },
+    {
+      "text": "Coupon expired on the 15th of this month",
+      "date_hint": "15th",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to buy a new kitchen appliance from Bed Bath & Beyond this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to visit the store this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 8
+    }
+  ]
+}

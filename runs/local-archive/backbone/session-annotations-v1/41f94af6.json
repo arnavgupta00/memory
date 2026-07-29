@@ -1,0 +1,102 @@
+{
+  "session_id": "41f94af6",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to figure out which Marvel movie I saw recently.",
+      "turn_index": 0
+    },
+    {
+      "text": "I think the Marvel movie I saw was one of the newer ones.",
+      "turn_index": 0
+    },
+    {
+      "text": "I think the Marvel movie I saw was a solo movie.",
+      "turn_index": 2
+    },
+    {
+      "text": "I remember the Marvel movie I saw being light-hearted and funny.",
+      "turn_index": 2
+    },
+    {
+      "text": "Emily and I saw the Marvel movie on a Saturday.",
+      "turn_index": 2
+    },
+    {
+      "text": "Emily and I grabbed brunch together the Sunday before the Saturday when we saw the Marvel movie.",
+      "turn_index": 2
+    },
+    {
+      "text": "I do not think the Marvel movie I saw was an origin story.",
+      "turn_index": 4
+    },
+    {
+      "text": "I do not really remember the villain from the Marvel movie I saw.",
+      "turn_index": 4
+    },
+    {
+      "text": "Emily mentioned that the Marvel movie's visual effects were really cool.",
+      "turn_index": 4
+    },
+    {
+      "text": "Emily and I both loved the lead actor's performance in the Marvel movie.",
+      "turn_index": 4
+    },
+    {
+      "text": "I do not think the Marvel movie I saw was either of the options previously considered.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am pretty sure the Marvel movie I saw was a more recent release.",
+      "turn_index": 6
+    },
+    {
+      "text": "Emily said the Marvel movie was a \"game-changer\" for the franchise.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning an upcoming trip with friends from high school.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want suggestions for good hiking trails in the mountains.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to check out hiking trails during a cabin trip in April.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "Marvel movie mystery",
+    "newer Marvel movie",
+    "solo Marvel movie",
+    "light-hearted and funny",
+    "Emily and I saw it on Saturday",
+    "brunch Sunday before",
+    "not an origin story",
+    "visual effects really cool",
+    "lead actor performance",
+    "\"game-changer\" for the franchise",
+    "hiking trails in the mountains",
+    "cabin trip in April",
+    "trip with friends from high school"
+  ],
+  "events": [
+    {
+      "text": "Saw a Marvel movie with Emily on a Saturday",
+      "date_hint": "Saturday (relative to brunch Sunday before)",
+      "turn_index": 2
+    },
+    {
+      "text": "Grabbed brunch with Emily the Sunday before the Saturday movie viewing",
+      "date_hint": "Sunday before that Saturday",
+      "turn_index": 2
+    },
+    {
+      "text": "Planning a cabin trip in April with friends from high school",
+      "date_hint": "April",
+      "turn_index": 8
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "question_id": "6613b389",
+  "question_type": "temporal-reasoning",
+  "question": "How many months before my anniversary did Rachel get engaged?",
+  "question_date": "2023/07/07 (Fri) 13:04",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_aaf71ce2_2",
+    "answer_aaf71ce2_1",
+    "answer_aaf71ce2_3"
+  ],
+  "haystack_session_count": 41,
+  "notes_coverage": "partial",
+  "annotated_session_count": 3,
+  "gold_sessions": [
+    {
+      "session_id": "answer_aaf71ce2_2",
+      "date": "2023/07/07 (Fri) 04:44",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_aaf71ce2_2\n[session_date] 2023/07/07 (Fri) 04:44\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm looking for some gift ideas for my sister-in-law's sister, who got married last December. I finally got around to buying a kitchen appliance from their registry, but I want to add a more personal touch to the gift. Do you have any suggestions? By the way, speaking of weddings and engagements, my close friend Rachel got engaged last month on May 15th, and we're already planning her bachelorette party!\n\n[turn 2] I like those ideas, especially the personalized cookbook. I think I'll combine it with the kitchen appliance gift. For Rachel's bachelorette party, we're planning a weekend getaway to the beach in August. We'll have a relaxing weekend with brunches, spa treatments, and some fun activities like a group dance class or a wine tasting.\n\n[turn 4] I'm also thinking of getting a small gift for Rachel to commemorate her engagement. Do you have any ideas for a thoughtful and personalized engagement gift?\n\n[turn 6] That's a great list of ideas. I think I'll go with the customized photo frame with a picture of Rachel's engagement ring. Do you know any good online services that can help me create a beautiful frame with a special message?\n\n[turn 8] I'll check out those services and create a beautiful frame with a special message for Rachel. Speaking of special messages, I was thinking of writing a heartfelt letter to Rachel to commemorate her engagement. Do you have any tips on how to write a beautiful and meaningful letter to a friend?\n\n[turn 10] I like those tips! I'll definitely keep them in mind when writing the letter to Rachel. You know, I've been thinking about my own wedding anniversary which is coming up on July 22nd. I want to make it a special celebration, but I'm not sure what to do. Do you have any ideas for a romantic staycation?"
+    },
+    {
+      "session_id": "answer_aaf71ce2_1",
+      "date": "2023/07/07 (Fri) 11:28",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_aaf71ce2_1\n[session_date] 2023/07/07 (Fri) 11:28\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm planning a weekend getaway to the beach in August for my friend's bachelorette party. Can you recommend some fun activities we can do together, like water sports or group games? By the way, I just got back from my cousin's wedding on June 10th, and it was amazing!\n\n[turn 2] The outdoor ceremony at my cousin's wedding was so beautiful, it was held at a vineyard. We should consider a wine and cheese tasting for the bachelorette party, it would be a lot of fun. Can you recommend some popular beach towns in August that are close to vineyards or wineries?\n\n[turn 4] I love these recommendations! I'm thinking of Santa Barbara, California. How easy is it to get around the area without a car?\n\n[turn 6] I'm thinking of booking a wine and cheese tasting at a vineyard in the Santa Ynez Valley. Can you recommend a few vineyards that offer private tours and tastings for a group of around 10 people?\n\n[turn 8] I'll make sure to book a private tour and tasting at one of these vineyards in advance. Since we're planning a wine and cheese tasting, I thought it would be fitting to share with the group that I just attended my cousin's wedding at a vineyard on June 10th, and it was an amazing experience. It really made me appreciate the beauty of vineyards and the wine-making process.\n\n[turn 10] Now that we have the vineyard tour and tasting planned, I was thinking of booking a private room at a nearby restaurant for dinner. Can you recommend some restaurants in the Santa Ynez Valley that can accommodate a group of 10 people and offer a wine-friendly menu?"
+    },
+    {
+      "session_id": "answer_aaf71ce2_3",
+      "date": "2023/07/07 (Fri) 19:55",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_aaf71ce2_3\n[session_date] 2023/07/07 (Fri) 19:55\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm looking for some romantic getaway ideas for my partner and me. Our anniversary is coming up on July 22nd and I want to make it special.\n\n[turn 2] I like the wine country escape idea. What are some of the best wine-themed bed and breakfasts in Napa Valley?\n\n[turn 4] I'm leaning towards Milliken Creek Inn & Spa. How can I make the stay even more special and romantic for my partner and me?\n\n[turn 6] I think a private wine and cheese tasting in the inn's wine cellar sounds amazing. I'll definitely look into that. Also, I was thinking of doing something special for my partner, like a customized photo album or a video message, like we did last year with our handwritten love letters. Do you have any ideas for that?\n\n[turn 8] I like the idea of a customized photo album or video message. I think I'll go with a video message this year. Do you have any tips on how to make it more personal and romantic?\n####\n\n[turn 10] I think I have a good idea of where to start. I'll try to keep it simple, sincere, and romantic. I might record some footage of special places we've been to, like our first date spot or where we got engaged. And I'll definitely include some personal anecdotes and inside jokes that are just between us. Thanks for the tips!\n\nBy the way, I was thinking of giving my partner a small gift to go along with the video message. Do you have any ideas for something small and romantic that I could give them?"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

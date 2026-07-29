@@ -1,0 +1,115 @@
+{
+  "session_id": "da128245",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to find a new tea flavor to try out.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want recommendations for a new tea flavor.",
+      "turn_index": 0
+    },
+    {
+      "text": "I plan to try Rooibos Chai.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been trying to cut down on caffeine lately.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want a caffeine-free tea option.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am looking for a new coffee shop to try out.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want a coffee shop near my office.",
+      "turn_index": 4
+    },
+    {
+      "text": "I work near downtown.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am looking for something within a 10-15 min walk.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am already familiar with the coffee shop near my office.",
+      "turn_index": 8
+    },
+    {
+      "text": "I meet my friend Sarah at the coffee shop near my office on Tuesdays and Thursdays.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have a 10 am coffee break with Sarah on Tuesdays and Thursdays.",
+      "turn_index": 8
+    },
+    {
+      "text": "I usually grab a table by the window at that coffee shop.",
+      "turn_index": 8
+    },
+    {
+      "text": "I usually catch up with Sarah on each other's lives at that coffee shop.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to try a new coffee shop with a cozy atmosphere.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want something more relaxed than our usual spot.",
+      "turn_index": 10
+    },
+    {
+      "text": "I usually get a cappuccino at the coffee shop.",
+      "turn_index": 10
+    },
+    {
+      "text": "I usually chat for about an hour at the coffee shop.",
+      "turn_index": 10
+    },
+    {
+      "text": "I need comfortable seating at the coffee shop.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "new tea flavor",
+    "tea recommendations",
+    "Rooibos Chai",
+    "caffeine-free option",
+    "cut down on caffeine",
+    "new coffee shop",
+    "near my office",
+    "downtown area",
+    "10-15 min walk",
+    "coffee shop near office",
+    "meet friend Sarah",
+    "Tuesdays and Thursdays",
+    "10 am coffee break",
+    "table by the window",
+    "cozy atmosphere",
+    "relaxed coffee shop",
+    "cappuccino",
+    "comfortable seating",
+    "chat for about an hour"
+  ],
+  "events": [
+    {
+      "text": "Plan to try Rooibos Chai as a caffeine-free tea option",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Meet friend Sarah for a 10 am coffee break on Tuesdays and Thursdays",
+      "date_hint": "Tuesdays and Thursdays at 10 am",
+      "turn_index": 8
+    }
+  ]
+}

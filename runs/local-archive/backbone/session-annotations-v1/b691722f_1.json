@@ -1,0 +1,121 @@
+{
+  "session_id": "b691722f_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to work on a project that I started at a Python workshop I attended last month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am having issues with my code and I want help debugging it.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am working on a simple game using Python.",
+      "turn_index": 2
+    },
+    {
+      "text": "I started the game project at a 3-day workshop on Python programming I attended at the beginning of last month.",
+      "turn_index": 2
+    },
+    {
+      "text": "The Python workshop was organized by the coding community at the local university.",
+      "turn_index": 2
+    },
+    {
+      "text": "The project is a team effort.",
+      "turn_index": 2
+    },
+    {
+      "text": "The team is trying to implement a scoring system but is having trouble with the logic.",
+      "turn_index": 2
+    },
+    {
+      "text": "We are building a simple 2D platformer game.",
+      "turn_index": 4
+    },
+    {
+      "text": "In the game, the player collects coins to increase their score.",
+      "turn_index": 4
+    },
+    {
+      "text": "The score should increase by 10 points for each coin collected.",
+      "turn_index": 4
+    },
+    {
+      "text": "Right now, the score is not updating correctly.",
+      "turn_index": 4
+    },
+    {
+      "text": "We tried using a global variable to store the score, but it is not working as expected.",
+      "turn_index": 4
+    },
+    {
+      "text": "Our team leader is Rachel.",
+      "turn_index": 6
+    },
+    {
+      "text": "Rachel suggested using a class to encapsulate the game state, including the score.",
+      "turn_index": 6
+    },
+    {
+      "text": "We have not tried using that class approach yet.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking about implementing a more flexible scoring system.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering different types of coins worth different points.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking about implementing a power-up system that gives players temporary advantages.",
+      "turn_index": 10
+    },
+    {
+      "text": "The power-up system should include increased speed or invincibility.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to integrate the power-up system into the game state class.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want the best way to handle the power-up's duration and effects.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Python workshop project",
+    "debugging Python code",
+    "simple game using Python",
+    "3-day Python programming workshop",
+    "team effort scoring system",
+    "2D platformer game",
+    "coin collection scoring",
+    "score increases by 10 points per coin",
+    "global variable score not updating",
+    "game state class",
+    "modular extensible scoring system",
+    "power-up system duration and effects"
+  ],
+  "events": [
+    {
+      "text": "Attended a Python workshop last month and started a project from it",
+      "date_hint": "last month",
+      "turn_index": 0
+    },
+    {
+      "text": "Attended a 3-day Python programming workshop at the beginning of last month",
+      "date_hint": "beginning of last month",
+      "turn_index": 2
+    },
+    {
+      "text": "Rachel suggested using a class to encapsulate game state including score",
+      "date_hint": "",
+      "turn_index": 6
+    }
+  ]
+}

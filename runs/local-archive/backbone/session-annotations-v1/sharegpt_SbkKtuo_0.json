@@ -1,0 +1,59 @@
+{
+  "session_id": "sharegpt_SbkKtuo_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user asked how many possible paths from node A to node D in a given graph.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user provided a graph with nodes A, B, C, and D and node aliases la, sa; sb, bb; ca; td, md.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user provided edges from A to B with health ok and lines aa1 and aa2.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user provided an edge from A to C with health unhealthy and lines aa3 and aa4.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user provided an edge from B to C with health unhealthy and line aa5.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user provided an edge from C to D with health ok and line aa6.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user provided an edge from B to D with health ok and lines aa7 and ab8.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user asked how many paths from alias \"sb\" to alias \"td\".",
+      "turn_index": 2
+    },
+    {
+      "text": "The user asked to list all \"lines\" from alias \"sa\" to alias \"md\".",
+      "turn_index": 4
+    },
+    {
+      "text": "The user asked to return all possible joined lines from \"sa\" to \"md\" in an array as JSON when the edges' health are \"ok\".",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "number of paths from A to D",
+    "graph nodes A B C D",
+    "node aliases la sa sb bb ca td md",
+    "edges health ok unhealthy",
+    "lines aa1 aa2 aa3 aa4 aa5 aa6 aa7 ab8",
+    "paths from sb to td",
+    "lines from sa to md",
+    "joined lines from sa to md",
+    "return lines as json",
+    "possible joined lines with health ok"
+  ],
+  "events": []
+}

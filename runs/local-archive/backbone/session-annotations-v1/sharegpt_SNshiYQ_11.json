@@ -1,0 +1,79 @@
+{
+  "session_id": "sharegpt_SNshiYQ_11",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to search for Jupyter Notebooks that deal with spatial modeling.",
+      "turn_index": 1
+    },
+    {
+      "text": "My specific problem involves observing a 100 by 100 grid of cells changing under application of specific rules.",
+      "turn_index": 1
+    },
+    {
+      "text": "My example rule is: for each plot of trees, let it grow to the east by one column every five time steps.",
+      "turn_index": 1
+    },
+    {
+      "text": "I want a Python program that creates a 100 x 100 grid.",
+      "turn_index": 3
+    },
+    {
+      "text": "I want the program to randomly assign several groups of 250 contiguous cells to Python objects.",
+      "turn_index": 3
+    },
+    {
+      "text": "I want to assign features to the objects, including color.",
+      "turn_index": 5
+    },
+    {
+      "text": "I want to assign features to the objects, including soil_type.",
+      "turn_index": 5
+    },
+    {
+      "text": "I want to assign features to the objects, including humidity.",
+      "turn_index": 5
+    },
+    {
+      "text": "I want to assign features to the objects, including speed_to_grow.",
+      "turn_index": 5
+    },
+    {
+      "text": "I want to assign features to the objects, including unique_id.",
+      "turn_index": 5
+    },
+    {
+      "text": "I want to assign features to the objects, including unique_id_of_all_neighbors.",
+      "turn_index": 5
+    },
+    {
+      "text": "In the program that generates a grid, I want to print the (x,y) values of the groups.",
+      "turn_index": 7
+    },
+    {
+      "text": "I want a 2D picture of the grid showing the locations of the groups.",
+      "turn_index": 7
+    },
+    {
+      "text": "I want the picture of the locations of the groups to be generated possibly with matplotlib.",
+      "turn_index": 7
+    }
+  ],
+  "keyphrases": [
+    "Jupyter Notebooks",
+    "spatial modeling",
+    "100x100 grid",
+    "cell growth rules",
+    "grow east by one column",
+    "five time steps",
+    "randomly assign groups",
+    "250 contiguous cells",
+    "Python objects",
+    "object features",
+    "color soil_type humidity speed_to_grow",
+    "unique_id neighbors",
+    "print (x,y) group locations",
+    "matplotlib 2D picture"
+  ],
+  "events": []
+}

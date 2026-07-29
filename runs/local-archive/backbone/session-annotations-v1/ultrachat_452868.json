@@ -1,0 +1,63 @@
+{
+  "session_id": "ultrachat_452868",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user is interested in how the Australian men's rugby team performed in their matches at the Olympics.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user is asking whether Australia is participating in the men's rugby event at the Tokyo Olympics.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user thinks Australia might have a good chance of winning a medal at the Olympics.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user is excited to watch the men's rugby sevens event and see how Australia fares against other teams.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user wants to know who Australia's top player is in the men's rugby sevens team.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user hopes Malouf and the rest of the team can bring home a medal for Australia.",
+      "turn_index": 10
+    },
+    {
+      "text": "The user is rooting for the Australian team to give their all and make Australia proud.",
+      "turn_index": 12
+    }
+  ],
+  "keyphrases": [
+    "Australian men's rugby team",
+    "Olympics match performance",
+    "Tokyo Olympics men's rugby event",
+    "men's rugby sevens",
+    "Australia medal chances",
+    "watching rugby sevens",
+    "Australia top player",
+    "Malouf",
+    "Go Aussies",
+    "make Australia proud"
+  ],
+  "events": [
+    {
+      "text": "User asks about Australia's participation in the men's rugby event at the Tokyo Olympics",
+      "date_hint": "Tokyo Olympics",
+      "turn_index": 2
+    },
+    {
+      "text": "User expresses excitement to watch the men's rugby sevens event at the Olympics",
+      "date_hint": "Olympics (men's rugby sevens)",
+      "turn_index": 6
+    },
+    {
+      "text": "User hopes Malouf and the rest of the team can bring home a medal for Australia",
+      "date_hint": "Olympics (upcoming)",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "session_id": "28e948f5",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to organize my digital life.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a checklist for updating my online presence after a name change.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am going through a name change process after a recent divorce.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was previously married to John Wilson.",
+      "turn_index": 2
+    },
+    {
+      "text": "I changed my name to Emily Rose Thompson.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want a checklist for updating my physical records.",
+      "turn_index": 4
+    },
+    {
+      "text": "I need to update my passport.",
+      "turn_index": 4
+    },
+    {
+      "text": "I need to update my driver's license.",
+      "turn_index": 4
+    },
+    {
+      "text": "I need to update my social security card.",
+      "turn_index": 4
+    },
+    {
+      "text": "I forgot to update my alma mater with my new name.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want a reminder of what documents I need to send to my alma mater.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am surprised I forgot to update my alma mater.",
+      "turn_index": 8
+    },
+    {
+      "text": "I had to update my ID.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know whether I should update my LinkedIn profile to reflect my new name and educational background.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am curious whether I had to send a copy of a divorce decree or just an updated ID to my alma mater.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "digital life organization",
+    "checklist updating online presence",
+    "name change",
+    "recent divorce",
+    "John Wilson",
+    "Emily Rose Thompson",
+    "physical records checklist",
+    "passport update",
+    "driver's license update",
+    "social security card update",
+    "alma mater update",
+    "LinkedIn profile update",
+    "educational background",
+    "divorce decree copy",
+    "updated ID"
+  ],
+  "events": [
+    {
+      "text": "Name change process after a recent divorce",
+      "date_hint": "recently",
+      "turn_index": 2
+    },
+    {
+      "text": "Forgot to update alma mater with new name",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Surprised to have forgotten to update alma mater after updating ID",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Question about whether alma mater required divorce decree copy or updated ID",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

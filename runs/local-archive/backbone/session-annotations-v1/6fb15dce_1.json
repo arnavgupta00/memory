@@ -1,0 +1,110 @@
+{
+  "session_id": "6fb15dce_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I need to be at the office by 9:00 AM.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want quick and easy breakfast ideas that I can prepare in 30 minutes or less.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to fit a meditation habit in before getting breakfast.",
+      "turn_index": 2
+    },
+    {
+      "text": "I wake up at 7:30 AM every day.",
+      "turn_index": 4
+    },
+    {
+      "text": "I do a 10-minute meditation session before getting ready for work.",
+      "turn_index": 4
+    },
+    {
+      "text": "My morning meditation has been really helpful in setting a positive tone for the day.",
+      "turn_index": 4
+    },
+    {
+      "text": "I feel more calm and focused after my morning meditation.",
+      "turn_index": 6
+    },
+    {
+      "text": "My morning meditation helps me prioritize my tasks for the day.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am more productive in the morning, usually between 9:30 AM and 12:00 PM.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want task management tools or apps to help me stay organized and on top of my tasks.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to try out Todoist and Trello to see which one works best for me.",
+      "turn_index": 8
+    },
+    {
+      "text": "I like visualizing tasks with boards and lists.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to access my tasks across multiple devices.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will look for apps that have mobile and web versions.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I will start with Trello.",
+      "turn_index": 10
+    },
+    {
+      "text": "I like the idea of visualizing my tasks with boards and lists in Trello.",
+      "turn_index": 10
+    },
+    {
+      "text": "I think Trello seems easy to use.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to use Trello to manage my daily tasks as well as my bigger projects.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "breakfast ideas",
+    "30 minutes or less breakfast",
+    "office by 9:00 AM",
+    "10-minute meditation",
+    "meditation habit",
+    "wake up at 7:30 AM",
+    "morning productivity 9:30 AM to 12:00 PM",
+    "task management tools",
+    "Todoist",
+    "Trello",
+    "visualizing tasks boards and lists",
+    "mobile and web versions",
+    "manage daily tasks and projects"
+  ],
+  "events": [
+    {
+      "text": "Wake up at 7:30 AM every day to do a 10-minute meditation before getting ready for work",
+      "date_hint": "every day",
+      "turn_index": 4
+    },
+    {
+      "text": "Try out Todoist and Trello to see which one works best",
+      "date_hint": "upcoming",
+      "turn_index": 8
+    },
+    {
+      "text": "Start with Trello to manage daily tasks and bigger projects",
+      "date_hint": "upcoming",
+      "turn_index": 10
+    }
+  ]
+}

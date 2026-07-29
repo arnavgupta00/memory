@@ -1,0 +1,105 @@
+{
+  "session_id": "142e3203_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Chicago.",
+      "turn_index": 0
+    },
+    {
+      "text": "I checked out of the Marriott in San Francisco today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for casual and quick restaurant options near downtown Chicago.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering Xoco for food in Chicago.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering Portillo's for food in Chicago.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am looking for a good coffee shop near my hotel in downtown Chicago.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering Intelligentsia Coffee.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am looking for a gym to get a workout in during my stay in Chicago.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of visiting Navy Pier while in Chicago.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of visiting Willis Tower (formerly Sears Tower) while in Chicago.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am looking for souvenir shops near the Willis Tower to pick up Chicago-themed gifts.",
+      "turn_index": 10
+    },
+    {
+      "text": "I checked out of the Marriott in San Francisco today.",
+      "turn_index": 4
+    },
+    {
+      "text": "I checked out of the Marriott in San Francisco today.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to Chicago",
+    "restaurants near downtown Chicago",
+    "Marriott San Francisco checkout",
+    "Xoco",
+    "Portillo's",
+    "coffee shop near hotel downtown Chicago",
+    "Intelligentsia Coffee",
+    "gym near downtown Chicago",
+    "Navy Pier walking distance",
+    "Willis Tower walking distance",
+    "Sears Tower",
+    "souvenir shops near Willis Tower",
+    "Chicago-themed gifts"
+  ],
+  "events": [
+    {
+      "text": "Checked out of the Marriott in San Francisco",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Checked out of the Marriott in San Francisco",
+      "date_hint": "today",
+      "turn_index": 4
+    },
+    {
+      "text": "Checked out of the Marriott in San Francisco",
+      "date_hint": "today",
+      "turn_index": 10
+    },
+    {
+      "text": "Plan to visit Navy Pier",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Plan to visit Willis Tower (formerly Sears Tower)",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Plan to visit souvenir shops near Willis Tower",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

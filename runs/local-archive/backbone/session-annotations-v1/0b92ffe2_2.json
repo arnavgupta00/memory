@@ -1,0 +1,81 @@
+{
+  "session_id": "0b92ffe2_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning to host a dinner party this weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to make my mom's famous chicken parmesan.",
+      "turn_index": 0
+    },
+    {
+      "text": "I mastered making chicken parmesan last Wednesday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to prep the salad ahead of time.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think I will go with the Italian Garden Salad.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want a simple dessert to serve with the meal that will not take too much time or effort.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to store leftover chicken parmesan and salad so they can be reheated later in the week.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of reheating the leftover chicken parmesan for lunch tomorrow.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want easy side dishes to serve with chicken parmesan for lunch tomorrow.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I will serve garlic bread with the chicken parmesan.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want a simple garlic bread recipe to follow.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "dinner party",
+    "chicken parmesan",
+    "make ahead tips",
+    "prep salad ahead of time",
+    "Italian Garden Salad",
+    "simple dessert",
+    "leftover storage",
+    "reheating chicken parmesan",
+    "lunch tomorrow",
+    "easy side dishes",
+    "garlic bread recipe",
+    "garlic bread with chicken parmesan"
+  ],
+  "events": [
+    {
+      "text": "Mastered making chicken parmesan",
+      "date_hint": "last Wednesday",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to host a dinner party",
+      "date_hint": "this weekend",
+      "turn_index": 0
+    },
+    {
+      "text": "Reheating leftover chicken parmesan for lunch",
+      "date_hint": "tomorrow",
+      "turn_index": 8
+    }
+  ]
+}

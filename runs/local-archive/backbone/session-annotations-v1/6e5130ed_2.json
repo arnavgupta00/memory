@@ -1,0 +1,105 @@
+{
+  "session_id": "6e5130ed_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to visit my niece who just started school.",
+      "turn_index": 0
+    },
+    {
+      "text": "I just got back from my high school reunion a few weeks after my birthday.",
+      "turn_index": 0
+    },
+    {
+      "text": "My niece lives in the suburbs of Chicago, Illinois.",
+      "turn_index": 2
+    },
+    {
+      "text": "My niece is 5 years old.",
+      "turn_index": 2
+    },
+    {
+      "text": "My niece loves playing with dolls.",
+      "turn_index": 2
+    },
+    {
+      "text": "My niece loves watching cartoons.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to visit for 4 days.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to visit the DuPage Children's Museum on October 15.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to catch the Peppa Pig Meet-and-Greet at the DuPage Children's Museum on October 15.",
+      "turn_index": 6
+    },
+    {
+      "text": "I booked tickets online for October 15.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering booking a character dining experience with Peppa Pig.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I will book the character dining experience.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will choose a time for the character dining experience that works well for my niece's schedule and energy levels.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will prepare my niece for what to expect so she is not surprised or overwhelmed.",
+      "turn_index": 10
+    },
+    {
+      "text": "I just got back from my high school reunion a few weeks after my birthday.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to visit niece",
+    "kid-friendly activities",
+    "suburbs of Chicago Illinois",
+    "5-year-old niece",
+    "playing with dolls",
+    "watching cartoons",
+    "visit for 4 days",
+    "kid-friendly TV cartoon shows",
+    "Peppa Pig meet-and-greet",
+    "DuPage Children's Museum",
+    "October 15",
+    "book tickets online",
+    "character dining experience Peppa Pig",
+    "high school reunion",
+    "birthday a few weeks ago"
+  ],
+  "events": [
+    {
+      "text": "High school reunion after birthday",
+      "date_hint": "a few weeks after my birthday",
+      "turn_index": 0
+    },
+    {
+      "text": "High school reunion after birthday",
+      "date_hint": "a few weeks after my birthday",
+      "turn_index": 10
+    },
+    {
+      "text": "Peppa Pig Meet-and-Greet at DuPage Children's Museum",
+      "date_hint": "October 15",
+      "turn_index": 6
+    },
+    {
+      "text": "Booked tickets online for October 15",
+      "date_hint": "October 15",
+      "turn_index": 8
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "session_id": "answer_e6c20e52_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a team-building event for my office.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering organizing a sports-themed outing for my office.",
+      "turn_index": 0
+    },
+    {
+      "text": "I like the idea of a scavenger hunt for the team-building event.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want the scavenger hunt to take place around the Staples Center in LA.",
+      "turn_index": 4
+    },
+    {
+      "text": "I just went to an NBA game at the Staples Center in LA with my coworkers today.",
+      "turn_index": 4
+    },
+    {
+      "text": "I watched the Lakers play the Chicago Bulls at the Staples Center.",
+      "turn_index": 4
+    },
+    {
+      "text": "I like the idea of incorporating LA Lakers trivia and challenges around the LA Live complex.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of including a photo challenge where teams take a picture with a Lakers-themed mural or graffiti in the LA Live area.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of including a trivia question that requires teams to find a specific statue or monument in the LA Live complex.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of including a challenge that requires teams to find a specific sports-themed store or restaurant in the LA Live complex and complete a task or question related to that location.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am thinking of using the NBA Store on the upper level of LA Live as a location for a challenge.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am thinking of having teams take a photo holding up a Lakers jersey with a specific player's name on it at the NBA Store challenge.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "team-building event",
+    "sports-themed outing",
+    "scavenger hunt",
+    "Staples Center LA",
+    "NBA game",
+    "Lakers vs Chicago Bulls",
+    "LA Live complex",
+    "LA Lakers trivia",
+    "photo challenge",
+    "Lakers-themed mural graffiti",
+    "statue or monument challenge",
+    "NBA Store upper level LA Live",
+    "Lakers jersey photo challenge"
+  ],
+  "events": [
+    {
+      "text": "Attended an NBA game at the Staples Center in LA with coworkers",
+      "date_hint": "today",
+      "turn_index": 4
+    },
+    {
+      "text": "Watched the Lakers take on the Chicago Bulls at the Staples Center",
+      "date_hint": "today",
+      "turn_index": 4
+    }
+  ]
+}

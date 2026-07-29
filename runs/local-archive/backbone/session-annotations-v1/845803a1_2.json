@@ -1,0 +1,81 @@
+{
+  "session_id": "845803a1_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am thinking of reorganizing my living room.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am stuck on where to place my couch in my living room.",
+      "turn_index": 0
+    },
+    {
+      "text": "I removed the old curtains last weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "Removing the old curtains made a huge difference in letting in natural light in my home.",
+      "turn_index": 0
+    },
+    {
+      "text": "I removed the curtains last weekend in my bedroom.",
+      "turn_index": 2
+    },
+    {
+      "text": "Removing the curtains made my bedroom feel much brighter.",
+      "turn_index": 2
+    },
+    {
+      "text": "I removed the heavy drapes from the windows in my bedroom last weekend.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am still deciding what to do with my couch in the living room.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to incorporate a home office area into my living room without making it look cluttered.",
+      "turn_index": 6
+    },
+    {
+      "text": "I was thinking of setting up my home office in the spare bedroom.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering using a corner of the living room instead for my home office.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "living room couch placement",
+    "cozy atmosphere furniture arrangement",
+    "natural light curtains",
+    "bedroom window treatments",
+    "heavy drapes removal",
+    "plantation shutters",
+    "home office area",
+    "avoid clutter home office",
+    "room divider",
+    "spare bedroom home office",
+    "desk and chair selection",
+    "corner of living room office"
+  ],
+  "events": [
+    {
+      "text": "Removed the old curtains.",
+      "date_hint": "last weekend",
+      "turn_index": 0
+    },
+    {
+      "text": "Removed the curtains in the bedroom.",
+      "date_hint": "last weekend",
+      "turn_index": 2
+    },
+    {
+      "text": "Removed the heavy drapes from the bedroom windows.",
+      "date_hint": "last weekend",
+      "turn_index": 4
+    }
+  ]
+}

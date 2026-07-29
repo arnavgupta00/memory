@@ -1,0 +1,77 @@
+{
+  "session_id": "sharegpt_MD0BL69_53",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "John and Jack will split their roles.",
+      "turn_index": 1
+    },
+    {
+      "text": "John will take over the tactical strategy plan side.",
+      "turn_index": 1
+    },
+    {
+      "text": "Jack will take care of the Brazilian key players individually using a device.",
+      "turn_index": 1
+    },
+    {
+      "text": "Jack will prevent Brazilian key players from drinking wine.",
+      "turn_index": 1
+    },
+    {
+      "text": "Jack will go with Brazilian key players to the gym.",
+      "turn_index": 1
+    },
+    {
+      "text": "Jack will solve Brazilian key players' emotional problems with their girls.",
+      "turn_index": 1
+    },
+    {
+      "text": "Jack will help Brazilian key players stay focused on the match.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user asked for the Brazil and Italy lineup for that match.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user asked for the exact lineup.",
+      "turn_index": 5
+    },
+    {
+      "text": "The user wants to go for 1982 while Italy beat Brazil 3-2.",
+      "turn_index": 7
+    },
+    {
+      "text": "John and Jack will try to make Brazil win this game.",
+      "turn_index": 7
+    }
+  ],
+  "keyphrases": [
+    "John and Jack roles split",
+    "tactical strategy plan",
+    "Brazilian key players",
+    "prevent drinking wine",
+    "match night",
+    "go with them to gym",
+    "emotional problems with their girls",
+    "stay focused on the match",
+    "Brazil vs Italy lineup",
+    "exact lineup",
+    "1982",
+    "Italy beat Brazil 3-2",
+    "make Brazil win"
+  ],
+  "events": [
+    {
+      "text": "Italy beat Brazil 3-2 (referenced as the match context)",
+      "date_hint": "",
+      "turn_index": 7
+    },
+    {
+      "text": "User references going for 1982",
+      "date_hint": "1982",
+      "turn_index": 7
+    }
+  ]
+}

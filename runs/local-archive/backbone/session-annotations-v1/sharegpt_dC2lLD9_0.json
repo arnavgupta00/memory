@@ -1,0 +1,118 @@
+{
+  "session_id": "sharegpt_dC2lLD9_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user wants to construct residential buildings.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user constructs a factory.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user constructs a shopping mall.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user constructs another factory.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user waits for income.",
+      "turn_index": 10
+    },
+    {
+      "text": "The user builds residential.",
+      "turn_index": 12
+    },
+    {
+      "text": "The user waits 5 times for income.",
+      "turn_index": 14
+    },
+    {
+      "text": "The user constructs 1 hospital and 1 police station.",
+      "turn_index": 16
+    },
+    {
+      "text": "The user waits 10 times for income.",
+      "turn_index": 16
+    },
+    {
+      "text": "The user wants new buildings to become available at 200, 300, and 500 population.",
+      "turn_index": 18
+    },
+    {
+      "text": "The user wants the new buildings at 200, 300, and 500 population not displayed until they are unlocked.",
+      "turn_index": 18
+    },
+    {
+      "text": "The user wants additional effects for the buildings besides population and income.",
+      "turn_index": 18
+    }
+  ],
+  "keyphrases": [
+    "city building game",
+    "construct residential",
+    "construct factory",
+    "shopping mall",
+    "wait for income",
+    "build residential",
+    "wait 5 times",
+    "hospital",
+    "police station",
+    "wait 10 times",
+    "new buildings unlocked at 200 population",
+    "new buildings unlocked at 300 population",
+    "new buildings unlocked at 500 population",
+    "available buildings not displayed until unlocked",
+    "building effects besides population and income"
+  ],
+  "events": [
+    {
+      "text": "Construct residential",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Construct factory",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Construct shopping mall",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Construct factory",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Wait for income",
+      "date_hint": "",
+      "turn_index": 10
+    },
+    {
+      "text": "Build residential",
+      "date_hint": "",
+      "turn_index": 12
+    },
+    {
+      "text": "Wait 5 times for income",
+      "date_hint": "",
+      "turn_index": 14
+    },
+    {
+      "text": "Construct 1 hospital and 1 police station, then wait 10 times for income",
+      "date_hint": "",
+      "turn_index": 16
+    },
+    {
+      "text": "Set new buildings to unlock at 200, 300, and 500 population (not displayed until unlocked)",
+      "date_hint": "",
+      "turn_index": 18
+    }
+  ]
+}

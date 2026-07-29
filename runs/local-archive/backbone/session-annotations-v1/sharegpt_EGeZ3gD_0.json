@@ -1,0 +1,144 @@
+{
+  "session_id": "sharegpt_EGeZ3gD_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I wrote a Python FastAPI WebSocket server that defines a websocket endpoint at /ws/{handler_name}.",
+      "turn_index": 0
+    },
+    {
+      "text": "I used FastAPI WebSocketDisconnect handling in the websocket endpoint.",
+      "turn_index": 0
+    },
+    {
+      "text": "I implemented a DataMessageHandler class with subscribe, unsubscribe, and _send_to_subscribers methods.",
+      "turn_index": 0
+    },
+    {
+      "text": "I used Pydantic BaseModel classes named StreamBase, DataResponseContent, DataResponseMessage, TimesaleData, and ChartData.",
+      "turn_index": 0
+    },
+    {
+      "text": "I set StreamBase Config to use alias_generator=to_camel and allow_population_by_field_name=True.",
+      "turn_index": 0
+    },
+    {
+      "text": "I created TimesaleDataHandler and ChartDataHandler classes that inherit from DataMessageHandler.",
+      "turn_index": 0
+    },
+    {
+      "text": "I mapped handler_name values \"timesale\" and \"chart\" to timesale_handler and chart_handler.",
+      "turn_index": 0
+    },
+    {
+      "text": "I used a WebSocket message command value \"subscribe\" to call handler.subscribe(websocket).",
+      "turn_index": 0
+    },
+    {
+      "text": "I used a WebSocket message command value \"unsubscribe\" to call handler.unsubscribe(websocket).",
+      "turn_index": 0
+    },
+    {
+      "text": "I stop handling messages after unsubscribing by breaking out of the receive loop.",
+      "turn_index": 0
+    },
+    {
+      "text": "I served an HTMLResponse at the root route \"/\" that opens a WebSocket connection.",
+      "turn_index": 0
+    },
+    {
+      "text": "I configured uvicorn to run the FastAPI app on host 127.0.0.1 and port 8000.",
+      "turn_index": 0
+    },
+    {
+      "text": "I created a TdConfiguration and a TdAmeritradeClient in the script.",
+      "turn_index": 0
+    },
+    {
+      "text": "I opened a streaming client via td_client.streaming_api_client().",
+      "turn_index": 0
+    },
+    {
+      "text": "I set the streaming quality of service to QOSLevel.EXPRESS.",
+      "turn_index": 0
+    },
+    {
+      "text": "I used futures symbols [\"/ES\", \"/NQ\"].",
+      "turn_index": 0
+    },
+    {
+      "text": "I used equity symbols [\"SPY\", \"QQQ\", \"AAPL\", \"TSLA\"].",
+      "turn_index": 0
+    },
+    {
+      "text": "I added a handler for futures timesale using stream_services.add_handler with service \"TIMESALE_FUTURES\" and timesale_handler.data_message_handler.",
+      "turn_index": 0
+    },
+    {
+      "text": "I started futures timesale streaming by calling stream_services.futures_timesale(futures_symbols).",
+      "turn_index": 0
+    },
+    {
+      "text": "I added a handler for futures chart minute OHLCV using service \"CHART_FUTURES\" and chart_handler.data_message_handler.",
+      "turn_index": 0
+    },
+    {
+      "text": "I started futures chart minute OHLCV streaming by calling stream_services.futures_chart_minute_ohlcv(futures_symbols).",
+      "turn_index": 0
+    },
+    {
+      "text": "I added a handler for equity chart minute OHLCV using service \"CHART_EQUITY\" and chart_handler.data_message_handler.",
+      "turn_index": 0
+    },
+    {
+      "text": "I started equity chart minute OHLCV streaming by calling stream_services.equity_chart_minute_ohlcv(equity_symbols).",
+      "turn_index": 0
+    },
+    {
+      "text": "I ran both the uvicorn server task and the stream client task concurrently using asyncio.create_task and asyncio.gather.",
+      "turn_index": 0
+    },
+    {
+      "text": "I encountered a WebSocketDisconnect with code 1001 during websocket.receive_json().",
+      "turn_index": 0
+    },
+    {
+      "text": "I encountered a ValueError: list.remove(x): x not in list when calling handler.unsubscribe(websocket).",
+      "turn_index": 0
+    },
+    {
+      "text": "I am using a Windows path for the script location under c:\\Users\\zachf\\OneDrive\\Desktop\\benjamins\\td-ameritrade-api\\samples\\use_streaming_client.py.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am using a conda environment named lucca-data located under C:\\Users\\zachf\\anaconda3\\envs\\lucca-data.",
+      "turn_index": 0
+    }
+  ],
+  "keyphrases": [
+    "FastAPI WebSocket endpoint",
+    "/ws/{handler_name}",
+    "WebSocketDisconnect 1001",
+    "unsubscribe ValueError list.remove",
+    "DataMessageHandler subscribe unsubscribe",
+    "Pydantic alias_generator to_camel",
+    "TdAmeritradeClient streaming_api_client",
+    "QOSLevel.EXPRESS",
+    "TIMESALE_FUTURES handler",
+    "CHART_FUTURES minute ohlcv",
+    "CHART_EQUITY minute ohlcv",
+    "futures symbols /ES /NQ"
+  ],
+  "events": [
+    {
+      "text": "WebSocketDisconnect occurred with code 1001 while awaiting websocket.receive_json()",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "unsubscribe triggered ValueError list.remove(x): x not in list",
+      "date_hint": "",
+      "turn_index": 0
+    }
+  ]
+}

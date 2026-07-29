@@ -1,0 +1,79 @@
+{
+  "session_id": "a7d014e4_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I ordered a Dell XPS 15 laptop from the Dell website on March 10th.",
+      "turn_index": 0
+    },
+    {
+      "text": "The Dell XPS 15 laptop cost me around $1,800.",
+      "turn_index": 0
+    },
+    {
+      "text": "I expect the Dell XPS 15 laptop to arrive on the 20th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of getting a protective case for my new laptop.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been using my new Samsung Galaxy S22 Ultra smartphone for a few weeks.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am really happy with my Samsung Galaxy S22 Ultra smartphone.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am planning to set up my new laptop's storage.",
+      "turn_index": 6
+    },
+    {
+      "text": "I bought a 2TB external hard drive from Western Digital on March 3rd for $60.",
+      "turn_index": 8
+    },
+    {
+      "text": "My Western Digital 2TB external hard drive has been working great for backing up my files.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of getting a new pair of headphones.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am looking for noise-cancelling headphones.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Dell XPS 15 antivirus software",
+    "Dell XPS 15 laptop March 10",
+    "Dell XPS 15 arrival date 20th",
+    "laptop protective case recommendations",
+    "Samsung Galaxy S22 Ultra screen protectors",
+    "external hard drive recommendations",
+    "Western Digital 2TB external hard drive",
+    "March 3 Western Digital $60",
+    "noise-cancelling headphones recommendations",
+    "new laptop storage setup"
+  ],
+  "events": [
+    {
+      "text": "Ordered a Dell XPS 15 laptop from the Dell website",
+      "date_hint": "March 10th",
+      "turn_index": 0
+    },
+    {
+      "text": "Expected arrival of the Dell XPS 15 laptop",
+      "date_hint": "on the 20th",
+      "turn_index": 0
+    },
+    {
+      "text": "Bought a 2TB Western Digital external hard drive",
+      "date_hint": "March 3rd",
+      "turn_index": 8
+    }
+  ]
+}

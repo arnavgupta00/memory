@@ -1,0 +1,84 @@
+{
+  "session_id": "2713d8a5",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Tokyo next month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to know the average weather in Tokyo in April.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want good jogging routes in Tokyo that I can do in the morning.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want quick and healthy breakfast places near the jogging routes in Tokyo.",
+      "turn_index": 4
+    },
+    {
+      "text": "For my morning jog, I plan to try the Imperial Palace East Garden Loop.",
+      "turn_index": 6
+    },
+    {
+      "text": "After my jog, I plan to grab a quick breakfast at Komeda's Coffee near Otemachi Station.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to try the Komeda's Breakfast set.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know more about the sausage used in the Komeda's Breakfast set.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know whether the sausage is spicy or mild.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I will stick with the classic Japanese-style sausage in the Komeda's Breakfast set.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want the best way to get to Komeda's Coffee from the Imperial Palace East Garden.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Tokyo trip next month",
+    "average weather April Tokyo",
+    "morning jogging routes Tokyo",
+    "Imperial Palace East Garden Loop",
+    "quick healthy breakfast near jogging routes",
+    "Komeda's Coffee near Otemachi Station",
+    "Komeda's Breakfast set",
+    "sausage spicy or mild",
+    "classic Japanese-style sausage",
+    "directions to Komeda's Coffee from Imperial Palace East Garden"
+  ],
+  "events": [
+    {
+      "text": "Planning a trip to Tokyo next month",
+      "date_hint": "next month",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning a morning jog at the Imperial Palace East Garden Loop",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Planning to get breakfast at Komeda's Coffee near Otemachi Station after the jog",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Planning to try the Komeda's Breakfast set",
+      "date_hint": "",
+      "turn_index": 8
+    }
+  ]
+}

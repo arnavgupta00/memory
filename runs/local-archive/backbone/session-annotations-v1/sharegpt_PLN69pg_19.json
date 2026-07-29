@@ -1,0 +1,108 @@
+{
+  "session_id": "sharegpt_PLN69pg_19",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user chose quest 4.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user requested that if a quest involves combat, the assistant should stop and tell them.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user wants a combat system to determine whether the user is successful or not.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user believes losing combat is bad.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user wants losing combat to result in the user losing items from their inventory.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user wants losing combat to potentially result in death.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user returned to the settlement.",
+      "turn_index": 5
+    },
+    {
+      "text": "The user asked what quests are available after returning to the settlement.",
+      "turn_index": 5
+    },
+    {
+      "text": "The user started quest 7.",
+      "turn_index": 7
+    },
+    {
+      "text": "The user asked for a quest that involves combat.",
+      "turn_index": 9
+    },
+    {
+      "text": "The user asked what their inventory is.",
+      "turn_index": 13
+    },
+    {
+      "text": "The user asked how to express their health as a set of statistics.",
+      "turn_index": 15
+    },
+    {
+      "text": "The user requested that the assistant tell them if their HP needs to decrease during a quest.",
+      "turn_index": 17
+    }
+  ],
+  "keyphrases": [
+    "quest 4",
+    "quest 7",
+    "combat system",
+    "combat success or failure",
+    "losing combat consequences",
+    "inventory items loss",
+    "death in combat",
+    "settlement quests",
+    "inventory",
+    "health statistics",
+    "HP decrease during quest"
+  ],
+  "events": [
+    {
+      "text": "The user chose quest 4.",
+      "date_hint": "",
+      "turn_index": 1
+    },
+    {
+      "text": "The user returned to the settlement and asked what quests are available.",
+      "date_hint": "",
+      "turn_index": 5
+    },
+    {
+      "text": "The user started quest 7.",
+      "date_hint": "",
+      "turn_index": 7
+    },
+    {
+      "text": "The user asked for a quest that involves combat.",
+      "date_hint": "",
+      "turn_index": 9
+    },
+    {
+      "text": "The user asked what their inventory is.",
+      "date_hint": "",
+      "turn_index": 13
+    },
+    {
+      "text": "The user asked how to express their health as a set of statistics.",
+      "date_hint": "",
+      "turn_index": 15
+    },
+    {
+      "text": "The user requested the assistant tell them if their HP needs to decrease during a quest.",
+      "date_hint": "",
+      "turn_index": 17
+    }
+  ]
+}

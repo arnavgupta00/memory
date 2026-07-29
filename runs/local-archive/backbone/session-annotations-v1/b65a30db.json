@@ -1,0 +1,93 @@
+{
+  "session_id": "b65a30db",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have issues with my laptop's battery life.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want tips to extend my laptop battery life.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want recommendations for good laptops with long battery life.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to get a NAS device for media storage.",
+      "turn_index": 2
+    },
+    {
+      "text": "I set up a new smart TV last weekend.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am loving the picture quality of my new smart TV.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to automate tasks around the house using IFTTT recipes.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been experimenting with IFTTT recipes to automate tasks around the house.",
+      "turn_index": 6
+    },
+    {
+      "text": "One of my IFTTT recipes turns on the living room lights when I enter the room using geolocation on my phone.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want ideas for home automation recipes to try.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking about setting up a home server to store and stream our family's media content.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want recommendations for NAS devices or software to store and stream family media content.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking about upgrading my home office PC to a solid-state drive (SSD).",
+      "turn_index": 10
+    },
+    {
+      "text": "I have heard that SSDs can significantly improve performance.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know more about SSDs and how they compare to traditional hard disk drives (HDDs).",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "laptop battery life",
+    "extend laptop battery",
+    "laptops with long battery life",
+    "NAS device recommendations",
+    "media storage NAS",
+    "smart TV setup",
+    "IFTTT home automation",
+    "IFTTT recipes",
+    "geolocation phone lights",
+    "living room lights automation",
+    "home server media streaming",
+    "SSD vs HDD",
+    "home office PC upgrade"
+  ],
+  "events": [
+    {
+      "text": "Set up a new smart TV",
+      "date_hint": "last weekend",
+      "turn_index": 2
+    },
+    {
+      "text": "Created an IFTTT recipe that turns on living room lights when entering the room using phone geolocation",
+      "date_hint": "recently",
+      "turn_index": 6
+    }
+  ]
+}

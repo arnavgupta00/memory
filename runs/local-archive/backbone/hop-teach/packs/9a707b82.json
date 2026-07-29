@@ -1,0 +1,33 @@
+{
+  "question_id": "9a707b82",
+  "question_type": "temporal-reasoning",
+  "question": "I mentioned cooking something for my friend a couple of days ago. What was it?",
+  "question_date": "2022/04/12 (Tue) 22:57",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_dba89488_2",
+    "answer_dba89488_1"
+  ],
+  "haystack_session_count": 53,
+  "notes_coverage": "partial",
+  "annotated_session_count": 7,
+  "gold_sessions": [
+    {
+      "session_id": "answer_dba89488_2",
+      "date": "2022/03/21 (Mon) 21:37",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_dba89488_2\n[session_date] 2022/03/21 (Mon) 21:37\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm looking for some inspiration for my next baking project. I've been really into baking lately.\n\n[turn 2] I've been obsessed with strawberries lately, especially after that amazing baking class I took at a local culinary school yesterday. I was thinking of making a strawberry shortcake. Do you have any tips on how to make the perfect shortcake?\n\n[turn 4] I'm thinking of using fresh strawberries from the farmer's market for my shortcake. I've been buying them by the container lately and snacking on them all day. They're so sweet and juicy! Do you have any recommendations for whipping cream? I want it to be light and fluffy, but still hold its shape.\n\n[turn 6] That's great advice on whipping cream! I've been experimenting with sourdough bread lately, and I was thinking of using some of my sourdough starter to make a sourdough shortcake instead of regular shortcake. Do you think that would work?\n\n[turn 8] I'm thinking of trying a different type of flour for my sourdough shortcake.  I've been experimenting with different types of flour lately, and I've been loving the results. I made a batch of cookies with bread flour, and they turned out chewier than usual. I've also been using oat flour to make pancakes and waffles, and it gives them a nice nutty flavor. Do you think I could use oat flour or bread flour for my sourdough shortcake?\n\n[turn 10] I think I'll try the bread flour first. I've had good results with it in the past, and I'm curious to see how it will affect the texture of the shortcake. I'll make sure to monitor the proofing time and adjust the liquid content as needed. Thanks for the tips and encouragement!"
+    },
+    {
+      "session_id": "answer_dba89488_1",
+      "date": "2022/04/10 (Sun) 23:24",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_dba89488_1\n[session_date] 2022/04/10 (Sun) 23:24\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm looking for some new recipe ideas for a dinner party I'm hosting next weekend. I've been really into baking lately. Do you have any suggestions for a unique dessert I could make for my dinner party?\n\n[turn 2] I love these ideas, especially the matcha tiramisu and salted caramel chocolate tart. I've been experimenting with different flavors lately, like strawberries, and I think a strawberry rhubarb crisp I made a few weeks ago was incredible. Do you have any ideas for a savory dish that would complement these sweet treats?\n\n[turn 4] I'm thinking of making some sandwiches with my sourdough bread for the dinner party. Do you have any suggestions for fillings that would complement the flavors of the matcha tiramisu and salted caramel chocolate tart?\n\n[turn 6] I'm also thinking of making some lemon bars for the dinner party. Do you have any tips for making a shortbread crust? I recently made a batch with a shortbread crust and a lemon curd made with fresh lemons and eggs, and they turned out tangy and sweet.\n\n[turn 8] I'm excited to make these lemon bars, and I think I'll also make some croissants from scratch, even though my last attempt didn't turn out so well. Do you have any tips for making flaky, buttery croissants?\n\n[turn 10] I'm excited to try making croissants again, and I think I'll also make some banana bread for the dinner party. I recently made a batch with walnuts, and it turned out amazing. By the way, I just baked a chocolate cake for my friend's birthday party last weekend that turned out amazing. It was a new recipe I found online that used espresso powder to intensify the chocolate flavor. Anyways, do you have any tips for making a moist and flavorful banana bread?"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

@@ -1,0 +1,25 @@
+{
+  "question_id": "0edc2aef",
+  "question_type": "single-session-preference",
+  "question": "Can you suggest a hotel for my upcoming trip to Miami?",
+  "question_date": "2023/05/30 (Tue) 20:23",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_d586e9cd"
+  ],
+  "haystack_session_count": 46,
+  "notes_coverage": "partial",
+  "annotated_session_count": 4,
+  "gold_sessions": [
+    {
+      "session_id": "answer_d586e9cd",
+      "date": "2023/05/29 (Mon) 14:06",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_d586e9cd\n[session_date] 2023/05/29 (Mon) 14:06\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm planning a trip to Seattle and need help finding a hotel with a great view of the city. Do you have any recommendations?\n\n[turn 2] Besides great views, I also like hotels with unique features, such as a rooftop pool or a hot tub on the balcony. Do you know if any of these hotels have those features?\n\n[turn 4] Do any of these hotels have a hot tub on the balcony with a view of the city skyline?\n\n[turn 6] Can I get a room with a hot tub on the balcony at The Edgewater Hotel that faces the Space Needle?\n\n[turn 8] I'm thinking of staying at The Edgewater Hotel, but I want to know more about the room service breakfast. Can I get a room service breakfast delivered to my room, and are there any options available that cater to my dietary restrictions?\n\n[turn 10] I'd like to know if they have any special packages or promotions that include a room with a hot tub on the balcony and a complimentary room service breakfast.\n\n[turn 12] Do they have any packages or promotions that include a room with a hot tub on the balcony that faces the Space Needle?\n\n[turn 14] Can I get a room with a hot tub on the balcony that faces the Space Needle and also includes a complimentary room service breakfast and a $100 credit towards a couples' massage at the hotel's spa?\n\n[turn 16] Can I also get a room with a fireplace?\n\n[turn 18] I think I'll stick with the Space Needle Romance Package at The Edgewater Hotel. The hot tub on the balcony with a view of the Space Needle sounds amazing, and the complimentary room service breakfast and $100 credit towards a couples' massage are great perks. Thank you for your help in booking this package!"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

@@ -1,0 +1,136 @@
+{
+  "session_id": "462ce3bc_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Denver soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been staying in hotels quite frequently lately.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have stayed in 15 different cities so far.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am a Hilton loyalist.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want Hilton hotels in Denver that I can recommend.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think the Conrad Denver Downtown sounds great.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know the location of the Conrad Denver Downtown and what is within walking distance.",
+      "turn_index": 4
+    },
+    {
+      "text": "I think I will book the Conrad Denver Downtown.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been flying a lot lately.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want help calculating my carbon footprint from all these flights.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have flown to New York.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have flown to Chicago.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have flown to San Francisco.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have flown to London.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have flown to Atlanta three times.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have flown to Boston.",
+      "turn_index": 8
+    },
+    {
+      "text": "My flights were mostly domestic.",
+      "turn_index": 8
+    },
+    {
+      "text": "I had a few international trips to London.",
+      "turn_index": 8
+    },
+    {
+      "text": "My flights were spread out over the past 3 months.",
+      "turn_index": 8
+    },
+    {
+      "text": "I had an average of 2-3 flights per month.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to explore options for offsetting my emissions.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know ways to offset my emissions.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to Denver",
+    "hotel recommendations",
+    "stayed in 15 different cities",
+    "Hilton loyalist",
+    "Hilton hotels in Denver",
+    "Conrad Denver Downtown",
+    "hotel location",
+    "walking distance",
+    "booking Conrad Denver Downtown",
+    "calculate carbon footprint",
+    "flights carbon footprint",
+    "carbon offset options",
+    "flown to New York Chicago San Francisco London Atlanta Boston",
+    "mostly domestic flights",
+    "international trips to London",
+    "flights spread over past 3 months",
+    "2-3 flights per month",
+    "offsetting emissions"
+  ],
+  "events": [
+    {
+      "text": "Planning a trip to Denver and asking for hotel recommendations",
+      "date_hint": "soon",
+      "turn_index": 0
+    },
+    {
+      "text": "Choosing to book the Conrad Denver Downtown",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Flying to multiple cities over the past 3 months (New York, Chicago, San Francisco, London, Atlanta three times, Boston)",
+      "date_hint": "past 3 months",
+      "turn_index": 8
+    },
+    {
+      "text": "Exploring options for offsetting emissions",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

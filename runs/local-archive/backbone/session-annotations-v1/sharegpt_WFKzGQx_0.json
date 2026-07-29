@@ -1,0 +1,49 @@
+{
+  "session_id": "sharegpt_WFKzGQx_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user wants to install a CLI on a Linux box with a full Keycloak server.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user corrected that they are taking without the Keycloak server, just the CLI.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user wants to use a standalone kcadm.sh extracted from a zip and make it work properly.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user needs kcadm.sh version 15.0.2.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user wants one-liner Linux commands to extract kcadm.sh into /use/local/bin.",
+      "turn_index": 10
+    },
+    {
+      "text": "The user believes the Keycloak zip file is now in the Keycloak GitHub repository.",
+      "turn_index": 12
+    },
+    {
+      "text": "The user asks whether kcadm.sh version 15.0.2 can work with a higher version Keycloak server.",
+      "turn_index": 16
+    }
+  ],
+  "keyphrases": [
+    "install cli on Linux",
+    "Keycloak server",
+    "standalone kcadm.sh",
+    "kcadm.sh extraction from zip",
+    "kcadm.sh version 15.0.2",
+    "Linux command sequences",
+    "one liner commands",
+    "extract to /use/local/bin",
+    "Keycloak zip file",
+    "Keycloak GitHub repository",
+    "kcadm.sh compatibility with higher Keycloak",
+    "kcadm.sh standalone install"
+  ],
+  "events": []
+}

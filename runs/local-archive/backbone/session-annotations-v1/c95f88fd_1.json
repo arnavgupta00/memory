@@ -1,0 +1,98 @@
+{
+  "session_id": "c95f88fd_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for tips on how to save money on my grocery shopping.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been trying to be more mindful of my spending lately.",
+      "turn_index": 0
+    },
+    {
+      "text": "I used a 20% off coupon at Walmart last Saturday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I received the 20% off coupon in my email inbox a week prior to using it.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of trying out new recipes.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am wondering for meal suggestions that use canned tomatoes.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of making pasta dishes.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am wondering how to choose the right type of pasta for a recipe.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of making a simple pasta dish using canned tomatoes.",
+      "turn_index": 6
+    },
+    {
+      "text": "I stocked up on canned tomatoes during my last trip to Walmart.",
+      "turn_index": 6
+    },
+    {
+      "text": "I got a great deal with the 20% off coupon I received in my email inbox a week prior to my shopping trip.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will add sautéed onions and bell peppers to give extra flavor and nutrients.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am glad I stocked up on canned tomatoes with the 20% off coupon because it is helping me save money on my grocery bill.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of making a dessert to go along with my pasta dish.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am wondering for simple dessert recipes that use common pantry staples.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "save money grocery shopping",
+    "20% off coupon Walmart",
+    "email coupon inbox",
+    "canned tomatoes recipes",
+    "new recipes",
+    "pasta dishes",
+    "choose type of pasta",
+    "simple pasta dish",
+    "sautéed onions",
+    "bell peppers",
+    "stock up canned tomatoes",
+    "simple dessert recipes",
+    "common pantry staples"
+  ],
+  "events": [
+    {
+      "text": "Used a 20% off coupon at Walmart",
+      "date_hint": "last Saturday",
+      "turn_index": 0
+    },
+    {
+      "text": "Received the 20% off coupon in email inbox a week prior to using it",
+      "date_hint": "a week prior to last Saturday",
+      "turn_index": 0
+    },
+    {
+      "text": "Stocked up on canned tomatoes during a last trip to Walmart",
+      "date_hint": "last trip (relative to turn 6)",
+      "turn_index": 6
+    }
+  ]
+}

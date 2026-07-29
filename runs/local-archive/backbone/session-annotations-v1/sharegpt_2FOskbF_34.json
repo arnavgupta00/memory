@@ -1,0 +1,120 @@
+{
+  "session_id": "sharegpt_2FOskbF_34",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "We need an SVG component named \"Caster Wheel Footprint\" with a rectangular footprint measuring 31mm by 37mm.",
+      "turn_index": 0
+    },
+    {
+      "text": "The \"Caster Wheel Footprint\" has 4 mounting holes within the 31mm by 37mm rectangle.",
+      "turn_index": 0
+    },
+    {
+      "text": "Each mounting hole in the \"Caster Wheel Footprint\" has a 2mm radius.",
+      "turn_index": 0
+    },
+    {
+      "text": "In the \"Caster Wheel Footprint\", there is a mounting hole in each of the 4 corners set in from the sides by 4mm.",
+      "turn_index": 0
+    },
+    {
+      "text": "We need an SVG component named \"Infrared Footprint\" with a rectangular footprint measuring 96.5mm by 20.5mm.",
+      "turn_index": 0
+    },
+    {
+      "text": "For the \"Infrared Footprint\", the x and y axis measurements are 96.5mm and 20.5mm respectively.",
+      "turn_index": 0
+    },
+    {
+      "text": "The \"Infrared Footprint\" has 4 mounting holes within the 96.5mm by 20.5mm rectangle.",
+      "turn_index": 0
+    },
+    {
+      "text": "Each mounting hole in the \"Infrared Footprint\" has a 1.5mm radius.",
+      "turn_index": 0
+    },
+    {
+      "text": "In the \"Infrared Footprint\", all 4 holes are in a line at y = 4.25mm.",
+      "turn_index": 0
+    },
+    {
+      "text": "In the \"Infrared Footprint\", the mounting holes along the x axis are at x = 7mm, 24mm, 72.5mm, and 89.5mm.",
+      "turn_index": 0
+    },
+    {
+      "text": "We need an SVG component named \"Arduino footprint\" with dimensions 68.6mm by 53.4mm.",
+      "turn_index": 0
+    },
+    {
+      "text": "The \"Arduino footprint\" has 4 mounting holes with a radius of 1.3mm.",
+      "turn_index": 0
+    },
+    {
+      "text": "In the \"Arduino footprint\", mounting holes are located at (15.24, 2.54), (15.24, 50.8), (66.04, 17.78), and (66.04, 45.72).",
+      "turn_index": 0
+    },
+    {
+      "text": "We need an SVG component named \"motor bracket footprint\" with dimensions 15mm by 5mm.",
+      "turn_index": 0
+    },
+    {
+      "text": "The \"motor bracket footprint\" has 2 mounting holes with a radius of 1.5mm.",
+      "turn_index": 0
+    },
+    {
+      "text": "In the \"motor bracket footprint\", mounting holes are located at (3.5, 2.5) and (11.5, 2.5).",
+      "turn_index": 0
+    },
+    {
+      "text": "The motor bracket footprint needs to be provided again because the previous response ran out of space.",
+      "turn_index": 2
+    },
+    {
+      "text": "The previously created SVG files only included circles for mounting holes and did not include rectangles around the border.",
+      "turn_index": 4
+    },
+    {
+      "text": "All 4 SVG files need to be edited so they are enclosed by rectangles at the border.",
+      "turn_index": 4
+    },
+    {
+      "text": "The infrared and motor bracket SVG files need to be finished.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "Caster Wheel Footprint",
+    "31mm by 37mm",
+    "mounting holes 2mm radius",
+    "Infrared Footprint",
+    "96.5mm by 20.5mm",
+    "mounting holes 1.5mm radius",
+    "Arduino footprint 68.6mm by 53.4mm",
+    "motor bracket footprint 15mm by 5mm",
+    "rectangles border enclosure",
+    "SVG files for components"
+  ],
+  "events": [
+    {
+      "text": "Request to create additional SVG files for Caster Wheel Footprint, Infrared Footprint, Arduino footprint, and motor bracket footprint.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Request to provide the motor bracket footprint again because the previous response ran out of space.",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Request to edit all 4 SVG files to enclose them with border rectangles.",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Request to finish writing the infrared and motor bracket files.",
+      "date_hint": "",
+      "turn_index": 6
+    }
+  ]
+}

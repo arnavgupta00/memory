@@ -1,0 +1,112 @@
+{
+  "session_id": "e02ddb14_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for information on mortgage rates.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am in the process of buying a new home.",
+      "turn_index": 0
+    },
+    {
+      "text": "I got pre-approved for a mortgage.",
+      "turn_index": 0
+    },
+    {
+      "text": "I qualified for a $400,000 mortgage loan.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am concerned about property taxes.",
+      "turn_index": 2
+    },
+    {
+      "text": "My loan amount will likely be lower than $400,000.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am aiming to put 20% down.",
+      "turn_index": 2
+    },
+    {
+      "text": "My budget is around $320,000.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to understand how private mortgage insurance (PMI) works.",
+      "turn_index": 4
+    },
+    {
+      "text": "I think I will avoid PMI because I am putting 20% down.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am still unclear on how PMI is calculated.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want an example of how the PMI premium is calculated for a specific loan scenario.",
+      "turn_index": 6
+    },
+    {
+      "text": "I understand PMI better now.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will not have to worry about PMI because I am putting 20% down.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know more about the appraisal process.",
+      "turn_index": 8
+    },
+    {
+      "text": "I had an appraisal done recently.",
+      "turn_index": 8
+    },
+    {
+      "text": "My appraisal came in at $325,000.",
+      "turn_index": 10
+    },
+    {
+      "text": "My offer price was $320,000.",
+      "turn_index": 10
+    },
+    {
+      "text": "I was relieved that the appraisal did not come in low.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am concerned about potential issues with the property that the appraisal might have uncovered.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "mortgage rates",
+    "buying a new home",
+    "mortgage pre-approval",
+    "$400,000 loan",
+    "monthly payments",
+    "property taxes calculation",
+    "20% down payment",
+    "$320,000 budget",
+    "private mortgage insurance (PMI)",
+    "PMI premium calculation example",
+    "appraisal process",
+    "appraisal came in at $325,000"
+  ],
+  "events": [
+    {
+      "text": "Appraisal was done recently.",
+      "date_hint": "recently",
+      "turn_index": 8
+    },
+    {
+      "text": "Appraisal came in at $325,000, close to the $320,000 offer price.",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

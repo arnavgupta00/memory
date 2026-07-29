@@ -1,0 +1,89 @@
+{
+  "session_id": "94f01dc0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Hawaii in November.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for hiking trail recommendations on Kauai.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want must-see hiking trails on the Na Pali Coast.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for camping spots in Hanalei and Poipu that are close to the trails mentioned.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am looking for more information about the Kalalau Trail.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want information about permits and regulations for the Kalalau Trail.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am planning to hike the Kalalau Trail to Kalalau Beach.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning to camp overnight at Kalalau Beach.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want information about camping conditions and facilities at Kalalau Beach.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want the best way to get to the Kalalau Trailhead from Hanalei.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know whether I can rent a car or if public transportation is available to reach the Kalalau Trailhead from Hanalei.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am planning to hike the Kalalau Trail to Kalalau Beach and camp overnight.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want gear recommendations for the Kalalau Trail hike and camping.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Hawaii trip November",
+    "Kauai hiking trails",
+    "Na Pali Coast trails",
+    "Hanalei camping spots",
+    "Poipu camping spots",
+    "Kalalau Trail permits",
+    "Kalalau Trail regulations",
+    "Kalalau Beach camping conditions",
+    "Kalalau Beach facilities",
+    "Kalalau Trailhead from Hanalei",
+    "rent a car vs public transportation",
+    "Kalalau gear to bring"
+  ],
+  "events": [
+    {
+      "text": "Planning a trip to Hawaii in November",
+      "date_hint": "November",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to hike the Kalalau Trail to Kalalau Beach and camp overnight",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Planning to hike the Kalalau Trail to Kalalau Beach and camp overnight",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

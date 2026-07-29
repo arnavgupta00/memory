@@ -1,0 +1,130 @@
+{
+  "session_id": "c5d99bff",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have been having issues with my stomach lately, including feeling bloated and sluggish.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been eating more fiber to help with digestion.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been drinking more water to help with digestion.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been taking some medications for my anxiety.",
+      "turn_index": 2
+    },
+    {
+      "text": "I recently switched my anxiety medication to a generic brand.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have had a lingering cough for three weeks.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been taking DayQuil to help with my cough.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been taking NyQuil to help with my cough.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am considering trying ginger tea to help with my cough.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering trying slippery elm lozenges to help with my cough.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering taking a decongestant to help with my congestion.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am concerned about whether a decongestant would interact with my other medications.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am going to try ginger tea and slippery elm lozenges for my cough.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will talk to my doctor or pharmacist about decongestants and potential interactions with my anxiety medications.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering getting a flu shot to prevent future illnesses that could trigger my cough.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am going to schedule a flu shot appointment.",
+      "turn_index": 10
+    },
+    {
+      "text": "I do not want to take chances because my cough has been lingering for three weeks.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to ask my doctor about getting a chest X-ray or other tests to rule out underlying conditions contributing to my cough.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "stomach bloating",
+    "sluggish digestion",
+    "natural remedies for digestion",
+    "fiber intake",
+    "drinking more water",
+    "anxiety medication",
+    "generic brand anxiety meds",
+    "lingering cough",
+    "cough for three weeks",
+    "DayQuil",
+    "NyQuil",
+    "ginger tea",
+    "slippery elm lozenges",
+    "decongestant interaction",
+    "flu shot",
+    "chest X-ray",
+    "underlying conditions for cough",
+    "congestion relief"
+  ],
+  "events": [
+    {
+      "text": "Cough has been lingering for three weeks",
+      "date_hint": "three weeks",
+      "turn_index": 2
+    },
+    {
+      "text": "Taking DayQuil and NyQuil for cough without much improvement",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Considering trying ginger tea and slippery elm lozenges for cough",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Planning to try ginger tea and slippery elm lozenges and discuss decongestants with doctor/pharmacist",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Scheduling a flu shot appointment",
+      "date_hint": "",
+      "turn_index": 10
+    },
+    {
+      "text": "Planning to ask doctor about chest X-ray or other tests for cough",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

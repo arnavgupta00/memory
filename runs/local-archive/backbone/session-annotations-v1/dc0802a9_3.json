@@ -1,0 +1,107 @@
+{
+  "session_id": "dc0802a9_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for recipe suggestions for burgers.",
+      "turn_index": 0
+    },
+    {
+      "text": "I made my own BBQ sauce from scratch yesterday after watching a YouTube video.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to try my homemade BBQ sauce on burgers this weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am a beginner and I want a recommended burger recipe for beginners.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want tips on how to get perfect grill marks on my burgers.",
+      "turn_index": 2
+    },
+    {
+      "text": "I like the Classic BBQ Bacon Cheeseburger recipe.",
+      "turn_index": 4
+    },
+    {
+      "text": "I currently have a gas grill.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been thinking about getting a charcoal grill for a while.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering whether it is worth the extra effort and cleanup to get smoky flavor and better grill marks.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am convinced to get a charcoal grill.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been experimenting with different BBQ sauces and flavors.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want tips on how to store homemade BBQ sauce to keep it fresh for a longer period.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am excited to try my new charcoal grill and experiment with different BBQ sauce flavors.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am thinking of trying a Korean-style BBQ sauce.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am thinking of trying a spicy Tex-Mex-inspired sauce.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "burger recipes",
+    "homemade BBQ sauce",
+    "BBQ sauce from scratch",
+    "YouTube video",
+    "grill marks",
+    "gas grill",
+    "Classic BBQ Bacon Cheeseburger",
+    "charcoal grill",
+    "smoky flavor",
+    "storing homemade BBQ sauce",
+    "Korean-style BBQ sauce",
+    "Tex-Mex inspired sauce"
+  ],
+  "events": [
+    {
+      "text": "Made homemade BBQ sauce from scratch after watching a YouTube video.",
+      "date_hint": "yesterday",
+      "turn_index": 0
+    },
+    {
+      "text": "Wants to try the homemade BBQ sauce on burgers this weekend.",
+      "date_hint": "this weekend",
+      "turn_index": 0
+    },
+    {
+      "text": "Considering switching from gas grill to charcoal grill for smoky flavor and better grill marks.",
+      "date_hint": "for a while / this conversation",
+      "turn_index": 6
+    },
+    {
+      "text": "Decided to get a charcoal grill.",
+      "date_hint": "now / this conversation",
+      "turn_index": 8
+    },
+    {
+      "text": "Plans to try new BBQ sauce flavors including Korean-style and spicy Tex-Mex-inspired sauces.",
+      "date_hint": "upcoming / this conversation",
+      "turn_index": 10
+    }
+  ]
+}

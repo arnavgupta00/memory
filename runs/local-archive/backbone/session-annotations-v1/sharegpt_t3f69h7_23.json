@@ -1,0 +1,103 @@
+{
+  "session_id": "sharegpt_t3f69h7_23",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "We discussed using AAC audio with an appropriate bit rate for compatibility with HLS.",
+      "turn_index": 1
+    },
+    {
+      "text": "We discussed whether ffmpeg can transform AAC into an HLS compatible one.",
+      "turn_index": 1
+    },
+    {
+      "text": "We discussed why AAC is good at low bitrate.",
+      "turn_index": 3
+    },
+    {
+      "text": "We discussed why not use MP3 instead of AAC.",
+      "turn_index": 3
+    },
+    {
+      "text": "We discussed why MP3 is more popular and used than AAC in consumer music devices and apps.",
+      "turn_index": 5
+    },
+    {
+      "text": "We discussed an app that gets an AS67 audio stream and reads SCTE-104 ad data from a UDP ancillary payload.",
+      "turn_index": 7
+    },
+    {
+      "text": "We discussed that the app stitches audio ads to the AS67 audio stream and delivers the result in HLS to the end user.",
+      "turn_index": 7
+    },
+    {
+      "text": "We discussed whether the app should have PTP standard in place for this workflow.",
+      "turn_index": 7
+    },
+    {
+      "text": "We discussed that if the app just stitches audio ads to the stream and delivers it as an HLS stream, PTP implementation might be overkill.",
+      "turn_index": 9
+    },
+    {
+      "text": "We discussed SMPTE timecode usage in this context.",
+      "turn_index": 11
+    },
+    {
+      "text": "We discussed that the feed is an AES67 audio radio broadcast.",
+      "turn_index": 11
+    },
+    {
+      "text": "We discussed that for ad stitching in the app, the stream is expected to signal ad breaks via SCTE-104 implementation.",
+      "turn_index": 11
+    },
+    {
+      "text": "We discussed that SCTE-104 may be added to UDP packets.",
+      "turn_index": 11
+    },
+    {
+      "text": "We asked whether something is wrong with the described approach.",
+      "turn_index": 11
+    },
+    {
+      "text": "We asked whether ffmpeg can convert AAC to an HLS compatible format.",
+      "turn_index": 13
+    },
+    {
+      "text": "We discussed creating a HLS stream that references audio files in .aac.",
+      "turn_index": 15
+    },
+    {
+      "text": "We discussed internet radio broadcast and AES67-compatible ones.",
+      "turn_index": 17
+    },
+    {
+      "text": "We asked whether AAC is the de facto standard for internet radio broadcast and AES67-compatible ones.",
+      "turn_index": 17
+    },
+    {
+      "text": "We asked whether AAC is the most common thought.",
+      "turn_index": 19
+    }
+  ],
+  "keyphrases": [
+    "HLS compatibility",
+    "AAC audio bit rate",
+    "ffmpeg convert AAC to HLS",
+    "AAC low bitrate",
+    "MP3 vs AAC",
+    "consumer music devices",
+    "AS67 audio stream",
+    "SCTE-104 ad data",
+    "UDP ancillary payload",
+    "audio ad stitching",
+    "HLS delivery",
+    "PTP standard",
+    "SMPTE timecode",
+    "AES67 audio broadcast",
+    "AES87 compatible",
+    "internet radio broadcast",
+    "de facto standard AAC",
+    "HLS stream referencing .aac"
+  ],
+  "events": []
+}

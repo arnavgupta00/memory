@@ -1,0 +1,93 @@
+{
+  "session_id": "a5959675_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a family gathering and need help with the seating arrangement.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a lot of female cousins.",
+      "turn_index": 0
+    },
+    {
+      "text": "I counted 8 male cousins during our last family reunion.",
+      "turn_index": 0
+    },
+    {
+      "text": "The gathering will be at my parents' house.",
+      "turn_index": 2
+    },
+    {
+      "text": "We are expecting around 25-30 people at the gathering, including kids.",
+      "turn_index": 2
+    },
+    {
+      "text": "The age range at the gathering will be from young children to elderly grandparents.",
+      "turn_index": 2
+    },
+    {
+      "text": "We will be using rectangular tables for the gathering.",
+      "turn_index": 2
+    },
+    {
+      "text": "There are no specific seating preferences for the gathering.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have a few elderly family members who might need easier access to their seats.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was thinking about having a simple family-friendly game or activity during the gathering that doesn't require too much equipment or setup.",
+      "turn_index": 4
+    },
+    {
+      "text": "I suggested the game \"Two Truths and a Lie\" for the gathering.",
+      "turn_index": 6
+    },
+    {
+      "text": "Out of my 25 cousins, 17 are females.",
+      "turn_index": 8
+    },
+    {
+      "text": "Out of my 25 cousins, 8 are males.",
+      "turn_index": 8
+    },
+    {
+      "text": "During our last family reunion, I noticed that the females in my family tend to dominate conversations and decision-making processes.",
+      "turn_index": 10
+    },
+    {
+      "text": "During our last family reunion, I noticed that the males in my family seem to be more laid-back and less assertive in group settings.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "family gathering seating arrangement",
+    "rectangular tables",
+    "parents' house venue",
+    "25-30 people including kids",
+    "age range young children to elderly grandparents",
+    "elderly family members access to seats",
+    "table layout space between tables",
+    "simple family-friendly game",
+    "Two Truths and a Lie",
+    "cousins gender ratio",
+    "17 female cousins",
+    "8 male cousins",
+    "family reunion conversation dynamics"
+  ],
+  "events": [
+    {
+      "text": "Last family reunion where 8 male cousins were counted",
+      "date_hint": "last family reunion",
+      "turn_index": 0
+    },
+    {
+      "text": "Last family reunion where females dominated conversations and decision-making and males were more laid-back",
+      "date_hint": "last family reunion",
+      "turn_index": 10
+    }
+  ]
+}

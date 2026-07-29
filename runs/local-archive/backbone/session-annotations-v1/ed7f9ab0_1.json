@@ -1,0 +1,93 @@
+{
+  "session_id": "ed7f9ab0_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I recently rearranged the furniture in my living room.",
+      "turn_index": 0
+    },
+    {
+      "text": "I mounted a new TV on the wall in my living room.",
+      "turn_index": 0
+    },
+    {
+      "text": "I hosted a get-together for the playoffs two weeks ago.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of having around the same number of guests as last time.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of hosting a casual gathering for the upcoming game.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to set up cozy corners with pillows and blankets for people to relax during the game.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to have a variety of snacks and finger foods available.",
+      "turn_index": 6
+    },
+    {
+      "text": "During the playoffs, I had extra chairs and a coffee table in the corner.",
+      "turn_index": 6
+    },
+    {
+      "text": "During the playoffs, I ordered pizza and wings.",
+      "turn_index": 6
+    },
+    {
+      "text": "I mounted a new 55-inch screen on the wall.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to optimize the TV viewing experience for a large group.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have a basic 2.1 channel sound system that came with the TV.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am not sure if my 2.1 channel sound system will be enough to fill the room with clear sound for a large group.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am considering upgrading to a soundbar or a home theater system.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "living room get-together",
+    "rearranged furniture",
+    "mounted TV on wall",
+    "playoffs get-together",
+    "cozy corners with pillows and blankets",
+    "snacks and finger foods",
+    "extra chairs and coffee table",
+    "pizza and wings",
+    "55-inch TV viewing experience",
+    "large group TV viewing",
+    "2.1 channel sound system",
+    "soundbar vs home theater system"
+  ],
+  "events": [
+    {
+      "text": "Hosted a get-together for the playoffs",
+      "date_hint": "two weeks ago",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning a casual gathering for the upcoming game",
+      "date_hint": "upcoming game",
+      "turn_index": 4
+    },
+    {
+      "text": "Planning to host another get-together",
+      "date_hint": "recently / next get-together",
+      "turn_index": 0
+    }
+  ]
+}

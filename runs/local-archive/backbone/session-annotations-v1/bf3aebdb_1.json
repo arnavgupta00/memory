@@ -1,0 +1,87 @@
+{
+  "session_id": "bf3aebdb_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning to make another purchase on Amazon soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I used a 20% off coupon on my last online shopping order on Amazon on March 15th.",
+      "turn_index": 0
+    },
+    {
+      "text": "My March 15th Amazon order saved me around $25.",
+      "turn_index": 0
+    },
+    {
+      "text": "My March 15th Amazon order total bill was $125.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for a specific kitchen appliance on Amazon.",
+      "turn_index": 2
+    },
+    {
+      "text": "I redeemed 500 points from my Amazon Rewards Visa card.",
+      "turn_index": 4
+    },
+    {
+      "text": "Redeeming 500 points from my Amazon Rewards Visa card gave me a $5 credit towards my last purchase.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am wondering about ways to maximize rewards points on credit cards.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am wondering about other ways to save money on household essentials like laundry detergent.",
+      "turn_index": 6
+    },
+    {
+      "text": "I used a Cartwheel offer for 5% off on laundry detergent at Target last weekend.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am planning to buy household essentials at Publix soon.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know if Publix has any digital coupons or sales on laundry detergent this week.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Amazon active coupons",
+    "promo codes for new orders",
+    "20% off coupon March 15",
+    "Amazon order $125 saved $25",
+    "kitchen appliance sale notifications",
+    "price drop alerts",
+    "Amazon Rewards Visa 500 points",
+    "$5 credit from rewards points",
+    "maximize credit card rewards points",
+    "save money on laundry detergent",
+    "Target Cartwheel 5% off",
+    "Publix digital coupons",
+    "Publix sales this week",
+    "household essentials discounts"
+  ],
+  "events": [
+    {
+      "text": "Used a 20% off Amazon coupon on a last online shopping order",
+      "date_hint": "March 15th",
+      "turn_index": 0
+    },
+    {
+      "text": "Used a Cartwheel offer for 5% off on laundry detergent at Target",
+      "date_hint": "last weekend",
+      "turn_index": 8
+    },
+    {
+      "text": "Planning to buy household essentials at Publix and check digital coupons or sales on laundry detergent",
+      "date_hint": "this week",
+      "turn_index": 10
+    }
+  ]
+}

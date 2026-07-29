@@ -1,0 +1,92 @@
+{
+  "session_id": "06fe8cfb_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I need help organizing my schedule for the upcoming week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I stayed back in the office until 7:00 PM last Tuesday to work on my tasks.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a project deadline approaching fast that I need to focus on.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to book a follow-up doctor's appointment.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to schedule a workout routine based on my doctor's advice to avoid heavy exercise for the next two weeks.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to allocate at least 4 hours a day to the project deadline.",
+      "turn_index": 4
+    },
+    {
+      "text": "I prefer the doctor's appointment to be sometime in the morning.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am flexible with the days for the doctor's appointment.",
+      "turn_index": 4
+    },
+    {
+      "text": "I was thinking of starting the workout routine with light exercises 3 times a week.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am open to scheduling the workout routine at any time of the day.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to schedule the doctor's appointment on Wednesday morning instead of Tuesday.",
+      "turn_index": 6
+    },
+    {
+      "text": "I stayed back in the office last Tuesday to work on my tasks for 7:00 PM.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning to revisit my project plan and break down the tasks into smaller, manageable chunks.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want suggestions on how to prioritize tasks or create a task list.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "organizing schedule",
+    "upcoming week",
+    "project deadline",
+    "stayed back in the office",
+    "7:00 PM",
+    "follow-up doctor's appointment",
+    "Wednesday morning",
+    "morning appointment preference",
+    "workout routine",
+    "avoid heavy exercise",
+    "next two weeks",
+    "light exercises 3 times a week",
+    "4 hours a day",
+    "task prioritization",
+    "task list",
+    "break down project plan"
+  ],
+  "events": [
+    {
+      "text": "Stayed back in the office until 7:00 PM to work on tasks",
+      "date_hint": "last Tuesday",
+      "turn_index": 0
+    },
+    {
+      "text": "Schedule a follow-up doctor's appointment on Wednesday morning instead of Tuesday",
+      "date_hint": "Wednesday morning",
+      "turn_index": 6
+    }
+  ]
+}

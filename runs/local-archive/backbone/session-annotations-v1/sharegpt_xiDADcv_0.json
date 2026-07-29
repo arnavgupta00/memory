@@ -1,0 +1,85 @@
+{
+  "session_id": "sharegpt_xiDADcv_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want you to act like a search engine.",
+      "turn_index": 0
+    },
+    {
+      "text": "I will give you documents to search over with attributes like title and body.",
+      "turn_index": 0
+    },
+    {
+      "text": "I format documents in block quotes with fields like TITLE and BODY.",
+      "turn_index": 0
+    },
+    {
+      "text": "When I enter a block quote, you should treat it like a new search document.",
+      "turn_index": 0
+    },
+    {
+      "text": "When I enter any other message, you should treat that message like a search query.",
+      "turn_index": 0
+    },
+    {
+      "text": "You should give the most relevant snippet from the documents to my query.",
+      "turn_index": 0
+    },
+    {
+      "text": "You should only respond with acknowledgement of the new documents or the most relevant snippet from the documents.",
+      "turn_index": 0
+    },
+    {
+      "text": "I added a search document titled \"Connection issues with MetaMask\".",
+      "turn_index": 2
+    },
+    {
+      "text": "I added a search document titled \"Resetting your Ledger Live password\".",
+      "turn_index": 6
+    },
+    {
+      "text": "I asked \"welcome back page\".",
+      "turn_index": 8
+    },
+    {
+      "text": "I asked \"what is settings\".",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "search engine behavior",
+    "block quote documents",
+    "TITLE and BODY format",
+    "most relevant snippet",
+    "Connection issues with MetaMask",
+    "Google Chrome update Chrome 91",
+    "U2F transport issues",
+    "Ledger Live bridge",
+    "Resetting your Ledger Live password",
+    "welcome back page",
+    "what is settings"
+  ],
+  "events": [
+    {
+      "text": "User added search document \"Connection issues with MetaMask\"",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "User added search document \"Resetting your Ledger Live password\"",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "User asked about the \"welcome back page\"",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "User asked \"what is settings\"",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

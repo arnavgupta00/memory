@@ -1,0 +1,72 @@
+{
+  "session_id": "answer_4ffa04a2_4",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I attended a charity golf tournament on July 17th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I played golf with colleagues at the charity golf tournament on July 17th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I realized I need to work on my swing.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to improve my golf game.",
+      "turn_index": 0
+    },
+    {
+      "text": "I will work on my stance and grip.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking about getting golf lessons.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking about organizing a charity golf tournament similar to the one I attended on July 17th.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am still thinking about the logistics of the tournament.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want advice on finding sponsors and donors for the event.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want advice on crafting a compelling pitch or proposal to present to potential sponsors.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "improve golf game",
+    "beginner golf tips",
+    "charity golf tournament",
+    "July 17th",
+    "swing practice",
+    "stance and grip",
+    "golf lessons for beginners",
+    "golf instructors near me",
+    "organizing charity golf tournament",
+    "tournament logistics",
+    "finding sponsors and donors",
+    "sponsor pitch proposal"
+  ],
+  "events": [
+    {
+      "text": "Attended a charity golf tournament",
+      "date_hint": "July 17th",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to organize a charity golf tournament similar to the one attended on July 17th",
+      "date_hint": "July 17th (reference)",
+      "turn_index": 4
+    }
+  ]
+}

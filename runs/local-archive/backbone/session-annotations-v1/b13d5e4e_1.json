@@ -1,0 +1,80 @@
+{
+  "session_id": "b13d5e4e_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Europe.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in visiting famous Catholic cathedrals.",
+      "turn_index": 0
+    },
+    {
+      "text": "I attended a Mass on April 17th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I participated in the Eucharistic procession at the Mass on April 17th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I received communion from Father John at the Mass I attended on April 17th.",
+      "turn_index": 2
+    },
+    {
+      "text": "I attended a Holy Thursday service at St. Mary's Church recently.",
+      "turn_index": 4
+    },
+    {
+      "text": "I participated in the washing of the feet ceremony at the Holy Thursday service at St. Mary's Church.",
+      "turn_index": 4
+    },
+    {
+      "text": "I attended a prayer meeting at the Kingdom Hall of Jehovah's Witnesses on April 10th.",
+      "turn_index": 8
+    },
+    {
+      "text": "I was struck by the sense of community and fellowship at the Kingdom Hall of Jehovah's Witnesses prayer meeting on April 10th.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "trip to Europe",
+    "Catholic cathedrals",
+    "must-see Catholic cathedrals",
+    "Mass April 17",
+    "Eucharistic procession",
+    "communion from Father John",
+    "St. Peter's Basilica significance",
+    "tomb of Saint Peter",
+    "Holy Thursday service",
+    "washing of the feet ceremony",
+    "St. Mary's Church",
+    "Kingdom Hall Jehovah's Witnesses",
+    "prayer meeting April 10",
+    "Jehovah's Witnesses history and beliefs"
+  ],
+  "events": [
+    {
+      "text": "Attended a Mass and participated in the Eucharistic procession",
+      "date_hint": "April 17th",
+      "turn_index": 0
+    },
+    {
+      "text": "Received communion from Father John at the Mass",
+      "date_hint": "April 17th",
+      "turn_index": 2
+    },
+    {
+      "text": "Attended a Holy Thursday service at St. Mary's Church and participated in the washing of the feet ceremony",
+      "date_hint": "recently (Holy Thursday)",
+      "turn_index": 4
+    },
+    {
+      "text": "Attended a prayer meeting at the Kingdom Hall of Jehovah's Witnesses",
+      "date_hint": "April 10th",
+      "turn_index": 8
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "session_id": "7c6d2e3d_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to plan my meals for the upcoming week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want healthy lunch ideas that are easy to prepare.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been doing pretty well with cooking at home.",
+      "turn_index": 0
+    },
+    {
+      "text": "I had leftovers for lunch and dinner on Monday last week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I had leftovers for lunch and dinner on Tuesday last week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I like the idea of mason jar meals.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of preparing overnight oats.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to prepare something similar to what I did last week using leftovers for lunch and dinner.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want a big batch cooking recipe to make on the weekend for lunches and dinners throughout the week.",
+      "turn_index": 2
+    },
+    {
+      "text": "I like the quinoa and black bean bowl idea.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want suggestions for adding protein sources to my quinoa and black bean bowl, like chicken or beans.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want suggestions for what kind of veggies to add to my quinoa and black bean bowl.",
+      "turn_index": 4
+    },
+    {
+      "text": "I had leftovers for lunch and dinner on both Monday and Tuesday last week.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will add grilled chicken and roasted veggies to my quinoa and black bean bowl.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to make a big batch of chicken broth from scratch.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want tips on how to store chicken broth properly.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know how long chicken broth can last in the fridge or freezer.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of making a big batch of chicken broth from scratch like I did a few weeks ago.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to use chicken broth as a base for soups and stews.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want suggestions for healthy and easy-to-make soup recipes.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to try the Creamy Tomato Soup recipe.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want tips on how to make Creamy Tomato Soup thicker and creamier.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "meal planning for the upcoming week",
+    "healthy easy lunch ideas",
+    "leftovers for lunch and dinner",
+    "mason jar meals",
+    "overnight oats",
+    "big batch cooking recipe",
+    "weekend meal prep",
+    "quinoa and black bean bowl",
+    "protein sources for quinoa bowl",
+    "grilled chicken and roasted veggies",
+    "chicken broth from scratch",
+    "storing chicken broth fridge freezer",
+    "healthy easy soup recipes",
+    "Creamy Tomato Soup",
+    "thicker and creamier soup"
+  ],
+  "events": [
+    {
+      "text": "Had leftovers for lunch and dinner on Monday last week",
+      "date_hint": "Monday last week",
+      "turn_index": 0
+    },
+    {
+      "text": "Had leftovers for lunch and dinner on Tuesday last week",
+      "date_hint": "Tuesday last week",
+      "turn_index": 0
+    },
+    {
+      "text": "Had leftovers for lunch and dinner on both Monday and Tuesday last week",
+      "date_hint": "Monday and Tuesday last week",
+      "turn_index": 4
+    },
+    {
+      "text": "Plans to make a big batch of chicken broth from scratch",
+      "date_hint": "upcoming weekend (implied)",
+      "turn_index": 6
+    },
+    {
+      "text": "Plans to use chicken broth as a base for soups and stews",
+      "date_hint": "upcoming (implied)",
+      "turn_index": 8
+    },
+    {
+      "text": "Wants to try Creamy Tomato Soup",
+      "date_hint": "upcoming (implied)",
+      "turn_index": 10
+    }
+  ]
+}

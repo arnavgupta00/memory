@@ -1,0 +1,72 @@
+{
+  "session_id": "06a39bb5_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am in the process of buying a house.",
+      "turn_index": 0
+    },
+    {
+      "text": "I agreed on a house price with the seller that is $5,000 higher than my initial offer.",
+      "turn_index": 0
+    },
+    {
+      "text": "I received a $2,000 credit from the seller for closing costs.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was pre-approved for a mortgage of $350,000.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am considering a 30-year mortgage with 4% interest.",
+      "turn_index": 4
+    },
+    {
+      "text": "I thought my pre-approval amount was $350,000.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am buying the house for $325,000.",
+      "turn_index": 6
+    },
+    {
+      "text": "The purchase price of $325,000 is $5,000 higher than my initial offer.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "total cost of ownership for a house",
+    "purchase price $5,000 higher than initial offer",
+    "closing costs credit $2,000",
+    "mortgage pre-approval $350,000",
+    "30-year mortgage 4% interest",
+    "monthly mortgage payment calculation",
+    "principal loan amount $200,000",
+    "purchase price $325,000",
+    "property taxes monthly mortgage payment",
+    "finding property tax rate for my area"
+  ],
+  "events": [
+    {
+      "text": "Agreed on a house price with the seller that is $5,000 higher than the initial offer",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Received a $2,000 seller credit for closing costs",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Pre-approval for a mortgage of $350,000",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Buying a house for $325,000 (which is $5,000 higher than the initial offer)",
+      "date_hint": "",
+      "turn_index": 6
+    }
+  ]
+}

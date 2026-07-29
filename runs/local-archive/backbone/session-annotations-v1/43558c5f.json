@@ -1,0 +1,112 @@
+{
+  "session_id": "43558c5f",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to get back into biking to work.",
+      "turn_index": 0
+    },
+    {
+      "text": "The weather has been unpredictable lately.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a 5-day forecast for my area.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been meaning to get some exercise.",
+      "turn_index": 2
+    },
+    {
+      "text": "I moved into a new apartment about a month ago.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am still finding my rhythm in my new apartment.",
+      "turn_index": 2
+    },
+    {
+      "text": "I commute using the bus.",
+      "turn_index": 4
+    },
+    {
+      "text": "My bus commute takes an extra 30 minutes.",
+      "turn_index": 4
+    },
+    {
+      "text": "I listen to podcasts during my commute.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am a fan of true crime podcasts.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been listening to a true crime podcast that has been going on for a while.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am finally catching up on old episodes of that podcast.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am listening to the podcast \"Crime Scene\".",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been listening to \"Crime Scene\" since the beginning.",
+      "turn_index": 8
+    },
+    {
+      "text": "I fell behind on \"Crime Scene\" when I was on a yoga retreat and didn't have service.",
+      "turn_index": 8
+    },
+    {
+      "text": "I attended a yoga retreat in the mountains for three days.",
+      "turn_index": 10
+    },
+    {
+      "text": "I did a lot of hiking and meditation at the yoga retreat.",
+      "turn_index": 10
+    },
+    {
+      "text": "I realized I am out of shape.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have been trying to walk more since I got back from the yoga retreat.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have been trying to get in more walks and hikes since I got back.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "5-day forecast",
+    "biking to work",
+    "unpredictable weather",
+    "new apartment",
+    "bus commute",
+    "podcasts during commute",
+    "true crime podcasts",
+    "Crime Scene podcast",
+    "catching up on old episodes",
+    "yoga retreat in the mountains",
+    "hiking trails",
+    "walk more since got back"
+  ],
+  "events": [
+    {
+      "text": "Attended a yoga retreat in the mountains for three days",
+      "date_hint": "three days (duration stated)",
+      "turn_index": 10
+    },
+    {
+      "text": "Fell behind on the \"Crime Scene\" podcast while on a yoga retreat without service",
+      "date_hint": "during the yoga retreat",
+      "turn_index": 8
+    }
+  ]
+}

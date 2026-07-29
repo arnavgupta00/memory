@@ -1,0 +1,86 @@
+{
+  "session_id": "2a7e0197",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have a 2015 Ford Mustang GT.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am planning to upgrade my car's exhaust system soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of attending more auto racking events.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am in the Los Angeles area.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am interested in drag racing.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am open to traveling within a 2-hour radius.",
+      "turn_index": 4
+    },
+    {
+      "text": "I participated in the Turbocharged Tuesdays auto racking event at the local speedway on June 14th.",
+      "turn_index": 4
+    },
+    {
+      "text": "I broke my personal best time of 12.5 seconds in the quarter-mile drag race.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of upgrading my car's suspension to improve handling and traction.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am looking into upgrading my car's suspension to improve handling and traction.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am interested in adjustable camber links.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am interested in spherical bushings.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "2015 Ford Mustang GT",
+    "exhaust system upgrade",
+    "popular exhaust brands",
+    "auto racking events",
+    "upcoming events in my area",
+    "Los Angeles area",
+    "drag racing",
+    "2-hour radius travel",
+    "Turbocharged Tuesdays",
+    "local speedway",
+    "June 14",
+    "quarter-mile drag race",
+    "personal best 12.5 seconds",
+    "suspension upgrade",
+    "handling and traction",
+    "adjustable camber links",
+    "spherical bushings",
+    "Mustang suspension components"
+  ],
+  "events": [
+    {
+      "text": "Participated in the Turbocharged Tuesdays auto racking event at the local speedway",
+      "date_hint": "June 14th",
+      "turn_index": 4
+    },
+    {
+      "text": "Set a personal best time of 12.5 seconds in the quarter-mile drag race",
+      "date_hint": "June 14th",
+      "turn_index": 4
+    }
+  ]
+}

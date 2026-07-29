@@ -1,0 +1,33 @@
+{
+  "question_id": "gpt4_ec93e27f",
+  "question_type": "temporal-reasoning",
+  "question": "Which mode of transport did I use most recently, a bus or a train?",
+  "question_date": "2023/05/02 (Tue) 08:12",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_e3aa84c4_2",
+    "answer_e3aa84c4_1"
+  ],
+  "haystack_session_count": 47,
+  "notes_coverage": "partial",
+  "annotated_session_count": 6,
+  "gold_sessions": [
+    {
+      "session_id": "answer_e3aa84c4_2",
+      "date": "2023/02/27 (Mon) 06:17",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_e3aa84c4_2\n[session_date] 2023/02/27 (Mon) 06:17\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm planning a trip to Japan in May and I was wondering if you could recommend some eco-friendly accommodations in Tokyo and Osaka? By the way, I just got back from a bus ride to attend a friend's wedding today, so I'm a bit tired but excited to start planning my next trip!\n\n[turn 2] I'm planning to take the train to Narita airport for my Japan trip. Do you know the best way to get to Narita from Tokyo city center?\n\n[turn 4] I've taken a lot of buses lately for shorter distances, and I've noticed it's a more eco-friendly option. Speaking of which, can you tell me more about the carbon footprint of trains in Japan? Are they generally more eco-friendly than buses, and are there any specific train lines or companies that are more sustainable than others?\n\n[turn 6] I'm glad to know that Japan's train network is relatively eco-friendly. I've been trying to reduce my carbon footprint, and it's good to know that my upcoming trip to Japan will have a lower impact on the environment. By the way, do you know if there are any scenic train routes in Japan that I shouldn't miss? I'd love to take in the country's natural beauty while reducing my carbon footprint.\n\n[turn 8] That's amazing! I had no idea Japan had so many scenic train routes. I'll definitely make sure to add some of these to my itinerary. By the way, since I'll be taking the train to Narita Airport, do you know if there's a way to check in for my flight and drop off my luggage at the train station before heading to the airport?"
+    },
+    {
+      "session_id": "answer_e3aa84c4_1",
+      "date": "2023/03/03 (Fri) 19:17",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_e3aa84c4_1\n[session_date] 2023/03/03 (Fri) 19:17\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm planning a trip to the mountains on April 15th and I'm considering taking a detour to visit my family in the countryside again. Can you help me find the best route for the road trip? By the way, I took a train ride to visit them today, and it was a nice 2-hour journey.\n\n[turn 2] I'm planning to visit the mountains in the north, and my family's place is actually on the way, so it's quite convenient. My starting point will be from the city where I live, and I'm flexible with the route, as long as it's not too far out of the way.\n\n[turn 4] I have been tracking my travel expenses and modes of transport, and I've noticed that I've reduced my carbon emissions by around 20% in the past quarter. I've been trying to reduce my carbon footprint, so I've been taking more trains and buses instead of driving or taking taxis.\n\n[turn 6] I'm actually planning a trip to Japan in May, which will be my 7th international trip this year. I've already booked my flights and accommodation, and I'm excited to explore Tokyo and Osaka.\n\n[turn 8] I've been averaging around 2 flights per month since November last year, with most of them being work-related. In fact, I've been to Singapore 3 times in the past 4 months, with the last trip being on January 20th.\n\n[turn 10] I've actually been taking a lot of trains lately, especially for shorter distances. In fact, I took a train ride to visit my family in the countryside just recently, on March 3rd, and it was a nice 2-hour journey."
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

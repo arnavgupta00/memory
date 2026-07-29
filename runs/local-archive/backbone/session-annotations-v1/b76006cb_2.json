@@ -1,0 +1,95 @@
+{
+  "session_id": "b76006cb_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Japan in March.",
+      "turn_index": 0
+    },
+    {
+      "text": "I took the Amtrak to visit my sister in Portland, Oregon last month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I loved the scenic route on my Amtrak trip to Portland, Oregon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I didn't realize the Japan Rail Pass wasn't valid on private railways or some Shinkansen trains.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to research routes and schedules more.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in must-see places in Kyoto.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in trying local food in Kyoto, especially kaiseki meals.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have no dietary restrictions.",
+      "turn_index": 6
+    },
+    {
+      "text": "I was thinking of purchasing a Suica or Pasmo card for my train travel in Japan.",
+      "turn_index": 6
+    },
+    {
+      "text": "I decided to go with the Suica card.",
+      "turn_index": 8
+    },
+    {
+      "text": "I recently took an Amtrak trip to Portland, Oregon last month.",
+      "turn_index": 8
+    },
+    {
+      "text": "On my Amtrak trip, I saw the Columbia River Gorge.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am looking for tips on scenic train routes in Japan that I shouldn't miss.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "Japan Rail Pass worth it",
+    "Japan Rail Pass restrictions",
+    "private railways not valid",
+    "Shinkansen pass validity",
+    "trip to Japan March",
+    "must-see places in Kyoto",
+    "kaiseki meals Kyoto",
+    "kaiseki restaurants Kyoto",
+    "Suica vs Pasmo card",
+    "Suica card for Japan train travel",
+    "scenic train routes in Japan",
+    "Amtrak to Portland Oregon",
+    "Columbia River Gorge scenic route"
+  ],
+  "events": [
+    {
+      "text": "Planning a trip to Japan in March",
+      "date_hint": "March",
+      "turn_index": 0
+    },
+    {
+      "text": "Took an Amtrak trip to visit sister in Portland, Oregon",
+      "date_hint": "last month",
+      "turn_index": 0
+    },
+    {
+      "text": "Realized Japan Rail Pass restrictions about private railways and some Shinkansen trains",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Saw the Columbia River Gorge on the Amtrak trip to Portland, Oregon",
+      "date_hint": "last month",
+      "turn_index": 8
+    }
+  ]
+}

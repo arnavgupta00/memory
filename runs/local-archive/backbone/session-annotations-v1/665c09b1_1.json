@@ -1,0 +1,114 @@
+{
+  "session_id": "665c09b1_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I do 30-minute morning walks every Monday, Wednesday, and Friday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been doing 30-minute morning walks every Monday, Wednesday, and Friday since mid-January.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am planning my day and want to avoid scheduling conflicts with my morning walks.",
+      "turn_index": 0
+    },
+    {
+      "text": "Today is Wednesday.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am a morning person.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will stick to my usual 6:30 am walk.",
+      "turn_index": 4
+    },
+    {
+      "text": "I wake up early anyway.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have a yoga class at lunchtime on Tuesdays and Thursdays.",
+      "turn_index": 6
+    },
+    {
+      "text": "Today is Wednesday, so I am free during lunch.",
+      "turn_index": 6
+    },
+    {
+      "text": "I was thinking of using lunchtime to catch up on some work.",
+      "turn_index": 6
+    },
+    {
+      "text": "I was thinking of taking a short walk around the block if the weather is nice.",
+      "turn_index": 6
+    },
+    {
+      "text": "I need to respond to some emails.",
+      "turn_index": 8
+    },
+    {
+      "text": "I need to make a few phone calls.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have tasks that are not too urgent.",
+      "turn_index": 8
+    },
+    {
+      "text": "I need to check my daily step count.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to hit my goal of 10,000 steps.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "30-minute morning walks",
+    "Monday Wednesday Friday walks",
+    "since mid-January",
+    "best time to fit in a walk today",
+    "today is Wednesday",
+    "usual 6:30 am walk",
+    "morning person",
+    "yoga class lunchtime Tuesdays Thursdays",
+    "free during lunch Wednesday",
+    "catch up on work",
+    "short walk around the block",
+    "respond to emails",
+    "make phone calls",
+    "daily step count",
+    "goal of 10,000 steps"
+  ],
+  "events": [
+    {
+      "text": "30-minute morning walk routine on Monday, Wednesday, and Friday",
+      "date_hint": "since mid-January",
+      "turn_index": 0
+    },
+    {
+      "text": "Today is Wednesday",
+      "date_hint": "Wednesday",
+      "turn_index": 2
+    },
+    {
+      "text": "Usual 6:30 am morning walk",
+      "date_hint": "today morning",
+      "turn_index": 4
+    },
+    {
+      "text": "Yoga class at lunchtime on Tuesdays and Thursdays",
+      "date_hint": "Tuesdays and Thursdays",
+      "turn_index": 6
+    },
+    {
+      "text": "Check daily step count to stay on track for 10,000 steps",
+      "date_hint": "today",
+      "turn_index": 10
+    }
+  ]
+}

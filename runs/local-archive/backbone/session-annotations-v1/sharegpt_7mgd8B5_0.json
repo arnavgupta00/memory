@@ -1,0 +1,60 @@
+{
+  "session_id": "sharegpt_7mgd8B5_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have a dataset where Schedule is another time series inside SnapshotDate time series.",
+      "turn_index": 0
+    },
+    {
+      "text": "SO_CSD, SO_CRD, PO_CSD, and PO_CRD vary by SnapshotDate and Schedule (nested time series).",
+      "turn_index": 0
+    },
+    {
+      "text": "Billing varies by SnapshotDate.",
+      "turn_index": 0
+    },
+    {
+      "text": "Product Category is a categorical variable.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to predict GR value for each Material using Temporal Fusion Transformer with pytorch_forecasting.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the prediction to use Material historical behavior by SnapshotDate trend.",
+      "turn_index": 0
+    },
+    {
+      "text": "The dataset includes columns Material, SnapshotDate, Schedule, SO_CSD, SO_CRD, PO_CSD, PO_CRD, Billing, Product Category, and Cumulative GR.",
+      "turn_index": 0
+    },
+    {
+      "text": "The dataset example uses SnapshotDate values 1/31/2022, 2/28/2022, and 3/31/2022.",
+      "turn_index": 0
+    },
+    {
+      "text": "The dataset example uses Schedule values M1, M2, M3, M4, M5, and M6.",
+      "turn_index": 0
+    },
+    {
+      "text": "The dataset example includes Material values A and B.",
+      "turn_index": 0
+    }
+  ],
+  "keyphrases": [
+    "Temporal Fusion Transformer",
+    "pytorch_forecasting",
+    "predict GR value",
+    "Material historical behavior",
+    "SnapshotDate trend",
+    "nested time series",
+    "Schedule time series",
+    "SO_CSD SO_CRD PO_CSD PO_CRD",
+    "Billing by SnapshotDate",
+    "Product Category categorical variable",
+    "Cumulative GR"
+  ],
+  "events": []
+}

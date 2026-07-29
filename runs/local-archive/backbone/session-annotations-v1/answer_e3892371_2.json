@@ -1,0 +1,77 @@
+{
+  "session_id": "answer_e3892371_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I need help setting up automatic backups for my working files.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am leaning towards Backblaze for backup software.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to organize my computer bag.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think I will go with Backblaze.",
+      "turn_index": 4
+    },
+    {
+      "text": "I need to open up my laptop to clean the fans soon.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have a spare screwdriver that I picked up when I organized my computer desk a while back.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think I will go with the Anker cable organizer.",
+      "turn_index": 6
+    },
+    {
+      "text": "My wireless mouse is freezing.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to reset the wireless mouse using the manufacturer's instructions.",
+      "turn_index": 10
+    },
+    {
+      "text": "If resetting the mouse does not work, I will update the mouse drivers.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "automatic backups",
+    "backup software options",
+    "Backblaze file versioning",
+    "file versioning",
+    "computer bag organization",
+    "cable organizers",
+    "Anker cable organizer",
+    "clean laptop fans",
+    "spare screwdriver",
+    "wireless mouse freezing",
+    "reset mouse",
+    "update drivers"
+  ],
+  "events": [
+    {
+      "text": "Open up the laptop to clean the fans",
+      "date_hint": "soon",
+      "turn_index": 4
+    },
+    {
+      "text": "Reset the wireless mouse using the manufacturer's instructions",
+      "date_hint": "",
+      "turn_index": 10
+    },
+    {
+      "text": "Update the mouse drivers if resetting does not work",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "session_id": "6a7d7055_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have issues with my phone's battery life.",
+      "turn_index": 0
+    },
+    {
+      "text": "My phone battery has been draining really fast lately.",
+      "turn_index": 0
+    },
+    {
+      "text": "I think my phone battery drain is because I have been watching a lot of videos on YouTube.",
+      "turn_index": 0
+    },
+    {
+      "text": "I watch a lot of YouTube videos during my daily commute.",
+      "turn_index": 0
+    },
+    {
+      "text": "My daily commute increased significantly since I started taking the bus to work on February 20th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need to back up my phone data soon.",
+      "turn_index": 2
+    },
+    {
+      "text": "I last backed up my phone data on December 31st.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of getting a new phone case.",
+      "turn_index": 4
+    },
+    {
+      "text": "I lost my previous phone case at the gym on March 10th.",
+      "turn_index": 4
+    },
+    {
+      "text": "I bought my previous phone case from a new phone accessories store that opened up near my office on February 12th.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering checking that store out again for a new case or looking at online options.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will visit the local store and check out their selection.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will ask the staff about their return and exchange policies.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will ask about return and exchange policies just in case I need to make changes later.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "phone battery life issues",
+    "battery draining fast",
+    "YouTube video watching",
+    "daily commute",
+    "taking the bus to work",
+    "February 20th",
+    "back up phone data",
+    "December 31st backup",
+    "new phone case",
+    "lost phone case at the gym",
+    "March 10th",
+    "phone accessories store near my office",
+    "February 12th store opened",
+    "return and exchange policies",
+    "local store phone case selection"
+  ],
+  "events": [
+    {
+      "text": "Started taking the bus to work, increasing daily commute significantly",
+      "date_hint": "February 20th",
+      "turn_index": 0
+    },
+    {
+      "text": "Last backed up phone data",
+      "date_hint": "December 31st",
+      "turn_index": 2
+    },
+    {
+      "text": "Lost previous phone case at the gym",
+      "date_hint": "March 10th",
+      "turn_index": 4
+    },
+    {
+      "text": "New phone accessories store opened near office",
+      "date_hint": "February 12th",
+      "turn_index": 6
+    },
+    {
+      "text": "Will visit the local store to check phone case selection",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Will ask staff about return and exchange policies",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

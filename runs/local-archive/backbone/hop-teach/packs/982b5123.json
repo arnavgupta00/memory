@@ -1,0 +1,33 @@
+{
+  "question_id": "982b5123",
+  "question_type": "temporal-reasoning",
+  "question": "How many months ago did I book the Airbnb in San Francisco?",
+  "question_date": "2023/05/21 (Sun) 10:30",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_ab603dd5_2",
+    "answer_ab603dd5_1"
+  ],
+  "haystack_session_count": 47,
+  "notes_coverage": "partial",
+  "annotated_session_count": 8,
+  "gold_sessions": [
+    {
+      "session_id": "answer_ab603dd5_2",
+      "date": "2023/05/21 (Sun) 17:13",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_ab603dd5_2\n[session_date] 2023/05/21 (Sun) 17:13\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm planning a trip to San Francisco for next month and I was wondering if you could recommend some good restaurants in the Haight-Ashbury neighborhood. By the way, I've been to SF before, exactly two months ago, for my best friend's wedding - it was a 5-day trip and I had an amazing time.\n\n[turn 2] I'm actually looking for a place to grab breakfast, so The Pork Store Cafe sounds great. Do you know if they serve breakfast all day or is it only until a certain time?\n\n[turn 4] That's great, thanks for the info! By the way, I remember I wore a new navy blue suit to my friend's wedding, which I had bought specifically for the occasion from a local tailor in my hometown. Do you think I could find a similar style in San Francisco, maybe in the Haight-Ashbury area or nearby?\n\n[turn 6] I didn't think of checking out vintage or thrift stores. That's a great idea! I'll definitely keep that in mind. By the way, speaking of road trips, I took a short 3-day road trip to the nearby mountains with my family a week after returning from San Francisco. We drove for about 4 hours to reach the campsite, where we pitched our tent and spent the evening roasting marshmallows and telling ghost stories. Do you have any recommendations for camping gear or tips for a comfortable camping experience?\n\n[turn 8] I'm actually planning to rent a car for my upcoming San Francisco trip, so I was wondering if you could recommend any scenic drives or routes that I shouldn't miss around the Bay Area.\n\n[turn 10] That sounds great! I'm really excited to explore the Bay Area. By the way, speaking of road trips, I recall that about six weeks ago, I drove to my sister's place, which is about 2 hours away from my hometown, to help her move into her new apartment. We spent the entire day packing and unpacking boxes, and in the evening, we ordered pizza and watched a movie together. I remember that I had to take a detour on my way back due to a road closure caused by a landslide. Do you have any tips on how to prepare for road closures or unexpected detours during a road trip?"
+    },
+    {
+      "session_id": "answer_ab603dd5_1",
+      "date": "2023/05/21 (Sun) 18:59",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_ab603dd5_1\n[session_date] 2023/05/21 (Sun) 18:59\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm planning a trip to San Francisco and was wondering if you could recommend some good neighborhoods to stay in. By the way, I've had a great experience with Airbnb in the past, like when I stayed in Haight-Ashbury for my best friend's wedding and had to book three months in advance.\n\n[turn 2] Can you recommend any good tailors in the city area where I can get a suit made for the occasion?\n\n[turn 4] I'll definitely check out those options. Can you also help me with transportation from the airport to my Airbnb in the city? I don't plan on renting a car.\n\n[turn 6] I'll definitely look into those options. Since I'm staying in Haight-Ashbury, I'll probably take BART and then a short taxi ride to my Airbnb. Do you know if there are any good restaurants or cafes in Haight-Ashbury that I should check out during my stay?\n\n[turn 8] That's great, thanks for the recommendations! I'll definitely check out some of those places during my stay. Since I'm attending a wedding, I'm also thinking of getting a nice gift for the couple. Do you have any ideas for a unique or San Francisco-specific gift that they might appreciate?\n\n[turn 10] That's a great list of gift ideas. I think I'll go with the wine country gift basket, as the couple both love wine and it's a unique gift that they can enjoy together. Can you give me some recommendations for wine shops or vendors in San Francisco that can help me put together a gift basket?"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

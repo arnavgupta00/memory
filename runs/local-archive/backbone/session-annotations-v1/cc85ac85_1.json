@@ -1,0 +1,89 @@
+{
+  "session_id": "cc85ac85_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a solo trip to Japan.",
+      "turn_index": 0
+    },
+    {
+      "text": "I start my 5-day solo trip to Japan today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of visiting the Tsukiji Fish Market in Tokyo.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am planning to visit Osaka as well.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of visiting the Umeda Sky Building in Osaka for a panoramic view of the city.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am considering visiting the Osaka Castle.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of visiting the Umeda Sky Building and Osaka Castle on the same day.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I will visit the Umeda Sky Building in the morning.",
+      "turn_index": 10
+    },
+    {
+      "text": "I think I will head to Osaka Castle in the afternoon.",
+      "turn_index": 10
+    },
+    {
+      "text": "I might stop by Osaka Station City for lunch and shopping.",
+      "turn_index": 10
+    },
+    {
+      "text": "If I have time, I will explore the Dōtonbori area in the evening.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will use public transportation to get around.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will try some local food along the way.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "solo trip to Japan",
+    "5-day Japan trip",
+    "Tsukiji Fish Market Tokyo",
+    "best time to visit",
+    "Osaka street food",
+    "Umeda Sky Building panoramic view",
+    "Osaka Castle history",
+    "Umeda Sky Building Osaka",
+    "Osaka Station City lunch shopping",
+    "Dōtonbori evening",
+    "public transportation Japan",
+    "Osaka Castle afternoon plan"
+  ],
+  "events": [
+    {
+      "text": "Start of a 5-day solo trip to Japan",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Plan to visit Umeda Sky Building in the morning and Osaka Castle in the afternoon on the same day",
+      "date_hint": "",
+      "turn_index": 10
+    },
+    {
+      "text": "Plan to explore Dōtonbori area in the evening if time allows",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

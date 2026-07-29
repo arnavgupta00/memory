@@ -1,0 +1,93 @@
+{
+  "session_id": "60153a02_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have been having trouble sleeping lately.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am trying to get into a regular yoga routine.",
+      "turn_index": 0
+    },
+    {
+      "text": "I met a yoga instructor named Rachel in a class on February 10th.",
+      "turn_index": 0
+    },
+    {
+      "text": "Rachel gave me advice on poses for better sleep.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am planning to book a private session with Rachel soon.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of reaching out to Rachel about her business card.",
+      "turn_index": 4
+    },
+    {
+      "text": "I think Rachel might offer discounts for private sessions or group classes.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will ask Rachel about her business card and see if she has any discounts or promotions available.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want tips on how to maintain a consistent yoga practice while traveling or when I am away from home.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will take an Uber to the airport soon for a work trip.",
+      "turn_index": 8
+    },
+    {
+      "text": "On my last ride to the airport, I had a pleasant conversation with my driver named Alex.",
+      "turn_index": 10
+    },
+    {
+      "text": "Alex gave me recommendations for restaurants in the city.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trouble sleeping",
+    "regular yoga routine",
+    "consistent yoga practice",
+    "yoga instructor Rachel",
+    "poses for better sleep",
+    "private yoga session",
+    "prepare for private session",
+    "business card",
+    "discounts for private sessions",
+    "group classes discounts",
+    "yoga practice while traveling",
+    "Uber to the airport",
+    "work trip",
+    "driver Alex",
+    "restaurant recommendations"
+  ],
+  "events": [
+    {
+      "text": "Met yoga instructor Rachel in a class",
+      "date_hint": "February 10th",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to book a private session with Rachel",
+      "date_hint": "soon",
+      "turn_index": 2
+    },
+    {
+      "text": "Taking an Uber to the airport for a work trip",
+      "date_hint": "soon",
+      "turn_index": 8
+    },
+    {
+      "text": "Last ride to the airport with driver Alex",
+      "date_hint": "last ride",
+      "turn_index": 10
+    }
+  ]
+}

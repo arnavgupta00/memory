@@ -1,0 +1,131 @@
+{
+  "session_id": "8d25b813_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have been traveling a lot lately.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am trying to get a better sense of my expenses.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want help tracking my travel costs for flights and transportation from the airport to my accommodations.",
+      "turn_index": 0
+    },
+    {
+      "text": "In the past month, I flew from New York to Los Angeles two times for work.",
+      "turn_index": 0
+    },
+    {
+      "text": "The flights cost around $500 each.",
+      "turn_index": 2
+    },
+    {
+      "text": "The total flight cost for the two New York to Los Angeles work trips was around $1000.",
+      "turn_index": 2
+    },
+    {
+      "text": "On the first New York to Los Angeles trip, I took an Uber from the airport to my hotel.",
+      "turn_index": 2
+    },
+    {
+      "text": "The Uber from the airport to my hotel cost around $60.",
+      "turn_index": 2
+    },
+    {
+      "text": "On the second New York to Los Angeles trip, I used the hotel's shuttle service.",
+      "turn_index": 2
+    },
+    {
+      "text": "The hotel's shuttle service on the second trip was free.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to use a spreadsheet to track my expenses.",
+      "turn_index": 4
+    },
+    {
+      "text": "I already use Google Drive.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to set up and access the spreadsheet from anywhere using Google Drive.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to track my accommodation costs because I have been staying at a lot of hotels lately.",
+      "turn_index": 4
+    },
+    {
+      "text": "My accommodation costs were around $200 per night for 3 nights on each trip.",
+      "turn_index": 6
+    },
+    {
+      "text": "My accommodation costs were around $600 per trip.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to track food and activity expenses as well.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning a trip to Chicago for a business meeting soon.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will be flying from New York for the Chicago business meeting trip.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am not sure about the accommodations yet for the Chicago trip.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I spent around $80-100 per day on food and activities during my LAX trips.",
+      "turn_index": 10
+    },
+    {
+      "text": "My food and activity spending during each LAX trip was around $240-300 per trip.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "track travel expenses",
+    "flights cost",
+    "airport to hotel transportation",
+    "Uber airport transfer",
+    "hotel shuttle free",
+    "Google Drive spreadsheet",
+    "accommodation costs",
+    "$200 per night",
+    "3 nights per trip",
+    "food and activity expenses",
+    "LAX trips",
+    "New York to Los Angeles work travel",
+    "Chicago business meeting trip"
+  ],
+  "events": [
+    {
+      "text": "Flew from New York to Los Angeles for work two times",
+      "date_hint": "in the past month",
+      "turn_index": 0
+    },
+    {
+      "text": "Used Uber from the airport to the hotel on the first LAX trip",
+      "date_hint": "first trip",
+      "turn_index": 2
+    },
+    {
+      "text": "Used the hotel's shuttle service on the second LAX trip",
+      "date_hint": "second trip",
+      "turn_index": 2
+    },
+    {
+      "text": "Planned a business meeting trip to Chicago",
+      "date_hint": "soon",
+      "turn_index": 8
+    }
+  ]
+}

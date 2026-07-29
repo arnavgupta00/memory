@@ -1,0 +1,90 @@
+{
+  "session_id": "fd56c5bd_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to LA next week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to pack light for my trip to LA.",
+      "turn_index": 0
+    },
+    {
+      "text": "On my last trip to New York City, I wore two shirts throughout the entire 5-day trip.",
+      "turn_index": 0
+    },
+    {
+      "text": "I do not want to bring too many shirts this time.",
+      "turn_index": 0
+    },
+    {
+      "text": "I prefer to wear dresses more often than tops and bottoms.",
+      "turn_index": 2
+    },
+    {
+      "text": "I would like to bring more skincare products than makeup.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to add a few more items to my skincare list.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want travel-sized skincare products that will not take up too much space in my luggage.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am considering packing a travel-sized hair serum to keep my hair moisturized during the trip.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of packing a portable charger for my phone.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want recommendations for compact and reliable portable chargers.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to add a travel-sized power adapter to my packing list.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want a travel-sized power adapter in case I need to charge my devices in LA.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want recommendations for compact and reliable travel adapters.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to LA next week",
+    "pack light packing list",
+    "last trip to New York City",
+    "5-day trip two shirts",
+    "prefer dresses over tops and bottoms",
+    "more skincare than makeup",
+    "travel-sized skincare products",
+    "space-saving luggage",
+    "travel-sized hair serum",
+    "phone portable charger",
+    "compact reliable portable charger",
+    "travel-sized power adapter",
+    "charging devices in LA",
+    "compact reliable travel adapters"
+  ],
+  "events": [
+    {
+      "text": "Trip to LA next week",
+      "date_hint": "next week",
+      "turn_index": 0
+    },
+    {
+      "text": "Last trip to New York City (5-day trip)",
+      "date_hint": "last trip",
+      "turn_index": 0
+    }
+  ]
+}

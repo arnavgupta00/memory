@@ -1,0 +1,89 @@
+{
+  "session_id": "4253b18c_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to NYC.",
+      "turn_index": 0
+    },
+    {
+      "text": "I stayed at the Marriott Marquis in Times Square just recently.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want hotel recommendations in the NYC area similar in price and quality to the Marriott Marquis in Times Square.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for budget-friendly hotels around $150–200 per night.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been using travel websites like Expedia and Kayak to compare prices and find deals.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been using travel rewards credit cards for a while.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have accumulated over 10,000 points so far.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning to redeem my points for a free night at a hotel in the future.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering a trip to Nashville or Austin to take advantage of a free night's stay offer from Hilton Hotels.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of visiting Nashville.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have heard great things about the Hilton Nashville Downtown.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "NYC hotel recommendations",
+    "Marriott Marquis Times Square",
+    "budget-friendly hotels $150-200 per night",
+    "Expedia and Kayak price comparison",
+    "booking through hotel website",
+    "travel rewards credit card deals",
+    "redeem 10,000 points free night",
+    "Hilton free night offer",
+    "Nashville or Austin quick getaway",
+    "Hilton Nashville Downtown"
+  ],
+  "events": [
+    {
+      "text": "Stayed at the Marriott Marquis in Times Square",
+      "date_hint": "just recently",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning a trip to NYC",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to redeem travel rewards points for a free night",
+      "date_hint": "in the future",
+      "turn_index": 6
+    },
+    {
+      "text": "Considering a trip to Nashville or Austin for a Hilton free-night offer",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Thinking of visiting Nashville",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

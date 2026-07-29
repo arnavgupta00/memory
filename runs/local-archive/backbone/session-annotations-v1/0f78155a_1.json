@@ -1,0 +1,113 @@
+{
+  "session_id": "0f78155a_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to keep track of my expenses for Max, my golden retriever.",
+      "turn_index": 0
+    },
+    {
+      "text": "I bought a new dog bed for Max from PetSmart.",
+      "turn_index": 2
+    },
+    {
+      "text": "I spent around $40 on Max's new dog bed from PetSmart.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought a new food bowl for Max from Amazon.",
+      "turn_index": 4
+    },
+    {
+      "text": "I bought a stainless steel food bowl for Max from Amazon.",
+      "turn_index": 4
+    },
+    {
+      "text": "I spent $15 on Max's stainless steel food bowl from Amazon.",
+      "turn_index": 4
+    },
+    {
+      "text": "The shipping for Max's food bowl from Amazon was really fast.",
+      "turn_index": 4
+    },
+    {
+      "text": "I changed Max's diet to a grain-free kibble recently.",
+      "turn_index": 6
+    },
+    {
+      "text": "I got a new measuring cup to ensure I was feeding Max the right amount.",
+      "turn_index": 6
+    },
+    {
+      "text": "The measuring cup cost $5 from the pet store down the street.",
+      "turn_index": 6
+    },
+    {
+      "text": "I do not remember the exact amount I spent on the grain-free kibble.",
+      "turn_index": 8
+    },
+    {
+      "text": "The grain-free kibble purchase was a one-time purchase.",
+      "turn_index": 8
+    },
+    {
+      "text": "I got a new shampoo from the vet for Max's bath.",
+      "turn_index": 8
+    },
+    {
+      "text": "I spent $10 on the shampoo from the vet for Max's bath.",
+      "turn_index": 8
+    },
+    {
+      "text": "I recently got a new brush for Max to reduce shedding.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Max golden retriever expenses",
+    "PetSmart dog bed",
+    "dog bed cost $40",
+    "Amazon stainless steel food bowl",
+    "food bowl cost $15",
+    "fast shipping Amazon",
+    "grain-free kibble diet change",
+    "measuring cup for feeding",
+    "measuring cup cost $5",
+    "shampoo from the vet",
+    "shampoo cost $10",
+    "new brush reduces shedding",
+    "Max brushing routine"
+  ],
+  "events": [
+    {
+      "text": "Bought a new dog bed for Max from PetSmart.",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Bought a new stainless steel food bowl for Max from Amazon.",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Changed Max's diet to grain-free kibble and bought a measuring cup.",
+      "date_hint": "recently",
+      "turn_index": 6
+    },
+    {
+      "text": "Bought grain-free kibble as a one-time purchase.",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Bought new shampoo from the vet for Max's bath.",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Got a new brush for Max to reduce shedding.",
+      "date_hint": "recently",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "session_id": "e8e65a1f",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for book recommendations.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been reading a lot of thrillers and mysteries lately.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have read The Silent Patient.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have read The Girl with the Dragon Tattoo.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am trying to read more from authors from diverse backgrounds.",
+      "turn_index": 2
+    },
+    {
+      "text": "I finished three books in the past three weeks.",
+      "turn_index": 4
+    },
+    {
+      "text": "My goal is to finish at least two books a month.",
+      "turn_index": 4
+    },
+    {
+      "text": "I use the Goodreads app to track my reading progress and set goals for myself.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking about starting a book club with some friends.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been discussing starting the book club for months.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have not had a chance to meet up and plan the book club yet.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of suggesting the book club focus on thrillers and mysteries.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want recommendations for the book club's first book.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "book recommendations",
+    "thrillers and mysteries",
+    "diverse authors",
+    "The Silent Patient",
+    "The Girl with the Dragon Tattoo",
+    "reading goals",
+    "finish two books a month",
+    "Goodreads app",
+    "reading progress tracking",
+    "book club advice",
+    "thrillers and mysteries book club",
+    "first book for book club"
+  ],
+  "events": [
+    {
+      "text": "Finished three books in the past three weeks",
+      "date_hint": "past three weeks",
+      "turn_index": 4
+    },
+    {
+      "text": "Goal to finish at least two books a month",
+      "date_hint": "ongoing goal",
+      "turn_index": 4
+    },
+    {
+      "text": "Discussed starting a book club with friends for months",
+      "date_hint": "for months",
+      "turn_index": 8
+    }
+  ]
+}

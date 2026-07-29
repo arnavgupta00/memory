@@ -1,0 +1,78 @@
+{
+  "session_id": "1c1f5ccc_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I was born in New York City.",
+      "turn_index": 0
+    },
+    {
+      "text": "I consider myself an Indian American.",
+      "turn_index": 0
+    },
+    {
+      "text": "My parents immigrated to the US in the 1980s.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in learning about the experiences of Indian immigrants who came to the US in the 1980s.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in learning more about the cultural traditions and customs of India relevant to my family's heritage.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am interested in learning more about cultural practices that my parents brought with them when they immigrated to the US in the 1980s.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to learn more about my parents' stories and customs.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to ask my parents about their experiences growing up in India.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to ask my parents what it was like for them to immigrate to the US in the 1980s.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Indian American",
+    "born in New York City",
+    "Indian immigration history to the US",
+    "Indian immigrants in the 1980s",
+    "books and documentaries",
+    "cultural traditions and customs of India",
+    "Indian customs relevant to family heritage",
+    "cultural practices parents brought from India",
+    "parents' immigration stories",
+    "interviewing parents tips",
+    "experiences growing up in India",
+    "immigration to the US in the 1980s"
+  ],
+  "events": [
+    {
+      "text": "Parents immigrated to the US in the 1980s",
+      "date_hint": "in the 1980s",
+      "turn_index": 2
+    },
+    {
+      "text": "Parents immigrated to the US in the 1980s (to learn about cultural practices they brought)",
+      "date_hint": "in the 1980s",
+      "turn_index": 6
+    },
+    {
+      "text": "User plans to ask parents about experiences growing up in India",
+      "date_hint": "",
+      "turn_index": 10
+    },
+    {
+      "text": "User plans to ask parents what it was like to immigrate to the US in the 1980s",
+      "date_hint": "in the 1980s",
+      "turn_index": 10
+    }
+  ]
+}

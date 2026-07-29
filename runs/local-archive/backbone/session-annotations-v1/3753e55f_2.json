@@ -1,0 +1,72 @@
+{
+  "session_id": "3753e55f_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to keep track of my grocery expenses.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want help making a list of all the grocery stores I've been to recently.",
+      "turn_index": 0
+    },
+    {
+      "text": "I stopped by a corner store on Monday.",
+      "turn_index": 2
+    },
+    {
+      "text": "I spent $2.50 on a gallon of milk at the corner store on Monday.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought chicken breasts at Walmart.",
+      "turn_index": 6
+    },
+    {
+      "text": "I used the last of the chicken breasts I bought at Walmart to make chicken sandwiches for lunch yesterday.",
+      "turn_index": 6
+    },
+    {
+      "text": "I got cauliflower gnocchi from Trader Joe's.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "grocery expenses tracking",
+    "list of grocery stores",
+    "grocery journal",
+    "corner store Monday",
+    "gallon of milk $2.50",
+    "meal planning for the week",
+    "chicken breasts recipes",
+    "Walmart chicken breasts",
+    "chicken sandwiches lunch",
+    "leftover vegetables",
+    "big batch of chili",
+    "leftover chili",
+    "cauliflower gnocchi",
+    "Trader Joe's cauliflower gnocchi"
+  ],
+  "events": [
+    {
+      "text": "Stopped by a corner store and bought a gallon of milk for $2.50",
+      "date_hint": "Monday",
+      "turn_index": 2
+    },
+    {
+      "text": "Used the last of the chicken breasts bought at Walmart to make chicken sandwiches for lunch",
+      "date_hint": "yesterday",
+      "turn_index": 6
+    },
+    {
+      "text": "Planned to make a big batch of chili soon",
+      "date_hint": "soon",
+      "turn_index": 8
+    },
+    {
+      "text": "Planned to use cauliflower gnocchi from Trader Joe's in chili",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

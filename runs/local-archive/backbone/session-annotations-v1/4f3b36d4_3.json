@@ -1,0 +1,135 @@
+{
+  "session_id": "4f3b36d4_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I had a hard time keeping track of my schedule for the upcoming week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I had a doctor's appointment at 9 am last week on Wednesday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I had a conference call at 11 am last week on Wednesday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I had a meeting with a potential client at 2 pm last week on Wednesday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to set reminders for a conference call on Thursday at 10 am.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to set reminders for a team meeting on Friday at 2 pm.",
+      "turn_index": 2
+    },
+    {
+      "text": "I use Google Calendar for my scheduling.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want reminders set 1 day in advance.",
+      "turn_index": 2
+    },
+    {
+      "text": "I tend to feel more energized on Mondays and Tuesdays.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to tackle my most important tasks on Mondays and Tuesdays.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am considering waking up 15 minutes earlier each day to adjust to an earlier wake-up time.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to incorporate more self-care into my daily routine, especially on weekends.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have more free time on weekends.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will try a relaxing bath and some light stretching this weekend.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have been feeling a bit exhausted lately.",
+      "turn_index": 10
+    },
+    {
+      "text": "I had a hectic Wednesday last week with a doctor's appointment at 9 am, a conference call at 11 am, and a meeting with a potential client at 2 pm.",
+      "turn_index": 10
+    },
+    {
+      "text": "I managed to squeeze in a 30-minute walk around the block to clear my head last week.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "upcoming week schedule",
+    "doctor's appointment 9 am",
+    "conference call 11 am",
+    "potential client meeting 2 pm",
+    "Google Calendar reminders",
+    "conference call Thursday 10 am",
+    "team meeting Friday 2 pm",
+    "reminders 1 day in advance",
+    "productive daily routine",
+    "energized Mondays and Tuesdays",
+    "daily to-do list",
+    "wake up 15 minutes earlier",
+    "morning routine suggestions",
+    "self-care weekends",
+    "relaxing bath and light stretching",
+    "30-minute walk around the block",
+    "exhausted lately"
+  ],
+  "events": [
+    {
+      "text": "Doctor's appointment at 9 am on Wednesday last week",
+      "date_hint": "last week (Wednesday)",
+      "turn_index": 0
+    },
+    {
+      "text": "Conference call at 11 am on Wednesday last week",
+      "date_hint": "last week (Wednesday)",
+      "turn_index": 0
+    },
+    {
+      "text": "Meeting with a potential client at 2 pm on Wednesday last week",
+      "date_hint": "last week (Wednesday)",
+      "turn_index": 0
+    },
+    {
+      "text": "Conference call on Thursday at 10 am",
+      "date_hint": "Thursday 10 am",
+      "turn_index": 2
+    },
+    {
+      "text": "Team meeting on Friday at 2 pm",
+      "date_hint": "Friday 2 pm",
+      "turn_index": 2
+    },
+    {
+      "text": "Hectic Wednesday last week with appointments and meetings (9 am, 11 am, 2 pm)",
+      "date_hint": "last week (Wednesday)",
+      "turn_index": 10
+    },
+    {
+      "text": "30-minute walk around the block to clear my head",
+      "date_hint": "last week (Wednesday)",
+      "turn_index": 10
+    },
+    {
+      "text": "Try a relaxing bath and light stretching this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 10
+    }
+  ]
+}

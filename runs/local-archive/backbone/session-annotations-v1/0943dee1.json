@@ -1,0 +1,76 @@
+{
+  "session_id": "0943dee1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to plan a summer road trip.",
+      "turn_index": 0
+    },
+    {
+      "text": "I was thinking of hitting up music festivals in the Northeast this summer.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been to a music festival at the Harvard Athletic Complex last month.",
+      "turn_index": 2
+    },
+    {
+      "text": "The music festival at the Harvard Athletic Complex was a one-day event on May 10th.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been to a few concerts recently.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of seeing the Jonas Brothers at the TD Garden on July 17th.",
+      "turn_index": 6
+    },
+    {
+      "text": "I went to an Imagine Dragons concert last month at the Xfinity Center.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I will look into Panorama Music Festival.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know if Panorama Music Festival has any single-day tickets available.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "summer road trip",
+    "music festivals in the Northeast",
+    "Harvard Athletic Complex festival",
+    "Levitate Music and Arts Festival vibe",
+    "one-day event May 10",
+    "Levitate parking situation",
+    "Jonas Brothers TD Garden July 17",
+    "Imagine Dragons Xfinity Center last month",
+    "Panorama Music Festival lineup",
+    "single-day tickets"
+  ],
+  "events": [
+    {
+      "text": "Music festival at the Harvard Athletic Complex",
+      "date_hint": "last month",
+      "turn_index": 2
+    },
+    {
+      "text": "One-day event at the Harvard Athletic Complex",
+      "date_hint": "May 10th",
+      "turn_index": 4
+    },
+    {
+      "text": "Jonas Brothers concert at TD Garden",
+      "date_hint": "July 17th",
+      "turn_index": 6
+    },
+    {
+      "text": "Imagine Dragons concert at the Xfinity Center",
+      "date_hint": "last month",
+      "turn_index": 8
+    }
+  ]
+}

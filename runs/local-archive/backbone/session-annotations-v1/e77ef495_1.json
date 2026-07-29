@@ -1,0 +1,83 @@
+{
+  "session_id": "e77ef495_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I wake up at 7:30 am on weekdays to get ready for work.",
+      "turn_index": 0
+    },
+    {
+      "text": "I head to the office at 9:00 am.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to fit meditation, breakfast, and a short workout into my morning routine before I head to the office at 9:00 am.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want healthy breakfast ideas that I can prepare in advance for the week.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have a new habit of making overnight oats with fruit and nuts.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to try a strawberry banana delight overnight oats combination.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to try a peanut butter banana overnight oats combination.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to experiment with adding different nuts and seeds to change up the flavors of my overnight oats.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to make a batch of overnight oats for the entire week.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "daily alarm",
+    "7:30 am weekdays",
+    "morning routine reminders",
+    "meditation",
+    "breakfast prep in advance",
+    "short workout",
+    "overnight oats",
+    "fruit and nuts",
+    "strawberry banana delight",
+    "peanut butter banana",
+    "nuts and seeds",
+    "portion and store overnight oats"
+  ],
+  "events": [
+    {
+      "text": "Set a daily alarm for 7:30 am on weekdays",
+      "date_hint": "weekdays (7:30 am)",
+      "turn_index": 0
+    },
+    {
+      "text": "Plan morning routine to include meditation, breakfast, and a short workout before heading to the office at 9:00 am",
+      "date_hint": "morning (before 9:00 am)",
+      "turn_index": 2
+    },
+    {
+      "text": "Try strawberry banana delight overnight oats combination",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Try peanut butter banana overnight oats combination",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Make a batch of overnight oats for the entire week",
+      "date_hint": "this week",
+      "turn_index": 10
+    }
+  ]
+}

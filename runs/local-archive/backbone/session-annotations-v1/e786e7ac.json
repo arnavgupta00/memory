@@ -1,0 +1,64 @@
+{
+  "session_id": "e786e7ac",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for upcoming cultural events in the city, specifically museum exhibitions or lectures.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am particularly interested in the Frida Kahlo and Diego Rivera exhibit at MoMA.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in attending the lecture series \"Women in Art History\" at the Brooklyn Museum.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am interested in attending the \"Artemisia Gentileschi: Baroque Painter and Survivor\" lecture on February 22nd.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am interested in learning more about Dr. Mary D. Garrard, the speaker for the February 22nd lecture.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am interested in learning more about the Metropolitan Museum of Art's exhibition \"The Art of Ancient Civilizations\".",
+      "turn_index": 8
+    },
+    {
+      "text": "I am interested in learning more about the Frida Kahlo and Diego Rivera exhibit at MoMA.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know what artifacts and personal items will be on display for the Frida Kahlo and Diego Rivera exhibit at MoMA.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "upcoming cultural events",
+    "museum exhibitions",
+    "museum lectures",
+    "Frida Kahlo and Diego Rivera exhibit",
+    "MoMA",
+    "Brooklyn Museum lecture series",
+    "Women in Art History",
+    "Artemisia Gentileschi lecture",
+    "February 22nd",
+    "Dr. Mary D. Garrard",
+    "Metropolitan Museum of Art exhibition",
+    "The Art of Ancient Civilizations"
+  ],
+  "events": [
+    {
+      "text": "Lecture series \"Women in Art History\" at the Brooklyn Museum",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "\"Artemisia Gentileschi: Baroque Painter and Survivor\" lecture",
+      "date_hint": "February 22nd",
+      "turn_index": 6
+    }
+  ]
+}

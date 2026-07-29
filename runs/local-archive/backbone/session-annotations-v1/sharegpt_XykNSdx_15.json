@@ -1,0 +1,61 @@
+{
+  "session_id": "sharegpt_XykNSdx_15",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user wants to spend some time in Amsterdam.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user plans to go to Reims on the way back.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user plans to travel via Calais to London.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user wants to travel from Reims (via Calais) to London in 1 day.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user does not think there is any need to spend the night in Calais.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user does not need to return to London until the 16th.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user wants the itinerary rearranged to give more time with friends in Nice.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user will be staying in friends' home in Nice for free.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user is open to staying a bit longer in Nice.",
+      "turn_index": 3
+    }
+  ],
+  "keyphrases": [
+    "Amsterdam trip",
+    "Reims",
+    "Calais to London",
+    "travel in 1 day",
+    "no overnight in Calais",
+    "return to London on the 16th",
+    "more time in Nice",
+    "friends in Nice",
+    "stay in friends' home for free",
+    "itinerary rearrange"
+  ],
+  "events": [
+    {
+      "text": "Return to London scheduled for the 16th",
+      "date_hint": "the 16th",
+      "turn_index": 3
+    }
+  ]
+}

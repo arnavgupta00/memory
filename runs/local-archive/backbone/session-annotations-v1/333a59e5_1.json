@@ -1,0 +1,101 @@
+{
+  "session_id": "333a59e5_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for new TV show recommendations.",
+      "turn_index": 0
+    },
+    {
+      "text": "I watched a TV show with my roommates last night after dinner.",
+      "turn_index": 0
+    },
+    {
+      "text": "I had dinner with my roommates today and we watched a TV show together after dinner.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want comedy TV show recommendations that are easy to follow and don't require too much commitment.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have heard great things about Schitt's Creek.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been meaning to check out Brooklyn Nine-Nine.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to give Brooklyn Nine-Nine a try.",
+      "turn_index": 6
+    },
+    {
+      "text": "I watch TV shows with my roommates and it has become a nice routine.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am excited to start watching Brooklyn Nine-Nine.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will check out other shows and movies that were recommended to me.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want suggestions for good coffee shops near me.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am meeting up with my friend Rachel for coffee on Wednesday morning.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of trying a new coffee shop that just opened up down the street from my place.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have been meaning to check out the new coffee shop down the street from my place.",
+      "turn_index": 10
+    },
+    {
+      "text": "Meeting Rachel for coffee would be a great opportunity to try the new coffee shop.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "TV show recommendations",
+    "comedy TV shows",
+    "easy to follow comedy",
+    "low commitment TV",
+    "Schitt's Creek",
+    "Brooklyn Nine-Nine",
+    "watching with roommates",
+    "coffee shop near me",
+    "meeting Rachel for coffee",
+    "Wednesday morning coffee",
+    "new coffee shop opened down the street"
+  ],
+  "events": [
+    {
+      "text": "Watched a TV show with roommates after dinner",
+      "date_hint": "last night",
+      "turn_index": 0
+    },
+    {
+      "text": "Had dinner with roommates and watched a TV show together after dinner",
+      "date_hint": "today",
+      "turn_index": 2
+    },
+    {
+      "text": "Meeting Rachel for coffee on Wednesday morning",
+      "date_hint": "Wednesday morning",
+      "turn_index": 8
+    },
+    {
+      "text": "Considering trying a new coffee shop that just opened down the street",
+      "date_hint": "unspecified (just opened)",
+      "turn_index": 10
+    }
+  ]
+}

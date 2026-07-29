@@ -1,0 +1,101 @@
+{
+  "session_id": "ea3db78e_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a family trip to Disneyland next month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I just got back from Disneyland with my family yesterday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I celebrated my niece's 7th birthday at Disneyland yesterday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I ate at Paradise Garden Grill yesterday.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning a special lunch for my niece at Paradise Garden Grill.",
+      "turn_index": 2
+    },
+    {
+      "text": "I rode the Star Wars ride at Disneyland yesterday.",
+      "turn_index": 4
+    },
+    {
+      "text": "My niece loved the Star Wars ride.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of surprising my niece with a special Star Wars-themed treat after lunch.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am going to check the menu at Paradise Garden Grill for Star Wars-themed treats.",
+      "turn_index": 8
+    },
+    {
+      "text": "If Paradise Garden Grill does not have Star Wars-themed treats, I will head to Star Wars: Galaxy's Edge to find something special for my niece.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am going to ask the staff at Paradise Garden Grill if they have special treats or cupcakes for a 7-year-old's birthday celebration.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "family trip to Disneyland",
+    "next month Disneyland",
+    "niece 7th birthday",
+    "Paradise Garden Grill",
+    "kid-friendly options",
+    "character meet-and-greets during lunch",
+    "Star Wars: Galaxy's Edge",
+    "kid-friendly attractions",
+    "Star Wars ride",
+    "Star Wars-themed desserts",
+    "Star Wars-themed snacks",
+    "7-year-old birthday cupcakes"
+  ],
+  "events": [
+    {
+      "text": "Returned from Disneyland with family and celebrated niece's 7th birthday",
+      "date_hint": "yesterday",
+      "turn_index": 0
+    },
+    {
+      "text": "Ate at Paradise Garden Grill",
+      "date_hint": "yesterday",
+      "turn_index": 2
+    },
+    {
+      "text": "Rode the Star Wars ride",
+      "date_hint": "yesterday",
+      "turn_index": 4
+    },
+    {
+      "text": "Planning a special lunch for niece at Paradise Garden Grill",
+      "date_hint": "next (relative to trip planning)",
+      "turn_index": 2
+    },
+    {
+      "text": "Planning to surprise niece with Star Wars-themed treat after lunch",
+      "date_hint": "after lunch (relative)",
+      "turn_index": 6
+    },
+    {
+      "text": "Checking the menu at Paradise Garden Grill for Star Wars-themed treats",
+      "date_hint": "upcoming (relative)",
+      "turn_index": 8
+    },
+    {
+      "text": "Asking Paradise Garden Grill staff about special treats or cupcakes for a 7-year-old's birthday",
+      "date_hint": "upcoming (relative)",
+      "turn_index": 10
+    }
+  ]
+}

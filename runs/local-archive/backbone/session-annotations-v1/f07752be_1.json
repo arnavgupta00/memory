@@ -1,0 +1,101 @@
+{
+  "session_id": "f07752be_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I wake up at 6:30 AM every weekday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am planning to schedule a doctor's appointment.",
+      "turn_index": 0
+    },
+    {
+      "text": "I usually spend about 30 minutes checking and responding to urgent work emails before our daily stand-up meeting at 8:30 AM.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to schedule the doctor's appointment for 12:00 PM.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to start a new project at work.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to organize my tasks into must-haves, should-haves, and nice-to-haves.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to make sure I have all necessary resources and information before I start the new project.",
+      "turn_index": 6
+    },
+    {
+      "text": "I need to know what time I need to be at the office for our daily stand-up meeting.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to brainstorm tasks for the new project before categorizing them into must-haves, should-haves, and nice-to-haves.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am working on a new marketing campaign to promote my company's latest product release.",
+      "turn_index": 10
+    },
+    {
+      "text": "The goal of my marketing campaign is to increase brand awareness, generate leads, and drive sales.",
+      "turn_index": 10
+    },
+    {
+      "text": "The target audience for my marketing campaign is primarily business owners and decision-makers in the industry.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am aiming to launch the marketing campaign in about 6 weeks.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will be working closely with the design, content, and development teams to get the marketing campaign ready.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "doctor's appointment scheduling",
+    "wake up 6:30 AM weekdays",
+    "daily stand-up meeting 8:30 AM",
+    "urgent work emails 30 minutes",
+    "lunch break appointment 12:00 PM",
+    "new project task prioritization",
+    "must-haves should-haves nice-to-haves",
+    "office time for stand-up meeting",
+    "brainstorm tasks for new project",
+    "marketing campaign",
+    "latest product release",
+    "increase brand awareness generate leads drive sales",
+    "target audience business owners decision-makers",
+    "launch in about 6 weeks",
+    "design content development teams"
+  ],
+  "events": [
+    {
+      "text": "Schedule a doctor's appointment for 12:00 PM",
+      "date_hint": "12:00 PM (same day as planning)",
+      "turn_index": 2
+    },
+    {
+      "text": "Daily stand-up meeting",
+      "date_hint": "8:30 AM",
+      "turn_index": 2
+    },
+    {
+      "text": "Wake up time on weekdays",
+      "date_hint": "6:30 AM every weekday",
+      "turn_index": 0
+    },
+    {
+      "text": "Aim to launch the marketing campaign in about 6 weeks",
+      "date_hint": "about 6 weeks",
+      "turn_index": 10
+    }
+  ]
+}

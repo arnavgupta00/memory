@@ -1,0 +1,81 @@
+{
+  "session_id": "3c9cdf01",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Napa Valley.",
+      "turn_index": 0
+    },
+    {
+      "text": "I went to Castello di Amorosa with my family last weekend.",
+      "turn_index": 2
+    },
+    {
+      "text": "I learned a lot about the wine-making process at Castello di Amorosa.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of going camping near Napa Valley sometime.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of going camping in Yosemite again soon.",
+      "turn_index": 4
+    },
+    {
+      "text": "I booked my camping trip to Yosemite National Park two months ago.",
+      "turn_index": 6
+    },
+    {
+      "text": "I had an amazing experience on my camping trip to Yosemite National Park.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning another trip to Yosemite.",
+      "turn_index": 8
+    },
+    {
+      "text": "I experienced warm and dry weather in late August on my previous Yosemite trip.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering whether I will need to make changes to my camping gear or equipment based on the weather forecast.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Napa Valley trip",
+    "wineries to visit",
+    "Castello di Amorosa",
+    "wine-making process tour",
+    "camping spots near Napa Valley",
+    "camping in Yosemite",
+    "late August weather",
+    "Yosemite National Park camping trip",
+    "weather conditions similar to last time",
+    "camping gear changes",
+    "camping equipment for forecast"
+  ],
+  "events": [
+    {
+      "text": "Visited Castello di Amorosa with family",
+      "date_hint": "last weekend",
+      "turn_index": 2
+    },
+    {
+      "text": "Booked a camping trip to Yosemite National Park",
+      "date_hint": "two months ago",
+      "turn_index": 6
+    },
+    {
+      "text": "Planning camping in Yosemite in late August",
+      "date_hint": "late August",
+      "turn_index": 4
+    },
+    {
+      "text": "Planning another Yosemite trip and checking if weather will be similar in late August",
+      "date_hint": "late August",
+      "turn_index": 8
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "session_id": "f35e3cb7_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am thinking of buying a new TV.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to know what sales are going on at Department Store X this week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been using the loyalty program at Department Store X.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have 150 points on my loyalty card at Department Store X.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to check the Department Store X website and mobile app for sales.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know whether Department Store X offers price matching.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know whether Department Store X offers discounts for loyalty program members.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to check the Department Store X website and app for more info on loyalty program benefits.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have 150 points already on my Department Store X loyalty card.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am hoping to use my 150 points to get a discount on my TV purchase.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am not very tech-savvy.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want general tips for buying a TV.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am concerned about smart TV features.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have heard that some smart TVs can be glitchy or slow.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want advice on how to choose a good smart TV platform.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to ask the sales associate at Department Store X about the smart TV features on the TVs I am interested in.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to make sure I get a TV that fits my needs and budget.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to use my 150 points on my loyalty card when choosing a TV.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "buying a new TV",
+    "Department Store X sales this week",
+    "loyalty program points",
+    "150 points discount",
+    "price matching",
+    "loyalty member discounts",
+    "TV buying tips",
+    "not tech-savvy",
+    "smart TV features",
+    "glitchy or slow smart TVs",
+    "choose a smart TV platform",
+    "ask sales associate"
+  ],
+  "events": [
+    {
+      "text": "Looking for Department Store X TV sales this week",
+      "date_hint": "this week",
+      "turn_index": 0
+    },
+    {
+      "text": "Checking Department Store X website and mobile app for sales",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Checking Department Store X website and app for loyalty program benefits",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Considering using 150 loyalty points for a TV discount",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Asking a sales associate at Department Store X about smart TV features",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

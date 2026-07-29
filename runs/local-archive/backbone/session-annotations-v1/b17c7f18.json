@@ -1,0 +1,110 @@
+{
+  "session_id": "b17c7f18",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to LA.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for good music venues to check out in LA.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been to the Greek Theatre before.",
+      "turn_index": 2
+    },
+    {
+      "text": "I saw Phoebe Bridgers open for The National at the Greek Theatre.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of going to a concert at the Forum.",
+      "turn_index": 2
+    },
+    {
+      "text": "I attended a concert at the Forum recently.",
+      "turn_index": 4
+    },
+    {
+      "text": "The concert at the Forum was Billie Eilish.",
+      "turn_index": 4
+    },
+    {
+      "text": "I was with my best friend Emma at the concert.",
+      "turn_index": 6
+    },
+    {
+      "text": "Emma and I were both hyped to see Billie Eilish perform live.",
+      "turn_index": 6
+    },
+    {
+      "text": "We got there pretty early for the concert.",
+      "turn_index": 6
+    },
+    {
+      "text": "We grabbed a good spot in the general admission section.",
+      "turn_index": 6
+    },
+    {
+      "text": "I got there at 5 pm.",
+      "turn_index": 8
+    },
+    {
+      "text": "I managed to grab a good spot in the general admission section.",
+      "turn_index": 8
+    },
+    {
+      "text": "I was pretty close to the stage.",
+      "turn_index": 8
+    },
+    {
+      "text": "I sang along to every song at the concert.",
+      "turn_index": 8
+    },
+    {
+      "text": "I especially sang along to \"Bad Guy\" at the concert.",
+      "turn_index": 8
+    },
+    {
+      "text": "I especially sang along to \"When the Party's Over\" at the concert.",
+      "turn_index": 8
+    },
+    {
+      "text": "The opening act was Tove Lo.",
+      "turn_index": 10
+    },
+    {
+      "text": "Tove Lo was amazing and got the crowd pumped up for Billie's performance.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to LA",
+    "music venues in LA",
+    "Greek Theatre",
+    "Phoebe Bridgers opening",
+    "The National",
+    "concert at the Forum",
+    "Billie Eilish concert",
+    "Forum general admission",
+    "best friend Emma",
+    "arrived at 5 pm",
+    "close to the stage",
+    "\"Bad Guy\"",
+    "\"When the Party's Over\"",
+    "opening act Tove Lo"
+  ],
+  "events": [
+    {
+      "text": "Attended a Billie Eilish concert at the Forum",
+      "date_hint": "recently",
+      "turn_index": 4
+    },
+    {
+      "text": "Arrived at 5 pm for the Forum concert",
+      "date_hint": "5 pm",
+      "turn_index": 8
+    }
+  ]
+}

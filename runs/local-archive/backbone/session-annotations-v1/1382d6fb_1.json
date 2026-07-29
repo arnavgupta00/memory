@@ -1,0 +1,108 @@
+{
+  "session_id": "1382d6fb_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am preparing for my upcoming Ph.D. program.",
+      "turn_index": 0
+    },
+    {
+      "text": "My advisor gave me feedback on April 10th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I used my advisor's feedback to make necessary revisions to my thesis.",
+      "turn_index": 0
+    },
+    {
+      "text": "I received feedback on my master's thesis.",
+      "turn_index": 2
+    },
+    {
+      "text": "My research topic for my Ph.D. project focuses on deep learning applications in computer vision.",
+      "turn_index": 2
+    },
+    {
+      "text": "My Ph.D. research is focused on using convolutional neural networks for image classification tasks.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am focusing on the literature review and research design in the first year of my Ph.D. program.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have already taken an online course on deep learning.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to consider using TensorFlow and PyTorch for my research.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think PyTorch is more flexible and easier to use.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think TensorFlow has better support for large-scale models.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will probably start with PyTorch.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have used OpenCV before.",
+      "turn_index": 6
+    },
+    {
+      "text": "I might use OpenCV for image preprocessing and data augmentation.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will focus on learning PyTorch thoroughly.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will explore other frameworks later on.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have questions about PyTorch.",
+      "turn_index": 8
+    },
+    {
+      "text": "I asked about the concept of tensors in PyTorch and how they differ from NumPy arrays.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "Ph.D. program timeline",
+    "advisor feedback April 10",
+    "master's thesis revisions",
+    "deep learning applications in computer vision",
+    "convolutional neural networks",
+    "image classification tasks",
+    "first-year literature review",
+    "research design first year",
+    "online deep learning course",
+    "TensorFlow vs PyTorch",
+    "PyTorch flexibility",
+    "large-scale models support",
+    "OpenCV image preprocessing",
+    "data augmentation",
+    "PyTorch tensors",
+    "PyTorch tensors vs NumPy arrays"
+  ],
+  "events": [
+    {
+      "text": "Received feedback from advisor and revised thesis",
+      "date_hint": "April 10th",
+      "turn_index": 0
+    },
+    {
+      "text": "Received feedback on master's thesis",
+      "date_hint": "",
+      "turn_index": 2
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "session_id": "sharegpt_6sDqw6L_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to install pi-Hole to block ads on my router.",
+      "turn_index": 0
+    },
+    {
+      "text": "I saw the message \"static ip needed\" during the pi-Hole setup.",
+      "turn_index": 2
+    },
+    {
+      "text": "I saw the message \"Select a privacy mode for FTL/\" during the pi-Hole setup.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have a partner.",
+      "turn_index": 8
+    },
+    {
+      "text": "My router vendor is Technicolor.",
+      "turn_index": 8
+    },
+    {
+      "text": "My router product name is MediaAccess TG789vac v2.",
+      "turn_index": 8
+    },
+    {
+      "text": "My router software version is 17.1.",
+      "turn_index": 8
+    },
+    {
+      "text": "My router firmware version is 17.1.8066-0001002-20201214122207.",
+      "turn_index": 8
+    },
+    {
+      "text": "My router hardware version is VANT-6.",
+      "turn_index": 8
+    },
+    {
+      "text": "My router serial number is CP2025TASMB.",
+      "turn_index": 8
+    },
+    {
+      "text": "My router MAC address is D4:35:1D:15:34:C6.",
+      "turn_index": 8
+    },
+    {
+      "text": "My router uptime is 6 days 7 hours 44 minutes 46 seconds.",
+      "turn_index": 8
+    },
+    {
+      "text": "My router system time is 2023-01-14 18:59:13.",
+      "turn_index": 8
+    },
+    {
+      "text": "My current timezone is Asia/Jerusalem.",
+      "turn_index": 8
+    },
+    {
+      "text": "I cannot find \"Advance Settings\" in my router interface.",
+      "turn_index": 10
+    },
+    {
+      "text": "In my router interface, I have these categories: Wireless, Broadband, Internet Acseses, Local Network, Telephony, WAN service, Content Sharing, Devices, Mobile, Management, Realy Setup, Diagnositic, Gateway.",
+      "turn_index": 10
+    },
+    {
+      "text": "Under the DHCP server section, I have an on/off option.",
+      "turn_index": 12
+    }
+  ],
+  "keyphrases": [
+    "pi-Hole installation",
+    "block ads on router",
+    "static IP needed",
+    "FTL privacy mode",
+    "Technicolor TG789vac v2",
+    "DHCP server on off",
+    "advance settings missing",
+    "router categories Wireless Broadband",
+    "Asia/Jerusalem timezone",
+    "MediaAccess TG789vac v2 firmware 17.1.8066-0001002-20201214122207"
+  ],
+  "events": [
+    {
+      "text": "User starts pi-Hole installation to block ads on their router.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "User encounters the message \"static ip needed\" during setup.",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "User encounters the prompt \"Select a privacy mode for FTL/\" during setup.",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "User finishes the pi-Hole installation and asks what to do next.",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "User provides router details including timezone Asia/Jerusalem and router system time 2023-01-14 18:59:13.",
+      "date_hint": "2023-01-14 18:59:13",
+      "turn_index": 8
+    },
+    {
+      "text": "User cannot find \"Advance Settings\" and lists available router categories.",
+      "date_hint": "",
+      "turn_index": 10
+    },
+    {
+      "text": "User checks the DHCP server section where there is an on/off option.",
+      "date_hint": "",
+      "turn_index": 12
+    }
+  ]
+}

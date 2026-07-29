@@ -1,0 +1,83 @@
+{
+  "session_id": "61d3fec4_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I took photos last weekend at the local park.",
+      "turn_index": 0
+    },
+    {
+      "text": "I went to the local park on Saturday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I took photos of blooming flowers at the local park.",
+      "turn_index": 0
+    },
+    {
+      "text": "I took photos of cherry blossoms.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in local adjustments in photo editing.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to enhance flowers and foliage in my photos using a Gradient Filter.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want an example of how to set up the gradient filter in Lightroom to brighten cherry blossoms in a photo.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of going to the city at night to take photos of the skyline.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning to go to the city at night with a friend to take photos of the skyline.",
+      "turn_index": 8
+    },
+    {
+      "text": "I asked whether it is safe to go out alone at night.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "photo editing software",
+    "nature photos",
+    "local park",
+    "cherry blossoms",
+    "gradient filter",
+    "local adjustments",
+    "Lightroom gradient filter",
+    "brighten cherry blossoms",
+    "night skyline photos",
+    "city at night",
+    "light trails",
+    "cityscapes",
+    "safety going out alone at night"
+  ],
+  "events": [
+    {
+      "text": "Took photos at the local park last weekend",
+      "date_hint": "last weekend",
+      "turn_index": 0
+    },
+    {
+      "text": "Went to the local park on Saturday",
+      "date_hint": "Saturday",
+      "turn_index": 0
+    },
+    {
+      "text": "Planned to go to the city at night to take skyline photos",
+      "date_hint": "at night (planned)",
+      "turn_index": 6
+    },
+    {
+      "text": "Planned to go to the city at night with a friend to take skyline photos",
+      "date_hint": "at night (planned)",
+      "turn_index": 8
+    }
+  ]
+}

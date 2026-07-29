@@ -1,0 +1,77 @@
+{
+  "session_id": "sharegpt_kLAPfLd_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want you to be my personal meal planner.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want you to ask me 5 questions one at a time.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want you to rewrite the 5 questions into a ChatGPT-style prompt after I answer them.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want you to ask me to confirm or edit the rewritten prompt.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want you to create my meal plan after I confirm.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the meal plan to include approximate grams (weight) of each item.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the meal plan to include total calories of each meal or snack.",
+      "turn_index": 0
+    },
+    {
+      "text": "I answered that I want 3 snacks.",
+      "turn_index": 2
+    },
+    {
+      "text": "I answered that I want 3 meals per day.",
+      "turn_index": 4
+    },
+    {
+      "text": "I answered that I should plan for 1 day.",
+      "turn_index": 6
+    },
+    {
+      "text": "I answered that I want approximately 2100 calories per day.",
+      "turn_index": 8
+    },
+    {
+      "text": "I answered that my dietary needs/preferences are gluten free.",
+      "turn_index": 10
+    },
+    {
+      "text": "I confirmed.",
+      "turn_index": 12
+    }
+  ],
+  "keyphrases": [
+    "personal meal planner",
+    "5 questions",
+    "plan for 1 day",
+    "3 meals per day",
+    "3 snacks",
+    "2100 calories per day",
+    "gluten free",
+    "approximate grams per item",
+    "total calories per meal or snack",
+    "ChatGPT style prompt confirmation"
+  ],
+  "events": [
+    {
+      "text": "User confirmed the meal-planning prompt.",
+      "date_hint": "",
+      "turn_index": 12
+    }
+  ]
+}

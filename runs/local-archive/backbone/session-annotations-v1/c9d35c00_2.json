@@ -1,0 +1,92 @@
+{
+  "session_id": "c9d35c00_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for book recommendations.",
+      "turn_index": 0
+    },
+    {
+      "text": "I just finished the historical fiction novel \"The Nightingale\" by Kristin Hannah today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am in the mood for something similar to \"The Nightingale\".",
+      "turn_index": 0
+    },
+    {
+      "text": "I have heard of \"The Alice Network\" before.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am intrigued by \"The Alice Network\".",
+      "turn_index": 2
+    },
+    {
+      "text": "I have heard that \"The Alice Network\" is a great book.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am curious about other books similar to \"The Nightingale\" in emotional depth and historical fiction aspect.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am interested in \"The Song of Achilles\".",
+      "turn_index": 6
+    },
+    {
+      "text": "I am interested in \"The Kitchen House\".",
+      "turn_index": 6
+    },
+    {
+      "text": "I enjoyed the strong focus on character relationships and development in \"The Nightingale\".",
+      "turn_index": 6
+    },
+    {
+      "text": "I am currently reading \"The Song of Achilles\".",
+      "turn_index": 8
+    },
+    {
+      "text": "I read \"The Song of Achilles\" in short bursts before bed.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am about halfway through \"The Song of Achilles\".",
+      "turn_index": 8
+    },
+    {
+      "text": "I am hoping to finish \"The Song of Achilles\" by the end of the month.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "book recommendations",
+    "historical fiction",
+    "\"The Nightingale\" Kristin Hannah",
+    "\"The Alice Network\"",
+    "emotional depth",
+    "character relationships",
+    "\"The Song of Achilles\"",
+    "\"The Kitchen House\"",
+    "writing styles",
+    "reading before bed",
+    "finish by end of the month"
+  ],
+  "events": [
+    {
+      "text": "Finished the historical fiction novel \"The Nightingale\" by Kristin Hannah.",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Started reading \"The Song of Achilles\" (currently reading).",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Plans to finish \"The Song of Achilles\" by the end of the month.",
+      "date_hint": "by the end of the month",
+      "turn_index": 8
+    }
+  ]
+}

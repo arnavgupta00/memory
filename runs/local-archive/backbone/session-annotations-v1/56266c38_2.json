@@ -1,0 +1,114 @@
+{
+  "session_id": "56266c38_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to get more organized with my schedule.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a 45-minute morning jog with Alex on Tuesdays at 7:00 am.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a 45-minute morning jog with Alex on Thursdays at 7:00 am.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want reminders for our family game night on Fridays.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want reminders for weekend activities including meeting my parents for lunch or dinner.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want reminders for catching up with friends on weekends.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want reminders for dropping off Emily at school.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want reminders for my morning jog with Alex on Tuesdays and Thursdays.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want reminders for my morning routine.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have breakfast with Sarah as part of my morning routine.",
+      "turn_index": 10
+    },
+    {
+      "text": "I take Emily to school as part of my morning routine.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "schedule organization",
+    "reminders for regular activities",
+    "45-minute morning jog",
+    "Alex",
+    "Tuesdays 7:00 am",
+    "Thursdays 7:00 am",
+    "family game night",
+    "Fridays",
+    "weekend activities",
+    "meeting parents for lunch or dinner",
+    "catching up with friends",
+    "dropping off Emily at school",
+    "morning routine",
+    "breakfast with Sarah",
+    "taking Emily to school"
+  ],
+  "events": [
+    {
+      "text": "Morning jog with Alex (45 minutes)",
+      "date_hint": "Tuesdays at 7:00 am",
+      "turn_index": 0
+    },
+    {
+      "text": "Morning jog with Alex (45 minutes)",
+      "date_hint": "Thursdays at 7:00 am",
+      "turn_index": 0
+    },
+    {
+      "text": "Family game night",
+      "date_hint": "Fridays",
+      "turn_index": 2
+    },
+    {
+      "text": "Meeting parents for lunch or dinner",
+      "date_hint": "weekend",
+      "turn_index": 4
+    },
+    {
+      "text": "Catching up with friends",
+      "date_hint": "weekend",
+      "turn_index": 4
+    },
+    {
+      "text": "Dropping off Emily at school",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Morning jog with Alex (reminder request)",
+      "date_hint": "Tuesdays and Thursdays",
+      "turn_index": 8
+    },
+    {
+      "text": "Breakfast with Sarah (morning routine)",
+      "date_hint": "",
+      "turn_index": 10
+    },
+    {
+      "text": "Taking Emily to school (morning routine)",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

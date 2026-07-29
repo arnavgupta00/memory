@@ -1,0 +1,109 @@
+{
+  "session_id": "bea74480",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to organize my closet and keep track of what I have.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a new pair of Nike Air Force 1s.",
+      "turn_index": 2
+    },
+    {
+      "text": "I got the Nike Air Force 1s a few weeks before the conversation.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have only worn the Nike Air Force 1s twice.",
+      "turn_index": 2
+    },
+    {
+      "text": "I wore the Nike Air Force 1s once to the gym.",
+      "turn_index": 2
+    },
+    {
+      "text": "I wore the Nike Air Force 1s once to dinner with friends.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have old gym sneakers that are a pair of Asics.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have had the Asics gym sneakers for a while.",
+      "turn_index": 4
+    },
+    {
+      "text": "I still have old black leather boots that need to get polished.",
+      "turn_index": 6
+    },
+    {
+      "text": "I last polished my black leather boots in November.",
+      "turn_index": 6
+    },
+    {
+      "text": "I threw away an old pair of black sandals recently.",
+      "turn_index": 8
+    },
+    {
+      "text": "The black sandals I threw away were getting old and uncomfortable.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have a blue denim jacket from Zara.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have been loving the Zara blue denim jacket lately.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have worn the Zara blue denim jacket to work three times already.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "closet organization",
+    "shoe inventory list",
+    "Nike Air Force 1s",
+    "new sneakers",
+    "worn twice",
+    "gym sneakers",
+    "Asics old gym sneakers",
+    "black leather boots",
+    "boot polishing",
+    "last polished in November",
+    "black sandals thrown away",
+    "uncomfortable sandals",
+    "Zara blue denim jacket",
+    "worn to work three times"
+  ],
+  "events": [
+    {
+      "text": "Wore Nike Air Force 1s to the gym",
+      "date_hint": "a few weeks ago (relative to purchase)",
+      "turn_index": 2
+    },
+    {
+      "text": "Wore Nike Air Force 1s to dinner with friends",
+      "date_hint": "a few weeks ago (relative to purchase)",
+      "turn_index": 2
+    },
+    {
+      "text": "Last polished black leather boots",
+      "date_hint": "November",
+      "turn_index": 6
+    },
+    {
+      "text": "Threw away old black sandals",
+      "date_hint": "recently",
+      "turn_index": 8
+    },
+    {
+      "text": "Wore Zara blue denim jacket to work three times",
+      "date_hint": "lately (relative to conversation)",
+      "turn_index": 10
+    }
+  ]
+}

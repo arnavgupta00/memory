@@ -1,0 +1,119 @@
+{
+  "session_id": "afa0c2e7_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a road trip from Nashville to Chicago.",
+      "turn_index": 0
+    },
+    {
+      "text": "I did a road trip to Nashville before.",
+      "turn_index": 0
+    },
+    {
+      "text": "My previous road trip to Nashville was from September 22nd to September 25th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I loved exploring Nashville's music scene during my previous road trip to Nashville.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of stopping by a baseball stadium during my road trip.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am a huge baseball fan.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to visit Wrigley Field.",
+      "turn_index": 4
+    },
+    {
+      "text": "I visited Wrigley Field before during my trip to Chicago last month.",
+      "turn_index": 4
+    },
+    {
+      "text": "My trip to Chicago last month was from October 15th to October 18th.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am planning to stop by Louisville, Kentucky, during my road trip.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have heard great things about Louisville's bourbon scene.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want recommendations for distilleries or bars in Louisville that I shouldn't miss.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want recommendations for restaurants or eateries near bourbon distilleries or in the downtown area of Louisville.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to grab good food to pair with my bourbon tastings.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of grabbing hot chicken while I'm in Louisville.",
+      "turn_index": 10
+    },
+    {
+      "text": "I tried amazing hot chicken at Hattie B's in Nashville during my road trip there.",
+      "turn_index": 10
+    },
+    {
+      "text": "My road trip to Nashville where I tried hot chicken at Hattie B's was from September 22nd to September 25th.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am craving hot chicken again.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "road trip Nashville to Chicago",
+    "Nashville music scene",
+    "September 22 to September 25 road trip",
+    "baseball stadium stops",
+    "Wrigley Field",
+    "Chicago trip October 15 to October 18",
+    "Louisville Kentucky bourbon scene",
+    "Louisville distilleries and bars",
+    "restaurants near bourbon distilleries",
+    "downtown Louisville eateries",
+    "hot chicken Louisville",
+    "Hattie B's Nashville hot chicken"
+  ],
+  "events": [
+    {
+      "text": "Road trip to Nashville",
+      "date_hint": "September 22nd to September 25th",
+      "turn_index": 0
+    },
+    {
+      "text": "Trip to Chicago to visit Wrigley Field",
+      "date_hint": "October 15th to October 18th",
+      "turn_index": 4
+    },
+    {
+      "text": "Planning to stop by Louisville, Kentucky for bourbon",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Planning to visit Wrigley Field during the Chicago trip",
+      "date_hint": "last month; October 15th to October 18th",
+      "turn_index": 4
+    },
+    {
+      "text": "Planning to grab hot chicken in Louisville",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

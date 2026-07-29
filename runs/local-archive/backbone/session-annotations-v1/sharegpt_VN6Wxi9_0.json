@@ -1,0 +1,33 @@
+{
+  "session_id": "sharegpt_VN6Wxi9_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I asked whether the assistant is familiar with the global color token in a design system/branding theming.",
+      "turn_index": 0
+    },
+    {
+      "text": "I requested regenerating $gds-color-purple-50 through $gds-color-purple-100 to make the colors lighter as a tints palette while keeping the color vibrancy the same.",
+      "turn_index": 2
+    },
+    {
+      "text": "I requested regenerating $gds-color-purple-600 because it has the same hex value as $gds-color-purple-500.",
+      "turn_index": 4
+    },
+    {
+      "text": "I requested regenerating $gds-color-purple-700 through $gds-color-purple-900 using the new $gds-color-purple-600.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "global color token",
+    "design system branding theming",
+    "gds-color-purple tints palette",
+    "$gds-color-purple-50 to $gds-color-purple-100",
+    "regenerate color tokens",
+    "$gds-color-purple-600 hex value",
+    "$gds-color-purple-500 same hex",
+    "$gds-color-purple-700 to $gds-color-purple-900"
+  ],
+  "events": []
+}

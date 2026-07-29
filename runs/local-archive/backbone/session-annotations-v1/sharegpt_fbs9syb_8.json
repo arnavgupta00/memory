@@ -1,0 +1,55 @@
+{
+  "session_id": "sharegpt_fbs9syb_8",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I asked for a Twitter thread that summarizes a blog post.",
+      "turn_index": 0
+    },
+    {
+      "text": "I asked for 5 paragraphs in the Twitter thread.",
+      "turn_index": 0
+    },
+    {
+      "text": "I asked for each Twitter thread paragraph to be under 280 characters.",
+      "turn_index": 0
+    },
+    {
+      "text": "I asked to add relevant hashtags to the Twitter thread.",
+      "turn_index": 0
+    },
+    {
+      "text": "I asked for an engaging tweet for the above thread.",
+      "turn_index": 2
+    }
+  ],
+  "keyphrases": [
+    "Twitter thread",
+    "5 paragraphs",
+    "under 280 characters",
+    "relevant hashtags",
+    "engaging tweet",
+    "omnibus spending bill",
+    "cybersecurity spending",
+    "U.S. Cybersecurity and Infrastructure Security Agency",
+    "CyberCorps program",
+    "federal cyber workforce gap"
+  ],
+  "events": [
+    {
+      "text": "President Joe Biden signed the $1.7 trillion omnibus spending bill into law",
+      "date_hint": "Dec. 29",
+      "turn_index": 0
+    },
+    {
+      "text": "A Federal Cyber Workforce Management and Coordinating Working Group report was published",
+      "date_hint": "In September",
+      "turn_index": 0
+    },
+    {
+      "text": "A U.S. Government Accountability Office report was issued",
+      "date_hint": "December",
+      "turn_index": 0
+    }
+  ]
+}

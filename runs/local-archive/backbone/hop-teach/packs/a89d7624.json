@@ -1,0 +1,25 @@
+{
+  "question_id": "a89d7624",
+  "question_type": "single-session-preference",
+  "question": "I'm planning a trip to Denver soon. Any suggestions on what to do there?",
+  "question_date": "2023/05/30 (Tue) 21:17",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_8f15ac24"
+  ],
+  "haystack_session_count": 49,
+  "notes_coverage": "full",
+  "annotated_session_count": 49,
+  "gold_sessions": [
+    {
+      "session_id": "answer_8f15ac24",
+      "date": "2023/05/27 (Sat) 14:23",
+      "has_notes": true,
+      "notes_text": "[session_id] answer_8f15ac24\n[session_date] 2023/05/27 (Sat) 14:23\n[facts]\n- I have been to three concerts recently.\n- I attended a The Killers concert at Red Rocks Amphitheater.\n- I met Brandon Flowers after attending The Killers concert in Denver.\n- I attended The Killers concert in Denver.\n- I visited Denver previously and met Brandon Flowers after The Killers' concert.\n- I love Denver's music scene.\n- I am thinking of going back to Denver for another concert.\n- I am thinking of going to Red Rocks Amphitheater for a concert.\n- I am thinking of getting to Red Rocks a bit earlier to grab dinner before the concert.\n- I am thinking of getting dinner at The Ship Rock Grille before the concert.\n- I am going to ask if The Ship Rock Grille has tables available with a view of the stage.\n[keyphrases] music recommendations; The Killers; Red Rocks Amphitheater; Brandon Flowers meeting; concerts in my area; Denver music scene; music venues in Denver; Denver festivals; BBQ near Red Rocks; walking distance restaurants near Red Rocks; The Ship Rock Grille; outdoor seating view of Red Rocks; tables with view of the stage\n[events]\n- Attended The Killers concert at Red Rocks Amphitheater.\n- Met Brandon Flowers after attending The Killers concert in Denver.\n- Previous visit to Denver where Brandon Flowers was met after The Killers' concert.\n- Thinking of going back to Denver for another concert.\n- Planning to arrive earlier at Red Rocks to grab dinner before the concert.\n- Planning to get dinner at The Ship Rock Grille before the concert.\n- Asking for tables available with a view of the stage.",
+      "user_turns": "[turn 0] I'm looking for some music recommendations. I've been to three concerts recently, including The Killers at Red Rocks Amphitheater, and I'm always looking for new bands to check out.\n\n[turn 2] I met Brandon Flowers, the lead singer of The Killers, after attending their concert in Denver. What's the best way to keep up with new music releases and concerts in my area?\n\n[turn 4] During my previous visit to Denver, where I had a great time meeting Brandon Flowers after The Killers' concert, I realized how much I love the city's music scene. Are there any good music venues or festivals in Denver that I shouldn't miss?\n\n[turn 6] I'm thinking of going back to Denver for another concert. Do you know if there are any good BBQ places near the Red Rocks Amphitheater?\n\n[turn 8] I'll definitely check those out. I'm thinking of getting to Red Rocks a bit earlier to grab some dinner before the concert. Do you know if there are any good restaurants or food options within walking distance of the amphitheater?\n\n[turn 10] I'm thinking of getting some dinner at The Ship Rock Grille before the concert. Do they have any outdoor seating with a view of the Red Rocks?\n\n[turn 12] I'm going to ask them if they have any tables available with a view of the stage."
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

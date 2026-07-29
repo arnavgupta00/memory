@@ -1,0 +1,92 @@
+{
+  "session_id": "8aee9f4c_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I bought a 4K TV from Best Buy for $350 during the Black Friday sale.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought a pair of sneakers from Foot Locker during the Black Friday sale.",
+      "turn_index": 2
+    },
+    {
+      "text": "I got 30% off on the sneakers from Foot Locker.",
+      "turn_index": 2
+    },
+    {
+      "text": "I spent around $500 that day, including the 4K TV and the sneakers.",
+      "turn_index": 4
+    },
+    {
+      "text": "I bought winter clothing during the Macy's Friends and Family sale a week before Black Friday.",
+      "turn_index": 6
+    },
+    {
+      "text": "I bought a coat during the Macy's Friends and Family sale.",
+      "turn_index": 8
+    },
+    {
+      "text": "I bought gloves during the Macy's Friends and Family sale.",
+      "turn_index": 8
+    },
+    {
+      "text": "I bought a scarf during the Macy's Friends and Family sale.",
+      "turn_index": 8
+    },
+    {
+      "text": "I got 25% off on the coat, gloves, and scarf.",
+      "turn_index": 8
+    },
+    {
+      "text": "I spent around $200 that day on the coat, gloves, and scarf.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "Black Friday sale purchases",
+    "4K TV",
+    "Best Buy",
+    "$350",
+    "Foot Locker sneakers",
+    "30% off sneakers",
+    "Macy's Friends and Family sale",
+    "winter clothing",
+    "coat gloves scarf",
+    "25% off coat gloves scarf",
+    "around $500 day",
+    "around $200 day"
+  ],
+  "events": [
+    {
+      "text": "Bought a 4K TV from Best Buy for $350 during the Black Friday sale.",
+      "date_hint": "Black Friday (past month)",
+      "turn_index": 2
+    },
+    {
+      "text": "Bought sneakers from Foot Locker and got 30% off during the Black Friday sale.",
+      "date_hint": "Black Friday (past month)",
+      "turn_index": 2
+    },
+    {
+      "text": "Spent around $500 that day including the TV and sneakers.",
+      "date_hint": "Black Friday (past month)",
+      "turn_index": 4
+    },
+    {
+      "text": "Bought winter clothing during the Macy's Friends and Family sale a week before Black Friday.",
+      "date_hint": "a week before Black Friday",
+      "turn_index": 6
+    },
+    {
+      "text": "Bought a coat, gloves, and a scarf and got 25% off during the Macy's Friends and Family sale.",
+      "date_hint": "a week before Black Friday",
+      "turn_index": 8
+    },
+    {
+      "text": "Spent around $200 that day on the coat, gloves, and scarf.",
+      "date_hint": "a week before Black Friday",
+      "turn_index": 8
+    }
+  ]
+}

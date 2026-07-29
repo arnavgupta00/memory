@@ -1,0 +1,225 @@
+{
+  "session_id": "sharegpt_YbYHKEO_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user provided a JSON data file for a policy.",
+      "turn_index": 0
+    },
+    {
+      "text": "The JSON includes a Resources section with an application named myapp1.",
+      "turn_index": 0
+    },
+    {
+      "text": "The JSON includes a Resources section with an application named myapp2.",
+      "turn_index": 0
+    },
+    {
+      "text": "In myapp1, there is a resource with Company CompanyA, Country Norway, InvoiceAmount 200, Name Invoice1, ResourceID inv001, and ResourceType Invoice.",
+      "turn_index": 0
+    },
+    {
+      "text": "In myapp1, there is a resource with Company CompanyB, Country Sweden, InvoiceAmount 300, Name Invoice2, ResourceID inv002, and ResourceType Invoice.",
+      "turn_index": 0
+    },
+    {
+      "text": "In myapp1, there is a resource with Amount 1000, Company CompanyA, Country Norway, Name PurchaseOrder1, ResourceID po001, and ResourceType PurchaseOrder.",
+      "turn_index": 0
+    },
+    {
+      "text": "In myapp1, there is a resource with Amount 1500, Company CompanyB, Country Sweden, Name PurchaseOrder2, ResourceID po002, and ResourceType PurchaseOrder.",
+      "turn_index": 0
+    },
+    {
+      "text": "In myapp1, there is a resource with Company CompanyA, Country Norway, Name Person1, ResourceID p001, and ResourceType Person.",
+      "turn_index": 0
+    },
+    {
+      "text": "In myapp1, there is a resource with Company CompanyB, Country Sweden, Name Person2, ResourceID p002, and ResourceType Person.",
+      "turn_index": 0
+    },
+    {
+      "text": "In myapp2, there is a resource with Company CompanyC, Country Finland, InvoiceAmount 400, Name Invoice3, ResourceID inv003, and ResourceType Invoice.",
+      "turn_index": 0
+    },
+    {
+      "text": "In myapp2, there is a resource with Company CompanyD, Country Denmark, InvoiceAmount 500, Name Invoice4, ResourceID inv004, and ResourceType Invoice.",
+      "turn_index": 0
+    },
+    {
+      "text": "In myapp2, there is a resource with Amount 2000, Company CompanyC, Country Finland, Name PurchaseOrder3, ResourceID po003, and ResourceType PurchaseOrder.",
+      "turn_index": 0
+    },
+    {
+      "text": "In myapp2, there is a resource with Amount 2500, Company CompanyD, Country Denmark, Name PurchaseOrder4, ResourceID po004, and ResourceType PurchaseOrder.",
+      "turn_index": 0
+    },
+    {
+      "text": "In myapp2, there is a resource with Company CompanyC, Country Finland, Name Person3, ResourceID p003, and ResourceType Person.",
+      "turn_index": 0
+    },
+    {
+      "text": "In myapp2, there is a resource with Company CompanyD, Country Denmark, Name Person4, ResourceID p004, and ResourceType Person.",
+      "turn_index": 0
+    },
+    {
+      "text": "The JSON includes an applications section with an application named myapp1.",
+      "turn_index": 0
+    },
+    {
+      "text": "The JSON includes an applications section with an application named myapp2.",
+      "turn_index": 0
+    },
+    {
+      "text": "In applications.myapp1.ResourceTypes.Invoice, there is an AzLocalRightName CreateInvoice with FieldTypes InvoiceAmount and Country.",
+      "turn_index": 0
+    },
+    {
+      "text": "In applications.myapp1.ResourceTypes.Invoice.CreateInvoice, InvoiceAmount FieldTypeValues are 100, 200, and 300.",
+      "turn_index": 0
+    },
+    {
+      "text": "In applications.myapp1.ResourceTypes.Invoice.CreateInvoice, Country FieldTypeValues are Norway, Sweden, and Finland.",
+      "turn_index": 0
+    },
+    {
+      "text": "In applications.myapp1.ResourceTypes.Invoice, there is an AzLocalRightName ReadInvoice with no FieldTypes.",
+      "turn_index": 0
+    },
+    {
+      "text": "In applications.myapp1.ResourceTypes.Invoice, there is an AzLocalRightName UpdateInvoice with FieldTypes including InvoiceAmount.",
+      "turn_index": 0
+    },
+    {
+      "text": "In applications.myapp1.ResourceTypes.Invoice.UpdateInvoice, InvoiceAmount FieldTypeValues are 200 and 300.",
+      "turn_index": 0
+    },
+    {
+      "text": "In applications.myapp1.ResourceTypes.Invoice, there is an AzLocalRightName DeleteInvoice with no FieldTypes.",
+      "turn_index": 0
+    },
+    {
+      "text": "In applications.myapp1.ResourceTypes.Person, there is an AzLocalRightName CreatePerson with FieldTypes Age and Country.",
+      "turn_index": 0
+    },
+    {
+      "text": "In applications.myapp1.ResourceTypes.Person.CreatePerson, Age FieldTypeValues are 18, 21, 25, 30, and 40.",
+      "turn_index": 0
+    },
+    {
+      "text": "In applications.myapp1.ResourceTypes.Person.CreatePerson, Country FieldTypeValues are Norway, Sweden, and Finland.",
+      "turn_index": 0
+    },
+    {
+      "text": "In applications.myapp1.ResourceTypes.Person, there is an AzLocalRightName ReadPerson with no FieldTypes.",
+      "turn_index": 0
+    },
+    {
+      "text": "In applications.myapp1.ResourceTypes.Person, there is an AzLocalRightName UpdatePerson with FieldTypes including Age.",
+      "turn_index": 0
+    },
+    {
+      "text": "In applications.myapp1.ResourceTypes.Person.UpdatePerson, Age FieldTypeValues are 21, 25, and 30.",
+      "turn_index": 0
+    },
+    {
+      "text": "In applications.myapp1.ResourceTypes.Person, there is an AzLocalRightName DeletePerson with no FieldTypes.",
+      "turn_index": 0
+    },
+    {
+      "text": "In applications.myapp1.ResourceTypes.PurchaseOrder, there is an AzLocalRightName CreatePurchaseOrder with FieldTypes OrderAmount and Company.",
+      "turn_index": 0
+    },
+    {
+      "text": "In applications.myapp1.ResourceTypes.PurchaseOrder.CreatePurchaseOrder, OrderAmount FieldTypeValues are 500, 1000, and 1500.",
+      "turn_index": 0
+    },
+    {
+      "text": "In applications.myapp1.ResourceTypes.PurchaseOrder.CreatePurchaseOrder, Company FieldTypeValues are ABC Inc and XYZ Corp.",
+      "turn_index": 0
+    },
+    {
+      "text": "In applications.myapp1.ResourceTypes.PurchaseOrder, there is an AzLocalRightName ReadPurchaseOrder with no FieldTypes.",
+      "turn_index": 0
+    },
+    {
+      "text": "In applications.myapp1.ResourceTypes.PurchaseOrder, there is an AzLocalRightName UpdatePurchaseOrder with FieldTypes including OrderAmount.",
+      "turn_index": 0
+    },
+    {
+      "text": "In applications.myapp1.ResourceTypes.PurchaseOrder.UpdatePurchaseOrder, OrderAmount FieldTypeValues are 1000 and 1500.",
+      "turn_index": 0
+    },
+    {
+      "text": "In applications.myapp1.ResourceTypes.PurchaseOrder, there is an AzLocalRightName DeletePurchaseOrder with no FieldTypes.",
+      "turn_index": 0
+    },
+    {
+      "text": "In applications.myapp2.ResourceTypes.Invoices, there is an AzLocalRightName ReadInvoice with no FieldTypes.",
+      "turn_index": 0
+    },
+    {
+      "text": "In applications.myapp2.ResourceTypes.People, there is an AzLocalRightName ReadPerson with no FieldTypes.",
+      "turn_index": 0
+    },
+    {
+      "text": "In applications.myapp2.ResourceTypes.PurchaseOrders, there is an AzLocalRightName ReadPurchaseOrder with no FieldTypes.",
+      "turn_index": 0
+    },
+    {
+      "text": "The JSON includes a resourceAccesses section with an application named myapp1.",
+      "turn_index": 0
+    },
+    {
+      "text": "The JSON includes a resourceAccesses section with an application named myapp2.",
+      "turn_index": 0
+    },
+    {
+      "text": "In resourceAccesses.myapp1.user1, there is an entry with AzLocalRightName Read, Constraints Country Norway and InvoiceAmount 100, Name Invoice 001, ResourceID 2c1ed12e-038d-4f2f-b183-1aa8fcbcd6d4, and ResourceType Invoice.",
+      "turn_index": 0
+    },
+    {
+      "text": "In resourceAccesses.myapp1.user1, there is an entry with AzLocalRightName Create, Constraints Country Sweden and PurchaseOrderAmount 200, Name Purchase Order 001, ResourceID 559c6e04-ba0c-4c1d-9d57-7da755da28c7, and ResourceType PurchaseOrder.",
+      "turn_index": 0
+    },
+    {
+      "text": "In resourceAccesses.myapp1.user2, there is an entry with AzLocalRightName Create, Constraints Country Norway and InvoiceAmount 200, Name Invoice 002, ResourceID e56fa32c-9601-4c88-b9f9-02d66e0efbdb, and ResourceType Invoice.",
+      "turn_index": 0
+    },
+    {
+      "text": "In resourceAccesses.myapp1.user2, there is an entry with AzLocalRightName Read, Constraints Country Finland and PurchaseOrderAmount 100, Name Purchase Order 002, ResourceID 43e0e035-95d8-4c54-a4c4-4f3c0f37b57e, and ResourceType PurchaseOrder.",
+      "turn_index": 0
+    },
+    {
+      "text": "In resourceAccesses.myapp2.user1, there is an entry with AzLocalRightName Read, Constraints Country Norway, Name Document 001, ResourceID 00cabb75-868c-4061-bf17-f39a0132dccb, and ResourceType Document.",
+      "turn_index": 0
+    },
+    {
+      "text": "In resourceAccesses.myapp2.user1, there is an entry with AzLocalRightName Update, Constraints Country Sweden, Name Document 002, ResourceID 2e4dfb4c-f8b7-4c51-9ca3-74ea6488618d, and ResourceType Document.",
+      "turn_index": 0
+    },
+    {
+      "text": "In resourceAccesses.myapp2.user2, there is an entry with AzLocalRightName Delete, Constraints Country Finland, Name Document 003, ResourceID b71f1f92-90eb-42c8-8a71-4969e9d2b2e8, and ResourceType Document.",
+      "turn_index": 0
+    },
+    {
+      "text": "In resourceAccesses.myapp2.user2, there is an entry with AzLocalRightName Read, Constraints Country Norway, Name Document 004, ResourceID ae83b0a9-d925-4c4b-b2b4-3e3cde9813a1, and ResourceType Document.",
+      "turn_index": 0
+    }
+  ],
+  "keyphrases": [
+    "JSON policy data file",
+    "Resources section",
+    "applications myapp1",
+    "applications myapp2",
+    "myapp1 Invoice CreateInvoice",
+    "myapp1 Person CreatePerson",
+    "myapp1 PurchaseOrder CreatePurchaseOrder",
+    "resourceAccesses myapp1 user1",
+    "resourceAccesses myapp1 user2",
+    "resourceAccesses myapp2 user1",
+    "resourceAccesses myapp2 user2",
+    "Country constraints"
+  ],
+  "events": []
+}

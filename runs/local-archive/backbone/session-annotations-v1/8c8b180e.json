@@ -1,0 +1,71 @@
+{
+  "session_id": "8c8b180e",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to plan a weekend getaway to Santa Monica.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been to The Wharf before.",
+      "turn_index": 2
+    },
+    {
+      "text": "My brother proposed to his girlfriend at The Wharf on September 20th.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of attending a wedding soon.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been to a few weddings recently.",
+      "turn_index": 6
+    },
+    {
+      "text": "My cousin Rachel's wedding was last weekend.",
+      "turn_index": 6
+    },
+    {
+      "text": "I stayed at the Hyatt Regency hotel with my parents and brother, Alex, after the wedding.",
+      "turn_index": 10
+    },
+    {
+      "text": "My brother's name is Alex.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "weekend getaway Santa Monica",
+    "restaurants Santa Monica",
+    "hotels Santa Monica",
+    "The Wharf proposal",
+    "September 20th proposal",
+    "solo traveler activities Santa Monica",
+    "couple attractions Santa Monica",
+    "wedding dress tips",
+    "wedding RSVP protocol",
+    "cousin Rachel wedding",
+    "Belle Époque venue decorations",
+    "Hyatt Regency hotel stay",
+    "wedding weekend last weekend",
+    "ceremony decorations Belle Époque"
+  ],
+  "events": [
+    {
+      "text": "My brother proposed to his girlfriend at The Wharf.",
+      "date_hint": "September 20th",
+      "turn_index": 2
+    },
+    {
+      "text": "My cousin Rachel's wedding happened last weekend.",
+      "date_hint": "last weekend",
+      "turn_index": 6
+    },
+    {
+      "text": "I stayed at the Hyatt Regency hotel with my parents and brother Alex after the wedding.",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

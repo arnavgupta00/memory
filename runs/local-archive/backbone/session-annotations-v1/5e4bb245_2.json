@@ -1,0 +1,107 @@
+{
+  "session_id": "5e4bb245_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I used digital coupons at SaveMore and saved $20 last month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I redeemed 500 points from SaveMore for a $5 discount on my last grocery bill.",
+      "turn_index": 0
+    },
+    {
+      "text": "The $5 discount I redeemed from SaveMore is equivalent to a $5 gift card.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to organize my loyalty programs by category such as grocery stores and retail stores.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want tips on how to keep track of my loyalty programs and rewards so I don't miss opportunities to earn or redeem points.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am going to start using a spreadsheet to keep track of my loyalty programs.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of signing up for the loyalty program at my local bookstore.",
+      "turn_index": 4
+    },
+    {
+      "text": "I use the Fetch Rewards app.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been using Fetch Rewards for a few months.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have earned 3,000 points in Fetch Rewards.",
+      "turn_index": 8
+    },
+    {
+      "text": "My 3,000 Fetch Rewards points are equivalent to $30.",
+      "turn_index": 8
+    },
+    {
+      "text": "I recently redeemed 500 points from SaveMore for a $5 discount on my last grocery bill.",
+      "turn_index": 8
+    },
+    {
+      "text": "The $5 discount from SaveMore is equivalent to a $5 gift card.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am planning a trip to Target soon.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want information about Target's loyalty program called Target RedCard.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "digital coupons loyalty programs",
+    "SaveMore loyalty program",
+    "SaveMore points redemption",
+    "$20 savings last month",
+    "500 points $5 discount",
+    "$5 gift card",
+    "organize loyalty programs by category",
+    "spreadsheet to track loyalty programs",
+    "local bookstore loyalty program",
+    "Fetch Rewards app",
+    "Fetch Rewards points 3000",
+    "Target RedCard loyalty program"
+  ],
+  "events": [
+    {
+      "text": "Saved $20 using digital coupons at SaveMore",
+      "date_hint": "last month",
+      "turn_index": 0
+    },
+    {
+      "text": "Redeemed 500 SaveMore points for a $5 discount on a grocery bill",
+      "date_hint": "last month",
+      "turn_index": 0
+    },
+    {
+      "text": "Earned 3,000 points in Fetch Rewards",
+      "date_hint": "over the past few months",
+      "turn_index": 8
+    },
+    {
+      "text": "Redeemed 500 SaveMore points for a $5 discount on a grocery bill",
+      "date_hint": "recently",
+      "turn_index": 8
+    },
+    {
+      "text": "Planning a trip to Target soon",
+      "date_hint": "soon",
+      "turn_index": 10
+    }
+  ]
+}

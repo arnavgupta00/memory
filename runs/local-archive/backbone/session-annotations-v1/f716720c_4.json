@@ -1,0 +1,116 @@
+{
+  "session_id": "f716720c_4",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Chicago next month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need help finding affordable flights and hotels for my Chicago trip.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am attending my friend's sister's law school graduation ceremony.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to be in Chicago for the law school graduation ceremony.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to arrive in Chicago a day or two before the graduation ceremony.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am flexible with my travel dates.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to be in Chicago for the ceremony.",
+      "turn_index": 2
+    },
+    {
+      "text": "I prefer to fly into O'Hare because it is closer to the city.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am hoping to spend around $200-300 for flights.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am hoping to spend $100-150 per night for a hotel.",
+      "turn_index": 2
+    },
+    {
+      "text": "I do not have a specific area in mind for where to stay in Chicago.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to stay somewhere close to the graduation venue.",
+      "turn_index": 2
+    },
+    {
+      "text": "The law school graduation ceremony will be held at the Auditorium Theatre.",
+      "turn_index": 6
+    },
+    {
+      "text": "The Auditorium Theatre is located in the Loop area of downtown Chicago.",
+      "turn_index": 6
+    },
+    {
+      "text": "The ceremony is scheduled to start at 2 pm.",
+      "turn_index": 6
+    },
+    {
+      "text": "The ceremony is scheduled for a Saturday.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am planning to attend the whole law school graduation ceremony.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to check out The Gage for brunch before the ceremony.",
+      "turn_index": 10
+    },
+    {
+      "text": "I plan to check out Roanoke for brunch before the ceremony.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want recommendations for places to grab dinner after the ceremony.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want dinner after the ceremony at a place to celebrate with my friend and her family.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Chicago trip next month",
+    "affordable flights",
+    "affordable hotels",
+    "law school graduation ceremony",
+    "O'Hare flights",
+    "flight budget $200-300",
+    "hotel budget $100-150 per night",
+    "Loop area downtown Chicago",
+    "Auditorium Theatre",
+    "ceremony starts 2 pm Saturday",
+    "brunch near Auditorium Theatre",
+    "dinner after graduation ceremony"
+  ],
+  "events": [
+    {
+      "text": "Arrive in Chicago a day or two before the law school graduation ceremony",
+      "date_hint": "next month (relative to ceremony)",
+      "turn_index": 2
+    },
+    {
+      "text": "Law school graduation ceremony at Auditorium Theatre in the Loop",
+      "date_hint": "next month; Saturday; starts at 2 pm",
+      "turn_index": 6
+    }
+  ]
+}

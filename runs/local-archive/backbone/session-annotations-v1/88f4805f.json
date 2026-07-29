@@ -1,0 +1,68 @@
+{
+  "session_id": "88f4805f",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I attended the Billie Eilish concert at the Los Angeles Forum on March 14th, 2023.",
+      "turn_index": 4
+    },
+    {
+      "text": "I went to the Billie Eilish concert with my best friend, Rachel.",
+      "turn_index": 4
+    },
+    {
+      "text": "I had floor seats at the Billie Eilish concert.",
+      "turn_index": 4
+    },
+    {
+      "text": "I got there early and managed to grab a spot close to the stage at the Billie Eilish concert.",
+      "turn_index": 4
+    },
+    {
+      "text": "The opening act at the Billie Eilish concert was Olivia Dean.",
+      "turn_index": 4
+    },
+    {
+      "text": "I met Billie Eilish briefly after the Billie Eilish concert and took a photo together.",
+      "turn_index": 4
+    },
+    {
+      "text": "I did not attend the Governors Ball Music Festival.",
+      "turn_index": 10
+    },
+    {
+      "text": "Before the H.E.R. concert, I attended the Imagine Dragons concert at the Banc of California Stadium.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Billie Eilish concert",
+    "Los Angeles Forum",
+    "March 14 2023",
+    "floor seats",
+    "Olivia Dean opening act",
+    "met Billie Eilish photo",
+    "H.E.R. concert",
+    "Hollywood Bowl",
+    "Imagine Dragons concert",
+    "Banc of California Stadium",
+    "Governors Ball Music Festival"
+  ],
+  "events": [
+    {
+      "text": "Attended the Billie Eilish concert at the Los Angeles Forum",
+      "date_hint": "March 14th, 2023",
+      "turn_index": 4
+    },
+    {
+      "text": "Corrected that I did not attend the Governors Ball Music Festival",
+      "date_hint": "",
+      "turn_index": 10
+    },
+    {
+      "text": "Attended the Imagine Dragons concert at the Banc of California Stadium (before the H.E.R. concert)",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

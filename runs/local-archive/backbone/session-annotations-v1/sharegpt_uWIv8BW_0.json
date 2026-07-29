@@ -1,0 +1,48 @@
+{
+  "session_id": "sharegpt_uWIv8BW_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "Elon Musk was Twitter CEO as of 2022.",
+      "turn_index": 8
+    },
+    {
+      "text": "Elon is now the CEO of Twitter.",
+      "turn_index": 10
+    },
+    {
+      "text": "Jack Dorsey resigned from being Twitter CEO.",
+      "turn_index": 14
+    }
+  ],
+  "keyphrases": [
+    "descriptive statistics",
+    "key variables of a dataset",
+    "CEO of Twitter",
+    "Elon Musk CEO 2022",
+    "Elon now CEO of Twitter",
+    "Jack Dorsey resignation",
+    "introduction for descriptive statistic paragraph",
+    "group modalities on R",
+    "group by year date variable",
+    "extract year from date variable",
+    "R date year extraction"
+  ],
+  "events": [
+    {
+      "text": "Elon Musk was Twitter CEO as of 2022",
+      "date_hint": "2022",
+      "turn_index": 8
+    },
+    {
+      "text": "Elon became the CEO of Twitter (current)",
+      "date_hint": "now",
+      "turn_index": 10
+    },
+    {
+      "text": "Jack Dorsey resigned from being Twitter CEO",
+      "date_hint": "",
+      "turn_index": 14
+    }
+  ]
+}

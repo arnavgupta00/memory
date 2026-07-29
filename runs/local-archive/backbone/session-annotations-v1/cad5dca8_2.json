@@ -1,0 +1,96 @@
+{
+  "session_id": "cad5dca8_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning to get a gift for my sister again.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for gift ideas for my sister.",
+      "turn_index": 0
+    },
+    {
+      "text": "My sister loves to read.",
+      "turn_index": 0
+    },
+    {
+      "text": "I thought a new book by my sister's favorite author would be a great gift idea.",
+      "turn_index": 0
+    },
+    {
+      "text": "My sister's favorite author is the same author I got a book from for my mom's birthday.",
+      "turn_index": 2
+    },
+    {
+      "text": "I got my sister a book by her favorite author from a bookstore.",
+      "turn_index": 2
+    },
+    {
+      "text": "The bookstore book I got cost around $20.",
+      "turn_index": 2
+    },
+    {
+      "text": "My sister mostly reads romance novels.",
+      "turn_index": 2
+    },
+    {
+      "text": "I got a book for my mom's birthday.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know more about the book I got for my mom.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know whether I can get the same book for my sister.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know whether the book I got for my mom is part of a series my sister might have already read.",
+      "turn_index": 4
+    },
+    {
+      "text": "The book I got for my mom is a romance novel by my sister's favorite author.",
+      "turn_index": 6
+    },
+    {
+      "text": "I got the book for my mom from a bookstore.",
+      "turn_index": 6
+    },
+    {
+      "text": "The book I got for my mom cost around $20.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "gift for sister",
+    "book gift ideas",
+    "sister loves to read",
+    "favorite author",
+    "romance novels",
+    "romance novel bookstore",
+    "book cost around $20",
+    "mom's birthday book",
+    "book series",
+    "romance tropes",
+    "romance preferences"
+  ],
+  "events": [
+    {
+      "text": "I got a book for my mom's birthday.",
+      "date_hint": "for my mom's birthday",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought a romance novel from a bookstore for around $20.",
+      "date_hint": "around $20 (no date given)",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought the romance novel for my mom from a bookstore for around $20.",
+      "date_hint": "around $20 (no date given)",
+      "turn_index": 6
+    }
+  ]
+}

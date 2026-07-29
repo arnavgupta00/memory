@@ -1,0 +1,150 @@
+{
+  "session_id": "02f70006_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning to make chicken stir-fry for dinner tonight.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need soy sauce for my chicken stir-fry.",
+      "turn_index": 0
+    },
+    {
+      "text": "I went grocery shopping last Saturday, March 11th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I spent around $85 at the checkout counter when I went grocery shopping last Saturday, March 11th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I think I will use Kikkoman soy sauce.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am running low on almond milk.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought almond milk last Saturday when I went grocery shopping.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am running low on carrots.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought carrots last Saturday when I went grocery shopping.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of making a chicken and vegetable stir-fry.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will use chicken breasts that I bought last Saturday.",
+      "turn_index": 4
+    },
+    {
+      "text": "I need broccoli to go with the carrots for my stir-fry.",
+      "turn_index": 4
+    },
+    {
+      "text": "I need bell peppers to go with the carrots for my stir-fry.",
+      "turn_index": 4
+    },
+    {
+      "text": "I bought chicken breasts last Saturday when I went grocery shopping.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will use frozen broccoli to make the stir-fry quicker.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will use frozen bell peppers to make the stir-fry quicker.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want suggestions on how to organize my pantry and keep track of my grocery expenses.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to categorize and group similar items together in my pantry.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to keep track of my receipts to see where my money is going.",
+      "turn_index": 8
+    },
+    {
+      "text": "I picked up non-essential items last Saturday when I went grocery shopping.",
+      "turn_index": 8
+    },
+    {
+      "text": "I bought chocolate chip cookies last Saturday when I went grocery shopping.",
+      "turn_index": 8
+    },
+    {
+      "text": "I bought a bag of popcorn last Saturday when I went grocery shopping.",
+      "turn_index": 8
+    },
+    {
+      "text": "I devoured the chocolate chip cookies and popcorn while watching a movie that night.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "chicken stir-fry",
+    "soy sauce brand",
+    "Kikkoman soy sauce",
+    "pantry staples restock",
+    "grocery shopping March 11",
+    "$85 grocery checkout",
+    "almond milk",
+    "carrots",
+    "chicken and vegetable stir-fry",
+    "broccoli and bell peppers",
+    "frozen broccoli",
+    "frozen bell peppers",
+    "pantry organization",
+    "track grocery expenses",
+    "receipts",
+    "chocolate chip cookies",
+    "bag of popcorn",
+    "movie night snacks"
+  ],
+  "events": [
+    {
+      "text": "Grocery shopping trip on March 11",
+      "date_hint": "March 11",
+      "turn_index": 0
+    },
+    {
+      "text": "Spent around $85 at the checkout counter during grocery shopping on March 11",
+      "date_hint": "March 11",
+      "turn_index": 0
+    },
+    {
+      "text": "Bought almond milk and carrots during grocery shopping last Saturday (March 11)",
+      "date_hint": "last Saturday, March 11",
+      "turn_index": 2
+    },
+    {
+      "text": "Bought chicken breasts during grocery shopping last Saturday (March 11)",
+      "date_hint": "last Saturday, March 11",
+      "turn_index": 4
+    },
+    {
+      "text": "Picked up non-essential items (chocolate chip cookies and popcorn) during grocery shopping last Saturday (March 11)",
+      "date_hint": "last Saturday, March 11",
+      "turn_index": 8
+    },
+    {
+      "text": "Ate the cookies and popcorn while watching a movie that night",
+      "date_hint": "that night (after March 11 grocery shopping)",
+      "turn_index": 10
+    }
+  ]
+}

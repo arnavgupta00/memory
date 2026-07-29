@@ -1,0 +1,85 @@
+{
+  "session_id": "d9e023f2_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for recommendations on new magazines to subscribe to.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have recently started reading The New Yorker.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have recently started reading The Economist.",
+      "turn_index": 0
+    },
+    {
+      "text": "I enjoy reading The New Yorker and The Economist.",
+      "turn_index": 0
+    },
+    {
+      "text": "I set aside Sundays to catch up on my reading.",
+      "turn_index": 0
+    },
+    {
+      "text": "I use a cup of coffee during my Sunday reading ritual.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in learning more about The Atlantic.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in The Atlantic’s coverage of politics and policy.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am interested in learning more about The Atlantic’s special reports.",
+      "turn_index": 6
+    },
+    {
+      "text": "I prefer reading physical copies of magazines.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am interested in subscribing to The Atlantic.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am not sure about the frequency of The Atlantic issues.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "magazine subscription recommendations",
+    "The New Yorker",
+    "The Economist",
+    "Sunday reading ritual",
+    "cup of coffee",
+    "The Atlantic focus",
+    "politics and policy coverage",
+    "specific section or column",
+    "special reports",
+    "print edition",
+    "physical copies",
+    "subscription frequency"
+  ],
+  "events": [
+    {
+      "text": "Sets aside Sundays to catch up on reading with a cup of coffee",
+      "date_hint": "Sundays (recurring ritual)",
+      "turn_index": 0
+    },
+    {
+      "text": "Asks about whether The Atlantic has a print edition",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Asks how often The Atlantic sends a new issue",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "session_id": "32833e0b_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I need help managing my medications.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been taking blood thinners for a while.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to make sure I am taking my blood thinners correctly.",
+      "turn_index": 0
+    },
+    {
+      "text": "I was in the hospital for three days from March 18 to March 21 for anticoagulation therapy.",
+      "turn_index": 0
+    },
+    {
+      "text": "I was diagnosed with a small pulmonary embolism in March.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was advised to wear compression stockings to prevent further blood clots.",
+      "turn_index": 4
+    },
+    {
+      "text": "I had gallbladder surgery.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am still experiencing discomfort in my abdomen after my gallbladder surgery.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am still experiencing discomfort in my shoulder after my gallbladder surgery.",
+      "turn_index": 6
+    },
+    {
+      "text": "I was taking blood thinners after my pulmonary embolism.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to make sure I am taking my blood thinners correctly.",
+      "turn_index": 8
+    },
+    {
+      "text": "I should take my blood thinners exactly as prescribed.",
+      "turn_index": 10
+    },
+    {
+      "text": "I should monitor my INR levels regularly.",
+      "turn_index": 10
+    },
+    {
+      "text": "I should report any side effects or changes to my healthcare provider.",
+      "turn_index": 10
+    },
+    {
+      "text": "I should avoid activities that may increase the risk of bleeding.",
+      "turn_index": 10
+    },
+    {
+      "text": "I should seek urgent medical attention if I experience bleeding.",
+      "turn_index": 10
+    },
+    {
+      "text": "I should seek urgent medical attention if I experience difficulty breathing.",
+      "turn_index": 10
+    },
+    {
+      "text": "I should seek urgent medical attention if I experience severe headaches.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "managing medications",
+    "blood thinners dosage frequency",
+    "anticoagulation therapy hospital March 18-21",
+    "pulmonary embolism prevention",
+    "small pulmonary embolism diagnosis March",
+    "compression stockings for blood clots",
+    "how compression stockings work",
+    "choosing compression stockings",
+    "post-operative pain gallbladder surgery",
+    "abdominal discomfort after gallbladder surgery",
+    "shoulder discomfort after gallbladder surgery",
+    "INR monitoring",
+    "follow-up appointments for anticoagulation",
+    "bleeding risk with anticoagulants",
+    "urgent symptoms bleeding difficulty breathing severe headaches"
+  ],
+  "events": [
+    {
+      "text": "Hospital stay for anticoagulation therapy",
+      "date_hint": "March 18-21",
+      "turn_index": 0
+    },
+    {
+      "text": "Diagnosis of a small pulmonary embolism",
+      "date_hint": "March",
+      "turn_index": 2
+    },
+    {
+      "text": "Gallbladder surgery",
+      "date_hint": "",
+      "turn_index": 6
+    }
+  ]
+}

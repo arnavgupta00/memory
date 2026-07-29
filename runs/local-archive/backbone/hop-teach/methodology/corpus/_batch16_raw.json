@@ -1,0 +1,1158 @@
+{
+  "types": {
+    "multi-session": 10,
+    "temporal-reasoning": 9,
+    "knowledge-update": 6
+  },
+  "cov": {
+    "partial": 21,
+    "full": 4
+  },
+  "items": [
+    {
+      "qid": "a1cc6108",
+      "type": "multi-session",
+      "q": "How old was I when Alex was born?",
+      "qdate": "2023/05/30 (Tue) 20:23",
+      "abstention": false,
+      "notes_coverage": "partial",
+      "gold_ids": [
+        "answer_17dc2f5b_2",
+        "answer_17dc2f5b_1"
+      ],
+      "haystack": 43,
+      "annotated": 3,
+      "gold": [
+        {
+          "sid": "answer_17dc2f5b_2",
+          "date": "2023/05/21 (Sun) 18:48",
+          "has_notes": false,
+          "notes": "[session_id] answer_17dc2f5b_2\n[session_date] 2023/05/21 (Sun) 18:48\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1384
+        },
+        {
+          "sid": "answer_17dc2f5b_1",
+          "date": "2023/05/24 (Wed) 10:39",
+          "has_notes": false,
+          "notes": "[session_id] answer_17dc2f5b_1\n[session_date] 2023/05/24 (Wed) 10:39\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 2537
+        }
+      ],
+      "in_teach38": false
+    },
+    {
+      "qid": "gpt4_5438fa52",
+      "type": "temporal-reasoning",
+      "q": "Which event happened first, my attendance at a cultural festival or the start of my Spanish classes?",
+      "qdate": "2023/05/27 (Sat) 16:21",
+      "abstention": false,
+      "notes_coverage": "partial",
+      "gold_ids": [
+        "answer_b10f3828_2",
+        "answer_b10f3828_1"
+      ],
+      "haystack": 50,
+      "annotated": 9,
+      "gold": [
+        {
+          "sid": "answer_b10f3828_2",
+          "date": "2023/05/27 (Sat) 14:08",
+          "has_notes": false,
+          "notes": "[session_id] answer_b10f3828_2\n[session_date] 2023/05/27 (Sat) 14:08\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1658
+        },
+        {
+          "sid": "answer_b10f3828_1",
+          "date": "2023/05/27 (Sat) 21:39",
+          "has_notes": false,
+          "notes": "[session_id] answer_b10f3828_1\n[session_date] 2023/05/27 (Sat) 21:39\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1570
+        }
+      ],
+      "in_teach38": false
+    },
+    {
+      "qid": "e66b632c",
+      "type": "knowledge-update",
+      "q": "What was my previous personal best time for the charity 5K run?",
+      "qdate": "2023/08/25 (Fri) 05:19",
+      "abstention": false,
+      "notes_coverage": "partial",
+      "gold_ids": [
+        "answer_ac0140ce_1",
+        "answer_ac0140ce_2"
+      ],
+      "haystack": 47,
+      "annotated": 8,
+      "gold": [
+        {
+          "sid": "answer_ac0140ce_1",
+          "date": "2023/04/11 (Tue) 13:31",
+          "has_notes": false,
+          "notes": "[session_id] answer_ac0140ce_1\n[session_date] 2023/04/11 (Tue) 13:31\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1862
+        },
+        {
+          "sid": "answer_ac0140ce_2",
+          "date": "2023/07/30 (Sun) 18:30",
+          "has_notes": false,
+          "notes": "[session_id] answer_ac0140ce_2\n[session_date] 2023/07/30 (Sun) 18:30\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1934
+        }
+      ],
+      "in_teach38": false
+    },
+    {
+      "qid": "a3332713",
+      "type": "multi-session",
+      "q": "What is the total amount I spent on gifts for my coworker and brother?",
+      "qdate": "2023/05/30 (Tue) 21:10",
+      "abstention": false,
+      "notes_coverage": "partial",
+      "gold_ids": [
+        "answer_16ece55f_1",
+        "answer_16ece55f_2"
+      ],
+      "haystack": 42,
+      "annotated": 2,
+      "gold": [
+        {
+          "sid": "answer_16ece55f_1",
+          "date": "2023/05/29 (Mon) 11:32",
+          "has_notes": false,
+          "notes": "[session_id] answer_16ece55f_1\n[session_date] 2023/05/29 (Mon) 11:32\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1944
+        },
+        {
+          "sid": "answer_16ece55f_2",
+          "date": "2023/05/28 (Sun) 08:47",
+          "has_notes": false,
+          "notes": "[session_id] answer_16ece55f_2\n[session_date] 2023/05/28 (Sun) 08:47\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 895
+        }
+      ],
+      "in_teach38": false
+    },
+    {
+      "qid": "gpt4_59149c77",
+      "type": "temporal-reasoning",
+      "q": "How many days passed between my visit to the Museum of Modern Art (MoMA) and the 'Ancient Civilizations' exhibit at the Metropolitan Museum of Art?",
+      "qdate": "2023/02/01 (Wed) 10:20",
+      "abstention": false,
+      "notes_coverage": "partial",
+      "gold_ids": [
+        "answer_d00ba6d0_1",
+        "answer_d00ba6d0_2"
+      ],
+      "haystack": 48,
+      "annotated": 8,
+      "gold": [
+        {
+          "sid": "answer_d00ba6d0_1",
+          "date": "2023/01/08 (Sun) 12:49",
+          "has_notes": false,
+          "notes": "[session_id] answer_d00ba6d0_1\n[session_date] 2023/01/08 (Sun) 12:49\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1095
+        },
+        {
+          "sid": "answer_d00ba6d0_2",
+          "date": "2023/01/15 (Sun) 00:27",
+          "has_notes": false,
+          "notes": "[session_id] answer_d00ba6d0_2\n[session_date] 2023/01/15 (Sun) 00:27\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1556
+        }
+      ],
+      "in_teach38": false
+    },
+    {
+      "qid": "eace081b",
+      "type": "knowledge-update",
+      "q": "Where am I planning to stay for my birthday trip to Hawaii?",
+      "qdate": "2023/06/06 (Tue) 04:18",
+      "abstention": false,
+      "notes_coverage": "partial",
+      "gold_ids": [
+        "answer_8a791264_1",
+        "answer_8a791264_2"
+      ],
+      "haystack": 47,
+      "annotated": 5,
+      "gold": [
+        {
+          "sid": "answer_8a791264_1",
+          "date": "2023/05/22 (Mon) 11:21",
+          "has_notes": false,
+          "notes": "[session_id] answer_8a791264_1\n[session_date] 2023/05/22 (Mon) 11:21\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 992
+        },
+        {
+          "sid": "answer_8a791264_2",
+          "date": "2023/05/25 (Thu) 18:17",
+          "has_notes": false,
+          "notes": "[session_id] answer_8a791264_2\n[session_date] 2023/05/25 (Thu) 18:17\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 883
+        }
+      ],
+      "in_teach38": false
+    },
+    {
+      "qid": "a346bb18",
+      "type": "multi-session",
+      "q": "How many minutes did I exceed my target time by in the marathon?",
+      "qdate": "2023/05/30 (Tue) 22:30",
+      "abstention": false,
+      "notes_coverage": "partial",
+      "gold_ids": [
+        "answer_4934b2d7_1",
+        "answer_4934b2d7_2"
+      ],
+      "haystack": 49,
+      "annotated": 3,
+      "gold": [
+        {
+          "sid": "answer_4934b2d7_1",
+          "date": "2023/05/25 (Thu) 13:48",
+          "has_notes": false,
+          "notes": "[session_id] answer_4934b2d7_1\n[session_date] 2023/05/25 (Thu) 13:48\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1476
+        },
+        {
+          "sid": "answer_4934b2d7_2",
+          "date": "2023/05/20 (Sat) 14:05",
+          "has_notes": false,
+          "notes": "[session_id] answer_4934b2d7_2\n[session_date] 2023/05/20 (Sat) 14:05\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 2415
+        }
+      ],
+      "in_teach38": false
+    },
+    {
+      "qid": "gpt4_59149c78",
+      "type": "temporal-reasoning",
+      "q": "I mentioned that I participated in an art-related event two weeks ago. Where was that event held at?",
+      "qdate": "2023/02/01 (Wed) 08:41",
+      "abstention": false,
+      "notes_coverage": "partial",
+      "gold_ids": [
+        "answer_d00ba6d1_1",
+        "answer_d00ba6d1_2"
+      ],
+      "haystack": 51,
+      "annotated": 4,
+      "gold": [
+        {
+          "sid": "answer_d00ba6d1_1",
+          "date": "2023/01/08 (Sun) 17:59",
+          "has_notes": false,
+          "notes": "[session_id] answer_d00ba6d1_1\n[session_date] 2023/01/08 (Sun) 17:59\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1095
+        },
+        {
+          "sid": "answer_d00ba6d1_2",
+          "date": "2023/01/15 (Sun) 13:43",
+          "has_notes": false,
+          "notes": "[session_id] answer_d00ba6d1_2\n[session_date] 2023/01/15 (Sun) 13:43\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1556
+        }
+      ],
+      "in_teach38": false
+    },
+    {
+      "qid": "ed4ddc30",
+      "type": "knowledge-update",
+      "q": "How many dozen eggs do we currently have stocked up in our refrigerator?",
+      "qdate": "2023/03/16 (Thu) 14:24",
+      "abstention": false,
+      "notes_coverage": "full",
+      "gold_ids": [
+        "answer_babbaccb_1",
+        "answer_babbaccb_2"
+      ],
+      "haystack": 46,
+      "annotated": 46,
+      "gold": [
+        {
+          "sid": "answer_babbaccb_1",
+          "date": "2023/01/11 (Wed) 23:15",
+          "has_notes": true,
+          "notes": "[session_id] answer_babbaccb_1\n[session_date] 2023/01/11 (Wed) 23:15\n[facts]\n- I want to try new recipes using fresh eggs and goat milk.\n- I want breakfast dish ideas that incorporate both fresh eggs and goat milk.\n- I want to make egg salad for a quick lunch.\n- I need to start using up eggs that are stocked in the fridge.\n- I have 30 dozen eggs stocked up in the fridge.\n- I want to make cheese with goat milk.\n- I want simple beginner cheese recipes using goat milk.\n- I plan to start with a fresh chevre recipe.\n- I want tips on how to store the cheese after making it.\n- I want to know how long the cheese will keep.\n- I want to make cheese with goat milk.\n- I want simple beginner cheese recipes using goat milk.\n- I need to start using up goat milk that is stocked in the fridge.\n- I plan to ",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1183
+        },
+        {
+          "sid": "answer_babbaccb_2",
+          "date": "2023/03/15 (Wed) 08:18",
+          "has_notes": true,
+          "notes": "[session_id] answer_babbaccb_2\n[session_date] 2023/03/15 (Wed) 08:18\n[facts]\n- I want to make quiche for dinner.\n- I plan to use fresh eggs from my coop.\n- I have 20 dozen fresh eggs stocked up in the fridge right now.\n- I plan to try a spinach and feta quiche variation.\n- I want to make cheese using the milk from my goats named Billy and Nibbles.\n- I have goats named Billy and Nibbles.\n- I want advice on dealing with pests like mites and flies in my chicken coop.\n- I have had issues with mites and flies in my chicken coop lately.\n- I want to build a fence around my chicken coop.\n- I want to protect my chicken coop from predators like raccoons and foxes.\n- I plan to get started on building the fence this weekend.\n- I want to get bees to help with pollination on my farm.\n[keyphrases] simple",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1246
+        }
+      ],
+      "in_teach38": false
+    },
+    {
+      "qid": "a4996e51",
+      "type": "multi-session",
+      "q": "How many hours do I work in a typical week during peak campaign seasons?",
+      "qdate": "2023/05/30 (Tue) 15:17",
+      "abstention": false,
+      "notes_coverage": "partial",
+      "gold_ids": [
+        "answer_feb5f98a_2",
+        "answer_feb5f98a_1"
+      ],
+      "haystack": 48,
+      "annotated": 5,
+      "gold": [
+        {
+          "sid": "answer_feb5f98a_2",
+          "date": "2023/05/29 (Mon) 02:54",
+          "has_notes": false,
+          "notes": "[session_id] answer_feb5f98a_2\n[session_date] 2023/05/29 (Mon) 02:54\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 2374
+        },
+        {
+          "sid": "answer_feb5f98a_1",
+          "date": "2023/05/24 (Wed) 07:36",
+          "has_notes": false,
+          "notes": "[session_id] answer_feb5f98a_1\n[session_date] 2023/05/24 (Wed) 07:36\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 2400
+        }
+      ],
+      "in_teach38": false
+    },
+    {
+      "qid": "gpt4_5dcc0aab",
+      "type": "temporal-reasoning",
+      "q": "Which pair of shoes did I clean last month?",
+      "qdate": "2023/05/24 (Wed) 09:14",
+      "abstention": false,
+      "notes_coverage": "full",
+      "gold_ids": [
+        "answer_099c1b6c_3",
+        "answer_099c1b6c_1",
+        "answer_099c1b6c_2",
+        "answer_099c1b6c_4",
+        "answer_099c1b6c_5"
+      ],
+      "haystack": 50,
+      "annotated": 50,
+      "gold": [
+        {
+          "sid": "answer_099c1b6c_3",
+          "date": "2023/05/24 (Wed) 20:15",
+          "has_notes": true,
+          "notes": "[session_id] answer_099c1b6c_3\n[session_date] 2023/05/24 (Wed) 20:15\n[facts]\n- I am trying to decide between the Merrell Moab 2 Mid Waterproof and the Keen Targhee II Mid WP hiking boots for an upcoming trip to the mountains.\n- I bought a new pair of black and white Vans Old Skool sneakers last weekend.\n- My black and white Vans Old Skool sneakers are really comfortable.\n- I wore my Converse Chuck Taylor All Star sneakers to an outdoor music festival last month.\n- My Converse Chuck Taylor All Star sneakers were super comfortable at the outdoor music festival last month.\n- I noticed the soles of my Converse Chuck Taylor All Star sneakers are starting to wear down, especially on the heels.\n- I cleaned my white Adidas sneakers last month.\n- My white Adidas sneakers were getting pretty dirty a",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 2050
+        },
+        {
+          "sid": "answer_099c1b6c_1",
+          "date": "2023/05/24 (Wed) 19:37",
+          "has_notes": true,
+          "notes": "[session_id] answer_099c1b6c_1\n[session_date] 2023/05/24 (Wed) 19:37\n[facts]\n- I am planning a hiking trip next month.\n- I am trying to decide between the Merrell Moab 2 Mid Waterproof and the Keen Targhee II Mid WP hiking boots.\n- I think ankle support is important to me for hiking.\n- I have heard the trails can be pretty rough in the mountains.\n- I am interested in the Keen.Dry membrane in the Keen Targhee II Mid WP.\n- I want to compare the Keen.Dry membrane to the Gore-Tex membrane in the Merrell Moab 2 Mid Waterproof.\n- I think I will go with the Keen Targhee II Mid WP.\n- I think ankle support is important to me.\n- I think breathability is important to me.\n- I cleaned my white Adidas sneakers last month.\n- I had been meaning to clean my white Adidas sneakers for weeks.\n- My white Adida",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1341
+        },
+        {
+          "sid": "answer_099c1b6c_2",
+          "date": "2023/05/24 (Wed) 10:58",
+          "has_notes": true,
+          "notes": "[session_id] answer_099c1b6c_2\n[session_date] 2023/05/24 (Wed) 10:58\n[facts]\n- I am planning a trip to the mountains next month.\n- I am deciding between the Merrell Moab 2 Mid Waterproof hiking boots and the Keen Targhee II Mid WP hiking boots.\n- I attended a music festival last month.\n- I have Converse Chuck Taylor All Star sneakers that I have had for years.\n- My Converse Chuck Taylor All Star sneakers were perfect for the music festival.\n- I have had issues with water seeping into my Converse Chuck Taylor All Star sneakers at the music festival.\n- The water seeping into my Converse Chuck Taylor All Star sneakers was especially on the heels.\n- The soles of my Converse Chuck Taylor All Star sneakers are starting to wear down on the heels.\n- I want insulation and warmth from my hiking boot",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1604
+        },
+        {
+          "sid": "answer_099c1b6c_4",
+          "date": "2023/05/24 (Wed) 14:49",
+          "has_notes": true,
+          "notes": "[session_id] answer_099c1b6c_4\n[session_date] 2023/05/24 (Wed) 14:49\n[facts]\n- I am looking for advice on choosing a new pair of hiking boots.\n- I am planning a trip to the mountains next month.\n- I narrowed my hiking boot options to the Merrell Moab 2 Mid Waterproof.\n- I narrowed my hiking boot options to the Keen Targhee II Mid WP.\n- I want information comparing the Merrell Moab 2 Mid Waterproof and the Keen Targhee II Mid WP in terms of waterproofing.\n- I want information comparing the Merrell Moab 2 Mid Waterproof and the Keen Targhee II Mid WP in terms of ankle support.\n- I need to remember to take my brown leather dress shoes to the cobbler to get them polished and conditioned.\n- I am leaning toward the Merrell Moab 2 Mid Waterproof.\n- I want to know more about the weight differences",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1582
+        },
+        {
+          "sid": "answer_099c1b6c_5",
+          "date": "2023/05/24 (Wed) 18:32",
+          "has_notes": true,
+          "notes": "[session_id] answer_099c1b6c_5\n[session_date] 2023/05/24 (Wed) 18:32\n[facts]\n- I am looking for advice on choosing a new pair of hiking boots.\n- I am considering the Merrell Moab 2 Mid Waterproof hiking boots.\n- I am considering the Keen Targhee II Mid WP hiking boots.\n- I need to remind my sister to return my spare running shoes that I lent to her a few weeks ago.\n- I think I will need to try both pairs of hiking boots on to see which one feels more comfortable for me.\n- I need to find outdoor gear stores near me that carry both the Merrell Moab 2 Mid Waterproof and the Keen Targhee II Mid WP.\n- I need to get my brown leather dress shoes polished and conditioned.\n- I need recommendations for cobblers in my area.\n- I need to remind my sister to return my spare pair of running shoes that I ",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1290
+        }
+      ],
+      "in_teach38": true
+    },
+    {
+      "qid": "f685340e",
+      "type": "knowledge-update",
+      "q": "How often do I play tennis with my friends at the local park previously? How often do I play now?",
+      "qdate": "2023/07/31 (Mon) 11:43",
+      "abstention": false,
+      "notes_coverage": "full",
+      "gold_ids": [
+        "answer_25df025b_1",
+        "answer_25df025b_2"
+      ],
+      "haystack": 41,
+      "annotated": 41,
+      "gold": [
+        {
+          "sid": "answer_25df025b_1",
+          "date": "2023/03/11 (Sat) 18:01",
+          "has_notes": true,
+          "notes": "[session_id] answer_25df025b_1\n[session_date] 2023/03/11 (Sat) 18:01\n[facts]\n- I am thinking of ordering new athletic socks online.\n- I am not sure which brand of athletic socks to go with.\n- I was at the local park last Sunday.\n- I saw people playing tennis at the local park last Sunday.\n- I have weekly tennis sessions with friends.\n- I have Nike Air Zoom tennis shoes.\n- I already have Nike Air Zoom tennis shoes.\n- I heard good things about Nike athletic socks.\n- I want to know whether Nike has socks designed for tennis.\n- I think I will go with the Nike Court Flex Tennis Socks.\n- I want to know whether the Nike Court Flex Tennis Socks come in different colors.\n- I am planning to play tennis with my friends this Sunday at the local park.\n- I am a big fan of Roger Federer.\n- I play tennis ",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1208
+        },
+        {
+          "sid": "answer_25df025b_2",
+          "date": "2023/07/30 (Sun) 04:03",
+          "has_notes": true,
+          "notes": "[session_id] answer_25df025b_2\n[session_date] 2023/07/30 (Sun) 04:03\n[facts]\n- I am planning to play tennis with my friends at the local park this Sunday.\n- I play tennis with my friends at the local park every other week.\n- I am in ZIP code 95123.\n- I would like a 5-mile jogging route.\n- I prefer jogging routes with minimal traffic and nice scenery.\n- I think I will try the Almaden Lake Park Loop.\n- I want to find yoga studios near Almaden Lake Park.\n- I might stop by a yoga studio after my jog.\n- I think I will try the CorePower Yoga Almaden.\n- I have heard good things about CorePower Yoga Almaden.\n- I want tips on how to stay motivated to exercise regularly.\n- I want to incorporate more swimming into my schedule.\n- I recently signed up for swim lessons at the local pool.\n- I am enjoying",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1116
+        }
+      ],
+      "in_teach38": false
+    },
+    {
+      "qid": "a96c20ee",
+      "type": "multi-session",
+      "q": "At which university did I present a poster on my thesis research?",
+      "qdate": "2023/05/30 (Tue) 21:47",
+      "abstention": false,
+      "notes_coverage": "partial",
+      "gold_ids": [
+        "answer_ef84b994_1",
+        "answer_ef84b994_2"
+      ],
+      "haystack": 51,
+      "annotated": 6,
+      "gold": [
+        {
+          "sid": "answer_ef84b994_1",
+          "date": "2023/05/21 (Sun) 10:23",
+          "has_notes": false,
+          "notes": "[session_id] answer_ef84b994_1\n[session_date] 2023/05/21 (Sun) 10:23\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 3388
+        },
+        {
+          "sid": "answer_ef84b994_2",
+          "date": "2023/05/21 (Sun) 17:29",
+          "has_notes": false,
+          "notes": "[session_id] answer_ef84b994_2\n[session_date] 2023/05/21 (Sun) 17:29\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1342
+        }
+      ],
+      "in_teach38": false
+    },
+    {
+      "qid": "gpt4_61e13b3c",
+      "type": "temporal-reasoning",
+      "q": "How many weeks passed between the time I sold homemade baked goods at the Farmers' Market for the last time and the time I participated in the Spring Fling Market?",
+      "qdate": "2023/04/01 (Sat) 00:57",
+      "abstention": false,
+      "notes_coverage": "partial",
+      "gold_ids": [
+        "answer_e831a29f_1",
+        "answer_e831a29f_2"
+      ],
+      "haystack": 48,
+      "annotated": 3,
+      "gold": [
+        {
+          "sid": "answer_e831a29f_1",
+          "date": "2023/02/26 (Sun) 04:36",
+          "has_notes": false,
+          "notes": "[session_id] answer_e831a29f_1\n[session_date] 2023/02/26 (Sun) 04:36\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1706
+        },
+        {
+          "sid": "answer_e831a29f_2",
+          "date": "2023/03/21 (Tue) 05:16",
+          "has_notes": false,
+          "notes": "[session_id] answer_e831a29f_2\n[session_date] 2023/03/21 (Tue) 05:16\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 2048
+        }
+      ],
+      "in_teach38": false
+    },
+    {
+      "qid": "f685340e_abs",
+      "type": "knowledge-update",
+      "q": "How often do I play table tennis with my friends at the local park?",
+      "qdate": "2023/06/19 (Mon) 04:29",
+      "abstention": true,
+      "notes_coverage": "partial",
+      "gold_ids": [
+        "answer_25df025b_abs_1",
+        "answer_25df025b_abs_2"
+      ],
+      "haystack": 43,
+      "annotated": 2,
+      "gold": [
+        {
+          "sid": "answer_25df025b_abs_1",
+          "date": "2023/05/22 (Mon) 05:28",
+          "has_notes": false,
+          "notes": "[session_id] answer_25df025b_abs_1\n[session_date] 2023/05/22 (Mon) 05:28\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1208
+        },
+        {
+          "sid": "answer_25df025b_abs_2",
+          "date": "2023/05/23 (Tue) 11:17",
+          "has_notes": false,
+          "notes": "[session_id] answer_25df025b_abs_2\n[session_date] 2023/05/23 (Tue) 11:17\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1116
+        }
+      ],
+      "in_teach38": false
+    },
+    {
+      "qid": "a96c20ee_abs",
+      "type": "multi-session",
+      "q": "At which university did I present a poster for my undergrad course research project?",
+      "qdate": "2023/05/30 (Tue) 12:03",
+      "abstention": true,
+      "notes_coverage": "partial",
+      "gold_ids": [
+        "answer_ef84b994_abs_1",
+        "answer_ef84b994_abs_2"
+      ],
+      "haystack": 53,
+      "annotated": 7,
+      "gold": [
+        {
+          "sid": "answer_ef84b994_abs_1",
+          "date": "2023/05/23 (Tue) 16:11",
+          "has_notes": false,
+          "notes": "[session_id] answer_ef84b994_abs_1\n[session_date] 2023/05/23 (Tue) 16:11\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 3388
+        },
+        {
+          "sid": "answer_ef84b994_abs_2",
+          "date": "2023/05/30 (Tue) 02:26",
+          "has_notes": false,
+          "notes": "[session_id] answer_ef84b994_abs_2\n[session_date] 2023/05/30 (Tue) 02:26\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1342
+        }
+      ],
+      "in_teach38": false
+    },
+    {
+      "qid": "gpt4_65aabe59",
+      "type": "temporal-reasoning",
+      "q": "Which device did I set up first, the smart thermostat or the mesh network system?",
+      "qdate": "2023/05/25 (Thu) 11:29",
+      "abstention": false,
+      "notes_coverage": "partial",
+      "gold_ids": [
+        "answer_30dfe889_2",
+        "answer_30dfe889_1"
+      ],
+      "haystack": 42,
+      "annotated": 6,
+      "gold": [
+        {
+          "sid": "answer_30dfe889_2",
+          "date": "2023/05/25 (Thu) 19:02",
+          "has_notes": false,
+          "notes": "[session_id] answer_30dfe889_2\n[session_date] 2023/05/25 (Thu) 19:02\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 2005
+        },
+        {
+          "sid": "answer_30dfe889_1",
+          "date": "2023/05/25 (Thu) 01:12",
+          "has_notes": false,
+          "notes": "[session_id] answer_30dfe889_1\n[session_date] 2023/05/25 (Thu) 01:12\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1825
+        }
+      ],
+      "in_teach38": false
+    },
+    {
+      "qid": "f9e8c073",
+      "type": "knowledge-update",
+      "q": "How many sessions of the bereavement support group did I attend?",
+      "qdate": "2023/11/07 (Tue) 04:54",
+      "abstention": false,
+      "notes_coverage": "partial",
+      "gold_ids": [
+        "answer_b191df5b_1",
+        "answer_b191df5b_2"
+      ],
+      "haystack": 53,
+      "annotated": 14,
+      "gold": [
+        {
+          "sid": "answer_b191df5b_1",
+          "date": "2023/05/11 (Thu) 02:24",
+          "has_notes": false,
+          "notes": "[session_id] answer_b191df5b_1\n[session_date] 2023/05/11 (Thu) 02:24\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1709
+        },
+        {
+          "sid": "answer_b191df5b_2",
+          "date": "2023/10/30 (Mon) 07:19",
+          "has_notes": false,
+          "notes": "[session_id] answer_b191df5b_2\n[session_date] 2023/10/30 (Mon) 07:19\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 2685
+        }
+      ],
+      "in_teach38": false
+    },
+    {
+      "qid": "a9f6b44c",
+      "type": "multi-session",
+      "q": "How many bikes did I service or plan to service in March?",
+      "qdate": "2023/03/20 (Mon) 23:57",
+      "abstention": false,
+      "notes_coverage": "partial",
+      "gold_ids": [
+        "answer_cc021f81_3",
+        "answer_cc021f81_2",
+        "answer_cc021f81_1"
+      ],
+      "haystack": 45,
+      "annotated": 4,
+      "gold": [
+        {
+          "sid": "answer_cc021f81_3",
+          "date": "2023/03/20 (Mon) 10:35",
+          "has_notes": false,
+          "notes": "[session_id] answer_cc021f81_3\n[session_date] 2023/03/20 (Mon) 10:35\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1411
+        },
+        {
+          "sid": "answer_cc021f81_2",
+          "date": "2023/03/20 (Mon) 07:32",
+          "has_notes": false,
+          "notes": "[session_id] answer_cc021f81_2\n[session_date] 2023/03/20 (Mon) 07:32\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1312
+        },
+        {
+          "sid": "answer_cc021f81_1",
+          "date": "2023/03/20 (Mon) 18:33",
+          "has_notes": false,
+          "notes": "[session_id] answer_cc021f81_1\n[session_date] 2023/03/20 (Mon) 18:33\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1741
+        }
+      ],
+      "in_teach38": false
+    },
+    {
+      "qid": "gpt4_68e94287",
+      "type": "temporal-reasoning",
+      "q": "Which event happened first, my participation in the #PlankChallenge or my post about vegan chili recipe?",
+      "qdate": "2023/04/12 (Wed) 12:00",
+      "abstention": false,
+      "notes_coverage": "partial",
+      "gold_ids": [
+        "answer_9793daa3_2",
+        "answer_9793daa3_1"
+      ],
+      "haystack": 50,
+      "annotated": 6,
+      "gold": [
+        {
+          "sid": "answer_9793daa3_2",
+          "date": "2023/03/10 (Fri) 11:15",
+          "has_notes": false,
+          "notes": "[session_id] answer_9793daa3_2\n[session_date] 2023/03/10 (Fri) 11:15\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1173
+        },
+        {
+          "sid": "answer_9793daa3_1",
+          "date": "2023/03/15 (Wed) 14:28",
+          "has_notes": false,
+          "notes": "[session_id] answer_9793daa3_1\n[session_date] 2023/03/15 (Wed) 14:28\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1157
+        }
+      ],
+      "in_teach38": false
+    },
+    {
+      "qid": "aae3761f",
+      "type": "multi-session",
+      "q": "How many hours in total did I spend driving to my three road trip destinations combined?",
+      "qdate": "2023/05/30 (Tue) 19:37",
+      "abstention": false,
+      "notes_coverage": "partial",
+      "gold_ids": [
+        "answer_526354c8_1",
+        "answer_526354c8_2",
+        "answer_526354c8_3"
+      ],
+      "haystack": 47,
+      "annotated": 6,
+      "gold": [
+        {
+          "sid": "answer_526354c8_1",
+          "date": "2023/05/21 (Sun) 16:32",
+          "has_notes": false,
+          "notes": "[session_id] answer_526354c8_1\n[session_date] 2023/05/21 (Sun) 16:32\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1535
+        },
+        {
+          "sid": "answer_526354c8_2",
+          "date": "2023/05/26 (Fri) 16:58",
+          "has_notes": false,
+          "notes": "[session_id] answer_526354c8_2\n[session_date] 2023/05/26 (Fri) 16:58\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1818
+        },
+        {
+          "sid": "answer_526354c8_3",
+          "date": "2023/05/21 (Sun) 18:02",
+          "has_notes": false,
+          "notes": "[session_id] answer_526354c8_3\n[session_date] 2023/05/21 (Sun) 18:02\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1434
+        }
+      ],
+      "in_teach38": false
+    },
+    {
+      "qid": "gpt4_68e94288",
+      "type": "temporal-reasoning",
+      "q": "What was the social media activity I participated 5 days ago?",
+      "qdate": "2023/03/20 (Mon) 11:50",
+      "abstention": false,
+      "notes_coverage": "partial",
+      "gold_ids": [
+        "answer_9793daa4_2",
+        "answer_9793daa4_1"
+      ],
+      "haystack": 44,
+      "annotated": 4,
+      "gold": [
+        {
+          "sid": "answer_9793daa4_2",
+          "date": "2023/03/10 (Fri) 01:55",
+          "has_notes": false,
+          "notes": "[session_id] answer_9793daa4_2\n[session_date] 2023/03/10 (Fri) 01:55\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1426
+        },
+        {
+          "sid": "answer_9793daa4_1",
+          "date": "2023/03/15 (Wed) 09:07",
+          "has_notes": false,
+          "notes": "[session_id] answer_9793daa4_1\n[session_date] 2023/03/15 (Wed) 09:07\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1157
+        }
+      ],
+      "in_teach38": false
+    },
+    {
+      "qid": "b3c15d39",
+      "type": "multi-session",
+      "q": "How many days did it take for me to receive the new remote shutter release after I ordered it?",
+      "qdate": "2023/03/01 (Wed) 23:48",
+      "abstention": false,
+      "notes_coverage": "full",
+      "gold_ids": [
+        "answer_05d808e6_2",
+        "answer_05d808e6_1"
+      ],
+      "haystack": 51,
+      "annotated": 51,
+      "gold": [
+        {
+          "sid": "answer_05d808e6_2",
+          "date": "2023/03/01 (Wed) 13:48",
+          "has_notes": true,
+          "notes": "[session_id] answer_05d808e6_2\n[session_date] 2023/03/01 (Wed) 13:48\n[facts]\n- I am looking for recommendations on external hard drives to back up my photos.\n- I have been considering Western Digital external hard drives.\n- I have been considering LaCie external hard drives.\n- I got a new remote shutter release that arrived on February 10th.\n- I use Adobe Lightroom to organize and edit my photos.\n- I have been happy with Adobe Lightroom.\n- I have been experimenting with different camera bags and backpacks.\n- I use a new camera bag or backpack from Peak Design to carry my gear on hikes and trips.\n- I still need to get used to the new layout and compartments of my Peak Design bag or backpack.\n- I bought my tripod in 2018.\n- I am thinking about upgrading my tripod to a lightweight and portabl",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1453
+        },
+        {
+          "sid": "answer_05d808e6_1",
+          "date": "2023/03/01 (Wed) 00:00",
+          "has_notes": true,
+          "notes": "[session_id] answer_05d808e6_1\n[session_date] 2023/03/01 (Wed) 00:00\n[facts]\n- I am thinking of taking my camera gear on a hike this weekend.\n- I recently got a new camera bag from Peak Design.\n- I love my Peak Design bag.\n- I have been having a challenge finding items quickly in my Peak Design bag layout.\n- I was looking for my tripod during a photo walk on February 5th.\n- I realized I lost my remote shutter release during a photo walk on February 5th.\n- I ordered a new remote shutter release online on February 5th.\n- I am thinking of taking my 50mm prime lens on the hike.\n- I have been really enjoying using my 50mm prime lens lately.\n- I decided to bring the 50mm prime lens on the hike.\n- I have been experimenting with different camera settings and techniques.\n- I have been using a fixed",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 2091
+        }
+      ],
+      "in_teach38": false
+    },
+    {
+      "qid": "gpt4_6dc9b45b",
+      "type": "temporal-reasoning",
+      "q": "How many months ago did I attend the Seattle International Film Festival?",
+      "qdate": "2021/10/02 (Sat) 03:56",
+      "abstention": false,
+      "notes_coverage": "partial",
+      "gold_ids": [
+        "answer_c4df007f_1"
+      ],
+      "haystack": 48,
+      "annotated": 3,
+      "gold": [
+        {
+          "sid": "answer_c4df007f_1",
+          "date": "2021/06/01 (Tue) 01:58",
+          "has_notes": false,
+          "notes": "[session_id] answer_c4df007f_1\n[session_date] 2021/06/01 (Tue) 01:58\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 2040
+        }
+      ],
+      "in_teach38": false
+    },
+    {
+      "qid": "b5ef892d",
+      "type": "multi-session",
+      "q": "How many days did I spend on camping trips in the United States this year?",
+      "qdate": "2023/04/29 (Sat) 23:45",
+      "abstention": false,
+      "notes_coverage": "partial",
+      "gold_ids": [
+        "answer_a8b4290f_2",
+        "answer_a8b4290f_3",
+        "answer_a8b4290f_1"
+      ],
+      "haystack": 52,
+      "annotated": 4,
+      "gold": [
+        {
+          "sid": "answer_a8b4290f_2",
+          "date": "2023/04/29 (Sat) 20:02",
+          "has_notes": false,
+          "notes": "[session_id] answer_a8b4290f_2\n[session_date] 2023/04/29 (Sat) 20:02\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1391
+        },
+        {
+          "sid": "answer_a8b4290f_3",
+          "date": "2023/04/29 (Sat) 10:31",
+          "has_notes": false,
+          "notes": "[session_id] answer_a8b4290f_3\n[session_date] 2023/04/29 (Sat) 10:31\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1206
+        },
+        {
+          "sid": "answer_a8b4290f_1",
+          "date": "2023/04/29 (Sat) 15:49",
+          "has_notes": false,
+          "notes": "[session_id] answer_a8b4290f_1\n[session_date] 2023/04/29 (Sat) 15:49\n[notes] (empty)",
+          "user_turns": [
+            "[",
+            "t",
+            "u",
+            "r"
+          ],
+          "n_user_turns": 1646
+        }
+      ],
+      "in_teach38": false
+    }
+  ]
+}

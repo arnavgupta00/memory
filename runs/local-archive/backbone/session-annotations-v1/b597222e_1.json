@@ -1,0 +1,128 @@
+{
+  "session_id": "b597222e_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to plan my fitness routine for the next month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been doing a lot of charity events lately.",
+      "turn_index": 0
+    },
+    {
+      "text": "I biked for 45 minutes straight in a spin class at the local gym.",
+      "turn_index": 0
+    },
+    {
+      "text": "I just completed the \"Run for Hunger\" 5K charity event.",
+      "turn_index": 0
+    },
+    {
+      "text": "I ran for 32 minutes in the \"Run for Hunger\" 5K charity event.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in tracking my progress.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want fitness apps to monitor my runs and bike rides.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want fitness apps that can provide training plans.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of doing more charity events in the future.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have already participated in a few charity events.",
+      "turn_index": 6
+    },
+    {
+      "text": "I ran for 32 minutes in the \"Run for Hunger\" 5K charity event.",
+      "turn_index": 6
+    },
+    {
+      "text": "I biked for 45 minutes straight in a charity spin class at the local gym.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am looking for more opportunities to get involved and make a difference.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am particularly interested in animal welfare organizations.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to learn more about the Best Friends Animal Society and their charity events.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to learn more about the \"Strut Your Mutt\" charity event.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know how I can get involved with the \"Strut Your Mutt\" charity event.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "fitness routine next month",
+    "workout playlists",
+    "charity events",
+    "spin class local gym",
+    "biked 45 minutes",
+    "Run for Hunger 5K",
+    "ran 32 minutes",
+    "fitness apps tracking runs",
+    "fitness apps tracking bike rides",
+    "training plans",
+    "charity events animal welfare",
+    "environmental conservation",
+    "Best Friends Animal Society",
+    "Strut Your Mutt charity event",
+    "get involved charity event"
+  ],
+  "events": [
+    {
+      "text": "Completed the \"Run for Hunger\" 5K charity event",
+      "date_hint": "just completed (relative to session)",
+      "turn_index": 0
+    },
+    {
+      "text": "Ran for 32 minutes in the \"Run for Hunger\" 5K charity event",
+      "date_hint": "just completed (relative to session)",
+      "turn_index": 0
+    },
+    {
+      "text": "Biked for 45 minutes straight in a charity spin class at the local gym",
+      "date_hint": "lately (relative to session)",
+      "turn_index": 0
+    },
+    {
+      "text": "Participated in the \"Run for Hunger\" 5K charity event",
+      "date_hint": "already participated (relative to session)",
+      "turn_index": 6
+    },
+    {
+      "text": "Participated in a charity spin class at the local gym",
+      "date_hint": "already participated (relative to session)",
+      "turn_index": 6
+    },
+    {
+      "text": "Interested in learning more about Best Friends Animal Society and their charity events",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Interested in learning more about the \"Strut Your Mutt\" charity event and how to get involved",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

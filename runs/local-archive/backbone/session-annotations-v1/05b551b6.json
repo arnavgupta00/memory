@@ -1,0 +1,110 @@
+{
+  "session_id": "05b551b6",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am buying a home with my partner.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am close to closing on the home purchase.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for tips on packing and organizing for the move.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am trying to set up utilities at the new place.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to transfer my internet and cable services to the new place.",
+      "turn_index": 2
+    },
+    {
+      "text": "We have been looking for a home for about 3 months.",
+      "turn_index": 2
+    },
+    {
+      "text": "We got pre-approved for a mortgage.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am looking for recommendations for home security systems.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to make sure the new place is safe and secure.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of getting a security system with cameras.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am not sure whether to get wired or wireless cameras.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to use a hybrid approach for cameras.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to use wired cameras at the front and back doors.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to use wireless cameras inside the house.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want wired cameras at the entrances for reliability and security.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want wireless cameras inside the house for flexibility and ease of installation.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of getting a security system with a smart door lock.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am not sure whether to choose a deadbolt lock or a latch lock.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "home packing and organizing",
+    "move tips",
+    "transfer internet services",
+    "transfer cable services",
+    "utilities setup",
+    "pre-approved mortgage",
+    "home search for 3 months",
+    "home security system recommendations",
+    "security cameras wired vs wireless",
+    "hybrid camera setup",
+    "wired cameras front and back doors",
+    "wireless indoor cameras",
+    "smart door lock deadbolt vs latch"
+  ],
+  "events": [
+    {
+      "text": "Home search for about 3 months before closing",
+      "date_hint": "about 3 months",
+      "turn_index": 2
+    },
+    {
+      "text": "Mortgage pre-approval helped things move quickly",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Close to home closing",
+      "date_hint": "near closing",
+      "turn_index": 0
+    }
+  ]
+}

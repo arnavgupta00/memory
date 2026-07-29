@@ -1,0 +1,107 @@
+{
+  "session_id": "sharegpt_CYFq8y6_30",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I need to design a new microservice for a company’s application.",
+      "turn_index": 0
+    },
+    {
+      "text": "Clients must be able to call an HTTPS endpoint to reach the microservice.",
+      "turn_index": 0
+    },
+    {
+      "text": "The microservice must use AWS Identity and Access Management (IAM) to authenticate calls.",
+      "turn_index": 0
+    },
+    {
+      "text": "I will write the microservice logic using a single AWS Lambda function written in Go 1.x.",
+      "turn_index": 0
+    },
+    {
+      "text": "An online learning company is migrating to AWS Cloud.",
+      "turn_index": 2
+    },
+    {
+      "text": "The company maintains student records in a PostgreSQL database.",
+      "turn_index": 2
+    },
+    {
+      "text": "The company needs its data available and online across multiple AWS Regions at all times.",
+      "turn_index": 2
+    },
+    {
+      "text": "A company is launching an application on AWS.",
+      "turn_index": 4
+    },
+    {
+      "text": "The application uses an Application Load Balancer (ALB) to direct traffic to at least two Amazon EC2 instances in a single target group.",
+      "turn_index": 4
+    },
+    {
+      "text": "The instances are in an Auto Scaling group for each environment.",
+      "turn_index": 4
+    },
+    {
+      "text": "The company requires a development environment and a production environment.",
+      "turn_index": 4
+    },
+    {
+      "text": "The production environment will have periods of high traffic.",
+      "turn_index": 4
+    },
+    {
+      "text": "I asked about option D.",
+      "turn_index": 6
+    },
+    {
+      "text": "A company runs a web application on Amazon EC2 instances in multiple Availability Zones.",
+      "turn_index": 8
+    },
+    {
+      "text": "The EC2 instances are in private subnets.",
+      "turn_index": 8
+    },
+    {
+      "text": "A solutions architect implements an internet-facing Application Load Balancer (ALB).",
+      "turn_index": 8
+    },
+    {
+      "text": "The solutions architect specifies the EC2 instances as the target group.",
+      "turn_index": 8
+    },
+    {
+      "text": "Internet traffic is not reaching the EC2 instances.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "microservice design",
+    "HTTPS endpoint",
+    "AWS IAM authentication",
+    "single AWS Lambda function",
+    "Go 1.x Lambda",
+    "multi-Region PostgreSQL",
+    "RDS for PostgreSQL Multi-AZ",
+    "read replica in another Region",
+    "DB snapshots copied to another Region",
+    "Application Load Balancer ALB",
+    "Auto Scaling group",
+    "development environment cost-effectively",
+    "production high traffic",
+    "internet-facing ALB not reaching instances",
+    "private subnets",
+    "public subnets",
+    "Network Load Balancer",
+    "NAT gateway",
+    "route tables 0.0.0.0/0",
+    "security group outbound 0.0.0.0/0"
+  ],
+  "events": [
+    {
+      "text": "Asked about option D",
+      "date_hint": "",
+      "turn_index": 6
+    }
+  ]
+}

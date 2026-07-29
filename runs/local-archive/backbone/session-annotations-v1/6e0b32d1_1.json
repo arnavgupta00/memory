@@ -1,0 +1,104 @@
+{
+  "session_id": "6e0b32d1_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I stop by The Daily Grind every Monday on my way to work.",
+      "turn_index": 0
+    },
+    {
+      "text": "I earn 2 points for every purchase in The Daily Grind loyalty program.",
+      "turn_index": 2
+    },
+    {
+      "text": "I can get a free drink at 12 points in The Daily Grind loyalty program.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am close to getting a free drink from The Daily Grind loyalty program.",
+      "turn_index": 2
+    },
+    {
+      "text": "I joined the rewards program at Sephora.",
+      "turn_index": 4
+    },
+    {
+      "text": "I got 50 points just for signing up for Sephora rewards program.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have a rewards program at my local grocery store FreshMart.",
+      "turn_index": 6
+    },
+    {
+      "text": "FreshMart rewards program gives me discounts on certain items.",
+      "turn_index": 6
+    },
+    {
+      "text": "FreshMart rewards program offers personalized coupons based on my shopping habits.",
+      "turn_index": 6
+    },
+    {
+      "text": "I need to check my points balance at Page & Co.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will check my email for the latest statement from Page & Co to see my current points balance.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am planning to buy a book at Page & Co soon.",
+      "turn_index": 10
+    },
+    {
+      "text": "I hope to redeem my points for a discount when I buy a book at Page & Co.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "loyalty programs organization",
+    "The Daily Grind loyalty program",
+    "earn 2 points per purchase",
+    "12 points free drink",
+    "Sephora rewards program",
+    "50 points signup bonus",
+    "FreshMart rewards program",
+    "personalized coupons",
+    "check points balance",
+    "Page & Co points balance",
+    "email statement Page & Co",
+    "redeem points for book discount"
+  ],
+  "events": [
+    {
+      "text": "Stops by The Daily Grind every Monday on the way to work",
+      "date_hint": "every Monday",
+      "turn_index": 0
+    },
+    {
+      "text": "Earns points in The Daily Grind loyalty program (2 points per purchase; 12 points for free drink)",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Joined Sephora rewards program and received 50 points for signing up",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Needs to check points balance at Page & Co",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Checks email for the latest statement from Page & Co to see current points balance",
+      "date_hint": "",
+      "turn_index": 10
+    },
+    {
+      "text": "Plans to buy a book at Page & Co and redeem points for a discount",
+      "date_hint": "soon",
+      "turn_index": 10
+    }
+  ]
+}

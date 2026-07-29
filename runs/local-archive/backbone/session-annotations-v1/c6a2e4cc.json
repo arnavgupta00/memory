@@ -1,0 +1,68 @@
+{
+  "session_id": "c6a2e4cc",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a birthday party for my niece.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of hosting the birthday party at a museum.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am in the city.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am in New York City.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of hosting the party at the Children's Museum on the Upper West Side.",
+      "turn_index": 6
+    },
+    {
+      "text": "My niece's birthday is in late March.",
+      "turn_index": 6
+    },
+    {
+      "text": "I was at the Natural History Museum just last weekend.",
+      "turn_index": 8
+    },
+    {
+      "text": "I saw the new T-Rex skeleton display at the Natural History Museum.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of having the party on a Saturday.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want the party to start at 10 am.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "birthday party for niece",
+    "children's museum party packages",
+    "museum party planning",
+    "New York City",
+    "Upper West Side",
+    "Children's Museum",
+    "late March birthday",
+    "special events and exhibits",
+    "Natural History Museum",
+    "T-Rex skeleton display",
+    "party schedule Saturday",
+    "party start time 10 am",
+    "party duration"
+  ],
+  "events": [
+    {
+      "text": "I was at the Natural History Museum and saw the new T-Rex skeleton display.",
+      "date_hint": "just last weekend",
+      "turn_index": 8
+    }
+  ]
+}

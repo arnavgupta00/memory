@@ -1,0 +1,82 @@
+{
+  "session_id": "ad175dc4_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a baby gift for my cousin Rachel's baby boy Jack.",
+      "turn_index": 0
+    },
+    {
+      "text": "I visited Rachel at the hospital after she gave birth to Jack.",
+      "turn_index": 0
+    },
+    {
+      "text": "I think a diaper cake would be a great idea for the baby gift.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to order the diaper cake from Amazon.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have a Prime membership.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want help writing a nice gift note to include with the diaper cake.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to modify the gift note to remove the phrase about being still smiling thinking about the tiny fingers and toes seen at the hospital.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to include a gift note that starts with \"Dear Rachel and Jack,\".",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to include a gift note that says \"So thrilled to welcome you to the family, little Jack!\"",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to include a gift note that mentions visiting Rachel at the hospital and being on cloud nine.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to include a gift note that says the diaper cake is a small gift to help navigate diaper duty ahead.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to include a gift note that says \"Love, [Your Name]\".",
+      "turn_index": 8
+    },
+    {
+      "text": "I want suggestions for a baby carrier or sling for Rachel as an additional gift.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "baby gift",
+    "cousin Rachel",
+    "baby boy Jack",
+    "diaper cake",
+    "online store delivery",
+    "Amazon Prime",
+    "gift note",
+    "baby carrier",
+    "baby sling",
+    "hospital visit after birth"
+  ],
+  "events": [
+    {
+      "text": "Visited cousin Rachel at the hospital after she gave birth to Jack.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to order a diaper cake from Amazon with Prime membership.",
+      "date_hint": "",
+      "turn_index": 4
+    }
+  ]
+}

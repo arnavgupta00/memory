@@ -1,0 +1,97 @@
+{
+  "session_id": "67154fb2_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Las Vegas in April and I am looking for a hotel recommendation.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have stayed at the Bellagio before.",
+      "turn_index": 0
+    },
+    {
+      "text": "I attended a work conference at the Bellagio from the 6th to the 9th in December.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for a hotel close to the Sands Expo because I will be attending a conference there.",
+      "turn_index": 2
+    },
+    {
+      "text": "When I stayed at the Bellagio last time, I took a taxi every morning.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to avoid taking a taxi every morning if possible.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering the Renaissance Las Vegas Hotel because it is directly across the street from the Sands Expo.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am looking for room rates for the Renaissance Las Vegas Hotel.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want options for a 5-night stay from April 3rd to April 8th.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know whether the Renaissance Las Vegas Hotel offers discounts for conference attendees or business travelers.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know how to get the special conference rate for conference attendees.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know whether I need to provide specific information or documents to prove I am attending a conference at the Sands Expo.",
+      "turn_index": 8
+    },
+    {
+      "text": "I attended a work conference at the Sands Expo from the 6th to the 9th in December.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am hoping to get the conference rate for my upcoming stay in April.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know whether the hotel offers a special rate for repeat customers or loyalty program members.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Las Vegas hotel recommendation",
+    "Bellagio hotel",
+    "work conference December 6th to 9th",
+    "Sands Expo hotel near",
+    "Renaissance Las Vegas Hotel",
+    "directly across the street",
+    "room rates",
+    "5-night stay April 3rd to 8th",
+    "conference attendee discount",
+    "business traveler discount",
+    "conference rate proof documents",
+    "repeat customer loyalty program rate"
+  ],
+  "events": [
+    {
+      "text": "Work conference at the Bellagio from the 6th to the 9th in December",
+      "date_hint": "December (6th to 9th)",
+      "turn_index": 0
+    },
+    {
+      "text": "Work conference at the Sands Expo from the 6th to the 9th in December",
+      "date_hint": "December (6th to 9th)",
+      "turn_index": 10
+    },
+    {
+      "text": "Upcoming hotel stay request for April 3rd to April 8th (5 nights)",
+      "date_hint": "April 3rd to April 8th",
+      "turn_index": 6
+    }
+  ]
+}

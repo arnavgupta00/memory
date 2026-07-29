@@ -1,0 +1,101 @@
+{
+  "session_id": "answer_3a6f1e82_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am in the process of buying a new home.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am trying to finalize my budget for a home purchase.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am buying a $325,000 house.",
+      "turn_index": 2
+    },
+    {
+      "text": "I got pre-approved for a $350,000 home loan from Wells Fargo.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to understand how much of the closing costs I can negotiate with the seller based on the inspection report.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to negotiate with the seller to cover some closing costs based on minor issues with the roof found in the inspection report.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to negotiate with the seller to cover some closing costs based on minor issues with the plumbing found in the inspection report.",
+      "turn_index": 6
+    },
+    {
+      "text": "I already agreed on a $2,000 credit towards the closing costs.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of asking the seller to cover an additional 1% of the purchase price towards closing costs.",
+      "turn_index": 6
+    },
+    {
+      "text": "The additional 1% of the purchase price I am thinking of asking for would be $3,250.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to ask the seller if they are willing to cover the additional $3,250 towards closing costs.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to estimate how much I will need to pay out of pocket for closing costs if the seller agrees to cover the additional $3,250.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to understand how much I will need to pay each month for my mortgage payment, property taxes, and insurance.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "closing costs estimate",
+    "new home purchase budget",
+    "Wells Fargo pre-approval",
+    "$325,000 house",
+    "$350,000 pre-approved",
+    "seller credit for closing costs",
+    "inspection report negotiation",
+    "roof issues",
+    "plumbing issues",
+    "$2,000 credit",
+    "additional 1% of purchase price",
+    "out of pocket closing costs",
+    "monthly mortgage payment",
+    "property taxes and insurance"
+  ],
+  "events": [
+    {
+      "text": "Request to estimate closing costs for a $325,000 house with Wells Fargo pre-approval for $350,000",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Negotiation planning for seller to cover additional closing costs based on inspection report (roof and plumbing issues)",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Agreed $2,000 credit towards closing costs and proposed additional 1% ($3,250) seller coverage",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Plan to ask seller to cover additional $3,250 towards closing costs",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Request to estimate monthly mortgage payment, property taxes, and insurance",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

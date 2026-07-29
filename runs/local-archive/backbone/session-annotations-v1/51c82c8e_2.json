@@ -1,0 +1,144 @@
+{
+  "session_id": "51c82c8e_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to lose 10 pounds in the next two months.",
+      "turn_index": 0
+    },
+    {
+      "text": "I increased my squat weight by 5 pounds the week before I increased it by 10 pounds last week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am 5'8\" tall.",
+      "turn_index": 2
+    },
+    {
+      "text": "I weigh 170 pounds.",
+      "turn_index": 2
+    },
+    {
+      "text": "I go to the gym three times a week.",
+      "turn_index": 2
+    },
+    {
+      "text": "I go to the gym on Mondays, Wednesdays, and Fridays at 7 am.",
+      "turn_index": 2
+    },
+    {
+      "text": "On Mondays, I do treadmill running and elliptical training for 30 minutes.",
+      "turn_index": 2
+    },
+    {
+      "text": "On Mondays, I do weightlifting focusing on my upper body.",
+      "turn_index": 2
+    },
+    {
+      "text": "On Wednesdays, I take a yoga class at 8 am.",
+      "turn_index": 2
+    },
+    {
+      "text": "On Fridays, I do weightlifting focusing on my legs.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to focus on a combination of both weightlifting and cardio to reach my goal.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have no physical limitations or injuries.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am willing to commit to working out three days a week.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have a question about the leg day on Fridays and squats.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know whether I should focus on a specific range of reps and sets for squats to continue making progress.",
+      "turn_index": 4
+    },
+    {
+      "text": "I increased my squat weight by 5 pounds the week before I was able to increase it by 10 pounds last week.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to determine the warm-up set weight for squats as 10-15% lighter than my current 1RM.",
+      "turn_index": 6
+    },
+    {
+      "text": "I asked whether I should track my 1RM for each exercise or estimate it more simply.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think I understand how to estimate my 1RM and calculate the warm-up weight.",
+      "turn_index": 8
+    },
+    {
+      "text": "For my squat warm-up set, I should do 1 set of 8-10 reps with a weight that is 10-15% lighter than my current 1RM.",
+      "turn_index": 8
+    },
+    {
+      "text": "For my squat warm-up, I should then do 3 working sets with my current 1RM.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to increase the weight by 2.5-5 pounds every two weeks or as soon as I feel I can handle more.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been trying to eat more protein-rich foods like chicken, fish, and eggs to support my muscle growth.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have been tracking my water intake.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am trying to drink at least eight glasses of water a day.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am not sure if I am eating enough calories to support my workout routine.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want help estimating my daily calorie needs.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "lose 10 pounds in two months",
+    "squat weight progression",
+    "5 pounds then 10 pounds last week",
+    "workout plan three days a week",
+    "gym Mondays Wednesdays Fridays 7 am",
+    "treadmill running 30 minutes",
+    "elliptical training",
+    "upper body weightlifting Monday",
+    "yoga class Wednesday 8 am",
+    "leg day Friday squats",
+    "warm-up set 10-15% lighter than 1RM",
+    "squat warm-up 8-10 reps and 3 working sets",
+    "increase weight 2.5-5 pounds every two weeks",
+    "protein foods chicken fish eggs",
+    "water intake eight glasses a day",
+    "daily calorie needs estimate"
+  ],
+  "events": [
+    {
+      "text": "Increased squat weight by 5 pounds the week before increasing it by 10 pounds last week.",
+      "date_hint": "week before; last week",
+      "turn_index": 0
+    },
+    {
+      "text": "Increased squat weight by 5 pounds the week before increasing it by 10 pounds last week (referenced again).",
+      "date_hint": "week before; last week",
+      "turn_index": 4
+    }
+  ]
+}

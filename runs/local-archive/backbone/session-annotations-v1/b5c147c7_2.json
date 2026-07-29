@@ -1,0 +1,93 @@
+{
+  "session_id": "b5c147c7_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for advice on shoe care.",
+      "turn_index": 0
+    },
+    {
+      "text": "I recently got my old sneakers resoled.",
+      "turn_index": 0
+    },
+    {
+      "text": "It took a week to get my old sneakers back after they were resoled.",
+      "turn_index": 0
+    },
+    {
+      "text": "A cobbler told me it would take a week to resole my sneakers.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of getting my Dr. Martens fixed.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am considering getting a shoe rack or organizer for my closet.",
+      "turn_index": 2
+    },
+    {
+      "text": "I saw a shoe rack at Bed Bath & Beyond last weekend.",
+      "turn_index": 4
+    },
+    {
+      "text": "The shoe rack I saw at Bed Bath & Beyond had a shelf style.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think the shelf-style rack would work well for my shoe collection.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to go back to Bed Bath & Beyond to take another look at the shoe rack.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want tips on how to measure my closet space to make sure the rack fits.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will take tips into consideration when measuring my closet space.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am confident the shelf-style rack I saw will fit perfectly.",
+      "turn_index": 8
+    },
+    {
+      "text": "I mentioned the return policy by mistake.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "shoe care advice",
+    "sneakers resoled",
+    "cobbler turnaround time",
+    "Dr. Martens repair",
+    "shoe rack organizer",
+    "closet shoe storage",
+    "Bed Bath & Beyond shoe rack",
+    "individual cubbies vs shelves",
+    "shelf style shoe rack",
+    "measuring closet space",
+    "rack fit measurement",
+    "return policy mention"
+  ],
+  "events": [
+    {
+      "text": "Got old sneakers resoled and waited about a week to get them back.",
+      "date_hint": "recently (about a week)",
+      "turn_index": 0
+    },
+    {
+      "text": "Saw a shoe rack at Bed Bath & Beyond last weekend.",
+      "date_hint": "last weekend",
+      "turn_index": 4
+    },
+    {
+      "text": "Went back to Bed Bath & Beyond to take another look at the shelf-style shoe rack.",
+      "date_hint": "next trip (no exact date)",
+      "turn_index": 6
+    }
+  ]
+}

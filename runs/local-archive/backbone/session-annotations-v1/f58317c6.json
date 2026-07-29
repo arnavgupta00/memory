@@ -1,0 +1,100 @@
+{
+  "session_id": "f58317c6",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I need help finding a good tailor in my area to fix a button on my favorite sweater.",
+      "turn_index": 0
+    },
+    {
+      "text": "I was thinking of going to the mall this weekend to check out new sneakers.",
+      "turn_index": 2
+    },
+    {
+      "text": "I was thinking of stopping by the outlet mall to pick up new socks to go with new jeans.",
+      "turn_index": 2
+    },
+    {
+      "text": "I will bring my sweater with me to the mall and ask around.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will drop off clothes I sorted out to donate at Goodwill while I'm out.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will stop by Old Navy to see if they have any new deals on t-shirts.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been loving the Old Navy t-shirts I got last time.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of wearing a gray Old Navy t-shirt on my hike this weekend.",
+      "turn_index": 8
+    },
+    {
+      "text": "I lent my old black coat to my roommate.",
+      "turn_index": 10
+    },
+    {
+      "text": "I need to remind my roommate to return my old black coat to me soon.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "tailor recommendations",
+    "fix a button",
+    "favorite sweater",
+    "mall this weekend",
+    "outlet mall",
+    "new sneakers",
+    "new socks",
+    "new jeans",
+    "Goodwill donation drop-off",
+    "Old Navy deals",
+    "t-shirts",
+    "gray Old Navy t-shirt",
+    "hike this weekend",
+    "old black coat",
+    "roommate return reminder"
+  ],
+  "events": [
+    {
+      "text": "Go to the mall this weekend to check out new sneakers",
+      "date_hint": "this weekend",
+      "turn_index": 2
+    },
+    {
+      "text": "Stop by the outlet mall to pick up new socks to go with new jeans",
+      "date_hint": "this weekend",
+      "turn_index": 2
+    },
+    {
+      "text": "Bring the sweater to the mall and ask around",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Drop off sorted clothes to donate at Goodwill while out",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Stop by Old Navy to look for new deals on t-shirts",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Wear a gray Old Navy t-shirt on a hike this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 8
+    },
+    {
+      "text": "Remind the roommate to return the old black coat soon",
+      "date_hint": "soon",
+      "turn_index": 10
+    }
+  ]
+}

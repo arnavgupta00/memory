@@ -1,0 +1,105 @@
+{
+  "session_id": "f63b04ab_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning out my day tomorrow.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a team meeting at 8:30 AM.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a breakfast option that gives me energy throughout the morning.",
+      "turn_index": 0
+    },
+    {
+      "text": "I will choose oatmeal with fruit and nuts for breakfast.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have team meetings on Tuesdays that start at 8:30 AM.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have team meetings on Thursdays that start at 8:30 AM.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to try a new coffee shop on my way to work.",
+      "turn_index": 4
+    },
+    {
+      "text": "The coffee shop is on Main St.",
+      "turn_index": 6
+    },
+    {
+      "text": "The coffee shop is somewhere between 5th and 6th Ave.",
+      "turn_index": 6
+    },
+    {
+      "text": "The coffee shop is on the right side of the road when I am heading to work.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to leave extra time for my coffee stop.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to fit in exercise during the week.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want a quick 30-minute workout to do before heading to the office.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will try HIIT for my workout.",
+      "turn_index": 10
+    },
+    {
+      "text": "I wake up at 6:30 AM.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will try to wake up 30 minutes earlier.",
+      "turn_index": 10
+    },
+    {
+      "text": "After the workout, I will shower and get ready for the day.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "team meeting 8:30 AM",
+    "breakfast option",
+    "oatmeal with fruit and nuts",
+    "leave the house earlier",
+    "coffee shop on Main St",
+    "between 5th and 6th Ave",
+    "right side of the road",
+    "extra time for coffee stop",
+    "30-minute workout",
+    "exercise during the week",
+    "HIIT workout",
+    "wake up at 6:30 AM"
+  ],
+  "events": [
+    {
+      "text": "Team meetings on Tuesdays at 8:30 AM",
+      "date_hint": "Tuesdays",
+      "turn_index": 2
+    },
+    {
+      "text": "Team meetings on Thursdays at 8:30 AM",
+      "date_hint": "Thursdays",
+      "turn_index": 2
+    },
+    {
+      "text": "Wake up at 6:30 AM and plan to wake up 30 minutes earlier for HIIT",
+      "date_hint": "tomorrow/next workout day (relative)",
+      "turn_index": 10
+    }
+  ]
+}

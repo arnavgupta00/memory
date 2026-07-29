@@ -1,0 +1,33 @@
+{
+  "question_id": "gpt4_68e94287",
+  "question_type": "temporal-reasoning",
+  "question": "Which event happened first, my participation in the #PlankChallenge or my post about vegan chili recipe?",
+  "question_date": "2023/04/12 (Wed) 12:00",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_9793daa3_2",
+    "answer_9793daa3_1"
+  ],
+  "haystack_session_count": 50,
+  "notes_coverage": "partial",
+  "annotated_session_count": 6,
+  "gold_sessions": [
+    {
+      "session_id": "answer_9793daa3_2",
+      "date": "2023/03/10 (Fri) 11:15",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_9793daa3_2\n[session_date] 2023/03/10 (Fri) 11:15\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm looking for some healthy meal prep ideas for my fitness journey. I've been posting about my progress on Instagram using #MyFitnessJourney, and I shared a recipe for vegan chili using #FoodieAdventures yesterday that got a lot of attention. Do you have any suggestions for high-protein meals that are easy to prepare?\n\n[turn 2] I'm really interested in trying out those protein-packed salads, especially the quinoa and black bean one. Can you give me some tips on how to cook quinoa perfectly? I've had some issues with it being too mushy in the past.\n\n[turn 4] That's really helpful, thanks! I'll definitely try out those tips to cook quinoa perfectly. By the way, do you have any recommendations for vegan protein sources that I can add to my salads? I'm looking for something that's high in protein and low in carbs.\n\n[turn 6] That's really helpful! I've been looking for some new vegan protein sources to add to my salads. I'll definitely try out seitan and tempeh. By the way, do you have any recommendations for some healthy and tasty vegan sauces or dressings that I can use on my salads? I'm looking for something that's low in sugar and unhealthy fats."
+    },
+    {
+      "session_id": "answer_9793daa3_1",
+      "date": "2023/03/15 (Wed) 14:28",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_9793daa3_1\n[session_date] 2023/03/15 (Wed) 14:28\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm trying to stay consistent with my fitness goals and I was wondering if you could suggest some new workout routines I could try at home. By the way, I participated in a social media challenge called #PlankChallenge today, and it was a great way to stay motivated!\n\n[turn 2] I'm interested in trying the bodyweight workouts, especially the 7-Minute Workout. Can you provide more details on how to do each exercise in the circuit and how many rounds I should aim to complete?\n\n[turn 4] I'm thinking of doing 3 rounds of the 7-Minute Workout, 3 times a week. Do you think that's a good starting point, and how can I track my progress?\n\n[turn 6] Can you suggest some healthy meal prep ideas that can help me fuel my body for my workouts and support my fitness goals?\n\n[turn 8] I'm thinking of meal prepping on Sundays to save time during the week. What are some tips for meal prepping and how can I make sure I'm getting the right nutrients for my workouts?\n\n[turn 10] I'm thinking of meal prepping on Sundays to save time during the week. What are some tips for meal prepping and how can I make sure I'm getting the right nutrients for my workouts?"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

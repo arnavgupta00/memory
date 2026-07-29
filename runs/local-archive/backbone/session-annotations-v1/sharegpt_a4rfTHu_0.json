@@ -1,0 +1,114 @@
+{
+  "session_id": "sharegpt_a4rfTHu_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user asked whether the assistant can speak Thai.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user said they would give a Thai chemistry question in the next message.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user provided a chemistry mixture involving NaI and KI.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user stated that NaI and KI were mixed and dissolved in water.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user stated that KI in the mixture had a mass of 9.8 g.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user stated that AgNO3 solution was added in excess.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user stated that a yellow precipitate of AgI was obtained.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user stated that the mass of the AgI yellow precipitate was 14.10 g.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user asked to calculate the mass of KI in the sample mixture.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user said the assistant gave the wrong answer.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user stated that the correct answer is 1.5.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user asked for the process to get the answer 1.5 in Thai.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user asked to explain the entire history of the world in the style of Bo Burnham in English.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user asked to explain it again starting all the way back at the Big Bang.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user asked to explain it in the style of Mambo Jumbo.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "speak Thai",
+    "Thai chemistry question",
+    "NaI and KI mixture",
+    "dissolve in water",
+    "add AgNO3 excess",
+    "yellow precipitate AgI",
+    "AgI mass 14.10 g",
+    "KI mass 9.8 g",
+    "calculate KI mass",
+    "correct answer 1.5",
+    "history of the world",
+    "Bo Burnham style",
+    "Big Bang",
+    "Mumbo Jumbo style"
+  ],
+  "events": [
+    {
+      "text": "Asked whether the assistant can speak Thai for a Thai chemistry question",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Chemistry problem: NaI and KI (KI 9.8 g) dissolved in water, add excess AgNO3 to form yellow AgI precipitate (14.10 g) and calculate KI mass",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Corrected the answer to 1.5 and requested the process in Thai",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Requested an English explanation of the entire history of the world in the style of Bo Burnham",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Requested the explanation again starting from the Big Bang",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Requested the explanation in the style of mumbo jumbo",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

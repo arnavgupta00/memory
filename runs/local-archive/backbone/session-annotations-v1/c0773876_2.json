@@ -1,0 +1,136 @@
+{
+  "session_id": "c0773876_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to plan out my day and make the most of my morning routine.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a meditation app that can help me stay focused during a 30-minute meditation session.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am leaning towards trying Headspace or Calm.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want a feature in a meditation app to set a daily reminder to meditate at 6:45 AM.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to meditate at 6:45 AM before heading to the gym.",
+      "turn_index": 2
+    },
+    {
+      "text": "I take an 8:05 AM bus to work.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think I will try Headspace first.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want recommendations for a good gym playlist to help me stay motivated during a 45-minute workout.",
+      "turn_index": 4
+    },
+    {
+      "text": "I usually listen to music on my way to the gym.",
+      "turn_index": 4
+    },
+    {
+      "text": "I think I will try out the Beast Mode playlist on Spotify.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have used Spotify before.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want healthy snack recommendations that I can grab on the go and pack in my bag to eat on the bus ride to work.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think I will try out the energy balls recipe.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want recommendations for a good coffee shop near my office building.",
+      "turn_index": 8
+    },
+    {
+      "text": "I usually grab a coffee before our daily team meeting at 9:00 AM.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I will try out a new coffee shop that just opened up a block away from my office building.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have been meaning to check out the new coffee shop that opened up a block away from my office building.",
+      "turn_index": 10
+    },
+    {
+      "text": "I plan to grab a coffee before our daily team meeting at 9:00 AM at the new coffee shop.",
+      "turn_index": 10
+    },
+    {
+      "text": "I usually go to the same old coffee shop every day.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "meditation apps",
+    "30-minute meditation session",
+    "daily reminder to meditate",
+    "6:45 AM reminder",
+    "Headspace",
+    "Calm",
+    "gym playlist",
+    "45-minute workout",
+    "Beast Mode playlist",
+    "Spotify",
+    "healthy snacks on the go",
+    "energy balls recipe",
+    "coffee shop near office",
+    "daily team meeting 9:00 AM",
+    "new coffee shop opened a block away"
+  ],
+  "events": [
+    {
+      "text": "Set a daily reminder to meditate at 6:45 AM before heading to the gym",
+      "date_hint": "6:45 AM (daily)",
+      "turn_index": 2
+    },
+    {
+      "text": "Take the 8:05 AM bus to work",
+      "date_hint": "8:05 AM",
+      "turn_index": 2
+    },
+    {
+      "text": "Try Headspace first for meditation",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Try the Beast Mode playlist on Spotify for a 45-minute workout",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Try the energy balls recipe as a snack to pack for the bus ride to work",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Grab coffee before the daily team meeting at 9:00 AM",
+      "date_hint": "9:00 AM (daily)",
+      "turn_index": 8
+    },
+    {
+      "text": "Try a new coffee shop that just opened up a block away from the office before the 9:00 AM team meeting",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

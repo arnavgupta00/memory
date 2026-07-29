@@ -1,0 +1,99 @@
+{
+  "session_id": "9f220c66_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to visit my parents soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of stopping by my grandma's place in Florida on the way to visit my parents.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want help finding good routes from California to Florida.",
+      "turn_index": 0
+    },
+    {
+      "text": "My grandma lives in a state located in the southeastern region of the United States.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of stopping by my grandma's place before heading to my parents' place.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to visit the beaches near my grandma's place in Florida.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want more information about the beaches in the Fort Lauderdale area.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think I will visit Fort Lauderdale Beach, specifically the Central Beach area.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think the Central Beach area has a lively atmosphere and plenty of restaurants and shops nearby.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will check the water conditions and flag warnings before swimming.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will pack sunscreen and sun protection for the beach.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am planning to visit my grandma in Florida.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am thinking of stopping by the Kennedy Space Center Visitor Complex while I am in the area.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to visit parents",
+    "stop by grandma in Florida",
+    "routes from California to Florida",
+    "southeastern United States",
+    "stops or attractions near grandma",
+    "Gulf Coast beaches",
+    "Fort Lauderdale beaches",
+    "Fort Lauderdale Beach Central Beach area",
+    "restaurants and shops nearby",
+    "water conditions and flag warnings",
+    "sunscreen and sun protection",
+    "Kennedy Space Center Visitor Complex"
+  ],
+  "events": [
+    {
+      "text": "Plan to visit parents soon",
+      "date_hint": "soon",
+      "turn_index": 0
+    },
+    {
+      "text": "Plan to stop by grandma's place in Florida on the way",
+      "date_hint": "soon",
+      "turn_index": 0
+    },
+    {
+      "text": "Plan to visit beaches near grandma's place in Florida",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Plan to visit Fort Lauderdale Beach (Central Beach area)",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Plan to stop by Kennedy Space Center Visitor Complex while in the area",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

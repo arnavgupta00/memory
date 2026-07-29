@@ -1,0 +1,96 @@
+{
+  "session_id": "sharegpt_tQHP40V_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I asked whether the \"Everytime\" application in Korea is known.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to draw 5 class diagrams about the \"Everytime\" application.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want a class diagram for an \"Everytime\" mobile application with 1 superclass named \"user\".",
+      "turn_index": 4
+    },
+    {
+      "text": "I want 3 subclasses named \"student\", \"professor\", and \"administer\" under the \"user\" superclass.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want 2 more class diagrams named \"class schedule\" and \"Board\".",
+      "turn_index": 4
+    },
+    {
+      "text": "I asked to add more methods in all diagrams.",
+      "turn_index": 6
+    },
+    {
+      "text": "I mistyped \"administrator\" as \"administer\".",
+      "turn_index": 6
+    },
+    {
+      "text": "I asked to modify the diagrams to correct the mistyped word.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think \"student\", \"professor\", and \"(system)Administrator\" are the same class level.",
+      "turn_index": 8
+    },
+    {
+      "text": "I asked to redraw the diagram after that change.",
+      "turn_index": 10
+    },
+    {
+      "text": "I asked to draw other diagrams too.",
+      "turn_index": 12
+    }
+  ],
+  "keyphrases": [
+    "Everytime application",
+    "Everytime mobile application",
+    "Korea",
+    "class diagram",
+    "superclass user",
+    "subclass student",
+    "subclass professor",
+    "administrator vs administer",
+    "class schedule diagram",
+    "Board class diagram",
+    "add methods to diagrams",
+    "systemAdministrator class level"
+  ],
+  "events": [
+    {
+      "text": "Asked about the \"Everytime\" application in Korea.",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Requested 5 class diagrams for the \"Everytime\" application, including user/student/professor/administer and class schedule/Board diagrams.",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Requested adding more methods and correcting the mistyped \"administrator\" to \"administer\".",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Questioned whether student, professor, and (system)Administrator are the same class level.",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Requested redrawing the diagram.",
+      "date_hint": "",
+      "turn_index": 10
+    },
+    {
+      "text": "Requested drawing other diagrams too.",
+      "date_hint": "",
+      "turn_index": 12
+    }
+  ]
+}

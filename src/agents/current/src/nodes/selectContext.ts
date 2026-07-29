@@ -177,6 +177,51 @@ function scoreSiblingSession(args: {
   return score * 1000 + Math.max(0, 500 - bestRank);
 }
 
+/**
+ * Deterministic BM25 floor: top turns from ranked spans, in bestRank order.
+ * Prefer user turns; include assistant turns only when needed to fill the budget.
+ */
+export function lexicalFloorRefs(
+  spans: SelectedSpan[],
+  maxTurns: number,
+): Array<{ sessionId: string; turnIndex: number; why: string }> {
+  if (maxTurns <= 0 || spans.length === 0) return [];
+  const ranked = [...spans].sort(
+    (left, right) =>
+      left.bestRank - right.bestRank
+      || right.bestScore - left.bestScore
+      || left.sessionId.localeCompare(right.sessionId),
+  );
+  const seen = new Set<string>();
+  const refs: Array<{ sessionId: string; turnIndex: number; why: string }> = [];
+  const push = (sessionId: string, turnIndex: number, role: string): void => {
+    if (refs.length >= maxTurns) return;
+    const key = `${sessionId}:${String(turnIndex)}`;
+    if (seen.has(key)) return;
+    seen.add(key);
+    refs.push({
+      sessionId,
+      turnIndex,
+      why: `lexical floor (${role}) from BM25 rank`,
+    });
+  };
+  for (const span of ranked) {
+    for (const turn of span.turns) {
+      if (turn.role !== "user") continue;
+      push(span.sessionId, turn.turnIndex, turn.role);
+      if (refs.length >= maxTurns) return refs;
+    }
+  }
+  for (const span of ranked) {
+    for (const turn of span.turns) {
+      if (turn.role === "user") continue;
+      push(span.sessionId, turn.turnIndex, turn.role);
+      if (refs.length >= maxTurns) return refs;
+    }
+  }
+  return refs;
+}
+
 /** Supporting turns: same-session always; sibling sessions for aggregate/order. */
 export function supportingRefs(args: {
   selectedSessionIds: Set<string>;
@@ -330,6 +375,8 @@ export function buildContextPackage(args: {
   siblingSessionMax?: number;
   fullSessionEnabled?: boolean;
   sessionTurnMax?: number;
+  lexicalFloorEnabled?: boolean;
+  lexicalFloorMax?: number;
 }): { package: ContextPackage; warnings: string[] } {
   const warnings: string[] = [];
   const seen = new Set<string>();
@@ -340,15 +387,16 @@ export function buildContextPackage(args: {
   const siblingSessionMax = args.siblingSessionMax ?? 12;
   const fullSessionEnabled = args.fullSessionEnabled ?? true;
   const sessionTurnMax = args.sessionTurnMax ?? 24;
+  const lexicalFloorEnabled = args.lexicalFloorEnabled ?? false;
+  const lexicalFloorMax = args.lexicalFloorMax ?? 12;
 
-  const candidateStatus =
+  const selectEmpty =
     args.selectOutput.candidateStatus === "none_found"
-    || args.selectOutput.items.length === 0
-      ? "none_found"
-      : "found";
+    || args.selectOutput.items.length === 0;
 
-  // Empty selected set is the correct signal — do not invent supporting filler.
-  if (candidateStatus === "none_found") {
+  // Empty selected set is the correct signal — do not invent supporting filler,
+  // unless the lexical floor is enabled (U-FLOOR / empty-package recovery).
+  if (selectEmpty && !lexicalFloorEnabled) {
     return {
       package: {
         queryShape: args.selectOutput.queryShape,
@@ -404,11 +452,20 @@ export function buildContextPackage(args: {
     return true;
   };
 
-  for (const ref of args.selectOutput.items) {
-    if (!pushItem(ref, "selected")) break;
+  if (!selectEmpty) {
+    for (const ref of args.selectOutput.items) {
+      if (!pushItem(ref, "selected")) break;
+    }
   }
 
-  if (supportingEnabled) {
+  // Lexical floor before sibling expansion so BM25 evidence is not crowded out.
+  if (lexicalFloorEnabled) {
+    for (const ref of lexicalFloorRefs(args.spans, lexicalFloorMax)) {
+      if (!pushItem(ref, "supporting")) break;
+    }
+  }
+
+  if (supportingEnabled && !selectEmpty) {
     const selectedItems = items.filter((item) => item.tier === "selected");
     const selectedSessions = new Set(selectedItems.map((item) => item.sessionId));
     const extras = supportingRefs({
@@ -427,6 +484,21 @@ export function buildContextPackage(args: {
     for (const ref of extras) {
       if (!pushItem(ref, "supporting")) break;
     }
+  }
+
+  if (items.length === 0) {
+    return {
+      package: {
+        queryShape: args.selectOutput.queryShape,
+        setBoundary: args.selectOutput.setBoundary,
+        candidateStatus: "none_found",
+        missingRisk: args.selectOutput.missingRisk,
+        items: [],
+        characterCount: 0,
+        estimatedTokens: 0,
+      },
+      warnings,
+    };
   }
 
   const sorted = sortWithinTier(items);
@@ -579,6 +651,8 @@ export function createSelectContextNode(runtime: WorkflowRuntime) {
       siblingSessionMax: runtime.options.package_sibling_session_max,
       fullSessionEnabled: runtime.options.package_full_session_enabled,
       sessionTurnMax: runtime.options.package_session_turn_max,
+      lexicalFloorEnabled: runtime.options.package_lexical_floor_enabled,
+      lexicalFloorMax: runtime.options.package_lexical_floor_max,
     });
     return {
       contextPackage: built.package,

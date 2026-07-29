@@ -1,0 +1,104 @@
+{
+  "session_id": "3dda0fb5_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am thinking of taking my new hybrid bike to trails on the weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a Trek FX 2 hybrid bike.",
+      "turn_index": 0
+    },
+    {
+      "text": "I lent my road bike to my neighbor Rachel.",
+      "turn_index": 0
+    },
+    {
+      "text": "Rachel borrowed my Cannondale Synapse from February 20th to March 1st.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am planning to ride on rough trails this weekend.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to set my tire pressure to around 65 PSI for rough trails.",
+      "turn_index": 2
+    },
+    {
+      "text": "Rachel returned my Cannondale Synapse on March 1st with a flat tire.",
+      "turn_index": 2
+    },
+    {
+      "text": "I still need to fix the flat tire on my Cannondale Synapse.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of cleaning my hybrid bike this weekend.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am especially planning to clean the wheels on my hybrid bike.",
+      "turn_index": 4
+    },
+    {
+      "text": "My hybrid bike wheels have been getting quite dirty.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am planning to apply a coat of waterproofing to the chain and gears this weekend.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of organizing my garage where I store my bikes.",
+      "turn_index": 8
+    },
+    {
+      "text": "I store my bikes in my garage.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of getting a bike rack for my car.",
+      "turn_index": 10
+    },
+    {
+      "text": "My car is a Honda Civic.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to transport my bikes more easily to different trails and parks.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am considering the Saris Bones 2-Bike Trunk Rack.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Trek FX 2 tire pressure",
+    "hybrid bike trails",
+    "ideal tire pressure for trails",
+    "65 PSI tire pressure",
+    "rough trails weekend",
+    "Cannondale Synapse flat tire",
+    "bike cleaning product",
+    "cleaning bike wheels",
+    "waterproofing chain and gears",
+    "bike storage solutions garage",
+    "bike rack for Honda Civic",
+    "Saris Bones 2-Bike Trunk Rack"
+  ],
+  "events": [
+    {
+      "text": "Rachel borrowed the Cannondale Synapse from February 20th to March 1st.",
+      "date_hint": "February 20th to March 1st",
+      "turn_index": 0
+    },
+    {
+      "text": "Rachel returned the Cannondale Synapse on March 1st with a flat tire.",
+      "date_hint": "March 1st",
+      "turn_index": 2
+    }
+  ]
+}

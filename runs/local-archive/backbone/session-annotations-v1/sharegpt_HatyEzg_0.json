@@ -1,0 +1,62 @@
+{
+  "session_id": "sharegpt_HatyEzg_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I ask about a problem where a half-full tank is emptied by draining at a constant rate and water is simultaneously pumped in to fully fill it in 10 minutes.",
+      "turn_index": 0
+    },
+    {
+      "text": "I ask for the rate at which water has to be pumped in so the tank gets fully filled in 10 minutes.",
+      "turn_index": 0
+    },
+    {
+      "text": "I ask about a specific rotation matrix labeled A_B[R] with given entries.",
+      "turn_index": 2
+    },
+    {
+      "text": "I ask about Z-Y-X body-fixed Euler rotations with theta1 = 30 degrees, theta2 = 45 degrees, and theta3 = 60 degrees.",
+      "turn_index": 4
+    },
+    {
+      "text": "I ask for the r22 element of the resultant rotation matrix from those Z-Y-X Euler rotations.",
+      "turn_index": 4
+    },
+    {
+      "text": "I ask about the eigenvector corresponding to the eigenvalue +1 of a rotation matrix A_B[R].",
+      "turn_index": 6
+    },
+    {
+      "text": "I ask which representation of orientation suffers from gimbal lock.",
+      "turn_index": 8
+    },
+    {
+      "text": "I ask about transforming a rigid body by rotating about the vector [1,1,1]^T by pi/3 radians, followed by translating by [1,1,1]^T.",
+      "turn_index": 10
+    },
+    {
+      "text": "I ask which option represents the final homogeneous transformation matrix of the resultant motion.",
+      "turn_index": 10
+    },
+    {
+      "text": "I ask about the Denavit-Hartenberg convention used in the course, specifically the link offset d_i.",
+      "turn_index": 12
+    }
+  ],
+  "keyphrases": [
+    "half-full tank draining and pumping",
+    "constant rate draining",
+    "fully filled in 10 minutes",
+    "rate of pumping",
+    "rotation matrix A_B[R]",
+    "Z-Y-X body-fixed Euler rotations",
+    "theta1 30 degrees theta2 45 degrees theta3 60 degrees",
+    "r22 element resultant rotation matrix",
+    "eigenvector eigenvalue +1 rotation matrix",
+    "gimbal lock orientation representation",
+    "rigid body rotation about [1,1,1]^T by pi/3",
+    "homogeneous transformation matrix",
+    "Denavit-Hartenberg link offset d_i"
+  ],
+  "events": []
+}

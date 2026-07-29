@@ -1,0 +1,84 @@
+{
+  "session_id": "353d3c6d_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I spent $75 on groceries at SaveMart last Thursday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I spent $15 on coffee and snacks at The Daily Grind last week.",
+      "turn_index": 2
+    },
+    {
+      "text": "I spent $12.99 on a sandwich and salad with their 20% off offer at The Daily Grind.",
+      "turn_index": 2
+    },
+    {
+      "text": "I spent $50 at Office Depot last month for printer ink and paper.",
+      "turn_index": 4
+    },
+    {
+      "text": "I spent $100 at Gap last weekend on a new pair of jeans and a sweater.",
+      "turn_index": 8
+    },
+    {
+      "text": "I spent $50 at Sephora last week on skincare products.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "grocery expenses",
+    "SaveMart",
+    "$75 groceries",
+    "coffee and snacks",
+    "The Daily Grind",
+    "$15 coffee",
+    "sandwich and salad",
+    "20% off offer",
+    "Office Depot",
+    "printer ink and paper",
+    "$50 printer ink",
+    "Gap",
+    "$100 jeans and sweater",
+    "Sephora",
+    "skincare products",
+    "$50 skincare",
+    "last Thursday",
+    "last week",
+    "last month",
+    "last weekend"
+  ],
+  "events": [
+    {
+      "text": "Spent $75 on groceries at SaveMart last Thursday.",
+      "date_hint": "last Thursday",
+      "turn_index": 0
+    },
+    {
+      "text": "Spent $15 on coffee and snacks at The Daily Grind last week.",
+      "date_hint": "last week",
+      "turn_index": 2
+    },
+    {
+      "text": "Spent $12.99 on a sandwich and salad with their 20% off offer at The Daily Grind.",
+      "date_hint": "last week",
+      "turn_index": 2
+    },
+    {
+      "text": "Spent $50 at Office Depot last month for printer ink and paper.",
+      "date_hint": "last month",
+      "turn_index": 4
+    },
+    {
+      "text": "Spent $100 at Gap last weekend on a new pair of jeans and a sweater.",
+      "date_hint": "last weekend",
+      "turn_index": 8
+    },
+    {
+      "text": "Spent $50 at Sephora last week on skincare products.",
+      "date_hint": "last week",
+      "turn_index": 10
+    }
+  ]
+}

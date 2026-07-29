@@ -1,0 +1,104 @@
+{
+  "session_id": "2e21c7d5",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a 40-mile bike ride this weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the weather forecast for Saturday and Sunday for my 40-mile ride.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want tips for riding in the rain.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to determine the best route for my 40-mile ride this weekend based on the weather forecast.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to stop by bike shops in my area to ask about route recommendations and pick up supplies for my ride.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am going to stop by the local bike shop downtown.",
+      "turn_index": 8
+    },
+    {
+      "text": "I bought my new Trek Emonda at the local bike shop downtown.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to ask the local bike shop downtown about route recommendations for my 40-mile ride this weekend.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to pick up extra supplies for my ride, including energy bars.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to pick up a new water bottle cage for my ride.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want route recommendations with minimal traffic and nice scenery.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will ask the bike shop staff about the best route to avoid heavy traffic and construction.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will ask the bike shop staff for scenic route recommendations.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will pick up energy bars and a new water bottle cage while at the bike shop.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "40-mile ride",
+    "weather forecast Saturday Sunday",
+    "riding in the rain tips",
+    "best route planning",
+    "route recommendations",
+    "minimal traffic routes",
+    "nice scenery routes",
+    "local bike shop downtown",
+    "Trek Emonda",
+    "energy bars",
+    "water bottle cage",
+    "avoid heavy traffic and construction",
+    "scenic route recommendations"
+  ],
+  "events": [
+    {
+      "text": "Planning a 40-mile ride this weekend and requesting weather forecast for Saturday and Sunday",
+      "date_hint": "this weekend (Saturday and Sunday)",
+      "turn_index": 0
+    },
+    {
+      "text": "Asking for tips for riding in the rain",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Determining the best route for the 40-mile ride based on the weather forecast",
+      "date_hint": "this weekend",
+      "turn_index": 4
+    },
+    {
+      "text": "Stopping by the local bike shop downtown to ask about route recommendations and buy supplies",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Asking bike shop staff about avoiding heavy traffic and construction and getting scenic route recommendations; buying energy bars and a new water bottle cage",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

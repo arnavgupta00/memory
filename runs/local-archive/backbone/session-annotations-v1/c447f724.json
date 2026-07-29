@@ -1,0 +1,85 @@
+{
+  "session_id": "c447f724",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for a new recipe to try out this weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a fruit-based dessert suggestion for this weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a fruit-based dessert that may include berries.",
+      "turn_index": 0
+    },
+    {
+      "text": "I still have leftover coffee syrup from a chocolate cake I made last Saturday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want advice on how to store fresh strawberries to keep them fresh for a longer period.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want the recipe for the strawberry coffee crisp.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of making a batch of sourdough bread this weekend.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want tips on how to maintain a healthy sourdough starter.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to try a new recipe that uses a preferment.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know whether my sourdough starter would work as a substitute for a preferment.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of trying a new recipe for a fruit and nut bread that uses a biga as a preferment.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know whether my sourdough starter would work as a substitute in a fruit and nut bread recipe that uses a biga as a preferment.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "new recipe this weekend",
+    "fruit-based dessert",
+    "berries dessert",
+    "leftover coffee syrup",
+    "chocolate cake",
+    "fresh strawberries storage",
+    "strawberry coffee crisp recipe",
+    "sourdough bread batch",
+    "healthy sourdough starter",
+    "preferment substitute",
+    "biga preferment",
+    "fruit and nut bread"
+  ],
+  "events": [
+    {
+      "text": "Made a chocolate cake and has leftover coffee syrup from it",
+      "date_hint": "last Saturday",
+      "turn_index": 0
+    },
+    {
+      "text": "Wants to try a new recipe this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 0
+    },
+    {
+      "text": "Wants to make a batch of sourdough bread this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 6
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "session_id": "answer_124f5dc3_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for recommendations on gifts for a friend who is into music.",
+      "turn_index": 0
+    },
+    {
+      "text": "I got a wireless headphone for my brother as a graduation gift on 3/8.",
+      "turn_index": 0
+    },
+    {
+      "text": "I think the wireless headphone was a big hit.",
+      "turn_index": 0
+    },
+    {
+      "text": "I think a portable speaker would be a great gift option.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think a music subscription would be a great gift option.",
+      "turn_index": 2
+    },
+    {
+      "text": "I asked whether there are good deals on portable speakers or music subscriptions right now.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering getting a gift for my neighbor who helped me with dog-sitting last month.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want gift ideas under $20 for my neighbor.",
+      "turn_index": 4
+    },
+    {
+      "text": "I was thinking of getting a gift card to a popular coffee shop for my neighbor.",
+      "turn_index": 6
+    },
+    {
+      "text": "I previously got a gift card for my neighbor last month.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want the neighbor to be able to treat themselves to a coffee or snack on me.",
+      "turn_index": 6
+    },
+    {
+      "text": "I asked whether getting a coffee shop gift card is a good idea.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "music gift recommendations",
+    "wireless headphone",
+    "graduation gift 3/8",
+    "portable speaker gift",
+    "music subscription",
+    "good deals right now",
+    "neighbor dog-sitting",
+    "gift ideas under $20",
+    "coffee shop gift card",
+    "coffee or snack gift"
+  ],
+  "events": [
+    {
+      "text": "Bought a wireless headphone for my brother as a graduation gift",
+      "date_hint": "3/8",
+      "turn_index": 0
+    },
+    {
+      "text": "Neighbor helped with dog-sitting",
+      "date_hint": "last month",
+      "turn_index": 4
+    },
+    {
+      "text": "I got a gift card for my neighbor last month",
+      "date_hint": "last month",
+      "turn_index": 6
+    }
+  ]
+}

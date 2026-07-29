@@ -1,0 +1,82 @@
+{
+  "session_id": "6234296c",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to NYC next week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need to remember to pack my phone charger.",
+      "turn_index": 0
+    },
+    {
+      "text": "I feel like I always end up overpacking.",
+      "turn_index": 2
+    },
+    {
+      "text": "On my last trip to Europe, I packed five different sweaters and only wore two of them.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been trying to get better at packing light.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am preparing for multiple activities, including hiking and work meetings.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been struggling with packing my hair dryer and straightening iron.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been struggling to pack snacks for the plane.",
+      "turn_index": 10
+    },
+    {
+      "text": "I always seem to forget to buy snacks before I leave.",
+      "turn_index": 10
+    },
+    {
+      "text": "When I forget, I am stuck with limited options available at the airport.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to NYC next week",
+    "weather forecast next 7 days",
+    "pack my phone charger",
+    "average temperature in NYC",
+    "packing efficiently",
+    "overpacking clothes",
+    "packing light",
+    "last trip to Europe sweaters",
+    "avoid overpacking clothes",
+    "packing for multiple activities",
+    "hiking and work meetings",
+    "packing bulky items",
+    "hair dryer packing",
+    "straightening iron packing",
+    "packing snacks for the plane",
+    "forget to buy snacks before leaving",
+    "limited options at the airport"
+  ],
+  "events": [
+    {
+      "text": "Planning a trip to NYC next week",
+      "date_hint": "next week",
+      "turn_index": 0
+    },
+    {
+      "text": "Last trip to Europe where five sweaters were packed and only two were worn",
+      "date_hint": "last trip",
+      "turn_index": 4
+    },
+    {
+      "text": "Preparing for multiple activities including hiking and work meetings",
+      "date_hint": "",
+      "turn_index": 6
+    }
+  ]
+}

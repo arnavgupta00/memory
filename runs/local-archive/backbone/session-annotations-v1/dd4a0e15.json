@@ -1,0 +1,124 @@
+{
+  "session_id": "dd4a0e15",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to plan a trip to a sporting event.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want help finding upcoming sporting events in my area.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in watching basketball.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in watching football.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in watching tennis.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in watching golf.",
+      "turn_index": 2
+    },
+    {
+      "text": "I live in the city.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am open to attending an event at a nearby arena or stadium.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am flexible with dates for the sporting event.",
+      "turn_index": 2
+    },
+    {
+      "text": "I would prefer something within the next few months.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering watching a tennis tournament.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am considering the US Open Qualifying Tournament.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know whether tickets will be hard to get.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want tips for attending a tennis tournament in person.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have never been to a tennis tournament before.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been watching a lot of tennis lately.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been particularly watching the Australian Open.",
+      "turn_index": 8
+    },
+    {
+      "text": "I watched the Novak Djokovic vs Rafael Nadal semifinal match.",
+      "turn_index": 8
+    },
+    {
+      "text": "Djokovic won the Novak Djokovic vs Rafael Nadal semifinal match in straight sets.",
+      "turn_index": 8
+    },
+    {
+      "text": "I was impressed by Djokovic's backhand returns.",
+      "turn_index": 10
+    },
+    {
+      "text": "Djokovic neutralized Nadal's powerful forehand.",
+      "turn_index": 10
+    },
+    {
+      "text": "Djokovic created opportunities for himself.",
+      "turn_index": 10
+    },
+    {
+      "text": "Djokovic took control of the rallies and dictated the pace of the match.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "planning a trip to a sporting event",
+    "upcoming events in my area",
+    "basketball event",
+    "football event",
+    "tennis event",
+    "golf event",
+    "nearby arena or stadium",
+    "within the next few months",
+    "US Open Qualifying Tournament tickets",
+    "tennis tournament tips",
+    "attending a tennis tournament in person",
+    "Australian Open Djokovic Nadal semifinal"
+  ],
+  "events": [
+    {
+      "text": "Considering watching the US Open Qualifying Tournament",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Watching the Novak Djokovic vs Rafael Nadal semifinal match at the Australian Open",
+      "date_hint": "lately (Australian Open)",
+      "turn_index": 8
+    }
+  ]
+}

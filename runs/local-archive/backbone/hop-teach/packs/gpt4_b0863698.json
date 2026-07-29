@@ -1,0 +1,25 @@
+{
+  "question_id": "gpt4_b0863698",
+  "question_type": "temporal-reasoning",
+  "question": "How many days ago did I participate in the 5K charity run?",
+  "question_date": "2023/03/26 (Sun) 04:13",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_550bb2d1_1"
+  ],
+  "haystack_session_count": 42,
+  "notes_coverage": "partial",
+  "annotated_session_count": 5,
+  "gold_sessions": [
+    {
+      "session_id": "answer_550bb2d1_1",
+      "date": "2023/03/19 (Sun) 12:13",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_550bb2d1_1\n[session_date] 2023/03/19 (Sun) 12:13\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm looking for some new running routes in my area. I just got back into running and did a 5K charity run today, finishing in 27 minutes and 12 seconds, which was a great motivator. Do you have any recommendations for routes that are around 3-5 miles long?\n\n[turn 2] I live in the city, and I prefer running on roads. I'm looking for routes that are flat and easy to navigate, with minimal traffic. I usually run in the morning, around 7-8 am. As for safety, I'd prefer routes with good lighting and sidewalks or pedestrian paths.\n\n[turn 4] I was thinking of exploring some new areas of the city to run in, but I'm not sure where to start. Do you know of any running groups or clubs in the city that I could join to meet other runners and get some route suggestions?\n\n[turn 6] I think joining a running group or club is a great idea. I've been meaning to explore more of the city on my runs, and getting route suggestions from experienced runners would be super helpful. I've also been enjoying the social aspect of playing volleyball and tennis with friends, so I think I'd really benefit from running with a group too. Do you know if any of these groups offer beginner-friendly routes or training programs for someone like me who's just getting back into running?\n\n[turn 8] I'm thinking of joining a running group that meets on Saturday mornings. Would it be possible to get a route suggestion from them before I decide to join, so I can get an idea of the type of routes they typically do? That way, I can make sure it's a good fit for me.\n\n[turn 10] I'm excited to explore new routes and join a running group to stay motivated and accountable. Can you suggest a good way to reach out to the running group and ask for a route suggestion?"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

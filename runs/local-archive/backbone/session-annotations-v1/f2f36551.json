@@ -1,0 +1,100 @@
+{
+  "session_id": "f2f36551",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have been having a tough time establishing a consistent morning routine.",
+      "turn_index": 0
+    },
+    {
+      "text": "I usually need to wake up around 8:30 am for my morning prep for work.",
+      "turn_index": 2
+    },
+    {
+      "text": "On a typical day, I want to fit in some exercise.",
+      "turn_index": 2
+    },
+    {
+      "text": "On a typical day, I want to have a decent breakfast.",
+      "turn_index": 2
+    },
+    {
+      "text": "On a typical day, I want to get ready for work on time.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want my morning routine to take 1-2 hours.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want quick and healthy breakfast ideas that I can prepare in 10-15 minutes.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am a big fan of scrambled eggs with spinach and feta.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want more information on muffin tin frittatas, including how many eggs I need.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want recommended veggies to add to muffin tin frittatas.",
+      "turn_index": 6
+    },
+    {
+      "text": "I was thinking of adding diced bell peppers and onions to the frittatas.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know how to reheat the frittatas in the morning if I make them ahead of time.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am aiming to wake up at 7:00 am.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to fit in a 30-minute exercise routine.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to shower as part of my morning routine.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to get ready for work after my exercise routine and shower.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "consistent morning routine",
+    "morning schedule",
+    "wake up 8:30 am",
+    "morning prep for work",
+    "1-2 hours morning routine",
+    "quick healthy breakfast 10-15 minutes",
+    "option 2 morning routine",
+    "scrambled eggs spinach feta",
+    "muffin tin frittatas",
+    "how many eggs for frittatas",
+    "recommended veggies for frittatas",
+    "reheating frittatas",
+    "diced bell peppers and onions",
+    "30-minute exercise routine",
+    "wake up 7:00 am",
+    "shower and get ready for work"
+  ],
+  "events": [
+    {
+      "text": "Wake up time target for morning routine at 7:00 am",
+      "date_hint": "aiming to wake up at 7:00 am",
+      "turn_index": 10
+    },
+    {
+      "text": "Typical wake-up time around 8:30 am for morning prep for work",
+      "date_hint": "around 8:30 am",
+      "turn_index": 2
+    }
+  ]
+}

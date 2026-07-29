@@ -1,0 +1,64 @@
+{
+  "session_id": "77974d02",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am a student at the University of California, Berkeley.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am moving to the US in August.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am planning to travel to San Francisco for a few days before moving to Berkeley.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am moving to Berkeley after traveling to San Francisco.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am a psychology major.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am interested in learning more about UX design.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am interested in learning more about user research and testing.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "University of California, Berkeley student",
+    "moving to the US in August",
+    "affordable furniture for new apartment",
+    "travel to San Francisco",
+    "must-see attractions in San Francisco",
+    "tech industry in Berkeley",
+    "job opportunities in tech Bay Area",
+    "psychology major",
+    "getting involved in tech",
+    "UX design online resources",
+    "UX design courses",
+    "UX design portfolio",
+    "popular UX design tools",
+    "user research resources",
+    "user testing methods",
+    "user research and testing tools"
+  ],
+  "events": [
+    {
+      "text": "Moving to the US",
+      "date_hint": "August",
+      "turn_index": 0
+    },
+    {
+      "text": "Traveling to San Francisco for a few days before moving to Berkeley",
+      "date_hint": "a few days before moving to Berkeley",
+      "turn_index": 2
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "session_id": "3422786d_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have a Honda Civic.",
+      "turn_index": 0
+    },
+    {
+      "text": "I participated in the Turbocharged Tuesday auto racking event at a local racing circuit.",
+      "turn_index": 0
+    },
+    {
+      "text": "I clocked a personal best time of 12.8 seconds in the quarter-mile drag race at the Turbocharged Tuesday auto racking event.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to shave off even more seconds from my quarter-mile time.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in a turbocharger upgrade for my modified Honda Civic.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in turbocharger brands compatible with my modified Honda Civic.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am particularly interested in the Garrett turbocharger option.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am particularly interested in the Garrett GTX2867R model.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want specifications for the GTX2867R turbocharger.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know how the GTX2867R would work with my modified Honda Civic.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have already clocked a personal best time of 12.8 seconds in the quarter-mile drag race at the Turbocharged Tuesday auto racking event.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am interested in learning about the installation and tuning process for the GTX2867R turbocharger.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know the general process for installing and tuning the GTX2867R.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know what I should expect from a qualified tuner.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking about getting a dyno tune for my Honda Civic after installing the GTX2867R turbocharger.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want information on what to expect from a dyno tune.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know how a dyno tune will help my car perform better.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to get my Honda Civic dyno-tuned after installing the GTX2867R turbocharger.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am confident that a dyno tune will help me shave off even more seconds.",
+      "turn_index": 10
+    },
+    {
+      "text": "I will find a reputable tuner with experience with the GTX2867R and my car's make and model.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "performance parts",
+    "Honda Civic",
+    "Turbocharged Tuesday auto racking event",
+    "quarter-mile drag race",
+    "12.8 seconds personal best",
+    "turbocharger upgrade",
+    "turbocharger brands",
+    "Garrett turbocharger",
+    "GTX2867R specifications",
+    "installation and tuning process",
+    "qualified tuner",
+    "dyno tune"
+  ],
+  "events": [
+    {
+      "text": "Turbocharged Tuesday auto racking event participation",
+      "date_hint": "recently",
+      "turn_index": 0
+    },
+    {
+      "text": "Personal best quarter-mile drag race time of 12.8 seconds",
+      "date_hint": "at Turbocharged Tuesday auto racking event",
+      "turn_index": 0
+    },
+    {
+      "text": "Personal best quarter-mile drag race time of 12.8 seconds (referenced again)",
+      "date_hint": "at Turbocharged Tuesday auto racking event",
+      "turn_index": 4
+    },
+    {
+      "text": "Plan to dyno tune after installing GTX2867R turbocharger",
+      "date_hint": "after installing (no specific date)",
+      "turn_index": 8
+    },
+    {
+      "text": "Plan to get dyno-tuned after installing GTX2867R and find a reputable tuner",
+      "date_hint": "after installing (no specific date)",
+      "turn_index": 10
+    }
+  ]
+}

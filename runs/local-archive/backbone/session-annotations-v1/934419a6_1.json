@@ -1,0 +1,98 @@
+{
+  "session_id": "934419a6_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Chicago for a marketing conference next month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I commute to work via the subway.",
+      "turn_index": 0
+    },
+    {
+      "text": "My commute time is around 45 minutes each way.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to use my commute time to catch up on work or reading.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to use my commute time to prepare for the conference by researching the speakers and their topics.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want suggestions on how to effectively take notes during the conference sessions.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am planning to take notes on my laptop during the conference sessions.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am planning to attend a few networking events during the conference.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to connect with some of the speakers and attendees in the marketing industry.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to use my subway commute time to prepare for the networking events by researching the attendees and crafting my elevator pitch.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of asking speakers about their thoughts on the latest trends in AI-powered marketing tools.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am thinking of asking speakers how they think the industry will evolve in the next 5 years.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want suggestions on how to turn conference conversations into potential collaborations or business opportunities.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to Chicago",
+    "marketing conference",
+    "next month",
+    "subway commute",
+    "45 minutes each way",
+    "conference note taking",
+    "taking notes on a laptop",
+    "networking events",
+    "marketing industry connections",
+    "elevator pitch",
+    "AI-powered marketing tools",
+    "latest trends in AI marketing",
+    "industry evolution next 5 years",
+    "open-ended questions",
+    "researching speakers and topics",
+    "researching attendees"
+  ],
+  "events": [
+    {
+      "text": "Planning a trip to Chicago for a marketing conference next month",
+      "date_hint": "next month",
+      "turn_index": 0
+    },
+    {
+      "text": "Planning to attend networking events during the conference",
+      "date_hint": "during the conference",
+      "turn_index": 6
+    },
+    {
+      "text": "Planning to ask speakers about AI-powered marketing tools trends",
+      "date_hint": "during the conference",
+      "turn_index": 10
+    },
+    {
+      "text": "Planning to ask speakers how the marketing industry will evolve in the next 5 years",
+      "date_hint": "during the conference",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "session_id": "sharegpt_KCGdZJP_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have a marathon on April 17, 2023.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am already running 60 miles per week.",
+      "turn_index": 0
+    },
+    {
+      "text": "Mondays should be rest days in my training plan.",
+      "turn_index": 0
+    },
+    {
+      "text": "I started the training plan in January.",
+      "turn_index": 2
+    },
+    {
+      "text": "Today is February 15 when I asked to revise the training plan.",
+      "turn_index": 2
+    },
+    {
+      "text": "The training plan has 9 weeks.",
+      "turn_index": 6
+    }
+  ],
+  "keyphrases": [
+    "marathon April 17 2023",
+    "training plan",
+    "weekly mileage totals",
+    "rest days Mondays",
+    "starting next Monday",
+    "January training plan",
+    "February 15 revision",
+    "week 9 race day Monday",
+    "maximum weekly mileage 85",
+    "9-week training plan"
+  ],
+  "events": [
+    {
+      "text": "Marathon race day",
+      "date_hint": "April 17, 2023",
+      "turn_index": 0
+    },
+    {
+      "text": "Asked to revise training plan on February 15",
+      "date_hint": "February 15",
+      "turn_index": 2
+    },
+    {
+      "text": "Asked about week 9 including only Monday as race day",
+      "date_hint": "week 9 (race day Monday)",
+      "turn_index": 4
+    },
+    {
+      "text": "Questioned why it was called a 10-week training plan",
+      "date_hint": "",
+      "turn_index": 6
+    }
+  ]
+}

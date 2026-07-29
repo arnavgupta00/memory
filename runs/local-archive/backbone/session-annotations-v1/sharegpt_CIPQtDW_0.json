@@ -1,0 +1,50 @@
+{
+  "session_id": "sharegpt_CIPQtDW_0",
+  "prompt": "session-annotate-v1",
+  "facts": [],
+  "keyphrases": [
+    "vehicle service shop",
+    "oil change",
+    "average oil change time",
+    "15 minutes",
+    "vehicle queue",
+    "3rd customer waiting",
+    "2 vehicles at a time",
+    "4th customer",
+    "5th customer",
+    "queue order",
+    "adding to the queue"
+  ],
+  "events": [
+    {
+      "text": "Oil change takes an average of 15 minutes to be completed at the shop",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "At 10 AM, a 3rd customer wants to wait for an oil change",
+      "date_hint": "10 AM",
+      "turn_index": 0
+    },
+    {
+      "text": "Customer asks what to tell them if the shop can work on two vehicles at a time",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Fourth customer is added to the scenario after establishing two vehicles can be worked on at a time",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Fifth customer scenario",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "3rd and 4th customers add themselves to the queue; question about what to tell the 5th customer",
+      "date_hint": "",
+      "turn_index": 8
+    }
+  ]
+}

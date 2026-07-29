@@ -1,0 +1,116 @@
+{
+  "session_id": "06d1a1a0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to keep track of my expenses for the past month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I bought clothing and accessories recently.",
+      "turn_index": 2
+    },
+    {
+      "text": "I bought a pair of boots during the Black Friday sales.",
+      "turn_index": 4
+    },
+    {
+      "text": "I bought a sweater from Macy's during the Black Friday sales.",
+      "turn_index": 4
+    },
+    {
+      "text": "I shopped during the VIB sale at Sephora before the Black Friday sales.",
+      "turn_index": 4
+    },
+    {
+      "text": "I got a moisturizer during the VIB sale.",
+      "turn_index": 6
+    },
+    {
+      "text": "I got an eyeshadow palette during the VIB sale.",
+      "turn_index": 6
+    },
+    {
+      "text": "I bought a handbag at a garage sale a month ago.",
+      "turn_index": 8
+    },
+    {
+      "text": "I bought sunglasses at a garage sale a month ago.",
+      "turn_index": 8
+    },
+    {
+      "text": "I bought a top at Target two weeks ago.",
+      "turn_index": 8
+    },
+    {
+      "text": "I bought leggings at Target two weeks ago.",
+      "turn_index": 8
+    },
+    {
+      "text": "I bought shoes from Nordstrom Rack online three weeks ago.",
+      "turn_index": 10
+    },
+    {
+      "text": "I bought a dress from Banana Republic six weeks ago during their friends and family sale.",
+      "turn_index": 10
+    },
+    {
+      "text": "I bought trousers from Banana Republic six weeks ago during their friends and family sale.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "track expenses",
+    "past month expenses",
+    "clothing and accessories",
+    "Black Friday sales",
+    "Macy's sweater",
+    "VIB sale",
+    "Sephora moisturizer",
+    "eyeshadow palette",
+    "garage sale handbag",
+    "garage sale sunglasses",
+    "Target top",
+    "Target leggings",
+    "Nordstrom Rack online shoes",
+    "Banana Republic friends and family sale",
+    "dress and trousers"
+  ],
+  "events": [
+    {
+      "text": "Bought items during the Black Friday sales (boots and Macy's sweater).",
+      "date_hint": "Black Friday (year not specified)",
+      "turn_index": 4
+    },
+    {
+      "text": "Shopped during the VIB sale at Sephora before the Black Friday sales.",
+      "date_hint": "before Black Friday (year not specified)",
+      "turn_index": 4
+    },
+    {
+      "text": "Got a moisturizer and an eyeshadow palette during the VIB sale.",
+      "date_hint": "VIB sale (year not specified)",
+      "turn_index": 6
+    },
+    {
+      "text": "Bought a handbag and sunglasses at a garage sale.",
+      "date_hint": "a month ago",
+      "turn_index": 8
+    },
+    {
+      "text": "Bought a top and leggings at Target.",
+      "date_hint": "two weeks ago",
+      "turn_index": 8
+    },
+    {
+      "text": "Bought shoes from Nordstrom Rack online.",
+      "date_hint": "three weeks ago",
+      "turn_index": 10
+    },
+    {
+      "text": "Bought a dress and trousers from Banana Republic during the friends and family sale.",
+      "date_hint": "six weeks ago",
+      "turn_index": 10
+    }
+  ]
+}

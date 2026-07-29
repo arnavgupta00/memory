@@ -1,0 +1,79 @@
+{
+  "session_id": "3aac691d_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for gift ideas for my neighbor who is moving into a new place.",
+      "turn_index": 0
+    },
+    {
+      "text": "I did something similar for a mutual friend last week.",
+      "turn_index": 0
+    },
+    {
+      "text": "My friends and I chipped in to get a gift card to Bed Bath & Beyond worth $50 for my mutual friend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I like the idea of a welcome basket.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to include kitchen utensils in the welcome basket.",
+      "turn_index": 2
+    },
+    {
+      "text": "I do not want to break the bank with the gift items.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will go with the $30 option.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will include a gift card to Bed Bath & Beyond in the $30 option.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want ideas on what to write in the note or card.",
+      "turn_index": 8
+    },
+    {
+      "text": "I do not want the note or card to sound too cheesy or generic.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will go with the first option, \"Simple and Sincere\" for the note or card.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "gift ideas for neighbor moving",
+    "welcome basket",
+    "kitchen utensils",
+    "price range for gift items",
+    "Bed Bath & Beyond gift card",
+    "$50 gift card",
+    "$30 option",
+    "note or card message",
+    "Simple and Sincere",
+    "not too cheesy or generic"
+  ],
+  "events": [
+    {
+      "text": "Chipped in with friends to get a $50 Bed Bath & Beyond gift card for a mutual friend",
+      "date_hint": "last week",
+      "turn_index": 0
+    },
+    {
+      "text": "Choosing the $30 option for the neighbor gift",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Choosing the note/card option \"Simple and Sincere\"",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

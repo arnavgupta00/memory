@@ -1,0 +1,124 @@
+{
+  "session_id": "6dc62df6_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for gift ideas for my sister Emma's birthday.",
+      "turn_index": 0
+    },
+    {
+      "text": "My sister Emma's birthday is coming up soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I got my sister Emma a beautiful silver necklace last month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I picked up a gift wrap set with a lovely floral design from the same store for $8.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of using the floral gift wrap set to wrap up a small gift to go with the silver necklace.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think a small potpourri bag would go well with the necklace and the wrapping paper.",
+      "turn_index": 4
+    },
+    {
+      "text": "I think a tiny notebook or journal would go well with the necklace and the wrapping paper.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to check out Paper Source to see if they have floral designs that match the wrapping paper.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to check out Kate's Paperie to see if they have floral designs that match the wrapping paper.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to check out Paper Source first to see if they have floral designs that match the wrapping paper.",
+      "turn_index": 8
+    },
+    {
+      "text": "If Paper Source does not have matching floral designs, I will try Kate's Paperie.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I will go with the tiny notebook or journal.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want suggestions on how to personalize the journal or make it more special for Emma's birthday.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want suggestions on what kind of message to write inside the journal.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want the message inside the journal to be heartfelt and personal, but not too sappy or cheesy.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will check out Paper Source and Kate's Paperie for a journal with a floral design that matches the wrapping paper.",
+      "turn_index": 10
+    },
+    {
+      "text": "If I find a matching journal, I will write a heartfelt message inside.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am considering writing the message: \"Happy Birthday, Emma! Wishing you a year filled with love, laughter, and adventure. I'm so grateful to have you as my sister and best friend.\"",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "gift ideas for sister",
+    "Emma's birthday",
+    "silver necklace",
+    "floral gift wrap set",
+    "gift wrap set $8",
+    "small gift to go with necklace",
+    "small potpourri bag",
+    "tiny notebook journal",
+    "Paper Source floral designs",
+    "Kate's Paperie floral designs",
+    "personalize journal",
+    "heartfelt birthday message"
+  ],
+  "events": [
+    {
+      "text": "Bought a beautiful silver necklace for sister Emma.",
+      "date_hint": "last month",
+      "turn_index": 0
+    },
+    {
+      "text": "Picked up a floral gift wrap set for $8 from the same store.",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Plans to check Paper Source for a floral-design journal matching the wrapping paper.",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Plans to check Kate's Paperie for a floral-design journal matching the wrapping paper.",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Plans to check Paper Source first, then Kate's Paperie if needed.",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Plans to write a heartfelt birthday message inside the journal.",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

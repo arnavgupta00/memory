@@ -1,0 +1,74 @@
+{
+  "session_id": "5808284e",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to organize my coupons and gift cards.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a way to keep track of coupons and gift cards digitally, including expiration dates.",
+      "turn_index": 2
+    },
+    {
+      "text": "I saw a coupon for 20% off on all kitchen appliances at Best Buy in last Sunday's newspaper.",
+      "turn_index": 4
+    },
+    {
+      "text": "I think I have a discount voucher for Bed Bath & Beyond that is expiring soon.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have a voucher for $20 off a $100 purchase.",
+      "turn_index": 10
+    },
+    {
+      "text": "I got the $20 off $100 voucher last month.",
+      "turn_index": 10
+    },
+    {
+      "text": "I think the $20 off $100 voucher is expiring soon.",
+      "turn_index": 10
+    },
+    {
+      "text": "I should probably use the $20 off $100 voucher soon.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "organize coupons",
+    "gift cards tracking",
+    "binder method",
+    "track expiration dates",
+    "digital coupon tracking",
+    "Best Buy coupon",
+    "20% off kitchen appliances",
+    "last Sunday's newspaper coupon",
+    "Bed Bath & Beyond voucher",
+    "$20 off $100 purchase",
+    "voucher expiration reminder",
+    "kitchen appliances promotions"
+  ],
+  "events": [
+    {
+      "text": "Saw a Best Buy coupon for 20% off kitchen appliances in last Sunday's newspaper",
+      "date_hint": "last Sunday",
+      "turn_index": 4
+    },
+    {
+      "text": "Got a $20 off a $100 purchase voucher last month",
+      "date_hint": "last month",
+      "turn_index": 10
+    },
+    {
+      "text": "Bed Bath & Beyond discount voucher expiring soon",
+      "date_hint": "expiring soon",
+      "turn_index": 8
+    },
+    {
+      "text": "$20 off $100 voucher expiring soon",
+      "date_hint": "expiring soon",
+      "turn_index": 10
+    }
+  ]
+}

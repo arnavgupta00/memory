@@ -1,0 +1,94 @@
+{
+  "session_id": "e44534ca",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I dip in energy levels around 3:00 PM.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a meeting at 9:00 AM.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to finish a report that is due by the end of the day.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been putting off organizing my files for weeks.",
+      "turn_index": 2
+    },
+    {
+      "text": "Last Monday, I woke up at 6:30 AM.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to move my lunch break to 12:30 PM.",
+      "turn_index": 4
+    },
+    {
+      "text": "I usually take a walk during my lunch break.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to attend a yoga class tonight at 6:00 PM.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to leave buffer time to get to the yoga class.",
+      "turn_index": 4
+    },
+    {
+      "text": "I asked to be reminded what time I woke up last Monday.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to aim to wake up at 6:30 AM again this week.",
+      "turn_index": 10
+    },
+    {
+      "text": "I think 6:30 AM is earlier than my usual wake-up time.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "prioritize tasks by energy levels",
+    "energy dip around 3:00 PM",
+    "meeting at 9:00 AM",
+    "report due end of day",
+    "organizing files for weeks",
+    "woke up last Monday 6:30 AM",
+    "lunch break 12:30 PM",
+    "take a walk during lunch",
+    "yoga class 6:00 PM",
+    "leave buffer time",
+    "wake up 6:30 AM this week"
+  ],
+  "events": [
+    {
+      "text": "Meeting scheduled for 9:00 AM",
+      "date_hint": "9:00 AM",
+      "turn_index": 2
+    },
+    {
+      "text": "Report due by the end of the day",
+      "date_hint": "end of the day",
+      "turn_index": 2
+    },
+    {
+      "text": "Woke up at 6:30 AM last Monday",
+      "date_hint": "last Monday",
+      "turn_index": 2
+    },
+    {
+      "text": "Plan to attend yoga class at 6:00 PM tonight",
+      "date_hint": "tonight 6:00 PM",
+      "turn_index": 4
+    },
+    {
+      "text": "Aim to wake up at 6:30 AM again this week",
+      "date_hint": "this week",
+      "turn_index": 10
+    }
+  ]
+}

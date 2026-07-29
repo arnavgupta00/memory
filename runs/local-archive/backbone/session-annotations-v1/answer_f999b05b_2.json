@@ -1,0 +1,97 @@
+{
+  "session_id": "answer_f999b05b_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have been listening to a lot of indie music lately.",
+      "turn_index": 0
+    },
+    {
+      "text": "I just got back from a music festival in Brooklyn with a group of friends.",
+      "turn_index": 0
+    },
+    {
+      "text": "I saw Glass Animals live at the music festival in Brooklyn.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to check out more of Glass Animals' music.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in exploring more psychedelic indie-rock.",
+      "turn_index": 2
+    },
+    {
+      "text": "I had a great time seeing Glass Animals at the festival.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am interested in bands that have a strong live presence.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of checking out local music events in my neighborhood.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering a free outdoor concert series in the park.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering a jazz night at a local bar.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am looking forward to discovering new artists and enjoying live music in a more low-key setting.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have been to a music festival in Brooklyn with a group of friends featuring a lineup of my favorite indie bands.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want general tips on how to make the most of local music events like free outdoor concerts and jazz nights.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "indie music recommendations",
+    "music festival in Brooklyn",
+    "Glass Animals live",
+    "psychedelic indie-rock",
+    "bands with strong live presence",
+    "local music events",
+    "free outdoor concert series",
+    "jazz night at a local bar",
+    "discover new artists",
+    "low-key live music"
+  ],
+  "events": [
+    {
+      "text": "Music festival in Brooklyn with a group of friends",
+      "date_hint": "just got back (relative to session)",
+      "turn_index": 0
+    },
+    {
+      "text": "Saw Glass Animals live at the music festival in Brooklyn",
+      "date_hint": "at the Brooklyn festival (relative to session)",
+      "turn_index": 2
+    },
+    {
+      "text": "Planning to check out local music events in the neighborhood",
+      "date_hint": "thinking (relative to session)",
+      "turn_index": 6
+    },
+    {
+      "text": "Planning to check out local music events in the neighborhood (free outdoor concert series or jazz night)",
+      "date_hint": "thinking (relative to session)",
+      "turn_index": 8
+    },
+    {
+      "text": "Seeking general tips for free outdoor concerts and jazz nights",
+      "date_hint": "thinking (relative to session)",
+      "turn_index": 10
+    }
+  ]
+}

@@ -18,6 +18,7 @@ export function createRetrieveMemoryNode(runtime: WorkflowRuntime) {
         charBudget: runtime.options.char_budget,
         maxTurnChars: runtime.options.max_turn_chars,
         temporalBoost: runtime.options.temporal_boost,
+        indexUserTurnsOnly: runtime.options.index_user_turns_only ?? true,
       },
       seriesExpandEnabled: runtime.options.series_expand_enabled,
       seriesExpandMax: runtime.options.series_expand_max,

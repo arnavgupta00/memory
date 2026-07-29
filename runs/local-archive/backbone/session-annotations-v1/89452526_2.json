@@ -1,0 +1,79 @@
+{
+  "session_id": "89452526_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for gift ideas for my brother.",
+      "turn_index": 0
+    },
+    {
+      "text": "My brother is really into gaming.",
+      "turn_index": 0
+    },
+    {
+      "text": "I got my brother a customized phone case with his favorite game's logo on it for his birthday last month.",
+      "turn_index": 0
+    },
+    {
+      "text": "The customized phone case cost around $25.",
+      "turn_index": 0
+    },
+    {
+      "text": "I spent around $25 on the customized phone case for my brother's birthday last month.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering a gaming-themed accessory for my brother, such as a mousepad or coasters.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think a gaming-themed mousepad would be a great idea for my brother.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want the gaming-themed mousepad to match the design of the customized phone case I got him.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am considering getting a gift card to my brother's favorite gaming platform's store.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering a $25 gift card for my brother.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering including a personal message or a birthday card with the gift.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "gift ideas for brother",
+    "gaming-related gifts",
+    "customized phone case",
+    "favorite game's logo",
+    "gaming-themed mousepad",
+    "matching design",
+    "gaming-themed coasters",
+    "gift card to gaming platform store",
+    "$25 gift card",
+    "birthday card personal message"
+  ],
+  "events": [
+    {
+      "text": "Bought a customized phone case with brother's favorite game's logo for his birthday",
+      "date_hint": "last month",
+      "turn_index": 0
+    },
+    {
+      "text": "Considering giving a $25 gift card to brother's favorite gaming platform store",
+      "date_hint": "around the same time as the birthday gift",
+      "turn_index": 8
+    },
+    {
+      "text": "Considering including a personal message or birthday card with the gift",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "session_id": "dc3ee1d1_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am researching potential locations for our next company event.",
+      "turn_index": 0
+    },
+    {
+      "text": "I was thinking of Nevada for our next company event.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am familiar with the Las Vegas Convention Center.",
+      "turn_index": 2
+    },
+    {
+      "text": "I attended the Tech Expo 2022 at the Las Vegas Convention Center in March.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am interested in fintech and e-commerce events.",
+      "turn_index": 4
+    },
+    {
+      "text": "I attended a similar e-commerce event in New York in April.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am interested in learning more about the CommerceNext event in New York City.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to learn more about the latest trends and innovations in e-commerce.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to network with other professionals in the e-commerce industry.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to learn about the application process for CommerceNext.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to request an invitation for CommerceNext.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Nevada major convention centers",
+    "Las Vegas Convention Center",
+    "Tech Expo 2022",
+    "upcoming tech events at LVCC",
+    "fintech and e-commerce events",
+    "E-commerce Summit",
+    "similar e-commerce event in New York",
+    "East Coast e-commerce conferences",
+    "CommerceNext event",
+    "CommerceNext attendees speakers topics",
+    "e-commerce trends and innovations",
+    "application process invitation request"
+  ],
+  "events": [
+    {
+      "text": "Tech Expo 2022 at the Las Vegas Convention Center",
+      "date_hint": "March 2022",
+      "turn_index": 2
+    },
+    {
+      "text": "Similar e-commerce event in New York",
+      "date_hint": "April",
+      "turn_index": 6
+    }
+  ]
+}

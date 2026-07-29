@@ -1,0 +1,92 @@
+{
+  "session_id": "dc5e537d_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am thinking of getting a tune-up for my car soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "My car was getting 30 miles per gallon in the city a few months ago.",
+      "turn_index": 0
+    },
+    {
+      "text": "I plan to check the air filter.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to check the spark plugs.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to check my tire pressure.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been meaning to get my oil changed.",
+      "turn_index": 2
+    },
+    {
+      "text": "My oil change is overdue by about 1000 miles.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of getting a dash cam.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am considering a dash cam that costs around $150.",
+      "turn_index": 6
+    },
+    {
+      "text": "The dash cam I am considering has collision detection.",
+      "turn_index": 6
+    },
+    {
+      "text": "The dash cam I am considering has a parking mode.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think I will go with the dash cam that costs around $150.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering getting a car phone mount to go along with the dash cam.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I will get a car phone mount too.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want my phone mounted while driving.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "car tune-up",
+    "fuel efficiency",
+    "30 mpg city",
+    "air filter",
+    "spark plugs",
+    "tire pressure",
+    "oil change overdue 1000 miles",
+    "dash cam recommendations",
+    "dash cam collision detection",
+    "dash cam parking mode",
+    "dash cam $150",
+    "car phone mount"
+  ],
+  "events": [
+    {
+      "text": "Dash cam decision to go with the ~$150 model",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Plan to get a car phone mount to use while driving",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

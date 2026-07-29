@@ -1,0 +1,91 @@
+{
+  "session_id": "sharegpt_57Bupsp_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want a file sync service where a user can upload a file to the cloud and have it synced across all of the user's devices.",
+      "turn_index": 0
+    },
+    {
+      "text": "A file in the service can be at most 4GB big.",
+      "turn_index": 0
+    },
+    {
+      "text": "The upload and downloads in the service should be efficient and resumable.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user's bandwidth is critical, so the service should be efficient with bandwidth.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the high-level components of the system to operate with high availability.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the system's data to be durable no matter what happens.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the system to define how it behaves while scaling up and scaling down.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the system to be cost-effective and to include a justification for the cost-effectiveness.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the design to describe how capacity planning helped make good design decisions.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the design to describe how other services will interact with the file sync service.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the system to ensure the data in the system is never in an inconsistent state.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the system to be free of deadlocks if applicable.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the design to ensure the throughput of the system is not affected by locking, and if it is affected, to state how it would affect throughput.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a design document that states critical design decisions, tradeoffs, components, services, and communications.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the design document to specify how the system handles at scale and what will eventually become a chokepoint.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the design to avoid unnecessary components and keep the system simple and elegant.",
+      "turn_index": 0
+    }
+  ],
+  "keyphrases": [
+    "file sync service",
+    "cloud file upload",
+    "sync across devices",
+    "4GB file size limit",
+    "resumable uploads",
+    "resumable downloads",
+    "efficient bandwidth usage",
+    "high availability components",
+    "durable data storage",
+    "scaling up and scaling down",
+    "cost-effective design justification",
+    "capacity planning",
+    "data consistency",
+    "deadlock-free design",
+    "locking and throughput",
+    "system design document",
+    "service interactions",
+    "chokepoint at scale"
+  ],
+  "events": []
+}

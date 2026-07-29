@@ -1,0 +1,86 @@
+{
+  "session_id": "d334bea4_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning my tasks for the next quarter.",
+      "turn_index": 0
+    },
+    {
+      "text": "I set goals with my manager, Rachel, during our performance review last week.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am a senior engineer.",
+      "turn_index": 2
+    },
+    {
+      "text": "Rachel was impressed with my progress as a senior engineer during the performance review.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have a goal to complete a new product feature by June.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have a goal to develop my leadership skills by mentoring more team members.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to work closely with the design team to finalize the prototypes.",
+      "turn_index": 4
+    },
+    {
+      "text": "I need to meet with stakeholders to gather requirements.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have bi-weekly leadership meetings with the company's management team.",
+      "turn_index": 8
+    },
+    {
+      "text": "I attended a training session in March.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to apply the skills and knowledge I gained from the March training session to my leadership development.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "next quarter task planning",
+    "performance review with Rachel",
+    "senior engineer progress",
+    "new product feature completion by June",
+    "leadership skills development",
+    "mentoring more team members",
+    "design team prototypes",
+    "stakeholder requirements gathering",
+    "rough timeline milestones deadlines",
+    "bi-weekly leadership meetings",
+    "company management team feedback",
+    "training session in March"
+  ],
+  "events": [
+    {
+      "text": "Performance review with manager Rachel",
+      "date_hint": "last week",
+      "turn_index": 0
+    },
+    {
+      "text": "Goal setting during performance review: complete new product feature by June",
+      "date_hint": "last week",
+      "turn_index": 2
+    },
+    {
+      "text": "Goal setting during performance review: develop leadership skills by mentoring more team members",
+      "date_hint": "last week",
+      "turn_index": 2
+    },
+    {
+      "text": "Training session attended in March",
+      "date_hint": "March",
+      "turn_index": 10
+    }
+  ]
+}

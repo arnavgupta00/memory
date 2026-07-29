@@ -1,0 +1,146 @@
+{
+  "session_id": "aa71db11_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking to start a new exercise routine.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of taking a spin class on Friday evenings after work.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want help finding a gym near my location that offers spin classes on Friday evenings after work.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am usually more energized on Mondays.",
+      "turn_index": 0
+    },
+    {
+      "text": "I get an extra hour of sleep in on Sundays.",
+      "turn_index": 0
+    },
+    {
+      "text": "I woke up at a specific time on a particular Monday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I consider Mondays a typical day for my energy levels.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of taking walks during my lunch break on Wednesdays and Thursdays.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want suggestions for making my lunch-break walks more engaging.",
+      "turn_index": 2
+    },
+    {
+      "text": "I like listening to podcasts or audiobooks during my walks.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want podcast or audiobook recommendations that are around 30-45 minutes long.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am interested in the podcast \"How I Built This\".",
+      "turn_index": 6
+    },
+    {
+      "text": "I have always been fascinated by entrepreneurship and the stories behind successful companies.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want recommendations for popular episodes or guests to start with for \"How I Built This\".",
+      "turn_index": 6
+    },
+    {
+      "text": "I will start with the Airbnb episode.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am curious to learn how Brian Chesky and Joe Gebbia turned a crazy idea into a successful company.",
+      "turn_index": 8
+    },
+    {
+      "text": "I recently tried a new recipe on a Saturday morning.",
+      "turn_index": 8
+    },
+    {
+      "text": "The new recipe turned out to be a disaster.",
+      "turn_index": 8
+    },
+    {
+      "text": "I spent the rest of the day reorganizing my kitchen cabinets.",
+      "turn_index": 8
+    },
+    {
+      "text": "I did not find anything surprising.",
+      "turn_index": 10
+    },
+    {
+      "text": "It was nice to get everything organized and in its place.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am looking forward to listening to the Airbnb episode.",
+      "turn_index": 10
+    },
+    {
+      "text": "I have always been fascinated by the concept of the sharing economy.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am interested in how companies like Airbnb have disrupted traditional industries.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "spin class Friday evenings",
+    "gym near my location",
+    "exercise routine",
+    "more energized on Mondays",
+    "extra hour of sleep Sundays",
+    "lunch break walks Wednesdays",
+    "lunch break walks Thursdays",
+    "podcasts audiobooks during walks",
+    "30-45 minutes podcast",
+    "How I Built This",
+    "Airbnb episode",
+    "Brian Chesky Joe Gebbia",
+    "sharing economy",
+    "reorganizing kitchen cabinets",
+    "new recipe Saturday morning"
+  ],
+  "events": [
+    {
+      "text": "Planned to take a spin class on Friday evenings after work",
+      "date_hint": "Friday evenings (after work)",
+      "turn_index": 0
+    },
+    {
+      "text": "Takes walks during lunch break on Wednesdays and Thursdays",
+      "date_hint": "Wednesdays and Thursdays (lunch break)",
+      "turn_index": 2
+    },
+    {
+      "text": "Tried a new recipe on a Saturday morning that turned out to be a disaster",
+      "date_hint": "Saturday morning (recent)",
+      "turn_index": 8
+    },
+    {
+      "text": "Reorganized kitchen cabinets for the rest of the day after the failed recipe",
+      "date_hint": "Saturday morning (rest of the day)",
+      "turn_index": 8
+    },
+    {
+      "text": "Will start listening to the \"How I Built This\" Airbnb episode",
+      "date_hint": "upcoming (no specific date)",
+      "turn_index": 8
+    }
+  ]
+}

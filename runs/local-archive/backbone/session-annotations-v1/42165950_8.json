@@ -1,0 +1,97 @@
+{
+  "session_id": "42165950_8",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I need a reminder to order more of Luna's favorite wet food.",
+      "turn_index": 0
+    },
+    {
+      "text": "Luna's favorite wet food is grain-free.",
+      "turn_index": 0
+    },
+    {
+      "text": "Luna's favorite wet food comes in blue packets.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have about a week's supply of Luna's favorite wet food left.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need to wash Max's favorite toys this weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "Max's favorite toys are squeaky toys with stuffing inside.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to give Max a bath this weekend.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been using a regular dog shampoo on Max.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am not sure if the regular dog shampoo is the best for Max's skin and coat.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of giving Max a massage after his bath to help him relax.",
+      "turn_index": 8
+    },
+    {
+      "text": "Max is a bit of a big boy.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am not sure if I am comfortable giving Max a full-body massage.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to focus on massaging Max's ears and belly instead of a full-body massage.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "set a reminder",
+    "order more wet food",
+    "Luna favorite wet food",
+    "grain-free blue packets",
+    "about a week's supply",
+    "wash squeaky stuffed toys",
+    "machine wash squeaky toys",
+    "hand wash squeaky toys",
+    "give Max a bath this weekend",
+    "make bath less stressful",
+    "dog shampoo for skin and coat",
+    "dog massage benefits",
+    "how to give a dog a massage",
+    "massage ears and belly",
+    "avoid full-body massage"
+  ],
+  "events": [
+    {
+      "text": "Wash Max's favorite squeaky toys with stuffing inside",
+      "date_hint": "this weekend",
+      "turn_index": 0
+    },
+    {
+      "text": "Give Max a bath",
+      "date_hint": "this weekend",
+      "turn_index": 4
+    },
+    {
+      "text": "Give Max a massage after his bath",
+      "date_hint": "after his bath (this weekend)",
+      "turn_index": 8
+    },
+    {
+      "text": "Focus massage on Max's ears and belly instead of full-body massage",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

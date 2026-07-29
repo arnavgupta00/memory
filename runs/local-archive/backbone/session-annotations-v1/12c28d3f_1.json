@@ -1,0 +1,118 @@
+{
+  "session_id": "12c28d3f_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want help prioritizing my tasks and creating a schedule for the day.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to establish a consistent wake-up time of 7:30 AM on weekdays.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to establish a consistent wake-up time of 9 AM on weekends.",
+      "turn_index": 0
+    },
+    {
+      "text": "It is a weekday for my planning.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have a meeting at 2 PM with my project manager.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to prepare for my 2 PM meeting with my project manager.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to work on my project.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to respond to some emails.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to make a few phone calls.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to fit in a gym session in the morning before work.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think my project work will take up most of my time.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to adjust my gym session to 45 minutes instead of 8:00 AM to 9:00 AM.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am not sure if I will have enough time to fit in all my project work, emails, and phone calls before the meeting.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am still concerned about fitting in all my project work, emails, and phone calls before the meeting.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want additional time management strategies to help me stay on track and ensure I am prepared for the meeting.",
+      "turn_index": 6
+    },
+    {
+      "text": "I can fit in extra time for project work before the meeting.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to schedule 30 minutes of project work from 1:30 PM to 2:00 PM.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to take a 5-minute break before the meeting.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "prioritize tasks",
+    "daily schedule",
+    "consistent wake-up time",
+    "7:30 AM weekdays",
+    "9 AM weekends",
+    "meeting at 2 PM",
+    "project manager",
+    "prepare for meeting",
+    "project work",
+    "respond to emails",
+    "phone calls",
+    "gym session 45 minutes",
+    "morning before work",
+    "time management strategies",
+    "project work 1:30 PM to 2:00 PM",
+    "5-minute break before meeting"
+  ],
+  "events": [
+    {
+      "text": "Meeting with project manager",
+      "date_hint": "2 PM (weekday)",
+      "turn_index": 2
+    },
+    {
+      "text": "Adjust gym session duration to 45 minutes",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Schedule 30 minutes of project work from 1:30 PM to 2:00 PM",
+      "date_hint": "1:30 PM to 2:00 PM",
+      "turn_index": 8
+    },
+    {
+      "text": "Take a 5-minute break before the meeting",
+      "date_hint": "",
+      "turn_index": 8
+    }
+  ]
+}

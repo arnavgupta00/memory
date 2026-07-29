@@ -1,0 +1,25 @@
+{
+  "question_id": "3d86fd0a",
+  "question_type": "single-session-user",
+  "question": "Where did I meet Sophia?",
+  "question_date": "2023/05/30 (Tue) 11:59",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_19c24c11"
+  ],
+  "haystack_session_count": 55,
+  "notes_coverage": "full",
+  "annotated_session_count": 55,
+  "gold_sessions": [
+    {
+      "session_id": "answer_19c24c11",
+      "date": "2023/05/21 (Sun) 16:24",
+      "has_notes": true,
+      "notes_text": "[session_id] answer_19c24c11\n[session_date] 2023/05/21 (Sun) 16:24\n[facts]\n- I need help organizing my contacts.\n- I want a list of people I've met recently and their interests.\n- I will include the location where I met people in the template under \"How We Met\".\n- I met Sophia at a coffee shop in the city.\n- Sophia is into indie music.\n- I talked with Sophia about new bands to check out.\n- I recommended some coffee spots to Sophia.\n- I met Rachel, a yoga instructor, recently.\n- I met David from the bookstore recently.\n- I met Juan the mechanic recently.\n- I met Lucy from the animal shelter recently.\n- I met Maria the chef recently.\n- I met Alex from the train recently.\n- Alex and I talked about our jobs and commutes.\n- Alex recommended some podcasts to listen to.\n[keyphrases] organizing contacts; people I've met recently; follow up; How We Met template; location where I met them; Sophia coffee shop; indie music; new bands; coffee spots recommendations; yoga instructor Rachel; David bookstore; mechanic Juan; animal shelter Lucy; chef Maria; Alex train; jobs and commutes; podcast recommendations\n[events]\n- Met Sophia at a coffee shop in the city.\n- Talked with Sophia about indie music and new bands; recommended coffee spots.\n- Met Rachel, a yoga instructor, recently.\n- Met David from the bookstore recently.\n- Met Juan the mechanic recently.\n- Met Lucy from the animal shelter recently.\n- Met Maria the chef recently.\n- Met Alex from the train recently.\n- Talked with Alex about jobs and commutes; received podcast recommendations.",
+      "user_turns": "[turn 0] I need help organizing my contacts. Can you create a list of people I've met recently and their interests? Maybe that'll help me remember to follow up with them.\n\n[turn 2] I'll start filling out the template. Under \"How We Met\", I'll include the location where I met them. For Sophia, it was a coffee shop in the city.\n\n[turn 4] She's into indie music, and we talked about some new bands to check out. I recommended some coffee spots to her too.\n\n[turn 6] What about the other people I met recently? Like the yoga instructor Rachel and the guy David from the bookstore?\n\n[turn 8] What about the mechanic Juan, Lucy from the animal shelter, Maria the chef, and Alex from the train? I met them all recently too.\n\n[turn 10] Alex and I talked about our jobs and commutes, and he recommended some podcasts to listen to."
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

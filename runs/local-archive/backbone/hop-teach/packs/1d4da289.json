@@ -1,0 +1,25 @@
+{
+  "question_id": "1d4da289",
+  "question_type": "single-session-assistant",
+  "question": "I was thinking about our previous conversation about data privacy and security. You mentioned that companies use two-factor authentication to enhance security. Can you remind me what kind of two-factor authentication methods you were referring to?",
+  "question_date": "2023/05/30 (Tue) 20:26",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_ultrachat_348449"
+  ],
+  "haystack_session_count": 55,
+  "notes_coverage": "full",
+  "annotated_session_count": 54,
+  "gold_sessions": [
+    {
+      "session_id": "answer_ultrachat_348449",
+      "date": "2023/05/23 (Tue) 07:14",
+      "has_notes": true,
+      "notes_text": "[session_id] answer_ultrachat_348449\n[session_date] 2023/05/23 (Tue) 07:14\n[facts]\n- I don't see why companies need to go through trouble to protect my data.\n- My information is not that valuable, in my opinion.\n- I think it is too much hassle to protect my data.\n- I don't want to have to remember all these different passwords.\n- I don't want to go through extra steps just to access my own information.\n- I think companies should make it easier for us.\n[keyphrases] data privacy; data security; protect my data; customer data; passwords; remember passwords; access my information; extra steps to access information; make it easier for users; customer experience",
+      "user_turns": "[turn 0] What are some steps companies take to ensure data privacy and security for their customers?\n\n[turn 2] I don't see why companies need to go through all this trouble just to protect my data. It's not like my information is that valuable.\n\n[turn 4] But I still think it's too much hassle. I don't want to have to remember all these different passwords and go through extra steps just to access my own information. Companies should make it easier for us."
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": true,
+  "hop27_stratum": "easy"
+}

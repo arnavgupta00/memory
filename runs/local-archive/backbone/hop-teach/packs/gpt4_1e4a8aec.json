@@ -1,0 +1,33 @@
+{
+  "question_id": "gpt4_1e4a8aec",
+  "question_type": "temporal-reasoning",
+  "question": "What gardening-related activity did I do two weeks ago?",
+  "question_date": "2023/05/05 (Fri) 16:42",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_16bd5ea6_1",
+    "answer_16bd5ea6_2"
+  ],
+  "haystack_session_count": 50,
+  "notes_coverage": "partial",
+  "annotated_session_count": 6,
+  "gold_sessions": [
+    {
+      "session_id": "answer_16bd5ea6_1",
+      "date": "2023/04/15 (Sat) 16:46",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_16bd5ea6_1\n[session_date] 2023/04/15 (Sat) 16:46\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm trying to figure out what type of fertilizer to use for my herbs. I've been experimenting with different types of plants in my garden, including basil, mint, and parsley, and I want to make sure I'm giving them the right nutrients. By the way, I attended a gardening workshop in my neighborhood recently where I learned about companion planting and crop rotation, and it's been really helpful in planning my garden layout.\n\n[turn 2] I was thinking of using compost as a fertilizer for my herbs. Would that work?\n\n[turn 4] I've been using a gardening app to track the weather and soil moisture levels, which has been really helpful in planning my gardening activities. I was wondering if you could recommend any other apps or tools that might be useful for a beginner gardener like me?\n\n[turn 6] I've been struggling with pests like aphids and whiteflies on my plants. Do you have any advice on how to control their population naturally?\n\n[turn 8] That's helpful! I've been using neem oil and insecticidal soap to control the aphid and whitefly population, but I haven't tried some of the other methods you mentioned. I'll definitely give them a shot. By the way, do you have any tips on how to prevent fungal diseases on tomato plants? I've been having some issues with that lately.\n\n[turn 10] I'm glad you found the tips helpful! I've been experimenting with different techniques to prevent fungal diseases on my tomato plants, and I've had some success with using copper oxychloride to treat fungal infections. I've also been making sure to remove any infected leaves and stems to prevent the disease from spreading. Do you think it's a good idea to use a drip irrigation system to deliver water directly to the roots of the plants, rather than getting the leaves wet? I've heard that this can help prevent fungal diseases."
+    },
+    {
+      "session_id": "answer_16bd5ea6_2",
+      "date": "2023/04/21 (Fri) 00:30",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_16bd5ea6_2\n[session_date] 2023/04/21 (Fri) 00:30\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm looking for some advice on how to keep my tomato plants healthy and pest-free. By the way, I just planted 12 new tomato saplings today and I'm excited to see them grow.\n\n[turn 2] I was thinking of using neem oil and insecticidal soap to control aphids and whiteflies on my tomato plants. Do you think that's a good approach?\n\n[turn 4] I've been using a gardening app to track the weather and soil moisture levels, which has helped me to plan my gardening activities more effectively. However, I'm not sure how often I should water my tomato plants during this dry spell. Can you provide some guidance on that?\n\n[turn 6] I've been noticing that my cucumber plants have started to climb up rapidly, so I plan to build a small trellis for them. Do you think I should provide additional support for my tomato plants as well?\n\n[turn 8] I'm also wondering if I can use neem oil and insecticidal soap to control aphids and whiteflies on my cucumber plants as well. Would that be effective?\n\n[turn 10] I was thinking of using a mulch layer to conserve water and reduce evaporation. Do you think that's a good approach?"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

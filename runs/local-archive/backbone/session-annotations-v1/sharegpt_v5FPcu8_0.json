@@ -1,0 +1,106 @@
+{
+  "session_id": "sharegpt_v5FPcu8_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user asked how milk was discovered.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user requested a roleplay DND session with three characters and a DM.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user specified the character names as Jacob, James, and Matt.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user specified the DM's name as Ben.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user specified Jacob as a cleric.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user specified James as a tank.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user specified Matt as the hunter.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user requested the DND session again with the characters on the beach.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user requested excluding the descriptors \"the cleric, the tank and the hunter\" from the character names.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user requested continuing the encounter where a kraken attacks the party.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user stated that Matt dies at the end of the combat.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user said Matt can breathe underwater.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user requested a continuation from Matt's point of view as he struggles to survive.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user requested that Matt emerges out of the water with a sliver of health.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "milk discovered",
+    "DND roleplay",
+    "three characters and a DM",
+    "Jacob James Matt",
+    "DM Ben",
+    "cleric tank hunter",
+    "dice rolls",
+    "beach setting",
+    "exclude class descriptors from names",
+    "kraken attacks party",
+    "continue encounter",
+    "Matt dies",
+    "Matt breathes underwater",
+    "Matt point of view",
+    "sliver of health emerges out of water"
+  ],
+  "events": [
+    {
+      "text": "User asked how milk was discovered",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "User requested a DND roleplay session with Jacob, James, Matt, and DM Ben including dice rolls",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "User requested the DND session again on the beach and without class descriptors in names",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "User requested continuing the encounter where the kraken attacks and Matt dies at the end of combat",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "User requested a continuation from Matt's point of view where Matt breathes underwater and survives with sliver of health",
+      "date_hint": "",
+      "turn_index": 8
+    }
+  ]
+}

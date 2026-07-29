@@ -1,0 +1,152 @@
+{
+  "session_id": "bb2180e9_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I make homemade strawberry jam.",
+      "turn_index": 0
+    },
+    {
+      "text": "I sold 20 jars of strawberry jam at the farmer's market at the town square three weeks ago.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want my jam packaging to stand out at the next market.",
+      "turn_index": 0
+    },
+    {
+      "text": "I like custom labels and twine or ribbon for my jam packaging.",
+      "turn_index": 2
+    },
+    {
+      "text": "I spent the entire previous day preparing for the farmer's market.",
+      "turn_index": 2
+    },
+    {
+      "text": "I made labels, packaged the jam, and set up my display the previous day.",
+      "turn_index": 2
+    },
+    {
+      "text": "I sold out of my jam pretty quickly at the farmer's market.",
+      "turn_index": 2
+    },
+    {
+      "text": "I received great feedback from customers at the farmer's market.",
+      "turn_index": 2
+    },
+    {
+      "text": "I received positive feedback on the flavor and texture of my jam.",
+      "turn_index": 4
+    },
+    {
+      "text": "Some customers asked for custom flavors.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am considering offering custom flavors in the future.",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to increase my production slightly to meet demand.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to keep my batches small to ensure quality control.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of making around 30 to 40 jars for the next market.",
+      "turn_index": 4
+    },
+    {
+      "text": "I did not think of collecting email addresses before.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to bring a sign-up sheet to the next market.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to offer a small discount for customers who buy multiple jars.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to offer a small discount for customers who refer friends to my stand.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to incentivize people to spread the word about my jam.",
+      "turn_index": 6
+    },
+    {
+      "text": "I took photos of my stand at the farmer's market three weeks ago.",
+      "turn_index": 8
+    },
+    {
+      "text": "I can use the photos for social media.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to take more photos of my jam and display at the next market.",
+      "turn_index": 8
+    },
+    {
+      "text": "I should start preparing for the next market soon.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am considering special seasonal flavors or promotions for the next market because it is getting close to the holiday season.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "homemade strawberry jam",
+    "farmer's market packaging",
+    "custom labels",
+    "twine or ribbon",
+    "town square market",
+    "sold 20 jars",
+    "sold out quickly",
+    "customer feedback",
+    "custom flavors",
+    "small batch quality control",
+    "30-40 jars",
+    "email sign-up sheet",
+    "discount for multiple jars",
+    "referral discount",
+    "social media photos",
+    "holiday season promotions"
+  ],
+  "events": [
+    {
+      "text": "Sold 20 jars of strawberry jam at the farmer's market at the town square.",
+      "date_hint": "three weeks ago",
+      "turn_index": 0
+    },
+    {
+      "text": "Spent the entire previous day preparing for the farmer's market (making labels, packaging jam, setting up display).",
+      "date_hint": "previous day",
+      "turn_index": 2
+    },
+    {
+      "text": "Sold out of jam pretty quickly at the farmer's market.",
+      "date_hint": "three weeks ago (same market as turn 0)",
+      "turn_index": 2
+    },
+    {
+      "text": "Took photos of the stand at the farmer's market for social media.",
+      "date_hint": "three weeks ago",
+      "turn_index": 8
+    },
+    {
+      "text": "Next market preparation and planning (packaging, display, photos, sign-up sheet, discounts, possible seasonal promotions).",
+      "date_hint": "upcoming (no specific date)",
+      "turn_index": 8
+    },
+    {
+      "text": "Considering special seasonal flavors or promotions for the next market due to approaching holiday season.",
+      "date_hint": "getting close to the holiday season",
+      "turn_index": 10
+    }
+  ]
+}

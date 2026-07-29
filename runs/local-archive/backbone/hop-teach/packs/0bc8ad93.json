@@ -1,0 +1,41 @@
+{
+  "question_id": "0bc8ad93",
+  "question_type": "temporal-reasoning",
+  "question": "I mentioned visiting a museum two months ago. Did I visit with a friend or not?",
+  "question_date": "2023/03/11 (Sat) 05:28",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_f4ea84fc_3",
+    "answer_f4ea84fc_2",
+    "answer_f4ea84fc_1"
+  ],
+  "haystack_session_count": 47,
+  "notes_coverage": "partial",
+  "annotated_session_count": 5,
+  "gold_sessions": [
+    {
+      "session_id": "answer_f4ea84fc_3",
+      "date": "2022/10/22 (Sat) 23:02",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_f4ea84fc_3\n[session_date] 2022/10/22 (Sat) 23:02\n[notes] (empty)",
+      "user_turns": "[turn 0] I was just thinking about my recent visit to the Science Museum and how amazed I was by the complexity of the exhibits during the behind-the-scenes tour I just took with a friend who's a chemistry professor. Do you know if there are any upcoming exhibits or events related to chemistry or physics that I should check out?\n\n[turn 2] What about any online resources or websites that can provide me with educational content, like videos or articles, related to chemistry and physics?\n\n[turn 4] I'm particularly interested in the chemistry aspect, so I'll definitely check out Chemistry World and the American Chemical Society website. I also think my friend who's a chemistry professor might appreciate some of these resources. By the way, speaking of my friend, I remember that behind-the-scenes tour of the Science Museum we took together - it was really cool to see the museum's collection of rare minerals and participate in that hands-on experiment with the educational team.\n\n[turn 6] I'll definitely pass along those resources to my friend. Anyway, I was thinking about my recent visits to various museums in the past few months, and I realized that I've been trying to take advantage of the many museum events and exhibits in my area. It's been a great way to learn new things and have fun at the same time. Do you know if there are any other museums or science centers in my area that I might not know about?\n\n[turn 8] That's a great idea! I'll definitely try searching online and checking out those directories. I'm sure I'll stumble upon some new museums or science centers that I haven't visited yet. By the way, I was thinking about my behind-the-scenes tour of the Science Museum again, and I remembered that I went with a friend who's a chemistry professor. We had a great time exploring the museum's collection of rare minerals and participating in that hands-on experiment with the educational team. It was really amazing to see the complexity of the exhibits and the amount of work that goes into creating them.\n\n[turn 10] I think I'll start by searching online for museums and science centers in my area. I'll also check out those directories you mentioned to see if I can find any hidden gems. Who knows, maybe I'll stumble upon a museum or science center that's focused on a topic I'm really interested in, like chemistry or physics. Thanks for the suggestions!"
+    },
+    {
+      "session_id": "answer_f4ea84fc_2",
+      "date": "2023/01/11 (Wed) 06:16",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_f4ea84fc_2\n[session_date] 2023/01/11 (Wed) 06:16\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm planning a trip to Jordan and I'm really interested in visiting Petra. Can you tell me more about the history of the city and its significance? By the way, I just learned a lot about it in a lecture at the History Museum about ancient civilizations this month.\n\n[turn 2] I'm interested in learning more about the Nabataeans, can you tell me about their culture and way of life?\n\n[turn 4] That's really interesting. I'm curious to know more about their funerary practices. Can you tell me more about the tombs they built and what kind of offerings they left for the dead?\n\n[turn 6] I'm curious about the Nabataeans' understanding of the afterlife. Did they believe in a specific judgment or punishment in the afterlife, or was it more of a continuation of their earthly life?\n\n[turn 8] I'd like to explore their daily routines and leisure activities. What was a typical day like for a Nabataean citizen, and how did they spend their free time?"
+    },
+    {
+      "session_id": "answer_f4ea84fc_1",
+      "date": "2023/02/18 (Sat) 00:56",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_f4ea84fc_1\n[session_date] 2023/02/18 (Sat) 00:56\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm looking for some information on dinosaurs. I attended a guided tour at the Natural History Museum yesterday with my dad and was really impressed by the fossil collection on display, especially the new T-Rex skeleton they acquired. Do you know more about the habitat and behavior of the T-Rex?\n\n[turn 2] I'd love to know more about the other dinosaurs that lived during the same period as the T-Rex. Were there any herbivores that co-existed with the T-Rex?\n\n[turn 4] I'm really interested in the Edmontosaurus. You mentioned it had a distinctive crest on its head. Do you know what that was used for?\n\n[turn 6] I'm curious about the Edmontosaurus's diet. What did it eat, and how did it gather its food?\n\n[turn 8] I'm curious about the museum's fossil collection. Are there any upcoming exhibits or displays focused on the Edmontosaurus or other hadrosaurs?\n\n[turn 10] That sounds amazing! I'll definitely keep an eye out for the exhibit's opening and plan to attend. I've been really impressed by the fossil collection on display at the Natural History Museum, and I'm sure this new exhibit will be just as fascinating. Do you know if there are any plans to feature any interactive or immersive experiences, like virtual reality or augmented reality components, in the exhibit?"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

@@ -1,0 +1,89 @@
+{
+  "session_id": "95578ea8_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to log in to my frequent flyer account to check if my miles have been credited.",
+      "turn_index": 0
+    },
+    {
+      "text": "I took a United Airlines flight from LA to Chicago on February 15th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am hoping my United Airlines miles will bring me closer to redeeming a reward ticket.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want help checking if I have any expiring miles or vouchers that I need to use up.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have a $200 voucher for Southwest Airlines that I need to use before the end of the year.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of booking a business class ticket to London on British Airways for my summer vacation.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have set up price alerts on Google Flights for business class tickets to London on British Airways.",
+      "turn_index": 6
+    },
+    {
+      "text": "I had a good experience with United Airlines on my recent flight from LA to Chicago on February 15th.",
+      "turn_index": 8
+    },
+    {
+      "text": "On my February 15th United Airlines flight from LA to Chicago, I got upgraded to economy plus.",
+      "turn_index": 8
+    },
+    {
+      "text": "The extra legroom on my economy plus upgrade made a huge difference.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of considering United's business class product for my London trip.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of using my credit card points to book a business class ticket on United.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to know if I can transfer my points to United's loyalty program, MileagePlus.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "frequent flyer account login",
+    "miles credited",
+    "United Airlines LA to Chicago",
+    "February 15 flight",
+    "reward ticket redemption",
+    "expiring miles",
+    "expiring vouchers",
+    "Southwest Airlines $200 voucher",
+    "use before end of year",
+    "business class London British Airways",
+    "price drop tracking",
+    "Google Flights price alerts",
+    "economy plus upgrade",
+    "extra legroom",
+    "United Airlines business class",
+    "credit card points",
+    "transfer points to MileagePlus"
+  ],
+  "events": [
+    {
+      "text": "United Airlines flight from LA to Chicago",
+      "date_hint": "February 15th",
+      "turn_index": 0
+    },
+    {
+      "text": "Upgraded to economy plus on the United Airlines flight from LA to Chicago",
+      "date_hint": "February 15th",
+      "turn_index": 8
+    }
+  ]
+}

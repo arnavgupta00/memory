@@ -1,0 +1,105 @@
+{
+  "session_id": "95cb552e_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to Europe in a few months.",
+      "turn_index": 0
+    },
+    {
+      "text": "I need help booking a flight from New York to Paris.",
+      "turn_index": 0
+    },
+    {
+      "text": "I received a new passport with my updated name today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to use my new passport for the first time.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of flying with Air France.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know Air France baggage policy.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know what is included in Air France economy class.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of booking a morning flight from New York to Paris.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to arrive in Paris in the morning so I can have a full day in Paris.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am considering an 8:30 AM flight.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering Air France flight AF011.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know how to check in and get my boarding pass for AF011.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think I am all set with the check-in process.",
+      "turn_index": 8
+    },
+    {
+      "text": "I received my new passport with my updated name today.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to make sure I have all necessary documents ready.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to confirm I will not need to show any additional identification or documents at the airport besides my passport and boarding pass.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will double-check my documents and arrive at the airport with plenty of time to spare.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want travel tips or advice for my trip to Paris.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to Europe",
+    "flight booking",
+    "New York to Paris",
+    "Air France",
+    "baggage policy",
+    "economy class included",
+    "morning flight",
+    "Air France AF011",
+    "8:30 AM flight",
+    "check-in process",
+    "boarding pass",
+    "passport with updated name",
+    "travel tips for Paris"
+  ],
+  "events": [
+    {
+      "text": "Received a new passport with an updated name.",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Received a new passport with an updated name.",
+      "date_hint": "today",
+      "turn_index": 8
+    }
+  ]
+}

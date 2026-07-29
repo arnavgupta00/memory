@@ -1,0 +1,130 @@
+{
+  "session_id": "63b51f8a_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I have been trying to improve my skills in data science and programming over the past month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been consuming a lot of educational content over the past month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am looking for recommendations on books about machine learning.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am particularly interested in deep learning.",
+      "turn_index": 2
+    },
+    {
+      "text": "I plan to start with the book \"Deep Learning\" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been watching video lectures on statistics by Professor Andrew Ng on MIT OpenCourseWare.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have already been listening to the Data Science Podcast.",
+      "turn_index": 4
+    },
+    {
+      "text": "I found the Data Science Podcast episode on natural language processing really insightful.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am particularly interested in applying NLP to real-world projects.",
+      "turn_index": 6
+    },
+    {
+      "text": "I worked on a project analyzing customer sentiment using natural language processing.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been thinking about working on a project to build a predictive model to forecast stock prices using historical data and news articles.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think NLP can play a crucial role in analyzing the sentiment and tone of news articles to improve the accuracy of the stock price model.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to collect and preprocess data for the stock price forecasting project.",
+      "turn_index": 10
+    },
+    {
+      "text": "I plan to use APIs like News API and Quandl to collect historical news articles and stock prices.",
+      "turn_index": 10
+    },
+    {
+      "text": "For preprocessing, I plan to use NLTK and spaCy to clean and tokenize the text data.",
+      "turn_index": 10
+    },
+    {
+      "text": "I plan to convert the text data into a numerical representation using TF-IDF or word embeddings.",
+      "turn_index": 10
+    },
+    {
+      "text": "For sentiment analysis, I am considering using rule-based approaches and machine learning models like Naive Bayes or Support Vector Machines (SVMs).",
+      "turn_index": 10
+    },
+    {
+      "text": "I am thinking about using deep learning models like convolutional neural networks (CNNs) or recurrent neural networks (RNNs) to analyze sentiment and tone of news articles.",
+      "turn_index": 10
+    },
+    {
+      "text": "For feature engineering, I plan to extract features like sentiment scores, entity recognition, and topic modeling from the text data.",
+      "turn_index": 10
+    },
+    {
+      "text": "I plan to experiment with named entity recognition (NER) and part-of-speech (POS) tagging to extract relevant information from the text.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "data science programming skills",
+    "machine learning books",
+    "deep learning book",
+    "Deep Learning Ian Goodfellow Yoshua Bengio Aaron Courville",
+    "Andrew Ng statistics video lectures",
+    "MIT OpenCourseWare",
+    "Data Science Podcast",
+    "natural language processing episode",
+    "NLP real-world projects",
+    "customer sentiment analysis project",
+    "stock price forecasting predictive model",
+    "News API and Quandl",
+    "NLTK and spaCy text preprocessing",
+    "TF-IDF and word embeddings",
+    "sentiment analysis Naive Bayes SVM",
+    "CNN and RNN sentiment analysis",
+    "feature engineering sentiment scores",
+    "named entity recognition NER",
+    "part-of-speech POS tagging",
+    "topic modeling"
+  ],
+  "events": [
+    {
+      "text": "Started improving data science and programming skills by consuming educational content over the past month.",
+      "date_hint": "over the past month",
+      "turn_index": 0
+    },
+    {
+      "text": "Watched Andrew Ng statistics video lectures on MIT OpenCourseWare.",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Listened to the Data Science Podcast episode on natural language processing.",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Worked on a project analyzing customer sentiment using natural language processing.",
+      "date_hint": "",
+      "turn_index": 6
+    }
+  ]
+}

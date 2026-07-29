@@ -1,0 +1,112 @@
+{
+  "session_id": "1a73cecb_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am in the process of buying a house.",
+      "turn_index": 0
+    },
+    {
+      "text": "I saw a first house listed for $425,000.",
+      "turn_index": 0
+    },
+    {
+      "text": "I found a better deal on a different property than the first house I saw.",
+      "turn_index": 0
+    },
+    {
+      "text": "I ended up finding a house for $350,000.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know if I can negotiate with the seller to cover some of the closing costs.",
+      "turn_index": 2
+    },
+    {
+      "text": "I will discuss the situation with my agent, Rachel.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have already had a home inspection.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to know if I can use the home inspection results to negotiate with the seller to fix issues or lower the price.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of asking the seller to fix a small leak in the roof.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of asking the seller to replace worn-out carpeting in the bedrooms.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will ask Rachel to reach out to the seller to request that they fix the roof leak and replace the worn-out carpeting in the bedrooms.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to ask the seller for a credit towards closing costs or a reduction in the sale price if they are unwilling to make the repairs.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I will ask Rachel to request a $2,000 credit towards closing costs if the seller is unwilling to make the repairs.",
+      "turn_index": 10
+    },
+    {
+      "text": "I think I will ask Rachel to request a $2,500 reduction in the sale price if the seller is unwilling to make the repairs.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "closing costs percentage",
+    "house purchase price",
+    "$425,000 listed house",
+    "better deal property",
+    "$350,000 house",
+    "negotiating with seller",
+    "seller cover closing costs",
+    "home inspection results",
+    "use inspection to negotiate",
+    "roof leak repair request",
+    "replace worn-out carpeting",
+    "agent Rachel",
+    "credit towards closing costs",
+    "reduction in sale price",
+    "$2,000 closing cost credit",
+    "$2,500 price reduction"
+  ],
+  "events": [
+    {
+      "text": "First house viewed was listed for $425,000.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Found a house for $350,000 for calculations.",
+      "date_hint": "",
+      "turn_index": 2
+    },
+    {
+      "text": "Had a home inspection already.",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Planned request to fix a small roof leak and replace worn-out bedroom carpeting.",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Planned for Rachel to contact the seller to request roof leak repair and carpet replacement.",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Planned request for $2,000 credit towards closing costs or $2,500 sale price reduction if repairs are not made.",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

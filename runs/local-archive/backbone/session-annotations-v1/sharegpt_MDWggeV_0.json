@@ -1,0 +1,71 @@
+{
+  "session_id": "sharegpt_MDWggeV_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I want to brainstorm methods to evaluate within-subjects development for players transitioning from academy to elite level in team sports.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have repeated measures strength tests done every half year.",
+      "turn_index": 0
+    },
+    {
+      "text": "My strength test measurements span four years before transitioning to elite and four years after transitioning to elite.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have six measurements spread between before and after the transition.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to investigate development using an approach suitable for six measurements spread between before and after transition.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want R code in a tidyverse style for an ANOVA analysis.",
+      "turn_index": 4
+    },
+    {
+      "text": "My data frame is called both_debuttest3_selecttest.",
+      "turn_index": 4
+    },
+    {
+      "text": "In my data frame, there are variables named name, strength, and months_from_transition.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have extra variables in the data frame and I am asking whether I should remove those.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am asking whether extra variables interfere with the chosen ANOVA method.",
+      "turn_index": 10
+    },
+    {
+      "text": "When I run aov_results <- aov(Strength ~ Time*Test + Error(name/Test), data = anovatest2), I get the error that contrasts can be applied only to factors with 2 or more levels.",
+      "turn_index": 12
+    }
+  ],
+  "keyphrases": [
+    "within-subjects development",
+    "academy to elite transition",
+    "team sports players",
+    "repeated measures strength tests",
+    "every half year",
+    "four years before and after transition",
+    "six measurements before after",
+    "tidyverse R code",
+    "ANOVA analysis",
+    "aov Error(name/Test)",
+    "contrasts can be applied only to factors with 2 or more levels",
+    "months_from_transition variable"
+  ],
+  "events": [
+    {
+      "text": "User runs an ANOVA model and receives the error about contrasts requiring factors with 2 or more levels.",
+      "date_hint": "",
+      "turn_index": 12
+    }
+  ]
+}

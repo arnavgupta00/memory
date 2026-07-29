@@ -1,0 +1,39 @@
+{
+  "session_id": "sharegpt_MyxBntK_25",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user said to rename the original file by appending \"_OLD\" to the file_path.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user said the rename operation is on the repo, not local.",
+      "turn_index": 1
+    },
+    {
+      "text": "The user asked to add a step to check that file_path was indeed renamed.",
+      "turn_index": 3
+    },
+    {
+      "text": "The user gave an example that the file should be renamed from google.yaml to google.yaml_OLD before uploading the new file.",
+      "turn_index": 3
+    }
+  ],
+  "keyphrases": [
+    "rename original file",
+    "file_path + _OLD",
+    "os.rename",
+    "rename on the repo not local",
+    "check file_path renamed",
+    "google.yaml_OLD",
+    "upload new file",
+    "google.yaml to google.yaml_OLD"
+  ],
+  "events": [
+    {
+      "text": "Rename google.yaml to google.yaml_OLD before uploading the new file",
+      "date_hint": "",
+      "turn_index": 3
+    }
+  ]
+}

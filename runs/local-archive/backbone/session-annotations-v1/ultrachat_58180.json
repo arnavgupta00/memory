@@ -1,0 +1,58 @@
+{
+  "session_id": "ultrachat_58180",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I will wait a bit before upgrading to the latest operating system update.",
+      "turn_index": 6
+    },
+    {
+      "text": "I don't want to risk any compatibility issues with my current setup.",
+      "turn_index": 6
+    },
+    {
+      "text": "I will wait a few weeks before upgrading.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will check for reviews before upgrading.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want tips for backing up my data before upgrading.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to use an external hard drive option to back up my data.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want recommendations for reliable external hard drives.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "major vs minor updates",
+    "operating system version check",
+    "minor update release frequency",
+    "major update upgrade decision",
+    "compatibility issues",
+    "wait before upgrading",
+    "check reviews before upgrading",
+    "backup data before upgrading",
+    "external hard drive backup",
+    "reliable external hard drive recommendations"
+  ],
+  "events": [
+    {
+      "text": "Waiting a few weeks before upgrading the operating system",
+      "date_hint": "a few weeks",
+      "turn_index": 8
+    },
+    {
+      "text": "Waiting a bit before upgrading to the latest operating system update",
+      "date_hint": "a bit",
+      "turn_index": 6
+    }
+  ]
+}

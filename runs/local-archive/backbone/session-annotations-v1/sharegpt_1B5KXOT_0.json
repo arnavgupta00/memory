@@ -1,0 +1,80 @@
+{
+  "session_id": "sharegpt_1B5KXOT_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The vehicle booking system provides services that are local and rental based for customers on demand.",
+      "turn_index": 0
+    },
+    {
+      "text": "All implementations for the vehicle booking system are in the context of MySQL.",
+      "turn_index": 0
+    },
+    {
+      "text": "A database schema needs to be established to support the implementation.",
+      "turn_index": 0
+    },
+    {
+      "text": "A logical flow of the data needs to be shown using draw.io or another suitable tool.",
+      "turn_index": 0
+    },
+    {
+      "text": "Tables such as Vehicle Data, Customer_Requests, and Bookings need to be prepared with suitable constraints to store records.",
+      "turn_index": 0
+    },
+    {
+      "text": "The data needs to be populated and the most frequently booked route in Chennai needs to be displayed.",
+      "turn_index": 0
+    },
+    {
+      "text": "The number of customers who travelled in each data and in each route needs to be displayed.",
+      "turn_index": 0
+    },
+    {
+      "text": "The bookings count greater than 50 in each day needs to be displayed.",
+      "turn_index": 0
+    },
+    {
+      "text": "The most booked type of vehicle (SUV, Mini, etc.) in Bangalore City needs to be listed.",
+      "turn_index": 0
+    },
+    {
+      "text": "The 5 star rated driver details need to be displayed to initiate incentives by the company.",
+      "turn_index": 0
+    },
+    {
+      "text": "Observations need to be commented to suggest betterment of customer experience.",
+      "turn_index": 0
+    },
+    {
+      "text": "Existing vehicle providers such as OLA and UBER need to be taken as examples to observe the database management process.",
+      "turn_index": 0
+    },
+    {
+      "text": "Important and possible implementations for the project need to be listed based on OLA and UBER.",
+      "turn_index": 0
+    },
+    {
+      "text": "More efficient database design needs to be implemented with more details.",
+      "turn_index": 2
+    }
+  ],
+  "keyphrases": [
+    "vehicle booking system",
+    "MySQL database",
+    "schema design",
+    "draw.io logical flow",
+    "Vehicle Data table",
+    "Customer_Requests table",
+    "Bookings table",
+    "most frequently booked route Chennai",
+    "customers travelled per route",
+    "bookings count >50 per day",
+    "most booked vehicle type Bangalore",
+    "5 star rated driver incentives",
+    "customer experience improvements",
+    "OLA UBER database management",
+    "efficient database design"
+  ],
+  "events": []
+}

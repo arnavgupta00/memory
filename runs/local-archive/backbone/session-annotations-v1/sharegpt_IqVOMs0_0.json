@@ -1,0 +1,33 @@
+{
+  "session_id": "sharegpt_IqVOMs0_0",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user requested an official statement from Liverpool FC in summer 2023 announcing the signing of Jude Bellingham from Dortmund.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user requested that the statement include a comment from Jürgen Klopp.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user requested that the statement include a comment from Jude Bellingham.",
+      "turn_index": 2
+    }
+  ],
+  "keyphrases": [
+    "Liverpool FC official statement",
+    "summer 2023 signing announcement",
+    "Jude Bellingham",
+    "Borussia Dortmund",
+    "Jürgen Klopp comment",
+    "Jude Bellingham comment"
+  ],
+  "events": [
+    {
+      "text": "Liverpool FC signing announcement for Jude Bellingham from Dortmund",
+      "date_hint": "summer 2023",
+      "turn_index": 0
+    }
+  ]
+}

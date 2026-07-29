@@ -1,0 +1,92 @@
+{
+  "session_id": "03362ec8_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to keep track of my rewards and points from various loyalty programs.",
+      "turn_index": 0
+    },
+    {
+      "text": "I use the Walgreens Balance Rewards loyalty program.",
+      "turn_index": 0
+    },
+    {
+      "text": "I use the Target RedCard loyalty program.",
+      "turn_index": 0
+    },
+    {
+      "text": "I use the Giant Eagle Advantage Card loyalty program.",
+      "turn_index": 0
+    },
+    {
+      "text": "I use the CVS ExtraCare card loyalty program.",
+      "turn_index": 0
+    },
+    {
+      "text": "I learned that 1,000 points from Walgreens is equivalent to $1 worth of rewards.",
+      "turn_index": 0
+    },
+    {
+      "text": "For Target RedCard, I get 5% off all purchases.",
+      "turn_index": 2
+    },
+    {
+      "text": "For Giant Eagle Advantage Card, I earn fuel points for every dollar I spend.",
+      "turn_index": 2
+    },
+    {
+      "text": "For Giant Eagle Advantage Card, 200 fuel points can be redeemed for 20 cents off per gallon at the gas station.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have 15,000 Walgreens points.",
+      "turn_index": 4
+    },
+    {
+      "text": "I earned 500 Walgreens points for buying a certain brand of coffee creamer that was on sale.",
+      "turn_index": 4
+    },
+    {
+      "text": "I got $2 in ExtraBucks rewards from CVS for buying sale items like toothpaste and mouthwash.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have 200 fuel points so far.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want a reminder to use my Walgreens Balance Rewards card every time I shop at Walgreens.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "Walgreens Balance Rewards",
+    "Target RedCard 5% off",
+    "Giant Eagle Advantage Card fuel points",
+    "200 fuel points redeemed for 20 cents off per gallon",
+    "CVS ExtraCare card",
+    "CVS ExtraBucks rewards",
+    "15,000 Walgreens points",
+    "500 Walgreens points coffee creamer",
+    "$2 ExtraBucks toothpaste mouthwash",
+    "Walgreens points to dollars conversion",
+    "reminder to use Walgreens card"
+  ],
+  "events": [
+    {
+      "text": "Earned 500 Walgreens points for buying a certain brand of coffee creamer that was on sale",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Got $2 in ExtraBucks rewards from CVS for buying sale items like toothpaste and mouthwash",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Set a reminder to use the Walgreens Balance Rewards card every time shopping at Walgreens",
+      "date_hint": "",
+      "turn_index": 8
+    }
+  ]
+}

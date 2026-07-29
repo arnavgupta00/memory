@@ -1,0 +1,33 @@
+{
+  "question_id": "gpt4_5438fa52",
+  "question_type": "temporal-reasoning",
+  "question": "Which event happened first, my attendance at a cultural festival or the start of my Spanish classes?",
+  "question_date": "2023/05/27 (Sat) 16:21",
+  "is_abstention": false,
+  "gold_session_ids": [
+    "answer_b10f3828_2",
+    "answer_b10f3828_1"
+  ],
+  "haystack_session_count": 50,
+  "notes_coverage": "partial",
+  "annotated_session_count": 9,
+  "gold_sessions": [
+    {
+      "session_id": "answer_b10f3828_2",
+      "date": "2023/05/27 (Sat) 14:08",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_b10f3828_2\n[session_date] 2023/05/27 (Sat) 14:08\n[notes] (empty)",
+      "user_turns": "[turn 0] I'm planning a trip to Europe next summer to visit my relatives in Germany, France, and the UK. Can you help me with the visa requirements and travel restrictions for US citizens? By the way, I've been taking Spanish classes, and I'm curious if it'll be useful during my trip.\n\n[turn 2] I'm glad to hear that I don't need a visa for my trip. Can you recommend some language learning apps or resources that can help me learn basic phrases in German and French before my trip?\n\n[turn 4] I'll definitely check out those resources. Since I've been taking Spanish classes for the past three months, I'm curious if there are any similarities or cognates between Spanish and French or German that I can leverage to learn faster.\n\n[turn 6] That's really helpful! I didn't realize there were so many cognates between Spanish and French. I'm curious, are there any specific French or German phrases or expressions that I should learn for my trip? Something that would be useful in everyday situations like ordering food or asking for directions?\n\n[turn 8] I'll definitely try to learn those phrases and expressions before my trip. I'm curious, are there any cultural differences or nuances that I should be aware of when interacting with locals in France and Germany? For example, are there any specific customs or etiquette that I should follow when eating at a restaurant or visiting someone's home?\n\n[turn 10] I'll definitely keep those cultural differences and nuances in mind during my trip. Speaking of everyday situations, I was wondering if you could recommend some popular restaurants or cafes in Germany and France that I should try while I'm there?"
+    },
+    {
+      "session_id": "answer_b10f3828_1",
+      "date": "2023/05/27 (Sat) 21:39",
+      "has_notes": false,
+      "notes_text": "[session_id] answer_b10f3828_1\n[session_date] 2023/05/27 (Sat) 21:39\n[notes] (empty)",
+      "user_turns": "[turn 0] Hey, I'm planning a trip to Europe next summer to visit my relatives. I attended a cultural festival in my hometown yesterday, where I met people from various ethnic backgrounds, and it made me think about my own roots. Can you help me find information on visa requirements for European countries?\n\n[turn 2] I'm a US citizen, and I plan to visit Germany, France, and the UK. I'll be staying for around 2 weeks in each country, and the purpose of my visit is to connect with my relatives and explore my ancestral homeland.\n\n[turn 4] That's really helpful, thanks. I'm actually curious about my family's history, and I've been doing some research. I looked up my family tree and discovered that I'm 75% European American, 15% African American, and 10% Native American. Do you have any resources or tips on how I can learn more about my heritage and connect with my roots?\n\n[turn 6] I'm actually curious about my great-aunt who was born in Germany during World War II and was relocated to the United States as a refugee. Do you have any information on how I can find more about her experience and the refugee process during that time?\n\n[turn 8] I'd like to know more about the refugee process during World War II, specifically about the role of the United States in accepting refugees. Can you provide more information on the Emergency Quota Act of 1944 and how it impacted refugee resettlement in the US?\n\n[turn 10] Can you tell me more about the Bricha movement and its role in smuggling Jews out of Eastern Europe and into the American zone of occupied Germany?"
+    }
+  ],
+  "luna_h6_trace": null,
+  "in_teach38": false,
+  "hop27_stratum": null
+}

@@ -1,0 +1,100 @@
+{
+  "session_id": "7b78417e_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning to get my mom a gift for Mother's Day.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of getting my mom a necklace similar to the one I got my sister for her birthday last month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I got my sister's necklace from Tiffany's.",
+      "turn_index": 2
+    },
+    {
+      "text": "My sister loved the necklace I got her from Tiffany's.",
+      "turn_index": 2
+    },
+    {
+      "text": "I spent around $250 on my sister's necklace.",
+      "turn_index": 2
+    },
+    {
+      "text": "I spent more than I had budgeted for my sister's necklace.",
+      "turn_index": 2
+    },
+    {
+      "text": "I got my sister's necklace for her birthday last month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am thinking of getting my mom a necklace that is more elegant and sophisticated.",
+      "turn_index": 4
+    },
+    {
+      "text": "I got my sister a silver necklace with a small pendant for her birthday on February 15th.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am considering a $250 price range for my mom's necklace.",
+      "turn_index": 4
+    },
+    {
+      "text": "I forgot to mention that the silver necklace I got my sister was from Tiffany's.",
+      "turn_index": 6
+    },
+    {
+      "text": "The silver necklace I got my sister was around $250.",
+      "turn_index": 6
+    },
+    {
+      "text": "I plan to look at Tiffany & Co.'s current collection to find something similar to my sister's necklace.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know whether Tiffany & Co. has sales or promotions to help me stay within my budget.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am going to check Tiffany's website for items similar to the necklace I got my sister.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Mother's Day gift",
+    "necklace for mom",
+    "similar necklace",
+    "Tiffany's",
+    "Tiffany & Co. current collection",
+    "sales or promotions",
+    "budget $250",
+    "silver necklace",
+    "small pendant",
+    "February 15 birthday necklace"
+  ],
+  "events": [
+    {
+      "text": "My sister's birthday necklace purchase (silver necklace with small pendant)",
+      "date_hint": "last month",
+      "turn_index": 0
+    },
+    {
+      "text": "My sister's birthday necklace purchase date",
+      "date_hint": "February 15th",
+      "turn_index": 4
+    },
+    {
+      "text": "I plan to look at Tiffany & Co.'s current collection for a similar necklace",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to check Tiffany's website for similar necklaces",
+      "date_hint": "",
+      "turn_index": 10
+    }
+  ]
+}

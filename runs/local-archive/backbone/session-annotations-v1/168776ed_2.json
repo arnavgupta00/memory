@@ -1,0 +1,101 @@
+{
+  "session_id": "168776ed_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for new workout playlists to listen to while running.",
+      "turn_index": 0
+    },
+    {
+      "text": "I had a great tennis match today.",
+      "turn_index": 0
+    },
+    {
+      "text": "I finally beat my colleague Alex in a set.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am currently doing 4 km runs every Sunday evening.",
+      "turn_index": 2
+    },
+    {
+      "text": "I track my progress using a fitness app.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking of increasing my distance to 5 km soon.",
+      "turn_index": 2
+    },
+    {
+      "text": "I run on a road route near my place.",
+      "turn_index": 4
+    },
+    {
+      "text": "My road route is pretty flat and easy to follow.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of exploring trails or park routes soon.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of exploring routes with more hills.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think hill repeats will help improve my endurance and strength.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am not sure how to incorporate hill repeats into my routine.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am up for trying hill repeats.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think hill repeats will challenge me and improve my endurance.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to start with shorter hill repeats.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to gradually increase the duration of hill repeats as I build up my strength.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "workout playlists for running",
+    "tennis match",
+    "beat colleague Alex",
+    "4 km runs",
+    "Sunday evening runs",
+    "fitness app tracking",
+    "increase to 5 km",
+    "prevent injuries when increasing distance",
+    "road running route",
+    "flat easy road route",
+    "trail running transition",
+    "park routes",
+    "hill routes",
+    "hill repeats",
+    "endurance and strength",
+    "incorporate hill repeats routine",
+    "shorter repeats gradually increase duration"
+  ],
+  "events": [
+    {
+      "text": "Tennis match where I beat colleague Alex in a set",
+      "date_hint": "today",
+      "turn_index": 0
+    },
+    {
+      "text": "Runs every Sunday evening (4 km)",
+      "date_hint": "every Sunday evening",
+      "turn_index": 2
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "session_id": "48d385f0_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for tips on how to display my homemade jam at the next market event.",
+      "turn_index": 0
+    },
+    {
+      "text": "I sold out quickly at the weekly farmers' market at the town square on Saturday, March 12th.",
+      "turn_index": 0
+    },
+    {
+      "text": "I think I could attract more customers with a better display.",
+      "turn_index": 0
+    },
+    {
+      "text": "I was thinking of using a tiered stand to display my jams.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am not sure what kind of tablecloth or covering would complement the colors of my labels and packaging.",
+      "turn_index": 2
+    },
+    {
+      "text": "I had a lovely day at the weekly farmers' market at the town square on Saturday, March 12th.",
+      "turn_index": 4
+    },
+    {
+      "text": "The sun coming out later in the day made the atmosphere feel more lively.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am considering whether sunflowers or daisies would be a better fit for my homemade jam display.",
+      "turn_index": 4
+    },
+    {
+      "text": "I decided to go with the sunflowers.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want tips on how to keep the sunflowers fresh throughout the market event.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of offering a special promotion or discount to attract more customers to my stand.",
+      "turn_index": 8
+    },
+    {
+      "text": "I decided to go with a BOGO offer.",
+      "turn_index": 10
+    },
+    {
+      "text": "I sold out of my homemade jam by 11 am at the weekly farmers' market at the town square on Saturday, March 12th.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am confident customers will be interested in stocking up on their favorite flavors.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "homemade jam display",
+    "weekly farmers' market",
+    "town square market",
+    "tiered stand",
+    "tablecloth covering",
+    "label colors",
+    "fresh flowers",
+    "sunflowers vs daisies",
+    "keeping flowers fresh",
+    "BOGO promotion",
+    "discount offer",
+    "sold out by 11 am"
+  ],
+  "events": [
+    {
+      "text": "Sold out quickly at the weekly farmers' market at the town square",
+      "date_hint": "Saturday, March 12th",
+      "turn_index": 0
+    },
+    {
+      "text": "Weekly farmers' market at the town square; sun came out later in the day",
+      "date_hint": "Saturday, March 12th",
+      "turn_index": 4
+    },
+    {
+      "text": "Sold out of homemade jam by 11 am at the weekly farmers' market at the town square",
+      "date_hint": "Saturday, March 12th (by 11 am)",
+      "turn_index": 10
+    }
+  ]
+}

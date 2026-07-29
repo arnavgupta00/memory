@@ -1,0 +1,111 @@
+{
+  "session_id": "4524c250_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to optimize my daily commute.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been experiencing heavy traffic lately during my commute.",
+      "turn_index": 0
+    },
+    {
+      "text": "John's car stopped functioning properly on one day, causing a disruption in the commute.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been thinking about getting a seat reservation for the 7:15 AM train.",
+      "turn_index": 2
+    },
+    {
+      "text": "The new train schedule has made the 7:15 AM train more crowded.",
+      "turn_index": 2
+    },
+    {
+      "text": "I take the 7:15 AM train from station A to station B every weekday morning.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been taking the 7:15 AM train from station A to station B for the past three months.",
+      "turn_index": 4
+    },
+    {
+      "text": "The 7:15 AM train has been getting more crowded since the schedule changed last month.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have had to stand for the entire ride for the past two weeks.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am considering getting a new coffee creamer from a different brand.",
+      "turn_index": 6
+    },
+    {
+      "text": "My usual coffee creamer has been out of stock at the cafe near the station for the past two weeks.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering getting off the train one stop earlier and walking to the office more often.",
+      "turn_index": 8
+    },
+    {
+      "text": "Walking to the office more often has been helping me feel more energized throughout the day.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking about using my commute time more productively by taking notes for my meetings.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am thinking about using my commute time more productively by listening to audiobooks.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "daily commute optimization",
+    "heavy traffic fuel efficiency",
+    "John's car stopped functioning",
+    "7:15 AM train seat reservation",
+    "new train schedule more crowded",
+    "station A to station B",
+    "standing for entire ride",
+    "schedule changed last month",
+    "coffee creamer brand recommendations",
+    "coffee creamer out of stock at cafe",
+    "get off one stop earlier",
+    "walk to the office more often",
+    "feel more energized",
+    "note-taking apps",
+    "audiobook platforms",
+    "commute time productive use"
+  ],
+  "events": [
+    {
+      "text": "John's car stopped functioning properly, disrupting the commute.",
+      "date_hint": "",
+      "turn_index": 0
+    },
+    {
+      "text": "Schedule changed last month, making the 7:15 AM train more crowded.",
+      "date_hint": "last month",
+      "turn_index": 4
+    },
+    {
+      "text": "For the past two weeks, the user has had to stand for the entire ride.",
+      "date_hint": "past two weeks",
+      "turn_index": 4
+    },
+    {
+      "text": "For the past two weeks, the user's usual coffee creamer has been out of stock at the cafe near the station.",
+      "date_hint": "past two weeks",
+      "turn_index": 6
+    },
+    {
+      "text": "For the past three months, the user has been taking the 7:15 AM train from station A to station B every weekday morning.",
+      "date_hint": "past three months",
+      "turn_index": 4
+    }
+  ]
+}

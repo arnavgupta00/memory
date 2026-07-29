@@ -1,0 +1,129 @@
+{
+  "session_id": "93191d30_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a picnic at the park next month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am planning a jam session with my siblings.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to have a potluck where everyone brings a dish to share.",
+      "turn_index": 2
+    },
+    {
+      "text": "I decided to have this picnic because my last family get-together was so much fun.",
+      "turn_index": 2
+    },
+    {
+      "text": "I had an annual family reunion at my aunt's house last weekend.",
+      "turn_index": 2
+    },
+    {
+      "text": "I play the guitar.",
+      "turn_index": 4
+    },
+    {
+      "text": "My siblings play the violin.",
+      "turn_index": 4
+    },
+    {
+      "text": "My siblings play the drums.",
+      "turn_index": 4
+    },
+    {
+      "text": "We will probably start with familiar tunes.",
+      "turn_index": 4
+    },
+    {
+      "text": "We have played together before.",
+      "turn_index": 4
+    },
+    {
+      "text": "We will probably stick to classic rock and folk tunes.",
+      "turn_index": 6
+    },
+    {
+      "text": "We might play Beatles songs.",
+      "turn_index": 6
+    },
+    {
+      "text": "We might play Bob Dylan songs.",
+      "turn_index": 6
+    },
+    {
+      "text": "We have played some of our own songs before.",
+      "turn_index": 6
+    },
+    {
+      "text": "We are planning a small, informal get-together.",
+      "turn_index": 8
+    },
+    {
+      "text": "We decided to keep things simple.",
+      "turn_index": 8
+    },
+    {
+      "text": "We will have the picnic, the music, and some outdoor games like frisbee or badminton.",
+      "turn_index": 8
+    },
+    {
+      "text": "We might bring lawn chairs and blankets so people can relax and socialize.",
+      "turn_index": 8
+    },
+    {
+      "text": "We are planning to bring my cousin Mike's new baby to the picnic.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am looking forward to meeting my cousin Mike's new baby.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am looking forward to spending time with my cousin Mike's new baby.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "picnic at the park",
+    "next month picnic",
+    "outdoor games",
+    "jam session",
+    "potluck dish to share",
+    "annual family reunion",
+    "aunt's house",
+    "last weekend family get-together",
+    "guitar violin drums",
+    "classic rock and folk tunes",
+    "Beatles songs",
+    "Bob Dylan songs",
+    "lawn chairs and blankets",
+    "frisbee badminton",
+    "cousin Mike new baby"
+  ],
+  "events": [
+    {
+      "text": "Annual family reunion at my aunt's house",
+      "date_hint": "last weekend",
+      "turn_index": 2
+    },
+    {
+      "text": "Picnic at the park",
+      "date_hint": "next month",
+      "turn_index": 0
+    },
+    {
+      "text": "Jam session with siblings at the picnic",
+      "date_hint": "next month",
+      "turn_index": 2
+    },
+    {
+      "text": "Bringing cousin Mike's new baby to the picnic",
+      "date_hint": "next month",
+      "turn_index": 10
+    }
+  ]
+}

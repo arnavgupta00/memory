@@ -1,0 +1,122 @@
+{
+  "session_id": "5fc83435_2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I need help planning my Saturday afternoon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a dance class at 2 PM on Saturday.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to grab lunch beforehand.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want restaurant recommendations near the dance studio that are open around 12:30 PM.",
+      "turn_index": 0
+    },
+    {
+      "text": "It takes 20 minutes to get to the studio from my new apartment.",
+      "turn_index": 0
+    },
+    {
+      "text": "My new apartment is in the 98122 zip code.",
+      "turn_index": 2
+    },
+    {
+      "text": "The dance studio is in the same city as my new apartment.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am open to any cuisine for lunch.",
+      "turn_index": 2
+    },
+    {
+      "text": "I prefer a casual atmosphere for lunch because I will be heading to dance class afterwards.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think Buckley's on Queen Anne sounds great for lunch.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want directions to get to Buckley's on Queen Anne from my apartment.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of stopping by the gym after my dance class.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want the most efficient way to get to the gym from the studio considering I will be on my bike.",
+      "turn_index": 6
+    },
+    {
+      "text": "My gym is closer to my new apartment.",
+      "turn_index": 8
+    },
+    {
+      "text": "After my dance class, I will be heading toward my gym.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to know if it would be a good idea to stop by my apartment to drop off my dance gear before heading to the gym.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want bike routes or roads to take from the studio to my apartment and then from my apartment to the gym.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to make sure I take the most efficient and safe bike route possible.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "Saturday afternoon planning",
+    "dance class 2 PM",
+    "lunch near dance studio",
+    "restaurants open 12:30 PM",
+    "20 minutes to studio from apartment",
+    "98122 zip code",
+    "casual atmosphere restaurant",
+    "Buckley's on Queen Anne",
+    "directions from apartment to Buckley's",
+    "bike to gym from studio",
+    "gym closer to apartment",
+    "drop off dance gear at apartment",
+    "bike routes studio to apartment",
+    "bike routes apartment to gym",
+    "efficient and safe bike route"
+  ],
+  "events": [
+    {
+      "text": "Saturday afternoon planning with a 2 PM dance class",
+      "date_hint": "Saturday",
+      "turn_index": 0
+    },
+    {
+      "text": "Lunch planning for restaurants open around 12:30 PM before the 2 PM dance class",
+      "date_hint": "around 12:30 PM (Saturday)",
+      "turn_index": 0
+    },
+    {
+      "text": "Heading from the studio to the gym by bike after the dance class",
+      "date_hint": "after the dance class (Saturday)",
+      "turn_index": 6
+    },
+    {
+      "text": "Stopping by the apartment to drop off dance gear before heading to the gym",
+      "date_hint": "after the dance class (Saturday)",
+      "turn_index": 8
+    },
+    {
+      "text": "Planning bike routes from the studio to the apartment and then from the apartment to the gym",
+      "date_hint": "Saturday",
+      "turn_index": 10
+    }
+  ]
+}

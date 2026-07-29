@@ -1,0 +1,105 @@
+{
+  "session_id": "answer_59547700",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to organize my calendar for the rest of the year.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want upcoming charity events in LA that I might be interested in.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am most passionate about animal welfare.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am passionate about children's health.",
+      "turn_index": 2
+    },
+    {
+      "text": "I volunteered at the \"Love is in the Air\" fundraising dinner back in February.",
+      "turn_index": 2
+    },
+    {
+      "text": "I enjoyed the \"Love is in the Air\" fundraising dinner because it was a great way to meet new people.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to learn more about the \"Strut Your Mutt\" event in September.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want more details about the silent auction and raffles at the \"Strut Your Mutt\" event.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to know if there are any specific prizes or experiences to look out for at \"Strut Your Mutt\".",
+      "turn_index": 6
+    },
+    {
+      "text": "I am looking forward to the silent auction and raffles at \"Strut Your Mutt\".",
+      "turn_index": 8
+    },
+    {
+      "text": "I have had a great experience with similar events in the past.",
+      "turn_index": 8
+    },
+    {
+      "text": "I volunteered at the \"Love is in the Air\" fundraising dinner back on Valentine's Day.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will probably attend \"Strut Your Mutt\" with a few friends.",
+      "turn_index": 10
+    },
+    {
+      "text": "My friends are also passionate about animal welfare.",
+      "turn_index": 10
+    },
+    {
+      "text": "We are looking forward to a fun day out, getting some exercise, and supporting a great cause.",
+      "turn_index": 10
+    },
+    {
+      "text": "I expect the event to be an opportunity to catch up with each other.",
+      "turn_index": 10
+    },
+    {
+      "text": "We might meet some new like-minded people at the event.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "organize calendar rest of the year",
+    "upcoming charity events in LA",
+    "animal welfare",
+    "children's health",
+    "\"Love is in the Air\" fundraising dinner",
+    "volunteered February",
+    "Valentine's Day fundraising dinner",
+    "\"Strut Your Mutt\" event",
+    "silent auction and raffles",
+    "specific prizes or experiences",
+    "attending with friends",
+    "fun day out exercise"
+  ],
+  "events": [
+    {
+      "text": "Volunteered at the \"Love is in the Air\" fundraising dinner",
+      "date_hint": "February",
+      "turn_index": 2
+    },
+    {
+      "text": "Volunteered at the \"Love is in the Air\" fundraising dinner",
+      "date_hint": "Valentine's Day",
+      "turn_index": 8
+    },
+    {
+      "text": "\"Strut Your Mutt\" event",
+      "date_hint": "September",
+      "turn_index": 4
+    }
+  ]
+}

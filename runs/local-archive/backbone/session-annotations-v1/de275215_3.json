@@ -1,0 +1,93 @@
+{
+  "session_id": "de275215_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a bike trip next month.",
+      "turn_index": 0
+    },
+    {
+      "text": "I did a 30-mile ride with friends last weekend to a nearby state park.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am in California.",
+      "turn_index": 2
+    },
+    {
+      "text": "I prefer paved roads with some rolling hills.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am comfortable riding 30-40 miles in a day.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want routes that include scenic views or stops at local cafes.",
+      "turn_index": 2
+    },
+    {
+      "text": "I really like the Santa Cruz Coastal Route.",
+      "turn_index": 4
+    },
+    {
+      "text": "I really like the Napa Valley Vineyard Route.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been doing 30-mile rides recently.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have been trying to get out for a ride at least three times a week.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am tracking my progress on Strava.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am trying to mix up my routes and try new things.",
+      "turn_index": 10
+    },
+    {
+      "text": "I did a 30-mile ride last weekend to a nearby state park.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "bike trip next month",
+    "30-mile ride",
+    "nearby state park",
+    "California bike routes",
+    "paved roads",
+    "rolling hills",
+    "30-40 miles per day",
+    "scenic views",
+    "local cafes",
+    "Santa Cruz Coastal Route",
+    "Napa Valley Vineyard Route",
+    "bike safety tips",
+    "ride defensively",
+    "Strava tracking",
+    "three rides per week",
+    "mix up routes"
+  ],
+  "events": [
+    {
+      "text": "30-mile ride with friends to a nearby state park",
+      "date_hint": "last weekend",
+      "turn_index": 0
+    },
+    {
+      "text": "30-mile ride to a nearby state park",
+      "date_hint": "last weekend",
+      "turn_index": 10
+    },
+    {
+      "text": "Planning a bike trip next month",
+      "date_hint": "next month",
+      "turn_index": 0
+    }
+  ]
+}

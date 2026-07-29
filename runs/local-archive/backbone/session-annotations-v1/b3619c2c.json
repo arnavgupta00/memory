@@ -1,0 +1,74 @@
+{
+  "session_id": "b3619c2c",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to plan out my day.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want suggestions for productivity apps to help me stay on track.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am interested in the Pomodoro Timer app.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am usually most productive between 10 am and 12 pm.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am usually most productive between 2 pm and 4 pm.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to set reminders for my daily routine.",
+      "turn_index": 4
+    },
+    {
+      "text": "My breakfast time is usually around 8:30-9:00 am.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want reminders for other parts of my daily routine.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want a reminder to wind down before bed.",
+      "turn_index": 6
+    },
+    {
+      "text": "I usually wake up around 7:30 am on weekdays.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to set a reminder for 9:00 pm to start winding down and preparing for bed.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "productivity apps",
+    "Pomodoro Timer app",
+    "Pomodoro schedule",
+    "most productive time 10 am to 12 pm",
+    "most productive time 2 pm to 4 pm",
+    "daily routine reminders",
+    "breakfast reminder 8:30-9:00 am",
+    "wind down before bed reminder",
+    "wake up 7:30 am weekdays",
+    "bedtime wind down 9:00 pm"
+  ],
+  "events": [
+    {
+      "text": "Set a reminder for breakfast time (around 8:30-9:00 am)",
+      "date_hint": "around 8:30-9:00 am",
+      "turn_index": 4
+    },
+    {
+      "text": "Set a reminder to wind down before bed starting at 9:00 pm",
+      "date_hint": "9:00 pm",
+      "turn_index": 8
+    }
+  ]
+}

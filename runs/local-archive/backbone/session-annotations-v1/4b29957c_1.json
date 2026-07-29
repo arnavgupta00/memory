@@ -1,0 +1,112 @@
+{
+  "session_id": "4b29957c_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I started working on the report on Tuesday at 9 AM.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a reminder of what day the report was due.",
+      "turn_index": 0
+    },
+    {
+      "text": "The report is due by the end of the week.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have a few meetings on Monday.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have a yoga class on Tuesday evening.",
+      "turn_index": 4
+    },
+    {
+      "text": "I finished the report on Tuesday.",
+      "turn_index": 6
+    },
+    {
+      "text": "I need to reduce my cholesterol levels.",
+      "turn_index": 8
+    },
+    {
+      "text": "My doctor recommended eating more fiber-rich foods.",
+      "turn_index": 8
+    },
+    {
+      "text": "My doctor recommended eating lean proteins.",
+      "turn_index": 8
+    },
+    {
+      "text": "My doctor recommended eating healthy fats.",
+      "turn_index": 8
+    },
+    {
+      "text": "I do not have any food allergies or intolerances.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am open to trying new cuisines and cooking methods.",
+      "turn_index": 8
+    },
+    {
+      "text": "I plan to start with oatmeal with fruits and nuts for breakfast.",
+      "turn_index": 10
+    },
+    {
+      "text": "I plan to incorporate more lean proteins and healthy fats into my meals.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want simple and healthy snack ideas to take to work or on-the-go.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "report due date",
+    "report started Tuesday 9 AM",
+    "due by end of the week",
+    "weekly schedule",
+    "meetings on Monday",
+    "Tuesday evening yoga class",
+    "finished report Tuesday",
+    "reduce cholesterol",
+    "fiber-rich foods",
+    "lean proteins",
+    "healthy fats",
+    "oatmeal with fruits and nuts",
+    "healthy snack ideas",
+    "snacks for work on-the-go",
+    "doctor's diet advice",
+    "no food allergies or intolerances",
+    "new cuisines and cooking methods"
+  ],
+  "events": [
+    {
+      "text": "Started working on the report",
+      "date_hint": "Tuesday at 9 AM",
+      "turn_index": 0
+    },
+    {
+      "text": "Created/asked for a weekly schedule to finish tasks by the report due time",
+      "date_hint": "this week",
+      "turn_index": 2
+    },
+    {
+      "text": "Had meetings on Monday (planning for Monday)",
+      "date_hint": "Monday",
+      "turn_index": 4
+    },
+    {
+      "text": "Planned around a Tuesday evening yoga class",
+      "date_hint": "Tuesday evening",
+      "turn_index": 4
+    },
+    {
+      "text": "Finished the report",
+      "date_hint": "Tuesday",
+      "turn_index": 6
+    }
+  ]
+}

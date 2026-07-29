@@ -1,0 +1,110 @@
+{
+  "session_id": "042c55a5",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to organize my contacts from recent networking events.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to create a spreadsheet to keep track of the people I have met.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the spreadsheet to include names, titles, and companies.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to add a column for next steps or follow-up tasks for each contact.",
+      "turn_index": 2
+    },
+    {
+      "text": "I need to send a follow-up email to Rachel Lee.",
+      "turn_index": 2
+    },
+    {
+      "text": "Rachel Lee is the CEO of StartupX.",
+      "turn_index": 2
+    },
+    {
+      "text": "I met Rachel Lee at the TechConnect conference last week.",
+      "turn_index": 2
+    },
+    {
+      "text": "I met a lawyer at a Chamber of Commerce event.",
+      "turn_index": 4
+    },
+    {
+      "text": "The lawyer offered to review my startup's contracts for free.",
+      "turn_index": 4
+    },
+    {
+      "text": "I need to reach out to the lawyer to take him up on his offer.",
+      "turn_index": 4
+    },
+    {
+      "text": "I wrote down the lawyer's business card info in my notebook from the event.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have the lawyer's name, company, and email address in my notebook.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to generate a simple email template for reaching out to people I met at networking events.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want the email template to be concise and professional.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will customize the email template to send a follow-up email to Rachel Lee from StartupX.",
+      "turn_index": 10
+    },
+    {
+      "text": "I am thinking of attending another networking event next week.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want networking event recommendations in the downtown area.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "contacts spreadsheet",
+    "networking events",
+    "contact tracking",
+    "names titles companies",
+    "Next Steps column",
+    "follow-up tasks",
+    "follow-up email",
+    "Rachel Lee",
+    "CEO of StartupX",
+    "TechConnect conference",
+    "Chamber of Commerce event",
+    "lawyer contract review free"
+  ],
+  "events": [
+    {
+      "text": "Met Rachel Lee at the TechConnect conference",
+      "date_hint": "last week",
+      "turn_index": 2
+    },
+    {
+      "text": "Met a lawyer at a Chamber of Commerce event",
+      "date_hint": "",
+      "turn_index": 4
+    },
+    {
+      "text": "Checked notebook for the lawyer's business card info",
+      "date_hint": "",
+      "turn_index": 6
+    },
+    {
+      "text": "Planning to attend another networking event",
+      "date_hint": "next week",
+      "turn_index": 10
+    }
+  ]
+}

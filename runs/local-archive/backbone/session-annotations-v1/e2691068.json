@@ -1,0 +1,81 @@
+{
+  "session_id": "e2691068",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "The user is looking for new breakfast ideas that provide an energy boost.",
+      "turn_index": 0
+    },
+    {
+      "text": "The user likes the sound of avocado toast with poached eggs.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user likes the sound of a smoothie bowl.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user wants tips to prepare avocado toast with poached eggs and a smoothie bowl quickly in the morning.",
+      "turn_index": 2
+    },
+    {
+      "text": "The user wants a good ratio of fruits to yogurt to spinach for a smoothie bowl.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user does not want the smoothie bowl to taste too spinachy.",
+      "turn_index": 4
+    },
+    {
+      "text": "The user is thinking of trying the smoothie bowl with banana and spinach.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user wants recommendations for toppings that would go well with banana and spinach in a smoothie bowl.",
+      "turn_index": 6
+    },
+    {
+      "text": "The user thinks they will try granola and sliced almonds as smoothie bowl toppings.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user wants recommendations for a good coffee shop near their office to stop by on the way to work.",
+      "turn_index": 8
+    },
+    {
+      "text": "The user is thinking of trying a new coffee shop that just opened up near their office.",
+      "turn_index": 10
+    },
+    {
+      "text": "The user wants to know whether to try the new coffee shop's coffee black or with cream and sugar.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "breakfast ideas",
+    "energy boost breakfast",
+    "avocado toast with poached eggs",
+    "smoothie bowl",
+    "quick morning prep",
+    "ratio of fruits to yogurt to spinach",
+    "not too spinachy",
+    "banana and spinach smoothie bowl",
+    "smoothie bowl toppings",
+    "granola and sliced almonds",
+    "coffee shop near my office",
+    "coffee black vs cream and sugar",
+    "new coffee shop just opened"
+  ],
+  "events": [
+    {
+      "text": "The user plans to stop by a coffee shop near their office on the way to work.",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "The user is considering trying a new coffee shop that just opened up near their office.",
+      "date_hint": "just opened",
+      "turn_index": 10
+    }
+  ]
+}

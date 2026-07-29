@@ -1,0 +1,82 @@
+{
+  "session_id": "ff5922e7",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a movie night with my friends this weekend.",
+      "turn_index": 0
+    },
+    {
+      "text": "I finished season 3 of Stranger Things in five days.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been bingeing so much TV lately and I have lost track of what is trending.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have been binge-watching for three weeks straight.",
+      "turn_index": 6
+    },
+    {
+      "text": "I listen to the podcast \"Bachelor Happy Hour\" nonstop during my daily commutes.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of checking out \"Lupin\" after I finish \"Schitt's Creek\".",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of checking out \"The Witcher\" after I finish \"Schitt's Creek\".",
+      "turn_index": 4
+    },
+    {
+      "text": "I think I should take a break from binge-watching or keep going.",
+      "turn_index": 6
+    },
+    {
+      "text": "I decided to keep going for now.",
+      "turn_index": 8
+    },
+    {
+      "text": "I will try to pace myself and make sure I am not neglecting other aspects of my life.",
+      "turn_index": 8
+    }
+  ],
+  "keyphrases": [
+    "movie night",
+    "popular movies past few years",
+    "Stranger Things similar movies",
+    "Netflix most popular TV show",
+    "bingeing TV",
+    "finished season 3 Stranger Things",
+    "Lupin",
+    "The Witcher",
+    "Schitt's Creek",
+    "next seasons release date",
+    "binge-watching three weeks straight",
+    "take a break from bingeing",
+    "podcasts similar to Bachelor Happy Hour",
+    "Bachelor Happy Hour",
+    "daily commutes",
+    "pacing myself",
+    "neglecting other aspects of life"
+  ],
+  "events": [
+    {
+      "text": "Finished season 3 of Stranger Things in five days",
+      "date_hint": "five days",
+      "turn_index": 2
+    },
+    {
+      "text": "Binge-watching for three weeks straight",
+      "date_hint": "three weeks straight",
+      "turn_index": 6
+    },
+    {
+      "text": "Planning a movie night with friends this weekend",
+      "date_hint": "this weekend",
+      "turn_index": 0
+    }
+  ]
+}

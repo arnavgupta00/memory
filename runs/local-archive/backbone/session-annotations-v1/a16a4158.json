@@ -1,0 +1,85 @@
+{
+  "session_id": "a16a4158",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am looking for recommendations on bike locks.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have been checking out Abus locks online.",
+      "turn_index": 0
+    },
+    {
+      "text": "I have a new bike.",
+      "turn_index": 2
+    },
+    {
+      "text": "I ride my bike almost every day.",
+      "turn_index": 2
+    },
+    {
+      "text": "I hit level 10 on Strava last week.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am thinking about getting a bike rack for my car.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been eyeing a Thule bike rack online.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been looking at the Thule Evo 2 bike rack.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have a Trek FX 3 hybrid bike.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think I will order the Thule Evo 2 bike rack.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want tips on how to properly load and unload my bike onto the rack safely and securely.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am planning a longer bike trip for the weekend.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "bike lock recommendations",
+    "Abus bike locks",
+    "bike maintenance chain cleaning",
+    "bike chain lubrication frequency",
+    "Strava level 10",
+    "bike rack for car",
+    "Thule bike rack",
+    "Thule Evo 2",
+    "Trek FX 3 hybrid bike fit",
+    "load and unload bike rack safely",
+    "scenic bike routes",
+    "bike trip weekend"
+  ],
+  "events": [
+    {
+      "text": "Hit level 10 on Strava",
+      "date_hint": "last week",
+      "turn_index": 2
+    },
+    {
+      "text": "Order the Thule Evo 2 bike rack",
+      "date_hint": "",
+      "turn_index": 8
+    },
+    {
+      "text": "Plan a longer bike trip for the weekend",
+      "date_hint": "this weekend",
+      "turn_index": 10
+    }
+  ]
+}

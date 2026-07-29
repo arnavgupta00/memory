@@ -1,0 +1,103 @@
+{
+  "session_id": "478e02c2",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am trying to plan out my day tomorrow.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want the weather forecast for the next 24 hours.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want calming music or nature sounds to help me wind down before bed.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am trying to establish a consistent sleep schedule.",
+      "turn_index": 2
+    },
+    {
+      "text": "I think it might be normal for people to have more restless nights during full moons.",
+      "turn_index": 2
+    },
+    {
+      "text": "I have noticed that I tend to have more restless nights during full moons.",
+      "turn_index": 4
+    },
+    {
+      "text": "I have been tracking my sleep patterns using a mobile app.",
+      "turn_index": 4
+    },
+    {
+      "text": "I am thinking of trying out gentle stretches and yoga poses before bed to help me relax and prepare for sleep.",
+      "turn_index": 6
+    },
+    {
+      "text": "I have already started doing light stretching and yoga poses before bed.",
+      "turn_index": 8
+    },
+    {
+      "text": "Doing light stretching and yoga poses before bed has been helpful for me in relaxing my muscles and preparing me for sleep.",
+      "turn_index": 8
+    },
+    {
+      "text": "I have made a conscious effort to avoid checking work emails or messages after 9 PM to reduce stress.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am trying to establish a consistent sleep schedule.",
+      "turn_index": 10
+    },
+    {
+      "text": "I aim for 7-8 hours of sleep each night.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to set my alarm clock 15 minutes earlier each day.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want to start setting my alarm clock 15 minutes earlier each day starting from Sundays.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "weather forecast next 24 hours",
+    "calming music",
+    "nature sounds",
+    "wind down before bed",
+    "consistent sleep schedule",
+    "restless nights full moons",
+    "sleep tracking mobile app",
+    "gentle stretches before bed",
+    "yoga poses for sleep",
+    "avoid work emails after 9 PM",
+    "7-8 hours of sleep",
+    "set alarm 15 minutes earlier",
+    "starting from Sundays"
+  ],
+  "events": [
+    {
+      "text": "Planning out the day tomorrow and requesting a 24-hour weather forecast",
+      "date_hint": "tomorrow",
+      "turn_index": 0
+    },
+    {
+      "text": "Noticing more restless nights during full moons",
+      "date_hint": "during full moons",
+      "turn_index": 4
+    },
+    {
+      "text": "Avoiding checking work emails or messages after 9 PM to reduce stress",
+      "date_hint": "after 9 PM",
+      "turn_index": 8
+    },
+    {
+      "text": "Setting an alarm clock 15 minutes earlier each day starting from Sundays",
+      "date_hint": "starting from Sundays",
+      "turn_index": 10
+    }
+  ]
+}

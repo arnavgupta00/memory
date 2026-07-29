@@ -1,0 +1,82 @@
+{
+  "session_id": "010a28ab_3",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a road trip soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I recently got my car serviced at the dealership on the 15th of last month.",
+      "turn_index": 0
+    },
+    {
+      "text": "The dealership replaced my brake pads.",
+      "turn_index": 0
+    },
+    {
+      "text": "The brake pads replacement cost around $350.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want a new car cover to protect my car's paint job from the sun and rain.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am considering a car cover with a waterproof layer and UV protection.",
+      "turn_index": 4
+    },
+    {
+      "text": "The car cover I am eyeing costs $120.",
+      "turn_index": 4
+    },
+    {
+      "text": "I use my phone's GPS navigation system to get to my kids' soccer practice every Saturday morning.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am thinking of selling my old car seat that my kids have outgrown.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to put the money toward a new bike rack for my car.",
+      "turn_index": 8
+    },
+    {
+      "text": "I am thinking of getting a bike rack that attaches to the tow hitch.",
+      "turn_index": 10
+    },
+    {
+      "text": "The bike rack I am eyeing costs $250.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "road trip vehicle preparation",
+    "dealership service",
+    "brake pads replacement",
+    "brake pads cost $350",
+    "waterproof car cover",
+    "UV protection car cover",
+    "car cover $120",
+    "optimize GPS settings",
+    "phone GPS navigation",
+    "kids' soccer practice",
+    "car seat for sale",
+    "bike rack tow hitch",
+    "bike rack $250",
+    "waterproof layer UV protection"
+  ],
+  "events": [
+    {
+      "text": "Car serviced at the dealership and brake pads replaced",
+      "date_hint": "15th of last month",
+      "turn_index": 0
+    },
+    {
+      "text": "Using phone GPS navigation to get to kids' soccer practice",
+      "date_hint": "every Saturday morning",
+      "turn_index": 6
+    }
+  ]
+}

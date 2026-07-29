@@ -1,0 +1,107 @@
+{
+  "session_id": "02df175d_1",
+  "prompt": "session-annotate-v1",
+  "facts": [
+    {
+      "text": "I am planning a trip to visit my family soon.",
+      "turn_index": 0
+    },
+    {
+      "text": "I want to make sure I have all necessary documents in order for the trip.",
+      "turn_index": 0
+    },
+    {
+      "text": "My grandmother passed away on January 15.",
+      "turn_index": 0
+    },
+    {
+      "text": "My grandmother's funeral was a few days after January 15.",
+      "turn_index": 0
+    },
+    {
+      "text": "I am planning a domestic trip.",
+      "turn_index": 2
+    },
+    {
+      "text": "I will be flying to visit my family.",
+      "turn_index": 2
+    },
+    {
+      "text": "I already have a valid passport.",
+      "turn_index": 2
+    },
+    {
+      "text": "I am not sure what other documents I need to prepare for the trip.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want to know whether I need to update my driver's license.",
+      "turn_index": 2
+    },
+    {
+      "text": "I want tips on how to stay organized during the trip.",
+      "turn_index": 4
+    },
+    {
+      "text": "I will be dealing with emotional baggage due to my grandmother's passing during the trip.",
+      "turn_index": 4
+    },
+    {
+      "text": "I want to bring a comfort item to feel more connected to my grandmother while away.",
+      "turn_index": 6
+    },
+    {
+      "text": "I am considering bringing old photos and letters we found while sorting through my grandmother's belongings.",
+      "turn_index": 6
+    },
+    {
+      "text": "I want to share the old photos and letters with my family while visiting.",
+      "turn_index": 6
+    },
+    {
+      "text": "I think it would be a good idea to bring a journal or a small notebook to write down thoughts, feelings, or memories that come up.",
+      "turn_index": 8
+    },
+    {
+      "text": "I want to capture the moment and reflect on it later by writing in a journal or notebook.",
+      "turn_index": 8
+    },
+    {
+      "text": "I think I will bring a small pack of tissues with me.",
+      "turn_index": 10
+    },
+    {
+      "text": "I want the tissues in case I need them while sharing the photos and letters with my family.",
+      "turn_index": 10
+    }
+  ],
+  "keyphrases": [
+    "trip to visit family",
+    "necessary documents",
+    "grandmother passed away",
+    "January 15",
+    "funeral a few days later",
+    "domestic trip",
+    "flying to visit family",
+    "valid passport",
+    "update driver's license",
+    "stay organized during trip",
+    "emotional baggage",
+    "comfort item",
+    "old photos and letters",
+    "journal or small notebook",
+    "small pack of tissues"
+  ],
+  "events": [
+    {
+      "text": "My grandmother passed away.",
+      "date_hint": "January 15",
+      "turn_index": 0
+    },
+    {
+      "text": "My grandmother's funeral took place a few days after her passing.",
+      "date_hint": "a few days after January 15",
+      "turn_index": 0
+    }
+  ]
+}
