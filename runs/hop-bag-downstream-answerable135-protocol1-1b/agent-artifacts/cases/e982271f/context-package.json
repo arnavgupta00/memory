@@ -1,0 +1,46 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Need the last venue name from the previously recommended list of popular Portland venues for indie music shows; retrieve the assistant’s “popular venues” recommendation in order to identify the final item.",
+  "candidateStatus": "found",
+  "missingRisk": "If multiple sessions contain later updates/recommendations after 2023/05/25, the “last venue” could be from a newer list not present in this catalog. Current candidates only show one venues list.; frozen bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "answer_ultrachat_195444",
+      "turnIndex": 2,
+      "date": "2023/05/25 (Thu) 18:47",
+      "role": "user",
+      "text": "Do you happen to know any specific venues in Portland that are popular among indie artists?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ultrachat_195444",
+      "turnIndex": 3,
+      "date": "2023/05/25 (Thu) 18:47",
+      "role": "assistant",
+      "text": "Sure! Here are some popular venues in Portland that are known to host indie music shows:\n\n1. Mississippi Studios\n2. Doug Fir Lounge\n3. Wonder Ballroom\n4. Crystal Ballroom\n5. Holocene\n6. Aladdin Theater\n7. The Old Church\n8. The Liquor Store\n9. Alberta Street Pub\n10. Revolution Hall\n\nThese venues have a reputation for hosting indie music shows and attracting local and national artists. However, there are many other smaller, independent venues in Portland that specialize in indie music, and it's always worth exploring new places to play and perform.",
+      "why": "This assistant turn contains the numbered list of popular Portland venues known for hosting indie music shows; the last venue in that list is needed to answer the question.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ultrachat_195444",
+      "turnIndex": 4,
+      "date": "2023/05/25 (Thu) 18:47",
+      "role": "user",
+      "text": "I'm definitely going to check out some of those venues. Do you have any favorite indie artists from Portland?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ultrachat_195444",
+      "turnIndex": 0,
+      "date": "2023/05/25 (Thu) 18:47",
+      "role": "user",
+      "text": "How do Indie music artists in Portland typically promote their work?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 820,
+  "estimatedTokens": 205
+}

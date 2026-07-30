@@ -1,0 +1,180 @@
+[
+  {
+    "session_id": "answer_cebb7159",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Medium: This single session contains many travel/advice subtopics, but not necessarily the specific anxiety-about-getting-around-Tokyo tips requested; still, it includes multiple transportation routes, Suica usage guidance, and general tips that could help.",
+      "claims": [
+        {
+          "turnIndex": 1,
+          "fact": "Park Hyatt Tokyo is located in the heart of Shinjuku, one of Tokyo's most vibrant and exciting neighborhoods.",
+          "why": "Places the hotel/neighborhood (Shinjuku) which can ground advice for getting around Tokyo."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Route from Shinjuku to Tsukiji Fish Market using Suica: take JR Yamanote Line from Shinjuku Station toward Tokyo Station for 10 stops to Shimbashi Station, transfer to Tokyo Metro Ginza Line toward Asakusa for 2 stops to Tsukijishijo Station, then follow signs to Tsukiji Fish Market.",
+          "why": "Concrete multi-line public transit directions for navigating Tokyo."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Total travel time from Shinjuku to Tsukiji Fish Market is around 30-40 minutes; fare approximately ¥420-450.",
+          "why": "Quantities (time and cost) for route planning."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Tips: touch Suica card on the reader at station ticket gates when entering and exiting; check Tsukiji Fish Market website for latest operating hours; market busiest early morning; consider visiting between 5:00 AM and 7:00 AM; wear comfortable shoes and dress in layers; keep an eye on Suica in crowded market; expect long lines and high prices if trying sushi.",
+          "why": "General transportation/tap-in/out guidance plus timing/behavior tips useful for commuting anxiety."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Alternative option: taxi from Shinjuku to Tsukiji Fish Market takes around 20-30 minutes and costs approximately ¥4,000-5,000 depending on traffic.",
+          "why": "Provides backup option and costs/time for travel around Tokyo."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "From Narita Airport to Shinjuku Station Option 1: JR Narita Express (N'EX) to Shinjuku Station; journey takes around 60-70 minutes; Shinjuku Station is final stop.",
+          "why": "Specific airport-to-city rail route and timeframe for navigating Tokyo."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "From Narita Airport to Shinjuku Station Option 2: Keisei Skyliner to Ueno Station (~40-50 minutes), transfer to JR Yamanote Line (~20-30 minutes) to Shinjuku Station.",
+          "why": "Alternate route with transfers (useful for getting around)."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Using Suica card for airport-to-Shinjuku: touch Suica on the reader at the ticket gate when entering the train station at Narita Airport; touch out at Shinjuku Station when exiting.",
+          "why": "Direct instructions on Suica tap-in/tap-out behavior."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Narita to Shinjuku approximate travel times and costs using Suica: (1) N'EX + JR Yamanote Line: 60-70 minutes, ¥3,200-3,500; (2) Keisei Skyliner + JR Yamanote Line: 50-60 minutes, ¥2,500-3,000; (3) Keisei Limited Express + JR Yamanote Line: 70-80 minutes, ¥2,000-2,500.",
+          "why": "Quantified comparison of routes for planning and reducing uncertainty."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Nikko National Park guided tour preparation includes: check weather forecast and dress in layers; bring waterproof jacket if rain expected; wear sturdy comfortable shoes; carry water bottle and snacks; sunscreen and hat; camera/smartphone; have tour booking confirmation/documents ready (TripIt app); bring small amount of cash even though Suica covers most expenses.",
+          "why": "Preparation guidance connected to anxiety about a trip, which may help general travel readiness."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "For Nikko tour meeting point: check exact meeting point address; use Suica to tap in/out on public transportation; plan route with transit app/Google Maps and account for transfers/schedules; travel to Nikko via JR Tohoku Shinkansen to Utsunomiya Station then transfer to JR Nikko Line to reach Nikko Station; use Suica for local buses or taxis to reach the meeting point if needed.",
+          "why": "Transportation planning steps and Suica usage for an out-of-Tokyo trip."
+        },
+        {
+          "turnIndex": 13,
+          "fact": "Park Hyatt Tokyo services include concierge for sightseeing arrangements and restaurant reservations; hotel offers currency exchange services; provides airport shuttle to and from Narita and Haneda airports (fee applies); includes luggage storage; has tour and activity desk.",
+          "why": "Local support/resources that can reduce anxiety and help navigating logistics."
+        },
+        {
+          "turnIndex": 16,
+          "fact": "Tsukiji Fish Market throughput claim: handling over 2,000 tons of seafood every day; divided into inner market (wholesale auction; not open to general public) and outer market (open to the public).",
+          "why": "Sets expectations about crowding/structure which may influence travel planning."
+        },
+        {
+          "turnIndex": 17,
+          "fact": "Outer market sushi/breakfast: outer market has sushi restaurants and bars; suggested visit time 5:00 AM to 7:00 AM for busiest/freshest; bring cash because many shops/restaurants accept cash only.",
+          "why": "Additional expectation-setting for early travel and payments relevant to commuting anxiety."
+        },
+        {
+          "turnIndex": 19,
+          "fact": "Tokyo Tower specifics: height 332.6 meters (1,091 feet); has observation decks offering panoramic views; elevator and stairs available; includes exhibitions like wax museum, pirate-themed play area, and Guinness World Records museum; souvenir shops and restaurants within tower complex; tips include getting there early and buying tickets online in advance to avoid long queues.",
+          "why": "May help general tourist planning and crowd/queue management tips while traveling around Tokyo."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "5c0574b1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Medium: This session focuses on Taiwan/Vietnam trip planning rather than Tokyo transit, but it does include several concrete logistics/tour-structure details (transportation, guided tour inclusions, costs, schedules) that could be repurposed as general guidance for getting around efficiently.",
+      "claims": [
+        {
+          "turnIndex": 3,
+          "fact": "Book in advance: Especially during peak seasons, it's essential to book your accommodation in advance to ensure availability and get the best prices.",
+          "why": "Travel logistics advice that could apply to planning transport/accommodations for anxiety about getting around (general scheduling/booking strategy)."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Be prepared for language barriers: While many Taiwanese and Vietnamese people speak some English, it's still a good idea to learn basic phrases in Mandarin Chinese and Vietnamese to help you navigate.",
+          "why": "Navigation support recommendation relevant to anxiety about moving around a foreign city/country."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Consider purchasing a local SIM card or portable Wi-Fi hotspot to stay connected with family and friends back home.",
+          "why": "Connectivity suggestion can reduce anxiety while navigating routes and using apps for transit."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "By Train: The most convenient way to get to Taroko National Park is by taking the Taiwan Railway Administration (TRA) train from Taipei Main Station to Xincheng Station.",
+          "why": "Concrete transit routing example (rail + last-mile taxi/bus) that may inform general advice about getting around."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "By Bus: You can take a bus from Taipei City Hall Bus Station or Zhongxiao Fuxing Bus Station to Luoshao Bus Station; the journey takes around 4-5 hours.",
+          "why": "Concrete bus route and time estimate useful for logistics-style guidance."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "By Car: If you prefer to drive, you can rent a car in Taipei and take the National Highway No. 5 to Taroko National Park; the journey takes around 2-3 hours.",
+          "why": "Alternative transportation option with route and time estimate (helps with comparative planning)."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Taroko Gorge Shuttle Bus: This shuttle bus service operates between Taipei and Taroko National Park, with stops at popular attractions along the way.",
+          "why": "Mention of a shuttle/between-city service relevant to 'getting around' via coordinated transport."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Sun Moon Lake: By Bus from Taipei City Hall Bus Station or Zhongxiao Fuxing Bus Station to Sun Moon Lake Bus Station; the journey takes around 4-5 hours.",
+          "why": "Another concrete intercity bus logistics detail."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "By Train and Bus: Take a train from Taipei Main Station to Taichung Station, then transfer to a bus to Sun Moon Lake; the journey takes around 5-6 hours.",
+          "why": "Intermodal transit pattern (rail + bus transfer) useful as general 'how to get there' structure."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Recommended Transportation Providers: Kuo-Kuang Bus; Taroko Shuttle Bus; Sun Moon Lake Bus; MyTaiwanTour; DiDi Taiwan.",
+          "why": "Names of transportation providers/apps that may serve as examples of options to reduce planning burden."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Tour company recommendations for both destinations: MyTaiwanTour; Taiwan Trip Planner; KKday; GetYourGuide.",
+          "why": "Specific tour companies that could relate to the idea of using guided tours to minimize transit anxiety."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Specific tour examples: 'Taroko National Park and Sun Moon Lake Day Tour' and '2-Day Taroko National Park and Sun Moon Lake Tour' and 'Private Taroko National Park and Sun Moon Lake Tour'.",
+          "why": "Tour-format options (day vs 2-day vs private) could help someone choose logistics complexity."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Day 1 (Taroko): 8:00 am pick-up from your hotel in Taipei City; 9:30 am arrive and start hike to Shakadang Trail; 12:00 pm lunch break; 1:30 pm visit Taroko Gorge; 3:30 pm explore Tunnel of Nine Turns; 5:00 pm check-in at a hotel near the park; 7:00 pm traditional Taiwanese dinner.",
+          "why": "Detailed schedule showing how a guided tour handles transportation, timing, and activities—useful for 'how to get around with less stress' planning."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Day 2 (Sun Moon Lake): 8:00 am check-out and depart for Sun Moon Lake; 10:00 am boat ride on Sun Moon Lake; 11:30 am visit Wenwu Temple; 1:00 pm lunch break; 2:30 pm explore Shuishe Village; 4:30 pm return to Taipei City; 6:30 pm drop-off at your hotel.",
+          "why": "Another concrete time-structured itinerary that demonstrates coordinated transit and transfers."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "What's Included: Round-trip transportation from Taipei City; accommodation for one night near Taroko National Park; meals (1 breakfast, 2 lunches, 1 dinner); entrance fees to Taroko National Park and Sun Moon Lake; boat ride on Sun Moon Lake; guided tour with an English-speaking guide.",
+          "why": "Clear list of inclusions that reduce planning/workload (directly relevant to anxiety reduction through packaged logistics)."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "What's Not Included: Travel insurance; personal expenses and gratuities; any additional activities or attractions not mentioned in the itinerary.",
+          "why": "Explicit exclusions that affect budgeting/planning expectations."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Tour Price: NT$6,500 (around USD $220) per person based on double occupancy; NT$8,500 (around USD $290) per person based on single occupancy.",
+          "why": "Exact cost figures for the 2-day tour that can inform decision-making about guided options."
+        }
+      ]
+    }
+  }
+]

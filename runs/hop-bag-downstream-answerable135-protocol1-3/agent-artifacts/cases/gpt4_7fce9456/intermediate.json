@@ -1,0 +1,100 @@
+[
+  {
+    "session_id": "answer_a679a86a_5",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session mentions viewing a single townhouse before making an offer, but does not explicitly address whether this was the only property viewed; answer likely depends on other sessions not provided here.",
+      "claims": [
+        {
+          "turnIndex": 10,
+          "fact": "I saw the 3-bedroom townhouse in the Brookside neighborhood on February 22nd.",
+          "why": "Directly indicates a property viewing date/location and the specific property type, which is needed to count how many properties were viewed before making an offer."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "I put in an offer on February 25th.",
+          "why": "Provides the offer date needed as the comparison point for counting views that occurred before the offer."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "After some negotiations, we agreed on a price of $340,000.",
+          "why": "Identifies the specific townhouse offer being made, which may help ensure the counting refers to the same Brookside townhouse."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "I recently put in an offer on a 3-bedroom townhouse in the Brookside neighborhood on February 25th.",
+          "why": "Redundant confirmation of the offer and property context (Brookside, 3-bedroom, February 25) to anchor the counting timeline."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_a679a86a_4",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "High. This session mentions a Brookside 3-bedroom townhouse, an inspection, and negotiated repair items, but it does not state how many properties you viewed before making the Brookside townhouse offer (nor any explicit list/count of viewed properties).",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is house hunting for a new home and asks for help organizing paperwork; they fell in love with a 2-bedroom condo on February 15th, and their offer was rejected on the 17th due to a higher bid.",
+          "why": "May relate to prior home search activity, but does not provide Brookside townhouse offer context or a count of properties viewed."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "User had a home inspection done on the 3-bedroom townhouse in the Brookside neighborhood, and the inspector found minor issues with the plumbing and electrical systems; user negotiated with the seller to fix those issues and came to an agreement.",
+          "why": "Gives Brookside townhouse-specific timeline/details around inspection and offer-related negotiations, but still does not include a count of properties viewed before making the offer."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "User wants advice on ensuring the seller follows through on commitments to make repairs (plumbing and electrical).",
+          "why": "Indicates what stage the user is at, relevant to offer/inspection/repair timeline, but not to the question about number of properties viewed."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "User is planning to schedule a final walk-through inspection before closing to verify everything is in order; they ask whether they should consider getting a third-party contractor to review the repairs and provide an independent assessment.",
+          "why": "Supports chronology after inspection/offer, but does not contain the requested count of properties viewed pre-offer."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "User will ask their real estate agent for recommendations; they want a contractor with expertise in plumbing and electrical systems.",
+          "why": "Shows repair verification process for the Brookside townhouse; unrelated to counting properties viewed before making the offer."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "User asks whether they should also consider getting a final appraisal of the property before closing to ensure the value hasn't changed since the initial appraisal.",
+          "why": "Relevant to the closing process for the same property, not to the number of properties viewed prior to the offer."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_a679a86a_2",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session is entirely about home warranty providers and related pricing/coverage/service fees. It contains no mention of a Brookside townhouse, making an offer, or how many properties were viewed before an offer. Therefore, it likely does not contain evidence needed to answer the question.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_a679a86a_3",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains no mention of a townhouse in the Brookside neighborhood, no statement about making an offer, and no count of properties viewed prior to that offer. The only “viewed” detail is about a 1-bedroom condo (not a townhouse) on February 10th, so it may not be usable for answering the Brookside townhouse offer question.",
+      "claims": [
+        {
+          "turnIndex": 6,
+          "fact": "Viewed a 1-bedroom condo on February 10th; the noise from the highway was a deal-breaker.",
+          "why": "Includes a concrete “viewed” event with a date, which could be relevant if the question’s property-view count is broader than just the Brookside townhouse context."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_a679a86a_1",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "No information in this session states how many properties the user viewed before making an offer on the townhouse in the Brookside neighborhood. The conversation is about kitchen renovation advice and countertop materials, with a brief mention that the user is finalizing a townhouse purchase in Brookside, but it does not include any property-viewing count or timeline.",
+      "claims": []
+    }
+  }
+]

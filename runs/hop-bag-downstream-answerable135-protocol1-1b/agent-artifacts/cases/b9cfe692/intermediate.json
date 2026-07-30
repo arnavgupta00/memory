@@ -1,0 +1,78 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Use the user’s stated completion durations for each title, then add them together.",
+    "candidateStatus": "found",
+    "missingRisk": "If there were later corrections or different completion-duration claims for either book in other sessions not shown, the sum could be inaccurate.",
+    "items": [
+      {
+        "sessionId": "answer_5e3bb940_2",
+        "turnIndex": 0,
+        "why": "States the user finished 'The Seven Husbands of Evelyn Hugo' and that it took 'two and a half weeks'."
+      },
+      {
+        "sessionId": "answer_5e3bb940_3",
+        "turnIndex": 0,
+        "why": "States the user finished 'The Nightingale' and that it took 'three weeks'."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Use the user’s stated completion durations for each title, then add them together.",
+    "candidateStatus": "found",
+    "missingRisk": "If there were later corrections or different completion-duration claims for either book in other sessions not shown, the sum could be inaccurate.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_5e3bb940_2",
+        "turnIndex": 0,
+        "why": "States the user finished 'The Seven Husbands of Evelyn Hugo' and that it took 'two and a half weeks'."
+      },
+      {
+        "sessionId": "answer_5e3bb940_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_5e3bb940_3",
+        "turnIndex": 0,
+        "why": "States the user finished 'The Nightingale' and that it took 'three weeks'."
+      },
+      {
+        "sessionId": "answer_5e3bb940_3",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_5e3bb940_3",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_5e3bb940_3",
+        "turnIndex": 5,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_5e3bb940_3",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_5e3bb940_1",
+        "turnIndex": 2,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_5e3bb940_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_5e3bb940_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

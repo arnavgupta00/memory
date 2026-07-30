@@ -1,0 +1,118 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Duration your parents have been staying with you in the US (as stated by you).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_611b6e83_1",
+      "turnIndex": 2,
+      "date": "2023/07/16 (Sun) 07:07",
+      "role": "user",
+      "text": "My parents have been a big help while living with me in the US, especially with household chores, cooking, and even taking English language classes. We've been enjoying each other's company, and it's been great to have them around for the past six months. Anyway, back to the green card process - what are the common mistakes people make during the application process that I should avoid?",
+      "why": "User says parents have been around for the past six months while living with them in the US.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_611b6e83_2",
+      "turnIndex": 0,
+      "date": "2023/10/20 (Fri) 00:00",
+      "role": "user",
+      "text": "I'm planning to apply for a green card soon and I'm not sure what documents I need to prepare. Can you guide me through the process? By the way, my parents have been a huge help in preparing all the paperwork, they've been staying with me for nine months now.",
+      "why": "User says parents have been staying with them for nine months while preparing the green card.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_611b6e83_1",
+      "turnIndex": 0,
+      "date": "2023/07/16 (Sun) 07:07",
+      "role": "user",
+      "text": "I'm considering applying for a green card, but I'm not sure about the process and requirements. Can you walk me through the steps and timeline? Also, do you know if having my parents living with me in the US would have any impact on my application?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_611b6e83_1",
+      "turnIndex": 4,
+      "date": "2023/07/16 (Sun) 07:07",
+      "role": "user",
+      "text": "That's really helpful, thanks. I'm a bit concerned about the financial aspect, since my parents are living with me. Do I need to include their income or expenses in my application, or is it only based on my own financial situation?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_611b6e83_1",
+      "turnIndex": 6,
+      "date": "2023/07/16 (Sun) 07:07",
+      "role": "user",
+      "text": "Yeah, that makes sense. So, I just need to make sure I can demonstrate that I can support my parents financially if they're included in my application. But what if they're not working and are just living with me? Do I need to count their expenses as part of my own expenses?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_611b6e83_1",
+      "turnIndex": 8,
+      "date": "2023/07/16 (Sun) 07:07",
+      "role": "user",
+      "text": "What's the next step in the green card application process after submitting the petition and supporting documents?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_611b6e83_1",
+      "turnIndex": 10,
+      "date": "2023/07/16 (Sun) 07:07",
+      "role": "user",
+      "text": "What's the next step in the green card application process after submitting the petition and supporting documents?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_611b6e83_2",
+      "turnIndex": 2,
+      "date": "2023/10/20 (Fri) 00:00",
+      "role": "user",
+      "text": "I'm thinking of consulting an immigration attorney as you suggested, but I'm not sure how to find a good one. Can you recommend any resources or websites that can help me find a qualified attorney who has experience with green card applications?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_611b6e83_2",
+      "turnIndex": 4,
+      "date": "2023/10/20 (Fri) 00:00",
+      "role": "user",
+      "text": "I'll ask the attorney about their experience with green card applications and how they can help me address the issue with my parents' overstaying their visa.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_611b6e83_2",
+      "turnIndex": 6,
+      "date": "2023/10/20 (Fri) 00:00",
+      "role": "user",
+      "text": "I'll ask the attorney about their experience with similar cases and how they can help me address the issue with my parents' overstaying their visa, considering they've been staying with me for nine months now.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_611b6e83_2",
+      "turnIndex": 8,
+      "date": "2023/10/20 (Fri) 00:00",
+      "role": "user",
+      "text": "Can you tell me more about the waiver of inadmissibility process and how it might apply to my parents' situation?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_611b6e83_2",
+      "turnIndex": 10,
+      "date": "2023/10/20 (Fri) 00:00",
+      "role": "user",
+      "text": "I'll ask the attorney about the waiver of inadmissibility process and how it might apply to my parents' situation, considering their nine-month overstay.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 2506,
+  "estimatedTokens": 627
+}

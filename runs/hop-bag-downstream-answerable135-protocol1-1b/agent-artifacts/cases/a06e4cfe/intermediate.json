@@ -1,0 +1,38 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "No boundary assumptions beyond identifying the user’s stated preferred gin-to-vermouth ratio for a classic gin martini.",
+    "candidateStatus": "found",
+    "missingRisk": "If the user’s preference changed after 2023/05/22, the selected turns may not include the latest ratio.",
+    "items": [
+      {
+        "sessionId": "answer_6fe9fb49",
+        "turnIndex": 4,
+        "why": "Contains the explicit statement of the user’s settled gin-to-vermouth ratio (3:1) for their classic gin martini, including the associated note about adding citrus bitters."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "No boundary assumptions beyond identifying the user’s stated preferred gin-to-vermouth ratio for a classic gin martini.",
+    "candidateStatus": "found",
+    "missingRisk": "If the user’s preference changed after 2023/05/22, the selected turns may not include the latest ratio.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_6fe9fb49",
+        "turnIndex": 4,
+        "why": "Contains the explicit statement of the user’s settled gin-to-vermouth ratio (3:1) for their classic gin martini, including the associated note about adding citrus bitters."
+      },
+      {
+        "sessionId": "answer_6fe9fb49",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_6fe9fb49",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

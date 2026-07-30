@@ -1,0 +1,73 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify which of two attended events occurred first by preserving the exact timing clues for both events (\"last Saturday\" vs \"two months ago\") and the event titles.",
+    "candidateStatus": "found",
+    "missingRisk": "If the event date for the workshop (“last Saturday”) or the webinar timing (“two months ago”) needs conversion to an absolute date, the selected turns may require the current date context (provided in the prompt) but no additional session data is needed.",
+    "items": [
+      {
+        "sessionId": "answer_1c6b85ea_1",
+        "turnIndex": 10,
+        "why": "Contains the explicit attendance claim for the 'Effective Time Management' workshop and the relative time qualifier 'last Saturday'."
+      },
+      {
+        "sessionId": "answer_1c6b85ea_2",
+        "turnIndex": 2,
+        "why": "Contains the explicit attendance claim for the 'Data Analysis using Python' webinar and the relative time qualifier 'two months ago'."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify which of two attended events occurred first by preserving the exact timing clues for both events (\"last Saturday\" vs \"two months ago\") and the event titles.",
+    "candidateStatus": "found",
+    "missingRisk": "If the event date for the workshop (“last Saturday”) or the webinar timing (“two months ago”) needs conversion to an absolute date, the selected turns may require the current date context (provided in the prompt) but no additional session data is needed.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_1c6b85ea_1",
+        "turnIndex": 10,
+        "why": "Contains the explicit attendance claim for the 'Effective Time Management' workshop and the relative time qualifier 'last Saturday'."
+      },
+      {
+        "sessionId": "answer_1c6b85ea_1",
+        "turnIndex": 11,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_1c6b85ea_1",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_1c6b85ea_2",
+        "turnIndex": 2,
+        "why": "Contains the explicit attendance claim for the 'Data Analysis using Python' webinar and the relative time qualifier 'two months ago'."
+      },
+      {
+        "sessionId": "answer_1c6b85ea_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_1c6b85ea_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "4f5880c6_6",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "4f5880c6_6",
+        "turnIndex": 1,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "4f5880c6_6",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

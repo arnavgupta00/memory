@@ -1,0 +1,63 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Use prior discussion of homemade coffee creamer and the assistant’s recommendations/tips for making it healthier; no additional creamer-recipe sources are present in the candidate set.",
+    "candidateStatus": "found",
+    "missingRisk": "If the user’s request is for completely new/unique creamer flavor recipes (not just improving the existing almond milk + vanilla extract + honey creamer), the candidate sessions may not include enough direct recipe variety beyond the “healthier tips” guidance.",
+    "items": [
+      {
+        "sessionId": "answer_f3164f2c",
+        "turnIndex": 0,
+        "why": "Provides the user’s current creamer base (almond milk, vanilla extract, honey) and their goals (reduce sugar, save money), which frames what recommendations should build on."
+      },
+      {
+        "sessionId": "answer_f3164f2c",
+        "turnIndex": 1,
+        "why": "Assistant gives concrete recommendations on how to make the homemade flavored creamer healthier (sweetener alternatives, using unsweetened almond milk, reducing sweetener, and adding spices for flavor)."
+      },
+      {
+        "sessionId": "answer_f3164f2c",
+        "turnIndex": 6,
+        "why": "Assistant directly addresses the broader topic of making homemade flavorful coffee-related items more aligned with the user’s cravings/health goals, which may inform creamer recommendation tone or ingredient choices."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Use prior discussion of homemade coffee creamer and the assistant’s recommendations/tips for making it healthier; no additional creamer-recipe sources are present in the candidate set.",
+    "candidateStatus": "found",
+    "missingRisk": "If the user’s request is for completely new/unique creamer flavor recipes (not just improving the existing almond milk + vanilla extract + honey creamer), the candidate sessions may not include enough direct recipe variety beyond the “healthier tips” guidance.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_f3164f2c",
+        "turnIndex": 0,
+        "why": "Provides the user’s current creamer base (almond milk, vanilla extract, honey) and their goals (reduce sugar, save money), which frames what recommendations should build on."
+      },
+      {
+        "sessionId": "answer_f3164f2c",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_f3164f2c",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_f3164f2c",
+        "turnIndex": 6,
+        "why": "Assistant directly addresses the broader topic of making homemade flavorful coffee-related items more aligned with the user’s cravings/health goals, which may inform creamer recommendation tone or ingredient choices."
+      },
+      {
+        "sessionId": "answer_f3164f2c",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_f3164f2c",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

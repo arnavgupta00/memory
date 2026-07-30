@@ -1,0 +1,65 @@
+[
+  {
+    "session_id": "answer_50940cb7_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session states two specific family-related antique/vintage items and their sources (cousin Rachel; dad), but it does not explicitly say whether these are the only inherited/acquired antique items; the count may be incomplete. No dates of acquisition/inheritance are provided.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "The user has an antique tea set from cousin Rachel.",
+          "why": "This directly indicates one inherited/acquired antique item and the family member source."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "The user has a vintage typewriter that belonged to their dad.",
+          "why": "This directly indicates a second family-related acquired item (vintage/antique context) and the family member source."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "The user received the antique tea set from cousin Rachel.",
+          "why": "Restates acquisition/inheritance of the antique tea set and confirms family-member provenance."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "The user received the vintage typewriter that belonged to their dad.",
+          "why": "Restates acquisition/inheritance of the vintage typewriter and confirms family-member provenance."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Provenance is the ownership history, and the session links the tea set came from cousin Rachel and the typewriter belonged to the user’s dad.",
+          "why": "Provides supporting context that these items have family ownership history relevant to how many items were inherited/acquired."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_50940cb7_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low. This session includes multiple explicit inherited/acquired antique or vintage items and names of family members, which should be sufficient to count antique items from this session alone.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is trying to get grandmother's vintage diamond necklace insured; user says they inherited it recently.",
+          "why": "Directly states inheritance of a vintage/antique-class item and establishes family source (grandmother)."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User says they inherited “a few other family heirlooms,” including an antique music box from their great-aunt.",
+          "why": "Identifies an additional antique item and specifies the family member it came from (great-aunt)."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User says they inherited a set of depression-era glassware from their mom.",
+          "why": "Identifies another antique/vintage-era item and specifies the family member it came from (mom)."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "User reiterates: they have an antique music box from their great-aunt and a set of depression-era glassware from their mom that they want to insure.",
+          "why": "Re-confirms the existence of these additional items for the same count/list, keeping quantities/types consistent within this session."
+        }
+      ]
+    }
+  }
+]

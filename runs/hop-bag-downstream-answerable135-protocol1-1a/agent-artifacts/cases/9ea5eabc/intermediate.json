@@ -1,0 +1,23 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "User’s most recent family trip destination(s) mentioned across sessions",
+  "candidateStatus": "found",
+  "missingRisk": "May still be missing an even more recent family-trip location not mentioned in the provided memory (or a date-relative clarification that would confirm which of the mentioned trips is the most recent).",
+  "items": [
+    {
+      "sessionId": "answer_02e66dec_1",
+      "turnIndex": 2,
+      "why": "User mentions a recent family trip to Hawaii and a highlight (snorkeling together)."
+    },
+    {
+      "sessionId": "answer_02e66dec_1",
+      "turnIndex": 4,
+      "why": "User continues reflecting on the Hawaii family trip and specifically references exploring Waikiki/shopping during that trip."
+    },
+    {
+      "sessionId": "answer_02e66dec_2",
+      "turnIndex": 2,
+      "why": "User says they recently went to Paris as a family last month and the kids loved it—relevant to determining the most recent family trip destination."
+    }
+  ]
+}

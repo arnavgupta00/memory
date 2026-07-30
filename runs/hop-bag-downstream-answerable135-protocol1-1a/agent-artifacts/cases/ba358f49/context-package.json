@@ -1,0 +1,118 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "User’s age now + when Rachel gets married (relative date) to determine user’s age at the wedding year.",
+  "candidateStatus": "found",
+  "missingRisk": "Exact month/day of Rachel’s wedding (only “next year” was specified), which could affect whether the user has had a birthday by the wedding date.",
+  "items": [
+    {
+      "sessionId": "answer_cbd08e3c_1",
+      "turnIndex": 0,
+      "date": "2022/09/01 (Thu) 03:06",
+      "role": "user",
+      "text": "I'm looking for some advice on skincare routines for my age group. I've been noticing some fine lines and wrinkles lately, and I want to start taking better care of my skin. By the way, my friend Rachel's getting married next year, and it's got me thinking about my own life goals.",
+      "why": "States Rachel is getting married next year, anchoring the timing of the event.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_cbd08e3c_2",
+      "turnIndex": 2,
+      "date": "2022/09/01 (Thu) 16:14",
+      "role": "user",
+      "text": "I'm 32, so I'm in my 30s. I'd say my skin type is normal, but it's been looking a bit dull lately. My main concerns are fine lines and wrinkles, especially around my eyes. I'm open to trying out different products, but I'd prefer something not too expensive.",
+      "why": "User’s current age is given as 32, needed to compute how many years old the user will be at Rachel’s wedding.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_cbd08e3c_1",
+      "turnIndex": 2,
+      "date": "2022/09/01 (Thu) 03:06",
+      "role": "user",
+      "text": "I've been thinking about going back to school to pursue a master's degree in marketing. I've been working in the industry for five years, and I feel like I need to upgrade my skills to stay competitive. Do you know any good online programs that cater to working professionals?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_cbd08e3c_1",
+      "turnIndex": 4,
+      "date": "2022/09/01 (Thu) 03:06",
+      "role": "user",
+      "text": "I'm also considering pursuing a part-time program, so I can continue working while studying. Do you know if any of these programs offer part-time options or flexible scheduling?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_cbd08e3c_1",
+      "turnIndex": 6,
+      "date": "2022/09/01 (Thu) 03:06",
+      "role": "user",
+      "text": "That's really helpful! I think I'll reach out to these programs directly to get more information about their part-time options and scheduling flexibility. Do you think it's a good idea to also ask about their career services and job placement rates for graduates?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_cbd08e3c_1",
+      "turnIndex": 8,
+      "date": "2022/09/01 (Thu) 03:06",
+      "role": "user",
+      "text": "I think I'll also ask about their alumni network and how active they are in supporting current students and fellow alumni. It's great to know that I'll have a strong support system even after I graduate.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_cbd08e3c_1",
+      "turnIndex": 10,
+      "date": "2022/09/01 (Thu) 03:06",
+      "role": "user",
+      "text": "I think I'll also ask about their approach to lifelong learning and professional development. Since I'm planning to stay in the industry for a long time, I want to make sure the program prepares me for continuous learning and adaptation to new trends and technologies.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_cbd08e3c_2",
+      "turnIndex": 0,
+      "date": "2022/09/01 (Thu) 16:14",
+      "role": "user",
+      "text": "I've been researching skincare routines and products online, and I'm not sure what to choose. Can you recommend some good anti-aging creams and moisturizers for someone my age?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_cbd08e3c_2",
+      "turnIndex": 4,
+      "date": "2022/09/01 (Thu) 16:14",
+      "role": "user",
+      "text": "I think those options sound good. But I was wondering if you could recommend some online courses or tutorials on skincare routines and product application? I feel like I could learn more about how to properly take care of my skin.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_cbd08e3c_2",
+      "turnIndex": 6,
+      "date": "2022/09/01 (Thu) 16:14",
+      "role": "user",
+      "text": "I think I'll start with the YouTube channels and websites you recommended. I've heard of Dr. Dray and Caroline Hirons before, so I'll definitely check out their content. Can you also suggest some online resources for learning about marketing and personal development? I've been thinking about going back to school to pursue a master's degree, and I want to stay competitive in my industry.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_cbd08e3c_2",
+      "turnIndex": 8,
+      "date": "2022/09/01 (Thu) 16:14",
+      "role": "user",
+      "text": "These resources sound really helpful, thanks! I think I'll start with the Coursera digital marketing specialization and see how that goes. I'm also interested in learning more about productivity and time management, so I might check out some of the personal development courses on Coursera or Udemy.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_cbd08e3c_2",
+      "turnIndex": 10,
+      "date": "2022/09/01 (Thu) 16:14",
+      "role": "user",
+      "text": "I think I'll try to dedicate a few hours each week to learning, maybe 2-3 hours on the weekends and 1 hour during the week. I'll start with the Coursera specialization and see how that goes, and then I can adjust my schedule as needed. I also want to make sure I'm applying what I learn to my work and daily life, so I'll try to set aside some time to reflect on what I've learned and think about how I can use it in practical ways.\n\nIt's also good to know that there are tools like RescueTime and Todoist that can help with time management. I might check those out and see if they can help me stay on track. And I've heard of the Pomodoro Technique before, so I might give that a try too.\n\nThanks for the recommendations and advice! I think I have a good starting point now.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 3595,
+  "estimatedTokens": 899
+}

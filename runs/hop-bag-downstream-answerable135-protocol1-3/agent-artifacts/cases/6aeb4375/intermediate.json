@@ -1,0 +1,56 @@
+[
+  {
+    "session_id": "1bc87711_1",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session discusses art museums/exhibitions and Impressionism, with no mention of Korean restaurants tried, counts, or any city dining experiences. No evidence relevant to how many Korean restaurants you’ve tried is present.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "sharegpt_MWlvrvZ_0",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session is about generating Korean/Chinese-influenced baby girl names (including Hanzi/Kanji) and does not contain any information about Korean restaurants the user has tried in their city. Likely no relevant claims for counting restaurants are present in this candidate session.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_3f9693b7_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Medium: this session includes a user-stated count (“three different ones”) but does not name the city or confirm whether these are the only Korean restaurants tried there.",
+      "claims": [
+        {
+          "turnIndex": 8,
+          "fact": "The user says: “I've tried three different [Korean restaurants] recently.”",
+          "why": "Directly provides a numerical count relevant to “How many Korean restaurants have I tried in my city?”"
+        },
+        {
+          "turnIndex": 10,
+          "fact": "The user describes three restaurants via dishes tried: an amazing bibimbap place, a spicy kimchi stew place, and a third place with a unique take on Japchae (sweet potato noodle).",
+          "why": "Indicates the specific items associated with the user’s stated set of Korean restaurants, which may help the reducer link/verify the count."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_3f9693b7_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session contains only the user’s statement about trying Korean restaurants (count=4) and no restaurant names; it also lacks any explicit “in my city” confirmation beyond the user’s phrasing. No other turns provide additional counts or updates.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "I’ve tried four different ones so far [Korean restaurants] in my city.",
+          "why": "Directly provides a numeric count relevant to the question (how many Korean restaurants the user has tried so far)."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "I haven’t tried any Korean restaurants in your city or any other location.",
+          "why": "Assistant explicitly notes it has no personal experience; included only to avoid misattribution of restaurant trials to the assistant."
+        }
+      ]
+    }
+  }
+]

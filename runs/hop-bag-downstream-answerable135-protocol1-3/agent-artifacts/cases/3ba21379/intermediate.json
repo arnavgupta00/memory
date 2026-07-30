@@ -1,0 +1,70 @@
+[
+  {
+    "session_id": "answer_cd345582_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low. This session directly states the vehicle model the user is working on (Ford Mustang Shelby GT350R).",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is looking for tips for weathering effects on a Ford Mustang Shelby GT350R model.",
+          "why": "Directly identifies the vehicle model the user is working on."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_cd345582_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low: this session explicitly states the user is working on a Ford F-150 pickup truck model (and also mentions Ford Mustang Shelby GT350R in the assistant advice).",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "I have just wrapped up a model and switched to a Ford F-150 pickup truck.",
+          "why": "Directly identifies the vehicle model the user says they are currently working on."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Applying decals can be a bit finicky... on your Ford F-150 pickup truck model.",
+          "why": "Reinforces that the active model in this session is a Ford F-150 pickup truck."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "How do I achieve that weathered look on my Ford F-150 pickup truck model?",
+          "why": "Indicates ongoing work (weathering) on the Ford F-150 pickup truck model."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "I'm thinking of adding some weathering effects to the underside of my Ford F-150 pickup truck model, like making it look like it's been driven off-road.",
+          "why": "Describes specific weathering work being applied to the underside of the Ford F-150 model."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "I'm thinking of adding some subtle rust effects to the underside of my Ford F-150 pickup truck model, particularly around the wheel wells and suspension components.",
+          "why": "Further specifies current customization focus (rust effects) on the Ford F-150 pickup truck model."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Adding subtle rust effects... on your Ford F-150 pickup truck model.",
+          "why": "Assistant ties rust-effect guidance to the Ford F-150 pickup truck model, supporting the model type being worked on."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "...creating a realistic, weathered appearance on your Ford F-150 pickup truck model.",
+          "why": "Assistant references finishing/blending rust effects on the Ford F-150 pickup truck model, consistent with ongoing work in this session."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "...achieving a smooth, even coat on a model, specifically on a 1/25 scale car body.",
+          "why": "Provides the scale context (1/25) for the car body being worked on, relevant to identifying the vehicle model details."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "...on your Ford Mustang Shelby GT350R and Ford F-150 pickup truck models.",
+          "why": "Mentions other vehicle models in the same session; could be relevant if the question expects multiple or alternate vehicle types, even though the user later specifies the current model as the F-150."
+        }
+      ]
+    }
+  }
+]

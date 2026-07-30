@@ -1,0 +1,173 @@
+{
+  "raw": {
+    "queryShape": "order",
+    "setBoundary": "Order the six museums the user visited from earliest to latest (use the dated visits when present; include the Museum of Contemporary Art mentions needed to make up the set of six).",
+    "candidateStatus": "found",
+    "missingRisk": "The Museum of Contemporary Art visit is described as “recently” without an explicit date in the provided sessions, so its exact position in the timeline relative to the other dated museum visits may be ambiguous.",
+    "items": [
+      {
+        "sessionId": "answer_7093d898_1",
+        "turnIndex": 0,
+        "why": "Dated 2023/01/15 visit to the Science Museum’s “Space Exploration” exhibition (earliest dated museum fact needed for ordering)."
+      },
+      {
+        "sessionId": "answer_7093d898_3",
+        "turnIndex": 0,
+        "why": "Dated 2023/02/10 visit to the Metropolitan Museum of Art (“Ancient Egyptian Artifacts”) and correction context."
+      },
+      {
+        "sessionId": "answer_7093d898_4",
+        "turnIndex": 0,
+        "why": "Dated 2023/02/15 behind-the-scenes tour at the Museum of History’s conservation lab (museum name needed for the timeline)."
+      },
+      {
+        "sessionId": "answer_7093d898_5",
+        "turnIndex": 0,
+        "why": "Dated 2023/02/20 guided tour at the Modern Art Museum titled “The Evolution of Abstract Expressionism” (museum name needed for ordering)."
+      },
+      {
+        "sessionId": "answer_7093d898_6",
+        "turnIndex": 0,
+        "why": "Dated 2023/03/04 visit to the Natural History Museum (“Dinosaur Fossils”) (latest dated museum fact needed for ordering)."
+      },
+      {
+        "sessionId": "answer_7093d898_1",
+        "turnIndex": 6,
+        "why": "Mentions attending a lectures series at the Museum of Contemporary Art (needed to include MCA as one of the six museums; date is not explicitly stated here)."
+      },
+      {
+        "sessionId": "answer_7093d898_5",
+        "turnIndex": 8,
+        "why": "Reiterates the Museum of Contemporary Art lectures series and Dr. Maria Rodriguez talk (additional MCA context to preserve the user’s claimed visit)."
+      },
+      {
+        "sessionId": "answer_7093d898_6",
+        "turnIndex": 8,
+        "why": "Reiterates the Museum of Contemporary Art and the “lectures series recently” phrasing (helps downstream decide how to place MCA in the ordering despite missing an exact date)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "order",
+    "setBoundary": "Order the six museums the user visited from earliest to latest (use the dated visits when present; include the Museum of Contemporary Art mentions needed to make up the set of six).",
+    "candidateStatus": "found",
+    "missingRisk": "The Museum of Contemporary Art visit is described as “recently” without an explicit date in the provided sessions, so its exact position in the timeline relative to the other dated museum visits may be ambiguous.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_7093d898_1",
+        "turnIndex": 0,
+        "why": "Dated 2023/01/15 visit to the Science Museum’s “Space Exploration” exhibition (earliest dated museum fact needed for ordering)."
+      },
+      {
+        "sessionId": "answer_7093d898_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_7093d898_3",
+        "turnIndex": 0,
+        "why": "Dated 2023/02/10 visit to the Metropolitan Museum of Art (“Ancient Egyptian Artifacts”) and correction context."
+      },
+      {
+        "sessionId": "answer_7093d898_3",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_7093d898_4",
+        "turnIndex": 0,
+        "why": "Dated 2023/02/15 behind-the-scenes tour at the Museum of History’s conservation lab (museum name needed for the timeline)."
+      },
+      {
+        "sessionId": "answer_7093d898_4",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_7093d898_5",
+        "turnIndex": 0,
+        "why": "Dated 2023/02/20 guided tour at the Modern Art Museum titled “The Evolution of Abstract Expressionism” (museum name needed for ordering)."
+      },
+      {
+        "sessionId": "answer_7093d898_5",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_7093d898_6",
+        "turnIndex": 0,
+        "why": "Dated 2023/03/04 visit to the Natural History Museum (“Dinosaur Fossils”) (latest dated museum fact needed for ordering)."
+      },
+      {
+        "sessionId": "answer_7093d898_6",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_7093d898_1",
+        "turnIndex": 6,
+        "why": "Mentions attending a lectures series at the Museum of Contemporary Art (needed to include MCA as one of the six museums; date is not explicitly stated here)."
+      },
+      {
+        "sessionId": "answer_7093d898_1",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_7093d898_1",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_7093d898_5",
+        "turnIndex": 8,
+        "why": "Reiterates the Museum of Contemporary Art lectures series and Dr. Maria Rodriguez talk (additional MCA context to preserve the user’s claimed visit)."
+      },
+      {
+        "sessionId": "answer_7093d898_5",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_7093d898_5",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_7093d898_6",
+        "turnIndex": 8,
+        "why": "Reiterates the Museum of Contemporary Art and the “lectures series recently” phrasing (helps downstream decide how to place MCA in the ordering despite missing an exact date)."
+      },
+      {
+        "sessionId": "answer_7093d898_6",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_7093d898_3",
+        "turnIndex": 2,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_7093d898_3",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_7093d898_4",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_7093d898_5",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_7093d898_6",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

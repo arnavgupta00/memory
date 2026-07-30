@@ -1,0 +1,370 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Number of times you wore your new black Converse Chuck Taylor All Star sneakers (as stated in chat memory) up to 2023/06/18.",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_caf5b52e_2",
+      "turnIndex": 0,
+      "date": "2023/05/30 (Tue) 17:45",
+      "role": "user",
+      "text": "I need help finding a good cobbler to fix my brown leather boots. Do you have any recommendations? Also, I was thinking of getting a shoe cleaning kit to make cleaning my shoes easier, do you have any suggestions? By the way, I just wore my new black Converse to run some errands yesterday, so that's six times now that I've worn them.",
+      "why": "You state you wore your new black Converse to run errands yesterday and that this makes it six times now that you’ve worn them.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_caf5b52e_1",
+      "turnIndex": 2,
+      "date": "2023/05/30 (Tue) 22:16",
+      "role": "user",
+      "text": "I think I'll sort them by type and color to make it easier to find what I need. Speaking of shoes, I've been loving my new black Converse Chuck Taylor All Star sneakers, I've worn them four times already, including to my friend's birthday party last Saturday. Do you have any tips on how to clean them?",
+      "why": "You state you’ve worn the new black Converse Chuck Taylor All Star sneakers four times already (including to your friend’s birthday party last Saturday).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_caf5b52e_1",
+      "turnIndex": 10,
+      "date": "2023/05/30 (Tue) 22:16",
+      "role": "user",
+      "text": "I'm glad I could help with the cleaning tips. I think I'll also sort my shoes by type and color, it'll make it easier to find what I need. And, I'm happy to report that I've worn my new black Converse Chuck Taylor All Star sneakers four times already, including to my friend's birthday party last Saturday. They're so comfortable and I love how they go with my jeans and dresses.",
+      "why": "You reiterate you’ve worn the new black Converse Chuck Taylor All Star sneakers four times (and mention comfort/fit), reinforcing the “four times” count.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "dda70510_2",
+      "turnIndex": 0,
+      "date": "2023/04/30 (Sun) 11:48",
+      "role": "user",
+      "text": "I'm looking for some gift ideas for my sister's birthday, which is coming up soon. I was thinking of getting her a handbag, but I'm not sure what brand or style to go for. By the way, I just scored an amazing deal on a Coach handbag for myself at TJ Maxx near my house yesterday - 60% off, can't beat that!",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "dda70510_2",
+      "turnIndex": 2,
+      "date": "2023/04/30 (Sun) 11:48",
+      "role": "user",
+      "text": "My sister's style is more on the classic and elegant side, and she loves neutral colors like beige and black. She's been looking for a daily driver bag that's not too big but has enough space for her essentials. As for the budget, I'm comfortable spending around $200-$300.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "dda70510_2",
+      "turnIndex": 4,
+      "date": "2023/04/30 (Sun) 11:48",
+      "role": "user",
+      "text": "I think the Coach Parker and Tory Burch Robinson are great options. I'm curious, do you think either of these brands offer any kind of warranty or protection plan for their handbags?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "dda70510_2",
+      "turnIndex": 6,
+      "date": "2023/04/30 (Sun) 11:48",
+      "role": "user",
+      "text": "I'm glad you mentioned the warranty and protection plans. I think it's really important to consider those when buying a high-quality handbag. By the way, I was thinking of getting my sister's initials monogrammed on the handbag as a special touch. Do you think either Coach or Tory Burch offer monogramming services?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "dda70510_2",
+      "turnIndex": 8,
+      "date": "2023/04/30 (Sun) 11:48",
+      "role": "user",
+      "text": "I didn't know that both Coach and Tory Burch offer monogramming services. That's really cool! I think I'll go with the Coach Parker bag and get it monogrammed with my sister's initials. Do you think I could get it gift wrapped too?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "dda70510_2",
+      "turnIndex": 10,
+      "date": "2023/04/30 (Sun) 11:48",
+      "role": "user",
+      "text": "I'm all set with the gift for my sister. Thanks for the help! By the way, I just wanted to mention that I recently scored an amazing deal on a Coach handbag for myself at TJ Maxx near my house - 60% off, can't beat that!",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "86b56135_2",
+      "turnIndex": 0,
+      "date": "2023/05/09 (Tue) 23:21",
+      "role": "user",
+      "text": "I'm thinking of trying out a new BBQ recipe this weekend and I was wondering if you have any tips on how to get the perfect balance of sweet and tangy in a BBQ sauce. By the way, I recently had some amazing ribs at a party where the sauce was expertly balanced, with just the right amount of sweetness and tanginess.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "86b56135_2",
+      "turnIndex": 2,
+      "date": "2023/05/09 (Tue) 23:21",
+      "role": "user",
+      "text": "Those are some great tips! I'll definitely keep them in mind when I'm experimenting with my BBQ sauce recipe. By the way, do you have any recommendations for a good Korean-style BBQ marinade? I tried one recently, but it didn't quite turn out as I had hoped.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "86b56135_2",
+      "turnIndex": 4,
+      "date": "2023/05/09 (Tue) 23:21",
+      "role": "user",
+      "text": "I think I'll try that basic marinade recipe and adjust it to my taste. Speaking of adjusting recipes, my dad experimented with a new BBQ sauce recipe on our family's summer camping trip last month, and it turned out really well. He added a dash of smoked paprika to give it a deeper flavor, which surprisingly worked really well with the grilled sausages we were cooking.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "86b56135_2",
+      "turnIndex": 6,
+      "date": "2023/05/09 (Tue) 23:21",
+      "role": "user",
+      "text": "We had some classic pork sausages, and everyone loved the new BBQ sauce recipe. My dad's experiment was a hit!",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "86b56135_2",
+      "turnIndex": 8,
+      "date": "2023/05/09 (Tue) 23:21",
+      "role": "user",
+      "text": "We had a pretty spread out meal, but I think the BBQ sauce was definitely the highlight. We also had some grilled vegetables, potatoes, and corn on the cob. And for dessert, my mom made some delicious s'mores using some homemade marshmallows she had made earlier.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "86b56135_2",
+      "turnIndex": 10,
+      "date": "2023/05/09 (Tue) 23:21",
+      "role": "user",
+      "text": "I think I've gotten a bit off track. I was originally asking about BBQ sauce and marinades. Let me get back on topic.\n\nI was thinking of trying out a new BBQ recipe this weekend and was wondering if you have any tips on how to get a good char on my BBQ. I've heard that it's all about the temperature and timing, but I'm not sure what the ideal temps and times are. Can you help me out?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "ultrachat_31960",
+      "turnIndex": 0,
+      "date": "2023/05/14 (Sun) 00:20",
+      "role": "user",
+      "text": "In what ways did the British Empire utilize economic policies to maintain control over their colonies?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "ultrachat_31960",
+      "turnIndex": 2,
+      "date": "2023/05/14 (Sun) 00:20",
+      "role": "user",
+      "text": "It's incredible how the British Empire used economic means to maintain their grip on their colonies. It's no wonder so many countries have struggled after gaining independence.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "ultrachat_31960",
+      "turnIndex": 4,
+      "date": "2023/05/14 (Sun) 00:20",
+      "role": "user",
+      "text": "It's frustrating to think about the lasting impacts of colonization on countries today. It seems like the British Empire's greed has caused so much harm and inequality.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "ultrachat_31960",
+      "turnIndex": 6,
+      "date": "2023/05/14 (Sun) 00:20",
+      "role": "user",
+      "text": "It's just maddening to think that these impacts of colonialism could have been avoided if the British Empire had just treated the colonized countries fairly and allowed them to develop their own economies. But instead, they chose to exploit and control for their own gain. It makes me wonder how much more progress these countries could have made if the colonial powers had just left them alone.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "ultrachat_31960",
+      "turnIndex": 8,
+      "date": "2023/05/14 (Sun) 00:20",
+      "role": "user",
+      "text": "It's infuriating to see the lasting impacts of colonialism, especially when some people still justify it today as a means of \"civilizing\" other cultures. It's time for us to recognize that colonialism was never okay, and the harm that it caused cannot be brushed aside or justified. It's time to promote global equality and justice.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "ultrachat_31960",
+      "turnIndex": 10,
+      "date": "2023/05/14 (Sun) 00:20",
+      "role": "user",
+      "text": "It's frustrating that even though colonialism is over, we still see the effects of it in modern times. It's important to acknowledge and address these issues, but how do we do that when the world is still so unequal and unjust?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "ultrachat_31960",
+      "turnIndex": 12,
+      "date": "2023/05/14 (Sun) 00:20",
+      "role": "user",
+      "text": "It's frustrating to see that even with all the awareness around the impacts of colonialism, we still have people who uphold colonial attitudes and perpetuate inequality. How can we change their minds? How can we make them see the importance of equality and justice for all?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "ultrachat_548559",
+      "turnIndex": 0,
+      "date": "2023/05/15 (Mon) 10:47",
+      "role": "user",
+      "text": "How have technological advancements impacted the creation and distribution of music?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "ultrachat_548559",
+      "turnIndex": 2,
+      "date": "2023/05/15 (Mon) 10:47",
+      "role": "user",
+      "text": "It's amazing how much technology has changed the music industry. Do you think these advancements have made it easier or harder for new artists to make it big?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "ultrachat_548559",
+      "turnIndex": 4,
+      "date": "2023/05/15 (Mon) 10:47",
+      "role": "user",
+      "text": "It's interesting how technology has changed the way we consume music. Do you think traditional record stores will eventually become obsolete?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_PvScEsS_0",
+      "turnIndex": 0,
+      "date": "2023/05/18 (Thu) 17:17",
+      "role": "user",
+      "text": "Introduction\nThe doctor’s surgery in Newtown is considering moving their appointments details from a spreadsheet based\nsystem onto a relational database. The doctor’s surgery looks after the health of the town’s residents who\ncan book an appointment to meet with each resident’s registered doctor. To help with the running of the\nsurgery, they maintain a spreadsheet of the name, address, date of birth and phone number of each patient.\nThe spreadsheet also stores information on each patient’s most recent diagnosed condition, any current\nmedication the patient is taking due to their recent condition, as well as any known allergies the patients\nmay have.\nThe current way in which the data are stored is shown in the table below. Note that each doctor can be\nregistered to more than one patient and each patient can have more than one registered doctor. A patient\ncan also be seen by a doctor that they are not registered with. The ‘Known allergies’ and ‘Current\nMedication’ columns are empty unless populated by the doctor. An appointment cannot exist without a\npatient or doctor, of course.\nPatient\nName Patient Address Patient Date\nof Birth\n\nPatient\nPhone\nNo\nRegistered\nDoctors\nKnown\nAllergies Appointment Current\nMedication\nRecent\nCondition",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_PvScEsS_0",
+      "turnIndex": 2,
+      "date": "2023/05/18 (Thu) 17:17",
+      "role": "user",
+      "text": "Decompose the design to create a schema to store the data in a suitable\nnormal form (2NF or 3NF). Say which normal form each table in the design is in and justify your\nchoice. List the tables and show the fields, primary keys, and any foreign keys in your schema.\nDescribe any assumptions you have made or any additional fields you have added to your\ndesign. Make sure all the primary keys are a sensible choice and introduce new fields if needed.\nDraw a schema diagram to illustrate your design.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_PvScEsS_0",
+      "turnIndex": 4,
+      "date": "2023/05/18 (Thu) 17:17",
+      "role": "user",
+      "text": "draw the entity relationship diagram",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_PvScEsS_0",
+      "turnIndex": 6,
+      "date": "2023/05/18 (Thu) 17:17",
+      "role": "user",
+      "text": "i. Return a list of all patient names\nii. Return a list of all patient addresses , showing each address only once\niii. Write a query to count how many patients have Dr Jenkins as one of their\nregistered doctors\niv. Calculate the average age of all patients\nv. Return all the patients whose last name is ‘Jones’\nvi. Find the names of the patients that were born before 1 st January 1980\nvii. List all the patients’ names along with their registered doctors’ names\nviii. List all the patients who are currently taking medication. Give the name of\nthe patient, their current medication and the recent condition they are taking the\nmedication for\nix. List all patients, giving their name and date of birth and, if the patient has\nhad a recent condition, provide the medication they are taking. Otherwise, if the\npatient has had no recent condition, return null in the current medication field",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "b3619c2c",
+      "turnIndex": 0,
+      "date": "2023/05/30 (Tue) 00:21",
+      "role": "user",
+      "text": "I'm trying to plan out my day and was wondering if you could suggest some good productivity apps to help me stay on track?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "b3619c2c",
+      "turnIndex": 2,
+      "date": "2023/05/30 (Tue) 00:21",
+      "role": "user",
+      "text": "I'm interested in the Pomodoro Timer app. Can you suggest a good schedule for me? I'm usually most productive between 10 am and 12 pm, and then again from 2 to 4 pm.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_caf5b52e_2",
+      "turnIndex": 2,
+      "date": "2023/05/30 (Tue) 17:45",
+      "role": "user",
+      "text": "I'll check out those cobbler options and shoe cleaning kits. By the way, do you think I should get a waterproofing spray for my new Converse to protect them from mud and rain?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_caf5b52e_2",
+      "turnIndex": 4,
+      "date": "2023/05/30 (Tue) 17:45",
+      "role": "user",
+      "text": "What's the best way to organize my shoe rack to make it easy to find the pair I need? Should I sort them by type, color, or occasion?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_caf5b52e_2",
+      "turnIndex": 6,
+      "date": "2023/05/30 (Tue) 17:45",
+      "role": "user",
+      "text": "I think I'll try organizing my shoes by type, and then by color within each group. I'll also make sure to store my out-of-season shoes in storage bins to free up space on my rack. By the way, do you think I should get a shoe tree for my brown leather boots to maintain their shape?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_caf5b52e_2",
+      "turnIndex": 8,
+      "date": "2023/05/30 (Tue) 17:45",
+      "role": "user",
+      "text": "That's a great idea. I think I'll get a cedar shoe tree for my brown leather boots. Do you think I should also get a shoe cleaning kit specifically designed for leather shoes to keep them looking their best?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_caf5b52e_2",
+      "turnIndex": 10,
+      "date": "2023/05/30 (Tue) 17:45",
+      "role": "user",
+      "text": "That's a great idea! I think I'll get a leather shoe cleaning kit to keep my brown leather boots looking their best. By the way, I was thinking of getting a new pair of Vans Old Skool sneakers. Do you think they're comfortable and worth the investment?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_caf5b52e_1",
+      "turnIndex": 0,
+      "date": "2023/05/30 (Tue) 22:16",
+      "role": "user",
+      "text": "I need help organizing my shoe closet. I have a bunch of shoes and it's getting hard to find what I need. Can you suggest a way to categorize them?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_caf5b52e_1",
+      "turnIndex": 4,
+      "date": "2023/05/30 (Tue) 22:16",
+      "role": "user",
+      "text": "I also need help to repair my brown leather boots. The heel is coming loose and I'm worried it'll break off if I don't get it fixed soon. Do you know how I can find a good cobbler in my area?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_caf5b52e_1",
+      "turnIndex": 6,
+      "date": "2023/05/30 (Tue) 22:16",
+      "role": "user",
+      "text": "I'll make sure to check online reviews and ask friends for recommendations to find a good cobbler. Do you have any tips on how to take care of my leather boots to prevent them from getting damaged in the future?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_caf5b52e_1",
+      "turnIndex": 8,
+      "date": "2023/05/30 (Tue) 22:16",
+      "role": "user",
+      "text": "I've been meaning to ask, do you have any advice on how to clean my white Adidas Superstars? I wore them to the gym last week and they got all dirty and scuffed up. I spent 20 minutes cleaning them with a toothbrush and soap when I got home, but I'm not sure if that's the best way to clean them.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 11150,
+  "estimatedTokens": 2788
+}

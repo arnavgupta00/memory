@@ -1,0 +1,110 @@
+[
+  {
+    "session_id": "answer_e9ad5914_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session contains only that you started reading 'The Nightingale' on 2022/01/01; it does not mention how long you spent reading it (no hours/days/weeks), and it contains no information about any weeks spent listening to 'Sapiens: A Brief History of Humankind' or 'The Power'.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "You started reading 'The Nightingale' by Kristin Hannah today (session date 2022/01/01).",
+          "why": "Relevant to tracking reading time for 'The Nightingale', establishing a start date but not duration."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_e9ad5914_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session contains no information about how long the user spent reading/listening, nor any mention of listening to 'Sapiens: A Brief History of Humankind' or 'The Power'. It only includes the user finishing 'The Nightingale' on 2022/01/15 and the assistant recommending 'The Power'. Any total-weeks calculation would require other sessions that track time spent or dates for listening/reading.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "The user says: \"I just finished reading \\\"The Nightingale\\\" by Kristin Hannah today\" on 2022/01/15.",
+          "why": "This is direct evidence the user read 'The Nightingale' and indicates an end date for reading, which could be used for time-period/week calculations if combined with start date(s) from other sessions."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "The user requests book recommendations and is open to different genres after finishing 'The Nightingale'.",
+          "why": "This establishes the user's engagement with the reading process around the time they finished 'The Nightingale', potentially relevant for estimating time spent if other sessions provide start dates."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "The assistant recommendation includes \"The Power\" by Naomi Alderman under 'Literary Fiction'.",
+          "why": "This indicates the assistant discussed 'The Power' in the same session; while it doesn’t confirm the user actually listened to it or how long, it can help identify that 'The Power' is part of the user's interest set."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "The assistant states both \"The Nightingale\" and \"All the Light We Cannot See\" are \"powerful explorations of war and its human cost\".",
+          "why": "Not directly about time spent, but ties the session’s content to themes connected to 'The Nightingale' and may help contextualize later evidence about the user's engagement (e.g., whether they continued reading)."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "The assistant provides WWII radio technology background and connects it to \"All the Light We Cannot See\" and \"Werner Pfennig\".",
+          "why": "This supports the session’s scope (mostly discussion of another book) and suggests 'The Nightingale' time tracking is not present here; useful for determining missing evidence for listening/reading time totals."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_e9ad5914_3",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session does not contain any information about reading/writing duration or tracking, so it’s unlikely to provide the needed “how many weeks” totals. It only confirms the user began listening to one book on a specific date; there’s no mention of 'The Nightingale' or 'The Power' or any time spent.",
+      "claims": [
+        {
+          "turnIndex": 6,
+          "fact": "Speaking of habits, I just started listening to 'Sapiens: A Brief History of Humankind' by Yuval Noah Harari today,",
+          "why": "Indicates a start date for listening to 'Sapiens: A Brief History of Humankind' (may be needed to compute time/weeks)."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_e9ad5914_4",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session appears unrelated to the question (it discusses AI and healthcare). It contains no information about time spent reading or listening to the specified books, so it cannot contribute evidence for the total weeks.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_e9ad5914_5",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session mentions no time spent (no duration, no end date, no reading/listening log) for “The Power”, and it contains no mention of “The Nightingale” or “Sapiens: A Brief History of Humankind”, so it is not sufficient to compute total weeks across all requested works.",
+      "claims": [
+        {
+          "turnIndex": 1,
+          "fact": "The assistant said: “The Power” (you’re already reading it!) by Naomi Alderman.",
+          "why": "Links the user to the work “The Power,” which may help establish that the user was engaged with it, but provides no dates or duration."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "The user said they started listening to “The Power” by Naomi Alderman today.",
+          "why": "Provides a potential start date for listening to “The Power” (relative to the session date), which could be used by the reducer to reason about time spent if other sessions supply end dates or additional log entries."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_e9ad5914_6",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session does not mention any reading/listening durations, dates for when the user started/stopped 'The Nightingale' or 'Sapiens: A Brief History of Humankind'. It only includes that the user finished listening to 'The Power' on 2022/03/20 and does not quantify time spent.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is looking for book recommendations and context is reading/listening.",
+          "why": "This may relate to the user's overall reading/listening activities, but it does not specify quantities or the target books."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "I just finished listening to 'The Power' by Naomi Alderman today.",
+          "why": "Indicates the user listened to 'The Power' and provides a relative endpoint ('today' in the session, 2022/03/20). Could help determine time span if other sessions provide start date and duration, but this session alone lacks week counts."
+        }
+      ]
+    }
+  }
+]

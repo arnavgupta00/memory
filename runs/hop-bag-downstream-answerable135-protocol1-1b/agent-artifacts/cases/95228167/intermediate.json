@@ -1,0 +1,108 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the assistant-provided guitars/tone comparison and feature-specific guidance in the selected session; no other sessions are provided that contain generic “what to look for in a new guitar” tips.",
+    "candidateStatus": "found",
+    "missingRisk": "The candidate session is largely about choosing between a Stratocaster and a Les Paul (and tuning/coil-tap), not general weekend-store shopping tips (e.g., budget, setup, fret condition, action, pickup/amp matching). Downstream answers may overfit to Les Paul-specific details.",
+    "items": [
+      {
+        "sessionId": "answer_5e613445",
+        "turnIndex": 1,
+        "why": "Contains the assistant’s main differences between Stratocaster and Les Paul—useful as shopping/selection guidance when trying out a new guitar."
+      },
+      {
+        "sessionId": "answer_5e613445",
+        "turnIndex": 5,
+        "why": "Addresses whether a Les Paul can do acoustic-like fingerpicking (e.g., “Blackbird” intro), relevant to what to test for tone/response in-store."
+      },
+      {
+        "sessionId": "answer_5e613445",
+        "turnIndex": 7,
+        "why": "Explains open D vs standard tuning differences; helpful if the shopper wants to test tuning feel and chord shapes."
+      },
+      {
+        "sessionId": "answer_5e613445",
+        "turnIndex": 9,
+        "why": "Provides concrete guidance for achieving a good sound in open D tuning on an electric (strings, action/intonation, pickup height, amp gain)—useful to evaluate/setup a guitar at/after purchase."
+      },
+      {
+        "sessionId": "answer_5e613445",
+        "turnIndex": 11,
+        "why": "Gives the assistant’s recommendation about trying a Les Paul with coil-tap/coil-splitting for more tonal options—directly relevant to what to try when shopping."
+      },
+      {
+        "sessionId": "answer_5e613445",
+        "turnIndex": 3,
+        "why": "Lists common music genres for Les Paul; can help the answerer tailor “what to look for” based on the player’s intended styles."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the assistant-provided guitars/tone comparison and feature-specific guidance in the selected session; no other sessions are provided that contain generic “what to look for in a new guitar” tips.",
+    "candidateStatus": "found",
+    "missingRisk": "The candidate session is largely about choosing between a Stratocaster and a Les Paul (and tuning/coil-tap), not general weekend-store shopping tips (e.g., budget, setup, fret condition, action, pickup/amp matching). Downstream answers may overfit to Les Paul-specific details.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_5e613445",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_5e613445",
+        "turnIndex": 1,
+        "why": "Contains the assistant’s main differences between Stratocaster and Les Paul—useful as shopping/selection guidance when trying out a new guitar."
+      },
+      {
+        "sessionId": "answer_5e613445",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_5e613445",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_5e613445",
+        "turnIndex": 5,
+        "why": "Addresses whether a Les Paul can do acoustic-like fingerpicking (e.g., “Blackbird” intro), relevant to what to test for tone/response in-store."
+      },
+      {
+        "sessionId": "answer_5e613445",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_5e613445",
+        "turnIndex": 7,
+        "why": "Explains open D vs standard tuning differences; helpful if the shopper wants to test tuning feel and chord shapes."
+      },
+      {
+        "sessionId": "answer_5e613445",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_5e613445",
+        "turnIndex": 9,
+        "why": "Provides concrete guidance for achieving a good sound in open D tuning on an electric (strings, action/intonation, pickup height, amp gain)—useful to evaluate/setup a guitar at/after purchase."
+      },
+      {
+        "sessionId": "answer_5e613445",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_5e613445",
+        "turnIndex": 11,
+        "why": "Gives the assistant’s recommendation about trying a Les Paul with coil-tap/coil-splitting for more tonal options—directly relevant to what to try when shopping."
+      },
+      {
+        "sessionId": "answer_5e613445",
+        "turnIndex": 3,
+        "why": "Lists common music genres for Les Paul; can help the answerer tailor “what to look for” based on the player’s intended styles."
+      }
+    ]
+  }
+}

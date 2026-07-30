@@ -1,0 +1,16 @@
+[
+  {
+    "session_id": "answer_ed1982fc",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session contains no information about the debut album or its worldwide release quantity; it only mentions a limited edition poster tied to the artist’s debut album. The requested album worldwide copies likely cannot be answered from this session.",
+      "claims": [
+        {
+          "turnIndex": 6,
+          "fact": "User says the signed poster from their favorite artist's debut album is a limited edition of only 500 copies worldwide.",
+          "why": "This is the only explicit worldwide quantity in the session (500 copies worldwide), but it refers to the poster, not the debut album; it may still be relevant if the question was misinterpreted or refers to the same limited edition."
+        }
+      ]
+    }
+  }
+]

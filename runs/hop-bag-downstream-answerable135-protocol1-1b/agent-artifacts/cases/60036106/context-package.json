@@ -1,0 +1,154 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Sum the total “people reached” across (1) the Facebook ad campaign and (2) the Instagram influencer collaboration, using only the quantities explicitly stated in the retrieved sessions.",
+  "candidateStatus": "found",
+  "missingRisk": "The Instagram influencer metric provided is “10,000 followers” (not an explicit “people reached”/impressions), so downstream may need to decide whether to treat followers as reached or whether additional “reach” data is missing.; frozen bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "answer_e552e1f9_1",
+      "turnIndex": 0,
+      "date": "2023/05/29 (Mon) 03:00",
+      "role": "user",
+      "text": "I'm looking to run another Facebook ad campaign soon and I want to make sure I'm targeting the right audience. Can you help me identify the most effective targeting options for my business? By the way, my previous ad campaign, which ran for five days, reached around 2,000 people.",
+      "why": "Contains the explicit Facebook ad campaign reach figure: “previous… reached around 2,000 people,” which is needed for the aggregation.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e552e1f9_1",
+      "turnIndex": 1,
+      "date": "2023/05/29 (Mon) 03:00",
+      "role": "assistant",
+      "text": "I'd be happy to help you optimize your Facebook ad targeting options.\n\nTo better understand your business and provide more tailored advice, could you please share some more information about your business and the previous campaign? Here are some questions to consider:\n\n1. **What industry or niche does your business operate in?** (e.g., e-commerce, services, software, etc.)\n2. **What products or services do you offer?**\n3. **Who is your ideal customer?** (e.g., demographics, interests, behaviors, etc.)\n4. **What was the goal of your previous campaign?** (e.g., website traffic, lead generation, conversions, etc.)\n5. **What was the content of your previous ads?** (e.g., image, video, copy, etc.)\n6. **What was the budget for your previous campaign?**\n7. **What were the results of your previous campaign?** (e.g., click-through rate, conversion rate, cost per conversion, etc.)\n\nWith this information, I can provide more specific guidance on the most effective targeting options for your business.\n\nIn general, here are some popular targeting options on Facebook that you might consider:\n\n1. **Demographic targeting**: Target people based on age, gender, location, language, and more.\n2. **Interest targeting**: Target people who have shown interest in specific topics, hobbies, or brands.\n3. **Behavioral targeting**: Target people based on their behaviors, such as purchase history, job title, or device usage.\n4. **Lookalike targeting**: Target people who are similar to your existing customers or fans.\n5. **Custom audiences**: Target people who have interacted with your business, such as website visitors, email subscribers, or customers.\n6. **Retargeting**: Target people who have abandoned their shopping carts or haven't converted yet.\n\nLet me know if you have any specific questions about these targeting options or if there's anything else you'd like to know!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e552e1f9_2",
+      "turnIndex": 0,
+      "date": "2023/05/29 (Mon) 10:53",
+      "role": "user",
+      "text": "I'm trying to improve my Instagram engagement. Can you suggest some popular hashtags in my niche that I can use? By the way, I recently collaborated with an influencer who promoted my product to her 10,000 followers, and it was a great success.",
+      "why": "Contains the explicit influencer collaboration audience size: influencer promoted to her “10,000 followers,” which is the only stated quantity to use for the Instagram component of the aggregation.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e552e1f9_2",
+      "turnIndex": 1,
+      "date": "2023/05/29 (Mon) 10:53",
+      "role": "assistant",
+      "text": "Congratulations on the successful collaboration! That's a great way to reach a new audience.\n\nTo help you with popular hashtags in your niche, I'll need to know a bit more about your product or the industry you're in. Could you please share some details about your product or niche? For example:\n\n1. What type of product or service do you offer?\n2. Who is your target audience?\n3. What are the main keywords related to your product or service?\n\nOnce I have a better understanding of your niche, I can suggest some popular and relevant hashtags for you to use.\n\nAlso, kudos on collaborating with an influencer! That's a great way to tap into their audience and increase brand awareness. You might also consider engaging with their followers by responding to comments and direct messages to build relationships and encourage user-generated content.\n\nRemember to keep your hashtags relevant, and don't overdo it. Using 5-10 niche-specific hashtags per post is a good starting point. You can also experiment with different hashtags to find the ones that work best for your content.\n\nLooking forward to hearing more about your product or niche!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e552e1f9_2",
+      "turnIndex": 9,
+      "date": "2023/05/29 (Mon) 10:53",
+      "role": "assistant",
+      "text": "Facebook ads can be a powerful way to reach potential customers who are interested in products like yours. Here are some tips to help you effectively target your ad audience on Facebook:\n\n**1. Define Your Target Audience**\n\nBefore creating your ad campaign, identify your ideal customer based on demographics, interests, behaviors, and connections. Consider factors like:\n\n* Age, gender, location, and language\n* Interests, hobbies, and activities related to your product\n* Behaviors, such as online shopping habits or purchase history\n* Connections, like friends of fans or people who have engaged with your content\n\n**2. Use Facebook's Audience Insights Tool**\n\nFacebook's Audience Insights tool provides valuable information about your target audience, including demographics, interests, and behaviors. Use this tool to gain a deeper understanding of your audience and create more targeted ads.\n\n**3. Leverage Lookalike Audiences**\n\nLookalike Audiences allow you to target people who are similar to your existing customers or followers. This can be a powerful way to reach new audiences who are likely to be interested in your product.\n\n**4. Target Based on Interests**\n\nTarget people who have shown interest in products or topics related to yours. For example, if you sell handmade jewelry, you could target people who have liked pages related to fashion, accessories, or jewelry.\n\n**5. Use Custom Audiences**\n\nCustom Audiences allow you to target people who have engaged with your content, visited your website, or made a purchase from you in the past. This can help you retarget people who have already shown interest in your product.\n\n**6. Exclude Unwanted Audiences**\n\nUse Facebook's exclusion targeting feature to exclude people who are unlikely to be interested in your product. For example, if you're targeting people interested in handmade jewelry, you might exclude people who have shown interest in mass-produced jewelry.\n\n**7. Monitor and Optimize**\n\nMonitor your ad performance regularly and optimize your targeting based on the results. Identify which audiences are performing well and adjust your targeting accordingly.\n\n**8. Use Facebook's Automatic Placements**\n\nFacebook's Automatic Placements feature allows you to target multiple platforms, including Facebook, Instagram, and Audience Network, with a single ad campaign. This can help you reach a wider audience and increase ad visibility.\n\n**9. Consider Retargeting**\n\nRetargeting ads can be an effective way to reach people who have visited your website or engaged with your content but haven't converted yet. Use Facebook's retargeting feature to target these people and encourage them to take action.\n\n**10. Test and Refine**\n\nTest different targeting options and refine your approach based on the results. Continuously monitor your ad performance and adjust your targeting to optimize your ad spend and improve your ROI.\n\nBy following these tips, you can create targeted Facebook ad campaigns that reach people who are interested in products like yours and drive conversions for your business. Good luck with your ad campaign!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e552e1f9_2",
+      "turnIndex": 10,
+      "date": "2023/05/29 (Mon) 10:53",
+      "role": "user",
+      "text": "I'm planning to target people who have shown interest in similar products to mine, just like I did in my previous Facebook ad campaign, which reached around 2,000 people and resulted in 50 clicks to my website.",
+      "why": "deterministic candidate-session coverage repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e552e1f9_2",
+      "turnIndex": 11,
+      "date": "2023/05/29 (Mon) 10:53",
+      "role": "assistant",
+      "text": "It sounds like you have a good understanding of your target audience and have had some success with Facebook ads in the past. Targeting people who have shown interest in similar products to yours is a great way to reach potential customers who are already interested in products like yours.\n\nConsidering your previous campaign reached 2,000 people and resulted in 50 clicks to your website, that's a decent click-through rate (CTR) of 2.5%. To improve upon this, you may want to consider a few things:\n\n**1. Refine your targeting**: Take a closer look at the interests and behaviors of the people who clicked on your ad and converted. Are there any common themes or patterns? Use this information to refine your targeting and reach an even more specific audience.\n\n**2. Optimize your ad creative**: Review your ad creative, including the image, headline, and copy. Is it eye-catching and compelling? Are you using social proof, such as customer testimonials or reviews, to build credibility? Consider testing different ad creative to see what resonates best with your audience.\n\n**3. Improve your landing page experience**: When people click on your ad, they should be taken to a landing page that is relevant to the ad and provides a seamless user experience. Make sure your landing page is optimized for conversions, with a clear call-to-action (CTA) and minimal distractions.\n\n**4. Consider increasing your budget**: If you're happy with the performance of your previous campaign, you may want to consider increasing your budget to reach a larger audience and drive more conversions.\n\n**5. Monitor and optimize regularly**: Keep a close eye on your ad performance and make adjustments as needed. This could include pausing underperforming ads, adjusting your targeting, or testing new ad creative.\n\nBy refining your targeting, optimizing your ad creative, improving your landing page experience, and monitoring your performance regularly, you can continue to drive conversions and grow your business.\n\nWhat do you think is the most important factor in driving conversions for your business? Is it the quality of your product, the strength of your brand, or something else entirely?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e552e1f9_1",
+      "turnIndex": 2,
+      "date": "2023/05/29 (Mon) 03:00",
+      "role": "user",
+      "text": "My business operates in the e-commerce niche, and I offer handmade home decor products. My ideal customer is a female between 25-45 years old who values unique, eco-friendly products. The goal of my previous campaign was to drive website traffic and increase brand awareness. My ad content was a high-quality image of one of my products with a brief description and a call-to-action to visit my website. The budget for my previous campaign was around $100, and the results were 50 clicks to my website, which I'm pretty happy with.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e552e1f9_1",
+      "turnIndex": 4,
+      "date": "2023/05/29 (Mon) 03:00",
+      "role": "user",
+      "text": "I see your suggestions are really helpful. I'm particularly interested in the lookalike targeting option. Can you tell me more about how to create a lookalike audience and how it works?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e552e1f9_1",
+      "turnIndex": 6,
+      "date": "2023/05/29 (Mon) 03:00",
+      "role": "user",
+      "text": "Can you tell me more about the custom audience option? How do I create a custom audience and what are the benefits of using it?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e552e1f9_1",
+      "turnIndex": 8,
+      "date": "2023/05/29 (Mon) 03:00",
+      "role": "user",
+      "text": "I'd like to create a custom audience based on my website traffic. Can you walk me through the process of setting up Facebook Pixel and creating a custom audience from my website traffic?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e552e1f9_1",
+      "turnIndex": 10,
+      "date": "2023/05/29 (Mon) 03:00",
+      "role": "user",
+      "text": "I'd like to know more about how I can use my custom audience in my ad campaigns. Can you give me some tips on how to effectively target my custom audience and maximize my ad spend?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e552e1f9_2",
+      "turnIndex": 2,
+      "date": "2023/05/29 (Mon) 10:53",
+      "role": "user",
+      "text": "My product is a handmade jewelry, and my target audience is young adults who are interested in unique accessories. Some keywords related to my product are \"handmade jewelry\", \"unique accessories\", and \"indie fashion\".",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e552e1f9_2",
+      "turnIndex": 4,
+      "date": "2023/05/29 (Mon) 10:53",
+      "role": "user",
+      "text": "I'd like to know more about how I can create an Instagram story that will engage my followers. Can you give me some ideas on what type of content I can post on my story?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e552e1f9_2",
+      "turnIndex": 6,
+      "date": "2023/05/29 (Mon) 10:53",
+      "role": "user",
+      "text": "I've been using Instagram stories to give my followers a sneak peek into my production process, and to ask for their feedback on new products. I've also been experimenting with polls, like the one I did last week where I asked my followers to vote for their favorite product design. Around 50 people voted, which was a great response.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e552e1f9_2",
+      "turnIndex": 8,
+      "date": "2023/05/29 (Mon) 10:53",
+      "role": "user",
+      "text": "I'm planning to run another Facebook ad campaign soon, and I'd like to target people who have shown interest in similar products to mine. Can you give me some tips on how to effectively target my ad audience on Facebook?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 11186,
+  "estimatedTokens": 2797
+}

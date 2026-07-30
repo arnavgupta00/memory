@@ -1,0 +1,217 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Graduation ceremonies attended by the user in the 3 months before 2023/07/21 (from ~2023/04/21 onward).",
+  "candidateStatus": "found",
+  "missingRisk": "May be additional graduation/ceremony mentions in the memory block that are not captured in the selected turns, since the dataset shown is partial and the exact ceremony dates/titles are sometimes approximate.",
+  "items": [
+    {
+      "sessionId": "answer_da3c1266_4",
+      "turnIndex": 0,
+      "date": "2023/07/21 (Fri) 06:56",
+      "role": "user",
+      "text": "I'm looking to research digital marketing certification programs. Can you help me compare the pros and cons of online vs in-person programs? By the way, I've been thinking about family a lot lately, and I'm still feeling a bit guilty about missing my nephew Jack's eighth grade graduation ceremony last month.",
+      "why": "User mentions missing nephew Jack’s eighth grade graduation ceremony last month (relevant to 3-month window).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_da3c1266_1",
+      "turnIndex": 0,
+      "date": "2023/07/21 (Fri) 09:29",
+      "role": "user",
+      "text": "I'm looking into certification programs in digital marketing. Can you help me compare the pros and cons of online vs. in-person programs? Oh, and by the way, it's crazy how fast kids grow up - I just attended my little cousin Emma's preschool graduation about two months ago!",
+      "why": "User mentions attending little cousin Emma’s preschool graduation about two months ago (relevant to 3-month window).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_da3c1266_5",
+      "turnIndex": 0,
+      "date": "2023/07/21 (Fri) 13:23",
+      "role": "user",
+      "text": "I'm considering pursuing a certification in digital marketing and I've narrowed it down to two programs. Can you help me compare the pros and cons of each program? By the way, I just attended my colleague Alex's graduation from a leadership development program at work a few weeks ago, and it got me thinking about my own educational goals.",
+      "why": "User mentions attending colleague Alex’s graduation from a leadership development program at work a few weeks ago (relevant to 3-month window).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_da3c1266_2",
+      "turnIndex": 0,
+      "date": "2023/07/21 (Fri) 14:52",
+      "role": "user",
+      "text": "I'm thinking of pursuing a certification in digital marketing, could you help me compare two programs I'm interested in? By the way, I just attended my best friend Rachel's master's degree graduation ceremony a couple of weeks ago, it was really inspiring.",
+      "why": "User mentions attending best friend Rachel’s master’s degree graduation ceremony a couple of weeks ago (relevant to 3-month window).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_da3c1266_4",
+      "turnIndex": 2,
+      "date": "2023/07/21 (Fri) 06:56",
+      "role": "user",
+      "text": "What are some popular digital marketing certification programs that are highly regarded in the industry?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_4",
+      "turnIndex": 4,
+      "date": "2023/07/21 (Fri) 06:56",
+      "role": "user",
+      "text": "I'm interested in the Digital Marketing Certified Associate (DMCA) by Digital Marketing Institute. Can you provide more information on the curriculum and how long it takes to complete the program? Also, are there any prerequisites for the certification?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_4",
+      "turnIndex": 6,
+      "date": "2023/07/21 (Fri) 06:56",
+      "role": "user",
+      "text": "I'm still deciding between the Digital Marketing Certified Associate (DMCA) and another program. Can you compare the DMCA to the Certified Digital Marketing Professional (CDMP) by the American Marketing Association (AMA)?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_4",
+      "turnIndex": 8,
+      "date": "2023/07/21 (Fri) 06:56",
+      "role": "user",
+      "text": "I think I'll go with the DMCA. I've heard good things about the Digital Marketing Institute, and the practical approach to digital marketing aligns with my goals. Can you help me with the registration process?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_1",
+      "turnIndex": 2,
+      "date": "2023/07/21 (Fri) 09:29",
+      "role": "user",
+      "text": "I think I'll have to weigh the pros and cons carefully. Do you have any information on the average salary increase after completing a digital marketing certification program?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_1",
+      "turnIndex": 4,
+      "date": "2023/07/21 (Fri) 09:29",
+      "role": "user",
+      "text": "That's really helpful, thanks! I'm going to weigh the pros and cons carefully. Can you recommend any popular digital marketing certification programs that are well-regarded in the industry?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_1",
+      "turnIndex": 6,
+      "date": "2023/07/21 (Fri) 09:29",
+      "role": "user",
+      "text": "I'm thinking of exploring the HubSpot Inbound Marketing Certification, as I've heard great things about it. Do you think it's a good starting point for someone new to digital marketing, or would you recommend starting with something more foundational?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_1",
+      "turnIndex": 8,
+      "date": "2023/07/21 (Fri) 09:29",
+      "role": "user",
+      "text": "I think I'll start with the Google Digital Garage course to get a solid foundation in digital marketing. It's free and seems like a great resource. I've heard good things about it, and it'll give me a broad understanding of digital marketing concepts. From there, I can decide if I want to pursue more advanced certifications like the HubSpot Inbound Marketing Certification. Thanks for the advice!",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_1",
+      "turnIndex": 10,
+      "date": "2023/07/21 (Fri) 09:29",
+      "role": "user",
+      "text": "I'm excited to start the Google Digital Garage course and build a solid foundation in digital marketing. Thanks again for your advice and guidance. I'll definitely keep you updated on my progress and reach out if I have any questions. Oh, and by the way, I'm still amazed by how fast my little cousin Emma is growing up - it feels like just yesterday I was attending her preschool graduation ceremony!",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_5",
+      "turnIndex": 2,
+      "date": "2023/07/21 (Fri) 13:23",
+      "role": "user",
+      "text": "One of the programs is offered by HubSpot, and the other is by the Digital Marketing Institute. Both are online and self-paced, but the HubSpot program is free while the Digital Marketing Institute program costs around $5,000. Both cover similar topics like SEO, social media, and email marketing.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_5",
+      "turnIndex": 4,
+      "date": "2023/07/21 (Fri) 13:23",
+      "role": "user",
+      "text": "I'm still unsure about the industry recognition of the HubSpot program. Can you tell me more about how well-known and respected the HubSpot certification is in the industry? And also, how does it compare to the Digital Marketing Institute's certification in terms of recognition?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_5",
+      "turnIndex": 6,
+      "date": "2023/07/21 (Fri) 13:23",
+      "role": "user",
+      "text": "I'm still a bit concerned about the cost of the Digital Marketing Institute program. Are there any financing options or scholarships available to help with the $5,000 tuition?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_5",
+      "turnIndex": 8,
+      "date": "2023/07/21 (Fri) 13:23",
+      "role": "user",
+      "text": "Can you tell me more about the payment plan options for the Digital Marketing Institute program? How does it work, and are there any additional fees or interest rates associated with it?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_5",
+      "turnIndex": 10,
+      "date": "2023/07/21 (Fri) 13:23",
+      "role": "user",
+      "text": "Can you tell me more about the career support provided by the Digital Marketing Institute? What kind of job placement assistance can I expect, and are there any notable alumni or industry connections that can help me in my career?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_2",
+      "turnIndex": 2,
+      "date": "2023/07/21 (Fri) 14:52",
+      "role": "user",
+      "text": "I'm considering the Digital Marketing Certified Associate program from Digital Marketing Institute and the Certified Digital Marketing Professional program from American Marketing Association. My goal is to enhance my current role and maybe move into a more senior position in the future.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_2",
+      "turnIndex": 4,
+      "date": "2023/07/21 (Fri) 14:52",
+      "role": "user",
+      "text": "I'm still undecided, but I think I need to consider my budget and time commitment to each program. Rachel's graduation ceremony reminded me of how important it is to invest in my own education and growth. I'd like to know more about the job prospects and salary ranges for digital marketing professionals with these certifications.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_2",
+      "turnIndex": 6,
+      "date": "2023/07/21 (Fri) 14:52",
+      "role": "user",
+      "text": "I think I understand the job prospects and salary ranges better now. It's good to know that both certifications can open up more opportunities and potentially increase my salary. Since I'm looking to enhance my current role and maybe move into a more senior position, I'm leaning towards the Digital Marketing Certified Associate program from Digital Marketing Institute. However, I still need to consider my budget and time commitment. Can you help me break down the costs and time required for each program?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_2",
+      "turnIndex": 8,
+      "date": "2023/07/21 (Fri) 14:52",
+      "role": "user",
+      "text": "I think I'm getting closer to making a decision. I'm still leaning towards the DMCA program, but I want to think more about how I can fit the study time into my schedule. Can you help me come up with a study plan or schedule that would work for me?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_2",
+      "turnIndex": 10,
+      "date": "2023/07/21 (Fri) 14:52",
+      "role": "user",
+      "text": "I think I can fit in 5-6 hours of study per week, and I'm most productive in the morning. I work full-time, so I'd like to allocate 3-4 months to complete the program. I'd prefer to study on weekends, so I can dedicate two mornings to studying. I also want to make sure I have some buffer time in case I need it. How can I create a study plan around this?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 6278,
+  "estimatedTokens": 1570
+}

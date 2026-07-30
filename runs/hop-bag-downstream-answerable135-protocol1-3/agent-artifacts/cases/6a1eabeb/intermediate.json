@@ -1,0 +1,40 @@
+[
+  {
+    "session_id": "answer_a25d4a91_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session contains a self-reported personal best time for a charity 5K run (27:12) but does not provide the date of the run beyond the session date; if the true question requires a different event/measurement (e.g., multiple charity 5Ks, different distances), this single session may be incomplete.",
+      "claims": [
+        {
+          "turnIndex": 4,
+          "fact": "The user recently set a personal best time in a charity 5K run with a time of 27:12.",
+          "why": "Directly states the personal best time for the charity 5K run, which is what the question asks."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_a25d4a91_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "none_found",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is training for another charity 5K run and wants to beat their personal best time of 25:50.",
+          "why": "Directly states the user’s current personal best time for the charity 5K run (25:50)."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "Assistant acknowledges the goal to beat the personal best time of 25:50 and provides tailored endurance tips for the upcoming charity 5K run.",
+          "why": "Reinforces that the referenced personal best time is 25:50 in the context of the charity 5K run."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "User asks for endurance tips for a charity 5K run and says they are hoping to beat their personal best time this time around.",
+          "why": "Indicates the user’s personal best is something they are trying to surpass for the charity 5K, providing context for the target."
+        }
+      ]
+    }
+  }
+]

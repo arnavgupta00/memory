@@ -1,0 +1,28 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Properties the user viewed before making an offer on the Brookside townhouse (offer date Feb 25, 2023)",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_a679a86a_5",
+      "turnIndex": 10,
+      "why": "States the user viewed the Brookside 3-bedroom townhouse on Feb 22 and then put in an offer on Feb 25 (anchor for what counts as “before”)."
+    },
+    {
+      "sessionId": "answer_a679a86a_4",
+      "turnIndex": 0,
+      "why": "Mentions viewing a 2-bedroom condo on Feb 15 and having an offer rejected on Feb 17 (property-view event prior to Feb 25)."
+    },
+    {
+      "sessionId": "answer_a679a86a_3",
+      "turnIndex": 6,
+      "why": "Mentions viewing a 1-bedroom condo on Feb 10 where highway noise was a deal-breaker (property-view event prior to Feb 25)."
+    },
+    {
+      "sessionId": "answer_a679a86a_2",
+      "turnIndex": 0,
+      "why": "Mentions seeing a property in Cedar Creek on Feb 1 that was out of budget (property-view event prior to Feb 25)."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "session_id": "398f23e7",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains no mention of meeting up with an aunt or receiving a crystal chandelier, so the answer likely depends on other sessions. No relevant dates or event details are present here to compute the “how many weeks ago” timeframe.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_0b4a8adc_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low. This session clearly states the chandelier was received 'today' on 2023/03/04, but it does not explicitly mention when exactly that relative date (to the current question date 2023/04/01) should be converted into weeks.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "On 2023/03/04 (Sat) 22:43, you said you got a stunning crystal chandelier from your aunt today, which used to belong to your great-grandmother.",
+          "why": "Provides the relevant event (meeting/up with aunt and receiving the crystal chandelier) and anchors it to a specific session date via the phrase 'today.'"
+        },
+        {
+          "turnIndex": 0,
+          "fact": "The crystal chandelier you received is described as having intricate etchings and sparkling droplets that catch the light.",
+          "why": "Adds descriptive context about the chandelier that may help identify the correct item if the reducer needs to disambiguate."
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "session_id": "9beab022_1",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session appears to be about cooking (Mexican-inspired dishes, tortillas, and cooking recipe apps). It contains no information about language learning apps or any app that uses mnemonics to memorize words/phrases, so the needed detail for the user’s question is likely not present in this session.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "sharegpt_u5bsykF_69",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains no mention of language learning apps or any tool that uses mnemonics to memorize words/phrases. It appears focused on family questions and English language drills (stories, vocabulary tables, grammar). If the requested app was discussed in a different session, it will be missed here.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_ultrachat_39395",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Medium: the session includes one app that explicitly mentions using mnemonics (Memrise). However, it does not confirm which specific option you previously discussed; it only lists recommendations in a single assistant message.",
+      "claims": [
+        {
+          "turnIndex": 5,
+          "fact": "Memrise - Memrise uses mnemonics to help learners memorize words, phrases, and grammatical concepts.",
+          "why": "Directly matches the user’s request for the language learning app that uses mnemonics to memorize words and phrases."
+        }
+      ]
+    }
+  }
+]

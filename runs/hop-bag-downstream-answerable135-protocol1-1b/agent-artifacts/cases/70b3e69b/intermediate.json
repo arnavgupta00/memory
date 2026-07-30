@@ -1,0 +1,38 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Remind the example of a Spanish-Catalan singer-songwriter who supports unity between Catalonia and Spain, including the associated details given alongside the name.",
+    "candidateStatus": "found",
+    "missingRisk": "Low—candidate set includes the assistant’s turn where the singer-songwriter is explicitly named and described as supporting unity between Catalonia and Spain.",
+    "items": [
+      {
+        "sessionId": "answer_ultrachat_334948",
+        "turnIndex": 5,
+        "why": "Contains the explicit example: Spanish-Catalan singer/songwriter Manolo García, described as supporting unity between Catalonia and Spain, with his views that Catalonia is an integral part of Spain and they should work together."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Remind the example of a Spanish-Catalan singer-songwriter who supports unity between Catalonia and Spain, including the associated details given alongside the name.",
+    "candidateStatus": "found",
+    "missingRisk": "Low—candidate set includes the assistant’s turn where the singer-songwriter is explicitly named and described as supporting unity between Catalonia and Spain.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_ultrachat_334948",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_ultrachat_334948",
+        "turnIndex": 5,
+        "why": "Contains the explicit example: Spanish-Catalan singer/songwriter Manolo García, described as supporting unity between Catalonia and Spain, with his views that Catalonia is an integral part of Spain and they should work together."
+      },
+      {
+        "sessionId": "answer_ultrachat_334948",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

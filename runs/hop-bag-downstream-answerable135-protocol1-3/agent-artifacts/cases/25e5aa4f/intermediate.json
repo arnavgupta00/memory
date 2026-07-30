@@ -1,0 +1,16 @@
+[
+  {
+    "session_id": "answer_986de8c3",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low. This session explicitly states where the user completed their undergrad (Bachelor’s) in CS, but it does not provide any extra corroborating details such as degree year or campus name beyond the institution.",
+      "claims": [
+        {
+          "turnIndex": 4,
+          "fact": "The user completed their undergrad in CS from UCLA.",
+          "why": "Directly answers the question about where the user completed their Bachelor’s degree in Computer Science."
+        }
+      ]
+    }
+  }
+]

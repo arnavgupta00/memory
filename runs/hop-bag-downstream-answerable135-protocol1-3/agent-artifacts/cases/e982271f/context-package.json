@@ -1,0 +1,37 @@
+{
+  "queryShape": "order",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "answer_ultrachat_195444",
+      "turnIndex": 3,
+      "date": "2023/05/25 (Thu) 18:47",
+      "role": "assistant",
+      "text": "Sure! Here are some popular venues in Portland that are known to host indie music shows:\n\n1. Mississippi Studios\n2. Doug Fir Lounge\n3. Wonder Ballroom\n4. Crystal Ballroom\n5. Holocene\n6. Aladdin Theater\n7. The Old Church\n8. The Liquor Store\n9. Alberta Street Pub\n10. Revolution Hall\n\nThese venues have a reputation for hosting indie music shows and attracting local and national artists. However, there are many other smaller, independent venues in Portland that specialize in indie music, and it's always worth exploring new places to play and perform.",
+      "why": "per-session extractor: Contains the list of popular venues in Portland for indie music shows; the last item in the list is needed to answer the question.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ultrachat_195444",
+      "turnIndex": 2,
+      "date": "2023/05/25 (Thu) 18:47",
+      "role": "user",
+      "text": "Do you happen to know any specific venues in Portland that are popular among indie artists?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ultrachat_195444",
+      "turnIndex": 4,
+      "date": "2023/05/25 (Thu) 18:47",
+      "role": "user",
+      "text": "I'm definitely going to check out some of those venues. Do you have any favorite indie artists from Portland?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 752,
+  "estimatedTokens": 188
+}

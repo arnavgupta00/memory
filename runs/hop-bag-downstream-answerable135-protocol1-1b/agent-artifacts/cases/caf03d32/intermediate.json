@@ -1,0 +1,83 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the sessions’ directly stated cooking/yogurt guidance as the basis for any “getting better results” advice.",
+    "candidateStatus": "found",
+    "missingRisk": "The provided candidates focus mainly on slow-cooker yogurt setup (and vegetarian/vegan recipe ideas) rather than general troubleshooting for slow-cooker recipe results (e.g., temperature settings, timing, liquid ratios).",
+    "items": [
+      {
+        "sessionId": "answer_2fc6aabb",
+        "turnIndex": 1,
+        "why": "Assistant gives general slow-cooker recipe recommendations as a baseline for better results."
+      },
+      {
+        "sessionId": "answer_2fc6aabb",
+        "turnIndex": 3,
+        "why": "Assistant provides a specific slow-cooker yogurt process with key temperature targets (useful as practical guidance for consistency)."
+      },
+      {
+        "sessionId": "answer_2fc6aabb",
+        "turnIndex": 5,
+        "why": "Assistant explains why monitoring temperature matters vs waiting, which is directly relevant to improving results."
+      },
+      {
+        "sessionId": "answer_2fc6aabb",
+        "turnIndex": 7,
+        "why": "Assistant suggests multiple vegetarian/vegan slow-cooker recipes (may help with experimenting to improve outcomes)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the sessions’ directly stated cooking/yogurt guidance as the basis for any “getting better results” advice.",
+    "candidateStatus": "found",
+    "missingRisk": "The provided candidates focus mainly on slow-cooker yogurt setup (and vegetarian/vegan recipe ideas) rather than general troubleshooting for slow-cooker recipe results (e.g., temperature settings, timing, liquid ratios).; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_2fc6aabb",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_2fc6aabb",
+        "turnIndex": 1,
+        "why": "Assistant gives general slow-cooker recipe recommendations as a baseline for better results."
+      },
+      {
+        "sessionId": "answer_2fc6aabb",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_2fc6aabb",
+        "turnIndex": 3,
+        "why": "Assistant provides a specific slow-cooker yogurt process with key temperature targets (useful as practical guidance for consistency)."
+      },
+      {
+        "sessionId": "answer_2fc6aabb",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_2fc6aabb",
+        "turnIndex": 5,
+        "why": "Assistant explains why monitoring temperature matters vs waiting, which is directly relevant to improving results."
+      },
+      {
+        "sessionId": "answer_2fc6aabb",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_2fc6aabb",
+        "turnIndex": 7,
+        "why": "Assistant suggests multiple vegetarian/vegan slow-cooker recipes (may help with experimenting to improve outcomes)."
+      },
+      {
+        "sessionId": "answer_2fc6aabb",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

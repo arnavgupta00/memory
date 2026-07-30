@@ -1,0 +1,64 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "answer_19c24c11",
+      "turnIndex": 2,
+      "date": "2023/05/21 (Sun) 16:24",
+      "role": "user",
+      "text": "I'll start filling out the template. Under \"How We Met\", I'll include the location where I met them. For Sophia, it was a coffee shop in the city.",
+      "why": "per-session extractor: Directly answers the question with a claimed meeting location for Sophia, though it is non-specific (no shop name/city).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_19c24c11",
+      "turnIndex": 4,
+      "date": "2023/05/21 (Sun) 16:24",
+      "role": "user",
+      "text": "She's into indie music, and we talked about some new bands to check out. I recommended some coffee spots to her too.",
+      "why": "per-session extractor: Adds context around the Sophia meeting (indie music conversation, coffee spots recommendations) that may corroborate or help identify the specific coffee shop in downstream reasoning.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_19c24c11",
+      "turnIndex": 1,
+      "date": "2023/05/21 (Sun) 16:24",
+      "role": "assistant",
+      "text": "I'd be happy to help you organize your contacts. However, I'm a large language model, I don't have access to your personal contacts or interactions. But I can help you create a template to help you organize your contacts and their interests.\n\nHere's a template you can use:\n\n**Recent Contacts and Interests**\n\n| Name | How We Met | Interests | Follow-up Action |\n| --- | --- | --- | --- |\n| [Name 1] | [Event/Meeting] | [Hobbies, work, etc.] | [Next step, e.g., \"Send article about [topic]\"] |\n| [Name 2] | [Event/Meeting] | [Hobbies, work, etc.] | [Next step, e.g., \"Schedule coffee meeting\"] |\n| ... | ... | ... | ... |\n\nYou can fill in the columns with the following information:\n\n* **Name**: The person's name\n* **How We Met**: Where and how you met the person (e.g., networking event, conference, mutual friend)\n* **Interests**: Their hobbies, work, or topics they're interested in (e.g., sports, books, entrepreneurship)\n* **Follow-up Action**: A specific action you want to take to follow up with the person (e.g., send an article, schedule a meeting, make an introduction)\n\nHere's an example:\n\n| Name | How We Met | Interests | Follow-up Action |\n| --- | --- | --- | --- |\n| John Smith | Industry Conference | Hiking, startup founder | Send article about new outdoor gear |\n| Emily Chen | Mutual Friend | Photography, travel | Schedule coffee meeting to discuss travel tips |\n| Michael Brown | Networking Event | Sports, marketing | Introduce him to a colleague in sports industry |\n\nFeel free to add or remove columns as needed, and fill in the information as you remember it. This should help you keep track of your recent contacts and follow up with them in a meaningful way!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_19c24c11",
+      "turnIndex": 3,
+      "date": "2023/05/21 (Sun) 16:24",
+      "role": "assistant",
+      "text": "That's a great idea! Including the location can help you remember the context of your meeting and make it easier to recall your conversation. Here's an updated template with Sophia's information:\n\n| Name | How We Met | Interests | Follow-up Action |\n| --- | --- | --- | --- |\n| Sophia | Coffee Shop (City) |  |  |\n\nNow, can you tell me more about Sophia? What did you talk about, and what are her interests? Was she looking for any advice or help, or did you discuss any common goals or projects? The more details you can remember, the better you'll be able to follow up with her in a meaningful way.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_19c24c11",
+      "turnIndex": 5,
+      "date": "2023/05/21 (Sun) 16:24",
+      "role": "assistant",
+      "text": "It sounds like you had a great conversation with Sophia. Here's an updated template:\n\n| Name | How We Met | Interests | Follow-up Action |\n| --- | --- | --- | --- |\n| Sophia | Coffee Shop (City) | Indie music, coffee | Send her a list of new indie music releases |\n\nYou could follow up with Sophia by sending her a list of new indie music releases or recommendations, or even invite her to a concert or music event. You could also ask her if she's tried out any of the coffee spots you recommended and get her feedback.\n\nRemember to keep your follow-up action specific and actionable, so you can easily follow through and stay top of mind with Sophia.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_19c24c11",
+      "turnIndex": 6,
+      "date": "2023/05/21 (Sun) 16:24",
+      "role": "user",
+      "text": "What about the other people I met recently? Like the yoga instructor Rachel and the guy David from the bookstore?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 3312,
+  "estimatedTokens": 828
+}

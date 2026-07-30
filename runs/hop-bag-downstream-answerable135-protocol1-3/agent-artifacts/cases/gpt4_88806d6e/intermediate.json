@@ -1,0 +1,30 @@
+[
+  {
+    "session_id": "answer_e60a93ff_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session only mentions that you met Tom (not Mark or Sarah). If Mark and Sarah were met in another session, this session alone can’t determine who you met first.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "You met a lot of like-minded people at a charity event a few months ago, including a guy named Tom who's involved with the organization.",
+          "why": "Relevant to the question (who you met first) because it establishes when you met Tom relative to other people, though it does not mention Mark or Sarah."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_e60a93ff_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session only mentions meeting Mark and Sarah on a beach trip about a month ago; it does not mention Tom or any meeting order involving Tom. If Tom is discussed in other sessions, this one won’t capture it.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "I'm planning a trip to visit my friends Mark and Sarah, who I met on a beach trip about a month ago.",
+          "why": "Gives a relative time reference for when you met Mark and Sarah, which can be used to compare against meeting Tom (if Tom is found elsewhere)."
+        }
+      ]
+    }
+  }
+]

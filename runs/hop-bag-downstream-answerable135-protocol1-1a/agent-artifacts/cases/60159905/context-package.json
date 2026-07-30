@@ -1,0 +1,271 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Dinner parties the user attended within the past month relative to 2023/05/30 (i.e., roughly 2023/04/30–2023/05/30); include potlucks/BBQs/feasts described as dinner-party-like social gatherings.",
+  "candidateStatus": "found",
+  "missingRisk": "Some attended dinner parties may be mentioned in other sessions not included here, or the timeframe/dates for certain gatherings may be ambiguous.",
+  "items": [
+    {
+      "sessionId": "21f8f481_3",
+      "turnIndex": 0,
+      "date": "2023/05/20 (Sat) 02:28",
+      "role": "user",
+      "text": "I'm planning a movie night with friends next week and I want to pick a movie that everyone will enjoy. Can you suggest some popular movies from the past year that are good for a group? By the way, I just got back from a birthday party for my colleague and friend, David, last week, and it was amazing - we had a blast playing laser tag and singing karaoke!",
+      "why": "User mentions returning from a birthday party for David “last week” and describes activities; could be considered a dinner-party-style social event depending on context.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "21f8f481_3",
+      "turnIndex": 4,
+      "date": "2023/05/20 (Sat) 02:28",
+      "role": "user",
+      "text": "I think I'll go with Knives Out. I've been meaning to see it for a while now, and it sounds like it'll be a fun and engaging movie for my friends and me. Thanks for the suggestion! By the way, I've been meaning to organize my apartment and have a game night or potluck dinner soon, but I need to clean up and declutter first. Do you have any tips on how to declutter and organize my living space quickly and efficiently?",
+      "why": "User states they’re organizing apartment for a game night or potluck dinner soon; helps characterize their social/dinner-party activities, though not an attended event.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_75eca223_2",
+      "turnIndex": 2,
+      "date": "2023/05/21 (Sun) 19:16",
+      "role": "user",
+      "text": "I love these ideas! I'm definitely going to consider the Global Street Food theme. By the way, I've also had a great experience with a BBQ theme, like the one we had at Mike's place two weeks ago, where we watched a football game together. Do you have any BBQ recipe ideas that would fit well with the Global Street Food theme?",
+      "why": "User recalls a BBQ theme “like the one we had at Mike's place two weeks ago”; indicates another dinner-party-like attendance within the past month.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_75eca223_2",
+      "turnIndex": 4,
+      "date": "2023/05/21 (Sun) 19:16",
+      "role": "user",
+      "text": "That's great! I think I'll have a mix of grilled and non-grilled dishes to cater to different tastes. By the way, I've also had experience with dinner parties that are more low-key, like the ones we had at Alex's place yesterday, where we had a potluck and tried out different cuisines from around the world, and also at Mike's place, where we had a BBQ and watched a football game together. Do you have any tips on how to make the party more interactive and engaging for guests?",
+      "why": "User references experience with dinner parties, including a low-key potluck at Alex’s place “yesterday,” which is within the last month and likely a dinner party.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_75eca223_1",
+      "turnIndex": 0,
+      "date": "2023/05/22 (Mon) 10:28",
+      "role": "user",
+      "text": "I'm looking for some Italian recipe ideas for a dinner party I'm hosting soon. I attended a lovely Italian feast at Sarah's place last week, and it inspired me to try out some new dishes. Do you have any recommendations for a beginner like me?",
+      "why": "User says they attended a lovely Italian feast at Sarah's place “last week,” which is a direct dinner-party attendance within the last month.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "eb6737c0_1",
+      "turnIndex": 0,
+      "date": "2023/05/24 (Wed) 10:52",
+      "role": "user",
+      "text": "I've been watching a lot of sports lately, and I'm trying to keep track of all the recent events. Can you remind me of the score of the Super Bowl that was about a month ago? By the way, I had a big party with at least 15 people to watch it, and it was so intense!",
+      "why": "User mentions having a big party with at least 15 people to watch the Super Bowl about a month ago; may or may not count as a dinner party, but it’s a social event within the timeframe and could affect the counting depending on interpretation.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "21f8f481_3",
+      "turnIndex": 2,
+      "date": "2023/05/20 (Sat) 02:28",
+      "role": "user",
+      "text": "I think Avengers: Endgame sounds like a safe bet, it's Marvel so it's usually a crowd-pleaser. But I'm also curious about Knives Out, I've heard great things about it. Can you tell me a bit more about the plot and tone of Knives Out?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "21f8f481_3",
+      "turnIndex": 6,
+      "date": "2023/05/20 (Sat) 02:28",
+      "role": "user",
+      "text": "That's really helpful, thanks! I think I'll start with my living room and sort through all the stuff I've accumulated over the years. I'm sure I'll find some old photos from my trip to the beach with Rachel and Mike that I need to sort through and share with them. By the way, do you have any tips on how to organize my digital life, like my phone and computer? I feel like I have a ton of files and photos scattered all over the place.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "21f8f481_3",
+      "turnIndex": 8,
+      "date": "2023/05/20 (Sat) 02:28",
+      "role": "user",
+      "text": "That's really helpful, thanks! I think I'll start by organizing my phone and computer files, and then move on to my digital photos. Speaking of photos, I still need to sort through the ones from my trip to the beach with Rachel and Mike, and also from David's birthday party last week. Do you have any tips on how to organize and share photos with friends and family?\n(Your response)",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "21f8f481_3",
+      "turnIndex": 10,
+      "date": "2023/05/20 (Sat) 02:28",
+      "role": "user",
+      "text": "I think I'll start by creating albums for each event and then add tags and keywords to make them easily searchable. I'll also delete any duplicates or blurry shots to declutter my collection. For sharing, I think I'll use cloud storage services like Google Photos to share albums with friends and family. Do you have any tips on how to stay organized and on top of tasks and responsibilities, especially with my busy social life and commitments?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_75eca223_2",
+      "turnIndex": 0,
+      "date": "2023/05/21 (Sun) 19:16",
+      "role": "user",
+      "text": "I'm looking for some new recipe ideas for a dinner party I'm hosting soon. Do you have any suggestions for a potluck theme, where everyone brings a dish from a different cuisine?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_75eca223_2",
+      "turnIndex": 6,
+      "date": "2023/05/21 (Sun) 19:16",
+      "role": "user",
+      "text": "I'm thinking of setting up a few stations, like a grill station, a dessert station, and a drinks station. That way, guests can mingle and explore different areas of the party. Do you have any suggestions for signature drinks that would fit well with the Global Street Food theme?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_75eca223_2",
+      "turnIndex": 8,
+      "date": "2023/05/21 (Sun) 19:16",
+      "role": "user",
+      "text": "I'm thinking of setting up a few fun activities and games to keep guests entertained throughout the party. Do you have any suggestions for games or activities that would fit well with the Global Street Food theme?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_75eca223_1",
+      "turnIndex": 2,
+      "date": "2023/05/22 (Mon) 10:28",
+      "role": "user",
+      "text": "That's a great list of recipes! I think I'll start with the Spaghetti Aglio e Olio and Chicken Parmesan. I've always loved the combination of garlic and olive oil. By the way, speaking of dinner parties, I've had a lovely experience at Sarah's place recently, where we played board games until late into the night after the Italian feast. Do you have any recommendations for board games that would be a good fit for a dinner party?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_75eca223_1",
+      "turnIndex": 4,
+      "date": "2023/05/22 (Mon) 10:28",
+      "role": "user",
+      "text": "I love What Do You Meme and Taboo, they're always a hit at parties. I'll definitely consider them for my dinner party. By the way, since we're on the topic of dinner parties, do you have any recommendations for a good wine pairing for my Italian feast? I want to make sure I have a good selection for my guests.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_75eca223_1",
+      "turnIndex": 6,
+      "date": "2023/05/22 (Mon) 10:28",
+      "role": "user",
+      "text": "I like the wine pairing suggestions. Do you have any recommendations for a good coffee or espresso to serve after dinner? I've been meeting up with my friend Rachel for morning jogs and then grabbing a coffee together, and I've developed a taste for good coffee.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_75eca223_1",
+      "turnIndex": 8,
+      "date": "2023/05/22 (Mon) 10:28",
+      "role": "user",
+      "text": "I'm thinking of serving a selection of biscotti and cantuccini with my coffee. Do you have any recommendations for a good biscotti recipe or any tips on how to pair them with coffee?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_75eca223_1",
+      "turnIndex": 10,
+      "date": "2023/05/22 (Mon) 10:28",
+      "role": "user",
+      "text": "I'm thinking of serving a fruit tart as a dessert option. Do you have any recommendations for a good fruit tart recipe or any tips on how to pair it with coffee?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "eb6737c0_1",
+      "turnIndex": 2,
+      "date": "2023/05/24 (Wed) 10:52",
+      "role": "user",
+      "text": "I must have gotten the timing wrong. Yeah, I'm talking about Super Bowl LVII. I was rooting for the Kansas City Chiefs, and they ended up winning, which was awesome. Can you tell me the exact score of that game?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "eb6737c0_1",
+      "turnIndex": 4,
+      "date": "2023/05/24 (Wed) 10:52",
+      "role": "user",
+      "text": "What's the schedule for the upcoming NBA playoffs? I've been following the Los Angeles Lakers closely this season, and I want to make sure I catch all their games.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "eb6737c0_1",
+      "turnIndex": 6,
+      "date": "2023/05/24 (Wed) 10:52",
+      "role": "user",
+      "text": "I also want to check on the UEFA Champions League schedule. I remember watching the Liverpool vs Bayern Munich match a few weeks ago, and I'm excited to see how the rest of the tournament unfolds. Can you tell me when the next Liverpool match is?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "eb6737c0_1",
+      "turnIndex": 8,
+      "date": "2023/05/24 (Wed) 10:52",
+      "role": "user",
+      "text": "I'm also interested in the NCAA March Madness tournament. I had a bracket going with my friends, and I did decently well, although I didn't pick the winner. Can you remind me of the champion of this year's tournament?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "eb6737c0_1",
+      "turnIndex": 10,
+      "date": "2023/05/24 (Wed) 10:52",
+      "role": "user",
+      "text": "I'm also curious about the Masters golf tournament. I've been watching it every morning, and I'm rooting for Tiger Woods to win. Can you tell me what day the final round is on?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "c351fa3b_1",
+      "turnIndex": 0,
+      "date": "2023/05/29 (Mon) 00:35",
+      "role": "user",
+      "text": "I'm looking for some new vegan recipes to try out. I attended a vegan cooking class at a local culinary school today and learned some great tips and tricks, but I want to keep experimenting with different flavors and ingredients. Do you have any recommendations for vegan dinner recipes that use cashew cream and nutritional yeast?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "c351fa3b_1",
+      "turnIndex": 2,
+      "date": "2023/05/29 (Mon) 00:35",
+      "role": "user",
+      "text": "I'm really interested in trying out the vegan lasagna recipe you mentioned. Can you give me some recommendations for vegan meatballs to go with it? I've been experimenting with different types of vegan protein sources, including tofu, tempeh, and seitan, but I've never made meatballs before.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "c351fa3b_1",
+      "turnIndex": 4,
+      "date": "2023/05/29 (Mon) 00:35",
+      "role": "user",
+      "text": "I think I'll try making the tofu meatballs first. Can you give me some recommendations for a good marinara sauce to go with it? I recently learned how to make vegan mac and cheese using cashew cream and nutritional yeast at a vegan cooking class at a local culinary school, and I'm excited to try out a new recipe.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "c351fa3b_1",
+      "turnIndex": 6,
+      "date": "2023/05/29 (Mon) 00:35",
+      "role": "user",
+      "text": "I'm excited to try out the homemade marinara sauce recipe. I've been experimenting with different types of vegan protein sources, including tofu, tempeh, and seitan, and I think the tofu meatballs will pair well with the sauce. Can you give me some recommendations for a good vegan mozzarella cheese alternative to go with my lasagna? I've been using cashew cream and nutritional yeast to make vegan cheese sauces, but I'm not sure what to use for a melted mozzarella substitute.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "c351fa3b_1",
+      "turnIndex": 8,
+      "date": "2023/05/29 (Mon) 00:35",
+      "role": "user",
+      "text": "I'm so excited to try out the homemade marinara sauce and tofu meatballs with the vegan mozzarella cheese alternative. Do you have any recommendations for a good vegan ricotta cheese substitute to use in the lasagna as well? I've been using cashew cream and nutritional yeast to make vegan cheese sauces, but I'm not sure what to use for a ricotta substitute.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "c351fa3b_1",
+      "turnIndex": 10,
+      "date": "2023/05/29 (Mon) 00:35",
+      "role": "user",
+      "text": "I'm excited to try out the vegan ricotta cheese substitute in my lasagna. I've been experimenting with different types of vegan protein sources, including tofu, tempeh, and seitan, and I think the tofu meatballs will pair well with the marinara sauce and vegan mozzarella cheese alternative.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 8682,
+  "estimatedTokens": 2171
+}

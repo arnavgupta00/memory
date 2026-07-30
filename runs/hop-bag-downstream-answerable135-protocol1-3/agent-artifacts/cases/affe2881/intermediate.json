@@ -1,0 +1,59 @@
+[
+  {
+    "session_id": "fb5dd87f_7",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session discusses birding plans for a sanctuary in southern Wisconsin and provides general/typical species examples; it does not mention birds seen in the user’s local park or any count of species there. Any relevant evidence for the question (species seen in local park) may be absent or too indirect to be actionable.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is observing a pair of American Robins in their backyard using a new spotting scope.",
+          "why": "Directly mentions a specific bird species the user has observed (American Robins), which could be related if the “local park” is conflated with backyard/local area, but may still be useful as claimed exposure."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Late April to early May is described as a peak migration period for many bird species in southern Wisconsin, with expected variety including Warblers (Yellow, Yellow-rumped, Palm), Sparrows (Chipping, Clay-colored, American Tree), Waterfowl (Wood Duck, Blue-winged Teal, American Golden-Plover), Raptors (hawks, eagles, osprey), and Songbirds (Ruby-crowned Kinglet, Hermit Thrush, Baltimore Oriole).",
+          "why": "Provides a structured list of multiple bird species the user might see; could be repurposed for an estimated “species seen” count if the question were about the sanctuary trip rather than a local park."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "User asks about recommended birding trails/areas and whether there are guided tours or birding events during spring migration.",
+          "why": "Establishes user’s interest in birding logistics and potential future sightings, though it does not provide observed species in the local park."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "User asks about tour rules (staying on designated trails, not approaching birds too closely), and mentions again they are using a spotting scope to observe American Robins nesting habits in their backyard.",
+          "why": "Reinforces the user’s bird-observation context involving American Robins; still not a local-park count."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_90de9b4d_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session contains a direct count of “27 different species” seen in the user’s local park, which may answer the question. However, it does not specify whether this count is strictly limited to the local park at the time of asking, nor whether it includes any birds seen after 2023/05/24; chronology and completeness relative to “today” (2023/06/07) may therefore be uncertain.",
+      "claims": [
+        {
+          "turnIndex": 4,
+          "fact": "I've managed to spot 27 different species so far in my local park.",
+          "why": "Direct quantitative claim relevant to answering how many different bird species the user has seen in their local park."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_90de9b4d_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session is mostly advice about attracting birds to a picnic; it only contains a partial personal bird count (32 total species) rather than an explicit list of species seen. There may be additional species details in other sessions needed to answer the question of how many different bird species the user has seen.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "User reports seeing a Northern Flicker in their local park last weekend and says this brings their total species count to 32.",
+          "why": "Directly relevant to counting how many different bird species the user has seen; provides a quantitative total and a specific species included in that count."
+        }
+      ]
+    }
+  }
+]

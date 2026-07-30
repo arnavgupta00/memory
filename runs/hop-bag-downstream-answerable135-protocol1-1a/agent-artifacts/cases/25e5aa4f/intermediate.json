@@ -1,0 +1,23 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Where the user completed their Bachelor's degree in Computer Science (school name).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_986de8c3",
+      "turnIndex": 4,
+      "why": "User explicitly states they completed their undergrad in CS from UCLA."
+    },
+    {
+      "sessionId": "answer_986de8c3",
+      "turnIndex": 5,
+      "why": "Assistant repeats/uses the user’s stated background of CS from UCLA (reinforces the degree-completion school)."
+    },
+    {
+      "sessionId": "answer_986de8c3",
+      "turnIndex": 11,
+      "why": "Example personal-statement structure again references the user as a computer science graduate from UCLA (consistent with completion location)."
+    }
+  ]
+}

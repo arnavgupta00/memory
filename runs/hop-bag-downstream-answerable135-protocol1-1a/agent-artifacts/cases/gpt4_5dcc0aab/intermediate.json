@@ -1,0 +1,23 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Pairs of shoes the user mentioned cleaning last month",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_099c1b6c_1",
+      "turnIndex": 6,
+      "why": "User states they cleaned their white Adidas sneakers last month."
+    },
+    {
+      "sessionId": "answer_099c1b6c_1",
+      "turnIndex": 8,
+      "why": "User adds how they cleaned the same pair (soap and water on uppers; air dried)."
+    },
+    {
+      "sessionId": "answer_099c1b6c_3",
+      "turnIndex": 4,
+      "why": "User reiterates the white Adidas sneakers were dirty/stained after the outdoor music festival on the 15th and ties it to cleaning last month."
+    }
+  ]
+}

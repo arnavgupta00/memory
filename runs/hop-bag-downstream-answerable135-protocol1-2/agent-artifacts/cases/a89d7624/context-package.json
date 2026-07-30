@@ -1,0 +1,307 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "the frozen retriever bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "39a056ae",
+      "turnIndex": 0,
+      "date": "2023/05/24 (Wed) 03:07",
+      "role": "user",
+      "text": "I'm planning a trip with friends and I need help finding some good flight deals. Can you recommend any websites or apps that can help me compare prices?",
+      "why": "annotation fact anchor; lexical score 22",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "39a056ae",
+      "turnIndex": 4,
+      "date": "2023/05/24 (Wed) 03:07",
+      "role": "user",
+      "text": "I'm thinking of booking a hotel in Waikiki, but I'm not sure which one to choose. Can you recommend some popular hotels in the area?",
+      "why": "annotation fact anchor; lexical score 12",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "39a056ae",
+      "turnIndex": 6,
+      "date": "2023/05/24 (Wed) 03:07",
+      "role": "user",
+      "text": "I'm planning the trip with friends, and we're all really excited. We're actually planning to go at the end of April, so I'll make sure to book a hotel that fits our needs.",
+      "why": "annotation fact anchor; lexical score 22",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "168776ed_2",
+      "turnIndex": 0,
+      "date": "2023/05/27 (Sat) 11:40",
+      "role": "user",
+      "text": "I'm looking for some new workout playlists to listen to while I'm running. Do you have any recommendations? By the way, I had a great tennis match today and finally beat my colleague Alex in a set, which is a huge confidence booster for me.",
+      "why": "annotation fact anchor; lexical score 2",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "168776ed_2",
+      "turnIndex": 2,
+      "date": "2023/05/27 (Sat) 11:40",
+      "role": "user",
+      "text": "I'm currently doing 4 km runs every Sunday evening. I've been tracking my progress using a fitness app, which has been really helpful in monitoring my progress and staying motivated. I'm thinking of increasing my distance to 5 km soon. Do you have any tips on how to prevent injuries while increasing my running distance?",
+      "why": "annotation fact anchor; lexical score 12",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "168776ed_2",
+      "turnIndex": 4,
+      "date": "2023/05/27 (Sat) 11:40",
+      "role": "user",
+      "text": "I've been running on a road route near my place, it's pretty flat and easy to follow. I've been thinking about exploring some trails or park routes soon, though. Do you have any tips on how to transition from road running to trail running?",
+      "why": "annotation fact anchor; lexical score 12",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "168776ed_2",
+      "turnIndex": 11,
+      "date": "2023/05/27 (Sat) 11:40",
+      "role": "assistant",
+      "text": "As a digital AI assistant, I don't have a personal running routine or physical body, so I won't be incorporating hill repeats into my routine. I exist solely to provide information and assist with tasks, so I don't have personal experiences or engage in physical activities like running.\n\nHowever, I can provide guidance and suggestions on how you can incorporate hill repeats into your running routine. If you're looking to add hill repeats to your routine, you could consider replacing one of your regular runs with a hill repeat session, or adding it as an extra workout. It ultimately depends on your current training schedule, goals, and preferences.\n\nIf you're just starting out with hill repeats, you may want to start by replacing one of your shorter runs with a hill repeat session. This will allow you to get a feel for the exercise and build up your endurance without adding too much extra mileage to your weekly total.\n\nAlternatively, you could add hill repeats as an extra workout, perhaps on a day when you're not doing a long run. This will allow you to focus specifically on building strength and endurance without compromising your regular running routine.\n\nRemember to listen to your body and adjust your routine accordingly. It's essential to balance the intensity of your hill repeats with rest and recovery to avoid injury.",
+      "why": "raw lexical; lexical score 10",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_8f15ac24",
+      "turnIndex": 4,
+      "date": "2023/05/27 (Sat) 14:23",
+      "role": "user",
+      "text": "During my previous visit to Denver, where I had a great time meeting Brandon Flowers after The Killers' concert, I realized how much I love the city's music scene. Are there any good music venues or festivals in Denver that I shouldn't miss?",
+      "why": "annotation fact anchor; lexical score 22",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_8f15ac24",
+      "turnIndex": 6,
+      "date": "2023/05/27 (Sat) 14:23",
+      "role": "user",
+      "text": "I'm thinking of going back to Denver for another concert. Do you know if there are any good BBQ places near the Red Rocks Amphitheater?",
+      "why": "annotation fact anchor; lexical score 22",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_8f15ac24",
+      "turnIndex": 8,
+      "date": "2023/05/27 (Sat) 14:23",
+      "role": "user",
+      "text": "I'll definitely check those out. I'm thinking of getting to Red Rocks a bit earlier to grab some dinner before the concert. Do you know if there are any good restaurants or food options within walking distance of the amphitheater?",
+      "why": "annotation event anchor; lexical score 22",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "99f2f5b1_1",
+      "turnIndex": 0,
+      "date": "2023/05/28 (Sun) 02:26",
+      "role": "user",
+      "text": "I'm planning a family trip to Disneyland soon and I was wondering if you could recommend some must-try food spots, especially around the Star Wars: Galaxy's Edge area. By the way, I actually visited Disneyland on Easter Sunday with my family and we had an amazing time, especially on the \"It's a Small World\" ride!",
+      "why": "annotation fact anchor; lexical score 32",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "99f2f5b1_1",
+      "turnIndex": 5,
+      "date": "2023/05/28 (Sun) 02:26",
+      "role": "assistant",
+      "text": "\"It's a Small World\" is a beloved attraction, and it's wonderful that your niece enjoyed it so much!\n\nYes, \"It's a Small World\" has special features and surprises during holidays like Christmas. During the holiday season, the attraction is transformed into \"It's a Small World Holiday,\" which features festive decorations, music, and costumes. Here are some of the special features you can expect:\n\n1. **Holiday-themed dolls**: The animatronic dolls are dressed in festive holiday costumes, adding to the merry atmosphere.\n2. **Special holiday music**: The iconic \"It's a Small World\" theme is replaced with a holiday-themed soundtrack, featuring festive tunes and carols.\n3. **Decorations and lights**: The entire attraction is decorated with festive lights, garlands, and decorations, creating a winter wonderland atmosphere.\n4. **Snowfall**: In some scenes, it even \"snows\" inside the attraction, adding to the magic of the season.\n\nThe holiday overlay typically starts in late November and runs through early January. It's a great way to experience the classic attraction in a new and festive way.\n\nDuring other holidays, like Halloween, the attraction might receive a spooky makeover, with decorations and music to match the theme. However, the holiday overlay is more extensive and elaborate during the Christmas season.\n\nIf you're planning to visit Disneyland during the holiday season, be sure to check the park schedule and make time for \"It's a Small World Holiday.\" It's a special experience that's sure to delight kids and adults alike!",
+      "why": "raw lexical; lexical score 10",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "99f2f5b1_1",
+      "turnIndex": 8,
+      "date": "2023/05/28 (Sun) 02:26",
+      "role": "user",
+      "text": "I'm actually thinking of attending the Halloween Horror Nights event at Universal Studios Hollywood soon. I've heard it's a really spooky and fun event. Have you got any tips or recommendations for making the most of the event?",
+      "why": "annotation fact anchor; lexical score 12",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "39a056ae",
+      "turnIndex": 1,
+      "date": "2023/05/24 (Wed) 03:07",
+      "role": "assistant",
+      "text": "I'd be happy to help you find the best flight deals for your trip.\n\nThere are many amazing websites and apps that can help you compare prices and find affordable flights. Here are some of the most popular ones:\n\n**Websites:**\n\n1. **Google Flights** (flights.google.com): Google Flights is a powerful tool that allows you to compare prices across different airlines, airports, and dates. It also offers features like price tracking and alerts.\n2. **Skyscanner** (skyscanner.com): Skyscanner is another popular flight comparison website that searches hundreds of airlines, online travel agencies, and meta-search engines to find the best deals.\n3. **Kayak** (kayak.com): Kayak is a well-established travel search engine that allows you to compare prices on flights, hotels, and car rentals.\n4. **Expedia** (expedia.com): Expedia is a popular online travel agency that offers a price comparison tool for flights, hotels, and packages.\n5. **CheapOair** (cheapoair.com): CheapOair is a travel booking website that offers discounted flights, hotels, and car rentals.\n\n**Apps:**\n\n1. **Hopper** (iOS and Android): Hopper is a popular app that analyzes prices and recommends the best time to book your flight. It also offers price tracking and alerts.\n2. **Hipmunk** (iOS and Android): Hipmunk is a travel search app that allows you to compare prices on flights, hotels, and car rentals. It also offers features like price alerts and a \"agony\" filter to help you find the best flights.\n3. **Airfarewatchdog** (iOS and Android): Airfarewatchdog is a app that specializes in finding error fares and sale prices on flights.\n4. **Scott's Cheap Flights** (iOS and Android): Scott's Cheap Flights is a popular app that offers error fare alerts and cheap flight deals.\n\n**Tips:**\n\n1. Be flexible with your travel dates and times to find better deals.\n2. Consider flying into a nearby airport or at off-peak hours.\n3. Book in advance to secure the best prices.\n4. Use budget airlines or consider alternative airports to save money.\n5. Clear your cookies and browsing history to avoid price increases.\n\nI hope these recommendations help you find the best flight deals for your trip!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "39a056ae",
+      "turnIndex": 2,
+      "date": "2023/05/24 (Wed) 03:07",
+      "role": "user",
+      "text": "I'll definitely check those out. I'm looking for flights to Hawaii, so I'll play around with the dates to see what I can find. Speaking of which, have you got any recommendations for things to do in Hawaii?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "39a056ae",
+      "turnIndex": 3,
+      "date": "2023/05/24 (Wed) 03:07",
+      "role": "assistant",
+      "text": "Hawaii is a fantastic destination! You'll have an amazing time exploring the islands. Here are some top recommendations for things to do in Hawaii:\n\n**Oahu:**\n\n1. **Visit Pearl Harbor and USS Arizona Memorial**: A historic and emotional experience.\n2. **Waikiki Beach**: One of the most iconic beaches in the world, perfect for swimming, sunbathing, and people-watching.\n3. **Hanauma Bay Snorkeling**: A protected marine sanctuary with an incredible array of marine life.\n4. **Diamond Head State Monument**: Hike up to the summit for breathtaking views of Honolulu and the ocean.\n\n**Maui:**\n\n1. **Watch the Sunrise from Haleakala National Park**: A unforgettable experience, and a great way to start your day.\n2. **Road to Hana**: A scenic drive along the coast with stunning waterfalls, beaches, and tropical rainforests.\n3. **Lahaina**: A historic town with a rich cultural heritage, featuring luaus, museums, and art galleries.\n4. **Snorkeling or Whale Watching**: Maui is a popular spot for spotting humpback whales (seasonal) and snorkeling with sea turtles.\n\n**Kauai:**\n\n1. **Na Pali Coast State Park**: Hike the challenging Kalalau Trail or take a boat tour to explore this stunning coastline.\n2. **Wailua River and Fern Grotto**: A serene boat tour or kayak trip through a lush, tropical landscape.\n3. **Poipu Beach**: A family-friendly beach with a natural aquarium, perfect for snorkeling and swimming.\n4. **Waimea Canyon**: Often referred to as the \"Grand Canyon of the Pacific,\" this stunning gorge offers breathtaking views.\n\n**Big Island:**\n\n1. **Hawaii Volcanoes National Park**: Explore volcanic landscapes, lava tubes, and steam vents.\n2. **Mauna Kea Stargazing**: Visit one of the world's best stargazing spots, with clear views of the night sky.\n3. **Rainbow Falls**: A beautiful waterfall near Hilo, surrounded by lush tropical vegetation.\n4. **Coffee Farm Tours**: Kona coffee is famous worldwide, and visiting a coffee farm is a great way to learn about the production process.\n\n**General Tips:**\n\n1. **Rent a car**: To explore the islands freely and discover hidden gems.\n2. **Book accommodations in advance**: Especially during peak season (December to April).\n3. **Be respectful of the environment and local culture**: Hawaii is a delicate ecosystem, and respecting the land and its people will enhance your experience.\n4. **Try local cuisine**: Poke bowls, laulau, shave ice, and fresh pineapple are just a few of the delicious treats you'll find.\n\nThese are just a few of the many amazing experiences Hawaii has to offer. Depending on your interests, time, and preferences, you may also want to consider surfing, helicopter tours, luaus, and visiting a luau, or simply relaxing on the beach.\n\nHave a fantastic trip to Hawaii!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "39a056ae",
+      "turnIndex": 5,
+      "date": "2023/05/24 (Wed) 03:07",
+      "role": "assistant",
+      "text": "Waikiki is a fantastic location, with plenty of amazing hotels to choose from. Here are some popular options to consider:\n\n**Luxury:**\n\n1. **The Royal Hawaiian, a Luxury Collection Resort**: A iconic, 5-star hotel with luxurious rooms, multiple pools, and a private beach.\n2. **The Ritz-Carlton Residences, Waikiki Beach**: Upscale accommodations, modern amenities, and exceptional service.\n3. **Four Seasons Resort Oahu at Ko Olina**: A 5-star resort located on the west coast of Oahu, offering luxurious rooms, multiple pools, and a private beach.\n\n**Upper-Midscale:**\n\n1. **Hyatt Regency Waikiki Beach Resort & Spa**: A popular hotel with modern rooms, multiple pools, and a great location.\n2. **Waikiki Beach Marriott Resort & Spa**: A 4-star hotel with comfortable rooms, a rooftop pool, and a short walk to the beach.\n3. **The Modern Honolulu**: A stylish, boutique hotel with chic rooms, a rooftop pool, and a trendy vibe.\n\n**Midscale:**\n\n1. **Aqua Palms Waikiki**: A comfortable, 3-star hotel with modern rooms, a rooftop pool, and a short walk to the beach.\n2. **Waikiki Sand Villa Hotel**: A family-friendly hotel with spacious rooms, a pool, and a relaxed atmosphere.\n3. **Pacific Beach Hotel**: A 3-star hotel with comfortable rooms, a pool, and a convenient location.\n\n**Budget-Friendly:**\n\n1. **Aqua Ohia Waikiki**: A 2-star hotel with basic rooms, a pool, and a short walk to the beach.\n2. **Ewa Hotel Waikiki**: A budget-friendly hotel with simple rooms, a pool, and a convenient location.\n3. **Hostel La Mariana**: A social hostel with dorms and private rooms, a lounge, and a great location.\n\nConsider factors like:\n\n* Location: How close do you want to be to the beach, restaurants, and attractions?\n* Amenities: Do you need a pool, fitness center, or spa?\n* Budget: What's your price range?\n* Style: Are you looking for luxury, modern, or a more laid-back vibe?\n\nResearch each hotel, read reviews, and compare prices to find the best fit for your needs. You can also consider booking a hotel that offers a free breakfast, as it can help you save money on food costs.\n\nI hope this helps you find the perfect hotel in Waikiki!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "39a056ae",
+      "turnIndex": 7,
+      "date": "2023/05/24 (Wed) 03:07",
+      "role": "assistant",
+      "text": "That's great! End of April is a fantastic time to visit Hawaii, the weather is usually warm and sunny, and it's before the peak summer season, so you might be able to find some good deals on hotels and activities.\n\nSince you're planning the trip with friends, I'm sure you'll have an amazing time exploring the island together. Make sure to consider hotels that have amenities that cater to your group's needs, such as rooms with multiple beds, a pool, and a location that's close to the beach and other attractions.\n\nAdditionally, you might want to consider booking a hotel that offers activities and amenities that are geared towards groups, such as:\n\n* A hotel with a game room or lounge area where you can hang out and socialize\n* A hotel that offers group-friendly activities, such as surf lessons or snorkeling trips\n* A hotel with a restaurant or bar that can accommodate large groups\n* A hotel that offers a free breakfast or happy hour, which can be a great way to start or end the day with your friends\n\nSome popular hotels in Waikiki that might fit the bill include:\n\n* The Hyatt Regency Waikiki Beach Resort & Spa, which has a large pool area and a game room\n* The Waikiki Beach Marriott Resort & Spa, which has a rooftop pool and a bar with live music\n* The Alohilani Resort Waikiki Beach, which has a rooftop pool and a restaurant with a focus on local cuisine\n\nRemember to also consider the location of the hotel and how it will impact your plans. If you want to be close to the beach, look for hotels that are located on or near the beach. If you want to be close to the action, look for hotels that are located in the heart of Waikiki.\n\nI hope this helps, and I'm sure you and your friends will have an amazing time in Hawaii!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "39a056ae",
+      "turnIndex": 8,
+      "date": "2023/05/24 (Wed) 03:07",
+      "role": "user",
+      "text": "I think I'll also look into hotels that offer free breakfast or happy hour, that sounds like a great way to start or end the day with my friends. Do you have any recommendations for must-try restaurants in Waikiki?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "168776ed_2",
+      "turnIndex": 1,
+      "date": "2023/05/27 (Sat) 11:40",
+      "role": "assistant",
+      "text": "Congratulations on your win against Alex! That's fantastic news!\n\nNow, about those workout playlists... I'd be happy to help you with some recommendations! Since you're a runner, I'll suggest playlists that'll keep you motivated and energized throughout your runs. Here are a few options:\n\n1. **Upbeat Pop/Rock**:\n\t* Happy by Pharrell Williams\n\t* Can't Stop by Red Hot Chili Peppers\n\t* We Will Rock You by Queen\n\t* Shut Up and Dance by Walk the Moon\n\t* Uptown Funk by Mark Ronson ft. Bruno Mars\n2. **Electronic/Dance**:\n\t* Eye of the Tiger by Survivor (remixed)\n\t* Pumped Up Kicks by Foster the People\n\t* Unstoppable by Sia\n\t* Cake by Flo Rida\n\t* Levels by Avicii\n3. **Hip-Hop/Rap**:\n\t* Lose Yourself by Eminem\n\t* Stronger by Kanye West\n\t* Finesse (Remix) by Bruno Mars and Cardi B\n\t* Bodak Yellow by Cardi B\n\t* Mi Gente by J Balvin & Willy William\n4. **Classic Rock**:\n\t* Born to Run by Bruce Springsteen\n\t* Sweet Child O' Mine by Guns N' Roses\n\t* Don't Stop Believin' by Journey\n\t* Hotel California by the Eagles\n\t* Jump by Van Halen\n5. **Mellow/Indie** (for a more relaxed pace):\n\t* Mr. Brightside by The Killers\n\t* Best Day of My Life by American Authors\n\t* First Day of My Life by Bright Eyes\n\t* On Top of the World by Imagine Dragons\n\t* Best Song Ever by One Direction\n\nYou can also explore playlists on music streaming services like Spotify, Apple Music, or Google Play Music, which often feature pre-curated workout playlists. You can search for keywords like \"running,\" \"workout,\" \"upbeat,\" or \"motivational\" to find playlists that fit your style.\n\nRemember to choose songs that resonate with your personal taste and pace. Experiment with different genres and tempos to find the perfect mix that keeps you motivated and moving during your runs!\n\nHow's your running routine going? Do you have a favorite distance or route that you enjoy?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "168776ed_2",
+      "turnIndex": 3,
+      "date": "2023/05/27 (Sat) 11:40",
+      "role": "assistant",
+      "text": "That's great to hear about your consistent Sunday evening runs! Increasing your distance to 5 km is a fantastic goal, and with proper preparation, you can minimize the risk of injuries. Here are some tips to help you safely increase your running distance:\n\n1. **Gradual Progression**: Don't try to do too much too soon. Gradually increase your distance by no more than 10% each week. This allows your body to adapt to the demands of running longer distances.\n2. **Listen to Your Body**: Pay attention to your body's signals. If you experience any pain or discomfort, stop and rest. It's better to take a day off or modify your workout than to risk injury.\n3. **Warm-up and Cool-down**: Always warm up with 10-15 minutes of light cardio (jogging, jumping jacks, etc.) and stretching before your run. After your run, cool down with static stretches to help your body recover.\n4. **Proper Footwear**: Wear shoes designed for running, and make sure they fit comfortably. Consider replacing your shoes every 300-400 miles or every 3-4 months.\n5. **Running Form**: Focus on proper running form to reduce the impact on your joints. Keep your posture upright, land midfoot or forefoot instead of heel striking, and try to maintain a consistent stride.\n6. **Incorporate Strength Training**: Strengthening your core, glutes, and legs can help you maintain good form and reduce the risk of injuries. Focus on exercises like squats, lunges, and leg press.\n7. **Hydrate and Fuel**: Proper hydration and nutrition are crucial for optimal performance. Make sure to drink plenty of water before, during, and after your runs, and fuel your body with a balanced diet that includes complex carbohydrates, protein, and healthy fats.\n8. **Rest and Recovery**: Allow your body time to recover between runs. Aim for at least one or two rest days per week, and prioritize sleep (7-9 hours) to help your body repair and adapt.\n9. **Incorporate Walk Breaks**: If you're new to running longer distances, consider incorporating walk breaks every 10-15 minutes to give your body a chance to recover. This can help you build endurance and reduce the risk of burnout.\n10. **Get Professional Guidance**: If you're new to running or have concerns about injuries, consider consulting a running coach or a sports medicine professional for personalized guidance.\n\nRemember, increasing your distance takes time and patience. Be kind to your body, and don't be afraid to take a step back if you need to. Good luck, and I hope you crush your 5 km goal!\n\nDo you have a favorite route or a preferred running terrain (e.g., track, trail, road)?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "168776ed_2",
+      "turnIndex": 5,
+      "date": "2023/05/27 (Sat) 11:40",
+      "role": "assistant",
+      "text": "Road running is a great foundation, and venturing into trail running can be an exciting change of pace! Trail running offers a more varied and challenging terrain, which can help improve your overall running skills and reduce the risk of repetitive stress injuries. Here are some tips to help you transition from road running to trail running:\n\n1. **Start with easier trails**: Begin with smoother, wider trails with minimal obstacles and gradual inclines. As you gain experience, you can progress to more technical trails with rocks, roots, and steeper inclines.\n2. **Wear proper footwear**: Trail running shoes are designed to provide better traction, stability, and protection on uneven terrain. They often have more aggressive tread patterns, better ankle support, and a more breathable upper.\n3. **Dress appropriately**: Wear clothes that can get dirty and are suitable for varying weather conditions. Consider a hat, sunglasses, and gloves for added protection.\n4. **Pay attention to your footing**: Trail running requires more attention to your surroundings. Look ahead, watch your step, and be prepared to adjust your stride to navigate obstacles.\n5. **Slow down and be patient**: Trail running is often slower than road running due to the varied terrain. Be patient and focus on your footing, rather than your pace.\n6. **Practice good trail etiquette**: Be respectful of other trail users, such as hikers, cyclists, and horseback riders. Yield to others, and keep to the right side of the trail when possible.\n7. **Hydrate and fuel differently**: Trail runs can be longer and more demanding, so make sure to carry enough water and electrolyte-rich snacks. Consider a hydration pack or a handheld water bottle.\n8. **Get familiar with navigation**: Learn to read trail signs, use a GPS watch or app, and carry a map to ensure you stay on course.\n9. **Build up your strength and agility**: Trail running requires more strength, agility, and coordination. Incorporate strength training exercises, such as squats, lunges, and step-ups, to help prepare your muscles.\n10. **Join a trail running group or find a buddy**: Running with experienced trail runners can help you learn new skills, gain confidence, and stay motivated.\n\nRemember, trail running is a different beast compared to road running. Be prepared to adapt, and don't be discouraged if you need to walk or take breaks. With time and practice, you'll develop the skills and confidence to tackle more challenging trails.\n\nDo you have a favorite type of terrain or feature you're looking forward to exploring on your trail runs (e.g., hills, stairs, water crossings)?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "168776ed_2",
+      "turnIndex": 10,
+      "date": "2023/05/27 (Sat) 11:40",
+      "role": "user",
+      "text": "What's your plan for incorporating hill repeats into your current running routine? Will you replace one of your regular runs with a hill repeat session, or will you add it as an extra workout?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_8f15ac24",
+      "turnIndex": 3,
+      "date": "2023/05/27 (Sat) 14:23",
+      "role": "assistant",
+      "text": "That's awesome! Meeting Brandon Flowers must have been a thrilling experience!\n\nTo keep up with new music releases and concerts in your area, here are some tips:\n\n**New Music Releases:**\n\n1. **Streaming platforms:** Follow your favorite artists and genres on streaming services like Spotify, Apple Music, or Tidal. They often feature new releases, recommendations, and playlists curated by music experts.\n2. **Music blogs and websites:** Websites like Pitchfork, NME, Stereogum, and Indie Shuffle regularly feature new music releases, reviews, and recommendations.\n3. **Social media:** Follow your favorite artists, labels, and music influencers on social media platforms like Instagram, Twitter, and Facebook. They often share updates about new music, upcoming shows, and behind-the-scenes content.\n4. **Music newsletters:** Subscribe to newsletters like The Fader, Pigeons & Planes, or The Music Ninja to receive weekly or monthly updates on new music releases, upcoming shows, and music news.\n\n**Concerts in Your Area:**\n\n1. **Songkick:** Sign up for Songkick, a concert discovery platform that tracks your favorite artists and notifies you when they're coming to your area.\n2. **Bandsintown:** Similar to Songkick, Bandsintown allows you to track your favorite artists and receive notifications about upcoming shows in your area.\n3. **Local venues and promoters:** Follow local venues, promoters, and event calendars on social media or sign up for their newsletters to stay informed about upcoming shows and concerts.\n4. **Ticketing websites:** Keep an eye on ticketing websites like Ticketmaster, Live Nation, or AXS to find out about upcoming shows and concerts in your area.\n5. **Facebook Events:** Use Facebook Events to discover concerts and shows in your area. You can also join local music groups or event pages to stay informed about upcoming events.\n\n**Additional Tips:**\n\n1. **Local music communities:** Engage with local music communities, online forums, or social media groups to connect with fellow music enthusiasts and stay informed about new music and concerts in your area.\n2. **Radio stations:** Tune into local radio stations or online radio platforms that play music aligned with your tastes. They often feature new music, interviews, and concert announcements.\n3. **Artist websites:** Keep an eye on your favorite artists' official websites, which often feature news, tour dates, and music releases.\n\nBy following these tips, you'll be well-equipped to stay up-to-date with new music releases and concerts in your area. Happy music discovery!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_8f15ac24",
+      "turnIndex": 5,
+      "date": "2023/05/27 (Sat) 14:23",
+      "role": "assistant",
+      "text": "Denver's music scene is indeed thriving! You're lucky to have experienced it firsthand. As a music enthusiast, you'll love exploring the city's vibrant venues and festivals. Here are some must-visit spots and events to add to your Denver music bucket list:\n\n**Music Venues:**\n\n1. **Red Rocks Park and Amphitheatre**: You've already experienced the magic of Red Rocks, but it's worth mentioning again. This iconic venue hosts a wide range of acts, from rock and pop to jazz and classical.\n2. **The Ogden Theatre**: A historic venue in the heart of LoDo, The Ogden hosts indie, rock, and electronic acts in an intimate setting.\n3. **The Bluebird Theater**: Another historic venue, The Bluebird offers a unique atmosphere and a diverse lineup of acts, from singer-songwriters to rock bands.\n4. **The Fillmore Auditorium**: This iconic venue has hosted legendary acts like The Grateful Dead and Jimi Hendrix. Today, it features a wide range of genres, from rock to hip-hop.\n5. **Larimer Lounge**: A smaller, more laid-back venue that's perfect for discovering new talent and enjoying live music in a cozy setting.\n\n**Music Festivals:**\n\n1. **Grandoozy**: A relatively new festival, Grandoozy features a diverse lineup of acts, from rock and pop to hip-hop and electronic music.\n2. **Denver Folk Festival**: If you're a fan of folk, bluegrass, or roots music, this festival is a must-visit.\n3. **Denver Jazz Festival**: Celebrating jazz in all its forms, this festival features local and national acts.\n4. **Westword Music Showcase**: A one-day festival featuring local and national acts, with a focus on showcasing Denver's thriving music scene.\n5. **Riot Fest Denver**: A punk, rock, and alternative festival that takes place in September.\n\n**Other Music-Related Spots:**\n\n1. ** Twist & Shout Records**: A legendary record store with an impressive selection of vinyl and CDs.\n2. **The hi-dive**: A music venue and bar that hosts local and touring acts, with a focus on punk, indie, and alternative music.\n3. **The Marquis Theater**: A mid-sized venue that hosts a range of acts, from rock and pop to hip-hop and electronic music.\n\nWhen planning your next visit to Denver, be sure to check out these venues and festivals. You might even stumble upon some new favorite bands or discover hidden gems in the city's music scene!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_8f15ac24",
+      "turnIndex": 7,
+      "date": "2023/05/27 (Sat) 14:23",
+      "role": "assistant",
+      "text": "You're heading back to Denver for another concert, and you're craving some delicious BBQ to fuel up before the show? You're in luck! There are some fantastic BBQ joints near Red Rocks Amphitheater. Here are a few recommendations:\n\n1. **GQue BBQ**: Located in nearby Golden, CO, GQue BBQ is about a 10-15 minute drive from Red Rocks. They offer a wide range of meats, including brisket, ribs, and sausage, all smoked to perfection.\n2. **Dinosaur Bar-B-Que**: With a location in nearby Lakewood, CO, Dinosaur Bar-B-Que is about a 20-25 minute drive from Red Rocks. This popular BBQ chain offers a variety of meats, including ribs, brisket, and chicken, all smoked on-site.\n3. **Moe's Original BBQ**: Moe's has a location in nearby Wheat Ridge, CO, about a 15-20 minute drive from Red Rocks. They offer a Southern-style BBQ menu with meats like pulled pork, brisket, and chicken, all smoked in-house.\n4. **Big B's Delicious BBQ**: Located in nearby Arvada, CO, Big B's is about a 20-25 minute drive from Red Rocks. This family-owned BBQ joint offers a range of meats, including ribs, brisket, and sausage, all smoked with love.\n5. **Wayne's Smoke Shack**: This food truck turned BBQ joint is located in nearby Morrison, CO, just a few minutes from Red Rocks. They offer a variety of meats, including brisket, ribs, and chicken, all smoked to perfection.\n\nMake sure to check the hours of operation, menu, and availability for each BBQ joint before heading out, as they might vary. Enjoy your BBQ adventure and the concert at Red Rocks!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_8f15ac24",
+      "turnIndex": 9,
+      "date": "2023/05/27 (Sat) 14:23",
+      "role": "assistant",
+      "text": "You're planning to grab dinner before the concert, and you're wondering if there are any good restaurants or food options within walking distance of Red Rocks? Yes, there are some excellent options to fuel up before the show! Here are a few recommendations:\n\n**Within Walking Distance:**\n\n1. **The Ship Rock Grille**: Located just across the street from Red Rocks, this restaurant offers a variety of American classics, including burgers, sandwiches, and salads.\n2. **The Village Tavern**: About a 5-minute walk from Red Rocks, this tavern serves up pub-style fare, including burgers, wings, and quesadillas.\n3. **Morrison Inn**: This historic inn is about a 10-minute walk from Red Rocks and offers a restaurant serving American comfort food, including burgers, steaks, and pasta dishes.\n\n**Food Trucks and Vendors:**\n\n1. **Red Rocks Food Trucks**: During concert season, you'll find a variety of food trucks parked near the amphitheater, offering everything from tacos to BBQ to gourmet grilled cheese.\n2. **Concession Stands**: Red Rocks has several concession stands throughout the venue, offering snacks like hot dogs, nachos, and popcorn.\n\n**Other Options (Short Drive or Uber):**\n\n1. **The Fort**: Located about 2 miles from Red Rocks, this historic restaurant serves up Southwestern-inspired cuisine, including burgers, steaks, and seafood.\n2. **Bear Creek Tavern**: About 2.5 miles from Red Rocks, this tavern offers a menu of American classics, including burgers, sandwiches, and salads.\n\nKeep in mind that these options can get busy before a concert, so plan accordingly and allow some extra time to grab your food and get to your seat. Enjoy your dinner and the show!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "99f2f5b1_1",
+      "turnIndex": 1,
+      "date": "2023/05/28 (Sun) 02:26",
+      "role": "assistant",
+      "text": "I'm glad to hear you had an amazing time at Disneyland on Easter Sunday! However, I'm a large language model, I don't have personal experiences or memories, so I didn't know you visited Disneyland earlier.\n\nMoving on to your question, I'd be happy to help you with some must-try food spots, especially around the Star Wars: Galaxy's Edge area!\n\n**Star Wars: Galaxy's Edge**\n\n1. **Oga's Cantina**: A must-visit for any Star Wars fan! Try the Out-of-this-World drinks, like the Carbon Freeze Pops or the Fuzzy Tauntaun. Be prepared for a unique experience, as the cantina is designed to feel like a bustling spaceport.\n2. **Docking Bay 7 Food and Cargo**: This quick-service restaurant offers a variety of intergalactic eats, such as the Endorian Tip-Yip (a fried chicken dish) and the Ronto Wrap (a savory meat wrap).\n3. **Ronto Roasters**: Grab a quick snack or drink at this outdoor stand, which offers Ronto Wraps, drinks, and snacks. Don't miss the unique theming, featuring a former podracing engine turned into a BBQ pit!\n\n**Other Disneyland Food Spots**\n\n1. **Dole Whip**: A classic Disneyland treat! You can find Dole Whip stands throughout the park, but the original location is near the Enchanted Tiki Room in Adventureland.\n2. **Blue Bayou Restaurant**: This iconic restaurant is located in New Orleans Square and offers Creole-inspired cuisine in a setting inspired by the Pirates of the Caribbean attraction.\n3. **Jolly Holiday Bakery Cafe**: This charming bakery on Main Street USA offers a variety of sweet treats, sandwiches, and salads. Try the Matterhorn Macaroons or the seasonal cupcakes!\n4. **Carthay Circle Restaurant**: Located in Hollywood Land, this upscale restaurant serves contemporary American cuisine with a focus on seasonal ingredients. It's a great spot for a special occasion or a romantic dinner.\n\n**Tips and Tricks**\n\n* Make sure to check the Disneyland app for wait times, menu items, and mobile ordering options to plan your dining experiences.\n* Consider making reservations for table-service restaurants like Blue Bayou or Carthay Circle up to 60 days in advance.\n* Don't forget to try some of the seasonal treats and specials, which often appear during holidays and special events.\n\nI hope this helps, and May the Forks be with you on your upcoming Disneyland adventure!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "99f2f5b1_1",
+      "turnIndex": 4,
+      "date": "2023/05/28 (Sun) 02:26",
+      "role": "user",
+      "text": "I remember that \"It's a Small World\" ride was my niece's favorite when we visited Disneyland on Easter Sunday. She just couldn't get enough of it! Does the ride have any special features or surprises during holidays like Christmas?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "99f2f5b1_1",
+      "turnIndex": 6,
+      "date": "2023/05/28 (Sun) 02:26",
+      "role": "user",
+      "text": "Can you tell me more about the special events and activities that Disneyland offers during the holiday season? I've heard that it's a really magical time to visit the park.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "99f2f5b1_1",
+      "turnIndex": 7,
+      "date": "2023/05/28 (Sun) 02:26",
+      "role": "assistant",
+      "text": "The holiday season is indeed a magical time to visit Disneyland! The park is transformed into a winter wonderland, offering a plethora of special events, activities, and attractions that are sure to delight visitors of all ages. Here are some of the highlights:\n\n**Disneyland Resort Holiday Events**\n\n1. **A Christmas Fantasy Parade**: A festive parade featuring Disney characters, princesses, and beloved toys from the classic Disney film \"Toy Story.\"\n2. **Believe... In Holiday Magic Fireworks**: A nighttime spectacular featuring fireworks, music, and snowfall on Main Street USA.\n3. **World of Color - Winter Dreams**: A special holiday-themed edition of the nighttime water and light show at Disney California Adventure Park.\n4. **Disneyland Christmas Tree**: A towering Christmas tree located on Main Street USA, perfect for photos and holiday cheer.\n\n**Special Attractions and Overlays**\n\n1. **Haunted Mansion Holiday**: The popular attraction is transformed with a \"Nightmare Before Christmas\" theme, featuring Jack Skellington and his friends.\n2. **It's a Small World Holiday**: As I mentioned earlier, this classic attraction is decked out in holiday decorations and music.\n3. **Snowfall on Main Street USA**: It \"snows\" on Main Street USA, creating a winter wonderland atmosphere.\n\n**Character Meet-and-Greets and Photo Ops**\n\n1. **Santa's Workshop**: Meet Santa Claus and his elves at the Redwood Creek Challenge Trail in Disney California Adventure Park.\n2. **Holiday Character Costumes**: Disney characters, including Mickey, Minnie, and friends, don festive holiday attire for meet-and-greets and photos.\n3. **Princess Holiday Meet-and-Greet**: Meet Disney Princesses, such as Belle, Jasmine, and Snow White, in their holiday finery.\n\n**Food and Beverages**\n\n1. **Seasonal Treats**: Enjoy special holiday-themed treats, such as gingerbread men, hot cocoa, and peppermint ice cream.\n2. **Holiday-themed Eats**: Restaurants throughout the resort offer special holiday menus, featuring dishes like turkey, ham, and festive desserts.\n\n**Other Activities and Events**\n\n1. **Disneyland Resort Hotel Decorations**: The resort's hotels are decorated with festive decor, making them a great place to take photos and enjoy the holiday atmosphere.\n2. **Holiday Crafts and Activities**: Participate in holiday crafts, such as ornament-making and letter-writing to Santa, at various locations throughout the resort.\n\nThe holiday season at Disneyland typically runs from mid-November to early January. Be sure to check the official Disneyland website for exact dates, times, and schedules for each event and attraction.\n\nI hope this helps, and I'm sure you'll have a magical time at Disneyland during the holiday season!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "99f2f5b1_1",
+      "turnIndex": 9,
+      "date": "2023/05/28 (Sun) 02:26",
+      "role": "assistant",
+      "text": "Halloween Horror Nights (HHN) at Universal Studios Hollywood is an amazing event! It's a fantastic way to experience the thrill of Halloween in a uniquely terrifying way. I've got some tips and recommendations to help you make the most of your visit:\n\n**Before You Go**\n\n1. **Buy tickets in advance**: HHN tickets often sell out quickly, so plan ahead and purchase your tickets online to ensure availability.\n2. **Choose your night wisely**: Weeknights (Monday to Thursday) tend to be less crowded than weekends. If you can, plan your visit on a weeknight for shorter lines.\n3. **Plan your costume**: While costumes are not required, they're highly encouraged. Dress up in your scariest or most creative attire to add to the atmosphere.\n\n**Upon Arrival**\n\n1. **Arrive early**: Get to the park early to beat the crowds and take advantage of shorter lines for the first few hours.\n2. **Familiarize yourself with the map**: Take a few minutes to study the park map and plan your route. Know where the mazes, scare zones, and attractions are located.\n3. **Take advantage of Early Access**: If you purchase the Early Access ticket, you'll get to experience the event an hour before the general public. This is a great way to hit popular mazes and attractions before the crowds build up.\n\n**Navigating the Event**\n\n1. **Prioritize the mazes**: Decide which mazes are must-visits for you and hit them first. The most popular mazes tend to have the longest lines, so plan accordingly.\n2. **Use the Universal Studios Hollywood app**: The app provides an interactive map, live wait times, and show schedules to help you navigate the event.\n3. **Take breaks**: HHN can be intense, so be sure to take breaks to rest your nerves and recharge. Grab a snack, sit down, and people-watch to regain your composure.\n\n**Maze and Attraction Tips**\n\n1. **Don't be afraid to ask for help**: If you're feeling overwhelmed or need assistance, don't hesitate to ask event staff or security for help.\n2. **Be prepared for scares**: HHN is designed to be scary, so be prepared for jump scares, creepy atmosphere, and intense situations.\n3. **Take your time**: Don't rush through the mazes. Take your time to appreciate the theming, details, and scares.\n\n**Scare Zones and Atmosphere**\n\n1. **Immerse yourself in the atmosphere**: HHN is all about the atmosphere, so soak up the spooky vibes and enjoy the scare zones.\n2. **Be respectful**: Remember that the scare actors are there to create a fun and frightening experience. Be respectful of their boundaries and don't touch or provoke them.\n3. **Take photos (but be mindful)**: HHN is a photographer's dream, but be mindful of the scare actors and other guests when taking photos. Avoid using flash and respect the no-flash zones.\n\n**Final Tips**\n\n1. **Stay hydrated and fueled**: HHN can be a long and intense event, so make sure to drink plenty of water and grab snacks throughout the night.\n2. **Have a meetup spot**: Designate a meeting spot in case you get separated from your group.\n3. **Be prepared for crowds and lines**: HHN is a popular event, so be prepared for crowds and lines. Plan accordingly, and take advantage of the single-rider lines if possible.\n\nBy following these tips and recommendations, you'll be well-prepared to make the most of your Halloween Horror Nights experience. Have a screaming good time!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "99f2f5b1_1",
+      "turnIndex": 10,
+      "date": "2023/05/28 (Sun) 02:26",
+      "role": "user",
+      "text": "I'm glad I could help. I hope you have an amazing time at Halloween Horror Nights and make some unforgettable memories. Don't forget to stay safe and have fun!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 38822,
+  "estimatedTokens": 9706
+}

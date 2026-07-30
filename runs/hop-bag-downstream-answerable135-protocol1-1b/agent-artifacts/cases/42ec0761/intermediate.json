@@ -1,0 +1,83 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Need a direct lookup answer about whether the user has a spare screwdriver for opening their laptop, including any nearby context where that preference/fact is stated.",
+    "candidateStatus": "found",
+    "missingRisk": "If downstream expects a specific type of screwdriver (e.g., Torx/Pentalobe) rather than just whether a spare exists, the answerer may need additional turns specifying the required screwdriver type; these were only partially covered in the available sessions.",
+    "items": [
+      {
+        "sessionId": "answer_e3892371_2",
+        "turnIndex": 4,
+        "why": "User asks if they have a spare screwdriver for opening the laptop; this is the immediate question context."
+      },
+      {
+        "sessionId": "answer_e3892371_2",
+        "turnIndex": 6,
+        "why": "User directly confirms they have a spare screwdriver picked up earlier (relevant for the lookup)."
+      },
+      {
+        "sessionId": "answer_e3892371_2",
+        "turnIndex": 7,
+        "why": "Assistant acknowledges the user is set for opening the laptop/laptop maintenance (supports the fact downstream)."
+      },
+      {
+        "sessionId": "answer_e3892371_1",
+        "turnIndex": 4,
+        "why": "Earlier, user said they misplaced the small screwdriver needed for opening/upgrading RAM; preserves potentially conflicting prior state before later confirmation."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Need a direct lookup answer about whether the user has a spare screwdriver for opening their laptop, including any nearby context where that preference/fact is stated.",
+    "candidateStatus": "found",
+    "missingRisk": "If downstream expects a specific type of screwdriver (e.g., Torx/Pentalobe) rather than just whether a spare exists, the answerer may need additional turns specifying the required screwdriver type; these were only partially covered in the available sessions.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_e3892371_2",
+        "turnIndex": 4,
+        "why": "User asks if they have a spare screwdriver for opening the laptop; this is the immediate question context."
+      },
+      {
+        "sessionId": "answer_e3892371_2",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e3892371_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e3892371_2",
+        "turnIndex": 6,
+        "why": "User directly confirms they have a spare screwdriver picked up earlier (relevant for the lookup)."
+      },
+      {
+        "sessionId": "answer_e3892371_2",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e3892371_2",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e3892371_1",
+        "turnIndex": 4,
+        "why": "Earlier, user said they misplaced the small screwdriver needed for opening/upgrading RAM; preserves potentially conflicting prior state before later confirmation."
+      },
+      {
+        "sessionId": "answer_e3892371_1",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e3892371_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

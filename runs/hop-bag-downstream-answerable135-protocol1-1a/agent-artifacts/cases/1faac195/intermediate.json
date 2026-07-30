@@ -1,0 +1,13 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Where sister Emily lives (city/area as mentioned by the user).",
+  "candidateStatus": "found",
+  "missingRisk": "Could be more specific than “Denver” (e.g., neighborhood/address) and may appear in other sessions not provided here.",
+  "items": [
+    {
+      "sessionId": "answer_d01949bf",
+      "turnIndex": 2,
+      "why": "User states they’re thinking of visiting their sister Emily in Denver soon, indicating where Emily lives."
+    }
+  ]
+}

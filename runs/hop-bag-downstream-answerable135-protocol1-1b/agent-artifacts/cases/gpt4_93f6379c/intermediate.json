@@ -1,0 +1,63 @@
+{
+  "raw": {
+    "queryShape": "order",
+    "setBoundary": "Determine which LinkedIn/book club group the user joined first by comparing join times for 'Page Turners' vs 'Marketing Professionals' in the available sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "If there are additional sessions where the user joined either group at a different time than stated here, the relative order could change; only these two candidate sessions were provided.",
+    "items": [
+      {
+        "sessionId": "answer_544fe66c_2",
+        "turnIndex": 0,
+        "why": "Contains the user’s join timing for 'Page Turners' (“last week”), which is needed to compare with the other group’s join timing."
+      },
+      {
+        "sessionId": "answer_544fe66c_3",
+        "turnIndex": 0,
+        "why": "Contains the user’s join timing for 'Marketing Professionals' (“since I joined it yesterday / joined … yesterday”), needed for the comparison to 'Page Turners'."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "order",
+    "setBoundary": "Determine which LinkedIn/book club group the user joined first by comparing join times for 'Page Turners' vs 'Marketing Professionals' in the available sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "If there are additional sessions where the user joined either group at a different time than stated here, the relative order could change; only these two candidate sessions were provided.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_544fe66c_2",
+        "turnIndex": 0,
+        "why": "Contains the user’s join timing for 'Page Turners' (“last week”), which is needed to compare with the other group’s join timing."
+      },
+      {
+        "sessionId": "answer_544fe66c_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_544fe66c_3",
+        "turnIndex": 0,
+        "why": "Contains the user’s join timing for 'Marketing Professionals' (“since I joined it yesterday / joined … yesterday”), needed for the comparison to 'Page Turners'."
+      },
+      {
+        "sessionId": "answer_544fe66c_3",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_544fe66c_3",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_544fe66c_3",
+        "turnIndex": 7,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_544fe66c_3",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

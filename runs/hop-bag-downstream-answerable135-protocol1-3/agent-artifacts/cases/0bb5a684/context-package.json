@@ -1,0 +1,46 @@
+{
+  "queryShape": "order",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "answer_e936197f_1",
+      "turnIndex": 0,
+      "date": "2023/01/13 (Fri) 01:02",
+      "role": "user",
+      "text": "I'm preparing for an upcoming meeting with my team and I want to make sure I'm effectively communicating our project updates. I recently attended a workshop on \"Effective Communication in the Workplace\" on January 10th, which was really helpful in improving my active listening and conflict resolution skills. Can you provide some tips on structuring my presentation to keep my team engaged?",
+      "why": "per-session extractor: Establishes context that there is a team meeting the user is preparing for, relevant to “days before the team meeting.”",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e936197f_2",
+      "turnIndex": 0,
+      "date": "2023/01/13 (Fri) 13:59",
+      "role": "user",
+      "text": "I'm preparing for an upcoming team meeting and want to make sure I'm well-prepared to communicate effectively. I remember making a note to myself to practice those skills in my upcoming team meeting on January 17th, and I'm looking for some tips on active listening and conflict resolution. Can you provide some resources or advice on those topics?",
+      "why": "per-session extractor: This provides the team meeting date that any workshop attendance timing would need to be compared against, even though this session doesn’t mention the workshop attendance itself.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e936197f_1",
+      "turnIndex": 1,
+      "date": "2023/01/13 (Fri) 01:02",
+      "role": "assistant",
+      "text": "Congratulations on taking the initiative to improve your communication skills! Attending the workshop on \"Effective Communication in the Workplace\" was a great step. Now, let's focus on structuring your presentation to keep your team engaged. Here are some tips to help you do just that:\n\n1. **Clearly define the purpose and objective**: Begin by stating the purpose of the meeting and what you hope to achieve. This will help your team understand the context and stay focused.\n2. **Use the Simple, Clear, Concise (SCC) framework**: When presenting updates, use simple language, avoid jargon, and keep your sentences concise. This will ensure that your message is easy to understand and retain.\n3. **Organize your content logically**: Structure your presentation in a logical order, using a clear introduction, body, and conclusion. This will help your team follow your train of thought and stay engaged.\n4. **Use visual aids effectively**: Visual aids like slides, diagrams, or charts can help illustrate complex information and keep your team's attention. Keep them simple, clear, and concise, and use them to support your message, not overwhelm it.\n5. **Focus on key takeaways**: Identify the most important information you want to convey and highlight it. Use headings, bullet points, or summaries to make it easy for your team to grasp the key takeaways.\n6. **Use storytelling techniques**: People remember stories better than facts and figures. Try to weave a narrative around your project updates, highlighting challenges, successes, and lessons learned.\n7. **Encourage interaction**: Break up your presentation with questions, discussions, or interactive elements to keep your team engaged and invested in the conversation.\n8. **Provide context and background information**: Give your team enough context about the project updates, including any relevant history, goals, or timelines. This will help them understand the bigger picture and appreciate the progress made.\n9. **Use positive language and tone**: Frame your updates in a positive and solution-focused way, highlighting achievements and opportunities rather than dwelling on challenges or setbacks.\n10. **Practice your delivery**: Rehearse your presentation to ensure you stay within the allotted time, use confident body language, and deliver your message clearly and concisely.\n\nBy following these tips, you'll be well-prepared to effectively communicate your project updates to your team and keep them engaged throughout the meeting. Good luck!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e936197f_2",
+      "turnIndex": 1,
+      "date": "2023/01/13 (Fri) 13:59",
+      "role": "assistant",
+      "text": "Excellent proactive approach! I'd be happy to help you with tips and resources on active listening and conflict resolution.\n\n**Active Listening:**\n\nActive listening is a crucial communication skill that involves fully concentrating on what the other person is saying, understanding their perspective, and responding appropriately. Here are some tips to improve your active listening skills:\n\n1. **Give the speaker your undivided attention**: Make eye contact, put away distractions like phones or laptops, and face the speaker.\n2. **Use verbal and non-verbal cues**: Nod your head, use phrases like \"I understand\" or \"That's interesting,\" and ask open-ended questions to encourage the speaker.\n3. **Paraphrase and summarize**: Repeat back what you've heard in your own words to ensure understanding and show that you're actively listening.\n4. **Avoid interrupting**: Let the speaker finish their thoughts before responding.\n5. **Practice empathy**: Try to understand the speaker's emotions and perspectives, even if you don't agree with them.\n\nSome great resources on active listening include:\n\n* **The 7 Habits of Highly Effective People** by Stephen Covey (Chapter 5: Seek First to Understand, Then to be Understood)\n* **Active Listening: The Art of Empathetic Conversation** by MindTools\n* **The Power of Active Listening** by Harvard Business Review\n\n**Conflict Resolution:**\n\nConflict resolution involves finding a mutually beneficial solution to a disagreement or issue. Here are some tips to help you navigate conflicts effectively:\n\n1. **Stay calm and composed**: Manage your emotions to think more clearly and respond more effectively.\n2. **Focus on the issue, not the person**: Avoid personal attacks or criticisms, and instead, focus on the problem at hand.\n3. **Use \"I\" statements**: Express your thoughts and feelings using \"I\" statements, which help to avoid blame and defensiveness.\n4. **Seek common ground**: Look for areas of agreement and try to find a mutually beneficial solution.\n5. **Be open to compromise**: Be willing to listen to the other person's perspective and find a middle ground.\n\nSome great resources on conflict resolution include:\n\n* **Crucial Conversations: Tools for Talking When Stakes Are High** by Kerry Patterson, Joseph Grenny, Ron McMillan, and Al Switzler\n* **Conflict Resolution: A Guide to Resolving Disputes and Improving Communication** by MindTools\n* **How to Resolve Conflicts at Work** by Coursera (online course)\n\n**Additional Tips for Your Team Meeting:**\n\n1. **Prepare an agenda**: Ensure you have a clear agenda for the meeting to stay focused and on track.\n2. **Encourage open communication**: Create a safe and respectful environment where team members feel comfortable sharing their thoughts and opinions.\n3. **Take notes**: Record key points, action items, and decisions made during the meeting.\n4. **Follow up**: After the meeting, send a summary of the discussion and action items to the team to ensure everyone is on the same page.\n\nI hope these tips and resources help you prepare for your team meeting on January 17th!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 6336,
+  "estimatedTokens": 1584
+}

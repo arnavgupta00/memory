@@ -1,0 +1,128 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Based on today = 2023/07/21 23:33, count graduation ceremonies the user reports attending during the past three months (approx. from 2023/04/21 to 2023/07/21).",
+    "candidateStatus": "found",
+    "missingRisk": "The candidate sessions only include three “attended” graduation events (Emma preschool, Alex leadership program, Rachel master’s) plus one “missed” ceremony (nephew Jack). If there were additional graduation ceremonies in the same time window not present in these sessions, the count could be incomplete.",
+    "items": [
+      {
+        "sessionId": "answer_da3c1266_1",
+        "turnIndex": 0,
+        "why": "User reports attending little cousin Emma's preschool graduation ceremony about two months ago (an “attended” graduation likely within the last three months)."
+      },
+      {
+        "sessionId": "answer_da3c1266_1",
+        "turnIndex": 10,
+        "why": "Reiterates the Emma preschool graduation timing (“feels like just yesterday”), preserving the same event for downstream counting within the 3-month window."
+      },
+      {
+        "sessionId": "answer_da3c1266_5",
+        "turnIndex": 0,
+        "why": "User reports attending colleague Alex's graduation from a leadership development program at work a few weeks ago (an “attended” graduation within the last three months)."
+      },
+      {
+        "sessionId": "answer_da3c1266_2",
+        "turnIndex": 0,
+        "why": "User reports attending best friend Rachel's master's degree graduation ceremony a couple of weeks ago (an “attended” graduation within the last three months)."
+      },
+      {
+        "sessionId": "answer_da3c1266_4",
+        "turnIndex": 0,
+        "why": "User mentions missing nephew Jack's eighth grade graduation ceremony last month; included to avoid miscounting missed events as attended ones."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Based on today = 2023/07/21 23:33, count graduation ceremonies the user reports attending during the past three months (approx. from 2023/04/21 to 2023/07/21).",
+    "candidateStatus": "found",
+    "missingRisk": "The candidate sessions only include three “attended” graduation events (Emma preschool, Alex leadership program, Rachel master’s) plus one “missed” ceremony (nephew Jack). If there were additional graduation ceremonies in the same time window not present in these sessions, the count could be incomplete.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_da3c1266_1",
+        "turnIndex": 0,
+        "why": "User reports attending little cousin Emma's preschool graduation ceremony about two months ago (an “attended” graduation likely within the last three months)."
+      },
+      {
+        "sessionId": "answer_da3c1266_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_da3c1266_1",
+        "turnIndex": 10,
+        "why": "Reiterates the Emma preschool graduation timing (“feels like just yesterday”), preserving the same event for downstream counting within the 3-month window."
+      },
+      {
+        "sessionId": "answer_da3c1266_1",
+        "turnIndex": 11,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_da3c1266_1",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_da3c1266_5",
+        "turnIndex": 0,
+        "why": "User reports attending colleague Alex's graduation from a leadership development program at work a few weeks ago (an “attended” graduation within the last three months)."
+      },
+      {
+        "sessionId": "answer_da3c1266_5",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_da3c1266_2",
+        "turnIndex": 0,
+        "why": "User reports attending best friend Rachel's master's degree graduation ceremony a couple of weeks ago (an “attended” graduation within the last three months)."
+      },
+      {
+        "sessionId": "answer_da3c1266_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_da3c1266_4",
+        "turnIndex": 0,
+        "why": "User mentions missing nephew Jack's eighth grade graduation ceremony last month; included to avoid miscounting missed events as attended ones."
+      },
+      {
+        "sessionId": "answer_da3c1266_4",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_da3c1266_4",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_da3c1266_5",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_da3c1266_5",
+        "turnIndex": 11,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_da3c1266_2",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_da3c1266_2",
+        "turnIndex": 5,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_da3c1266_2",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

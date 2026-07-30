@@ -1,0 +1,48 @@
+{
+  "raw": {
+    "queryShape": "order",
+    "setBoundary": "Use the timestamp of when you met up with your aunt / received the crystal chandelier, then compare it to the provided current date (2023/04/01).",
+    "candidateStatus": "found",
+    "missingRisk": "Only one candidate session explicitly states the chandelier was received “today” on 2023/03/04; there is no separate explicit “meet up with my aunt” turn beyond that chandelier-received statement.",
+    "items": [
+      {
+        "sessionId": "answer_0b4a8adc_1",
+        "turnIndex": 0,
+        "why": "Contains the key fact that you received the crystal chandelier from your aunt ‘today’, which (by the session date) corresponds to 2023/03/04—needed to compute how many weeks before 2023/04/01 that was."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "order",
+    "setBoundary": "Use the timestamp of when you met up with your aunt / received the crystal chandelier, then compare it to the provided current date (2023/04/01).",
+    "candidateStatus": "found",
+    "missingRisk": "Only one candidate session explicitly states the chandelier was received “today” on 2023/03/04; there is no separate explicit “meet up with my aunt” turn beyond that chandelier-received statement.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_0b4a8adc_1",
+        "turnIndex": 0,
+        "why": "Contains the key fact that you received the crystal chandelier from your aunt ‘today’, which (by the session date) corresponds to 2023/03/04—needed to compute how many weeks before 2023/04/01 that was."
+      },
+      {
+        "sessionId": "answer_0b4a8adc_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "398f23e7",
+        "turnIndex": 8,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "398f23e7",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "398f23e7",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

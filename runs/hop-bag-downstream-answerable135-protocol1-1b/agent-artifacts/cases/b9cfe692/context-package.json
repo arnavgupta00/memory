@@ -1,0 +1,217 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Use the user’s stated completion durations for each title, then add them together.",
+  "candidateStatus": "found",
+  "missingRisk": "If there were later corrections or different completion-duration claims for either book in other sessions not shown, the sum could be inaccurate.; frozen bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "answer_5e3bb940_2",
+      "turnIndex": 0,
+      "date": "2023/05/24 (Wed) 08:41",
+      "role": "user",
+      "text": "I'm looking for some new audiobook recommendations. I've been enjoying listening to them during my daily commute and I just finished \"The Seven Husbands of Evelyn Hugo\", which took me two and a half weeks to finish. Do you have any suggestions for something similar?",
+      "why": "States the user finished 'The Seven Husbands of Evelyn Hugo' and that it took 'two and a half weeks'.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_5e3bb940_2",
+      "turnIndex": 1,
+      "date": "2023/05/24 (Wed) 08:41",
+      "role": "assistant",
+      "text": "I'm so glad you enjoyed \"The Seven Husbands of Evelyn Hugo\"! That's a fantastic book. I'd be happy to recommend some audiobooks that might scratch that same itch. Since you finished Evelyn Hugo in two and a half weeks, I'll suggest books with similar lengths and styles. Here are a few recommendations:\n\n1. **The Nightingale** by Kristin Hannah (17 hours, 44 minutes): Historical fiction, epic romance, and strong female characters make this novel a great fit for Evelyn Hugo fans.\n2. **The Royal We** by Heather Cocks and Jessica Morgan (16 hours, 45 minutes): A contemporary romance with a similar blend of drama, glamour, and emotional depth.\n3. **The Devil in the White City** by Erik Larson (14 hours, 51 minutes): If you enjoy historical fiction with a strong narrative voice, this book about the 1893 World's Fair and H.H. Holmes might fascinate you.\n4. **The Last Romantics** by Tara Conklin (15 hours, 33 minutes): A family saga with a similar atmospheric and introspective tone, exploring themes of love, family, and identity.\n5. **The Address** by Fiona Davis (14 hours, 53 minutes): A historical fiction novel set in the Dakota apartment building in New York City, with a similar blend of secrets, romance, and drama.\n6. **The Immortalists** by Chloe Benjamin (15 hours, 26 minutes): A character-driven novel exploring the lives of four siblings, love, and the consequences of knowing one's fate.\n7. **The Silent Patient** by Alex Michaelides (13 hours, 48 minutes): A psychological thriller with a similar atmosphere and a strong narrative voice, perfect for those who enjoy a good mystery.\n8. **The Age of Light** by Whitney Scharer (15 hours, 42 minutes): A historical fiction novel based on the life of Lee Miller, a model and photographer, with a similar blend of art, love, and self-discovery.\n9. **The Last Equation of Isaac Severy** by Nova Jacobs (14 hours, 34 minutes): A literary mystery with a similar blend of family secrets, love, and intellectual pursuits.\n10. **The Witch Elm** by Tana French (16 hours, 44 minutes): A suspenseful novel with a similar atmospheric tone, exploring themes of family, trauma, and mystery.\n\nThese audiobooks offer a mix of historical fiction, romance, drama, and mystery, which might appeal to fans of \"The Seven Husbands of Evelyn Hugo\". I hope you find your next great listen!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_5e3bb940_3",
+      "turnIndex": 0,
+      "date": "2023/05/24 (Wed) 11:25",
+      "role": "user",
+      "text": "I'm looking for some book recommendations. I recently finished \"The Nightingale\" by Kristin Hannah, which took me three weeks to finish - it was a really emotional and heavy read, but I loved it. Can you suggest some historical fiction books that have a similar tone and style?",
+      "why": "States the user finished 'The Nightingale' and that it took 'three weeks'.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_5e3bb940_3",
+      "turnIndex": 1,
+      "date": "2023/05/24 (Wed) 11:25",
+      "role": "assistant",
+      "text": "\"The Nightingale\" is an incredible book! I'm happy to recommend some historical fiction books that share a similar tone and style. Since you enjoyed Kristin Hannah's writing, here are some suggestions that might resonate with you:\n\n1. **All the Light We Cannot See** by Anthony Doerr: Set during World War II, this Pulitzer Prize-winning novel tells the story of a blind French girl and a German boy whose paths intersect in the midst of the war. Like \"The Nightingale,\" it's a beautifully written, emotional, and powerful tale.\n2. **The Alice Network** by Kate Quinn: This novel explores the lives of two women, a socialite and a spy, during World War I and the aftermath. It's a story of friendship, love, and survival, with a similar blend of historical fiction and strong female characters.\n3. **The Lost Girls of Paris** by Pam Jenoff: This book follows a young widow who discovers a suitcase of photographs of women who worked for a resistance network during World War II. It's a gripping and emotional tale of courage, sacrifice, and female friendship.\n4. **The Women in the Castle** by Jessica Shattuck: Set in Germany during and after World War II, this novel tells the story of three women and their struggles to survive and rebuild their lives. It's a powerful exploration of the human cost of war and the power of female relationships.\n5. **The Guernsey Literary and Potato Peel Pie Society** by Mary Ann Shaffer: This epistolary novel is set on the island of Guernsey after World War II and explores the islanders' experiences during the occupation. It's a heartwarming and moving tale of hope, resilience, and the power of literature.\n6. **The Song of Achilles** by Madeline Miller: While not strictly historical fiction, this novel is set in ancient Greece and retells the Trojan War from the perspective of Achilles' lover, Patroclus. It's a beautifully written, emotional, and poignant exploration of love, war, and humanity.\n7. **The Soldier's Wife** by Pam Jenoff: Another WWII novel, this book follows a young German woman whose husband is away fighting, and she must navigate the dangers of living in a war-torn country. It's a gripping and emotional tale of survival, sacrifice, and loyalty.\n8. **Those Who Save Us** by Jenna Blum: This novel explores the complex relationship between a mother and daughter in pre-war and post-war Germany. It's a powerful exploration of the human cost of war, love, and sacrifice.\n\nThese books share similar themes, tone, and styles with \"The Nightingale,\" and I hope you'll find something that resonates with you.",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_5e3bb940_3",
+      "turnIndex": 4,
+      "date": "2023/05/24 (Wed) 11:25",
+      "role": "user",
+      "text": "That helps! So, it's a bit of a slow burn, but the payoff is worth it. I'm interested in trying it out. By the way, I've been listening to audiobooks during my daily commute, and I've been able to finish a book every few weeks. Like \"The Nightingale\", which took me about three weeks to finish. Do you think I could finish \"All the Light We Cannot See\" in a similar timeframe if I listen to it during my daily commute?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_5e3bb940_3",
+      "turnIndex": 5,
+      "date": "2023/05/24 (Wed) 11:25",
+      "role": "assistant",
+      "text": "That's great that you've found a way to make the most of your daily commute!\n\nThe audiobook version of \"All the Light We Cannot See\" is approximately 16 hours and 2 minutes long. Assuming you listen to it during your daily commute, let's estimate the number of days it would take to finish the book.\n\nIf you listen to the audiobook for about 30-45 minutes per day (a rough estimate for a daily commute), you can expect to finish the book in around 35-45 days. This is roughly 5-6 weeks, which is a bit longer than the three weeks it took you to finish \"The Nightingale\".\n\nHowever, there are a few factors to consider:\n\n1. **Your listening speed**: If you prefer a faster listening speed, you can adjust the audiobook's playback speed to 1.25x or 1.5x, which would reduce the overall listening time.\n2. **Your commute duration**: If your commute is longer or shorter, this will impact the number of days it takes to finish the book.\n3. **Your listening frequency**: If you listen to the audiobook during your daily commute, but also listen to it during other times of the day (e.g., while exercising or doing chores), you'll finish the book faster.\n\nTo give you a better estimate, here's a rough breakdown of the listening time per day:\n\n* 30 minutes/day: 45-50 days to finish\n* 45 minutes/day: 35-40 days to finish\n* 1 hour/day: 25-30 days to finish\n\nKeep in mind that these are rough estimates, and your actual listening time may vary. Nevertheless, with a consistent daily commute and listening schedule, you should be able to finish \"All the Light We Cannot See\" within 5-7 weeks.\n\nEnjoy your audiobook journey!",
+      "why": "deterministic candidate-session coverage repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_5e3bb940_3",
+      "turnIndex": 6,
+      "date": "2023/05/24 (Wed) 11:25",
+      "role": "user",
+      "text": "That's helpful. I think I can manage to finish it in 5-7 weeks. I might even try to listen to it a bit faster, like 1.25x speed, to finish it a bit sooner. Do you think the narrator's voice and style will be easy to follow at a faster speed?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_5e3bb940_1",
+      "turnIndex": 1,
+      "date": "2023/05/24 (Wed) 22:29",
+      "role": "assistant",
+      "text": "That's fantastic! Congratulations on getting into audiobooks and finishing three in six weeks! I'd be happy to help you with some new recommendations. Can you please tell me a bit more about what you've enjoyed so far? For example:\n\n1. What genres have you been listening to (e.g., fiction, non-fiction, mystery, sci-fi, fantasy, romance, etc.)?\n2. Are there any specific authors or narrators you've enjoyed?\n3. Do you prefer books with complex, thought-provoking themes or light, easy listens?\n4. Are you interested in standalone books or series?\n5. Is there a particular tone you're in the mood for (e.g., humorous, suspenseful, emotional, adventurous)?\n\nFeel free to share as much or as little as you'd like, and I'll do my best to suggest some great audiobook recommendations tailored to your tastes!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_5e3bb940_1",
+      "turnIndex": 2,
+      "date": "2023/05/24 (Wed) 22:29",
+      "role": "user",
+      "text": "I've been listening to fiction, mostly contemporary and historical fiction. I really enjoyed the emotional depth of \"The Nightingale\" and the engaging storytelling of \"The Seven Husbands of Evelyn Hugo\". I'm open to trying out different genres, but I think I'd prefer books with complex themes.",
+      "why": "deterministic candidate-session coverage repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_5e3bb940_1",
+      "turnIndex": 3,
+      "date": "2023/05/24 (Wed) 22:29",
+      "role": "assistant",
+      "text": "Great choices! It sounds like you enjoy books that explore the human condition, relationships, and complex themes. Here are some audiobook recommendations that might resonate with you:\n\n1. **The Power** by Naomi Alderman (Science Fiction/Feminist): A thought-provoking novel that explores a world where women suddenly develop the ability to release electrical jolts from their fingertips, allowing them to dominate and control society. Narrated by Adjoa Andoh.\n2. **The Song of Achilles** by Madeline Miller (Historical Fiction/Mythology): A beautifully written novel that reimagines the Trojan War from the perspective of Achilles' lover, Patroclus. It's a stunning exploration of love, war, and mortality. Narrated by Frazer Douglas.\n3. **The Immortal Life of Henrietta Lacks** by Rebecca Skloot (Non-Fiction/Science): A fascinating true story about the life of Henrietta Lacks, a poor black tobacco farmer whose cancer cells were taken without her knowledge and led to numerous scientific breakthroughs. Narrated by Cassandra Campbell and Bahni Turpin.\n4. **The Brief Wondrous Life of Oscar Wao** by Junot Díaz (Literary Fiction/Magical Realism): A sweeping novel about love, family, identity, and the immigrant experience. It's a complex, emotional, and captivating story. Narrated by Jonathan Davis and Staci Snell.\n5. **The Age of Miracles** by Karen Thompson Walker (Literary Fiction/Dystopian): A haunting novel that explores a world where the rotation of the Earth suddenly slows, and the consequences this has on human relationships and society. Narrated by Julia Whelan.\n6. **The Poppy War** by R.F. Kuang (Fantasy/Historical Fiction): A fantasy epic set in a world inspired by Chinese history and mythology. It's a story about war, power, and the cost of ambition. Narrated by Emily Woo Zeller.\n7. **The Heart's Invisible Furies** by John Boyne (Literary Fiction/Historical Fiction): A sprawling novel that follows the life of Cyril Avery, born out of wedlock in 1940s Ireland, and his journey to find identity, love, and acceptance. Narrated by Stephen Hogan.\n8. **The Leavers** by Lisa Ko (Literary Fiction/Contemporary): A powerful novel about a Chinese-American boy whose mother disappears, and his struggles to find his place in the world. Narrated by Emily Woo Zeller.\n\nThese books all have complex themes, engaging storytelling, and great narrators. I hope you find something that piques your interest!\n\nDo any of these appeal to you, or would you like more recommendations?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_5e3bb940_2",
+      "turnIndex": 2,
+      "date": "2023/05/24 (Wed) 08:41",
+      "role": "user",
+      "text": "I'm intrigued by The Royal We and The Address, but I'm not sure if they're available on my local library's audiobook platform. Can you check if they're popular enough to be widely available?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_2",
+      "turnIndex": 4,
+      "date": "2023/05/24 (Wed) 08:41",
+      "role": "user",
+      "text": "I'll check my library's catalog to see if they have those audiobooks. By the way, do you have any recommendations for fantasy audiobooks? I've recently started listening to \"The Poppy War\" by R.F. Kuang and I'm really enjoying it.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_2",
+      "turnIndex": 6,
+      "date": "2023/05/24 (Wed) 08:41",
+      "role": "user",
+      "text": "I'll definitely check out some of these fantasy audiobooks. I've been enjoying \"The Poppy War\" and I'm about halfway through it. I've been listening to it during my morning walks with my dog, which has been a great way to get some exercise and make progress on my book.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_2",
+      "turnIndex": 8,
+      "date": "2023/05/24 (Wed) 08:41",
+      "role": "user",
+      "text": "My dog's name is Max, and he loves sniffing around and exploring new smells during our walks. He's not too fussed about the audiobooks, but he's happy to have me by his side! As for me, I think listening to audiobooks during walks helps me stay motivated to exercise because it makes the time pass more enjoyably. Plus, it's a great way to reward myself after a long day of work.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_2",
+      "turnIndex": 10,
+      "date": "2023/05/24 (Wed) 08:41",
+      "role": "user",
+      "text": "I'm able to focus on the story and characters pretty well while walking, but I do get distracted occasionally by interesting sights or sounds around me. Like, if we're walking in a new neighborhood, I might get caught up in looking at the architecture or gardens. And of course, if Max sees a squirrel or another dog, he can get pretty excited! But overall, I find that the audiobook helps me stay engaged and motivated during our walks.\n\nAs for exploring other types of content, I've actually been thinking about trying out some podcasts. I've heard great things about true crime podcasts, and I'm intrigued by the idea of listening to a story unfold over multiple episodes. Do you have any recommendations for true crime podcasts that are well-narrated and engaging?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_3",
+      "turnIndex": 2,
+      "date": "2023/05/24 (Wed) 11:25",
+      "role": "user",
+      "text": "I've heard great things about \"All the Light We Cannot See\". What's the pace of the book? Is it a slow burn or a quick read?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_3",
+      "turnIndex": 8,
+      "date": "2023/05/24 (Wed) 11:25",
+      "role": "user",
+      "text": "I'll definitely keep that in mind. So, I'll start with the standard 1x speed and see how it goes. Thanks for the advice! By the way, do you have any recommendations for other historical fiction books that are similar to \"The Nightingale\" and \"All the Light We Cannot See\"?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_3",
+      "turnIndex": 10,
+      "date": "2023/05/24 (Wed) 11:25",
+      "role": "user",
+      "text": "I'd like to ask about \"The Historian\". You mentioned it's a sweeping narrative with a strong focus on historical detail and atmospheric writing. How does it compare to \"All the Light We Cannot See\" in terms of its pace and tone?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_1",
+      "turnIndex": 0,
+      "date": "2023/05/24 (Wed) 22:29",
+      "role": "user",
+      "text": "I'm looking for some new audiobook recommendations. I've been getting into audiobooks lately and have managed to finish three in the last six weeks, which is great for me.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_1",
+      "turnIndex": 4,
+      "date": "2023/05/24 (Wed) 22:29",
+      "role": "user",
+      "text": "I like the sound of \"The Song of Achilles\" and \"The Brief Wondrous Life of Oscar Wao\". Can you tell me a bit more about the narrators, Frazer Douglas and Jonathan Davis?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_1",
+      "turnIndex": 6,
+      "date": "2023/05/24 (Wed) 22:29",
+      "role": "user",
+      "text": "I'm glad to hear that both narrators are well-suited for their respective books. I think I'll try out samples of both to see which one I like better. Can you also tell me how long the audiobooks are? I'd like to get an idea of the time commitment involved.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_1",
+      "turnIndex": 8,
+      "date": "2023/05/24 (Wed) 22:29",
+      "role": "user",
+      "text": "I'm looking forward to trying out the samples. By the way, I've been using my daily commute to listen to audiobooks, and it's been really effective. I've managed to finish three audiobooks in the last six weeks, which is a great pace for me.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_1",
+      "turnIndex": 10,
+      "date": "2023/05/24 (Wed) 22:29",
+      "role": "user",
+      "text": "I think it's a combination of factors. One thing is that audiobooks make it easy to multitask, so I can listen while I'm on the train or walking to work, which makes the time pass more quickly. I also find that the narrators can really bring the story to life, which helps me stay engaged. Plus, it's just convenient to have a book with me at all times, without having to physically carry it around.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 15008,
+  "estimatedTokens": 3752
+}

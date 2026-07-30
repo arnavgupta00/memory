@@ -1,0 +1,136 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Compute total episodes listened to across the two podcasts mentioned, using the episode/episode-count facts present in the candidate sessions.",
+  "candidateStatus": "found",
+  "missingRisk": "The candidate sessions only include a snapshot for 'My Favorite Murder' (episode 12 finished) and 'How I Built This' (finished around 15 episodes). They may not reflect later listening between 2023/05/29 and 2023/05/30, and 'around 15' is approximate.; frozen bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "answer_e9bb9500_2",
+      "turnIndex": 0,
+      "date": "2023/05/26 (Fri) 13:02",
+      "role": "user",
+      "text": "I'm looking for some new podcast recommendations. I'm really into true crime and inspiring stories, so if you have any suggestions, let me know. By the way, I just finished episode 12 of the \"My Favorite Murder\" podcast, and I try to listen to at least one episode a week.",
+      "why": "Directly states you just finished episode 12 of 'My Favorite Murder' (episode count endpoint for one podcast).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e9bb9500_2",
+      "turnIndex": 1,
+      "date": "2023/05/26 (Fri) 13:02",
+      "role": "assistant",
+      "text": "A true crime enthusiast! I've got some fantastic podcast recommendations for you!\n\nSince you're enjoying \"My Favorite Murder,\" here are some similar true crime podcasts you might like:\n\n1. **Last Podcast on the Left**: A comedy-true crime podcast that covers a wide range of cases, often with a humorous spin.\n2. **Crime Junkie**: Hosts Ashley Flowers and Britt Pennella dive deep into famous and lesser-known cases, with a focus on the facts and their own theories.\n3. **Small Town Dicks**: Two detectives, Yeardley Smith and Zibby Allen, discuss crimes that occurred in small towns, often with a more personal and intimate approach.\n4. **Criminal**: A podcast that explores the human side of true crime, with a focus on the people involved and the circumstances surrounding the cases.\n5. **The Vanished**: Marissa Jones and Tim Pilleri investigate missing persons cases, often with a more emotional and empathetic approach.\n\nFor inspiring stories, you might enjoy:\n\n1. **How I Built This**: Host Guy Raz interviews entrepreneurs and innovators, delving into the stories behind some of the world's most successful companies.\n2. **The Tim Ferriss Show**: Tim Ferriss talks to successful people from various fields, digging deep into their habits, routines, and strategies for success.\n3. **TED Radio Hour**: Based on the popular TED Talks, this podcast explores a wide range of topics, from science and technology to art and design.\n4. **The School of Greatness with Lewis Howes**: Lewis Howes interviews successful people and shares his own insights on how to achieve greatness in various areas of life.\n5. **Happier with Gretchen Rubin**: Gretchen Rubin and her sister Elizabeth Craft discuss practical tips and strategies for living a happier, more fulfilling life.\n\nFeel free to try out these podcasts and see which ones resonate with you!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e9bb9500_2",
+      "turnIndex": 2,
+      "date": "2023/05/26 (Fri) 13:02",
+      "role": "user",
+      "text": "I've heard of \"Criminal\" before, but I haven't checked it out yet. What's the tone of the podcast? Is it more serious and in-depth or does it have a lighter tone like \"My Favorite Murder\"?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e9bb9500_1",
+      "turnIndex": 1,
+      "date": "2023/05/29 (Mon) 13:09",
+      "role": "assistant",
+      "text": "\"How I Built This\" is an excellent podcast! If you enjoy the entrepreneurial spirit and startup stories, here are some podcast recommendations that you might enjoy:\n\n1. **The Tim Ferriss Show**: Tim Ferriss interviews successful entrepreneurs, investors, and thought leaders, digging deep into their habits, routines, and strategies for success.\n2. **The GaryVee Audio Experience**: Gary Vaynerchuk shares his insights on marketing, business, and personal development, often featuring interviews with entrepreneurs and industry experts.\n3. **Masters of Scale**: Host Reid Hoffman (co-founder of LinkedIn) explores how companies scale and grow, featuring interviews with successful entrepreneurs and CEOs.\n4. **The Hustle**: A daily podcast that covers entrepreneurship, business, and technology, often featuring interviews with founders and industry experts.\n5. **Startup**: A podcast about, well, startups! It's a behind-the-scenes look at the ups and downs of building a company, with a new startup featured each season.\n6. **Entrepreneur's Journey**: Yaro Starak interviews entrepreneurs who have built successful online businesses, sharing their stories, strategies, and lessons learned.\n7. **The $100 MBA Show**: A daily podcast that offers practical business tips and insights, often featuring interviews with entrepreneurs and small business owners.\n8. **Mixergy**: Andrew Warner interviews successful entrepreneurs and founders, digging deep into their stories and strategies for success.\n9. **The Foundr Podcast**: A podcast focused on entrepreneurship and startup success, featuring interviews with founders and industry experts.\n10. **HBR IdeaCast**: A podcast from Harvard Business Review, featuring interviews with thought leaders and experts on business, innovation, and entrepreneurship.\n11. **The Pitch**: A podcast where entrepreneurs pitch their ideas to investors, with a focus on startup funding and growth.\n12. **Side Hustle School**: A daily podcast that explores entrepreneurship and side hustles, with a focus on practical tips and inspiration.\n\nThese podcasts should provide you with a steady stream of entrepreneurial inspiration and insights. Enjoy exploring these recommendations!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e9bb9500_1",
+      "turnIndex": 2,
+      "date": "2023/05/29 (Mon) 13:09",
+      "role": "user",
+      "text": "I'll definitely check some of these out. I've been listening to podcasts during my daily commute, which is about 45 minutes each way, so I'm always looking for new shows to add to my rotation. Are there any podcasts on this list that are more focused on the stories behind the companies, similar to \"How I Built This\"? I've finished around 15 episodes so far and I really enjoy hearing about the founders' journeys and the challenges they faced when building their businesses.",
+      "why": "States you have finished around 15 episodes of 'How I Built This' (episode count endpoint for the other podcast).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e9bb9500_1",
+      "turnIndex": 3,
+      "date": "2023/05/29 (Mon) 13:09",
+      "role": "assistant",
+      "text": "I'm glad you mentioned that! Yes, some podcasts on the list are more focused on the stories behind the companies, similar to \"How I Built This\". Here are a few recommendations that might scratch that itch:\n\n1. **Masters of Scale**: While not all episodes focus on the founding stories, Reid Hoffman often digs deep into the early days of companies like Airbnb, LinkedIn, and Facebook, and explores the challenges they overcame.\n2. **Startup**: This podcast is all about telling the stories of startups, often focusing on the founders' journeys and the challenges they faced. Each season, they follow a new startup, so you get a deep dive into the company's history.\n3. **The Foundr Podcast**: While they also cover marketing and entrepreneurship topics, many episodes feature in-depth interviews with founders, where they share their stories, struggles, and lessons learned.\n4. **Mixergy**: Andrew Warner is known for his in-depth interviews, and he often focuses on the early days of companies, asking tough questions about the challenges founders faced and how they overcame them.\n5. **The Hustle**: While not all episodes are focused on startup stories, they often feature interviews with founders and entrepreneurs, sharing their journeys and insights.\n\nThese podcasts should provide you with a good dose of startup stories and founder journeys. If you're looking for even more, you might enjoy:\n\n* **The Startup Story**: A podcast that explores the stories behind startups, featuring interviews with founders and entrepreneurs.\n* **Founder's Journey**: A podcast that shares the stories of founders and entrepreneurs, focusing on their journeys, challenges, and lessons learned.\n* **Built to Sell**: A podcast that explores the stories of entrepreneurs who have built and sold their businesses, sharing their experiences and insights.\n\nThese podcasts should keep you entertained and inspired during your daily commute!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e9bb9500_2",
+      "turnIndex": 4,
+      "date": "2023/05/26 (Fri) 13:02",
+      "role": "user",
+      "text": "That sounds interesting, I'll definitely give it a try. I've been enjoying the storytelling style of \"My Favorite Murder\", and it seems like \"Criminal\" might offer a similar kind of storytelling, just with a more serious tone. By the way, do you have any recommendations for news-related podcasts that might interest me? I've been listening to \"The Daily\" and I'm looking for something similar.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9bb9500_2",
+      "turnIndex": 6,
+      "date": "2023/05/26 (Fri) 13:02",
+      "role": "user",
+      "text": "I'll definitely check out some of those news-related podcasts. I've been trying to stay more informed about current events, and it's great to have a variety of perspectives to choose from. By the way, do you have any recommendations for podcast apps or platforms that allow me to customize my listening experience? I've been using Spotify and Apple Podcasts, but I'm open to trying out other options.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9bb9500_2",
+      "turnIndex": 8,
+      "date": "2023/05/26 (Fri) 13:02",
+      "role": "user",
+      "text": "I'm interested in creating custom playlists and having playback speed control. I've been listening to podcasts at 1.5x speed on Apple Podcasts, and it's been really helpful in getting through my daily commute. Do any of the apps you mentioned allow me to create custom playlists with podcasts from different sources, like Spotify and Apple Podcasts?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9bb9500_1",
+      "turnIndex": 0,
+      "date": "2023/05/29 (Mon) 13:09",
+      "role": "user",
+      "text": "I'm looking for some new podcast recommendations. I've been loving the \"How I Built This\" podcast lately and I'm interested in finding more podcasts that have a similar entrepreneurial vibe. Do you have any suggestions?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9bb9500_1",
+      "turnIndex": 4,
+      "date": "2023/05/29 (Mon) 13:09",
+      "role": "user",
+      "text": "I'll definitely check some of these out. I'm particularly interested in hearing about the early days of companies like Airbnb and LinkedIn. Do you know if any of these podcasts have episodes that cover companies in the tech industry specifically?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9bb9500_1",
+      "turnIndex": 6,
+      "date": "2023/05/29 (Mon) 13:09",
+      "role": "user",
+      "text": "I'm glad you mentioned the tech industry. I've been listening to a lot of podcasts during my daily commute, and I'm always interested in hearing about the stories behind successful tech companies. Do you know if any of these podcasts have episodes that cover companies that were founded by non-technical founders? I think it's really inspiring to hear about entrepreneurs who didn't have a technical background but still managed to build successful companies.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9bb9500_1",
+      "turnIndex": 8,
+      "date": "2023/05/29 (Mon) 13:09",
+      "role": "user",
+      "text": "I'm glad you mentioned that. I've been thinking about how I can apply some of the entrepreneurial lessons I've learned from \"How I Built This\" to my own life. I've been trying to cut down on my social media usage and use that extra time to listen to podcasts or read books. It's been really helpful for my mental health, and I feel more productive during my daily commute. Do you have any podcast recommendations that focus on personal development or productivity?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9bb9500_1",
+      "turnIndex": 10,
+      "date": "2023/05/29 (Mon) 13:09",
+      "role": "user",
+      "text": "I'm really interested in learning more about personal development and productivity. I've been trying to make the most of my daily commute by listening to podcasts and reading books. I've found that it's really helped me feel more focused and motivated. Do you have any book recommendations that might be helpful for someone looking to improve their productivity and personal growth?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 9823,
+  "estimatedTokens": 2456
+}

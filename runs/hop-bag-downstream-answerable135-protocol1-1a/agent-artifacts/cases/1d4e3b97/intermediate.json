@@ -1,0 +1,28 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Possible factors affecting your bike’s performance on Sunday group rides (recent bike maintenance/gear setup and ride preparation).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_e6b6353d",
+      "turnIndex": 4,
+      "why": "User reports replacing the old bike’s chain and cassette on Feb 1, which contributed to improved bike performance—relevant to why rides feel better."
+    },
+    {
+      "sessionId": "answer_e6b6353d",
+      "turnIndex": 2,
+      "why": "User plans to track rides with a new Garmin bike computer; setup/calibration could affect how performance/distance/speed are perceived on rides."
+    },
+    {
+      "sessionId": "answer_e6b6353d",
+      "turnIndex": 1,
+      "why": "User is preparing for a long 20-mile ride and asks about hydration; hydration strategy can influence how the bike/rider feels during group rides."
+    },
+    {
+      "sessionId": "answer_e6b6353d",
+      "turnIndex": 5,
+      "why": "User asks for bike safety tips; while not a performance explanation directly, it reflects on ride behaviors that can affect consistency and efficiency during longer rides."
+    }
+  ]
+}

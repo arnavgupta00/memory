@@ -1,0 +1,23 @@
+{
+  "queryShape": "order",
+  "setBoundary": "Chronological order of three user actions across ShopRite, Walmart (Luvs diapers BOGO), and Ibotta (cashback redeemed for Amazon gift card).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_c862f65a_2",
+      "turnIndex": 0,
+      "why": "User reports: “I used a Buy One Get One Free coupon on Luvs diapers at Walmart today.” (Walmart BOGO diaper coupon event)."
+    },
+    {
+      "sessionId": "answer_c862f65a_3",
+      "turnIndex": 0,
+      "why": "User reports: “I just redeemed $12 cashback for a $10 Amazon gift card from Ibotta today.” (Ibotta redemption event)."
+    },
+    {
+      "sessionId": "answer_c862f65a_1",
+      "turnIndex": 0,
+      "why": "User reports: “I signed up for [ShopRite’s] rewards program today…” (ShopRite rewards program signup event)."
+    }
+  ]
+}

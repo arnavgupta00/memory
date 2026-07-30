@@ -1,0 +1,154 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Gift purchase dates: graduation gift for brother vs birthday gift for best friend; compute day difference.",
+  "candidateStatus": "found",
+  "missingRisk": "None",
+  "items": [
+    {
+      "sessionId": "answer_124f5dc3_1",
+      "turnIndex": 0,
+      "date": "2023/03/29 (Wed) 21:27",
+      "role": "user",
+      "text": "I'm looking for some recommendations on gifts for a friend who's into music. I recently got a wireless headphone for my brother as a graduation gift on the 3/8, and it was a big hit.",
+      "why": "User states they bought wireless headphones as a brother’s graduation gift on 3/8.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_124f5dc3_2",
+      "turnIndex": 4,
+      "date": "2023/03/29 (Wed) 21:48",
+      "role": "user",
+      "text": "I've been trying to be more thoughtful and intentional with my gift purchasing habits, and it's been a fun and rewarding experience. Speaking of which, I recently got a silver necklace with a tiny pendant for my best friend's 30th birthday on the 15th of March, and it was a hit. Can you suggest some online stores that sell minimalist chic earrings in a similar price range, around $80?",
+      "why": "User states they bought a silver necklace for their best friend’s 30th birthday on the 15th of March.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "98cd882c_2",
+      "turnIndex": 0,
+      "date": "2023/03/29 (Wed) 14:37",
+      "role": "user",
+      "text": "I'm looking for some gift ideas for my sister's birthday. I just made her a quilt and I want to get her something to go along with it. Do you have any suggestions? By the way, I worked on the quilt for a total of around 30 hours, which is the total time spent on the quilt divided by the number of weeks it took to complete.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "98cd882c_2",
+      "turnIndex": 2,
+      "date": "2023/03/29 (Wed) 14:37",
+      "role": "user",
+      "text": "I worked on the quilt for 10 hours a week, so the total time spent is 30 hours. I'm interested in the quilt-themed accessories, can you tell me more about them?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "98cd882c_2",
+      "turnIndex": 4,
+      "date": "2023/03/29 (Wed) 14:37",
+      "role": "user",
+      "text": "I like the quilt-patterned mug idea. Do you know any online stores that sell them? Also, I've been thinking of getting her a sewing machine accessory, do you have any suggestions?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "98cd882c_2",
+      "turnIndex": 6,
+      "date": "2023/03/29 (Wed) 14:37",
+      "role": "user",
+      "text": "I'll check out those online stores for the quilt-patterned mug. The walking foot or even feed foot sounds like a useful accessory for my sister's sewing machine. Can you tell me more about how it works and if it's compatible with all sewing machines?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "98cd882c_2",
+      "turnIndex": 8,
+      "date": "2023/03/29 (Wed) 14:37",
+      "role": "user",
+      "text": "I'll check the compatibility of the walking foot or even feed foot with my sister's sewing machine before making a purchase. I think I'll also consider getting her a sewing notion set with a quilting theme. Do you have any suggestions for a good quality sewing notion set that includes a variety of useful items?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "98cd882c_2",
+      "turnIndex": 10,
+      "date": "2023/03/29 (Wed) 14:37",
+      "role": "user",
+      "text": "I think I'll check out those brands and online retailers for a sewing notion set with a quilting theme. I also want to get her a personalized gift, something that she can keep as a memento. Do you have any ideas for a personalized gift that's related to quilting or sewing?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_124f5dc3_1",
+      "turnIndex": 2,
+      "date": "2023/03/29 (Wed) 21:27",
+      "role": "user",
+      "text": "I think the portable speaker or music subscription would be great options. Do you know any good deals on those items right now?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_124f5dc3_1",
+      "turnIndex": 4,
+      "date": "2023/03/29 (Wed) 21:27",
+      "role": "user",
+      "text": "I'm also considering getting a gift for my neighbor who helped me with dog-sitting last month. Do you have any ideas for gifts under $20 that would be suitable for a neighbor?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_124f5dc3_1",
+      "turnIndex": 6,
+      "date": "2023/03/29 (Wed) 21:27",
+      "role": "user",
+      "text": "I was thinking of getting a gift card to a popular coffee shop, like the one I got for my neighbor last month. That way, they can treat themselves to a coffee or snack on me. Do you think that's a good idea?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_124f5dc3_2",
+      "turnIndex": 0,
+      "date": "2023/03/29 (Wed) 21:48",
+      "role": "user",
+      "text": "I'm looking for some gift ideas for a friend who's into fashion. I recently got a silver necklace with a tiny pendant for another friend, and it was a hit. Do you have any suggestions for something similar?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_124f5dc3_2",
+      "turnIndex": 2,
+      "date": "2023/03/29 (Wed) 21:48",
+      "role": "user",
+      "text": "That's a great list! I'm particularly interested in the minimalist chic earrings. Can you recommend some online stores that sell earrings similar to what you described?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_124f5dc3_2",
+      "turnIndex": 6,
+      "date": "2023/03/29 (Wed) 21:48",
+      "role": "user",
+      "text": "I'm also interested in getting a gift for my neighbor who helped me with dog-sitting while I was away on a trip last month. Do you have any gift ideas for a good neighbor?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_124f5dc3_2",
+      "turnIndex": 8,
+      "date": "2023/03/29 (Wed) 21:48",
+      "role": "user",
+      "text": "I think a gift card to a popular coffee shop would be a great idea. I actually got a $10 gift card to a coffee shop for my neighbor who helped me with dog-sitting while I was away on a trip last month. It was a small token of appreciation, but I'm sure they'll enjoy it.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_124f5dc3_2",
+      "turnIndex": 10,
+      "date": "2023/03/29 (Wed) 21:48",
+      "role": "user",
+      "text": "Yeah, I'm still interested in getting those earrings. Can you show me some options that are similar to the silver necklace I got for my best friend's 30th birthday on the 15th of March?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 3576,
+  "estimatedTokens": 894
+}

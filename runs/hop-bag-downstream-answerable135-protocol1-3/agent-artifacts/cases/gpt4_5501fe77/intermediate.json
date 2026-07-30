@@ -1,0 +1,109 @@
+[
+  {
+    "session_id": "answer_203bf3fa_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Medium: This session only mentions Twitter follower growth (420→540) over the past month; it does not provide follower changes for other social media platforms, so the “most followers” comparison across platforms cannot be concluded from this session alone.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "The user's Twitter follower count jumped from 420 to 540 over the past month.",
+          "why": "This is a quantified follower-change claim tied to a specific platform and the past-month timeframe, directly relevant to determining which platform gained the most followers."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_203bf3fa_3",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session only provides follower-growth information for TikTok and does not state follower gains for Instagram, Facebook, or Twitter over the past month; it also gives the TikTok figure as “around 200 followers over the past three weeks,” not explicitly “past month,” so the platform with the most followers over the past month may be unknowable from this session alone.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is looking to create a content calendar for their social media platforms and wants consistency across platforms.",
+          "why": "Provides context about which platforms are relevant to tracking follower growth."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "User has seen growth on TikTok, where they've gained around 200 followers over the past three weeks.",
+          "why": "This is the only explicit follower-growth claim in the session and names the platform (TikTok) with a quantitative gain."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "User is currently active on Instagram, Facebook, Twitter, and TikTok.",
+          "why": "Identifies the set of social media platforms to consider when comparing follower gains."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "User notices that their Instagram stories get a lot of views but they are unsure if they post at the best times.",
+          "why": "Mentions Instagram performance/engagement, which may indirectly relate to follower growth comparisons."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_203bf3fa_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session contains growth-related commentary (Instagram/TikTok/Facebook engagement and TikTok follower growth) but does not provide follower counts by platform over the past month; it therefore may not contain the specific data needed to determine which platform gained the most followers. If the target data exists, it may be missing from this session.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "The user wants to improve social media engagement and reports doing pretty well on Instagram.",
+          "why": "Establishes Instagram is a relevant platform for the user, but does not include follower growth amounts."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "Facebook follower count has remained steady at around 800.",
+          "why": "Provides a follower-count baseline for Facebook, which could be used if other sessions provide changes over time."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "The user’s Facebook posts have been getting more shares and comments than usual.",
+          "why": "Indicates Facebook engagement changes, which may correlate with follower growth even though follower counts over time are not given."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "The assistant congratulated the user on Instagram success and increase in engagement on Facebook.",
+          "why": "Captures assistant acknowledgement; relevant if the question is about which platform saw the most growth, but still lacks numeric follower-change data."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "The user plans to experiment with different posting times for their audience.",
+          "why": "User intent that could affect follower growth trends, but not directly answering platform/month follower gain."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "The user’s Instagram stories have been getting a lot of views, especially when using the \"question\" sticker.",
+          "why": "Shows Instagram story engagement, which might connect to follower growth; no follower-count deltas provided."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "The user has been thinking about their TikTok strategy.",
+          "why": "Establishes TikTok as a platform of interest for growth across the relevant period."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "The user has been surprised by how quickly their follower count has grown on TikTok.",
+          "why": "Is a direct claim of follower growth on TikTok, but does not quantify followers gained over the past month."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "The user’s Facebook follower count has remained steady at around 800.",
+          "why": "Reiterates the Facebook baseline; useful for interpreting growth comparisons if other sessions include month-end values."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "The user is wondering whether they should focus more on growing their Facebook audience.",
+          "why": "User preference/constraint indicating focus on Facebook growth; may affect which platform the reducer should consider."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "The assistant recommended a strategic approach to growing Facebook following because the follower count has remained steady.",
+          "why": "Assistant commentary links steady followers with a need for growth strategy; no month-over-month follower change figures."
+        }
+      ]
+    }
+  }
+]

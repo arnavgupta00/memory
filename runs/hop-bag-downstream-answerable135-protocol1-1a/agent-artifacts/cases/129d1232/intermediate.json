@@ -1,0 +1,23 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Total $ amount the user personally raised across all charity events they participated in (e.g., walks/runs/yoga/bike-a-thon).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_1de862d6_1",
+      "turnIndex": 2,
+      "why": "User reports raising $250 through sponsors at a charity walk."
+    },
+    {
+      "sessionId": "answer_1de862d6_3",
+      "turnIndex": 0,
+      "why": "User reports helping organize a charity yoga event that raised $600 for a local animal shelter."
+    },
+    {
+      "sessionId": "answer_1de862d6_2",
+      "turnIndex": 2,
+      "why": "User reports participating in a Bike-a-Thon for Cancer Research and that their team raised $5,000."
+    }
+  ]
+}

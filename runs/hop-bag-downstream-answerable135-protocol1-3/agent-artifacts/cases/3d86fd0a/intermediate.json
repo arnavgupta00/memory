@@ -1,0 +1,26 @@
+[
+  {
+    "session_id": "answer_19c24c11",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Medium. This session states a location for meeting Sophia as 'a coffee shop in the city' and does not specify the city name, exact coffee shop name, neighborhood, or date/time; the actual meeting location may be more specific in other sessions or later context.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "For Sophia, it was a coffee shop in the city.",
+          "why": "Directly answers the question with a claimed meeting location for Sophia, though it is non-specific (no shop name/city)."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "She's into indie music, and we talked about some new bands to check out. I recommended some coffee spots to her too.",
+          "why": "Adds context around the Sophia meeting (indie music conversation, coffee spots recommendations) that may corroborate or help identify the specific coffee shop in downstream reasoning."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Updated template: Sophia — How We Met: Coffee Shop (City). Interests: Indie music, coffee.",
+          "why": "Reiterates and standardizes the meeting-location claim for Sophia in a structured form that may be used for matching/verification."
+        }
+      ]
+    }
+  }
+]

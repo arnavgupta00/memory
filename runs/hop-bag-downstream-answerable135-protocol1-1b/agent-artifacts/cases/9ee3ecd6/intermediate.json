@@ -1,0 +1,78 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Need the Sephora points threshold for redeeming a free skincare product (and any nearby context where the threshold is stated).",
+    "candidateStatus": "found",
+    "missingRisk": "The catalog includes “300 points” but may not include the specific rule details (e.g., whether it’s for Beauty Insider vs. VIB/Rouge, or if thresholds vary by reward type/size).",
+    "items": [
+      {
+        "sessionId": "answer_66c23110_2",
+        "turnIndex": 0,
+        "why": "Directly states the user needs a total of 300 points to redeem a free skincare product from Sephora."
+      },
+      {
+        "sessionId": "answer_66c23110_2",
+        "turnIndex": 6,
+        "why": "Reiterates the user’s 300-point goal context (“I just need a total of 300 points”)."
+      },
+      {
+        "sessionId": "answer_66c23110_2",
+        "turnIndex": 5,
+        "why": "Assistant mentions they are close to reaching 300 points and discusses points earning/redeeming for rewards, providing supporting context for the threshold."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Need the Sephora points threshold for redeeming a free skincare product (and any nearby context where the threshold is stated).",
+    "candidateStatus": "found",
+    "missingRisk": "The catalog includes “300 points” but may not include the specific rule details (e.g., whether it’s for Beauty Insider vs. VIB/Rouge, or if thresholds vary by reward type/size).; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_66c23110_2",
+        "turnIndex": 0,
+        "why": "Directly states the user needs a total of 300 points to redeem a free skincare product from Sephora."
+      },
+      {
+        "sessionId": "answer_66c23110_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_66c23110_2",
+        "turnIndex": 6,
+        "why": "Reiterates the user’s 300-point goal context (“I just need a total of 300 points”)."
+      },
+      {
+        "sessionId": "answer_66c23110_2",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_66c23110_2",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_66c23110_2",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_66c23110_1",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_66c23110_1",
+        "turnIndex": 1,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_66c23110_1",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Need the finish date for 'The Nightingale' and the start date for 'The Hitchhiker's Guide to the Galaxy' from the provided sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "If either session turn does not explicitly state the relevant completion/start date (or if the date is only implied rather than stated), the day-difference calculation could be wrong.",
+    "items": [
+      {
+        "sessionId": "answer_f964cea3_1",
+        "turnIndex": 0,
+        "why": "States the user finished reading 'The Nightingale' by Kristin Hannah today (the completion date is needed)."
+      },
+      {
+        "sessionId": "answer_f964cea3_2",
+        "turnIndex": 0,
+        "why": "States the user started reading 'The Hitchhiker's Guide to the Galaxy' by Douglas Adams today (the start date is needed)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Need the finish date for 'The Nightingale' and the start date for 'The Hitchhiker's Guide to the Galaxy' from the provided sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "If either session turn does not explicitly state the relevant completion/start date (or if the date is only implied rather than stated), the day-difference calculation could be wrong.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_f964cea3_1",
+        "turnIndex": 0,
+        "why": "States the user finished reading 'The Nightingale' by Kristin Hannah today (the completion date is needed)."
+      },
+      {
+        "sessionId": "answer_f964cea3_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_f964cea3_2",
+        "turnIndex": 0,
+        "why": "States the user started reading 'The Hitchhiker's Guide to the Galaxy' by Douglas Adams today (the start date is needed)."
+      },
+      {
+        "sessionId": "answer_f964cea3_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_f964cea3_1",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

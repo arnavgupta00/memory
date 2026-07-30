@@ -1,0 +1,58 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Estimate of total weight lost since starting consistent gym attendance (combining “past month” and “since ~3 months” claims as possible endpoints; preserve both values because they may overlap or be cumulative).",
+    "candidateStatus": "found",
+    "missingRisk": "The sessions provide two different weight-loss figures (5 lb in past month vs 10 lb since ~3 months). Downstream may need to determine whether these are cumulative vs overlapping; if more precise start date or multiple weigh-in data points are required, they are not present here.",
+    "items": [
+      {
+        "sessionId": "answer_ae3a122b_2",
+        "turnIndex": 2,
+        "why": "Contains the key claim: lost 10 pounds since starting to go to the gym consistently ~3 months ago (directly relevant to “since I started going consistently”)."
+      },
+      {
+        "sessionId": "answer_ae3a122b_1",
+        "turnIndex": 2,
+        "why": "Contains the key claim: lost about 5 pounds in the past month, which is needed to estimate change over time up to today and may complement/overlap with the longer-term 10 lb figure."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Estimate of total weight lost since starting consistent gym attendance (combining “past month” and “since ~3 months” claims as possible endpoints; preserve both values because they may overlap or be cumulative).",
+    "candidateStatus": "found",
+    "missingRisk": "The sessions provide two different weight-loss figures (5 lb in past month vs 10 lb since ~3 months). Downstream may need to determine whether these are cumulative vs overlapping; if more precise start date or multiple weigh-in data points are required, they are not present here.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_ae3a122b_2",
+        "turnIndex": 2,
+        "why": "Contains the key claim: lost 10 pounds since starting to go to the gym consistently ~3 months ago (directly relevant to “since I started going consistently”)."
+      },
+      {
+        "sessionId": "answer_ae3a122b_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_ae3a122b_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_ae3a122b_1",
+        "turnIndex": 2,
+        "why": "Contains the key claim: lost about 5 pounds in the past month, which is needed to estimate change over time up to today and may complement/overlap with the longer-term 10 lb figure."
+      },
+      {
+        "sessionId": "answer_ae3a122b_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_ae3a122b_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

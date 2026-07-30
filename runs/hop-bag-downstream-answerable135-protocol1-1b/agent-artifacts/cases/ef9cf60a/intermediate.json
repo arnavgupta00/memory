@@ -1,0 +1,58 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Sum spending on gifts mentioned for the sister across the candidate sessions (e.g., necklace cost and spa gift card cost).",
+    "candidateStatus": "found",
+    "missingRisk": "If the total depends on additional sister gift purchases not present in these sessions, the computed sum may be incomplete.",
+    "items": [
+      {
+        "sessionId": "answer_87e3a1cb_1",
+        "turnIndex": 0,
+        "why": "States the sister gift: Tiffany’s silver necklace with a small pendant cost around $200."
+      },
+      {
+        "sessionId": "answer_87e3a1cb_2",
+        "turnIndex": 0,
+        "why": "States the sister gift: spa gift card to her favorite spa was $100 (and she loved it)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Sum spending on gifts mentioned for the sister across the candidate sessions (e.g., necklace cost and spa gift card cost).",
+    "candidateStatus": "found",
+    "missingRisk": "If the total depends on additional sister gift purchases not present in these sessions, the computed sum may be incomplete.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_87e3a1cb_1",
+        "turnIndex": 0,
+        "why": "States the sister gift: Tiffany’s silver necklace with a small pendant cost around $200."
+      },
+      {
+        "sessionId": "answer_87e3a1cb_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_87e3a1cb_2",
+        "turnIndex": 0,
+        "why": "States the sister gift: spa gift card to her favorite spa was $100 (and she loved it)."
+      },
+      {
+        "sessionId": "answer_87e3a1cb_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_87e3a1cb_2",
+        "turnIndex": 2,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_87e3a1cb_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

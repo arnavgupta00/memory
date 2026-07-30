@@ -1,0 +1,18 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "User’s age now + when Rachel gets married (relative date) to determine user’s age at the wedding year.",
+  "candidateStatus": "found",
+  "missingRisk": "Exact month/day of Rachel’s wedding (only “next year” was specified), which could affect whether the user has had a birthday by the wedding date.",
+  "items": [
+    {
+      "sessionId": "answer_cbd08e3c_1",
+      "turnIndex": 0,
+      "why": "States Rachel is getting married next year, anchoring the timing of the event."
+    },
+    {
+      "sessionId": "answer_cbd08e3c_2",
+      "turnIndex": 2,
+      "why": "User’s current age is given as 32, needed to compute how many years old the user will be at Rachel’s wedding."
+    }
+  ]
+}

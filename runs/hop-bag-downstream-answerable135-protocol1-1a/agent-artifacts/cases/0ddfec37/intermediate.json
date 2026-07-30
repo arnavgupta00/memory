@@ -1,0 +1,18 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Autographed baseballs added during the user’s first three months of starting their collection (relative to the “since I started collecting three months ago” timeframe).",
+  "candidateStatus": "found",
+  "missingRisk": "The start date/end date of the “first three months” window is only described relatively (“three months ago” and “past few months”), so there may be slight ambiguity about whether any baseballs counted fall just outside the exact first-three-month window.",
+  "items": [
+    {
+      "sessionId": "answer_a22b654d_1",
+      "turnIndex": 0,
+      "why": "User directly states they “just got a signed baseball” and that they now have “15 autographed baseballs since I started collecting three months ago,” which corresponds to the first three months window requested."
+    },
+    {
+      "sessionId": "answer_a22b654d_2",
+      "turnIndex": 0,
+      "why": "User later states they “added 20 autographed baseballs… in the past few months,” which may overlap with or extend beyond the first-three-month window; included to capture potential conflicting/extended totals over time."
+    }
+  ]
+}

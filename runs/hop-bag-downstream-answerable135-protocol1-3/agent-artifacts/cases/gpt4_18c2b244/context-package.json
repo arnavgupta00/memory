@@ -1,0 +1,109 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "answer_c862f65a_2",
+      "turnIndex": 0,
+      "date": "2023/04/01 (Sat) 06:23",
+      "role": "user",
+      "text": "I'm planning a trip to Walmart this weekend and I'm looking for some deals on baby essentials. Do you have any info on their current sales or promotions on diapers? By the way, I used a Buy One Get One Free coupon on Luvs diapers at Walmart today, which was a great deal!",
+      "why": "per-session extractor: Provides context about Walmart shopping but does not directly establish any event in the question.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c862f65a_3",
+      "turnIndex": 0,
+      "date": "2023/04/10 (Mon) 00:46",
+      "role": "user",
+      "text": "I'm planning a shopping trip to Target this weekend and I'm wondering if you have any info on their current sales and promotions. By the way, I just redeemed $12 cashback for a $10 Amazon gift card from Ibotta today, so I'm feeling pretty good about my savings so far!",
+      "why": "per-session extractor: This directly corresponds to the event \"I redeemed $12 cashback for a $10 Amazon gift card from Ibotta,\" including the exact amounts and date-relative endpoint (\"today\").",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c862f65a_1",
+      "turnIndex": 0,
+      "date": "2023/04/15 (Sat) 04:24",
+      "role": "user",
+      "text": "I'm trying to plan my grocery shopping trip for this week. Can you help me find any good deals or sales on diapers and formula at ShopRite? By the way, I signed up for their rewards program today, so I'm hoping to maximize my points and savings.",
+      "why": "per-session extractor: Provides context for the user’s coupon/rewards activity related to ShopRite, which may help order the related rewards-program event.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c862f65a_1",
+      "turnIndex": 5,
+      "date": "2023/04/15 (Sat) 04:24",
+      "role": "assistant",
+      "text": "As a savvy shopper, it's great that you're keeping track of your coupons and savings. Organizing and tracking your coupons, rewards programs, and sales can be a bit overwhelming, but there are several methods to make it more efficient. I've got some tips to share with you:\n\n**1. Spreadsheets:** You're already using a spreadsheet, which is an excellent way to track your coupons and savings. You can create separate sheets for:\n\t* Coupons: List the coupon details, expiration dates, and the items they can be used on.\n\t* Rewards Programs: Track your points, rewards, and expiration dates for each program.\n\t* Sales: Record the sales cycles, prices, and dates for your frequently purchased items.\n**2. Coupon Binders:** A physical binder can be a great way to organize your paper coupons. Use dividers to separate categories (e.g., groceries, household, personal care) and store your coupons in protective sheets.\n**3. Coupon Apps:** Consider using apps like:\n\t* RetailMeNot: A comprehensive coupon app with digital coupons, promo codes, and cash back offers.\n\t* Fetch Rewards: A receipt-scanning app that offers points for purchasing certain items.\n\t* Ibotta: A cash back app with offers on various items, including groceries and household essentials.\n**4. Digital Note-Taking:** Apps like Evernote, OneNote, or Simplenote can be used to store notes about sales, coupons, and rewards programs. You can access these notes across multiple devices and add tags or categories for easy searching.\n**5. Calendar Reminders:** Set reminders for coupon expiration dates, sales cycles, and rewards program deadlines using your phone's calendar or a digital calendar like Google Calendar.\n**6. Coupon Clipping Services:** If you don't have time to clip coupons, consider using a coupon clipping service like Coupons.com or CouponDede. They'll send you clipped coupons for a small fee.\n**7. Store Apps:** Many stores, including ShopRite, have their own apps that offer digital coupons, sales, and rewards programs. Make sure to download and use these apps to maximize your savings.\n**8. Meal Planning:** Plan your meals around sales and coupons to maximize your savings. You can use apps like Mealime or Yummly to help with meal planning.\n**9. Envelope System:** Divide your coupons and receipts into separate envelopes for each store or category. This can help you quickly find the coupons you need and keep your receipts organized.\n**10. Review and Purge:** Regularly review your coupons, rewards programs, and sales to ensure you're not missing out on opportunities. Purge expired coupons and update your spreadsheets or apps to reflect changes.\n\nRemember, the key is to find a method that works for you and stick to it. You can always experiment with different methods until you find one that suits your style.",
+      "why": "per-session extractor: Mentions Ibotta as a cash back app, which could help connect to the “I redeemed $12 cashback…” event, but it does not include the redemption itself.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c862f65a_2",
+      "turnIndex": 1,
+      "date": "2023/04/01 (Sat) 06:23",
+      "role": "assistant",
+      "text": "I'm happy to help! However, I'm a large language model, I don't have real-time access to current sales or promotions at specific stores like Walmart. But I can offer some general tips to help you find deals on diapers at Walmart:\n\n1. **Check Walmart's website**: Visit Walmart's website and navigate to their baby section. Look for a \"Deals\" or \"Rollbacks\" tab, where they often feature discounted prices on baby essentials, including diapers.\n2. **Sign up for Walmart's email newsletter**: By signing up, you'll receive exclusive offers, promotions, and sale notifications, including those on baby products.\n3. **Use Walmart's Savings Catcher app**: This app allows you to scan receipts and automatically applies any available savings or discounts to your account.\n4. **Look for in-store promotions**: When you visit Walmart, keep an eye out for in-store displays, banners, or signs advertising sales or promotions on diapers.\n5. **Stack coupons and sales**: Like you did with the Buy One Get One Free coupon on Luvs diapers, try combining manufacturer coupons with Walmart's sales or promotions for even greater savings.\n6. **Check competitor prices**: Walmart often price-matches competitors' prices. If you find a better deal on diapers at a nearby store, Walmart may match that price.\n7. **Consider Walmart's store brand**: Walmart's store brand, Parent's Choice, often offers affordable prices on diapers and other baby essentials.\n\nRemember to always check the prices and sales in your local store, as they may vary from online prices or promotions.\n\nI hope these tips help you find some great deals on diapers at Walmart this weekend!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_3",
+      "turnIndex": 1,
+      "date": "2023/04/10 (Mon) 00:46",
+      "role": "assistant",
+      "text": "Congratulations on redeeming your Ibotta cashback for an Amazon gift card! That's a great start to your savings week!\n\nAs for Target's current sales and promotions, I'd be happy to help you with that. Target typically releases its weekly ad on Sundays, so I can give you an overview of the current deals and promotions. Please note that sales and promotions may vary by location and online availability.\n\nHere are some current deals and promotions at Target:\n\n**Weekly Ad Deals (Valid until Saturday):**\n\n1. Buy One Get One 50% Off on select toys and games\n2. Up to 30% off select home decor and furniture\n3. 20% off all kitchen appliances and cookware\n4. Buy One Get One Free on select beauty and personal care items\n5. 10% off all baby gear and nursery furniture\n\n**Cartwheel Offers:**\n\n1. 10% off all Threshold brand items\n2. 5% off all Market Pantry food and beverages\n3. 5% off all Up & Up brand items\n\n**Target RedCard Holder Exclusive:**\n\n1. 5% off all purchases in-store and online\n\n**Digital Coupons:**\n\n1. $5 off $20 purchase on select household essentials\n2. $3 off $15 purchase on select beauty and personal care items\n\n**Online Deals:**\n\n1. Free standard shipping on online orders over $35\n2. 15% off online orders over $100 on select items\n\nKeep in mind that these deals and promotions are subject to change, and you should always check Target's website or mobile app for the most up-to-date information.\n\nHappy shopping this weekend, and I hope you score some great deals!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_1",
+      "turnIndex": 1,
+      "date": "2023/04/15 (Sat) 04:24",
+      "role": "assistant",
+      "text": "ShopRite is a great store for grocery shopping, and their rewards program can definitely help you save even more. I'd be happy to help you find deals on diapers and formula.\n\nTo find the best deals, I'll need to check the current sales and promotions at ShopRite. Since sales and promotions can vary by location and week, I'll provide you with some general tips and resources to help you find the best deals.\n\n**Check the ShopRite Weekly Ad**: The first step is to check the ShopRite weekly ad for your local store. You can do this on their website or through their mobile app. Look for the \"Diapers\" and \"Baby Formula\" sections to see if they have any sales or promotions listed.\n\n**Digital Coupons**: Make sure to check the ShopRite digital coupon section on their website or app. They often offer digital coupons that you can load onto your rewards card, which can be used in addition to sales and promotions. You can search for \"diapers\" and \"formula\" to see if there are any available digital coupons.\n\n**ShopRite Sales Cycles**: Diapers and formula tend to go on sale every 4-6 weeks at ShopRite. If you can, try to plan your shopping trip during one of these sales cycles to maximize your savings.\n\n**Price Match Guarantee**: ShopRite offers a price match guarantee, which means if you find a lower price on an item at a local competitor's store, they'll match that price. Keep an eye out for prices at other stores in your area and take advantage of this policy if you find a better deal.\n\n**Stacking Deals**: As a rewards member, you can stack digital coupons, sales, and manufacturer's coupons to maximize your savings. Look for opportunities to combine these deals to get the best price possible.\n\n**Manufacturer's Coupons**: Check the websites of diaper and formula manufacturers, such as Pampers, Huggies, Enfamil, and Similac, for printable coupons or digital coupons that you can use in addition to ShopRite's sales and digital coupons.\n\n**ShopRite Rewards**: As a rewards member, you'll earn points on your purchases, which can be redeemed for discounts on future shopping trips. Be sure to scan your rewards card or enter your phone number at checkout to earn points.\n\nBy following these tips, you should be able to find some great deals on diapers and formula at ShopRite. Happy shopping!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_1",
+      "turnIndex": 2,
+      "date": "2023/04/15 (Sat) 04:24",
+      "role": "user",
+      "text": "That's really helpful, thanks! I'll definitely check the weekly ad and digital coupons to see what's available. Do you think I can use the digital coupons in addition to the rewards points I earn?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_1",
+      "turnIndex": 3,
+      "date": "2023/04/15 (Sat) 04:24",
+      "role": "assistant",
+      "text": "As a ShopRite rewards member, you can definitely use digital coupons in addition to earning rewards points on your purchases.\n\nHere's how it works:\n\n1. **Digital Coupons**: When you load digital coupons to your ShopRite rewards card, they're automatically applied at checkout when you purchase the qualifying items. These coupons are usually a fixed amount off (e.g., $1.00 off) or a percentage off (e.g., 10% off).\n2. **Rewards Points**: When you earn rewards points on your purchases, they're credited to your rewards account. You can redeem these points for discounts on future shopping trips.\n\nThe great news is that you can **stack** digital coupons with rewards points! This means you can use a digital coupon on an item and still earn rewards points on that purchase.\n\nFor example:\n\n* You have a digital coupon for $1.00 off a pack of diapers.\n* You purchase the diapers and earn 10 rewards points on that item.\n* At checkout, the digital coupon is applied, and you pay the discounted price.\n* You still earn the 10 rewards points on the purchase, which can be redeemed on a future shopping trip.\n\nJust remember to always scan your rewards card or enter your phone number at checkout to ensure you earn your rewards points and apply any digital coupons.\n\nBy combining digital coupons and rewards points, you can maximize your savings and get the best deals on the items you need. Happy shopping!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_1",
+      "turnIndex": 4,
+      "date": "2023/04/15 (Sat) 04:24",
+      "role": "user",
+      "text": "That sounds like a great way to save even more money. I'll make sure to check the digital coupons and rewards points when I'm planning my shopping trip. Since I've been tracking my coupon usage and savings, I'm curious - do you have any tips on how to organize and keep track of all the different coupons, rewards programs, and sales? I've been using a spreadsheet, but I'm open to any other methods that might be more efficient.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_1",
+      "turnIndex": 6,
+      "date": "2023/04/15 (Sat) 04:24",
+      "role": "user",
+      "text": "That's a lot of great tips! I think I'll start by organizing my spreadsheet better and setting up reminders for coupon expiration dates. I've also been considering using a coupon app to make it easier to find digital coupons. Do you think it's better to use a specific store's app or a more general coupon app like RetailMeNot?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 11376,
+  "estimatedTokens": 2844
+}

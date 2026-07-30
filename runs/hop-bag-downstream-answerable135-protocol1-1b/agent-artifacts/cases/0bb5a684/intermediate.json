@@ -1,0 +1,53 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Use only the provided conversation facts to compute the day difference between the workshop date and the team meeting date.",
+    "candidateStatus": "found",
+    "missingRisk": "If the workshop or team-meeting dates are mentioned with inconsistent formats elsewhere in the hidden data, this selection might omit the conflicting detail needed to resolve the difference.",
+    "items": [
+      {
+        "sessionId": "answer_e936197f_1",
+        "turnIndex": 0,
+        "why": "Contains the key fact that the workshop 'Effective Communication in the Workplace' was attended on January 10th."
+      },
+      {
+        "sessionId": "answer_e936197f_2",
+        "turnIndex": 0,
+        "why": "Contains the key fact that the upcoming team meeting is on January 17th (needed as the endpoint for the day-difference)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Use only the provided conversation facts to compute the day difference between the workshop date and the team meeting date.",
+    "candidateStatus": "found",
+    "missingRisk": "If the workshop or team-meeting dates are mentioned with inconsistent formats elsewhere in the hidden data, this selection might omit the conflicting detail needed to resolve the difference.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_e936197f_1",
+        "turnIndex": 0,
+        "why": "Contains the key fact that the workshop 'Effective Communication in the Workplace' was attended on January 10th."
+      },
+      {
+        "sessionId": "answer_e936197f_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e936197f_2",
+        "turnIndex": 0,
+        "why": "Contains the key fact that the upcoming team meeting is on January 17th (needed as the endpoint for the day-difference)."
+      },
+      {
+        "sessionId": "answer_e936197f_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e936197f_2",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

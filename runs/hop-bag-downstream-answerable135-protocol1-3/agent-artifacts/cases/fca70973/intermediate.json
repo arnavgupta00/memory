@@ -1,0 +1,264 @@
+[
+  {
+    "session_id": "f504b269",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Medium: The user asks about planning a theme park weekend, but this session is about road-tripping to national parks (especially Yosemite) and related travel planning. Relevant theme-park preferences may be absent.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User asked for help comparing driving distances and times between the Grand Canyon and Yosemite National Park from their current location.",
+          "why": "Could provide trip-planning context, even if not theme parks."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "User is in Portland, Oregon and wants to know driving distances and times between the Grand Canyon and Yosemite National Park directly (deciding which to visit first).",
+          "why": "Captures user’s starting location and decision criteria for an itinerary."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Approx. Portland, OR to Grand Canyon National Park, AZ: 1,430 miles (2,301 km) and ~21 hours 30 minutes.",
+          "why": "Travel-distance/time details mentioned in the session."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Approx. Portland, OR to Yosemite National Park, CA: 740 miles (1,191 km) and ~11 hours 30 minutes.",
+          "why": "Travel-distance/time details mentioned in the session."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Approx. Grand Canyon National Park, AZ to Yosemite National Park, CA: 760 miles (1,223 km) and ~11 hours 30 minutes.",
+          "why": "Travel-distance/time details mentioned in the session."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "User chose Yosemite first because it’s closer and they’ve heard great things about scenic drives around the park; user asked for must-see attractions and scenic drives in Yosemite.",
+          "why": "States the user’s preference and request for recommendations."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Assistant listed must-see attractions in Yosemite: Yosemite Valley (Half Dome, El Capitan, Bridalveil Fall), Glacier Point (sunrise/sunset), Tunnel View, Yosemite Falls, Mariposa Grove (Grizzly Giant and Wawona Tunnel Tree).",
+          "why": "Potentially useful travel-recommendations content from the assistant."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Assistant suggested scenic drives in Yosemite: Tioga Road (Hwy 120), Glacier Point Road, Wawona Road (Hwy 41).",
+          "why": "Specific recommendation list relevant to planning a visit."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Assistant said campsite reservations are highly recommended in advance, especially during peak season (May to October), and can be made through recreation.gov or by calling (877) 444-6777; reservations up to five months in advance.",
+          "why": "Captures booking constraint and timeframe for lodging planning."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Assistant recommended Yosemite campgrounds: Upper Pines Campground, Tuolumne Meadows Campground, Crane Flat Campground, and Half Dome Village (formerly Curry Village).",
+          "why": "Specific campsite suggestions provided by the assistant."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "User plans day hikes in Yosemite Valley, wants to explore Mariposa Grove of giant sequoias, and will take a day to drive to Glacier Point for scenic views.",
+          "why": "Describes the user’s intended itinerary components."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "User said they heard the road to Glacier Point is closed in winter and is glad they are going when it’s open.",
+          "why": "States a seasonal constraint relevant to planning timing."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "User is tracking fuel efficiency and hopes to get good mileage on this trip as well.",
+          "why": "Captures user priority/constraint for road trip planning."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Assistant recommended day hikes in Yosemite Valley: Mist Trail to Vernal Fall, Four Mile Trail, Mirror Lake Trail.",
+          "why": "Additional itinerary suggestions from the assistant."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Assistant stated the Glacier Point road is usually open from late May to early November (depending on snow conditions).",
+          "why": "Provides a timing window claim mentioned by the assistant."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "User might stop in San Francisco or Monterey on the way to Yosemite depending on time; they want to see Fisherman’s Wharf, Cannery Row, and sea lions at Pier 39 and asked whether to prioritize one or do both.",
+          "why": "Captures user’s adjacent-city interest and decision question."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Assistant said Pier 39 and sea lions are a must-see; Fisherman’s Wharf includes seafood, street performers, and Bay Bridge/Alcatraz views; other SF options include Golden Gate Park, Chinatown, Lombard Street, Golden Gate Bridge.",
+          "why": "SF attraction recommendations provided by the assistant."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Assistant said Monterey options include Cannery Row, Monterey Bay Aquarium, and the 17-Mile Drive/Pebble Beach; assistant noted if full day, both SF and Monterey possible but would be rushed.",
+          "why": "Monterey attraction recommendations and pacing guidance from the assistant."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Assistant claimed both cities are about a 4-hour drive from Yosemite.",
+          "why": "Travel-time claim that may affect planning feasibility."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "fc005760",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Medium: The session contains multiple advice topics (hiking trails, messaging apps, alarm clock apps, travel adapter). If the question is specifically about theme-park weekend suggestions, only the hiking content may be tangential, and the session does not actually mention theme parks.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is planning a trip to the nearby state park with Rachel soon and wants to know what's the best hiking trail for beginners.",
+          "why": "Relevant preference: traveling with Rachel and needs a beginner-friendly hiking trail (beginner suitability)."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "State park is Red Rock State Park; thinking of doing a 2-3 hour hike; they'd love scenic views.",
+          "why": "Provides constraints and desired experience (duration and scenic views) that could support trip planning advice."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Recommended trails for a 2-3 hour hike with scenic views: Bunkhouse Trail (2.5-mile, relatively flat/easy, scenic canyon red rock walls), Coyote Ridge Trail (2.2-mile, moderately easy with gentle inclines, red rock and surrounding landscape views), and Eagle's Nest Loop Trail (2.5-mile loop, relatively easy with gentle inclines, scenic meadow up to ridge views).",
+          "why": "Concrete list of options with distances and difficulty/characteristics; could be used as suggestions for an outing."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "If picking one, assistant recommends Bunkhouse Trail for unique canyon scenery and relatively flat terrain.",
+          "why": "Gives a single ranked recommendation from the assistant."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Assistant recommends bringing plenty of water and snacks, wearing comfortable hiking shoes or boots, using sunscreen and hats, bringing a map or GPS, and checking the park's website for trail closures or restrictions.",
+          "why": "Actionable planning/checklist advice related to the trip."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "For staying connected while traveling abroad: options include international phone plans (Verizon's International Plan, AT&T's Passport Plan, T-Mobile's Magenta Plan), Wi-Fi calling, messaging apps (WhatsApp/Facebook Messenger/Signal), video calling (Skype/Google Duo/Apple FaceTime), email, social media, portable Wi-Fi hotspots, prepaid SIM cards, travel apps (TripIt/Hopper/Google Trips), and scheduling regular check-ins.",
+          "why": "Provides advice and tool categories for communication during travel; includes specific app/service names and brands."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "User's mom usually sends a good morning message around 7:15 am and user responds immediately; asks for messaging apps to stay connected with her while abroad.",
+          "why": "Captures user routine and a communication requirement (fast response), plus the specific relationship/person and context (abroad)."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Assistant suggests messaging apps: WhatsApp, Facebook Messenger, Signal, Viber, and Google Messages (if using Android); advises downloading and setting up the app, ensuring stable internet/data plan, and testing with mom before leaving.",
+          "why": "Specific recommendations tied to the user's need to communicate reliably with mom while abroad, including preparation steps."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "User asks for recommendations for a good alarm clock app; they wake up at 7:30 am every day and want to wake on time even when traveling.",
+          "why": "Captures the user's travel-related constraint for maintaining wake-up time (alarm clock app preferences/need)."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Assistant recommends alarm clock apps: Alarmy (task-based wake), Google Clock (smart alarms), Alarm Clock Xtreme (smart alarm/timer/stopwatch, multiple alarms, flashlight), Timely (smart alarm/sleep tracking/morning routine), and Carrot Alarm (sarcastic AI; smart alarm/weather updates/to-do list).",
+          "why": "Concrete list of alarm clock app options with distinctive features."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Assistant advises setting the alarm clock app to the destination's time zone; also suggests adjusting sleep schedule a few days before, hydrating/avoiding heavy meals before bed, getting morning sunlight, and avoiding screens/electronics for at least an hour before bedtime.",
+          "why": "Gives actionable guidance for handling time zones and waking reliably while traveling."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "User asks for recommendations for a good travel adapter for international travel to keep devices charged while abroad.",
+          "why": "Captures the user's need (international travel power/charging) and desired solution type (travel adapter)."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Assistant recommends travel adapters: Anker PowerPort Travel Adapter (four USB ports, USB-C, universal AC socket; compact/lightweight, supports multiple countries), Eagle Creek Travel Adapter (supports over 150 countries; two USB ports; universal AC socket), Targus Travel Adapter (three USB ports, USB-C, universal AC socket), Lewis N. Clark Travel Adapter (supports over 150 countries; two USB ports; universal AC socket), and Flight 001 Travel Adapter (two USB ports; universal AC socket).",
+          "why": "Provides a named list of specific adapter recommendations with key specs and country-coverage claims."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Assistant advises to consider compatibility (countries/devices), number/type of ports (USB/USB-C/AC), size/weight, quality/durability, and reviews/ratings; also to check voltage/frequency requirements and note that devices may require a voltage converter/transformer in addition to the adapter.",
+          "why": "Practical selection criteria and warnings that help the user choose correctly for international travel."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_a1e169b1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low. This session contains multiple Halloween-themed event suggestions plus detailed VIP dining/tour facts (cost range, perks, tour duration, booking methods).",
+      "claims": [
+        {
+          "turnIndex": 1,
+          "fact": "Upcoming Halloween-themed events include Disneyland's “Halloween Time” (starting in mid-September), Knott's “Knott's Scary Farm,” Six Flags Magic Mountain’s “Fright Fest” (from late September to early November), and Universal Studios Hollywood’s “Halloween Horror Nights” (mid-September to early November).",
+          "why": "Provides event names and approximate timing endpoints relevant to planning a theme park weekend."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Halloween event food items mentioned include Disneyland: Pumpkin Beignets, Mummy Dogs, Bat Wing Chicken Tenders, Candy Corn Funnel Cake; Knott’s: Graveyard Dirt Cups, Mummy Meatball Subs, Skeleton Fingers Cookies, Blood-Red Punch; Universal: Flesh-Eating Zombie Fingers, Graveyard Cake Pops, Mummy Hot Dogs, Blood of the Vine; Six Flags Magic Mountain: Zombie Brain Cupcakes, Mummy Dogs, Skeleton Keys Lime Bars, Witch's Brew.",
+          "why": "Lists specific must-try themed food items for Halloween events."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Disneyland Resort unique dining experiences include Blue Bayou Restaurant's Halloween Menu (dishes like “Mummy's Revenge” and “Witch's Brew”), Carthay Circle Restaurant's Halloween Feast (a special five-course tasting menu), and Paradise Pier Hotel’s Halloween Character Dining (buffet-style at PCH Grill).",
+          "why": "Contains restaurant/experience names and menu elements useful for “unique food experiences” planning."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Knott's Berry Farm unique dining experiences include “Knott's Scary Farm Boo-fet” (buffet-style with dishes like “Mummy's Meatballs” and “Graveyard Dirt Cups,” plus priority entry and a souvenir photo) and The Calico Saloon's Halloween Menu (items like “Bat Wing Chicken Tenders” and “Witch's Brew”).",
+          "why": "Provides exclusive dining format, named dishes, and included benefits (priority entry, souvenir photo)."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Universal Studios Hollywood unique dining experiences include “The Terror Tipsy Turvey Lounge” (exclusive lounge with signature cocktails and small plates) and “The VIP Experience's Gourmet Buffet” (VIP package with a gourmet buffet featuring items like “Flesh-Eating Zombie Fingers” and “Graveyard Cake Pops”).",
+          "why": "Identifies specific exclusive dining/lounge and ties it to VIP package offerings."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Six Flags Magic Mountain unique dining experiences include “The Fright Fest Feast” (buffet-style with dishes like “Mummy Hot Dogs” and “Skeleton Keys Lime Bars,” plus priority entry and a souvenir photo) and The Full Throttle Sports Bar's Halloween Menu (items like “Zombie Brain Cupcakes” and “Witch's Brew”).",
+          "why": "Gives other park’s exclusive dining/buffet benefits and named menu items."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Universal Studios Hollywood Halloween Horror Nights “VIP Experience's Gourmet Buffet” cost is stated as typically ranging from around $250 to over $400 per person, depending on night/date and package/add-ons.",
+          "why": "Provides a numeric price range and unit (per person) useful for budgeting."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "VIP Experience's Gourmet Buffet perks listed: gourmet buffet; priority entry (skip regular lines); front-of-line access to all mazes/attractions; exclusive VIP lounge with complimentary snacks and a private bar; private tour guide; commemorative photo; special VIP gift (e.g., limited-edition pin or themed item); add-ons include Behind-the-Scenes Tour, Private Meet-and-Greet, and VIP Parking.",
+          "why": "Enumerates benefits and add-ons that directly answer what perks come with the VIP experience."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "The Universal Studios Hollywood VIP Experience “Behind-the-Scenes Tour” is described as a 1-hour tour (duration approximately 1 hour) and is typically scheduled during early evening hours before the event opens to general public.",
+          "why": "Provides tour duration and timing window relevant to weekend planning."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Behind-the-Scenes Tour highlights listed include: Makeup and Special Effects Department; Maze Design and Construction; Scare Zone Design and Development; Costume and Prop Design; Backstage Areas (dressing rooms, costume storage, makeup application).",
+          "why": "Gives detailed content/areas included in the tour for evaluating the experience."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Behind-the-Scenes Tour includes tour insights like creative team Q&A, backstage stories/anecdotes, and exclusive photo opportunities.",
+          "why": "Lists participant activities and experience features."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Behind-the-Scenes Tour logistics listed: tour size limited for intimacy; led by knowledgeable guides; includes exclusive photo opportunities.",
+          "why": "Provides constraints/format helpful for planning expectations."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Booking options claimed for Universal Studios Hollywood VIP Experience with Gourmet Buffet and Behind-the-Scenes Tour: can book online via universalstudioshollywood.com → Tickets → VIP Experiences → select “VIP Experience with Gourmet Buffet and Behind-the-Scenes Tour,” or call (818) 622-8477.",
+          "why": "Directly addresses whether reservation requires calling or can be done online, with specific contact details."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Booking notes claim VIP Experiences sell out quickly, advance booking recommended, and cancellations/changes may incur fees/penalties; booking may require providing credit card information; can select desired date and time online.",
+          "why": "Adds planning/constraint details relevant to booking decisions."
+        }
+      ]
+    }
+  }
+]

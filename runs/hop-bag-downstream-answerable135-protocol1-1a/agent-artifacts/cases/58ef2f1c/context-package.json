@@ -1,0 +1,64 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Your volunteering date/time for the local animal shelter's fundraising dinner (\"Love is in the Air\"), as described in past conversations.",
+  "candidateStatus": "found",
+  "missingRisk": "The exact calendar day/date (e.g., a specific day in February) may not be explicitly stated—only that it was in February/Valentine’s Day.",
+  "items": [
+    {
+      "sessionId": "answer_59547700",
+      "turnIndex": 2,
+      "date": "2023/04/02 (Sun) 22:15",
+      "role": "user",
+      "text": "I'm most passionate about animal welfare and children's health, so anything related to those causes would be great. I'm open to attending different types of events, but I did really enjoy the \"Love is in the Air\" fundraising dinner I volunteered at back in February - it was a great way to meet new people.",
+      "why": "User identifies the fundraising dinner they volunteered at: \"Love is in the Air\" and specifies it was volunteered \"back in February\".",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_59547700",
+      "turnIndex": 8,
+      "date": "2023/04/02 (Sun) 22:15",
+      "role": "user",
+      "text": "I'm really looking forward to the silent auction and raffles at \"Strut Your Mutt\". I've had a great experience with similar events in the past, like the \"Love is in the Air\" fundraising dinner I volunteered at back on Valentine's Day. The energy and excitement of bidding on amazing prizes while supporting a good cause is just fantastic!",
+      "why": "User reiterates the same fundraising dinner experience and ties it to Valentine's Day (\"back on Valentine's Day\").",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_59547700",
+      "turnIndex": 0,
+      "date": "2023/04/02 (Sun) 22:15",
+      "role": "user",
+      "text": "I'm trying to organize my calendar for the rest of the year. Can you help me find some upcoming charity events in LA that I might be interested in?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_59547700",
+      "turnIndex": 4,
+      "date": "2023/04/02 (Sun) 22:15",
+      "role": "user",
+      "text": "I think I'd like to learn more about the \"Strut Your Mutt\" event in September. Do you have any more details on that?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_59547700",
+      "turnIndex": 6,
+      "date": "2023/04/02 (Sun) 22:15",
+      "role": "user",
+      "text": "Can you tell me more about the silent auction and raffles at the \"Strut Your Mutt\" event? Are there any specific prizes or experiences that I should look out for?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_59547700",
+      "turnIndex": 10,
+      "date": "2023/04/02 (Sun) 22:15",
+      "role": "user",
+      "text": "I'll probably attend with a few friends who are also passionate about animal welfare. We're all looking forward to a fun day out, getting some exercise, and supporting a great cause. It'll be a great opportunity to catch up with each other while doing something meaningful. Who knows, we might even meet some new like-minded people there!",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 1407,
+  "estimatedTokens": 352
+}

@@ -1,0 +1,43 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify the book the user is currently reading as of the conversation date; preserve the explicit “currently reading” statement and immediate nearby context.",
+    "candidateStatus": "found",
+    "missingRisk": "If there are later sessions after 2023/05/23 that update the “currently reading” book, this selection may miss the newer title.",
+    "items": [
+      {
+        "sessionId": "answer_96b8c9ee",
+        "turnIndex": 0,
+        "why": "User explicitly says they are currently reading “The Seven Husbands of Evelyn Hugo.”"
+      },
+      {
+        "sessionId": "answer_96b8c9ee",
+        "turnIndex": 1,
+        "why": "Assistant confirms the same currently-reading book right after the user’s statement, preserving context."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify the book the user is currently reading as of the conversation date; preserve the explicit “currently reading” statement and immediate nearby context.",
+    "candidateStatus": "found",
+    "missingRisk": "If there are later sessions after 2023/05/23 that update the “currently reading” book, this selection may miss the newer title.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_96b8c9ee",
+        "turnIndex": 0,
+        "why": "User explicitly says they are currently reading “The Seven Husbands of Evelyn Hugo.”"
+      },
+      {
+        "sessionId": "answer_96b8c9ee",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_96b8c9ee",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

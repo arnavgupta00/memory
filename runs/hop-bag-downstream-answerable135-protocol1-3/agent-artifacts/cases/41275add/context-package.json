@@ -1,0 +1,82 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "5b83c26e_3",
+      "turnIndex": 9,
+      "date": "2023/05/21 (Sun) 03:14",
+      "role": "assistant",
+      "text": "OBS Studio is an excellent choice for creating a unique look for your YouTube channel, and its customizability is one of its strongest features.\n\nGetting started with OBS Studio can be a bit overwhelming, but don't worry, I've got some tips to help you get started:\n\n1. **Download and Install OBS Studio:** Head to the OBS Studio website and download the latest version. Follow the installation instructions, and make sure to install the 64-bit version for optimal performance.\n2. **Familiarize yourself with the Interface:** When you launch OBS Studio, you'll see a user-friendly interface with various sections. Take some time to explore the different panels, such as the Scenes, Sources, and Audio Mixer.\n3. **Set up your Video Capture:** Go to Settings > Video > Video Capture Device and select your desired capture device (e.g., your NVIDIA GeForce RTX 3080). You can also adjust the video settings, such as resolution, bitrate, and frames per second.\n4. **Configure your Audio:** In Settings > Audio, select your desired audio device (e.g., your microphone). You can also adjust the audio settings, such as bitrate, sample rate, and channels.\n5. **Create a New Scene:** In the Scenes panel, click the \"+\" button to create a new scene. This will be the foundation of your stream or recording. You can add sources, such as your webcam, gameplay, or overlays, to this scene.\n6. **Add Sources:** In the Sources panel, you can add various sources, such as:\n\t* Video Capture Device: Your gameplay or webcam feed.\n\t* Image: A static image, such as a logo or overlay.\n\t* Text: A text source for displaying information, such as your stream title or donation links.\n\t* Browser Source: A web browser source for displaying webpages or HTML content.\n7. **Customize your Scene:** Use the various tools and plugins to customize your scene. You can add chroma keying, adjust the layout, and add animations or transitions.\n8. **Experiment with Plugins:** OBS Studio has a vast library of plugins that can enhance your streaming or recording experience. Explore the Plugin Store to find plugins that suit your needs.\n9. **Test and Refine:** Test your setup, and refine it as needed. You can use the built-in preview feature to test your stream or recording before going live.\n10. **Join the OBS Studio Community:** The OBS Studio community is incredibly active and helpful. Join the forums, Discord, or Reddit community to connect with other users, share knowledge, and get help when needed.\n\nSome popular plugins to get you started:\n\n* **Streamlabs OBS:** A popular plugin that integrates Streamlabs features, such as alerts, donations, and subscriptions.\n* **OBS.Live:** A plugin that adds features like a built-in video editor, chroma keying, and motion graphics.\n* **Move Transition:** A plugin that adds smooth transitions between scenes.\n\nRemember, OBS Studio is highly customizable, so don't be afraid to experiment and try new things. If you encounter any issues or have questions, the community is always there to help.\n\nGood luck, and have fun creating your unique look for your YouTube channel!",
+      "why": "empty-extractor deterministic fallback",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "33a39aa7_1",
+      "turnIndex": 7,
+      "date": "2023/05/22 (Mon) 00:04",
+      "role": "assistant",
+      "text": "That's a great idea! Watching live videos of these bands will definitely give you a sense of their energy and performance style. Snarky Puppy and Lettuce are both known for their incredible live shows, and they have a lot of great live videos available online.\n\nSnarky Puppy, in particular, has a fantastic YouTube channel with a ton of live videos from their performances around the world. They're known for their dynamic, improvisational live shows, and their videos really capture the energy and excitement of their performances.\n\nLettuce also has a lot of great live videos available, including some amazing performances from festivals like Jam Cruise and Bear Creek. They're known for their funky, high-energy live shows, and their videos are a lot of fun to watch.\n\nAdditionally, you might want to check out some of the live music platforms like NPR's Tiny Desk Concerts, Live from the Village Vanguard, or Jazz at Lincoln Center's Live from the Appel Room. These platforms often feature live performances from a wide range of jazz and funk artists, and they can be a great way to discover new music and get a sense of an artist's live performance style.\n\nRemember, live music is all about the energy and connection between the musicians and the audience, so watching live videos can be a great way to get a feel for that energy and excitement. I hope you enjoy exploring these videos and discovering some new music!",
+      "why": "empty-extractor deterministic fallback",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_sharegpt_81riySf_0",
+      "turnIndex": 1,
+      "date": "2023/05/23 (Tue) 18:17",
+      "role": "assistant",
+      "text": "Certainly! There are plenty of helpful videos on YouTube that demonstrate proper workplace posture and provide tips for staying comfortable while working at a desk. Here are a few videos you could share with your staff:\n\n1. \"How to Sit Properly at a Desk to Avoid Back Pain\" by the Mayo Clinic: <https://www.youtube.com/watch?v=UfOvNlX9Hh0>\n2. \"5 Tips for Better Posture at Your Desk\" by Harvard Health Publishing: <https://www.youtube.com/watch?v=LT_dFRnmdGs>\n3. \"Office Ergonomics - Computer Workstation Ergonomics\" by Ohio State University Wexner Medical Center: <https://www.youtube.com/watch?v=0TtTXsQsRd8>\n4. \"10 Easy Ways to Improve Your Posture at Work\" by Healthline: <https://www.youtube.com/watch?v=nvVbWYfNn_0>\n\nThese videos offer clear demonstrations and practical advice for improving workplace posture and reducing discomfort. Sharing these resources with your staff can help to promote a healthier, more comfortable work environment.",
+      "why": "per-session extractor: Directly relevant to the request to remind the user of the Mayo Clinic video the assistant recommended.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "5b83c26e_3",
+      "turnIndex": 8,
+      "date": "2023/05/21 (Sun) 03:14",
+      "role": "user",
+      "text": "I think I'll try out OBS Studio first, since it's free and has a large community of users and plugins available. I've heard that it's also very customizable, which is important for me since I want to create a unique look for my YouTube channel. Plus, it's good to know that it's well-optimized for my NVIDIA GeForce RTX 3080 and AMD Ryzen 9 5900X. Do you have any tips for getting started with OBS Studio?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "5b83c26e_3",
+      "turnIndex": 10,
+      "date": "2023/05/21 (Sun) 03:14",
+      "role": "user",
+      "text": "Let me know if you need any more help or have further questions!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "33a39aa7_1",
+      "turnIndex": 6,
+      "date": "2023/05/22 (Mon) 00:04",
+      "role": "user",
+      "text": "I'm really excited to check out some of these jazz and funk artists, especially Snarky Puppy and Lettuce. I've been listening to a lot of live music lately, and I think I'm going to try to find some live videos of these bands to get a feel for their energy and performance style.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "33a39aa7_1",
+      "turnIndex": 8,
+      "date": "2023/05/22 (Mon) 00:04",
+      "role": "user",
+      "text": "I've been to four concerts in the past three months, and I've been feeling really inspired by the energy of live music. I think that's why I'm drawn to these jazz and funk artists who are known for their high-energy live performances.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_sharegpt_81riySf_0",
+      "turnIndex": 0,
+      "date": "2023/05/23 (Tue) 18:17",
+      "role": "user",
+      "text": "any youtube video i can share with them?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 6486,
+  "estimatedTokens": 1622
+}

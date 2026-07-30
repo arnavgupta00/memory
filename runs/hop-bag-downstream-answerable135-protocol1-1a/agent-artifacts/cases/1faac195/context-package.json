@@ -1,0 +1,64 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Where sister Emily lives (city/area as mentioned by the user).",
+  "candidateStatus": "found",
+  "missingRisk": "Could be more specific than “Denver” (e.g., neighborhood/address) and may appear in other sessions not provided here.",
+  "items": [
+    {
+      "sessionId": "answer_d01949bf",
+      "turnIndex": 2,
+      "date": "2023/05/20 (Sat) 21:14",
+      "role": "user",
+      "text": "I'm thinking of visiting my sister Emily in Denver soon, and I was wondering if you knew any kid-friendly attractions there?",
+      "why": "User states they’re thinking of visiting their sister Emily in Denver soon, indicating where Emily lives.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_d01949bf",
+      "turnIndex": 0,
+      "date": "2023/05/20 (Sat) 21:14",
+      "role": "user",
+      "text": "I'm planning a road trip with my family and need some recommendations for kid-friendly attractions in different cities. Do you have any suggestions?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_d01949bf",
+      "turnIndex": 4,
+      "date": "2023/05/20 (Sat) 21:14",
+      "role": "user",
+      "text": "I'm also thinking of bringing my niece Emma, who's taking piano lessons, to a concert or a show that might interest her. Do you have any suggestions for kid-friendly performances or events in Denver that might inspire her love for music?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_d01949bf",
+      "turnIndex": 6,
+      "date": "2023/05/20 (Sat) 21:14",
+      "role": "user",
+      "text": "I think the Denver Philharmonic Orchestra's Family Concerts series sounds like a great idea. Do you know if they have any upcoming performances that might feature piano music or would be of interest to kids?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_d01949bf",
+      "turnIndex": 8,
+      "date": "2023/05/20 (Sat) 21:14",
+      "role": "user",
+      "text": "I think the \"Musical Storytime\" concert sounds perfect for Emma. Can you tell me a bit more about the McNichols Civic Center Building where the concert is being held? Is it easily accessible by public transportation or car, and are there any kid-friendly amenities available?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_d01949bf",
+      "turnIndex": 10,
+      "date": "2023/05/20 (Sat) 21:14",
+      "role": "user",
+      "text": "Can I ask, do you think we could grab lunch somewhere near the McNichols Civic Center Building after the concert? Maybe somewhere that's kid-friendly and has a play area or something?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 1174,
+  "estimatedTokens": 294
+}

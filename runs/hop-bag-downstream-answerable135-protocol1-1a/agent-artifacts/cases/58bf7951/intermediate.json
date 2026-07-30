@@ -1,0 +1,23 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Play attended at the local community theater (specific title)",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_355c48bb",
+      "turnIndex": 2,
+      "why": "User states the play they attended at the local community theater was a production of The Glass Menagerie."
+    },
+    {
+      "sessionId": "answer_355c48bb",
+      "turnIndex": 4,
+      "why": "Assistant responds referencing the same play the user attended and confirms details about The Glass Menagerie, reinforcing the title."
+    },
+    {
+      "sessionId": "answer_355c48bb",
+      "turnIndex": 5,
+      "why": "Assistant continues discussing The Glass Menagerie in response to the user’s question about it, providing further context tied to the attended play."
+    }
+  ]
+}

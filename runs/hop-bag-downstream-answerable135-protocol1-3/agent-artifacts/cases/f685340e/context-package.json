@@ -1,0 +1,73 @@
+{
+  "queryShape": "update-conflict",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "answer_25df025b_1",
+      "turnIndex": 0,
+      "date": "2023/03/11 (Sat) 18:01",
+      "role": "user",
+      "text": "I'm thinking of ordering some new athletic socks online, but I'm not sure which brand to go with. Can you give me some recommendations? By the way, I was just at the local park last Sunday, and I saw some people playing tennis - reminds me of my own weekly tennis sessions with friends.",
+      "why": "per-session extractor: Indicates an earlier (“previous”) pattern of playing tennis and suggests a frequency descriptor (“weekly”) for tennis with friends at the local park.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_25df025b_1",
+      "turnIndex": 6,
+      "date": "2023/03/11 (Sat) 18:01",
+      "role": "user",
+      "text": "Yeah, I'm planning to play tennis with my friends this Sunday at the local park.",
+      "why": "per-session extractor: Establishes an upcoming/current (“now”) tennis plan tied to the local park and friends, which can help determine present frequency when combined with other sessions.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_25df025b_2",
+      "turnIndex": 0,
+      "date": "2023/07/30 (Sun) 04:03",
+      "role": "user",
+      "text": "I'm looking to plan out my weekend. Can you suggest some jogging routes near my house? Oh, and by the way, I'm planning to play tennis with my friends at the local park this Sunday, like we do every other week.",
+      "why": "per-session extractor: Provides the only explicit tennis frequency (every other week) and indicates the upcoming play date (this Sunday) relevant to comparing “previously” vs “now”.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_25df025b_1",
+      "turnIndex": 1,
+      "date": "2023/03/11 (Sat) 18:01",
+      "role": "assistant",
+      "text": "Tennis is a great way to stay active and have fun with friends! Now, about those athletic socks... There are many great brands out there, but here are some popular ones that are known for their quality and performance:\n\n1. **Nike**: Known for their moisture-wicking technology and comfortable fit, Nike offers a wide range of athletic socks for various sports, including tennis.\n2. **ASICS**: A popular choice among runners, ASICS also offers high-quality socks for tennis and other sports, featuring arch support and blister prevention.\n3. **Under Armour**: Under Armour's athletic socks are known for their moisture-wicking properties and four-way stretch for a comfortable fit.\n4. **Smartwool**: If you prefer merino wool socks, Smartwool is a great choice. They offer breathable, moisture-wicking socks that are perfect for tennis and other outdoor activities.\n5. **Balega**: Balega is a popular choice among athletes, offering socks with arch support, cushioning, and moisture-wicking properties.\n6. **ExOfficio**: ExOfficio socks are designed for high-performance activities like tennis, with features like arch support, breathability, and quick-drying materials.\n\nWhen choosing a brand, consider factors like your personal preferences (e.g., material, fit, thickness), the type of activity you'll be using them for (in this case, tennis), and your budget.\n\nI hope this helps you make an informed decision! Do you have any specific preferences or requirements for your athletic socks?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_25df025b_1",
+      "turnIndex": 5,
+      "date": "2023/03/11 (Sat) 18:01",
+      "role": "assistant",
+      "text": "The Nike Court Flex Tennis Socks are a popular choice among tennis players, and they do come in a variety of colors to match your personal style and tennis gear.\n\nYou can find the Nike Court Flex Tennis Socks in several colors, including:\n\n1. **White**: A classic choice that matches well with most tennis shoes and outfits.\n2. **Black**: A sleek and stylish option that's perfect for those who prefer a more subdued look.\n3. **Navy Blue**: A great choice for those who want a darker, more muted color that still looks sharp on the court.\n4. **Grey**: A versatile option that pairs well with a variety of tennis shoes and outfits.\n5. **Neon Green**: For those who want to add a pop of color to their tennis gear, this neon green option is a great choice.\n\nSome colors may be available in limited quantities or as part of specific collections, so you may want to check the Nike website or authorized retailers for the latest options.\n\nAdditionally, you can also consider purchasing a multi-pack of socks, which often includes a combination of colors. This can be a great way to stock up and have a few spare pairs on hand.\n\nNow that you've chosen your socks, are you planning on getting back out on the court soon?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_25df025b_1",
+      "turnIndex": 7,
+      "date": "2023/03/11 (Sat) 18:01",
+      "role": "assistant",
+      "text": "That sounds like a lot of fun! It's great that you're staying active and enjoying the outdoors with your friends. Sunday tennis sessions are a great way to unwind and get some exercise at the same time.\n\nMake sure to wear your new Nike Court Flex Tennis Socks and your Air Zoom tennis shoes, and you'll be ready to take on the court in style and comfort. Don't forget to stay hydrated, wear sunscreen, and bring some towels to wipe off that sweat.\n\nIf you're feeling competitive, you could even make it a friendly tournament and see who comes out on top. Or, if you're just looking to have some fun, you could play a casual game and enjoy the camaraderie with your friends.\n\nWhatever you choose, I hope you have a blast playing tennis on Sunday and make some amazing memories with your friends!\n\n(By the way, do you have a favorite tennis player or tennis tournament that inspires you to get out on the court?)",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_25df025b_2",
+      "turnIndex": 1,
+      "date": "2023/07/30 (Sun) 04:03",
+      "role": "assistant",
+      "text": "I'd be happy to help! However, I need a bit more information from you. Since I'm a large language model, I don't have access to your location or personal information. Could you please provide me with the following details:\n\n1. Your city or zip code?\n2. How far would you like your jogging route to be (e.g., 3 miles, 5 miles, etc.)?\n3. Are there any specific landmarks, parks, or areas you'd like to include or avoid in your jogging route?\n\nRegarding your tennis game on Sunday, that sounds like a great way to stay active and social! You might want to double-check the weather forecast beforehand to ensure it doesn't interfere with your plans.\n\nOnce I have more information about your location and preferences, I can suggest some jogging routes for you to explore.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 4955,
+  "estimatedTokens": 1239
+}

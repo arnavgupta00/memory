@@ -1,0 +1,18 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Your age at the time you moved to the United States, using your current age and how long you’ve been in the U.S.",
+  "candidateStatus": "found",
+  "missingRisk": "Your exact age at move-in could still depend on whether the “past five years” period started exactly relative to your birthday/arrival date; no specific move-in date is given.",
+  "items": [
+    {
+      "sessionId": "answer_991d55e5_1",
+      "turnIndex": 0,
+      "why": "States your current age (“32-year-old”) which is needed to compute your age at the time of moving."
+    },
+    {
+      "sessionId": "answer_991d55e5_2",
+      "turnIndex": 0,
+      "why": "Says you’ve been living in the United States for the past five years, providing the time-from-move information needed to infer your age at move time."
+    }
+  ]
+}

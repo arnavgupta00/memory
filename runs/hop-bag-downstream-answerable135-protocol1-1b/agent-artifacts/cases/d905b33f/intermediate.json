@@ -1,0 +1,63 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Today is 2023/05/30. The question asks for the percentage discount on the book from the user’s favorite author, so preserve the original price and the discounted price needed to compute the discount percentage.",
+    "candidateStatus": "found",
+    "missingRisk": "If the catalog only contains one of the two needed prices (original vs discounted), the percentage discount can’t be computed reliably from these turns alone.",
+    "items": [
+      {
+        "sessionId": "answer_85a77c48_1",
+        "turnIndex": 6,
+        "why": "Provides the original price of the new release from the user’s favorite author ($30)."
+      },
+      {
+        "sessionId": "answer_85a77c48_2",
+        "turnIndex": 2,
+        "why": "Provides the discounted purchase price of the book from the user’s favorite bookstore after a discount ($24), which is the value needed to compute the discount percentage."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Today is 2023/05/30. The question asks for the percentage discount on the book from the user’s favorite author, so preserve the original price and the discounted price needed to compute the discount percentage.",
+    "candidateStatus": "found",
+    "missingRisk": "If the catalog only contains one of the two needed prices (original vs discounted), the percentage discount can’t be computed reliably from these turns alone.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_85a77c48_1",
+        "turnIndex": 6,
+        "why": "Provides the original price of the new release from the user’s favorite author ($30)."
+      },
+      {
+        "sessionId": "answer_85a77c48_1",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_85a77c48_1",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_85a77c48_2",
+        "turnIndex": 2,
+        "why": "Provides the discounted purchase price of the book from the user’s favorite bookstore after a discount ($24), which is the value needed to compute the discount percentage."
+      },
+      {
+        "sessionId": "answer_85a77c48_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_85a77c48_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_85a77c48_1",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

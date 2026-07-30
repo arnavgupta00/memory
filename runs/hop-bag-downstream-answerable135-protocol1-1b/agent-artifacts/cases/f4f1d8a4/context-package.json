@@ -1,0 +1,82 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Identify who gave the user the new stand mixer as a birthday gift.",
+  "candidateStatus": "found",
+  "missingRisk": "None—candidate sessions include the explicit birthday-gift source (sister) for the stand mixer.; frozen bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "answer_f5b33470",
+      "turnIndex": 3,
+      "date": "2023/05/30 (Tue) 17:15",
+      "role": "assistant",
+      "text": "That sounds amazing! A caramel apple tart is a great way to showcase the flavors of caramel and apples together. I'm sure it was a hit with your family!\n\nCaramel éclairs are a bit more involved, but the end result is definitely worth the effort. The combination of the light and airy pastry, the creamy caramel filling, and the caramel glaze on top is just perfect. If you're feeling adventurous, you could even try adding some other flavors to your caramel, like fleur de sel or bourbon, to give it a unique twist.\n\nIf you don't mind me asking, what's your secret to making a great caramel? Do you have a favorite method or recipe that you swear by?\n\nAnd how did you decorate your caramel apple tart? Was it a simple arrangement of sliced apples, or did you get creative with some pastry leaves or other designs? I'm always looking for new ideas!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f5b33470",
+      "turnIndex": 4,
+      "date": "2023/05/30 (Tue) 17:15",
+      "role": "user",
+      "text": "I actually got my new stand mixer as a birthday gift from my sister last month, and it's been a game-changer for making caramel. I've been using a recipe that involves melting sugar and butter together, then slowly adding heavy cream to create a smooth caramel sauce. It's worked out really well so far!",
+      "why": "States directly: user got the new stand mixer as a birthday gift from their sister last month.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f5b33470",
+      "turnIndex": 5,
+      "date": "2023/05/30 (Tue) 17:15",
+      "role": "assistant",
+      "text": "Happy belated birthday! A new stand mixer is an amazing gift, and it's great that you're already putting it to good use.\n\nYour caramel recipe sounds like a classic approach, and adding the heavy cream slowly is key to creating a smooth and creamy caramel sauce. It's great that it's been working out well for you!\n\nUsing a stand mixer can definitely make a big difference when making caramel, especially when it comes to incorporating the cream. The mixer's powerful motor can help to emulsify the mixture more efficiently, resulting in a smoother and more stable caramel.\n\nWhat type of attachment do you use when making caramel with your stand mixer? Do you use the whisk attachment, or do you prefer the paddle attachment?\n\nAlso, have you tried making caramel with different types of sugar, such as muscovado or turbinado? These sugars can add a slightly different flavor profile to your caramel, and might be worth experimenting with.\n\nAnd finally, what's your favorite way to use your caramel sauce? Do you like to drizzle it over ice cream, use it as a filling for cakes and pastries, or do you have another favorite application?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f5b33470",
+      "turnIndex": 0,
+      "date": "2023/05/30 (Tue) 17:15",
+      "role": "user",
+      "text": "I've been experimenting with different baking recipes and I was wondering if you could give me some suggestions on what types of pastries I could make that feature caramel as a main ingredient?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f5b33470",
+      "turnIndex": 2,
+      "date": "2023/05/30 (Tue) 17:15",
+      "role": "user",
+      "text": "That's a great list! I'm especially interested in trying out the caramel éclairs. Speaking of caramel, I recently made a caramel apple tart for my family's Sunday dinner and it was a huge hit.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f5b33470",
+      "turnIndex": 6,
+      "date": "2023/05/30 (Tue) 17:15",
+      "role": "user",
+      "text": "I usually use the whisk attachment when making caramel, I find it helps to incorporate the cream more evenly. I haven't tried using different types of sugar yet, but that's a great idea - I'll have to experiment with that soon. As for using the caramel sauce, I've been using it mostly as a topping for my baked goods, like the apple tart I mentioned earlier. But I've also been thinking of using it to make some caramel macchiatos - have you got any tips on how to do that?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f5b33470",
+      "turnIndex": 8,
+      "date": "2023/05/30 (Tue) 17:15",
+      "role": "user",
+      "text": "I'm more of a DIY coffee enthusiast, and I've been experimenting with different coffee recipes at home. I recently got a new coffee grinder and a milk frother, so I've been having fun trying out different coffee drinks and flavor combinations. I've also been thinking of starting a small coffee and baking blog, where I can share my recipes and experiments with others. Do you have any tips on how to get started with blogging, or any favorite coffee and baking blogs that I should check out?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f5b33470",
+      "turnIndex": 10,
+      "date": "2023/05/30 (Tue) 17:15",
+      "role": "user",
+      "text": "That's really helpful, thanks! I'll definitely check out those blogs and take your tips into consideration as I start my own blog. I've been thinking of calling it \"The Daily Grind\" - what do you think?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 3837,
+  "estimatedTokens": 960
+}

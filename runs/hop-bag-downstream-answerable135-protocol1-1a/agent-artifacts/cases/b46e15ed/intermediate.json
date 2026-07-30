@@ -1,0 +1,33 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Two charity events you participated in back-to-back on consecutive calendar days; compute months elapsed from then until 2023/04/18.",
+  "candidateStatus": "found",
+  "missingRisk": "The memory may not include the specific pair of consecutive-day charity events (or their exact dates), so we may still be missing which events were on consecutive days.",
+  "items": [
+    {
+      "sessionId": "answer_4bfcc250_4",
+      "turnIndex": 0,
+      "why": "Mentions attending a charity gala (Cancer Research Foundation) on a specific “today” date, which is needed to identify possible consecutive-day charity participation."
+    },
+    {
+      "sessionId": "answer_4bfcc250_3",
+      "turnIndex": 0,
+      "why": "Mentions participating in the “24-Hour Bike Ride” charity event and provides the session date (2023/02/14), which is a candidate charity event for the consecutive-days pairing."
+    },
+    {
+      "sessionId": "answer_4bfcc250_1",
+      "turnIndex": 0,
+      "why": "Mentions participating in the “Walk for Hunger” charity event on a specific session date (2023/03/19); needed because it’s another candidate charity event that could be part of the consecutive-days pair."
+    },
+    {
+      "sessionId": "answer_4bfcc250_2",
+      "turnIndex": 0,
+      "why": "Mentions volunteering at a “Books for Kids” charity book drive event on a specific session date (2023/02/15), which could be adjacent to other charity events on consecutive days."
+    },
+    {
+      "sessionId": "answer_4bfcc250_3",
+      "turnIndex": 0,
+      "why": "Same session as the 24-Hour Bike Ride; included to help cross-check that session’s charity participation details match the consecutive-day requirement."
+    }
+  ]
+}

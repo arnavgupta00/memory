@@ -1,0 +1,38 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Focus on any direct statements about Emily’s residence (not activities in Denver).",
+    "candidateStatus": "found",
+    "missingRisk": "Only candidate evidence is that the user plans to visit Emily in Denver; it may not explicitly confirm Emily’s permanent address or residence beyond that trip context.",
+    "items": [
+      {
+        "sessionId": "answer_d01949bf",
+        "turnIndex": 2,
+        "why": "Directly states the user is visiting sister Emily in Denver, which is the only available evidence about where Emily lives/resides."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Focus on any direct statements about Emily’s residence (not activities in Denver).",
+    "candidateStatus": "found",
+    "missingRisk": "Only candidate evidence is that the user plans to visit Emily in Denver; it may not explicitly confirm Emily’s permanent address or residence beyond that trip context.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_d01949bf",
+        "turnIndex": 2,
+        "why": "Directly states the user is visiting sister Emily in Denver, which is the only available evidence about where Emily lives/resides."
+      },
+      {
+        "sessionId": "answer_d01949bf",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_d01949bf",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

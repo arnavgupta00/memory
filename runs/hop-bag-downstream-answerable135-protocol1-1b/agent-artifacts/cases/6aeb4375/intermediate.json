@@ -1,0 +1,103 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Include the user’s explicit counts of Korean restaurants tried, plus any nearby context indicating which restaurants/dishes those counts refer to (if present).",
+    "candidateStatus": "found",
+    "missingRisk": "The two sessions give different totals (3 vs 4); downstream may need to determine whether the later total supersedes the earlier one or whether they represent different time spans/overlapping restaurant lists.",
+    "items": [
+      {
+        "sessionId": "answer_3f9693b7_1",
+        "turnIndex": 8,
+        "why": "Contains the user’s question about Korean restaurants in their city and the statement that they’ve tried three different ones recently (sets up the count)."
+      },
+      {
+        "sessionId": "answer_3f9693b7_1",
+        "turnIndex": 10,
+        "why": "User reiterates the three places they tried (bibimbap, spicy kimchi stew, Japchae with sweet potato noodles), which anchors what the “3” refers to."
+      },
+      {
+        "sessionId": "answer_3f9693b7_2",
+        "turnIndex": 2,
+        "why": "User states they have tried four different Korean restaurants in their city so far (provides the later total for aggregation)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Include the user’s explicit counts of Korean restaurants tried, plus any nearby context indicating which restaurants/dishes those counts refer to (if present).",
+    "candidateStatus": "found",
+    "missingRisk": "The two sessions give different totals (3 vs 4); downstream may need to determine whether the later total supersedes the earlier one or whether they represent different time spans/overlapping restaurant lists.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_3f9693b7_1",
+        "turnIndex": 8,
+        "why": "Contains the user’s question about Korean restaurants in their city and the statement that they’ve tried three different ones recently (sets up the count)."
+      },
+      {
+        "sessionId": "answer_3f9693b7_1",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_3f9693b7_1",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_3f9693b7_1",
+        "turnIndex": 10,
+        "why": "User reiterates the three places they tried (bibimbap, spicy kimchi stew, Japchae with sweet potato noodles), which anchors what the “3” refers to."
+      },
+      {
+        "sessionId": "answer_3f9693b7_1",
+        "turnIndex": 11,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_3f9693b7_2",
+        "turnIndex": 2,
+        "why": "User states they have tried four different Korean restaurants in their city so far (provides the later total for aggregation)."
+      },
+      {
+        "sessionId": "answer_3f9693b7_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_3f9693b7_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "1bc87711_1",
+        "turnIndex": 2,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "1bc87711_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "1bc87711_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "sharegpt_MWlvrvZ_0",
+        "turnIndex": 0,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "sharegpt_MWlvrvZ_0",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_3f9693b7_2",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

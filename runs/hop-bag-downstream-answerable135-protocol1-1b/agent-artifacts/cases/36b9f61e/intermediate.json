@@ -1,0 +1,113 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Past few months (relative to 2023/05/30); sum all explicitly mentioned luxury-item purchase amounts in the candidate sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "The sessions only include a few specific luxury purchase amounts ($800, $1,200, $500). If there were other luxury purchases in “the past few months” not present in these candidates, the computed total downstream will be incomplete.",
+    "items": [
+      {
+        "sessionId": "answer_ef74281f_2",
+        "turnIndex": 2,
+        "why": "Mentions a luxury evening gown purchase and states the amount paid ($800), which is a key luxury-spend member for the total."
+      },
+      {
+        "sessionId": "answer_ef74281f_1",
+        "turnIndex": 0,
+        "why": "Contains the explicit luxury purchase amount for a designer Gucci handbag ($1,200), needed for summing luxury spending."
+      },
+      {
+        "sessionId": "answer_ef74281f_3",
+        "turnIndex": 2,
+        "why": "States a luxury purchase of leather boots from a high-end Italian designer with the amount ($500), required to compute the luxury total."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Past few months (relative to 2023/05/30); sum all explicitly mentioned luxury-item purchase amounts in the candidate sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "The sessions only include a few specific luxury purchase amounts ($800, $1,200, $500). If there were other luxury purchases in “the past few months” not present in these candidates, the computed total downstream will be incomplete.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_ef74281f_2",
+        "turnIndex": 2,
+        "why": "Mentions a luxury evening gown purchase and states the amount paid ($800), which is a key luxury-spend member for the total."
+      },
+      {
+        "sessionId": "answer_ef74281f_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_ef74281f_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_ef74281f_1",
+        "turnIndex": 0,
+        "why": "Contains the explicit luxury purchase amount for a designer Gucci handbag ($1,200), needed for summing luxury spending."
+      },
+      {
+        "sessionId": "answer_ef74281f_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_ef74281f_3",
+        "turnIndex": 2,
+        "why": "States a luxury purchase of leather boots from a high-end Italian designer with the amount ($500), required to compute the luxury total."
+      },
+      {
+        "sessionId": "answer_ef74281f_3",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_ef74281f_3",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_ef74281f_2",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_ef74281f_1",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_ef74281f_1",
+        "turnIndex": 7,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_ef74281f_1",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "85cd56c7_1",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "85cd56c7_1",
+        "turnIndex": 9,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "85cd56c7_1",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_ef74281f_3",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

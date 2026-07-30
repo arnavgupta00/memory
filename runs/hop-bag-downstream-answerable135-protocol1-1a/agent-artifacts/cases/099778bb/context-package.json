@@ -1,0 +1,127 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Leadership positions in the user’s company (women’s representation vs total leadership positions).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_80d6d664_2",
+      "turnIndex": 2,
+      "date": "2023/05/21 (Sun) 02:21",
+      "role": "user",
+      "text": "Wow, that's a lot of resources. I'll definitely check them out. I'm particularly interested in the diversity and inclusion reports. Do you think they'd have data on the demographics of our company's workforce, like the gender ratio? I recently attended a workshop on gender equality and was impressed to learn that women occupy 20 of the leadership positions in our company.",
+      "why": "User states women occupy 20 of the leadership positions in the company, which is the numerator needed for the women’s leadership percentage.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_80d6d664_2",
+      "turnIndex": 3,
+      "date": "2023/05/21 (Sun) 02:21",
+      "role": "assistant",
+      "text": "Diversity and inclusion reports often provide valuable insights into a company's workforce demographics, including gender ratios, racial and ethnic diversity, age, disability, and other metrics. These reports can help you understand the company's diversity landscape and track progress towards diversity and inclusion goals.\n\nIn a typical diversity and inclusion report, you might find data on:\n\n1. **Workforce demographics**: Breakdowns of the company's workforce by gender, race, ethnicity, age, disability, and other characteristics.\n2. **Leadership demographics**: Demographic data on leadership positions, including the number of women, people of color, and other underrepresented groups in senior roles.\n3. **Diversity metrics**: Statistics on diversity metrics such as gender ratio, racial and ethnic diversity, and age distribution.\n4. **Diversity and inclusion initiatives**: Information on programs, policies, and practices implemented to promote diversity, equity, and inclusion, such as training programs, mentorship initiatives, and employee resource groups.\n5. **Goals and targets**: The company's diversity and inclusion goals, targets, and strategies for achieving them.\n6. **Progress and challenges**: An analysis of the company's progress towards its diversity and inclusion goals, as well as challenges faced and lessons learned.\n\nWhen reviewing the report, pay attention to the following:\n\n* Are the diversity metrics improving over time?\n* Are there any areas where the company is struggling to make progress?\n* Are the diversity and inclusion initiatives aligned with the company's overall business strategy?\n* Are the goals and targets specific, measurable, achievable, relevant, and time-bound (SMART)?\n\nKeep in mind that some companies may not publicly disclose their diversity and inclusion reports, or may only share them with employees. If you're unable to find the report online, you can try reaching out to your HR department or diversity and inclusion team to request a copy or ask questions about the company's diversity metrics.\n\nRemember, diversity and inclusion reports are an important tool for promoting transparency, accountability, and progress towards a more inclusive workplace.",
+      "why": "Assistant discusses that D&I reports often include leadership demographics and responds to the user’s premise about women occupying 20 leadership positions (context/confirmation of the user-provided figure).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_80d6d664_1",
+      "turnIndex": 0,
+      "date": "2023/05/30 (Tue) 17:22",
+      "role": "user",
+      "text": "I'm looking for some data on our company's organizational structure. Can you tell me how many departments we have and what are their main responsibilities? By the way, I was thinking about our leadership team and I realized that we have a total of 100 leadership positions across the company.",
+      "why": "User states total leadership positions across the company is 100, which is the denominator needed for the women’s leadership percentage.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_80d6d664_2",
+      "turnIndex": 0,
+      "date": "2023/05/21 (Sun) 02:21",
+      "role": "user",
+      "text": "I'm looking for some information on company policies regarding diversity and inclusion. Can you direct me to the relevant resources?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_80d6d664_2",
+      "turnIndex": 4,
+      "date": "2023/05/21 (Sun) 02:21",
+      "role": "user",
+      "text": "I'll definitely check out the diversity and inclusion report. I'm curious to see how our company's gender ratio compares to industry benchmarks. By the way, do you know if the report would also cover data on employee resource groups, such as women's networks or LGBTQ+ groups?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_80d6d664_2",
+      "turnIndex": 6,
+      "date": "2023/05/21 (Sun) 02:21",
+      "role": "user",
+      "text": "I'm also curious to know if the report would cover data on employee feedback and sentiment, such as results from employee engagement surveys or focus groups. Do you think the report would provide insights into how employees perceive the company's diversity and inclusion efforts?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_80d6d664_2",
+      "turnIndex": 8,
+      "date": "2023/05/21 (Sun) 02:21",
+      "role": "user",
+      "text": "I'm interested in seeing how our company's diversity and inclusion efforts are perceived by employees. Do you think the report would also cover data on diversity and inclusion training and education programs, such as unconscious bias training or allyship workshops?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_80d6d664_2",
+      "turnIndex": 10,
+      "date": "2023/05/21 (Sun) 02:21",
+      "role": "user",
+      "text": "I'm curious to see if the report would also discuss the company's strategy for increasing diversity in hiring, such as blind hiring practices or diversity-focused recruitment initiatives. Would it cover data on the diversity of new hires, like the percentage of women or underrepresented groups in recent hiring cohorts?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_80d6d664_1",
+      "turnIndex": 2,
+      "date": "2023/05/30 (Tue) 17:22",
+      "role": "user",
+      "text": "I'll reach out to HR to see if they have any information on our organizational structure. Do you know of any resources that provide benchmarks for leadership positions in different industries, so I can better understand our company's leadership structure in comparison?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_80d6d664_1",
+      "turnIndex": 4,
+      "date": "2023/05/30 (Tue) 17:22",
+      "role": "user",
+      "text": "I'll look into those resources, thanks. Do you know if any of them provide data on diversity and inclusion in leadership positions, such as demographics or representation of underrepresented groups?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_80d6d664_1",
+      "turnIndex": 6,
+      "date": "2023/05/30 (Tue) 17:22",
+      "role": "user",
+      "text": "That's really helpful. I'll definitely check out some of those resources. I'm particularly interested in learning more about the representation of underrepresented groups in leadership positions. Do you think any of these resources would provide data on the average percentage of leadership positions held by women in companies of our size and industry?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_80d6d664_1",
+      "turnIndex": 8,
+      "date": "2023/05/30 (Tue) 17:22",
+      "role": "user",
+      "text": "I'll definitely check out those resources. I'm curious to see how our company compares to industry benchmarks. By the way, I was thinking about our leadership team and I realized that having 100 leadership positions is quite significant. I wonder if there are any best practices for structuring leadership teams of that size.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_80d6d664_1",
+      "turnIndex": 10,
+      "date": "2023/05/30 (Tue) 17:22",
+      "role": "user",
+      "text": "That's really helpful. I'll definitely consider those best practices when thinking about our leadership team's structure. I'm also curious to learn more about how to create a more inclusive leadership team. Do you have any suggestions on how to increase diversity and inclusion in our leadership team?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 5603,
+  "estimatedTokens": 1401
+}

@@ -1,0 +1,18 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "French press coffee-to-water ratio statements by the user (tbsp coffee per oz water) across sessions",
+  "candidateStatus": "found",
+  "missingRisk": "n/a",
+  "items": [
+    {
+      "sessionId": "answer_4dac77cb_1",
+      "turnIndex": 0,
+      "why": "User states their current French press ratio as 1 tablespoon coffee for every 6 ounces of water."
+    },
+    {
+      "sessionId": "answer_4dac77cb_2",
+      "turnIndex": 0,
+      "why": "User later states their French press ratio as 1 tablespoon coffee for every 5 ounces of water."
+    }
+  ]
+}

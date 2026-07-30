@@ -1,0 +1,133 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Count charity events you participated in before the 'Run for the Cure' event (Run for the Cure is dated October 15).",
+    "candidateStatus": "found",
+    "missingRisk": "If the user participated in additional charity events not present in these sessions (or if some “charity” items mentioned here are actually only suggestions/ideas), the downstream count could be incomplete.",
+    "items": [
+      {
+        "sessionId": "answer_4ffa04a2_1",
+        "turnIndex": 0,
+        "why": "Anchors the reference event: user states they ran in 'Run for the Cure' on October 15."
+      },
+      {
+        "sessionId": "answer_4ffa04a2_6",
+        "turnIndex": 0,
+        "why": "User states participation in 'Dance for a Cause' charity event on May 1 (before Oct 15)."
+      },
+      {
+        "sessionId": "answer_4ffa04a2_4",
+        "turnIndex": 0,
+        "why": "User states they attended a charity golf tournament on July 17 (before Oct 15)."
+      },
+      {
+        "sessionId": "answer_4ffa04a2_2",
+        "turnIndex": 0,
+        "why": "User states they volunteered at the 'Food for Thought' charity gala on September 25 (before Oct 15)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Count charity events you participated in before the 'Run for the Cure' event (Run for the Cure is dated October 15).",
+    "candidateStatus": "found",
+    "missingRisk": "If the user participated in additional charity events not present in these sessions (or if some “charity” items mentioned here are actually only suggestions/ideas), the downstream count could be incomplete.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_4ffa04a2_1",
+        "turnIndex": 0,
+        "why": "Anchors the reference event: user states they ran in 'Run for the Cure' on October 15."
+      },
+      {
+        "sessionId": "answer_4ffa04a2_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_4ffa04a2_6",
+        "turnIndex": 0,
+        "why": "User states participation in 'Dance for a Cause' charity event on May 1 (before Oct 15)."
+      },
+      {
+        "sessionId": "answer_4ffa04a2_6",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_4ffa04a2_4",
+        "turnIndex": 0,
+        "why": "User states they attended a charity golf tournament on July 17 (before Oct 15)."
+      },
+      {
+        "sessionId": "answer_4ffa04a2_4",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_4ffa04a2_2",
+        "turnIndex": 0,
+        "why": "User states they volunteered at the 'Food for Thought' charity gala on September 25 (before Oct 15)."
+      },
+      {
+        "sessionId": "answer_4ffa04a2_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_4ffa04a2_1",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_4ffa04a2_2",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_4ffa04a2_3",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_4ffa04a2_3",
+        "turnIndex": 1,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_4ffa04a2_3",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_4ffa04a2_6",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_4ffa04a2_6",
+        "turnIndex": 5,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_4ffa04a2_6",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_4ffa04a2_4",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_4ffa04a2_4",
+        "turnIndex": 5,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_4ffa04a2_4",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

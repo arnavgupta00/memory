@@ -1,0 +1,74 @@
+[
+  {
+    "session_id": "fb303dd2_2",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains no information about which book the user finished a week ago. It only includes travel planning and recommendations for Portland (food trucks, breweries, attractions, transportation, coffee shops, thrift stores, and tattoo shops).",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_c9d35c00_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "High. The session shows what the user is currently reading (e.g., “The Nightingale”, “The Song of Achilles”, “The Star-Touched Queen”) and various completed-read mentions (e.g., “The Poppy War”), but it does not contain a direct statement of a book finished “a week ago” relative to 2023/02/07.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is reading started \"The Nightingale\" by Kristin Hannah today (2023/01/10).",
+          "why": "Relevant to book list/reading timeline; could help distinguish which titles were finished vs. in-progress."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "User says they are currently reading \"The Song of Achilles\" and are about halfway through.",
+          "why": "Indicates not finished; useful for ruling out candidates when identifying a book completed a week ago."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "User says they've already read \"The Poppy War\" and really enjoyed it.",
+          "why": "A completed title, but no explicit finish date; may be a candidate depending on timing."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "User says they are currently reading \"The Star-Touched Queen\".",
+          "why": "Indicates an in-progress title; useful for ruling out candidates for a recently finished book."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "9d4312f6_3",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains multiple user/assistant discussions and book recommendations, but it does not include any statement that the user finished a specific book, nor any mention of finishing a book “a week ago,” so there may be no retrievable evidence for which book was finished in the timeframe asked.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_c9d35c00_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Session doesn’t explicitly state which book was finished exactly one week ago; it only says the user just finished The Nightingale on the session date (2023/01/31) and later says they are halfway through The Song of Achilles and plan to finish by end of the month.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User says they just finished a historical fiction novel, \"The Nightingale\" by Kristin Hannah, today.",
+          "why": "This is a direct statement of a completed book, which could be the target if the week-ago date aligns with this session date."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "User is currently reading \"The Song of Achilles\" and is about halfway through; they are hoping to finish it by the end of the month.",
+          "why": "This provides context on the user's reading progress and potential non-completion status around the week-ago timeframe."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "1ba79ea8_1",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains only requests and assistant recommendations for books and websites; it does not mention any book the user finished (or any completion date), so it likely does not help answer which book was finished a week ago.",
+      "claims": []
+    }
+  }
+]

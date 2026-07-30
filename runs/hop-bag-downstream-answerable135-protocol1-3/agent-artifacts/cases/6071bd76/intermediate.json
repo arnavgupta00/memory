@@ -1,0 +1,30 @@
+[
+  {
+    "session_id": "answer_4dac77cb_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "none",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "I've been experimenting with my French press and I've found that 1 tablespoon of coffee for every 6 ounces of water is the perfect ratio for me.",
+          "why": "Direct coffee-to-water ratio (coffee per water). Needed to determine whether user switched to more or less water per tablespoon of coffee."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_4dac77cb_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Only one coffee-to-water ratio is mentioned (1 tablespoon coffee for every 5 ounces of water). This session does not include an earlier or later ratio for comparison, so it may not be possible to determine whether you switched to more or less water per tablespoon.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "French press ratio: 1 tablespoon of coffee for every 5 ounces of water.",
+          "why": "Directly states the coffee-to-water ratio the user uses (coffee-to-water relationship relevant to whether it is more or less water per tablespoon)."
+        }
+      ]
+    }
+  }
+]

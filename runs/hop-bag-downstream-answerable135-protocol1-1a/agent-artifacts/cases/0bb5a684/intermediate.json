@@ -1,0 +1,18 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Days between the workshop date ('Effective Communication in the Workplace') and the team meeting the user was preparing for.",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_e936197f_1",
+      "turnIndex": 0,
+      "why": "User states they attended the workshop on January 10th and that it helped with meeting preparation."
+    },
+    {
+      "sessionId": "answer_e936197f_2",
+      "turnIndex": 0,
+      "why": "User references an upcoming team meeting on January 17th that they were preparing for."
+    }
+  ]
+}

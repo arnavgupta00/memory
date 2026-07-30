@@ -1,0 +1,69 @@
+[
+  {
+    "session_id": "de275215_3",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session does not explicitly state what bikes the user currently owns (e.g., whether they have only a mountain bike and commuter bike, or any additional bikes). The only potentially related content is general discussion about riding a “gravel or mountain bike ride,” which does not confirm current bike ownership or count.",
+      "claims": [
+        {
+          "turnIndex": 11,
+          "fact": "The assistant mentions “Whether it's trying a new type of ride, like a gravel or mountain bike ride, or exploring a new area, it can help keep things fresh and exciting.”",
+          "why": "This is the only reference to “gravel” in the session, but it is generic advice and does not state the user’s existing bike inventory."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_e1403127_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low. This session explicitly states you currently have three bikes and lists mountain and commuter, with the third being your road bike (implied). However, it does not explicitly mention the term “gravel bike” or state a chronology “before I purchased,” though it frames the road bike as currently in use.",
+      "claims": [
+        {
+          "turnIndex": 4,
+          "fact": "User: \"I've been using it along with my other two bikes, a mountain bike and a commuter bike.\"",
+          "why": "Indicates that in addition to the mountain bike and commuter bike, there is another bike being used (the referenced bike is the road bike). This is directly relevant to whether any other bikes exist besides the mountain and commuter bikes."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "User: \"By the way, I currently have three bikes\"",
+          "why": "Provides a count of total bikes currently owned, which can support inference about other bikes beyond just mountain and commuter (since the session also names those two)."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "User: \"I'm planning to use my road bike for the century ride\"",
+          "why": "Establishes that the third bike (besides mountain and commuter) is a road bike in this context, which helps answer what other bike(s) exist prior to adding a gravel bike."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "User: \"I've also been using my mountain bike for trail rides and my commuter bike for daily commutes.\"",
+          "why": "Confirms the existence and roles of the mountain and commuter bikes, defining the baseline set the question compares against."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_e1403127_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low. This session contains explicit mention of bike count and bike types the user has (road, mountain, commuter, and newly purchased hybrid), which directly bears on whether any bikes besides the mountain and commuter exist before/around the time of purchase.",
+      "claims": [
+        {
+          "turnIndex": 4,
+          "fact": "User says they'll have four bikes with them on the trip: road bike, mountain bike, commuter bike, and a new hybrid bike they just purchased.",
+          "why": "Indicates existence of bikes in addition to the mountain bike and commuter bike (specifically a road bike and a newly purchased hybrid), relevant to the question about other bikes before purchasing the gravel bike."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "User says: \"By the way, I'll have my road bike, and I'm planning to bring all my bikes,l\".",
+          "why": "Suggests the user already has multiple bikes beyond the road bike at the time of the trip planning; supports that they own more than just the mountain and commuter bikes, though not exhaustively enumerated."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Assistant confirms: \"Having four bikes will definitely add an extra layer of complexity\" (in response to user having four bikes).",
+          "why": "Reinforces the user's stated total number of bikes and the presence of more than two bike types (road + mountain + commuter + hybrid) in the session context."
+        }
+      ]
+    }
+  }
+]

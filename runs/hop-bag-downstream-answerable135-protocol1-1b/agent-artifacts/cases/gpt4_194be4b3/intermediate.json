@@ -1,0 +1,143 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Count the number of musical instruments the user currently owns based on explicitly stated owned instruments in the candidate sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "The catalog may omit some instruments the user owns if they were not mentioned in these sessions; also, “thinking of buying” (e.g., ukulele) may be confused with “currently own” if not clearly separated.",
+    "items": [
+      {
+        "sessionId": "answer_3826dc55_1",
+        "turnIndex": 2,
+        "why": "States the user has a black Fender Stratocaster electric guitar (owned instrument, plus context about it being go-to)."
+      },
+      {
+        "sessionId": "answer_3826dc55_1",
+        "turnIndex": 8,
+        "why": "Mentions an acoustic guitar humidifier for the user’s acoustic guitar (implies the user owns an acoustic guitar, though model not specified here)."
+      },
+      {
+        "sessionId": "answer_3826dc55_2",
+        "turnIndex": 6,
+        "why": "Explicitly states the user has an acoustic guitar, a Yamaha FG800 (owned for ~8 years)."
+      },
+      {
+        "sessionId": "answer_3826dc55_3",
+        "turnIndex": 0,
+        "why": "Explicitly states the user owns an old drum set, a 5-piece Pearl Export (even though considering selling)."
+      },
+      {
+        "sessionId": "answer_3826dc55_3",
+        "turnIndex": 2,
+        "why": "Explicitly states the user owns a Korg B1 piano (and mentions sticking keys)."
+      },
+      {
+        "sessionId": "answer_3826dc55_4",
+        "turnIndex": 0,
+        "why": "Re-states ownership of the Korg B1 and that the user is seeking service for it (reinforces it is currently owned)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Count the number of musical instruments the user currently owns based on explicitly stated owned instruments in the candidate sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "The catalog may omit some instruments the user owns if they were not mentioned in these sessions; also, “thinking of buying” (e.g., ukulele) may be confused with “currently own” if not clearly separated.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_3826dc55_1",
+        "turnIndex": 2,
+        "why": "States the user has a black Fender Stratocaster electric guitar (owned instrument, plus context about it being go-to)."
+      },
+      {
+        "sessionId": "answer_3826dc55_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_3826dc55_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_3826dc55_1",
+        "turnIndex": 8,
+        "why": "Mentions an acoustic guitar humidifier for the user’s acoustic guitar (implies the user owns an acoustic guitar, though model not specified here)."
+      },
+      {
+        "sessionId": "answer_3826dc55_1",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_3826dc55_1",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_3826dc55_2",
+        "turnIndex": 6,
+        "why": "Explicitly states the user has an acoustic guitar, a Yamaha FG800 (owned for ~8 years)."
+      },
+      {
+        "sessionId": "answer_3826dc55_2",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_3826dc55_2",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_3826dc55_3",
+        "turnIndex": 0,
+        "why": "Explicitly states the user owns an old drum set, a 5-piece Pearl Export (even though considering selling)."
+      },
+      {
+        "sessionId": "answer_3826dc55_3",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_3826dc55_3",
+        "turnIndex": 2,
+        "why": "Explicitly states the user owns a Korg B1 piano (and mentions sticking keys)."
+      },
+      {
+        "sessionId": "answer_3826dc55_3",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_3826dc55_4",
+        "turnIndex": 0,
+        "why": "Re-states ownership of the Korg B1 and that the user is seeking service for it (reinforces it is currently owned)."
+      },
+      {
+        "sessionId": "answer_3826dc55_4",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_3826dc55_2",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_3826dc55_2",
+        "turnIndex": 1,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_3826dc55_2",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_3826dc55_4",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

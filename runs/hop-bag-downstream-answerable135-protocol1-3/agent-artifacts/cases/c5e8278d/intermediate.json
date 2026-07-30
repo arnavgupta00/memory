@@ -1,0 +1,21 @@
+[
+  {
+    "session_id": "answer_f6168136",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low — the session explicitly states the old and new last names (Johnson → Winters).",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "Old last name was Johnson; now last name is Winters.",
+          "why": "Directly answers what the user’s last name was before changing it, and preserves the exact names."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "User recently changed last name (from Johnson to Winters).",
+          "why": "Reinforces the old-to-new last name change context with the exact names."
+        }
+      ]
+    }
+  }
+]

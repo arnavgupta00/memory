@@ -1,0 +1,35 @@
+[
+  {
+    "session_id": "answer_e936197f_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session states the workshop date (January 10th) but does not mention the team meeting date; the reducer will need the meeting date from elsewhere to compute the day difference.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is preparing for an upcoming meeting with my team.",
+          "why": "Establishes context that there is a team meeting the user is preparing for, relevant to “days before the team meeting.”"
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User recently attended a workshop on \"Effective Communication in the Workplace\" on January 10th.",
+          "why": "Directly relevant to computing the number of days before the team meeting the user attended the workshop."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_e936197f_2",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains no mention of attending a workshop named \"Effective Communication in the Workplace\" (or any workshop), so it cannot establish whether/when you attended it relative to the team meeting on January 17th. The relevant information may be in a different candidate session.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "Upcoming team meeting on January 17th (the user is preparing for it and wants to practice communication skills).",
+          "why": "This provides the team meeting date that any workshop attendance timing would need to be compared against, even though this session doesn’t mention the workshop attendance itself."
+        }
+      ]
+    }
+  }
+]

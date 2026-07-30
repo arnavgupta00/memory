@@ -1,0 +1,136 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Use the user’s described wake-up times for Tuesdays and Thursdays and any baseline wake-up time needed to compute/interpret “15 minutes earlier.”",
+  "candidateStatus": "found",
+  "missingRisk": "The Tuesdays/Thursdays wake-up is described only as “15 minutes earlier” (relative), so the answerer must combine it with the baseline wake-up time (e.g., 7:00 AM) to determine the exact clock time. If the baseline differs on those days, the computed time may be wrong.; frozen bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "answer_9af4e346_2",
+      "turnIndex": 0,
+      "date": "2023/05/27 (Sat) 07:56",
+      "role": "user",
+      "text": "I'm trying to create a personalized morning routine that works for me. I've recently started going for a 30-minute walk before work, which has been great. On Tuesdays and Thursdays, I've also started waking up 15 minutes earlier to meditate and practice some yoga poses, which has helped me feel more centered and calm. Can you suggest some healthy breakfast ideas that I can prep the night before to start my day on a good note?",
+      "why": "States that on Tuesdays and Thursdays the user wakes up 15 minutes earlier (to meditate), which is the key relative wake-time fact.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_9af4e346_2",
+      "turnIndex": 1,
+      "date": "2023/05/27 (Sat) 07:56",
+      "role": "assistant",
+      "text": "That's a great start to your morning routine! Congratulations on incorporating physical activity and mindfulness practices into your daily routine. Now, let's get you fueled up with some healthy breakfast ideas that can be prepped the night before. Here are some delicious and convenient options:\n\n1. **Overnight Oats**: Mix rolled oats, milk, and your choice of nuts, seeds, or fruit in a jar or container. Refrigerate overnight and enjoy in the morning.\n2. **Breakfast Burrito**: Scramble eggs, add black beans, cheese, and veggies like bell peppers, onions, and mushrooms. Wrap in a whole-grain tortilla and refrigerate or freeze for up to 3 days.\n3. **Mason Jar Parfait**: Layer Greek yogurt, granola, fresh berries, and a drizzle of honey in a jar. Refrigerate overnight and enjoy in the morning.\n4. **Avocado Toast**: Toast whole-grain bread, mash avocado, and sprinkle with salt and pepper. Add a sliced egg or a sprinkle of red pepper flakes for extra protein. Store in an airtight container overnight.\n5. **Smoothie Packs**: Prepare individual smoothie bags with frozen fruit, spinach, and protein powder (if desired). In the morning, add your preferred milk and blend.\n6. **Quinoa Breakfast Bowl**: Cook quinoa and mix with milk, honey, and your choice of nuts, seeds, or fruit. Refrigerate overnight and top with fresh fruit and nuts in the morning.\n7. **Hard-Boiled Eggs**: Boil eggs the night before and keep them in the fridge for a quick protein-packed breakfast on-the-go.\n8. **Chia Seed Pudding**: Mix chia seeds with milk and honey, then refrigerate overnight. Top with fresh fruit and nuts in the morning.\n9. **Cottage Cheese and Fruit**: Mix cottage cheese with fruit like berries or sliced peaches, and refrigerate overnight.\n10. **Green Smoothie**: Prepare a green smoothie with spinach, avocado, and your preferred milk, then refrigerate overnight and enjoy in the morning.\n\nRemember to choose ingredients that you enjoy and that fit your dietary needs and preferences. Experiment with different combinations to find your favorite breakfast prep ideas.\n\nHow do these ideas sound? Do you have any specific dietary restrictions or preferences I can take into account?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_9af4e346_1",
+      "turnIndex": 0,
+      "date": "2023/05/27 (Sat) 18:20",
+      "role": "user",
+      "text": "I'm looking to find some healthy breakfast ideas that can be prepared the night before. I've recently started waking up at 7:00 AM, which is a big improvement from my usual 8:30 AM wake-up call, and I want to make sure I'm fueling up with a nutritious meal to start my day.",
+      "why": "Provides the user’s baseline wake-up time (7:00 AM vs usual 8:30 AM), needed to convert “15 minutes earlier” into a specific Tuesday/Thursday clock time.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_9af4e346_1",
+      "turnIndex": 1,
+      "date": "2023/05/27 (Sat) 18:20",
+      "role": "assistant",
+      "text": "Congratulations on establishing an earlier wake-up routine! Preparing breakfast the night before can save you time and ensure you're starting your day with a nutritious meal. Here are some healthy breakfast ideas that can be prepared the night before:\n\n1. **Overnight Oats**: Mix rolled oats, milk, and your choice of nuts, seeds, or fruit in a jar or container. Refrigerate overnight and enjoy in the morning.\n2. **Breakfast Burrito**: Scramble eggs, add black beans, cheese, and veggies, then wrap in a tortilla. Store in the fridge overnight and microwave in the morning.\n3. **Mason Jar Parfait**: Layer Greek yogurt, granola, and your favorite fruit (e.g., berries, banana) in a mason jar. Refrigerate overnight and enjoy in the morning.\n4. **Cottage Cheese and Fruit**: Mix cottage cheese with fruit such as berries or sliced peaches, and store in the fridge overnight.\n5. **Slow Cooker Oatmeal**: Prepare steel-cut oats with milk or water, and add your choice of nuts, seeds, or fruit. Cook on low overnight and wake up to a warm, comforting breakfast.\n6. **Breakfast Muffins**: Prepare a batch of muffins the night before, using healthy ingredients like whole wheat flour, eggs, and fruit. Store in an airtight container and grab-and-go in the morning.\n7. **Chia Seed Pudding**: Mix chia seeds with almond milk and honey, then refrigerate overnight. Top with fruit and nuts in the morning.\n8. **Green Smoothie Pack**: Prepare a smoothie pack by freezing your favorite fruits, spinach, and milk or yogurt in a bag. In the morning, simply blend and enjoy.\n9. **Hard-Boiled Eggs**: Boil eggs the night before and store them in the fridge for a quick protein-packed breakfast on-the-go.\n10. **Avocado Toast**: Toast whole grain bread, mash an avocado, and sprinkle with salt and pepper. Store in the fridge overnight and top with eggs or tomatoes in the morning.\n\nThese healthy breakfast ideas will give you a nutritious start to your day and help you make the most of your new 7:00 AM wake-up time. Enjoy!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_9af4e346_2",
+      "turnIndex": 2,
+      "date": "2023/05/27 (Sat) 07:56",
+      "role": "user",
+      "text": "I'm particularly interested in the overnight oats and chia seed pudding options. Can you tell me more about the benefits of chia seeds and how I can incorporate them into my breakfast routine?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_9af4e346_2",
+      "turnIndex": 4,
+      "date": "2023/05/27 (Sat) 07:56",
+      "role": "user",
+      "text": "I'm excited to try out the chia seed pudding recipe. I've also been feeling more energized and focused throughout the day since I started going for my morning walks. I'm wondering, are there any specific stretches or exercises that I can do during my walks to help improve my flexibility and overall health?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_9af4e346_2",
+      "turnIndex": 6,
+      "date": "2023/05/27 (Sat) 07:56",
+      "role": "user",
+      "text": "That's really helpful, thank you! I'll definitely try to incorporate those stretches and exercises into my morning walks. I've also been thinking about my meditation practice on Tuesdays and Thursdays, and I was wondering if you could suggest some guided meditation apps or resources that I could use to help me stay focused and centered.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_9af4e346_2",
+      "turnIndex": 8,
+      "date": "2023/05/27 (Sat) 07:56",
+      "role": "user",
+      "text": "I'm interested in trying out Headspace and Insight Timer. I've heard great things about both apps, and I like that they offer a variety of guided meditations and tracking features. I'm also curious about exploring the free resources you mentioned, like UCLA Mindful Awareness Research Center and Tara Brach's website. Since I'm just starting out with meditation, I think it's helpful to have a mix of guided sessions and flexibility to explore different styles and topics.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_9af4e346_2",
+      "turnIndex": 10,
+      "date": "2023/05/27 (Sat) 07:56",
+      "role": "user",
+      "text": "I plan to start by committing to a daily meditation practice of at least 10 minutes, using a combination of Headspace and Insight Timer. I'll try to meditate at the same time every day, right after my morning walk, to make it a habit. I'll also explore the free resources you mentioned, such as UCLA Mindful Awareness Research Center and Tara Brach's website, to get a sense of different teaching styles and approaches to meditation.\n\nMy goal for the next few weeks is to establish a consistent meditation practice and start to notice the benefits of meditation in my daily life. I'm hoping to feel more centered, calm, and focused, and to improve my overall well-being. I'm also interested in exploring how meditation can help me with stress and anxiety, and how it can improve my relationships with others.\n\nI'm excited to start this journey and see where it takes me. Thanks for your guidance and support!",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_9af4e346_1",
+      "turnIndex": 2,
+      "date": "2023/05/27 (Sat) 18:20",
+      "role": "user",
+      "text": "I'm particularly interested in the overnight oats and chia seed pudding. Can you provide some specific recipes for those, and any tips on how to customize them to my taste preferences?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_9af4e346_1",
+      "turnIndex": 4,
+      "date": "2023/05/27 (Sat) 18:20",
+      "role": "user",
+      "text": "I'm really interested in trying out the peanut butter banana overnight oats. Can you give me some recommendations on what type of milk to use and what kind of peanut butter would work best in this recipe?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_9af4e346_1",
+      "turnIndex": 6,
+      "date": "2023/05/27 (Sat) 18:20",
+      "role": "user",
+      "text": "I'm excited to try out the peanut butter banana overnight oats. I'll probably use almond milk and creamy peanut butter. I'm also thinking of adding some sliced banana on top of the oats in the morning, along with a sprinkle of cinnamon. Do you think that would work well with the flavors?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_9af4e346_1",
+      "turnIndex": 8,
+      "date": "2023/05/27 (Sat) 18:20",
+      "role": "user",
+      "text": "I'm also looking to find some new ways to make my morning walk more enjoyable. Do you have any suggestions on how I can make the most out of my 30-minute morning walk?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_9af4e346_1",
+      "turnIndex": 10,
+      "date": "2023/05/27 (Sat) 18:20",
+      "role": "user",
+      "text": "I'm excited to try out some of these ideas to make my morning walk more enjoyable. I think I'll start by listening to music and taking in the sights and sounds around me. I might also try to set a goal to walk a certain distance or complete a certain number of steps to keep myself motivated. Do you have any recommendations for good walking music or podcasts to listen to?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 8332,
+  "estimatedTokens": 2083
+}

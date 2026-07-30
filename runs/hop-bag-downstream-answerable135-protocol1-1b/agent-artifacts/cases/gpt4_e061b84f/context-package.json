@@ -1,0 +1,370 @@
+{
+  "queryShape": "order",
+  "setBoundary": "Identify the three sports events the user participated in during the past month and order them chronologically (earliest → latest) using the event dates provided in the sessions.",
+  "candidateStatus": "found",
+  "missingRisk": "If the three “sports events” meant by the question exclude some of these (e.g., triathlon/5K/soccer vs. other athletic activities like a volleyball league game mentioned as context), additional event-specific sessions may be needed to match the user’s intended set.; frozen bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "1446b088_2",
+      "turnIndex": 2,
+      "date": "2023/05/12 (Fri) 15:34",
+      "role": "user",
+      "text": "I'm excited to try out these exercises. I'll definitely start with the bodyweight marching and walking lunges since they seem easy to follow. Do you have any tips on how to track my progress and stay motivated?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "1446b088_2",
+      "turnIndex": 3,
+      "date": "2023/05/12 (Fri) 15:34",
+      "role": "assistant",
+      "text": "Consistency and tracking progress are crucial to staying motivated and reaching your goals. Here are some tips to help you track your progress and stay motivated:\n\n1. **Set specific goals**: Define your goals, such as increasing your daily step count by 1,000 steps per day or completing a certain number of workouts per week. Having clear goals will help you stay focused.\n2. **Use a fitness tracker or pedometer**: Wear a fitness tracker or pedometer to track your daily step count, distance, and calories burned. This will help you monitor your progress and stay motivated.\n3. **Log your workouts**: Keep a workout log or journal to track the exercises you've done, the number of sets and reps, and how you feel. This will help you see your progress and identify patterns.\n4. **Create a schedule**: Plan out your workouts and schedule them in your calendar. Treat them as non-negotiable appointments to ensure you stick to your routine.\n5. **Track your progress photos**: Take progress photos at the beginning and end of each week or month. This will help you visualize your progress and stay motivated.\n6. **Find an accountability partner**: Share your goals with a friend or family member and ask them to hold you accountable. This can be a great motivator!\n7. **Reward yourself**: Set small rewards for yourself when you reach certain milestones. This could be something as simple as a new workout outfit or a post-workout smoothie.\n8. **Celebrate small wins**: Acknowledge and celebrate your small victories along the way. This will help you stay motivated and encouraged.\n9. **Mix it up**: Vary your workout routine every 2-3 weeks to avoid plateaus and prevent boredom.\n10. **Be kind to yourself**: Remember that it's okay to have off days. Don't be too hard on yourself if you miss a workout or don't see immediate results. Get back on track and keep moving forward.\n\nAdditionally, here are some tips specific to the exercises I mentioned earlier:\n\n* For bodyweight marching, try to increase the duration or number of sets as you get more comfortable.\n* For walking lunges, focus on proper form and engage your core to avoid straining your knees.\n* As you get more comfortable with the exercises, try incorporating them into your daily routine, such as during commercial breaks while watching TV or during your lunch break at work.\n\nRemember, consistency is key. Stick to your routine, and you'll start to see progress and feel more motivated over time.\n\nHow do these tips sound? Do you have any other questions or concerns about tracking your progress or staying motivated?",
+      "why": "deterministic candidate-session coverage repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "1446b088_2",
+      "turnIndex": 4,
+      "date": "2023/05/12 (Fri) 15:34",
+      "role": "user",
+      "text": "I'll definitely try to implement those tips to track my progress and stay motivated. Speaking of tracking my progress, I've been using my Omron body fat scale to track my body composition. Do you have any recommendations on how to interpret the data and make sense of the different metrics it provides?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "9345f7dc_4",
+      "turnIndex": 0,
+      "date": "2023/05/21 (Sun) 12:34",
+      "role": "user",
+      "text": "I'm thinking of trying to adjust my morning routine to get some exercise before work. Do you have any suggestions for a quick 20-minute workout that I can fit in before I head out the door? By the way, I've been taking the bus to work for the past three weeks, so I'm trying to make the most of my morning commute time.",
+      "why": "deterministic candidate-session coverage repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "9345f7dc_4",
+      "turnIndex": 1,
+      "date": "2023/05/21 (Sun) 12:34",
+      "role": "assistant",
+      "text": "That's a great goal! Fitting in a quick workout before work can boost your energy and set a positive tone for the day. Given your bus commute, you can definitely make the most of your morning time. Here are some 20-minute workout ideas that you can try:\n\n**Bodyweight Exercises**\n\n1. 7-Minute Workout: This is a quick and intense circuit workout that targets major muscle groups. You can do 2-3 rounds in 20 minutes.\n\t* Jumping jacks (30 seconds)\n\t* Burpees (15 reps)\n\t* Mountain climbers (30 seconds)\n\t* Plank (30 seconds)\n\t* Dumbbell rows (15 reps per arm)\n\t* Bicycle crunches (15 reps)\n\t* Tricep dips (15 reps)\n\t* Russian twists (15 reps)\n2. Quick Strength Circuit: Focus on 5-6 exercises that work different muscle groups. Do 3 sets of 10-12 reps each.\n\t* Squats\n\t* Push-ups\n\t* Lunges\n\t* Plank jacks\n\t* Chest dips (using a chair or bench)\n\t* Calf raises\n\n**High-Intensity Interval Training (HIIT)**\n\n1. 20-Minute HIIT: Alternate between 30 seconds of intense exercise and 30 seconds of rest. Repeat for 20 minutes.\n\t* Sprints in place\n\t* Jumping jacks\n\t* Burpees\n\t* Mountain climbers\n\t* Plank jacks\n2. Tabata Workout: A 4-minute HIIT cycle, repeated 4-5 times. Work for 20 seconds, rest for 10 seconds.\n\t* Sprints in place\n\t* Jumping jacks\n\t* Burpees\n\t* Mountain climbers\n\n**Yoga or Stretching**\n\n1. Quick Flow Yoga: Focus on 10-12 poses, holding each for 20-30 seconds. Move quickly between poses to keep your heart rate up.\n\t* Downward-facing dog\n\t* Warrior II\n\t* Triangle pose\n\t* Tree pose\n\t* Seated forward bend\n\t* Plank\n\t* Cobra pose\n2. Dynamic Stretching: Focus on 10-12 dynamic stretches, holding each for 10-15 seconds.\n\t* Leg swings\n\t* Arm circles\n\t* Hip circles\n\t* Calf raises\n\t* Toe touches\n\t* Side lunges\n\nRemember to:\n\n* Warm up with 2-3 minutes of light cardio (jogging in place, jumping jacks, etc.)\n* Cool down with 2-3 minutes of stretching\n* Listen to your body and adjust the intensity and duration based on your fitness level\n* Make sure to leave enough time to get ready for work after your workout!\n\nChoose a workout that suits your fitness level and preferences, and have fun with it!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_8c64ce25_2",
+      "turnIndex": 0,
+      "date": "2023/06/02 (Fri) 15:29",
+      "role": "user",
+      "text": "I'm looking for some new bike routes to try out. Do you have any suggestions for trails around the city? By the way, I just completed the Spring Sprint Triathlon today, which included a 20K bike ride, and I'm itching to get back on my bike.",
+      "why": "Contains the user statement that they completed the Spring Sprint Triathlon (includes the event date from the session header).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_8c64ce25_2",
+      "turnIndex": 1,
+      "date": "2023/06/02 (Fri) 15:29",
+      "role": "assistant",
+      "text": "Huge congrats on completing the Spring Sprint Triathlon! That's an amazing achievement!\n\nI'd be happy to help you with some new bike route suggestions around the city. Since I'm a large language model, I don't have personal experiences, but I can provide you with some popular bike trails and routes that you might enjoy:\n\n1. **Local Park Trails**: Check out the trails in nearby parks or nature reserves. These trails are often well-maintained, scenic, and less crowded than urban roads. You can search online for \"bike trails near me\" or \"bike routes in [your city/park name]\" to find options.\n2. **Rail Trails**: Many cities have converted old railway lines into bike trails, which are often flat, smooth, and car-free. These trails can be a great option for a relaxing ride.\n3. **Waterfront Paths**: If you live near a lake, river, or ocean, there might be a waterfront path or bike trail that offers stunning views and a pleasant ride.\n4. **Urban Bike Lanes**: Explore your city's urban bike lanes, which are designed to provide a safe and efficient route for cyclists. You can use online resources like Google Maps or bike route planning apps to find bike-friendly routes.\n5. **Group Rides**: Join a local cycling group or club, which often organize group rides on various routes. This is a great way to meet fellow cyclists, learn new routes, and get motivated.\n\nSome popular bike route planning resources include:\n\n* Strava: A social network for athletes that allows you to discover and share routes.\n* TrailLink: A website and app that provides information on bike trails and routes across the US.\n* MapMyRide: A route planning tool that allows you to create and share bike routes.\n* Local bike shops: Visit your local bike shop and ask for recommendations on popular bike routes and trails in the area.\n\nRemember to always follow safety guidelines, wear appropriate gear, and obey traffic rules when riding in urban areas.\n\nI hope this helps you find some exciting new bike routes to explore!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_8c64ce25_2",
+      "turnIndex": 2,
+      "date": "2023/06/02 (Fri) 15:29",
+      "role": "user",
+      "text": "That's helpful, thanks! I've been thinking of exploring the waterfront path, but I was wondering if you know if it's open to cyclists during the week, or is it more of a weekend thing?",
+      "why": "deterministic candidate-session coverage repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_8c64ce25_2",
+      "turnIndex": 3,
+      "date": "2023/06/02 (Fri) 15:29",
+      "role": "assistant",
+      "text": "I'm glad you found the suggestions helpful!\n\nRegarding the waterfront path, I don't have real-time information about specific paths or their schedules. However, I can suggest a few ways to find out if the waterfront path is open to cyclists during the week:\n\n1. **Check the city's website**: Look for the city's official website, parks department, or transportation department website. They usually have information on bike trails, paths, and their usage rules.\n2. **Contact local bike shops**: Reach out to local bike shops or cycling organizations in your area. They often have knowledge about the local cycling infrastructure and can provide you with information on the waterfront path's availability.\n3. **Social media and online forums**: Join local cycling groups or forums on social media platforms like Facebook or Reddit. Ask the community if they have any information about the waterfront path's hours of operation.\n4. **Check with local authorities**: If you're unable to find information online, you can contact the local parks department, transportation department, or police department to ask about the path's availability during the week.\n5. **Visit the path**: If all else fails, you can always visit the waterfront path during the week and see if it's open to cyclists. Look for signs or postings that might indicate any restrictions.\n\nRemember to always follow local rules and regulations, and be respectful of other path users, such as pedestrians and joggers.\n\nI hope this helps, and I wish you a great ride along the waterfront path!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_8c64ce25_1",
+      "turnIndex": 0,
+      "date": "2023/06/10 (Sat) 15:00",
+      "role": "user",
+      "text": "I'm looking for some new running shoes. I just finished a 5K run with a personal best time of 27 minutes and 42 seconds at the Midsummer 5K Run, and I think it's time to upgrade my gear. Can you recommend some good running shoes for racing?",
+      "why": "Contains the user statement that they finished the Midsummer 5K Run with a personal best (includes the event date from the session header).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_8c64ce25_1",
+      "turnIndex": 1,
+      "date": "2023/06/10 (Sat) 15:00",
+      "role": "assistant",
+      "text": "Congratulations on your personal best time at the Midsummer 5K Run! That's an impressive achievement!\n\nWhen it comes to racing, you'll want shoes that provide a responsive ride, excellent cushioning, and a snug, secure fit. Here are some top recommendations for racing shoes that can help you shave off precious seconds from your next 5K:\n\n1. **Nike Vaporfly Next%**: These shoes are designed for elite runners, but are also suitable for serious recreational runners like yourself. They feature a full-length carbon plate for maximum propulsion and a responsive, snappy feel.\n2. **Adidas Adizero Adios**: These shoes are built for speed, with a focus on lightweight, responsive cushioning and a sleek, aerodynamic design. They're ideal for runners with a faster pace, like yours.\n3. **New Balance FuelCell 5280**: These shoes offer a unique midsole design that provides both cushioning and propulsion. They're lightweight, breathable, and perfect for fast-paced racing.\n4. **Brooks Hyperion Elite**: These shoes feature a DNA LOFT midsole for superior cushioning and a BioMoGo DNA midsole for customized support. They're designed for speed and agility, making them perfect for racing.\n5. **Asics MetaRide**: These shoes boast a unique rocker design that encourages a smooth, efficient stride. They're lightweight, breathable, and provide excellent cushioning for a fast, comfortable ride.\n\nWhen choosing a racing shoe, consider the following factors:\n\n* **Weight**: Lighter shoes can help you run faster, but may sacrifice some cushioning.\n* **Cushioning**: Adequate cushioning is essential for comfort and performance. Look for shoes with responsive, springy midsoles.\n* **Fit**: Ensure a snug, secure fit to prevent blisters and discomfort during your run.\n* **Drop**: If you're used to a lower heel-to-toe drop, look for shoes with a similar design to minimize transition time.\n\nRemember to try on several options, go for a run or jog in each pair, and choose the one that feels most comfortable and responsive to your foot strike.\n\nLastly, don't forget to break in your new shoes gradually to avoid any discomfort or injuries. Happy running!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_8c64ce25_1",
+      "turnIndex": 2,
+      "date": "2023/06/10 (Sat) 15:00",
+      "role": "user",
+      "text": "What's the main difference between the Nike Vaporfly Next% and the Adidas Adizero Adios in terms of cushioning and responsiveness?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "78d28576_2",
+      "turnIndex": 6,
+      "date": "2023/06/16 (Fri) 15:35",
+      "role": "user",
+      "text": "How can I incorporate strength training to improve my core strength, as I'm currently doing planks and Russian twists 3 times a week and aiming to hold a plank for 60 seconds by the end of the month?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "78d28576_2",
+      "turnIndex": 7,
+      "date": "2023/06/16 (Fri) 15:35",
+      "role": "assistant",
+      "text": "You're already on the right track with planks and Russian twists! To further improve your core strength, I recommend adding some variety to your exercises and increasing the intensity. Here are some suggestions to help you achieve your goal of holding a 60-second plank by the end of the month:\n\n**Add these exercises to your routine:**\n\n1. **Leg raises:** Lie on your back with arms extended overhead, and raise your legs straight up towards the ceiling. Lift your shoulders off the ground, holding for 1-2 seconds. Lower your legs back down without touching the floor, and repeat for 3 sets of 10-12 reps.\n2. **Bicycle crunches:** Lie on your back with hands behind your head, and alternate bringing each elbow towards the opposite knee, as if pedaling a bicycle. Do 3 sets of 10-12 reps.\n3. **Pallof press:** Hold a resistance band or cable handle with both hands, and press it away from your body, keeping your core muscles engaged. Return to the starting position, and repeat for 3 sets of 10-12 reps.\n4. **Side plank (each side):** Lie on your side with feet stacked, and lift your hips off the ground, holding for 30-60 seconds. Repeat on the other side.\n5. **Woodchoppers:** Hold a weight or medicine ball, and twist your torso from side to side, keeping your arms straight. Do 3 sets of 10-12 reps.\n\n**Incorporate progressive overload:**\n\n1. **Increase plank hold time:** Aim to hold your plank for 45 seconds in week 2, and 60 seconds by the end of the month.\n2. **Add weight or resistance:** Use weights, resistance bands, or a medicine ball to increase the intensity of your exercises.\n3. **Increase reps or sets:** Gradually increase the number of reps or sets as your core strength improves.\n\n**Tips to help you achieve your goal:**\n\n1. **Focus on proper form:** Engage your core muscles by drawing your belly button towards your spine, and avoid letting your hips sag or back arch.\n2. **Practice consistently:** Aim to do core exercises 3-4 times a week, with at least one day of rest in between.\n3. **Mix and match exercises:** Vary your exercises to target different muscle groups and avoid plateaus.\n4. **Engage your core in daily activities:** Practice good posture, and engage your core muscles during daily activities like walking, lifting, or carrying objects.\n\nRemember to listen to your body and only do what feels comfortable and safe. If you experience any discomfort or pain, stop the exercise immediately and consult with a healthcare professional.",
+      "why": "deterministic candidate-session coverage repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "78d28576_2",
+      "turnIndex": 8,
+      "date": "2023/06/16 (Fri) 15:35",
+      "role": "user",
+      "text": "I'm wondering if you can help me with my water intake. I'm aiming to drink at least 8 glasses a day, but I'm having trouble tracking it. Do you have any suggestions on how I can make sure I'm drinking enough water throughout the day?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_8c64ce25_3",
+      "turnIndex": 0,
+      "date": "2023/06/17 (Sat) 11:09",
+      "role": "user",
+      "text": "I'm looking for some tips on injury prevention and recovery strategies for soccer players. I participate in the company's annual charity soccer tournament today, and I want to make sure I'm taking care of myself.",
+      "why": "Contains the user statement that they participated in the company’s annual charity soccer tournament (includes the event date from the session header).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_8c64ce25_3",
+      "turnIndex": 1,
+      "date": "2023/06/17 (Sat) 11:09",
+      "role": "assistant",
+      "text": "Great attitude! As a recreational soccer player, it's fantastic that you're thinking about injury prevention and recovery strategies. Here are some valuable tips to help you minimize the risk of injury and optimize your performance during the charity tournament:\n\n**Injury Prevention Strategies:**\n\n1. **Warm up and cool down properly**: Before playing, warm up with light cardio (jogging, jumping jacks) and dynamic stretching (leg swings, high knees, hip circles). After the game, cool down with static stretches (hamstrings, quadriceps, calves).\n2. **Hydrate and fuel**: Drink plenty of water or sports drinks to stay hydrated. Fuel your body with a balanced meal or snack 1-2 hours before playing, including complex carbs, protein, and healthy fats.\n3. **Listen to your body**: If you're feeling tired or experiencing pain, take regular breaks to rest and recover. Don't push yourself too hard, especially if you're not used to playing soccer regularly.\n4. **Use proper technique**: Focus on proper tackling, landing, and ball control techniques to reduce the risk of injuries.\n5. **Wear protective gear**: Wear shin guards, and consider wearing knee-high socks and elbow pads for added protection.\n6. **Stay flexible and strong**: Regularly incorporate exercises that improve your flexibility, strength, and core stability, such as squats, lunges, and planks.\n\n**Recovery Strategies:**\n\n1. **Stretch and foam roll**: After the game, take 10-15 minutes to stretch your major muscle groups, including your legs, hips, and lower back. Use a foam roller to release tension in your IT band, quadriceps, and hamstrings.\n2. **Ice and compression**: If you experience any pain or swelling, apply ice to the affected area for 10-15 minutes, followed by compression bandages or sleeves to reduce inflammation.\n3. **Replenish fluids and electrolytes**: Drink sports drinks or coconut water to replenish lost electrolytes and fluids.\n4. **Rest and recovery**: Allow your body time to recover between games, if you're playing multiple matches. Aim for at least 30-60 minutes of rest and recovery time.\n5. **Post-game nutrition**: Refuel with a balanced meal or snack that includes protein, complex carbs, and healthy fats within 30-60 minutes after the game.\n6. **Active recovery**: Engage in low-intensity activities like walking, cycling, or swimming to promote blood flow and aid in recovery.\n\n**Additional Tips:**\n\n* Get enough sleep (7-9 hours) before the tournament to ensure you're well-rested and ready to perform.\n* Avoid playing if you're experiencing any underlying medical conditions, such as a concussion or muscle strain.\n* Communicate with your teammates and opponents about any injuries or concerns during the game.\n\nBy following these injury prevention and recovery strategies, you'll be well-prepared to enjoy the charity tournament while minimizing the risk of injury. Have fun, stay safe, and good luck!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_8c64ce25_3",
+      "turnIndex": 2,
+      "date": "2023/06/17 (Sat) 11:09",
+      "role": "user",
+      "text": "What are some exercises I can do to improve my soccer skills, specifically my shooting and dribbling?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "1446b088_2",
+      "turnIndex": 0,
+      "date": "2023/05/12 (Fri) 15:34",
+      "role": "user",
+      "text": "I'm looking to explore some new workouts to help me increase my step count even more. Do you have any suggestions for beginner-friendly exercises that I can do at home? By the way, I got my blood pressure monitor calibrated at the doctor's office today, so I'm feeling more confident in tracking my progress.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "1446b088_2",
+      "turnIndex": 6,
+      "date": "2023/05/12 (Fri) 15:34",
+      "role": "user",
+      "text": "I've been tracking my body fat percentage and skeletal muscle percentage, and I'm happy to see that I've made some progress over the past month. Speaking of progress, I also got my blood pressure monitor calibrated at the doctor's office last week, and it's been showing more accurate readings since then. I've been using it to track my blood pressure regularly, especially since my doctor told me that I need to keep an eye on it due to my family history.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "1446b088_2",
+      "turnIndex": 8,
+      "date": "2023/05/12 (Fri) 15:34",
+      "role": "user",
+      "text": "I'm interested in tracking my sleep quality. I've been using a white noise machine that I borrowed from my sister, and it's been helping me to fall asleep faster. I'm planning to buy my own machine soon, probably the Hatch Rest Sound Machine that I've been eyeing online. Do you have any tips on how to track sleep quality and what features to look for in a sleep tracker?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "1446b088_2",
+      "turnIndex": 10,
+      "date": "2023/05/12 (Fri) 15:34",
+      "role": "user",
+      "text": "I'm excited to get started with tracking my sleep quality and using the Hatch Rest Sound Machine to improve my sleep. I'm planning to use the machine to create a consistent sleep environment and help me fall asleep faster. I've heard that it's essential to establish a relaxing bedtime routine, so I'm going to try to wind down before bed by reading a book or listening to calming music.\n\nAs for sleep goals, I'm aiming to get at least 7-8 hours of sleep each night and improve the quality of my sleep. I've noticed that I often wake up feeling groggy and tired, so I'm hoping that by tracking my sleep and making adjustments to my sleep habits, I can wake up feeling more refreshed and energized.\n\nDo you have any tips on how to establish a consistent sleep schedule and create a sleep-conducive environment? I've heard that things like keeping the room cool, dark, and quiet can help, but I'm not sure where to start.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "9345f7dc_4",
+      "turnIndex": 2,
+      "date": "2023/05/21 (Sun) 12:34",
+      "role": "user",
+      "text": "I think the 7-minute workout sounds like a great option. I'll try to fit it in 3 times a week and see how it goes. By the way, I've been noticing that my bus ride is always crowded on Mondays and Wednesdays, but relatively empty on Tuesdays and Thursdays. Do you have any advice on how I can make the most of this extra time on Tuesdays and Thursdays?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "9345f7dc_4",
+      "turnIndex": 4,
+      "date": "2023/05/21 (Sun) 12:34",
+      "role": "user",
+      "text": "I was thinking of trying to get out of the office a bit earlier to catch the train home instead of the bus, but I'm not sure if it's worth it. Do you think the 25-minute time difference is significant enough to make the change?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "9345f7dc_4",
+      "turnIndex": 6,
+      "date": "2023/05/21 (Sun) 12:34",
+      "role": "user",
+      "text": "I think it's worth trying to catch the train home, especially since I've been trying to get out of the office by 5:15 pm every day anyway. I've been taking the bus for the past three weeks, and I've noticed that the bus ride is always crowded on Mondays and Wednesdays, but relatively empty on Tuesdays and Thursdays, so it might be nice to have a more comfortable ride home.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "9345f7dc_4",
+      "turnIndex": 8,
+      "date": "2023/05/21 (Sun) 12:34",
+      "role": "user",
+      "text": "I've also been thinking about trying out some new coffee shops on my way to work. I've been going to \"The Daily Grind\" on Main St for the past two weeks, but I recently tried \"Brew-tiful Day\" on Elm St and really liked their coffee. Do you have any recommendations for other coffee shops in the area that I might enjoy?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "9345f7dc_4",
+      "turnIndex": 10,
+      "date": "2023/05/21 (Sun) 12:34",
+      "role": "user",
+      "text": "I've been thinking about trying to adjust my morning routine to get some exercise before work. Do you have any suggestions for a quick 20-minute workout that I can fit in before I head out the door? By the way, I've been taking the bus to work for the past three weeks, so I'm trying to make the most of my morning commute time.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_8c64ce25_2",
+      "turnIndex": 4,
+      "date": "2023/06/02 (Fri) 15:29",
+      "role": "user",
+      "text": "I was thinking of exploring the waterfront path on Thursday evening, after my volleyball league game.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_8c64ce25_2",
+      "turnIndex": 6,
+      "date": "2023/06/02 (Fri) 15:29",
+      "role": "user",
+      "text": "I was thinking of maybe stopping by a cafe or restaurant along the waterfront to grab a bite to eat after my ride. Do you have any recommendations for good places to eat around there?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_8c64ce25_2",
+      "turnIndex": 8,
+      "date": "2023/06/02 (Fri) 15:29",
+      "role": "user",
+      "text": "I'm thinking of trying out a seafood restaurant I saw along the waterfront. I've been craving some fish and chips after that intense bike ride.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_8c64ce25_2",
+      "turnIndex": 10,
+      "date": "2023/06/02 (Fri) 15:29",
+      "role": "user",
+      "text": "I might ask the restaurant if they have any outdoor seating available, so I can keep an eye on my bike while I eat.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_8c64ce25_1",
+      "turnIndex": 4,
+      "date": "2023/06/10 (Sat) 15:00",
+      "role": "user",
+      "text": "I tend to land midfoot when I run, so I think the Vaporfly might be a good fit for me. Can you tell me more about the sizing and fit of the Vaporfly Next%?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_8c64ce25_1",
+      "turnIndex": 6,
+      "date": "2023/06/10 (Sat) 15:00",
+      "role": "user",
+      "text": "I've heard that the Vaporfly Next% is a great shoe for racing, but I'm not sure if it's suitable for my regular training runs. Can you tell me if it's durable enough for high-mileage training or if it's more of a niche shoe for racing only?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_8c64ce25_1",
+      "turnIndex": 8,
+      "date": "2023/06/10 (Sat) 15:00",
+      "role": "user",
+      "text": "I'm planning to use the Vaporfly Next% for my speed workouts and shorter races, but I'll need a more durable shoe for my regular training runs. Can you recommend a good shoe for high-mileage training that can handle my weekly mileage of around 60-70 miles?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_8c64ce25_1",
+      "turnIndex": 10,
+      "date": "2023/06/10 (Sat) 15:00",
+      "role": "user",
+      "text": "I'm thinking of getting the Brooks Ghost, but I've heard that it's a bit heavier than some other shoes. Will the weight of the shoe affect my performance, and are there any other factors I should consider when choosing a high-mileage shoe?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "78d28576_2",
+      "turnIndex": 0,
+      "date": "2023/06/16 (Fri) 15:35",
+      "role": "user",
+      "text": "I'm looking to create a personalized fitness plan to help me reach my goals. I've been doing some exercise recently, by the way. For the first two weeks, I was doing 30-minute brisk walks every morning at 6:30 am, Monday to Friday. Can you help me set up a routine that builds on what I've already started?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "78d28576_2",
+      "turnIndex": 2,
+      "date": "2023/06/16 (Fri) 15:35",
+      "role": "user",
+      "text": "I'm aiming to lose weight and increase my endurance. I'd say my current fitness level is beginner. I've had experience with walking and recently started doing bodyweight exercises. I'd like to dedicate 5 days a week to exercise. My availability is mornings and evenings, Monday to Friday, and anytime on weekends.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "78d28576_2",
+      "turnIndex": 4,
+      "date": "2023/06/16 (Fri) 15:35",
+      "role": "user",
+      "text": "I'm not sure about the burpees and mountain climbers on Thursday evening. Can I substitute them with something else? I've been doing some yoga on Sundays and I really enjoy the flexibility and relaxation it brings. Would it be okay to incorporate some yoga moves into the plan?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "78d28576_2",
+      "turnIndex": 10,
+      "date": "2023/06/16 (Fri) 15:35",
+      "role": "user",
+      "text": "That's great advice! I think I'll try using a hydration app and setting reminders on my phone to drink water throughout the day. I'll also try to make it a habit to drink a full glass of water as soon as I wake up and before each meal. Do you have any recommendations for healthy snacks that can help with my fitness goals?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_8c64ce25_3",
+      "turnIndex": 4,
+      "date": "2023/06/17 (Sat) 11:09",
+      "role": "user",
+      "text": "I'm also interested in learning more about the nutrition aspect of injury prevention and recovery. What are some foods that can help with muscle recovery and inflammation?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 24634,
+  "estimatedTokens": 6159
+}

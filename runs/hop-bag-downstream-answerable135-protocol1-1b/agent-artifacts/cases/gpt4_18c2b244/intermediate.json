@@ -1,0 +1,73 @@
+{
+  "raw": {
+    "queryShape": "order",
+    "setBoundary": "Use only the raw turns that explicitly state each of the three events (with their implied “today” timing) so the downstream model can order them by date/time.",
+    "candidateStatus": "found",
+    "missingRisk": "The sessions use relative wording (“today”) without stating the exact local timestamp; ordering will rely on the session_date metadata (2023/04/01, 2023/04/10, 2023/04/15). If the downstream question expects ordering relative to the user’s stated ‘today’ of 2023/05/10, these sources may not align chronologically to that reference point.",
+    "items": [
+      {
+        "sessionId": "answer_c862f65a_1",
+        "turnIndex": 0,
+        "why": "Contains the explicit event: signed up for ShopRite rewards program (“signed up… today”)."
+      },
+      {
+        "sessionId": "answer_c862f65a_2",
+        "turnIndex": 0,
+        "why": "Contains the explicit event: used a Buy One Get One Free coupon on Luvs diapers at Walmart (“used… today”)."
+      },
+      {
+        "sessionId": "answer_c862f65a_3",
+        "turnIndex": 0,
+        "why": "Contains the explicit event: redeemed $12 cashback for a $10 Amazon gift card from Ibotta (“redeemed… today”)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "order",
+    "setBoundary": "Use only the raw turns that explicitly state each of the three events (with their implied “today” timing) so the downstream model can order them by date/time.",
+    "candidateStatus": "found",
+    "missingRisk": "The sessions use relative wording (“today”) without stating the exact local timestamp; ordering will rely on the session_date metadata (2023/04/01, 2023/04/10, 2023/04/15). If the downstream question expects ordering relative to the user’s stated ‘today’ of 2023/05/10, these sources may not align chronologically to that reference point.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_c862f65a_1",
+        "turnIndex": 0,
+        "why": "Contains the explicit event: signed up for ShopRite rewards program (“signed up… today”)."
+      },
+      {
+        "sessionId": "answer_c862f65a_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_c862f65a_2",
+        "turnIndex": 0,
+        "why": "Contains the explicit event: used a Buy One Get One Free coupon on Luvs diapers at Walmart (“used… today”)."
+      },
+      {
+        "sessionId": "answer_c862f65a_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_c862f65a_3",
+        "turnIndex": 0,
+        "why": "Contains the explicit event: redeemed $12 cashback for a $10 Amazon gift card from Ibotta (“redeemed… today”)."
+      },
+      {
+        "sessionId": "answer_c862f65a_3",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_c862f65a_3",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_c862f65a_1",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

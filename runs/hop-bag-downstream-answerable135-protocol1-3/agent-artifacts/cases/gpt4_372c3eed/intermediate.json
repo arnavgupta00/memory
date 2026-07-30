@@ -1,0 +1,30 @@
+[
+  {
+    "session_id": "answer_35c5419d_3",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session provides only your Bachelor's completion timeline (4 years) but does not specify the start/end years of high school, any gap years, or any other formal education (e.g., community college or associate degree). Therefore, it’s insufficient to compute total years from high school through Bachelor completion without additional sessions.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "Graduated with a Bachelor's in Computer Science from UCLA in 2020, which took me four years to complete.",
+          "why": "Directly states the duration of the Bachelor’s degree (four years) and the completion year (2020), which is needed for the total time in formal education."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_35c5419d_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session mentions high school attendance dates (2010-2014) and that the user attended UCLA for undergrad after high school, but it does not provide the start/end years for UCLA (or Bachelor completion year). Therefore, the total formal education time from high school to Bachelor completion cannot be computed from this session alone.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "User attended UCLA for undergrad after attending Arcadia High School from 2010 to 2014.",
+          "why": "Provides the high-school date range (2010–2014) and indicates subsequent undergrad at UCLA, which could be used to determine total years if UCLA enrollment/completion dates are available elsewhere."
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,128 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Select the assistant’s cocktail suggestions and the specific recommended build/components the user chose for their get-together.",
+    "candidateStatus": "found",
+    "missingRisk": "If the user intended to ask for alternative cocktail options beyond the Hendrick’s-gin Pimm’s Cup thread, only this session’s specific recommendation path may be preserved.",
+    "items": [
+      {
+        "sessionId": "answer_719502eb",
+        "turnIndex": 1,
+        "why": "Provides the initial summer cocktail recommendations featuring Hendrick’s gin, including the recommended Pimm's Cup with a Twist."
+      },
+      {
+        "sessionId": "answer_719502eb",
+        "turnIndex": 4,
+        "why": "User commits to muddling cucumber slices; includes the assistant’s follow-on guidance leading into the drink component selection."
+      },
+      {
+        "sessionId": "answer_719502eb",
+        "turnIndex": 5,
+        "why": "Assistant provides the classic simple syrup recipe that the user could use as a base for the Pimm's Cup with a Twist."
+      },
+      {
+        "sessionId": "answer_719502eb",
+        "turnIndex": 7,
+        "why": "Assistant recommends citrus-flavored simple syrup options specifically complementary to Hendrick’s gin and cucumber (includes grapefruit option)."
+      },
+      {
+        "sessionId": "answer_719502eb",
+        "turnIndex": 9,
+        "why": "Assistant recommends grapefruit varieties for the syrup, including Ruby Red Grapefruit (balanced flavor and pink hue)."
+      },
+      {
+        "sessionId": "answer_719502eb",
+        "turnIndex": 11,
+        "why": "Assistant gives garnish/visual presentation recommendations for the Pimm's Cup with a Twist."
+      },
+      {
+        "sessionId": "answer_719502eb",
+        "turnIndex": 15,
+        "why": "Assistant confirms the serving vessel choice (Collins glass) and reiterates how it showcases layers/colors and pairs with grapefruit/cucumber/mint."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Select the assistant’s cocktail suggestions and the specific recommended build/components the user chose for their get-together.",
+    "candidateStatus": "found",
+    "missingRisk": "If the user intended to ask for alternative cocktail options beyond the Hendrick’s-gin Pimm’s Cup thread, only this session’s specific recommendation path may be preserved.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_719502eb",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_719502eb",
+        "turnIndex": 1,
+        "why": "Provides the initial summer cocktail recommendations featuring Hendrick’s gin, including the recommended Pimm's Cup with a Twist."
+      },
+      {
+        "sessionId": "answer_719502eb",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_719502eb",
+        "turnIndex": 4,
+        "why": "User commits to muddling cucumber slices; includes the assistant’s follow-on guidance leading into the drink component selection."
+      },
+      {
+        "sessionId": "answer_719502eb",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_719502eb",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_719502eb",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_719502eb",
+        "turnIndex": 7,
+        "why": "Assistant recommends citrus-flavored simple syrup options specifically complementary to Hendrick’s gin and cucumber (includes grapefruit option)."
+      },
+      {
+        "sessionId": "answer_719502eb",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_719502eb",
+        "turnIndex": 9,
+        "why": "Assistant recommends grapefruit varieties for the syrup, including Ruby Red Grapefruit (balanced flavor and pink hue)."
+      },
+      {
+        "sessionId": "answer_719502eb",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_719502eb",
+        "turnIndex": 11,
+        "why": "Assistant gives garnish/visual presentation recommendations for the Pimm's Cup with a Twist."
+      },
+      {
+        "sessionId": "answer_719502eb",
+        "turnIndex": 12,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_719502eb",
+        "turnIndex": 14,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_719502eb",
+        "turnIndex": 15,
+        "why": "Assistant confirms the serving vessel choice (Collins glass) and reiterates how it showcases layers/colors and pairs with grapefruit/cucumber/mint."
+      }
+    ]
+  }
+}

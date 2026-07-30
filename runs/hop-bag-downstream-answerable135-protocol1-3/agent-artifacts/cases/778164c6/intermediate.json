@@ -1,0 +1,26 @@
+[
+  {
+    "session_id": "answer_ultrachat_399000",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "medium: The question asks for a Jamaican snapper dish with fruit. This session recommends Escovitch Fish (snapper + pickled vegetables) but does not clearly mention fruit in the Jamaican snapper dish. Fruit appears only in a non-Jamaican suggestion (Grilled Snapper with Mango Salsa), so the needed dish may not be explicitly present here.",
+      "claims": [
+        {
+          "turnIndex": 3,
+          "fact": "Escovitch Fish - a Jamaican dish where fried snapper is topped with a spicy pickled vegetable sauce.",
+          "why": "Directly identifies a Jamaican snapper dish; useful for matching the requested dish name even though it does not mention fruit."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "escovitch fish is a classic and popular jamaican dish…crispy fried snapper topped with a spicy and tangy pickled vegetable sauce, usually made with carrots, onion, bell peppers, and vinegar.",
+          "why": "Additional descriptive claim about Escovitch Fish that can help confirm the dish (and distinguish it from other snapper recipes)."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Grilled Snapper with Mango Salsa - a popular dish in many Caribbean countries where grilled snapper is topped with a fruity and spicy salsa.",
+          "why": "Contains the only explicit fruit reference (mango) associated with snapper; may be the intended “fruit in it” dish even though it’s not labeled Jamaican."
+        }
+      ]
+    }
+  }
+]

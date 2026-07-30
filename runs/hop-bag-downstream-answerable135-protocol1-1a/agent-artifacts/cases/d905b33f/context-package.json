@@ -1,0 +1,118 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "The book you bought on sale from your favorite author: original price and sale price (to compute the discount percentage).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_85a77c48_2",
+      "turnIndex": 2,
+      "date": "2023/05/23 (Tue) 10:44",
+      "role": "user",
+      "text": "I think I'll go with the customized jewelry option. I've been looking at some online marketplaces and I found a similar necklace that I got for my sister's birthday, which was $75. I'm hoping to find something around that price range or a bit higher. By the way, I've been good about budgeting for gifts lately, except for one impulse buy last week when I saw a sale at my favorite bookstore - I got the book for $24 after a discount.",
+      "why": "Mentions you bought a book at your favorite bookstore for $24 after a discount (sale price).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_85a77c48_1",
+      "turnIndex": 6,
+      "date": "2023/05/27 (Sat) 03:55",
+      "role": "user",
+      "text": "It's actually the new release from my favorite author, which was originally priced at $30. I'm really looking forward to diving in and getting lost in the story.",
+      "why": "States the new release from your favorite author was originally priced at $30 (original price).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_85a77c48_2",
+      "turnIndex": 0,
+      "date": "2023/05/23 (Tue) 10:44",
+      "role": "user",
+      "text": "I'm looking for some gift ideas for my mom's anniversary. I've narrowed it down to a personalized photo album, customized jewelry, or a gourmet food basket, but I'm still undecided. Can you help me find some options within my budget of $150-$200?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_85a77c48_2",
+      "turnIndex": 4,
+      "date": "2023/05/23 (Tue) 10:44",
+      "role": "user",
+      "text": "I'm going to check out those online marketplaces, especially Etsy since I've had good experiences with them before. Do you think I could also find a local jewelry store that can help me customize a piece, maybe something with a birthstone or a special message?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_85a77c48_2",
+      "turnIndex": 6,
+      "date": "2023/05/23 (Tue) 10:44",
+      "role": "user",
+      "text": "I'll definitely check out those online marketplaces and local jewelry stores. Do you think it's possible to find a jewelry store that can customize a piece with a special message or birthstone, and also offer a gift receipt in case my mom wants to exchange it?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_85a77c48_2",
+      "turnIndex": 8,
+      "date": "2023/05/23 (Tue) 10:44",
+      "role": "user",
+      "text": "I'll make sure to ask about the gift receipt and exchange policy when I visit the local jewelry stores. That way, I can have peace of mind knowing that my mom can exchange it if she doesn't like it. Do you think I could also ask the jeweler to include a personalized note or message with the gift, like a birthday card or a small note with a special message?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_85a77c48_2",
+      "turnIndex": 10,
+      "date": "2023/05/23 (Tue) 10:44",
+      "role": "user",
+      "text": "I think I'll ask the jeweler if they have any recommendations for a special message or if they can suggest some ideas. Do you think it's a good idea to keep the message short and sweet, or can it be a bit longer and more heartfelt?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_85a77c48_1",
+      "turnIndex": 0,
+      "date": "2023/05/27 (Sat) 03:55",
+      "role": "user",
+      "text": "I'm trying to get a gift for my mom's anniversary and I'm considering a few options. Do you have any recommendations for personalized photo albums or customized jewelry?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_85a77c48_1",
+      "turnIndex": 2,
+      "date": "2023/05/27 (Sat) 03:55",
+      "role": "user",
+      "text": "I was thinking of something a bit more local, do you know any good jewelry stores in my area that offer customization services?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_85a77c48_1",
+      "turnIndex": 4,
+      "date": "2023/05/27 (Sat) 03:55",
+      "role": "user",
+      "text": "I'll definitely check out some local options. I've been doing a lot of online shopping lately, especially during sales events, but for a more personal gift like this, I'd prefer to shop in-store. Speaking of sales, I've been trying to cut back on impulse buys, but I couldn't resist that sale at my favorite bookstore last week.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_85a77c48_1",
+      "turnIndex": 8,
+      "date": "2023/05/27 (Sat) 03:55",
+      "role": "user",
+      "text": "Yeah, I think a customized message or her birthstone would be a nice touch. I know she loves sentimental gifts, so something that shows I put thought into it would mean a lot to her. Do you think any of the local jewelers would be able to create a custom piece like that?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_85a77c48_1",
+      "turnIndex": 10,
+      "date": "2023/05/27 (Sat) 03:55",
+      "role": "user",
+      "text": "I'm thinking of checking out that new jewelry store that just opened up downtown, the one where I got my sister's birthday present. They had some really unique pieces, and I think they might be able to create a custom piece for my mom. Do you think that's a good idea, or should I look elsewhere?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 3141,
+  "estimatedTokens": 786
+}

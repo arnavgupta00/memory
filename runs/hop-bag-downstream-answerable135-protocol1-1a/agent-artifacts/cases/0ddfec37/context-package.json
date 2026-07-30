@@ -1,0 +1,109 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Autographed baseballs added during the user’s first three months of starting their collection (relative to the “since I started collecting three months ago” timeframe).",
+  "candidateStatus": "found",
+  "missingRisk": "The start date/end date of the “first three months” window is only described relatively (“three months ago” and “past few months”), so there may be slight ambiguity about whether any baseballs counted fall just outside the exact first-three-month window.",
+  "items": [
+    {
+      "sessionId": "answer_a22b654d_1",
+      "turnIndex": 0,
+      "date": "2023/07/11 (Tue) 14:38",
+      "role": "user",
+      "text": "I'm looking for some information on Mike Trout's latest stats. Can you tell me his current batting average and how many home runs he has this season? By the way, I just got a signed baseball of his last week and it's a great addition to my collection - that's 15 autographed baseballs since I started collecting three months ago!",
+      "why": "User directly states they “just got a signed baseball” and that they now have “15 autographed baseballs since I started collecting three months ago,” which corresponds to the first three months window requested.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_a22b654d_2",
+      "turnIndex": 0,
+      "date": "2023/12/30 (Sat) 02:28",
+      "role": "user",
+      "text": "I'm looking to get some information on upcoming sports memorabilia auctions in the city. Do you know of any notable ones happening in the next few weeks? By the way, I just got back from a weekend trip and had some time to organize my collection - I've added 20 autographed baseballs to my collection in the past few months, which is crazy!",
+      "why": "User later states they “added 20 autographed baseballs… in the past few months,” which may overlap with or extend beyond the first-three-month window; included to capture potential conflicting/extended totals over time.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_a22b654d_1",
+      "turnIndex": 2,
+      "date": "2023/07/11 (Tue) 14:38",
+      "role": "user",
+      "text": "I'm also interested in error coins. Do you know of any upcoming coin shows in my area?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a22b654d_1",
+      "turnIndex": 4,
+      "date": "2023/07/11 (Tue) 14:38",
+      "role": "user",
+      "text": "I've been thinking of expanding my vinyl record collection to include more international pressings. Do you know any good resources for finding rare records from Japan?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a22b654d_1",
+      "turnIndex": 6,
+      "date": "2023/07/11 (Tue) 14:38",
+      "role": "user",
+      "text": "I was thinking of attending a stamp show next quarter, do you know if there are any notable stamp shows or exhibitions coming up in the next few months?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a22b654d_1",
+      "turnIndex": 8,
+      "date": "2023/07/11 (Tue) 14:38",
+      "role": "user",
+      "text": "I'm actually thinking of selling some of my vintage cameras to make room for new additions to my collection. Do you know of any reputable online marketplaces or forums where I can sell my Leica camera and other vintage cameras?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a22b654d_1",
+      "turnIndex": 10,
+      "date": "2023/07/11 (Tue) 14:38",
+      "role": "user",
+      "text": "I'm thinking of listing my Leica camera on Fred Miranda and Rangefinder Forum. Do you think I should include the original lens and accessories to increase the sale value?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a22b654d_2",
+      "turnIndex": 2,
+      "date": "2023/12/30 (Sat) 02:28",
+      "role": "user",
+      "text": "I'm also considering selling some of my vinyl records to make space in my collection. Do you know of any good online marketplaces or local record stores that can help me determine their value and potentially sell them?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a22b654d_2",
+      "turnIndex": 4,
+      "date": "2023/12/30 (Sat) 02:28",
+      "role": "user",
+      "text": "I'll check out these options and see which one works best for me. By the way, I've been meaning to ask - do you know of any good resources for learning more about error coins? I recently acquired a 1943 Lincoln Wheat Cent with a copper planchet error and I'd love to learn more about it.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a22b654d_2",
+      "turnIndex": 6,
+      "date": "2023/12/30 (Sat) 02:28",
+      "role": "user",
+      "text": "I'll definitely check out those resources and see what I can learn about my error coin. By the way, I'm also thinking of getting a new camera lens for my vintage Leica camera. Do you know of any good resources for learning about camera lenses and photography in general?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a22b654d_2",
+      "turnIndex": 8,
+      "date": "2023/12/30 (Sat) 02:28",
+      "role": "user",
+      "text": "I'm thinking of selling some of my autographed baseballs to make room for new additions to my collection. Do you know of any good resources for determining their value and potentially selling them?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 2443,
+  "estimatedTokens": 611
+}

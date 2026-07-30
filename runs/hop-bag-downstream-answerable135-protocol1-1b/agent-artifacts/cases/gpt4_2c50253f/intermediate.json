@@ -1,0 +1,48 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the user’s described wake-up times for Tuesdays and Thursdays and any baseline wake-up time needed to compute/interpret “15 minutes earlier.”",
+    "candidateStatus": "found",
+    "missingRisk": "The Tuesdays/Thursdays wake-up is described only as “15 minutes earlier” (relative), so the answerer must combine it with the baseline wake-up time (e.g., 7:00 AM) to determine the exact clock time. If the baseline differs on those days, the computed time may be wrong.",
+    "items": [
+      {
+        "sessionId": "answer_9af4e346_2",
+        "turnIndex": 0,
+        "why": "States that on Tuesdays and Thursdays the user wakes up 15 minutes earlier (to meditate), which is the key relative wake-time fact."
+      },
+      {
+        "sessionId": "answer_9af4e346_1",
+        "turnIndex": 0,
+        "why": "Provides the user’s baseline wake-up time (7:00 AM vs usual 8:30 AM), needed to convert “15 minutes earlier” into a specific Tuesday/Thursday clock time."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the user’s described wake-up times for Tuesdays and Thursdays and any baseline wake-up time needed to compute/interpret “15 minutes earlier.”",
+    "candidateStatus": "found",
+    "missingRisk": "The Tuesdays/Thursdays wake-up is described only as “15 minutes earlier” (relative), so the answerer must combine it with the baseline wake-up time (e.g., 7:00 AM) to determine the exact clock time. If the baseline differs on those days, the computed time may be wrong.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_9af4e346_2",
+        "turnIndex": 0,
+        "why": "States that on Tuesdays and Thursdays the user wakes up 15 minutes earlier (to meditate), which is the key relative wake-time fact."
+      },
+      {
+        "sessionId": "answer_9af4e346_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_9af4e346_1",
+        "turnIndex": 0,
+        "why": "Provides the user’s baseline wake-up time (7:00 AM vs usual 8:30 AM), needed to convert “15 minutes earlier” into a specific Tuesday/Thursday clock time."
+      },
+      {
+        "sessionId": "answer_9af4e346_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

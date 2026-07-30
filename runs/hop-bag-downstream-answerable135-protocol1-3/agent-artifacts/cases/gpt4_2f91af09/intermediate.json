@@ -1,0 +1,59 @@
+[
+  {
+    "session_id": "answer_669318cf_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session only provides a single quantity about writing (poems in the past two weeks) and contains no direct counts of total writing pieces since the user restarted three weeks ago, nor any mention of short stories, pieces for the writing challenge, or how many additional pieces were completed outside the poems count. It may therefore undercount the total requested.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User says they've been on a roll lately and has written 17 poems in the past two weeks.",
+          "why": "Provides a concrete quantity of written pieces (poems) within a defined recent time window relevant to estimating total pieces completed since restarting writing."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_669318cf_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session contains no explicit counts of completed writing pieces for the relevant time window; it only mentions the user has written “five short stories so far” as of 2023/05/28. It may be incomplete for total pieces (short stories/poems/challenge pieces) and may not reflect the user’s progress “since started writing again three weeks ago.”",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "The user is looking for writing prompts and states: “I've written five short stories so far.”",
+          "why": "Provides a quantitative writing completion claim (five short stories) that could be part of the “total pieces of writing completed” count, though it doesn’t include poems or writing-challenge pieces."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "The user says: “Since I've written five short stories so far, I'm wondering if I could link this new story to one of my previous ones.”",
+          "why": "Reinforces that the user has completed five short stories and indicates they are starting a new linked story (potentially relevant to total completed pieces if later sessions confirm completion)."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "The user specifies they will link the book perspective story to: “The Mysterious Neighbor.”",
+          "why": "Indicates a planned connection to a prior work and suggests a new piece being developed, which could matter for the writing-challenge/overall outputs tally if completion is recorded elsewhere."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_669318cf_3",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "High—this session discusses organizing and outlining/strategy for writing and mentions only one specific writing-challenge submission, but it does not provide any counts of completed pieces (short stories/poems/challenge pieces) or any total written since “three weeks ago.”",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is writing a lot lately, including short stories and poetry.",
+          "why": "Relevant to the question’s categories (short stories and poems) and indicates the user has written in these forms, though no counts are provided."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "Writing challenge started; last week’s prompt was \"forgotten memories\", and user wrote a piece titled \"The Smell of Old Books\".",
+          "why": "This is a concrete completed piece for the writing challenge category, with title and prompt content, but still lacks date boundaries and count totals."
+        }
+      ]
+    }
+  }
+]

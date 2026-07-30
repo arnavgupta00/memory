@@ -1,0 +1,16 @@
+[
+  {
+    "session_id": "answer_sharegpt_H9PiM5G_0",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low. The session explicitly states which algorithm is implemented in SIAC_GEE, directly addressing the question. However, it does so within a specific explanation that may contain minor inaccuracies about other tools; the SIAC_GEE/6S linkage is still clearly stated.",
+      "claims": [
+        {
+          "turnIndex": 13,
+          "fact": "6S ... is implemented in the SIAC_GEE (Sentinel-2 Image Atmospheric Correction in Google Earth Engine) tool.",
+          "why": "This directly answers which of the cited algorithms (6S, MAJA, Sen2Cor) corresponds to the atmospheric correction method implemented in SIAC_GEE."
+        }
+      ]
+    }
+  }
+]

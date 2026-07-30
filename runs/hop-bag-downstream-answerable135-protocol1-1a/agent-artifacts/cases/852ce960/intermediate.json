@@ -1,0 +1,23 @@
+{
+  "queryShape": "update-conflict",
+  "setBoundary": "Wells Fargo mortgage pre-approval amount(s) the user was told in past conversations",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_3a6f1e82_1",
+      "turnIndex": 2,
+      "why": "User states they were pre-approved for $350,000 from Wells Fargo."
+    },
+    {
+      "sessionId": "answer_3a6f1e82_2",
+      "turnIndex": 0,
+      "why": "User later says they were pre-approved for $400,000 from Wells Fargo (possible change vs earlier statement)."
+    },
+    {
+      "sessionId": "answer_3a6f1e82_1",
+      "turnIndex": 11,
+      "why": "Assistant references the user's pre-approval for a $350,000 loan when estimating monthly payments."
+    }
+  ]
+}

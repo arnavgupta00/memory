@@ -1,0 +1,38 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Recall the specific Mayo Clinic YouTube video previously recommended for workplace posture, including its title and link.",
+    "candidateStatus": "found",
+    "missingRisk": "If the downstream assistant needs additional context (e.g., why it was recommended or any extra posture tips), that detail may be truncated because only a “share with your staff” list is present here.",
+    "items": [
+      {
+        "sessionId": "answer_sharegpt_81riySf_0",
+        "turnIndex": 1,
+        "why": "Contains the Mayo Clinic workplace posture video recommendation, including the exact title and the YouTube URL."
+      },
+      {
+        "sessionId": "answer_sharegpt_81riySf_0",
+        "turnIndex": 0,
+        "why": "Provides the user’s prompt about finding a YouTube video for workplace posture, which frames the assistant’s recommendation."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Recall the specific Mayo Clinic YouTube video previously recommended for workplace posture, including its title and link.",
+    "candidateStatus": "found",
+    "missingRisk": "If the downstream assistant needs additional context (e.g., why it was recommended or any extra posture tips), that detail may be truncated because only a “share with your staff” list is present here.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_sharegpt_81riySf_0",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_sharegpt_81riySf_0",
+        "turnIndex": 1,
+        "why": "Contains the Mayo Clinic workplace posture video recommendation, including the exact title and the YouTube URL."
+      }
+    ]
+  }
+}

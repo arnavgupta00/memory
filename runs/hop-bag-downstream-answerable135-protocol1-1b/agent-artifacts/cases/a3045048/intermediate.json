@@ -1,0 +1,108 @@
+{
+  "raw": {
+    "queryShape": "order",
+    "setBoundary": "Compute the day difference between the date the gift was ordered and the date of the best friend’s birthday party.",
+    "candidateStatus": "found",
+    "missingRisk": "The candidate sessions include the party date (April 22, 2022) and the gift order date (April 15, 2022), but no other context is needed; ensure the answerer uses these exact dates and not the separate “arrival on April 20” detail.",
+    "items": [
+      {
+        "sessionId": "answer_016f6bd4_1",
+        "turnIndex": 0,
+        "why": "Contains the gift order date: user states they ordered the Shutterfly personalized photo album on the 15th of April for their best friend’s birthday."
+      },
+      {
+        "sessionId": "answer_016f6bd4_2",
+        "turnIndex": 4,
+        "why": "Contains the birthday party date: user mentions the best friend’s 30th birthday party was on the 22nd of April."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "order",
+    "setBoundary": "Compute the day difference between the date the gift was ordered and the date of the best friend’s birthday party.",
+    "candidateStatus": "found",
+    "missingRisk": "The candidate sessions include the party date (April 22, 2022) and the gift order date (April 15, 2022), but no other context is needed; ensure the answerer uses these exact dates and not the separate “arrival on April 20” detail.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_016f6bd4_1",
+        "turnIndex": 0,
+        "why": "Contains the gift order date: user states they ordered the Shutterfly personalized photo album on the 15th of April for their best friend’s birthday."
+      },
+      {
+        "sessionId": "answer_016f6bd4_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_016f6bd4_2",
+        "turnIndex": 4,
+        "why": "Contains the birthday party date: user mentions the best friend’s 30th birthday party was on the 22nd of April."
+      },
+      {
+        "sessionId": "answer_016f6bd4_2",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_016f6bd4_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_016f6bd4_1",
+        "turnIndex": 6,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_016f6bd4_1",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_016f6bd4_1",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "5cb58cc6",
+        "turnIndex": 8,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "5cb58cc6",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "5cb58cc6",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "aaf71ce2_2",
+        "turnIndex": 0,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "aaf71ce2_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "2def525b_1",
+        "turnIndex": 2,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "2def525b_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "2def525b_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

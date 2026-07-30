@@ -1,0 +1,127 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Use the user-provided statements about (a) current age and (b) how long they’ve been living in the United States, since the question asks for their age at the time they moved (which requires those two facts).",
+  "candidateStatus": "found",
+  "missingRisk": "The candidates provide current age (32) and duration in the U.S. (past five years), but do not explicitly state the exact move-in year/month; downstream computation may be approximate or require assumptions about when “past five years” began.; frozen bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "answer_991d55e5_1",
+      "turnIndex": 0,
+      "date": "2023/05/27 (Sat) 00:34",
+      "role": "user",
+      "text": "I'm 32-year-old male, and I'm trying to get a better understanding of the green card application process. Can you walk me through the EB-2 visa category, which is for professionals with advanced degrees like myself?",
+      "why": "Provides the user’s current age (“I’m 32-year-old male”), which is necessary to compute age at the time they moved to the U.S.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_991d55e5_1",
+      "turnIndex": 1,
+      "date": "2023/05/27 (Sat) 00:34",
+      "role": "assistant",
+      "text": "The EB-2 visa category is a great option for individuals with advanced degrees or exceptional abilities. I'd be happy to guide you through the process.\n\n**Overview of EB-2 Visa Category**\n\nThe EB-2 visa category is an employment-based, second-preference visa for foreign nationals who possess advanced degrees or exceptional abilities in their field. This category is designed to attract highly skilled workers who can contribute to the U.S. economy and labor market.\n\n**Eligibility Criteria**\n\nTo qualify for an EB-2 visa, you must meet one of the following criteria:\n\n1. **Advanced Degree**: Hold a U.S. master's degree or higher, or a foreign equivalent degree that requires at least three years of post-baccalaureate education.\n2. **Exceptional Ability**: Demonstrate exceptional ability in your field, which is defined as a degree of expertise significantly above that ordinarily encountered in the sciences, arts, or business.\n\n**Required Documents**\n\nTo apply for an EB-2 visa, you'll need to provide the following documents:\n\n1. **Petition**: Your U.S. employer must file a Form I-140, Immigrant Petition for Alien Worker, with U.S. Citizenship and Immigration Services (USCIS).\n2. **Labor Certification**: Your employer must obtain a labor certification from the U.S. Department of Labor, which requires demonstrating that hiring a foreign worker will not adversely affect U.S. workers.\n3. **Education and Experience**: Provide documentation of your advanced degree, such as a diploma and transcripts, as well as evidence of your relevant work experience.\n4. **Letters of Recommendation**: Gather letters from experts in your field attesting to your exceptional abilities and achievements.\n5. **Resume and CV**: Submit a detailed resume and curriculum vitae highlighting your education, work experience, and achievements.\n\n**Application Process**\n\nThe EB-2 visa application process typically involves the following steps:\n\n1. **Step 1: Labor Certification**: Your employer files a labor certification application with the U.S. Department of Labor.\n2. **Step 2: I-140 Petition**: Your employer files Form I-140 with USCIS, including the approved labor certification and supporting documents.\n3. **Step 3: I-485 Application**: Once the I-140 petition is approved, you can file Form I-485, Application to Register Permanent Residence or Adjust Status, to adjust your status to a permanent resident (if you're already in the U.S.) or apply for an immigrant visa at a U.S. consulate abroad.\n4. **Step 4: Interview and Approval**: Attend an interview at a USCIS office or U.S. consulate, and if approved, receive your green card.\n\n**Processing Time and Fees**\n\nThe processing time for EB-2 visa applications can vary depending on the workload of USCIS and the U.S. Department of Labor. However, here are some general guidelines:\n\n* Labor certification: 6-9 months\n* I-140 petition: 3-6 months\n* I-485 application: 6-12 months\n\nFees associated with the EB-2 visa application process include:\n\n* Labor certification: $0 (no fee)\n* I-140 petition: $700\n* I-485 application: $1,140\n\n**Additional Tips and Considerations**\n\n* **Priority Dates**: The EB-2 category has a limited number of visas available each year, which can result in a backlog. You'll need to monitor the Visa Bulletin to determine when your priority date becomes current.\n* **Premium Processing**: Your employer can opt for premium processing, which expedites the I-140 petition processing time to 15 calendar days for an additional fee of $1,440.\n* **National Interest Waiver**: If you're eligible, you may be able to waive the labor certification requirement by demonstrating that your work is in the national interest of the United States.\n\nI hope this information helps you understand the",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_991d55e5_2",
+      "turnIndex": 0,
+      "date": "2023/05/27 (Sat) 22:00",
+      "role": "user",
+      "text": "I'm trying to gather information on the green card application process. I've been living in the United States for the past five years on a work visa, sponsored by my company, and I'm planning to apply for a green card. Can you tell me more about the EB-2 visa category and the required documents?",
+      "why": "Provides the time-in-U.S. fact (“been living in the United States for the past five years”), which is necessary to infer when they moved and thus their age at that time.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_991d55e5_2",
+      "turnIndex": 1,
+      "date": "2023/05/27 (Sat) 22:00",
+      "role": "assistant",
+      "text": "Congratulations on taking the next step towards obtaining a green card! The EB-2 visa category is a great option for foreign nationals with advanced degrees or exceptional abilities. I'd be happy to provide you with an overview of the EB-2 visa category and the required documents.\n\n**What is the EB-2 visa category?**\n\nThe EB-2 visa category is an employment-based, second-preference visa category for foreign nationals who possess advanced degrees or exceptional abilities in their field. There are three subcategories within EB-2:\n\n1. **Advanced Degree Holders**: This subcategory is for individuals who hold a U.S. master's degree or higher, or a foreign equivalent degree, in a field related to the job they're seeking.\n2. **Exceptional Ability**: This subcategory is for individuals who have exceptional ability in the sciences, arts, or business, which has been demonstrated by a high salary, awards, or membership in associations requiring outstanding achievements.\n3. **National Interest Waiver (NIW)**: This subcategory allows individuals with exceptional ability or advanced degrees to self-petition, without the need for a job offer or labor certification, if their work is in the national interest of the United States.\n\n**Eligibility requirements for EB-2:**\n\nTo be eligible for an EB-2 visa, you must meet the following requirements:\n\n* Hold a U.S. master's degree or higher, or a foreign equivalent degree, in a field related to the job you're seeking (for Advanced Degree Holders).\n* Have exceptional ability in the sciences, arts, or business, which has been demonstrated by a high salary, awards, or membership in associations requiring outstanding achievements (for Exceptional Ability).\n* Have a job offer from a U.S. employer, unless you're applying under the National Interest Waiver (NIW) category.\n* Meet the requirements for the specific subcategory you're applying under.\n\n**Required documents for EB-2:**\n\nThe following documents are typically required for an EB-2 visa application:\n\n1. **Form I-140, Immigrant Petition for Alien Worker**: This petition must be filed by your U.S. employer, unless you're applying under the NIW category.\n2. **Form ETA-9089, Application for Permanent Employment Certification**: This form must be certified by the U.S. Department of Labor, unless you're applying under the NIW category.\n3. **Degree and transcripts**: You'll need to provide your U.S. master's degree or higher, or a foreign equivalent degree, and official transcripts.\n4. **Proof of exceptional ability**: If applying under the Exceptional Ability subcategory, you'll need to provide evidence of your exceptional ability, such as:\n\t* Awards or recognition in your field.\n\t* Membership in associations requiring outstanding achievements.\n\t* Published scholarly articles or research.\n\t* Expert testimony or presentations.\n5. **Job offer letter**: A letter from your U.S. employer detailing the job offer, including the job duties, salary, and benefits.\n6. **Labor certification**: If required, you'll need to provide a certified labor certification from the U.S. Department of Labor.\n7. **Passport-style photos**: You'll need to provide passport-style photos for yourself and any dependents.\n8. **Medical examination**: You'll need to undergo a medical examination by a designated civil surgeon to ensure you don't have any health issues that would make you inadmissible to the United States.\n9. **Police certificates**: You may need to provide police certificates from your home country and any countries where you've lived for the past five years.\n\n**Additional requirements for National Interest Waiver (NIW) applicants:**\n\nIf you're applying under the NIW category, you'll need to provide additional documentation, including:\n\n1. **Petition letter**: A detailed letter explaining how your work is in the national interest of the United States.\n2. **Evidence of your",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_991d55e5_1",
+      "turnIndex": 2,
+      "date": "2023/05/27 (Sat) 00:34",
+      "role": "user",
+      "text": "I'm still a bit unclear about the labor certification process. As a computer science professional with a master's degree from New York University, do I need to get a labor certification from the Department of Labor, or can my employer handle that?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_991d55e5_1",
+      "turnIndex": 4,
+      "date": "2023/05/27 (Sat) 00:34",
+      "role": "user",
+      "text": "Can you tell me more about the prevailing wage determination and how it affects my salary? As a 32-year-old male with a master's degree in data science from New York University, I want to make sure I understand how my salary will be determined.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_991d55e5_1",
+      "turnIndex": 6,
+      "date": "2023/05/27 (Sat) 00:34",
+      "role": "user",
+      "text": "Can you tell me more about the required documents for the EB-2 visa application, specifically the education and experience requirements? As a 32-year-old male with a master's degree in data science from New York University, I want to make sure I have all the necessary documents ready.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_991d55e5_1",
+      "turnIndex": 8,
+      "date": "2023/05/27 (Sat) 00:34",
+      "role": "user",
+      "text": "Can you tell me more about the interview process for the EB-2 visa application? I'm a 32-year-old male with a master's degree in data science from New York University, and I want to prepare for the interview.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_991d55e5_1",
+      "turnIndex": 10,
+      "date": "2023/05/27 (Sat) 00:34",
+      "role": "user",
+      "text": "I'd like to ask a question about the interview process. What if I'm asked about my long-term plans in the United States? I'm not sure if I want to stay in the US permanently, but I do want to work here for a few years. How should I answer this question?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_991d55e5_2",
+      "turnIndex": 2,
+      "date": "2023/05/27 (Sat) 22:00",
+      "role": "user",
+      "text": "That's a lot of information. I'm glad I have a master's degree in data science from New York University, which should qualify me for the Advanced Degree Holders subcategory. Can you tell me more about the medical examination process and what to expect?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_991d55e5_2",
+      "turnIndex": 4,
+      "date": "2023/05/27 (Sat) 22:00",
+      "role": "user",
+      "text": "I've been living in the United States for the past five years on a work visa, and I'm not sure if I need any additional vaccinations for the medical examination. Can you tell me more about the vaccination requirements and if there are any specific vaccinations I need to get?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_991d55e5_2",
+      "turnIndex": 6,
+      "date": "2023/05/27 (Sat) 22:00",
+      "role": "user",
+      "text": "I've been living in the United States for the past five years on a work visa, and I'm not sure if I need any additional vaccinations for the medical examination. Since I'm originally from India, I'm wondering if I need any vaccinations specific to my country of origin. Can you tell me more about that?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_991d55e5_2",
+      "turnIndex": 8,
+      "date": "2023/05/27 (Sat) 22:00",
+      "role": "user",
+      "text": "That's a lot to take in, but I think I have a better understanding of the vaccination requirements now. Since I've been living in the United States for the past five years on a work visa, I'm not sure if I need to get any additional vaccinations. Can you tell me more about the medical examination process and what to expect during the exam?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 10572,
+  "estimatedTokens": 2643
+}

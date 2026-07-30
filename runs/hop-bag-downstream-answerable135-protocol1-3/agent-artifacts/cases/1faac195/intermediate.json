@@ -1,0 +1,21 @@
+[
+  {
+    "session_id": "answer_d01949bf",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "none_found",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "User is thinking of visiting their sister Emily in Denver soon.",
+          "why": "Indicates the sister Emily is associated with Denver (location claim may answer where she lives)."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Denver is referred to as 'a great destination' and user is told 'Have a great time visiting your sister and exploring Denver with the kids!'",
+          "why": "Reinforces that visiting sister Emily is in Denver, supporting the location inference."
+        }
+      ]
+    }
+  }
+]

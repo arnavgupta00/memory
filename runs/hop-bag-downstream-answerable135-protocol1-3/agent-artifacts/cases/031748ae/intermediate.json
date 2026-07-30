@@ -1,0 +1,40 @@
+[
+  {
+    "session_id": "answer_8748f791_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session only contains a single time-stamped statement about how many engineers you lead; it does not include any separate information about how many engineers you led when you just started the new role. Chronology (“just started” vs “now”) cannot be determined from this session alone.",
+      "claims": [
+        {
+          "turnIndex": 10,
+          "fact": "I lead a team of 4 engineers in my new role as Senior Software Engineer.",
+          "why": "Directly answers the “How many engineers do I lead” part for a point in time, but does not distinguish “just started” vs “now” within this session."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "So, we'll have 4 engineers, plus my manager Rachel, making it a total of 5 people from our team attending the outing.",
+          "why": "Provides a related count that may help infer the team size composition (4 engineers + 1 manager), though it is specific to the outing context."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_8748f791_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "User’s question asks for engineers led when they just started the new role vs now. This session only contains a current statement about leading five engineers, with no explicit timeline for the “just started” moment. The assistant also reiterates the same number; no evidence of change over time is present.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "User says they lead a team of five engineers.",
+          "why": "Directly answers (or strongly supports) the 'now' part of how many engineers they lead, though it doesn’t specify the 'just started' count."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Assistant says: \"Leading a team of 5 engineers can be a challenging but rewarding experience.\"",
+          "why": "Reinforces the five-engineer leadership count; still no explicit 'just started' vs 'now' distinction."
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "session_id": "answer_sharegpt_qTi81nS_0",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The only explicit clothing description for Andy in this session is an untidy, stained white shirt; if later parts of the script described different clothing for Andy in the comedy scene, they are not present in this candidate session. The question asks what Andy was wearing in the script—this session likely contains the relevant clothing claim but may not include any additional details (e.g., other garments/accessories) that could be relevant.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "Andy wears an untidy, stained white shirt.",
+          "why": "This is a direct description of Andy’s clothing in the script context and could answer what Andy was wearing."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "He wears an untidy, stained white shirt.",
+          "why": "The assistant restates Andy’s clothing in the script’s first scene, reinforcing the clothing detail."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "sharegpt_2LrB18X_51",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains a bathroom/diaper cleanup script with a mother and daughter (including mention of a yellow sundress with white flowers and matching sandals), but it does not mention Andy or any comedy movie scene or what Andy is wearing. If Andy’s clothing details are in another session, they will be missed here.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "Daughter: (excitedly looking at her new yellow sundress with white flowers and matching sandals) Yay, I love this dress!",
+          "why": "Contains a specific clothing description (yellow sundress with white flowers and matching sandals) that could be mistakenly relevant, but it is not about Andy or the requested comedy movie scene."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "cfd21744_2",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains outfit advice about the user’s silk blouse, cardigan, trousers (Zara), ankle boots (Sam Edelman), and a black patent leather belt. It does not mention a comedy movie scene or a character named Andy, so there is likely no direct evidence for what Andy was wearing. If the relevant script/scene exists, it is probably in a different session.",
+      "claims": []
+    }
+  }
+]

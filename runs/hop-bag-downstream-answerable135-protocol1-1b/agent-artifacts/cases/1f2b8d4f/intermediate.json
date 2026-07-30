@@ -1,0 +1,73 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Compute the price difference using the luxury boots price stated in the luxury-boot session and the budget-store similar boots price stated in the budget-store session.",
+    "candidateStatus": "found",
+    "missingRisk": "If the “similar pair found at the budget store” refers to a specific product name not included in the retrieved turns, the downstream answerer may need more product-identifying context beyond just the $50 figure.",
+    "items": [
+      {
+        "sessionId": "answer_d8454588_1",
+        "turnIndex": 0,
+        "why": "States the luxury boots were splurged on for $800 (the luxury price needed for the difference)."
+      },
+      {
+        "sessionId": "answer_d8454588_1",
+        "turnIndex": 8,
+        "why": "Reiterates the luxury boots price ($800) and describes the boots (black ankle boots with a heel, leather), providing nearby context for what the $800 refers to."
+      },
+      {
+        "sessionId": "answer_d8454588_2",
+        "turnIndex": 2,
+        "why": "Directly states that similar boots can be found at a budget store for $50 (the budget-store price needed for the difference)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Compute the price difference using the luxury boots price stated in the luxury-boot session and the budget-store similar boots price stated in the budget-store session.",
+    "candidateStatus": "found",
+    "missingRisk": "If the “similar pair found at the budget store” refers to a specific product name not included in the retrieved turns, the downstream answerer may need more product-identifying context beyond just the $50 figure.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_d8454588_1",
+        "turnIndex": 0,
+        "why": "States the luxury boots were splurged on for $800 (the luxury price needed for the difference)."
+      },
+      {
+        "sessionId": "answer_d8454588_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_d8454588_1",
+        "turnIndex": 8,
+        "why": "Reiterates the luxury boots price ($800) and describes the boots (black ankle boots with a heel, leather), providing nearby context for what the $800 refers to."
+      },
+      {
+        "sessionId": "answer_d8454588_1",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_d8454588_1",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_d8454588_2",
+        "turnIndex": 2,
+        "why": "Directly states that similar boots can be found at a budget store for $50 (the budget-store price needed for the difference)."
+      },
+      {
+        "sessionId": "answer_d8454588_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_d8454588_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

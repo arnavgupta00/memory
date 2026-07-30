@@ -1,0 +1,73 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Compute the day difference using (1) the date/proximity info for when you attended the Holiday Market relative to Black Friday, and (2) the date/proximity info for when you bought the iPhone 13 Pro (on Black Friday).",
+    "candidateStatus": "found",
+    "missingRisk": "If the iPhone purchase turn does not explicitly anchor the purchase to the exact Black Friday date (vs only “Black Friday” generically) or if the Holiday Market proximity is stated ambiguously (e.g., “around” a week), the downstream computation of exact day count could be off by a small amount.",
+    "items": [
+      {
+        "sessionId": "answer_70dc7d08_1",
+        "turnIndex": 0,
+        "why": "Contains the Holiday Market attendance detail: “a week before Black Friday,” which is needed to compute how many days before the iPhone purchase it occurred."
+      },
+      {
+        "sessionId": "answer_70dc7d08_1",
+        "turnIndex": 8,
+        "why": "Repeats/anchors the Holiday Market timing relative to Black Friday (“a week before Black Friday”), providing a nearby restatement useful for cross-checking."
+      },
+      {
+        "sessionId": "answer_70dc7d08_2",
+        "turnIndex": 0,
+        "why": "Contains the iPhone 13 Pro purchase timing: you “got … at a discounted price … from Best Buy on Black Friday,” needed as the reference point for the day-difference calculation."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Compute the day difference using (1) the date/proximity info for when you attended the Holiday Market relative to Black Friday, and (2) the date/proximity info for when you bought the iPhone 13 Pro (on Black Friday).",
+    "candidateStatus": "found",
+    "missingRisk": "If the iPhone purchase turn does not explicitly anchor the purchase to the exact Black Friday date (vs only “Black Friday” generically) or if the Holiday Market proximity is stated ambiguously (e.g., “around” a week), the downstream computation of exact day count could be off by a small amount.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_70dc7d08_1",
+        "turnIndex": 0,
+        "why": "Contains the Holiday Market attendance detail: “a week before Black Friday,” which is needed to compute how many days before the iPhone purchase it occurred."
+      },
+      {
+        "sessionId": "answer_70dc7d08_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_70dc7d08_1",
+        "turnIndex": 8,
+        "why": "Repeats/anchors the Holiday Market timing relative to Black Friday (“a week before Black Friday”), providing a nearby restatement useful for cross-checking."
+      },
+      {
+        "sessionId": "answer_70dc7d08_1",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_70dc7d08_1",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_70dc7d08_2",
+        "turnIndex": 0,
+        "why": "Contains the iPhone 13 Pro purchase timing: you “got … at a discounted price … from Best Buy on Black Friday,” needed as the reference point for the day-difference calculation."
+      },
+      {
+        "sessionId": "answer_70dc7d08_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_70dc7d08_1",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

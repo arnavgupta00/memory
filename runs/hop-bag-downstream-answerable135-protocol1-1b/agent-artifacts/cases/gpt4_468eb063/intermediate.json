@@ -1,0 +1,53 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Today is 2023/04/20 (Thu) 10:12. Find the date (or explicit “today”) when you met Emma, then compute the days-ago from that date to today.",
+    "candidateStatus": "found",
+    "missingRisk": "If “today” in the Emma session is ambiguous (e.g., relative to the session timestamp vs. the user’s real current time), the computed days-ago could be off by a day.",
+    "items": [
+      {
+        "sessionId": "answer_9b09d95b_1",
+        "turnIndex": 0,
+        "why": "States you “catch up with Emma … over lunch today,” which anchors when you met Emma relative to the session’s date (2023/04/11)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Today is 2023/04/20 (Thu) 10:12. Find the date (or explicit “today”) when you met Emma, then compute the days-ago from that date to today.",
+    "candidateStatus": "found",
+    "missingRisk": "If “today” in the Emma session is ambiguous (e.g., relative to the session timestamp vs. the user’s real current time), the computed days-ago could be off by a day.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_9b09d95b_1",
+        "turnIndex": 0,
+        "why": "States you “catch up with Emma … over lunch today,” which anchors when you met Emma relative to the session’s date (2023/04/11)."
+      },
+      {
+        "sessionId": "answer_9b09d95b_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "e60a93ff_2",
+        "turnIndex": 8,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "e60a93ff_2",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "e60a93ff_2",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_9b09d95b_1",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

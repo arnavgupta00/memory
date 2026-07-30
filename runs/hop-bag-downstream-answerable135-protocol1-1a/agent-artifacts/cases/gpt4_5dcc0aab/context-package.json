@@ -1,0 +1,118 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Pairs of shoes the user mentioned cleaning last month",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_099c1b6c_1",
+      "turnIndex": 6,
+      "date": "2023/05/24 (Wed) 19:37",
+      "role": "user",
+      "text": "I'm glad I finally got around to cleaning my white Adidas sneakers last month, which I'd been meaning to do for weeks. They were getting pretty dirty after that outdoor music festival I attended.",
+      "why": "User states they cleaned their white Adidas sneakers last month.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_099c1b6c_1",
+      "turnIndex": 8,
+      "date": "2023/05/24 (Wed) 19:37",
+      "role": "user",
+      "text": "I just used a mixture of soap and water to wipe down the uppers, and then let them air dry on the balcony for a few hours. They looked like new again after that!",
+      "why": "User adds how they cleaned the same pair (soap and water on uppers; air dried).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_099c1b6c_3",
+      "turnIndex": 4,
+      "date": "2023/05/24 (Wed) 20:15",
+      "role": "user",
+      "text": "I remember I cleaned my white Adidas sneakers last month, which I'd been meaning to do for weeks. They were getting pretty dirty and stained, especially after that outdoor music festival I attended on the 15th. Anyway, back to the hiking boots - I was thinking of going to the mountains in a few weeks, do you have any recommendations for waterproofing my backpack and clothes?",
+      "why": "User reiterates the white Adidas sneakers were dirty/stained after the outdoor music festival on the 15th and ties it to cleaning last month.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_099c1b6c_1",
+      "turnIndex": 0,
+      "date": "2023/05/24 (Wed) 19:37",
+      "role": "user",
+      "text": "I'm planning a hiking trip next month and I'm trying to decide between the Merrell Moab 2 Mid Waterproof and the Keen Targhee II Mid WP. Can you compare the features of these two hiking boots for me?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_099c1b6c_1",
+      "turnIndex": 2,
+      "date": "2023/05/24 (Wed) 19:37",
+      "role": "user",
+      "text": "I think ankle support is important for me, since I've heard the trails can be pretty rough in the mountains. Can you tell me more about the Keen.Dry membrane in the Keen Targhee II Mid WP? How does it compare to the Gore-Tex membrane in the Merrell Moab 2 Mid Waterproof?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_099c1b6c_1",
+      "turnIndex": 4,
+      "date": "2023/05/24 (Wed) 19:37",
+      "role": "user",
+      "text": "I think I'll go with the Keen Targhee II Mid WP, the ankle support and breathability are important to me. By the way, do you know how to take care of the Keen.Dry membrane to ensure it lasts long?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_099c1b6c_1",
+      "turnIndex": 10,
+      "date": "2023/05/24 (Wed) 19:37",
+      "role": "user",
+      "text": "No, I don't think so. I've been wearing my new Vans Old Skool sneakers almost every day since I got them last weekend. They're really comfortable and easy to slip on and off. I think I'll save my Adidas sneakers for a special occasion or a outdoor event.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_099c1b6c_3",
+      "turnIndex": 0,
+      "date": "2023/05/24 (Wed) 20:15",
+      "role": "user",
+      "text": "I'm trying to decide between two hiking boots for my upcoming trip to the mountains. I've narrowed it down to the Merrell Moab 2 Mid Waterproof and the Keen Targhee II Mid WP. Do you have any info on these models or can you recommend one over the other? By the way, I just got a new pair of sneakers last weekend - black and white Vans Old Skool - and they're really comfortable.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_099c1b6c_3",
+      "turnIndex": 2,
+      "date": "2023/05/24 (Wed) 20:15",
+      "role": "user",
+      "text": "That's really helpful, thanks for the detailed comparison. I think I'll try on both pairs to see which one feels more comfortable. By the way, I wore my trusty old Converse Chuck Taylor All Star sneakers to that outdoor music festival last month, and they were super comfortable, but I did notice that the soles are starting to wear down a bit, especially on the heels. Do you think I should get them replaced soon?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_099c1b6c_3",
+      "turnIndex": 6,
+      "date": "2023/05/24 (Wed) 20:15",
+      "role": "user",
+      "text": "I just got back from the mall last weekend and ended up buying a pair of black and white Vans Old Skool sneakers on a whim, and I've been wearing them almost every day since then. Anyway, back to waterproofing - do you have any recommendations for waterproofing my hiking boots as well?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_099c1b6c_3",
+      "turnIndex": 8,
+      "date": "2023/05/24 (Wed) 20:15",
+      "role": "user",
+      "text": "I was thinking of taking my brown leather dress shoes to the cobbler to get them polished and conditioned. I wore them to my cousin's wedding a few weeks ago, and they looked great, but now they're starting to show some signs of wear. Do you have any tips on how to maintain them properly?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_099c1b6c_3",
+      "turnIndex": 10,
+      "date": "2023/05/24 (Wed) 20:15",
+      "role": "user",
+      "text": "I'm planning to take my spare pair of running shoes to the track soon, but I lent them to my sister a few weeks ago, so I need to remind her to return them to me soon. Do you have any tips on how to keep my running shoes in good condition?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 3261,
+  "estimatedTokens": 816
+}

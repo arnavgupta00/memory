@@ -1,0 +1,30 @@
+[
+  {
+    "session_id": "fdf7e3e7",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session contains only modeling-related context; it does not mention your employment start date or the duration of work in your current role. The single relevant time statement (“about three weeks ago”) refers to starting the F-15E project, not a job role, so it likely won’t answer the question.",
+      "claims": [
+        {
+          "turnIndex": 6,
+          "fact": "I started this F-15E project about three weeks ago, and it's been a fun build so far.",
+          "why": "Provides a specific time duration, but it is explicitly about the F-15E modeling project rather than a current work role."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_6cb8f792_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low—this session includes the user’s statement about career progression with a specific duration, which can be used to infer time in roles (though it may not explicitly say “current role” or when the current role started).",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "Started as a Marketing Coordinator and worked up to Senior Marketing Specialist after 2 years and 4 months.",
+          "why": "Provides a concrete duration (2 years and 4 months) related to progression from one role to another, which may help determine time in the current role depending on whether Senior Marketing Specialist is the current role."
+        }
+      ]
+    }
+  }
+]

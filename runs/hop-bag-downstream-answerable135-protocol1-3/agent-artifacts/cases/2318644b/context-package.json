@@ -1,0 +1,55 @@
+{
+  "queryShape": "update-conflict",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "answer_eaa8e3ef_1",
+      "turnIndex": 0,
+      "date": "2023/05/24 (Wed) 18:08",
+      "role": "user",
+      "text": "I'm planning a trip to Maui and I'm looking for some outdoor activities and hiking trails. Can you recommend some popular ones? By the way, I've already booked a luxurious resort in Maui that costs over $300 per night, so I'm looking for some free or affordable activities to balance out the cost.",
+      "why": "per-session extractor: Provides a Hawaii (Maui) accommodations per-night cost relevant to the Hawaii side of the comparison.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_eaa8e3ef_2",
+      "turnIndex": 2,
+      "date": "2023/05/26 (Fri) 05:02",
+      "role": "user",
+      "text": "Thank you for the information. I stayed in a hostel in Tokyo that cost around $30 per night when I went solo last January, so it's possible for me to find good deals. I'm planning to visit some of the popular tourist spots in Tokyo, such as Shibuya Crossing and the Tokyo Tower. Are there any affordable transportation options available, or should I just take a taxi?",
+      "why": "per-session extractor: Provides Tokyo accommodation cost per night needed to compare against Hawaii.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_eaa8e3ef_1",
+      "turnIndex": 1,
+      "date": "2023/05/24 (Wed) 18:08",
+      "role": "assistant",
+      "text": "Maui is a wonderful destination! You've made an excellent choice. I'd be happy to recommend some fantastic outdoor activities and hiking trails that won't break the bank. Since you've invested in a luxurious resort, it's great that you're looking for affordable options to balance out the cost. Here are some popular and budget-friendly suggestions:\n\n**Hiking Trails:**\n\n1. **Haleakala National Park**: While there's a fee to enter the park, hiking to the summit for sunrise is a must-do experience. The park offers various trails, including the Sliding Sands Trail and the Halemau'u Trail. Entrance fee: $30 per vehicle (valid for 3 days).\n2. **Waihee Ridge Trail**: A 5-mile out-and-back trail with stunning views of the valley and the ocean. Free admission.\n3. **Iao Valley State Park**: Home to the iconic Iao Needle, this park offers several hiking trails, including the Kukui Ridge Trail and the Iao Valley Trail. Entrance fee: $5 per person.\n4. **Kapalua Coastal Trail**: A 3.5-mile trail that takes you along the coastline, offering breathtaking ocean views. Free admission.\n\n**Outdoor Activities:**\n\n1. **Snorkeling at Honolua Bay**: A marine preserve with an abundance of marine life. Free admission, but parking costs $5.\n2. **Watch the Sunset at Ho'okipa Beach**: A popular spot to watch the sunset and see windsurfers and kitesurfers in action. Free admission.\n3. **Drive the Road to Hana**: A scenic drive along the coast with numerous stops at waterfalls, beaches, and hiking trails. Free admission, but consider bringing a picnic lunch and snacks.\n4. **Kayaking or Paddleboarding**: Rent equipment and explore Maui's coastline from a different perspective. Rentals typically cost between $20-$50 per hour.\n\n**Additional Tips:**\n\n* Be sure to check the current conditions and any access restrictions for each trail and activity before heading out.\n* Pack water, snacks, and sunscreen to ensure a comfortable and enjoyable experience.\n* Consider purchasing a Maui Gold Card, which offers discounts and perks at various attractions and activities.\n* If you're interested in guided hikes or activities, look for companies that offer affordable options or discounts.\n\nEnjoy your luxurious resort and your outdoor adventures in Maui!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_eaa8e3ef_2",
+      "turnIndex": 1,
+      "date": "2023/05/26 (Fri) 05:02",
+      "role": "assistant",
+      "text": "Japan can be a wonderful destination!\n\nStaying in a hostel in Japan is a fantastic way to save money, meet fellow travelers, and experience the local culture. Here's what you can expect:\n\n**Types of Hostels:**\n\n1. **Dormitories (-shared rooms):** These are the most affordable options, with prices ranging from ¥2,000 to ¥5,000 (around $18-$45 USD) per night. You'll share a room with other travelers, and the number of beds can vary from 4 to 20.\n2. **Private rooms:** If you prefer more privacy, you can book a private room, which can cost between ¥5,000 to ¥10,000 (around $45-$90 USD) per night. These rooms usually have bunk beds or twin beds.\n3. **Capsule hotels (pod hotels):** These are a unique Japanese concept, where you sleep in a compact, pod-like room with a bed, lighting, and sometimes a TV. Prices range from ¥2,000 to ¥5,000 (around $18-$45 USD) per night.\n\n**Amenities:**\n\n* Most hostels in Japan offer:\n\t+ Free Wi-Fi\n\t+ Shared kitchen facilities\n\t+ Lounge areas for socializing\n\t+ Laundry machines (sometimes coin-operated)\n\t+ Lockers or luggage storage\n\t+ 24-hour reception (some hostels may have limited hours)\n* Some hostels may also provide:\n\t+ Breakfast (sometimes for an extra fee)\n\t+ Linens and towels\n\t+ Hair dryers and toiletries\n\t+ Tour bookings and travel advice\n\n**Tips and Expectations:**\n\n* **Cleanliness:** Japanese hostels are known for their cleanliness and tidiness. You can expect a high standard of hygiene and cleanliness throughout the hostel.\n* **Noise levels:** Japan is a considerate society, and noise levels are generally kept low, especially in shared rooms. Earplugs might still be a good idea, though!\n* **Curfew:** Some hostels may have a curfew, especially if they're located in a residential area. Be sure to check the hostel's policies before booking.\n* **Language:** While many hostel staff speak some English, it's still a good idea to learn basic Japanese phrases, like \"\" (konnichiwa) for \"hello\" and \"\" (arigatou) for \"thank you.\"\n* **Tattoos:** Japan has a complex relationship with tattoos, and some hostels may not allow guests with tattoos to use their facilities. It's best to check beforehand.\n\n**Booking and Prices:**\n\n* **Booking websites:** Use websites like Booking.com, Hostelworld, or Japan-specific platforms like Japan-Guide.com to find and book hostels.\n* **Prices:** As you mentioned, prices can vary depending on the location, time of year, and availability. ¥2,000-¥5,000 (around $18-$45 USD) per night is a reasonable range for a shared room in a hostel.\n\nOverall, hostels in Japan are a great way to meet fellow travelers, experience the local culture, and save money. With a little planning and research, you can find a comfortable and affordable place to stay during your trip.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_eaa8e3ef_2",
+      "turnIndex": 3,
+      "date": "2023/05/26 (Fri) 05:02",
+      "role": "assistant",
+      "text": "Navigating Tokyo's transportation system can be intimidating, but don't worry, I'm here to help!\n\nWhile taxis are convenient, they can be expensive, especially during peak hours. Fortunately, Tokyo has a comprehensive and efficient public transportation system that's relatively affordable. Here are some affordable transportation options to get you to popular tourist spots like Shibuya Crossing and Tokyo Tower:\n\n**Subway and Train:**\n\n1. **Suica or Pasmo cards:** Buy a prepaid IC card (like Suica or Pasmo) at most train stations. These cards can be refilled and used to ride subways, trains, and buses. A single ride typically costs ¥200-¥400 (around $2-$4 USD).\n2. **Tokyo Metro:** The Tokyo Metro is an efficient way to get around the city. A single ride costs ¥200-¥400 (around $2-$4 USD), but you can also buy a 24-hour pass for ¥600 (around $6 USD).\n3. **JR Train:** Japan Railways (JR) operates trains that connect major stations. A single ride costs ¥130-¥240 (around $1.30-$2.40 USD).\n\n**Bus:**\n\n1. **Toei Bus:** Toei Bus is a affordable option for shorter distances. A single ride costs ¥210 (around $2 USD).\n\n**Other Options:**\n\n1. **Walking:** Tokyo is a walkable city, and walking is a great way to explore neighborhoods. Just be mindful of pedestrian rules and traffic signs.\n2. **Bicycle:** Some areas, like Shibuya, offer bike-sharing services. This can be a fun and affordable way to get around.\n\n**Getting to Popular Tourist Spots:**\n\n1. **Shibuya Crossing:** Take the JR Yamanote Line to Shibuya Station (¥130, around $1.30 USD). From there, follow the signs to Shibuya Crossing.\n2. **Tokyo Tower:** Take the JR Sobu Line to Hamamatsucho Station (¥130, around $1.30 USD). From there, take a 10-minute walk to Tokyo Tower.\n\n**Tips:**\n\n* **Peak hours:** Avoid traveling during rush hour (7:30-9:30 am and 5:00-7:00 pm) when trains and subways are extremely crowded.\n* **Station maps:** Familiarize yourself with station maps and signs, as they can be complex.\n* **English support:** Many stations have English-speaking staff or signs, but it's still a good idea to learn basic Japanese phrases like \"\" (eki) for \"station\" and \"\" (migi) for \"right.\"\n\n**Budget-Friendly Tips:**\n\n* **Buy a prepaid IC card:** It's more convenient and cost-effective than buying individual tickets.\n* **Use the subway or train:** These are generally cheaper than buses or taxis.\n* **Walk or bike:** When possible, walking or biking can be a great way to save money and experience the city.\n\nWith these options, you can easily navigate Tokyo without breaking the bank. Enjoy your trip!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 8249,
+  "estimatedTokens": 2063
+}

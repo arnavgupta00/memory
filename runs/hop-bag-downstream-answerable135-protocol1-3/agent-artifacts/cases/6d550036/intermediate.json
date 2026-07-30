@@ -1,0 +1,117 @@
+[
+  {
+    "session_id": "sharegpt_J7ZAFLd_0",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session only describes planning a project; it does not explicitly state you have led/are leading a specific number of projects, so it may undercount or miss other project leadership not present here.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "I am planning a project in Nigeria that connects 100 rural villages to running water.",
+          "why": "Mentions a project you are planning, which could relate to projects you may be leading, but does not provide a count or leadership role."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_ec904b3c_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session contains only one potentially relevant leadership claim (leading a data analysis team on a Marketing Research class project) and does not mention any current projects you are leading beyond an unspecified “working on a project.” It likely undercounts projects because it doesn’t explicitly state how many projects you’ve led or are currently leading.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "You led the data analysis team in your Marketing Research class project, where you did a comprehensive market analysis for a new product launch.",
+          "why": "This directly indicates project leadership (“led the data analysis team”) and could count as a project you led when answering how many projects you’ve led."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "You are working on a project that involves analyzing customer data to identify trends and patterns.",
+          "why": "This suggests an additional project you are currently working on, which may be relevant to the count of projects you are currently leading (though it does not explicitly say you led it)."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "sharegpt_nVi6tIt_0",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains only general questions about starting and pricing a web design company; there are no explicit statements about the user leading or currently leading any specific projects, nor any counts/names/dates of projects they led.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_ec904b3c_4",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains no explicit information about how many projects the user has led or is currently leading. It only discusses using data visualization tools for a case competition and brainstorming dashboards/metrics; therefore it provides no direct or countable evidence for project leadership.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "sharegpt_zciCXP1_12",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session mostly discusses event/grant details and only indirectly references prior events; it does not clearly state how many separate projects the user has personally led or is currently leading, so the count may be missing or require user-specific interpretation not present here.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "This year, the only big event confirmed about blockchain is BlockchainLand, so we, as the Ethereum México Community Team, believe that the most important event about Web3 should not be a private one. We aim to make an event created by the community for the community, with workshops and talks about how Ethereum and all the protocols built on it could bring new tools and opportunities for the people.",
+          "why": "Indicates involvement/leadership in organizing an Ethereum México community event project (may relate to ‘projects you have led or are currently leading’)."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "After the grant is completed, we plan to continue organizing community events, workshops, and talks to further promote the Ethereum ecosystem and its potential in Mexico.",
+          "why": "Shows ongoing plans for organizing multiple related activities under the same initiative (counts as projects/leadership involvement if the reducer treats these as distinct projects)."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "We also plan to continue our partnership with the Ethereum Foundation and explore additional funding opportunities to support our community-building efforts.",
+          "why": "Relevant to sustaining/continuing the project work, which may correspond to continued leadership over the initiative(s)."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "This is the first time we applied for an IRL event of this magnitude! In the past, we applied to host events during The Merge, we hosted 3 events in 3 different cities for 80-100 people each one.",
+          "why": "Provides a quantitative list (3 events in 3 different cities) that could be treated as previously led/managed projects by the applicant team."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "While we have previously applied for funding from ESP to host events, this is the first time we have applied for an IRL event of this magnitude.",
+          "why": "Corroborates prior event-hosting/project work in the applicant context (may support counts of past projects/leadership)."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "2e4430d8_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session contains only one explicit quantified leadership fact (leading a team of five engineers). It does not directly state how many distinct projects you have led or are currently leading; it only mentions one “high-priority project” completed ahead of schedule and a plan to launch a new product feature with a project timeline in June. These may or may not correspond to “projects you led/are currently leading.”",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "You were promoted to a senior software engineer position three months ago and have been leading a team of five engineers.",
+          "why": "Indicates your leadership role, which may affect which projects you are considered to have led, though it does not quantify projects."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "You have been delivering features ahead of schedule, like that high-priority project you completed two months ahead of time.",
+          "why": "Mentions at least one specific high-priority project you completed early; could be counted as a project you led/are associated with, but completeness is unclear."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "You are planning to launch a new product feature in June and need to create a project timeline.",
+          "why": "Indicates an upcoming initiative with a project timeline, potentially corresponding to a currently led project, but the exact number is not given."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_ec904b3c_2",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains no information about how many projects the user has led or is currently leading; it only discusses a solo Data Mining class project and general advice requests about feature engineering, visualization, and presentation.",
+      "claims": []
+    }
+  }
+]

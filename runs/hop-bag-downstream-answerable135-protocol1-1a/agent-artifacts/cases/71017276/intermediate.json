@@ -1,0 +1,18 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Instances where the user met up with their aunt and received the crystal chandelier",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_0b4a8adc_1",
+      "turnIndex": 0,
+      "why": "States the user received the crystal chandelier from their aunt “today” (session dated 2023/03/04), which is the anchor needed to compute how many weeks ago relative to 2023/04/01."
+    },
+    {
+      "sessionId": "answer_0b4a8adc_1",
+      "turnIndex": 1,
+      "why": "Assistant congratulates the user on the new chandelier acquisition from the aunt, reinforcing that the meeting/acquisition occurred on that same day."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Confirm the phone number of the Speyer tourism board previously provided by the assistant.",
+  "candidateStatus": "found",
+  "missingRisk": "If the earlier phone number was provided in a different session not included here, the retriever may have missed it; only the phone detail from this session can be used.; frozen bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "answer_ultrachat_417348",
+      "turnIndex": 2,
+      "date": "2023/05/29 (Mon) 09:40",
+      "role": "user",
+      "text": "Can you provide me with the contact details of the local tourism board of Speyer?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ultrachat_417348",
+      "turnIndex": 3,
+      "date": "2023/05/29 (Mon) 09:40",
+      "role": "assistant",
+      "text": "Certainly! You can contact the tourism board of Speyer using the following details:\n\nSpeyer Tourismus Marketing GmbH\nMaximilianstraße 13\n67346 Speyer\nPhone: +49 (0) 62 32 / 14 23 - 0\nEmail: info@speyer.de\nWebsite: https://www.speyer.de/",
+      "why": "Contains the assistant-provided contact details for the Speyer tourism board, including the exact phone number.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ultrachat_417348",
+      "turnIndex": 4,
+      "date": "2023/05/29 (Mon) 09:40",
+      "role": "user",
+      "text": "Thanks for providing me with the contact details of the tourism board of Speyer. Can you tell me how I can get to Speyer from Frankfurt?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ultrachat_417348",
+      "turnIndex": 0,
+      "date": "2023/05/29 (Mon) 09:40",
+      "role": "user",
+      "text": "Are there any upcoming sporting events in Speyer that visitors can attend or participate in?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 545,
+  "estimatedTokens": 137
+}

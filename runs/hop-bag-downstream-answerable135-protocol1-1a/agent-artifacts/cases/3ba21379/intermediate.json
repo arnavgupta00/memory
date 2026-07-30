@@ -1,0 +1,23 @@
+{
+  "queryShape": "update-conflict",
+  "setBoundary": "Model vehicle the user says they are currently working on (may change between conversations).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_cd345582_1",
+      "turnIndex": 0,
+      "why": "User states the current project is a “Ford Mustang Shelby GT350R model.”"
+    },
+    {
+      "sessionId": "answer_cd345582_2",
+      "turnIndex": 1,
+      "why": "Assistant mentions the user’s Ford Mustang Shelby GT350R in context of airbrushing, indicating that model was active at that time."
+    },
+    {
+      "sessionId": "answer_cd345582_2",
+      "turnIndex": 2,
+      "why": "User says they just wrapped up a model and “switched to a Ford F-150 pickup truck,” indicating a change in what they are working on."
+    }
+  ]
+}

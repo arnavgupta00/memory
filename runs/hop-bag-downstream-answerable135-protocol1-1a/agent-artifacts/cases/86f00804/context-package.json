@@ -1,0 +1,64 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "The book the user says they are currently reading (most recent explicitly ongoing read)",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_96b8c9ee",
+      "turnIndex": 0,
+      "date": "2023/05/23 (Tue) 11:27",
+      "role": "user",
+      "text": "I'm trying to figure out how to fit more reading time into my daily routine. Do you have any tips on how to prioritize reading when life gets busy? By the way, I'm currently devouring \"The Seven Husbands of Evelyn Hugo\" and it's hard to put down!",
+      "why": "User explicitly says they are currently “devouring” The Seven Husbands of Evelyn Hugo.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_96b8c9ee",
+      "turnIndex": 6,
+      "date": "2023/05/23 (Tue) 11:27",
+      "role": "user",
+      "text": "I've actually already started a book club with some friends, and our first meeting is scheduled for next weekend. We're going to discuss \"The Last House Guest\" by Megan Miranda, which I've already read and really enjoyed.",
+      "why": "User also mentions The Last House Guest as the book for their book club that they have already read—useful context for whether it could be current, but framed as already read.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_96b8c9ee",
+      "turnIndex": 2,
+      "date": "2023/05/23 (Tue) 11:27",
+      "role": "user",
+      "text": "I love the idea of making reading a habit loop. I actually do that already, reading before bed every night. I've been averaging 20-30 pages a night, and some nights I've stayed up way too late reading 50-60 pages in one sitting. Do you have any recommendations for book tracking apps or websites, like Goodreads, to help me stay organized and on top of my reading goals?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_96b8c9ee",
+      "turnIndex": 4,
+      "date": "2023/05/23 (Tue) 11:27",
+      "role": "user",
+      "text": "I think I'll check out Libib and StoryGraph. I'm actually curious about tracking my reading speed and comprehension, so maybe BookNerd will be a good option too. \n\nBy the way, I've been thinking about starting a book club with some friends. Do you have any tips on how to organize and run a successful book club?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_96b8c9ee",
+      "turnIndex": 8,
+      "date": "2023/05/23 (Tue) 11:27",
+      "role": "user",
+      "text": "Yeah, I'm really looking forward to it! We're just going to have a casual discussion and see where it takes us. I might prepare some snacks and drinks to make it feel more relaxed. We'll probably just sit around, chat, and see what everyone thought of the book.\n\nYou know, speaking of books, I was thinking of checking out some book awards and lists to find new titles to read. Do you have any recommendations for popular book awards or lists that are worth following?\n",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_96b8c9ee",
+      "turnIndex": 10,
+      "date": "2023/05/23 (Tue) 11:27",
+      "role": "user",
+      "text": "I'm glad you mentioned the Indie Next List. I've been meaning to check it out. I've been trying to support more indie authors and bookstores lately.\n\nBy the way, have you heard about the Book of the Month Club? I've been thinking of joining it, but I'm not sure if it's worth it. Do you have any experience with it?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 1933,
+  "estimatedTokens": 484
+}

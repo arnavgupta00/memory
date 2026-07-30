@@ -1,0 +1,334 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Total time (in weeks) you spent reading 'The Nightingale' and listening to 'Sapiens: A Brief History of Humankind' and 'The Power' from your stated start/finish moments (up to 2022/04/30).",
+  "candidateStatus": "found",
+  "missingRisk": "You provided start/finish dates for some books, but not enough detail for an unambiguous “weeks spent” calculation (e.g., whether to include partial days/weeks, exact start time granularity, and whether any of the sessions overlapped or continued after the stated “today” moments).",
+  "items": [
+    {
+      "sessionId": "answer_e9ad5914_1",
+      "turnIndex": 0,
+      "date": "2022/01/01 (Sat) 20:18",
+      "role": "user",
+      "text": "I'm looking for some book recommendations. I started reading 'The Nightingale' by Kristin Hannah today and I'm really into historical fiction right now. Can you suggest some other books in the same genre that you think I'd enjoy?",
+      "why": "User started reading 'The Nightingale' today (2022/01/01), establishing a start point for time spent.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e9ad5914_2",
+      "turnIndex": 0,
+      "date": "2022/01/15 (Sat) 11:56",
+      "role": "user",
+      "text": "I'm looking for some book recommendations. I just finished reading \"The Nightingale\" by Kristin Hannah today, and I'm still reeling from the emotional impact. I'm open to trying out different genres, so feel free to suggest anything that you think I might enjoy.",
+      "why": "User finished reading 'The Nightingale' today (2022/01/15), establishing an end point for time spent.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e9ad5914_3",
+      "turnIndex": 6,
+      "date": "2022/02/01 (Tue) 18:18",
+      "role": "user",
+      "text": "That's really helpful, thanks! I think I can apply this to some of my own habits. Speaking of habits, I just started listening to 'Sapiens: A Brief History of Humankind' by Yuval Noah Harari today, and it got me thinking about how humans have developed certain habits and behaviors over time.",
+      "why": "User started listening to 'Sapiens: A Brief History of Humankind' today (2022/02/01), establishing a start point for listening time.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e9ad5914_4",
+      "turnIndex": 0,
+      "date": "2022/03/01 (Tue) 22:45",
+      "role": "user",
+      "text": "I just finished listening to 'Sapiens: A Brief History of Humankind' by Yuval Noah Harari today, and it got me thinking about the impact of technology on human evolution. Can you tell me more about the latest advancements in AI and its potential applications in various industries?",
+      "why": "User finished listening to 'Sapiens: A Brief History of Humankind' today (2022/03/01), establishing an end point for listening time.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e9ad5914_6",
+      "turnIndex": 0,
+      "date": "2022/03/20 (Sun) 05:21",
+      "role": "user",
+      "text": "I'm looking for some book recommendations. I just finished listening to 'The Power' by Naomi Alderman today and it really made me think. I'm interested in exploring more books that challenge my perspectives. Do you have any suggestions?",
+      "why": "User finished listening to 'The Power' today (2022/03/20), establishing an end point for listening time (but start point may still be missing).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e9ad5914_1",
+      "turnIndex": 2,
+      "date": "2022/01/01 (Sat) 20:18",
+      "role": "user",
+      "text": "I'm glad you liked The Nightingale, it's definitely an emotional rollercoaster. Do you have any recommendations for books that are similar to The Nightingale in terms of the emotional impact they have on the reader?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_1",
+      "turnIndex": 4,
+      "date": "2022/01/01 (Sat) 20:18",
+      "role": "user",
+      "text": "Do you think you could recommend some books that are a bit lighter, maybe something in the sci-fi or fantasy genre? I've been listening to some audiobooks lately, and I'm open to trying out a new series.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_1",
+      "turnIndex": 6,
+      "date": "2022/01/01 (Sat) 20:18",
+      "role": "user",
+      "text": "I've actually listened to Ready Player One already, it was a fun and lighthearted read. I might check out The Three-Body Problem next, I've heard great things about it. Do you think you could recommend some fantasy books with strong female protagonists? I've been enjoying exploring different genres lately.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_1",
+      "turnIndex": 8,
+      "date": "2022/01/01 (Sat) 20:18",
+      "role": "user",
+      "text": "I've been meaning to explore more fantasy books with strong female protagonists. I've heard great things about The Fifth Season and The Poppy War, so I might check those out next. Do you think you could recommend some graphic novels or poetry collections that I might enjoy? I've been getting into those genres lately.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_1",
+      "turnIndex": 10,
+      "date": "2022/01/01 (Sat) 20:18",
+      "role": "user",
+      "text": "I actually just bought \"Milk and Filth\" by Carmen Giménez Smith recently, and I'm excited to dive into it. Have you read any poetry collections or graphic novels that you'd recommend?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_2",
+      "turnIndex": 2,
+      "date": "2022/01/15 (Sat) 11:56",
+      "role": "user",
+      "text": "I'm interested in the historical fiction recommendations. Can you tell me more about \"All the Light We Cannot See\" by Anthony Doerr? What's the story about and what makes it so impactful?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_2",
+      "turnIndex": 4,
+      "date": "2022/01/15 (Sat) 11:56",
+      "role": "user",
+      "text": "I'm definitely interested in \"All the Light We Cannot See\". I've heard great things about it. Can you tell me more about the writing style? I've read that it's quite lyrical and poetic. How does that affect the pacing of the story?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_2",
+      "turnIndex": 6,
+      "date": "2022/01/15 (Sat) 11:56",
+      "role": "user",
+      "text": "I'm curious about how \"All the Light We Cannot See\" will compare in terms of its emotional impact. Can you tell me more about how the book handles the theme of war and its effects on individuals?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_2",
+      "turnIndex": 8,
+      "date": "2022/01/15 (Sat) 11:56",
+      "role": "user",
+      "text": "I'm interested in learning more about the character of Werner Pfennig. Can you tell me more about his backstory and how he becomes embroiled in the Nazi war machine?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_2",
+      "turnIndex": 10,
+      "date": "2022/01/15 (Sat) 11:56",
+      "role": "user",
+      "text": "I'm interested in learning more about the historical context of the novel. Can you tell me more about the role of radio technology during World War II and how it was used by both the Allies and the Axis powers?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_3",
+      "turnIndex": 0,
+      "date": "2022/02/01 (Tue) 18:18",
+      "role": "user",
+      "text": "I'm trying to explore more non-fiction books. Can you recommend some popular non-fiction books on psychology or sociology that I might enjoy, just like 'Sapiens: A Brief History of Humankind'?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_3",
+      "turnIndex": 2,
+      "date": "2022/02/01 (Tue) 18:18",
+      "role": "user",
+      "text": "I'm particularly interested in the psychology section. Can you tell me more about \"The Power of Habit\" by Charles Duhigg, like what kind of habits is he talking about and how does he suggest we change them?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_3",
+      "turnIndex": 4,
+      "date": "2022/02/01 (Tue) 18:18",
+      "role": "user",
+      "text": "That sounds very interesting. I'm curious about how to identify the cue and reward in my habit loops. Can you give me an example of how to do that?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_3",
+      "turnIndex": 8,
+      "date": "2022/02/01 (Tue) 18:18",
+      "role": "user",
+      "text": "That's a great point about \"imagined orders\" and how they shape our habits and behaviors. I'll definitely keep that in mind as I continue listening to the book. Another thing that caught my attention was Harari's discussion of the role of agriculture in human history. It made me think about my own eating habits and how they're influenced by the food industry and cultural norms. Do you have any recommendations for books that explore the psychology and sociology of food and eating?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_3",
+      "turnIndex": 10,
+      "date": "2022/02/01 (Tue) 18:18",
+      "role": "user",
+      "text": "I'm excited to dive into these recommendations! Thank you for the suggestions. I'll definitely explore these books and see how they relate to my own eating habits and the food industry.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_4",
+      "turnIndex": 2,
+      "date": "2022/03/01 (Tue) 22:45",
+      "role": "user",
+      "text": "That's a lot to take in! I'm particularly interested in the healthcare applications of AI. Can you tell me more about AI-assisted diagnosis and how it's improving healthcare outcomes?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_4",
+      "turnIndex": 4,
+      "date": "2022/03/01 (Tue) 22:45",
+      "role": "user",
+      "text": "I'm particularly interested in the potential of AI-assisted diagnosis to reduce healthcare costs. Can you provide some examples of how AI can help reduce costs, and what kind of cost savings we can expect in the future?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_4",
+      "turnIndex": 6,
+      "date": "2022/03/01 (Tue) 22:45",
+      "role": "user",
+      "text": "That's really interesting. I've been thinking about how AI can improve healthcare outcomes. Do you think AI-assisted diagnosis will lead to a shift in the way we think about healthcare, and could it potentially change the way we approach disease prevention and treatment?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_4",
+      "turnIndex": 8,
+      "date": "2022/03/01 (Tue) 22:45",
+      "role": "user",
+      "text": "That's a fascinating perspective on the potential impact of AI-assisted diagnosis on human evolution and healthcare. I'd like to explore the idea of AI-powered predictive medicine further. Can you tell me more about how AI can help identify high-risk patients and predict disease onset?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_4",
+      "turnIndex": 10,
+      "date": "2022/03/01 (Tue) 22:45",
+      "role": "user",
+      "text": "I'd like to explore the idea of AI-powered chatbots in healthcare further. Can you tell me more about how AI-powered chatbots can improve patient engagement and outcomes?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_5",
+      "turnIndex": 0,
+      "date": "2022/03/06 (Sun) 19:30",
+      "role": "user",
+      "text": "I'm looking for some book recommendations. I'm open to different genres, but I'm particularly interested in stories that explore themes of power dynamics and social change.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_5",
+      "turnIndex": 2,
+      "date": "2022/03/06 (Sun) 19:30",
+      "role": "user",
+      "text": "I'm really interested in \"The Handmaid's Tale\" and \"The Hate U Give\". Can you tell me more about the themes of oppression and resistance in these books, and how they relate to our current social climate?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_5",
+      "turnIndex": 4,
+      "date": "2022/03/06 (Sun) 19:30",
+      "role": "user",
+      "text": "I am interested in \"The Brief Wondrous Life of Oscar Wao\" as well. Can you tell me more about the themes of identity, culture, and power in this novel, and how they relate to the Latino experience?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_5",
+      "turnIndex": 6,
+      "date": "2022/03/06 (Sun) 19:30",
+      "role": "user",
+      "text": "I'm so interested in learning more about the themes of identity, culture, and power in \"The Brief Wondrous Life of Oscar Wao\". I've been thinking a lot about how these themes relate to my own experiences as a woman, and I started listening to \"The Power\" by Naomi Alderman today, which got me thinking about how I take certain things for granted. Do you think \"The Brief Wondrous Life of Oscar Wao\" would be a good fit for someone interested in exploring these themes further?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_5",
+      "turnIndex": 8,
+      "date": "2022/03/06 (Sun) 19:30",
+      "role": "user",
+      "text": "I'm interested in learning more about the themes of identity, culture, and power in \"The Fifth Season\" by N.K. Jemisin. I've been thinking a lot about how these themes relate to my own experiences as a woman, and I started listening to \"The Power\" by Naomi Alderman today, which got me thinking about how I take certain things for granted. Do you think \"The Fifth Season\" would be a good fit for someone interested in exploring these themes further?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_5",
+      "turnIndex": 10,
+      "date": "2022/03/06 (Sun) 19:30",
+      "role": "user",
+      "text": "I think I'd like to explore more books that delve into the themes of identity, culture, and power. Can you recommend some other novels that might interest me?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_6",
+      "turnIndex": 2,
+      "date": "2022/03/20 (Sun) 05:21",
+      "role": "user",
+      "text": "I'm glad you liked The Power. I've been meaning to explore more non-fiction books, do you think The Power of Habit by Charles Duhigg would be a good fit for me? I've been trying to change some habits lately, and I'm interested in learning more about the science behind it.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_6",
+      "turnIndex": 4,
+      "date": "2022/03/20 (Sun) 05:21",
+      "role": "user",
+      "text": "I'm also interested in exploring more non-fiction books, especially ones that can help me improve my daily habits and productivity. Do you have any recommendations on books that can help me with time management and goal setting?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_6",
+      "turnIndex": 6,
+      "date": "2022/03/20 (Sun) 05:21",
+      "role": "user",
+      "text": "I actually have \"Atomic Habits\" by James Clear, and I've been reading it slowly, taking notes, and reflecting on my own habits and behaviors. It's been really helpful in keeping me accountable and seeing my progress over time.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_6",
+      "turnIndex": 8,
+      "date": "2022/03/20 (Sun) 05:21",
+      "role": "user",
+      "text": "I've found the habit stacking technique to be really helpful. I've also been using the implementation intention strategy, where I specify when and where I'll perform a new habit. For example, I've been trying to start a meditation habit, so I've committed to meditating for 10 minutes every morning right after I brush my teeth. It's been really helpful in making the habit stick.\n\nI've also been using a habit tracker app to track my progress. It's been really motivating to see my streaks and watch my habits grow over time. I've also been reflecting on my habits and behaviors by writing in a journal. It's been helpful in identifying patterns and areas where I need to improve.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9ad5914_6",
+      "turnIndex": 10,
+      "date": "2022/03/20 (Sun) 05:21",
+      "role": "user",
+      "text": "I'm interested in learning more about the history of the feminist movement and how it has evolved over time. I'd also like to explore contemporary issues like intersectionality, gender identity, and reproductive rights.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 9138,
+  "estimatedTokens": 2285
+}

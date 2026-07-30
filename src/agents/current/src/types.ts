@@ -87,7 +87,7 @@ export const ProviderRoleConfigSchema = z.strictObject({
     .optional(),
   max_output_tokens: z.number().int().positive().default(8000),
   timeout_seconds: z.number().positive().default(300),
-  concurrency: z.number().int().positive().max(64).default(1),
+  concurrency: z.number().int().positive().max(256).default(1),
   max_retries: z.number().int().nonnegative().max(20).default(5),
   min_request_interval_seconds: z.number().nonnegative().default(0),
   input_price_per_million: z.number().nonnegative().nullable().optional(),

@@ -1,0 +1,145 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Estimate of total weight lost since starting consistent gym attendance (combining “past month” and “since ~3 months” claims as possible endpoints; preserve both values because they may overlap or be cumulative).",
+  "candidateStatus": "found",
+  "missingRisk": "The sessions provide two different weight-loss figures (5 lb in past month vs 10 lb since ~3 months). Downstream may need to determine whether these are cumulative vs overlapping; if more precise start date or multiple weigh-in data points are required, they are not present here.; frozen bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "answer_ae3a122b_1",
+      "turnIndex": 1,
+      "date": "2023/05/21 (Sun) 12:29",
+      "role": "assistant",
+      "text": "I'd be happy to help you with that!\n\n**New Exercises for Core and Legs:**\n\nHere are some effective exercises to target your core and legs:\n\n**Core:**\n\n1. **Pallof Press**: A rotational exercise that targets your rotational strength and stability. Hold a cable or resistance band and press it away from your body, keeping your core muscles engaged.\n2. **Side Plank Variations**: Add some variety to your traditional side plank by lifting your top leg, arm, or using a weight.\n3. **Russian twists**: A classic exercise that targets your obliques. Use a weight or medicine ball and twist your torso, touching the weight to the ground beside you.\n4. **Bird Dog**: Strengthens your core, glutes, and hamstrings. Start on all fours, then lift your right arm and left leg off the ground, holding for a few seconds before switching sides.\n\n**Legs:**\n\n1. **Step-ups**: Targets your quadriceps, hamstrings, and glutes. Use a bench, stair, or step, and alternate legs.\n2. **Lunges with a twist**: Add a twist to your traditional lunge by rotating your torso as you lower into the lunge.\n3. **Calf raises on a step**: Targets your calf muscles. Stand on a step or platform, raise up onto your toes, and then lower back down.\n4. **Glute bridges**: Strengthens your glutes and hamstrings. Lie on your back, lift your hips up towards the ceiling, and then lower back down.\n\n**10K Goal:**\n\nTo determine if your goal of running a 10K by the end of summer is realistic, let's consider a few factors:\n\n1. **Current fitness level**: What's your current running experience and fitness level? Are you a beginner, intermediate, or advanced runner?\n2. **Current running routine**: How often do you currently run, and what's your typical distance and pace?\n3. **Training time**: How much time can you dedicate to training each week?\n4. **Summer timeline**: When exactly do you want to run the 10K, and how many weeks do you have to train?\n\nAssuming you're a beginner or intermediate runner, a general rule of thumb is to increase your weekly mileage by no more than 10% each week to allow for adaptation and reduce the risk of injury.\n\nIf you're new to running, it's recommended to start with shorter distances (3-5K) and gradually build up to longer distances. A 10K might be a challenging goal, but it's achievable with consistent training and dedication.\n\nHere's a rough estimate of a 12-week training plan to help you reach your goal:\n\n* Weeks 1-4: Build up to running 3-4 times a week, with one longer run (5-6K) on the weekends.\n* Weeks 5-8: Increase your weekly mileage by 10% each week, with one longer run (7-8K) on the weekends.\n* Weeks 9-12: Continue to increase your weekly mileage, with one longer run (9-10K) on the weekends.\n\nRemember to also incorporate rest days, cross-training, and proper nutrition to support your training.\n\nI hope this helps! Let me know if you have any more questions or need further guidance.",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ae3a122b_1",
+      "turnIndex": 2,
+      "date": "2023/05/21 (Sun) 12:29",
+      "role": "user",
+      "text": "I like the exercises you suggested, especially the Pallof Press and Bird Dog. I'll definitely add those to my routine. As for my 10K goal, I'm a complete beginner when it comes to running, but I've been doing a lot of cardio at the gym and I've been trying to incorporate more outdoor activities. I've been doing 30-minute walks during my lunch break, 3 times a week. I think I can dedicate about 4-5 hours a week to training. Can you help me create a more detailed training plan with specific workouts and distances? Also, by the way, I've been tracking my progress using a fitness app, and I've burned an average of 2500 calories per week, which is higher than my goal. I've also lost about 5 pounds in the past month, which is slow progress, but I'm okay with that.",
+      "why": "Contains the key claim: lost about 5 pounds in the past month, which is needed to estimate change over time up to today and may complement/overlap with the longer-term 10 lb figure.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ae3a122b_1",
+      "turnIndex": 3,
+      "date": "2023/05/21 (Sun) 12:29",
+      "role": "assistant",
+      "text": "I'm glad you liked the exercises I suggested!\n\n**Creating a 10K Training Plan:**\n\nConsidering your current fitness level and available training time, I'll create a 12-week training plan to help you reach your goal. Please note that this plan is tailored to a beginner runner, and it's essential to listen to your body and adjust the plan as needed.\n\n**Weeks 1-4: Building a Foundation (Weeks 1-4)**\n\n* Goal: Build endurance and introduce running\n* Workout schedule: 4 times a week, with one longer walk/run on the weekends\n* Workouts:\n\t+ Monday: 30-minute walk during lunch break\n\t+ Tuesday: 20-minute walk + 5-minute jog/ walk (repeat for a total of 30 minutes)\n\t+ Thursday: 30-minute walk during lunch break\n\t+ Saturday: 30-minute walk + 10-minute jog/walk (repeat for a total of 40 minutes)\n* Distance: 1.5-2 miles per session, with a total weekly distance of 6-8 miles\n\n**Weeks 5-8: Building Endurance (Weeks 5-8)**\n\n* Goal: Increase endurance and introduce interval training\n* Workout schedule: 4 times a week, with one longer run on the weekends\n* Workouts:\n\t+ Monday: 30-minute walk during lunch break\n\t+ Tuesday: 20-minute walk + 10-minute jog (5 minutes easy, 5 minutes fast) + 10-minute walk\n\t+ Thursday: 30-minute walk during lunch break\n\t+ Saturday: 35-minute walk + 15-minute jog (5 minutes easy, 5 minutes fast, 5 minutes easy) + 10-minute walk\n* Distance: 2-2.5 miles per session, with a total weekly distance of 8-10 miles\n\n**Weeks 9-12: Building Distance (Weeks 9-12)**\n\n* Goal: Increase distance and intensity\n* Workout schedule: 4 times a week, with one longer run on the weekends\n* Workouts:\n\t+ Monday: 30-minute walk during lunch break\n\t+ Tuesday: 20-minute walk + 15-minute jog (5 minutes easy, 5 minutes fast, 5 minutes easy) + 10-minute walk\n\t+ Thursday: 30-minute walk during lunch break\n\t+ Saturday: 40-minute walk + 20-minute jog (5 minutes easy, 5 minutes fast, 5 minutes easy, 5 minutes fast) + 10-minute walk\n* Distance: 2.5-3.5 miles per session, with a total weekly distance of 10-12 miles\n\n**Additional Tips:**\n\n* Start with a dynamic warm-up (5-10 minutes) before each workout, including light jogging, stretching, and mobility exercises.\n* Incorporate strength training exercises 2-3 times a week to target your core, glutes, and legs. Focus on exercises like squats, lunges, deadlifts, and leg press.\n* Pay attention to your body and take rest days as needed. If you experience any pain or discomfort, stop and consult with a medical professional.\n* Incorporate proper nutrition and hydration to support your training. Aim to fuel your body with a balanced diet, and stay hydrated by drinking plenty of water.\n* Get comfortable with your gear, including a good pair of running shoes, socks, and clothing.\n\n**Tracking Progress:**\n\nIt's great that you're tracking your progress using a fitness app! Keep monitoring your calorie burn, distance, and weight loss. Use this data to adjust your training plan as needed.\n\nRemember, consistency and patience are key. Stick to the plan, and you'll be ready to crush your 10K goal by the end of the summer!\n\nHow does this plan sound? Do you have any",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ae3a122b_2",
+      "turnIndex": 1,
+      "date": "2023/06/21 (Wed) 05:37",
+      "role": "assistant",
+      "text": "I'd be happy to help you with some high-energy playlists for your cardio days. Here are some popular and energetic playlists that'll keep you motivated and moving:\n\n**1. Spotify's Official Playlists**\n\n* **Beast Mode**: A high-intensity playlist with a mix of hip-hop, rock, and electronic tracks.\n* **Cardio Kickstart**: Upbeat tracks to get your heart rate up and keep you moving.\n* **Workout Motivation**: A playlist featuring motivational hip-hop and electronic tracks.\n\n**2. Popular Playlists on Spotify**\n\n* **HIIT Workout** by Fitness Blender: A high-intensity interval training playlist with energetic tracks.\n* **Cardio Blast** by PopSugar Fitness: A fun, upbeat playlist with a mix of pop, rock, and hip-hop.\n* **Sweat Session** by Nike Training Club: A high-energy playlist designed for intense workouts.\n\n**3. Playlists by Fitness Influencers**\n\n* **Kayla Itsines' BBG Workout Playlist**: A high-energy playlist featuring hip-hop and electronic tracks.\n* **Jillian Michaels' Workout Playlist**: A motivating playlist with a mix of rock, pop, and hip-hop.\n\n**4. Genre-Specific Playlists**\n\n* **Electronic/Dance Workout** by Ministry of Sound: A high-energy playlist featuring electronic dance tracks.\n* **Hip-Hop Workout** by XXL: A playlist with the hottest hip-hop tracks to keep you moving.\n* **Rock Workout** by Kerrang!: A playlist featuring high-energy rock tracks to fuel your workout.\n\n**5. Create Your Own Playlist**\n\nIf you want to create your own playlist, here are some high-energy tracks to get you started:\n\n* Eminem - \"Lose Yourself\"\n* Macklemore & Ryan Lewis - \"Can't Hold Us\"\n* The Black Eyed Peas - \"I Gotta Feeling\"\n* Kanye West - \"Stronger\"\n* Tiesto - \"Red Lights\"\n* Ariana Grande - \"No Tears Left to Cry\"\n* Bruno Mars - \"Uptown Funk\"\n\nRemember to choose tracks that motivate you and match your workout pace. You can also experiment with different genres and tempos to find the perfect mix for your cardio days. Happy working out!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ae3a122b_2",
+      "turnIndex": 2,
+      "date": "2023/06/21 (Wed) 05:37",
+      "role": "user",
+      "text": "That's a lot of options! I'll check out a few of those playlists, thanks. By the way, speaking of my cardio days, I've been doing great and I just realized I've lost 10 pounds since I started going consistently to the gym 3 months ago. Do you have any tips on how to keep my energy levels up during my workouts?",
+      "why": "Contains the key claim: lost 10 pounds since starting to go to the gym consistently ~3 months ago (directly relevant to “since I started going consistently”).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ae3a122b_2",
+      "turnIndex": 3,
+      "date": "2023/06/21 (Wed) 05:37",
+      "role": "assistant",
+      "text": "Congratulations on your weight loss progress! That's amazing!\n\nKeeping energy levels up during workouts is crucial to maximize your performance and reach your fitness goals. Here are some tips to help you maintain your energy levels:\n\n1. **Proper Hydration**: Drink plenty of water before, during, and after your workout. Aim to drink at least 8-10 glasses of water per day. Dehydration can lead to fatigue, so make sure you're well-hydrated throughout your workout.\n2. **Pre-Workout Snack**: Eat a balanced snack about 30-60 minutes before your workout. Include a mix of complex carbohydrates, protein, and healthy fats. Examples: banana with almond butter, apple slices with peanut butter, or a protein smoothie with fruit and nuts.\n3. **Electrolytes**: Electrolytes like sodium, potassium, and magnesium help regulate your body's hydration levels. You can consume electrolyte-rich foods like bananas, avocados, or dates before your workout. You can also use electrolyte supplements or tablets like Nuun or ZYM.\n4. **Caffeine**: A small amount of caffeine (100-200mg, about 1-2 cups of coffee) can help increase your energy levels and endurance. However, be cautious not to overdo it, as too much caffeine can lead to jitters and energy crashes.\n5. **B Vitamins**: B vitamins, especially B12, play a crucial role in energy production. You can take a B-complex supplement or consume B-rich foods like lean meats, fish, eggs, and whole grains.\n6. **Breathing and Pacing**: Focus on your breathing and pace yourself during your workout. Take regular breaks to catch your breath and recharge. This will help you maintain your energy levels and avoid burnout.\n7. **Music and Mindset**: Listen to music that motivates and energizes you (like the playlists I suggested earlier!). A positive mindset and a \"can-do\" attitude can also help boost your energy levels and push you through challenging moments.\n8. **Rest and Recovery**: Adequate rest and recovery are essential for your body to replenish energy stores. Ensure you're getting 7-9 hours of sleep each night and taking rest days as needed.\n9. **Post-Workout Nutrition**: After your workout, consume a balanced meal or snack with carbohydrates and protein to help replenish energy stores and support muscle recovery.\n10. **Experiment and Adapt**: Everyone's body is different. Experiment with different foods, supplements, and techniques to find what works best for you. Be willing to adapt your approach as your body changes and responds to your workout routine.\n\nRemember, it's essential to listen to your body and respond to its needs. If you're consistently feeling fatigued or struggling to maintain energy levels, consult with a healthcare professional or registered dietitian for personalized guidance.\n\nKeep up the great work and celebrate your progress!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ae3a122b_1",
+      "turnIndex": 0,
+      "date": "2023/05/21 (Sun) 12:29",
+      "role": "user",
+      "text": "I'm trying to plan out my workout routine for the next month. Can you suggest some new exercises I can do to target my core and legs? Also, I've been thinking about setting a goal to run a 10K by the end of the summer - do you think that's realistic considering my current fitness level?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ae3a122b_1",
+      "turnIndex": 4,
+      "date": "2023/05/21 (Sun) 12:29",
+      "role": "user",
+      "text": "This plan sounds like a good starting point, but I'm a little worried about the sudden increase in jogging time in weeks 5-8. Can we modify it to make the progression more gradual? Also, can you give me some tips on how to stay motivated and avoid burnout during this training period? And by the way, I'm glad I could share my progress with you - it's nice to have someone to report to!",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ae3a122b_1",
+      "turnIndex": 6,
+      "date": "2023/05/21 (Sun) 12:29",
+      "role": "user",
+      "text": "Great, I think the revised plan sounds more manageable. I'll definitely try to celebrate my small victories and not push myself too hard. I've been thinking about finding a running buddy, do you have any tips on how to find one? Also, I've been wondering how much water I should be drinking during my runs, is there a general guideline for that?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ae3a122b_1",
+      "turnIndex": 8,
+      "date": "2023/05/21 (Sun) 12:29",
+      "role": "user",
+      "text": "I think I'll try to find a running buddy through online platforms or local running groups. That way, I can find someone with a similar fitness level and goal. And thanks for the hydration tips! I'll make sure to drink plenty of water before and during my runs.\n\nBy the way, I was thinking about my progress so far, and I realized that I've been doing pretty well with my workouts and diet. I've lost 5 pounds in the past month, which is slow but steady progress. I'm hoping to continue this trend and reach my goal weight by the end of the summer. Do you have any tips on how to stay motivated and focused on my long-term goals?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ae3a122b_2",
+      "turnIndex": 0,
+      "date": "2023/06/21 (Wed) 05:37",
+      "role": "user",
+      "text": "I'm looking for some new workout playlists to try out. Can you recommend some high-energy playlists for my cardio days?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ae3a122b_2",
+      "turnIndex": 4,
+      "date": "2023/06/21 (Wed) 05:37",
+      "role": "user",
+      "text": "I've been doing planks and Russian twists to strengthen my core, but I'm wondering if you have any other exercises to recommend for core strengthening.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ae3a122b_2",
+      "turnIndex": 6,
+      "date": "2023/06/21 (Wed) 05:37",
+      "role": "user",
+      "text": "I've been doing planks and Russian twists, but I want to mix it up. Can you suggest some exercises that target my obliques?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ae3a122b_2",
+      "turnIndex": 8,
+      "date": "2023/06/21 (Wed) 05:37",
+      "role": "user",
+      "text": "I'll try some of these exercises to target my obliques. By the way, do you have any tips on how to improve my flexibility and range of motion? I've been trying to increase my flexibility, especially in my hamstrings and hip flexors.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ae3a122b_2",
+      "turnIndex": 10,
+      "date": "2023/06/21 (Wed) 05:37",
+      "role": "user",
+      "text": "I'll definitely try to incorporate more dynamic stretching into my routine and focus on holding stretches longer. I've been doing some yoga and Pilates, but I need to be more consistent with it. Do you have any tips on how to make exercise a sustainable part of my daily routine?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 14434,
+  "estimatedTokens": 3609
+}

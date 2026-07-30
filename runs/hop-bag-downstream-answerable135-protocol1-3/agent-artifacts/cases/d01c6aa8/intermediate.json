@@ -1,0 +1,29 @@
+[
+  {
+    "session_id": "answer_991d55e5_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session includes the user's age (32-year-old) but does not provide the date/year of moving to the United States, so the “how old was I when I moved” detail cannot be derived from this session alone.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "I'm 32-year-old male, and I'm trying to get a better understanding of the green card application process.",
+          "why": "Provides the user's current age (32) which may be needed to compute age at the time of moving, if a move date exists elsewhere."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "I'm 32-year-old male, and I'm trying to get a better understanding of the green card application process.",
+          "why": "May indicate the timeframe/context (green card process) relevant to when the move occurred, though no move date is stated."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_991d55e5_2",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "The session discusses green card/medical and vaccination topics and only states that the user has been living in the United States for the past five years on a work visa. It does not provide the user’s age at the time they moved to the United States or any birth date.",
+      "claims": []
+    }
+  }
+]

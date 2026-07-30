@@ -1,0 +1,58 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Tips for getting around Tokyo (especially transit/navigation details).",
+    "candidateStatus": "found",
+    "missingRisk": "Candidate sessions mostly focus on specific routes (Shinjuku↔Tsukiji and Narita↔Shinjuku) rather than general anxiety-reducing/first-time transit tips for Tokyo overall; may not cover broader guidance like IC card usage basics, signage, or step-by-step station navigation.",
+    "items": [
+      {
+        "sessionId": "answer_cebb7159",
+        "turnIndex": 3,
+        "why": "Contains step-by-step public-transit instructions to get from Shinjuku to Tsukiji Fish Market using a Suica card, plus travel time/cost and navigation tips."
+      },
+      {
+        "sessionId": "answer_cebb7159",
+        "turnIndex": 11,
+        "why": "Provides approximate travel times and costs for getting from Narita Airport to Shinjuku Station (multiple route options), which is relevant to transit planning/tips for getting around Tokyo."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Tips for getting around Tokyo (especially transit/navigation details).",
+    "candidateStatus": "found",
+    "missingRisk": "Candidate sessions mostly focus on specific routes (Shinjuku↔Tsukiji and Narita↔Shinjuku) rather than general anxiety-reducing/first-time transit tips for Tokyo overall; may not cover broader guidance like IC card usage basics, signage, or step-by-step station navigation.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_cebb7159",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_cebb7159",
+        "turnIndex": 3,
+        "why": "Contains step-by-step public-transit instructions to get from Shinjuku to Tsukiji Fish Market using a Suica card, plus travel time/cost and navigation tips."
+      },
+      {
+        "sessionId": "answer_cebb7159",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_cebb7159",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_cebb7159",
+        "turnIndex": 11,
+        "why": "Provides approximate travel times and costs for getting from Narita Airport to Shinjuku Station (multiple route options), which is relevant to transit planning/tips for getting around Tokyo."
+      },
+      {
+        "sessionId": "answer_cebb7159",
+        "turnIndex": 12,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

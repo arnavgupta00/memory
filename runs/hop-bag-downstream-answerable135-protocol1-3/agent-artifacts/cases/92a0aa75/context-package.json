@@ -1,0 +1,55 @@
+{
+  "queryShape": "order",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "fdf7e3e7",
+      "turnIndex": 6,
+      "date": "2023/05/26 (Fri) 12:13",
+      "role": "user",
+      "text": "I have a few projects going on, but the one that's been lingering in the back of my mind is a desert diorama featuring my F-15E Strike Eagle. I was inspired by some photos I saw online of a model show, where one of the winners had built an amazing desert diorama with a crashed aircraft. I started working on the base using foam board and plaster, and then added some static grass and small rocks to create a desert landscape. However, I haven't touched it in a while, and I'm not sure where to go from here. Do you think I should focus on completing this project before moving on to others?",
+      "why": "per-session extractor: Provides a specific time duration, but it is explicitly about the F-15E modeling project rather than a current work role.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_6cb8f792_1",
+      "turnIndex": 0,
+      "date": "2023/05/27 (Sat) 19:34",
+      "role": "user",
+      "text": "I'm looking to create a presentation for an upcoming conference, and I need some help with designing the slides. Do you have any templates or design tips you can share? By the way, I've been in marketing for a while now, started as a Marketing Coordinator and worked my way up to Senior Marketing Specialist after 2 years and 4 months.",
+      "why": "per-session extractor: Provides a concrete duration (2 years and 4 months) related to progression from one role to another, which may help determine time in the current role depending on whether Senior Marketing Specialist is the current role.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "fdf7e3e7",
+      "turnIndex": 5,
+      "date": "2023/05/26 (Fri) 12:13",
+      "role": "assistant",
+      "text": "The age-old problem of too many projects and not enough time! Choosing which diorama project to focus on can be a challenge, but here are some tips to help you decide:\n\n1. **Revisit your goals**: Reflect on why you started each diorama project in the first place. Which one aligns most closely with your current modeling goals or interests?\n2. **Assess your resources**: Consider the materials, tools, and references you have available for each project. Which one can you realistically complete with the resources you have on hand?\n3. **Evaluate your skills**: Be honest about your current skill level and which project will allow you to grow as a modeler. Do you want to challenge yourself with a new technique or focus on refining a skill you're already comfortable with?\n4. **Consider the complexity**: Which project is the most complex or ambitious? If you're feeling overwhelmed, it might be better to start with a simpler project to build momentum and confidence.\n5. **Think about the story**: Which diorama tells the most compelling story or evokes the strongest emotional response? A narrative or emotional connection can make the project more engaging and enjoyable.\n6. **Visualize the end result**: Imagine how each diorama will look when completed. Which one do you envision displaying proudly on your shelf or sharing with others?\n7. **Prioritize the one that excites you most**: Ultimately, choose the project that gets you the most excited and motivated. When you're passionate about a project, you'll be more invested in seeing it through to completion.\n8. **Create a deadline**: Set a realistic deadline for each project and challenge yourself to complete one before moving on to the next. This will help you stay focused and avoid procrastination.\n9. **Break it down into smaller tasks**: Divide each project into smaller, manageable tasks. This will make the project feel less daunting and allow you to make progress without feeling overwhelmed.\n10. **Be flexible**: Remember that it's okay to change your mind or adjust your priorities as needed. If you find yourself stuck or losing interest, it might be time to reassess and pivot to a different project.\n\nBy considering these factors, you'll be able to make a more informed decision about which diorama project to focus on. Remember to stay flexible, and don't be afraid to adjust your priorities as needed.\n\nWhich diorama projects do you have in the works? I'd love to hear more about them and offer any specific advice or guidance if you'd like!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "fdf7e3e7",
+      "turnIndex": 7,
+      "date": "2023/05/26 (Fri) 12:13",
+      "role": "assistant",
+      "text": "The desert diorama with a crashed F-15E Strike Eagle sounds like an incredible project! It's great that you were inspired by a winning model show entry, and you've already made a good start with the base and landscape.\n\nConsidering you've already invested time and effort into this project, I think it's worth revisiting and completing. Here are some reasons why:\n\n1. **You've already invested time and effort**: You've already started building the base and landscape, so it's worth seeing it through to completion. Abandoning the project now might lead to a sense of disappointment and wasted effort.\n2. **It's a unique and compelling theme**: A crashed aircraft in a desert environment is a dramatic and attention-grabbing theme. Completing this project could result in a truly eye-catching diorama that showcases your skills and creativity.\n3. **You can learn and grow**: Finishing this project will allow you to develop your skills in diorama building, terrain creation, and possibly even weathering and damage effects. These skills will benefit your future projects and help you grow as a modeler.\n4. **It's a great opportunity to practice storytelling**: A diorama tells a story, and a crashed aircraft in a desert setting offers a rich narrative potential. You can explore the circumstances surrounding the crash, the environment, and the aircraft's history. This can help you develop your skills in creating a cohesive and engaging visual narrative.\n5. **You might rediscover your enthusiasm**: Sometimes, taking a break from a project can help you approach it with fresh eyes and renewed enthusiasm. Revisiting this project might reignite your passion and creative spark.\n\nTo get started again, consider the following steps:\n\n1. **Re-familiarize yourself with the project**: Take some time to review your previous work, study the references, and re-read any notes or plans you made.\n2. **Break it down into smaller tasks**: Divide the project into manageable tasks, such as:\n\t* Adding more details to the landscape (e.g., rocks, cacti, debris)\n\t* Weathering and damaging the aircraft\n\t* Creating a narrative or backstory for the diorama\n\t* Adding figures or accessories (e.g., pilots, rescue teams, equipment)\n3. **Set realistic goals and deadlines**: Establish a schedule and milestones to help you stay focused and motivated.\n4. **Join a community or find a buddy**: Share your project with fellow modelers, either online or in-person, to get feedback, support, and encouragement.\n\nBy completing this project, you'll not only have a stunning diorama to display but also gain valuable experience, skills, and confidence to tackle your next projects.\n\nHow do you feel about revisiting this project? Is there a particular aspect of the diorama that's been holding you back or causing uncertainty?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_6cb8f792_1",
+      "turnIndex": 1,
+      "date": "2023/05/27 (Sat) 19:34",
+      "role": "assistant",
+      "text": "Congratulations on your career progression! I'd be happy to help you with designing your presentation slides.\n\nI don't have specific templates to share, but I can offer some general design tips and best practices to make your slides engaging and effective:\n\n1. **Keep it simple and concise**: Avoid clutter and focus on one key message per slide. Use clear and concise language, and break up complex information into smaller chunks.\n2. **Choose a consistent design theme**: Select a color scheme, font, and layout that aligns with your brand or personal style. Stick to it throughout the presentation to create a cohesive look.\n3. **Use high-quality images**: Incorporate relevant, high-resolution images that support your message. Avoid low-resolution or distracting images that might detract from your content.\n4. **Make it visual**: Use charts, graphs, and diagrams to illustrate complex data or concepts. Visual aids can help your audience understand and retain information better.\n5. **Contrast is key**: Use contrasting colors, fonts, and font sizes to create visual hierarchy and draw attention to important information.\n6. **White space is your friend**: Don't be afraid to leave some empty space on your slides. It helps to create a clean and uncluttered design, making it easier for your audience to focus on the important information.\n7. **Use fonts wisely**: Limit your font selection to 2-3 fonts maximum. Use a clear, sans-serif font (e.g., Arial, Helvetica) for body text and a serif font (e.g., Times New Roman, Garamond) for headings.\n8. **Avoid too much text**: Keep your text concise and use bullet points or short paragraphs. Aim for a 3-5 sentence maximum per slide.\n9. **Use transitions and animations judiciously**: While transitions and animations can add visual interest, use them sparingly to avoid distracting your audience.\n10. **Practice your delivery**: Rehearse your presentation several times to ensure you're comfortable with the content and can deliver it within the allotted time.\n\nSome popular design tools for creating presentations include:\n\n* PowerPoint (Microsoft)\n* Google Slides (Google)\n* Keynote (Apple)\n* Canva (web-based)\n* Haiku Deck (web-based)\n\nYou can also explore online resources like SlideShare, Presentation Magazine, or Design Shack for inspiration and templates.\n\nRemember, the goal of your presentation is to engage and inform your audience, not to showcase your design skills. Focus on clear communication, and use design elements to support your message. Good luck with your conference presentation!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 8807,
+  "estimatedTokens": 2202
+}

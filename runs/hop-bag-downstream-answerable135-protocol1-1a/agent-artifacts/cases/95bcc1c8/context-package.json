@@ -1,0 +1,64 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Amateur comedians the user watched perform at the open mic night (their stated number).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_cb742a61",
+      "turnIndex": 0,
+      "date": "2023/05/22 (Mon) 14:59",
+      "role": "user",
+      "text": "I'm looking for some comedy writing tips. I've been taking a stand-up comedy class and I'm trying to come up with some new material. Do you have any advice on how to write a good joke? Oh, and by the way, I recently went to an open mic night and saw 10 amateur comedians perform - it was really inspiring to see people trying out new stuff!",
+      "why": "User explicitly states they went to an open mic night and saw '10 amateur comedians' perform.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_cb742a61",
+      "turnIndex": 10,
+      "date": "2023/05/22 (Mon) 14:59",
+      "role": "user",
+      "text": "I think I can continue to apply the principles of improv to my daily life by being more open to new experiences and not overthinking things as much. I want to keep practicing improv in my conversations and interactions with others, and see how it can help me be more present and spontaneous.\n\nIn terms of comedy writing, I think improv can help me generate new ideas and material. I'd like to try incorporating more improv into my writing process, maybe by doing some improvisational exercises or freewriting to come up with new jokes and ideas.\n\nOne area I'd like to focus on improving is my ability to think on my feet during performances. Sometimes I get nervous and freeze up, and I'd like to be able to respond more quickly and confidently to unexpected moments or hecklers. I think continuing to practice improv and taking more risks on stage will help me build that confidence.\n\nOh, and I almost forgot to mention - I had a great time at that open mic night a few weeks ago.",
+      "why": "Additional nearby mention of the open mic night (no number), included for context around the same event.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_cb742a61",
+      "turnIndex": 2,
+      "date": "2023/05/22 (Mon) 14:59",
+      "role": "user",
+      "text": "What are some tips on how to structure a set? I feel like my jokes are all over the place and I'm not sure how to connect them together into a cohesive set.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_cb742a61",
+      "turnIndex": 4,
+      "date": "2023/05/22 (Mon) 14:59",
+      "role": "user",
+      "text": "I'm still trying to figure out how to incorporate my personal experiences into my jokes. Do you have any tips on how to make my jokes more relatable and authentic?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_cb742a61",
+      "turnIndex": 6,
+      "date": "2023/05/22 (Mon) 14:59",
+      "role": "user",
+      "text": "I've been trying to get more comfortable with improvising and thinking on my feet. Do you have any tips on how to improve my improv skills?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_cb742a61",
+      "turnIndex": 8,
+      "date": "2023/05/22 (Mon) 14:59",
+      "role": "user",
+      "text": "I've been trying to get more comfortable with improvising and thinking on my feet. I recently took an improv class and it was really helpful. We did some exercises where we had to think on our feet and respond to unexpected situations. It was actually really fun and I felt like I was able to be more spontaneous and creative. I've also been trying to incorporate more improv into my daily life, like when I'm talking to friends or family. It's helping me to be more present in the moment and not overthink things as much.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 2301,
+  "estimatedTokens": 576
+}

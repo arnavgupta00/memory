@@ -1,0 +1,68 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "today’s date reference (2024/02/20) only; preserve bike-performance-related facts that could explain improved Sunday group rides",
+    "candidateStatus": "found",
+    "missingRisk": "The candidate turns do not explicitly mention “Sunday group rides” or directly connect improved performance to group-ride conditions (e.g., pacing, drafting, course). The selected turns may therefore only provide plausible contributing factors (maintenance changes, equipment setup, tracking).",
+    "items": [
+      {
+        "sessionId": "answer_e6b6353d",
+        "turnIndex": 4,
+        "why": "States a concrete bike-maintenance change (replaced chain and cassette on Feb 1) and that it improved bike performance—directly relevant to “bike seems to be performing even better.”"
+      },
+      {
+        "sessionId": "answer_e6b6353d",
+        "turnIndex": 2,
+        "why": "Covers setting up/calibrating a new Garmin bike computer for accurate distance/speed readings; could be relevant if “better performance” is partly due to measurement or setup."
+      },
+      {
+        "sessionId": "answer_e6b6353d",
+        "turnIndex": 0,
+        "why": "Establishes the user is planning a bike ride and seeking performance-support guidance (hydration), which may relate to improved performance during group rides if hydration habits changed."
+      },
+      {
+        "sessionId": "answer_e6b6353d",
+        "turnIndex": 1,
+        "why": "Provides hydration guidance aimed at maintaining performance—potential contributing factor to better performance on rides."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "today’s date reference (2024/02/20) only; preserve bike-performance-related facts that could explain improved Sunday group rides",
+    "candidateStatus": "found",
+    "missingRisk": "The candidate turns do not explicitly mention “Sunday group rides” or directly connect improved performance to group-ride conditions (e.g., pacing, drafting, course). The selected turns may therefore only provide plausible contributing factors (maintenance changes, equipment setup, tracking).; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_e6b6353d",
+        "turnIndex": 4,
+        "why": "States a concrete bike-maintenance change (replaced chain and cassette on Feb 1) and that it improved bike performance—directly relevant to “bike seems to be performing even better.”"
+      },
+      {
+        "sessionId": "answer_e6b6353d",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e6b6353d",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e6b6353d",
+        "turnIndex": 2,
+        "why": "Covers setting up/calibrating a new Garmin bike computer for accurate distance/speed readings; could be relevant if “better performance” is partly due to measurement or setup."
+      },
+      {
+        "sessionId": "answer_e6b6353d",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e6b6353d",
+        "turnIndex": 0,
+        "why": "Establishes the user is planning a bike ride and seeking performance-support guidance (hydration), which may relate to improved performance during group rides if hydration habits changed."
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+[
+  {
+    "session_id": "e831a29f_1",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains no information about pricing or purchase price for a painting of a sunset. It discusses pricing baked goods and bundle discounts instead, so it is unlikely to help answer the question.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "8e9425ef_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Session contains no information about a sunset painting; it discusses other inherited items (Rolex, vinyl record, brooch). Unrelated evidence is likely.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "User: 1967 vintage Rolex watch inherited from grandfather last month; still in great condition; could be worth up to $1,000.",
+          "why": "Provides an example of how the user thinks about value vs. purchase/market price, though not about a painting."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "User: Rolex model is Datejust; made of stainless steel; small engraving on the back with grandfather’s initials.",
+          "why": "Gives detailed item attributes that could be relevant to a value-in-terms-of-paid question pattern, but it’s for a watch."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Assistant: vintage stainless steel Datejust (1967) with unique engraving could fetch $5,000 to $15,000 or more; suggests getting it appraised.",
+          "why": "Contains valuation figures and a methodology recommendation, which could inform the kind of estimation approach requested (paid vs worth), but it’s unrelated to a sunset painting."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "User: vinyl record of The Beatles' 'Please Please Me' got for $20 at a thrift store; thinks it might be worth more.",
+          "why": "Directly includes a 'paid vs current value' setup, which is structurally similar to the user’s painting question, though the item differs."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Assistant: general price ranges for 'Please Please Me' vinyl records: near-mint first pressing $100-$500; near-mint later pressing $50-$200; good first pressing $50-$150; good later pressing $20-$50; recommends Discogs/eBay/MusicStack and photos for selling.",
+          "why": "Provides valuation ranges and price-search method in terms of market value relative to purchase price (a pattern applicable to the painting question), but still not about a sunset painting."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "User: inherited great-aunt’s vintage brooch collection; includes rare 1920s Art Deco piece featuring a large emerald; considering getting it appraised.",
+          "why": "Shows another valuation workflow the assistant discussed; not about painting but relevant to general valuation process."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "ultrachat_328696",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session is about prehistoric cave art in the Altamira Caves (tools, purpose, learning, other caves). It contains no information about a sunset painting, no purchase price, and no way to estimate or relate artwork value to what was paid.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "sharegpt_xGoJZ6Z_0",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session appears to discuss general “mirror principle”/manifestation concepts and unrelated income/case studies; it contains no information about a sunset painting’s value or any relationship to what someone paid for it.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_645b0329",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Medium: This session discusses general art valuation and mentions a specific “flea market find” that is “worth triple what I paid,” but it never mentions a “painting of a sunset” explicitly. If the target question depends on that specific item, this session may be only partially relevant.",
+      "claims": [
+        {
+          "turnIndex": 6,
+          "fact": "The user says the flea market find is “worth triple what I paid for it.”",
+          "why": "Provides a direct multiplier relationship between estimated value and purchase price that can be used to answer “How much is the painting…worth in terms of the amount I paid for it?” if the sunset painting corresponds to this item."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "The assistant lists rule-of-thumb factors used to estimate art value: artist reputation/provenance, rarity/uniqueness, condition, materials/craftsmanship, market demand, size/scale, signature/provenance/documentation, exhibition history/critical acclaim, authentication/certification, and comparative sales.",
+          "why": "Offers valuation framework (useful for context) and may help interpret how “worth” is determined in relation to what was paid."
+        }
+      ]
+    }
+  }
+]

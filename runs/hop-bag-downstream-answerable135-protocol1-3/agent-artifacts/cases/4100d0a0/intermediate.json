@@ -1,0 +1,38 @@
+[
+  {
+    "session_id": "9b1d5656_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low. This session contains an explicit ethnicity claim from the user, but no additional corroborating details or changes over time.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User describes themselves as \"32-year-old Asian American male\".",
+          "why": "This directly states the user's ethnicity (Asian American) as part of a self-description."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "sharegpt_X5o3OR4_6",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "The candidate session appears to discuss ancient Egyptian archaeology (Saqqara, tombs, pyramids) and contains no information about the user’s ethnicity. Likely no relevant claims for answering the ethnicity question are present.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_83c13ff9",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session contains a direct user statement about the user’s “mixed ethnicity - Irish and Italian,” which may be the main evidence for ethnicity. However, it does not provide any additional detail (e.g., proportions, self-identification vs. ancestry, or official documentation), so the reducer may need corroboration from other sessions to confirm if this is the intended answer.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "The user says their mixed ethnicity is “Irish and Italian” and that it has shaped their upbringing.",
+          "why": "This is a direct statement bearing on the user’s ethnicity relevant to answering the question."
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "session_id": "98cd882c_2",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains no information about buying a gift for a brother’s graduation ceremony or buying a birthday gift for a best friend, and it does not mention the purchase dates needed to compute the number of days between them. It only discusses gift ideas for a sister and sewing-related calculations (quilt hours/weeks).",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_124f5dc3_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session mentions the brother’s graduation gift date (3/8) but provides no date for buying a birthday gift for the best friend, so the day-difference cannot be determined from this session alone.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User says they recently got a wireless headphone for their brother as a graduation gift on the 3/8.",
+          "why": "This provides the purchase date for the brother’s graduation gift needed for computing the day interval."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_124f5dc3_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session contains only information about the date the user bought a birthday gift (best friend’s 30th birthday on 15th of March), but it does not include the date of buying a gift for the brother’s graduation ceremony. Therefore the time gap requested by the question cannot be computed from this single session.",
+      "claims": [
+        {
+          "turnIndex": 4,
+          "fact": "The user recently got a silver necklace with a tiny pendant for their best friend's 30th birthday on the 15th of March.",
+          "why": "This provides a specific purchase/occasion date (15th of March) for the birthday gift needed to compute the day difference."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "The user is looking for minimalist chic earrings around $80 and mentions the silver necklace they got for their best friend's 30th birthday.",
+          "why": "Connects the user’s birthday gift context (silver necklace for 30th birthday) and may help identify which purchase the question refers to, though it still doesn’t include the brother graduation gift date."
+        }
+      ]
+    }
+  }
+]

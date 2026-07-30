@@ -1,0 +1,23 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Cocktail-making class day-of-week preferences mentioned by the user",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_73540165_2",
+      "turnIndex": 0,
+      "why": "User states they have a cocktail-making class on Fridays."
+    },
+    {
+      "sessionId": "answer_73540165_2",
+      "turnIndex": 8,
+      "why": "User again mentions planning/experiments for their cocktail-making class on Friday."
+    },
+    {
+      "sessionId": "answer_73540165_2",
+      "turnIndex": 10,
+      "why": "User specifies trying Paloma and Tequila Sour during their class on Friday (reinforces the day-of-week)."
+    }
+  ]
+}

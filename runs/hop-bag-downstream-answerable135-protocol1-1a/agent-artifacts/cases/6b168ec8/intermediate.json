@@ -1,0 +1,23 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "User-owned physical bikes they possess (not accessories/locks).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_e623ae87",
+      "turnIndex": 4,
+      "why": "User explicitly states they 'got three' bikes (road, mountain, commuter), which directly addresses how many bikes they own."
+    },
+    {
+      "sessionId": "answer_e623ae87",
+      "turnIndex": 8,
+      "why": "User reiterates they want to track 'my three bikes' when not around them, reinforcing the bike ownership count."
+    },
+    {
+      "sessionId": "answer_e623ae87",
+      "turnIndex": 2,
+      "why": "User mentions taking 'my Trek Emonda' on a ride, providing context that at least one bike in their owned set is the Trek Emonda."
+    }
+  ]
+}

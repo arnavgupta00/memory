@@ -1,0 +1,18 @@
+{
+  "queryShape": "update-conflict",
+  "setBoundary": "Your number of direct reports (engineers you lead) at two different times: when you just started the Senior Software Engineer role vs now.",
+  "candidateStatus": "found",
+  "missingRisk": "May be missing the exact “just started” date/time context and any later change after 2023-10-24 leading up to 2023-11-10.",
+  "items": [
+    {
+      "sessionId": "answer_8748f791_1",
+      "turnIndex": 10,
+      "why": "User states: “I lead a team of 4 engineers in my new role as Senior Software Engineer,” and that the outing includes 4 engineers from their team (plus manager Rachel)."
+    },
+    {
+      "sessionId": "answer_8748f791_2",
+      "turnIndex": 2,
+      "why": "User states they’ve “been enjoying my role as Senior Software Engineer for a while” and “now lead a team of five engineers.” This could correspond to either the starting period or an earlier/later point, but it’s the only competing direct-report count in memory."
+    }
+  ]
+}

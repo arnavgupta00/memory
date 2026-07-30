@@ -1,0 +1,18 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Days elapsed between when you finished reading 'The Seven Husbands of Evelyn Hugo' and the date you attended the local library book reading event with the author of 'The Silent Patient' discussing her latest thriller.",
+  "candidateStatus": "found",
+  "missingRisk": "The exact date you finished reading 'The Seven Husbands of Evelyn Hugo' immediately before the event is only stated indirectly (“I just finished … today”) in a different conversation date; it may not be the same finish date relevant to the event you attended.",
+  "items": [
+    {
+      "sessionId": "answer_b9e32ff8_1",
+      "turnIndex": 0,
+      "why": "States you had just finished reading 'The Seven Husbands of Evelyn Hugo' (the event of interest for the time difference)."
+    },
+    {
+      "sessionId": "answer_b9e32ff8_2",
+      "turnIndex": 0,
+      "why": "Gives the local library book reading event context, including the author of 'The Silent Patient' discussing her latest thriller, which anchors the other side of the time difference."
+    }
+  ]
+}

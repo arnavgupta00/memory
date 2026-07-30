@@ -1,0 +1,145 @@
+{
+  "queryShape": "order",
+  "setBoundary": "Three specific days: (1) helped friend prepare the nursery, (2) helped cousin pick stuff for baby shower, (3) ordered customized phone case for friend’s birthday.",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_3e9fce53_1",
+      "turnIndex": 0,
+      "date": "2023/02/05 (Sun) 18:29",
+      "role": "user",
+      "text": "I'm expecting a new baby in my social circle soon and I'm thinking of getting a gift. Can you recommend some popular baby stores or online marketplaces where I can find a wide range of baby supplies and decorations? By the way, I just helped my friend prepare a nursery today, and we spent an entire Sunday afternoon shopping for baby supplies and decorations at Buy Buy Baby.",
+      "why": "User states they helped their friend prepare the nursery that day and mentions shopping at Buy Buy Baby (nursery-prep event).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_3e9fce53_2",
+      "turnIndex": 0,
+      "date": "2023/02/10 (Fri) 21:05",
+      "role": "user",
+      "text": "I'm thinking of getting a baby gift for a coworker's new baby, and I was wondering if you could give me some recommendations for essential items that new parents usually need. By the way, I just helped my cousin pick out some stuff for her baby shower, and we ended up getting diapers, wipes, and a baby monitor at Target.",
+      "why": "User states they helped their cousin pick out stuff for her baby shower and that they got diapers, wipes, and a baby monitor at Target (cousin baby-shower event).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_3e9fce53_3",
+      "turnIndex": 0,
+      "date": "2023/02/20 (Mon) 13:12",
+      "role": "user",
+      "text": "I'm looking for some gift ideas for my siblings. Do you have any suggestions? By the way, I just ordered a customized phone case for my friend's birthday today, which she really loves.",
+      "why": "User states they ordered a customized phone case for their friend’s birthday today (custom phone-case event).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_3e9fce53_1",
+      "turnIndex": 2,
+      "date": "2023/02/05 (Sun) 18:29",
+      "role": "user",
+      "text": "That's super helpful, thanks! I'm thinking of getting a personalized baby blanket. Do you know if any of these stores offer customization options, or would I need to look elsewhere?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_3e9fce53_1",
+      "turnIndex": 4,
+      "date": "2023/02/05 (Sun) 18:29",
+      "role": "user",
+      "text": "I was thinking of getting a personalized baby blanket, but I also want to consider some other gift options. Can you recommend some popular baby gifts that are practical and functional, like diapers or baby toys?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_3e9fce53_1",
+      "turnIndex": 6,
+      "date": "2023/02/05 (Sun) 18:29",
+      "role": "user",
+      "text": "I was thinking of getting a baby gym or playmat, but I'm not sure which one to choose.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_3e9fce53_1",
+      "turnIndex": 8,
+      "date": "2023/02/05 (Sun) 18:29",
+      "role": "user",
+      "text": "I'm thinking of getting a baby gym, but I want to make sure I get one that's high-quality and safe. Can you recommend some popular baby gym brands that are known for their durability and safety features?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_3e9fce53_2",
+      "turnIndex": 2,
+      "date": "2023/02/10 (Fri) 21:05",
+      "role": "user",
+      "text": "I was thinking of getting a gift basket with a few of those essentials you mentioned. Do you think a baby carrier or sling would be a good addition to the basket, or is that something that's more of a personal preference for the parents?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_3e9fce53_2",
+      "turnIndex": 4,
+      "date": "2023/02/10 (Fri) 21:05",
+      "role": "user",
+      "text": "I see what you mean about the baby carrier being a personal preference. I think I'll opt for a more universal item instead. How about a set of baby washcloths? Are they something that new parents usually need and appreciate?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_3e9fce53_2",
+      "turnIndex": 6,
+      "date": "2023/02/10 (Fri) 21:05",
+      "role": "user",
+      "text": "What's the best way to present the gift basket? Should I include a card with a personal message or just a simple \"Congratulations\"?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_3e9fce53_2",
+      "turnIndex": 8,
+      "date": "2023/02/10 (Fri) 21:05",
+      "role": "user",
+      "text": "I think I'll go with a simple yet heartfelt message in the card, something like \"Congratulations on the new addition to your family! Wishing you all the best.\" What do you think?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_3e9fce53_3",
+      "turnIndex": 2,
+      "date": "2023/02/20 (Mon) 13:12",
+      "role": "user",
+      "text": "My sister is really into fashion, and my brother loves playing video games.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_3e9fce53_3",
+      "turnIndex": 4,
+      "date": "2023/02/20 (Mon) 13:12",
+      "role": "user",
+      "text": "I think my sister would really like a trendy accessory, like a new handbag. Do you think you can provide some recommendations for handbags that are currently popular?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_3e9fce53_3",
+      "turnIndex": 6,
+      "date": "2023/02/20 (Mon) 13:12",
+      "role": "user",
+      "text": "I think I'll stick to a budget of around $100-$200. I want to get her something nice, but I don't want to break the bank.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_3e9fce53_3",
+      "turnIndex": 8,
+      "date": "2023/02/20 (Mon) 13:12",
+      "role": "user",
+      "text": "I think I'll take a closer look at the Zara City Bag. Can you tell me more about it?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 2779,
+  "estimatedTokens": 695
+}

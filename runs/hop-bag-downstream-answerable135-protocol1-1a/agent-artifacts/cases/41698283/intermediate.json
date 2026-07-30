@@ -1,0 +1,18 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Lenses the user purchased most recently (explicitly stated).",
+  "candidateStatus": "found",
+  "missingRisk": "None",
+  "items": [
+    {
+      "sessionId": "answer_c7ddc051_2",
+      "turnIndex": 0,
+      "why": "User mentions getting a new 70-200mm zoom lens (most recent ‘new lens’ language in memory) and asks about tripods."
+    },
+    {
+      "sessionId": "answer_c7ddc051_2",
+      "turnIndex": 8,
+      "why": "User again references the 70-200mm zoom lens they recently took great shots with, reinforcing recency around the same ‘new lens’ purchase."
+    }
+  ]
+}

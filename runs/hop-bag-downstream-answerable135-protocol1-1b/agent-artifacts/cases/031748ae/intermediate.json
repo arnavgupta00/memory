@@ -1,0 +1,88 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Count how many engineers you lead when you just started your new role, and how many engineers you lead now.",
+    "candidateStatus": "found",
+    "missingRisk": "If the transition timing (\"just started\") is defined differently in other sessions not provided, we may misalign which historical count corresponds to that start date; also the wording may refer to overlapping timeframes (e.g., at start vs later after growth).",
+    "items": [
+      {
+        "sessionId": "answer_8748f791_1",
+        "turnIndex": 10,
+        "why": "States the baseline/start count: \"I lead a team of 4 engineers in my new role as Senior Software Engineer.\" This supports the \"just started\" number."
+      },
+      {
+        "sessionId": "answer_8748f791_2",
+        "turnIndex": 2,
+        "why": "Provides the later/current count narrative in the context of having been in the role \"for a while\": \"I now lead a team of five engineers.\" This supports the \"now\" number."
+      },
+      {
+        "sessionId": "answer_8748f791_2",
+        "turnIndex": 9,
+        "why": "Reinforces the same later count: \"Leading a team of 5 engineers...\" Useful for downstream confirmation."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Count how many engineers you lead when you just started your new role, and how many engineers you lead now.",
+    "candidateStatus": "found",
+    "missingRisk": "If the transition timing (\"just started\") is defined differently in other sessions not provided, we may misalign which historical count corresponds to that start date; also the wording may refer to overlapping timeframes (e.g., at start vs later after growth).; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_8748f791_1",
+        "turnIndex": 10,
+        "why": "States the baseline/start count: \"I lead a team of 4 engineers in my new role as Senior Software Engineer.\" This supports the \"just started\" number."
+      },
+      {
+        "sessionId": "answer_8748f791_1",
+        "turnIndex": 11,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_8748f791_1",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_8748f791_2",
+        "turnIndex": 2,
+        "why": "Provides the later/current count narrative in the context of having been in the role \"for a while\": \"I now lead a team of five engineers.\" This supports the \"now\" number."
+      },
+      {
+        "sessionId": "answer_8748f791_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_8748f791_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_8748f791_2",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_8748f791_2",
+        "turnIndex": 9,
+        "why": "Reinforces the same later count: \"Leading a team of 5 engineers...\" Useful for downstream confirmation."
+      },
+      {
+        "sessionId": "answer_8748f791_2",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_8748f791_1",
+        "turnIndex": 8,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_8748f791_1",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

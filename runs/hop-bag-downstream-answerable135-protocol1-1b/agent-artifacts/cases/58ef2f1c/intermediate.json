@@ -1,0 +1,83 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Provide the date/time reference for when the user volunteered at the local animal shelter fundraising dinner, preserving exact phrasing (“back in February”, “Valentine’s Day”).",
+    "candidateStatus": "found",
+    "missingRisk": "The relevant volunteering date might be referenced only in the user’s message (not repeated by the assistant). If so, selecting the user turn is necessary to avoid losing the date detail.",
+    "items": [
+      {
+        "sessionId": "answer_59547700",
+        "turnIndex": 2,
+        "why": "Contains the user’s stated timing for volunteering: they “volunteered at the ‘Love is in the Air’ fundraising dinner back in February,” and frames it as a prior experience connected to Valentine’s Day."
+      },
+      {
+        "sessionId": "answer_59547700",
+        "turnIndex": 0,
+        "why": "Contains the additional explicit timing detail: “back on Valentine’s Day,” which more precisely anchors the month referenced in turn 2."
+      },
+      {
+        "sessionId": "answer_59547700",
+        "turnIndex": 9,
+        "why": "Assistant restates/relates the volunteering experience and links it again to “Love is in the Air” and “Valentine’s Day,” which may help the downstream answerer confirm the timeline."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Provide the date/time reference for when the user volunteered at the local animal shelter fundraising dinner, preserving exact phrasing (“back in February”, “Valentine’s Day”).",
+    "candidateStatus": "found",
+    "missingRisk": "The relevant volunteering date might be referenced only in the user’s message (not repeated by the assistant). If so, selecting the user turn is necessary to avoid losing the date detail.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_59547700",
+        "turnIndex": 2,
+        "why": "Contains the user’s stated timing for volunteering: they “volunteered at the ‘Love is in the Air’ fundraising dinner back in February,” and frames it as a prior experience connected to Valentine’s Day."
+      },
+      {
+        "sessionId": "answer_59547700",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_59547700",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_59547700",
+        "turnIndex": 0,
+        "why": "Contains the additional explicit timing detail: “back on Valentine’s Day,” which more precisely anchors the month referenced in turn 2."
+      },
+      {
+        "sessionId": "answer_59547700",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_59547700",
+        "turnIndex": 9,
+        "why": "Assistant restates/relates the volunteering experience and links it again to “Love is in the Air” and “Valentine’s Day,” which may help the downstream answerer confirm the timeline."
+      },
+      {
+        "sessionId": "answer_59547700",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "e6ab6a7b_2",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "e6ab6a7b_2",
+        "turnIndex": 1,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "e6ab6a7b_2",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

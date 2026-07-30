@@ -1,0 +1,16 @@
+[
+  {
+    "session_id": "answer_e22d6aef_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The user says they read the March 15th issue “today,” but the session date is 2023/03/20 (Mon) while the prompt’s “Today” is 2023/04/01 (Sat). If “today” in the session is meant relative to 2023/03/20, the computed day difference will differ from using 2023/04/01.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User: “I finally got around to reading the March 15th issue of The New Yorker today.”",
+          "why": "Directly states the date of the specific issue (March 15th) and that it was read “today,” which is needed to calculate how many days ago it was read."
+        }
+      ]
+    }
+  }
+]

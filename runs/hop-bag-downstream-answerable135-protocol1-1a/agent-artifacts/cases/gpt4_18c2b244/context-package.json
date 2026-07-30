@@ -1,0 +1,163 @@
+{
+  "queryShape": "order",
+  "setBoundary": "Chronological order of three user actions across ShopRite, Walmart (Luvs diapers BOGO), and Ibotta (cashback redeemed for Amazon gift card).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_c862f65a_2",
+      "turnIndex": 0,
+      "date": "2023/04/01 (Sat) 06:23",
+      "role": "user",
+      "text": "I'm planning a trip to Walmart this weekend and I'm looking for some deals on baby essentials. Do you have any info on their current sales or promotions on diapers? By the way, I used a Buy One Get One Free coupon on Luvs diapers at Walmart today, which was a great deal!",
+      "why": "User reports: “I used a Buy One Get One Free coupon on Luvs diapers at Walmart today.” (Walmart BOGO diaper coupon event).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c862f65a_3",
+      "turnIndex": 0,
+      "date": "2023/04/10 (Mon) 00:46",
+      "role": "user",
+      "text": "I'm planning a shopping trip to Target this weekend and I'm wondering if you have any info on their current sales and promotions. By the way, I just redeemed $12 cashback for a $10 Amazon gift card from Ibotta today, so I'm feeling pretty good about my savings so far!",
+      "why": "User reports: “I just redeemed $12 cashback for a $10 Amazon gift card from Ibotta today.” (Ibotta redemption event).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c862f65a_1",
+      "turnIndex": 0,
+      "date": "2023/04/15 (Sat) 04:24",
+      "role": "user",
+      "text": "I'm trying to plan my grocery shopping trip for this week. Can you help me find any good deals or sales on diapers and formula at ShopRite? By the way, I signed up for their rewards program today, so I'm hoping to maximize my points and savings.",
+      "why": "User reports: “I signed up for [ShopRite’s] rewards program today…” (ShopRite rewards program signup event).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c862f65a_2",
+      "turnIndex": 2,
+      "date": "2023/04/01 (Sat) 06:23",
+      "role": "user",
+      "text": "Can you give me some advice on how to organize my coupons? I've been keeping them in a binder, but it's getting cluttered and hard to find the ones I need.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_2",
+      "turnIndex": 4,
+      "date": "2023/04/01 (Sat) 06:23",
+      "role": "user",
+      "text": "I've been thinking about switching to a digital coupon app, but I'm not sure if it would be worth it. Can you tell me more about how Fetch Rewards and Ibotta work?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_2",
+      "turnIndex": 6,
+      "date": "2023/04/01 (Sat) 06:23",
+      "role": "user",
+      "text": "I've actually used Ibotta before and liked it, but I didn't know much about Fetch Rewards. I think I'll give Fetch Rewards a try and see how it compares. By the way, do you know if Fetch Rewards has any offers on diapers or baby products?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_2",
+      "turnIndex": 8,
+      "date": "2023/04/01 (Sat) 06:23",
+      "role": "user",
+      "text": "I'm thinking of trying out some of the other features on Fetch Rewards, like their gas rewards program. Do you know how that works?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_3",
+      "turnIndex": 2,
+      "date": "2023/04/10 (Mon) 00:46",
+      "role": "user",
+      "text": "What are some good strategies for maximizing my savings on household essentials, like toiletries and cleaning supplies? I've been using manufacturer coupons, but I feel like I can do better.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_3",
+      "turnIndex": 4,
+      "date": "2023/04/10 (Mon) 00:46",
+      "role": "user",
+      "text": "I've been using the cashback app Ibotta for a while now, and it's been helpful. But I'm curious, are there any other cashback apps that I should consider using in addition to Ibotta?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_3",
+      "turnIndex": 6,
+      "date": "2023/04/10 (Mon) 00:46",
+      "role": "user",
+      "text": "I've been using Fetch Rewards, but I haven't tried some of the others. I'll have to look into them. Do you think it's worth using multiple apps, or do they kind of overlap in terms of offers?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_3",
+      "turnIndex": 8,
+      "date": "2023/04/10 (Mon) 00:46",
+      "role": "user",
+      "text": "I've been using Fetch Rewards for my gas purchases, and it's been working well. I didn't know that Rakuten had a strong focus on online retailers. I might have to try that one out, especially since I do a lot of online shopping.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_3",
+      "turnIndex": 10,
+      "date": "2023/04/10 (Mon) 00:46",
+      "role": "user",
+      "text": "I'm considering trying out Rakuten, especially since I just redeemed some cashback from Ibotta today. It's always great to explore new ways to earn cashback and save even more on my online purchases.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_1",
+      "turnIndex": 2,
+      "date": "2023/04/15 (Sat) 04:24",
+      "role": "user",
+      "text": "That's really helpful, thanks! I'll definitely check the weekly ad and digital coupons to see what's available. Do you think I can use the digital coupons in addition to the rewards points I earn?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_1",
+      "turnIndex": 4,
+      "date": "2023/04/15 (Sat) 04:24",
+      "role": "user",
+      "text": "That sounds like a great way to save even more money. I'll make sure to check the digital coupons and rewards points when I'm planning my shopping trip. Since I've been tracking my coupon usage and savings, I'm curious - do you have any tips on how to organize and keep track of all the different coupons, rewards programs, and sales? I've been using a spreadsheet, but I'm open to any other methods that might be more efficient.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_1",
+      "turnIndex": 6,
+      "date": "2023/04/15 (Sat) 04:24",
+      "role": "user",
+      "text": "That's a lot of great tips! I think I'll start by organizing my spreadsheet better and setting up reminders for coupon expiration dates. I've also been considering using a coupon app to make it easier to find digital coupons. Do you think it's better to use a specific store's app or a more general coupon app like RetailMeNot?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_1",
+      "turnIndex": 8,
+      "date": "2023/04/15 (Sat) 04:24",
+      "role": "user",
+      "text": "I think I'll try using both a store-specific app and a general coupon app to see which one works better for me. Do you know if there are any apps that allow me to track my rewards points across multiple stores and programs? It would be great to have a single app that shows me all my rewards balances and expiration dates.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_1",
+      "turnIndex": 10,
+      "date": "2023/04/15 (Sat) 04:24",
+      "role": "user",
+      "text": "I think I'll try out AwardWallet and Loyalty Card Manager to see which one works better for me. It would be great to have a single app that shows me all my rewards balances and expiration dates. Thanks for the suggestions!",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 3957,
+  "estimatedTokens": 990
+}

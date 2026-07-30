@@ -1,0 +1,33 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Whether the user has a spare screwdriver available for opening a laptop",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_e3892371_1",
+      "turnIndex": 4,
+      "why": "User says they misplaced the small screwdriver needed for opening the laptop for a RAM upgrade (temporary lack)."
+    },
+    {
+      "sessionId": "answer_e3892371_2",
+      "turnIndex": 4,
+      "why": "User asks again about needing a screwdriver for opening the laptop to clean fans (context for the screwdriver request)."
+    },
+    {
+      "sessionId": "answer_e3892371_2",
+      "turnIndex": 6,
+      "why": "User confirms they actually have a spare screwdriver available."
+    },
+    {
+      "sessionId": "answer_e3892371_1",
+      "turnIndex": 5,
+      "why": "Assistant mentions a screwdriver is needed for the RAM upgrade and suggests ways to obtain one (reinforces the laptop-opening context)."
+    },
+    {
+      "sessionId": "answer_e3892371_2",
+      "turnIndex": 7,
+      "why": "Assistant acknowledges the user is set with the spare screwdriver for cleaning laptop fans (confirms user’s screwdriver availability in conversation)."
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Count only kits the user says they have worked on or bought (including “finished” and “got/picked up”) across all provided sessions. Treat distinct model subjects as different kits unless the same kit is clearly referenced again.",
+    "candidateStatus": "found",
+    "missingRisk": "Some kits may be mentioned without explicit “bought/got/finished” wording (e.g., “thinking of working on” could be excluded depending on interpretation). Also, a single session may reference multiple scales of related projects (e.g., diorama) that may or may not count as a kit.",
+    "items": [
+      {
+        "sessionId": "answer_593bdffd_4",
+        "turnIndex": 0,
+        "why": "User states they “got” a 1/72 B-29 bomber kit and also “got” a 1/24 ’69 Camaro at a model show (bought/obtained evidence)."
+      },
+      {
+        "sessionId": "answer_593bdffd_4",
+        "turnIndex": 8,
+        "why": "Reaffirms the ’69 Camaro model they are adding details to (supports that the Camaro project exists as a kit)."
+      },
+      {
+        "sessionId": "answer_593bdffd_1",
+        "turnIndex": 0,
+        "why": "User says they “recently finished” a Revell F-15 Eagle kit and picked it up in late April (worked on + bought/obtained evidence)."
+      },
+      {
+        "sessionId": "answer_593bdffd_1",
+        "turnIndex": 4,
+        "why": "User indicates they are thinking of working on a 1/72 B-29 bomber next (context for B-29 kit but not necessarily “bought/finished”)."
+      },
+      {
+        "sessionId": "answer_593bdffd_1",
+        "turnIndex": 6,
+        "why": "Mentions their B-29 bomber weathering project (supports that B-29 is an active kit they’re working on)."
+      },
+      {
+        "sessionId": "answer_593bdffd_3",
+        "turnIndex": 0,
+        "why": "User says they started working on a diorama featuring a 1/16 German Tiger I tank (worked on evidence)."
+      },
+      {
+        "sessionId": "answer_593bdffd_2",
+        "turnIndex": 0,
+        "why": "User says they recently finished a Tamiya 1/48 Spitfire Mk.V model kit (worked on + finished evidence)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Count only kits the user says they have worked on or bought (including “finished” and “got/picked up”) across all provided sessions. Treat distinct model subjects as different kits unless the same kit is clearly referenced again.",
+    "candidateStatus": "found",
+    "missingRisk": "Some kits may be mentioned without explicit “bought/got/finished” wording (e.g., “thinking of working on” could be excluded depending on interpretation). Also, a single session may reference multiple scales of related projects (e.g., diorama) that may or may not count as a kit.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_593bdffd_4",
+        "turnIndex": 0,
+        "why": "User states they “got” a 1/72 B-29 bomber kit and also “got” a 1/24 ’69 Camaro at a model show (bought/obtained evidence)."
+      },
+      {
+        "sessionId": "answer_593bdffd_4",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_593bdffd_4",
+        "turnIndex": 8,
+        "why": "Reaffirms the ’69 Camaro model they are adding details to (supports that the Camaro project exists as a kit)."
+      },
+      {
+        "sessionId": "answer_593bdffd_4",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_593bdffd_4",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_593bdffd_1",
+        "turnIndex": 0,
+        "why": "User says they “recently finished” a Revell F-15 Eagle kit and picked it up in late April (worked on + bought/obtained evidence)."
+      },
+      {
+        "sessionId": "answer_593bdffd_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_593bdffd_1",
+        "turnIndex": 4,
+        "why": "User indicates they are thinking of working on a 1/72 B-29 bomber next (context for B-29 kit but not necessarily “bought/finished”)."
+      },
+      {
+        "sessionId": "answer_593bdffd_1",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_593bdffd_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_593bdffd_1",
+        "turnIndex": 6,
+        "why": "Mentions their B-29 bomber weathering project (supports that B-29 is an active kit they’re working on)."
+      },
+      {
+        "sessionId": "answer_593bdffd_1",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_593bdffd_3",
+        "turnIndex": 0,
+        "why": "User says they started working on a diorama featuring a 1/16 German Tiger I tank (worked on evidence)."
+      },
+      {
+        "sessionId": "answer_593bdffd_3",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_593bdffd_2",
+        "turnIndex": 0,
+        "why": "User says they recently finished a Tamiya 1/48 Spitfire Mk.V model kit (worked on + finished evidence)."
+      },
+      {
+        "sessionId": "answer_593bdffd_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_593bdffd_4",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

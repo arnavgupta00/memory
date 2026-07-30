@@ -1,0 +1,64 @@
+{
+  "queryShape": "order",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "answer_b9e32ff8_1",
+      "turnIndex": 0,
+      "date": "2022/12/28 (Wed) 06:50",
+      "role": "user",
+      "text": "I'm looking for some book recommendations. I just finished a discussion on \"The Seven Husbands of EvelynAGO\" by Taylor Jenkins Reid in an online book club on Facebook, and I'm in the mood for something similar. Do you have any suggestions?",
+      "why": "per-session extractor: Indicates involvement with 'The Seven Husbands of Evelyn Hugo' and suggests recency relevant to when the user finished reading it.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_b9e32ff8_1",
+      "turnIndex": 2,
+      "date": "2022/12/28 (Wed) 06:50",
+      "role": "user",
+      "text": "Since I just finished reading this Taylor Jenkins Reid book today, I'll definitely check some of these out later today. I've been reading a lot lately, and I'm always looking to discover new authors and genres. Speaking of which, I recently started a book journal to keep track of what I've read and my thoughts on each book. Do you have any tips on how to make the most out of a book journal?",
+      "why": "per-session extractor: Provides the closest temporal clue in the session for when the user finished reading, which could be used to compute the days elapsed.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_b9e32ff8_2",
+      "turnIndex": 0,
+      "date": "2023/01/15 (Sun) 08:32",
+      "role": "user",
+      "text": "I'm looking for some book recommendations. I just attended a book reading event at the local library today, where the author of \"The Silent Patient\" was discussing her latest thriller novel. It got me thinking about other thrillers I might enjoy. Can you suggest some similar authors or books?",
+      "why": "per-session extractor: The question’s event timing (when you attended the local library author discussion) is needed to compute how many days passed since finishing the specified book.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_b9e32ff8_1",
+      "turnIndex": 1,
+      "date": "2022/12/28 (Wed) 06:50",
+      "role": "assistant",
+      "text": "\"The Seven Husbands of Evelyn Hugo\" is an amazing book! I'd be happy to recommend some books that share similar themes, styles, or elements. Here are a few suggestions:\n\n1. **\"The Devil Wears Prada\" by Lauren Weisberger**: While not exactly similar, this novel explores the glamourous world of celebrities and the complex relationships between women, much like Evelyn Hugo's story.\n2. **\"The Royal We\" by Heather Cocks and Jessica Morgan**: This romance novel follows an American college student who falls for a British prince, delving into the complexities of fame, family, and identity.\n3. **\"Daisy Jones and The Six\" by Taylor Jenkins Reid**: If you loved Evelyn Hugo, you might enjoy another TJR novel! This book tells the story of a fictional rock band in the 1970s, exploring themes of fame, love, and identity.\n4. **\"The Last Romantics\" by Tara Conklin**: This novel follows four siblings and their complicated relationships, exploring themes of family, love, and the power of storytelling.\n5. **\"The Address\" by Fiona Davis**: This historical fiction novel is set in the iconic Dakota apartment building in New York City and explores the lives of its inhabitants, including a reclusive Hollywood star.\n6. **\"The Interestings\" by Meg Wolitzer**: This novel follows a group of friends who meet at a summer camp for the arts and follows their lives over several decades, exploring themes of talent, ambition, and relationships.\n7. **\"The Girls\" by Emma Cline**: While darker in tone, this novel explores the lives of a group of teenage girls who get caught up in a Manson-like cult in 1960s California, delving into themes of identity, family, and the power of female relationships.\n8. **\"The Age of Light\" by Whitney Scharer**: This historical fiction novel is based on the life of Lee Miller, a model and photographer who was a muse to Man Ray. It explores the glamour of 1920s Paris and the complexities of female relationships.\n\nThese books offer a mix of glamour, complex relationships, and explorations of identity, which are all present in \"The Seven Husbands of Evelyn Hugo.\" I hope you find something that piques your interest!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_b9e32ff8_1",
+      "turnIndex": 3,
+      "date": "2022/12/28 (Wed) 06:50",
+      "role": "assistant",
+      "text": "That's a great idea! Keeping a book journal is an excellent way to reflect on your reading experiences, track your progress, and develop your critical thinking skills. Here are some tips to help you make the most out of your book journal:\n\n1. **Create a consistent format**: Develop a standard format for each entry to make it easy to navigate and compare your thoughts across different books. You can include sections like:\n\t* Book information (title, author, publication date, genre)\n\t* Rating system (e.g., 1-5 stars, A-F)\n\t* Summary or brief review\n\t* Favorite quotes or passages\n\t* Character analysis or notable characters\n\t* Themes or motifs\n\t* Personal connections or reflections\n2. **Be honest and authentic**: Your book journal is for your eyes only, so be honest about your thoughts and feelings. Don't worry about sounding \"book-smart\" or trying to impress anyone. Write from the heart and let your opinions shine through.\n3. **Record your thoughts immediately**: Try to write in your journal as soon as possible after finishing a book. Your thoughts and feelings will be fresher, and you'll be more likely to capture your initial reactions.\n4. **Include both positive and negative feedback**: Don't just focus on the books you loved. Writing about books that didn't resonate with you can help you identify patterns in your reading preferences and improve your critical thinking skills.\n5. **Experiment with different formats**: Don't be afraid to try different formats, such as:\n\t* Bullet points or lists for character analysis or themes\n\t* Sketches or doodles to illustrate your thoughts\n\t* Collage or scrapbooking for a more visual approach\n\t* Writing prompts or questions to guide your reflection\n6. **Make it a habit**: Set a regular schedule to write in your journal, whether it's daily, weekly, or after each book. Consistency will help you develop a routine and make the most out of your journal.\n7. **Reread and reflect**: Periodically revisit your old entries to see how your tastes and opinions have evolved. You might discover new insights or notice patterns in your reading habits.\n8. **Add personal touches**: Include personal anecdotes, memories, or associations that are triggered by the book. This will make your journal more personal and meaningful.\n9. **Keep it private or share with a community**: Decide whether you want to keep your journal private or share it with fellow book lovers online or in a book club. Both approaches can be beneficial, depending on your goals and preferences.\n10. **Have fun**: Most importantly, remember to enjoy the process! Your book journal is a personal reflection of your reading journey, so make it a positive and enjoyable experience.\n\nBy following these tips, you'll be able to create a book journal that's both a valuable resource and a treasured keepsake. Happy reading and journaling!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_b9e32ff8_2",
+      "turnIndex": 1,
+      "date": "2023/01/15 (Sun) 08:32",
+      "role": "assistant",
+      "text": "What a great experience! \"The Silent Patient\" is a fantastic thriller, and I'm happy to help you find more books that'll keep you on the edge of your seat. Here are some similar authors and book recommendations:\n\n**Similar Authors:**\n\n1. **Gillian Flynn**: Known for her dark, twisted, and psychologically complex thrillers. Try \"Gone Girl\" or \"Sharp Objects\".\n2. **Paula Hawkins**: Author of \"The Girl on the Train\", which shares a similar atmosphere and psychological suspense with \"The Silent Patient\".\n3. **Fiona Barton**: A journalist-turned-author, known for her twisty, character-driven thrillers like \"The Widow\" and \"The Child\".\n4. **Mary Kubica**: Her books, like \"The Good Girl\" and \"Don't You Cry\", often feature complex characters and unexpected twists.\n5. **B.A. Paris**: A master of psychological suspense, with books like \"Behind Closed Doors\" and \"The Breakdown\".\n\n**Book Recommendations:**\n\n1. **\"The Last Mrs. Parrish\" by Liv Constantine**: A twisted, domestic thriller about a woman who'll stop at nothing to claim the life she feels she deserves.\n2. **\"The Couple Next Door\" by Shari Lapena**: A chilling thriller about a couple whose baby goes missing, and the secrets that come to light.\n3. **\"The Woman in the Window\" by A.J. Finn**: A modern take on Hitchcock's \"Rear Window\", with a recluse witness to a crime that may or may not have happened.\n4. **\"The Devil in the White City\" by Erik Larson**: A historical thriller that explores the 1893 World's Fair in Chicago and the serial killer H.H. Holmes.\n5. **\"The 7 1/2 Deaths of Evelyn Hardcastle\" by Stuart Turton**: A unique, mind-bending mystery that follows Aiden Bishop as he's trapped in a cycle of murder and rebirth.\n\nThese authors and books share some of the same themes and elements that made \"The Silent Patient\" so compelling, such as complex characters, psychological suspense, and unexpected twists. I hope you find your next great thriller among these recommendations!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 7880,
+  "estimatedTokens": 1970
+}

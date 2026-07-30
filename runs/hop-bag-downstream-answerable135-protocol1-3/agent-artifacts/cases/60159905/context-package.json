@@ -1,0 +1,172 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "21f8f481_3",
+      "turnIndex": 0,
+      "date": "2023/05/20 (Sat) 02:28",
+      "role": "user",
+      "text": "I'm planning a movie night with friends next week and I want to pick a movie that everyone will enjoy. Can you suggest some popular movies from the past year that are good for a group? By the way, I just got back from a birthday party for my colleague and friend, David, last week, and it was amazing - we had a blast playing laser tag and singing karaoke!",
+      "why": "per-session extractor: Indicates a planned social gathering, but it’s not clearly stated as a dinner party attended.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "21f8f481_3",
+      "turnIndex": 4,
+      "date": "2023/05/20 (Sat) 02:28",
+      "role": "user",
+      "text": "I think I'll go with Knives Out. I've been meaning to see it for a while now, and it sounds like it'll be a fun and engaging movie for my friends and me. Thanks for the suggestion! By the way, I've been meaning to organize my apartment and have a game night or potluck dinner soon, but I need to clean up and declutter first. Do you have any tips on how to declutter and organize my living space quickly and efficiently?",
+      "why": "per-session extractor: A future plan for a “potluck dinner,” which is related to dinner-party-type events but is not an attended dinner-party count.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_75eca223_2",
+      "turnIndex": 2,
+      "date": "2023/05/21 (Sun) 19:16",
+      "role": "user",
+      "text": "I love these ideas! I'm definitely going to consider the Global Street Food theme. By the way, I've also had a great experience with a BBQ theme, like the one we had at Mike's place two weeks ago, where we watched a football game together. Do you have any BBQ recipe ideas that would fit well with the Global Street Food theme?",
+      "why": "per-session extractor: Suggests one specific dinner/BBQ social event the user attended within a relative time window (two weeks ago).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_75eca223_2",
+      "turnIndex": 4,
+      "date": "2023/05/21 (Sun) 19:16",
+      "role": "user",
+      "text": "That's great! I think I'll have a mix of grilled and non-grilled dishes to cater to different tastes. By the way, I've also had experience with dinner parties that are more low-key, like the ones we had at Alex's place yesterday, where we had a potluck and tried out different cuisines from around the world, and also at Mike's place, where we had a BBQ and watched a football game together. Do you have any tips on how to make the party more interactive and engaging for guests?",
+      "why": "per-session extractor: Suggests additional specific past dinner-party attendance (“yesterday” and “Mike’s place”) relevant to counting dinner parties in the past month.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_75eca223_1",
+      "turnIndex": 0,
+      "date": "2023/05/22 (Mon) 10:28",
+      "role": "user",
+      "text": "I'm looking for some Italian recipe ideas for a dinner party I'm hosting soon. I attended a lovely Italian feast at Sarah's place last week, and it inspired me to try out some new dishes. Do you have any recommendations for a beginner like me?",
+      "why": "per-session extractor: Indicates a dinner party context, helpful for distinguishing hosting vs attendance and potential events to count.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_75eca223_1",
+      "turnIndex": 2,
+      "date": "2023/05/22 (Mon) 10:28",
+      "role": "user",
+      "text": "That's a great list of recipes! I think I'll start with the Spaghetti Aglio e Olio and Chicken Parmesan. I've always loved the combination of garlic and olive oil. By the way, speaking of dinner parties, I've had a lovely experience at Sarah's place recently, where we played board games until late into the night after the Italian feast. Do you have any recommendations for board games that would be a good fit for a dinner party?",
+      "why": "per-session extractor: Further corroborates that the Sarah's place event involved an Italian feast followed by board games; relevant to identifying the attended dinner party event.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "eb6737c0_1",
+      "turnIndex": 0,
+      "date": "2023/05/24 (Wed) 10:52",
+      "role": "user",
+      "text": "I've been watching a lot of sports lately, and I'm trying to keep track of all the recent events. Can you remind me of the score of the Super Bowl that was about a month ago? By the way, I had a big party with at least 15 people to watch it, and it was so intense!",
+      "why": "per-session extractor: Provides sports-following context; may be relevant if the dinner party question depends on entertainment events, though it’s not explicitly about a dinner party.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "c351fa3b_1",
+      "turnIndex": 0,
+      "date": "2023/05/29 (Mon) 00:35",
+      "role": "user",
+      "text": "I'm looking for some new vegan recipes to try out. I attended a vegan cooking class at a local culinary school today and learned some great tips and tricks, but I want to keep experimenting with different flavors and ingredients. Do you have any recommendations for vegan dinner recipes that use cashew cream and nutritional yeast?",
+      "why": "empty-extractor deterministic fallback",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "21f8f481_3",
+      "turnIndex": 1,
+      "date": "2023/05/20 (Sat) 02:28",
+      "role": "assistant",
+      "text": "Sounds like you had an epic birthday party with David! I'm happy to help you pick a movie for your movie night.\n\nHere are some popular movies from the past year that are great for a group:\n\n1. **Avengers: Endgame** (2019) - A superhero blockbuster that's perfect for a group of friends. It's an epic conclusion to the Marvel Cinematic Universe's Infinity Saga.\n2. **Joker** (2019) - A psychological thriller that's been a huge hit. It's a thought-provoking film that will generate plenty of discussions afterwards.\n3. **Knives Out** (2019) - A whodunit murder mystery that's fun, clever, and entertaining. It's got a great cast, including Daniel Craig, Chris Evans, and Jamie Lee Curtis.\n4. **Spider-Man: No Way Home** (2021) - Another Marvel movie that's perfect for a group. It's an action-packed adventure that's full of surprises and nostalgia.\n5. **Cruella** (2021) - A fun, stylish, and entertaining live-action adaptation of the classic Disney villain. It's a great choice if your group loves fashion, music, and a good villain origin story.\n6. **Free Guy** (2021) - An action-comedy starring Ryan Reynolds as a bank teller who discovers he's a video game NPC. It's a fun, lighthearted movie with plenty of humor and action.\n7. **Shang-Chi and the Legend of the Ten Rings** (2021) - A Marvel movie that's perfect for a group of friends who love superheroes and martial arts. It's an action-packed adventure with stunning fight choreography.\n\nThese movies are all relatively recent, so they're still fresh in people's minds, and they cater to a wide range of tastes. You can't go wrong with any of these choices!\n\nWhat do you think? Is any of these movies standing out to you?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "21f8f481_3",
+      "turnIndex": 3,
+      "date": "2023/05/20 (Sat) 02:28",
+      "role": "assistant",
+      "text": "Knives Out is an excellent choice! It's a modern take on the classic whodunit genre, with a clever script, memorable characters, and a star-studded cast. Here's a brief rundown of the plot and tone:\n\n**Plot:**\n\nThe film follows the story of Harlan Thrombey (Christopher Plummer), a renowned mystery novelist who dies under suspicious circumstances at his 85th birthday party. The police investigation that follows reveals a complex web of relationships and motives among Harlan's family members, staff, and business partners.\n\nEnter Benoit Blanc (Daniel Craig), a famous private detective with a Southern drawl and a penchant for solving the unsolvable. Blanc is hired by an anonymous client to investigate Harlan's death, and he teams up with Harlan's loyal nurse, Marta (Ana de Armas).\n\nAs the investigation unfolds, Blanc and Marta uncover a complex puzzle of clues, twists, and red herrings that keep the audience guessing until the very end. The film's climax is both surprising and satisfying, making it a true page-turner (or should I say, screen-turner!).\n\n**Tone:**\n\nKnives Out has a tone that's both playful and sophisticated. The film pays homage to the classic whodunit genre while also subverting some of its conventions. It's a clever, witty, and entertaining ride that's full of humor, satire, and social commentary.\n\nThe film's atmosphere is often tense and suspenseful, but it's also lighthearted and fun. The cast's chemistry is undeniable, with standout performances from Craig, de Armas, and the rest of the ensemble.\n\n**Themes:**\n\nKnives Out explores themes of family, class, privilege, and the American Dream. The film cleverly critiques the wealthy elite and their sense of entitlement, while also celebrating the power of intelligence, empathy, and hard work.\n\n**Overall:**\n\nKnives Out is a masterclass in storytelling, with a clever script, impressive performances, and expert direction from Rian Johnson. It's a film that will keep you on the edge of your seat, guessing and second-guessing until the very end. If your group enjoys mysteries, puzzles, and clever plot twists, Knives Out is an excellent choice for your movie night!\n\nWhat do you think? Are you leaning towards Knives Out or Avengers: Endgame?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "21f8f481_3",
+      "turnIndex": 5,
+      "date": "2023/05/20 (Sat) 02:28",
+      "role": "assistant",
+      "text": "Knives Out is an excellent choice for a fun and engaging movie night!\n\nNow, about decluttering and organizing your living space... I've got some tips to help you get started:\n\n**1. Set a timer:** Set a timer for 20-30 minutes and challenge yourself to declutter as much as possible during that time. Take a short break, and then repeat the process. This technique is called the \" Pomodoro Technique.\"\n\n**2. Start small:** Begin with one area or room at a time. Decluttering an entire apartment can feel overwhelming, but focusing on one area at a time makes it more manageable.\n\n**3. Sort into categories:** Divide items into three categories: Keep, Donate/Sell, and Toss. Be honest with yourself – if you haven't used something in a year, it's probably safe to get rid of it.\n\n**4. Purge paper clutter:** Sort through papers, bills, and documents, and either file them away, recycle them, or shred them. Consider digitizing important documents to free up physical space.\n\n**5. Utilize storage containers:** Use bins, baskets, or boxes to store items that you want to keep but don't need immediate access to. Label each container so you can easily find what you need.\n\n**6. Designate a \"launching pad\":** Designate a spot near the entrance of your home as a \"launching pad\" where you can place keys, wallets, and other items that tend to get lost.\n\n**7. Keep frequently used items accessible:** Store frequently used items in easy-to-reach locations, making it easier to maintain your space.\n\n**8. Don't forget the \"hidden\" areas:** Don't forget to declutter \"hidden\" areas like your closet, cupboards, and drawers. These areas can quickly become cluttered and disorganized.\n\n**9. Get help if needed:** If you're feeling overwhelmed, consider enlisting the help of a friend or family member. Sometimes, having someone to work alongside you can make the task more enjoyable and help you stay motivated.\n\n**10. Take breaks and reward yourself:** Decluttering can be physically and mentally exhausting. Take breaks, and reward yourself with a favorite snack or activity when you reach certain milestones.\n\n**Bonus tip:** Consider implementing a \"one in, one out\" policy to maintain your newly organized space. For every new item you bring into your home, get rid of an old one to maintain a balanced level of possessions.\n\nRemember, decluttering and organizing is a process, and it may take some time to get your space exactly how you want it. But with these tips, you'll be well on your way to a more organized, clutter-free living space!\n\nGood luck, and have fun with your game night or potluck dinner!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_75eca223_2",
+      "turnIndex": 1,
+      "date": "2023/05/21 (Sun) 19:16",
+      "role": "assistant",
+      "text": "What a fantastic idea! A potluck dinner party with a culinary journey around the world sounds like an absolute blast! I'd be delighted to help you with some recipe suggestions and ideas to make your event a success.\n\nHere are a few ideas to get you started:\n\n**Theme Suggestions:**\n\n1. **Global Street Food**: Ask guests to bring a popular street food from a specific country, like tacos from Mexico, samosas from India, or skewers from Southeast Asia.\n2. **Cuisines of the Mediterranean**: Focus on dishes from countries bordering the Mediterranean Sea, such as Greek spanakopita, Italian bruschetta, or Moroccan tagine.\n3. **Asian Fusion**: Encourage guests to bring dishes that blend Asian flavors with other international cuisines, like Korean tacos or sushi quesadillas.\n4. **Flavors of the Americas**: Explore the diverse cuisines of North, Central, and South America, with dishes like Brazilian feijoada, Peruvian ceviche, or Mexican mole.\n\n**Recipe Ideas:**\n\n1. **Appetizers**:\n\t* Edamame dumplings from Japan\n\t* Falafel from the Middle East\n\t* Empanadas from Argentina\n2. **Main Courses**:\n\t* Chicken tikka masala from India\n\t* Jollof rice from West Africa\n\t* Chicken satay from Thailand\n3. **Sides**:\n\t* Moroccan couscous salad\n\t* Korean kimchi slaw\n\t* Mexican street corn (elote)\n4. **Desserts**:\n\t* Baklava from Greece\n\t* Mango lassi cheesecake from India\n\t* Tres leches cake from Latin America\n\n**Tips and Logistics:**\n\n1. **Assign cuisines or courses**: Consider assigning a specific cuisine or course (appetizer, main, side, dessert) to each guest to ensure a well-rounded spread.\n2. **Coordinate dishes**: Encourage guests to share their recipe ideas with you beforehand to avoid duplicates and ensure a variety of dishes.\n3. **Labeling**: Ask guests to label their dishes with the country or cuisine of origin, as well as any ingredients used, to accommodate dietary restrictions.\n4. **Fun extras**: Consider adding a \"passport\" for guests to get stamped as they try each dish, or have a \"best dish\" award to encourage friendly competition.\n\nI hope these ideas help you plan an unforgettable dinner party!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_75eca223_2",
+      "turnIndex": 3,
+      "date": "2023/05/21 (Sun) 19:16",
+      "role": "assistant",
+      "text": "A BBQ theme can be a fantastic way to incorporate grilled and smoky flavors into your Global Street Food potluck. Here are some BBQ-inspired recipes from around the world that would fit perfectly with your theme:\n\n**Global BBQ Recipes:**\n\n1. **Korean BBQ Tacos**: Marinate thinly sliced beef or pork in a Korean-inspired mixture of soy sauce, garlic, ginger, and gochujang. Serve in tacos with kimchi slaw and cilantro.\n2. **Jamaican Jerk Chicken**: Grill chicken breasts or thighs with a spicy jerk seasoning blend, featuring allspice, thyme, and scotch bonnet peppers. Serve with Caribbean-style street food favorites like grilled pineapple and coconut rice.\n3. **Argentinian Choripán**: Grill chorizo sausages and serve on crusty bread with chimichurri sauce, made with parsley, oregano, garlic, and red pepper flakes.\n4. **Indian-Style Tandoori Chicken**: Marinate chicken in yogurt, lemon juice, garam masala, and cumin, then grill until charred and smoky. Serve with basmati rice and cucumber raita.\n5. **Mexican Al Pastor**: Grill thinly sliced pork marinated in a mixture of chili powder, vinegar, garlic, and pineapple. Serve in tacos with pineapple, onion, and cilantro.\n6. **South African Boerewors**: Grill boerewors sausages (made with beef, pork, and spices) and serve with pap (a porridge made from maize meal) and a side of spicy chakalaka sauce.\n7. **Thai Satay**: Grill chicken, beef, or pork skewers marinated in a mixture of coconut milk, fish sauce, lime juice, and chili flakes. Serve with peanut sauce, cucumber relish, and steamed jasmine rice.\n\n**Tips for a Global BBQ Potluck:**\n\n1. **Grill stations**: Set up multiple grill stations with different heat levels and cooking surfaces to accommodate various types of BBQ dishes.\n2. **Marinades and sauces**: Encourage guests to bring their own marinades and sauces to share, allowing everyone to taste a variety of flavors.\n3. **Global toppings**: Offer a selection of international toppings, such as kimchi, salsa, chutney, and pickled vegetables, to add an extra layer of flavor to each dish.\n4. **Side dishes**: Ask guests to bring side dishes that complement their BBQ offerings, like grilled vegetables, corn on the cob, or street food-style snacks.\n\nThese ideas should help you create a delicious and diverse Global Street Food BBQ potluck that your guests will love!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_75eca223_2",
+      "turnIndex": 5,
+      "date": "2023/05/21 (Sun) 19:16",
+      "role": "assistant",
+      "text": "You're referring to creating a more immersive and engaging experience for your guests. I've got some fantastic tips to help you achieve that:\n\n**Interactive Elements:**\n\n1. **Foodie Passport**: Create a \"passport\" for each guest, where they can get a stamp or signature from each dish they try. This encourages guests to explore different cuisines and interact with each other.\n2. **Global Music Playlist**: Curate a playlist featuring music from various countries and cultures to set the mood and create a festive atmosphere.\n3. **Cultural Trivia**: Prepare a list of trivia questions related to the different cuisines and cultures represented at the party. This can be a fun way to engage guests and spark conversations.\n4. **Food and Drink Pairing**: Offer pairing suggestions for each dish, such as wine, beer, or cocktails from the corresponding country or region. This adds an educational element and encourages guests to experiment with new flavors.\n5. **Guest Chef Stations**: Invite a few guests to act as \"guest chefs\" and have them prepare their dishes on-site. This can be a great way to encourage interaction and create a sense of community.\n\n**Engagement Strategies:**\n\n1. **Encourage Storytelling**: Ask guests to share stories or anecdotes about their dishes, such as the inspiration behind the recipe or a personal connection to the cuisine.\n2. **Foodie Networking**: Create a \"foodie networking\" area where guests can share their favorite recipes, cooking techniques, or restaurant recommendations.\n3. **Global Food Challenges**: Organize fun challenges, like a \"spicy food challenge\" or a \"guess the ingredient\" game, to keep guests engaged and entertained.\n4. **Photo Booth**: Set up a photo booth with props and backdrops inspired by different cultures. This can be a great way to capture memories and create social media-worthy moments.\n5. **Gratitude Station**: Set up a \"gratitude station\" where guests can write thank-you notes or share what they're grateful for about the evening. This can be a lovely way to foster a sense of community and appreciation.\n\n**Logistical Tips:**\n\n1. **Labeling and Signage**: Clearly label each dish with its country of origin, ingredients, and any dietary restrictions. This helps guests navigate the spread and makes it easier for them to ask questions.\n2. **Comfortable Seating**: Ensure there's ample seating and comfortable areas for guests to relax and socialize.\n3. **Timing**: Consider the flow of the evening and pace the food, drinks, and activities to keep guests engaged and entertained throughout the party.\n\nBy incorporating these interactive elements, engagement strategies, and logistical tips, you'll create a memorable and immersive experience for your guests. They'll appreciate the effort you put into creating a unique and enjoyable evening that celebrates the diversity of global cuisine!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_75eca223_1",
+      "turnIndex": 1,
+      "date": "2023/05/22 (Mon) 10:28",
+      "role": "assistant",
+      "text": "Buon appetito! I'm thrilled to hear that Sarah's Italian feast inspired you to host your own dinner party. Italian cuisine is incredibly diverse and rich, so I'd be happy to help you with some recipe ideas perfect for a beginner.\n\nHere are some classic and delicious Italian dishes that are sure to impress your guests:\n\n**Appetizers (Antipasti)**\n\n1. Bruschetta: Grilled bread with fresh tomatoes, basil, garlic, and mozzarella cheese.\n2. Caprese Skewers: Fresh mozzarella, cherry tomatoes, and basil on toothpicks, drizzled with olive oil and balsamic glaze.\n\n**Primo (First Course)**\n\n1. Spaghetti Aglio e Olio: Spaghetti with garlic, olive oil, and red pepper flakes. Simple yet flavorful!\n2. Creamy Tomato Pasta Bake: A comforting, easy-to-make pasta dish with ground beef, tomato sauce, and mozzarella cheese.\n\n**Secondo (Main Course)**\n\n1. Chicken Parmesan: Breaded and fried chicken breasts topped with marinara sauce and melted mozzarella cheese, served with a side of pasta or garlic bread.\n2. Bistecca alla Fiorentina: Grilled steak served with roasted vegetables and garlic mashed potatoes.\n\n**Contorno (Side Dish)**\n\n1. Roasted Vegetables: Seasonal vegetables (e.g., zucchini, bell peppers, cherry tomatoes) tossed with olive oil, salt, and pepper, then roasted to perfection.\n2. Garlic and Herb Roasted Potatoes: Thinly sliced potatoes tossed with olive oil, minced garlic, and chopped fresh herbs (e.g., rosemary, thyme).\n\n**Dolce (Dessert)**\n\n1. Tiramisù: Ladyfingers soaked in coffee and liqueur, layered with mascarpone cheese and cocoa powder.\n2. Panna Cotta: Creamy vanilla pudding topped with mixed berries and a drizzle of honey.\n\n**Tips and Essentials**\n\n* Use high-quality ingredients, such as fresh produce, good olive oil, and authentic Italian cheeses (e.g., Parmigiano-Reggiano, Mozzarella di Bufala).\n* Don't be afraid to simplify recipes or use store-bought shortcuts (e.g., pre-made pasta sauce, pre-breaded chicken cutlets).\n* Consider a buffet-style dinner to encourage socializing and make serving easier.\n* Pair your dishes with a selection of Italian wines, such as Pinot Grigio, Chianti, or Prosecco.\n\nBuon appetito, and I hope your dinner party is a huge success!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_75eca223_1",
+      "turnIndex": 3,
+      "date": "2023/05/22 (Mon) 10:28",
+      "role": "assistant",
+      "text": "Spaghetti Aglio e Olio and Chicken Parmesan are both delicious and crowd-pleasing options.\n\nNow, about board games for a dinner party... I'm glad you asked! I've got some recommendations that are perfect for a fun and social evening with friends:\n\n**Light-hearted and Social Games**\n\n1. **What Do You Meme**: A hilarious party game where players compete to create the funniest meme by combining caption cards with a random image.\n2. **Taboo**: A classic word-guessing game that's great for large groups and encourages teamwork and laughter.\n3. **Junk Art**: A fast-paced dexterity game where players try to create the most creative art piece using random junk items.\n4. **Codenames**: A word-guessing game where players try to identify words based on one-word clues given by their teammate.\n\n**Strategy and Conversation Starters**\n\n1. **Ticket to Ride**: A popular train-themed game that's easy to learn and encourages players to discuss strategies and negotiate.\n2. **Sushi Go!**: A quick and simple card game that's great for smaller groups and encourages conversation and strategy.\n3. **Deception**: A social deduction game where one player takes on the role of a spy, and the others must figure out who it is.\n4. **Wits & Wagers**: A trivia game that's more about betting on the answers than knowing them yourself, making it a great conversation starter.\n\n**Classic Party Favorites**\n\n1. **Pictionary**: A classic drawing game that's always a hit at parties.\n2. **Scattergories**: A creative game where players come up with words that fit certain categories, all starting with the same letter.\n3. **Charades**: A classic acting game that's great for large groups and always generates laughs.\n\nThese games are all easy to learn, promote socializing, and are suitable for a wide range of players. You can choose one or two games to play throughout the evening, depending on the size of your group and the level of complexity you're comfortable with.\n\nRemember, the goal is to have fun and enjoy the company of your guests!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "eb6737c0_1",
+      "turnIndex": 1,
+      "date": "2023/05/24 (Wed) 10:52",
+      "role": "assistant",
+      "text": "I'm happy to help! However, I have to clarify that the Super Bowl is typically held in early February, and it's not possible for it to have taken place just a month ago. The most recent Super Bowl, Super Bowl LVII, was played on February 12, 2023.\n\nIf you're thinking of a different game, could you please provide more details or context about the game you're referring to? I'd be happy to try and help you find the score or information you're looking for.\n\nAlso, it sounds like you had an exciting party! Watching sports with friends can be such a fun and energetic experience.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "c351fa3b_1",
+      "turnIndex": 1,
+      "date": "2023/05/29 (Mon) 00:35",
+      "role": "assistant",
+      "text": "What a great combo! Cashew cream and nutritional yeast are both amazing ingredients that can add richness, creaminess, and cheesy flavors to vegan dishes. Here are some delicious vegan dinner recipes that feature these ingredients:\n\n**Cashew Cream Recipes:**\n\n1. **Vegan Mac and Cheese**: A classic comfort food! Blend cashew cream with lemon juice, apple cider vinegar, garlic powder, and spices to create a creamy sauce. Toss with cooked macaroni and top with nutritional yeast for a cheesy, nutty flavor.\n2. **Cashew Cream Indian Korma**: Inspired by Indian cuisine, this recipe uses cashew cream as a base for a rich and creamy tomato sauce. Blend with coconut milk, spices, and herbs, then simmer with your favorite protein (tofu, tempeh, or seitan) and serve over basmati rice.\n3. **Vegan Lasagna**: Replace traditional ricotta with a cashew cream mixture, blended with garlic, lemon juice, and herbs. Layer with marinara sauce, lasagna noodles, and your favorite vegan meatballs or sautéed veggies.\n\n**Nutritional Yeast Recipes:**\n\n1. **Vegan Cheesy Broccoli Soup**: This creamy soup uses nutritional yeast to give it a cheesy, umami flavor. Blend with cashew cream, broccoli, garlic, and lemon juice for a comforting and healthy soup.\n2. **Nutritional Yeast \"Cheese\" Sauce**: Make a simple sauce by blending nutritional yeast with lemon juice, garlic powder, and olive oil. Serve over steamed veggies, pasta, or as a dip.\n3. **Vegan Quesadillas**: Add nutritional yeast to your quesadilla filling, along with sautéed onions, bell peppers, and beans, for a cheesy, savory flavor. Use cashew cream as a substitute for sour cream or guacamole.\n\n**Recipes that combine Cashew Cream and Nutritional Yeast:**\n\n1. **Vegan Creamy Mushroom Pasta**: Blend cashew cream with sautéed mushrooms, garlic, and nutritional yeast for a rich and creamy sauce. Serve over pasta and enjoy!\n2. **Vegan Cauliflower Gnocchi with Creamy Sauce**: Use cashew cream as a base for a creamy sauce, blended with nutritional yeast, garlic, and lemon juice. Serve over cauliflower gnocchi and top with roasted veggies.\n3. **Vegan Stuffed Bell Peppers**: Fill bell peppers with a mixture of quinoa, black beans, diced tomatoes, and a cashew cream sauce infused with nutritional yeast. Bake until tender and enjoy!\n\nThese recipes should give you a great starting point for experimenting with cashew cream and nutritional yeast. Feel free to modify and combine them to create your own unique vegan dishes!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 23984,
+  "estimatedTokens": 5996
+}

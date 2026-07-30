@@ -1,0 +1,45 @@
+[
+  {
+    "session_id": "answer_611b6e83_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low. The session includes a direct user-stated duration for how long the parents have been living with the user in the US, which should be sufficient for the question, though it doesn’t provide exact move-in dates or confirmation of the current day’s endpoint.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "My parents... have been... living with me in the US... for the past six months.",
+          "why": "Directly states the duration of the parents staying with the user in the US, which is the core quantity needed to answer the question."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_611b6e83_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low—this session directly states the parents have been staying for nine months, but it does not specify the exact start/end dates in calendar terms relative to the user’s “today” (2023/10/22).",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "The user said: “my parents … they've been staying with me for nine months now.”",
+          "why": "Provides the duration of the parents’ stay in the US needed to answer the question (how long they’ve been staying)."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "The assistant stated that visitors on a tourist visa (B-2) are not allowed to stay in the United States for more than six months, and that overstaying can be considered a violation of visa terms.",
+          "why": "Contextualizes the nine-month stay as potentially problematic (though it doesn’t change the duration, it may inform risk about overstaying)."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "The assistant included: “their nine-month stay” when discussing what to share with the attorney.",
+          "why": "Reinforces the nine-month duration as the basis for the later legal discussion, corroborating the key fact."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "The assistant explained that, based on the user’s sharing, the parents have “overstayed … by nine months,” which could make them inadmissible due to unlawful presence.",
+          "why": "Again ties the stated nine-month overstay to immigration consequences; supports the duration claim being consistently used in the session."
+        }
+      ]
+    }
+  }
+]

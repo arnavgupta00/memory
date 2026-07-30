@@ -1,0 +1,33 @@
+{
+  "queryShape": "order",
+  "setBoundary": "Concerts/musical events the user attended within the prior two months from 2023/04/22, listed chronologically from earliest to latest.",
+  "candidateStatus": "found",
+  "missingRisk": "May still be missing other attended concerts/events in the two-month window that were mentioned outside the provided memory block, or the exact dates/ordering for events described only as “recently/just got back.”",
+  "items": [
+    {
+      "sessionId": "answer_f999b05b_1",
+      "turnIndex": 0,
+      "why": "User states they just got back from an amazing Billie Eilish concert in Philly “today,” with session date 2023/03/18 (Earliest dated concert in the window)."
+    },
+    {
+      "sessionId": "answer_f999b05b_4",
+      "turnIndex": 0,
+      "why": "User attended a free outdoor concert series in the park “today,” with session date 2023/03/25 (music event during the window)."
+    },
+    {
+      "sessionId": "answer_f999b05b_2",
+      "turnIndex": 0,
+      "why": "User says they just got back from a music festival in Brooklyn (exact festival dates not given), with session date 2023/04/01 (likely within the two-month window)."
+    },
+    {
+      "sessionId": "answer_f999b05b_5",
+      "turnIndex": 0,
+      "why": "User mentions enjoying a smaller local music night: a jazz night at a local bar “today,” with session date 2023/04/08 (music event during the window)."
+    },
+    {
+      "sessionId": "answer_f999b05b_3",
+      "turnIndex": 0,
+      "why": "User says they just saw Queen with Adam Lambert live at the Prudential Center in Newark, NJ “just saw them live,” with session date 2023/04/15 (music event during the window, though exact event date is not specified)."
+    }
+  ]
+}

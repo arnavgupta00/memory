@@ -1,0 +1,43 @@
+[
+  {
+    "session_id": "answer_5e3bb940_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session explicitly states the time it took you to finish only \"The Seven Husbands of Evelyn Hugo\". It does not state the time it took you to finish \"The Nightingale\"; it only lists \"The Nightingale\" as a recommendation with a stated audiobook length, which may not equal your personal finish time.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "You finished \"The Seven Husbands of Evelyn Hugo\", which took you two and a half weeks to finish.",
+          "why": "Provides one of the two required time-to-finish values for the combined total."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "The Nightingale by Kristin Hannah is listed with length (17 hours, 44 minutes).",
+          "why": "May be relevant if your finish time for \"The Nightingale\" is intended to use audiobook length, but it is not your personal time-to-finish."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_5e3bb940_3",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session mentions only the time it took to finish 'The Nightingale' (three weeks) and does not mention any completion time for 'The Seven Husbands of Evelyn Hugo' in this candidate. So the combined duration requested cannot be fully determined from this session alone.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User recently finished \"The Nightingale\" by Kristin Hannah, which took me three weeks to finish.",
+          "why": "This provides a concrete completion duration for one of the two requested books."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_5e3bb940_1",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session discusses enjoying ‘The Nightingale’ and ‘The Seven Husbands of Evelyn Hugo’, plus general audiobook habits, but it does not include any reported finish/completion duration (or start/end dates) for those two specific books. It therefore cannot be used to compute how long you took to finish them combined.",
+      "claims": []
+    }
+  }
+]

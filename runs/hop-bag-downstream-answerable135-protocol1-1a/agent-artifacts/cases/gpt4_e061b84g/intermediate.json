@@ -1,0 +1,13 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Sports events the user said they participated in (e.g., competitions/leagues) around the referenced time.",
+  "candidateStatus": "found",
+  "missingRisk": "The referenced “two weeks ago” date (relative to 2023/07/01) may not exactly match the dates in memory; there may be another sports event not present here.",
+  "items": [
+    {
+      "sessionId": "answer_8c64ce26_2",
+      "turnIndex": 0,
+      "why": "Contains the user’s statement about completing a sports event (Spring Sprint Triathlon) and describes it as the event the user participated in."
+    }
+  ]
+}

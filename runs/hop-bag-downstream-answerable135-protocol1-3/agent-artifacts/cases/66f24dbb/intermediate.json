@@ -1,0 +1,29 @@
+[
+  {
+    "session_id": "answer_fea2e4d3",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low. This session explicitly states the sister’s birthday gifts (a yellow dress and matching earrings).",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "For my sister's birthday, I got her a yellow dress and a pair of earrings to match.",
+          "why": "Directly answers what the user bought for the sister’s birthday gift; includes item names and relationship (sister) plus “matching” detail."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "For my sister's birthday, I got her a yellow dress and a pair of earrings to match.",
+          "why": "Same explicit gift details appear in this user turn; provides the concrete list of sister’s birthday items."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "89452526_2",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session is about gift ideas for the user’s brother (gaming-related) and does not mention purchasing anything for a sister’s birthday gift. No sister or purchase of a sister gift appears here.",
+      "claims": []
+    }
+  }
+]

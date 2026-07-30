@@ -1,0 +1,83 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify the Denver trip/activity suggestions (especially around Red Rocks and Denver’s music scene) contained in the retrieved sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "The Denver suggestions may be incomplete if the user’s question expects broader Denver attractions (not just concerts/Red Rocks/BBQ/music venues).",
+    "items": [
+      {
+        "sessionId": "answer_8f15ac24",
+        "turnIndex": 5,
+        "why": "Provides a list of Denver music venues/festivals to add to a Denver bucket list (core Denver suggestions)."
+      },
+      {
+        "sessionId": "answer_8f15ac24",
+        "turnIndex": 7,
+        "why": "Gives BBQ recommendations near Red Rocks Amphitheater (relevant Denver food suggestion tied to a Denver concert plan)."
+      },
+      {
+        "sessionId": "answer_8f15ac24",
+        "turnIndex": 9,
+        "why": "Recommends restaurants/food options within walking distance of Red Rocks (specific Denver dining suggestions)."
+      },
+      {
+        "sessionId": "answer_8f15ac24",
+        "turnIndex": 11,
+        "why": "Describes The Ship Rock Grille’s outdoor patio with a view of Red Rocks, including practical guidance (ties dining to Denver concert logistics)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify the Denver trip/activity suggestions (especially around Red Rocks and Denver’s music scene) contained in the retrieved sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "The Denver suggestions may be incomplete if the user’s question expects broader Denver attractions (not just concerts/Red Rocks/BBQ/music venues).; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_8f15ac24",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_8f15ac24",
+        "turnIndex": 5,
+        "why": "Provides a list of Denver music venues/festivals to add to a Denver bucket list (core Denver suggestions)."
+      },
+      {
+        "sessionId": "answer_8f15ac24",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_8f15ac24",
+        "turnIndex": 7,
+        "why": "Gives BBQ recommendations near Red Rocks Amphitheater (relevant Denver food suggestion tied to a Denver concert plan)."
+      },
+      {
+        "sessionId": "answer_8f15ac24",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_8f15ac24",
+        "turnIndex": 9,
+        "why": "Recommends restaurants/food options within walking distance of Red Rocks (specific Denver dining suggestions)."
+      },
+      {
+        "sessionId": "answer_8f15ac24",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_8f15ac24",
+        "turnIndex": 11,
+        "why": "Describes The Ship Rock Grille’s outdoor patio with a view of Red Rocks, including practical guidance (ties dining to Denver concert logistics)."
+      },
+      {
+        "sessionId": "answer_8f15ac24",
+        "turnIndex": 12,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

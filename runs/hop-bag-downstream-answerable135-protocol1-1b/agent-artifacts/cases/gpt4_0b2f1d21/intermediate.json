@@ -1,0 +1,68 @@
+{
+  "raw": {
+    "queryShape": "order",
+    "setBoundary": "Compare timestamps/relative timing of (1) coffee maker purchase and (2) stand mixer malfunction/repair to determine which happened first.",
+    "candidateStatus": "found",
+    "missingRisk": "If the coffee maker purchase date (“about three weeks ago”) and the stand mixer malfunction/repair timing (“last month”) are both approximate, the answerer may need additional context not present in these turns.",
+    "items": [
+      {
+        "sessionId": "answer_c4e5d969_1",
+        "turnIndex": 0,
+        "why": "Contains the coffee maker purchase timing: “I bought it about three weeks ago” along with the coffee maker being used every morning."
+      },
+      {
+        "sessionId": "answer_c4e5d969_2",
+        "turnIndex": 0,
+        "why": "Contains the stand mixer malfunction/repair timing: “my stand mixer broke down again” and “I had to take mine to a repair shop last month… took two weeks to fix” (malfunction preceded repair)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "order",
+    "setBoundary": "Compare timestamps/relative timing of (1) coffee maker purchase and (2) stand mixer malfunction/repair to determine which happened first.",
+    "candidateStatus": "found",
+    "missingRisk": "If the coffee maker purchase date (“about three weeks ago”) and the stand mixer malfunction/repair timing (“last month”) are both approximate, the answerer may need additional context not present in these turns.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_c4e5d969_1",
+        "turnIndex": 0,
+        "why": "Contains the coffee maker purchase timing: “I bought it about three weeks ago” along with the coffee maker being used every morning."
+      },
+      {
+        "sessionId": "answer_c4e5d969_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_c4e5d969_2",
+        "turnIndex": 0,
+        "why": "Contains the stand mixer malfunction/repair timing: “my stand mixer broke down again” and “I had to take mine to a repair shop last month… took two weeks to fix” (malfunction preceded repair)."
+      },
+      {
+        "sessionId": "answer_c4e5d969_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_c4e5d969_2",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_c4e5d969_2",
+        "turnIndex": 5,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_c4e5d969_2",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_c4e5d969_1",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Tennis with friends at the local park (past frequency vs current/ongoing frequency)",
+  "candidateStatus": "found",
+  "missingRisk": "May still be missing more recent/actual frequency details after the planned “this Sunday” (2023/07/30), and any explicit statement about how “often now” differs beyond the previously described schedule.",
+  "items": [
+    {
+      "sessionId": "answer_25df025b_1",
+      "turnIndex": 0,
+      "why": "Mentions “weekly tennis sessions with friends” at the local park, which supports the “previously” frequency."
+    },
+    {
+      "sessionId": "answer_25df025b_1",
+      "turnIndex": 6,
+      "why": "States a specific upcoming session (“this Sunday at the local park”), useful for the “now” portion of the comparison."
+    },
+    {
+      "sessionId": "answer_25df025b_2",
+      "turnIndex": 0,
+      "why": "Explicitly says tennis with friends at the local park is something they “do every other week,” relevant to current frequency (and potentially the updated pattern vs “weekly”)."
+    }
+  ]
+}

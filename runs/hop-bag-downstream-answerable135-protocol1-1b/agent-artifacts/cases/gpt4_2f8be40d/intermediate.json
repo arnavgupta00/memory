@@ -1,0 +1,148 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Count weddings the user says they have attended in 2023 up to 2023/10/15.",
+    "candidateStatus": "found",
+    "missingRisk": "Several sessions mention weddings attended but don’t provide explicit dates beyond relative timing (e.g., “recently,” “last weekend,” “last month”); the answerer may need to decide whether each relative-timed wedding falls within 2023.",
+    "items": [
+      {
+        "sessionId": "answer_e7b0637e_2",
+        "turnIndex": 0,
+        "why": "User says they “recently got back from my college roommate's wedding in the city,” and names Emily/Sarah as part of that wedding—counts as a wedding the user attended this year (relative timing)."
+      },
+      {
+        "sessionId": "answer_e7b0637e_1",
+        "turnIndex": 0,
+        "why": "User states they “were a few weddings recently” and specifically attended “my cousin's wedding at a vineyard in August.”"
+      },
+      {
+        "sessionId": "answer_e7b0637e_1",
+        "turnIndex": 6,
+        "why": "User references “My cousin Emily's wedding in the city” and describes its rooftop garden/trendy restaurant atmosphere—another wedding the user attended (relative timing/no exact date)."
+      },
+      {
+        "sessionId": "answer_e7b0637e_3",
+        "turnIndex": 0,
+        "why": "User says they “just got back from a friend's wedding last weekend,” identifying bride Jen and groom Tom—counts as a wedding the user attended (relative timing)."
+      },
+      {
+        "sessionId": "81b971b8_2",
+        "turnIndex": 4,
+        "why": "User says “my sister's wedding was just amazing” and that they were involved in planning; treated as a wedding they attended this year (relative timing/no exact date)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Count weddings the user says they have attended in 2023 up to 2023/10/15.",
+    "candidateStatus": "found",
+    "missingRisk": "Several sessions mention weddings attended but don’t provide explicit dates beyond relative timing (e.g., “recently,” “last weekend,” “last month”); the answerer may need to decide whether each relative-timed wedding falls within 2023.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_e7b0637e_2",
+        "turnIndex": 0,
+        "why": "User says they “recently got back from my college roommate's wedding in the city,” and names Emily/Sarah as part of that wedding—counts as a wedding the user attended this year (relative timing)."
+      },
+      {
+        "sessionId": "answer_e7b0637e_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e7b0637e_1",
+        "turnIndex": 0,
+        "why": "User states they “were a few weddings recently” and specifically attended “my cousin's wedding at a vineyard in August.”"
+      },
+      {
+        "sessionId": "answer_e7b0637e_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e7b0637e_1",
+        "turnIndex": 6,
+        "why": "User references “My cousin Emily's wedding in the city” and describes its rooftop garden/trendy restaurant atmosphere—another wedding the user attended (relative timing/no exact date)."
+      },
+      {
+        "sessionId": "answer_e7b0637e_1",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e7b0637e_1",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e7b0637e_3",
+        "turnIndex": 0,
+        "why": "User says they “just got back from a friend's wedding last weekend,” identifying bride Jen and groom Tom—counts as a wedding the user attended (relative timing)."
+      },
+      {
+        "sessionId": "answer_e7b0637e_3",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "81b971b8_2",
+        "turnIndex": 4,
+        "why": "User says “my sister's wedding was just amazing” and that they were involved in planning; treated as a wedding they attended this year (relative timing/no exact date)."
+      },
+      {
+        "sessionId": "81b971b8_2",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "81b971b8_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e7b0637e_2",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e7b0637e_2",
+        "turnIndex": 3,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_e7b0637e_2",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "1d6e01e8",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "1d6e01e8",
+        "turnIndex": 1,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "1d6e01e8",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e7b0637e_3",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e7b0637e_3",
+        "turnIndex": 5,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_e7b0637e_3",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

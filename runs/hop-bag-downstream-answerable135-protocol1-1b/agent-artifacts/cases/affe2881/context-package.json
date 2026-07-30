@@ -1,0 +1,217 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Total number of different bird species the user has seen in their local park (tracked/counted over time).",
+  "candidateStatus": "found",
+  "missingRisk": "There are at least two different reported totals in different sessions (27 species on 2023/05/24 vs 32 species on 2023/05/29). The downstream answer may need to reconcile whether these are cumulative updates or conflicting counts.; frozen bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "fb5dd87f_7",
+      "turnIndex": 2,
+      "date": "2023/04/29 (Sat) 15:06",
+      "role": "user",
+      "text": "The sanctuary is located in southern Wisconsin, and I've been thinking of visiting it in late April or early May. Do you think that's a good time to see a variety of species, or should I plan my trip for a different time of year?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "fb5dd87f_7",
+      "turnIndex": 3,
+      "date": "2023/04/29 (Sat) 15:06",
+      "role": "assistant",
+      "text": "Southern Wisconsin is a great spot for birding! Late April to early May is a fantastic time to visit, as it's a peak migration period for many bird species. You can expect to see a good variety of birds during this time, including:\n\n1. Warblers: Many warbler species, such as the Yellow, Yellow-rumped, and Palm Warblers, pass through southern Wisconsin during late April and early May.\n2. Sparrows: You might spot species like the Chipping Sparrow, Clay-colored Sparrow, and American Tree Sparrow as they migrate through the area.\n3. Waterfowl: Spring migration is a great time to see ducks, geese, and other waterfowl species, such as the Wood Duck, Blue-winged Teal, and American Golden-Plover.\n4. Raptors: Keep an eye out for hawks, eagles, and osprey, which are also migrating during this period.\n5. Songbirds: You may see species like the Ruby-crowned Kinglet, Hermit Thrush, and Baltimore Oriole, which are returning to their breeding grounds.\n\nHowever, it's worth noting that the exact timing of migration can vary from year to year, depending on weather conditions and temperature. If you're looking for a specific species, it's always a good idea to check with local birding reports or the sanctuary's website for up-to-date information.\n\nIf you're flexible with your travel dates, consider visiting during the following times for different species:\n\n* Spring (late March to early May): Peak migration period for waterfowl, sparrows, and warblers.\n* Summer (June to August): Breeding season for many species, including songbirds, raptors, and waterfowl.\n* Fall (late August to early November): Another peak migration period, with many species moving south for the winter.\n* Winter (December to February): Look for wintering birds, such as Snow Buntings, Snowy Owls, and winter finches.\n\nKeep in mind that the sanctuary may have specific hours, trails, and access restrictions, so be sure to check their website or contact them directly before your visit.\n\nI hope this helps, and I'm sure you'll have a great time birding in southern Wisconsin!",
+      "why": "deterministic candidate-session coverage repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "fb5dd87f_7",
+      "turnIndex": 4,
+      "date": "2023/04/29 (Sat) 15:06",
+      "role": "user",
+      "text": "I'm also curious about the trails at the sanctuary. Are there any specific trails that are recommended for birding, or any areas that are known for certain species? And do they have any guided tours or birding events during the spring migration period?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_90de9b4d_1",
+      "turnIndex": 3,
+      "date": "2023/05/24 (Wed) 01:31",
+      "role": "assistant",
+      "text": "Warblers and sparrows can be challenging to identify, but with practice and a few tips, you can improve your skills! Here are some tips to help you identify warblers and sparrows:\n\n**Warblers:**\n\n1. **Focus on facial patterns**: Warblers often have distinctive facial markings, such as stripes, eyestripes, or eye rings. Study the patterns around the eyes, forehead, and throat to help identify the species.\n2. **Look at the beak shape and size**: Warblers have a variety of beak shapes and sizes. Some have short, conical beaks (like the Yellow Warbler), while others have longer, more pointed beaks (like the Common Yellowthroat).\n3. **Observe the tail pattern**: Warblers often have distinctive tail patterns, such as white outer tail feathers (like the American Goldfinch) or a dark tail with white edges (like the Black-and-white Warbler).\n4. **Check the wing bars**: Many warblers have wing bars, which are narrow white or yellow stripes on the wings. The number, size, and color of these bars can help identify the species.\n5. **Study the overall plumage**: Warblers can have a wide range of plumage patterns, from bright yellows and oranges to duller browns and grays. Look for distinctive markings, such as streaks, spots, or patches, to help identify the species.\n6. **Pay attention to size and shape**: Warblers come in a range of sizes, from the tiny Ruby-crowned Kinglet to the larger American Redstart. Note the bird's overall shape, including the length of the tail and the shape of the head.\n7. **Learn the habitat preferences**: Different warblers have distinct habitat preferences, such as coniferous forests, deciduous forests, or shrubby areas. Knowing the habitat can help narrow down the identification.\n\n**Sparrows:**\n\n1. **Focus on the face and head pattern**: Sparrows often have distinctive facial markings, such as stripes, spots, or a distinctive eye line. Study the pattern around the eyes, forehead, and throat to help identify the species.\n2. **Look at the beak shape and size**: Sparrows have a range of beak shapes and sizes, from short and conical to longer and more pointed.\n3. **Observe the tail pattern**: Sparrows often have distinctive tail patterns, such as a notched tail (like the Song Sparrow) or a rounded tail (like the White-throated Sparrow).\n4. **Check the wing bars**: Like warblers, sparrows often have wing bars, which can help identify the species.\n5. **Study the overall plumage**: Sparrows can have a range of plumage patterns, from streaked to spotted to plain. Look for distinctive markings, such as a white stripe above the eye or a dark spot on the breast.\n6. **Pay attention to size and shape**: Sparrows come in a range of sizes, from the tiny Nelson's Sparrow to the larger Fox Sparrow. Note the bird's overall shape, including the length of the tail and the shape of the head.\n7. **Learn the habitat preferences**: Different sparrows have distinct habitat preferences, such as wetlands, grasslands, or backyards. Knowing the habitat can help narrow down the identification.\n\n**General Tips:**\n\n1. **Use multiple field guides**: Consult multiple field guides to get a sense of the different characteristics and variations within each species.\n2. **Study range maps**: Knowing the range of each species can help you narrow down the identification.\n3. **Observe behavior**: Pay attention to the bird's behavior, such as foraging habits, flight patterns, and social behavior.\n4. **Take notes and sketches**: Record your observations, including notes on plumage, size, shape, and behavior. Sketching the bird can also help you remember",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_90de9b4d_1",
+      "turnIndex": 4,
+      "date": "2023/05/24 (Wed) 01:31",
+      "role": "user",
+      "text": "That's really helpful, thanks! By the way, speaking of bird identification, I've been keeping track of the species I've seen in my local park, and I've managed to spot 27 different species so far. It's amazing how diverse the bird life is in such a small area!",
+      "why": "Directly states the user has spotted 27 different bird species in their local park so far.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_90de9b4d_1",
+      "turnIndex": 5,
+      "date": "2023/05/24 (Wed) 01:31",
+      "role": "assistant",
+      "text": "That's fantastic! 27 species in a small local park is a great achievement, and it just goes to show how rich and diverse bird life can be in even the most unexpected places. It's wonderful that you're taking the time to observe and appreciate the birds in your area.\n\nKeeping a life list or a park list, as you're doing, is a great way to track your progress, learn more about the birds, and develop a deeper connection with nature. It's also a great way to notice changes in bird populations, migration patterns, and habitat use over time.\n\nI'm sure you've noticed that different species have different habits, habitats, and behaviors, which makes each one unique and fascinating in its own way. Have you noticed any particular species that are more abundant or common in your park, or any that are more elusive or rare?\n\nAlso, have you considered sharing your findings with others, such as local birding groups, birding clubs, or even online platforms like eBird? Sharing your observations can help contribute to a broader understanding of bird populations and habitats, and can also connect you with other bird enthusiasts who share your passion.\n\nKeep up the great work, and I'm sure you'll continue to discover more species and learn more about the amazing birds in your local park!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_90de9b4d_2",
+      "turnIndex": 1,
+      "date": "2023/05/29 (Mon) 17:18",
+      "role": "assistant",
+      "text": "What a lovely idea! Attracting birds to your picnic can add to the joy and magic of the experience. While it's essential to prioritize not littering and respecting the park's rules, you can bring some bird-friendly food to entice your feathered friends to visit. Here are some suggestions:\n\n1. **Suet**: A high-energy food made from animal fat, suet is a favorite among woodpeckers, nuthatches, and chickadees. You can purchase suet cakes or make your own by melting down beef fat and mixing it with birdseed, nuts, and dried fruits.\n2. **Sunflower seeds**: These are a popular choice among many bird species, including cardinals, finches, and sparrows. Opt for black oil sunflower seeds, which are easier for birds to crack open.\n3. **Fresh fruits**: Sliced apples, grapes, berries, and oranges are all attractive to birds like robins, blue jays, and woodpeckers. Be sure to remove any seeds or pits, as they can be harmful to birds.\n4. **Nuts**: Almonds, walnuts, and hazelnuts are all bird-friendly options. Just be sure to chop them into smaller pieces to prevent choking hazards.\n5. **Dried mealworms**: These are a great option for attracting birds like bluebirds, wrens, and sparrows. You can find dried mealworms at most pet stores or online.\n6. **Nyjer seed**: Also known as thistle seed, Nyjer seed is a favorite among finches, sparrows, and goldfinches. Its small size and high oil content make it an excellent energy source.\n\nRemember to:\n\n* Place the food on a clean, flat surface or a bird-friendly feeder to prevent mess and waste.\n* Keep the food fresh and replenish it regularly to avoid attracting unwanted pests.\n* Be mindful of park rules and regulations regarding bird feeding. Some parks may have specific guidelines or restrictions.\n* Enjoy observing the birds from a safe distance to avoid disturbing them or disrupting their natural behavior.\n\nHave a wonderful picnic, and I hope you attract some delightful bird visitors!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_90de9b4d_2",
+      "turnIndex": 2,
+      "date": "2023/05/29 (Mon) 17:18",
+      "role": "user",
+      "text": "I'll definitely bring some sunflower seeds and suet to attract the woodpeckers. By the way, speaking of woodpeckers, I just saw a Northern Flicker in my local park last weekend, which brings my total species count to 32. Do you think the suet will attract any other woodpecker species as well?",
+      "why": "Directly states the user’s total bird species count is 32 after seeing a Northern Flicker.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_90de9b4d_2",
+      "turnIndex": 3,
+      "date": "2023/05/29 (Mon) 17:18",
+      "role": "assistant",
+      "text": "Congratulations on spotting the Northern Flicker and reaching 32 species on your count!\n\nSuet is an excellent choice to attract woodpeckers, and it's likely to draw in other species beyond just Northern Flickers. Here are some woodpecker species that might visit your suet feeder:\n\n1. **Downy Woodpeckers**: These are one of the most common woodpeckers in North America, and they love suet. They're small, black-and-white birds with a distinctive downy tuft on their heads.\n2. **Hairy Woodpeckers**: Similar to Downy Woodpeckers but larger, Hairy Woodpeckers are also frequent visitors to suet feeders.\n3. **Red-bellied Woodpeckers**: These woodpeckers have a distinctive red cap and are known for their loud, rolling calls. They're common in many parks and woodlands.\n4. **Pileated Woodpeckers**: While less common, Pileated Woodpeckers might visit your suet feeder, especially if you're in an area with mature trees. They're the largest woodpeckers in North America, with a distinctive red crest and loud drumming.\n\nKeep in mind that the types of woodpeckers you'll attract will depend on the specific species found in your region and the time of year. It's always exciting to see which species will visit your feeder!\n\nRemember to place the suet feeder in a spot that's easy for the woodpeckers to access, such as a tree trunk or a branch. You can also try adding some peanut butter or jelly to the suet to make it even more appealing.\n\nEnjoy your picnic and happy birding!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "fb5dd87f_7",
+      "turnIndex": 0,
+      "date": "2023/04/29 (Sat) 15:06",
+      "role": "user",
+      "text": "I'm planning a birding trip to a nearby sanctuary and I was wondering if you could help me with some information on the best time of year to visit and what species I might see there. By the way, I've been getting some great use out of my new spotting scope, which has been a game-changer for me - I've been using it to observe the nesting habits of a pair of American Robins in my backyard.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "fb5dd87f_7",
+      "turnIndex": 6,
+      "date": "2023/04/29 (Sat) 15:06",
+      "role": "user",
+      "text": "I'd like to know more about the guided tours they offer during the spring migration period. Are they led by experienced birders or ornithologists, and do they focus on specific species or habitats?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "fb5dd87f_7",
+      "turnIndex": 8,
+      "date": "2023/04/29 (Sat) 15:06",
+      "role": "user",
+      "text": "I'd like to know more about the guides leading these tours. Are they volunteers, staff members, or contractors, and what kind of experience and training do they have? Also, are there any opportunities for participants to ask questions or interact with the guides during the tour?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "fb5dd87f_7",
+      "turnIndex": 10,
+      "date": "2023/04/29 (Sat) 15:06",
+      "role": "user",
+      "text": "I'm also curious about the logistics of the guided tours. Are there any specific rules or guidelines that participants need to follow, such as staying on designated trails or not approaching birds too closely? And what kind of equipment is provided, if any, such as binoculars or spotting scopes? By the way, speaking of spotting scopes, I've been getting some great use out of my new one, which has been a game-changer for me - I've been using it to observe the nesting habits of a pair of American Robins in my backyard.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_90de9b4d_1",
+      "turnIndex": 0,
+      "date": "2023/05/24 (Wed) 01:31",
+      "role": "user",
+      "text": "I've been trying to improve my bird photography skills, can you give me some tips on how to take better close-up shots of birds, especially ones that are skittish like the Northern Flicker?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_90de9b4d_1",
+      "turnIndex": 2,
+      "date": "2023/05/24 (Wed) 01:31",
+      "role": "user",
+      "text": "I've been trying to improve my bird identification skills too, can you give me some tips on identifying warblers and sparrows, they seem really tricky to tell apart?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_90de9b4d_1",
+      "turnIndex": 6,
+      "date": "2023/05/24 (Wed) 01:31",
+      "role": "user",
+      "text": "That's a great idea about sharing my findings with others! I've actually been using the eBird app to track my sightings and submit my data. It's been really helpful in keeping my records organized and seeing what other birders have spotted in the area.\n\nSpeaking of which, I've been wanting to explore more birding spots in my area. Do you have any recommendations for nearby nature reserves or parks that are known for their bird diversity? I'd love to venture out and see what other species I can spot!",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_90de9b4d_1",
+      "turnIndex": 8,
+      "date": "2023/05/24 (Wed) 01:31",
+      "role": "user",
+      "text": "I'm planning a trip to a nearby lake next weekend and I'm hoping to spot some waterbirds. Do you think I should bring my spotting scope or would my binoculars be enough?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_90de9b4d_1",
+      "turnIndex": 10,
+      "date": "2023/05/24 (Wed) 01:31",
+      "role": "user",
+      "text": "I think I'll bring both my binoculars and spotting scope, just in case. I've heard that the lake is a great spot for spotting Ospreys and Bald Eagles, and I'd love to get a closer look at them. Do you have any tips on how to increase my chances of spotting these birds?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_90de9b4d_2",
+      "turnIndex": 0,
+      "date": "2023/05/29 (Mon) 17:18",
+      "role": "user",
+      "text": "I'm planning a picnic in my local park this weekend and I'm wondering if you can suggest some bird-friendly food that I can bring to attract some of the birds I've been seeing lately.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_90de9b4d_2",
+      "turnIndex": 4,
+      "date": "2023/05/29 (Mon) 17:18",
+      "role": "user",
+      "text": "I'm also planning to bring some water and a birdbath to attract more birds. Do you think the birds will prefer running water or stagnant water?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_90de9b4d_2",
+      "turnIndex": 6,
+      "date": "2023/05/29 (Mon) 17:18",
+      "role": "user",
+      "text": "I'm also thinking of bringing some fresh fruits like apples and oranges to attract some birds. Do you think the birds will prefer them sliced or whole?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_90de9b4d_2",
+      "turnIndex": 8,
+      "date": "2023/05/29 (Mon) 17:18",
+      "role": "user",
+      "text": "I'm thinking of bringing some peanut butter to attract birds like woodpeckers and nuthatches. Do you think I should bring creamy or crunchy peanut butter?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_90de9b4d_2",
+      "turnIndex": 10,
+      "date": "2023/05/29 (Mon) 17:18",
+      "role": "user",
+      "text": "I'm also planning to bring my binoculars to get a closer look at the birds. Do you think I'll be able to spot any warblers or sparrows with them?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 14849,
+  "estimatedTokens": 3713
+}

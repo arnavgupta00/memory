@@ -1,0 +1,46 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Use only the previously recommended hostel name near the Red Light District from the prior recommendation context.",
+  "candidateStatus": "found",
+  "missingRisk": "If the user meant a different hostel than the one explicitly stated as near the Red Light District in the prior session, the selected turn may not match the intended name.; frozen bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "answer_ultrachat_370515",
+      "turnIndex": 0,
+      "date": "2023/05/27 (Sat) 06:49",
+      "role": "user",
+      "text": "Can you suggest a budget-friendly hostel in Amsterdam?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ultrachat_370515",
+      "turnIndex": 1,
+      "date": "2023/05/27 (Sat) 06:49",
+      "role": "assistant",
+      "text": "Yes, there are several budget-friendly hostels in Amsterdam. Some options include:\n\n1. Stayokay Amsterdam Vondelpark: Located in the heart of Amsterdam, next to the famous Vondelpark, this hostel offers dormitory-style rooms and private rooms at an affordable price.\n\n2. ClinkNOORD Hostel: Situated in a former laboratory in Amsterdam Noord, this hostel offers a unique and budget-friendly accommodation option. The hostel has a bar, a restaurant, and bike rental services.\n\n3. The Bulldog Hostel Amsterdam: This hostel is located in the city center and offers shared dorms and private rooms at a reasonable price. The hostel has a bar and a smoking lounge.\n\n4. International Budget Hostel: This hostel is situated near the famous Red Light District and offers affordable dormitory-style rooms and private rooms. The hostel has a fully equipped kitchen and a lounge area.\n\n5. Amsterdam Hostel Centre: Located in the heart of Amsterdam, this hostel offers budget-friendly dormitory-style rooms and private rooms. The hostel has a communal kitchen, a bar, and a lounge area.",
+      "why": "This assistant message lists hostel options and explicitly includes 'International Budget Hostel' described as situated near the famous Red Light District—the likely 'recommended last time' hostel name the user asks to recall.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ultrachat_370515",
+      "turnIndex": 2,
+      "date": "2023/05/27 (Sat) 06:49",
+      "role": "user",
+      "text": "Wow, these are all great options! Do you have any personal recommendations or favorites among these hostels?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ultrachat_370515",
+      "turnIndex": 4,
+      "date": "2023/05/27 (Sat) 06:49",
+      "role": "user",
+      "text": "Can you also suggest some fun things to do in Amsterdam?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 1290,
+  "estimatedTokens": 323
+}

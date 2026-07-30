@@ -1,0 +1,82 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "9beab022_1",
+      "turnIndex": 5,
+      "date": "2023/05/21 (Sun) 03:59",
+      "role": "assistant",
+      "text": "Tres leches cake is a crowd-pleaser, and it's a great way to end a delicious Mexican-inspired meal.\n\nNow, about making homemade tortillas from scratch... I'd be happy to help! Making tortillas from scratch can be a bit tricky, but with some practice, you'll get the hang of it. Here are some tips to help you make delicious homemade tortillas:\n\n**Tips for making homemade tortillas:**\n\n1. **Use the right type of flour**: Look for \"masa harina\" or \"tortilla flour\" at your local grocery store. This type of flour is made from corn that's been treated with limewater, which gives tortillas their distinct flavor and texture.\n2. **Use warm water**: Warm water helps to soften the dough and makes it easier to work with.\n3. **Mix the dough just right**: Mix the dough until it comes together in a ball, but don't overmix. You want the dough to be slightly sticky, but not too sticky.\n4. **Knead the dough**: Knead the dough for about 5-10 minutes until it becomes smooth and pliable.\n5. **Let the dough rest**: Let the dough rest for at least 30 minutes to allow the gluten to relax. This will make it easier to roll out the tortillas.\n6. **Use a cast-iron skillet or comal**: A cast-iron skillet or comal is ideal for cooking tortillas because they retain heat well and can cook the tortillas evenly.\n7. **Roll out the dough thinly**: Roll out the dough to about 1/8 inch (3 mm) thickness. This will help the tortillas cook evenly and prevent them from becoming too dense.\n8. **Cook the tortillas at the right temperature**: Cook the tortillas over medium-high heat (about 400°F/200°C) for about 30-45 seconds on each side. You'll know they're done when they're lightly browned and slightly puffed.\n9. **Don't overwork the dough**: Don't overwork the dough when rolling out the tortillas. This can cause them to become tough and dense.\n10. **Practice makes perfect**: Making tortillas takes practice, so don't be discouraged if your first few attempts don't turn out perfectly. Keep practicing, and you'll get the hang of it!\n\nHere's a simple recipe to get you started:\n\n**Homemade Tortilla Recipe:**\n\nIngredients:\n\n* 2 cups masa harina\n* 1/2 cup warm water\n* 1/4 teaspoon salt\n\nInstructions:\n\n1. In a large mixing bowl, combine the masa harina and salt.\n2. Gradually add the warm water to the bowl, mixing until the dough comes together in a ball.\n3. Knead the dough for 5-10 minutes until it becomes smooth and pliable.\n4. Let the dough rest for 30 minutes.\n5. Divide the dough into 8-10 equal pieces.\n6. Roll out each piece into a thin circle, about 1/8 inch (3 mm) thick.\n7. Cook the tortillas in a cast-iron skillet or comal over medium-high heat for 30-45 seconds on each side.\n\nI hope these tips and the recipe help you make delicious homemade tortillas!",
+      "why": "empty-extractor deterministic fallback",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "sharegpt_u5bsykF_69",
+      "turnIndex": 4,
+      "date": "2023/05/22 (Mon) 01:43",
+      "role": "assistant",
+      "text": "Sure, here's a simple story for A2 level:\n\nOnce upon a time, there was a girl named Lily. Lily loved to play outside and explore her neighborhood. One day, she found a beautiful flower in her backyard. She picked it up and smelled it. It smelled so good!\n\nLily wanted to share the flower with her friends, so she went to find them. She walked down the street and saw her friends playing in the park. She ran over to them, holding the flower up high.\n\n\"Look what I found!\" she said, showing them the flower.\n\nHer friends gasped. \"That's so pretty!\" they said.\n\nLily smiled and gave each of her friends a turn to smell the flower. They all agreed that it was the best smelling flower they had ever smelled.\n\nFrom that day on, Lily and her friends would always go on adventures together, exploring their neighborhood and finding new things to discover. And they would always remember the day Lily found the beautiful flower in her backyard.",
+      "why": "empty-extractor deterministic fallback",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ultrachat_39395",
+      "turnIndex": 5,
+      "date": "2023/05/25 (Thu) 11:38",
+      "role": "assistant",
+      "text": "Sure, there are several excellent language learning apps that can be useful for learners, depending on their preferences and learning goals. Here are some popular ones:\n\n1. Duolingo - It is one of the most popular language learning apps with gamified exercises to learn new words, phrases, and grammar. 2. Rosetta Stone - Rosetta Stone offers immersive language lessons with speech recognition software to practice speaking. 3. Babbel - Babbel provides personalized language lessons in bite-sized chunks and offers real-world conversations. 4. Memrise - Memrise uses mnemonics to help learners memorize words, phrases, and grammatical concepts. 5. Lingodeer - Lingodeer is a language learning app that provides courses with interactive games, videos, and quizzes to help learners progress in their language skills. I hope that helps!",
+      "why": "per-session extractor: Directly matches the user’s request for the language learning app that uses mnemonics to memorize words and phrases.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "9beab022_1",
+      "turnIndex": 4,
+      "date": "2023/05/21 (Sun) 03:59",
+      "role": "user",
+      "text": "I think I'll go with the tres leches cake. I've heard great things about it. By the way, do you have any tips on how to make homemade tortillas from scratch? I learned how to make them in my cooking class, but I want to practice making them at home.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "9beab022_1",
+      "turnIndex": 6,
+      "date": "2023/05/21 (Sun) 03:59",
+      "role": "user",
+      "text": "I appreciate the tips and the recipe. I'll definitely practice making tortillas at home. By the way, have you got any recommendations for a cooking app that can help me find recipes based on ingredients I have at home? I've been meaning to try out Yummi, but I'm not sure if it's the best option out there.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_u5bsykF_69",
+      "turnIndex": 3,
+      "date": "2023/05/22 (Mon) 01:43",
+      "role": "user",
+      "text": "Can you write a simple story in English for A2 level?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_u5bsykF_69",
+      "turnIndex": 5,
+      "date": "2023/05/22 (Mon) 01:43",
+      "role": "user",
+      "text": "Can you create a table of difficult words from this story and translate them to English?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ultrachat_39395",
+      "turnIndex": 4,
+      "date": "2023/05/25 (Thu) 11:38",
+      "role": "user",
+      "text": "Yeah, consistency is key. I've also found that using language learning apps and practicing with my Japanese co-workers has really helped my progress. Do you have any recommendations for language apps?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 5425,
+  "estimatedTokens": 1357
+}

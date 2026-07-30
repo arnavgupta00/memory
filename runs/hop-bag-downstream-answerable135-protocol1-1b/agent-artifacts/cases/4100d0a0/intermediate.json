@@ -1,0 +1,63 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify which ethnicity the user has stated in the available sessions, including any conflicting/alternative descriptions.",
+    "candidateStatus": "found",
+    "missingRisk": "Ethnicity may be ambiguous because one session describes the user as Asian American, while another describes them as having mixed Irish and Italian ethnicity; the question may intend one of these contexts (passport/cultural heritage vs. professional intro).",
+    "items": [
+      {
+        "sessionId": "answer_83c13ff9",
+        "turnIndex": 2,
+        "why": "Contains the explicit statement that the user has mixed ethnicity (Irish and Italian)."
+      },
+      {
+        "sessionId": "answer_83c13ff9",
+        "turnIndex": 3,
+        "why": "Assistant echoes/frames the user’s mixed Irish and Italian ethnicity and its influence on upbringing—useful nearby context for downstream interpretation."
+      },
+      {
+        "sessionId": "9b1d5656_2",
+        "turnIndex": 0,
+        "why": "Earlier session states the user is an 'Asian American male,' which is another ethnicity-related descriptor that may conflict with or supersede the Irish/Italian claim."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify which ethnicity the user has stated in the available sessions, including any conflicting/alternative descriptions.",
+    "candidateStatus": "found",
+    "missingRisk": "Ethnicity may be ambiguous because one session describes the user as Asian American, while another describes them as having mixed Irish and Italian ethnicity; the question may intend one of these contexts (passport/cultural heritage vs. professional intro).; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_83c13ff9",
+        "turnIndex": 2,
+        "why": "Contains the explicit statement that the user has mixed ethnicity (Irish and Italian)."
+      },
+      {
+        "sessionId": "answer_83c13ff9",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_83c13ff9",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_83c13ff9",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "9b1d5656_2",
+        "turnIndex": 0,
+        "why": "Earlier session states the user is an 'Asian American male,' which is another ethnicity-related descriptor that may conflict with or supersede the Irish/Italian claim."
+      },
+      {
+        "sessionId": "9b1d5656_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Largemouth bass caught with Alex on Lake Michigan trips earlier than 7/22 (i.e., any dated trips before 7/22).",
+  "candidateStatus": "found",
+  "missingRisk": "Could be additional earlier (pre-7/22) Alex Lake Michigan trips not mentioned in the provided memory.",
+  "items": [
+    {
+      "sessionId": "answer_67be2c38_1",
+      "turnIndex": 2,
+      "why": "User states: caught 7 largemouth bass with Alex on 7/10 on a Lake Michigan trip (which is before 7/22)."
+    },
+    {
+      "sessionId": "answer_67be2c38_2",
+      "turnIndex": 2,
+      "why": "User mentions a Lake Michigan trip on 7/22 with Alex: caught 9 largemouth bass; included to confirm the cutoff/reference trip relative to “before the 7/22 trip.”"
+    }
+  ]
+}

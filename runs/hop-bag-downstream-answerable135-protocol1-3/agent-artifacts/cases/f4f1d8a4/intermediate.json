@@ -1,0 +1,42 @@
+[
+  {
+    "session_id": "eb682e52_2",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session discusses portrait photography and candid shots at a cousin’s birthday party, but it contains no mention of receiving a stand mixer or identifying who gave such a birthday gift. If the answer is present elsewhere, this session is unlikely to contribute.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "3aac691d_2",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains discussion about gift ideas for a neighbor moving into a new place, including a welcome basket and a Bed Bath & Beyond gift card. It does not mention a new stand mixer or any birthday gift from a specific person.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_f5b33470",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Medium: This session includes the stand mixer being received as a birthday gift from the sister, but it does not include the sister’s name or whether the gift was for a specific birthday date/year beyond “last month.”",
+      "claims": [
+        {
+          "turnIndex": 4,
+          "fact": "I actually got my new stand mixer as a birthday gift from my sister last month.",
+          "why": "Directly answers who gave the new stand mixer (my sister) and ties it to the birthday-gift context."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "I've been using a recipe that involves melting sugar and butter together, then slowly adding heavy cream to create a smooth caramel sauce.",
+          "why": "Additional context about how the stand mixer is being used; may be relevant if the question expects more than just the giver."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "I usually use the whisk attachment when making caramel, I find it helps to incorporate the cream more evenly.",
+          "why": "Further usage detail about the stand mixer attachments for making caramel."
+        }
+      ]
+    }
+  }
+]

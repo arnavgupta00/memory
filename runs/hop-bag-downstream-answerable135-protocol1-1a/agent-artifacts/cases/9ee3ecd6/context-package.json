@@ -1,0 +1,118 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Your Sephora Beauty Insider points needed to redeem a free skincare product/reward",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_66c23110_1",
+      "turnIndex": 0,
+      "date": "2023/05/21 (Sun) 12:19",
+      "role": "user",
+      "text": "I'm looking for some advice on skincare products. I recently bought an eyeshadow palette at Sephora and earned 50 points, bringing my total to 200 points so far in their loyalty program. Can you recommend some popular skincare products that would complement my eyeshadow purchases?",
+      "why": "User earlier mentions having earned 50 points and currently having 200 points total in the Sephora loyalty program (context for their points situation).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_66c23110_2",
+      "turnIndex": 5,
+      "date": "2023/05/29 (Mon) 08:31",
+      "role": "assistant",
+      "text": "The La Roche-Posay Toleriane Ultra Fluid Face Moisturizer SPF 50 is a fantastic product for combination skin.\n\nAnd yes, you can earn points for purchasing it at Sephora! As a Beauty Insider, you'll earn 1 point for every dollar you spend at Sephora, and you can redeem those points for rewards like free products, services, and more.\n\nSince you're close to reaching 300 points, purchasing the La Roche-Posay moisturizer (priced at around $30) will bring you even closer to redeeming your free skincare product!\n\nJust make sure to sign in to your Beauty Insider account online or through the Sephora app when you make your purchase, and your points will be automatically added to your account.\n\nHappy shopping, and enjoy your new moisturizer!",
+      "why": "Assistant reinforces the user’s proximity to redeeming, referencing being close to 300 points.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_66c23110_2",
+      "turnIndex": 6,
+      "date": "2023/05/29 (Mon) 08:31",
+      "role": "user",
+      "text": "Do you know if Sephora has any current promotions or discounts on the La Roche-Posay moisturizer or any other products I might want to purchase with it? By the way, I'm really close to redeeming a free skincare product from Sephora, I just need a total of 300 points and I'm all set!",
+      "why": "User states they are close to redeeming a free skincare product and that they “just need a total of 300 points.”",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_66c23110_1",
+      "turnIndex": 2,
+      "date": "2023/05/21 (Sun) 12:19",
+      "role": "user",
+      "text": "I'm interested in the Laneige Water Bank Moisturizing Cream. Can you tell me more about its ingredients and how it compares to other moisturizers in the same price range?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_66c23110_1",
+      "turnIndex": 4,
+      "date": "2023/05/21 (Sun) 12:19",
+      "role": "user",
+      "text": "Can you tell me if Laneige has any other products that can help with anti-aging, like fine lines and wrinkles? I'm interested in exploring more of their skincare range.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_66c23110_1",
+      "turnIndex": 6,
+      "date": "2023/05/21 (Sun) 12:19",
+      "role": "user",
+      "text": "I'm interested in the Laneige Time Freeze Essence. Can you tell me more about how it works and how to incorporate it into my skincare routine?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_66c23110_1",
+      "turnIndex": 8,
+      "date": "2023/05/21 (Sun) 12:19",
+      "role": "user",
+      "text": "I'm interested in trying out the Laneige Time Freeze Essence, but I want to make sure I'm using it correctly. Can you tell me more about how to layer it with other products and what kind of results I can expect to see?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_66c23110_1",
+      "turnIndex": 10,
+      "date": "2023/05/21 (Sun) 12:19",
+      "role": "user",
+      "text": "I'm considering purchasing the Laneige Time Freeze Essence. Can you tell me more about the packaging and how long the product lasts?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_66c23110_2",
+      "turnIndex": 0,
+      "date": "2023/05/29 (Mon) 08:31",
+      "role": "user",
+      "text": "I'm planning to buy a new moisturizer from Sephora soon, and I was wondering if you could help me find a good one for my skin type.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_66c23110_2",
+      "turnIndex": 2,
+      "date": "2023/05/29 (Mon) 08:31",
+      "role": "user",
+      "text": "I have combination skin, and my main concern is dehydration. I'd prefer a lightweight, non-greasy moisturizer with SPF.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_66c23110_2",
+      "turnIndex": 4,
+      "date": "2023/05/29 (Mon) 08:31",
+      "role": "user",
+      "text": "I think I'll go with the La Roche-Posay one. Do you think I can earn points for purchasing it at Sephora?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_66c23110_2",
+      "turnIndex": 8,
+      "date": "2023/05/29 (Mon) 08:31",
+      "role": "user",
+      "text": "Do you know if there are any bundle deals or sets available for the La Roche-Posay Toleriane Ultra Fluid Face Moisturizer SPF 50, maybe with a cleanser or toner?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 2651,
+  "estimatedTokens": 663
+}

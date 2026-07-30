@@ -1,0 +1,103 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Compute elapsed months from the consecutive-day charity event participation dates found in the candidate sessions (use the relevant 2023/02/14 and 2023/02/15 event dates; resolve which 2/15 event forms the consecutive pair).",
+    "candidateStatus": "found",
+    "missingRisk": "Multiple 2023/02/15 charity events appear in the catalog (e.g., 'Ride to Cure Cancer' and 'Books for Kids'); the question may refer to only one of them, so downstream may need to disambiguate which 2/15 event pairs with the 2023/02/14 event.",
+    "items": [
+      {
+        "sessionId": "answer_4bfcc250_3",
+        "turnIndex": 0,
+        "why": "Contains the 2023/02/14 charity event participation details ('24-Hour Bike Ride' charity event). Needed for the consecutive-day pair."
+      },
+      {
+        "sessionId": "f598d30f_1",
+        "turnIndex": 0,
+        "why": "Contains 2023/02/15 charity event participation ('Ride to Cure Cancer' charity bike ride). Candidate for the consecutive-day event ending on 02/15."
+      },
+      {
+        "sessionId": "answer_4bfcc250_2",
+        "turnIndex": 0,
+        "why": "Contains another 2023/02/15 charity event participation ('Books for Kids' charity book drive). Included because the consecutive-day pair could reference this 02/15 event instead of 'Ride to Cure Cancer'."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Compute elapsed months from the consecutive-day charity event participation dates found in the candidate sessions (use the relevant 2023/02/14 and 2023/02/15 event dates; resolve which 2/15 event forms the consecutive pair).",
+    "candidateStatus": "found",
+    "missingRisk": "Multiple 2023/02/15 charity events appear in the catalog (e.g., 'Ride to Cure Cancer' and 'Books for Kids'); the question may refer to only one of them, so downstream may need to disambiguate which 2/15 event pairs with the 2023/02/14 event.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_4bfcc250_3",
+        "turnIndex": 0,
+        "why": "Contains the 2023/02/14 charity event participation details ('24-Hour Bike Ride' charity event). Needed for the consecutive-day pair."
+      },
+      {
+        "sessionId": "answer_4bfcc250_3",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "f598d30f_1",
+        "turnIndex": 0,
+        "why": "Contains 2023/02/15 charity event participation ('Ride to Cure Cancer' charity bike ride). Candidate for the consecutive-day event ending on 02/15."
+      },
+      {
+        "sessionId": "f598d30f_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_4bfcc250_2",
+        "turnIndex": 0,
+        "why": "Contains another 2023/02/15 charity event participation ('Books for Kids' charity book drive). Included because the consecutive-day pair could reference this 02/15 event instead of 'Ride to Cure Cancer'."
+      },
+      {
+        "sessionId": "answer_4bfcc250_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_4bfcc250_4",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_4bfcc250_4",
+        "turnIndex": 1,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_4bfcc250_4",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_4bfcc250_2",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_4bfcc250_2",
+        "turnIndex": 11,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_4bfcc250_1",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_4bfcc250_1",
+        "turnIndex": 5,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_4bfcc250_1",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

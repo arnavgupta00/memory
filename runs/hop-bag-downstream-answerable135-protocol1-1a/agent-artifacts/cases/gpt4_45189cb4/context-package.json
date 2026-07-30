@@ -1,0 +1,154 @@
+{
+  "queryShape": "order",
+  "setBoundary": "Sports events (games/matches) the user watched during January 2023",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_e6c20e52_3",
+      "turnIndex": 4,
+      "date": "2023/01/05 (Thu) 16:31",
+      "role": "user",
+      "text": "I like the idea of a sports-themed scavenger hunt, and the example clues and challenges you provided are great. I'm thinking of having the scavenger hunt take place around the Staples Center in LA, since I just went to a NBA game there with my coworkers today and it was a lot of fun. We watched the Lakers take on the Chicago Bulls and had a blast. Do you think that would be a good location for the scavenger hunt, and do you have any suggestions for clues or challenges that would be specific to that area?",
+      "why": "User describes attending an NBA game at Staples Center where the Lakers played the Chicago Bulls; provides the specific matchup the user watched in early January (session dated Jan 5; user says “today”).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e6c20e52_2",
+      "turnIndex": 2,
+      "date": "2023/01/15 (Sun) 00:46",
+      "role": "user",
+      "text": "I'll check out The Witcher and The Mandalorian. Both sound interesting. By the way, I'm still riding high from the College Football National Championship game I watched with my family at home yesterday, where Georgia took down Alabama 33-18. My dad and I were really impressed by Stetson Bennett's performance. He had a great game.",
+      "why": "User watches the College Football National Championship game with family (Georgia vs Alabama, 33-18) around this session’s Jan 15 date (described as “yesterday”).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e6c20e52_1",
+      "turnIndex": 0,
+      "date": "2023/01/22 (Sun) 12:52",
+      "role": "user",
+      "text": "I'm thinking of ordering some food for the next game, do you have any recommendations for good wing spots that deliver? By the way, I'm still on a high from watching the Kansas City Chiefs defeat the Buffalo Bills in the Divisional Round of the NFL playoffs last weekend at my friend Mike's place.",
+      "why": "User mentions the Kansas City Chiefs defeat the Buffalo Bills in the Divisional Round last weekend at Mike’s place (described in the context of an LA wings order on Jan 22).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e6c20e52_3",
+      "turnIndex": 0,
+      "date": "2023/01/05 (Thu) 16:31",
+      "role": "user",
+      "text": "I'm thinking of planning a team-building event for my office and I was considering organizing a sports-themed outing. Do you think you could help me with some ideas?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e6c20e52_3",
+      "turnIndex": 2,
+      "date": "2023/01/05 (Thu) 16:31",
+      "role": "user",
+      "text": "I really like the idea of a scavenger hunt, it sounds like a lot of fun. Can you give me more details on how to organize it and what kind of clues and challenges I could include?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e6c20e52_3",
+      "turnIndex": 6,
+      "date": "2023/01/05 (Thu) 16:31",
+      "role": "user",
+      "text": "I like the idea of incorporating LA Lakers trivia and challenges around the LA Live complex. I'm thinking of including a photo challenge where teams have to take a picture with a Lakers-themed mural or graffiti in the area. Do you think that would be a good idea, and are there any specific locations around the Staples Center where I could find these murals or graffiti?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e6c20e52_3",
+      "turnIndex": 8,
+      "date": "2023/01/05 (Thu) 16:31",
+      "role": "user",
+      "text": "I think I've got a good idea for another challenge. How about a trivia question that requires teams to find a specific statue or monument in the LA Live complex? For example, \"Find the statue of which Lakers legend outside the Staples Center and take a photo of your team making a slam dunk pose next to it.\" This would require teams to know their Lakers history and also get them moving around the complex to find the statue. What do you think?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e6c20e52_3",
+      "turnIndex": 10,
+      "date": "2023/01/05 (Thu) 16:31",
+      "role": "user",
+      "text": "I think I've got another idea for a challenge. How about a challenge that requires teams to find a specific sports-themed store or restaurant in the LA Live complex and complete a task or question related to that location? For example, \"Find the NBA Store on the upper level of LA Live and take a photo of your team holding up a Lakers jersey with a specific player's name on it.\" This would require teams to navigate the complex, find the store, and complete a task that shows their knowledge of the Lakers or NBA. What do you think?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e6c20e52_2",
+      "turnIndex": 0,
+      "date": "2023/01/15 (Sun) 00:46",
+      "role": "user",
+      "text": "I'm looking for some recommendations on new TV shows to watch. I just finished binge-watching a series and I'm looking for something new.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e6c20e52_2",
+      "turnIndex": 4,
+      "date": "2023/01/15 (Sun) 00:46",
+      "role": "user",
+      "text": "I haven't played the video games or read the books, so I'll be going into the series without prior knowledge. Thanks for the heads up on what to expect!",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e6c20e52_2",
+      "turnIndex": 6,
+      "date": "2023/01/15 (Sun) 00:46",
+      "role": "user",
+      "text": "I'm also thinking of planning a fantasy football draft with my friends. Do you have any advice on how to prepare for it?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e6c20e52_1",
+      "turnIndex": 2,
+      "date": "2023/01/22 (Sun) 12:52",
+      "role": "user",
+      "text": "I'm in LA, and I'm a big fan of buffalo wings. We had a bunch of them at Mike's place while watching the Chiefs game, and now I'm craving more. There were about 5 of us, so I'm looking for a place that can handle a decent-sized order.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e6c20e52_1",
+      "turnIndex": 4,
+      "date": "2023/01/22 (Sun) 12:52",
+      "role": "user",
+      "text": "I think I'll go with Buffalo Wild Wings. I've been there before and their wings are always a hit. Do you know if they have any deals or promotions going on right now?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e6c20e52_1",
+      "turnIndex": 6,
+      "date": "2023/01/22 (Sun) 12:52",
+      "role": "user",
+      "text": "I'm planning to order online and pick it up, so I won't have to wait for delivery. Do they have an online ordering system that allows me to customize my order and pay ahead of time?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e6c20e52_1",
+      "turnIndex": 8,
+      "date": "2023/01/22 (Sun) 12:52",
+      "role": "user",
+      "text": "I'm also thinking of having some pizza with my wings, do they have any pizza deals or combos that I can add to my order?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e6c20e52_1",
+      "turnIndex": 10,
+      "date": "2023/01/22 (Sun) 12:52",
+      "role": "user",
+      "text": "I think I'll go with the Pizza and Wings Combo, and I'll choose the medium \"Blazin' BBQ\" pizza to go along with my buffalo wings. Can I also add an order of their potato wedges to my combo?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 4129,
+  "estimatedTokens": 1033
+}

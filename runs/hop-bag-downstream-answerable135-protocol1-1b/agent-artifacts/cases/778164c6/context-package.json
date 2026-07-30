@@ -1,0 +1,91 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Use only the specific earlier conversation turns that mention the recommended Jamaican snapper dish and any fruit-in-it dish candidates (including the mango salsa and the fruit-based Jamaican ackee dish) so the downstream answerer can identify which dish matches the user’s memory.",
+  "candidateStatus": "found",
+  "missingRisk": "The catalog may not contain a Jamaican snapper dish with fruit explicitly described as such; the fruit-related items nearby are (a) Escovitch Fish (Jamaican snapper, pickled vegetables—not fruit) and (b) Grilled Snapper with Mango Salsa (fruit, but not stated as Jamaican) and (c) Ackee and Saltfish (fruit, but not snapper). The answerer may need to reconcile this mismatch using the preserved turns.; frozen bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "answer_ultrachat_399000",
+      "turnIndex": 2,
+      "date": "2023/05/30 (Tue) 15:28",
+      "role": "user",
+      "text": "Oh, I love snapper! What are some popular Caribbean dishes that feature snapper?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ultrachat_399000",
+      "turnIndex": 3,
+      "date": "2023/05/30 (Tue) 15:28",
+      "role": "assistant",
+      "text": "There are many popular Caribbean dishes that feature snapper, some of which include:\n\n1. Escovitch Fish - a Jamaican dish where fried snapper is topped with a spicy pickled vegetable sauce.\n2. Fish Curry - a Trinidadian dish that features snapper cooked in a curry sauce with vegetables and aromatics.\n3. Conch & Snapper Stew - a dish from the Bahamas that combines conch and snapper in a tomato-based stew with peppers and onions.\n4. Grilled Snapper with Mango Salsa - a popular dish in many Caribbean countries where grilled snapper is topped with a fruity and spicy salsa.\n5. Fish and Fungi - a dish from the Virgin Islands where snapper is served with a polenta-like dish made from cornmeal.\n\nThese dishes are just a few of the many delicious ways snapper can be cooked and enjoyed in Caribbean cuisine.",
+      "why": "Contains the snapper dish list, including 'Escovitch Fish' (Jamaican fried snapper with spicy pickled vegetable sauce) and 'Grilled Snapper with Mango Salsa' (explicitly 'fruity' mango salsa).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ultrachat_399000",
+      "turnIndex": 4,
+      "date": "2023/05/30 (Tue) 15:28",
+      "role": "user",
+      "text": "Wow, all of those dishes sound amazing! Which one do you recommend I try first?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ultrachat_399000",
+      "turnIndex": 5,
+      "date": "2023/05/30 (Tue) 15:28",
+      "role": "assistant",
+      "text": "I don't have any personal preferences. however, escovitch fish is a classic and popular jamaican dish that many people love, so it might be a good one to try first. it's a combination of crispy fried snapper topped with a spicy and tangy pickled vegetable sauce, usually made with carrots, onion, bell peppers, and vinegar. the flavors are bold and vibrant, and it's a great way to experience the spicy and acidic flavors that are typical of caribbean cuisine.",
+      "why": "Assistant’s direct recommendation: 'Escovitch Fish' as the first to try, with description of crispy fried snapper and spicy/tangy pickled vegetable sauce.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ultrachat_399000",
+      "turnIndex": 6,
+      "date": "2023/05/30 (Tue) 15:28",
+      "role": "user",
+      "text": "That sounds perfect, I'll give Escovitch Fish a try! Can you recommend a place to find it in my area?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ultrachat_399000",
+      "turnIndex": 10,
+      "date": "2023/05/30 (Tue) 15:28",
+      "role": "user",
+      "text": "I've actually tried Jerk Chicken before and loved it! Are there any other Jamaican dishes that I should try?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ultrachat_399000",
+      "turnIndex": 11,
+      "date": "2023/05/30 (Tue) 15:28",
+      "role": "assistant",
+      "text": "Yes, there are many other Jamaican dishes that are worth trying. Here are a few more:\n\n1. Ackee and Saltfish - Jamaica's national dish, made with the fruit of the ackee tree and salted codfish.\n\n2. Curry Goat - a flavorful curry made with tender goat meat and Jamaican curry spices.\n\n3. Festival and Fried Fish - festival is a popular Jamaican festival, similar to a fried cornbread or dumpling, that is often eaten with fried fish.\n\n4. Brown Stew Chicken - chicken is marinated in a sweet and savory sauce, then cooked with vegetables such as onion, garlic, and bell peppers.\n\n5. Oxtail Stew - oxtail is slow-cooked in a rich and savory stew with vegetables and beans.\n\nAll of these dishes are hearty, flavorful, and unique to Jamaican cuisine.",
+      "why": "Includes 'Ackee and Saltfish' (fruit-based Jamaican dish using ackee fruit), which may be the source of the 'fruit' memory even though it is not explicitly snapper.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ultrachat_399000",
+      "turnIndex": 0,
+      "date": "2023/05/30 (Tue) 15:28",
+      "role": "user",
+      "text": "What type of fish is commonly used in Caribbean dishes?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ultrachat_399000",
+      "turnIndex": 8,
+      "date": "2023/05/30 (Tue) 15:28",
+      "role": "user",
+      "text": "I will definitely give Escovitch Fish a try and check out some Jamaican restaurants in my area. Do you have any other favorite dishes from Caribbean cuisine?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 2592,
+  "estimatedTokens": 648
+}

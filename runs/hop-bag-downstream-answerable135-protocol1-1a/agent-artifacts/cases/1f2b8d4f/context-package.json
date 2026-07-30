@@ -1,0 +1,118 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Prices of the user's luxury boots vs a similar pair at a budget store",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_d8454588_1",
+      "turnIndex": 0,
+      "date": "2023/05/22 (Mon) 09:32",
+      "role": "user",
+      "text": "I'm looking for some budget-friendly fashion advice. I've been trying to cut back on luxury shopping, but I still want to look great. Do you have any tips on finding stylish pieces that won't break the bank? By the way, I recently splurged on a pair of boots for $800, but it was a tough lesson in overspending.",
+      "why": "States the user splurged on a pair of luxury boots for $800.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_d8454588_2",
+      "turnIndex": 2,
+      "date": "2023/05/22 (Mon) 10:36",
+      "role": "user",
+      "text": "I've actually found that similar boots can be found at a budget store for $50, which really made me think about my spending habits. Do you have any tips on how to avoid impulse purchases and stay on track with budgeting?",
+      "why": "Mentions finding a similar pair of boots at a budget store for $50.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_d8454588_1",
+      "turnIndex": 2,
+      "date": "2023/05/22 (Mon) 09:32",
+      "role": "user",
+      "text": "I love those tips! I never thought about renting clothes for special occasions. Can you recommend some good clothing rental services or websites?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_d8454588_1",
+      "turnIndex": 4,
+      "date": "2023/05/22 (Mon) 09:32",
+      "role": "user",
+      "text": "Can you also recommend some popular budget-friendly fashion bloggers or influencers who share affordable style tips and tricks? I'd love to get inspiration from people who share my budget-conscious mindset.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_d8454588_1",
+      "turnIndex": 6,
+      "date": "2023/05/22 (Mon) 09:32",
+      "role": "user",
+      "text": "I'll definitely check out those bloggers and influencers. I'm excited to get inspiration from people who share my budget-conscious mindset. By the way, I've been thinking about my recent purchase of the luxury boots, and I was wondering if you could help me find similar boots at a lower price point.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_d8454588_1",
+      "turnIndex": 8,
+      "date": "2023/05/22 (Mon) 09:32",
+      "role": "user",
+      "text": "I can give you more details about the boots. They're a pair of black ankle boots with a heel from a luxury brand. I loved the sleek design, the quality of the leather, and how they made me feel confident and stylish. I know I paid $800 for them, but I'm hoping to find something similar for much less.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_d8454588_1",
+      "turnIndex": 10,
+      "date": "2023/05/22 (Mon) 09:32",
+      "role": "user",
+      "text": "I'm not sure if I want to spend $200-$250 on a pair of boots, even if they're similar to my luxury boots. I was thinking more along the lines of $50-$100. Do you have any suggestions in that price range?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_d8454588_2",
+      "turnIndex": 0,
+      "date": "2023/05/22 (Mon) 10:36",
+      "role": "user",
+      "text": "I'm looking for some advice on budget-friendly fashion options. I recently bought a pair of boots that I love, but I couldn't help but think that I could've found something similar for much cheaper.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_d8454588_2",
+      "turnIndex": 4,
+      "date": "2023/05/22 (Mon) 10:36",
+      "role": "user",
+      "text": "I've been trying to be more mindful of my spending habits, especially when it comes to shopping. I used to be a bit of a luxury shopper, but I've been making an effort to scale back and explore more budget-friendly options. Can you help me with some tips on how to find affordable alternatives to luxury brands?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_d8454588_2",
+      "turnIndex": 6,
+      "date": "2023/05/22 (Mon) 10:36",
+      "role": "user",
+      "text": "I'm actually thinking of buying a new pair of jeans. Do you have any tips on how to find a good pair that fits well and is affordable?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_d8454588_2",
+      "turnIndex": 8,
+      "date": "2023/05/22 (Mon) 10:36",
+      "role": "user",
+      "text": "I've been looking at thrift stores and discount retailers for affordable options.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_d8454588_2",
+      "turnIndex": 10,
+      "date": "2023/05/22 (Mon) 10:36",
+      "role": "user",
+      "text": "I've had some success at thrift stores and discount retailers, like finding a great pair of vintage jeans for $10.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 2524,
+  "estimatedTokens": 631
+}

@@ -1,0 +1,27 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Remind the year construction began for the house in Bajimaya v Reward Homes Pty Ltd.",
+    "candidateStatus": "none_found",
+    "missingRisk": "The provided raw-turn previews do not include the statement about the construction start year (e.g., 2014). The only mention appears in the session-level “facts” summary, not in any displayed user/assistant raw turn with a turnIndex.",
+    "items": []
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Remind the year construction began for the house in Bajimaya v Reward Homes Pty Ltd.",
+    "candidateStatus": "found",
+    "missingRisk": "The provided raw-turn previews do not include the statement about the construction start year (e.g., 2014). The only mention appears in the session-level “facts” summary, not in any displayed user/assistant raw turn with a turnIndex.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_sharegpt_4aJsGCH_0",
+        "turnIndex": 0,
+        "why": "deterministic empty-selector fallback"
+      },
+      {
+        "sessionId": "answer_sharegpt_4aJsGCH_0",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

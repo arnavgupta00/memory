@@ -1,0 +1,50 @@
+[
+  {
+    "session_id": "answer_85a77c48_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session mentions an impulse purchase of a book at a favorite bookstore and gives the purchase price after a discount, but it does not state the original price or the actual percentage discount (only the discounted price).",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "User says they got the book for $24 after a discount at their favorite bookstore.",
+          "why": "Provides the discounted price of the book, which is needed to compute the percentage discount if the original price is available elsewhere."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "User describes the bookstore as their favorite bookstore and calls the purchase an impulse buy last week when they saw a sale.",
+          "why": "Indicates the context/source of the book purchase (favorite bookstore) and timing (last week), relevant for identifying the correct transaction but does not supply the discount percentage."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_85a77c48_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The user states the book’s original price ($30) and that there was a discount, but this session does not provide the discounted price or the discount percentage needed to compute the answer.",
+      "claims": [
+        {
+          "turnIndex": 6,
+          "fact": "The book is the new release from my favorite author, originally priced at $30.",
+          "why": "Provides the context (favorite author) and original price, which may be needed to calculate or verify the discount."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "I'm really looking forward to diving in and getting lost in the story.",
+          "why": "Minor preference/intent related to the book; not directly the discount but ties to the referenced purchase."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "There's an anticipated book and a great deal with the discount (assistant says so).",
+          "why": "Indicates a discount occurred, but does not specify the discount percentage."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "I couldn't resist that sale at my favorite bookstore last week.",
+          "why": "Confirms the existence of a sale/discount event at the favorite bookstore, relevant to the discount question (though it still doesn’t specify %)."
+        }
+      ]
+    }
+  }
+]

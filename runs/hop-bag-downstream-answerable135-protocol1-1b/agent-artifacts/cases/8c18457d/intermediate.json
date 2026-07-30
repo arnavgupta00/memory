@@ -1,0 +1,73 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "2023/03/29 Wed 13:43 context; compute day-difference between (1) brother graduation gift purchase date and (2) best friend birthday gift purchase date.",
+    "candidateStatus": "found",
+    "missingRisk": "Only the day/month parts are provided (no explicit year on 3/8 and 15th of March). If the year is ambiguous downstream, the computed day count could be off by 1 year.",
+    "items": [
+      {
+        "sessionId": "answer_124f5dc3_1",
+        "turnIndex": 0,
+        "why": "Contains the purchase date for the brother’s graduation gift: wireless headphone on 3/8."
+      },
+      {
+        "sessionId": "answer_124f5dc3_2",
+        "turnIndex": 0,
+        "why": "Contains the best friend birthday gift purchase date: silver necklace purchased for the 30th birthday on the 15th of March."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "2023/03/29 Wed 13:43 context; compute day-difference between (1) brother graduation gift purchase date and (2) best friend birthday gift purchase date.",
+    "candidateStatus": "found",
+    "missingRisk": "Only the day/month parts are provided (no explicit year on 3/8 and 15th of March). If the year is ambiguous downstream, the computed day count could be off by 1 year.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_124f5dc3_1",
+        "turnIndex": 0,
+        "why": "Contains the purchase date for the brother’s graduation gift: wireless headphone on 3/8."
+      },
+      {
+        "sessionId": "answer_124f5dc3_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_124f5dc3_2",
+        "turnIndex": 0,
+        "why": "Contains the best friend birthday gift purchase date: silver necklace purchased for the 30th birthday on the 15th of March."
+      },
+      {
+        "sessionId": "answer_124f5dc3_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "98cd882c_2",
+        "turnIndex": 0,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "98cd882c_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_124f5dc3_2",
+        "turnIndex": 4,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_124f5dc3_2",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_124f5dc3_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

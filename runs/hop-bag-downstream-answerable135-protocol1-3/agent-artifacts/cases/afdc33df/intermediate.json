@@ -1,0 +1,41 @@
+[
+  {
+    "session_id": "answer_8549e5e0",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session focuses on garbage disposal care, utensil holder organization, granite countertop scratch repair, a leaky faucet, and making yogurt in a slow cooker (including non-dairy yogurt and thickening agents). It does not directly provide general “keep the kitchen clean” tips; the only cleanliness-adjacent items are about removing food residue/debris and cleaning specific kitchen components.",
+      "claims": [
+        {
+          "turnIndex": 3,
+          "fact": "Clean your utensil holder regularly: remove any food residue or debris from your utensil holder to prevent bacteria growth and keep your kitchen clean.",
+          "why": "Provides a cleanliness-maintenance action relevant to preventing kitchen mess."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Avoid harsh chemicals, abrasive cleaners, or acidic substances on your granite countertop, as they can damage the surface.",
+          "why": "Helps maintain/clean granite safely, reducing risk of damage that can worsen mess/maintenance needs."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Use coasters and pads under objects that can scratch the surface, such as pots, pans, and utensils.",
+          "why": "Prevention tip to reduce future countertop marks/scratches that contribute to the kitchen looking messy."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Always use a cutting board when preparing food to prevent knives from scratching the countertop.",
+          "why": "Prevention tip related to keeping surfaces cleaner and less scarred."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Turn off the water supply: Always turn off the water supply to the faucet before attempting any repairs to prevent water damage or flooding.",
+          "why": "Advice to prevent water leaks/messes from spreading while fixing kitchen plumbing."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Choose an unsweetened milk to avoid added sugars and control the flavor.",
+          "why": "Food-prep parameter that can reduce cleanup issues from unexpected sweetness/spoilage risks (indirectly relevant to keeping kitchen manageable)."
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Social media follower gains over the past month (platform-by-platform)",
+  "candidateStatus": "found",
+  "missingRisk": "Could be additional follower-change info for other platforms (e.g., Instagram, YouTube, LinkedIn) or a different timeframe/updates beyond the month window that isn’t captured in the provided memory.",
+  "items": [
+    {
+      "sessionId": "answer_203bf3fa_1",
+      "turnIndex": 0,
+      "why": "User reports Twitter follower count jump (420 to 540) over the past month, directly relevant to identifying the biggest follower gain platform."
+    },
+    {
+      "sessionId": "answer_203bf3fa_3",
+      "turnIndex": 0,
+      "why": "User reports TikTok follower growth (around 200 followers over the past three weeks), relevant to 'past month' follower gains comparison."
+    },
+    {
+      "sessionId": "answer_203bf3fa_2",
+      "turnIndex": 0,
+      "why": "User reports Facebook follower count remained steady at around 800 (no growth), relevant for determining which platform gained the most followers over the past month."
+    }
+  ]
+}

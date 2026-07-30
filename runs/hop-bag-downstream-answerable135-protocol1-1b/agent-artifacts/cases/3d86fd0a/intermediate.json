@@ -1,0 +1,63 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Find the explicit “How We Met”/location information about Sophia.",
+    "candidateStatus": "found",
+    "missingRisk": "If another session contains a different location for Sophia, selecting only this session could miss an updated/correct meeting place.",
+    "items": [
+      {
+        "sessionId": "answer_19c24c11",
+        "turnIndex": 2,
+        "why": "States the location for Sophia: “a coffee shop in the city.”"
+      },
+      {
+        "sessionId": "answer_19c24c11",
+        "turnIndex": 3,
+        "why": "Explicitly updates the template: “For Sophia, it was a coffee shop in the city.”"
+      },
+      {
+        "sessionId": "answer_19c24c11",
+        "turnIndex": 5,
+        "why": "Reiterates Sophia’s “How We Met” entry in the updated template (coffee shop (city))."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Find the explicit “How We Met”/location information about Sophia.",
+    "candidateStatus": "found",
+    "missingRisk": "If another session contains a different location for Sophia, selecting only this session could miss an updated/correct meeting place.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_19c24c11",
+        "turnIndex": 2,
+        "why": "States the location for Sophia: “a coffee shop in the city.”"
+      },
+      {
+        "sessionId": "answer_19c24c11",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_19c24c11",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_19c24c11",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_19c24c11",
+        "turnIndex": 5,
+        "why": "Reiterates Sophia’s “How We Met” entry in the updated template (coffee shop (city))."
+      },
+      {
+        "sessionId": "answer_19c24c11",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

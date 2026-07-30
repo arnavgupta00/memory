@@ -1,0 +1,13 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "The single date on which the user says they read a specific magazine issue (The New Yorker, March 15th)",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_e22d6aef_1",
+      "turnIndex": 0,
+      "why": "User explicitly states they read the March 15th issue of The New Yorker (mentions doing it 'today'). Needed to compute how many days ago relative to 2023/04/01."
+    }
+  ]
+}

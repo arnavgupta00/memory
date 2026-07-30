@@ -1,0 +1,190 @@
+{
+  "queryShape": "order",
+  "setBoundary": "Use only the raw turns that explicitly state each of the three events (with their implied “today” timing) so the downstream model can order them by date/time.",
+  "candidateStatus": "found",
+  "missingRisk": "The sessions use relative wording (“today”) without stating the exact local timestamp; ordering will rely on the session_date metadata (2023/04/01, 2023/04/10, 2023/04/15). If the downstream question expects ordering relative to the user’s stated ‘today’ of 2023/05/10, these sources may not align chronologically to that reference point.; frozen bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "answer_c862f65a_2",
+      "turnIndex": 0,
+      "date": "2023/04/01 (Sat) 06:23",
+      "role": "user",
+      "text": "I'm planning a trip to Walmart this weekend and I'm looking for some deals on baby essentials. Do you have any info on their current sales or promotions on diapers? By the way, I used a Buy One Get One Free coupon on Luvs diapers at Walmart today, which was a great deal!",
+      "why": "Contains the explicit event: used a Buy One Get One Free coupon on Luvs diapers at Walmart (“used… today”).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c862f65a_2",
+      "turnIndex": 1,
+      "date": "2023/04/01 (Sat) 06:23",
+      "role": "assistant",
+      "text": "I'm happy to help! However, I'm a large language model, I don't have real-time access to current sales or promotions at specific stores like Walmart. But I can offer some general tips to help you find deals on diapers at Walmart:\n\n1. **Check Walmart's website**: Visit Walmart's website and navigate to their baby section. Look for a \"Deals\" or \"Rollbacks\" tab, where they often feature discounted prices on baby essentials, including diapers.\n2. **Sign up for Walmart's email newsletter**: By signing up, you'll receive exclusive offers, promotions, and sale notifications, including those on baby products.\n3. **Use Walmart's Savings Catcher app**: This app allows you to scan receipts and automatically applies any available savings or discounts to your account.\n4. **Look for in-store promotions**: When you visit Walmart, keep an eye out for in-store displays, banners, or signs advertising sales or promotions on diapers.\n5. **Stack coupons and sales**: Like you did with the Buy One Get One Free coupon on Luvs diapers, try combining manufacturer coupons with Walmart's sales or promotions for even greater savings.\n6. **Check competitor prices**: Walmart often price-matches competitors' prices. If you find a better deal on diapers at a nearby store, Walmart may match that price.\n7. **Consider Walmart's store brand**: Walmart's store brand, Parent's Choice, often offers affordable prices on diapers and other baby essentials.\n\nRemember to always check the prices and sales in your local store, as they may vary from online prices or promotions.\n\nI hope these tips help you find some great deals on diapers at Walmart this weekend!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c862f65a_3",
+      "turnIndex": 0,
+      "date": "2023/04/10 (Mon) 00:46",
+      "role": "user",
+      "text": "I'm planning a shopping trip to Target this weekend and I'm wondering if you have any info on their current sales and promotions. By the way, I just redeemed $12 cashback for a $10 Amazon gift card from Ibotta today, so I'm feeling pretty good about my savings so far!",
+      "why": "Contains the explicit event: redeemed $12 cashback for a $10 Amazon gift card from Ibotta (“redeemed… today”).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c862f65a_3",
+      "turnIndex": 1,
+      "date": "2023/04/10 (Mon) 00:46",
+      "role": "assistant",
+      "text": "Congratulations on redeeming your Ibotta cashback for an Amazon gift card! That's a great start to your savings week!\n\nAs for Target's current sales and promotions, I'd be happy to help you with that. Target typically releases its weekly ad on Sundays, so I can give you an overview of the current deals and promotions. Please note that sales and promotions may vary by location and online availability.\n\nHere are some current deals and promotions at Target:\n\n**Weekly Ad Deals (Valid until Saturday):**\n\n1. Buy One Get One 50% Off on select toys and games\n2. Up to 30% off select home decor and furniture\n3. 20% off all kitchen appliances and cookware\n4. Buy One Get One Free on select beauty and personal care items\n5. 10% off all baby gear and nursery furniture\n\n**Cartwheel Offers:**\n\n1. 10% off all Threshold brand items\n2. 5% off all Market Pantry food and beverages\n3. 5% off all Up & Up brand items\n\n**Target RedCard Holder Exclusive:**\n\n1. 5% off all purchases in-store and online\n\n**Digital Coupons:**\n\n1. $5 off $20 purchase on select household essentials\n2. $3 off $15 purchase on select beauty and personal care items\n\n**Online Deals:**\n\n1. Free standard shipping on online orders over $35\n2. 15% off online orders over $100 on select items\n\nKeep in mind that these deals and promotions are subject to change, and you should always check Target's website or mobile app for the most up-to-date information.\n\nHappy shopping this weekend, and I hope you score some great deals!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c862f65a_3",
+      "turnIndex": 2,
+      "date": "2023/04/10 (Mon) 00:46",
+      "role": "user",
+      "text": "What are some good strategies for maximizing my savings on household essentials, like toiletries and cleaning supplies? I've been using manufacturer coupons, but I feel like I can do better.",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c862f65a_1",
+      "turnIndex": 0,
+      "date": "2023/04/15 (Sat) 04:24",
+      "role": "user",
+      "text": "I'm trying to plan my grocery shopping trip for this week. Can you help me find any good deals or sales on diapers and formula at ShopRite? By the way, I signed up for their rewards program today, so I'm hoping to maximize my points and savings.",
+      "why": "Contains the explicit event: signed up for ShopRite rewards program (“signed up… today”).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c862f65a_1",
+      "turnIndex": 1,
+      "date": "2023/04/15 (Sat) 04:24",
+      "role": "assistant",
+      "text": "ShopRite is a great store for grocery shopping, and their rewards program can definitely help you save even more. I'd be happy to help you find deals on diapers and formula.\n\nTo find the best deals, I'll need to check the current sales and promotions at ShopRite. Since sales and promotions can vary by location and week, I'll provide you with some general tips and resources to help you find the best deals.\n\n**Check the ShopRite Weekly Ad**: The first step is to check the ShopRite weekly ad for your local store. You can do this on their website or through their mobile app. Look for the \"Diapers\" and \"Baby Formula\" sections to see if they have any sales or promotions listed.\n\n**Digital Coupons**: Make sure to check the ShopRite digital coupon section on their website or app. They often offer digital coupons that you can load onto your rewards card, which can be used in addition to sales and promotions. You can search for \"diapers\" and \"formula\" to see if there are any available digital coupons.\n\n**ShopRite Sales Cycles**: Diapers and formula tend to go on sale every 4-6 weeks at ShopRite. If you can, try to plan your shopping trip during one of these sales cycles to maximize your savings.\n\n**Price Match Guarantee**: ShopRite offers a price match guarantee, which means if you find a lower price on an item at a local competitor's store, they'll match that price. Keep an eye out for prices at other stores in your area and take advantage of this policy if you find a better deal.\n\n**Stacking Deals**: As a rewards member, you can stack digital coupons, sales, and manufacturer's coupons to maximize your savings. Look for opportunities to combine these deals to get the best price possible.\n\n**Manufacturer's Coupons**: Check the websites of diaper and formula manufacturers, such as Pampers, Huggies, Enfamil, and Similac, for printable coupons or digital coupons that you can use in addition to ShopRite's sales and digital coupons.\n\n**ShopRite Rewards**: As a rewards member, you'll earn points on your purchases, which can be redeemed for discounts on future shopping trips. Be sure to scan your rewards card or enter your phone number at checkout to earn points.\n\nBy following these tips, you should be able to find some great deals on diapers and formula at ShopRite. Happy shopping!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c862f65a_1",
+      "turnIndex": 2,
+      "date": "2023/04/15 (Sat) 04:24",
+      "role": "user",
+      "text": "That's really helpful, thanks! I'll definitely check the weekly ad and digital coupons to see what's available. Do you think I can use the digital coupons in addition to the rewards points I earn?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c862f65a_2",
+      "turnIndex": 2,
+      "date": "2023/04/01 (Sat) 06:23",
+      "role": "user",
+      "text": "Can you give me some advice on how to organize my coupons? I've been keeping them in a binder, but it's getting cluttered and hard to find the ones I need.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_2",
+      "turnIndex": 4,
+      "date": "2023/04/01 (Sat) 06:23",
+      "role": "user",
+      "text": "I've been thinking about switching to a digital coupon app, but I'm not sure if it would be worth it. Can you tell me more about how Fetch Rewards and Ibotta work?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_2",
+      "turnIndex": 6,
+      "date": "2023/04/01 (Sat) 06:23",
+      "role": "user",
+      "text": "I've actually used Ibotta before and liked it, but I didn't know much about Fetch Rewards. I think I'll give Fetch Rewards a try and see how it compares. By the way, do you know if Fetch Rewards has any offers on diapers or baby products?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_2",
+      "turnIndex": 8,
+      "date": "2023/04/01 (Sat) 06:23",
+      "role": "user",
+      "text": "I'm thinking of trying out some of the other features on Fetch Rewards, like their gas rewards program. Do you know how that works?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_3",
+      "turnIndex": 4,
+      "date": "2023/04/10 (Mon) 00:46",
+      "role": "user",
+      "text": "I've been using the cashback app Ibotta for a while now, and it's been helpful. But I'm curious, are there any other cashback apps that I should consider using in addition to Ibotta?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_3",
+      "turnIndex": 6,
+      "date": "2023/04/10 (Mon) 00:46",
+      "role": "user",
+      "text": "I've been using Fetch Rewards, but I haven't tried some of the others. I'll have to look into them. Do you think it's worth using multiple apps, or do they kind of overlap in terms of offers?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_3",
+      "turnIndex": 8,
+      "date": "2023/04/10 (Mon) 00:46",
+      "role": "user",
+      "text": "I've been using Fetch Rewards for my gas purchases, and it's been working well. I didn't know that Rakuten had a strong focus on online retailers. I might have to try that one out, especially since I do a lot of online shopping.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_3",
+      "turnIndex": 10,
+      "date": "2023/04/10 (Mon) 00:46",
+      "role": "user",
+      "text": "I'm considering trying out Rakuten, especially since I just redeemed some cashback from Ibotta today. It's always great to explore new ways to earn cashback and save even more on my online purchases.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_1",
+      "turnIndex": 4,
+      "date": "2023/04/15 (Sat) 04:24",
+      "role": "user",
+      "text": "That sounds like a great way to save even more money. I'll make sure to check the digital coupons and rewards points when I'm planning my shopping trip. Since I've been tracking my coupon usage and savings, I'm curious - do you have any tips on how to organize and keep track of all the different coupons, rewards programs, and sales? I've been using a spreadsheet, but I'm open to any other methods that might be more efficient.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_1",
+      "turnIndex": 6,
+      "date": "2023/04/15 (Sat) 04:24",
+      "role": "user",
+      "text": "That's a lot of great tips! I think I'll start by organizing my spreadsheet better and setting up reminders for coupon expiration dates. I've also been considering using a coupon app to make it easier to find digital coupons. Do you think it's better to use a specific store's app or a more general coupon app like RetailMeNot?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_1",
+      "turnIndex": 8,
+      "date": "2023/04/15 (Sat) 04:24",
+      "role": "user",
+      "text": "I think I'll try using both a store-specific app and a general coupon app to see which one works better for me. Do you know if there are any apps that allow me to track my rewards points across multiple stores and programs? It would be great to have a single app that shows me all my rewards balances and expiration dates.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c862f65a_1",
+      "turnIndex": 10,
+      "date": "2023/04/15 (Sat) 04:24",
+      "role": "user",
+      "text": "I think I'll try out AwardWallet and Loyalty Card Manager to see which one works better for me. It would be great to have a single app that shows me all my rewards balances and expiration dates. Thanks for the suggestions!",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 9392,
+  "estimatedTokens": 2348
+}

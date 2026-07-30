@@ -1,0 +1,33 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the prior conversation’s outlined project objectives for the “grants aim page on molecular subtypes and endometrial cancer.” Today’s date (2023/05/30) is only for context; retrieve the exact three objectives listed previously.",
+    "candidateStatus": "found",
+    "missingRisk": "In the provided raw-turn preview, the third objective in the assistant’s “Objectives:” list appears truncated (“3. To develop b…”). If the full third objective is not present in this snippet, downstream retrieval may miss or only partially recover the third objective.",
+    "items": [
+      {
+        "sessionId": "answer_sharegpt_HFMn2ZX_0",
+        "turnIndex": 1,
+        "why": "Contains the “Objectives:” list for the grants aim page, including objectives 1 and 2 and the start of objective 3; this is the turn most likely to preserve the three outlined objectives verbatim."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the prior conversation’s outlined project objectives for the “grants aim page on molecular subtypes and endometrial cancer.” Today’s date (2023/05/30) is only for context; retrieve the exact three objectives listed previously.",
+    "candidateStatus": "found",
+    "missingRisk": "In the provided raw-turn preview, the third objective in the assistant’s “Objectives:” list appears truncated (“3. To develop b…”). If the full third objective is not present in this snippet, downstream retrieval may miss or only partially recover the third objective.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_sharegpt_HFMn2ZX_0",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_sharegpt_HFMn2ZX_0",
+        "turnIndex": 1,
+        "why": "Contains the “Objectives:” list for the grants aim page, including objectives 1 and 2 and the start of objective 3; this is the turn most likely to preserve the three outlined objectives verbatim."
+      }
+    ]
+  }
+}

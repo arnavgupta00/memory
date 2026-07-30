@@ -1,0 +1,23 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "User’s stated preferred gin-to-vermouth ratio for a classic gin martini (including any modifiers like citrus bitters).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_6fe9fb49",
+      "turnIndex": 4,
+      "why": "User directly states their settled classic gin martini ratio (“3:1 ratio with a dash of citrus bitters”)."
+    },
+    {
+      "sessionId": "answer_6fe9fb49",
+      "turnIndex": 3,
+      "why": "Nearby context: user asks for garnish pairing with a classic gin martini after experimenting, indicating ongoing personalization around the same martini style."
+    },
+    {
+      "sessionId": "answer_6fe9fb49",
+      "turnIndex": 5,
+      "why": "Assistant responds in the same martini context right after the user’s 3:1 preference, preserving associated flavor modifier context for the martini."
+    }
+  ]
+}

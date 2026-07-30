@@ -1,0 +1,71 @@
+[
+  {
+    "session_id": "answer_4bfcc250_4",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session mentions attending a single charity gala on 2023/01/30, but it does not mention participating in two charity events on consecutive days. If the second consecutive-day event appears in another session, it won’t be captured here.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "I attended a charity gala organized by the Cancer Research Foundation at a fancy hotel in downtown today, where the event raises over $100,000 for cancer research.",
+          "why": "Relevant to identifying the timing and nature of a charity event, but this is only one event on a specific date (2023/01/30) and does not establish that there were two in a row on consecutive days."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_4bfcc250_3",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session only mentions one charity event (“24-Hour Bike Ride”) and does not state that there were two charity events in a row on consecutive days, nor does it provide dates for a second event. Therefore, it’s insufficient to determine how many months have passed since participating in two consecutive-day charity events.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "On 2023/02/14 (Tue) 09:06, you said you had just gotten back from the “24-Hour Bike Ride” charity event.",
+          "why": "Provides a specific charity-event participation date, which may be needed to measure the time since the relevant (possibly different) consecutive-day events."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "You cycled for 4 hours non-stop at the “24-Hour Bike Ride” charity event to raise money for a local children's hospital.",
+          "why": "Captures details about the charity participation; could help confirm whether this is one of the “two charity events in a row” in the question."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "f598d30f_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session mentions only one charity event ('Ride to Cure Cancer') and provides no evidence of participating in two separate charity events on consecutive days, so it may not contain the needed information to compute the month difference.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "I'm planning a long bike trip next weekend and I want to make sure my road bike is in top condition. I participated in the 'Ride to Cure Cancer' charity bike ride and rode 40 miles on my road bike recently.",
+          "why": "Relevant to the question because it confirms participation in a charity bike ride and may anchor a date relative to the user’s timeline, but it does not specify two consecutive-day charity events."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_4bfcc250_2",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session does not mention participating in charity events on consecutive days or provide any dates related to such participation (it discusses volunteering/book recommendations and ancient Egypt topics instead). Likely unrelated to the question’s timeline, so the reducer may not have evidence needed to compute the month difference.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_4bfcc250_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session only mentions one charity event (“Walk for Hunger”) occurring on 2023/03/19. It does not explicitly describe two charity events in a row on consecutive days, so the needed information for that count may be absent or located in a different candidate session.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User says they did the “Walk for Hunger” charity event today (session date 2023/03/19).",
+          "why": "Relevant because the question is about charity events; this provides one concrete event date that may help identify consecutive-day participation when combined with other sessions by the reducer."
+        }
+      ]
+    }
+  }
+]

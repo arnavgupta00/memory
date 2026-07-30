@@ -1,0 +1,118 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Antique/vintage family heirlooms the user inherited or acquired from specific relatives (explicitly stated ownership history).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_50940cb7_2",
+      "turnIndex": 0,
+      "date": "2023/05/25 (Thu) 06:06",
+      "role": "user",
+      "text": "I'm thinking of decluttering my apartment and selling some old family heirlooms to make some extra cash. I have an antique tea set from my cousin Rachel and a vintage typewriter that belonged to my dad. Do you know where I can find a good appraiser or someone to help me determine their value?",
+      "why": "User states they have an antique tea set from cousin Rachel and a vintage typewriter that belonged to their dad.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_50940cb7_2",
+      "turnIndex": 6,
+      "date": "2023/05/25 (Thu) 06:06",
+      "role": "user",
+      "text": "I'll also mention that I received the antique tea set from my cousin Rachel and a vintage typewriter that belonged to my dad, in case that adds any context or significance to the items.",
+      "why": "User again clarifies provenance: the antique tea set came from cousin Rachel and the vintage typewriter belonged to their dad, reinforcing membership in the inherited/acquired set.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_50940cb7_1",
+      "turnIndex": 0,
+      "date": "2023/05/30 (Tue) 06:33",
+      "role": "user",
+      "text": "I'm trying to get my grandmother's vintage diamond necklace insured, but I'm not sure where to start. I inherited it recently, along with a few other family heirlooms, including an antique music box from my great-aunt and a set of depression-era glassware from my mom. Do you have any recommendations for insurance companies that specialize in insuring valuable items like these?",
+      "why": "User states they inherited multiple family heirlooms: grandmother’s vintage diamond necklace, an antique music box from their great-aunt, and depression-era glassware from their mom.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_50940cb7_1",
+      "turnIndex": 4,
+      "date": "2023/05/30 (Tue) 06:33",
+      "role": "user",
+      "text": "That's really helpful, thanks. So, I should get the appraisal report and then shop around for insurance companies that specialize in insuring valuable items like my grandmother's necklace. I also have an antique music box from my great-aunt and a set of depression-era glassware from my mom that I'd like to insure. Do you think I should get those items appraised as well, or would it be better to focus on insuring the necklace first?",
+      "why": "User reiterates they also want to insure the antique music box and the depression-era glassware (in addition to the necklace), confirming these are part of the inherited/acquired set.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_50940cb7_2",
+      "turnIndex": 2,
+      "date": "2023/05/25 (Thu) 06:06",
+      "role": "user",
+      "text": "I think I'll start by researching online marketplaces and forums like eBay and Etsy to get an idea of how much similar items are selling for. Do you know if I should look for any specific keywords or categories when searching for my antique tea set and vintage typewriter?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_50940cb7_2",
+      "turnIndex": 4,
+      "date": "2023/05/25 (Thu) 06:06",
+      "role": "user",
+      "text": "I was also thinking of reaching out to local antique dealers who specialize in tea sets and typewriters to see if they'd be interested in buying my items or know someone who might be. Do you think that's a good idea, and do you have any tips on how to approach them?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_50940cb7_2",
+      "turnIndex": 8,
+      "date": "2023/05/25 (Thu) 06:06",
+      "role": "user",
+      "text": "I'll make sure to mention the provenance of the items to the antique dealers I reach out to. I'll let them know that the antique tea set came from my cousin Rachel and the vintage typewriter belonged to my dad, and share any relevant stories or documents that I have. Do you think I should also mention that I've been decluttering my apartment and found these items, or is that not relevant to the dealers?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_50940cb7_2",
+      "turnIndex": 10,
+      "date": "2023/05/25 (Thu) 06:06",
+      "role": "user",
+      "text": "I'll focus on highlighting the item's features, condition, and provenance when reaching out to the antique dealers. I'll mention that the antique tea set came from my cousin Rachel and the vintage typewriter belonged to my dad, and share any relevant stories or documents that I have. If asked, I'll briefly mention that I'm decluttering and found the items, but I won't make it the central focus of the conversation. Thanks for the advice!",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_50940cb7_1",
+      "turnIndex": 2,
+      "date": "2023/05/30 (Tue) 06:33",
+      "role": "user",
+      "text": "Can you tell me more about the appraisal process for my grandmother's vintage diamond necklace? I'd like to know what kind of documentation I need to provide and what factors will affect the appraisal value.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_50940cb7_1",
+      "turnIndex": 6,
+      "date": "2023/05/30 (Tue) 06:33",
+      "role": "user",
+      "text": "That makes sense. I'll start by getting the necklace appraised and insured, and then move on to the music box and glassware. Do you know if there are any specific appraisal organizations or associations that I should look for when searching for an appraiser?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_50940cb7_1",
+      "turnIndex": 8,
+      "date": "2023/05/30 (Tue) 06:33",
+      "role": "user",
+      "text": "I think I'll start by searching online for appraisers in my area who are certified by organizations like NAJA or ASA. I'll also ask my friends and family if they know of any reputable appraisers they've worked with in the past. Do you think it's a good idea to get multiple appraisals for each item, or is one appraisal report enough?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_50940cb7_1",
+      "turnIndex": 10,
+      "date": "2023/05/30 (Tue) 06:33",
+      "role": "user",
+      "text": "I think I'll start with one appraisal report for each item and see how that goes. If I need to get multiple appraisals, I can always do that later. Thanks for the advice!",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 3645,
+  "estimatedTokens": 912
+}

@@ -1,0 +1,11 @@
+name: hop-bag-downstream-answerable135-protocol1-1b
+mode: full-context
+experiment:
+  downstream_arm: 1b
+  frozen_hop_run: runs/local-archive/backbone/hop-gate-luna-h6-v1-answerable135.json
+  answer_prompt: answer-v8-preference
+  model: gpt-5.4-nano-2026-03-17
+  request_concurrency: 128
+  token_budget_per_minute: 2000000
+  package_max_turns: 40
+  package_char_budget: 40000

@@ -1,0 +1,53 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Compute the difference between the initial fundraising goal and the later fundraising amount mentioned for the charity cycling event.",
+    "candidateStatus": "found",
+    "missingRisk": "If there are multiple charity cycling events/goals mentioned across sessions, the selected turns might refer to different events; only one initial goal ($200) and one raised amount ($250) are present in the provided candidates.",
+    "items": [
+      {
+        "sessionId": "answer_254d8b09_1",
+        "turnIndex": 8,
+        "why": "Contains the initial fundraising goal for the charity cycling event: aiming to raise $200."
+      },
+      {
+        "sessionId": "answer_254d8b09_2",
+        "turnIndex": 0,
+        "why": "Contains the later fundraising result for the charity cycling event: raised $250 in donations."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Compute the difference between the initial fundraising goal and the later fundraising amount mentioned for the charity cycling event.",
+    "candidateStatus": "found",
+    "missingRisk": "If there are multiple charity cycling events/goals mentioned across sessions, the selected turns might refer to different events; only one initial goal ($200) and one raised amount ($250) are present in the provided candidates.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_254d8b09_1",
+        "turnIndex": 8,
+        "why": "Contains the initial fundraising goal for the charity cycling event: aiming to raise $200."
+      },
+      {
+        "sessionId": "answer_254d8b09_1",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_254d8b09_1",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_254d8b09_2",
+        "turnIndex": 0,
+        "why": "Contains the later fundraising result for the charity cycling event: raised $250 in donations."
+      },
+      {
+        "sessionId": "answer_254d8b09_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

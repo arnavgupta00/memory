@@ -1,0 +1,130 @@
+{
+  "abstention_accuracy": null,
+  "abstention_count": 0,
+  "answer_model": "gpt-5.4-nano-2026-03-17",
+  "answer_provider": "openai",
+  "canary_estimate": null,
+  "completed_count": 135,
+  "cost": {
+    "by_role": {
+      "answer": {
+        "estimated_total": 0.17674385,
+        "input_unit_price_per_million": 0.2,
+        "kind": "generation",
+        "model": "gpt-5.4-nano-2026-03-17",
+        "output_unit_price_per_million": 1.25,
+        "provider": "openai"
+      },
+      "select": {
+        "estimated_total": 0.31142305000000003,
+        "input_unit_price_per_million": 0.2,
+        "kind": "generation",
+        "model": "gpt-5.4-nano-2026-03-17",
+        "output_unit_price_per_million": 1.25,
+        "provider": "openai"
+      }
+    },
+    "currency": "USD",
+    "estimated_total": 0.48816690000000007,
+    "note": "Prices are user-supplied run-date inputs; model aliases and prices change."
+  },
+  "failure_count": 0,
+  "generated_at": "2026-07-30T18:10:56.806232+00:00",
+  "judge_model": "gpt-4o-2024-08-06",
+  "judged_count": 135,
+  "mode": "full-context",
+  "overall_accuracy": 0.8518518518518519,
+  "per_question_type": {
+    "knowledge-update": {
+      "accuracy": 0.9,
+      "correct": 18,
+      "count": 20
+    },
+    "multi-session": {
+      "accuracy": 0.696969696969697,
+      "correct": 23,
+      "count": 33
+    },
+    "single-session-assistant": {
+      "accuracy": 0.9333333333333333,
+      "correct": 14,
+      "count": 15
+    },
+    "single-session-preference": {
+      "accuracy": 0.8666666666666667,
+      "correct": 13,
+      "count": 15
+    },
+    "single-session-user": {
+      "accuracy": 0.8823529411764706,
+      "correct": 15,
+      "count": 17
+    },
+    "temporal-reasoning": {
+      "accuracy": 0.9142857142857143,
+      "correct": 32,
+      "count": 35
+    }
+  },
+  "run_id": "hop-bag-downstream-answerable135-protocol1-1a",
+  "schema_version": 2,
+  "status": "completed",
+  "task_averaged_accuracy": 0.8656013920719804,
+  "usage": {
+    "answer_latency_ms": 943859.2054170002,
+    "by_phase": {
+      "memory_construction": {
+        "call_count": 0,
+        "latency_ms": 0.0,
+        "total_tokens": 0
+      },
+      "question_time": {
+        "call_count": 270,
+        "latency_ms": 1555004.690204,
+        "total_tokens": 1841526
+      }
+    },
+    "by_role": {
+      "answer": {
+        "call_count": 135,
+        "input_tokens": 441113,
+        "item_count": 135,
+        "kind": "generation",
+        "latency_ms": 943859.2054170002,
+        "model": "gpt-5.4-nano-2026-03-17",
+        "output_tokens": 70817,
+        "provider": "openai",
+        "retry_count": 0,
+        "total_tokens": 511930
+      },
+      "select": {
+        "call_count": 135,
+        "input_tokens": 1286259,
+        "item_count": 135,
+        "kind": "generation",
+        "latency_ms": 611145.4847869999,
+        "model": "gpt-5.4-nano-2026-03-17",
+        "output_tokens": 43337,
+        "provider": "openai",
+        "retry_count": 0,
+        "total_tokens": 1329596
+      }
+    },
+    "expected_vs_actual_calls": {
+      "answer": {
+        "actual": 135,
+        "expected": 135
+      },
+      "select": {
+        "actual": 135,
+        "expected": null
+      }
+    },
+    "input_tokens": 1727372,
+    "mean_answer_latency_ms": 6991.549669755557,
+    "model_call_count": 270,
+    "output_tokens": 114154,
+    "total_model_latency_ms": 1555004.690204,
+    "total_tokens": 1841526
+  }
+}

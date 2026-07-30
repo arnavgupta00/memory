@@ -1,0 +1,33 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "All self-reported time spent playing games (hours) across the conversation memory, summed.",
+  "candidateStatus": "found",
+  "missingRisk": "May be additional self-reported playtime in other sessions not present in this memory block, or hours not explicitly stated as “hours”.",
+  "items": [
+    {
+      "sessionId": "answer_8d015d9d_3",
+      "turnIndex": 6,
+      "why": "User reports spending around 70 hours playing Assassin's Creed Odyssey."
+    },
+    {
+      "sessionId": "answer_8d015d9d_5",
+      "turnIndex": 0,
+      "why": "User reports Hyper Light Drifter took them 5 hours to finish."
+    },
+    {
+      "sessionId": "answer_8d015d9d_4",
+      "turnIndex": 0,
+      "why": "User reports Celeste took them 10 hours to complete."
+    },
+    {
+      "sessionId": "answer_8d015d9d_2",
+      "turnIndex": 0,
+      "why": "User reports The Last of Us Part II on hard difficulty took 30 hours to finish."
+    },
+    {
+      "sessionId": "answer_8d015d9d_1",
+      "turnIndex": 0,
+      "why": "User reports The Last of Us Part II on normal difficulty took 25 hours to complete."
+    }
+  ]
+}

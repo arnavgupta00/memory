@@ -1,0 +1,98 @@
+{
+  "raw": {
+    "queryShape": "order",
+    "setBoundary": "Compare the dated parenthood events for Rachel vs. Alex (Rachel’s twins’ birth date vs. Alex’s adoption month).",
+    "candidateStatus": "found",
+    "missingRisk": "If there are other sessions not shown that mention a different/earlier parenthood event for Rachel or Alex, the inferred “who was first” could be wrong.",
+    "items": [
+      {
+        "sessionId": "answer_65600ff6_2",
+        "turnIndex": 0,
+        "why": "States that cousin Alex adopted a baby girl from China in January (a dated parenthood event for Alex)."
+      },
+      {
+        "sessionId": "answer_65600ff6_1",
+        "turnIndex": 0,
+        "why": "Gives the birth date for Rachel’s twins (Jackson and Julia born February 12th) indicating Rachel became a parent then."
+      },
+      {
+        "sessionId": "answer_65600ff6_1",
+        "turnIndex": 8,
+        "why": "Explicitly connects Rachel to the twins (sister-in-law Rachel doing great with the twins), supporting that Rachel is the parent whose twins were born Feb 12."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "order",
+    "setBoundary": "Compare the dated parenthood events for Rachel vs. Alex (Rachel’s twins’ birth date vs. Alex’s adoption month).",
+    "candidateStatus": "found",
+    "missingRisk": "If there are other sessions not shown that mention a different/earlier parenthood event for Rachel or Alex, the inferred “who was first” could be wrong.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_65600ff6_2",
+        "turnIndex": 0,
+        "why": "States that cousin Alex adopted a baby girl from China in January (a dated parenthood event for Alex)."
+      },
+      {
+        "sessionId": "answer_65600ff6_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_65600ff6_1",
+        "turnIndex": 0,
+        "why": "Gives the birth date for Rachel’s twins (Jackson and Julia born February 12th) indicating Rachel became a parent then."
+      },
+      {
+        "sessionId": "answer_65600ff6_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_65600ff6_1",
+        "turnIndex": 8,
+        "why": "Explicitly connects Rachel to the twins (sister-in-law Rachel doing great with the twins), supporting that Rachel is the parent whose twins were born Feb 12."
+      },
+      {
+        "sessionId": "answer_65600ff6_1",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_65600ff6_1",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "9f220c66_1",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "9f220c66_1",
+        "turnIndex": 11,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_65600ff6_2",
+        "turnIndex": 8,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_65600ff6_2",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_65600ff6_2",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_65600ff6_1",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

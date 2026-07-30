@@ -1,0 +1,73 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Sum your total money raised across all charity events you explicitly participated in within the provided sessions (include sponsor/team-raised amounts mentioned).",
+    "candidateStatus": "found",
+    "missingRisk": "If there are additional charity events/amounts in other sessions not included in the catalog, they would change the total. Also, some amounts might be team-raised vs. your personal raised share; the downstream answerer may need to interpret whether to sum full event/team totals or only amounts personally attributed to you.",
+    "items": [
+      {
+        "sessionId": "answer_1de862d6_1",
+        "turnIndex": 2,
+        "why": "Contains your explicit amount raised ($250) during a charity walk."
+      },
+      {
+        "sessionId": "answer_1de862d6_3",
+        "turnIndex": 0,
+        "why": "Contains your explicit charity yoga event raised amount ($600 for a local animal shelter)."
+      },
+      {
+        "sessionId": "answer_1de862d6_2",
+        "turnIndex": 2,
+        "why": "Contains Bike-a-Thon charity event fundraising amount mentioned ($5,000 raised by your team for Cancer Research); needed to compute total across events."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Sum your total money raised across all charity events you explicitly participated in within the provided sessions (include sponsor/team-raised amounts mentioned).",
+    "candidateStatus": "found",
+    "missingRisk": "If there are additional charity events/amounts in other sessions not included in the catalog, they would change the total. Also, some amounts might be team-raised vs. your personal raised share; the downstream answerer may need to interpret whether to sum full event/team totals or only amounts personally attributed to you.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_1de862d6_1",
+        "turnIndex": 2,
+        "why": "Contains your explicit amount raised ($250) during a charity walk."
+      },
+      {
+        "sessionId": "answer_1de862d6_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_1de862d6_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_1de862d6_3",
+        "turnIndex": 0,
+        "why": "Contains your explicit charity yoga event raised amount ($600 for a local animal shelter)."
+      },
+      {
+        "sessionId": "answer_1de862d6_3",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_1de862d6_2",
+        "turnIndex": 2,
+        "why": "Contains Bike-a-Thon charity event fundraising amount mentioned ($5,000 raised by your team for Cancer Research); needed to compute total across events."
+      },
+      {
+        "sessionId": "answer_1de862d6_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_1de862d6_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

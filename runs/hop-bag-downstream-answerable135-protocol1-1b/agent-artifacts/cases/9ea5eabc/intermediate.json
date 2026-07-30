@@ -1,0 +1,53 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify the location of the user’s most recent family trip (relative to 2023/06/08).",
+    "candidateStatus": "found",
+    "missingRisk": "If “most recent” refers to a family trip not mentioned in these candidate sessions, the answerer could miss it.",
+    "items": [
+      {
+        "sessionId": "answer_02e66dec_1",
+        "turnIndex": 2,
+        "why": "States the user’s recent family trip was to Hawaii (and mentions snorkeling together)."
+      },
+      {
+        "sessionId": "answer_02e66dec_1",
+        "turnIndex": 4,
+        "why": "Adds additional context about the Hawaii family trip (Waikiki exploration and shopping), reinforcing the destination."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify the location of the user’s most recent family trip (relative to 2023/06/08).",
+    "candidateStatus": "found",
+    "missingRisk": "If “most recent” refers to a family trip not mentioned in these candidate sessions, the answerer could miss it.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_02e66dec_1",
+        "turnIndex": 2,
+        "why": "States the user’s recent family trip was to Hawaii (and mentions snorkeling together)."
+      },
+      {
+        "sessionId": "answer_02e66dec_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_02e66dec_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_02e66dec_1",
+        "turnIndex": 4,
+        "why": "Adds additional context about the Hawaii family trip (Waikiki exploration and shopping), reinforcing the destination."
+      },
+      {
+        "sessionId": "answer_02e66dec_1",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "How many bikes does the user own? Use explicit ownership count from the most relevant assistant/user turns.",
+    "candidateStatus": "found",
+    "missingRisk": "None—the candidate session includes an explicit statement of the number of bikes owned.",
+    "items": [
+      {
+        "sessionId": "answer_e623ae87",
+        "turnIndex": 4,
+        "why": "Contains the explicit fact: “I've got three bikes - a road bike, a mountain bike, and a commuter bike,” which directly answers how many bikes the user owns."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "How many bikes does the user own? Use explicit ownership count from the most relevant assistant/user turns.",
+    "candidateStatus": "found",
+    "missingRisk": "None—the candidate session includes an explicit statement of the number of bikes owned.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_e623ae87",
+        "turnIndex": 4,
+        "why": "Contains the explicit fact: “I've got three bikes - a road bike, a mountain bike, and a commuter bike,” which directly answers how many bikes the user owns."
+      },
+      {
+        "sessionId": "answer_e623ae87",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e623ae87",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e623ae87",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e623ae87",
+        "turnIndex": 1,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_e623ae87",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

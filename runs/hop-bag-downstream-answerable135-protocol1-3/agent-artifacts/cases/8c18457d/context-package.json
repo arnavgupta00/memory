@@ -1,0 +1,82 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "98cd882c_2",
+      "turnIndex": 0,
+      "date": "2023/03/29 (Wed) 14:37",
+      "role": "user",
+      "text": "I'm looking for some gift ideas for my sister's birthday. I just made her a quilt and I want to get her something to go along with it. Do you have any suggestions? By the way, I worked on the quilt for a total of around 30 hours, which is the total time spent on the quilt divided by the number of weeks it took to complete.",
+      "why": "empty-extractor deterministic fallback",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_124f5dc3_1",
+      "turnIndex": 0,
+      "date": "2023/03/29 (Wed) 21:27",
+      "role": "user",
+      "text": "I'm looking for some recommendations on gifts for a friend who's into music. I recently got a wireless headphone for my brother as a graduation gift on the 3/8, and it was a big hit.",
+      "why": "per-session extractor: This provides the purchase date for the brother’s graduation gift needed for computing the day interval.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_124f5dc3_2",
+      "turnIndex": 4,
+      "date": "2023/03/29 (Wed) 21:48",
+      "role": "user",
+      "text": "I've been trying to be more thoughtful and intentional with my gift purchasing habits, and it's been a fun and rewarding experience. Speaking of which, I recently got a silver necklace with a tiny pendant for my best friend's 30th birthday on the 15th of March, and it was a hit. Can you suggest some online stores that sell minimalist chic earrings in a similar price range, around $80?",
+      "why": "per-session extractor: This provides a specific purchase/occasion date (15th of March) for the birthday gift needed to compute the day difference.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "98cd882c_2",
+      "turnIndex": 1,
+      "date": "2023/03/29 (Wed) 14:37",
+      "role": "assistant",
+      "text": "What a thoughtful sibling you are! A handmade quilt is a truly special gift, and I'm sure your sister will treasure it. To complement the quilt, here are some gift ideas that might interest you:\n\n1. **Cozy throw pillows**: A set of matching or coordinating throw pillows can add a pop of color and comfort to her bed or favorite reading nook.\n2. **Personalized quilt label**: A customized label with your sister's name, the quilt's name, and the date can make the gift even more special and personal.\n3. **Luxurious bedding**: A high-quality set of sheets, a plush blanket, or a soft throw blanket can enhance the overall sleeping experience and complement the quilt.\n4. **Quilt-themed accessories**: Consider gifting quilt-themed items like a quilt-patterned mug, a set of quilt-inspired notecards, or a quilt-shaped keychain.\n5. **Relaxation essentials**: Help your sister unwind with a scented candle, essential oils, or a good book to enjoy while snuggled up under her new quilt.\n6. **Quilt care kit**: Create a kit with a quilt care guide, a soft brush, and a gentle cleaning solution to help her keep her quilt looking its best.\n7. **Customized wall art**: A personalized wall art piece with a quote, a special message, or a beautiful design can complement the quilt and add a touch of elegance to her room.\n8. **Cozy slippers or socks**: A pair of plush slippers or cozy socks can keep her feet warm and toasty while she's enjoying her new quilt.\n\nNow, about that math problem... If you spent a total of 30 hours on the quilt and you want to find out how many weeks it took to complete, we'll need to know how many hours you worked per week. Could you tell me how many hours you worked on the quilt each week?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_124f5dc3_1",
+      "turnIndex": 1,
+      "date": "2023/03/29 (Wed) 21:27",
+      "role": "assistant",
+      "text": "What a great gift idea! I'm happy to help you find a music-related gift for your friend. Since your brother loved the wireless headphones, I'll suggest some similar ideas that might strike a chord with your music-loving friend:\n\n1. **Portable Speaker**: A compact, waterproof Bluetooth speaker is perfect for outdoor gatherings or indoor jam sessions. Brands like JBL, UE, or Anker offer great options.\n2. ** Vinyl Record Player**: For a more nostalgic approach, consider a vinyl record player. This gift will allow your friend to experience music in a new way and appreciate the tactile nature of physical records.\n3. **Music Subscription**: A subscription to a music streaming platform like Spotify, Apple Music, or Tidal will provide your friend with access to millions of songs, playlists, and exclusive content.\n4. **Guitar Lessons**: If your friend is interested in playing music, consider gifting guitar lessons or online courses. This will help them develop a new skill and appreciate music from a different perspective.\n5. **Concert Tickets**: Give the gift of a live music experience with tickets to a concert or music festival featuring your friend's favorite artist or band.\n6. **Music-Themed Accessories**: Fun items like music-themed posters, guitar-shaped accessories, or music-inspired clothing can be a great way to showcase their love for music.\n7. **High-Quality Earbuds**: If your friend prefers earbuds over headphones, look into high-end options like Sennheiser, Shure, or Westone.\n8. **Music Production Software**: If your friend is interested in music production, consider gifting software like Ableton Live, FL Studio, or Logic Pro X.\n9. **Wireless Earbuds with Mic**: Wireless earbuds with a built-in microphone are perfect for music lovers who enjoy hands-free calls and voice assistants like Siri or Google Assistant.\n10. **Music Book or Documentary**: A book about their favorite artist or a music-related documentary can provide a unique perspective on the music industry and its history.\n\nRemember to consider your friend's personal preferences and interests when choosing a gift. I hope these ideas help you find the perfect present!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_124f5dc3_2",
+      "turnIndex": 3,
+      "date": "2023/03/29 (Wed) 21:48",
+      "role": "assistant",
+      "text": "Minimalist chic earrings are a great choice!\n\nHere are some online stores that offer a wide range of delicate, stylish earrings that might fit the bill:\n\n1. **Aurate New York**: Aurate offers exquisite, minimalist earrings in 14k gold, silver, and rose gold. Their designs are sleek, modern, and perfect for everyday wear.\n2. ** Mejuri**: Mejuri is a popular destination for minimalist jewelry lovers. They offer a wide range of earrings, from simple studs to delicate drops, in high-quality materials.\n3. **Catbird**: Catbird is known for its dainty, whimsical jewelry. Their earring collection features tiny charms, studs, and drops in gold, silver, and rose gold.\n4. **Anita Ko**: Anita Ko offers elegant, understated earrings with a focus on clean lines, simple shapes, and high-quality materials.\n5. **Madewell**: Madewell's jewelry collection features a range of minimalist earrings, from simple studs to delicate drops, in a variety of metals and finishes.\n6. **BaubleBar**: BaubleBar offers a wide range of earrings, including delicate, minimalist designs in gold, silver, and rose gold.\n7. **J.Crew**: J.Crew's jewelry collection features a variety of earrings, including simple studs, drops, and hoops in high-quality materials.\n8. **Everlane**: Everlane is known for its transparent pricing and sustainable practices. Their earring collection features minimalist designs in recycled gold and silver.\n9. ** Aurate's sister brand, NO.**: NO. offers minimalist earrings at a more affordable price point than Aurate, with a focus on simple, modern designs.\n10. **Etsy**: If you're looking for unique, handmade earrings, Etsy is a great platform to explore. Use keywords like \"minimalist earrings,\" \"delicate earrings,\" or \"dainty earrings\" to find relevant sellers.\n\nThese stores offer a mix of affordable and investment-piece options, so you're sure to find something that fits your budget and your friend's style.\n\nRemember to check the product descriptions, reviews, and sizing information before making a purchase, especially if you're shopping online.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_124f5dc3_2",
+      "turnIndex": 5,
+      "date": "2023/03/29 (Wed) 21:48",
+      "role": "assistant",
+      "text": "I'm so glad to hear that you're being more thoughtful and intentional with your gift purchasing habits! It's wonderful that you're considering your friend's style and preferences.\n\nI'd be happy to help you find minimalist chic earrings in a similar price range to the silver necklace you got for your best friend's 30th birthday.\n\nHere are some online stores that offer beautiful, delicate earrings around the $80 price point:\n\n1. **Aurate New York**: Aurate offers exquisite, minimalist earrings in 14k gold, silver, and rose gold. They have a range of options around $80, such as their Tiny Bar Earrings or Small Circle Earrings.\n2. **Catbird**: Catbird is known for its dainty, whimsical jewelry. They have a variety of earrings in the $60-$90 range, like their Tiny Crystal Earrings or Mini Heart Earrings.\n3. **Mejuri**: Mejuri offers sleek, modern earrings in high-quality materials. They have options like their Mini Hoop Earrings or Small Sphere Earrings in the $70-$90 range.\n4. **Anita Ko**: Anita Ko features elegant, understated earrings with a focus on clean lines and simple shapes. They have earrings like their Small Circle Earrings or Mini Bar Earrings in the $70-$90 range.\n5. **J.Crew**: J.Crew's jewelry collection includes a range of earrings, including delicate, minimalist designs in gold, silver, and rose gold. They often have options in the $60-$90 range, like their Mini Hoop Earrings or Small Sphere Earrings.\n6. **Madewell**: Madewell's jewelry collection features a variety of earrings, including simple studs and delicate drops. They have options like their Mini Star Earrings or Small Tassel Earrings in the $60-$90 range.\n7. **NO.**: NO. is Aurate's sister brand, offering minimalist earrings at a more affordable price point. They have options like their Mini Circle Earrings or Small Bar Earrings in the $50-$80 range.\n\nThese stores offer a range of styles and materials, so you're sure to find something that fits your friend's taste and your budget.\n\nRemember to check the product descriptions, reviews, and sizing information before making a purchase, especially if you're shopping online.\n\nHappy gifting!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_124f5dc3_2",
+      "turnIndex": 6,
+      "date": "2023/03/29 (Wed) 21:48",
+      "role": "user",
+      "text": "I'm also interested in getting a gift for my neighbor who helped me with dog-sitting while I was away on a trip last month. Do you have any gift ideas for a good neighbor?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 9151,
+  "estimatedTokens": 2288
+}

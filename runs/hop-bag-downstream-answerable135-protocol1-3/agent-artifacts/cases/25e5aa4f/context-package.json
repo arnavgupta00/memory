@@ -1,0 +1,37 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "answer_986de8c3",
+      "turnIndex": 4,
+      "date": "2023/05/29 (Mon) 04:50",
+      "role": "user",
+      "text": "I'm still leaning towards Stanford, but I'm concerned about the cost. I've been working in the tech industry for a while and I'm pretty confident I can get a good job after graduating. Do you think it's worth taking out loans to finance my education? Also, by the way, I completed my undergrad in CS from UCLA, which has a great reputation in the industry.",
+      "why": "per-session extractor: Directly answers the question about where the user completed their Bachelor’s degree in Computer Science.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_986de8c3",
+      "turnIndex": 3,
+      "date": "2023/05/29 (Mon) 04:50",
+      "role": "assistant",
+      "text": "**Average Salary of a Software Engineer in San Francisco:**\n\nAccording to various sources, including Glassdoor, Indeed, and LinkedIn, the average salary for a software engineer in San Francisco is around $144,000 - $164,000 per year. However, salaries can range from $110,000 to over $200,000 depending on factors like company, experience, specific role, and industry.\n\nHere are some approximate average salary ranges for software engineers in San Francisco:\n\n* Junior/Entry-level (0-3 years of experience): $110,000 - $130,000\n* Mid-level (4-7 years of experience): $140,000 - $160,000\n* Senior (8-12 years of experience): $160,000 - $190,000\n* Lead/Manager (13+ years of experience): $190,000 - $220,000\n\nKeep in mind that these are general estimates and can vary widely depending on the company, industry, and specific role.\n\n**Scholarships and Assistantships:**\n\nAll three programs offer various forms of financial aid, including scholarships, assistantships, and teaching opportunities. Here's a brief overview:\n\n**Stanford University:**\n\n* The Stanford Data Science program offers a limited number of merit-based scholarships, ranging from partial to full tuition coverage.\n* Stanford also offers a variety of university-wide fellowships and scholarships, which data science students can apply for.\n* Teaching assistantships (TA) and research assistantships (RA) are available, but highly competitive.\n* Stanford's Financial Aid Office can provide guidance on external scholarship opportunities and loan options.\n\n**University of California, Berkeley:**\n\n* The Berkeley Data Science program offers a few merit-based scholarships, typically covering partial tuition.\n* Berkeley's Graduate Division offers various fellowships, including the prestigious Chancellor's Fellowship, which can provide full tuition coverage and a stipend.\n* Teaching assistantships (GSI) and research assistantships (GSR) are available, but competitive.\n* Berkeley's Financial Aid Office can provide guidance on external scholarship opportunities and loan options.\n\n**Carnegie Mellon University:**\n\n* The Carnegie Mellon Data Science program offers a limited number of merit-based scholarships, ranging from partial to full tuition coverage.\n* Carnegie Mellon's College of Engineering and School of Computer Science offer various fellowships and scholarships, which data science students can apply for.\n* Teaching assistantships (TA) and research assistantships (RA) are available, but competitive.\n* Carnegie Mellon's Financial Aid Office can provide guidance on external scholarship opportunities and loan options.\n\nIt's essential to note that these programs are highly competitive, and funding opportunities may be limited. It's crucial to research and explore all available options, including external scholarships, to help fund your education.\n\nI hope this information helps you make a more informed decision about pursuing a Master's in Data Science at Stanford or one of the other programs!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_986de8c3",
+      "turnIndex": 5,
+      "date": "2023/05/29 (Mon) 04:50",
+      "role": "assistant",
+      "text": "With your background in CS from UCLA and experience in the tech industry, you're well-positioned to secure a good job after graduating from Stanford. Now, let's discuss the financial aspect:\n\n**Is it worth taking out loans to finance your education?**\n\nThis is a personal decision, and it's essential to weigh the pros and cons. Here are some points to consider:\n\nPros:\n\n1. **Increased earning potential**: With a Master's from Stanford, you can expect a significant salary bump, which can help you pay off loans faster.\n2. **Investment in yourself**: A graduate degree from Stanford can be a valuable investment in your career, leading to better job opportunities, networking, and personal growth.\n3. **Short-term pain, long-term gain**: While taking out loans might be uncomfortable, the potential long-term benefits and increased earning potential can make it a worthwhile investment.\n\nCons:\n\n1. **Debt burden**: Taking out loans can lead to a significant debt burden, which can be stressful and impact your financial freedom.\n2. **Opportunity cost**: The money you borrow could be invested elsewhere, such as in your own startup, a side project, or other investments.\n3. **Risk of not getting a good job**: Although you have a strong background, there's always a risk that you might not secure a job that justifies the cost of the education.\n\nTo mitigate the risks, consider the following:\n\n1. **Research and budget**: Understand the total cost of attendance, including living expenses, and create a budget to manage your finances effectively.\n2. **Explore scholarships and aid**: Look into external scholarships, assistantships, and other forms of financial aid to reduce your debt burden.\n3. **Consider a part-time or online program**: If you're concerned about the cost, explore part-time or online programs that can help you balance work and education.\n4. **Weigh the ROI**: Calculate the potential return on investment (ROI) of a Stanford education, considering your expected salary increase, job opportunities, and long-term benefits.\n\n**Your situation:**\n\nGiven your background in CS from UCLA and industry experience, you're well-positioned to secure a good job after graduating from Stanford. This reduces the risk of not getting a good job and increases the potential ROI of your education.\n\nIf you're confident in your ability to secure a well-paying job after graduation, taking out loans to finance your education might be a viable option. However, it's essential to carefully consider your financial situation, budget, and long-term goals before making a decision.\n\nRemember to also explore external scholarships, assistantships, and other forms of financial aid to reduce your debt burden. Stanford's Financial Aid Office can also provide guidance on financing options and loan forgiveness programs.\n\nUltimately, the decision to take out loans is a personal one, and it's crucial to weigh the pros and cons carefully.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 6270,
+  "estimatedTokens": 1568
+}

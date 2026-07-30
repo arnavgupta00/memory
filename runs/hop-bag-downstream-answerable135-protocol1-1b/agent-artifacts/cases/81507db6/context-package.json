@@ -1,0 +1,289 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Based on today = 2023/07/21 23:33, count graduation ceremonies the user reports attending during the past three months (approx. from 2023/04/21 to 2023/07/21).",
+  "candidateStatus": "found",
+  "missingRisk": "The candidate sessions only include three “attended” graduation events (Emma preschool, Alex leadership program, Rachel master’s) plus one “missed” ceremony (nephew Jack). If there were additional graduation ceremonies in the same time window not present in these sessions, the count could be incomplete.; frozen bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "answer_da3c1266_4",
+      "turnIndex": 0,
+      "date": "2023/07/21 (Fri) 06:56",
+      "role": "user",
+      "text": "I'm looking to research digital marketing certification programs. Can you help me compare the pros and cons of online vs in-person programs? By the way, I've been thinking about family a lot lately, and I'm still feeling a bit guilty about missing my nephew Jack's eighth grade graduation ceremony last month.",
+      "why": "User mentions missing nephew Jack's eighth grade graduation ceremony last month; included to avoid miscounting missed events as attended ones.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_da3c1266_4",
+      "turnIndex": 1,
+      "date": "2023/07/21 (Fri) 06:56",
+      "role": "assistant",
+      "text": "I'm happy to help you with that! Comparing online vs in-person digital marketing certification programs can be a crucial decision, and I'd be happy to break down the pros and cons for you.\n\nBut first, I want to acknowledge your feelings about missing your nephew's graduation ceremony. It's completely understandable to feel guilty about it, and I'm sure your nephew understands that life can get busy. Perhaps you could make it up to him by catching up soon and celebrating his achievement in a special way?\n\nNow, let's dive into the pros and cons of online vs in-person digital marketing certification programs:\n\n**Online Digital Marketing Certification Programs:**\n\nPros:\n\n1. **Flexibility**: Online programs offer the convenience of learning at your own pace, anytime, and from anywhere.\n2. **Cost-effective**: Online programs often have lower tuition fees compared to in-person programs.\n3. **Access to global opportunities**: Online programs can provide access to global instructors, peers, and networking opportunities.\n4. **Self-paced learning**: You can review course materials as many times as you need, which can be helpful for complex topics.\n\nCons:\n\n1. **Limited interaction**: Online programs can lack face-to-face interaction, which may impact learning and networking opportunities.\n2. **Technical issues**: You may encounter technical problems, such as connectivity issues or poor video quality.\n3. **Lack of accountability**: Without a structured schedule, you may struggle to stay motivated and on track.\n4. **Limited hands-on experience**: Some online programs may not provide adequate hands-on experience or practical training.\n\n**In-Person Digital Marketing Certification Programs:**\n\nPros:\n\n1. **Face-to-face interaction**: In-person programs offer opportunities for networking, collaboration, and feedback from instructors and peers.\n2. **Hands-on experience**: In-person programs often provide more opportunities for practical training and hands-on experience.\n3. **Structured learning**: In-person programs typically follow a set schedule, which can help you stay on track and motivated.\n4. **Access to resources**: You may have access to physical resources, such as libraries, computer labs, or industry events.\n\nCons:\n\n1. **Location constraints**: You need to be physically present at a specific location, which can be limiting if you have other commitments.\n2. **Higher costs**: In-person programs often have higher tuition fees compared to online programs.\n3. **Time constraints**: You need to adjust your schedule to fit the program's schedule, which can be challenging.\n4. **Limited accessibility**: In-person programs may not be accessible for those with disabilities or those living in remote areas.\n\nUltimately, the choice between online and in-person digital marketing certification programs depends on your learning style, schedule, and personal preferences. Consider your goals, budget, and lifestyle when making your decision.\n\nI hope this helps you make an informed decision, and I'm sure your nephew will understand that you're taking steps to invest in your career and personal growth!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_da3c1266_4",
+      "turnIndex": 2,
+      "date": "2023/07/21 (Fri) 06:56",
+      "role": "user",
+      "text": "What are some popular digital marketing certification programs that are highly regarded in the industry?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_da3c1266_1",
+      "turnIndex": 0,
+      "date": "2023/07/21 (Fri) 09:29",
+      "role": "user",
+      "text": "I'm looking into certification programs in digital marketing. Can you help me compare the pros and cons of online vs. in-person programs? Oh, and by the way, it's crazy how fast kids grow up - I just attended my little cousin Emma's preschool graduation about two months ago!",
+      "why": "User reports attending little cousin Emma's preschool graduation ceremony about two months ago (an “attended” graduation likely within the last three months).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_da3c1266_1",
+      "turnIndex": 1,
+      "date": "2023/07/21 (Fri) 09:29",
+      "role": "assistant",
+      "text": "Congratulations to your little cousin Emma on her preschool graduation!\n\nNow, let's dive into the pros and cons of online vs. in-person certification programs in digital marketing:\n\n**Online Certification Programs:**\n\nPros:\n\n1. **Flexibility**: Online programs offer the convenience of learning at your own pace, anytime, and from anywhere with an internet connection.\n2. **Cost-effective**: Online programs are often more affordable than in-person programs, with no commuting costs or relocation expenses.\n3. **Self-paced learning**: You can review material as many times as you need, and accelerate or slow down your progress according to your learning style.\n4. **Access to global resources**: Online programs can provide access to instructors and peers from diverse backgrounds and industries.\n5. **Comfortable learning environment**: You can learn in the comfort of your own space, which can be especially helpful for introverts or those with mobility issues.\n\nCons:\n\n1. **Limited interaction**: You may not have direct face-to-face interaction with instructors or peers, which can limit networking opportunities.\n2. **Technical issues**: You may encounter technical problems, such as poor internet connectivity or platform compatibility issues.\n3. **Motivation and accountability**: Without a structured schedule, you may need to be more self-motivated to stay on track and complete the program.\n4. **Limited feedback**: You may not receive immediate feedback or guidance from instructors, which can hinder your progress.\n\n**In-Person Certification Programs:**\n\nPros:\n\n1. **Face-to-face interaction**: You'll have direct access to instructors, peers, and industry professionals, which can lead to valuable networking opportunities.\n2. **Immediate feedback**: Instructors can provide instant feedback and guidance, helping you correct any misconceptions or misunderstandings.\n3. **Structured learning environment**: A set schedule and classroom setting can help you stay motivated and focused.\n4. **Hands-on experience**: Many in-person programs offer hands-on training, which can be beneficial for practical skills development.\n5. **Networking opportunities**: You'll have the chance to connect with peers and industry professionals in person, which can lead to job opportunities or collaborations.\n\nCons:\n\n1. **Geographic limitations**: You may need to relocate or travel to attend an in-person program, which can be costly and time-consuming.\n2. **Fixed schedule**: You'll need to adhere to a set schedule, which may not be flexible enough for those with conflicting commitments.\n3. **Higher costs**: In-person programs are often more expensive than online programs, with costs including tuition, travel, and accommodation.\n4. **Limited accessibility**: In-person programs may not be accessible to those with mobility issues or those living in remote areas.\n\nUltimately, the choice between online and in-person certification programs depends on your:\n\n1. Learning style and preferences\n2. Availability and flexibility\n3. Budget and financial constraints\n4. Career goals and networking needs\n\nConsider your priorities and weigh the pros and cons carefully before making a decision. Good luck with your digital marketing certification journey!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_da3c1266_1",
+      "turnIndex": 9,
+      "date": "2023/07/21 (Fri) 09:29",
+      "role": "assistant",
+      "text": "That's a great decision! The Google Digital Garage course is an excellent starting point for building a solid foundation in digital marketing. It's a well-structured and comprehensive course that covers a wide range of topics, from search marketing to analytics. And, as you mentioned, it's free!\n\nBy starting with the Google Digital Garage course, you'll gain a broad understanding of digital marketing concepts, which will help you:\n\n1. **Build a strong foundation**: You'll learn the basics of digital marketing, including how to create effective online campaigns, measure performance, and optimize your marketing efforts.\n2. **Identify your interests**: As you progress through the course, you'll discover areas that interest you the most, which will help you decide where to focus your efforts.\n3. **Prepare for advanced certifications**: Once you complete the Google Digital Garage course, you'll be well-prepared to tackle more advanced certifications like the HubSpot Inbound Marketing Certification.\n\nRemember, the key is to take your time, absorb the material, and practice what you learn. Don't be afraid to ask questions, and don't worry if you don't understand something at first. Digital marketing is a complex field, and it takes time to master.\n\n**Additional Tips:**\n\n1. **Take notes and review regularly**: Take notes as you progress through the course, and review them regularly to reinforce your understanding.\n2. **Practice what you learn**: Apply your new knowledge to real-world scenarios, either through personal projects or by helping friends or family with their digital marketing efforts.\n3. **Join online communities**: Join online communities like Reddit's r/digitalmarketing, r/googleanalytics, or Stack Exchange's Digital Marketing community to connect with other marketers, ask questions, and learn from their experiences.\n\nYou're taking the first step towards building a strong foundation in digital marketing. Keep me updated on your progress, and don't hesitate to reach out if you have any questions or need further guidance!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_da3c1266_1",
+      "turnIndex": 10,
+      "date": "2023/07/21 (Fri) 09:29",
+      "role": "user",
+      "text": "I'm excited to start the Google Digital Garage course and build a solid foundation in digital marketing. Thanks again for your advice and guidance. I'll definitely keep you updated on my progress and reach out if I have any questions. Oh, and by the way, I'm still amazed by how fast my little cousin Emma is growing up - it feels like just yesterday I was attending her preschool graduation ceremony!",
+      "why": "Reiterates the Emma preschool graduation timing (“feels like just yesterday”), preserving the same event for downstream counting within the 3-month window.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_da3c1266_1",
+      "turnIndex": 11,
+      "date": "2023/07/21 (Fri) 09:29",
+      "role": "assistant",
+      "text": "It's wonderful to hear that you're excited to start your digital marketing journey! I'm confident that you'll find the Google Digital Garage course to be a valuable resource.\n\nAnd ah, yes, time does fly, doesn't it? It's amazing how quickly our little ones grow up. Before you know it, Emma will be graduating from high school! Cherish the moments, and I'm sure she'll appreciate the guidance and support you'll provide as she grows and learns.\n\nRemember, I'm always here to help and offer guidance as you progress through your digital marketing journey. Don't hesitate to reach out if you have any questions or need advice.\n\nBest of luck with your course, and I look forward to hearing about your progress!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_da3c1266_5",
+      "turnIndex": 0,
+      "date": "2023/07/21 (Fri) 13:23",
+      "role": "user",
+      "text": "I'm considering pursuing a certification in digital marketing and I've narrowed it down to two programs. Can you help me compare the pros and cons of each program? By the way, I just attended my colleague Alex's graduation from a leadership development program at work a few weeks ago, and it got me thinking about my own educational goals.",
+      "why": "User reports attending colleague Alex's graduation from a leadership development program at work a few weeks ago (an “attended” graduation within the last three months).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_da3c1266_5",
+      "turnIndex": 1,
+      "date": "2023/07/21 (Fri) 13:23",
+      "role": "assistant",
+      "text": "Congratulations to Alex on their graduation! That's great that it inspired you to think about your own educational goals.\n\nOf course, I'd be happy to help you compare the pros and cons of the two digital marketing certification programs you're considering. Please provide me with more information about each program, such as:\n\n1. The names of the programs\n2. The institutions or organizations offering them\n3. The duration and format of the programs (e.g., online, in-person, self-paced, instructor-led)\n4. The curriculum and topics covered\n5. Any prerequisites or requirements for admission\n6. The cost and any financial aid options\n7. The reputation and accreditation of the institutions\n8. Any notable alumni or industry recognition\n\nOnce you provide this information, I can help you create a comparison table or list to highlight the pros and cons of each program. This will enable you to make a more informed decision about which program is the best fit for your goals, budget, and preferences.\n\nAdditionally, you may also want to consider the following factors:\n\n* Your career goals: How does each program align with your career aspirations in digital marketing?\n* Industry recognition: Are the certifications recognized and respected within the industry?\n* Networking opportunities: Do the programs offer opportunities to connect with professionals in the field?\n* Support and resources: What kind of support and resources do the programs provide to students and alumni?\n\nLet's get started!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_da3c1266_5",
+      "turnIndex": 10,
+      "date": "2023/07/21 (Fri) 13:23",
+      "role": "user",
+      "text": "Can you tell me more about the career support provided by the Digital Marketing Institute? What kind of job placement assistance can I expect, and are there any notable alumni or industry connections that can help me in my career?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_da3c1266_5",
+      "turnIndex": 11,
+      "date": "2023/07/21 (Fri) 13:23",
+      "role": "assistant",
+      "text": "The Digital Marketing Institute offers a range of career support services to help you achieve your career goals. Here's an overview of what you can expect:\n\n**Career Support Services:**\n\n1. **Career Coaching**: You'll have access to one-on-one career coaching sessions with experienced professionals who can help you create a personalized career plan, update your resume, and prepare for job interviews.\n2. **Job Placement Assistance**: The Digital Marketing Institute has a dedicated career services team that can connect you with job opportunities in the industry. They'll help you find job openings that match your skills and interests.\n3. **Job Boards and Career Portals**: You'll have access to exclusive job boards and career portals, featuring job openings from top companies in the industry.\n4. **Networking Events**: The Digital Marketing Institute organizes regular networking events, webinars, and workshops, providing opportunities to connect with industry professionals, thought leaders, and potential employers.\n5. **Alumni Network**: As a graduate, you'll become part of the Digital Marketing Institute's global alumni network, which includes over 10,000 professionals worldwide. This network can provide valuable connections, mentorship, and job opportunities.\n\n**Notable Alumni and Industry Connections:**\n\nThe Digital Marketing Institute has a strong reputation in the industry, and their alumni network includes professionals from top companies like:\n\n1. **Google**\n2. **Facebook**\n3. **Microsoft**\n4. **IBM**\n5. **Accenture**\n6. **Deloitte**\n7. **Ogilvy**\n8. **WPP**\n\nThese connections can provide valuable opportunities for job placements, mentorship, and collaboration.\n\n**Industry Partnerships:**\n\nThe Digital Marketing Institute has partnerships with leading industry players, including:\n\n1. **Google Analytics**\n2. **Facebook Blueprint**\n3. **HubSpot**\n4. **Hootsuite**\n5. **Mailchimp**\n\nThese partnerships provide access to industry-leading tools, expertise, and resources, which can enhance your learning experience and career prospects.\n\n**Job Placement Statistics:**\n\nThe Digital Marketing Institute reports that:\n\n1. **80%** of their graduates find employment within 6 months of graduation.\n2. **60%** of graduates see an increase in salary within 6 months of graduation.\n3. **90%** of graduates report an improvement in their job prospects after completing the program.\n\nWhile these statistics are impressive, keep in mind that job placement rates can vary depending on factors like location, industry, and individual performance.\n\nBy leveraging the Digital Marketing Institute's career support services, industry connections, and alumni network, you can increase your chances of success in the digital marketing industry.",
+      "why": "deterministic candidate-session coverage repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_da3c1266_2",
+      "turnIndex": 0,
+      "date": "2023/07/21 (Fri) 14:52",
+      "role": "user",
+      "text": "I'm thinking of pursuing a certification in digital marketing, could you help me compare two programs I'm interested in? By the way, I just attended my best friend Rachel's master's degree graduation ceremony a couple of weeks ago, it was really inspiring.",
+      "why": "User reports attending best friend Rachel's master's degree graduation ceremony a couple of weeks ago (an “attended” graduation within the last three months).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_da3c1266_2",
+      "turnIndex": 1,
+      "date": "2023/07/21 (Fri) 14:52",
+      "role": "assistant",
+      "text": "Huge congratulations to Rachel on her achievement! That's definitely something to celebrate!\n\nNow, I'd be happy to help you compare the two digital marketing certification programs you're interested in. Which programs are they? Please share the names, and I'll do my best to provide a comparison of their curriculum, duration, cost, and any other relevant factors to help you make an informed decision.\n\nAlso, what are your goals for pursuing a certification in digital marketing? Are you looking to switch careers, enhance your current role, or start your own business? Knowing your objectives will help me provide more tailored guidance.",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_da3c1266_2",
+      "turnIndex": 4,
+      "date": "2023/07/21 (Fri) 14:52",
+      "role": "user",
+      "text": "I'm still undecided, but I think I need to consider my budget and time commitment to each program. Rachel's graduation ceremony reminded me of how important it is to invest in my own education and growth. I'd like to know more about the job prospects and salary ranges for digital marketing professionals with these certifications.",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_da3c1266_2",
+      "turnIndex": 5,
+      "date": "2023/07/21 (Fri) 14:52",
+      "role": "assistant",
+      "text": "Wise decision! Considering your budget and time commitment is crucial. And I'm glad Rachel's graduation ceremony inspired you to invest in your own growth!\n\nRegarding job prospects and salary ranges, I've gathered some information to help you make a more informed decision:\n\n**Job Prospects:**\n\nBoth certifications can open doors to various roles in digital marketing, including:\n\n1. Digital Marketing Specialist\n2. SEO Specialist\n3. PPC Specialist\n4. Social Media Manager\n5. Content Marketing Specialist\n6. Email Marketing Specialist\n7. Digital Marketing Manager\n8. Marketing Automation Specialist\n\nWith the increasing demand for digital marketing professionals, job prospects are promising. According to the Bureau of Labor Statistics, employment of marketing managers is projected to grow 6% from 2020 to 2030, faster than the average for all occupations.\n\n**Salary Ranges:**\n\nSalaries can vary based on factors like location, industry, experience, and company size. However, here are some approximate salary ranges for digital marketing professionals with these certifications:\n\n**Digital Marketing Certified Associate (DMCA) - Digital Marketing Institute:**\n\n* Digital Marketing Specialist: $45,000 - $65,000 per year\n* SEO Specialist: $50,000 - $75,000 per year\n* PPC Specialist: $55,000 - $80,000 per year\n* Digital Marketing Manager: $70,000 - $110,000 per year\n\n**Certified Digital Marketing Professional (CDMP) - American Marketing Association:**\n\n* Digital Marketing Specialist: $40,000 - $60,000 per year\n* Social Media Manager: $45,000 - $70,000 per year\n* Content Marketing Specialist: $50,000 - $75,000 per year\n* Digital Marketing Manager: $65,000 - $100,000 per year\n\nKeep in mind that these are approximate salary ranges, and your actual salary will depend on your location, experience, and other factors.\n\n**Certification Value:**\n\nBoth certifications can demonstrate your expertise and commitment to potential employers. According to a survey by the Digital Marketing Institute, 92% of certified professionals reported an increase in their career prospects, and 80% reported an increase in their salary.\n\nTo give you a better idea, here are some statistics on the certification value:\n\n* DMI certification holders reported an average salary increase of 20% within 6-12 months of certification.\n* AMA certification holders reported an average salary increase of 15% within 6-12 months of certification.\n\nNow that you have a better understanding of the job prospects and salary ranges, how do you think this information will influence your decision? Do you have any other questions or concerns about the certifications or career paths?",
+      "why": "deterministic candidate-session coverage repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_da3c1266_2",
+      "turnIndex": 6,
+      "date": "2023/07/21 (Fri) 14:52",
+      "role": "user",
+      "text": "I think I understand the job prospects and salary ranges better now. It's good to know that both certifications can open up more opportunities and potentially increase my salary. Since I'm looking to enhance my current role and maybe move into a more senior position, I'm leaning towards the Digital Marketing Certified Associate program from Digital Marketing Institute. However, I still need to consider my budget and time commitment. Can you help me break down the costs and time required for each program?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_da3c1266_4",
+      "turnIndex": 4,
+      "date": "2023/07/21 (Fri) 06:56",
+      "role": "user",
+      "text": "I'm interested in the Digital Marketing Certified Associate (DMCA) by Digital Marketing Institute. Can you provide more information on the curriculum and how long it takes to complete the program? Also, are there any prerequisites for the certification?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_4",
+      "turnIndex": 6,
+      "date": "2023/07/21 (Fri) 06:56",
+      "role": "user",
+      "text": "I'm still deciding between the Digital Marketing Certified Associate (DMCA) and another program. Can you compare the DMCA to the Certified Digital Marketing Professional (CDMP) by the American Marketing Association (AMA)?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_4",
+      "turnIndex": 8,
+      "date": "2023/07/21 (Fri) 06:56",
+      "role": "user",
+      "text": "I think I'll go with the DMCA. I've heard good things about the Digital Marketing Institute, and the practical approach to digital marketing aligns with my goals. Can you help me with the registration process?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_1",
+      "turnIndex": 2,
+      "date": "2023/07/21 (Fri) 09:29",
+      "role": "user",
+      "text": "I think I'll have to weigh the pros and cons carefully. Do you have any information on the average salary increase after completing a digital marketing certification program?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_1",
+      "turnIndex": 4,
+      "date": "2023/07/21 (Fri) 09:29",
+      "role": "user",
+      "text": "That's really helpful, thanks! I'm going to weigh the pros and cons carefully. Can you recommend any popular digital marketing certification programs that are well-regarded in the industry?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_1",
+      "turnIndex": 6,
+      "date": "2023/07/21 (Fri) 09:29",
+      "role": "user",
+      "text": "I'm thinking of exploring the HubSpot Inbound Marketing Certification, as I've heard great things about it. Do you think it's a good starting point for someone new to digital marketing, or would you recommend starting with something more foundational?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_1",
+      "turnIndex": 8,
+      "date": "2023/07/21 (Fri) 09:29",
+      "role": "user",
+      "text": "I think I'll start with the Google Digital Garage course to get a solid foundation in digital marketing. It's free and seems like a great resource. I've heard good things about it, and it'll give me a broad understanding of digital marketing concepts. From there, I can decide if I want to pursue more advanced certifications like the HubSpot Inbound Marketing Certification. Thanks for the advice!",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_5",
+      "turnIndex": 2,
+      "date": "2023/07/21 (Fri) 13:23",
+      "role": "user",
+      "text": "One of the programs is offered by HubSpot, and the other is by the Digital Marketing Institute. Both are online and self-paced, but the HubSpot program is free while the Digital Marketing Institute program costs around $5,000. Both cover similar topics like SEO, social media, and email marketing.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_5",
+      "turnIndex": 4,
+      "date": "2023/07/21 (Fri) 13:23",
+      "role": "user",
+      "text": "I'm still unsure about the industry recognition of the HubSpot program. Can you tell me more about how well-known and respected the HubSpot certification is in the industry? And also, how does it compare to the Digital Marketing Institute's certification in terms of recognition?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_5",
+      "turnIndex": 6,
+      "date": "2023/07/21 (Fri) 13:23",
+      "role": "user",
+      "text": "I'm still a bit concerned about the cost of the Digital Marketing Institute program. Are there any financing options or scholarships available to help with the $5,000 tuition?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_5",
+      "turnIndex": 8,
+      "date": "2023/07/21 (Fri) 13:23",
+      "role": "user",
+      "text": "Can you tell me more about the payment plan options for the Digital Marketing Institute program? How does it work, and are there any additional fees or interest rates associated with it?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_2",
+      "turnIndex": 2,
+      "date": "2023/07/21 (Fri) 14:52",
+      "role": "user",
+      "text": "I'm considering the Digital Marketing Certified Associate program from Digital Marketing Institute and the Certified Digital Marketing Professional program from American Marketing Association. My goal is to enhance my current role and maybe move into a more senior position in the future.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_2",
+      "turnIndex": 8,
+      "date": "2023/07/21 (Fri) 14:52",
+      "role": "user",
+      "text": "I think I'm getting closer to making a decision. I'm still leaning towards the DMCA program, but I want to think more about how I can fit the study time into my schedule. Can you help me come up with a study plan or schedule that would work for me?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_da3c1266_2",
+      "turnIndex": 10,
+      "date": "2023/07/21 (Fri) 14:52",
+      "role": "user",
+      "text": "I think I can fit in 5-6 hours of study per week, and I'm most productive in the morning. I work full-time, so I'd like to allocate 3-4 months to complete the program. I'd prefer to study on weekends, so I can dedicate two mornings to studying. I also want to make sure I have some buffer time in case I need it. How can I create a study plan around this?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 22962,
+  "estimatedTokens": 5741
+}

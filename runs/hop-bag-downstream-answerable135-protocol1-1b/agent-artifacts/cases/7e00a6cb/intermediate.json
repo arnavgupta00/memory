@@ -1,0 +1,38 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Use only the previously recommended hostel name near the Red Light District from the prior recommendation context.",
+    "candidateStatus": "found",
+    "missingRisk": "If the user meant a different hostel than the one explicitly stated as near the Red Light District in the prior session, the selected turn may not match the intended name.",
+    "items": [
+      {
+        "sessionId": "answer_ultrachat_370515",
+        "turnIndex": 1,
+        "why": "This assistant message lists hostel options and explicitly includes 'International Budget Hostel' described as situated near the famous Red Light District—the likely 'recommended last time' hostel name the user asks to recall."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Use only the previously recommended hostel name near the Red Light District from the prior recommendation context.",
+    "candidateStatus": "found",
+    "missingRisk": "If the user meant a different hostel than the one explicitly stated as near the Red Light District in the prior session, the selected turn may not match the intended name.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_ultrachat_370515",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_ultrachat_370515",
+        "turnIndex": 1,
+        "why": "This assistant message lists hostel options and explicitly includes 'International Budget Hostel' described as situated near the famous Red Light District—the likely 'recommended last time' hostel name the user asks to recall."
+      },
+      {
+        "sessionId": "answer_ultrachat_370515",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

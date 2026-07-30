@@ -1,0 +1,280 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "User’s own collection of “rare items” mentioned in chat (rare figurines, rare coins, rare records, rare books)",
+  "candidateStatus": "found",
+  "missingRisk": "May be other rare-item categories (or additional counts) mentioned outside the provided memory, or the user may mean a broader definition than the categories explicitly quantified here.",
+  "items": [
+    {
+      "sessionId": "answer_b6018747_2",
+      "turnIndex": 4,
+      "date": "2023/05/22 (Mon) 15:51",
+      "role": "user",
+      "text": "I'll keep that in mind. Yeah, I have 12 rare figurines in my collection, and I'm always looking to improve my knowledge about them. Do you think these appraisers would also be able to help me find a good way to store them safely? I've been meaning to get a better display case or a secure storage solution to protect them from damage.",
+      "why": "Gives the count of the user’s rare figurines (“I have 12 rare figurines”).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_b6018747_2",
+      "turnIndex": 10,
+      "date": "2023/05/22 (Mon) 15:51",
+      "role": "user",
+      "text": "I'm excited to add it to my collection of 57 rare records. I've been meaning to update my inventory list, but I've been putting it off. Do you think these appraisers or conservation specialists could help me with that as well?",
+      "why": "Gives the count of the user’s rare records (“collection of 57 rare records”).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_b6018747_4",
+      "turnIndex": 0,
+      "date": "2023/05/22 (Mon) 21:02",
+      "role": "user",
+      "text": "I'm looking for a professional book conservator to sign my recently acquired first edition of \"To Kill a Mockingbird\". Do you have any recommendations or know of any reputable services in my area? By the way, I've been collecting rare books for a while now and have a small but valuable collection of 5 books.",
+      "why": "Gives the count of the user’s rare books (“small but valuable collection of 5 books”).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_b6018747_3",
+      "turnIndex": 4,
+      "date": "2023/05/23 (Tue) 22:19",
+      "role": "user",
+      "text": "I actually have 25 rare coins that I need to store safely, so I'll definitely consider those factors when choosing between a fireproof safe and a safety deposit box.",
+      "why": "Gives the count of the user’s rare coins (“I actually have 25 rare coins”).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_b6018747_2",
+      "turnIndex": 0,
+      "date": "2023/05/22 (Mon) 15:51",
+      "role": "user",
+      "text": "I'm looking for a professional appraiser to evaluate my friend's antique vase. Can you recommend any reputable services in my area?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_b6018747_2",
+      "turnIndex": 2,
+      "date": "2023/05/22 (Mon) 15:51",
+      "role": "user",
+      "text": "I'll definitely follow those steps. By the way, do you know if any of those appraisal services would be able to help me with my other collectibles, like my rare figurines?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_b6018747_2",
+      "turnIndex": 6,
+      "date": "2023/05/22 (Mon) 15:51",
+      "role": "user",
+      "text": "I'm also worried about storing my rare coins safely. Do you think these appraisers or conservation specialists would be able to advise on that as well?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_b6018747_2",
+      "turnIndex": 8,
+      "date": "2023/05/22 (Mon) 15:51",
+      "role": "user",
+      "text": "I'll definitely ask them about their experience with coin storage and conservation. Do you think they would also be able to help me find a good way to store my rare records? I just got a new vinyl record that I'm excited to add to my collection.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_b6018747_4",
+      "turnIndex": 2,
+      "date": "2023/05/22 (Mon) 21:02",
+      "role": "user",
+      "text": "I'll definitely look into those options. By the way, do you know if any of those conservators also offer appraisal services for rare items like my grandmother's antique vase?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_b6018747_4",
+      "turnIndex": 4,
+      "date": "2023/05/22 (Mon) 21:02",
+      "role": "user",
+      "text": "I'll look into those options. Do you know if any of those appraisers also offer services to help me find a secure way to store my rare coins?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_b6018747_4",
+      "turnIndex": 6,
+      "date": "2023/05/22 (Mon) 21:02",
+      "role": "user",
+      "text": "I'll definitely look into those options. Can you recommend any specific security consultants or wealth management firms that specialize in securing valuable assets like rare coins, art, and antiques?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_b6018747_4",
+      "turnIndex": 8,
+      "date": "2023/05/22 (Mon) 21:02",
+      "role": "user",
+      "text": "I'll definitely look into those options. I'm also thinking of starting a rare book club with some friends who share my interest. Do you know of any existing clubs or organizations that focus on rare books and manuscripts?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_b6018747_4",
+      "turnIndex": 10,
+      "date": "2023/05/22 (Mon) 21:02",
+      "role": "user",
+      "text": "I'll definitely look into those options. I'm thinking of organizing a meeting for my rare book club and I would like to discuss some rare book-related topics. Do you know of any interesting topics or themes that I could propose to my club members?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_b6018747_1",
+      "turnIndex": 0,
+      "date": "2023/05/22 (Mon) 23:19",
+      "role": "user",
+      "text": "I've been looking for a way to organize my music collection, specifically my rare records. Do you have any suggestions on how to create a catalog system for my 57 rare records?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_b6018747_1",
+      "turnIndex": 2,
+      "date": "2023/05/22 (Mon) 23:19",
+      "role": "user",
+      "text": "I think I'll start with a spreadsheet. Do you know of any online resources that could help me find the values of my records?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_b6018747_1",
+      "turnIndex": 4,
+      "date": "2023/05/22 (Mon) 23:19",
+      "role": "user",
+      "text": "I'll also need to research the value of my grandmother's antique vase. Do you know of any online resources or experts that can help me get it appraised?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_b6018747_1",
+      "turnIndex": 6,
+      "date": "2023/05/22 (Mon) 23:19",
+      "role": "user",
+      "text": "I'll start by researching online resources for antique vases similar to my grandmother's. Do you know of any online forums or communities where I can connect with antique collectors or experts who might be able to provide more guidance or leads on getting my vase appraised?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_b6018747_1",
+      "turnIndex": 8,
+      "date": "2023/05/22 (Mon) 23:19",
+      "role": "user",
+      "text": "I'll try posting on some of these online forums and communities to see if anyone can provide more information about my grandmother's vase. In the meantime, I was also thinking about my rare records and how I can showcase them better. Do you know of any display cases or storage solutions that can help protect and showcase them?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_b6018747_1",
+      "turnIndex": 10,
+      "date": "2023/05/22 (Mon) 23:19",
+      "role": "user",
+      "text": "I think I'll start looking into those display cases and storage solutions. I've been meaning to get a better way to showcase the rare records, and it would be great to have a system that can protect them as well.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_b6018747_3",
+      "turnIndex": 0,
+      "date": "2023/05/23 (Tue) 22:19",
+      "role": "user",
+      "text": "I'm looking for a reputable appraiser to evaluate my friend's antique vase. Do you have any recommendations or directories I can check?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_b6018747_3",
+      "turnIndex": 2,
+      "date": "2023/05/23 (Tue) 22:19",
+      "role": "user",
+      "text": "I'll definitely check out those directories and associations. By the way, speaking of valuable items, I've been thinking of getting a fireproof safe or a safety deposit box to store my rare coins. Do you have any recommendations on that?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_b6018747_3",
+      "turnIndex": 6,
+      "date": "2023/05/23 (Tue) 22:19",
+      "role": "user",
+      "text": "I'll definitely keep those factors in mind when choosing between a fireproof safe and a safety deposit box. By the way, do you know if there are any coin collector communities or forums where I can connect with other collectors and learn more about rare coins?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_b6018747_3",
+      "turnIndex": 8,
+      "date": "2023/05/23 (Tue) 22:19",
+      "role": "user",
+      "text": "I'll definitely check out those online communities and forums to connect with other collectors and learn more about rare coins. Thanks for the recommendations! I've also been thinking of getting my rare book collection appraised, do you know of any reputable book appraisers or directories I can check out?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_b6018747_3",
+      "turnIndex": 10,
+      "date": "2023/05/23 (Tue) 22:19",
+      "role": "user",
+      "text": "I'll definitely check out those directories and resources to find a reputable book appraiser. By the way, speaking of rare items, I've been meaning to update my inventory list of rare records. Do you know of any good software or apps that can help me organize and track my collection?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "a3d8e134_2",
+      "turnIndex": 0,
+      "date": "2023/05/25 (Thu) 21:59",
+      "role": "user",
+      "text": "I'm thinking of starting a collection of rare items, and I was wondering if you could give me some tips on how to identify valuable items and where to sell them. I've had a few lucky finds recently, and each of them was highly valued by collectors and experts, selling for a significant amount of money.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "a3d8e134_2",
+      "turnIndex": 2,
+      "date": "2023/05/25 (Thu) 21:59",
+      "role": "user",
+      "text": "I'm actually considering expanding my search to online marketplaces and forums, but I'm not sure where to start. Can you recommend some popular platforms for buying and selling rare items, and maybe some tips on how to navigate them safely?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "a3d8e134_2",
+      "turnIndex": 4,
+      "date": "2023/05/25 (Thu) 21:59",
+      "role": "user",
+      "text": "I'm particularly interested in rare vinyl records, so can you tell me more about online marketplaces and forums that specialize in vinyl collectibles?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "a3d8e134_2",
+      "turnIndex": 6,
+      "date": "2023/05/25 (Thu) 21:59",
+      "role": "user",
+      "text": "I've had some experience with rare vinyl records too. Each of the items I've discovered was highly valued by collectors and experts, and I was able to sell them for a significant amount of money. Speaking of which, I recently found a rare 1967 pressing of The Beatles' Sgt. Pepper's Lonely Hearts Club Band, still in its original packaging and in near-mint condition. I snatched it up for a steal and later sold it to a record collector for a tidy profit. Do you have any tips on how to grade the condition of vinyl records?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "a3d8e134_2",
+      "turnIndex": 8,
+      "date": "2023/05/25 (Thu) 21:59",
+      "role": "user",
+      "text": "Thanks for the tips! I've been thinking about getting my records professionally graded, especially the rare ones like that 1967 Sgt. Pepper's Lonely Hearts Club Band album I mentioned earlier. Do you think it's worth the cost, or should I just stick with grading them myself?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "a3d8e134_2",
+      "turnIndex": 10,
+      "date": "2023/05/25 (Thu) 21:59",
+      "role": "user",
+      "text": "I think I'll consider getting my rare records professionally graded, especially the 1967 Sgt. Pepper's Lonely Hearts Club Band album. It's a valuable record, and the added authenticity and validation could increase its value and make it more attractive to potential buyers. Do you think I should also get an appraisal for the record, or is the professional grade enough?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 7064,
+  "estimatedTokens": 1766
+}

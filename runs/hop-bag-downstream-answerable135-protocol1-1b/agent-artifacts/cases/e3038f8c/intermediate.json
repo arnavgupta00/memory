@@ -1,0 +1,143 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Sum the counts of all “rare items” explicitly quantified in the candidate sessions (figurines, coins, records, books).",
+    "candidateStatus": "found",
+    "missingRisk": "Other rare-item categories (e.g., antiques/vase) aren’t quantified here, and there may be duplicates or overlaps across sessions; downstream may need to decide whether to include/exclude any uncounted items.",
+    "items": [
+      {
+        "sessionId": "answer_b6018747_2",
+        "turnIndex": 4,
+        "why": "Contains the explicit count: “I have 12 rare figurines in my collection.”"
+      },
+      {
+        "sessionId": "answer_b6018747_2",
+        "turnIndex": 10,
+        "why": "Contains the explicit count: “I’m excited to add it to my collection of 57 rare records.”"
+      },
+      {
+        "sessionId": "answer_b6018747_4",
+        "turnIndex": 0,
+        "why": "Contains the explicit count: “I have a small but valuable collection of 5 rare books.”"
+      },
+      {
+        "sessionId": "answer_b6018747_3",
+        "turnIndex": 4,
+        "why": "Contains the explicit count: “I actually have 25 rare coins that I need to store safely.”"
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Sum the counts of all “rare items” explicitly quantified in the candidate sessions (figurines, coins, records, books).",
+    "candidateStatus": "found",
+    "missingRisk": "Other rare-item categories (e.g., antiques/vase) aren’t quantified here, and there may be duplicates or overlaps across sessions; downstream may need to decide whether to include/exclude any uncounted items.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_b6018747_2",
+        "turnIndex": 4,
+        "why": "Contains the explicit count: “I have 12 rare figurines in my collection.”"
+      },
+      {
+        "sessionId": "answer_b6018747_2",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_b6018747_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_b6018747_2",
+        "turnIndex": 10,
+        "why": "Contains the explicit count: “I’m excited to add it to my collection of 57 rare records.”"
+      },
+      {
+        "sessionId": "answer_b6018747_2",
+        "turnIndex": 11,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_b6018747_2",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_b6018747_4",
+        "turnIndex": 0,
+        "why": "Contains the explicit count: “I have a small but valuable collection of 5 rare books.”"
+      },
+      {
+        "sessionId": "answer_b6018747_4",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_b6018747_3",
+        "turnIndex": 4,
+        "why": "Contains the explicit count: “I actually have 25 rare coins that I need to store safely.”"
+      },
+      {
+        "sessionId": "answer_b6018747_3",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_b6018747_3",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_b6018747_2",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_b6018747_4",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_b6018747_4",
+        "turnIndex": 3,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_b6018747_4",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_b6018747_1",
+        "turnIndex": 0,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_b6018747_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_b6018747_3",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "a3d8e134_2",
+        "turnIndex": 6,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "a3d8e134_2",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "a3d8e134_2",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

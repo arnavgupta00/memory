@@ -1,0 +1,18 @@
+{
+  "queryShape": "order",
+  "setBoundary": "People you met: Mark & Sarah (friends) vs Tom (a guy you met at a charity event); determine which was met first based on the dates you gave.",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_e60a93ff_1",
+      "turnIndex": 0,
+      "why": "States you’re planning to visit friends Mark and Sarah and says you met them on a beach trip about a month ago."
+    },
+    {
+      "sessionId": "answer_e60a93ff_2",
+      "turnIndex": 0,
+      "why": "Mentions you volunteered a few months ago and met a guy named Tom involved with the organization (used as the meeting-time basis for Tom)."
+    }
+  ]
+}

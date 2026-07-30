@@ -1,0 +1,82 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "answer_85a77c48_2",
+      "turnIndex": 2,
+      "date": "2023/05/23 (Tue) 10:44",
+      "role": "user",
+      "text": "I think I'll go with the customized jewelry option. I've been looking at some online marketplaces and I found a similar necklace that I got for my sister's birthday, which was $75. I'm hoping to find something around that price range or a bit higher. By the way, I've been good about budgeting for gifts lately, except for one impulse buy last week when I saw a sale at my favorite bookstore - I got the book for $24 after a discount.",
+      "why": "per-session extractor: Provides the discounted price of the book, which is needed to compute the percentage discount if the original price is available elsewhere.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_85a77c48_1",
+      "turnIndex": 6,
+      "date": "2023/05/27 (Sat) 03:55",
+      "role": "user",
+      "text": "It's actually the new release from my favorite author, which was originally priced at $30. I'm really looking forward to diving in and getting lost in the story.",
+      "why": "per-session extractor: Provides the context (favorite author) and original price, which may be needed to calculate or verify the discount.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_85a77c48_2",
+      "turnIndex": 1,
+      "date": "2023/05/23 (Tue) 10:44",
+      "role": "assistant",
+      "text": "What a wonderful gesture! I'd be happy to help you find the perfect gift for your mom's anniversary within your budget of $150-$200. Here are some options for each of the ideas you mentioned:\n\n**Personalized Photo Album:**\n\n1. **Shutterfly**: Create a beautiful, leather-bound photo album with up to 100 photos. ($159)\n2. **Snapfish**: Design a personalized photo book with a custom cover and up to 150 photos. ($149)\n3. **Mixbook**: Make a stunning photo album with a variety of templates and up to 200 photos. ($179)\n\n**Customized Jewelry:**\n\n1. **Etsy**: Find a unique, handmade piece of jewelry with a custom name, initials, or special message. ($150-$200)\n2. **Personalization Mall**: Create a customized necklace with a photo, name, or special message. ($149-$199)\n3. **Zales**: Design a beautiful, engraved necklace or bracelet with a special message. ($150-$200)\n\n**Gourmet Food Basket:**\n\n1. **Harry & David**: Put together a gourmet food basket filled with artisanal cheeses, crackers, and chocolates. ($149)\n2. **Gourmet Gift Baskets**: Create a custom basket with a selection of gourmet foods, teas, or coffees. ($150-$200)\n3. **Dean & DeLuca**: Design a gift basket with specialty foods, such as truffles, jams, and baked goods. ($149-$199)\n\nConsider the following tips to help you make a final decision:\n\n* Think about your mom's interests and hobbies. Does she love cooking? A gourmet food basket might be the way to go. Is she sentimental? A personalized photo album could be the perfect choice.\n* Consider the quality and durability of the gift. Will it last for years to come, or is it a more temporary indulgence?\n* If you're still unsure, you could always combine elements of each idea. For example, create a personalized photo album with a customized cover and include a gourmet food item or two inside.\n\nI hope this helps you find the perfect gift for your mom's anniversary!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_85a77c48_2",
+      "turnIndex": 3,
+      "date": "2023/05/23 (Tue) 10:44",
+      "role": "assistant",
+      "text": "Customized jewelry can make for a thoughtful and unique gift.\n\nIt's great that you have a reference point with the necklace you got for your sister's birthday, and you're looking to stay within a similar price range. You can definitely find some beautiful options within the $75-$150 range.\n\nSince you mentioned you've been good about budgeting for gifts, that impulse buy at the bookstore shouldn't set you back too much. It's okay to treat yourself every now and then, and it sounds like you got a good deal on the book!\n\nFor customized jewelry, you might want to consider the following options:\n\n1. **Etsy**: As I mentioned earlier, Etsy is a great platform for finding unique, handmade jewelry. You can search for keywords like \"custom name necklace,\" \"personalized birthstone necklace,\" or \"monogrammed pendant\" to find relevant listings. Prices vary, but you can often find beautiful pieces within your budget.\n2. **Amazon Handmade**: Similar to Etsy, Amazon Handmade features unique, handmade products, including jewelry. You can search for customized jewelry options and filter by price to find something within your range.\n3. **Zibbet**: Zibbet is another online marketplace that features handmade and unique items, including jewelry. You can search for customized jewelry options and filter by price to find something that fits your budget.\n4. **Local jewelry stores**: If you prefer to shop in-person, consider visiting local jewelry stores in your area. They may offer customization options or have a selection of pre-made pieces that can be personalized.\n\nRemember to check reviews, read descriptions carefully, and ask about production times and shipping if you're shopping online. Good luck in your search, and I hope you find the perfect gift for your mom's anniversary!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_85a77c48_1",
+      "turnIndex": 4,
+      "date": "2023/05/27 (Sat) 03:55",
+      "role": "user",
+      "text": "I'll definitely check out some local options. I've been doing a lot of online shopping lately, especially during sales events, but for a more personal gift like this, I'd prefer to shop in-store. Speaking of sales, I've been trying to cut back on impulse buys, but I couldn't resist that sale at my favorite bookstore last week.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_85a77c48_1",
+      "turnIndex": 5,
+      "date": "2023/05/27 (Sat) 03:55",
+      "role": "assistant",
+      "text": "I completely understand! There's something special about shopping in-store, especially when it comes to finding a unique and personalized gift. You can touch, feel, and see the products up close, and get a sense of the quality and craftsmanship. Plus, you can get immediate feedback and advice from the sales staff, which can be really helpful when making a special purchase.\n\nAnd don't worry about the impulse buy at your favorite bookstore - it's hard to resist a good sale, especially when it's on something you love! Treating yourself every now and then is okay, and it sounds like you're making an effort to be more mindful of your spending habits. Maybe you can balance it out by setting a budget for your mom's gift and sticking to it.\n\nBy the way, what's the book you picked up during the sale? Is it part of a series, or a new author you're trying out?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_85a77c48_1",
+      "turnIndex": 7,
+      "date": "2023/05/27 (Sat) 03:55",
+      "role": "assistant",
+      "text": "That's great! It's always exciting to get your hands on a new release from a favorite author, especially when it's a anticipated book. And what a great deal you got with the discount!\n\nI'm sure you'll have a wonderful time getting lost in the story and exploring the world and characters that your author has created. There's something special about immersing yourself in a good book, isn't there?\n\nNow, back to your mom's gift... since you're looking for a more personal and unique gift, have you considered what type of customization options you might be interested in? For example, would you like to engrave a special message, her birthstone, or a particular symbol that holds meaning for her?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_85a77c48_1",
+      "turnIndex": 8,
+      "date": "2023/05/27 (Sat) 03:55",
+      "role": "user",
+      "text": "Yeah, I think a customized message or her birthstone would be a nice touch. I know she loves sentimental gifts, so something that shows I put thought into it would mean a lot to her. Do you think any of the local jewelers would be able to create a custom piece like that?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 6434,
+  "estimatedTokens": 1609
+}

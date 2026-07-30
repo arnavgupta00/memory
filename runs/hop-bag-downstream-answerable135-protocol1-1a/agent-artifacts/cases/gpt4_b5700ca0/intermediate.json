@@ -1,0 +1,18 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Religious activities the user attended last week (relative to 2023/04/10)",
+  "candidateStatus": "found",
+  "missingRisk": "You may have attended another religious activity last week that isn’t mentioned in the selected turns.",
+  "items": [
+    {
+      "sessionId": "answer_a17423e8_1",
+      "turnIndex": 6,
+      "why": "User directly states: they attended the Maundy Thursday service at the Episcopal Church (last week relative to 2023/04/10)."
+    },
+    {
+      "sessionId": "answer_a17423e8_1",
+      "turnIndex": 5,
+      "why": "Nearby context where the user is discussing volunteering details; includes the lead-up timeline around the Maundy Thursday mention in the following user turn."
+    }
+  ]
+}

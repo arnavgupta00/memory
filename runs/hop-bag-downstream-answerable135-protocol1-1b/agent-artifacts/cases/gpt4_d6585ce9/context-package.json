@@ -1,0 +1,343 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Identify the person(s) the user went with to the music event on last Saturday (relative to 2023/04/22).",
+  "candidateStatus": "found",
+  "missingRisk": "If the “music event” on 2023/04/15 referenced a different event than the Queen/Adam Lambert show in the available session, the selected turn may not match the asked event.; frozen bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "answer_f999b05c_1",
+      "turnIndex": 9,
+      "date": "2023/03/18 (Sat) 06:47",
+      "role": "assistant",
+      "text": "That sounds like a fantastic photo! Printing a high-quality copy is essential to preserve the memory. You have several options for printing your photo, both online and locally. Here are some popular services and stores that offer high-quality printing:\n\n**Online Services:**\n\n1. **Shutterfly**: Shutterfly is a well-known online printing service that offers a wide range of printing options, including photo prints, canvas prints, and more.\n2. **Snapfish**: Snapfish is another popular online printing service that provides high-quality photo prints, with options for various sizes, finishes, and framing.\n3. **Walgreens Photo**: Walgreens Photo is a convenient online service that allows you to upload your photos and pick them up at a local Walgreens store or have them shipped to your doorstep.\n4. **Costco Photo Center**: If you're a Costco member, you can use their online Photo Center to print high-quality photos at competitive prices.\n5. **Mpix**: Mpix is a professional-grade online printing service that offers high-quality photo prints, with a focus on color accuracy and paper quality.\n\n**Local Stores:**\n\n1. **CVS Photo**: CVS Photo is a convenient option with locations throughout the US. You can upload your photos online and pick them up at a local store.\n2. **Walgreens**: In addition to their online service, Walgreens also offers in-store printing at many locations.\n3. **Costco**: If you have a Costco membership, you can print your photos at a local warehouse.\n4. **Local camera stores**: Look for local camera stores or photography studios in your area that offer printing services. They may offer high-quality printing and expert advice on printing options.\n5. **Office supply stores**: Office supply stores like Staples, Office Depot, or OfficeMax may also offer printing services, although the quality might vary.\n\n**Tips:**\n\n1. **Check reviews**: Before choosing a printing service, check online reviews to ensure they offer high-quality prints and good customer service.\n2. **Compare prices**: Compare prices among different services to find the best deal for your budget.\n3. **Paper quality**: If you want a high-quality print, look for services that offer premium paper options, such as matte or glossy finishes.\n4. **Turnaround time**: Check the turnaround time for printing and shipping, especially if you need the print quickly.\n5. **Editing options**: Some services offer editing options, such as cropping, resizing, or color correction. Take advantage of these features to enhance your photo.\n\nBy choosing a reputable printing service, you'll be able to get a high-quality print that will look great in your frame. Have fun printing your photo, and I hope it turns out amazing!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f999b05c_1",
+      "turnIndex": 10,
+      "date": "2023/03/18 (Sat) 06:47",
+      "role": "user",
+      "text": "I think I'll try Shutterfly or Snapfish for printing my photo. They seem to have good reviews and a wide range of printing options. Do you have any tips on how to properly care for my framed photo and ticket stub to ensure they last for a long time?",
+      "why": "deterministic candidate-session coverage repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f999b05c_1",
+      "turnIndex": 11,
+      "date": "2023/03/18 (Sat) 06:47",
+      "role": "assistant",
+      "text": "Both Shutterfly and Snapfish are well-known for their high-quality printing services.\n\nNow, about caring for your framed photo and ticket stub... Proper care is essential to ensure they remain in great condition for years to come. Here are some tips to help you preserve your framed memorabilia:\n\n**Framing:**\n\n1. **Use acid-free materials**: Make sure the frame, matting, and backing are made from acid-free materials to prevent damage from acidic substances.\n2. **UV-filtering glass or acrylic**: Use glass or acrylic with UV-filtering properties to protect your photo and ticket stub from harmful UV light.\n3. **Secure the frame**: Ensure the frame is properly secured to the wall to prevent it from falling or shifting.\n\n**Environmental Control:**\n\n1. **Avoid direct sunlight**: Place your framed photo and ticket stub away from direct sunlight, which can cause fading, discoloration, or damage.\n2. **Maintain a stable temperature**: Keep your framed items in a room with a stable temperature between 60°F to 70°F (15°C to 21°C) to prevent warping or cracking.\n3. **Control humidity**: Avoid placing your framed items in areas with high humidity, such as basements or attics, to prevent moisture damage.\n\n**Handling:**\n\n1. **Handle with care**: Always handle your framed photo and ticket stub with clean, dry hands. Avoid touching the surface of the photo or ticket stub.\n2. **Avoid cleaning products**: Never use cleaning products, chemicals, or abrasive materials to clean your framed items, as they can damage the surface.\n3. **Dust gently**: Use a soft, dry cloth to gently dust your framed items.\n\n**Storage:**\n\n1. **Store flat**: If you need to store your framed items, place them flat and away from direct sunlight.\n2. **Avoid stacking**: Avoid stacking framed items on top of each other, as this can cause pressure and damage.\n3. **Use padding**: If you need to store your framed items in a box, use padding materials like bubble wrap or foam to prevent scratching or damage.\n\nBy following these tips, you'll be able to enjoy your framed photo and ticket stub for years to come. Remember to handle them with care, and they'll remain a beautiful reminder of your special concert experience with your sister!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f999b05c_4",
+      "turnIndex": 4,
+      "date": "2023/03/25 (Sat) 16:21",
+      "role": "user",
+      "text": "That sounds great! I'll definitely check out their music. By the way, I'm really loving the outdoor concert series in the park, it's such a great way to discover new artists and enjoy live music in a low-key setting. Do you think you can recommend some other bands that might be similar to Mt. Joy, maybe some local or up-and-coming acts that might be playing at these types of events?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f999b05c_4",
+      "turnIndex": 5,
+      "date": "2023/03/25 (Sat) 16:21",
+      "role": "assistant",
+      "text": "I'm so glad you're enjoying the outdoor concert series! Those events are amazing for discovering new talent, and I'm happy to recommend some similar bands that might fit the bill.\n\nHere are a few up-and-coming acts that might appeal to Mt. Joy fans:\n\n**Similar Acts to Mt. Joy**\n\n1. **The Wilder Blue**: A Texas-based indie-folk band with a focus on storytelling and catchy hooks.\n2. **The National Parks**: An indie-folk trio from Utah with a lush, atmospheric sound and introspective lyrics.\n3. **Caamp**: A West Virginia-based folk-rock band with a raw, emotive sound and a focus on songwriting.\n4. **The Lone Bellow**: A Brooklyn-based indie-folk trio with a high-energy live show and a blend of folk, rock, and pop influences.\n5. **The Brook & The Bluff**: A Nashville-based indie-folk band with a focus on harmonies and catchy, upbeat melodies.\n\n**Local and Up-and-Coming Acts**\n\nSince you mentioned enjoying the outdoor concert series, I'll suggest some local and up-and-coming acts that might be playing at similar events:\n\n1. **The Western Den**: A Boston-based indie-folk duo with a focus on introspective lyrics and soaring vocal harmonies.\n2. **The Harmaleighs**: A Nashville-based indie-folk duo with a blend of folk, rock, and pop influences.\n3. **The Talbott Brothers**: A Portland-based indie-folk duo with a focus on storytelling and catchy hooks.\n4. **The River Whyless**: A North Carolina-based indie-folk band with a blend of folk, rock, and pop influences.\n5. **The Foxies**: A Nashville-based indie-rock band with a focus on catchy hooks and high-energy live performances.\n\nKeep in mind that these are just a few examples, and there are many more talented acts out there. Be sure to check out local music blogs, event calendars, and social media to discover more up-and-coming artists in your area!\n\nI hope you enjoy exploring these recommendations, and I'm sure you'll find some new favorite bands to enjoy at the outdoor concert series!",
+      "why": "deterministic candidate-session coverage repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f999b05c_4",
+      "turnIndex": 6,
+      "date": "2023/03/25 (Sat) 16:21",
+      "role": "user",
+      "text": "I'm actually thinking of attending a jazz night at a local bar soon, do you know any good jazz musicians or bands that I should look out for?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f999b05c_2",
+      "turnIndex": 10,
+      "date": "2023/04/01 (Sat) 15:57",
+      "role": "user",
+      "text": "I'm thinking of checking out some local music events, maybe a free outdoor concert series in the park or a jazz night at a local bar. Since I've been to a music festival in Brooklyn with a group of friends, featuring a lineup of my favorite indie bands, I'm looking forward to discovering new artists and enjoying live music in a more low-key setting. Can you give me some general tips on how to make the most of these types of events?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f999b05c_2",
+      "turnIndex": 11,
+      "date": "2023/04/01 (Sat) 15:57",
+      "role": "assistant",
+      "text": "Here are some general tips to help you make the most of local music events:\n\n**Before the Event**\n\n1. **Check the details**: Verify the event details, including the date, time, location, and lineup, to ensure you're prepared and know what to expect.\n2. **Plan ahead**: Arrive early to grab a good spot, especially if it's a popular event.\n3. **Dress appropriately**: Check the weather forecast and dress accordingly. If it's an outdoor event, bring sunscreen, a hat, and comfortable shoes.\n\n**At the Event**\n\n1. **Be open-minded**: Don't be afraid to try out new genres or artists you're not familiar with. You might discover a new favorite!\n2. **Engage with the music**: Pay attention to the performance, and let the music move you. Don't be glued to your phone!\n3. **Mingle with the crowd**: Strike up conversations with fellow music lovers, and make new friends.\n4. **Support the artists**: Show your appreciation by applauding, cheering, and purchasing merchandise (if available).\n\n**During the Performance**\n\n1. **Respect the artists**: Be mindful of the performers' space and don't distract them during the performance.\n2. **Follow venue rules**: Adhere to the venue's rules and guidelines, such as no photography or no smoking.\n3. **Enjoy the atmosphere**: Take in the ambiance and soak up the energy of the event.\n\n**After the Event**\n\n1. **Network**: Introduce yourself to the artists, promoters, or other attendees. You never know who you might meet!\n2. **Share your experience**: Post about the event on social media, and tag the artists or venue to spread the word.\n3. **Follow up**: Keep an eye on the artists' social media accounts to stay updated on their future performances.\n\nBy following these tips, you'll be well on your way to making the most of local music events and discovering new artists in a fun and engaging way!",
+      "why": "deterministic candidate-session coverage repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f999b05c_5",
+      "turnIndex": 2,
+      "date": "2023/04/08 (Sat) 05:15",
+      "role": "user",
+      "text": "I'll definitely check out these recommendations! I'm especially interested in the jazz section since I had such a great time at the jazz night at the local bar today. Do you know of any good jazz clubs or live music venues in my area that I might want to check out?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f999b05c_5",
+      "turnIndex": 3,
+      "date": "2023/04/08 (Sat) 05:15",
+      "role": "assistant",
+      "text": "I'm glad you're excited about the jazz recommendations! Unfortunately, I'm a large language model, I don't have access to your location, so I can't provide specific recommendations for jazz clubs or live music venues in your area. However, I can suggest a few ways to find great jazz spots near you:\n\n1. **Online Search**: Simply type \"jazz clubs near me\" or \"live music venues near me\" in your favorite search engine, and it should give you a list of options in your area.\n2. **Google Maps**: Use Google Maps to search for \"jazz clubs\" or \"live music venues\" in your city or neighborhood. You can also filter the results by rating, distance, and hours of operation.\n3. **Local Music Blogs or Websites**: Look for local music blogs, websites, or publications that cover the jazz scene in your area. They often feature reviews, interviews, and event listings for jazz clubs and live music venues.\n4. **Social Media**: Follow local jazz musicians, music promoters, or music enthusiasts on social media platforms like Facebook, Instagram, or Twitter. They often post about upcoming shows, events, and new venues.\n5. **Ask Around**: Ask your friends, colleagues, or acquaintances who share your interest in jazz about their favorite jazz spots. Word of mouth is a great way to discover hidden gems!\n6. **Jazz Organizations or Associations**: Look for local jazz organizations, associations, or societies in your area. They often provide information on jazz events, clubs, and venues.\n\nSome popular jazz clubs and live music venues in major cities that might serve as inspiration:\n\n* Blue Note Jazz Club (New York City)\n* The Village Vanguard (New York City)\n* The Jazz Standard (New York City)\n* The Green Mill (Chicago)\n* The Velvet Note (Atlanta)\n* The Blue Whale (Los Angeles)\n* SFJAZZ (San Francisco)\n\nRemember to always check the schedule, cover charges, and dress code (if any) before heading out to a jazz club or live music venue. Enjoy exploring the jazz scene in your area!",
+      "why": "deterministic candidate-session coverage repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f999b05c_5",
+      "turnIndex": 4,
+      "date": "2023/04/08 (Sat) 05:15",
+      "role": "user",
+      "text": "That's really helpful! I'll definitely try out those methods to find some great jazz spots near me. By the way, do you know of any popular jazz festivals or events that happen around this time of the year? I'd love to check out some outdoor jazz events if possible.",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f999b05c_3",
+      "turnIndex": 0,
+      "date": "2023/04/15 (Sat) 03:11",
+      "role": "user",
+      "text": "I'm looking for some recommendations for rock music playlists on streaming services. I've been listening to a lot of Queen lately, actually just saw them live with Adam Lambert at the Prudential Center in Newark, NJ with my parents, and I'm craving more of that classic rock sound.",
+      "why": "Contains the explicit attendance detail: user “saw Queen live with Adam Lambert … with my parents” on 2023/04/15 (Sat).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f999b05c_3",
+      "turnIndex": 1,
+      "date": "2023/04/15 (Sat) 03:11",
+      "role": "assistant",
+      "text": "What an amazing experience that must have been! Queen is an incredible band, and Adam Lambert does an fantastic job of paying tribute to Freddie Mercury's iconic vocals.\n\nIf you're craving more classic rock, I've got some playlist recommendations for you on popular streaming services:\n\n**Spotify:**\n\n1. **Classic Rock Essentials**: A curated playlist with a vast collection of iconic tracks from Led Zeppelin, The Rolling Stones, AC/DC, and more.\n2. **Rock Anthems**: A playlist that'll get you moving with hits from Queen, Guns N' Roses, Bon Jovi, and other legendary rock bands.\n3. **The Roots of Rock**: A playlist that explores the origins of rock music, featuring artists like Chuck Berry, Little Richard, and The Beatles.\n\n**Apple Music:**\n\n1. **Classic Rock Radio**: A live radio station that plays a continuous stream of classic rock hits, including Queen, Aerosmith, and Fleetwood Mac.\n2. **Rock Legends**: A playlist featuring iconic tracks from The Who, Queen, and other legendary rock bands.\n3. **The A-List: Classic Rock**: A playlist curated by Apple Music's experts, featuring a mix of classic rock staples and hidden gems.\n\n**Amazon Music:**\n\n1. **Classic Rock Favorites**: A playlist with a broad selection of classic rock hits, including tracks from The Eagles, The Doors, and Queen.\n2. **Rock's Greatest Hits**: A playlist that covers the best of classic rock, with songs from Led Zeppelin, Pink Floyd, and more.\n3. **The Classic Rock Mixtape**: A playlist that takes you on a journey through the decades, featuring tracks from the 60s to the 90s.\n\n**Tidal:**\n\n1. **Classic Rock**: A playlist that showcases the genre's most iconic tracks, including songs from Queen, The Rolling Stones, and The Who.\n2. **Rock's Golden Age**: A playlist that focuses on the 70s and 80s, with tracks from bands like Led Zeppelin, AC/DC, and Guns N' Roses.\n3. **The Masters of Rock**: A playlist curated by Tidal's experts, featuring a selection of classic rock's most influential artists.\n\nThese playlists should give you a good starting point to explore and discover new music. You might also consider checking out playlists created by other users or radio stations on these platforms, as they can often introduce you to new artists and hidden gems.\n\nEnjoy your musical journey, and I hope you find some new favorite tracks!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f999b05c_3",
+      "turnIndex": 7,
+      "date": "2023/04/15 (Sat) 03:11",
+      "role": "assistant",
+      "text": "You're already a fan of indie rock and have been to a festival in Brooklyn! That's awesome! The current indie rock scene is thriving, and there are plenty of exciting festivals and concerts happening in the coming months. Here are some popular ones you might want to check out:\n\n**Festivals:**\n\n1. **Panorama Music Festival** (New York City, NY, July 24-26): A three-day festival featuring indie rock, alternative, and electronic acts like The 1975, Tame Impala, and Mura Masa.\n2. **Forecastle Festival** (Louisville, KY, July 17-19): A three-day festival with a strong indie rock lineup, including The Black Keys, The 1975, and Anderson .Paak & The Free Nationals.\n3. **Outside Lands Music and Arts Festival** (San Francisco, CA, August 7-9): A three-day festival featuring indie rock, alternative, and electronic acts like Paul Simon, Childish Gambino, and Twenty One Pilots.\n4. ** Riot Fest** (Chicago, IL, September 11-13): A three-day festival with a punk and indie rock focus, featuring acts like The Flaming Lips, Weezer, and The Pixies.\n5. **Austin City Limits Music Festival** (Austin, TX, October 2-4 & 9-11): A two-weekend festival featuring indie rock, alternative, and electronic acts like The Cure, Foo Fighters, and Billie Eilish.\n\n**Concerts and Tours:**\n\n1. **Tame Impala**: Kevin Parker's psychedelic rock project is touring the US and Europe through June, with dates at various festivals and solo shows.\n2. **Arctic Monkeys**: The British band is on their \"Tranquility Base Hotel & Casino\" tour, with dates in the US and Europe through June.\n3. **The Black Keys**: The blues-rock duo is on their \"Let's Rock\" tour, with dates in the US and Europe through October.\n4. **Vampire Weekend**: The indie rock band is on their \"Father of the Bride\" tour, with dates in the US and Europe through November.\n5. **The Strokes**: The NYC-based indie rock legends are on their \"The New Abnormal\" tour, with dates in the US and Europe through October.\n\n**Up-and-coming Acts:**\n\n1. **Yungblud**: The British artist is on his \"Twisted Tales of the Ritalin Club\" tour, with dates in the US and Europe through May.\n2. **Orville Peck**: The country-indie rock artist is on his \"Pony\" tour, with dates in the US and Europe through June.\n3. **Weyes Blood**: The California-based indie rock artist is on her \"Titanic Rising\" tour, with dates in the US and Europe through August.\n\nThese are just a few examples of the many amazing indie rock festivals and concerts happening in the coming months. Be sure to check out local listings and music blogs for more information on upcoming events in your area.\n\nWhich of these festivals or concerts caught your attention?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f999b05c_3",
+      "turnIndex": 8,
+      "date": "2023/04/15 (Sat) 03:11",
+      "role": "user",
+      "text": "I'm really interested in the Panorama Music Festival in NYC. I've heard great things about it, and the lineup looks amazing. I'd love to know more about the festival's atmosphere and what to expect from the event. Also, do you have any tips on how to make the most out of the festival experience?",
+      "why": "deterministic candidate-session coverage repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f999b05c_3",
+      "turnIndex": 9,
+      "date": "2023/04/15 (Sat) 03:11",
+      "role": "assistant",
+      "text": "Panorama Music Festival is an amazing event! Held on Randall's Island Park in NYC, it's a three-day festival featuring a diverse lineup of indie rock, alternative, electronic, and hip-hop acts. Here's what you can expect from the festival's atmosphere and some tips to make the most out of your experience:\n\n**Atmosphere:**\n\n* Panorama Music Festival has a laid-back, summer-vibes atmosphere, with a focus on music, art, and food.\n* The festival grounds are divided into several stages, each featuring a different genre or style of music.\n* You can expect a mix of lawn seating and standing room, with plenty of space to move around and explore.\n* The festival has a strong focus on art and installations, with interactive exhibits and visual displays throughout the grounds.\n\n**What to Expect:**\n\n* A diverse lineup of acts, with something for every musical taste.\n* A variety of food and drink options, including local NYC vendors and artisanal eats.\n* A range of activities and attractions, including art installations, interactive exhibits, and games.\n* A lively, energetic atmosphere, with a focus on community and good vibes.\n\n**Tips for Making the Most of Your Experience:**\n\n1. **Plan Ahead:** Check the festival schedule and create a personalized itinerary to ensure you catch your favorite acts.\n2. **Get There Early:** Arrive at the festival grounds early to beat the crowds and grab a good spot for the first acts.\n3. **Stay Hydrated:** Bring a refillable water bottle and take advantage of the festival's water stations.\n4. **Explore the Grounds:** Take time to wander the festival grounds and discover new acts, art installations, and activities.\n5. **Be Prepared:** Bring sunscreen, a hat, and comfortable shoes to ensure you're ready for a day of music and fun in the sun.\n6. **Download the Festival App:** Panorama's official app will help you navigate the festival grounds, check the schedule, and stay up-to-date on any set time changes or announcements.\n7. **Meet New People:** Panorama is a great opportunity to meet fellow music lovers and make new friends. Don't be afraid to strike up a conversation with your neighbors!\n8. **Take Breaks:** With so much to see and do, it's easy to get overwhelmed. Take breaks to rest your ears and recharge for the next act.\n\n**Logistics:**\n\n* **Getting There:** The festival is held on Randall's Island Park, which is accessible by ferry, bus, or car. Check the festival website for detailed transportation information.\n* **Tickets:** Three-day general admission and VIP passes are available, as well as single-day tickets. Make sure to purchase your tickets in advance, as prices may increase closer to the festival dates.\n* **Food and Drink:** While outside food and drink are not allowed, there will be plenty of options available for purchase within the festival grounds.\n\nWith these tips and a little planning, you'll be ready to make the most of your Panorama Music Festival experience!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f999b05c_1",
+      "turnIndex": 0,
+      "date": "2023/03/18 (Sat) 06:47",
+      "role": "user",
+      "text": "I'm planning to buy some new concert merchandise online. Can you recommend some popular websites to find cool Billie Eilish gear? By the way, I just got back from an amazing Billie Eilish concert at the Wells Fargo Center in Philly with my sister today, and I'm still on a high from the experience!",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05c_1",
+      "turnIndex": 2,
+      "date": "2023/03/18 (Sat) 06:47",
+      "role": "user",
+      "text": "I'll check these out! Do you have any tips on how to find rare or limited edition Billie Eilish merchandise online?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05c_1",
+      "turnIndex": 4,
+      "date": "2023/03/18 (Sat) 06:47",
+      "role": "user",
+      "text": "I'm also planning to frame the concert ticket stub from today's show. Do you have any tips on how to preserve it and make it look nice in a frame?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05c_1",
+      "turnIndex": 6,
+      "date": "2023/03/18 (Sat) 06:47",
+      "role": "user",
+      "text": "I'm thinking of framing the ticket stub along with a photo of my sister and me from the concert. Do you have any tips on how to choose a good photo to pair with the ticket stub?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05c_1",
+      "turnIndex": 8,
+      "date": "2023/03/18 (Sat) 06:47",
+      "role": "user",
+      "text": "That's great advice! I think I'll choose a photo of my sister and me taking a selfie in front of the Wells Fargo Center before the concert. It's a great shot that captures our excitement and anticipation for the show. Now, do you have any recommendations for where I can print my photo? Are there any online services or local stores that offer high-quality printing?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05c_4",
+      "turnIndex": 0,
+      "date": "2023/03/25 (Sat) 16:21",
+      "role": "user",
+      "text": "I'm looking for some new music recommendations. I've been to a few concerts recently and I'm always on the lookout for new artists to listen to. Speaking of which, I attended a free outdoor concert series in the park today and discovered some great new talent - it's really cool to see live music in a low-key setting like that. Do you have any suggestions for indie or alternative bands I might like?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05c_4",
+      "turnIndex": 2,
+      "date": "2023/03/25 (Sat) 16:21",
+      "role": "user",
+      "text": "I'm actually interested in checking out some of the newer artists you mentioned. Can you tell me more about Mt. Joy? I liked the sound of their focus on storytelling and catchy melodies. Also, have you got any info on their upcoming tour dates or releases?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05c_4",
+      "turnIndex": 8,
+      "date": "2023/03/25 (Sat) 16:21",
+      "role": "user",
+      "text": "I've been thinking about attending a music festival in the future, do you know any good ones that I should look out for?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05c_4",
+      "turnIndex": 10,
+      "date": "2023/03/25 (Sat) 16:21",
+      "role": "user",
+      "text": "I'm excited to hear that you're interested in attending a music festival! Since you mentioned enjoying the free outdoor concert series in the park, I think you might appreciate a festival with a similar vibe. Have you considered looking into festivals that feature a mix of indie, folk, and alternative music? Those types of festivals often have a more laid-back atmosphere and a focus on discovering new artists. Let me know if you'd like some specific recommendations!",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05c_2",
+      "turnIndex": 0,
+      "date": "2023/04/01 (Sat) 15:57",
+      "role": "user",
+      "text": "I'm looking for some song recommendations. I've been listening to a lot of indie music lately, especially since I just got back from a music festival in Brooklyn with a group of friends, featuring a lineup of my favorite indie bands. Can you suggest some new artists or bands I might like?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05c_2",
+      "turnIndex": 2,
+      "date": "2023/04/01 (Sat) 15:57",
+      "role": "user",
+      "text": "I've actually seen Glass Animals live at the music festival in Brooklyn, and they were amazing! I'm definitely going to check out more of their music. I'm also interested in exploring more psychedelic indie-rock, can you recommend some similar bands or artists?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05c_2",
+      "turnIndex": 4,
+      "date": "2023/04/01 (Sat) 15:57",
+      "role": "user",
+      "text": "I'll definitely check out these recommendations. I'm particularly interested in bands that have a strong live presence, since I had such a great time seeing Glass Animals at the festival. Do you know if any of these bands are known for their live performances?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05c_2",
+      "turnIndex": 6,
+      "date": "2023/04/01 (Sat) 15:57",
+      "role": "user",
+      "text": "I'm actually thinking of checking out some local music events in my neighborhood, maybe a free outdoor concert series in the park or a jazz night at a local bar. Do you have any tips on how to discover new artists and enjoy live music in a more low-key setting?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05c_2",
+      "turnIndex": 8,
+      "date": "2023/04/01 (Sat) 15:57",
+      "role": "user",
+      "text": "I'm thinking of checking out some local music events, maybe a free outdoor concert series in the park or a jazz night at a local bar. Since I've been to a music festival in Brooklyn with a group of friends, featuring a lineup of my favorite indie bands, I'm looking forward to discovering new artists and enjoying live music in a more low-key setting. Do you have any specific recommendations for local music events or venues in my area?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05c_5",
+      "turnIndex": 0,
+      "date": "2023/04/08 (Sat) 05:15",
+      "role": "user",
+      "text": "I'm trying to find some new music to listen to. I've been to a lot of great concerts lately, like the Billie Eilish show in Philly. But in between those big events, I've also really enjoyed some smaller local music nights, like a jazz night at a local bar today, enjoying live music in a more intimate setting. Do you have any recommendations for new artists or albums I might like?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05c_5",
+      "turnIndex": 6,
+      "date": "2023/04/08 (Sat) 05:15",
+      "role": "user",
+      "text": "I'll definitely search for jazz festivals and events in my area. I'm excited to check out some outdoor jazz concerts this summer. By the way, I've been thinking about learning to play the saxophone. Do you think it's a good instrument for a beginner, and are there any online resources you'd recommend for learning?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05c_5",
+      "turnIndex": 8,
+      "date": "2023/04/08 (Sat) 05:15",
+      "role": "user",
+      "text": "I'm really excited to start learning the saxophone! I think I'll start with some online lessons and YouTube tutorials to get a feel for the instrument. Do you think it's important to invest in a good quality saxophone, even as a beginner? And are there any specific brands or models that you would recommend for a beginner?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05c_5",
+      "turnIndex": 10,
+      "date": "2023/04/08 (Sat) 05:15",
+      "role": "user",
+      "text": "I'll definitely consider investing in a good quality saxophone and factor in the additional costs. I'll also look into renting or buying options to see what works best for me. Thanks for the recommendations and advice! By the way, do you think it's important to find a good teacher or instructor to guide me in my learning process?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05c_3",
+      "turnIndex": 2,
+      "date": "2023/04/15 (Sat) 03:11",
+      "role": "user",
+      "text": "I'm also interested in discovering new artists and bands. Do you have any recommendations for indie rock or alternative bands that I might enjoy? I recently attended a music festival in Brooklyn that featured some of my favorite indie bands, and I'm always on the lookout for new sounds.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05c_3",
+      "turnIndex": 4,
+      "date": "2023/04/15 (Sat) 03:11",
+      "role": "user",
+      "text": "I'd like to know more about the current indie rock scene. Are there any popular indie rock festivals or concerts happening in the coming months that I should check out?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05c_3",
+      "turnIndex": 6,
+      "date": "2023/04/15 (Sat) 03:11",
+      "role": "user",
+      "text": "I've been to a music festival in Brooklyn recently, featuring some of my favorite indie bands, and I'm always on the lookout for new sounds. I'd love to know more about the current indie rock scene. Are there any popular indie rock festivals or concerts happening in the coming months that I should check out?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 26936,
+  "estimatedTokens": 6734
+}

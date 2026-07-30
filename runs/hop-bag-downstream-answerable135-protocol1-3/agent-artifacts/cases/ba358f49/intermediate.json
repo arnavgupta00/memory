@@ -1,0 +1,24 @@
+[
+  {
+    "session_id": "answer_cbd08e3c_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session mentions Rachel’s wedding timing (“next year”) but provides no information about the asker’s age or birth date. Therefore, the number of years the user will be at the time of the wedding cannot be computed from this session alone.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User says friend Rachel is getting married next year.",
+          "why": "This provides the marriage time reference needed to calculate the user's age at that event, but no user age is given here."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_cbd08e3c_2",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains no information about when friend Rachel gets married or any date/age related to Rachel’s marriage. It only includes the user’s age (32) and unrelated skincare/productivity discussions, so the marriage timing needed to compute “how many years will I be when” is missing.",
+      "claims": []
+    }
+  }
+]

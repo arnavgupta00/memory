@@ -1,0 +1,18 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "All monetary amounts the user spent on gifts specifically for their sister (not other relatives).",
+  "candidateStatus": "found",
+  "missingRisk": "May be other sister gift purchases not mentioned in the provided memory block.",
+  "items": [
+    {
+      "sessionId": "answer_87e3a1cb_1",
+      "turnIndex": 0,
+      "why": "User states they recently got their sister a Tiffany’s silver necklace with a small pendant that cost around $200."
+    },
+    {
+      "sessionId": "answer_87e3a1cb_2",
+      "turnIndex": 0,
+      "why": "User states they previously got their sister a $100 gift card to her favorite spa and she loved it."
+    }
+  ]
+}

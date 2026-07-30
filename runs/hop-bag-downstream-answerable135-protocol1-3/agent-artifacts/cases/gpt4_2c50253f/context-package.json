@@ -1,0 +1,46 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "answer_9af4e346_2",
+      "turnIndex": 0,
+      "date": "2023/05/27 (Sat) 07:56",
+      "role": "user",
+      "text": "I'm trying to create a personalized morning routine that works for me. I've recently started going for a 30-minute walk before work, which has been great. On Tuesdays and Thursdays, I've also started waking up 15 minutes earlier to meditate and practice some yoga poses, which has helped me feel more centered and calm. Can you suggest some healthy breakfast ideas that I can prep the night before to start my day on a good note?",
+      "why": "per-session extractor: Directly answers part of the question by specifying the Tuesday/Thursday wake-up change (15 minutes earlier), even though it lacks the baseline time needed to determine the exact clock time.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_9af4e346_1",
+      "turnIndex": 0,
+      "date": "2023/05/27 (Sat) 18:20",
+      "role": "user",
+      "text": "I'm looking to find some healthy breakfast ideas that can be prepared the night before. I've recently started waking up at 7:00 AM, which is a big improvement from my usual 8:30 AM wake-up call, and I want to make sure I'm fueling up with a nutritious meal to start my day.",
+      "why": "per-session extractor: Relevant to the user’s wake-up time, but not tied to Tuesday/Thursday specifically.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_9af4e346_2",
+      "turnIndex": 1,
+      "date": "2023/05/27 (Sat) 07:56",
+      "role": "assistant",
+      "text": "That's a great start to your morning routine! Congratulations on incorporating physical activity and mindfulness practices into your daily routine. Now, let's get you fueled up with some healthy breakfast ideas that can be prepped the night before. Here are some delicious and convenient options:\n\n1. **Overnight Oats**: Mix rolled oats, milk, and your choice of nuts, seeds, or fruit in a jar or container. Refrigerate overnight and enjoy in the morning.\n2. **Breakfast Burrito**: Scramble eggs, add black beans, cheese, and veggies like bell peppers, onions, and mushrooms. Wrap in a whole-grain tortilla and refrigerate or freeze for up to 3 days.\n3. **Mason Jar Parfait**: Layer Greek yogurt, granola, fresh berries, and a drizzle of honey in a jar. Refrigerate overnight and enjoy in the morning.\n4. **Avocado Toast**: Toast whole-grain bread, mash avocado, and sprinkle with salt and pepper. Add a sliced egg or a sprinkle of red pepper flakes for extra protein. Store in an airtight container overnight.\n5. **Smoothie Packs**: Prepare individual smoothie bags with frozen fruit, spinach, and protein powder (if desired). In the morning, add your preferred milk and blend.\n6. **Quinoa Breakfast Bowl**: Cook quinoa and mix with milk, honey, and your choice of nuts, seeds, or fruit. Refrigerate overnight and top with fresh fruit and nuts in the morning.\n7. **Hard-Boiled Eggs**: Boil eggs the night before and keep them in the fridge for a quick protein-packed breakfast on-the-go.\n8. **Chia Seed Pudding**: Mix chia seeds with milk and honey, then refrigerate overnight. Top with fresh fruit and nuts in the morning.\n9. **Cottage Cheese and Fruit**: Mix cottage cheese with fruit like berries or sliced peaches, and refrigerate overnight.\n10. **Green Smoothie**: Prepare a green smoothie with spinach, avocado, and your preferred milk, then refrigerate overnight and enjoy in the morning.\n\nRemember to choose ingredients that you enjoy and that fit your dietary needs and preferences. Experiment with different combinations to find your favorite breakfast prep ideas.\n\nHow do these ideas sound? Do you have any specific dietary restrictions or preferences I can take into account?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_9af4e346_1",
+      "turnIndex": 1,
+      "date": "2023/05/27 (Sat) 18:20",
+      "role": "assistant",
+      "text": "Congratulations on establishing an earlier wake-up routine! Preparing breakfast the night before can save you time and ensure you're starting your day with a nutritious meal. Here are some healthy breakfast ideas that can be prepared the night before:\n\n1. **Overnight Oats**: Mix rolled oats, milk, and your choice of nuts, seeds, or fruit in a jar or container. Refrigerate overnight and enjoy in the morning.\n2. **Breakfast Burrito**: Scramble eggs, add black beans, cheese, and veggies, then wrap in a tortilla. Store in the fridge overnight and microwave in the morning.\n3. **Mason Jar Parfait**: Layer Greek yogurt, granola, and your favorite fruit (e.g., berries, banana) in a mason jar. Refrigerate overnight and enjoy in the morning.\n4. **Cottage Cheese and Fruit**: Mix cottage cheese with fruit such as berries or sliced peaches, and store in the fridge overnight.\n5. **Slow Cooker Oatmeal**: Prepare steel-cut oats with milk or water, and add your choice of nuts, seeds, or fruit. Cook on low overnight and wake up to a warm, comforting breakfast.\n6. **Breakfast Muffins**: Prepare a batch of muffins the night before, using healthy ingredients like whole wheat flour, eggs, and fruit. Store in an airtight container and grab-and-go in the morning.\n7. **Chia Seed Pudding**: Mix chia seeds with almond milk and honey, then refrigerate overnight. Top with fruit and nuts in the morning.\n8. **Green Smoothie Pack**: Prepare a smoothie pack by freezing your favorite fruits, spinach, and milk or yogurt in a bag. In the morning, simply blend and enjoy.\n9. **Hard-Boiled Eggs**: Boil eggs the night before and store them in the fridge for a quick protein-packed breakfast on-the-go.\n10. **Avocado Toast**: Toast whole grain bread, mash an avocado, and sprinkle with salt and pepper. Store in the fridge overnight and top with eggs or tomatoes in the morning.\n\nThese healthy breakfast ideas will give you a nutritious start to your day and help you make the most of your new 7:00 AM wake-up time. Enjoy!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 4899,
+  "estimatedTokens": 1225
+}

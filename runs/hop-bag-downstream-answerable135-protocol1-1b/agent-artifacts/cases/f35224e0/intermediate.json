@@ -1,0 +1,58 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Compute total episodes listened to across the two podcasts mentioned, using the episode/episode-count facts present in the candidate sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "The candidate sessions only include a snapshot for 'My Favorite Murder' (episode 12 finished) and 'How I Built This' (finished around 15 episodes). They may not reflect later listening between 2023/05/29 and 2023/05/30, and 'around 15' is approximate.",
+    "items": [
+      {
+        "sessionId": "answer_e9bb9500_2",
+        "turnIndex": 0,
+        "why": "Directly states you just finished episode 12 of 'My Favorite Murder' (episode count endpoint for one podcast)."
+      },
+      {
+        "sessionId": "answer_e9bb9500_1",
+        "turnIndex": 2,
+        "why": "States you have finished around 15 episodes of 'How I Built This' (episode count endpoint for the other podcast)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Compute total episodes listened to across the two podcasts mentioned, using the episode/episode-count facts present in the candidate sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "The candidate sessions only include a snapshot for 'My Favorite Murder' (episode 12 finished) and 'How I Built This' (finished around 15 episodes). They may not reflect later listening between 2023/05/29 and 2023/05/30, and 'around 15' is approximate.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_e9bb9500_2",
+        "turnIndex": 0,
+        "why": "Directly states you just finished episode 12 of 'My Favorite Murder' (episode count endpoint for one podcast)."
+      },
+      {
+        "sessionId": "answer_e9bb9500_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e9bb9500_1",
+        "turnIndex": 2,
+        "why": "States you have finished around 15 episodes of 'How I Built This' (episode count endpoint for the other podcast)."
+      },
+      {
+        "sessionId": "answer_e9bb9500_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e9bb9500_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e9bb9500_2",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

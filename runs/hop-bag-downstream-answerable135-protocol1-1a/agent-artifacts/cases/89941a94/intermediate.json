@@ -1,0 +1,18 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Other bikes owned besides a mountain bike and a commuter bike prior to purchasing a gravel bike (i.e., what additional bike(s) you had then).",
+  "candidateStatus": "found",
+  "missingRisk": "n/a",
+  "items": [
+    {
+      "sessionId": "answer_e1403127_1",
+      "turnIndex": 4,
+      "why": "User states they use their road bike in addition to their mountain bike and commuter bike (indicating an additional bike besides the mountain + commuter)."
+    },
+    {
+      "sessionId": "answer_e1403127_1",
+      "turnIndex": 6,
+      "why": "User explicitly says they currently have three bikes and references the categories (road, mountain, commuter), clarifying what the additional bike is."
+    }
+  ]
+}

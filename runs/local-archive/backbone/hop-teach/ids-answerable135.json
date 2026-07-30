@@ -1,0 +1,1506 @@
+{
+  "name": "answerable135",
+  "description": "All answerable phase-1 cases, stratified using the hop27 rank rules.",
+  "phase1_rank_source": "runs/local-archive/backbone/rank-gate-answerable-phase1-none.json",
+  "strata": {
+    "hard": {
+      "count": 28,
+      "rule": "worst_rank > 5 or miss"
+    },
+    "mid": {
+      "count": 12,
+      "rule": "worst_rank in 4..5"
+    },
+    "easy": {
+      "count": 95,
+      "rule": "worst_rank <= 3"
+    }
+  },
+  "question_ids": [
+    "031748ae",
+    "06878be2",
+    "078150f1",
+    "099778bb",
+    "09d032c9",
+    "0a34ad58",
+    "0bb5a684",
+    "0db4c65d",
+    "0ddfec37",
+    "10e09553",
+    "129d1232",
+    "195a1a1b",
+    "1a1907b4",
+    "1d4da289",
+    "1d4e3b97",
+    "1f2b8d4f",
+    "1faac195",
+    "2318644b",
+    "25e5aa4f",
+    "28dc39ac",
+    "2ce6a0f2",
+    "2e6d26dc",
+    "2ebe6c92",
+    "32260d93",
+    "36b9f61e",
+    "3ba21379",
+    "3d86fd0a",
+    "4100d0a0",
+    "41275add",
+    "41698283",
+    "42ec0761",
+    "4388e9dd",
+    "4dfccbf8",
+    "4f54b7c9",
+    "5025383b",
+    "505af2f5",
+    "5809eb10",
+    "58bf7951",
+    "58ef2f1c",
+    "5d3d2817",
+    "60036106",
+    "60159905",
+    "6071bd76",
+    "618f13b2",
+    "6222b6eb",
+    "66f24dbb",
+    "6a1eabeb",
+    "6aeb4375",
+    "6b168ec8",
+    "6d550036",
+    "70b3e69b",
+    "71017276",
+    "71a3fd6b",
+    "75832dbd",
+    "778164c6",
+    "7e00a6cb",
+    "81507db6",
+    "852ce960",
+    "8550ddae",
+    "86f00804",
+    "8752c811",
+    "89941a94",
+    "8c18457d",
+    "8cf51dda",
+    "92a0aa75",
+    "95228167",
+    "95bcc1c8",
+    "9ea5eabc",
+    "9ee3ecd6",
+    "a06e4cfe",
+    "a08a253f",
+    "a3045048",
+    "a3838d2b",
+    "a40e080f",
+    "a89d7624",
+    "afdc33df",
+    "affe2881",
+    "b3c15d39",
+    "b46e15ed",
+    "b86304ba",
+    "b9cfe692",
+    "ba358f49",
+    "c5e8278d",
+    "c8090214",
+    "c8f1aeed",
+    "caf03d32",
+    "cc5ded98",
+    "ce6d2d27",
+    "cf22b7bf",
+    "d01c6aa8",
+    "d6233ab6",
+    "d905b33f",
+    "db467c8c",
+    "e3038f8c",
+    "e982271f",
+    "ec81a493",
+    "ed4ddc30",
+    "ef9cf60a",
+    "f35224e0",
+    "f4f1d8a4",
+    "f685340e",
+    "fca70973",
+    "fca762bc",
+    "gpt4_0b2f1d21",
+    "gpt4_18c2b244",
+    "gpt4_194be4b3",
+    "gpt4_2487a7cb",
+    "gpt4_2ba83207",
+    "gpt4_2c50253f",
+    "gpt4_2f8be40d",
+    "gpt4_2f91af09",
+    "gpt4_372c3eed",
+    "gpt4_45189cb4",
+    "gpt4_468eb063",
+    "gpt4_468eb064",
+    "gpt4_4ef30696",
+    "gpt4_5501fe77",
+    "gpt4_59c863d7",
+    "gpt4_5dcc0aab",
+    "gpt4_731e37d7",
+    "gpt4_7a0daae1",
+    "gpt4_7abb270c",
+    "gpt4_7bc6cf22",
+    "gpt4_7f6b06db",
+    "gpt4_7fce9456",
+    "gpt4_88806d6e",
+    "gpt4_93f6379c",
+    "gpt4_a1b77f9c",
+    "gpt4_b5700ca0",
+    "gpt4_d6585ce8",
+    "gpt4_d6585ce9",
+    "gpt4_e061b84f",
+    "gpt4_e061b84g",
+    "gpt4_f49edff3",
+    "gpt4_fe651585"
+  ],
+  "cases": [
+    {
+      "question_id": "031748ae",
+      "stratum": "easy",
+      "question_type": "knowledge-update",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        1,
+        2
+      ]
+    },
+    {
+      "question_id": "06878be2",
+      "stratum": "hard",
+      "question_type": "single-session-preference",
+      "phase1_worst_rank": 13,
+      "phase1_gold_ranks": [
+        13
+      ]
+    },
+    {
+      "question_id": "078150f1",
+      "stratum": "easy",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        1,
+        2
+      ]
+    },
+    {
+      "question_id": "099778bb",
+      "stratum": "easy",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        1,
+        2
+      ]
+    },
+    {
+      "question_id": "09d032c9",
+      "stratum": "hard",
+      "question_type": "single-session-preference",
+      "phase1_worst_rank": null,
+      "phase1_gold_ranks": []
+    },
+    {
+      "question_id": "0a34ad58",
+      "stratum": "easy",
+      "question_type": "single-session-preference",
+      "phase1_worst_rank": 3,
+      "phase1_gold_ranks": [
+        3
+      ]
+    },
+    {
+      "question_id": "0bb5a684",
+      "stratum": "easy",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        1,
+        2
+      ]
+    },
+    {
+      "question_id": "0db4c65d",
+      "stratum": "easy",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        2,
+        1
+      ]
+    },
+    {
+      "question_id": "0ddfec37",
+      "stratum": "easy",
+      "question_type": "knowledge-update",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        1,
+        2
+      ]
+    },
+    {
+      "question_id": "10e09553",
+      "stratum": "easy",
+      "question_type": "knowledge-update",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        2,
+        1
+      ]
+    },
+    {
+      "question_id": "129d1232",
+      "stratum": "easy",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 3,
+      "phase1_gold_ranks": [
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "question_id": "195a1a1b",
+      "stratum": "easy",
+      "question_type": "single-session-preference",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "1a1907b4",
+      "stratum": "hard",
+      "question_type": "single-session-preference",
+      "phase1_worst_rank": 16,
+      "phase1_gold_ranks": [
+        16
+      ]
+    },
+    {
+      "question_id": "1d4da289",
+      "stratum": "easy",
+      "question_type": "single-session-assistant",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "1d4e3b97",
+      "stratum": "easy",
+      "question_type": "single-session-preference",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "1f2b8d4f",
+      "stratum": "easy",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        1,
+        2
+      ]
+    },
+    {
+      "question_id": "1faac195",
+      "stratum": "easy",
+      "question_type": "single-session-user",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "2318644b",
+      "stratum": "mid",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 4,
+      "phase1_gold_ranks": [
+        4,
+        1
+      ]
+    },
+    {
+      "question_id": "25e5aa4f",
+      "stratum": "easy",
+      "question_type": "single-session-user",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "28dc39ac",
+      "stratum": "mid",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 5,
+      "phase1_gold_ranks": [
+        3,
+        5,
+        2,
+        4,
+        1
+      ]
+    },
+    {
+      "question_id": "2ce6a0f2",
+      "stratum": "hard",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 8,
+      "phase1_gold_ranks": [
+        8,
+        2,
+        1,
+        5
+      ]
+    },
+    {
+      "question_id": "2e6d26dc",
+      "stratum": "mid",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 4,
+      "phase1_gold_ranks": [
+        3,
+        1,
+        4,
+        2
+      ]
+    },
+    {
+      "question_id": "2ebe6c92",
+      "stratum": "hard",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 9,
+      "phase1_gold_ranks": [
+        9,
+        2
+      ]
+    },
+    {
+      "question_id": "32260d93",
+      "stratum": "mid",
+      "question_type": "single-session-preference",
+      "phase1_worst_rank": 4,
+      "phase1_gold_ranks": [
+        4
+      ]
+    },
+    {
+      "question_id": "36b9f61e",
+      "stratum": "hard",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 6,
+      "phase1_gold_ranks": [
+        2,
+        6,
+        1
+      ]
+    },
+    {
+      "question_id": "3ba21379",
+      "stratum": "easy",
+      "question_type": "knowledge-update",
+      "phase1_worst_rank": 3,
+      "phase1_gold_ranks": [
+        2,
+        3
+      ]
+    },
+    {
+      "question_id": "3d86fd0a",
+      "stratum": "easy",
+      "question_type": "single-session-user",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "4100d0a0",
+      "stratum": "easy",
+      "question_type": "single-session-user",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "41275add",
+      "stratum": "easy",
+      "question_type": "single-session-assistant",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "41698283",
+      "stratum": "mid",
+      "question_type": "knowledge-update",
+      "phase1_worst_rank": 4,
+      "phase1_gold_ranks": [
+        1,
+        4
+      ]
+    },
+    {
+      "question_id": "42ec0761",
+      "stratum": "easy",
+      "question_type": "knowledge-update",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        2,
+        1
+      ]
+    },
+    {
+      "question_id": "4388e9dd",
+      "stratum": "easy",
+      "question_type": "single-session-assistant",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "4dfccbf8",
+      "stratum": "hard",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": null,
+      "phase1_gold_ranks": [
+        2
+      ]
+    },
+    {
+      "question_id": "4f54b7c9",
+      "stratum": "easy",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        1,
+        2
+      ]
+    },
+    {
+      "question_id": "5025383b",
+      "stratum": "easy",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        1,
+        2
+      ]
+    },
+    {
+      "question_id": "505af2f5",
+      "stratum": "easy",
+      "question_type": "single-session-preference",
+      "phase1_worst_rank": 3,
+      "phase1_gold_ranks": [
+        3
+      ]
+    },
+    {
+      "question_id": "5809eb10",
+      "stratum": "easy",
+      "question_type": "single-session-assistant",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "58bf7951",
+      "stratum": "easy",
+      "question_type": "single-session-user",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "58ef2f1c",
+      "stratum": "easy",
+      "question_type": "single-session-user",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "5d3d2817",
+      "stratum": "easy",
+      "question_type": "single-session-user",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "60036106",
+      "stratum": "easy",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        1,
+        2
+      ]
+    },
+    {
+      "question_id": "60159905",
+      "stratum": "easy",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        2,
+        1
+      ]
+    },
+    {
+      "question_id": "6071bd76",
+      "stratum": "easy",
+      "question_type": "knowledge-update",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        1,
+        2
+      ]
+    },
+    {
+      "question_id": "618f13b2",
+      "stratum": "easy",
+      "question_type": "knowledge-update",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        1,
+        2
+      ]
+    },
+    {
+      "question_id": "6222b6eb",
+      "stratum": "easy",
+      "question_type": "single-session-assistant",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "66f24dbb",
+      "stratum": "easy",
+      "question_type": "single-session-user",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "6a1eabeb",
+      "stratum": "easy",
+      "question_type": "knowledge-update",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        2,
+        1
+      ]
+    },
+    {
+      "question_id": "6aeb4375",
+      "stratum": "easy",
+      "question_type": "knowledge-update",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        1,
+        2
+      ]
+    },
+    {
+      "question_id": "6b168ec8",
+      "stratum": "easy",
+      "question_type": "single-session-user",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "6d550036",
+      "stratum": "hard",
+      "question_type": "multi-session",
+      "phase1_worst_rank": null,
+      "phase1_gold_ranks": [
+        7,
+        2
+      ]
+    },
+    {
+      "question_id": "70b3e69b",
+      "stratum": "easy",
+      "question_type": "single-session-assistant",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "71017276",
+      "stratum": "easy",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "71a3fd6b",
+      "stratum": "easy",
+      "question_type": "single-session-assistant",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "75832dbd",
+      "stratum": "mid",
+      "question_type": "single-session-preference",
+      "phase1_worst_rank": 5,
+      "phase1_gold_ranks": [
+        5
+      ]
+    },
+    {
+      "question_id": "778164c6",
+      "stratum": "easy",
+      "question_type": "single-session-assistant",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "7e00a6cb",
+      "stratum": "easy",
+      "question_type": "single-session-assistant",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "81507db6",
+      "stratum": "hard",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 11,
+      "phase1_gold_ranks": [
+        11,
+        4,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "question_id": "852ce960",
+      "stratum": "easy",
+      "question_type": "knowledge-update",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        1,
+        2
+      ]
+    },
+    {
+      "question_id": "8550ddae",
+      "stratum": "easy",
+      "question_type": "single-session-user",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "86f00804",
+      "stratum": "easy",
+      "question_type": "single-session-user",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "8752c811",
+      "stratum": "easy",
+      "question_type": "single-session-assistant",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "89941a94",
+      "stratum": "easy",
+      "question_type": "knowledge-update",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        1,
+        2
+      ]
+    },
+    {
+      "question_id": "8c18457d",
+      "stratum": "easy",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        2,
+        1
+      ]
+    },
+    {
+      "question_id": "8cf51dda",
+      "stratum": "easy",
+      "question_type": "single-session-assistant",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "92a0aa75",
+      "stratum": "mid",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 5,
+      "phase1_gold_ranks": [
+        3,
+        5
+      ]
+    },
+    {
+      "question_id": "95228167",
+      "stratum": "hard",
+      "question_type": "single-session-preference",
+      "phase1_worst_rank": 10,
+      "phase1_gold_ranks": [
+        10
+      ]
+    },
+    {
+      "question_id": "95bcc1c8",
+      "stratum": "easy",
+      "question_type": "single-session-user",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "9ea5eabc",
+      "stratum": "easy",
+      "question_type": "knowledge-update",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        2,
+        1
+      ]
+    },
+    {
+      "question_id": "9ee3ecd6",
+      "stratum": "easy",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        1,
+        2
+      ]
+    },
+    {
+      "question_id": "a06e4cfe",
+      "stratum": "easy",
+      "question_type": "single-session-user",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "a08a253f",
+      "stratum": "hard",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 8,
+      "phase1_gold_ranks": [
+        8,
+        1
+      ]
+    },
+    {
+      "question_id": "a3045048",
+      "stratum": "easy",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        1,
+        2
+      ]
+    },
+    {
+      "question_id": "a3838d2b",
+      "stratum": "hard",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 10,
+      "phase1_gold_ranks": [
+        1,
+        2,
+        10,
+        6,
+        3,
+        4
+      ]
+    },
+    {
+      "question_id": "a40e080f",
+      "stratum": "easy",
+      "question_type": "single-session-assistant",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "a89d7624",
+      "stratum": "easy",
+      "question_type": "single-session-preference",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        2
+      ]
+    },
+    {
+      "question_id": "afdc33df",
+      "stratum": "easy",
+      "question_type": "single-session-preference",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "affe2881",
+      "stratum": "easy",
+      "question_type": "knowledge-update",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        1,
+        2
+      ]
+    },
+    {
+      "question_id": "b3c15d39",
+      "stratum": "easy",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        1,
+        2
+      ]
+    },
+    {
+      "question_id": "b46e15ed",
+      "stratum": "mid",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 5,
+      "phase1_gold_ranks": [
+        5,
+        3,
+        4,
+        1
+      ]
+    },
+    {
+      "question_id": "b86304ba",
+      "stratum": "easy",
+      "question_type": "single-session-user",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "b9cfe692",
+      "stratum": "easy",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 3,
+      "phase1_gold_ranks": [
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "question_id": "ba358f49",
+      "stratum": "hard",
+      "question_type": "multi-session",
+      "phase1_worst_rank": null,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "c5e8278d",
+      "stratum": "easy",
+      "question_type": "single-session-user",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "c8090214",
+      "stratum": "easy",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        2,
+        1
+      ]
+    },
+    {
+      "question_id": "c8f1aeed",
+      "stratum": "easy",
+      "question_type": "single-session-assistant",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "caf03d32",
+      "stratum": "easy",
+      "question_type": "single-session-preference",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "cc5ded98",
+      "stratum": "easy",
+      "question_type": "knowledge-update",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        1,
+        2
+      ]
+    },
+    {
+      "question_id": "ce6d2d27",
+      "stratum": "easy",
+      "question_type": "knowledge-update",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        2,
+        1
+      ]
+    },
+    {
+      "question_id": "cf22b7bf",
+      "stratum": "easy",
+      "question_type": "knowledge-update",
+      "phase1_worst_rank": 3,
+      "phase1_gold_ranks": [
+        3,
+        1
+      ]
+    },
+    {
+      "question_id": "d01c6aa8",
+      "stratum": "easy",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        1,
+        2
+      ]
+    },
+    {
+      "question_id": "d6233ab6",
+      "stratum": "easy",
+      "question_type": "single-session-preference",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        2
+      ]
+    },
+    {
+      "question_id": "d905b33f",
+      "stratum": "easy",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        1,
+        2
+      ]
+    },
+    {
+      "question_id": "db467c8c",
+      "stratum": "easy",
+      "question_type": "knowledge-update",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        2,
+        1
+      ]
+    },
+    {
+      "question_id": "e3038f8c",
+      "stratum": "mid",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 5,
+      "phase1_gold_ranks": [
+        2,
+        5,
+        4,
+        3
+      ]
+    },
+    {
+      "question_id": "e982271f",
+      "stratum": "easy",
+      "question_type": "single-session-assistant",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "ec81a493",
+      "stratum": "easy",
+      "question_type": "single-session-user",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "ed4ddc30",
+      "stratum": "easy",
+      "question_type": "knowledge-update",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        1,
+        2
+      ]
+    },
+    {
+      "question_id": "ef9cf60a",
+      "stratum": "easy",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        1,
+        2
+      ]
+    },
+    {
+      "question_id": "f35224e0",
+      "stratum": "easy",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        2,
+        1
+      ]
+    },
+    {
+      "question_id": "f4f1d8a4",
+      "stratum": "easy",
+      "question_type": "single-session-user",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "f685340e",
+      "stratum": "easy",
+      "question_type": "knowledge-update",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        1,
+        2
+      ]
+    },
+    {
+      "question_id": "fca70973",
+      "stratum": "easy",
+      "question_type": "single-session-preference",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        2
+      ]
+    },
+    {
+      "question_id": "fca762bc",
+      "stratum": "easy",
+      "question_type": "single-session-assistant",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "gpt4_0b2f1d21",
+      "stratum": "easy",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        2,
+        1
+      ]
+    },
+    {
+      "question_id": "gpt4_18c2b244",
+      "stratum": "easy",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 3,
+      "phase1_gold_ranks": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "question_id": "gpt4_194be4b3",
+      "stratum": "hard",
+      "question_type": "multi-session",
+      "phase1_worst_rank": null,
+      "phase1_gold_ranks": [
+        4,
+        5
+      ]
+    },
+    {
+      "question_id": "gpt4_2487a7cb",
+      "stratum": "easy",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        2,
+        1
+      ]
+    },
+    {
+      "question_id": "gpt4_2ba83207",
+      "stratum": "hard",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 17,
+      "phase1_gold_ranks": [
+        10,
+        17,
+        3,
+        8
+      ]
+    },
+    {
+      "question_id": "gpt4_2c50253f",
+      "stratum": "easy",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        2,
+        1
+      ]
+    },
+    {
+      "question_id": "gpt4_2f8be40d",
+      "stratum": "hard",
+      "question_type": "multi-session",
+      "phase1_worst_rank": null,
+      "phase1_gold_ranks": [
+        6,
+        16
+      ]
+    },
+    {
+      "question_id": "gpt4_2f91af09",
+      "stratum": "easy",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 3,
+      "phase1_gold_ranks": [
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "question_id": "gpt4_372c3eed",
+      "stratum": "hard",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 9,
+      "phase1_gold_ranks": [
+        2,
+        9,
+        1
+      ]
+    },
+    {
+      "question_id": "gpt4_45189cb4",
+      "stratum": "easy",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 3,
+      "phase1_gold_ranks": [
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "question_id": "gpt4_468eb063",
+      "stratum": "easy",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 3,
+      "phase1_gold_ranks": [
+        3
+      ]
+    },
+    {
+      "question_id": "gpt4_468eb064",
+      "stratum": "easy",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "gpt4_4ef30696",
+      "stratum": "easy",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        2,
+        1
+      ]
+    },
+    {
+      "question_id": "gpt4_5501fe77",
+      "stratum": "mid",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 4,
+      "phase1_gold_ranks": [
+        4,
+        2,
+        1
+      ]
+    },
+    {
+      "question_id": "gpt4_59c863d7",
+      "stratum": "hard",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 12,
+      "phase1_gold_ranks": [
+        1,
+        12,
+        4,
+        3
+      ]
+    },
+    {
+      "question_id": "gpt4_5dcc0aab",
+      "stratum": "hard",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 7,
+      "phase1_gold_ranks": [
+        3,
+        1,
+        7,
+        4,
+        2
+      ]
+    },
+    {
+      "question_id": "gpt4_731e37d7",
+      "stratum": "mid",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 5,
+      "phase1_gold_ranks": [
+        2,
+        3,
+        5,
+        1
+      ]
+    },
+    {
+      "question_id": "gpt4_7a0daae1",
+      "stratum": "easy",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        2,
+        1
+      ]
+    },
+    {
+      "question_id": "gpt4_7abb270c",
+      "stratum": "hard",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 15,
+      "phase1_gold_ranks": [
+        1,
+        2,
+        14,
+        15,
+        4,
+        6
+      ]
+    },
+    {
+      "question_id": "gpt4_7bc6cf22",
+      "stratum": "easy",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "gpt4_7f6b06db",
+      "stratum": "hard",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 8,
+      "phase1_gold_ranks": [
+        5,
+        8,
+        6
+      ]
+    },
+    {
+      "question_id": "gpt4_7fce9456",
+      "stratum": "hard",
+      "question_type": "multi-session",
+      "phase1_worst_rank": 10,
+      "phase1_gold_ranks": [
+        6,
+        3,
+        1,
+        2,
+        10
+      ]
+    },
+    {
+      "question_id": "gpt4_88806d6e",
+      "stratum": "easy",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 2,
+      "phase1_gold_ranks": [
+        2,
+        1
+      ]
+    },
+    {
+      "question_id": "gpt4_93f6379c",
+      "stratum": "mid",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 5,
+      "phase1_gold_ranks": [
+        1,
+        5,
+        2
+      ]
+    },
+    {
+      "question_id": "gpt4_a1b77f9c",
+      "stratum": "hard",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 8,
+      "phase1_gold_ranks": [
+        4,
+        5,
+        2,
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "question_id": "gpt4_b5700ca0",
+      "stratum": "easy",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 1,
+      "phase1_gold_ranks": [
+        1
+      ]
+    },
+    {
+      "question_id": "gpt4_d6585ce8",
+      "stratum": "hard",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 12,
+      "phase1_gold_ranks": [
+        12,
+        6,
+        7,
+        8,
+        4
+      ]
+    },
+    {
+      "question_id": "gpt4_d6585ce9",
+      "stratum": "hard",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 16,
+      "phase1_gold_ranks": [
+        16,
+        6,
+        1,
+        3,
+        5
+      ]
+    },
+    {
+      "question_id": "gpt4_e061b84f",
+      "stratum": "hard",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": null,
+      "phase1_gold_ranks": [
+        15,
+        13
+      ]
+    },
+    {
+      "question_id": "gpt4_e061b84g",
+      "stratum": "hard",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": null,
+      "phase1_gold_ranks": [
+        4
+      ]
+    },
+    {
+      "question_id": "gpt4_f49edff3",
+      "stratum": "easy",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 3,
+      "phase1_gold_ranks": [
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "question_id": "gpt4_fe651585",
+      "stratum": "hard",
+      "question_type": "temporal-reasoning",
+      "phase1_worst_rank": 7,
+      "phase1_gold_ranks": [
+        4,
+        7
+      ]
+    }
+  ]
+}

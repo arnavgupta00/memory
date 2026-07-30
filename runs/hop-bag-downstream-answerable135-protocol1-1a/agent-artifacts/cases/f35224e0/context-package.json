@@ -1,0 +1,109 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Podcast episode listening totals (number of episodes listened to) for 'How I Built This' and 'My Favorite Murder' mentioned by the user across all sessions.",
+  "candidateStatus": "found",
+  "missingRisk": "How many episodes the user has listened to for 'How I Built This' (no explicit episode count is stated in the provided memory).",
+  "items": [
+    {
+      "sessionId": "answer_e9bb9500_2",
+      "turnIndex": 0,
+      "date": "2023/05/26 (Fri) 13:02",
+      "role": "user",
+      "text": "I'm looking for some new podcast recommendations. I'm really into true crime and inspiring stories, so if you have any suggestions, let me know. By the way, I just finished episode 12 of the \"My Favorite Murder\" podcast, and I try to listen to at least one episode a week.",
+      "why": "User explicitly states they finished episode 12 of 'My Favorite Murder' (provides an episode listened figure for that podcast).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e9bb9500_1",
+      "turnIndex": 0,
+      "date": "2023/05/29 (Mon) 13:09",
+      "role": "user",
+      "text": "I'm looking for some new podcast recommendations. I've been loving the \"How I Built This\" podcast lately and I'm interested in finding more podcasts that have a similar entrepreneurial vibe. Do you have any suggestions?",
+      "why": "User says they are loving 'How I Built This' (indicates listening, but does not provide an explicit episode count; still relevant for building the listening set).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e9bb9500_1",
+      "turnIndex": 2,
+      "date": "2023/05/29 (Mon) 13:09",
+      "role": "user",
+      "text": "I'll definitely check some of these out. I've been listening to podcasts during my daily commute, which is about 45 minutes each way, so I'm always looking for new shows to add to my rotation. Are there any podcasts on this list that are more focused on the stories behind the companies, similar to \"How I Built This\"? I've finished around 15 episodes so far and I really enjoy hearing about the founders' journeys and the challenges they faced when building their businesses.",
+      "why": "User provides commute/listening context and says they've finished around 15 episodes (about 'How I Built This' per the session’s focus).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e9bb9500_2",
+      "turnIndex": 2,
+      "date": "2023/05/26 (Fri) 13:02",
+      "role": "user",
+      "text": "I've heard of \"Criminal\" before, but I haven't checked it out yet. What's the tone of the podcast? Is it more serious and in-depth or does it have a lighter tone like \"My Favorite Murder\"?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9bb9500_2",
+      "turnIndex": 4,
+      "date": "2023/05/26 (Fri) 13:02",
+      "role": "user",
+      "text": "That sounds interesting, I'll definitely give it a try. I've been enjoying the storytelling style of \"My Favorite Murder\", and it seems like \"Criminal\" might offer a similar kind of storytelling, just with a more serious tone. By the way, do you have any recommendations for news-related podcasts that might interest me? I've been listening to \"The Daily\" and I'm looking for something similar.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9bb9500_2",
+      "turnIndex": 6,
+      "date": "2023/05/26 (Fri) 13:02",
+      "role": "user",
+      "text": "I'll definitely check out some of those news-related podcasts. I've been trying to stay more informed about current events, and it's great to have a variety of perspectives to choose from. By the way, do you have any recommendations for podcast apps or platforms that allow me to customize my listening experience? I've been using Spotify and Apple Podcasts, but I'm open to trying out other options.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9bb9500_2",
+      "turnIndex": 8,
+      "date": "2023/05/26 (Fri) 13:02",
+      "role": "user",
+      "text": "I'm interested in creating custom playlists and having playback speed control. I've been listening to podcasts at 1.5x speed on Apple Podcasts, and it's been really helpful in getting through my daily commute. Do any of the apps you mentioned allow me to create custom playlists with podcasts from different sources, like Spotify and Apple Podcasts?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9bb9500_1",
+      "turnIndex": 4,
+      "date": "2023/05/29 (Mon) 13:09",
+      "role": "user",
+      "text": "I'll definitely check some of these out. I'm particularly interested in hearing about the early days of companies like Airbnb and LinkedIn. Do you know if any of these podcasts have episodes that cover companies in the tech industry specifically?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9bb9500_1",
+      "turnIndex": 6,
+      "date": "2023/05/29 (Mon) 13:09",
+      "role": "user",
+      "text": "I'm glad you mentioned the tech industry. I've been listening to a lot of podcasts during my daily commute, and I'm always interested in hearing about the stories behind successful tech companies. Do you know if any of these podcasts have episodes that cover companies that were founded by non-technical founders? I think it's really inspiring to hear about entrepreneurs who didn't have a technical background but still managed to build successful companies.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9bb9500_1",
+      "turnIndex": 8,
+      "date": "2023/05/29 (Mon) 13:09",
+      "role": "user",
+      "text": "I'm glad you mentioned that. I've been thinking about how I can apply some of the entrepreneurial lessons I've learned from \"How I Built This\" to my own life. I've been trying to cut down on my social media usage and use that extra time to listen to podcasts or read books. It's been really helpful for my mental health, and I feel more productive during my daily commute. Do you have any podcast recommendations that focus on personal development or productivity?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e9bb9500_1",
+      "turnIndex": 10,
+      "date": "2023/05/29 (Mon) 13:09",
+      "role": "user",
+      "text": "I'm really interested in learning more about personal development and productivity. I've been trying to make the most of my daily commute by listening to podcasts and reading books. I've found that it's really helped me feel more focused and motivated. Do you have any book recommendations that might be helpful for someone looking to improve their productivity and personal growth?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 3849,
+  "estimatedTokens": 963
+}

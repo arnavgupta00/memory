@@ -1,0 +1,21 @@
+[
+  {
+    "session_id": "answer_ultrachat_269020",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low. This session explicitly names two companies and describes their employee safety/well-being–related practices and recognitions, which should be sufficient for identifying the companies requested. However, it may not perfectly match the exact “prioritize employee safety and well-being like Triumvirate” framing beyond the provided descriptions.",
+      "claims": [
+        {
+          "turnIndex": 7,
+          "fact": "Patagonia — flexible work arrangements, generous maternity and paternity leave, and invests in employee education and wellness; in 2020 named one of the world's most ethical companies by the Ethisphere Institute for the tenth time.",
+          "why": "Directly provides one of the two companies and specific employee well-being/safety-adjacent benefits and a 2020 recognition."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Southwest Airlines — emphasizes employees (“Warriors”); offers top-of-the-line training, generous benefits packages, and a positive work environment; named one of the best places to work by Glassdoor; result is an enthusiastic team that prioritizes safety, customer service, and company success.",
+          "why": "Directly provides the second company and links the company’s employee-focused approach to safety and well-being, plus an external recognition source."
+        }
+      ]
+    }
+  }
+]

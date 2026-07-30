@@ -1,0 +1,172 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Reading/finish durations (in weeks) you reported for the specific two books: 'The Seven Husbands of Evelyn Hugo' and 'The Nightingale'.",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_5e3bb940_2",
+      "turnIndex": 0,
+      "date": "2023/05/24 (Wed) 08:41",
+      "role": "user",
+      "text": "I'm looking for some new audiobook recommendations. I've been enjoying listening to them during my daily commute and I just finished \"The Seven Husbands of Evelyn Hugo\", which took me two and a half weeks to finish. Do you have any suggestions for something similar?",
+      "why": "User reports finishing 'The Seven Husbands of Evelyn Hugo' took two and a half weeks.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_5e3bb940_3",
+      "turnIndex": 0,
+      "date": "2023/05/24 (Wed) 11:25",
+      "role": "user",
+      "text": "I'm looking for some book recommendations. I recently finished \"The Nightingale\" by Kristin Hannah, which took me three weeks to finish - it was a really emotional and heavy read, but I loved it. Can you suggest some historical fiction books that have a similar tone and style?",
+      "why": "User reports finishing 'The Nightingale' took three weeks.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_5e3bb940_2",
+      "turnIndex": 2,
+      "date": "2023/05/24 (Wed) 08:41",
+      "role": "user",
+      "text": "I'm intrigued by The Royal We and The Address, but I'm not sure if they're available on my local library's audiobook platform. Can you check if they're popular enough to be widely available?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_2",
+      "turnIndex": 4,
+      "date": "2023/05/24 (Wed) 08:41",
+      "role": "user",
+      "text": "I'll check my library's catalog to see if they have those audiobooks. By the way, do you have any recommendations for fantasy audiobooks? I've recently started listening to \"The Poppy War\" by R.F. Kuang and I'm really enjoying it.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_2",
+      "turnIndex": 6,
+      "date": "2023/05/24 (Wed) 08:41",
+      "role": "user",
+      "text": "I'll definitely check out some of these fantasy audiobooks. I've been enjoying \"The Poppy War\" and I'm about halfway through it. I've been listening to it during my morning walks with my dog, which has been a great way to get some exercise and make progress on my book.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_2",
+      "turnIndex": 8,
+      "date": "2023/05/24 (Wed) 08:41",
+      "role": "user",
+      "text": "My dog's name is Max, and he loves sniffing around and exploring new smells during our walks. He's not too fussed about the audiobooks, but he's happy to have me by his side! As for me, I think listening to audiobooks during walks helps me stay motivated to exercise because it makes the time pass more enjoyably. Plus, it's a great way to reward myself after a long day of work.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_2",
+      "turnIndex": 10,
+      "date": "2023/05/24 (Wed) 08:41",
+      "role": "user",
+      "text": "I'm able to focus on the story and characters pretty well while walking, but I do get distracted occasionally by interesting sights or sounds around me. Like, if we're walking in a new neighborhood, I might get caught up in looking at the architecture or gardens. And of course, if Max sees a squirrel or another dog, he can get pretty excited! But overall, I find that the audiobook helps me stay engaged and motivated during our walks.\n\nAs for exploring other types of content, I've actually been thinking about trying out some podcasts. I've heard great things about true crime podcasts, and I'm intrigued by the idea of listening to a story unfold over multiple episodes. Do you have any recommendations for true crime podcasts that are well-narrated and engaging?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_3",
+      "turnIndex": 2,
+      "date": "2023/05/24 (Wed) 11:25",
+      "role": "user",
+      "text": "I've heard great things about \"All the Light We Cannot See\". What's the pace of the book? Is it a slow burn or a quick read?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_3",
+      "turnIndex": 4,
+      "date": "2023/05/24 (Wed) 11:25",
+      "role": "user",
+      "text": "That helps! So, it's a bit of a slow burn, but the payoff is worth it. I'm interested in trying it out. By the way, I've been listening to audiobooks during my daily commute, and I've been able to finish a book every few weeks. Like \"The Nightingale\", which took me about three weeks to finish. Do you think I could finish \"All the Light We Cannot See\" in a similar timeframe if I listen to it during my daily commute?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_3",
+      "turnIndex": 6,
+      "date": "2023/05/24 (Wed) 11:25",
+      "role": "user",
+      "text": "That's helpful. I think I can manage to finish it in 5-7 weeks. I might even try to listen to it a bit faster, like 1.25x speed, to finish it a bit sooner. Do you think the narrator's voice and style will be easy to follow at a faster speed?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_3",
+      "turnIndex": 8,
+      "date": "2023/05/24 (Wed) 11:25",
+      "role": "user",
+      "text": "I'll definitely keep that in mind. So, I'll start with the standard 1x speed and see how it goes. Thanks for the advice! By the way, do you have any recommendations for other historical fiction books that are similar to \"The Nightingale\" and \"All the Light We Cannot See\"?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_3",
+      "turnIndex": 10,
+      "date": "2023/05/24 (Wed) 11:25",
+      "role": "user",
+      "text": "I'd like to ask about \"The Historian\". You mentioned it's a sweeping narrative with a strong focus on historical detail and atmospheric writing. How does it compare to \"All the Light We Cannot See\" in terms of its pace and tone?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_1",
+      "turnIndex": 0,
+      "date": "2023/05/24 (Wed) 22:29",
+      "role": "user",
+      "text": "I'm looking for some new audiobook recommendations. I've been getting into audiobooks lately and have managed to finish three in the last six weeks, which is great for me.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_1",
+      "turnIndex": 2,
+      "date": "2023/05/24 (Wed) 22:29",
+      "role": "user",
+      "text": "I've been listening to fiction, mostly contemporary and historical fiction. I really enjoyed the emotional depth of \"The Nightingale\" and the engaging storytelling of \"The Seven Husbands of Evelyn Hugo\". I'm open to trying out different genres, but I think I'd prefer books with complex themes.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_1",
+      "turnIndex": 4,
+      "date": "2023/05/24 (Wed) 22:29",
+      "role": "user",
+      "text": "I like the sound of \"The Song of Achilles\" and \"The Brief Wondrous Life of Oscar Wao\". Can you tell me a bit more about the narrators, Frazer Douglas and Jonathan Davis?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_1",
+      "turnIndex": 6,
+      "date": "2023/05/24 (Wed) 22:29",
+      "role": "user",
+      "text": "I'm glad to hear that both narrators are well-suited for their respective books. I think I'll try out samples of both to see which one I like better. Can you also tell me how long the audiobooks are? I'd like to get an idea of the time commitment involved.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_1",
+      "turnIndex": 8,
+      "date": "2023/05/24 (Wed) 22:29",
+      "role": "user",
+      "text": "I'm looking forward to trying out the samples. By the way, I've been using my daily commute to listen to audiobooks, and it's been really effective. I've managed to finish three audiobooks in the last six weeks, which is a great pace for me.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_5e3bb940_1",
+      "turnIndex": 10,
+      "date": "2023/05/24 (Wed) 22:29",
+      "role": "user",
+      "text": "I think it's a combination of factors. One thing is that audiobooks make it easy to multitask, so I can listen while I'm on the train or walking to work, which makes the time pass more quickly. I also find that the narrators can really bring the story to life, which helps me stay engaged. Plus, it's just convenient to have a book with me at all times, without having to physically carry it around.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 5192,
+  "estimatedTokens": 1298
+}

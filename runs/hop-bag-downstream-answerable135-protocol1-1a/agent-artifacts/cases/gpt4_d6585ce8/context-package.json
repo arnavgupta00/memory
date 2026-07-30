@@ -1,0 +1,316 @@
+{
+  "queryShape": "order",
+  "setBoundary": "Concerts/musical events the user attended within the prior two months from 2023/04/22, listed chronologically from earliest to latest.",
+  "candidateStatus": "found",
+  "missingRisk": "May still be missing other attended concerts/events in the two-month window that were mentioned outside the provided memory block, or the exact dates/ordering for events described only as “recently/just got back.”",
+  "items": [
+    {
+      "sessionId": "answer_f999b05b_1",
+      "turnIndex": 0,
+      "date": "2023/03/18 (Sat) 00:23",
+      "role": "user",
+      "text": "I'm planning to buy some new concert merchandise online. Can you recommend some popular websites to find cool Billie Eilish gear? By the way, I just got back from an amazing Billie Eilish concert at the Wells Fargo Center in Philly with my sister today, and I'm still on a high from the experience!",
+      "why": "User states they just got back from an amazing Billie Eilish concert in Philly “today,” with session date 2023/03/18 (Earliest dated concert in the window).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f999b05b_4",
+      "turnIndex": 0,
+      "date": "2023/03/25 (Sat) 09:47",
+      "role": "user",
+      "text": "I'm looking for some new music recommendations. I've been to a few concerts recently and I'm always on the lookout for new artists to listen to. Speaking of which, I attended a free outdoor concert series in the park today and discovered some great new talent - it's really cool to see live music in a low-key setting like that. Do you have any suggestions for indie or alternative bands I might like?",
+      "why": "User attended a free outdoor concert series in the park “today,” with session date 2023/03/25 (music event during the window).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f999b05b_2",
+      "turnIndex": 0,
+      "date": "2023/04/01 (Sat) 09:07",
+      "role": "user",
+      "text": "I'm looking for some song recommendations. I've been listening to a lot of indie music lately, especially since I just got back from a music festival in Brooklyn with a group of friends, featuring a lineup of my favorite indie bands. Can you suggest some new artists or bands I might like?",
+      "why": "User says they just got back from a music festival in Brooklyn (exact festival dates not given), with session date 2023/04/01 (likely within the two-month window).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f999b05b_5",
+      "turnIndex": 0,
+      "date": "2023/04/08 (Sat) 11:13",
+      "role": "user",
+      "text": "I'm trying to find some new music to listen to. I've been to a lot of great concerts lately, like the Billie Eilish show in Philly. But in between those big events, I've also really enjoyed some smaller local music nights, like a jazz night at a local bar today, enjoying live music in a more intimate setting. Do you have any recommendations for new artists or albums I might like?",
+      "why": "User mentions enjoying a smaller local music night: a jazz night at a local bar “today,” with session date 2023/04/08 (music event during the window).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f999b05b_3",
+      "turnIndex": 0,
+      "date": "2023/04/15 (Sat) 02:29",
+      "role": "user",
+      "text": "I'm looking for some recommendations for rock music playlists on streaming services. I've been listening to a lot of Queen lately, actually just saw them live with Adam Lambert at the Prudential Center in Newark, NJ with my parents, and I'm craving more of that classic rock sound.",
+      "why": "User says they just saw Queen with Adam Lambert live at the Prudential Center in Newark, NJ “just saw them live,” with session date 2023/04/15 (music event during the window, though exact event date is not specified).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f999b05b_1",
+      "turnIndex": 2,
+      "date": "2023/03/18 (Sat) 00:23",
+      "role": "user",
+      "text": "I'll check these out! Do you have any tips on how to find rare or limited edition Billie Eilish merchandise online?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05b_1",
+      "turnIndex": 4,
+      "date": "2023/03/18 (Sat) 00:23",
+      "role": "user",
+      "text": "I'm also planning to frame the concert ticket stub from today's show. Do you have any tips on how to preserve it and make it look nice in a frame?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05b_1",
+      "turnIndex": 6,
+      "date": "2023/03/18 (Sat) 00:23",
+      "role": "user",
+      "text": "I'm thinking of framing the ticket stub along with a photo of my sister and me from the concert. Do you have any tips on how to choose a good photo to pair with the ticket stub?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05b_1",
+      "turnIndex": 8,
+      "date": "2023/03/18 (Sat) 00:23",
+      "role": "user",
+      "text": "That's great advice! I think I'll choose a photo of my sister and me taking a selfie in front of the Wells Fargo Center before the concert. It's a great shot that captures our excitement and anticipation for the show. Now, do you have any recommendations for where I can print my photo? Are there any online services or local stores that offer high-quality printing?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05b_1",
+      "turnIndex": 10,
+      "date": "2023/03/18 (Sat) 00:23",
+      "role": "user",
+      "text": "I think I'll try Shutterfly or Snapfish for printing my photo. They seem to have good reviews and a wide range of printing options. Do you have any tips on how to properly care for my framed photo and ticket stub to ensure they last for a long time?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05b_4",
+      "turnIndex": 2,
+      "date": "2023/03/25 (Sat) 09:47",
+      "role": "user",
+      "text": "I'm actually interested in checking out some of the newer artists you mentioned. Can you tell me more about Mt. Joy? I liked the sound of their focus on storytelling and catchy melodies. Also, have you got any info on their upcoming tour dates or releases?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05b_4",
+      "turnIndex": 4,
+      "date": "2023/03/25 (Sat) 09:47",
+      "role": "user",
+      "text": "That sounds great! I'll definitely check out their music. By the way, I'm really loving the outdoor concert series in the park, it's such a great way to discover new artists and enjoy live music in a low-key setting. Do you think you can recommend some other bands that might be similar to Mt. Joy, maybe some local or up-and-coming acts that might be playing at these types of events?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05b_4",
+      "turnIndex": 6,
+      "date": "2023/03/25 (Sat) 09:47",
+      "role": "user",
+      "text": "I'm actually thinking of attending a jazz night at a local bar soon, do you know any good jazz musicians or bands that I should look out for?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05b_4",
+      "turnIndex": 8,
+      "date": "2023/03/25 (Sat) 09:47",
+      "role": "user",
+      "text": "I've been thinking about attending a music festival in the future, do you know any good ones that I should look out for?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05b_2",
+      "turnIndex": 2,
+      "date": "2023/04/01 (Sat) 09:07",
+      "role": "user",
+      "text": "I've actually seen Glass Animals live at the music festival in Brooklyn, and they were amazing! I'm definitely going to check out more of their music. I'm also interested in exploring more psychedelic indie-rock, can you recommend some similar bands or artists?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05b_2",
+      "turnIndex": 4,
+      "date": "2023/04/01 (Sat) 09:07",
+      "role": "user",
+      "text": "I'll definitely check out these recommendations. I'm particularly interested in bands that have a strong live presence, since I had such a great time seeing Glass Animals at the festival. Do you know if any of these bands are known for their live performances?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05b_2",
+      "turnIndex": 6,
+      "date": "2023/04/01 (Sat) 09:07",
+      "role": "user",
+      "text": "I'm actually thinking of checking out some local music events in my neighborhood, maybe a free outdoor concert series in the park or a jazz night at a local bar. Do you have any tips on how to discover new artists and enjoy live music in a more low-key setting?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05b_2",
+      "turnIndex": 8,
+      "date": "2023/04/01 (Sat) 09:07",
+      "role": "user",
+      "text": "I'm thinking of checking out some local music events, maybe a free outdoor concert series in the park or a jazz night at a local bar. Since I've been to a music festival in Brooklyn with a group of friends, featuring a lineup of my favorite indie bands, I'm looking forward to discovering new artists and enjoying live music in a more low-key setting. Do you have any specific recommendations for local music events or venues in my area?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05b_2",
+      "turnIndex": 10,
+      "date": "2023/04/01 (Sat) 09:07",
+      "role": "user",
+      "text": "I'm thinking of checking out some local music events, maybe a free outdoor concert series in the park or a jazz night at a local bar. Since I've been to a music festival in Brooklyn with a group of friends, featuring a lineup of my favorite indie bands, I'm looking forward to discovering new artists and enjoying live music in a more low-key setting. Can you give me some general tips on how to make the most of these types of events?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05b_5",
+      "turnIndex": 2,
+      "date": "2023/04/08 (Sat) 11:13",
+      "role": "user",
+      "text": "I'll definitely check out these recommendations! I'm especially interested in the jazz section since I had such a great time at the jazz night at the local bar today. Do you know of any good jazz clubs or live music venues in my area that I might want to check out?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05b_5",
+      "turnIndex": 4,
+      "date": "2023/04/08 (Sat) 11:13",
+      "role": "user",
+      "text": "That's really helpful! I'll definitely try out those methods to find some great jazz spots near me. By the way, do you know of any popular jazz festivals or events that happen around this time of the year? I'd love to check out some outdoor jazz events if possible.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05b_5",
+      "turnIndex": 6,
+      "date": "2023/04/08 (Sat) 11:13",
+      "role": "user",
+      "text": "I'll definitely search for jazz festivals and events in my area. I'm excited to check out some outdoor jazz concerts this summer. By the way, I've been thinking about learning to play the saxophone. Do you think it's a good instrument for a beginner, and are there any online resources you'd recommend for learning?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05b_5",
+      "turnIndex": 8,
+      "date": "2023/04/08 (Sat) 11:13",
+      "role": "user",
+      "text": "I'm really excited to start learning the saxophone! I think I'll start with some online lessons and YouTube tutorials to get a feel for the instrument. Do you think it's important to invest in a good quality saxophone, even as a beginner? And are there any specific brands or models that you would recommend for a beginner?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05b_5",
+      "turnIndex": 10,
+      "date": "2023/04/08 (Sat) 11:13",
+      "role": "user",
+      "text": "I'll definitely consider investing in a good quality saxophone and factor in the additional costs. I'll also look into renting or buying options to see what works best for me. Thanks for the recommendations and advice! By the way, do you think it's important to find a good teacher or instructor to guide me in my learning process?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "4a79d078_4",
+      "turnIndex": 0,
+      "date": "2023/04/11 (Tue) 18:11",
+      "role": "user",
+      "text": "I'm looking for some ideas on how to get more involved in my community. I've already done a few things recently, like organizing a toy drive at my office over the holiday season and donating $50 to the local Toys for Tots program. Do you have any suggestions for other volunteer opportunities or charity events in my area?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "4a79d078_4",
+      "turnIndex": 2,
+      "date": "2023/04/11 (Tue) 18:11",
+      "role": "user",
+      "text": "I'm actually interested in finding a charity event that focuses on helping children. I've already attended a charity gala for the Children's Hospital back in February and donated $100 to the event. Do you have any suggestions for upcoming events that support a similar cause?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "4a79d078_4",
+      "turnIndex": 4,
+      "date": "2023/04/11 (Tue) 18:11",
+      "role": "user",
+      "text": "I'm actually also interested in finding volunteer opportunities at local schools. Do you know of any ways to get involved in education-related volunteering?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "4a79d078_4",
+      "turnIndex": 6,
+      "date": "2023/04/11 (Tue) 18:11",
+      "role": "user",
+      "text": "I'm thinking of volunteering at a local school, possibly helping out with a literacy program. I've had some experience with organizing events, having organized a toy drive at my office over the holiday season, which benefited the local Toys for Tots program and I also donated $50 to the program myself. Do you think my skills would be transferable to a literacy program?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "4a79d078_4",
+      "turnIndex": 8,
+      "date": "2023/04/11 (Tue) 18:11",
+      "role": "user",
+      "text": "I'm interested in exploring more volunteer opportunities that align with my skills and interests. Can you suggest some other organizations or platforms that connect volunteers with literacy programs or education-related causes?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "4a79d078_4",
+      "turnIndex": 10,
+      "date": "2023/04/11 (Tue) 18:11",
+      "role": "user",
+      "text": "I'm interested in exploring more volunteer opportunities that align with my skills and interests. I've had some experience with organizing events, having organized a toy drive at my office over the holiday season, which benefited the local Toys for Tots program and I also donated $50 to the program myself. Can you suggest some other organizations or platforms that connect volunteers with literacy programs or education-related causes?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05b_3",
+      "turnIndex": 2,
+      "date": "2023/04/15 (Sat) 02:29",
+      "role": "user",
+      "text": "I'm also interested in discovering new artists and bands. Do you have any recommendations for indie rock or alternative bands that I might enjoy? I recently attended a music festival in Brooklyn that featured some of my favorite indie bands, and I'm always on the lookout for new sounds.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05b_3",
+      "turnIndex": 4,
+      "date": "2023/04/15 (Sat) 02:29",
+      "role": "user",
+      "text": "I'd like to know more about the current indie rock scene. Are there any popular indie rock festivals or concerts happening in the coming months that I should check out?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05b_3",
+      "turnIndex": 6,
+      "date": "2023/04/15 (Sat) 02:29",
+      "role": "user",
+      "text": "I've been to a music festival in Brooklyn recently, featuring some of my favorite indie bands, and I'm always on the lookout for new sounds. I'd love to know more about the current indie rock scene. Are there any popular indie rock festivals or concerts happening in the coming months that I should check out?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05b_3",
+      "turnIndex": 8,
+      "date": "2023/04/15 (Sat) 02:29",
+      "role": "user",
+      "text": "I'm really interested in the Panorama Music Festival in NYC. I've heard great things about it, and the lineup looks amazing. I'd love to know more about the festival's atmosphere and what to expect from the event. Also, do you have any tips on how to make the most out of the festival experience?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 9607,
+  "estimatedTokens": 2402
+}

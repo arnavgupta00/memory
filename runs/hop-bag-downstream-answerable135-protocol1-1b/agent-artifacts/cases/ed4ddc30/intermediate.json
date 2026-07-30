@@ -1,0 +1,58 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "dozen eggs currently stocked in the refrigerator (as of 2023/03/16)",
+    "candidateStatus": "found",
+    "missingRisk": "The two candidate sessions report different egg stock counts (30 dozen on 2023/01/11 vs 20 dozen on 2023/03/15). If there were any changes between 2023/03/15 and 2023/03/16, they may not be represented here.",
+    "items": [
+      {
+        "sessionId": "answer_babbaccb_2",
+        "turnIndex": 2,
+        "why": "Most recent dated statement near the question time: mentions '20 dozen fresh eggs stocked up in the fridge right now.'"
+      },
+      {
+        "sessionId": "answer_babbaccb_1",
+        "turnIndex": 2,
+        "why": "Earlier dated statement that could be the last known count before 2023/03/15: mentions '30 dozen at the moment' (useful if downstream needs to reconcile changes)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "dozen eggs currently stocked in the refrigerator (as of 2023/03/16)",
+    "candidateStatus": "found",
+    "missingRisk": "The two candidate sessions report different egg stock counts (30 dozen on 2023/01/11 vs 20 dozen on 2023/03/15). If there were any changes between 2023/03/15 and 2023/03/16, they may not be represented here.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_babbaccb_2",
+        "turnIndex": 2,
+        "why": "Most recent dated statement near the question time: mentions '20 dozen fresh eggs stocked up in the fridge right now.'"
+      },
+      {
+        "sessionId": "answer_babbaccb_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_babbaccb_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_babbaccb_1",
+        "turnIndex": 2,
+        "why": "Earlier dated statement that could be the last known count before 2023/03/15: mentions '30 dozen at the moment' (useful if downstream needs to reconcile changes)."
+      },
+      {
+        "sessionId": "answer_babbaccb_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_babbaccb_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

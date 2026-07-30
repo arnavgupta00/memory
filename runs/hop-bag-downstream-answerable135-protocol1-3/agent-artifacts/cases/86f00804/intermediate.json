@@ -1,0 +1,21 @@
+[
+  {
+    "session_id": "answer_96b8c9ee",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Medium: the user mentions books they are reading/enjoying, but this session does not explicitly state the currently-reading book at the question time (2023/05/30). The strongest “currently reading” signal is the user’s statement about devouring one title earlier in the session; later the user mentions a different book that they have already read for a book club.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "I'm currently devouring \"The Seven Husbands of Evelyn Hugo\".",
+          "why": "This is the only explicit statement of what the user is reading at the time of the session, and it directly answers the question if it still applies."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "We're going to discuss \"The Last House Guest\" by Megan Miranda, which I've already read and really enjoyed.",
+          "why": "This indicates another book the user has recently read/enjoyed, which could be confused with their current read; keeping it may help the reducer determine what was read vs. currently reading."
+        }
+      ]
+    }
+  }
+]

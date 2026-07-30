@@ -1,0 +1,23 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Podcast episode listening totals (number of episodes listened to) for 'How I Built This' and 'My Favorite Murder' mentioned by the user across all sessions.",
+  "candidateStatus": "found",
+  "missingRisk": "How many episodes the user has listened to for 'How I Built This' (no explicit episode count is stated in the provided memory).",
+  "items": [
+    {
+      "sessionId": "answer_e9bb9500_2",
+      "turnIndex": 0,
+      "why": "User explicitly states they finished episode 12 of 'My Favorite Murder' (provides an episode listened figure for that podcast)."
+    },
+    {
+      "sessionId": "answer_e9bb9500_1",
+      "turnIndex": 0,
+      "why": "User says they are loving 'How I Built This' (indicates listening, but does not provide an explicit episode count; still relevant for building the listening set)."
+    },
+    {
+      "sessionId": "answer_e9bb9500_1",
+      "turnIndex": 2,
+      "why": "User provides commute/listening context and says they've finished around 15 episodes (about 'How I Built This' per the session’s focus)."
+    }
+  ]
+}

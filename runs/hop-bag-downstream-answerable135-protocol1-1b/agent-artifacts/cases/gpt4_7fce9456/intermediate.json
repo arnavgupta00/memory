@@ -1,0 +1,113 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Count the properties the user explicitly says they viewed prior to making the Brookside townhouse offer (offer date Feb 25).",
+    "candidateStatus": "found",
+    "missingRisk": "The catalog may not include other property-viewing dates before Feb 25 for the Brookside townhouse; if they exist in sessions not shown here, the count could be incomplete.",
+    "items": [
+      {
+        "sessionId": "answer_a679a86a_5",
+        "turnIndex": 10,
+        "why": "Explicitly states: user saw the Brookside 3-bedroom townhouse on Feb 22 and then made an offer on Feb 25—this is the direct before-offer viewing fact needed to determine the count."
+      },
+      {
+        "sessionId": "answer_a679a86a_5",
+        "turnIndex": 0,
+        "why": "Context for the same Brookside townhouse offer on Feb 25 (establishes the offer event that the 'before' period refers to)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Count the properties the user explicitly says they viewed prior to making the Brookside townhouse offer (offer date Feb 25).",
+    "candidateStatus": "found",
+    "missingRisk": "The catalog may not include other property-viewing dates before Feb 25 for the Brookside townhouse; if they exist in sessions not shown here, the count could be incomplete.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_a679a86a_5",
+        "turnIndex": 10,
+        "why": "Explicitly states: user saw the Brookside 3-bedroom townhouse on Feb 22 and then made an offer on Feb 25—this is the direct before-offer viewing fact needed to determine the count."
+      },
+      {
+        "sessionId": "answer_a679a86a_5",
+        "turnIndex": 11,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_a679a86a_5",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_a679a86a_5",
+        "turnIndex": 0,
+        "why": "Context for the same Brookside townhouse offer on Feb 25 (establishes the offer event that the 'before' period refers to)."
+      },
+      {
+        "sessionId": "answer_a679a86a_5",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_a679a86a_4",
+        "turnIndex": 6,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_a679a86a_4",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_a679a86a_4",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_a679a86a_2",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_a679a86a_2",
+        "turnIndex": 9,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_a679a86a_2",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_a679a86a_3",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_a679a86a_3",
+        "turnIndex": 3,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_a679a86a_3",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_a679a86a_1",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_a679a86a_1",
+        "turnIndex": 3,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_a679a86a_1",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

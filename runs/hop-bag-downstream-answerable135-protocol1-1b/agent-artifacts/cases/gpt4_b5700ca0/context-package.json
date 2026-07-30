@@ -1,0 +1,91 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "2023/04/10; last week relative to this date (2023/04/10 Mon => last week includes 2023/04/03-2023/04/09). Identify the religious activity attended and its location/name.",
+  "candidateStatus": "found",
+  "missingRisk": "The candidate only specifies “the Episcopal Church” (no street address). If the question expects a specific address/city, it may not be present in the provided turns.; frozen bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "answer_a17423e8_1",
+      "turnIndex": 0,
+      "date": "2023/04/06 (Thu) 05:36",
+      "role": "user",
+      "text": "I'm looking for some information on local volunteer opportunities. I just helped out at an Easter Egg Hunt event last week and I'm interested in finding more ways to give back to the community.",
+      "why": "deterministic candidate-session coverage repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_a17423e8_1",
+      "turnIndex": 1,
+      "date": "2023/04/06 (Thu) 05:36",
+      "role": "assistant",
+      "text": "That's wonderful to hear that you're looking to continue giving back to your community! Volunteering is a great way to make a positive impact and connect with others.\n\nI'd be happy to help you find more local volunteer opportunities. Can you please tell me a bit more about what you're interested in? For example:\n\n1. What causes or areas are you passionate about (e.g., animals, environment, education, healthcare, etc.)?\n2. Are you looking for one-time events or ongoing commitments?\n3. Are there any specific age groups or demographics you'd like to work with (e.g., children, seniors, etc.)?\n4. Do you have any availability constraints (e.g., weekdays, weekends, mornings, afternoons)?\n5. Are you open to volunteering individually or as part of a group? Once I have a better understanding of your preferences, I can provide you with some local volunteer opportunities that might be a good fit for you.",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_a17423e8_1",
+      "turnIndex": 5,
+      "date": "2023/04/06 (Thu) 05:36",
+      "role": "assistant",
+      "text": "The Food Bank Volunteer opportunity is a wonderful way to make a difference in your community.\n\nHere's more information on the Food Bank Volunteer opportunity:\n\n**Food Bank Location:**\nThe food bank is located at 123 Main St, Anytown, USA 12345. It's easily accessible by public transportation, and there's also parking available on site.\n\n**Types of Tasks:**\nAs a Food Bank Volunteer, you'll be helping with various tasks to support the food bank's operations. These may include:\n\n* **Sorting and Packaging:** Sorting donated food items, packing them into boxes or bags, and labeling them for distribution.\n* **Inventory Management:** Assisting with receiving and stocking donations, as well as maintaining the inventory of food items.\n* **Food Distribution:** Helping to prepare and distribute food to clients, including setting up the distribution area, handing out food, and cleaning up afterwards.\n* **Other Tasks:** Assisting with special events, fundraising, and administrative tasks as needed.\n\n**Time Commitment:**\nThe food bank is open Monday to Friday, and they have various shifts available in the evenings ( typically 4:00 pm - 7:00 pm). You can choose a regular schedule that fits your availability, such as:\n\n* One evening per week (e.g., every Monday from 4:00 pm - 7:00 pm)\n* Two evenings per week (e.g., every Tuesday and Thursday from 4:00 pm - 7:00 pm)\n* Flexible schedule (e.g., you can volunteer on an as-needed basis, with a minimum of 2 hours per month)\n\n**Requirements:**\nTo volunteer at the food bank, you'll need to:\n\n* Be at least 18 years old\n* Fill out a volunteer application form (available on their website or in person)\n* Attend a brief orientation session (about 30 minutes) to learn more about the food bank and the volunteer role\n* Sign a waiver and release form\n* Pass a background check (this is a standard requirement for all food bank volunteers)\n\n**Training:**\nThe food bank provides on-the-job training, so you'll learn as you go! They'll also provide guidance and support to ensure you're comfortable with the tasks and procedures.\n\n**Background Checks:**\nThe food bank requires a background check for all volunteers, which is a standard procedure to ensure the safety and security of their clients and staff. Don't worry, it's a quick and easy process that can be done online or in person.\n\nIf you're interested in volunteering at the food bank, I can provide you with the contact information and application form. Would you like to take the next step?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_a17423e8_1",
+      "turnIndex": 6,
+      "date": "2023/04/06 (Thu) 05:36",
+      "role": "user",
+      "text": "Yes, I'd like to take the next step. Please provide me with the contact information and application form. I'm looking forward to volunteering at the food bank and making a difference in my community. By the way, I'm glad I got to attend the Maundy Thursday service at the Episcopal Church, it was a beautiful and moving experience.",
+      "why": "This turn explicitly states the religious activity attended “the Maundy Thursday service at the Episcopal Church,” which answers where you attended the religious activity last week.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_a17423e8_1",
+      "turnIndex": 7,
+      "date": "2023/04/06 (Thu) 05:36",
+      "role": "assistant",
+      "text": "I'm so glad to hear that! Here's the contact information and application form for the food bank:\n\n**Contact Information:**\n\n* Phone: 555-555-5555\n* Email: [volunteer@foodbank.org](mailto:volunteer@foodbank.org)\n* Website: foodbank.org\n* Address: 123 Main St, Anytown, USA 12345\n\n**Application Form:**\n\nYou can download the application form from their website or pick one up in person at the food bank. Here's a brief summary of the application process:\n\n1. Download and complete the application form (PDF) from their website.\n2. Return the completed form to the food bank via email or in person.\n3. Attend a brief orientation session (about 30 minutes) to learn more about the food bank and the volunteer role.\n4. Complete a background check (online or in person).\n5. Start volunteering!\n\n**Additional Tips:**\n\n* Be sure to wear comfortable clothing and closed-toe shoes, as you'll be on your feet and moving around during your shift.\n* Bring a water bottle and any necessary snacks, as you'll be working hard to make a difference!\n* If you have any questions or concerns, don't hesitate to reach out to the food bank's volunteer coordinator.\n\nI'm thrilled that you're taking this step to volunteer at the food bank! Your time and energy will make a real difference in your community.\n\nAnd I'm glad to hear that the Maundy Thursday service at the Episcopal Church was a beautiful and moving experience for you. It's wonderful that you're finding ways to connect with your community and nurture your spirit.\n\nIf you have any more questions or need further assistance, feel free to ask!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_a17423e8_1",
+      "turnIndex": 2,
+      "date": "2023/04/06 (Thu) 05:36",
+      "role": "user",
+      "text": "I'm open to various causes, but I think I'd prefer something related to community service or helping the underprivileged. I'm available on weekdays, preferably in the evenings, and I don't mind committing to a regular schedule.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a17423e8_1",
+      "turnIndex": 4,
+      "date": "2023/04/06 (Thu) 05:36",
+      "role": "user",
+      "text": "I think the Food Bank Volunteer opportunity sounds interesting. Can you provide me with more information on the food bank's location, the types of tasks I'd be doing, and the time commitment required? Also, do they have any requirements for volunteers, such as training or background checks?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a17423e8_1",
+      "turnIndex": 8,
+      "date": "2023/04/06 (Thu) 05:36",
+      "role": "user",
+      "text": "I'd like to ask, are there any opportunities to volunteer with a group from my church or community? I'd love to invite some friends to join me in volunteering at the food bank.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a17423e8_1",
+      "turnIndex": 10,
+      "date": "2023/04/06 (Thu) 05:36",
+      "role": "user",
+      "text": "I'd like to ask, are there any opportunities for my church group to adopt a specific project or program at the food bank, such as organizing a food drive or helping with a special event? We're looking for ways to make a more significant impact and contribute to the food bank's mission.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 6490,
+  "estimatedTokens": 1623
+}

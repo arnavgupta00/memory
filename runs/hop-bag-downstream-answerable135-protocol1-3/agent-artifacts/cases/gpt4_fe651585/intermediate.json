@@ -1,0 +1,73 @@
+[
+  {
+    "session_id": "9f220c66_1",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains only travel-planning discussion (routes, attractions, beaches, Kennedy Space Center) and does not mention Rachel or Alex or any parenting/timeline information relevant to determining who became a parent first.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_65600ff6_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "none_found",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is considering adopting a baby boy from foster care.",
+          "why": "Adoption/parenthood context that could be used to compare timelines for Rachel vs Alex, especially regarding when parenthood begins."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User’s cousin Alex adopted a baby girl from China in January.",
+          "why": "Direct temporal information about when Alex became a parent (January), relevant to the question 'Who became a parent first, Rachel or Alex?'."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "Cousin Alex, who adopted a baby girl from China in January, had a wonderful experience with her agency.",
+          "why": "Reinforces Alex’s adoption event and parenthood timing from earlier in the session."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "Alex was able to learn more about the birth mother's background and received updates about her.",
+          "why": "Additional adoption timeline/support details for Alex; may help identify when Alex’s parenthood started relative to Rachel if Rachel’s data appears elsewhere."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "User says: 'It seems like I made a mistake!' and then continues discussing Alex’s experience and that they’ll keep it in mind.",
+          "why": "Indicates user acknowledgment and repetition of Alex’s adoption experience; supports that Alex’s adoption occurred in January and was salient."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_65600ff6_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Session contains no relevant information about whether Rachel or Alex became a parent first; it only mentions Rachel and twins Jackson and Julia (no Alex, no parenting-order comparison).",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is planning a birthday party for their niece, Olivia, turning 6 soon.",
+          "why": "General family context; not directly about Rachel vs Alex parenting order, but establishes persons/events in discussion."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User has been busy with sister-in-law's twins, Jackson and Julia, born on February 12th.",
+          "why": "Gives a concrete parenting-related timeline for Rachel (via sister-in-law), which could be relevant if Rachel is one of the candidates."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "Sister-in-law Rachel is doing great with the twins, Jackson and Julia.",
+          "why": "Directly connects the name Rachel to parenthood of Jackson and Julia, but does not mention Alex or any ordering."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Rachel is already celebrating twins Jackson and Julia's first birthday.",
+          "why": "Confirms the timing/ongoing parenthood context for Rachel (first birthday), but still lacks any Alex reference."
+        }
+      ]
+    }
+  }
+]

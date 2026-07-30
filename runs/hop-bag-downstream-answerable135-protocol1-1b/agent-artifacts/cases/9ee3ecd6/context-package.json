@@ -1,0 +1,145 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Need the Sephora points threshold for redeeming a free skincare product (and any nearby context where the threshold is stated).",
+  "candidateStatus": "found",
+  "missingRisk": "The catalog includes “300 points” but may not include the specific rule details (e.g., whether it’s for Beauty Insider vs. VIB/Rouge, or if thresholds vary by reward type/size).; frozen bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "answer_66c23110_1",
+      "turnIndex": 0,
+      "date": "2023/05/21 (Sun) 12:19",
+      "role": "user",
+      "text": "I'm looking for some advice on skincare products. I recently bought an eyeshadow palette at Sephora and earned 50 points, bringing my total to 200 points so far in their loyalty program. Can you recommend some popular skincare products that would complement my eyeshadow purchases?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_66c23110_1",
+      "turnIndex": 1,
+      "date": "2023/05/21 (Sun) 12:19",
+      "role": "assistant",
+      "text": "Congratulations on earning points in the Sephora loyalty program! With 200 points, you can redeem a reward from their Rewards Bazaar. Since you've been buying eyeshadows, I'll suggest some popular skincare products that can help enhance your overall beauty routine. Here are a few options:\n\n1. **Drunk Elephant Beste No. 9 Jelly Cleanser** (100 points): A gentle, non-foaming cleanser that effectively removes makeup, dirt, and impurities without stripping the skin of its natural oils. It's suitable for all skin types and is a great addition to any skincare routine.\n2. **Sunday Riley Power Couple** (100 points): A serum that targets fine lines, wrinkles, and discoloration. It contains peptides, antioxidants, and plant stem cells to help improve skin texture and tone. This product is ideal for those who want to address signs of aging.\n3. **Laneige Water Bank Moisturizing Cream** (100 points): A rich, hydrating moisturizer that provides long-lasting moisture to dry, dehydrated skin. It's perfect for dry or combination skin types and can help create a smooth canvas for makeup application.\n4. **Dr. Jart+ Dermaclar Clearing Solution** (100 points): A gentle exfoliating toner that helps remove dead skin cells, unclog pores, and balance the skin's pH. It's suitable for all skin types, including sensitive skin.\n5. **Kiehl's Calendula Foaming Face Wash** (50 points): A gentle, non-stripping face wash that effectively removes makeup and impurities while soothing and calming the skin. It's suitable for all skin types, including sensitive skin.\n\nThese products are all popular choices among Sephora customers, and they can complement your eyeshadow purchases by helping to create a smooth, hydrated, and even-toned complexion. You can redeem one of these products with your 200 points or save up for a higher-point reward.\n\nRemember to always read reviews, check the ingredients, and patch test before committing to a new skincare product, especially if you have sensitive skin. Happy shopping!",
+      "why": "deterministic candidate-session coverage repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_66c23110_1",
+      "turnIndex": 2,
+      "date": "2023/05/21 (Sun) 12:19",
+      "role": "user",
+      "text": "I'm interested in the Laneige Water Bank Moisturizing Cream. Can you tell me more about its ingredients and how it compares to other moisturizers in the same price range?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_66c23110_2",
+      "turnIndex": 0,
+      "date": "2023/05/29 (Mon) 08:31",
+      "role": "user",
+      "text": "I'm planning to buy a new moisturizer from Sephora soon, and I was wondering if you could help me find a good one for my skin type.",
+      "why": "Directly states the user needs a total of 300 points to redeem a free skincare product from Sephora.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_66c23110_2",
+      "turnIndex": 1,
+      "date": "2023/05/29 (Mon) 08:31",
+      "role": "assistant",
+      "text": "Of course, I'd be happy to help you find a great moisturizer at Sephora. To give you the best recommendations, could you please tell me a bit more about your skin type and concerns? For example:\n\n1. What is your skin type: normal, dry, oily, combination, acne-prone, sensitive, or mature?\n2. Do you have any specific skin concerns, such as acne, hyperpigmentation, fine lines, or dehydration?\n3. Are you looking for a lightweight, non-greasy moisturizer or something more rich and nourishing?\n4. Are there any specific ingredients you're looking for or avoiding (e.g. SPF, fragrance-free, natural ingredients)?\n5. Do you have a budget in mind for the moisturizer?\n\nOnce I have a better understanding of your skin needs, I can suggest some great options from Sephora that would suit you well!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_66c23110_2",
+      "turnIndex": 4,
+      "date": "2023/05/29 (Mon) 08:31",
+      "role": "user",
+      "text": "I think I'll go with the La Roche-Posay one. Do you think I can earn points for purchasing it at Sephora?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_66c23110_2",
+      "turnIndex": 5,
+      "date": "2023/05/29 (Mon) 08:31",
+      "role": "assistant",
+      "text": "The La Roche-Posay Toleriane Ultra Fluid Face Moisturizer SPF 50 is a fantastic product for combination skin.\n\nAnd yes, you can earn points for purchasing it at Sephora! As a Beauty Insider, you'll earn 1 point for every dollar you spend at Sephora, and you can redeem those points for rewards like free products, services, and more.\n\nSince you're close to reaching 300 points, purchasing the La Roche-Posay moisturizer (priced at around $30) will bring you even closer to redeeming your free skincare product!\n\nJust make sure to sign in to your Beauty Insider account online or through the Sephora app when you make your purchase, and your points will be automatically added to your account.\n\nHappy shopping, and enjoy your new moisturizer!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_66c23110_2",
+      "turnIndex": 6,
+      "date": "2023/05/29 (Mon) 08:31",
+      "role": "user",
+      "text": "Do you know if Sephora has any current promotions or discounts on the La Roche-Posay moisturizer or any other products I might want to purchase with it? By the way, I'm really close to redeeming a free skincare product from Sephora, I just need a total of 300 points and I'm all set!",
+      "why": "Reiterates the user’s 300-point goal context (“I just need a total of 300 points”).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_66c23110_2",
+      "turnIndex": 7,
+      "date": "2023/05/29 (Mon) 08:31",
+      "role": "assistant",
+      "text": "Yay! Congratulations on almost reaching your 300 points goal! That's so exciting!\n\nSephora often runs various promotions, discounts, and offers on their products. Let me check for you!\n\nAs of now, I found a few promotions that might interest you:\n\n1. **La Roche-Posay Sale**: Sephora is currently offering 10% off all La Roche-Posay products, including the Toleriane Ultra Fluid Face Moisturizer SPF 50! Just use the code LRP10 at checkout.\n2. **Sephora's Daily Deals**: Sephora features a new daily deal every day, and sometimes it's a product from La Roche-Posay or other brands you might be interested in. Check the Sephora website or app to see today's deal.\n3. **Buy One, Get One 50% Off**: Sephora occasionally offers a BOGO 50% off deal on select skincare products, including moisturizers. Keep an eye on their website or sign up for their email newsletter to stay informed about upcoming promotions.\n4. **Free Samples**: When you make a purchase, you can choose three free samples from a selection of products. This is a great way to try out new products or get extras of your favorite items.\n5. **Sephora's Favorites**: Sephora curates a selection of their best-selling products, often with exclusive discounts or sets. You might find a La Roche-Posay product or another brand you like in this section.\n\nRemember to always check the Sephora website, app, or store for any additional promotions, discounts, or offers that might be available.\n\nBefore making your purchase, I recommend signing in to your Beauty Insider account and checking your email for any personalized offers or rewards. You might have some hidden gems waiting for you!\n\nHappy shopping, and enjoy your new moisturizer!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_66c23110_1",
+      "turnIndex": 4,
+      "date": "2023/05/21 (Sun) 12:19",
+      "role": "user",
+      "text": "Can you tell me if Laneige has any other products that can help with anti-aging, like fine lines and wrinkles? I'm interested in exploring more of their skincare range.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_66c23110_1",
+      "turnIndex": 6,
+      "date": "2023/05/21 (Sun) 12:19",
+      "role": "user",
+      "text": "I'm interested in the Laneige Time Freeze Essence. Can you tell me more about how it works and how to incorporate it into my skincare routine?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_66c23110_1",
+      "turnIndex": 8,
+      "date": "2023/05/21 (Sun) 12:19",
+      "role": "user",
+      "text": "I'm interested in trying out the Laneige Time Freeze Essence, but I want to make sure I'm using it correctly. Can you tell me more about how to layer it with other products and what kind of results I can expect to see?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_66c23110_1",
+      "turnIndex": 10,
+      "date": "2023/05/21 (Sun) 12:19",
+      "role": "user",
+      "text": "I'm considering purchasing the Laneige Time Freeze Essence. Can you tell me more about the packaging and how long the product lasts?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_66c23110_2",
+      "turnIndex": 2,
+      "date": "2023/05/29 (Mon) 08:31",
+      "role": "user",
+      "text": "I have combination skin, and my main concern is dehydration. I'd prefer a lightweight, non-greasy moisturizer with SPF.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_66c23110_2",
+      "turnIndex": 8,
+      "date": "2023/05/29 (Mon) 08:31",
+      "role": "user",
+      "text": "Do you know if there are any bundle deals or sets available for the La Roche-Posay Toleriane Ultra Fluid Face Moisturizer SPF 50, maybe with a cleanser or toner?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 7141,
+  "estimatedTokens": 1786
+}

@@ -1,0 +1,38 @@
+{
+  "queryShape": "order",
+  "setBoundary": "Six museum visits mentioned across the stored sessions; order them from earliest to latest by the session dates (and any same-session relative timing).",
+  "candidateStatus": "found",
+  "missingRisk": "Exact visit date/time for the Museum of Contemporary Art lecture is not explicitly given beyond being “recently,” though it appears in the 2023/02/20 session context. If any additional museum visits exist that aren’t in memory, they may be missing.",
+  "items": [
+    {
+      "sessionId": "answer_7093d898_1",
+      "turnIndex": 0,
+      "why": "Mentions visiting the Science Museum’s “Space Exploration” exhibition (earliest dated session: 2023/01/15)."
+    },
+    {
+      "sessionId": "answer_7093d898_3",
+      "turnIndex": 0,
+      "why": "Mentions visiting the Metropolitan Museum of Art (The Met) and an “Ancient Egyptian Artifacts” exhibition (dated 2023/02/10)."
+    },
+    {
+      "sessionId": "answer_7093d898_4",
+      "turnIndex": 0,
+      "why": "Mentions visiting a Museum of History conservation lab tour (dated 2023/02/15)."
+    },
+    {
+      "sessionId": "answer_7093d898_5",
+      "turnIndex": 0,
+      "why": "Mentions attending a guided tour at the Modern Art Museum (dated 2023/02/20) and also references a lectures series at the Museum of Contemporary Art “recently” (likely one of the six museums)."
+    },
+    {
+      "sessionId": "answer_7093d898_5",
+      "turnIndex": 2,
+      "why": "Reiterates the Modern Art Museum context and the Dr. Patel guided-tour experience from the 2023/02/20 session."
+    },
+    {
+      "sessionId": "answer_7093d898_6",
+      "turnIndex": 0,
+      "why": "Mentions taking a niece to the Natural History Museum for the “Dinosaur Fossils” exhibition (dated 2023/03/04)."
+    }
+  ]
+}

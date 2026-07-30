@@ -1,0 +1,128 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Recommend photography accessories to complement the user’s current setup (Sony A7R IV, Sony 24-70mm f/2.8), including flash, protection, power, stability, and carry solutions.",
+    "candidateStatus": "found",
+    "missingRisk": "The candidate sessions are focused on flash/tripod/bag/power accessories, but may not include other potential accessories (e.g., memory cards, filters, grips, lighting modifiers) that an answerer might consider as part of a broader “complement my setup” recommendation.",
+    "items": [
+      {
+        "sessionId": "answer_555dfb94",
+        "turnIndex": 1,
+        "why": "Provides compatible flash recommendations for the Sony A7R IV (Sony HVL-F60RM/F45RM and Godox V1/AD200), which directly supports accessory suggestions."
+      },
+      {
+        "sessionId": "answer_555dfb94",
+        "turnIndex": 3,
+        "why": "Details build quality/durability comparison between Godox V1 and Sony HVL-F60RM to justify the flash accessory choice."
+      },
+      {
+        "sessionId": "answer_555dfb94",
+        "turnIndex": 5,
+        "why": "Recommends cases/pouches to protect the chosen Godox V1 flash (flash protection accessories)."
+      },
+      {
+        "sessionId": "answer_555dfb94",
+        "turnIndex": 7,
+        "why": "Recommends external battery packs for charging the Sony A7R IV and other devices (on-the-go power accessory)."
+      },
+      {
+        "sessionId": "answer_555dfb94",
+        "turnIndex": 11,
+        "why": "Describes and recommends the Gitzo GT3543LS tripod and its features (stability accessory)."
+      },
+      {
+        "sessionId": "answer_555dfb94",
+        "turnIndex": 15,
+        "why": "Starts camera bag recommendations specifically for Sony users (carry/accessory organizer accessory), including the assistant’s framing/questions that guide selection."
+      },
+      {
+        "sessionId": "answer_555dfb94",
+        "turnIndex": 9,
+        "why": "Includes lens cleaning approach/materials cautioning against streaks/scratches—relevant maintenance accessory context even if not a purchase list."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Recommend photography accessories to complement the user’s current setup (Sony A7R IV, Sony 24-70mm f/2.8), including flash, protection, power, stability, and carry solutions.",
+    "candidateStatus": "found",
+    "missingRisk": "The candidate sessions are focused on flash/tripod/bag/power accessories, but may not include other potential accessories (e.g., memory cards, filters, grips, lighting modifiers) that an answerer might consider as part of a broader “complement my setup” recommendation.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_555dfb94",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_555dfb94",
+        "turnIndex": 1,
+        "why": "Provides compatible flash recommendations for the Sony A7R IV (Sony HVL-F60RM/F45RM and Godox V1/AD200), which directly supports accessory suggestions."
+      },
+      {
+        "sessionId": "answer_555dfb94",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_555dfb94",
+        "turnIndex": 3,
+        "why": "Details build quality/durability comparison between Godox V1 and Sony HVL-F60RM to justify the flash accessory choice."
+      },
+      {
+        "sessionId": "answer_555dfb94",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_555dfb94",
+        "turnIndex": 5,
+        "why": "Recommends cases/pouches to protect the chosen Godox V1 flash (flash protection accessories)."
+      },
+      {
+        "sessionId": "answer_555dfb94",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_555dfb94",
+        "turnIndex": 7,
+        "why": "Recommends external battery packs for charging the Sony A7R IV and other devices (on-the-go power accessory)."
+      },
+      {
+        "sessionId": "answer_555dfb94",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_555dfb94",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_555dfb94",
+        "turnIndex": 11,
+        "why": "Describes and recommends the Gitzo GT3543LS tripod and its features (stability accessory)."
+      },
+      {
+        "sessionId": "answer_555dfb94",
+        "turnIndex": 12,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_555dfb94",
+        "turnIndex": 14,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_555dfb94",
+        "turnIndex": 15,
+        "why": "Starts camera bag recommendations specifically for Sony users (carry/accessory organizer accessory), including the assistant’s framing/questions that guide selection."
+      },
+      {
+        "sessionId": "answer_555dfb94",
+        "turnIndex": 9,
+        "why": "Includes lens cleaning approach/materials cautioning against streaks/scratches—relevant maintenance accessory context even if not a purchase list."
+      }
+    ]
+  }
+}

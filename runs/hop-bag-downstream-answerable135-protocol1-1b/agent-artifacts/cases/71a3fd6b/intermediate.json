@@ -1,0 +1,38 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Confirm the phone number of the Speyer tourism board previously provided by the assistant.",
+    "candidateStatus": "found",
+    "missingRisk": "If the earlier phone number was provided in a different session not included here, the retriever may have missed it; only the phone detail from this session can be used.",
+    "items": [
+      {
+        "sessionId": "answer_ultrachat_417348",
+        "turnIndex": 3,
+        "why": "Contains the assistant-provided contact details for the Speyer tourism board, including the exact phone number."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Confirm the phone number of the Speyer tourism board previously provided by the assistant.",
+    "candidateStatus": "found",
+    "missingRisk": "If the earlier phone number was provided in a different session not included here, the retriever may have missed it; only the phone detail from this session can be used.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_ultrachat_417348",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_ultrachat_417348",
+        "turnIndex": 3,
+        "why": "Contains the assistant-provided contact details for the Speyer tourism board, including the exact phone number."
+      },
+      {
+        "sessionId": "answer_ultrachat_417348",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

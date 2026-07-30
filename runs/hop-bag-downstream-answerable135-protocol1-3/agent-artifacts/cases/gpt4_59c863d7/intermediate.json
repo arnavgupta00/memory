@@ -1,0 +1,113 @@
+[
+  {
+    "session_id": "answer_593bdffd_4",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session shows the user bought/received at least two model kits and is planning/working on at least two specific projects (1/72 B-29 and 1/24 '69 Camaro). However, it may not capture additional kits they have worked on/bought outside these conversations, so the total count cannot be determined from this single session alone.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is looking for tips on photo-etching for a new 1/72 scale B-29 bomber model kit.",
+          "why": "Indicates the user has obtained a specific kit (new 1/72 scale B-29 bomber) relevant to counting kits worked on or bought."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User got a 1/24 scale '69 Camaro at a model show last weekend.",
+          "why": "Directly indicates purchase/receipt of another specific kit ('69 Camaro), relevant to counting kits bought/worked on."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "User is planning to use Vallejo acrylics for painting the B-29.",
+          "why": "Shows active intention to work on the B-29 model kit (not just bought), which helps determine kits they have worked on."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "User asks about the best way to attach photo-etched parts to the model without using super glue.",
+          "why": "Implicates the user is working on the photo-etched details for the B-29 kit, supporting that they are working on that model."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "User has been thinking about trying out some wire details on my B-29 model.",
+          "why": "Further supports active engagement with the B-29 kit (working/planning work), relevant to counting."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "User has been thinking about adding some wire details to my 1/24 scale '69 Camaro model as well.",
+          "why": "Indicates intention to work on the '69 Camaro kit as well, supporting that it is a model they have worked on or plan to work on."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "User is planning to start working on the engine wiring and fuel lines for my '69 Camaro model.",
+          "why": "Clear intention to begin work on the '69 Camaro kit, relevant to counting kits worked on."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_593bdffd_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "none",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "The user recently finished a simple Revell F-15 Eagle kit that they picked up on a whim during a trip to the hobby store in late April.",
+          "why": "Indicates one specific model kit the user bought and worked on (Revell F-15 Eagle), and provides a temporal anchor (late April) relevant to counting kits."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "The user is thinking of working on a 1/72 scale B-29 bomber next.",
+          "why": "Indicates an additional model kit the user is planning to work on (B-29, 1/72), which may affect the “worked on or bought” count depending on whether planning counts as being worked on/bought."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "The user wants to try out some new techniques like photo-etching and wire details for the 1/72 scale B-29 bomber.",
+          "why": "Not directly about kit count, but ties the B-29 project to the user’s activities and may help the reducer classify “worked on” vs “planned”."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_593bdffd_3",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session mentions working on a specific model tank diorama (1/16 scale German Tiger I), but it does not explicitly state that you bought any model kits or list how many kits you have worked on overall. It may undercount if other kits were mentioned elsewhere in other sessions.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "You started working on a diorama featuring a 1/16 scale German Tiger I tank.",
+          "why": "This indicates involvement with at least one specific scale model/tank project, which may correspond to “model kits have I worked on” for the user’s question."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_593bdffd_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Session discusses painting/weathering/modeling advice and mentions a few specific kits/projects (Tamiya 1/48 Spitfire Mk.V; experimenting on recent projects; planning a 1/72 B-29 bomber). It does not explicitly state how many model kits the user has worked on or bought, so the reducer may need other sessions for counts or purchase/work history.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is looking for advice on painting metal surfaces for a model kit and says they recently finished a Tamiya 1/48 scale Spitfire Mk.V.",
+          "why": "Indicates the user has worked on at least one specific model kit (Tamiya 1/48 Spitfire Mk.V). Could count as a kit worked on."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User had to learn new techniques and is still not entirely happy with results after finishing the Tamiya 1/48 scale Spitfire Mk.V.",
+          "why": "Further supports that the Spitfire Mk.V project was something they worked on recently."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "User has been experimenting with Vallejo acrylics and AK Interactive weathering products on their recent projects.",
+          "why": "Provides kit-adjacent experience/resources; may relate to which projects/kits they worked on, though no kit names are given."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "User is thinking of trying out enamel washes on their next project, a 1/72 scale B-29 bomber.",
+          "why": "Indicates a planned/next model kit project (1/72 B-29 bomber) that the user intends to work on."
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,113 @@
+{
+  "raw": {
+    "queryShape": "order",
+    "setBoundary": "Within the past three months relative to 2023/06/01, extract the dated trip events and sort the three trips chronologically (earliest to latest).",
+    "candidateStatus": "found",
+    "missingRisk": "Candidate sessions mention Yosemite-related outings and a Big Sur/Monterey road trip; ensure downstream logic correctly counts three distinct trips within the window (the April session includes both a recent solo Yosemite camping trip and a same-day Big Sur/Monterey road trip).",
+    "items": [
+      {
+        "sessionId": "answer_5d8c99d3_2",
+        "turnIndex": 0,
+        "why": "Contains the April 20 session’s explicit trip recency: “recently got back from a solo camping trip to Yosemite,” establishing one trip’s relative timing."
+      },
+      {
+        "sessionId": "answer_5d8c99d3_2",
+        "turnIndex": 0,
+        "why": "Also contains the same April 20 session’s second trip event: “road trip with friends to Big Sur and Monterey today,” which should be counted as another distinct trip for ordering."
+      },
+      {
+        "sessionId": "answer_5d8c99d3_3",
+        "turnIndex": 0,
+        "why": "Contains the May 15 session’s explicit trip event: “just got back from a solo camping trip to Yosemite National Park today” (a distinct third trip for chronological ordering)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "order",
+    "setBoundary": "Within the past three months relative to 2023/06/01, extract the dated trip events and sort the three trips chronologically (earliest to latest).",
+    "candidateStatus": "found",
+    "missingRisk": "Candidate sessions mention Yosemite-related outings and a Big Sur/Monterey road trip; ensure downstream logic correctly counts three distinct trips within the window (the April session includes both a recent solo Yosemite camping trip and a same-day Big Sur/Monterey road trip).; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_5d8c99d3_2",
+        "turnIndex": 0,
+        "why": "Contains the April 20 session’s explicit trip recency: “recently got back from a solo camping trip to Yosemite,” establishing one trip’s relative timing."
+      },
+      {
+        "sessionId": "answer_5d8c99d3_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_5d8c99d3_3",
+        "turnIndex": 0,
+        "why": "Contains the May 15 session’s explicit trip event: “just got back from a solo camping trip to Yosemite National Park today” (a distinct third trip for chronological ordering)."
+      },
+      {
+        "sessionId": "answer_5d8c99d3_3",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "4bf66c38_2",
+        "turnIndex": 0,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "4bf66c38_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "a6109135_1",
+        "turnIndex": 0,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "a6109135_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "631e4016",
+        "turnIndex": 0,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "631e4016",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_5d8c99d3_1",
+        "turnIndex": 6,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_5d8c99d3_1",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_5d8c99d3_1",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_5d8c99d3_3",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_5d8c99d3_3",
+        "turnIndex": 7,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_5d8c99d3_3",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "User is considering a cocktail for an upcoming get-together; include their prior preferences/plans for a specific Hendrick’s gin cocktail and related preparation details.",
+  "candidateStatus": "found",
+  "missingRisk": "May still be missing other, unrecorded cocktail preferences (e.g., guest tastes, alcohol level, dietary constraints) from sessions not included here.",
+  "items": [
+    {
+      "sessionId": "answer_719502eb",
+      "turnIndex": 0,
+      "why": "User is experimenting with summer cocktails incorporating Hendrick’s gin—sets the core preference for what kind of cocktail to choose."
+    },
+    {
+      "sessionId": "answer_719502eb",
+      "turnIndex": 1,
+      "why": "Assistant suggests multiple Hendrick’s gin summer cocktails, including Pimm’s Cup with a Twist—provides candidate options for the user’s decision."
+    },
+    {
+      "sessionId": "answer_719502eb",
+      "turnIndex": 2,
+      "why": "User likes Pimm’s Cup with a Twist but notes they recently made classic Pimm’s and other cocktails—important constraint for choosing a different/twisted option."
+    },
+    {
+      "sessionId": "answer_719502eb",
+      "turnIndex": 4,
+      "why": "User decides to muddle cucumber slices for more flavor/texture in the chosen drink—relevant to execution of that suggested cocktail."
+    },
+    {
+      "sessionId": "answer_719502eb",
+      "turnIndex": 6,
+      "why": "User asks for citrus-flavored simple syrup to complement Hendrick’s gin and cucumber—narrows the variation they want."
+    },
+    {
+      "sessionId": "answer_719502eb",
+      "turnIndex": 8,
+      "why": "User selects Ruby Red Grapefruit for the simple syrup—captures the specific variation they plan to serve."
+    },
+    {
+      "sessionId": "answer_719502eb",
+      "turnIndex": 10,
+      "why": "User asks for garnishes/visual elements for Pimm’s Cup with a Twist—guides presentation for a get-together."
+    },
+    {
+      "sessionId": "answer_719502eb",
+      "turnIndex": 14,
+      "why": "User chooses to serve the cocktail in a Collins glass to showcase layers/garnishes—relevant serving recommendation."
+    }
+  ]
+}

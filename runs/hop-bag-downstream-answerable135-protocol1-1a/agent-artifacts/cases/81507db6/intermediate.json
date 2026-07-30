@@ -1,0 +1,28 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Graduation ceremonies attended by the user in the 3 months before 2023/07/21 (from ~2023/04/21 onward).",
+  "candidateStatus": "found",
+  "missingRisk": "May be additional graduation/ceremony mentions in the memory block that are not captured in the selected turns, since the dataset shown is partial and the exact ceremony dates/titles are sometimes approximate.",
+  "items": [
+    {
+      "sessionId": "answer_da3c1266_4",
+      "turnIndex": 0,
+      "why": "User mentions missing nephew Jack’s eighth grade graduation ceremony last month (relevant to 3-month window)."
+    },
+    {
+      "sessionId": "answer_da3c1266_1",
+      "turnIndex": 0,
+      "why": "User mentions attending little cousin Emma’s preschool graduation about two months ago (relevant to 3-month window)."
+    },
+    {
+      "sessionId": "answer_da3c1266_5",
+      "turnIndex": 0,
+      "why": "User mentions attending colleague Alex’s graduation from a leadership development program at work a few weeks ago (relevant to 3-month window)."
+    },
+    {
+      "sessionId": "answer_da3c1266_2",
+      "turnIndex": 0,
+      "why": "User mentions attending best friend Rachel’s master’s degree graduation ceremony a couple of weeks ago (relevant to 3-month window)."
+    }
+  ]
+}

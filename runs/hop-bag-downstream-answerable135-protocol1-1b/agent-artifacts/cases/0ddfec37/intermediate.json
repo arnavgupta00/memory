@@ -1,0 +1,58 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Count autographed baseballs added during the first three months of the user’s collection (from when they started collecting)",
+    "candidateStatus": "found",
+    "missingRisk": "The candidates only mention aggregate totals like “since I started collecting three months ago” and “in the past few months,” but do not clearly state how many were added specifically within the first three-month window (e.g., overlaps, exact start date, and whether “past few months” equals the first three months).",
+    "items": [
+      {
+        "sessionId": "answer_a22b654d_1",
+        "turnIndex": 0,
+        "why": "User states they started collecting autographed baseballs three months ago and that they have 15 autographed baseballs since then; directly relevant to the “first three months” timeframe and quantity."
+      },
+      {
+        "sessionId": "answer_a22b654d_2",
+        "turnIndex": 0,
+        "why": "User states they added 20 autographed baseballs to their collection in the past few months; may overlap with or approximate the first three months and provides a competing quantity to reconcile."
+      },
+      {
+        "sessionId": "answer_a22b654d_2",
+        "turnIndex": 1,
+        "why": "Assistant echoes the “added 20 autographed baseballs…in just a few months” claim, preserving the exact number for downstream aggregation/verification."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Count autographed baseballs added during the first three months of the user’s collection (from when they started collecting)",
+    "candidateStatus": "found",
+    "missingRisk": "The candidates only mention aggregate totals like “since I started collecting three months ago” and “in the past few months,” but do not clearly state how many were added specifically within the first three-month window (e.g., overlaps, exact start date, and whether “past few months” equals the first three months).; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_a22b654d_1",
+        "turnIndex": 0,
+        "why": "User states they started collecting autographed baseballs three months ago and that they have 15 autographed baseballs since then; directly relevant to the “first three months” timeframe and quantity."
+      },
+      {
+        "sessionId": "answer_a22b654d_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_a22b654d_2",
+        "turnIndex": 0,
+        "why": "User states they added 20 autographed baseballs to their collection in the past few months; may overlap with or approximate the first three months and provides a competing quantity to reconcile."
+      },
+      {
+        "sessionId": "answer_a22b654d_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_a22b654d_2",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

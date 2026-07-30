@@ -1,0 +1,58 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the explicit stated class days (Zumba on Tuesday/Thursday; weightlifting on Saturday) to determine how many days per week the user attends fitness classes.",
+    "candidateStatus": "found",
+    "missingRisk": "Only one candidate session was provided; if there are other sessions with different class days, they would be missing.",
+    "items": [
+      {
+        "sessionId": "answer_47152166_1",
+        "turnIndex": 0,
+        "why": "User explicitly states they attend Zumba on Tuesdays and Thursdays and weightlifting on Saturdays."
+      },
+      {
+        "sessionId": "answer_47152166_1",
+        "turnIndex": 1,
+        "why": "Assistant lists the reminder schedule by day: Tuesday (Zumba), Thursday (Zumba), Saturday (weightlifting), which directly supports the weekly day count."
+      },
+      {
+        "sessionId": "answer_47152166_1",
+        "turnIndex": 3,
+        "why": "Updated assistant reminder list again confirms the same three attendance days (Tue/Thu/Sat), after adding the post-class workout logging reminder."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the explicit stated class days (Zumba on Tuesday/Thursday; weightlifting on Saturday) to determine how many days per week the user attends fitness classes.",
+    "candidateStatus": "found",
+    "missingRisk": "Only one candidate session was provided; if there are other sessions with different class days, they would be missing.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_47152166_1",
+        "turnIndex": 0,
+        "why": "User explicitly states they attend Zumba on Tuesdays and Thursdays and weightlifting on Saturdays."
+      },
+      {
+        "sessionId": "answer_47152166_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_47152166_1",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_47152166_1",
+        "turnIndex": 3,
+        "why": "Updated assistant reminder list again confirms the same three attendance days (Tue/Thu/Sat), after adding the post-class workout logging reminder."
+      },
+      {
+        "sessionId": "answer_47152166_1",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

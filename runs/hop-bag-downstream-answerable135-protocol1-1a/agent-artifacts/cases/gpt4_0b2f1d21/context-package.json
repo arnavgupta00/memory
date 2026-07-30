@@ -1,0 +1,118 @@
+{
+  "queryShape": "order",
+  "setBoundary": "Compare timestamps for (a) coffee maker purchase and (b) stand mixer malfunction/repair as described by the user.",
+  "candidateStatus": "found",
+  "missingRisk": "n/a",
+  "items": [
+    {
+      "sessionId": "answer_c4e5d969_2",
+      "turnIndex": 0,
+      "date": "2023/05/25 (Thu) 01:41",
+      "role": "user",
+      "text": "I'm looking for some new recipes to try out, especially desserts. Do you have any recommendations for cakes or cookies that don't require a stand mixer, just in case mine breaks down again? By the way, I had to take mine to a repair shop last month and it took two weeks to fix, so I had to bake a few things by hand in the meantime.",
+      "why": "User reports the stand mixer broke down and they took it to a repair shop last month; this anchors the malfunction time.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c4e5d969_2",
+      "turnIndex": 6,
+      "date": "2023/05/25 (Thu) 01:41",
+      "role": "user",
+      "text": "I'm also thinking of organizing a dinner party soon, and I want to make sure I have all the necessary kitchen utensils and appliances in good condition. Speaking of which, I got my stand mixer back from the repair shop, and I had to bake a few things by hand in the meantime. Do you have any recommendations for essential kitchen utensils that I might need for my dinner party, especially ones that would be helpful in case my stand mixer breaks down again?",
+      "why": "User reiterates they got the stand mixer back from the repair shop and had to bake by hand in the meantime, providing additional context around the malfunction/repair window.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c4e5d969_1",
+      "turnIndex": 0,
+      "date": "2023/05/25 (Thu) 13:38",
+      "role": "user",
+      "text": "I'm having some issues with my coffee maker's performance lately. I bought it about three weeks ago, it's a black and stainless steel machine from a well-known brand, and I've been using it every morning since then. Do you have any cleaning or maintenance tips to keep it running smoothly?",
+      "why": "User says they bought the coffee maker about three weeks ago; this anchors the purchase time.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c4e5d969_2",
+      "turnIndex": 2,
+      "date": "2023/05/25 (Thu) 01:41",
+      "role": "user",
+      "text": "I'm also looking for some recipe ideas that use leftover peppers and onions. I've got some from cooking chicken fajitas last week and I want to use them up before they go bad. Do you have any suggestions?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c4e5d969_2",
+      "turnIndex": 4,
+      "date": "2023/05/25 (Thu) 01:41",
+      "role": "user",
+      "text": "I'm also thinking of organizing a dinner party soon, and I want to make sure I have all the necessary kitchen utensils and appliances in good condition. Do you have any tips on how to maintain my kitchen appliances to prevent any malfunctions, especially after my recent experience with my stand mixer?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c4e5d969_2",
+      "turnIndex": 8,
+      "date": "2023/05/25 (Thu) 01:41",
+      "role": "user",
+      "text": "I'm thinking of making some desserts for my dinner party, and I was wondering if you have any ideas for desserts that don't require a stand mixer. Maybe some recipes that use my new coffee maker or other appliances I have at home?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c4e5d969_2",
+      "turnIndex": 10,
+      "date": "2023/05/25 (Thu) 01:41",
+      "role": "user",
+      "text": "I'm interested in trying out the Coffee Crème Brûlée recipe you mentioned. Do you have any tips on how to get the caramelized sugar crust just right?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c4e5d969_1",
+      "turnIndex": 2,
+      "date": "2023/05/25 (Thu) 13:38",
+      "role": "user",
+      "text": "I've already used about 20 of the 50 coffee pods I bought with the machine. Do you think I should be cleaning the coffee pod compartment as well, and if so, how often?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c4e5d969_1",
+      "turnIndex": 4,
+      "date": "2023/05/25 (Thu) 13:38",
+      "role": "user",
+      "text": "I've been trying to cook more at home, and I was wondering if you have any recipe suggestions for using up leftover peppers and onions that I have in my fridge.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c4e5d969_1",
+      "turnIndex": 6,
+      "date": "2023/05/25 (Thu) 13:38",
+      "role": "user",
+      "text": "I was thinking of making a slow cooker recipe this weekend. Do you have any suggestions that incorporate peppers and onions?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c4e5d969_1",
+      "turnIndex": 8,
+      "date": "2023/05/25 (Thu) 13:38",
+      "role": "user",
+      "text": "I'm thinking of making a slow cooker recipe this weekend that incorporates peppers and onions. I was considering making chili con carne, but I've made that before. Can you suggest any other slow cooker recipes that feature peppers and onions as main ingredients, like a pepper and onion chicken taco recipe or something similar?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c4e5d969_1",
+      "turnIndex": 10,
+      "date": "2023/05/25 (Thu) 13:38",
+      "role": "user",
+      "text": "I'm thinking of making a slow cooker recipe this weekend that incorporates peppers and onions. I was considering making chili con carne, but I've made that before. Can you suggest any other slow cooker recipes that feature peppers and onions as main ingredients, like a pepper and onion chicken taco recipe or something similar?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 3071,
+  "estimatedTokens": 768
+}

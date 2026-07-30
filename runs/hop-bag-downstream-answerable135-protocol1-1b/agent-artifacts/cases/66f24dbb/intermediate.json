@@ -1,0 +1,53 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the session(s) that explicitly state what was bought for the sister’s birthday gift.",
+    "candidateStatus": "found",
+    "missingRisk": "If there are additional sessions where the sister’s birthday gift was updated or changed after 2023/05/24, those details would be missing because only this candidate set was provided.",
+    "items": [
+      {
+        "sessionId": "answer_fea2e4d3",
+        "turnIndex": 4,
+        "why": "Directly states the sister’s birthday gifts started as a yellow dress plus matching earrings."
+      },
+      {
+        "sessionId": "answer_fea2e4d3",
+        "turnIndex": 6,
+        "why": "Specifies the earrings as silver hoop earrings with a small pearl in the center for the sister’s birthday."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the session(s) that explicitly state what was bought for the sister’s birthday gift.",
+    "candidateStatus": "found",
+    "missingRisk": "If there are additional sessions where the sister’s birthday gift was updated or changed after 2023/05/24, those details would be missing because only this candidate set was provided.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_fea2e4d3",
+        "turnIndex": 4,
+        "why": "Directly states the sister’s birthday gifts started as a yellow dress plus matching earrings."
+      },
+      {
+        "sessionId": "answer_fea2e4d3",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_fea2e4d3",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_fea2e4d3",
+        "turnIndex": 6,
+        "why": "Specifies the earrings as silver hoop earrings with a small pearl in the center for the sister’s birthday."
+      },
+      {
+        "sessionId": "answer_fea2e4d3",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

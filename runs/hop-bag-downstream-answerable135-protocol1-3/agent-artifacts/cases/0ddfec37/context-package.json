@@ -1,0 +1,46 @@
+{
+  "queryShape": "order",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "answer_a22b654d_1",
+      "turnIndex": 0,
+      "date": "2023/07/11 (Tue) 14:38",
+      "role": "user",
+      "text": "I'm looking for some information on Mike Trout's latest stats. Can you tell me his current batting average and how many home runs he has this season? By the way, I just got a signed baseball of his last week and it's a great addition to my collection - that's 15 autographed baseballs since I started collecting three months ago!",
+      "why": "per-session extractor: Provides a numeric total (15 autographed baseballs) and a relative temporal reference to the first three months of collecting, which may directly relate to “How many autographed baseballs have I added to my collection in the first three months of collection?”",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_a22b654d_2",
+      "turnIndex": 0,
+      "date": "2023/12/30 (Sat) 02:28",
+      "role": "user",
+      "text": "I'm looking to get some information on upcoming sports memorabilia auctions in the city. Do you know of any notable ones happening in the next few weeks? By the way, I just got back from a weekend trip and had some time to organize my collection - I've added 20 autographed baseballs to my collection in the past few months, which is crazy!",
+      "why": "per-session extractor: This is a specific quantity for autographed baseballs, which is the core metric the question asks about (though its timing relative to “first three months of collection” is unclear).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_a22b654d_1",
+      "turnIndex": 1,
+      "date": "2023/07/11 (Tue) 14:38",
+      "role": "assistant",
+      "text": "Congratulations on adding a signed Mike Trout baseball to your collection! That's an impressive collection you're building.\n\nAs for Mike Trout's current stats, I'd be happy to help. However, I need to clarify that I'm a large language model, I don't have real-time access to current statistics. My training data only goes up to 2021, and I don't have information on the current season.\n\nBut I can suggest some options to get you the latest stats:\n\n1. Check MLB.com or ESPN.com: These websites provide up-to-date statistics on all MLB players, including Mike Trout. You can find his current batting average, home runs, and other stats on their websites.\n2. Follow Mike Trout on social media: You can follow Mike Trout on Twitter or Instagram to get updates on his performance and stats.\n3. Check out sports news websites: Websites like CBS Sports, Yahoo Sports, or Fox Sports often provide daily updates on MLB players' stats and performances.\n\nRemember, stats can change rapidly, so it's always best to check reliable sources for the most up-to-date information.\n\nEnjoy your signed baseball, and happy collecting!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a22b654d_2",
+      "turnIndex": 1,
+      "date": "2023/12/30 (Sat) 02:28",
+      "role": "assistant",
+      "text": "That's great to hear about your growing collection! Congratulations on adding 20 autographed baseballs in just a few months. That's impressive!\n\nRegarding upcoming sports memorabilia auctions in your city, I'm a large language model, I don't have real-time access to specific local information, but I can suggest a few ways to find out about notable auctions happening in your area:\n\n1. **Online Marketplaces**: Check online marketplaces like eBay, Heritage Auctions, Lelands, and SCP Auctions, which often feature sports memorabilia auctions. You can filter by location, category, and date to find auctions happening in your city or within a specific timeframe.\n2. **Auction House Websites**: Look up local auction houses in your city that specialize in sports memorabilia. They usually have websites that list upcoming auctions, including dates, items, and previews. Some notable auction houses include Steiner Sports, Fanatics, and Goldin Auctions.\n3. **Social Media and Forums**: Follow sports memorabilia collectors, auction houses, and dealers on social media platforms like Twitter, Facebook, and Instagram. They often post about upcoming auctions, and you can also join collector forums or groups to ask about local auctions.\n4. **Local Sports Memorabilia Shops**: Visit local sports memorabilia shops or card stores in your area and ask the owners or staff about upcoming auctions. They might have knowledge about local auctions or be able to point you in the right direction.\n5. **Google Search**: Simply search online for \"sports memorabilia auctions [your city/state]\" or \"upcoming sports auctions [your city/state]\" to find relevant results.\n\nRemember to research the auction house, read reviews, and understand the terms and conditions before participating in an auction.\n\nGood luck in your search, and happy collecting!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 3616,
+  "estimatedTokens": 904
+}

@@ -1,0 +1,64 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Cocktail-making class day-of-week preferences mentioned by the user",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_73540165_2",
+      "turnIndex": 0,
+      "date": "2023/06/30 (Fri) 22:49",
+      "role": "user",
+      "text": "I'm looking for some inspiration for a new cocktail recipe. Do you have any ideas for a refreshing summer drink that incorporates tequila? By the way, I have a cocktail-making class on Fridays, so maybe something I can experiment with then.",
+      "why": "User states they have a cocktail-making class on Fridays.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_73540165_2",
+      "turnIndex": 8,
+      "date": "2023/06/30 (Fri) 22:49",
+      "role": "user",
+      "text": "I'm really excited to try out this recipe. Speaking of cocktails, I have a cocktail-making class on Friday, and I'm thinking of experimenting with some new recipes. Do you have any other ideas for tequila-based cocktails that I could try out?",
+      "why": "User again mentions planning/experiments for their cocktail-making class on Friday.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_73540165_2",
+      "turnIndex": 10,
+      "date": "2023/06/30 (Fri) 22:49",
+      "role": "user",
+      "text": "That sounds like a lot of fun! Thanks for the suggestions. I think I'll try out the Paloma and the Tequila Sour during my class on Friday. I've been wanting to experiment with grapefruit juice in cocktails, and the Paloma sounds like a great opportunity to do so. And the Tequila Sour sounds like a unique twist on the classic margarita.",
+      "why": "User specifies trying Paloma and Tequila Sour during their class on Friday (reinforces the day-of-week).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_73540165_2",
+      "turnIndex": 2,
+      "date": "2023/06/30 (Fri) 22:49",
+      "role": "user",
+      "text": "I like the sound of the Watermelon Basil Margarita. I've been experimenting with basil in my cocktails lately and I think it pairs well with tequila. Do you have any recommendations for a good watermelon puree recipe?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_73540165_2",
+      "turnIndex": 4,
+      "date": "2023/06/30 (Fri) 22:49",
+      "role": "user",
+      "text": "I think I'll try roasting the watermelon to bring out the sweetness. By the way, do you have any recommendations for a good tequila to pair with the watermelon and basil flavors?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_73540165_2",
+      "turnIndex": 6,
+      "date": "2023/06/30 (Fri) 22:49",
+      "role": "user",
+      "text": "I think I'll go with Avion Silver, I've had it before and it's one of my favorites. I've been using it in my homemade margaritas and it always turns out great.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 1373,
+  "estimatedTokens": 344
+}

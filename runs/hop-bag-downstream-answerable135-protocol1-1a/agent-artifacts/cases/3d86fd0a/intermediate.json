@@ -1,0 +1,28 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Where the user met Sophia (location/context) within the contacts-organizing template conversation.",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_19c24c11",
+      "turnIndex": 2,
+      "why": "User specifies Sophia’s meeting location: “a coffee shop in the city.”"
+    },
+    {
+      "sessionId": "answer_19c24c11",
+      "turnIndex": 3,
+      "why": "Assistant confirms/updates the template with Sophia’s entry format (How We Met) as a coffee shop in the city."
+    },
+    {
+      "sessionId": "answer_19c24c11",
+      "turnIndex": 4,
+      "why": "User adds more context about the conversation with Sophia (indie music, coffee-related discussion), reinforcing the meeting context."
+    },
+    {
+      "sessionId": "answer_19c24c11",
+      "turnIndex": 5,
+      "why": "Assistant records Sophia’s interests from the conversation (indie music, coffee) and suggests a follow-up action tied to that meeting."
+    }
+  ]
+}

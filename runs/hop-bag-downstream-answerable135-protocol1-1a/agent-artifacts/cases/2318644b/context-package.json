@@ -1,0 +1,118 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Your reported accommodations cost per night in Hawaii (Maui) vs Tokyo (solo hostel)",
+  "candidateStatus": "found",
+  "missingRisk": "Exact Hawaii nightly cost and whether Tokyo amount includes any taxes/fees (only approximate/threshold values were provided).",
+  "items": [
+    {
+      "sessionId": "answer_eaa8e3ef_1",
+      "turnIndex": 0,
+      "date": "2023/05/24 (Wed) 18:08",
+      "role": "user",
+      "text": "I'm planning a trip to Maui and I'm looking for some outdoor activities and hiking trails. Can you recommend some popular ones? By the way, I've already booked a luxurious resort in Maui that costs over $300 per night, so I'm looking for some free or affordable activities to balance out the cost.",
+      "why": "States you booked a luxurious resort in Maui (Hawaii) costing over $300 per night—Hawaii accommodations value.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_eaa8e3ef_2",
+      "turnIndex": 2,
+      "date": "2023/05/26 (Fri) 05:02",
+      "role": "user",
+      "text": "Thank you for the information. I stayed in a hostel in Tokyo that cost around $30 per night when I went solo last January, so it's possible for me to find good deals. I'm planning to visit some of the popular tourist spots in Tokyo, such as Shibuya Crossing and the Tokyo Tower. Are there any affordable transportation options available, or should I just take a taxi?",
+      "why": "Says your Tokyo hostel cost around $30 per night when you stayed solo last January—Tokyo accommodations value.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_eaa8e3ef_1",
+      "turnIndex": 2,
+      "date": "2023/05/24 (Wed) 18:08",
+      "role": "user",
+      "text": "That's really helpful, thank you! I'm especially interested in the Haleakala National Park and the Waihee Ridge Trail. Can you tell me more about the Sliding Sands Trail and the Halemau'u Trail, and which one would you recommend for a moderate hiker like me?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_eaa8e3ef_1",
+      "turnIndex": 4,
+      "date": "2023/05/24 (Wed) 18:08",
+      "role": "user",
+      "text": "That's really helpful, thank you! I think I'll go with the Halemau'u Trail. One more thing, are there any scenic lookout points or restaurants near the park that I can stop by after my hike?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_eaa8e3ef_1",
+      "turnIndex": 6,
+      "date": "2023/05/24 (Wed) 18:08",
+      "role": "user",
+      "text": "That's really helpful, thank you! I think I'll stop by the Haleakala Visitor Center and grab some snacks at the Summit District Snack Bar after my hike. And maybe I'll check out the Kula Botanical Garden if I have time. By the way, do you have any recommendations for some local cuisine or restaurants in Maui that I should try during my trip?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_eaa8e3ef_1",
+      "turnIndex": 8,
+      "date": "2023/05/24 (Wed) 18:08",
+      "role": "user",
+      "text": "That's really helpful, thank you! I think I'll try some poke and loco moco during my trip, and maybe stop by Mama's Fish House or The Fish Hopper for dinner. By the way, I'm staying at a luxurious resort in Maui that costs over $300 per night, so I'm trying to balance out the cost by looking for free or affordable activities and dining options. Do you have any recommendations for some affordable breakfast or brunch spots in Maui?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_eaa8e3ef_1",
+      "turnIndex": 10,
+      "date": "2023/05/24 (Wed) 18:08",
+      "role": "user",
+      "text": "I think I'll try Kihei Caffe or Cafe O'Lei at the Dunes for breakfast, and maybe Da Kitchen or Ono Gelato for brunch. Thanks for the recommendations!",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_eaa8e3ef_2",
+      "turnIndex": 0,
+      "date": "2023/05/26 (Fri) 05:02",
+      "role": "user",
+      "text": "I'm planning a trip to Japan and I'm looking for some affordable accommodation options. I've heard that hostels are a great way to save money, but I'm not sure what to expect. Can you tell me a bit more about what it's like to stay in a hostel in Japan?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_eaa8e3ef_2",
+      "turnIndex": 4,
+      "date": "2023/05/26 (Fri) 05:02",
+      "role": "user",
+      "text": "I'm planning to visit the Tsukiji Fish Market during my trip, but I've heard it's really crowded. Are there any tips for visiting the market, and are there any other fish markets in Tokyo that are worth visiting? By the way, I've had some amazing street food in Tokyo before, and I'm looking forward to trying some more during this trip.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_eaa8e3ef_2",
+      "turnIndex": 6,
+      "date": "2023/05/26 (Fri) 05:02",
+      "role": "user",
+      "text": "That's really helpful! I'm actually thinking of visiting the Tsukiji Outer Market instead of the Toyosu Market. I've heard the outer market has a more lively atmosphere and more food options. Do you think that's true? Also, are there any specific street food stalls or restaurants in the outer market that you would recommend?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_eaa8e3ef_2",
+      "turnIndex": 8,
+      "date": "2023/05/26 (Fri) 05:02",
+      "role": "user",
+      "text": "That's great information! I'm definitely going to check out some of those street food stalls and restaurants. By the way, I'm also planning to visit the Meiji Shrine, which I've heard is a beautiful Shinto shrine located in a peaceful forested area. Can you tell me a bit more about it?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_eaa8e3ef_2",
+      "turnIndex": 10,
+      "date": "2023/05/26 (Fri) 05:02",
+      "role": "user",
+      "text": "I'm planning to visit the Meiji Shrine and then head to the nearby Takeshita-dori Street, which I've heard is a fun and lively shopping street in Harajuku. Can you tell me a bit more about Takeshita-dori and what I can expect to find there?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 3479,
+  "estimatedTokens": 870
+}

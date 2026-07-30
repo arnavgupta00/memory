@@ -1,0 +1,49 @@
+[
+  {
+    "session_id": "answer_1de862d6_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session only mentions a single charity event (a charity walk) and provides the amount raised through sponsors for that walk ($250). It does not confirm whether this was the only charity event you participated in, so the total across all charity events may be incomplete if other events exist in other sessions.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "You recently participated in a charity walk and managed to raise $250 through sponsors.",
+          "why": "Provides a concrete fundraising amount ($250) associated with a specific charity event, which could be part of the requested total across all charity events."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_1de862d6_3",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Only one charity event is mentioned in this session ($600). There may be other charity events in other sessions, so total across all events cannot be determined from this session alone.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "Today is 2023/05/01 (Mon) 23:45.",
+          "why": "Provides the time context for interpreting “today” and potentially summing totals up to that point."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "You helped organize a charity yoga event that raised $600 for a local animal shelter.",
+          "why": "Direct evidence of a charity event donation amount that should be included in the total raised through charity events."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_1de862d6_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session contains only one specific charity event fundraising amount ($5,000) and does not mention any other charity events or a total across multiple events, so the final total may be incomplete if the user participated in additional events elsewhere.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "Participated in a Bike-a-Thon for Cancer Research and team managed to raise $5,000.",
+          "why": "Provides a concrete fundraising amount tied to a charity event, relevant to computing total money raised across charity events."
+        }
+      ]
+    }
+  }
+]

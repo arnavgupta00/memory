@@ -1,0 +1,38 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify what Andy was wearing in the comedy movie script scene.",
+    "candidateStatus": "found",
+    "missingRisk": "If Andy’s outfit changes in later scenes, selecting only the first script segment may miss that detail.",
+    "items": [
+      {
+        "sessionId": "answer_sharegpt_qTi81nS_0",
+        "turnIndex": 1,
+        "why": "The assistant’s script description explicitly states Andy wears an untidy, stained white shirt in the comedy movie scene (including dialogue context)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify what Andy was wearing in the comedy movie script scene.",
+    "candidateStatus": "found",
+    "missingRisk": "If Andy’s outfit changes in later scenes, selecting only the first script segment may miss that detail.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_sharegpt_qTi81nS_0",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_sharegpt_qTi81nS_0",
+        "turnIndex": 1,
+        "why": "The assistant’s script description explicitly states Andy wears an untidy, stained white shirt in the comedy movie scene (including dialogue context)."
+      },
+      {
+        "sessionId": "answer_sharegpt_qTi81nS_0",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

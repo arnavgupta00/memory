@@ -1,0 +1,53 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Count the number of weddings the user personally attended during calendar year 2023 (include weddings they described as being present at, e.g., “I was a bridesmaid/just got back from a wedding/been to weddings recently”).",
+  "candidateStatus": "found",
+  "missingRisk": "Some wedding mentions may refer to outside 2023 or have unclear dates; additional weddings attended in 2023 may not appear in the provided memory block.",
+  "items": [
+    {
+      "sessionId": "answer_e7b0637e_2",
+      "turnIndex": 0,
+      "why": "Mentions attending a college roommate’s wedding in the city and describes it as something they just got back from."
+    },
+    {
+      "sessionId": "answer_e7b0637e_2",
+      "turnIndex": 0,
+      "why": "Same user turn also mentions friend Emily getting married (rooftop garden ceremony), suggesting attendance at/participation in the wedding."
+    },
+    {
+      "sessionId": "answer_e7b0637e_1",
+      "turnIndex": 0,
+      "why": "Mentions being at “a few weddings recently,” including their cousin’s vineyard wedding in August."
+    },
+    {
+      "sessionId": "answer_e7b0637e_1",
+      "turnIndex": 2,
+      "why": "Reiterates cousin Rachel’s vineyard wedding and confirms the user was involved (bridesmaid), implying attendance."
+    },
+    {
+      "sessionId": "answer_e7b0637e_1",
+      "turnIndex": 4,
+      "why": "User states cousin Rachel’s wedding was a “family affair” and the user was a bridesmaid—again confirming attendance."
+    },
+    {
+      "sessionId": "answer_e7b0637e_3",
+      "turnIndex": 0,
+      "why": "Mentions “just got back from a friend's wedding last weekend,” including specific details (rustic barn), implying attendance in 2023."
+    },
+    {
+      "sessionId": "1d6e01e8",
+      "turnIndex": 0,
+      "why": "States they last wore an item to their cousin’s wedding last month—confirms attendance at that cousin’s wedding in 2023 (even if they don’t restate the name)."
+    },
+    {
+      "sessionId": "81b971b8_2",
+      "turnIndex": 4,
+      "why": "Mentions the user’s sister’s wedding was “just amazing” and describes planning/experience, implying the user attended."
+    },
+    {
+      "sessionId": "81b971b8_2",
+      "turnIndex": 6,
+      "why": "Confirms the user’s role as maid of honor at their sister’s wedding—strong indicator of attendance."
+    }
+  ]
+}

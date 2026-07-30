@@ -1,0 +1,48 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Use the candidate turns that contain the only explicit worldwide release quantity mentioned (for the debut album’s item), so the downstream answerer can determine the “how many copies … released worldwide” value.",
+    "candidateStatus": "found",
+    "missingRisk": "The catalog does not contain an explicit fact about the debut album’s worldwide release copies—only the signed poster’s limited edition count (500 worldwide). Downstream may need to resolve whether the question intends the album or the poster edition.",
+    "items": [
+      {
+        "sessionId": "answer_ed1982fc",
+        "turnIndex": 6,
+        "why": "Contains the explicit “limited edition of only 500 copies worldwide” statement tied to the favorite artist’s debut album (via the signed poster), which likely supplies the needed numeric value."
+      },
+      {
+        "sessionId": "answer_ed1982fc",
+        "turnIndex": 7,
+        "why": "Assistant restates the poster’s “limited edition of only 500 copies worldwide,” preserving the same worldwide quantity for downstream use."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Use the candidate turns that contain the only explicit worldwide release quantity mentioned (for the debut album’s item), so the downstream answerer can determine the “how many copies … released worldwide” value.",
+    "candidateStatus": "found",
+    "missingRisk": "The catalog does not contain an explicit fact about the debut album’s worldwide release copies—only the signed poster’s limited edition count (500 worldwide). Downstream may need to resolve whether the question intends the album or the poster edition.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_ed1982fc",
+        "turnIndex": 6,
+        "why": "Contains the explicit “limited edition of only 500 copies worldwide” statement tied to the favorite artist’s debut album (via the signed poster), which likely supplies the needed numeric value."
+      },
+      {
+        "sessionId": "answer_ed1982fc",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_ed1982fc",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_ed1982fc",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

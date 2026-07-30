@@ -1,0 +1,48 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify what the user did with Rachel on the Wednesday two months ago (relative to 2023/04/01).",
+    "candidateStatus": "found",
+    "missingRisk": "There is only one candidate session on the relevant date (2023/02/01 Wed). If there were other Wednesday meetings with Rachel not included in the catalog, they would be missed.",
+    "items": [
+      {
+        "sessionId": "answer_4bebc783_1",
+        "turnIndex": 4,
+        "why": "This user turn states the specific activity with Rachel on that Wednesday: starting ukulele lessons with friend Rachel."
+      },
+      {
+        "sessionId": "answer_4bebc783_1",
+        "turnIndex": 5,
+        "why": "Provides nearby context immediately after the start of ukulele lessons, which can help confirm what was being done with Rachel."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify what the user did with Rachel on the Wednesday two months ago (relative to 2023/04/01).",
+    "candidateStatus": "found",
+    "missingRisk": "There is only one candidate session on the relevant date (2023/02/01 Wed). If there were other Wednesday meetings with Rachel not included in the catalog, they would be missed.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_4bebc783_1",
+        "turnIndex": 4,
+        "why": "This user turn states the specific activity with Rachel on that Wednesday: starting ukulele lessons with friend Rachel."
+      },
+      {
+        "sessionId": "answer_4bebc783_1",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_4bebc783_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_4bebc783_1",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

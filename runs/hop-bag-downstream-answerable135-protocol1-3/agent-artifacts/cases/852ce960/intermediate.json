@@ -1,0 +1,40 @@
+[
+  {
+    "session_id": "answer_3a6f1e82_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session does not explicitly state the exact amount the user was pre-approved for beyond what the user mentions; it includes a user-provided figure ($350,000) and does not mention any alternative or updated pre-approval amount from Wells Fargo. Therefore, if the true pre-approval differed later, this single session may be incomplete.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "I'm actually buying a $325,000 house, and I got pre-approved for $350,000 from Wells Fargo.",
+          "why": "Directly states the pre-approval amount from Wells Fargo needed to answer the question."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Assuming you're getting a conventional loan from Wells Fargo, here's a breakdown of the estimated closing costs based on your pre-approval amount of $350,000 and the purchase price of $325,000.",
+          "why": "Reiterates the pre-approval amount ($350,000) in the assistant's subsequent estimate, corroborating the figure."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Based on your pre-approval for a $350,000 loan, let's assume you'll be financing $325,000 (purchase price) minus $25,000 (down payment) = $300,000.",
+          "why": "Uses the pre-approval figure ($350,000) again, linking it to the financing assumptions; helpful if chronology or interpretation is needed."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_3a6f1e82_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Medium. The session includes the mortgage pre-approval amount as a user-provided reminder, but the question asks for the amount specifically “when I got my mortgage,” and this session does not provide additional corroborating details (e.g., whether this was the actual approved amount versus a recalled figure, nor the date of mortgage approval).",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "remember when I got pre-approved for $400,000 from Wells Fargo",
+          "why": "Directly states the pre-approval amount and lender needed to answer the question."
+        }
+      ]
+    }
+  }
+]

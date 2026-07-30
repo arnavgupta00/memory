@@ -1,0 +1,23 @@
+{
+  "queryShape": "order",
+  "setBoundary": "Sports events (games/matches) the user watched during January 2023",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_e6c20e52_2",
+      "turnIndex": 2,
+      "why": "User watches the College Football National Championship game with family (Georgia vs Alabama, 33-18) around this session’s Jan 15 date (described as “yesterday”)."
+    },
+    {
+      "sessionId": "answer_e6c20e52_1",
+      "turnIndex": 0,
+      "why": "User mentions the Kansas City Chiefs defeat the Buffalo Bills in the Divisional Round last weekend at Mike’s place (described in the context of an LA wings order on Jan 22)."
+    },
+    {
+      "sessionId": "answer_e6c20e52_3",
+      "turnIndex": 4,
+      "why": "User describes attending an NBA game at Staples Center where the Lakers played the Chicago Bulls; provides the specific matchup the user watched in early January (session dated Jan 5; user says “today”)."
+    }
+  ]
+}

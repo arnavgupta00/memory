@@ -1,0 +1,91 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "User is considering a cocktail for an upcoming get-together; include their prior preferences/plans for a specific Hendrick’s gin cocktail and related preparation details.",
+  "candidateStatus": "found",
+  "missingRisk": "May still be missing other, unrecorded cocktail preferences (e.g., guest tastes, alcohol level, dietary constraints) from sessions not included here.",
+  "items": [
+    {
+      "sessionId": "answer_719502eb",
+      "turnIndex": 0,
+      "date": "2023/05/21 (Sun) 00:41",
+      "role": "user",
+      "text": "I was thinking of experimenting with some new cocktails this weekend. Do you have any recommendations for summer drinks that incorporate Hendrick's gin?",
+      "why": "User is experimenting with summer cocktails incorporating Hendrick’s gin—sets the core preference for what kind of cocktail to choose.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_719502eb",
+      "turnIndex": 1,
+      "date": "2023/05/21 (Sun) 00:41",
+      "role": "assistant",
+      "text": "Hendrick's gin is a fantastic choice for summer cocktails! Its unique flavor profile, with notes of rose, cucumber, and juniper, lends itself perfectly to refreshing and revitalizing drinks. Here are some summer-inspired cocktail recipes that feature Hendrick's gin as the star:\n\n1. **Pimm's Cup with a Twist**: A classic British summer drink gets a Hendrick's makeover. Mix 1 1/2 oz Hendrick's gin, 1/2 oz lemon juice, 1/2 oz simple syrup, 1/2 oz Pimm's No. 1, and a splash of ginger beer. Garnish with cucumber, mint, and fruit.\n2. **Cucumber Gimlet**: A refreshing and light twist on the classic Gimlet. Combine 2 oz Hendrick's gin, 1 oz fresh lime juice, 1/2 oz simple syrup, and 1/2 oz cucumber juice. Garnish with a cucumber slice or wheel.\n3. **Rose Petal Spritz**: A fruity and bubbly drink perfect for warm weather. Mix 2 oz Hendrick's gin, 2 oz Prosecco, 1 oz rose syrup (or rose liqueur), and 1 oz lemon-lime soda. Garnish with a rose petal or edible flower.\n4. **Gin-Gin Mule**: A Hendrick's spin on the Moscow Mule. Combine 2 oz Hendrick's gin, 4 oz ginger beer, and a squeeze of lime juice. Garnish with a lime wheel and a sprig of mint.\n5. **Summer Solstice**: A fruity and herbaceous cocktail for the longest day of the year. Mix 2 oz Hendrick's gin, 1 oz peach puree, 1 oz lemon juice, and 1/2 oz honey syrup. Garnish with a sprig of rosemary and a slice of peach.\n6. **Hendrick's High Tea**: A refreshing, tea-infused cocktail. Steep a tea bag (like earl grey or English breakfast) in 1 oz hot water for 3-5 minutes. Then, mix with 2 oz Hendrick's gin, 1 oz lemon juice, and 1/2 oz honey syrup. Garnish with a lemon slice and a tea bag.\n\nThese recipes should give you a great starting point for experimenting with Hendrick's gin this summer. Enjoy and have fun mixing!",
+      "why": "Assistant suggests multiple Hendrick’s gin summer cocktails, including Pimm’s Cup with a Twist—provides candidate options for the user’s decision.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_719502eb",
+      "turnIndex": 2,
+      "date": "2023/05/21 (Sun) 00:41",
+      "role": "user",
+      "text": "I like the idea of the Pimm's Cup with a Twist, but I've already made a classic Pimm's Cup and classic cocktails recently from a mixology class that I attended. By the way, what's the difference between cucumber juice and muddling cucumber slices in a drink?",
+      "why": "User likes Pimm’s Cup with a Twist but notes they recently made classic Pimm’s and other cocktails—important constraint for choosing a different/twisted option.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_719502eb",
+      "turnIndex": 4,
+      "date": "2023/05/21 (Sun) 00:41",
+      "role": "user",
+      "text": "That's really helpful, thanks for explaining the difference. I think I'll try muddling cucumber slices in the Pimm's Cup with a Twist to give it a bit more flavor and texture. Do you have any recommendations for a good simple syrup recipe to use in this drink?",
+      "why": "User decides to muddle cucumber slices for more flavor/texture in the chosen drink—relevant to execution of that suggested cocktail.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_719502eb",
+      "turnIndex": 6,
+      "date": "2023/05/21 (Sun) 00:41",
+      "role": "user",
+      "text": "I was thinking of using a flavored simple syrup to give the Pimm's Cup with a Twist a bit more depth of flavor. Do you have any recommendations for a citrus-flavored simple syrup that would complement the Hendrick's gin and cucumber?",
+      "why": "User asks for citrus-flavored simple syrup to complement Hendrick’s gin and cucumber—narrows the variation they want.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_719502eb",
+      "turnIndex": 8,
+      "date": "2023/05/21 (Sun) 00:41",
+      "role": "user",
+      "text": "I think I'll try the grapefruit simple syrup, as I like the idea of the bitterness balancing out the sweetness of the Pimm's. Do you have any recommendations for a good grapefruit variety to use for the simple syrup?",
+      "why": "User selects Ruby Red Grapefruit for the simple syrup—captures the specific variation they plan to serve.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_719502eb",
+      "turnIndex": 10,
+      "date": "2023/05/21 (Sun) 00:41",
+      "role": "user",
+      "text": "I think I'll try the Ruby Red Grapefruit for my simple syrup. I like the idea of a balanced flavor and a lovely pink hue. Do you have any recommendations for garnishes or other elements to add to the Pimm's Cup with a Twist to make it more visually appealing?",
+      "why": "User asks for garnishes/visual elements for Pimm’s Cup with a Twist—guides presentation for a get-together.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_719502eb",
+      "turnIndex": 14,
+      "date": "2023/05/21 (Sun) 00:41",
+      "role": "user",
+      "text": "I think I'll try serving the Pimm's Cup with a Twist in a Collins glass. The tall, slender shape will showcase the layers of color and the garnishes nicely. Plus, it's a classic choice for serving refreshing summer drinks. What do you think?",
+      "why": "User chooses to serve the cocktail in a Collins glass to showcase layers/garnishes—relevant serving recommendation.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_719502eb",
+      "turnIndex": 12,
+      "date": "2023/05/21 (Sun) 00:41",
+      "role": "user",
+      "text": "I'm excited to try out the Ruby Red Grapefruit simple syrup and experiment with different garnishes and elements to make my Pimm's Cup with a Twist visually appealing. Thanks for the recommendations and tips!",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 3613,
+  "estimatedTokens": 904
+}

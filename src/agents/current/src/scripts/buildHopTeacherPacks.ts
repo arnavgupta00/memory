@@ -159,6 +159,45 @@ function main(): void {
     hard_outside_ids: hardOutside,
     hop27_strata: Object.fromEntries(hop27.cases.map((c) => [c.question_id, c.stratum])),
   };
+  const answerable135Cases = phase1.cases.map((item) => {
+    const raw = byId.get(item.question_id);
+    if (!raw) throw new Error(`phase-1 qid missing from dataset: ${item.question_id}`);
+    const stratum =
+      item.worst_rank === null || item.worst_rank > 5
+        ? "hard"
+        : item.worst_rank >= 4
+          ? "mid"
+          : "easy";
+    return {
+      question_id: item.question_id,
+      stratum,
+      question_type: raw.question_type,
+      phase1_worst_rank: item.worst_rank,
+      phase1_gold_ranks: item.gold_ranks,
+    };
+  });
+  const answerable135Meta = {
+    name: "answerable135",
+    description: "All answerable phase-1 cases, stratified using the hop27 rank rules.",
+    phase1_rank_source:
+      "runs/local-archive/backbone/rank-gate-answerable-phase1-none.json",
+    strata: {
+      hard: {
+        count: answerable135Cases.filter((item) => item.stratum === "hard").length,
+        rule: "worst_rank > 5 or miss",
+      },
+      mid: {
+        count: answerable135Cases.filter((item) => item.stratum === "mid").length,
+        rule: "worst_rank in 4..5",
+      },
+      easy: {
+        count: answerable135Cases.filter((item) => item.stratum === "easy").length,
+        rule: "worst_rank <= 3",
+      },
+    },
+    question_ids: answerable135Cases.map((item) => item.question_id),
+    cases: answerable135Cases,
+  };
 
   const packsDir = resolve(DEFAULT_OUT, "packs");
   mkdirSync(packsDir, { recursive: true });
@@ -233,6 +272,10 @@ function main(): void {
   const batches = buildBatches(qidsByType, 25);
   writeFileSync(resolve(DEFAULT_OUT, "ids-teach38.json"), JSON.stringify(teachMeta, null, 2));
   writeFileSync(
+    resolve(DEFAULT_OUT, "ids-answerable135.json"),
+    JSON.stringify(answerable135Meta, null, 2),
+  );
+  writeFileSync(
     resolve(DEFAULT_OUT, "batches-500.json"),
     JSON.stringify(
       {
@@ -261,6 +304,7 @@ function main(): void {
   console.log(
     `wrote packs=${String(dataset.length)} teach38=${String(teachIds.length)} `
       + `(hop27=${String(hop27.question_ids.length)} hard_outside=${String(hardOutside.length)}) `
+      + `answerable135=${String(answerable135Cases.length)} `
       + `batches=${String(batches.length)} out=${DEFAULT_OUT}`,
   );
   // touch byId to keep lint happy if unused in future

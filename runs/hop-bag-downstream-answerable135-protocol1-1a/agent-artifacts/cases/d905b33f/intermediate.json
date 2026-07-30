@@ -1,0 +1,18 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "The book you bought on sale from your favorite author: original price and sale price (to compute the discount percentage).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_85a77c48_2",
+      "turnIndex": 2,
+      "why": "Mentions you bought a book at your favorite bookstore for $24 after a discount (sale price)."
+    },
+    {
+      "sessionId": "answer_85a77c48_1",
+      "turnIndex": 6,
+      "why": "States the new release from your favorite author was originally priced at $30 (original price)."
+    }
+  ]
+}

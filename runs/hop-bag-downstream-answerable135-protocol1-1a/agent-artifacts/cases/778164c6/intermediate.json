@@ -1,0 +1,33 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Jamaican (or Jamaican-relevant) snapper dish mentioned previously that includes fruit",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_ultrachat_399000",
+      "turnIndex": 3,
+      "why": "Lists several snapper dishes across the Caribbean, including one with fruit (\"Grilled Snapper with Mango Salsa\")."
+    },
+    {
+      "sessionId": "answer_ultrachat_399000",
+      "turnIndex": 4,
+      "why": "Provides the fruit-containing snapper option from the list (mango salsa) as a candidate dish."
+    },
+    {
+      "sessionId": "answer_ultrachat_399000",
+      "turnIndex": 5,
+      "why": "Recommends a specific Jamaican snapper dish first (\"Escovitch Fish\") and describes it, useful for comparison with the fruit-containing snapper option."
+    },
+    {
+      "sessionId": "answer_ultrachat_399000",
+      "turnIndex": 10,
+      "why": "Moves the conversation to Jamaican dishes to try, providing context for fruit-based Jamaican dishes."
+    },
+    {
+      "sessionId": "answer_ultrachat_399000",
+      "turnIndex": 11,
+      "why": "Mentions a Jamaican dish involving fruit (\"Ackee and Saltfish\" using ackee fruit), which could be the “fruit” the user is referring to even if it’s not snapper-forward in the text."
+    }
+  ]
+}

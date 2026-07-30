@@ -1,0 +1,55 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "398f23e7",
+      "turnIndex": 8,
+      "date": "2023/03/04 (Sat) 22:35",
+      "role": "user",
+      "text": "I remember I have a doctor's appointment on Wednesday, and I need to meet up with my book club later that day.",
+      "why": "empty-extractor deterministic fallback",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_0b4a8adc_1",
+      "turnIndex": 0,
+      "date": "2023/03/04 (Sat) 22:43",
+      "role": "user",
+      "text": "I'm looking for some advice on cleaning and maintaining my antique furniture. I recently acquired a beautiful vintage armchair from the 1950s and I want to make sure I'm taking good care of it. By the way, I also got a stunning crystal chandelier from my aunt today, which used to belong to my great-grandmother - it's got intricate etchings and sparkling droplets that catch the light. Do you have any general tips on how to dust and polish these types of pieces?",
+      "why": "per-session extractor: Provides the relevant event (meeting/up with aunt and receiving the crystal chandelier) and anchors it to a specific session date via the phrase 'today.'",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "398f23e7",
+      "turnIndex": 7,
+      "date": "2023/03/04 (Sat) 22:35",
+      "role": "assistant",
+      "text": "I don't have personal knowledge of your schedule, but since we're creating a new schedule together, I can ask you: Do you have any appointments or events on Wednesday that you need to add to your schedule?\n\nIf so, feel free to share, and I'll add them to your schedule. If not, we can leave Wednesday open for now and focus on filling in the rest of the week.\n\nHere's your updated schedule:\n\n* Sunday: Chore day! Laundry, cleaning, meal prep\n* Monday: Prepare for meeting\n* Tuesday: Gym session (evening)\n* Wednesday: [Open]\n* Thursday: [Open]\n* Friday: [Open]\n* Saturday: [Open]\n\nLet me know if there's anything else you'd like to add or change!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "398f23e7",
+      "turnIndex": 9,
+      "date": "2023/03/04 (Sat) 22:35",
+      "role": "assistant",
+      "text": "Got it! I'll add those to your schedule.\n\nHere's your updated schedule:\n\n* Sunday: Chore day! Laundry, cleaning, meal prep\n* Monday: Prepare for meeting\n* Tuesday: Gym session (evening)\n* Wednesday: Doctor's appointment, Book club meeting\n* Thursday: [Open]\n* Friday: [Open]\n* Saturday: [Open]\n\nIt's great that you're staying on top of your health and making time for social activities! Now that we've got your Wednesday commitments added, let's focus on the rest of the week.\n\nWhat do you want to accomplish or fit in on Thursday, Friday, and Saturday? Do you have any work tasks, personal projects, or relaxation time you want to prioritize?\n\nRemember, this is your schedule, and we can adjust it to fit your needs and goals!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_0b4a8adc_1",
+      "turnIndex": 1,
+      "date": "2023/03/04 (Sat) 22:43",
+      "role": "assistant",
+      "text": "Congratulations on your new acquisitions! Taking good care of your antique furniture and crystal chandelier requires gentle and thoughtful maintenance to preserve their beauty and integrity. Here are some general tips to help you dust, polish, and maintain your vintage armchair and crystal chandelier:\n\n**Vintage Armchair:**\n\n1. **Dusting:** Use a soft, dry cloth to gently dust the chair, paying attention to crevices and carvings. Avoid using feather dusters, as they can scratch or leave behind feathers.\n2. **Polishing:** For wooden armchairs, use a high-quality furniture wax or polish specifically designed for antique furniture. Apply a small amount to a soft cloth and gently rub it into the wood in circular motions. Avoid using too much polish, as it can leave a residue.\n3. **Leather or upholstery:** If your armchair has leather or upholstery, use a gentle leather cleaner or a mild soap solution with a soft-bristled brush to clean any stains or dirt. Condition the leather regularly to prevent cracking.\n4. **Avoid harsh chemicals:** Never use harsh chemicals, abrasive cleaners, or strong polishes, as they can damage the finish, strip the wood, or discolor the fabric.\n5. **Protect from direct sunlight:** Direct sunlight can cause fading, discoloration, or drying out of the wood or fabric. Place your armchair away from direct sunlight or use UV-filtering window treatments.\n\n**Crystal Chandelier:**\n\n1. **Dusting:** Use a soft, dry cloth or a specialized crystal cleaning cloth to gently dust the chandelier, paying attention to the intricate etchings and droplets. Avoid using paper towels or tissues, as they can scratch or leave behind lint.\n2. **Cleaning:** For more thorough cleaning, mix a solution of 1 part white vinegar to 2 parts water in a spray bottle. Spray the solution onto the chandelier, then wipe clean with a soft, lint-free cloth. Avoid using harsh chemicals or abrasive cleaners.\n3. **Polishing:** Use a gentle crystal polish or a jewelry cleaning cloth to remove any tarnish or fingerprints. Apply a small amount of polish to the cloth and gently rub it into the crystal.\n4. **Avoid direct sunlight:** While crystal can withstand some sunlight, direct sunlight can cause the metal components to tarnish or the crystal to become brittle. Place your chandelier in a spot with filtered sunlight or use UV-filtering window treatments.\n5. **Regular cleaning:** Clean your crystal chandelier regularly to prevent dirt and grime from building up. This will help maintain its sparkle and prevent damage.\n\n**General Tips:**\n\n1. **Handle with care:** Always handle your antique pieces with clean, dry hands. Avoid touching the surfaces excessively, as oils from your skin can damage the finish or fabric.\n2. **Avoid extreme temperatures:** Keep your antique furniture and crystal chandelier away from heating vents, radiators, or air conditioning units, as extreme temperatures can cause damage or warping.\n3. **Monitor humidity:** Maintain a stable humidity level in your home to prevent warping or cracking of wood or damage to crystal.\n4. **Consult a professional:** If you're unsure about cleaning or restoring a particular piece, consult a professional conservator or restorer who specializes in antique furniture or crystal.\n\nBy following these tips, you'll be able to enjoy your beautiful vintage armchair and stunning crystal chandelier for generations to come.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 5348,
+  "estimatedTokens": 1337
+}

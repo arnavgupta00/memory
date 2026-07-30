@@ -1,0 +1,64 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "User-owned physical bikes they possess (not accessories/locks).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_e623ae87",
+      "turnIndex": 2,
+      "date": "2023/05/27 (Sat) 07:08",
+      "role": "user",
+      "text": "I'm actually thinking of taking my Trek Emonda for the ride, since it's perfect for long distances on the road. By the way, do you have any recommendations on carbon fiber wheels? I've been considering upgrading my road bike's wheels to make it even lighter and faster.",
+      "why": "User mentions taking 'my Trek Emonda' on a ride, providing context that at least one bike in their owned set is the Trek Emonda.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e623ae87",
+      "turnIndex": 4,
+      "date": "2023/05/27 (Sat) 07:08",
+      "role": "user",
+      "text": "I've been doing some research on carbon fiber wheels and I think I'll make the purchase in the next few months. By the way, speaking of my bikes, I've got three of them - a road bike, a mountain bike, and a commuter bike - and I've been using them for different types of rides. Do you have any tips on how to keep them organized and maintained properly?",
+      "why": "User explicitly states they 'got three' bikes (road, mountain, commuter), which directly addresses how many bikes they own.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e623ae87",
+      "turnIndex": 8,
+      "date": "2023/05/27 (Sat) 07:08",
+      "role": "user",
+      "text": "I'm thinking of getting a bike lock with GPS tracking that integrates with my bike, so I can keep an eye on my three bikes when I'm not around them. Do you have any recommendations on specific bike locks with GPS tracking that would work well for my road bike, mountain bike, and commuter bike?",
+      "why": "User reiterates they want to track 'my three bikes' when not around them, reinforcing the bike ownership count.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e623ae87",
+      "turnIndex": 0,
+      "date": "2023/05/27 (Sat) 07:08",
+      "role": "user",
+      "text": "I'm planning a long ride this weekend and want to make sure I'm prepared. Can you remind me what kind of bike is best for long rides on the road, and also suggest some tips on how to properly clean and lube my chain?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e623ae87",
+      "turnIndex": 6,
+      "date": "2023/05/27 (Sat) 07:08",
+      "role": "user",
+      "text": "I've been thinking about getting a bike lock with a GPS tracker to keep my bikes safe when I'm not around them. Do you have any recommendations on bike locks and GPS tracking systems?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e623ae87",
+      "turnIndex": 10,
+      "date": "2023/05/27 (Sat) 07:08",
+      "role": "user",
+      "text": "I've got it! I think I'll go with the Abus SmartX bike lock with GPS tracking. It seems to offer the best balance of security, convenience, and features for my needs. Thanks for the recommendations and tips!",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 1522,
+  "estimatedTokens": 381
+}

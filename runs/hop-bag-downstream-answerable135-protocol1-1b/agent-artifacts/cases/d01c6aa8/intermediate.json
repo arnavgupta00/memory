@@ -1,0 +1,48 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the user-provided statements about (a) current age and (b) how long they’ve been living in the United States, since the question asks for their age at the time they moved (which requires those two facts).",
+    "candidateStatus": "found",
+    "missingRisk": "The candidates provide current age (32) and duration in the U.S. (past five years), but do not explicitly state the exact move-in year/month; downstream computation may be approximate or require assumptions about when “past five years” began.",
+    "items": [
+      {
+        "sessionId": "answer_991d55e5_1",
+        "turnIndex": 0,
+        "why": "Provides the user’s current age (“I’m 32-year-old male”), which is necessary to compute age at the time they moved to the U.S."
+      },
+      {
+        "sessionId": "answer_991d55e5_2",
+        "turnIndex": 0,
+        "why": "Provides the time-in-U.S. fact (“been living in the United States for the past five years”), which is necessary to infer when they moved and thus their age at that time."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the user-provided statements about (a) current age and (b) how long they’ve been living in the United States, since the question asks for their age at the time they moved (which requires those two facts).",
+    "candidateStatus": "found",
+    "missingRisk": "The candidates provide current age (32) and duration in the U.S. (past five years), but do not explicitly state the exact move-in year/month; downstream computation may be approximate or require assumptions about when “past five years” began.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_991d55e5_1",
+        "turnIndex": 0,
+        "why": "Provides the user’s current age (“I’m 32-year-old male”), which is necessary to compute age at the time they moved to the U.S."
+      },
+      {
+        "sessionId": "answer_991d55e5_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_991d55e5_2",
+        "turnIndex": 0,
+        "why": "Provides the time-in-U.S. fact (“been living in the United States for the past five years”), which is necessary to infer when they moved and thus their age at that time."
+      },
+      {
+        "sessionId": "answer_991d55e5_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

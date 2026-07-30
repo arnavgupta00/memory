@@ -1,0 +1,32 @@
+[
+  {
+    "session_id": "5b83c26e_3",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains no mention of Mayo Clinic or any recommended YouTube videos about workplace posture. The user asked to be reminded of a specific Mayo Clinic video, but there is no relevant evidence here.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "33a39aa7_1",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session appears to be about music recommendations (concerts, jazz/funk artists, live videos, YouTube channels, Tiny Desk, etc.) and does not mention Mayo Clinic or workplace posture YouTube videos, so there is likely no relevant evidence here for the requested Mayo Clinic posture video.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_sharegpt_81riySf_0",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Medium: The session includes a Mayo Clinic video recommendation, but it does not mention any follow-up context linking to the user’s prior conversation beyond the general request for YouTube videos.",
+      "claims": [
+        {
+          "turnIndex": 1,
+          "fact": "Assistant recommended a YouTube video: \"How to Sit Properly at a Desk to Avoid Back Pain\" by the Mayo Clinic (https://www.youtube.com/watch?v=UfOvNlX9Hh0).",
+          "why": "Directly relevant to the request to remind the user of the Mayo Clinic video the assistant recommended."
+        }
+      ]
+    }
+  }
+]

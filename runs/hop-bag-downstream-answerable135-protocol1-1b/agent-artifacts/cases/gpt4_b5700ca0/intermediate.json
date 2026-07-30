@@ -1,0 +1,48 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "2023/04/10; last week relative to this date (2023/04/10 Mon => last week includes 2023/04/03-2023/04/09). Identify the religious activity attended and its location/name.",
+    "candidateStatus": "found",
+    "missingRisk": "The candidate only specifies “the Episcopal Church” (no street address). If the question expects a specific address/city, it may not be present in the provided turns.",
+    "items": [
+      {
+        "sessionId": "answer_a17423e8_1",
+        "turnIndex": 6,
+        "why": "This turn explicitly states the religious activity attended “the Maundy Thursday service at the Episcopal Church,” which answers where you attended the religious activity last week."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "2023/04/10; last week relative to this date (2023/04/10 Mon => last week includes 2023/04/03-2023/04/09). Identify the religious activity attended and its location/name.",
+    "candidateStatus": "found",
+    "missingRisk": "The candidate only specifies “the Episcopal Church” (no street address). If the question expects a specific address/city, it may not be present in the provided turns.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_a17423e8_1",
+        "turnIndex": 6,
+        "why": "This turn explicitly states the religious activity attended “the Maundy Thursday service at the Episcopal Church,” which answers where you attended the religious activity last week."
+      },
+      {
+        "sessionId": "answer_a17423e8_1",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_a17423e8_1",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_a17423e8_1",
+        "turnIndex": 0,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_a17423e8_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

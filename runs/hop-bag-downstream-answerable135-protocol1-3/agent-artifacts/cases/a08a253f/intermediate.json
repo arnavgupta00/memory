@@ -1,0 +1,36 @@
+[
+  {
+    "session_id": "answer_47152166_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "none_found",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "I attend Zumba classes on Tuesdays and Thursdays at 6:30 pm, and a weightlifting class on Saturdays at 10 am.",
+          "why": "Directly indicates which days of the week fitness classes are attended, needed to count how many days per week."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "**Tuesday**: 6:30 pm - Zumba class; **Thursday**: 6:30 pm - Zumba class; **Saturday**: 10:00 am - Weightlifting class",
+          "why": "Reiterates the schedule by day-of-week, supporting the same day-count evidence."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "I've added a reminder to log your workouts on your fitness app after each class. **Tuesday** (after class), **Thursday** (after class), **Saturday** (after class).",
+          "why": "Confirms the same set of class days (Tuesday/Thursday/Saturday) via the after-class reminder list."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "My instructor, Maria, loves to play energetic songs ... perfect for our Tuesday and Thursday classes.",
+          "why": "Reaffirms Zumba occurs on Tuesday and Thursday (subset of days relevant to the overall count)."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "**Zumba Classes (Tuesdays and Thursdays):** ... **Weightlifting Class (Saturdays):** ...",
+          "why": "Summarizes the classes by day-of-week (Tuesday/Thursday for Zumba, Saturday for weightlifting), usable for determining the number of attendance days."
+        }
+      ]
+    }
+  }
+]

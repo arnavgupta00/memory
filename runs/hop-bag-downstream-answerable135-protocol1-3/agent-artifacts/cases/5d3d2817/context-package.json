@@ -1,0 +1,181 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "sharegpt_ipLglky_48",
+      "turnIndex": 2,
+      "date": "2023/05/22 (Mon) 17:30",
+      "role": "user",
+      "text": "Part 36 (3) It is to be presumed (unless an earlier date for practical completion can be established) that practical completion of residential building work occurred on the earliest of whichever of the following dates can be established for the work—\n(a) the date on which the contractor handed over possession of the work to the owner,\n(b) the date on which the contractor last attended the site to carry out work (other than work to remedy any defect that does not affect practical completion),\n(c) the date of issue of an occupation certificate under the Environmental Planning and Assessment Act 1979 that authorises commencement of the use or occupation of the work,\n(d) (in the case of owner-builder work) the date that is 18 months after the issue of the owner-builder permit for the work.\nIn our view, in accordance with s 3B(1) of the HB Act, the statutory warranty period commenced on completion of the building works within the meaning of the contract; that is, when the works reached practical completion. If the contract had not provided for when the building works were complete and s 3B(1) was not engaged, then s 3B(2) and s 3B(3) of the HB Act would apply. It is not in dispute that the owners took possession of the works on 13 July 2017. In this case, that would be the relevant date in accordance with s 3B(3)(a) of the Act. Issue of the FOC is not the completion date of the works under s 3B.\nOverall, we conclude that the Tribunal erred in finding that the date of completion of the building works was 20 October 2010, when the FOC was issued. In making this finding, the Tribunal misinterpreted the contract and did not correctly apply sections 48K(7) and 3B of the HB Act. Ground 6 is established. In our view, if the completion date was not the date of practical completion (8 July 2010), it was the date on which the works were handed over the owners (13 July 2021).\nIf we have erred in finding that the Tribunal’s finding in relation to completion date raises a question of law, then for the reasons set out above, we conclude that the Tribunal’s finding in this regard is against the weight of evidence. We would grant leave to appeal on this ground because we consider that the Tribunal’s finding concerning the completion date gives rise to an injustice to the builder which is reasonably clear.\nDisposition of the appeal\nIt follows from our conclusion that the parties did not enter into a new contract or vary their original contract that the respondent’s application to the Tribunal was out of time. This is because the owners’ proceedings were not commenced within seven years of completion of the building works.\nThe Tribunal has no power to extend time for the making of an application under the HB Act: S & G Homes Pty Ltd t/as Pavilion Homes v Owen [2015] NSWCATAP 190 at [53].\nIn such circumstances, the appropriate orders are that the appeal be allowed, the decision under appeal be set aside and the Tribunal proceedings be dismissed.\nCosts of the Tribunal proceedings\nThe Tribunal formed what was expressed to be a “provisional view” that the builder should be ordered to pay the owners’ costs and made the following costs orders:\n4. Note the provisional view of the Tribunal that the\nrespondent builder pay the applicant owners' costs of\nPlease write in English language.",
+      "why": "empty-extractor deterministic fallback",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_235eb6fb",
+      "turnIndex": 4,
+      "date": "2023/05/24 (Wed) 23:58",
+      "role": "user",
+      "text": "I've used Trello in my previous role as a marketing specialist at a small startup and I'm familiar with its features. But I'm interested in exploring other options as well. Could you tell me more about ClickUp? How does it differ from Trello, and what are its strengths and weaknesses?",
+      "why": "per-session extractor: Directly states the user’s previous role/occupation as a marketing specialist.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_235eb6fb",
+      "turnIndex": 8,
+      "date": "2023/05/24 (Wed) 23:58",
+      "role": "user",
+      "text": "I'm actually thinking of automating some of the workflows in my new role as a senior marketing analyst. In my previous role at the startup, I was responsible for managing a team of interns, and I had to manually assign tasks and track their progress. With ClickUp's automation features, I think I could automate some of those tasks and free up more time for strategic planning.",
+      "why": "per-session extractor: Provides additional context about the user’s previous role at the startup and responsibilities, which may help corroborate the previous occupation.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "sharegpt_BKl952A_23",
+      "turnIndex": 0,
+      "date": "2023/05/25 (Thu) 03:32",
+      "role": "assistant",
+      "text": "Hi Emeka,\n\nThank you for connecting with me. After reviewing your profile, I wanted to clarify that at Televero Health, we are specifically looking to hire psychiatrists and Licensed Clinical Social Workers (LCSWs). Based on your background, it appears that you have extensive experience in the pharmaceutical and biotechnology sectors. While we appreciate your impressive experience, we are currently focusing on candidates with clinical backgrounds.\n\nPlease let me know if you have any relevant qualifications or experience as a psychiatrist or LCSW that I might have missed. Otherwise, I wish you all the best in your career, and thank you again for connecting.\n\nBest regards,\nBailey Baker",
+      "why": "per-session extractor: Relevant to interpreting what the user might have claimed/been asked about professionally, and could provide context for the user’s previous occupation if it was discussed elsewhere.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "sharegpt_BKl952A_23",
+      "turnIndex": 6,
+      "date": "2023/05/25 (Thu) 03:32",
+      "role": "assistant",
+      "text": "An LPC Associate (Licensed Professional Counselor Associate) is a pre-licensed mental health professional who has completed their educational requirements and is working under the supervision of a fully licensed professional counselor. This is typically a transitional stage for individuals pursuing a career in mental health counseling.\n\nDuring this stage, LPC Associates are required to accrue a specific number of supervised clinical hours before they can apply for full licensure as an LPC (Licensed Professional Counselor). The requirements for becoming an LPC vary by state, but generally include completing a master's degree in counseling or a related field, passing a licensing exam, and completing a certain number of supervised clinical hours. Once fully licensed, LPCs can provide mental health counseling and psychotherapy services independently.",
+      "why": "per-session extractor: Defines the qualification mentioned in the conversation; could help map the user’s prior role/occupation if the user’s occupation related to LPC status.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "ultrachat_86927",
+      "turnIndex": 0,
+      "date": "2023/05/25 (Thu) 09:36",
+      "role": "user",
+      "text": "Can you recommend any resources or tools to help small business owners improve their online marketing strategies?",
+      "why": "empty-extractor deterministic fallback",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "ultrachat_371333",
+      "turnIndex": 0,
+      "date": "2023/05/28 (Sun) 04:42",
+      "role": "user",
+      "text": "How can international students gain experience in their field of study if they are unable to secure an internship?",
+      "why": "empty-extractor deterministic fallback",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "sharegpt_ipLglky_48",
+      "turnIndex": 1,
+      "date": "2023/05/22 (Mon) 17:30",
+      "role": "assistant",
+      "text": "Part 35 The effect of s 3B(1) is that the completion of residential building work occurs on the date that the work is complete within the meaning of the contract under which the work was done. As we have already noted, the contract in this case required the builder to complete the building works and to hand them over to the owners. The Tribunal’s conclusion that the works were not complete until the FOC was provided is inconsistent with the contract and, in our view, is an error of law.\nIf the contract does not provide for when work is complete, s 3B(2) provides that the completion of residential building work occurs on practical completion of the work. As we have noted, practical completion is defined in the contract as the date on which the building works are complete except for minor omissions and defects that do not prevent the building works from being reasonably capable of being used for their usual purpose. The contract does not require the provision of an FOC as a condition of practical completion.\nSection 3B(3) of the HB Act provides a rebuttable presumption that residential building work is complete when an occupation certificate is issued for the work. However, that presumption only arises where practical completion has occurred and an occupation certificate is issued. In this case, the Tribunal’s finding that the works were not complete until the FOC was issued is inconsistent with practical completion under the contract and, accordingly, s 3B(3) has no application.\nConclusion on Grounds 6 and 7\nFor the reasons set out above, we find that the Tribunal erred in finding that the completion date for the works was 20 October 2010. The completion date for the works was, in our view, the date of practical completion under the contract, which the Tribunal did not expressly find but which, on our interpretation of the contract, would have been some time before 20 October 2010. Given our findings in respect of Grounds 2 and 3, it is not strictly necessary for us to consider whether the Tribunal’s finding was against the weight of evidence, but we note that, in any event, we do not consider that it was.\nAccordingly, we allow Ground 6, set aside the finding of the Tribunal in respect of completion date, and substitute a finding that the completion date for the works was the date of practical completion under the contract.\nGround 7 is not made out.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_ipLglky_48",
+      "turnIndex": 3,
+      "date": "2023/05/22 (Mon) 17:30",
+      "role": "assistant",
+      "text": "Part 36: The appeal panel concludes that the Tribunal erred in finding that the completion date of the building works was the date the Final Occupation Certificate (FOC) was issued, as this misinterpreted the contract and did not correctly apply the relevant provisions of the Home Building Act (HB Act). They find that the completion date was either the date of practical completion or the date the works were handed over to the owners. As the respondent's application to the Tribunal was out of time, the panel orders that the appeal be allowed, the decision under appeal be set aside, and the Tribunal proceedings be dismissed. The Tribunal has no power to extend time for making an application under the HB Act, and the panel does not consider it appropriate to order costs against the builder.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_235eb6fb",
+      "turnIndex": 3,
+      "date": "2023/05/24 (Wed) 23:58",
+      "role": "assistant",
+      "text": "Given your requirements, here are some project management tools that integrate well with Google Drive and offer a free version or trial:\n\n1. **Trello**:\n\t* Integrates seamlessly with Google Drive, allowing you to attach files directly to cards.\n\t* Free version: Unlimited boards, lists, and cards, with limited features.\n\t* Trial: 14-day free trial for premium features.\n2. **Asana**:\n\t* Integrates with Google Drive, allowing you to attach files and create tasks from Drive.\n\t* Free version: Up to 15 users, with limited features.\n\t* Trial: 30-day free trial for premium features.\n3. **Smartsheet**:\n\t* Integrates with Google Drive, allowing you to attach files and sync data.\n\t* Free version: Limited features, with a 30-day trial.\n\t* Trial: 30-day free trial for premium features.\n4. **ClickUp**:\n\t* Integrates with Google Drive, allowing you to attach files and create tasks from Drive.\n\t* Free version: Unlimited tasks, with limited features.\n\t* Trial: 30-day free trial for premium features.\n5. **Airtable**:\n\t* Integrates with Google Drive, allowing you to attach files and sync data.\n\t* Free version: Limited features, with a 14-day trial.\n\t* Trial: 14-day free trial for premium features.\n\nAll of these tools have a strong integration with Google Drive, and you can test them out with their free versions or trials. Here's a brief summary of each tool:\n\n* Trello is a visual project management tool with a Kanban-style board.\n* Asana is a work management platform that helps you organize tasks and projects.\n* Smartsheet is a spreadsheet-based project management tool with Gantt charts and reporting.\n* ClickUp is an all-in-one project management tool with features like task management, time tracking, and team collaboration.\n* Airtable is a cloud-based database that can be used for project management, with a flexible and customizable workflow.\n\nTake some time to explore each tool, and you'll find the one that best fits your needs.\n\nDo you have any specific questions about these tools or their integrations with Google Drive?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_235eb6fb",
+      "turnIndex": 5,
+      "date": "2023/05/24 (Wed) 23:58",
+      "role": "assistant",
+      "text": "ClickUp is a popular project management tool that's gained a lot of traction in recent years. I'd be happy to give you an overview of its features, strengths, and weaknesses, as well as how it differs from Trello.\n\n**What is ClickUp?**\n\nClickUp is an all-in-one project management tool that offers a wide range of features to help teams manage tasks, projects, and workflows. It's designed to be highly customizable, allowing teams to adapt the tool to their specific needs.\n\n**Key Features:**\n\n1. **Task Management**: Create and assign tasks, set deadlines, and track progress.\n2. **Gantt Charts**: Visualize project timelines and dependencies.\n3. **Time Tracking**: Log time spent on tasks and projects.\n4. **Customizable Dashboards**: Create personalized dashboards with widgets, charts, and tables.\n5. **Team Collaboration**: Real-time commenting, @mentions, and assignment of tasks.\n6. **Integrations**: Integrates with Google Drive, Slack, GitHub, and many more.\n7. **Automation**: Create custom workflows and automation rules.\n8. **Reporting**: Generate custom reports and track key metrics.\n\n**How does ClickUp differ from Trello?**\n\n1. **All-in-One Solution**: ClickUp offers a broader range of features, including time tracking, Gantt charts, and customizable dashboards, making it a more comprehensive project management tool.\n2. **Hierarchical Structure**: ClickUp uses a hierarchical structure, with lists, folders, and spaces, whereas Trello uses boards, lists, and cards.\n3. **Task Management**: ClickUp's task management features are more advanced, with features like task dependencies, subtasks, and custom fields.\n4. **Automation**: ClickUp's automation capabilities are more robust, allowing you to create custom workflows and rules.\n\n**Strengths:**\n\n1. **Highly Customizable**: ClickUp offers a high degree of customization, making it easy to adapt to your team's specific needs.\n2. **All-in-One Solution**: ClickUp's comprehensive feature set makes it a great option for teams looking for a single tool to manage their projects.\n3. **Strong Reporting**: ClickUp's reporting features are robust, allowing you to track key metrics and generate custom reports.\n4. **Good Value**: ClickUp's pricing is competitive, especially considering the range of features it offers.\n\n**Weaknesses:**\n\n1. **Steep Learning Curve**: ClickUp's feature-rich interface can be overwhelming for new users.\n2. **Limited Kanban Support**: While ClickUp has a Kanban-style board view, it's not as robust as Trello's Kanban features.\n3. **Limited Mobile App**: ClickUp's mobile app is not as feature-rich as the web app, which can be a limitation for teams that rely heavily on mobile devices.\n\n**Who is ClickUp best for?**\n\nClickUp is a great fit for teams that need a comprehensive project management tool with advanced features like time tracking, Gantt charts, and automation. It's particularly well-suited for teams in software development, marketing, and operations.\n\nOverall, ClickUp is a powerful project management tool that offers a lot of value, especially for teams looking for an all-in-one solution. If you're willing to invest time in learning the tool, it can be a great alternative to Trello.\n\nDo you have any specific questions about ClickUp or its features?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_235eb6fb",
+      "turnIndex": 7,
+      "date": "2023/05/24 (Wed) 23:58",
+      "role": "assistant",
+      "text": "ClickUp's automation features are one of its strongest selling points. The automation rules in ClickUp allow you to create custom workflows that streamline your team's processes, reduce manual tasks, and increase efficiency.\n\n**How do ClickUp's automation rules work?**\n\nClickUp's automation rules are based on a trigger-action system. You set up a trigger, which is an event that occurs in ClickUp, and then specify an action that should be taken when that trigger occurs.\n\nHere's a breakdown of the process:\n\n1. **Trigger**: You set up a trigger, which is an event that occurs in ClickUp, such as:\n\t* A new task is created\n\t* A task is assigned to a team member\n\t* A task is moved to a specific list\n\t* A comment is added to a task\n2. **Condition**: You can add conditions to the trigger to filter out specific scenarios. For example:\n\t* Only trigger the automation if the task is in a specific list\n\t* Only trigger the automation if the task has a specific tag\n3. **Action**: You specify the action that should be taken when the trigger occurs. Actions can include:\n\t* Assigning a task to a team member\n\t* Moving a task to a specific list\n\t* Adding a comment to a task\n\t* Creating a new task\n\t* Sending a notification to a team member or channel\n4. **Optional: Additional Actions**: You can add additional actions to the automation rule, allowing you to create more complex workflows.\n\n**Examples of workflows you can create with ClickUp's automation rules:**\n\n1. **Task Assignment**: When a new task is created, assign it to a specific team member based on the task's priority or category.\n2. **Task Routing**: When a task is moved to a specific list, automatically move it to the next list in the workflow.\n3. **Notification**: When a task is overdue, send a notification to the team member responsible for the task.\n4. **Task Creation**: When a new project is created, automatically create a set of tasks with specific dependencies and due dates.\n5. **Custom Field Updates**: When a task's custom field is updated, automatically update other custom fields or trigger other actions.\n6. **Integration Triggers**: When an event occurs in an integrated tool (e.g., GitHub, Slack), trigger an action in ClickUp.\n\n**Advanced Automation Features:**\n\nClickUp also offers some advanced automation features, including:\n\n1. **Multi-Step Automations**: Create complex workflows with multiple triggers and actions.\n2. **Conditional Logic**: Use IF-THEN statements to create more advanced logic in your automation rules.\n3. **Variable Assignment**: Assign variables to tasks or custom fields, allowing you to create more dynamic workflows.\n\nClickUp's automation features are highly customizable, and the possibilities are endless. With a little creativity, you can create workflows that save your team hours of time and increase productivity.\n\nDo you have any specific use cases or workflows in mind that you'd like to automate with ClickUp? I'd be happy to help you explore the possibilities!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_235eb6fb",
+      "turnIndex": 9,
+      "date": "2023/05/24 (Wed) 23:58",
+      "role": "assistant",
+      "text": "As a senior marketing analyst, you'll want to focus on high-leverage activities like strategy development, data analysis, and stakeholder management. Automating routine tasks with ClickUp can help you achieve that.\n\nHere are some automation ideas for your marketing analytics role:\n\n1. **Task Assignment**: When a new project is created, automatically assign tasks to team members based on their roles, expertise, or workload.\n2. **Task Templates**: Create task templates for repetitive tasks, such as social media posting or data analysis, and automate the creation of these tasks with pre-filled information.\n3. **Progress Tracking**: Set up automation rules to update task statuses or add comments when team members complete tasks, ensuring you're always aware of project progress.\n4. **Data Import**: Automate the import of data from various sources (e.g., Google Analytics, social media APIs) into ClickUp, saving you time and reducing manual errors.\n5. **Report Generation**: Create automated reports that compile data from various tasks and projects, providing you with a bird's-eye view of performance metrics.\n6. **Notifications**: Set up notifications to alert you when tasks are completed, delayed, or require your attention, ensuring you're always on top of project timelines.\n7. **Custom Field Updates**: Automate the update of custom fields, such as task priority or category, based on specific conditions, like task completion or deadline changes.\n8. **Project Templates**: Create project templates with pre-configured tasks, workflows, and automation rules, making it easy to spin up new projects quickly.\n\nBy automating these tasks, you'll be able to:\n\n* Free up more time for strategic planning and analysis\n* Reduce manual errors and increase data accuracy\n* Improve team collaboration and communication\n* Enhance project visibility and transparency\n* Scale your operations more efficiently\n\nAs you explore ClickUp's automation features, remember to start small and focus on the tasks that will have the greatest impact on your workflow. You can always add more automation rules as you become more comfortable with the tool.\n\nHow do you think you'll approach automating your workflows in ClickUp? Will you start with a specific task or project, or do you have a broader strategy in mind?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_BKl952A_23",
+      "turnIndex": 1,
+      "date": "2023/05/25 (Thu) 03:32",
+      "role": "user",
+      "text": "act as bailey:\n\nYou 6:07 AM\nInvited\nAmy Scott, M.Ed., LPC Associate\nto connect\nHi Dr. Scott,\n\nI was looking at your profile and, based on your experience, I would like to talk to you about some of the exciting counseling and psychiatric work we have at Televero Health.\n\nWhat do you think about scheduling a quick call to discuss this? Is there a time that works best for you?\nThursday\nYou 3:38 PM\nThanks for connecting, Dr. Scott.\n\nI work at Televero Health and we are currently recruiting for psychiatry positions that complement your skills very well.\n\nIs it possible for us to schedule a call so we can discuss this further?\n\nLooking forward to your response.\n\nBest regards,\nBailey\n\nhttps://calendly.com/bailey-baker-1/30min\nAmy Scott, M.Ed., LPC Associate 11:12 PM\nI am not a psychiatrist. I am a LPC Associate. \nSeen by Amy Scott, M.Ed., LPC Associate at 3/16/23, 11:12 PM\nCompose a new message\n\nType your message here…\nType your message here…\n\nAttach a file\n\nSend\nRecipient information\n\nAmy Scott, M.Ed., LPC Associate \n· 1st\nWomen's Health Specialist at Exact Sciences\nPlano, Texas, United States",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_BKl952A_23",
+      "turnIndex": 2,
+      "date": "2023/05/25 (Thu) 03:32",
+      "role": "assistant",
+      "text": "Hi Amy,\n\nThank you for your response and clarification. I apologize for the confusion. At Televero Health, we are currently focusing on hiring psychiatrists and Licensed Clinical Social Workers (LCSWs). While we value your experience as an LPC Associate, our current openings are specifically for psychiatrists and LCSWs.\n\nWe appreciate your interest and will keep your information on file for future opportunities that may align with your qualifications. Thank you again for connecting, and I wish you continued success in your career.\n\nBest regards,\nBailey Baker",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_BKl952A_23",
+      "turnIndex": 5,
+      "date": "2023/05/25 (Thu) 03:32",
+      "role": "user",
+      "text": "what is a LPC Associate.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_BKl952A_23",
+      "turnIndex": 7,
+      "date": "2023/05/25 (Thu) 03:32",
+      "role": "user",
+      "text": "act as bailey:\n\nThis is the very beginning of your conversation with Weston\nThursday\nYou 3:52 PM\nInvited\nWeston Grove, MD, MPH\nto connect\nHi Dr. Grove,\n\nI was looking at your profile and, based on your experience, I would like to talk to you about some of the exciting counseling and psychiatric work we have at Televero Health.\n\nWhat do you think about scheduling a quick call to discuss this? Is there a time that works best for you?\nSeen by Weston Grove, MD, MPH at 3/16/23, 3:52 PM\nCompose a new message\n\nType your message here…\nType your message here…\n\nAttach a file\n\nSend\nRecipient information\n\nWeston Grove, MD, MPH \n· 1st\nPsychiatry Resident at UT Health Houston\nHouston, Texas, United States",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "ultrachat_86927",
+      "turnIndex": 1,
+      "date": "2023/05/25 (Thu) 09:36",
+      "role": "assistant",
+      "text": "Sure, here are some resources and tools that small business owners can use to improve their online marketing strategies:\n\n1. Google Analytics - It's a free web analytics tool that helps you track and analyze website traffic and user behavior.\n\n2. Mailchimp - It's an email marketing platform that allows you to create, send, and track email campaigns to your customers.\n\n3. Hootsuite - It's a social media management tool that lets you schedule and publish social media posts, monitor mentions and analytics, and engage with your followers.\n\n4. Canva - It's a graphic design tool that allows you to create professional-looking visual content for your website and social media accounts.\n\n5. Moz - It's an SEO tool that helps you improve your website's search engine rankings through keyword research, on-page optimization, and link building.\n\n6. Google My Business - It's a free tool from Google that lets you manage your business profile on Google, including your business location, opening hours, and customer reviews.\n\n7. SEMrush - It's an all-in-one digital marketing tool that provides insights into your SEO, PPC, social media, and content marketing strategies.\n\n8. Buffer - It's a social media scheduling tool that helps you streamline your social media marketing by allowing you to schedule posts across multiple platforms.\n\n9. Yoast - It's a WordPress plugin that helps you optimize your website's content for SEO by providing real-time feedback and suggestions.\n\n10. HubSpot - It's an all-in-one marketing automation platform that helps you create a comprehensive inbound marketing strategy.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "ultrachat_371333",
+      "turnIndex": 1,
+      "date": "2023/05/28 (Sun) 04:42",
+      "role": "assistant",
+      "text": "I don't have personal experiences or feelings, but here are some suggestions for international students on how they can gain experience in their field of study if they are unable to secure an internship:\n\n1. volunteer work: consider volunteering with a non-profit, community organization or social enterprise related to your field of study. this will give you practical experience and networking opportunities, and you will be contributing to society in a positive manner.\n\n2. online courses: take online courses or certification programs to expand your knowledge and gain practical skills.\n\n3. freelancing: consider freelancing in your field of study by offering your services to small businesses or startups. this can give you valuable experience and help you build your network.\n\n4. join student organizations: join student organizations and clubs related to your field of study. these groups often host events and offer opportunities to connect with professionals in your field.\n\n5. research projects: conduct research projects or participate in a research program within your university or course of study where you can develop practical skills and add value to your academic curriculum. \n\n6. attend conferences or seminars: attend conferences or seminars related to your field of study. this will give you an opportunity to learn from experts in your industry and network with professionals in your field. \n\n7. mentorship: find a mentor or network with other professionals in your industry to learn from their experiences and gain valuable insight into the industry you are interested in. \n\nit is important to remember that gaining experience in any field can take time and effort. don’t give up on pursuing your passions and continue seeking new opportunities to gain practical skills and knowledge.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 25339,
+  "estimatedTokens": 6335
+}

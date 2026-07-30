@@ -1,0 +1,28 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Grocery-store spend amounts mentioned by you in the last month (relative to 2023/05/30), including online grocery/market orders.",
+  "candidateStatus": "found",
+  "missingRisk": "May be other store spend events in the past month that aren't present in the memory provided.",
+  "items": [
+    {
+      "sessionId": "answer_6a3b5c13_1",
+      "turnIndex": 0,
+      "why": "Mentions spending about $120 at Walmart during a grocery trip exactly a week before 2023/05/26 (covers the past-month window)."
+    },
+    {
+      "sessionId": "answer_6a3b5c13_2",
+      "turnIndex": 0,
+      "why": "Mentions shopping at Trader Joe's the week before last and spending about $80 between you and your sister (likely within the past-month window)."
+    },
+    {
+      "sessionId": "answer_6a3b5c13_4",
+      "turnIndex": 6,
+      "why": "Mentions ordering from Publix via Instacart last week and spending around $60 (delivery fee included in that description), which falls within the past-month window."
+    },
+    {
+      "sessionId": "answer_6a3b5c13_3",
+      "turnIndex": 0,
+      "why": "Mentions an online order with Thrive Market last month and spending around $150 on organic/sustainable products (relevant to grocery/market spend in the past month)."
+    }
+  ]
+}

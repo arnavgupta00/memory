@@ -1,0 +1,172 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Your life list / park sightings: distinct bird species you’ve seen in your local park (as tracked in your messages).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_90de9b4d_1",
+      "turnIndex": 4,
+      "date": "2023/05/24 (Wed) 01:31",
+      "role": "user",
+      "text": "That's really helpful, thanks! By the way, speaking of bird identification, I've been keeping track of the species I've seen in my local park, and I've managed to spot 27 different species so far. It's amazing how diverse the bird life is in such a small area!",
+      "why": "User states they’ve “managed to spot 27 different species” in their local park.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_90de9b4d_2",
+      "turnIndex": 2,
+      "date": "2023/05/29 (Mon) 17:18",
+      "role": "user",
+      "text": "I'll definitely bring some sunflower seeds and suet to attract the woodpeckers. By the way, speaking of woodpeckers, I just saw a Northern Flicker in my local park last weekend, which brings my total species count to 32. Do you think the suet will attract any other woodpecker species as well?",
+      "why": "User updates their local-park species total: after seeing a Northern Flicker, “brings my total species count to 32.”",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "fb5dd87f_7",
+      "turnIndex": 0,
+      "date": "2023/04/29 (Sat) 15:06",
+      "role": "user",
+      "text": "I'm planning a birding trip to a nearby sanctuary and I was wondering if you could help me with some information on the best time of year to visit and what species I might see there. By the way, I've been getting some great use out of my new spotting scope, which has been a game-changer for me - I've been using it to observe the nesting habits of a pair of American Robins in my backyard.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "fb5dd87f_7",
+      "turnIndex": 2,
+      "date": "2023/04/29 (Sat) 15:06",
+      "role": "user",
+      "text": "The sanctuary is located in southern Wisconsin, and I've been thinking of visiting it in late April or early May. Do you think that's a good time to see a variety of species, or should I plan my trip for a different time of year?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "fb5dd87f_7",
+      "turnIndex": 4,
+      "date": "2023/04/29 (Sat) 15:06",
+      "role": "user",
+      "text": "I'm also curious about the trails at the sanctuary. Are there any specific trails that are recommended for birding, or any areas that are known for certain species? And do they have any guided tours or birding events during the spring migration period?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "fb5dd87f_7",
+      "turnIndex": 6,
+      "date": "2023/04/29 (Sat) 15:06",
+      "role": "user",
+      "text": "I'd like to know more about the guided tours they offer during the spring migration period. Are they led by experienced birders or ornithologists, and do they focus on specific species or habitats?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "fb5dd87f_7",
+      "turnIndex": 8,
+      "date": "2023/04/29 (Sat) 15:06",
+      "role": "user",
+      "text": "I'd like to know more about the guides leading these tours. Are they volunteers, staff members, or contractors, and what kind of experience and training do they have? Also, are there any opportunities for participants to ask questions or interact with the guides during the tour?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "fb5dd87f_7",
+      "turnIndex": 10,
+      "date": "2023/04/29 (Sat) 15:06",
+      "role": "user",
+      "text": "I'm also curious about the logistics of the guided tours. Are there any specific rules or guidelines that participants need to follow, such as staying on designated trails or not approaching birds too closely? And what kind of equipment is provided, if any, such as binoculars or spotting scopes? By the way, speaking of spotting scopes, I've been getting some great use out of my new one, which has been a game-changer for me - I've been using it to observe the nesting habits of a pair of American Robins in my backyard.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_90de9b4d_1",
+      "turnIndex": 0,
+      "date": "2023/05/24 (Wed) 01:31",
+      "role": "user",
+      "text": "I've been trying to improve my bird photography skills, can you give me some tips on how to take better close-up shots of birds, especially ones that are skittish like the Northern Flicker?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_90de9b4d_1",
+      "turnIndex": 2,
+      "date": "2023/05/24 (Wed) 01:31",
+      "role": "user",
+      "text": "I've been trying to improve my bird identification skills too, can you give me some tips on identifying warblers and sparrows, they seem really tricky to tell apart?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_90de9b4d_1",
+      "turnIndex": 6,
+      "date": "2023/05/24 (Wed) 01:31",
+      "role": "user",
+      "text": "That's a great idea about sharing my findings with others! I've actually been using the eBird app to track my sightings and submit my data. It's been really helpful in keeping my records organized and seeing what other birders have spotted in the area.\n\nSpeaking of which, I've been wanting to explore more birding spots in my area. Do you have any recommendations for nearby nature reserves or parks that are known for their bird diversity? I'd love to venture out and see what other species I can spot!",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_90de9b4d_1",
+      "turnIndex": 8,
+      "date": "2023/05/24 (Wed) 01:31",
+      "role": "user",
+      "text": "I'm planning a trip to a nearby lake next weekend and I'm hoping to spot some waterbirds. Do you think I should bring my spotting scope or would my binoculars be enough?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_90de9b4d_1",
+      "turnIndex": 10,
+      "date": "2023/05/24 (Wed) 01:31",
+      "role": "user",
+      "text": "I think I'll bring both my binoculars and spotting scope, just in case. I've heard that the lake is a great spot for spotting Ospreys and Bald Eagles, and I'd love to get a closer look at them. Do you have any tips on how to increase my chances of spotting these birds?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_90de9b4d_2",
+      "turnIndex": 0,
+      "date": "2023/05/29 (Mon) 17:18",
+      "role": "user",
+      "text": "I'm planning a picnic in my local park this weekend and I'm wondering if you can suggest some bird-friendly food that I can bring to attract some of the birds I've been seeing lately.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_90de9b4d_2",
+      "turnIndex": 4,
+      "date": "2023/05/29 (Mon) 17:18",
+      "role": "user",
+      "text": "I'm also planning to bring some water and a birdbath to attract more birds. Do you think the birds will prefer running water or stagnant water?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_90de9b4d_2",
+      "turnIndex": 6,
+      "date": "2023/05/29 (Mon) 17:18",
+      "role": "user",
+      "text": "I'm also thinking of bringing some fresh fruits like apples and oranges to attract some birds. Do you think the birds will prefer them sliced or whole?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_90de9b4d_2",
+      "turnIndex": 8,
+      "date": "2023/05/29 (Mon) 17:18",
+      "role": "user",
+      "text": "I'm thinking of bringing some peanut butter to attract birds like woodpeckers and nuthatches. Do you think I should bring creamy or crunchy peanut butter?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_90de9b4d_2",
+      "turnIndex": 10,
+      "date": "2023/05/29 (Mon) 17:18",
+      "role": "user",
+      "text": "I'm also planning to bring my binoculars to get a closer look at the birds. Do you think I'll be able to spot any warblers or sparrows with them?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 4494,
+  "estimatedTokens": 1124
+}

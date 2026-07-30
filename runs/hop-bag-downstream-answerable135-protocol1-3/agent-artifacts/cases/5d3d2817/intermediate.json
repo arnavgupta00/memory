@@ -1,0 +1,69 @@
+[
+  {
+    "session_id": "sharegpt_ipLglky_48",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains only legal discussion about building works completion dates and Home Building Act provisions. It does not mention the user’s employment, job history, profession, or “previous occupation,” so the required information is likely not present here.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_235eb6fb",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "High—this session contains indirect, self-reported employment-role information, but it may not explicitly state the exact wording of the user’s previous occupation (e.g., job title vs. responsibilities).",
+      "claims": [
+        {
+          "turnIndex": 4,
+          "fact": "I've used Trello in my previous role as a marketing specialist at a small startup and I'm familiar with its features.",
+          "why": "Directly states the user’s previous role/occupation as a marketing specialist."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "I'm actually thinking of automating some of the workflows in my new role as a senior marketing analyst. In my previous role at the startup, I was responsible for managing a team of interns, and I had to manually assign tasks and track their progress.",
+          "why": "Provides additional context about the user’s previous role at the startup and responsibilities, which may help corroborate the previous occupation."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "sharegpt_BKl952A_23",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session contains no explicit statement of the user’s prior occupation; it only includes messages from the assistant (Bailey) and the recipients’ job titles/credentials. It’s possible the user’s occupation is not mentioned in this session.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "Televero Health is specifically looking to hire psychiatrists and Licensed Clinical Social Workers (LCSWs).",
+          "why": "Relevant to interpreting what the user might have claimed/been asked about professionally, and could provide context for the user’s previous occupation if it was discussed elsewhere."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "An LPC Associate (Licensed Professional Counselor Associate) is a pre-licensed mental health professional… working under the supervision of a fully licensed professional counselor… required to accrue supervised clinical hours before full licensure.",
+          "why": "Defines the qualification mentioned in the conversation; could help map the user’s prior role/occupation if the user’s occupation related to LPC status."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "User message: \"act as bailey:\"",
+          "why": "Indicates the user’s involvement in role-playing; may affect whether the user stated their own occupation in this context (though no explicit occupation is present here)."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "ultrachat_86927",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains no information about the user’s previous occupation. The only relevant content is advice/resources about online marketing tools and productivity; no job titles, workplaces, industries, or employment history are mentioned.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "ultrachat_371333",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains only general career/execution and well-being advice for international students (internships, time management, motivation, burnout). It does not mention the user’s previous occupation or any employment history, so the occupation is unlikely to be retrievable from this candidate session.",
+      "claims": []
+    }
+  }
+]

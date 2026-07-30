@@ -1,0 +1,23 @@
+{
+  "queryShape": "update-conflict",
+  "setBoundary": "Korean restaurants the user has tried in their city (number of distinct restaurants).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_3f9693b7_1",
+      "turnIndex": 8,
+      "why": "User states they have tried three different Korean restaurants recently and asks for suggestions."
+    },
+    {
+      "sessionId": "answer_3f9693b7_1",
+      "turnIndex": 10,
+      "why": "User describes what they ordered at the three Korean restaurants (bibimbap, spicy kimchi stew, Japchae)."
+    },
+    {
+      "sessionId": "answer_3f9693b7_2",
+      "turnIndex": 2,
+      "why": "Later user update: they say they have tried four different Korean restaurants so far in their city."
+    }
+  ]
+}

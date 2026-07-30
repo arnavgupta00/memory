@@ -1,0 +1,23 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Days per week the user attends fitness classes (from their stated class schedule).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_47152166_1",
+      "turnIndex": 0,
+      "why": "States the user attends Zumba on Tuesdays and Thursdays and weightlifting on Saturdays (core schedule info for determining days per week)."
+    },
+    {
+      "sessionId": "answer_47152166_1",
+      "turnIndex": 1,
+      "why": "Assistant restates the same schedule as reminders, reinforcing the days the user attends classes."
+    },
+    {
+      "sessionId": "answer_47152166_1",
+      "turnIndex": 3,
+      "why": "Assistant updates reminders to include logging after each class, and again lists Tuesday/Thursday/Zaturday as the class days (confirms no additional class days were added)."
+    }
+  ]
+}

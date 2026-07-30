@@ -1,0 +1,23 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Gifts purchased for sister’s birthday",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_fea2e4d3",
+      "turnIndex": 4,
+      "why": "Specifies what was bought for sister’s birthday (yellow dress and matching earrings)."
+    },
+    {
+      "sessionId": "answer_fea2e4d3",
+      "turnIndex": 6,
+      "why": "Adds more detail about the sister’s birthday earrings (pair of silver hoop earrings with a small pearl in the center)."
+    },
+    {
+      "sessionId": "answer_fea2e4d3",
+      "turnIndex": 5,
+      "why": "Assistant restates the sister’s birthday gift list (yellow dress + pair of earrings matching the dress) as context."
+    }
+  ]
+}

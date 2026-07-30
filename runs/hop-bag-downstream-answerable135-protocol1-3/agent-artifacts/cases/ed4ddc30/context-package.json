@@ -1,0 +1,64 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "answer_babbaccb_1",
+      "turnIndex": 2,
+      "date": "2023/01/11 (Wed) 23:15",
+      "role": "user",
+      "text": "I was thinking of making some egg salad for a quick lunch. Do you have a simple recipe that I can try? And by the way, I need to start using up some of our eggs, we have a lot stocked up in the fridge - 30 dozen at the moment!",
+      "why": "per-session extractor: This is the only quantitative information in the session about eggs-in-refrigerator and is directly relevant to determining how many dozen eggs are currently stocked.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_babbaccb_2",
+      "turnIndex": 2,
+      "date": "2023/03/15 (Wed) 08:18",
+      "role": "user",
+      "text": "I think I'll try the spinach and feta variation, sounds delicious. By the way, I was thinking of using some of our fresh eggs from the coop - we've got 20 dozen stocked up in the fridge right now. Do you have any tips on how to store eggs properly to keep them fresh for a longer period?",
+      "why": "per-session extractor: Directly answers the amount of eggs stocked in the refrigerator (20 dozen) at the time of this user statement.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_babbaccb_1",
+      "turnIndex": 1,
+      "date": "2023/01/11 (Wed) 23:15",
+      "role": "assistant",
+      "text": "What a wonderful combination! Fresh eggs and goat milk are a match made in heaven. Here are some delicious breakfast ideas that incorporate both ingredients:\n\n1. **Goat Milk Pancakes with Fresh Egg Syrup**: Whip up a batch of fluffy pancakes using goat milk, and top them with a sweet and savory syrup made by whisking together fresh eggs, sugar, and a pinch of salt.\n2. **Eggs en Cocotte with Goat Milk Cream**: Bake eggs in ramekins with a splash of goat milk, salt, and pepper. Add some diced ham, spinach, or mushrooms for added flavor. Serve with crusty bread for dipping in the creamy egg mixture.\n3. **Goat Milk Crepes with Scrambled Eggs and Fresh Herbs**: Make thin crepes using goat milk, then fill them with scrambled eggs, chopped fresh herbs (like parsley, chives, or dill), and a sprinkle of grated cheese.\n4. **Quiche Lorraine with Goat Milk and Fresh Eggs**: A classic French dish that's perfect for brunch. Mix fresh eggs, goat milk, grated cheese, and diced ham or bacon, then pour into a pre-baked pie crust and bake until set.\n5. **Breakfast Strata with Goat Milk and Fresh Eggs**: A layered dish made with cubed bread, fresh eggs, goat milk, and shredded cheese. Perfect for a crowd, as it can be assembled ahead of time and baked in the morning.\n6. **Goat Milk French Toast with Caramelized Bananas and Scrambled Eggs**: Dip thick slices of bread in a mixture of goat milk, eggs, and cinnamon, then cook in a skillet until golden. Serve with caramelized bananas and scrambled eggs for a sweet and satisfying breakfast.\n7. **Eggs in Purgatory with Goat Milk and Spinach**: A Mediterranean-inspired dish where eggs are poached in a spicy tomato sauce made with goat milk, then served over crusty bread with wilted spinach and a sprinkle of feta cheese.\n8. **Goat Milk Custard Tarts with Fresh Egg Yolks**: A rich and creamy dessert-for-breakfast treat. Mix goat milk, sugar, and egg yolks, then pour into pre-baked tart shells and bake until set. Top with fresh fruit or a sprinkle of powdered sugar.\n\nThese ideas should inspire you to create some delicious breakfast dishes with your fresh eggs and goat milk. Enjoy experimenting and bon appétit!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_babbaccb_1",
+      "turnIndex": 3,
+      "date": "2023/01/11 (Wed) 23:15",
+      "role": "assistant",
+      "text": "Wow, 30 dozen eggs is a lot! You'll definitely need to get creative with egg recipes. Here's a simple egg salad recipe to get you started:\n\n**Classic Egg Salad Recipe**\n\nIngredients:\n\n* 4-6 hard-boiled eggs, peeled and chopped\n* 1/4 cup mayonnaise (or to taste)\n* 1 tablespoon Dijon mustard (optional)\n* 1 tablespoon chopped fresh dill pickles (optional)\n* Salt and pepper to taste\n* Fresh chives or parsley for garnish (optional)\n\nInstructions:\n\n1. In a medium-sized bowl, combine the chopped eggs, mayonnaise, Dijon mustard (if using), and chopped pickles (if using).\n2. Mix everything together until the eggs are well coated with the dressing.\n3. Season with salt and pepper to taste.\n4. Cover and refrigerate for at least 30 minutes to allow the flavors to meld.\n5. Serve on bread, crackers, or on its own as a snack.\n\nYou can customize this recipe to your taste by adding other ingredients, such as:\n\n* Chopped onions or shallots for added flavor\n* Capers for a salty, tangy kick\n* Chopped fresh herbs like parsley, basil, or tarragon\n* Grated cheese, like cheddar or Swiss\n* A squeeze of fresh lemon juice for brightness\n\nWith 30 dozen eggs, you might want to consider making a big batch of egg salad and freezing it for later use. Simply scoop the egg salad into airtight containers or freezer bags, label, and store in the freezer for up to 3 months. Thaw and serve when needed.\n\nOther egg-based recipe ideas to help you use up your stock:\n\n* Quiches and frittatas for breakfast or brunch\n* Deviled eggs for snacks or party appetizers\n* Egg drop soup or egg noodle soup for a comforting meal\n* Baked goods like cakes, cookies, or muffins that use eggs as an ingredient\n* Pickled eggs for a tangy snack or addition to salads\n* Egg curry or shakshuka for a flavorful dinner\n\nI hope this helps you get started on using up your egg stash!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_babbaccb_2",
+      "turnIndex": 1,
+      "date": "2023/03/15 (Wed) 08:18",
+      "role": "assistant",
+      "text": "Quiche is a great choice for dinner! I'd be happy to share a simple recipe with you. Here's a classic quiche recipe that's easy to make and adaptable to your taste:\n\n**Basic Quiche Recipe**\n\nIngredients:\n\n* 1 pie crust (homemade or store-bought)\n* 3 large eggs\n* 1 1/2 cups heavy cream or half-and-half\n* 1/2 cup shredded cheese (Cheddar, Swiss, or a mix)\n* 1/2 cup diced ham, bacon, or vegetables (optional)\n* Salt and pepper to taste\n* Fresh herbs (optional)\n\nInstructions:\n\n1. Preheat your oven to 375°F (190°C).\n2. Roll out the pie crust and place it in a 9-inch tart pan with a removable bottom.\n3. In a large bowl, whisk together the eggs, heavy cream, and a pinch of salt and pepper.\n4. Add the shredded cheese and diced ham, bacon, or vegetables (if using) to the egg mixture. Mix well.\n5. Pour the egg mixture into the pie crust.\n6. Bake the quiche for 35-40 minutes or until the edges are golden brown and the center is set.\n7. Remove the quiche from the oven and let it cool for a few minutes.\n8. Garnish with fresh herbs (if using) and serve warm or at room temperature.\n\n**Variations:**\n\n* Spinach and Feta Quiche: Add 1 cup fresh spinach leaves and 1/2 cup crumbled feta cheese to the egg mixture.\n* Mushroom and Swiss Quiche: Add 1 cup sautéed mushrooms and 1/2 cup grated Swiss cheese to the egg mixture.\n* Broccoli and Cheddar Quiche: Add 1 cup steamed broccoli florets and 1/2 cup grated Cheddar cheese to the egg mixture.\n\nTips:\n\n* Blind baking the pie crust (baking it without the filling) for 5-7 minutes before adding the egg mixture can help prevent the crust from becoming soggy.\n* Use a pie shield or foil to prevent the crust from overbrowning.\n* Quiche is a great make-ahead dish; you can prepare the filling and crust separately, then assemble and bake when you're ready.\n\nEnjoy your delicious homemade quiche!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_babbaccb_2",
+      "turnIndex": 3,
+      "date": "2023/03/15 (Wed) 08:18",
+      "role": "assistant",
+      "text": "The spinach and feta quiche is a fantastic combination.\n\nWow, 20 dozen eggs is a lot! Congratulations on having a thriving coop! Proper storage is crucial to keep your eggs fresh for a longer period. Here are some tips to help you store your eggs:\n\n1. **Cool, dry place:** Store eggs in a cool, dry place, away from direct sunlight and heat sources. The ideal storage temperature is between 40°F (4°C) and 50°F (10°C).\n2. **Refrigerate:** Store eggs in the refrigerator at a consistent temperature below 40°F (4°C). This will help prevent bacterial growth and keep eggs fresh for a longer period.\n3. **Carton or container:** Store eggs in their original carton or a covered container to protect them from moisture, light, and contamination. Make sure the container is clean and dry before placing the eggs inside.\n4. **Pointed end down:** Store eggs with the pointed end down to prevent the yolk from coming into contact with the shell membrane, which can cause bacterial contamination.\n5. **Don't wash:** Avoid washing eggs before storing them. Washing can remove the natural coating on the eggshell, making it more susceptible to bacterial penetration.\n6. **Check regularly:** Regularly check your eggs for cracks, breaks, or unusual odors. Remove any spoiled eggs to prevent contamination.\n7. **First-in, first-out:** Use the oldest eggs first to ensure you're consuming the freshest eggs.\n8. **Label and date:** Label the carton or container with the date you collected the eggs, so you can keep track of their age.\n9. **Don't stack:** Avoid stacking eggs on top of each other, as this can cause pressure and lead to breakage.\n10. **Freezing:** If you have an excess of eggs, you can freeze them. Beat the eggs, add a pinch of salt or sugar (depending on your intended use), and store them in an airtight container or freezer bag. Frozen eggs are perfect for baking, scrambling, or making omelets.\n\nBy following these tips, you can enjoy your fresh eggs for a longer period. Generally, eggs can be stored for:\n\n* 4 to 5 weeks in the refrigerator\n* 1 year or longer in the freezer (if frozen)\n\nRemember to always handle eggs safely and hygienically to prevent the risk of Salmonella and other bacterial contamination.\n\nNow, go ahead and enjoy your fresh eggs in that delicious spinach and feta quiche!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 8664,
+  "estimatedTokens": 2166
+}

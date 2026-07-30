@@ -1,0 +1,253 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "the frozen retriever bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "answer_sharegpt_qTi81nS_0",
+      "turnIndex": 0,
+      "date": "2023/05/20 (Sat) 10:04",
+      "role": "user",
+      "text": "Write me the beginning of a script (formatted like a real movie script) for a comedy movie scene, based on the below information:\n\nAndy, a man in his 40s, is the Head of Computing at a rural high school. He has a loud, deep voice, and has more confidence than he has intelligence. He wants to be friends with his colleague exam invigilator John, so often tries and fails to impress him with his elaborate stories. He often bangs on about how he presents the school talent show. He has poor personal hygiene and can often be found making moaning noises while using disabled toilets, despite him having no obvious disability. Andy wears an untidy, stained white shirt. When addressing a group he starts with the words \"Right guys, settle down\".\n\nRoger, a man in his 50s, is a computing teacher working under Andy. He is an intelligent man, with grey hair and a laid back attitude to teaching. His classes are often out of control, while he sits there in despair. He has quiet contempt at the fact that Andy is the head of department, because he knows that he is much more qualified than Andy.\n\nJohn is a 69 year old man working as an exam invigilator. As he is past retirement it is unusual that he is still working, but we suspect it might be because he enjoys making people uncomfortable. John has wispy, grey hair and wears a pinstripe suit, several gold rings and red tinted glasses. He makes brazen, inappropriate remarks towards his colleagues.\n\nRuth, a woman in her 40s, is a languages teacher at the high school. She is so obsessed with the German language and culture that she regularly speaks to people in German and they don't understand what she's saying. She is attracted to women and regularly has to deter John's advances.",
+      "why": "annotation fact anchor; lexical score 52",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_sharegpt_qTi81nS_0",
+      "turnIndex": 3,
+      "date": "2023/05/20 (Sat) 10:04",
+      "role": "assistant",
+      "text": "INT. RURAL HIGH SCHOOL - DISABLED TOILET - DAY\n\nAndy is heard making moaning noises from inside the disabled toilet. He is not visibly disabled.\n\nROGER:\n(knocking on the door)\nAndy, are you in there?\n\nANDY:\n(groaning)\nYeah, just a minute.\n\nROGER:\n(sighing)\nWhat are you doing in there?\n\nANDY:\n(still moaning)\nI don't know, I just felt like making some noise.\n\nROGER:\n(exasperated)\nAndy, you can't just use the disabled toilet for no reason. You're not disabled.\n\nANDY:\n(defensive)\nI'm the head of department, I can do what I want.\n\nROGER:\n(shaking his head)\nYou need to get your act together, Andy.\n\nThe scene ends with Andy exiting the disabled toilet, looking sheepish.",
+      "why": "raw lexical; lexical score 20",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_sharegpt_qTi81nS_0",
+      "turnIndex": 5,
+      "date": "2023/05/20 (Sat) 10:04",
+      "role": "assistant",
+      "text": "INT. RURAL HIGH SCHOOL - STAFF ROOM - DAY\n\nAndy is sitting at a table, trying to impress John with one of his elaborate stories.\n\nANDY:\n...and then I was like, \"Right guys, settle down\" and they all listened to me. It was amazing.\n\nJOHN:\n(69 year old man with wispy, grey hair and red tinted glasses)\nThat's impressive, Andy.\n\nRUTH:\n(woman in her 40s, speaking in German)\nJa, das ist beeindruckend, Andy.\n\nANDY:\n(confused)\nThanks, Ruth. I'm glad you enjoyed my story.\n\nROGER:\n(rolling his eyes)\nAndy, you always have the most interesting stories.\n\nANDY:\n(defensive)\nWhat's that supposed to mean?\n\nROGER:\n(sarcastically)\nIt means that your stories are always exaggerated and not very believable.\n\nANDY:\n(offended)\nWell, maybe you just don't have a good sense of humor.\n\nJOHN:\n(making a lewd comment)\nMaybe you just need to lighten up, Ruth.\n\nRUTH:\n(deterring John's advances)\nJohn, please. I'm not interested.\n\nThe scene ends with Andy looking dejected and the other teachers awkwardly avoiding eye contact with him.",
+      "why": "raw lexical; lexical score 20",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "sharegpt_2LrB18X_51",
+      "turnIndex": 1,
+      "date": "2023/05/25 (Thu) 22:59",
+      "role": "user",
+      "text": "Have the daughter protest mildly as her mom puts her clothing in the toilet.",
+      "why": "annotation event anchor; lexical score 2",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "sharegpt_2LrB18X_51",
+      "turnIndex": 3,
+      "date": "2023/05/25 (Thu) 22:59",
+      "role": "user",
+      "text": "Have the mother respond to the daughter's protest, explaining why her clothing needs to be flushed.",
+      "why": "annotation event anchor; lexical score 2",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "sharegpt_2LrB18X_51",
+      "turnIndex": 5,
+      "date": "2023/05/25 (Thu) 22:59",
+      "role": "user",
+      "text": "Move the part about the mother going #1 and #2 before the part about flushing the clothing.",
+      "why": "annotation event anchor; lexical score 22",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "sharegpt_2LrB18X_51",
+      "turnIndex": 7,
+      "date": "2023/05/25 (Thu) 22:59",
+      "role": "user",
+      "text": "Have the mother and daughter go through the protest and goodbyes separately for the shirt then the overalls.",
+      "why": "annotation event anchor; lexical score 12",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "cfd21744_2",
+      "turnIndex": 0,
+      "date": "2023/05/29 (Mon) 19:27",
+      "role": "user",
+      "text": "I'm looking for some outfit inspiration. I recently got a beautiful silk blouse from a local boutique in my neighborhood, and I want to know how to style it for a work event. Can you give me some suggestions?",
+      "why": "annotation fact anchor; lexical score 2",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "cfd21744_2",
+      "turnIndex": 2,
+      "date": "2023/05/29 (Mon) 19:27",
+      "role": "user",
+      "text": "I really like the \"Blazer and Blouse\" suggestion. I have a cashmere blend cardigan that I've been wearing a lot lately, do you think it would work as a substitute for a blazer?",
+      "why": "annotation fact anchor; lexical score 12",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "cfd21744_2",
+      "turnIndex": 4,
+      "date": "2023/05/29 (Mon) 19:27",
+      "role": "user",
+      "text": "I like that idea. I also have a pair of high-waisted trousers from Zara that I recently got. Do you think they would work well with the cardigan and blouse?",
+      "why": "annotation fact anchor; lexical score 2",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "cfd21744_2",
+      "turnIndex": 7,
+      "date": "2023/05/29 (Mon) 19:27",
+      "role": "assistant",
+      "text": "Black ankle boots can be a great addition to your outfit, but it depends on the overall vibe you're going for. Here's what to consider:\n\n**Boots can add an edgy touch:** If you want to add a bit of edge to your outfit, the black ankle boots could be a great choice. They'll create a more casual, cool-girl vibe that's perfect for a more relaxed work event or a creative industry setting.\n\n**Boots can also dress down the outfit:** Since your blouse and cardigan are quite elegant, the boots might dress down the overall look. If you're attending a more formal work event or want to keep the outfit more polished, you might want to stick with pumps or loafers.\n\n**Consider the height:** Since the boots are ankle boots, they'll create a slightly more relaxed, casual silhouette. If you're wearing high-waisted trousers, the boots might make your legs appear shorter. To balance this out, you could try cuffing the trousers or wearing a longer cardigan to create a more balanced line.\n\n**Think about the occasion:** If you're attending a work event that's more formal or traditional, you might want to stick with pumps or loafers. However, if you're attending a more creative or casual work event, the boots could be a great choice.\n\nHere's an updated outfit idea incorporating the boots:\n\n* Silk blouse in a bold color or pattern\n* Cashmere blend cardigan in a neutral color (e.g., navy, gray, beige)\n* High-waisted trousers from Zara in a neutral color (e.g., black, navy, gray)\n* Black ankle boots from Sam Edelman\n* Simple jewelry, such as a classic watch and a simple necklace or earrings\n\nIf you do decide to wear the boots, try to balance them out with a more polished top half. For example, you could add a statement necklace or a pair of elegant earrings to dress up the outfit. Ultimately, it's all about finding the right balance between the different pieces to create a look that feels confident and stylish!",
+      "why": "raw lexical; lexical score 20",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "cfd21744_2",
+      "turnIndex": 9,
+      "date": "2023/05/29 (Mon) 19:27",
+      "role": "assistant",
+      "text": "Adding a belt can be a great way to define your waist and create a more defined silhouette. Here's what to consider:\n\n**Belt style:** Since you're going for an edgy, modern look with the boots, you might want to opt for a sleek, modern belt style. A thin, patent leather belt or a metal buckle belt could add a cool, industrial touch to the outfit.\n\n**Belt color:** Choose a belt color that complements your boots and trousers. Since your boots are black, you could opt for a black or dark brown belt to create a cohesive look. If you want to add some contrast, you could try a lighter-colored belt, like beige or gray.\n\n**Belt width:** A narrower belt will create a more defined waistline, while a wider belt will add more visual interest. Since you're wearing high-waisted trousers, a narrower belt might be a better choice to create a more streamlined look.\n\n**Cardigan-open or closed:** If you add a belt, you might want to wear the cardigan open to showcase your waist. This will create a more defined silhouette and draw attention to your waistline. Alternatively, you could wear the cardigan closed and use the belt to add some texture and interest to the outfit.\n\nHere's an updated outfit idea incorporating the belt:\n\n* Silk blouse in a bold color or pattern\n* Cashmere blend cardigan in a neutral color (e.g., navy, gray, beige)\n* High-waisted trousers from Zara in a neutral color (e.g., black, navy, gray)\n* Black ankle boots from Sam Edelman\n* Thin, patent leather belt or metal buckle belt in black or dark brown\n* Simple jewelry, such as a classic watch and a simple necklace or earrings\n\nBy adding the belt, you'll create a more defined waistline and add some visual interest to the outfit. The boots will still add an edgy touch, while the belt will help to balance out the look. Plus, the comfort factor is a major bonus!",
+      "why": "raw lexical; lexical score 20",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "cfd21744_2",
+      "turnIndex": 11,
+      "date": "2023/05/29 (Mon) 19:27",
+      "role": "assistant",
+      "text": "You're welcome! I'm thrilled to have been able to help. Your outfit sounds like it's coming together perfectly! The thin, patent leather belt in black will add a sleek, modern touch to the outfit, and wearing the cardigan open will create a beautiful, defined silhouette.\n\nRemember, accessorizing is all about balance and harmony. By adding the belt, you're creating a cohesive look that ties together the boots, trousers, and cardigan. And don't forget, the silk blouse is the star of the show, so make sure it's not getting lost under the cardigan.\n\nIf you have any more questions or need further guidance, feel free to ask. Otherwise, go out there and rock that outfit! You've got this!\n\nP.S. Don't forget to own that outfit and have fun with it! Confidence is the best accessory, after all.",
+      "why": "raw lexical; lexical score 10",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_sharegpt_qTi81nS_0",
+      "turnIndex": 1,
+      "date": "2023/05/20 (Sat) 10:04",
+      "role": "assistant",
+      "text": "INT. RURAL HIGH SCHOOL - COMPUTING DEPARTMENT - DAY\n\nAndy, a man in his 40s with a loud, deep voice and poor personal hygiene, is standing in front of the department's whiteboard. He wears an untidy, stained white shirt.\n\nANDY:\nRight guys, settle down. I just wanted to let you all know that this year's talent show is going to be bigger and better than ever. I'm putting in a lot of hard work to make sure it's a success.\n\nROGER:\n(sitting in the back of the room)\nYeah, sure Andy. We all know how much work you put into the talent show.\n\nANDY:\n(ignoring Roger's sarcasm)\nAnd John, I know you'll be there to help me out as usual.\n\nJOHN:\n(69 year old man with wispy, grey hair and red tinted glasses)\nI'll be there to make sure no one cheats, Andy.\n\nRUTH:\n(woman in her 40s, speaking in German)\nJa, John wird da sein, um sicherzustellen, dass niemand betrügt.\n\nANDY:\n(confused)\nUm, thanks Ruth. I'll make sure to brush up on my German before the talent show.\n\nROGER:\n(rolling his eyes)\nGood luck with that, Andy.\n\nANDY:\n(determined)\nI'll show you all that I'm a great talent show presenter. You just wait and see.\n\nROGER:\n(under his breath)\nI'll believe it when I see it.\n\nThe scene ends with Andy confidently walking out of the room, while the other teachers look on in amusement.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_sharegpt_qTi81nS_0",
+      "turnIndex": 2,
+      "date": "2023/05/20 (Sat) 10:04",
+      "role": "user",
+      "text": "Write another scene",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_sharegpt_qTi81nS_0",
+      "turnIndex": 4,
+      "date": "2023/05/20 (Sat) 10:04",
+      "role": "user",
+      "text": "Write another scene",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_2LrB18X_51",
+      "turnIndex": 0,
+      "date": "2023/05/25 (Thu) 22:59",
+      "role": "assistant",
+      "text": "Mother: (grabbing some wipes) Okay, sweetie, let's get you cleaned up. (carefully removing the soiled diaper, overalls, and shirt)\n\nDaughter: (whining) I don't want to take these off, they're my favorite!\n\nMother: I know, honey, but they're all dirty now. We need to get you into some clean clothes.\n\nMother: (putting the dirty diaper and wipes in the toilet) Alright, let's get this over with. (sitting down on the toilet, taking care of her #1 and #2, wiping herself clean)\n\nDaughter: (pouting as she watches her clothes disappear down the drain) Bye bye, overalls and shirt. I'll miss you.\n\nMother: (flushing the overalls and shirt separately)\n\nMother: (putting a new diaper on the daughter and helping her into a fresh outfit) There you go, all clean and fresh.\n\nDaughter: (excitedly looking at her new yellow sundress with white flowers and matching sandals) Yay, I love this dress!\n\nMother: (finishing cleaning up the bathroom) That's better.\n\nMother: (grateful for the extra set of clothes she had packed in the diaper bag) Thank goodness for that extra outfit.\n\nDaughter: (happy to be feeling fresh and clean again) I feel so much better now.\n\nMother: (relieved that everything had been successfully flushed away without any problems) Phew, that was a close one. Let's not have any more diaper blowouts for a while, okay?\n\nDaughter: (nodding) Okay, Mama. I'll be more careful.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_2LrB18X_51",
+      "turnIndex": 2,
+      "date": "2023/05/25 (Thu) 22:59",
+      "role": "assistant",
+      "text": "Mother: (grabbing some wipes) Okay, sweetie, let's get you cleaned up. (carefully removing the soiled diaper, overalls, and shirt)\n\nDaughter: (whining) I don't want to take these off, they're my favorite!\n\nMother: I know, honey, but they're all dirty now. We need to get you into some clean clothes.\n\nMother: (putting the dirty diaper and wipes in the toilet) Alright, let's get this over with.\n\nDaughter: (mildly protesting as she watches her clothes go into the toilet) No, Mama, not my overalls and shirt!\n\nMother: (sitting down on the toilet, taking care of her #1 and #2, wiping herself clean)\n\nDaughter: (pouting as she watches her clothes disappear down the drain) Bye bye, overalls and shirt. I'll miss you.\n\nMother: (flushing the overalls and shirt separately)\n\nMother: (putting a new diaper on the daughter and helping her into a fresh outfit) There you go, all clean and fresh.\n\nDaughter: (excitedly looking at her new yellow sundress with white flowers and matching sandals) Yay, I love this dress!\n\nMother: (finishing cleaning up the bathroom) That's better.\n\nMother: (grateful for the extra set of clothes she had packed in the diaper bag) Thank goodness for that extra outfit.\n\nDaughter: (happy to be feeling fresh and clean again) I feel so much better now.\n\nMother: (relieved that everything had been successfully flushed away without any problems) Phew, that was a close one. Let's not have any more diaper blowouts for a while, okay?\n\nDaughter: (nodding) Okay, Mama. I'll be more careful.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_2LrB18X_51",
+      "turnIndex": 4,
+      "date": "2023/05/25 (Thu) 22:59",
+      "role": "assistant",
+      "text": "Mother: (grabbing some wipes) Okay, sweetie, let's get you cleaned up. (carefully removing the soiled diaper, overalls, and shirt)\n\nDaughter: (whining) I don't want to take these off, they're my favorite!\n\nMother: I know, honey, but they're all dirty now. We need to get you into some clean clothes.\n\nMother: (putting the dirty diaper and wipes in the toilet) Alright, let's get this over with.\n\nDaughter: (mildly protesting as she watches her clothes go into the toilet) No, Mama, not my overalls and shirt!\n\nMother: I'm sorry, sweetie, but we can't keep them. They're covered in yucky stuff from the diaper. We need to flush them away so we can clean up and get you into some fresh clothes.\n\nDaughter: (pouting as she watches her clothes disappear down the drain) Bye bye, overalls and shirt. I'll miss you.\n\nMother: (sitting down on the toilet, taking care of her #1 and #2, wiping herself clean)\n\nMother: (flushing the overalls and shirt separately)\n\nMother: (putting a new diaper on the daughter and helping her into a fresh outfit) There you go, all clean and fresh.\n\nDaughter: (excitedly looking at her new yellow sundress with white flowers and matching sandals) Yay, I love this dress!\n\nMother: (finishing cleaning up the bathroom) That's better.\n\nMother: (grateful for the extra set of clothes she had packed in the diaper bag) Thank goodness for that extra outfit.\n\nDaughter: (happy to be feeling fresh and clean again) I feel so much better now.\n\nMother: (relieved that everything had been successfully flushed away without any problems) Phew, that was a close one. Let's not have any more diaper blowouts for a while, okay?\n\nDaughter: (nodding) Okay, Mama. I'll be more careful.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_2LrB18X_51",
+      "turnIndex": 6,
+      "date": "2023/05/25 (Thu) 22:59",
+      "role": "assistant",
+      "text": "Mother: (grabbing some wipes) Okay, sweetie, let's get you cleaned up. (carefully removing the soiled diaper, overalls, and shirt)\n\nDaughter: (whining) I don't want to take these off, they're my favorite!\n\nMother: I know, honey, but they're all dirty now. We need to get you into some clean clothes.\n\nMother: (sitting down on the toilet, taking care of her #1 and #2, wiping herself clean) Alright, let's get this over with.\n\nMother: (putting the dirty diaper and wipes in the toilet)\n\nDaughter: (mildly protesting as she watches her clothes go into the toilet) No, Mama, not my overalls and shirt!\n\nMother: I'm sorry, sweetie, but we can't keep them. They're covered in yucky stuff from the diaper. We need to flush them away so we can clean up and get you into some fresh clothes.\n\nDaughter: (pouting as she watches her clothes disappear down the drain) Bye bye, overalls and shirt. I'll miss you.\n\nMother: (flushing the overalls and shirt separately)\n\nMother: (putting a new diaper on the daughter and helping her into a fresh outfit) There you go, all clean and fresh.\n\nDaughter: (excitedly looking at her new yellow sundress with white flowers and matching sandals) Yay, I love this dress!\n\nMother: (finishing cleaning up the bathroom) That's better.\n\nMother: (grateful for the extra set of clothes she had packed in the diaper bag) Thank goodness for that extra outfit.\n\nDaughter: (happy to be feeling fresh and clean again) I feel so much better now.\n\nMother: (relieved that everything had been successfully flushed away without any problems) Phew, that was a close one. Let's not have any more diaper blowouts for a while, okay?\n\nDaughter: (nodding) Okay, Mama. I'll be more careful.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_2LrB18X_51",
+      "turnIndex": 8,
+      "date": "2023/05/25 (Thu) 22:59",
+      "role": "assistant",
+      "text": "Mother: (grabbing some wipes) Okay, sweetie, let's get you cleaned up. (carefully removing the soiled diaper, overalls, and shirt)\n\nDaughter: (whining) I don't want to take these off, they're my favorite!\n\nMother: I know, honey, but they're all dirty now. We need to get you into some clean clothes.\n\nMother: (sitting down on the toilet, taking care of her #1 and #2, wiping herself clean) Alright, let's get this over with.\n\nMother: (putting the dirty diaper and wipes in the toilet)\n\nDaughter: (mildly protesting as she watches her shirt go into the toilet) No, Mama, not my shirt!\n\nMother: I'm sorry, sweetie, but we can't keep it. It's covered in yucky stuff from the diaper. We need to flush it away so we can clean up and get you into some fresh clothes.\n\nDaughter: (pouting as she watches her shirt disappear down the drain) Bye bye, shirt. I'll miss you.\n\nMother: (flushing the shirt)\n\nDaughter: (mildly protesting as she watches her overalls go into the toilet) No, Mama, not my overalls!\n\nMother: I'm sorry, honey, but we can't keep them either. They're covered in the same yucky stuff. We need to flush them away so we can finish cleaning up and get you into your fresh outfit.\n\nDaughter: (pouting as she watches her overalls disappear down the drain) Bye bye, overalls. I'll miss you too.\n\nMother: (flushing the overalls)\n\nMother: (putting a new diaper on the daughter and helping her into a fresh outfit) There you go, all clean and fresh.\n\nDaughter: (excitedly looking at her new yellow sundress with white flowers and matching sandals) Yay, I love this dress!\n\nMother: (finishing cleaning up the bathroom) That's better.\n\nMother: (grateful for the extra set of clothes she had packed in the diaper bag) Thank goodness for that extra outfit.\n\nDaughter: (happy to be feeling fresh and clean again) I feel so much better now.\n\nMother: (relieved that everything had been successfully flushed away without any problems) Phew, that was a close one. Let's not have any more diaper blowouts for a while, okay?\n\nDaughter: (nodding) Okay, Mama. I'll be more careful.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "cfd21744_2",
+      "turnIndex": 1,
+      "date": "2023/05/29 (Mon) 19:27",
+      "role": "assistant",
+      "text": "I'd be delighted to help! Congratulations on your new silk blouse, and I'm sure it's lovely. Styling a beautiful blouse for a work event can be a great way to make a statement and feel confident. Here are some outfit suggestions to inspire you:\n\n**Classic and Chic**\n\n* Pair the silk blouse with a tailored pencil skirt or a fitted A-line skirt in a neutral color like black, navy, or beige. This creates a timeless, professional look that's perfect for a work event.\n* Add a pair of low to medium-heeled pumps in a neutral color to complete the outfit.\n\n**Modern and Sophisticated**\n\n* Combine the blouse with a pair of well-fitted trousers in a lightweight material like wool or cotton. A neutral color like gray, beige, or navy will provide a sleek backdrop for your blouse.\n* Add a statement piece of jewelry, like a bold necklace or earrings, to add some visual interest to your outfit.\n\n**Blazer and Blouse**\n\n* Layer a tailored blazer over your blouse to add a professional touch. Look for a blazer in a neutral color that complements your blouse.\n* Pair the blazer and blouse with a pair of fitted trousers or a pencil skirt for a polished look.\n\n**Add Some Texture**\n\n* Mix and match different textures to add depth to your outfit. For example, pair the silk blouse with a pair of velvet or suede trousers or a skirt.\n* Add a pair of tights or stockings in a neutral color to add some extra texture and interest.\n\n**Play with Neutrals**\n\n* Use your silk blouse as a statement piece and pair it with neutral-colored pieces like a white or beige pencil skirt or trousers.\n* Add a pop of color with a scarf, belt, or shoes to break up the neutral palette.\n\n**Accessories Make a Difference**\n\n* Choose a simple yet elegant clutch or a small crossbody bag to complement your outfit.\n* Add a pair of elegant earrings or a simple necklace to complete your look.\n\nRemember, the key to styling a beautiful blouse is to balance it with complementary pieces that don't overpower it. Experiment with different combinations to find the one that makes you feel confident and stylish!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "cfd21744_2",
+      "turnIndex": 3,
+      "date": "2023/05/29 (Mon) 19:27",
+      "role": "assistant",
+      "text": "A cashmere blend cardigan can be a great substitute for a blazer, especially if it's well-fitted and has a more structured silhouette. Here are a few things to consider to make it work:\n\n**Fit:** Make sure the cardigan fits you well and isn't too slouchy or oversized. You want it to skim your body and create a clean line over your blouse.\n\n**Style:** Opt for a cardigan with a more tailored or fitted silhouette, rather than a loose, open-front cardigan. This will help create a more polished, blazer-like look.\n\n**Color:** Choose a neutral color that complements your blouse. If your blouse is bold or brightly colored, a neutral-colored cardigan will help tone it down and create a more professional look. If your blouse is more subdued, you can opt for a cardigan in a slightly bolder color to add some contrast.\n\n**Layering:** Make sure to layer the cardigan over your blouse correctly. You can either wear it open, with the blouse visible underneath, or closed, with the cardigan buttons or zipper done up. Experiment with both options to see what looks best on you.\n\n**Add some structure:** To give your outfit a more polished, blazer-like feel, add some structure with a pair of trousers or a pencil skirt. This will help balance out the softness of the cardigan.\n\nHere's an example of how you could style your outfit:\n\n* Silk blouse in a bold color or pattern\n* Cashmere blend cardigan in a neutral color (e.g., navy, gray, beige)\n* Fitted trousers or pencil skirt in a neutral color (e.g., black, navy, gray)\n* Low to medium-heeled pumps or loafers in a neutral color\n* Simple jewelry, such as a classic watch and a simple necklace or earrings\n\nBy following these tips, you can create a polished, professional look that's perfect for a work event. The cashmere blend cardigan will add a touch of sophistication and elegance to your outfit, while the silk blouse will still be the star of the show!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "cfd21744_2",
+      "turnIndex": 5,
+      "date": "2023/05/29 (Mon) 19:27",
+      "role": "assistant",
+      "text": "High-waisted trousers from Zara can be a great addition to your outfit. Here's why they might work well:\n\n**High-waisted trousers are on-trend:** High-waisted trousers are currently a popular trend, and pairing them with a classic silk blouse and a cashmere blend cardigan can create a stylish, modern look.\n\n**Balance out the volume:** High-waisted trousers can help balance out the volume of the cardigan, creating a more streamlined silhouette. The higher rise will also elongate your legs and create a longer, more balanced line from head to toe.\n\n**Create a cohesive look:** Since the trousers are from Zara, they likely have a modern, fashion-forward vibe that will complement the sleek, sophisticated feel of the silk blouse and cashmere blend cardigan.\n\n**Consider the fabric:** Make sure the fabric of the trousers is suitable for a work event. If they're made of a lightweight, stretchy material, they might be perfect for a more casual work setting. If you're attending a more formal event, you might want to opt for trousers made of a more substantial fabric, like wool or cotton.\n\n**Play with proportions:** To create a visually appealing outfit, play with the proportions of your pieces. For example, if your blouse has a flowy, feminine silhouette, balance it out with the more structured, high-waisted trousers. If your cardigan is loose and oversized, pair it with more fitted trousers to create a sense of balance.\n\nHere's an updated outfit idea:\n\n* Silk blouse in a bold color or pattern\n* Cashmere blend cardigan in a neutral color (e.g., navy, gray, beige)\n* High-waisted trousers from Zara in a neutral color (e.g., black, navy, gray)\n* Low to medium-heeled pumps or loafers in a neutral color\n* Simple jewelry, such as a classic watch and a simple necklace or earrings\n\nBy combining these pieces, you'll create a stylish, modern outfit that's perfect for a work event. The high-waisted trousers will add a trendy touch, while the silk blouse and cashmere blend cardigan will keep the outfit elegant and sophisticated.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "cfd21744_2",
+      "turnIndex": 6,
+      "date": "2023/05/29 (Mon) 19:27",
+      "role": "user",
+      "text": "I also have a pair of black ankle boots from Sam Edelman that I've been wearing a lot lately. Would they work well with this outfit, or would you recommend sticking with pumps or loafers?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "cfd21744_2",
+      "turnIndex": 8,
+      "date": "2023/05/29 (Mon) 19:27",
+      "role": "user",
+      "text": "I think the boots would be a great addition to the outfit. I've been wearing them a lot lately, and I think they would add a nice edgy touch to the overall look. Plus, they're really comfortable, which is a bonus. Do you think I could also add a belt to the outfit to define my waist a bit more?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "cfd21744_2",
+      "turnIndex": 10,
+      "date": "2023/05/29 (Mon) 19:27",
+      "role": "user",
+      "text": "I think I'll try the outfit with the belt. I have a thin, patent leather belt in black that I think would work well with the boots and trousers. I'll wear the cardigan open to showcase my waist and add some texture with the belt. Thanks for the advice!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 25308,
+  "estimatedTokens": 6327
+}

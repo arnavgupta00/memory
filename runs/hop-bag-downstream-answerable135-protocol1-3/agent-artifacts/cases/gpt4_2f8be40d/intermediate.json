@@ -1,0 +1,111 @@
+[
+  {
+    "session_id": "answer_e7b0637e_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Medium: This session mentions only one other wedding attended (a college roommate’s) but provides no explicit date/year for it, so it may or may not fall within the year in question.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User: “I just got back from my college roommate's wedding in the city”",
+          "why": "Indicates the user attended a wedding; could be counted toward “How many weddings have I attended in this year?” if the wedding occurred in the target year."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User: college roommate’s wedding had a “rooftop garden ceremony overlooking the skyline”",
+          "why": "Additional context tying to the specific wedding attended; may help disambiguate which wedding is being referenced."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User: “My friend Emily finally got to tie the knot with her partner Sarah”",
+          "why": "Indicates another wedding attended/observed by the user (friend’s wedding); may affect the total depending on whether the user means attendance and whether it occurred in the target year."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User: “it was beautiful” and “it was so romantic”",
+          "why": "Reinforces that the wedding referenced is a real event the user is relating; supports linking this to attendance/participation for counting purposes."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_e7b0637e_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "High risk. This session mentions multiple weddings the user has attended (e.g., cousin’s wedding in August, cousin Emily’s wedding in the city) but does not provide the specific year/date for Emily’s wedding or any wedding count totals. The current question asks “How many weddings have I attended in this year,” so the reducer needs precise dates/years to determine which attended weddings fall within 2023 up to 2023/10/15.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User says: “I've been to a few weddings recently” and mentions “one of them was my cousin's wedding at a vineyard in August.”",
+          "why": "Indicates at least one attended wedding in August (but year not explicit); could contribute to counting weddings attended in the year."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "User says cousin Rachel’s wedding at the vineyard was “in a few weddings recently” and describes it (“she looked stunning in her lace gown”).",
+          "why": "Reinforces that cousin Rachel’s vineyard wedding was among the recent weddings attended; August timing appears earlier (turn 0) but still ties to the attended wedding instance."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "User says they were “a bridesmaid” at “My cousin Rachel's wedding at the vineyard,” and it was a “family affair.”",
+          "why": "Adds role/context confirming attendance at Rachel’s wedding, which may be one of the weddings to count for the year."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "User says: “My cousin Emily's wedding in the city was really lovely” and it is referenced while discussing their own small ceremony/reception.",
+          "why": "Indicates the user attended another specific wedding (Emily’s wedding) but without a date/year; could affect the year-specific count."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "1d6e01e8",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session appears to contain no explicit count of weddings attended in 2023; it only mentions a cousin's wedding 'last month' without a definitive date or any statement about the total number of weddings attended this year.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "81b971b8_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session mentions one specific wedding (sister’s wedding) but does not provide the date/month/year of the wedding or whether it occurred within the questioned year; it also doesn’t mention any other weddings. If the user attended additional weddings this year elsewhere, they would not be captured here.",
+      "claims": [
+        {
+          "turnIndex": 4,
+          "fact": "Speaking of weddings, my sister's wedding was just amazing, and I'm still on a high from it.",
+          "why": "Indicates at least one wedding attended/participated in (sister’s wedding) relevant to counting weddings in the year, but lacks explicit date/year."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "We had such a great time planning it together, from choosing the dress to deciding on the menu.",
+          "why": "Provides more detail about involvement in the sister’s wedding (planning), supporting that the user was an attendee/participant."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "Yeah, I was the maid of honor, and it was a lot of responsibility, but I'm glad I could be there for my sister.",
+          "why": "Establishes the user’s role at the sister’s wedding (maid of honor), strongly indicating attendance but still without date."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_e7b0637e_3",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session implies you attended one specific wedding (“a friend's wedding last weekend”), but it does not state an explicit wedding count beyond that single event or confirm the exact date/year for “last weekend.”",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User says they “just got back from a friend's wedding last weekend.”",
+          "why": "This is direct evidence that the user attended at least one wedding in the current year (relative to the stated “last weekend”), which is relevant to counting weddings attended this year."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "That friend's wedding was “at a rustic barn in the countryside,” involving “the bride, Jen” and “her husband, Tom.”",
+          "why": "Adds identifying details (Jen/Tom; rustic barn) that could help the reducer avoid double-counting if other sessions mention the same wedding."
+        }
+      ]
+    }
+  }
+]

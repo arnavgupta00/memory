@@ -1,0 +1,109 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Reading dates for two specific books: when 'The Nightingale' was finished and when 'The Hitchhiker's Guide to the Galaxy' was started.",
+  "candidateStatus": "found",
+  "missingRisk": "n/a",
+  "items": [
+    {
+      "sessionId": "answer_f964cea3_1",
+      "turnIndex": 0,
+      "date": "2022/01/15 (Sat) 08:16",
+      "role": "user",
+      "text": "I'm looking for some book recommendations. I just finished reading 'The Nightingale' by Kristin Hannah today and I'm still reeling from the emotional experience. I'm open to trying out different genres, so any suggestions would be great.",
+      "why": "User says they finished reading 'The Nightingale' today (session date 2022/01/15).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f964cea3_2",
+      "turnIndex": 0,
+      "date": "2022/01/16 (Sun) 16:21",
+      "role": "user",
+      "text": "I need some book recommendations. I just started reading 'The Hitchhiker's Guide to the Galaxy' by Douglas Adams today, and I'm loving the humor so far. Can you suggest some authors or books that have a similar tone and style?",
+      "why": "User says they started reading 'The Hitchhiker's Guide to the Galaxy' today (session date 2022/01/16).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f964cea3_1",
+      "turnIndex": 2,
+      "date": "2022/01/15 (Sat) 08:16",
+      "role": "user",
+      "text": "I'm actually interested in exploring graphic novels more after reading 'Watchmen' by Alan Moore and Dave Gibbons. Would you have any recommendations for graphic novels that are similar to 'Watchmen' in terms of complexity and themes?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f964cea3_1",
+      "turnIndex": 4,
+      "date": "2022/01/15 (Sat) 08:16",
+      "role": "user",
+      "text": "I'm specifically interested in graphic novels that explore themes of identity and power. Do you have any recommendations that fit this criteria?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f964cea3_1",
+      "turnIndex": 6,
+      "date": "2022/01/15 (Sat) 08:16",
+      "role": "user",
+      "text": "I'm interested in exploring more graphic novels that explore themes of identity and power, especially those that focus on the experiences of women and people of color.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f964cea3_1",
+      "turnIndex": 8,
+      "date": "2022/01/15 (Sat) 08:16",
+      "role": "user",
+      "text": "I'm interested in exploring more graphic novels that focus on the experiences of women and people of color. Can you recommend some graphic novels that are written and illustrated by women of color? I'd love to support their work and explore their unique perspectives.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f964cea3_1",
+      "turnIndex": 10,
+      "date": "2022/01/15 (Sat) 08:16",
+      "role": "user",
+      "text": "I'm interested in exploring more graphic novels that focus on the experiences of women and people of color. Can you recommend some graphic novels that are written and illustrated by women of color and are available in audiobook format?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f964cea3_2",
+      "turnIndex": 2,
+      "date": "2022/01/16 (Sun) 16:21",
+      "role": "user",
+      "text": "I'm really excited to dive into these recommendations! I've actually listened to Ready Player One as an audiobook recently, and I loved it. Can you tell me more about Jasper Fforde's Thursday Next series? What's the premise, and which book should I start with?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f964cea3_2",
+      "turnIndex": 4,
+      "date": "2022/01/16 (Sun) 16:21",
+      "role": "user",
+      "text": "I've been buying more non-fiction books lately, and I'm interested in learning more about the concept of habits. Can you recommend some resources on habit formation and breaking, aside from \"Atomic Habits\" by James Clear?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f964cea3_2",
+      "turnIndex": 6,
+      "date": "2022/01/16 (Sun) 16:21",
+      "role": "user",
+      "text": "I'm particularly interested in the \"The Power of Habit\" by Charles Duhigg. Can you tell me more about the concept of the habit loop, and how I can apply it to my own life? I'd also love to know if there are any specific examples or case studies in the book that you think would be helpful for me to know about.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f964cea3_2",
+      "turnIndex": 8,
+      "date": "2022/01/16 (Sun) 16:21",
+      "role": "user",
+      "text": "I'm interested in learning more about the book \"The Power of Habit\" and how it can help me understand my own habits. I've been tracking my reading habits using a log, and I've noticed that I tend to read more during my daily commute. Can you tell me how I can use the habit loop to identify and change my reading habits?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 2620,
+  "estimatedTokens": 655
+}

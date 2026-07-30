@@ -1,0 +1,35 @@
+[
+  {
+    "session_id": "answer_254d8b09_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session includes mention of exceeding a fundraising goal and the user provides an initial fundraising goal ($200), but it does not state the final amount raised. Therefore, the additional money beyond the initial goal cannot be determined from this session alone.",
+      "claims": [
+        {
+          "turnIndex": 1,
+          "fact": "Assistant: \"Congratulations on exceeding your fundraising goal, by the way - how much did you end up raising?\"",
+          "why": "Indicates the user exceeded a fundraising goal, but does not provide the final amount raised needed to compute how much more than the initial goal was raised."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "User: \"I initially aimed to raise $200 in donations for the local children's hospital.\"",
+          "why": "Provides the initial fundraising goal amount ($200), which is required for calculating the difference versus the final raised amount (final amount not present in this session)."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_254d8b09_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session only mentions that you raised $250 in donations for a charity cycling event, but it does not state your initial fundraising goal, so the additional amount over goal cannot be determined from this session alone.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "You raised $250 in donations for a charity cycling event.",
+          "why": "This provides the raised amount needed to compute how much more than the initial goal you raised, but the initial goal amount is missing here."
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "session_id": "answer_e9bb9500_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session only mentions that you “just finished episode 12” of My Favorite Murder; it contains no information about how many episodes you’ve listened to for How I Built This, and no counts beyond that single My Favorite Murder episode. If other sessions contain additional listening totals, they are not represented here.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User says they are looking for new podcast recommendations and are really into true crime and inspiring stories; they report trying to listen to at least one episode a week.",
+          "why": "Captures the user’s listening cadence/behavior that may relate to how episode totals are tracked, though it does not specify podcast-specific counts."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User: “I just finished episode 12 of the 'My Favorite Murder' podcast”.",
+          "why": "Provides a concrete episode number for My Favorite Murder relevant to computing total episodes listened to."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_e9bb9500_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session does not mention 'My Favorite Murder' at all, so the total episode count for that show must come from other sessions. It also only contains the user’s approximate count of episodes listened to for 'How I Built This' (not an exact total across time).",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "User says they have finished around 15 episodes so far of \"How I Built This\".",
+          "why": "Potentially provides a count toward the total episodes listened to for 'How I Built This'."
+        }
+      ]
+    }
+  }
+]

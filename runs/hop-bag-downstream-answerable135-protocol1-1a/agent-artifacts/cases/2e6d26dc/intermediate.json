@@ -1,0 +1,48 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Babies/newborn children mentioned as being born/adopted in the last few months (exclude pets like Rocky).",
+  "candidateStatus": "found",
+  "missingRisk": "Could be additional babies in other sessions/turns not included here; also unclear whether adopted child Aaliyah counts as “born” within the same time window.",
+  "items": [
+    {
+      "sessionId": "answer_fa526fc0_2",
+      "turnIndex": 0,
+      "why": "Mentions request to list all new babies/kids in the circle and introduces the recent baby Charlotte plus “few weeks after” another baby event."
+    },
+    {
+      "sessionId": "answer_fa526fc0_2",
+      "turnIndex": 4,
+      "why": "States David and wife had a baby boy Jasper “a few weeks ago” (explicit new baby timing)."
+    },
+    {
+      "sessionId": "answer_fa526fc0_2",
+      "turnIndex": 6,
+      "why": "Mentions inviting aunt because she has twin girls Ava and Lily; ties to recent birth context (babies in the circle)."
+    },
+    {
+      "sessionId": "answer_fa526fc0_4",
+      "turnIndex": 0,
+      "why": "Earliest mention of David’s new baby boy Jasper a few weeks ago; also frames it as part of tracking new additions."
+    },
+    {
+      "sessionId": "answer_fa526fc0_4",
+      "turnIndex": 8,
+      "why": "Adds multiple babies in the circle: cousin Rachel’s son Max (born in March), Mike & Emma’s daughter Charlotte (born around the same time), and aunt’s twins Ava and Lily (born in April)."
+    },
+    {
+      "sessionId": "answer_fa526fc0_4",
+      "turnIndex": 10,
+      "why": "Adds another adopted child Aaliyah (Sarah’s adopted daughter) and includes it in the set of babies/kids to remember (timing not specified)."
+    },
+    {
+      "sessionId": "answer_fa526fc0_1",
+      "turnIndex": 0,
+      "why": "Reiterates cousin Rachel had a baby boy Max in March; relevant for the “last few months” baby set."
+    },
+    {
+      "sessionId": "answer_fa526fc0_1",
+      "turnIndex": 6,
+      "why": "Reaffirms Max’s March birth and connects it to the user’s recent baby-shower experience (supports inclusion timing)."
+    }
+  ]
+}

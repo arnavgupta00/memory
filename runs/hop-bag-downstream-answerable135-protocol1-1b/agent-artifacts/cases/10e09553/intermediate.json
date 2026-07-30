@@ -1,0 +1,63 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Earlier fishing trip to Lake Michigan with Alex (before 7/22): select the turn(s) that explicitly state the number of largemouth bass caught and tie them to the earlier trip date (7/10).",
+    "candidateStatus": "found",
+    "missingRisk": "If there were additional earlier Lake Michigan trips with Alex besides 7/10, those counts might not be present in the candidate sessions; the selected turns only support the explicit 7/10 count.",
+    "items": [
+      {
+        "sessionId": "answer_67be2c38_1",
+        "turnIndex": 2,
+        "why": "Directly states: 'I caught 7 largemouth bass on my trip to Lake Michigan with Alex on 7/10,' which is the earlier trip before the 7/22 trip."
+      },
+      {
+        "sessionId": "answer_67be2c38_1",
+        "turnIndex": 3,
+        "why": "Assistant confirms '7 largemouth bass' for the Lake Michigan trip with Alex, providing nearby contextual reinforcement for the 7/10 count."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Earlier fishing trip to Lake Michigan with Alex (before 7/22): select the turn(s) that explicitly state the number of largemouth bass caught and tie them to the earlier trip date (7/10).",
+    "candidateStatus": "found",
+    "missingRisk": "If there were additional earlier Lake Michigan trips with Alex besides 7/10, those counts might not be present in the candidate sessions; the selected turns only support the explicit 7/10 count.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_67be2c38_1",
+        "turnIndex": 2,
+        "why": "Directly states: 'I caught 7 largemouth bass on my trip to Lake Michigan with Alex on 7/10,' which is the earlier trip before the 7/22 trip."
+      },
+      {
+        "sessionId": "answer_67be2c38_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_67be2c38_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_67be2c38_1",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_67be2c38_2",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_67be2c38_2",
+        "turnIndex": 3,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_67be2c38_2",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

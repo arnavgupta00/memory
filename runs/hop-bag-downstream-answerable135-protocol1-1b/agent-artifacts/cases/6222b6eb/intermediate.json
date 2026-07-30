@@ -1,0 +1,53 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Use only the factual statements in the selected turns that identify which atmospheric-correction algorithm/model SIAC_GEE implements.",
+    "candidateStatus": "found",
+    "missingRisk": "If SIAC_GEE’s implementation is stated differently in another session turn (e.g., naming conventions like “6S” vs “6S radiative transfer model”), selecting only these turns could miss that nuance.",
+    "items": [
+      {
+        "sessionId": "answer_sharegpt_H9PiM5G_0",
+        "turnIndex": 13,
+        "why": "Directly states that the 6S algorithm is implemented in the SIAC_GEE tool."
+      },
+      {
+        "sessionId": "answer_sharegpt_H9PiM5G_0",
+        "turnIndex": 11,
+        "why": "Provides supporting context that SIAC_GEE uses the 6S radiative transfer model for atmospheric correction (relevant to confirming the SIAC_GEE algorithm mapping)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Use only the factual statements in the selected turns that identify which atmospheric-correction algorithm/model SIAC_GEE implements.",
+    "candidateStatus": "found",
+    "missingRisk": "If SIAC_GEE’s implementation is stated differently in another session turn (e.g., naming conventions like “6S” vs “6S radiative transfer model”), selecting only these turns could miss that nuance.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_sharegpt_H9PiM5G_0",
+        "turnIndex": 12,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_sharegpt_H9PiM5G_0",
+        "turnIndex": 13,
+        "why": "Directly states that the 6S algorithm is implemented in the SIAC_GEE tool."
+      },
+      {
+        "sessionId": "answer_sharegpt_H9PiM5G_0",
+        "turnIndex": 14,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_sharegpt_H9PiM5G_0",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_sharegpt_H9PiM5G_0",
+        "turnIndex": 11,
+        "why": "Provides supporting context that SIAC_GEE uses the 6S radiative transfer model for atmospheric correction (relevant to confirming the SIAC_GEE algorithm mapping)."
+      }
+    ]
+  }
+}

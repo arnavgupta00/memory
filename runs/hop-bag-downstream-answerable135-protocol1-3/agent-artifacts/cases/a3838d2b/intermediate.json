@@ -1,0 +1,117 @@
+[
+  {
+    "session_id": "answer_4ffa04a2_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session states only that you ran in the 'Run for the Cure' event on October 15th; it does not specify any other charity events you participated in before that date. There is a risk of missing additional pre-October 15 charity events if they are mentioned only outside this session.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "You ran 5 kilometers in the \"Run for the Cure\" event on October 15th and raised $250 for breast cancer research.",
+          "why": "This anchors the 'Run for the Cure' event details and implies at least one charity event participated in, which may be needed to count events before it."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "You got back from the \"Run for the Cure\" event on October 15th, where you ran 5 kilometers to raise money for breast cancer research.",
+          "why": "Reiterates the timing and participation in the 'Run for the Cure' event (October 15th), which is the reference point for counting prior charity events."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "There were over 5,000 participants in the \"Run for the Cure\" event.",
+          "why": "Additional event-specific detail that may support identification of the referenced event in case the question requires disambiguation."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "You'd raised $250 for breast cancer research at the \"Run for the Cure\" event.",
+          "why": "Provides quantitative context tied to the event, helping ensure the correct event is referenced when determining what came before it."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_4ffa04a2_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session mentions participation in a specific charity gala (“Food for Thought” on September 25th) but does not mention the “Run for the Cure” event. There may be additional charity-event participation or the “Run for the Cure” date in other sessions, so this alone may not be sufficient to answer the question.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is looking for information on local charity events happening in the next few months and mentions being involved in a few events recently.",
+          "why": "Establishes that the user has participated in “a few events recently,” which may be relevant to counting charity events before a specific event."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User volunteered at the \"Food for Thought\" charity gala on September 25th.",
+          "why": "This is a concrete charity event the user participated in, including an exact date, which can be counted if it is before the 'Run for the Cure' event."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_4ffa04a2_3",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session mentions only one charity event participation ('Bike-a-Thon' in November) but does not mention 'Run for the Cure' or any other charity events, so the count relative to 'Run for the Cure' may be incomplete if other sessions exist.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User participated in the \"Bike-a-Thon\" charity event in November.",
+          "why": "This is a charity event participation with a temporal reference (November) needed to count events before a later event ('Run for the Cure')."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "User asks for local bike trail recommendations for a casual ride this weekend.",
+          "why": "While not about charity events, it provides surrounding context; included only as potentially relevant activity timeline context, though it likely does not affect the charity-event count."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_4ffa04a2_6",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session mentions a charity event the user participated in (“Dance for a Cause” on May 1st) and provides a duration (danced for 6 hours) but does not mention any “Run for the Cure” event or any other charity events. Therefore, evidence is insufficient to determine how many charity events occurred before “Run for the Cure.”",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is looking for information on local charity events happening in the next few months and says they've been really active in the charity scene lately.",
+          "why": "Sets context of participation but does not include specific events; could relate to counting charity events if the question is broad."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User says they participated in the \"Dance for a Cause\" event on May 1st.",
+          "why": "Directly states participation in a specific charity event with a date, which may be counted if it is before “Run for the Cure.”"
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User says \"Dance for a Cause\" was a blast.",
+          "why": "Not directly countable, but confirms positive participation in that charity event."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "User says they've already participated in a dance marathon, the \"Dance for a Cause\" event on May 1st, where they danced for 6 hours to raise money for a local arts program.",
+          "why": "Reiterates the specific event and adds quantitative detail (danced for 6 hours) and purpose (raise money for a local arts program), supporting event participation count."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_4ffa04a2_4",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The question asks specifically about participation in charity events before a specific event called 'Run for the Cure'. This session mentions only a 'charity golf tournament' on July 17th and provides advice about planning/organizing charity tournaments; it does not mention 'Run for the Cure', so it may not fully cover the charity events timeline needed for the count.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is looking for advice on how to improve their golf game and says they attended a charity golf tournament on July 17th.",
+          "why": "This establishes participation in at least one charity event (charity golf tournament) on a specific date (July 17th), which may be before 'Run for the Cure' depending on that event’s date."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "User says they attended a charity golf tournament on July 17th and asks about organizing a charity golf tournament similar to the one they attended.",
+          "why": "Reinforces that the user participated in a charity golf tournament and links it to July 17th, potentially relevant for counting charity events prior to 'Run for the Cure'."
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Formal education time from starting high school through finishing a Bachelor’s degree (excluding non-formal/self-learning).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_35c5419d_1",
+      "turnIndex": 2,
+      "why": "User states they attended Arcadia High School from 2010 to 2014 (high school start/end dates)."
+    },
+    {
+      "sessionId": "answer_35c5419d_3",
+      "turnIndex": 0,
+      "why": "User states they graduated with a Bachelor’s in Computer Science from UCLA in 2020 and that it took four years to complete."
+    },
+    {
+      "sessionId": "answer_35c5419d_3",
+      "turnIndex": 1,
+      "why": "Assistant echoes the graduation year (2020) and confirms the Bachelor’s completion timing context mentioned by the user."
+    }
+  ]
+}

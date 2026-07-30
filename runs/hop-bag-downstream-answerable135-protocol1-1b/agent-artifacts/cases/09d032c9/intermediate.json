@@ -1,0 +1,32 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "none_found",
+    "candidateStatus": "none_found",
+    "missingRisk": "The only battery-related items in the provided candidate sessions are about organizing/traveling with a portable power bank and wireless charging pad, not troubleshooting phone battery life. There may be relevant battery-life guidance in other sessions not included in the catalog.",
+    "items": []
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "none_found",
+    "candidateStatus": "found",
+    "missingRisk": "The only battery-related items in the provided candidate sessions are about organizing/traveling with a portable power bank and wireless charging pad, not troubleshooting phone battery life. There may be relevant battery-life guidance in other sessions not included in the catalog.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_b10dce5e",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_b10dce5e",
+        "turnIndex": 1,
+        "why": "deterministic empty-selector fallback"
+      },
+      {
+        "sessionId": "answer_b10dce5e",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

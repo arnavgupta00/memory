@@ -1,0 +1,28 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Antique/vintage family heirlooms the user inherited or acquired from specific relatives (explicitly stated ownership history).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_50940cb7_1",
+      "turnIndex": 0,
+      "why": "User states they inherited multiple family heirlooms: grandmother’s vintage diamond necklace, an antique music box from their great-aunt, and depression-era glassware from their mom."
+    },
+    {
+      "sessionId": "answer_50940cb7_1",
+      "turnIndex": 4,
+      "why": "User reiterates they also want to insure the antique music box and the depression-era glassware (in addition to the necklace), confirming these are part of the inherited/acquired set."
+    },
+    {
+      "sessionId": "answer_50940cb7_2",
+      "turnIndex": 0,
+      "why": "User states they have an antique tea set from cousin Rachel and a vintage typewriter that belonged to their dad."
+    },
+    {
+      "sessionId": "answer_50940cb7_2",
+      "turnIndex": 6,
+      "why": "User again clarifies provenance: the antique tea set came from cousin Rachel and the vintage typewriter belonged to their dad, reinforcing membership in the inherited/acquired set."
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "answer_80d6d664_2",
+      "turnIndex": 2,
+      "date": "2023/05/21 (Sun) 02:21",
+      "role": "user",
+      "text": "Wow, that's a lot of resources. I'll definitely check them out. I'm particularly interested in the diversity and inclusion reports. Do you think they'd have data on the demographics of our company's workforce, like the gender ratio? I recently attended a workshop on gender equality and was impressed to learn that women occupy 20 of the leadership positions in our company.",
+      "why": "per-session extractor: This is the only quantitative data relevant to women’s share of leadership positions, though it is missing the total and may not be confirmed.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_80d6d664_1",
+      "turnIndex": 0,
+      "date": "2023/05/30 (Tue) 17:22",
+      "role": "user",
+      "text": "I'm looking for some data on our company's organizational structure. Can you tell me how many departments we have and what are their main responsibilities? By the way, I was thinking about our leadership team and I realized that we have a total of 100 leadership positions across the company.",
+      "why": "per-session extractor: Provides a denominator for leadership positions count (needed for calculating a women-held percentage) even though women’s count/percentage is not provided here.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_80d6d664_1",
+      "turnIndex": 5,
+      "date": "2023/05/30 (Tue) 17:22",
+      "role": "assistant",
+      "text": "Many of the resources I mentioned earlier do provide data on diversity and inclusion in leadership positions. Here are some specific examples:\n\n1. **Mercer's Global Leadership Practices Survey**: Their report includes data on diversity and inclusion in leadership, including the representation of women, minorities, and other underrepresented groups in leadership positions.\n2. **Korn Ferry's Global Leadership Forecast**: Their report includes a section on diversity, equity, and inclusion, which provides data on the representation of underrepresented groups in leadership positions, as well as strategies for improving diversity and inclusion.\n3. **Gartner's Leadership Benchmarks**: Gartner's report includes data on diversity and inclusion in leadership, including metrics on gender, race, and ethnicity, as well as strategies for improving diversity and inclusion in leadership development programs.\n4. **SHRM's Human Capital Benchmarking Report**: SHRM's report includes data on workforce diversity, including the representation of underrepresented groups in leadership positions, as well as strategies for improving diversity and inclusion.\n5. **Catalyst**: Catalyst is a non-profit organization that focuses on accelerating progress for women through workplace inclusion. They provide research and data on women's representation in leadership positions, as well as strategies for improving gender diversity and inclusion.\n6. **McKinsey's Women in the Workplace Report**: This annual report, conducted in partnership with LeanIn.Org, provides data on women's representation in leadership positions, as well as strategies for improving gender diversity and inclusion.\n7. **Deloitte's Diversity and Inclusion Reports**: Deloitte publishes annual reports on diversity and inclusion, which include data on the representation of underrepresented groups in leadership positions, as well as strategies for improving diversity and inclusion.\n8. **Fortune's Best Companies for Diversity**: Fortune magazine publishes an annual list of the best companies for diversity, which includes data on the representation of underrepresented groups in leadership positions, as well as strategies for improving diversity and inclusion.\n\nThese resources can provide valuable insights into diversity and inclusion in leadership positions, helping you better understand your company's performance in this area and identify opportunities for improvement.\n\nKeep in mind that some of these resources may require subscription or registration to access the data, but they can be valuable tools for benchmarking your company's diversity and inclusion efforts.",
+      "why": "per-session extractor: Supports the idea that women’s representation percentages exist in external reports, but does not provide the user’s company’s women-in-leadership percentage.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_80d6d664_1",
+      "turnIndex": 7,
+      "date": "2023/05/30 (Tue) 17:22",
+      "role": "assistant",
+      "text": "Many of the resources I mentioned earlier provide data on the representation of women in leadership positions, including the average percentage of leadership positions held by women in companies of a certain size and industry.\n\nHere are a few specific resources that may provide the data you're looking for:\n\n1. **Catalyst's Pyramid Reports**: Catalyst publishes annual reports on women in leadership positions, including data on the representation of women in executive and senior-level positions, as well as the average percentage of women in leadership positions by industry and company size.\n2. **McKinsey's Women in the Workplace Report**: This report provides data on the representation of women in leadership positions, including the average percentage of women in leadership positions by industry and company size.\n3. **Deloitte's Global Survey of Women in the Workplace**: Deloitte's report provides data on the representation of women in leadership positions, including the average percentage of women in leadership positions by industry and company size.\n4. **Korn Ferry's Global Leadership Forecast**: Korn Ferry's report includes data on the representation of women in leadership positions, including the average percentage of women in leadership positions by industry and company size.\n5. **Bloomberg's Gender-Equality Index**: Bloomberg's index provides data on the representation of women in leadership positions, including the average percentage of women in leadership positions by industry and company size.\n\nThese resources may provide data on the average percentage of leadership positions held by women in companies of your size and industry, which can be useful for benchmarking your company's performance.\n\nAdditionally, you can also search for industry-specific reports or studies that focus on women in leadership positions in your industry. For example, if you're in the tech industry, you might look for reports from organizations like the National Center for Women & Information Technology (NCWIT) or the AnitaB.org Institute.\n\nRemember to consider factors like company size, industry, and geographic location when comparing your company's data to benchmarks.",
+      "why": "per-session extractor: Indicates where percentage benchmarks might be found, though it does not answer the user’s company-specific percentage.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_80d6d664_1",
+      "turnIndex": 11,
+      "date": "2023/05/30 (Tue) 17:22",
+      "role": "assistant",
+      "text": "Creating a more inclusive leadership team is essential for driving innovation, improving decision-making, and enhancing overall business performance.\n\nHere are some suggestions on how to increase diversity and inclusion in your leadership team:\n\n1. **Set diversity and inclusion goals**: Establish clear goals and metrics for increasing diversity and inclusion in your leadership team. Communicate these goals to all stakeholders and hold leaders accountable for progress.\n2. **Use diverse interview panels**: Ensure that interview panels for leadership positions include diverse candidates, including women, people of color, and individuals from underrepresented groups.\n3. **Remove bias from hiring processes**: Implement blind hiring practices, such as removing names and demographics from resumes, to reduce unconscious bias.\n4. **Develop diverse pipelines**: Identify and develop diverse talent pipelines, including internships, mentorship programs, and leadership development initiatives.\n5. **Inclusive job descriptions**: Write job descriptions that are inclusive and appeal to a diverse range of candidates.\n6. **Employee resource groups**: Establish employee resource groups (ERGs) to provide a platform for underrepresented groups to connect, share experiences, and support one another.\n7. **Mentorship and sponsorship**: Pair diverse leaders with mentors and sponsors who can provide guidance, support, and advocacy.\n8. **Inclusive leadership development**: Develop leadership development programs that focus on inclusive leadership skills, such as cultural competence, empathy, and unconscious bias awareness.\n9. **Hold leaders accountable**: Hold leaders accountable for promoting diversity and inclusion within their teams and departments.\n10. **Monitor and track progress**: Regularly track and monitor diversity and inclusion metrics, such as representation, promotion rates, and employee satisfaction.\n11. **Create a culture of belonging**: Foster a culture of belonging by promoting psychological safety, respect, and empathy among all employees.\n12. **Inclusive communication**: Ensure that company communications, including job postings, company announcements, and marketing materials, are inclusive and respectful of diverse perspectives.\n\nSome popular frameworks for increasing diversity and inclusion in leadership teams include:\n\n1. **The Rooney Rule**: Ensure that at least one diverse candidate is interviewed for every leadership position.\n2. **The Mansfield Rule**: Ensure that at least 30% of candidates for leadership positions are from underrepresented groups.\n3. **The Inclusion Index**: Assess and track diversity and inclusion metrics, including representation, promotion rates, and employee satisfaction.\n\nRemember, increasing diversity and inclusion in your leadership team is an ongoing process that requires commitment, effort, and resources. Start with small steps, and be patient and persistent in your efforts.\n\nI hope these suggestions and frameworks help you on your journey to creating a more inclusive leadership team!",
+      "why": "per-session extractor: Relevant to the question because it addresses how to measure representation (women’s share of leadership), even though it does not state the actual percentage for the user’s company.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_80d6d664_2",
+      "turnIndex": 0,
+      "date": "2023/05/21 (Sun) 02:21",
+      "role": "user",
+      "text": "I'm looking for some information on company policies regarding diversity and inclusion. Can you direct me to the relevant resources?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_80d6d664_2",
+      "turnIndex": 1,
+      "date": "2023/05/21 (Sun) 02:21",
+      "role": "assistant",
+      "text": "I'm happy to help you with that! It's great to hear that your company is committed to diversity and inclusion, and that you attended a workshop on gender equality.\n\nRegarding company policies on diversity and inclusion, I recommend checking out the following resources:\n\n1. **Company Intranet**: Your company's intranet is a great place to start. Look for a section on diversity, equity, and inclusion (DEI) or human resources (HR) where you can find policies, guidelines, and resources related to diversity and inclusion.\n2. **Company Website**: Check your company's public website, specifically the careers or about us section, which often features information on diversity and inclusion initiatives, policies, and statistics.\n3. **HR Department**: Reach out to your HR department directly and ask about their diversity and inclusion policies, procedures, and resources. They can provide you with information on company-wide initiatives, training programs, and diversity metrics.\n4. **Employee Resource Groups (ERGs)**: If your company has ERGs, such as women's networks, LGBTQ+ groups, or multicultural organizations, they may have their own websites, social media channels, or internal forums where you can find information on diversity and inclusion initiatives.\n5. **Diversity and Inclusion Reports**: Many companies publish annual diversity and inclusion reports that provide insights into their diversity metrics, initiatives, and goals. These reports can be found on the company website or through a search online.\n\nTo get a more comprehensive understanding of your company's diversity metrics, you may want to ask some additional questions, such as:\n\n* What percentage of leadership positions do women hold overall?\n* How does this number compare to industry benchmarks or national averages?\n* What are the company's goals and strategies for increasing diversity in leadership positions?\n* Are there any initiatives in place to support the career development and advancement of underrepresented groups?\n\nRemember, diversity and inclusion are ongoing efforts that require continuous improvement and commitment. By staying informed and engaged, you can help create a more inclusive and equitable work environment.\n\nIf you have any more questions or need further guidance, feel free to ask!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_80d6d664_2",
+      "turnIndex": 3,
+      "date": "2023/05/21 (Sun) 02:21",
+      "role": "assistant",
+      "text": "Diversity and inclusion reports often provide valuable insights into a company's workforce demographics, including gender ratios, racial and ethnic diversity, age, disability, and other metrics. These reports can help you understand the company's diversity landscape and track progress towards diversity and inclusion goals.\n\nIn a typical diversity and inclusion report, you might find data on:\n\n1. **Workforce demographics**: Breakdowns of the company's workforce by gender, race, ethnicity, age, disability, and other characteristics.\n2. **Leadership demographics**: Demographic data on leadership positions, including the number of women, people of color, and other underrepresented groups in senior roles.\n3. **Diversity metrics**: Statistics on diversity metrics such as gender ratio, racial and ethnic diversity, and age distribution.\n4. **Diversity and inclusion initiatives**: Information on programs, policies, and practices implemented to promote diversity, equity, and inclusion, such as training programs, mentorship initiatives, and employee resource groups.\n5. **Goals and targets**: The company's diversity and inclusion goals, targets, and strategies for achieving them.\n6. **Progress and challenges**: An analysis of the company's progress towards its diversity and inclusion goals, as well as challenges faced and lessons learned.\n\nWhen reviewing the report, pay attention to the following:\n\n* Are the diversity metrics improving over time?\n* Are there any areas where the company is struggling to make progress?\n* Are the diversity and inclusion initiatives aligned with the company's overall business strategy?\n* Are the goals and targets specific, measurable, achievable, relevant, and time-bound (SMART)?\n\nKeep in mind that some companies may not publicly disclose their diversity and inclusion reports, or may only share them with employees. If you're unable to find the report online, you can try reaching out to your HR department or diversity and inclusion team to request a copy or ask questions about the company's diversity metrics.\n\nRemember, diversity and inclusion reports are an important tool for promoting transparency, accountability, and progress towards a more inclusive workplace.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_80d6d664_2",
+      "turnIndex": 4,
+      "date": "2023/05/21 (Sun) 02:21",
+      "role": "user",
+      "text": "I'll definitely check out the diversity and inclusion report. I'm curious to see how our company's gender ratio compares to industry benchmarks. By the way, do you know if the report would also cover data on employee resource groups, such as women's networks or LGBTQ+ groups?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_80d6d664_1",
+      "turnIndex": 1,
+      "date": "2023/05/30 (Tue) 17:22",
+      "role": "assistant",
+      "text": "I'm happy to help! However, I'm a large language model, I don't have direct access to your company's specific data or information. I can provide general guidance and suggestions on how you can obtain the information you're looking for.\n\nTo get the information on your company's organizational structure, departments, and their main responsibilities, I recommend the following:\n\n1. Check your company's intranet or internal documentation: You may find an organizational chart or a departmental directory that outlines the company's structure and departmental responsibilities.\n2. Reach out to HR or Organizational Development: They may have access to the information you're looking for and can provide you with an updated organizational chart or a list of departments and their responsibilities.\n3. Contact your supervisor or department head: They may have insight into the company's overall structure and can provide guidance on how to access the information you need.\n\nRegarding the number of leadership positions, 100 sounds like a significant number. However, without knowing the size of your company, it's difficult to determine if that's a typical or unusual number. You may want to consider factors such as the company's size, industry, and organizational complexity to put that number into context.\n\nIf you're interested in learning more about typical organizational structures and leadership positions, I can provide some general information and resources. Just let me know!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_80d6d664_1",
+      "turnIndex": 4,
+      "date": "2023/05/30 (Tue) 17:22",
+      "role": "user",
+      "text": "I'll look into those resources, thanks. Do you know if any of them provide data on diversity and inclusion in leadership positions, such as demographics or representation of underrepresented groups?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_80d6d664_1",
+      "turnIndex": 6,
+      "date": "2023/05/30 (Tue) 17:22",
+      "role": "user",
+      "text": "That's really helpful. I'll definitely check out some of those resources. I'm particularly interested in learning more about the representation of underrepresented groups in leadership positions. Do you think any of these resources would provide data on the average percentage of leadership positions held by women in companies of our size and industry?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_80d6d664_1",
+      "turnIndex": 8,
+      "date": "2023/05/30 (Tue) 17:22",
+      "role": "user",
+      "text": "I'll definitely check out those resources. I'm curious to see how our company compares to industry benchmarks. By the way, I was thinking about our leadership team and I realized that having 100 leadership positions is quite significant. I wonder if there are any best practices for structuring leadership teams of that size.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_80d6d664_1",
+      "turnIndex": 10,
+      "date": "2023/05/30 (Tue) 17:22",
+      "role": "user",
+      "text": "That's really helpful. I'll definitely consider those best practices when thinking about our leadership team's structure. I'm also curious to learn more about how to create a more inclusive leadership team. Do you have any suggestions on how to increase diversity and inclusion in our leadership team?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 16137,
+  "estimatedTokens": 4035
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "session_id": "answer_25df025b_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session mentions your tennis routine only indirectly (“weekly tennis sessions”) and a planned upcoming session, but it does not provide explicit frequencies (e.g., times per week) for either the past or the present. There may be missing details in other sessions about exact frequency or recent changes.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "You were just at the local park last Sunday and you saw some people playing tennis—this reminds you of your own weekly tennis sessions with friends.",
+          "why": "Indicates an earlier (“previous”) pattern of playing tennis and suggests a frequency descriptor (“weekly”) for tennis with friends at the local park."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "You’re planning to play tennis with your friends this Sunday at the local park.",
+          "why": "Establishes an upcoming/current (“now”) tennis plan tied to the local park and friends, which can help determine present frequency when combined with other sessions."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_25df025b_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session explicitly mentions a tennis schedule (“every other week”) but does not provide a concrete “how often you play now” beyond that it is planned for an upcoming Sunday; it may be unclear whether “now” differs from the prior pattern.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "The user is planning to play tennis with friends at the local park this Sunday, like they do every other week.",
+          "why": "Provides the only explicit tennis frequency (every other week) and indicates the upcoming play date (this Sunday) relevant to comparing “previously” vs “now”."
+        }
+      ]
+    }
+  }
+]

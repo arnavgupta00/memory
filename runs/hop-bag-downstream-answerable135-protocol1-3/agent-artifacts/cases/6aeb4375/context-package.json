@@ -1,0 +1,136 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "1bc87711_1",
+      "turnIndex": 2,
+      "date": "2023/07/21 (Fri) 15:51",
+      "role": "user",
+      "text": "I'm planning to visit Springfield, which is about a 2-hour drive from here. As for the type of art, I'm open to anything, but I did spend about 3 hours at the City Art Museum, taking notes and photographs of my favorite pieces at the 'Impressionist Masters' exhibition, and I particularly enjoyed the audio guide.",
+      "why": "empty-extractor deterministic fallback",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "sharegpt_MWlvrvZ_0",
+      "turnIndex": 0,
+      "date": "2023/08/09 (Wed) 22:08",
+      "role": "user",
+      "text": "Give me some good Korean names for new born baby girl in 2023",
+      "why": "empty-extractor deterministic fallback",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_3f9693b7_1",
+      "turnIndex": 8,
+      "date": "2023/08/11 (Fri) 09:09",
+      "role": "user",
+      "text": "By the way, speaking of noodles, have you tried any good Korean restaurants in your city lately? I've tried three different ones recently, and each has its own unique flavor and style.",
+      "why": "per-session extractor: Directly provides a numerical count relevant to “How many Korean restaurants have I tried in my city?”",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_3f9693b7_1",
+      "turnIndex": 10,
+      "date": "2023/08/11 (Fri) 09:09",
+      "role": "user",
+      "text": "Sounds good! So, I tried this one place that had an amazing bibimbap, and then this other place that had a really spicy kimchi stew. And then there was this third place that had a unique take on Japchae, with a sweet potato noodle that was really tasty. Each place had its own unique flavor and style, you know?",
+      "why": "per-session extractor: Indicates the specific items associated with the user’s stated set of Korean restaurants, which may help the reducer link/verify the count.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_3f9693b7_2",
+      "turnIndex": 2,
+      "date": "2023/09/30 (Sat) 15:06",
+      "role": "user",
+      "text": "I think I'll go with kimchi and bokkeumbap. By the way, have you tried any good Korean restaurants in my city lately? I've tried four different ones so far, and I'm always looking for new recommendations.",
+      "why": "per-session extractor: Directly provides a numeric count relevant to the question (how many Korean restaurants the user has tried so far).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "1bc87711_1",
+      "turnIndex": 1,
+      "date": "2023/07/21 (Fri) 15:51",
+      "role": "assistant",
+      "text": "I'm happy to help you plan your weekend getaway! However, I have to clarify that I'm a large language model, I don't have personal experiences or knowledge of specific exhibitions or museums. I can provide general information and recommendations, though!\n\nSince you enjoyed the Impressionist Masters exhibition, I'd be happy to suggest some art museums or galleries in nearby cities that might interest you. Could you please tell me which city you're planning to visit or the region you're in? That way, I can provide more tailored recommendations.\n\nAdditionally, are you interested in a specific type of art or period? For example, modern art, contemporary art, Renaissance art, or something else? Let me know, and I'll do my best to suggest some great options for you!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "1bc87711_1",
+      "turnIndex": 3,
+      "date": "2023/07/21 (Fri) 15:51",
+      "role": "assistant",
+      "text": "Springfield is a great destination for a weekend getaway!\n\nI'm glad you enjoyed the Impressionist Masters exhibition, and it's wonderful that you took notes and photographs of your favorite pieces. Unfortunately, I have to break it to you that I'm a large language model, I don't have knowledge of specific exhibitions or museums, including the City Art Museum or the Impressionist Masters exhibition. It seems I might have been mistaken earlier!\n\nHowever, I can still provide you with some general recommendations for art museums or galleries in Springfield. Since you're open to different types of art, I'll suggest a few options:\n\n1. **Springfield Art Museum**: This museum features a diverse collection of American art from the 19th century to the present, including works by regional artists.\n2. **University of Illinois Springfield Visual Arts Gallery**: This gallery showcases a variety of exhibitions, including student and faculty art, as well as visiting artists.\n3. **Hoopla Gallery**: A contemporary art space featuring local and regional artists, with a focus on experimental and innovative works.\n4. **The Art Association of Springfield**: A community-based arts organization with exhibitions, classes, and workshops.\n\nPlease note that these recommendations are based on my general knowledge, and I don't have information about specific exhibitions or audio guides. I recommend checking the websites or contacting these institutions directly for more information on their current exhibitions and offerings.\n\nI hope you have a wonderful time exploring Springfield's art scene!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_MWlvrvZ_0",
+      "turnIndex": 1,
+      "date": "2023/08/09 (Wed) 22:08",
+      "role": "assistant",
+      "text": "Here are some beautiful and meaningful Korean names for a newborn baby girl in 2023:\n\n1. 서아 (Seo-ah) – \"auspicious\" and \"beautiful\"\n2. 하은 (Ha-eun) – \"grace\" and \"mercy\"\n3. 지유 (Ji-yoo) – \"wisdom\" and \"abundance\"\n4. 연우 (Yeon-woo) – \"lotus flower\" and \"graceful\"\n5. 소희 (So-hee) – \"smile\" and \"joy\"\n6. 민지 (Min-ji) – \"intelligent\" and \"wisdom\"\n7. 수빈 (Su-bin) – \"bright\" and \"pure\"\n8. 나래 (Na-rae) – \"to fly\" or \"wing\"\n9. 예린 (Ye-rin) – \"lovely\" and \"beautiful\"\n10. 혜원 (Hye-won) – \"bright\" and \"graceful\"\n\nRemember that Korean names typically consist of a one-syllable family name followed by a two-syllable given name. You can combine the given names above with your chosen family name to create a full Korean name for your baby girl.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_3f9693b7_1",
+      "turnIndex": 7,
+      "date": "2023/08/11 (Fri) 09:09",
+      "role": "assistant",
+      "text": "Korean noodles are a staple in Korean cuisine, and there are many delicious and popular dishes to try. Here are some popular Korean noodle dishes you might enjoy making at home:\n\n1. **Naengmyeon ()**: A refreshing cold noodle dish made with buckwheat or starch noodles, served with a spicy sauce, slices of cucumber, pear, and boiled egg.\n2. **Ramyeon ()**: A popular Korean instant noodle dish that's often spicy and flavorful. You can customize it with your favorite toppings, such as vegetables, meat, or kimchi.\n3. **Jjajangmyeon ()**: A Chinese-Korean fusion dish made with black bean sauce, noodles, and vegetables. It's a comforting and savory option.\n4. ** Japchae ()**: A stir-fried noodle dish made with sweet potato starch noodles, beef, and vegetables. It's often served as a side dish or light meal.\n5. **Bibim Naengmyeon ()**: A spicy cold noodle dish made with buckwheat or starch noodles, vegetables, and a sweet and spicy sauce.\n6. **Kalguksu ()**: A hearty noodle soup made with handmade noodles, vegetables, and a rich broth. You can customize it with meat, seafood, or kimchi.\n7. **Haemultang ()**: A spicy seafood noodle soup made with a variety of seafood, noodles, and a rich, spicy broth.\n\n**Tips for making Korean noodles at home:**\n\n* Use high-quality noodles that are specifically designed for Korean dishes, such as naengmyeon or ramyeon noodles.\n* Experiment with different seasonings and sauces, such as gochujang (Korean chili paste), soy sauce, and sesame oil.\n* Add a variety of vegetables, meat, or seafood to make the dish more substantial and flavorful.\n* Don't be afraid to adjust the spice level to your taste. Korean noodles can range from mild to extremely spicy!\n* Serve with a variety of toppings, such as kimchi, pickled ginger, or boiled eggs, to add texture and flavor.\n\nThese are just a few examples of the many delicious Korean noodle dishes out there. Feel free to experiment and modify recipes to suit your taste preferences. Happy cooking!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_3f9693b7_1",
+      "turnIndex": 9,
+      "date": "2023/08/11 (Fri) 09:09",
+      "role": "assistant",
+      "text": "I'm so glad you're enthusiastic about Korean food! However, I should clarify that I'm an AI, so I don't have personal experiences, taste buds, or a physical presence in a city. I exist solely to provide information and assist with inquiries.\n\nBut I'm thrilled to hear that you've been exploring different Korean restaurants and enjoying the variety of flavors and styles! Korean cuisine is incredibly diverse and nuanced, and there's always something new to discover.\n\nIf you're willing to share, I'd love to hear more about your experiences at the three restaurants you've tried. What dishes did you order, and what stood out to you about each place? I'm always eager to learn and improve my knowledge, and your feedback can help me better assist others who are interested in Korean cuisine.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_3f9693b7_1",
+      "turnIndex": 11,
+      "date": "2023/08/11 (Fri) 09:09",
+      "role": "assistant",
+      "text": "It sounds like you've been on a delicious adventure! I'm so glad you're sharing your experiences with me.\n\nBibimbap is a classic Korean dish, and it's great to hear that you enjoyed it at one of the restaurants. The combination of the crispy rice, savory vegetables, and runny egg is always a winner.\n\nThe spicy kimchi stew (Kimchi Jjigae) is another popular Korean dish that's perfect for those who love a little heat. Kimchi is such a staple in Korean cuisine, and it's amazing how different recipes can bring out unique flavors and levels of spiciness.\n\nAnd Japchae is a great choice too! The sweet potato noodle is a nice twist on the traditional starch noodles, and it adds a lovely sweetness to the dish. Japchae is often served as a side dish, but it's definitely worthy of being a main course.\n\nIt's fantastic that you're exploring different Korean restaurants and experiencing the diversity of flavors and styles. Korean cuisine is all about balance and harmony, and it's great that you're appreciating the nuances of each dish.\n\nKeep exploring, and don't be afraid to try new things! What's next on your Korean food adventure?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_3f9693b7_2",
+      "turnIndex": 1,
+      "date": "2023/09/30 (Sat) 15:06",
+      "role": "assistant",
+      "text": "What a great choice! Korean-style BBQ beef is always a crowd-pleaser! I'd be happy to help you with some side dish recommendations that would complement it perfectly. Here are some traditional Korean side dishes that pair well with BBQ beef:\n\n1. **Kimchi** (): Spicy fermented Korean cabbage that adds a sour, salty, and umami flavor to the dish. It's a classic Korean side dish that pairs perfectly with BBQ beef.\n2. **Bokkeumbap** (): A simple Korean-style fried rice dish that can be made with leftover rice, vegetables, and sometimes meat. It's a great way to soak up the flavorful juices from the BBQ beef.\n3. **Sigeumchi** (): Boiled spinach seasoned with garlic, sesame oil, and salt. It's a light and refreshing side dish that helps balance the richness of the beef.\n4. **Gyeranjjim** (): Steamed eggs flavored with sesame oil, soy sauce, and garlic. They're creamy and savory, and their mild flavor won't overpower the beef.\n5. **Oi Muchim** (): A cucumber salad dressed with vinegar, sugar, and sesame oil. It's a cooling side dish that helps cut the richness of the BBQ beef.\n6. ** Japchae** (): Stir-fried glass noodles made from sweet potato starch, beef, and vegetables. It's a popular Korean side dish that pairs well with the savory flavors of BBQ beef.\n7. **Kongnamul Muchim** (): Bean sprout salad seasoned with garlic, ginger, and sesame oil. It's a crunchy and refreshing side dish that complements the beef nicely.\n8. **Gyeran-mari** (): Korean-style rolled omelette made with eggs, vegetables, and sometimes meat. It's a easy to make and adds a nice protein-packed option to the table.\n\nChoose one or two of these side dishes to serve alongside your Korean-style BBQ beef, and you'll have a well-rounded and delicious meal. Enjoy your dinner party!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_3f9693b7_2",
+      "turnIndex": 3,
+      "date": "2023/09/30 (Sat) 15:06",
+      "role": "assistant",
+      "text": "Kimchi and bokkeumbap are a great combination to go with your Korean-style BBQ beef.\n\nAs for your question, I'm afraid I'm a large language model, I don't have personal experiences or physical presence, so I haven't tried any Korean restaurants in your city or any other location. I exist solely to provide information and assist with tasks through text-based conversations. However, I can suggest a few ways to find great Korean restaurants in your area:\n\n1. **Online Review Sites**: Check out review platforms like Yelp, Google Reviews, or TripAdvisor to see what others have to say about Korean restaurants in your city. You can filter the results by rating, price, and location to find the best options.\n2. **Food Blogs and Social Media**: Look for local food bloggers or social media influencers who specialize in Korean cuisine. They often share reviews, recommendations, and behind-the-scenes stories about their dining experiences.\n3. **Korean Communities or Cultural Centers**: Reach out to local Korean communities, cultural centers, or language exchange groups. They might have recommendations or insider knowledge about authentic Korean restaurants in your area.\n4. **Ask Around**: Ask your friends, colleagues, or acquaintances who have tried Korean food before for their recommendations. Personal referrals can be a great way to discover hidden gems.\n\nRemember to always check menus, prices, and hours of operation before visiting a new restaurant to ensure it fits your preferences and schedule.\n\nI hope these suggestions help you find an amazing Korean restaurant in your city!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_3f9693b7_2",
+      "turnIndex": 4,
+      "date": "2023/09/30 (Sat) 15:06",
+      "role": "user",
+      "text": "I'm actually thinking of making some changes to my dinner party menu. Do you have any recipe ideas for Indian-inspired dishes that would complement the Korean BBQ beef and Middle Eastern falafel well?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 11639,
+  "estimatedTokens": 2910
+}

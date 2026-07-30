@@ -1,0 +1,48 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Compare the relative “when met” timestamps for Mark & Sarah vs. Tom and identify which is earlier.",
+    "candidateStatus": "found",
+    "missingRisk": "If the candidate sessions omit an explicit statement about whether “about a month ago” or “a few months ago” is interpreted consistently, the answerer may need to decide how to order “about a month” vs. “a few months.”",
+    "items": [
+      {
+        "sessionId": "answer_e60a93ff_1",
+        "turnIndex": 0,
+        "why": "Contains the first-meet timing for Mark and Sarah: met on a beach trip about a month ago."
+      },
+      {
+        "sessionId": "answer_e60a93ff_2",
+        "turnIndex": 0,
+        "why": "Contains the first-meet timing for Tom: met a guy named Tom at a charity event a few months ago."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Compare the relative “when met” timestamps for Mark & Sarah vs. Tom and identify which is earlier.",
+    "candidateStatus": "found",
+    "missingRisk": "If the candidate sessions omit an explicit statement about whether “about a month ago” or “a few months ago” is interpreted consistently, the answerer may need to decide how to order “about a month” vs. “a few months.”; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_e60a93ff_1",
+        "turnIndex": 0,
+        "why": "Contains the first-meet timing for Mark and Sarah: met on a beach trip about a month ago."
+      },
+      {
+        "sessionId": "answer_e60a93ff_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e60a93ff_2",
+        "turnIndex": 0,
+        "why": "Contains the first-meet timing for Tom: met a guy named Tom at a charity event a few months ago."
+      },
+      {
+        "sessionId": "answer_e60a93ff_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

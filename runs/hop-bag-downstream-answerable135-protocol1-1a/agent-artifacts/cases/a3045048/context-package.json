@@ -1,0 +1,109 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Best friend’s birthday party timing vs when you ordered her birthday gift (photo album).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_016f6bd4_1",
+      "turnIndex": 0,
+      "date": "2022/05/15 (Sun) 04:32",
+      "role": "user",
+      "text": "I'm looking for some ideas for gifts for my brother's birthday in June. I've been thinking of getting him a new watch, but I'm not sure what brand or style to go for. Can you give me some suggestions? By the way, I just got a great deal on a personalized photo album from Shutterfly last month, I ordered it on the 15th of April for my best friend's birthday and it turned out amazing!",
+      "why": "Mentions ordering a personalized photo album on the 15th of April for your best friend’s birthday.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_016f6bd4_1",
+      "turnIndex": 6,
+      "date": "2022/05/15 (Sun) 04:32",
+      "role": "user",
+      "text": "That's really helpful, thanks! I think I'll go ahead with the Skagen Ancher. I'm sure my brother will love it. By the way, speaking of personalized gifts, I recently ordered a customized photo album from Shutterfly for my best friend's birthday, and it turned out amazing. I ordered it on the 15th of April and it arrived on the 20th, just in time for her party. Do you think I could get a similar service for watches, like engraving or something?",
+      "why": "Adds that the album arrived on the 20th “just in time for her party,” tying the 15th-of-April order to the birthday party event.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_016f6bd4_2",
+      "turnIndex": 4,
+      "date": "2022/05/15 (Sun) 14:45",
+      "role": "user",
+      "text": "I'm particularly interested in the Fossil Grant Chronograph Watch, can you tell me more about it? Also, I had a great time celebrating my best friend's 30th birthday party recently, it was on the 22nd of April, she loved the personalized photo album I got her.",
+      "why": "Gives the birthday party date explicitly as the 22nd of April for your best friend’s 30th birthday party.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_016f6bd4_1",
+      "turnIndex": 2,
+      "date": "2022/05/15 (Sun) 04:32",
+      "role": "user",
+      "text": "I'm thinking of getting something in the mid-range, around $200-$300. My brother's style is pretty casual, so I think something sporty or minimalist would work well. He's not too fussy about brands, but he does like leather straps.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_016f6bd4_1",
+      "turnIndex": 4,
+      "date": "2022/05/15 (Sun) 04:32",
+      "role": "user",
+      "text": "I like the sound of the Skagen Ancher, but before I make a decision, can you tell me a bit more about the quality of the leather straps? I want to make sure it's something that will last a while. Also, do you think I could get it engraved with a personal message?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_016f6bd4_1",
+      "turnIndex": 8,
+      "date": "2022/05/15 (Sun) 04:32",
+      "role": "user",
+      "text": "I'm thinking of getting my mom a customized necklace for Mother's Day, something with her birthstone and children's names engraved on it. Do you think that's a good idea, and do you know any good places to get it done?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_016f6bd4_2",
+      "turnIndex": 0,
+      "date": "2022/05/15 (Sun) 14:45",
+      "role": "user",
+      "text": "I'm planning a gift for my brother's birthday in June and I'm considering getting him a watch. Can you show me some popular watch brands on Amazon?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_016f6bd4_2",
+      "turnIndex": 2,
+      "date": "2022/05/15 (Sun) 14:45",
+      "role": "user",
+      "text": "I'm looking for something around $50-$70, so can you show me some specific models from these brands that fall within that price range?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_016f6bd4_2",
+      "turnIndex": 6,
+      "date": "2022/05/15 (Sun) 14:45",
+      "role": "user",
+      "text": "I'm wondering if this watch comes in a smaller size, as my brother has a smaller wrist.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_016f6bd4_2",
+      "turnIndex": 8,
+      "date": "2022/05/15 (Sun) 14:45",
+      "role": "user",
+      "text": "Can you show me some other brands that offer smaller watch sizes, like 36mm or 34mm case diameter?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_016f6bd4_2",
+      "turnIndex": 10,
+      "date": "2022/05/15 (Sun) 14:45",
+      "role": "user",
+      "text": "I'm thinking of other gift ideas for my brother's birthday, besides a watch. Do you have any suggestions for a gift around $50-$70?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 2401,
+  "estimatedTokens": 601
+}

@@ -1,0 +1,91 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Directly answer which day of the week the user takes the cocktail-making class.",
+  "candidateStatus": "found",
+  "missingRisk": "If the class day was later changed in another conversation (not present in this candidate set), this would be incomplete.; frozen bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "answer_73540165_2",
+      "turnIndex": 0,
+      "date": "2023/06/30 (Fri) 22:49",
+      "role": "user",
+      "text": "I'm looking for some inspiration for a new cocktail recipe. Do you have any ideas for a refreshing summer drink that incorporates tequila? By the way, I have a cocktail-making class on Fridays, so maybe something I can experiment with then.",
+      "why": "User states they have a cocktail-making class on Fridays (direct fact for day of week).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_73540165_2",
+      "turnIndex": 1,
+      "date": "2023/06/30 (Fri) 22:49",
+      "role": "assistant",
+      "text": "What a great excuse to get creative with tequila! I'd be happy to help you with some inspiration for a refreshing summer cocktail. Here are a few ideas to get you started:\n\n1. **Cucumber Lime Refresher**: Combine tequila, fresh lime juice, cucumber syrup (made by infusing cucumber slices in simple syrup), and a splash of soda water. Garnish with a cucumber slice and a lime wheel.\n2. **Watermelon Basil Margarita**: Blend tequila, watermelon puree, fresh lime juice, and basil leaves. Strain into a salt-rimmed glass and garnish with a watermelon slice and a basil leaf.\n3. **Jalapeño Pineapple Spritz**: Mix tequila, pineapple juice, jalapeño pepper syrup (made by infusing sliced jalapeños in simple syrup), and a splash of lemon-lime soda. Garnish with a pineapple wedge and a slice of jalapeño.\n4. **Grapefruit Ginger Fizz**: Combine tequila, grapefruit juice, fresh lime juice, and ginger liqueur. Top with soda water and garnish with a slice of grapefruit and a sprig of rosemary.\n5. **Cantaloupe Agua Fresca**: Blend tequila, cantaloupe puree, fresh lime juice, and a splash of agave syrup. Strain into a glass filled with ice and garnish with a cantaloupe ball and a sprig of mint.\n6. **Spicy Mango Mule**: Mix tequila, mango puree, lime juice, ginger beer, and a dash of cayenne pepper. Serve in a copper mug with a lime wheel and a sprig of mint.\n\nThese ideas should give you a great starting point for your cocktail-making class on Fridays. Feel free to experiment with different combinations of ingredients, flavors, and garnishes to create your own unique tequila cocktail!\n\nWhich one of these recipes catches your attention, or do you have any specific flavor profiles in mind?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_73540165_2",
+      "turnIndex": 2,
+      "date": "2023/06/30 (Fri) 22:49",
+      "role": "user",
+      "text": "I like the sound of the Watermelon Basil Margarita. I've been experimenting with basil in my cocktails lately and I think it pairs well with tequila. Do you have any recommendations for a good watermelon puree recipe?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_73540165_2",
+      "turnIndex": 9,
+      "date": "2023/06/30 (Fri) 22:49",
+      "role": "assistant",
+      "text": "What a great opportunity to experiment with new recipes! I'd be happy to suggest some tequila-based cocktails that you could try out. Here are a few ideas to get you started:\n\n1. **Tequila Sunrise**: A classic cocktail made with tequila, orange juice, and grenadine, garnished with a slice of orange and a cherry.\n2. **Paloma**: A popular Mexican cocktail made with tequila, grapefruit juice, lime juice, and a splash of soda water, garnished with a slice of grapefruit.\n3. **Tequila Sour**: A tangy and refreshing cocktail made with tequila, lime juice, egg white, and a splash of orange liqueur, garnished with a lime wheel and a dash of nutmeg.\n4. **El Diablo**: A spicy and smoky cocktail made with tequila, ginger beer, lime juice, and a splash of cassis, garnished with a slice of lime and a sprig of mint.\n5. **Cucumber Collins**: A refreshing and light cocktail made with tequila, cucumber puree, lime juice, and a splash of soda water, garnished with a slice of cucumber and a sprig of mint.\n6. **Tequila Spritz**: A fruity and bubbly cocktail made with tequila, prosecco, lime juice, and a splash of fruit juice (such as pineapple or grapefruit), garnished with a slice of fruit and a sprig of mint.\n7. **Blood Orange Margarita**: A twist on the classic margarita made with tequila, blood orange juice, lime juice, and a splash of agave syrup, garnished with a slice of blood orange and a salt rim.\n\nThese are just a few ideas to get you started. Feel free to experiment with different combinations of ingredients, flavors, and garnishes to create your own unique tequila-based cocktails!\n\nRemember to have fun and be creative during your cocktail-making class. Don't be afraid to try new ingredients, flavor combinations, and techniques. And most importantly, enjoy the process and learn from your experiments!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_73540165_2",
+      "turnIndex": 10,
+      "date": "2023/06/30 (Fri) 22:49",
+      "role": "user",
+      "text": "That sounds like a lot of fun! Thanks for the suggestions. I think I'll try out the Paloma and the Tequila Sour during my class on Friday. I've been wanting to experiment with grapefruit juice in cocktails, and the Paloma sounds like a great opportunity to do so. And the Tequila Sour sounds like a unique twist on the classic margarita.",
+      "why": "User reiterates they will try specific cocktails during their class on Friday (reinforces the day).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_73540165_2",
+      "turnIndex": 11,
+      "date": "2023/06/30 (Fri) 22:49",
+      "role": "assistant",
+      "text": "You're going to have a blast experimenting with those recipes! The Paloma is a fantastic choice to showcase grapefruit juice, and it's a very popular cocktail in Mexico. The bitterness of the grapefruit pairs perfectly with the sweetness of the tequila, and the lime juice adds a nice touch of acidity.\n\nThe Tequila Sour is indeed a unique twist on the classic margarita, and the addition of egg white gives it a silky, velvety texture. The orange liqueur adds a subtle citrus flavor that complements the tequila nicely. It's a great cocktail to try if you want to experiment with egg whites in cocktails.\n\nRemember to adjust the amount of grapefruit juice and orange liqueur to your taste, as they can be quite potent. And don't be afraid to experiment with different types of grapefruit juice, such as pink or ruby red, to see how they affect the flavor profile.\n\nAlso, if you want to take your Tequila Sour to the next level, you could try using a flavored simple syrup, such as a citrus or spice-infused syrup, to add an extra layer of depth to the cocktail.\n\nHave fun during your class, and I hope your experiments turn out amazing! If you have any more questions or need further assistance, feel free to ask.",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_73540165_2",
+      "turnIndex": 4,
+      "date": "2023/06/30 (Fri) 22:49",
+      "role": "user",
+      "text": "I think I'll try roasting the watermelon to bring out the sweetness. By the way, do you have any recommendations for a good tequila to pair with the watermelon and basil flavors?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_73540165_2",
+      "turnIndex": 6,
+      "date": "2023/06/30 (Fri) 22:49",
+      "role": "user",
+      "text": "I think I'll go with Avion Silver, I've had it before and it's one of my favorites. I've been using it in my homemade margaritas and it always turns out great.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_73540165_2",
+      "turnIndex": 8,
+      "date": "2023/06/30 (Fri) 22:49",
+      "role": "user",
+      "text": "I'm really excited to try out this recipe. Speaking of cocktails, I have a cocktail-making class on Friday, and I'm thinking of experimenting with some new recipes. Do you have any other ideas for tequila-based cocktails that I could try out?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 6101,
+  "estimatedTokens": 1526
+}

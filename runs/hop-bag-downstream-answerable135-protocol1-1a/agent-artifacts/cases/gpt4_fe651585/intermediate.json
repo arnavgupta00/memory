@@ -1,0 +1,18 @@
+{
+  "queryShape": "order",
+  "setBoundary": "Determine which of Rachel or Alex became a parent first, using the earliest parenthood dates mentioned (Rachel’s twins’ birth vs. Alex’s adoption).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_65600ff6_1",
+      "turnIndex": 0,
+      "why": "Mentions Rachel’s twins (Jackson and Julia) were born on February 12th, giving a parenthood timing for Rachel."
+    },
+    {
+      "sessionId": "answer_65600ff6_2",
+      "turnIndex": 0,
+      "why": "Mentions cousin Alex adopted a baby girl from China in January, giving a parenthood timing for Alex."
+    }
+  ]
+}

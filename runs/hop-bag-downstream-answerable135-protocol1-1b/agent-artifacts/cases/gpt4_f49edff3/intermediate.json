@@ -1,0 +1,63 @@
+{
+  "raw": {
+    "queryShape": "order",
+    "setBoundary": "Derive the chronological order (first → last) of the three described events from the candidate sessions; keep the exact event-day claims and their dates as stated in the raw turns.",
+    "candidateStatus": "found",
+    "missingRisk": "If there are other sessions not shown that mention the cousin baby shower prep day and/or the nursery day using different dates, the answerer may pick an incomplete or conflicting timeline; only the three relevant event-mentions present in the provided sessions are selected.",
+    "items": [
+      {
+        "sessionId": "answer_3e9fce53_1",
+        "turnIndex": 0,
+        "why": "Contains the nursery-prep event described as happening 'today' plus the session date (2023/02/05), which anchors the day for 'helped my friend prepare the nursery'."
+      },
+      {
+        "sessionId": "answer_3e9fce53_2",
+        "turnIndex": 0,
+        "why": "Contains the cousin baby shower shopping/prep event described as happening 'just' (session date 2023/02/10), which anchors 'helped my cousin pick out stuff for her baby shower'."
+      },
+      {
+        "sessionId": "answer_3e9fce53_3",
+        "turnIndex": 0,
+        "why": "Contains the customized phone case birthday order event described as happening 'today' plus the session date (2023/02/20), which anchors 'ordered a customized phone case for my friend's birthday'."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "order",
+    "setBoundary": "Derive the chronological order (first → last) of the three described events from the candidate sessions; keep the exact event-day claims and their dates as stated in the raw turns.",
+    "candidateStatus": "found",
+    "missingRisk": "If there are other sessions not shown that mention the cousin baby shower prep day and/or the nursery day using different dates, the answerer may pick an incomplete or conflicting timeline; only the three relevant event-mentions present in the provided sessions are selected.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_3e9fce53_1",
+        "turnIndex": 0,
+        "why": "Contains the nursery-prep event described as happening 'today' plus the session date (2023/02/05), which anchors the day for 'helped my friend prepare the nursery'."
+      },
+      {
+        "sessionId": "answer_3e9fce53_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_3e9fce53_2",
+        "turnIndex": 0,
+        "why": "Contains the cousin baby shower shopping/prep event described as happening 'just' (session date 2023/02/10), which anchors 'helped my cousin pick out stuff for her baby shower'."
+      },
+      {
+        "sessionId": "answer_3e9fce53_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_3e9fce53_3",
+        "turnIndex": 0,
+        "why": "Contains the customized phone case birthday order event described as happening 'today' plus the session date (2023/02/20), which anchors 'ordered a customized phone case for my friend's birthday'."
+      },
+      {
+        "sessionId": "answer_3e9fce53_3",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

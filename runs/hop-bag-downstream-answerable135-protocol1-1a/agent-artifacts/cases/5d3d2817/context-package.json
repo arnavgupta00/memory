@@ -1,0 +1,64 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Your stated previous occupation / prior job title(s).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_235eb6fb",
+      "turnIndex": 0,
+      "date": "2023/05/24 (Wed) 23:58",
+      "role": "user",
+      "text": "I'm trying to get more organized with my new role and was wondering if you could recommend some project management tools that can help me stay on top of my tasks and deadlines.",
+      "why": "Establishes the user has a “new role,” which frames the prior occupation they reference later in the same session.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_235eb6fb",
+      "turnIndex": 4,
+      "date": "2023/05/24 (Wed) 23:58",
+      "role": "user",
+      "text": "I've used Trello in my previous role as a marketing specialist at a small startup and I'm familiar with its features. But I'm interested in exploring other options as well. Could you tell me more about ClickUp? How does it differ from Trello, and what are its strengths and weaknesses?",
+      "why": "User describes their previous role: “in my previous role … marketing specialist at a small startup.”",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_235eb6fb",
+      "turnIndex": 8,
+      "date": "2023/05/24 (Wed) 23:58",
+      "role": "user",
+      "text": "I'm actually thinking of automating some of the workflows in my new role as a senior marketing analyst. In my previous role at the startup, I was responsible for managing a team of interns, and I had to manually assign tasks and track their progress. With ClickUp's automation features, I think I could automate some of those tasks and free up more time for strategic planning.",
+      "why": "User reiterates the prior job context: “In my previous role at the startup, I was responsible for managing a team of interns…” (supports understanding of the previous occupation/work).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_235eb6fb",
+      "turnIndex": 2,
+      "date": "2023/05/24 (Wed) 23:58",
+      "role": "user",
+      "text": "I'm actually looking for something that integrates well with Google Drive, since we're already using that for file sharing. Also, I'm interested in something that has a free version or trial, so I can test it out before committing to a paid plan.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_235eb6fb",
+      "turnIndex": 6,
+      "date": "2023/05/24 (Wed) 23:58",
+      "role": "user",
+      "text": "I'm interested in learning more about ClickUp's automation features. Can you explain how the automation rules work and what kind of workflows can be created?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_235eb6fb",
+      "turnIndex": 10,
+      "date": "2023/05/24 (Wed) 23:58",
+      "role": "user",
+      "text": "I think I'll start by automating some of the repetitive tasks I've been doing in my new role. For instance, I've been manually tracking the progress of our marketing campaigns and updating the status of each project in our team's spreadsheet. With ClickUp, I can automate that process by setting up a workflow that updates the project status based on the completion of specific tasks.\n\nI also want to explore using ClickUp's automation features to streamline our data analysis process. We receive a lot of data from various sources, and I spend a significant amount of time cleaning and processing that data. I think I can automate some of those tasks using ClickUp's integration with Google Sheets and other tools.\n\nIn terms of strategy, I want to focus on automating tasks that are time-consuming, error-prone, or repetitive. By doing so, I'll be able to free up more time to focus on higher-level strategic planning and analysis, which will ultimately drive more value for our organization.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 2234,
+  "estimatedTokens": 559
+}

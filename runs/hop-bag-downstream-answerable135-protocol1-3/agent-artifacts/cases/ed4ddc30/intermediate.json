@@ -1,0 +1,30 @@
+[
+  {
+    "session_id": "answer_babbaccb_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The only egg quantity mentioned is an initial claim by the user (“30 dozen at the moment”). This session does not provide any later updates or evidence of consumption, restocking, or current date reconciliation (today is 2023/03/16).",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "The fridge currently has 30 dozen eggs stocked up.",
+          "why": "This is the only quantitative information in the session about eggs-in-refrigerator and is directly relevant to determining how many dozen eggs are currently stocked."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_babbaccb_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low—this session explicitly states the number of eggs stocked in the fridge, but it does not confirm whether the quantity has changed since the stated time.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "We've got 20 dozen stocked up in the fridge right now.",
+          "why": "Directly answers the amount of eggs stocked in the refrigerator (20 dozen) at the time of this user statement."
+        }
+      ]
+    }
+  }
+]

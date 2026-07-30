@@ -1,0 +1,18 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Cocktail recipe(s) the user says they tried last weekend (relative to 2023/05/30).",
+  "candidateStatus": "found",
+  "missingRisk": "n/a",
+  "items": [
+    {
+      "sessionId": "answer_c8354ae9",
+      "turnIndex": 2,
+      "why": "User explicitly says: “I tried a lavender gin fizz recipe last weekend…”"
+    },
+    {
+      "sessionId": "answer_c8354ae9",
+      "turnIndex": 4,
+      "why": "User further clarifies they attempted a lavender gin fizz (instead of lavender syrup) and that it didn’t turn out well."
+    }
+  ]
+}

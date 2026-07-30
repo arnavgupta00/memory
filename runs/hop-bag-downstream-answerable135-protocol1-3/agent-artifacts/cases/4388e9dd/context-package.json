@@ -1,0 +1,91 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "answer_sharegpt_qTi81nS_0",
+      "turnIndex": 0,
+      "date": "2023/05/20 (Sat) 10:04",
+      "role": "user",
+      "text": "Write me the beginning of a script (formatted like a real movie script) for a comedy movie scene, based on the below information:\n\nAndy, a man in his 40s, is the Head of Computing at a rural high school. He has a loud, deep voice, and has more confidence than he has intelligence. He wants to be friends with his colleague exam invigilator John, so often tries and fails to impress him with his elaborate stories. He often bangs on about how he presents the school talent show. He has poor personal hygiene and can often be found making moaning noises while using disabled toilets, despite him having no obvious disability. Andy wears an untidy, stained white shirt. When addressing a group he starts with the words \"Right guys, settle down\".\n\nRoger, a man in his 50s, is a computing teacher working under Andy. He is an intelligent man, with grey hair and a laid back attitude to teaching. His classes are often out of control, while he sits there in despair. He has quiet contempt at the fact that Andy is the head of department, because he knows that he is much more qualified than Andy.\n\nJohn is a 69 year old man working as an exam invigilator. As he is past retirement it is unusual that he is still working, but we suspect it might be because he enjoys making people uncomfortable. John has wispy, grey hair and wears a pinstripe suit, several gold rings and red tinted glasses. He makes brazen, inappropriate remarks towards his colleagues.\n\nRuth, a woman in her 40s, is a languages teacher at the high school. She is so obsessed with the German language and culture that she regularly speaks to people in German and they don't understand what she's saying. She is attracted to women and regularly has to deter John's advances.",
+      "why": "per-session extractor: This is a direct description of Andy’s clothing in the script context and could answer what Andy was wearing.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "sharegpt_2LrB18X_51",
+      "turnIndex": 2,
+      "date": "2023/05/25 (Thu) 22:59",
+      "role": "assistant",
+      "text": "Mother: (grabbing some wipes) Okay, sweetie, let's get you cleaned up. (carefully removing the soiled diaper, overalls, and shirt)\n\nDaughter: (whining) I don't want to take these off, they're my favorite!\n\nMother: I know, honey, but they're all dirty now. We need to get you into some clean clothes.\n\nMother: (putting the dirty diaper and wipes in the toilet) Alright, let's get this over with.\n\nDaughter: (mildly protesting as she watches her clothes go into the toilet) No, Mama, not my overalls and shirt!\n\nMother: (sitting down on the toilet, taking care of her #1 and #2, wiping herself clean)\n\nDaughter: (pouting as she watches her clothes disappear down the drain) Bye bye, overalls and shirt. I'll miss you.\n\nMother: (flushing the overalls and shirt separately)\n\nMother: (putting a new diaper on the daughter and helping her into a fresh outfit) There you go, all clean and fresh.\n\nDaughter: (excitedly looking at her new yellow sundress with white flowers and matching sandals) Yay, I love this dress!\n\nMother: (finishing cleaning up the bathroom) That's better.\n\nMother: (grateful for the extra set of clothes she had packed in the diaper bag) Thank goodness for that extra outfit.\n\nDaughter: (happy to be feeling fresh and clean again) I feel so much better now.\n\nMother: (relieved that everything had been successfully flushed away without any problems) Phew, that was a close one. Let's not have any more diaper blowouts for a while, okay?\n\nDaughter: (nodding) Okay, Mama. I'll be more careful.",
+      "why": "per-session extractor: Contains a specific clothing description (yellow sundress with white flowers and matching sandals) that could be mistakenly relevant, but it is not about Andy or the requested comedy movie scene.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "cfd21744_2",
+      "turnIndex": 7,
+      "date": "2023/05/29 (Mon) 19:27",
+      "role": "assistant",
+      "text": "Black ankle boots can be a great addition to your outfit, but it depends on the overall vibe you're going for. Here's what to consider:\n\n**Boots can add an edgy touch:** If you want to add a bit of edge to your outfit, the black ankle boots could be a great choice. They'll create a more casual, cool-girl vibe that's perfect for a more relaxed work event or a creative industry setting.\n\n**Boots can also dress down the outfit:** Since your blouse and cardigan are quite elegant, the boots might dress down the overall look. If you're attending a more formal work event or want to keep the outfit more polished, you might want to stick with pumps or loafers.\n\n**Consider the height:** Since the boots are ankle boots, they'll create a slightly more relaxed, casual silhouette. If you're wearing high-waisted trousers, the boots might make your legs appear shorter. To balance this out, you could try cuffing the trousers or wearing a longer cardigan to create a more balanced line.\n\n**Think about the occasion:** If you're attending a work event that's more formal or traditional, you might want to stick with pumps or loafers. However, if you're attending a more creative or casual work event, the boots could be a great choice.\n\nHere's an updated outfit idea incorporating the boots:\n\n* Silk blouse in a bold color or pattern\n* Cashmere blend cardigan in a neutral color (e.g., navy, gray, beige)\n* High-waisted trousers from Zara in a neutral color (e.g., black, navy, gray)\n* Black ankle boots from Sam Edelman\n* Simple jewelry, such as a classic watch and a simple necklace or earrings\n\nIf you do decide to wear the boots, try to balance them out with a more polished top half. For example, you could add a statement necklace or a pair of elegant earrings to dress up the outfit. Ultimately, it's all about finding the right balance between the different pieces to create a look that feels confident and stylish!",
+      "why": "empty-extractor deterministic fallback",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_sharegpt_qTi81nS_0",
+      "turnIndex": 1,
+      "date": "2023/05/20 (Sat) 10:04",
+      "role": "assistant",
+      "text": "INT. RURAL HIGH SCHOOL - COMPUTING DEPARTMENT - DAY\n\nAndy, a man in his 40s with a loud, deep voice and poor personal hygiene, is standing in front of the department's whiteboard. He wears an untidy, stained white shirt.\n\nANDY:\nRight guys, settle down. I just wanted to let you all know that this year's talent show is going to be bigger and better than ever. I'm putting in a lot of hard work to make sure it's a success.\n\nROGER:\n(sitting in the back of the room)\nYeah, sure Andy. We all know how much work you put into the talent show.\n\nANDY:\n(ignoring Roger's sarcasm)\nAnd John, I know you'll be there to help me out as usual.\n\nJOHN:\n(69 year old man with wispy, grey hair and red tinted glasses)\nI'll be there to make sure no one cheats, Andy.\n\nRUTH:\n(woman in her 40s, speaking in German)\nJa, John wird da sein, um sicherzustellen, dass niemand betrügt.\n\nANDY:\n(confused)\nUm, thanks Ruth. I'll make sure to brush up on my German before the talent show.\n\nROGER:\n(rolling his eyes)\nGood luck with that, Andy.\n\nANDY:\n(determined)\nI'll show you all that I'm a great talent show presenter. You just wait and see.\n\nROGER:\n(under his breath)\nI'll believe it when I see it.\n\nThe scene ends with Andy confidently walking out of the room, while the other teachers look on in amusement.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_sharegpt_qTi81nS_0",
+      "turnIndex": 2,
+      "date": "2023/05/20 (Sat) 10:04",
+      "role": "user",
+      "text": "Write another scene",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_2LrB18X_51",
+      "turnIndex": 1,
+      "date": "2023/05/25 (Thu) 22:59",
+      "role": "user",
+      "text": "Have the daughter protest mildly as her mom puts her clothing in the toilet.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_2LrB18X_51",
+      "turnIndex": 3,
+      "date": "2023/05/25 (Thu) 22:59",
+      "role": "user",
+      "text": "Have the mother respond to the daughter's protest, explaining why her clothing needs to be flushed.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "cfd21744_2",
+      "turnIndex": 6,
+      "date": "2023/05/29 (Mon) 19:27",
+      "role": "user",
+      "text": "I also have a pair of black ankle boots from Sam Edelman that I've been wearing a lot lately. Would they work well with this outfit, or would you recommend sticking with pumps or loafers?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "cfd21744_2",
+      "turnIndex": 8,
+      "date": "2023/05/29 (Mon) 19:27",
+      "role": "user",
+      "text": "I think the boots would be a great addition to the outfit. I've been wearing them a lot lately, and I think they would add a nice edgy touch to the overall look. Plus, they're really comfortable, which is a bonus. Do you think I could also add a belt to the outfit to define my waist a bit more?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 7116,
+  "estimatedTokens": 1779
+}

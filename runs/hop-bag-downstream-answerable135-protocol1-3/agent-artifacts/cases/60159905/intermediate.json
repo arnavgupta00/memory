@@ -1,0 +1,96 @@
+[
+  {
+    "session_id": "21f8f481_3",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session does not explicitly mention any dinner parties attended. It only references a birthday party (“David’s birthday party”) last week and plans for a future game night/potluck dinner, so there may be relevant attended dinner-party information that is not present here.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User planning a movie night with friends next week.",
+          "why": "Indicates a planned social gathering, but it’s not clearly stated as a dinner party attended."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User got back from a birthday party for colleague and friend, David, last week.",
+          "why": "This is a past event within the approximate “past month” window and could potentially involve a meal/dinner, but it does not explicitly say “dinner party.”"
+        },
+        {
+          "turnIndex": 4,
+          "fact": "User has been meaning to organize their apartment and have a game night or potluck dinner soon.",
+          "why": "A future plan for a “potluck dinner,” which is related to dinner-party-type events but is not an attended dinner-party count."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_75eca223_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Medium. The session mentions past dinner parties the user attended (Alex’s place yesterday; Mike’s place two weeks ago), which likely fall within the past month relative to the question date, but it does not explicitly give exact dinner-party dates beyond those relative references, nor does it state that the user attended (vs hosted) those events or how many dinner parties occurred in that period beyond the two named.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "User says they had a BBQ theme experience at Mike's place two weeks ago, where they watched a football game together.",
+          "why": "Suggests one specific dinner/BBQ social event the user attended within a relative time window (two weeks ago)."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "User says they had dinner party experiences at Alex's place yesterday (low-key potluck with different cuisines) and at Mike's place (BBQ and watched a football game together).",
+          "why": "Suggests additional specific past dinner-party attendance (“yesterday” and “Mike’s place”) relevant to counting dinner parties in the past month."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_75eca223_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session references attending an Italian feast at Sarah's place “last week,” which may fall within the past month window from 2023/05/30, but the exact date of the dinner party/feast is not stated. No explicit numeric count of dinner parties attended is provided, so the reducer may be forced to infer date membership from other sessions or miss additional dinners if they exist here but aren’t clearly labeled as “dinner parties.”",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is looking for Italian recipe ideas for a dinner party they're hosting soon.",
+          "why": "Indicates a dinner party context, helpful for distinguishing hosting vs attendance and potential events to count."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User attended a lovely Italian feast at Sarah's place last week.",
+          "why": "Direct evidence of attending an Italian dinner/feast; may count toward dinner parties attended in the past month, but exact date is missing."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "User had a lovely experience at Sarah's place recently, where they played board games until late into the night after the Italian feast.",
+          "why": "Further corroborates that the Sarah's place event involved an Italian feast followed by board games; relevant to identifying the attended dinner party event."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "eb6737c0_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session mentions a “big party” for watching the Super Bowl (at least 15 people), but it does not explicitly state that it was a dinner party, nor does it clearly confirm whether it was attended within the past month relative to 2023/05/30. The evidence may therefore be insufficient or mismatched to the query.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "I've been watching a lot of sports lately, and I'm trying to keep track of all the recent events.",
+          "why": "Provides sports-following context; may be relevant if the dinner party question depends on entertainment events, though it’s not explicitly about a dinner party."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "I had a big party with at least 15 people to watch it.",
+          "why": "Indicates a group event/party (size ≥15) that could potentially correspond to a dinner party, but it’s not explicitly labeled as a dinner party or tied to dates within the past month."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "c351fa3b_1",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains information about vegan cooking class and vegan recipe recommendations, but no explicit mention of dinner parties attended. If dinner-party attendance was discussed using different wording (e.g., “hosted/attended a party,” “dinner with friends,” “get-together”), it may be missed here.",
+      "claims": []
+    }
+  }
+]

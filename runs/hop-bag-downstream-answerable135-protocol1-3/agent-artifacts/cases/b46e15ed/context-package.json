@@ -1,0 +1,100 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "answer_4bfcc250_4",
+      "turnIndex": 0,
+      "date": "2023/01/30 (Mon) 13:00",
+      "role": "user",
+      "text": "I'm looking for some information on cancer research and the latest developments in the field. By the way, I attended a charity gala organized by the Cancer Research Foundation at a fancy hotel in downtown today, where the event raises over $100,000 for cancer research. Can you tell me what are some of the most promising areas of research currently being explored?",
+      "why": "per-session extractor: Relevant to identifying the timing and nature of a charity event, but this is only one event on a specific date (2023/01/30) and does not establish that there were two in a row on consecutive days.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_4bfcc250_3",
+      "turnIndex": 0,
+      "date": "2023/02/14 (Tue) 09:06",
+      "role": "user",
+      "text": "I'm feeling a bit tired today, just got back from the \"24-Hour Bike Ride\" charity event, where I cycled for 4 hours non-stop to raise money for a local children's hospital. I was wondering if you could help me find some good stretches to relieve my leg muscles?",
+      "why": "per-session extractor: Provides a specific charity-event participation date, which may be needed to measure the time since the relevant (possibly different) consecutive-day events.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "f598d30f_1",
+      "turnIndex": 0,
+      "date": "2023/02/15 (Wed) 08:39",
+      "role": "user",
+      "text": "I'm planning a long bike trip next weekend and I want to make sure my road bike is in top condition. I participated in the 'Ride to Cure Cancer' charity bike ride and rode 40 miles on my road bike recently, so I'm pretty confident in its performance, but I want to double-check everything. Can you give me a checklist of things to inspect on my bike before a long trip?",
+      "why": "per-session extractor: Relevant to the question because it confirms participation in a charity bike ride and may anchor a date relative to the user’s timeline, but it does not specify two consecutive-day charity events.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_4bfcc250_2",
+      "turnIndex": 11,
+      "date": "2023/02/15 (Wed) 19:39",
+      "role": "assistant",
+      "text": "The role of women in ancient Egyptian society! It's a fascinating topic that reveals a complex and multifaceted picture of women's lives in ancient Egypt.\n\n**Rights:**\n\nAncient Egyptian women enjoyed a relatively high status compared to women in other ancient civilizations. They had:\n\n1. **Property rights:** Women could own and inherit property, including land, houses, and goods.\n2. **Legal rights:** Women could participate in legal proceedings, testify in court, and bring lawsuits.\n3. **Marriage rights:** Women had the right to choose their husbands and could initiate divorce.\n4. **Inheritance rights:** Women could inherit property and titles from their parents and husbands.\n\n**Daily Lives:**\n\nWomen's daily lives varied depending on their social class and occupation. Here's a glimpse into their daily lives:\n\n1. **Domestic duties:** Women managed the household, raised children, and performed domestic chores like cooking, cleaning, and weaving.\n2. **Economic activities:** Women worked in various occupations, such as:\n\t* **Weavers:** Wove cloth for clothing and linens.\n\t* **Brewers:** Brewed beer, a staple drink in ancient Egypt.\n\t* **Midwives:** Assisted in childbirth and provided medical care.\n\t* **Priestesses:** Served in temples, performed rituals, and managed temple estates.\n3. **Social activities:** Women participated in social events, like festivals, weddings, and funerals.\n\n**Contributions to Society:**\n\nWomen made significant contributions to ancient Egyptian society in various areas:\n\n1. **Religion:** Women played important roles in religious rituals, as priestesses, and as worshipers of goddesses like Isis and Hathor.\n2. **Economy:** Women's economic activities, like weaving and brewing, contributed to the economy and household income.\n3. **Family:** Women managed households, raised children, and passed down cultural traditions.\n4. **Art and Literature:** Women were patrons of the arts, commissioning works of art and literature.\n\n**Notable Women:**\n\nSome notable women in ancient Egyptian history include:\n\n1. **Hatshepsut:** A successful female pharaoh who oversaw many architectural and economic projects.\n2. **Nefertiti:** The queen and wife of Pharaoh Akhenaten, known for her beauty and possible co-rulership.\n3. **Merit Ptah:** A female physician who served in the royal court and was known for her medical skills.\n\nIn conclusion, ancient Egyptian women enjoyed a relatively high status, with rights and freedoms that were rare in other ancient societies. They played important roles in the economy, religion, and family life, and made significant contributions to society. Their legacy continues to inspire and fascinate us today!",
+      "why": "empty-extractor deterministic fallback",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_4bfcc250_1",
+      "turnIndex": 0,
+      "date": "2023/03/19 (Sun) 15:02",
+      "role": "user",
+      "text": "Hey, I'm looking for some healthy snack ideas that are easy to prepare. I just did the \"Walk for Hunger\" charity event today with my colleagues from work, walking 5 kilometers to raise money for the local food bank, and I want to refuel with something nutritious.",
+      "why": "per-session extractor: Relevant because the question is about charity events; this provides one concrete event date that may help identify consecutive-day participation when combined with other sessions by the reducer.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_4bfcc250_4",
+      "turnIndex": 1,
+      "date": "2023/01/30 (Mon) 13:00",
+      "role": "assistant",
+      "text": "What a wonderful way to spend your day! Congratulations on attending the charity gala and contributing to the important cause of cancer research.\n\nThere are many exciting developments in cancer research, and I'd be happy to give you an overview of some of the most promising areas being explored:\n\n1. **Immunotherapy**: This approach harnesses the power of the immune system to fight cancer. Researchers are developing treatments that stimulate the immune system to recognize and attack cancer cells, such as checkpoint inhibitors (e.g., pembrolizumab) and CAR-T cell therapy.\n2. **Liquid Biopsies**: Liquid biopsies involve analyzing a sample of blood or urine to detect cancer biomarkers, such as circulating tumor DNA (ctDNA). This non-invasive approach can help diagnose cancer earlier, monitor treatment response, and detect recurrences.\n3. **Personalized Medicine**: With the help of genomics and precision medicine, researchers are identifying specific genetic mutations driving cancer growth. This information enables targeted therapies tailored to individual patients, improving treatment outcomes and reducing side effects.\n4. **Cancer Stem Cell Research**: Cancer stem cells are thought to be responsible for cancer relapse and metastasis. Researchers are investigating ways to target and eliminate these cells, potentially leading to more effective treatments.\n5. **Epigenetics**: Epigenetic changes, such as DNA methylation and histone modification, play a crucial role in cancer development. Scientists are exploring epigenetic therapies to reverse or inhibit these changes, potentially preventing cancer progression.\n6. **Nanotechnology**: Researchers are developing nanoparticles that can selectively target cancer cells, delivering drugs or therapeutic agents directly to the tumor site, reducing toxicity, and improving treatment outcomes.\n7. **Artificial Intelligence (AI) and Machine Learning (ML)**: AI and ML are being applied to cancer research to analyze vast amounts of data, identify patterns, and predict patient outcomes. This can lead to more accurate diagnoses, personalized treatment plans, and improved patient care.\n8. **Cancer Vaccines**: Cancer vaccines aim to prevent cancer or treat existing tumors by stimulating an immune response. Researchers are exploring various types of vaccines, including those using mRNA, DNA, or viral vectors.\n9. **Targeted Therapies**: Targeted therapies focus on specific molecular mechanisms driving cancer growth. Examples include tyrosine kinase inhibitors (e.g., imatinib) and PARP inhibitors (e.g., olaparib).\n10. **Microbiome Research**: The human microbiome is being investigated for its role in cancer development and treatment. Researchers are exploring how the microbiome influences cancer progression and how it can be modulated to improve treatment outcomes.\n\nThese are just a few examples of the many promising areas of cancer research being explored. The Cancer Research Foundation's efforts, and events like the gala you attended, are crucial in supporting these research endeavors and bringing us closer to a future where cancer is more effectively managed and eventually cured.\n\nI hope this information is helpful and inspiring!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4bfcc250_3",
+      "turnIndex": 1,
+      "date": "2023/02/14 (Tue) 09:06",
+      "role": "assistant",
+      "text": "Kudos to you for participating in the charity event and cycling for 4 hours straight! That's an impressive feat, and I'm sure the local children's hospital appreciates your efforts.\n\nOf course, I'd be happy to help you with some stretches to relieve your leg muscles. Here are some exercises you can do to help reduce muscle soreness and improve flexibility:\n\n**Warm-up (5-10 minutes)**\n\nBefore you start stretching, do some light cardio to get your blood flowing and warm up your muscles. You can jog in place, jump up and down, or even do some light cycling on a stationary bike.\n\n**Stretching Exercises**\n\n1. **Quad Stretch**: Stand with one hand against a wall for balance. Bend one knee, keeping your foot behind you, and lean forward, stretching the front of your leg. Hold for 30 seconds and switch legs.\n2. **Hamstring Stretch**: Sit on the floor with your legs straight out in front of you. Lean forward, reaching for your toes, and hold for 30 seconds.\n3. **Calf Stretch**: Stand facing a wall with one hand on the wall for balance. Step one foot back about a foot, keeping your heel on the ground. Bend your front knee and lean forward, stretching your calf muscle. Hold for 30 seconds and switch legs.\n4. **Glute Stretch**: Lie on your back with your knees bent and feet flat on the floor. Cross one foot over the other, and lift your hips off the ground, squeezing your glutes as you lift. Hold for 2-3 seconds and release. Repeat on the other side.\n5. **IT Band Stretch**: Stand with your affected side next to a wall. Cross the opposite leg over the affected leg, keeping your ankle towards your opposite knee. Lean towards the wall, stretching the outside of your leg. Hold for 30 seconds and switch sides.\n6. **Hip Flexor Stretch**: Kneel on all fours. Bring one knee forward, keeping your foot flat on the ground, and stretch the front of your hip. Hold for 30 seconds and switch legs.\n\n**Tips and Reminders**\n\n* Breathe deeply and naturally while stretching.\n* Don't bounce or force your muscles beyond a comfortable stretch.\n* Hold each stretch for 30 seconds to allow for maximum relaxation of the muscle.\n* If you experience any sharp pain or discomfort, stop the stretch immediately.\n* Consider using a foam roller or self-myofascial release tools to help relieve muscle tension.\n\nRemember to stay hydrated and take it easy for the rest of the day. Your body will appreciate the rest and recovery time.\n\nFeel better soon, and congratulations again on your charity event achievement!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "f598d30f_1",
+      "turnIndex": 1,
+      "date": "2023/02/15 (Wed) 08:39",
+      "role": "assistant",
+      "text": "Kudos to you for participating in the 'Ride to Cure Cancer' charity bike ride! That's a great cause.\n\nExcellent decision to double-check your bike's condition before embarking on a long trip. Here's a comprehensive checklist to help you ensure your road bike is in top shape:\n\n**1. Tire Check**\n\n* Tire pressure: Check the recommended pressure on the sidewall or in your owner's manual. Proper pressure can improve efficiency, comfort, and safety.\n* Tread wear: Inspect for excessive wear, cracks, or damage. Replace tires if necessary.\n* Quick release or bolts: Make sure they're securely tightened.\n\n**2. Brake System**\n\n* Brake pads: Check for wear, cracks, or excessive wear. Replace if necessary.\n* Brake cables: Inspect for fraying, rust, or corrosion. Lubricate if needed.\n* Brake calipers: Ensure they're securely attached and functioning properly.\n\n**3. Gears and Derailleurs**\n\n* Chain: Check for wear, rust, or corrosion. Clean and lube if necessary.\n* Gear shifting: Test shifting through all gears to ensure smooth operation.\n* Derailleur alignment: Verify that the derailleurs are properly aligned with the gears.\n\n**4. Wheels and Hubs**\n\n* Wheels: Inspect for damage, dents, or excessive wear.\n* Hub bearings: Check for play or roughness. Clean and lube if needed.\n\n**5. Frame and Fork**\n\n* Frame: Inspect for cracks, dents, or damage.\n* Fork: Check for loose or damaged parts, such as the crown race or steerer tube.\n\n**6. Pedals and Crankset**\n\n* Pedals: Ensure they're securely attached and functioning properly.\n* Crankset: Check for loose or damaged parts, such as the crank arms or bottom bracket.\n\n**7. Seatpost and Saddle**\n\n* Seatpost: Ensure it's securely attached to the frame.\n* Saddle: Check for damage or excessive wear.\n\n**8. Handlebars and Stem**\n\n* Handlebars: Inspect for damage, cracks, or excessive wear.\n* Stem: Verify it's securely attached to the frame and handlebars.\n\n**9. Accessories**\n\n* Water bottle cages: Ensure they're securely attached.\n* Lights, reflectors, or other accessories: Check they're securely attached and functioning properly.\n\n**10. Quick Checks**\n\n* Chainring and cassette: Inspect for excessive wear or damage.\n* Cables and housing: Check for fraying, rust, or corrosion.\n* Quick releases: Verify they're securely tightened.\n* Tire levers and spare tubes: Ensure you have them and they're in good condition.\n\n**Final Check**\n\n* Take your bike for a short test ride to ensure everything is functioning smoothly and there are no unusual noises or vibrations.\n\nBy following this checklist, you'll be confident that your road bike is ready for your long trip. Don't forget to pack essential tools, a spare tube, and a basic repair kit, just in case. Have a safe and enjoyable ride!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4bfcc250_2",
+      "turnIndex": 10,
+      "date": "2023/02/15 (Wed) 19:39",
+      "role": "user",
+      "text": "I'd like to know more about the role of women in ancient Egyptian society. Can you tell me about their rights, daily lives, and contributions to society?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4bfcc250_1",
+      "turnIndex": 1,
+      "date": "2023/03/19 (Sun) 15:02",
+      "role": "assistant",
+      "text": "Congratulations on completing the \"Walk for Hunger\" charity event! That's a great way to give back to the community. Now, let's get you refueled with some healthy and easy-to-prepare snack ideas!\n\nHere are some nutritious options that'll help you replenish energy and satisfy your hunger:\n\n1. **Fresh Fruit and Nuts**: Combine your favorite fruits (e.g., apples, bananas, grapes) with nuts like almonds, walnuts, or cashews for a quick and refreshing snack.\n2. **Energy Balls**: Mix rolled oats, peanut butter, honey, and chocolate chips to create bite-sized energy balls that are packed with protein and fiber.\n3. **Yogurt Parfait**: Layer Greek yogurt with fresh berries, granola, and a sprinkle of honey for a protein-rich snack that's easy to prepare.\n4. **Hummus and Veggies**: Dip raw or roasted vegetables like carrots, cucumbers, and bell peppers in a protein-rich hummus for a healthy and filling snack.\n5. **Avocado Toast**: Toast whole-grain bread, mash an avocado, and sprinkle with salt, pepper, and a squeeze of lemon juice for a creamy and nutritious snack.\n6. **Trail Mix**: Mix together nuts, seeds (e.g., pumpkin, sunflower), and dried fruits for a healthy and convenient snack that's easy to take on-the-go.\n7. **Hard-Boiled Eggs**: Boil some eggs and keep them in the fridge for a quick protein-rich snack that's easy to grab.\n8. **Apple Slices with Almond Butter**: Spread almond butter on apple slices for a tasty and satisfying snack that's rich in healthy fats and protein.\n9. **Edamame**: Steam or boil edamame for a protein-rich snack that's high in fiber and vitamins.\n10. **Smoothie**: Blend your favorite fruits, yogurt, and milk (or milk alternative) for a quick and refreshing snack that's packed with nutrients.\n\nThese snack ideas are all easy to prepare, nutritious, and delicious. Enjoy your well-deserved refueling after your \"Walk for Hunger\" event!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 14432,
+  "estimatedTokens": 3608
+}

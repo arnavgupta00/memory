@@ -1,0 +1,63 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Compute how long the user has been working in their current role using any explicit duration/tenure statements for the current position from the candidate sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "The sessions may mention total time in marketing and career progression (e.g., promoted after a relative duration) but may not provide an exact start date for the current role, which could prevent calculating the precise elapsed time as of 2023/05/30.",
+    "items": [
+      {
+        "sessionId": "answer_6cb8f792_1",
+        "turnIndex": 0,
+        "why": "Contains the key tenure/progression fact: started as a Marketing Coordinator and worked up to Senior Marketing Specialist after 2 years and 4 months; needed to infer time in the current role."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Compute how long the user has been working in their current role using any explicit duration/tenure statements for the current position from the candidate sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "The sessions may mention total time in marketing and career progression (e.g., promoted after a relative duration) but may not provide an exact start date for the current role, which could prevent calculating the precise elapsed time as of 2023/05/30.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_6cb8f792_1",
+        "turnIndex": 0,
+        "why": "Contains the key tenure/progression fact: started as a Marketing Coordinator and worked up to Senior Marketing Specialist after 2 years and 4 months; needed to infer time in the current role."
+      },
+      {
+        "sessionId": "answer_6cb8f792_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "fdf7e3e7",
+        "turnIndex": 8,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "fdf7e3e7",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "fdf7e3e7",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_6cb8f792_1",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_6cb8f792_1",
+        "turnIndex": 9,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_6cb8f792_1",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

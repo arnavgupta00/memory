@@ -19,7 +19,7 @@ class ProviderConfig(BaseModel):
     )
     max_output_tokens: int = Field(default=800, gt=0)
     timeout_seconds: float = Field(default=120.0, gt=0)
-    concurrency: int = Field(default=1, ge=1, le=64)
+    concurrency: int = Field(default=1, ge=1, le=256)
     max_retries: int = Field(default=5, ge=0, le=20)
     min_request_interval_seconds: float = Field(default=0.0, ge=0.0, le=600.0)
     input_price_per_million: float | None = Field(default=None, ge=0)
@@ -54,7 +54,7 @@ class EmbeddingModelConfig(BaseModel):
     dimensions: int | None = Field(default=None, gt=0)
     task_type: str | None = Field(default=None, min_length=1)
     timeout_seconds: float = Field(default=120.0, gt=0)
-    concurrency: int = Field(default=1, ge=1, le=64)
+    concurrency: int = Field(default=1, ge=1, le=256)
     max_retries: int = Field(default=5, ge=0, le=20)
     min_request_interval_seconds: float = Field(default=0.0, ge=0.0, le=600.0)
     input_price_per_million: float | None = Field(default=None, ge=0)
@@ -86,7 +86,7 @@ class JudgeConfig(BaseModel):
 class ProviderModelLimitConfig(BaseModel):
     provider: Literal["openai", "gemini"]
     model: str = Field(min_length=1)
-    max_concurrency: int = Field(ge=1, le=64)
+    max_concurrency: int = Field(ge=1, le=256)
     token_budget: int = Field(ge=1)
     window_seconds: int = Field(ge=1, le=3600)
 

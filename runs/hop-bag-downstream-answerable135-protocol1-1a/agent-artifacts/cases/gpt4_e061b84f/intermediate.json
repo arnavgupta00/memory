@@ -1,0 +1,23 @@
+{
+  "queryShape": "order",
+  "setBoundary": "The three sports events the user participated in during the past month (relative to 2023/07/01), ordered from earliest to latest.",
+  "candidateStatus": "found",
+  "missingRisk": "The memory may include other qualifying sports events in the past month that were not mentioned in the provided turns, or the exact event dates could be missing for some events.",
+  "items": [
+    {
+      "sessionId": "answer_8c64ce25_2",
+      "turnIndex": 0,
+      "why": "User completed the Spring Sprint Triathlon (includes a 20K bike ride) on a specific date in early June 2023—one of the sports events to be placed in the timeline."
+    },
+    {
+      "sessionId": "answer_8c64ce25_1",
+      "turnIndex": 0,
+      "why": "User finished a 5K run with a personal best time at the Midsummer 5K Run on a specific date in mid-June 2023—another sports event for ordering."
+    },
+    {
+      "sessionId": "answer_8c64ce25_3",
+      "turnIndex": 0,
+      "why": "User participated in the company’s annual charity soccer tournament on a specific date in mid-June 2023—another sports event for ordering."
+    }
+  ]
+}

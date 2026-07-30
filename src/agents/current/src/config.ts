@@ -5,7 +5,7 @@ import { ProviderRoleConfigSchema, type ProviderRoleConfig } from "./types.js";
 export const ProviderModelLimitSchema = z.strictObject({
   provider: z.enum(["openai", "gemini"]),
   model: z.string().min(1),
-  max_concurrency: z.number().int().positive().max(64),
+  max_concurrency: z.number().int().positive().max(256),
   token_budget: z.number().int().positive(),
   window_seconds: z.number().int().positive().max(3600),
 });

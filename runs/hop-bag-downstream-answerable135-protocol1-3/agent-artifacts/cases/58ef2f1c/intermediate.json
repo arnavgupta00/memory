@@ -1,0 +1,34 @@
+[
+  {
+    "session_id": "e6ab6a7b_2",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session discusses generic food bank volunteer interests, training, and typical shifts, but it contains no mention of volunteering at a local animal shelter’s fundraising dinner or any date/time for such an event. If the user’s answer exists, it is likely in a different session.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_59547700",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session mentions volunteering for a fundraising dinner (“Love is in the Air”) but does not specify the local animal shelter or give an exact date beyond “back in February” / “Valentine’s Day,” so the exact timing for the local animal shelter’s fundraising dinner may be incomplete or ambiguous.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "You volunteered at the \"Love is in the Air\" fundraising dinner back in February.",
+          "why": "This is the only direct volunteered-at timing statement; it likely answers when you volunteered but only provides month-level detail."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "The \"Love is in the Air\" fundraising dinner you volunteered at back in February was a great way to meet new people.",
+          "why": "Reinforces the same volunteering event and timeframe (back in February)."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "Like the \"Love is in the Air\" fundraising dinner I volunteered at back on Valentine's Day.",
+          "why": "Provides an alternate temporal anchor (“Valentine's Day”) that could map to an exact date in February."
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,43 @@
+schema_version: 1
+id: hop-session-extract-v1
+description: >
+  Per-session map step for frozen hop bags. Extract question-bearing claims
+  with exact raw-turn references for deterministic downstream reduction.
+output_contract: hop_session_extract_v1
+required_variables:
+  - question
+  - question_date
+  - session_memory
+messages:
+  - role: system
+    content: |-
+      You are the map step of a memory reader. Inspect exactly one candidate
+      session and extract claims that may help answer the question. Do not answer
+      the question and do not combine evidence with other sessions.
+
+      Coverage rules:
+      - Keep exact quantities, units, names, dates, and temporal endpoints.
+      - Keep facts that could be one member of a count/list/total even if this
+        session alone cannot establish completeness.
+      - Keep both stale and updated facts; the reducer will resolve chronology.
+      - Keep user preferences, resources, experiences, plans, and constraints
+        for advice questions.
+      - When asked what the assistant said, recommended, or explained, cite the
+        assistant turn containing that content.
+      - Cite only a zero-based turnIndex printed in the session. The downstream
+        package uses the cited raw turn verbatim, so the short fact is a routing
+        label, not replacement evidence.
+      - Return no claims only when the session truly contains nothing bearing on
+        the question.
+
+      Return candidateStatus (found or none_found), missingRisk, and claims.
+      Each claim has turnIndex, fact, and why.
+  - role: user
+    content: |-
+      Today is {{question_date}}.
+      Question: {{question}}
+
+      Candidate session:
+      {{session_memory}}
+
+      Extract all potentially useful claims from this session without answering.

@@ -1,0 +1,109 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Your age at the time you moved to the United States, using your current age and how long you’ve been in the U.S.",
+  "candidateStatus": "found",
+  "missingRisk": "Your exact age at move-in could still depend on whether the “past five years” period started exactly relative to your birthday/arrival date; no specific move-in date is given.",
+  "items": [
+    {
+      "sessionId": "answer_991d55e5_1",
+      "turnIndex": 0,
+      "date": "2023/05/27 (Sat) 00:34",
+      "role": "user",
+      "text": "I'm 32-year-old male, and I'm trying to get a better understanding of the green card application process. Can you walk me through the EB-2 visa category, which is for professionals with advanced degrees like myself?",
+      "why": "States your current age (“32-year-old”) which is needed to compute your age at the time of moving.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_991d55e5_2",
+      "turnIndex": 0,
+      "date": "2023/05/27 (Sat) 22:00",
+      "role": "user",
+      "text": "I'm trying to gather information on the green card application process. I've been living in the United States for the past five years on a work visa, sponsored by my company, and I'm planning to apply for a green card. Can you tell me more about the EB-2 visa category and the required documents?",
+      "why": "Says you’ve been living in the United States for the past five years, providing the time-from-move information needed to infer your age at move time.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_991d55e5_1",
+      "turnIndex": 2,
+      "date": "2023/05/27 (Sat) 00:34",
+      "role": "user",
+      "text": "I'm still a bit unclear about the labor certification process. As a computer science professional with a master's degree from New York University, do I need to get a labor certification from the Department of Labor, or can my employer handle that?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_991d55e5_1",
+      "turnIndex": 4,
+      "date": "2023/05/27 (Sat) 00:34",
+      "role": "user",
+      "text": "Can you tell me more about the prevailing wage determination and how it affects my salary? As a 32-year-old male with a master's degree in data science from New York University, I want to make sure I understand how my salary will be determined.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_991d55e5_1",
+      "turnIndex": 6,
+      "date": "2023/05/27 (Sat) 00:34",
+      "role": "user",
+      "text": "Can you tell me more about the required documents for the EB-2 visa application, specifically the education and experience requirements? As a 32-year-old male with a master's degree in data science from New York University, I want to make sure I have all the necessary documents ready.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_991d55e5_1",
+      "turnIndex": 8,
+      "date": "2023/05/27 (Sat) 00:34",
+      "role": "user",
+      "text": "Can you tell me more about the interview process for the EB-2 visa application? I'm a 32-year-old male with a master's degree in data science from New York University, and I want to prepare for the interview.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_991d55e5_1",
+      "turnIndex": 10,
+      "date": "2023/05/27 (Sat) 00:34",
+      "role": "user",
+      "text": "I'd like to ask a question about the interview process. What if I'm asked about my long-term plans in the United States? I'm not sure if I want to stay in the US permanently, but I do want to work here for a few years. How should I answer this question?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_991d55e5_2",
+      "turnIndex": 2,
+      "date": "2023/05/27 (Sat) 22:00",
+      "role": "user",
+      "text": "That's a lot of information. I'm glad I have a master's degree in data science from New York University, which should qualify me for the Advanced Degree Holders subcategory. Can you tell me more about the medical examination process and what to expect?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_991d55e5_2",
+      "turnIndex": 4,
+      "date": "2023/05/27 (Sat) 22:00",
+      "role": "user",
+      "text": "I've been living in the United States for the past five years on a work visa, and I'm not sure if I need any additional vaccinations for the medical examination. Can you tell me more about the vaccination requirements and if there are any specific vaccinations I need to get?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_991d55e5_2",
+      "turnIndex": 6,
+      "date": "2023/05/27 (Sat) 22:00",
+      "role": "user",
+      "text": "I've been living in the United States for the past five years on a work visa, and I'm not sure if I need any additional vaccinations for the medical examination. Since I'm originally from India, I'm wondering if I need any vaccinations specific to my country of origin. Can you tell me more about that?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_991d55e5_2",
+      "turnIndex": 8,
+      "date": "2023/05/27 (Sat) 22:00",
+      "role": "user",
+      "text": "That's a lot to take in, but I think I have a better understanding of the vaccination requirements now. Since I've been living in the United States for the past five years on a work visa, I'm not sure if I need to get any additional vaccinations. Can you tell me more about the medical examination process and what to expect during the exam?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 2918,
+  "estimatedTokens": 730
+}

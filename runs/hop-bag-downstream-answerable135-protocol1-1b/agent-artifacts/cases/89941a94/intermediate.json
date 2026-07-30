@@ -1,0 +1,98 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Before the gravel bike purchase, the user’s bike inventory explicitly mentioned in candidate sessions (e.g., counts and named bikes) should be used to determine whether they had other bikes besides the mountain bike and commuter bike.",
+    "candidateStatus": "found",
+    "missingRisk": "The sessions provided do not mention an explicit “gravel bike purchase” timeline or explicitly label any bike as the gravel bike; inventory facts are inferred from “currently have three/four bikes” statements that may occur before or after the gravel purchase.",
+    "items": [
+      {
+        "sessionId": "answer_e1403127_1",
+        "turnIndex": 4,
+        "why": "States the user uses the road bike along with a mountain bike and a commuter bike; also confirms the user currently has three bikes."
+      },
+      {
+        "sessionId": "answer_e1403127_1",
+        "turnIndex": 6,
+        "why": "Reiterates that the user has three bikes and specifies how each is used (mountain for trail rides; commuter for daily commutes; road for long rides/century prep)."
+      },
+      {
+        "sessionId": "answer_e1403127_2",
+        "turnIndex": 2,
+        "why": "Says the user will have all their bikes and mentions bringing multiple bikes (context for overall bike count)."
+      },
+      {
+        "sessionId": "answer_e1403127_2",
+        "turnIndex": 4,
+        "why": "Explicitly states the user will have four bikes and lists them (road bike, mountain bike, commuter bike, and a new hybrid bike), which is additional beyond mountain + commuter."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Before the gravel bike purchase, the user’s bike inventory explicitly mentioned in candidate sessions (e.g., counts and named bikes) should be used to determine whether they had other bikes besides the mountain bike and commuter bike.",
+    "candidateStatus": "found",
+    "missingRisk": "The sessions provided do not mention an explicit “gravel bike purchase” timeline or explicitly label any bike as the gravel bike; inventory facts are inferred from “currently have three/four bikes” statements that may occur before or after the gravel purchase.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_e1403127_1",
+        "turnIndex": 4,
+        "why": "States the user uses the road bike along with a mountain bike and a commuter bike; also confirms the user currently has three bikes."
+      },
+      {
+        "sessionId": "answer_e1403127_1",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e1403127_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e1403127_1",
+        "turnIndex": 6,
+        "why": "Reiterates that the user has three bikes and specifies how each is used (mountain for trail rides; commuter for daily commutes; road for long rides/century prep)."
+      },
+      {
+        "sessionId": "answer_e1403127_1",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e1403127_2",
+        "turnIndex": 2,
+        "why": "Says the user will have all their bikes and mentions bringing multiple bikes (context for overall bike count)."
+      },
+      {
+        "sessionId": "answer_e1403127_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e1403127_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e1403127_2",
+        "turnIndex": 4,
+        "why": "Explicitly states the user will have four bikes and lists them (road bike, mountain bike, commuter bike, and a new hybrid bike), which is additional beyond mountain + commuter."
+      },
+      {
+        "sessionId": "answer_e1403127_2",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "de275215_3",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "de275215_3",
+        "turnIndex": 11,
+        "why": "deterministic candidate-session coverage repair"
+      }
+    ]
+  }
+}

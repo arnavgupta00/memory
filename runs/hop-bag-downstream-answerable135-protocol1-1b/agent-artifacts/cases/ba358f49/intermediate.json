@@ -1,0 +1,63 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Need enough facts to compute the user’s age in the year Rachel gets married (i.e., user’s current age and that Rachel’s wedding is “next year” relative to today).",
+    "candidateStatus": "found",
+    "missingRisk": "The wedding timing is only given as “next year” and the user’s birthdate/birthday is not specified, so the exact age at the wedding could be ambiguous (e.g., 32 vs 33) depending on whether the birthday occurs before the wedding.",
+    "items": [
+      {
+        "sessionId": "answer_cbd08e3c_2",
+        "turnIndex": 2,
+        "why": "States the user is 32 years old, which is required to determine age when Rachel gets married next year."
+      },
+      {
+        "sessionId": "answer_cbd08e3c_1",
+        "turnIndex": 0,
+        "why": "Mentions that Rachel is getting married next year, which anchors the timing needed for the age calculation."
+      },
+      {
+        "sessionId": "answer_cbd08e3c_1",
+        "turnIndex": 1,
+        "why": "Assistant acknowledges the upcoming wedding; preserves context that “next year” is the relevant timeframe."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Need enough facts to compute the user’s age in the year Rachel gets married (i.e., user’s current age and that Rachel’s wedding is “next year” relative to today).",
+    "candidateStatus": "found",
+    "missingRisk": "The wedding timing is only given as “next year” and the user’s birthdate/birthday is not specified, so the exact age at the wedding could be ambiguous (e.g., 32 vs 33) depending on whether the birthday occurs before the wedding.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_cbd08e3c_2",
+        "turnIndex": 2,
+        "why": "States the user is 32 years old, which is required to determine age when Rachel gets married next year."
+      },
+      {
+        "sessionId": "answer_cbd08e3c_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_cbd08e3c_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_cbd08e3c_1",
+        "turnIndex": 0,
+        "why": "Mentions that Rachel is getting married next year, which anchors the timing needed for the age calculation."
+      },
+      {
+        "sessionId": "answer_cbd08e3c_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_cbd08e3c_1",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

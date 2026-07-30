@@ -1,0 +1,88 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify the lens type for your most recently purchased camera lens by using the latest-dated “new”/purchase mention across the candidate sessions; keep enough nearby context (lens name/type and date) to confirm recency.",
+    "candidateStatus": "found",
+    "missingRisk": "If additional candidate sessions not shown here contain a later “new/purchased” lens than 2023/08/30, the selected recency could be wrong.",
+    "items": [
+      {
+        "sessionId": "answer_c7ddc051_2",
+        "turnIndex": 0,
+        "why": "Mentions you have been using a “new 70-200mm zoom lens,” which is the latest-dated “new lens” mention in the provided catalog and likely the most recent purchase."
+      },
+      {
+        "sessionId": "answer_c7ddc051_2",
+        "turnIndex": 8,
+        "why": "Reiterates you recently took great shots with your “70-200mm zoom lens,” providing additional context that this lens is the relevant recent one."
+      },
+      {
+        "sessionId": "answer_c7ddc051_1",
+        "turnIndex": 2,
+        "why": "Mentions you “recently got a new 50mm prime lens”; included as a competing (older) recent purchase to help the downstream model determine which is truly most recent."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify the lens type for your most recently purchased camera lens by using the latest-dated “new”/purchase mention across the candidate sessions; keep enough nearby context (lens name/type and date) to confirm recency.",
+    "candidateStatus": "found",
+    "missingRisk": "If additional candidate sessions not shown here contain a later “new/purchased” lens than 2023/08/30, the selected recency could be wrong.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_c7ddc051_2",
+        "turnIndex": 0,
+        "why": "Mentions you have been using a “new 70-200mm zoom lens,” which is the latest-dated “new lens” mention in the provided catalog and likely the most recent purchase."
+      },
+      {
+        "sessionId": "answer_c7ddc051_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_c7ddc051_2",
+        "turnIndex": 8,
+        "why": "Reiterates you recently took great shots with your “70-200mm zoom lens,” providing additional context that this lens is the relevant recent one."
+      },
+      {
+        "sessionId": "answer_c7ddc051_2",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_c7ddc051_2",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_c7ddc051_1",
+        "turnIndex": 2,
+        "why": "Mentions you “recently got a new 50mm prime lens”; included as a competing (older) recent purchase to help the downstream model determine which is truly most recent."
+      },
+      {
+        "sessionId": "answer_c7ddc051_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_c7ddc051_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "431ae25c",
+        "turnIndex": 6,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "431ae25c",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "431ae25c",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

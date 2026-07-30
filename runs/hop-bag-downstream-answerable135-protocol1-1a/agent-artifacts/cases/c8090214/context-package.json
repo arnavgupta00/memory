@@ -1,0 +1,118 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "The single purchased-entity date (iPhone 13 Pro on Black Friday) and the Holiday Market attendance date relative to Black Friday.",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_70dc7d08_1",
+      "turnIndex": 0,
+      "date": "2023/12/10 (Sun) 05:07",
+      "role": "user",
+      "text": "I'm looking for some gift ideas for my sister's birthday, which is coming up soon. I'd like to get her something nice, but I'm on a budget. Do you have any suggestions? By the way, I attended the annual Holiday Market at the local mall a week before Black Friday, and I saw some unique handmade jewelry there, but I'm not sure if that's her style.",
+      "why": "User states they attended the annual Holiday Market at the local mall a week before Black Friday.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_70dc7d08_2",
+      "turnIndex": 0,
+      "date": "2023/12/10 (Sun) 14:52",
+      "role": "user",
+      "text": "I'm looking to upgrade my phone case and screen protector. Can you show me some options for iPhone 13 Pro cases and screen protectors? By the way, I got my iPhone 13 Pro at a discounted price of $800 from Best Buy on Black Friday, which was a great deal considering the regular price was $1,000.",
+      "why": "User states they got their iPhone 13 Pro at a discounted price from Best Buy on Black Friday.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_70dc7d08_1",
+      "turnIndex": 2,
+      "date": "2023/12/10 (Sun) 05:07",
+      "role": "user",
+      "text": "I like the idea of a personalized item, but I'm not sure what type of item would be suitable for her. Can you give me some more specific ideas on what kind of personalized items are popular among women?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_70dc7d08_1",
+      "turnIndex": 4,
+      "date": "2023/12/10 (Sun) 05:07",
+      "role": "user",
+      "text": "I think a customized phone case or a personalized journal could be a great idea. However, I'm not sure how to design it or what website to use to order it. Can you recommend any good websites or tools that make it easy to create a custom design?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_70dc7d08_1",
+      "turnIndex": 6,
+      "date": "2023/12/10 (Sun) 05:07",
+      "role": "user",
+      "text": "I think I'll try out Canva or Adobe Spark to design a custom phone case. I've heard of them before, and they seem easy to use. But before I start, I wanted to ask, do you think it's a good idea to add a special message or inside joke to the design, or should I keep it simple with just her name or initials?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_70dc7d08_1",
+      "turnIndex": 8,
+      "date": "2023/12/10 (Sun) 05:07",
+      "role": "user",
+      "text": "I think I'll keep it simple and add her name in a elegant font, and maybe a small message like \"Sis\" or \"Birthday Girl\" to make it more personal. I don't want to overwhelm the design, but still make it special. By the way, speaking of birthdays, I attended the annual Holiday Market at the local mall a week before Black Friday, and I saw some unique handmade jewelry there that I think she might like. Do you think I should consider getting her a piece of jewelry to go along with the phone case?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_70dc7d08_1",
+      "turnIndex": 10,
+      "date": "2023/12/10 (Sun) 05:07",
+      "role": "user",
+      "text": "I think I'll go back to the Holiday Market and take a closer look at the jewelry vendors. I remember seeing a few pieces that caught my eye, but I wasn't sure if they were the right fit for my sister. Now that I have a better idea of what I'm looking for, I can take a closer look and see if I can find the perfect piece to go along with the phone case. Thanks for the advice!",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_70dc7d08_2",
+      "turnIndex": 2,
+      "date": "2023/12/10 (Sun) 14:52",
+      "role": "user",
+      "text": "Can you show me some waterproof phone cases, I'm planning to use my phone more outdoors and want to make sure it's protected from water and dust.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_70dc7d08_2",
+      "turnIndex": 4,
+      "date": "2023/12/10 (Sun) 14:52",
+      "role": "user",
+      "text": "I'm also planning to buy a new TV, can you show me some 4K TV options in the range of $800-$1,200?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_70dc7d08_2",
+      "turnIndex": 6,
+      "date": "2023/12/10 (Sun) 14:52",
+      "role": "user",
+      "text": "I'm looking for a TV with good picture quality and HDR support. I scored an amazing deal on a 4K TV from Amazon on Cyber Monday, getting 30% off the original price of $1,200. Can you show me some TV models with similar features and price points?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_70dc7d08_2",
+      "turnIndex": 8,
+      "date": "2023/12/10 (Sun) 14:52",
+      "role": "user",
+      "text": "I'm looking for a TV with a similar price point to what I got on Cyber Monday, around $800-$1,000. Can you show me some TV models with good picture quality and HDR support in that price range?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_70dc7d08_2",
+      "turnIndex": 10,
+      "date": "2023/12/10 (Sun) 14:52",
+      "role": "user",
+      "text": "I'm also looking for a soundbar to complement my new TV. Can you show me some soundbar options with good sound quality and a budget of around $200-$300?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 3101,
+  "estimatedTokens": 776
+}

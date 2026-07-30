@@ -1,0 +1,18 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Atmospheric correction methods mentioned in prior conversation; specifically which algorithm is implemented in SIAC_GEE",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_sharegpt_H9PiM5G_0",
+      "turnIndex": 13,
+      "why": "Explicitly states that the 6S algorithm is implemented in the SIAC_GEE tool."
+    },
+    {
+      "sessionId": "answer_sharegpt_H9PiM5G_0",
+      "turnIndex": 11,
+      "why": "Reinforces the same mapping by describing SIAC_GEE as using the 6S radiative transfer model for atmospheric correction."
+    }
+  ]
+}

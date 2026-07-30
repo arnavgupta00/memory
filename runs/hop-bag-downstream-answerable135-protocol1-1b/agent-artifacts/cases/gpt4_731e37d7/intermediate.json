@@ -1,0 +1,133 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Compute total workshop spending within the 4 months ending on 2023/02/26 (Sun), using only workshop attendance fees explicitly stated in the candidate sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "The catalog only explicitly states fees for some workshops (e.g., $20 for Dec 12 mindfulness; $200 for a November writing workshop). Other workshops mentioned in the timeframe (e.g., January entrepreneurship; Feb 22 photography free; March workshops) may have unknown costs or fall outside the 4-month window, so additional fee data could be missing from the candidate set.",
+    "items": [
+      {
+        "sessionId": "answer_826d51da_3",
+        "turnIndex": 10,
+        "why": "Contains the only explicit fee within the last-four-month window in this session: mentions a half-day mindfulness workshop on Dec 12 and that the user paid $20 to attend."
+      },
+      {
+        "sessionId": "answer_826d51da_4",
+        "turnIndex": 0,
+        "why": "Contains an explicit fee and date for a workshop in the timeframe: paid $200 to attend a two-day writing workshop in November at a literary festival."
+      },
+      {
+        "sessionId": "answer_826d51da_3",
+        "turnIndex": 0,
+        "why": "Establishes the Feb 22 one-day photography workshop cost as free (helps confirm $0 for a workshop within the window)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Compute total workshop spending within the 4 months ending on 2023/02/26 (Sun), using only workshop attendance fees explicitly stated in the candidate sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "The catalog only explicitly states fees for some workshops (e.g., $20 for Dec 12 mindfulness; $200 for a November writing workshop). Other workshops mentioned in the timeframe (e.g., January entrepreneurship; Feb 22 photography free; March workshops) may have unknown costs or fall outside the 4-month window, so additional fee data could be missing from the candidate set.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_826d51da_3",
+        "turnIndex": 10,
+        "why": "Contains the only explicit fee within the last-four-month window in this session: mentions a half-day mindfulness workshop on Dec 12 and that the user paid $20 to attend."
+      },
+      {
+        "sessionId": "answer_826d51da_3",
+        "turnIndex": 11,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_826d51da_3",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_826d51da_4",
+        "turnIndex": 0,
+        "why": "Contains an explicit fee and date for a workshop in the timeframe: paid $200 to attend a two-day writing workshop in November at a literary festival."
+      },
+      {
+        "sessionId": "answer_826d51da_4",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_826d51da_3",
+        "turnIndex": 0,
+        "why": "Establishes the Feb 22 one-day photography workshop cost as free (helps confirm $0 for a workshop within the window)."
+      },
+      {
+        "sessionId": "answer_826d51da_3",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_826d51da_3",
+        "turnIndex": 4,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_826d51da_3",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_826d51da_3",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_826d51da_4",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_826d51da_4",
+        "turnIndex": 3,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_826d51da_4",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_826d51da_2",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_826d51da_2",
+        "turnIndex": 11,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_826d51da_1",
+        "turnIndex": 0,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_826d51da_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "c566edbb_3",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "c566edbb_3",
+        "turnIndex": 1,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "c566edbb_3",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

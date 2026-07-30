@@ -1,0 +1,88 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the user/provided follower-growth claims that specify a timeframe of (or closest to) the past month, including the exact follower counts and platforms mentioned.",
+    "candidateStatus": "found",
+    "missingRisk": "TikTok growth is stated for the past three weeks (not explicitly the past month), and there are no follower-count changes for Instagram/Facebook. If another platform’s monthly growth exists in non-candidate sessions, it would be missed.",
+    "items": [
+      {
+        "sessionId": "answer_203bf3fa_1",
+        "turnIndex": 0,
+        "why": "User directly states Twitter follower growth over the past month (420 to 540)."
+      },
+      {
+        "sessionId": "answer_203bf3fa_1",
+        "turnIndex": 10,
+        "why": "Assistant reiterates the same Twitter past-month follower-count change, preserving the key numbers for downstream comparison."
+      },
+      {
+        "sessionId": "answer_203bf3fa_3",
+        "turnIndex": 0,
+        "why": "User reports TikTok follower growth with a related timeframe (around 200 followers over the past three weeks), which may be the closest available proxy to a “past month” comparison."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the user/provided follower-growth claims that specify a timeframe of (or closest to) the past month, including the exact follower counts and platforms mentioned.",
+    "candidateStatus": "found",
+    "missingRisk": "TikTok growth is stated for the past three weeks (not explicitly the past month), and there are no follower-count changes for Instagram/Facebook. If another platform’s monthly growth exists in non-candidate sessions, it would be missed.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_203bf3fa_1",
+        "turnIndex": 0,
+        "why": "User directly states Twitter follower growth over the past month (420 to 540)."
+      },
+      {
+        "sessionId": "answer_203bf3fa_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_203bf3fa_1",
+        "turnIndex": 10,
+        "why": "Assistant reiterates the same Twitter past-month follower-count change, preserving the key numbers for downstream comparison."
+      },
+      {
+        "sessionId": "answer_203bf3fa_1",
+        "turnIndex": 11,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_203bf3fa_1",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_203bf3fa_3",
+        "turnIndex": 0,
+        "why": "User reports TikTok follower growth with a related timeframe (around 200 followers over the past three weeks), which may be the closest available proxy to a “past month” comparison."
+      },
+      {
+        "sessionId": "answer_203bf3fa_3",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_203bf3fa_3",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_203bf3fa_2",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_203bf3fa_2",
+        "turnIndex": 5,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_203bf3fa_2",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

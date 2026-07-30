@@ -1,0 +1,58 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify the user’s stated previous occupation from the conversation history.",
+    "candidateStatus": "found",
+    "missingRisk": "If the previous occupation is mentioned only in a user self-description not included in the selected turns, the answerer may miss it; confirm no other sessions state a different “previous occupation.”",
+    "items": [
+      {
+        "sessionId": "answer_235eb6fb",
+        "turnIndex": 4,
+        "why": "Contains the direct statement of the user’s previous occupation: “previous role as a marketing specialist at a small startup.”"
+      },
+      {
+        "sessionId": "answer_235eb6fb",
+        "turnIndex": 8,
+        "why": "Reiterates prior work context tied to that previous occupation (startup, responsibilities), which can help confirm the occupation if the answerer cross-checks."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify the user’s stated previous occupation from the conversation history.",
+    "candidateStatus": "found",
+    "missingRisk": "If the previous occupation is mentioned only in a user self-description not included in the selected turns, the answerer may miss it; confirm no other sessions state a different “previous occupation.”; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_235eb6fb",
+        "turnIndex": 4,
+        "why": "Contains the direct statement of the user’s previous occupation: “previous role as a marketing specialist at a small startup.”"
+      },
+      {
+        "sessionId": "answer_235eb6fb",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_235eb6fb",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_235eb6fb",
+        "turnIndex": 8,
+        "why": "Reiterates prior work context tied to that previous occupation (startup, responsibilities), which can help confirm the occupation if the answerer cross-checks."
+      },
+      {
+        "sessionId": "answer_235eb6fb",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_235eb6fb",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

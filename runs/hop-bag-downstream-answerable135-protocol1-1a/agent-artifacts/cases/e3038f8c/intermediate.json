@@ -1,0 +1,28 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "User’s own collection of “rare items” mentioned in chat (rare figurines, rare coins, rare records, rare books)",
+  "candidateStatus": "found",
+  "missingRisk": "May be other rare-item categories (or additional counts) mentioned outside the provided memory, or the user may mean a broader definition than the categories explicitly quantified here.",
+  "items": [
+    {
+      "sessionId": "answer_b6018747_4",
+      "turnIndex": 0,
+      "why": "Gives the count of the user’s rare books (“small but valuable collection of 5 books”)."
+    },
+    {
+      "sessionId": "answer_b6018747_3",
+      "turnIndex": 4,
+      "why": "Gives the count of the user’s rare coins (“I actually have 25 rare coins”)."
+    },
+    {
+      "sessionId": "answer_b6018747_2",
+      "turnIndex": 4,
+      "why": "Gives the count of the user’s rare figurines (“I have 12 rare figurines”)."
+    },
+    {
+      "sessionId": "answer_b6018747_2",
+      "turnIndex": 10,
+      "why": "Gives the count of the user’s rare records (“collection of 57 rare records”)."
+    }
+  ]
+}

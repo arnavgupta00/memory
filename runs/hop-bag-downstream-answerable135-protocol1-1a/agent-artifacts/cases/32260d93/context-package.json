@@ -1,0 +1,136 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "A set of prior preference signals the user has given that could inform a tonight show/movie recommendation (e.g., comedy storytelling like John Mulaney; true-crime interest; Netflix stand-up)",
+  "candidateStatus": "found",
+  "missingRisk": "User’s tastes for movies/shows (genres, platforms, content limits) may not be specified; only podcast/comedy signals are present.",
+  "items": [
+    {
+      "sessionId": "573dc24b_1",
+      "turnIndex": 0,
+      "date": "2023/05/29 (Mon) 01:01",
+      "role": "user",
+      "text": "I'm looking for some more true crime podcasts to listen to. I just finished binging the entire \"Crime Junkie\" podcast in 5 days, and I'm hooked.",
+      "why": "User describes being hooked on true crime (podcasts), which is a taste signal for what kind of night entertainment they may want.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "573dc24b_1",
+      "turnIndex": 2,
+      "date": "2023/05/29 (Mon) 01:01",
+      "role": "user",
+      "text": "I'm definitely going to check those out. I was surprised by how much I got into the true crime genre - I mean, I listened to 5 days straight of \"Crime Junkie\"! Do you have any recommendations for self-improvement podcasts? I've been enjoying \"How I Built This\" and I'm looking for more podcasts that can help me with personal development and productivity.",
+      "why": "User asks for self-improvement/personal development podcasts and mentions enjoying 'How I Built This'—another entertainment preference signal.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "573dc24b_1",
+      "turnIndex": 3,
+      "date": "2023/05/29 (Mon) 01:01",
+      "role": "assistant",
+      "text": "You're looking to balance out your true crime binge with some self-improvement goodness! I've got some fantastic recommendations for you:\n\n1. **The Tim Ferriss Show**: Tim Ferriss interviews successful people from various fields, digging deep into their habits, routines, and strategies for success.\n2. **The GaryVee Audio Experience**: Gary Vaynerchuk shares his insights on marketing, business, and personal development, with a focus on taking action and being authentic.\n3. **The School of Greatness with Lewis Howes**: Lewis Howes shares inspiring stories and practical tips on how to achieve your goals and live a fulfilling life.\n4. **The Happiness Lab with Dr. Laurie Santos**: A podcast based on a popular college course, exploring the science behind happiness and well-being.\n5. **The Mindful Kind**: A podcast focused on mindfulness, self-care, and personal growth, with practical tips and inspiring stories.\n6. **The Tiny Leaps Podcast**: A podcast that helps you make small, incremental changes to improve your life and achieve your goals.\n7. **The Productivity Show**: A podcast dedicated to helping you manage your time, prioritize tasks, and boost your productivity.\n8. **The 5 AM Miracle Podcast**: A podcast focused on helping you create a morning routine that sets you up for success, with tips on productivity, goal-achieving, and personal growth.\n9. **Happier with Gretchen Rubin**: A podcast that offers practical tips and insights on how to live a happier, more fulfilling life.\n10. **The One Thing Podcast**: A podcast based on the bestselling book, focusing on how to identify and prioritize the most important things in your personal and professional life.\n11. **The Achieve Your Goals Podcast**: A podcast that helps you set and achieve your goals, with a focus on productivity, motivation, and personal growth.\n12. **The James Altucher Show**: A podcast that covers a wide range of topics, from entrepreneurship and business to personal development and spirituality.\n\nThese podcasts should provide you with a great starting point for your self-improvement journey! You might also enjoy exploring categories like mindfulness, motivation, and entrepreneurship for more targeted content.\n\nRemember, personal growth is a lifelong process, and it's amazing that you're taking proactive steps to improve yourself. Keep in mind that it's all about progress, not perfection!",
+      "why": "Assistant provides a list of self-improvement/personal development podcasts; useful only insofar as it reflects the user’s previously expressed interest in that style/content.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_0250ae1c",
+      "turnIndex": 0,
+      "date": "2023/05/29 (Mon) 04:39",
+      "role": "user",
+      "text": "As an aspiring stand-up comedian, I'm looking for some advice on how to improve my craft. Can you recommend some stand-up comedy specials on Netflix with strong storytelling abilities like John Mulaney's 'Kid Gorgeous'?",
+      "why": "User explicitly requests Netflix stand-up specials with strong storytelling abilities like John Mulaney’s 'Kid Gorgeous'—clear preference for storytelling comedy.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_0250ae1c",
+      "turnIndex": 1,
+      "date": "2023/05/29 (Mon) 04:39",
+      "role": "assistant",
+      "text": "John Mulaney's \"Kid Gorgeous\" is an excellent example of standout storytelling in stand-up comedy. Here are some Netflix stand-up specials with strong storytelling abilities that you might enjoy and learn from:\n\n1. **Hasan Minhaj: Homecoming King** (2017) - Minhaj's special is a masterclass in storytelling, weaving together personal anecdotes, cultural commentary, and clever observations.\n2. **Ali Wong: Hard Knock Wife** (2018) - Wong's special is a hilarious and relatable exploration of motherhood, marriage, and her own life experiences. Her storytelling is both raw and refined.\n3. **Mike Birbiglia: My Girlfriend's Boyfriend** (2013) - Birbiglia is a seasoned storyteller, and this special showcases his ability to craft engaging narratives that are both funny and poignant.\n4. **Taylor Tomlinson: Quarter-Life Crisis** (2020) - Tomlinson's special is a great example of how to effectively structure a set around relatable themes and personal stories, with a strong focus on character development.\n5. **Maria Bamford: Lady Dynamite** (2016) - Bamford's unique voice and perspective shine in this special, which features a mix of surreal storytelling and poignant reflections on her life.\n6. **Bo Burnham: Make Happy** (2016) - While Burnham's special is more experimental in nature, his storytelling abilities are still on full display, as he tackles topics like relationships, mental health, and growing up.\n7. **Demetri Martin: Live (At the Time)** (2018) - Martin's deadpan delivery and clever writing make his special a great example of how to craft clever, observational humor that still tells a story.\n8. **Wanda Sykes: Not Normal** (2019) - Sykes is a comedy legend, and her special showcases her ability to weave together personal stories, clever observations, and biting commentary.\n9. **Hannah Gadsby: Nanette** (2018) - While not traditional stand-up, Gadsby's special is a powerful example of storytelling in comedy, using her personal experiences to tackle complex topics like trauma and identity.\n10. **Brian Regan: Nunchucks and Flamethrowers** (2017) - Regan's physical comedy and storytelling abilities make his special a great example of how to craft a set that's both funny and engaging.\n\nWatch these specials, study the comedians' techniques, and pay attention to how they structure their sets, use pacing, and create a narrative arc. Remember, the key to strong storytelling in stand-up is to find your unique voice and perspective, and to be authentic and relatable on stage. Good luck with your comedy journey!",
+      "why": "Assistant recommends specific Netflix stand-up specials (and calls out storytelling); useful as prior recommendations aligned with the user’s request.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "573dc24b_1",
+      "turnIndex": 4,
+      "date": "2023/05/29 (Mon) 01:01",
+      "role": "user",
+      "text": "I'll definitely check those out. I'm really interested in improving my productivity and time management skills, since my daily commute is pretty long. Speaking of which, do you have any recommendations for podcasts that can help me make the most of my commute?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "573dc24b_1",
+      "turnIndex": 6,
+      "date": "2023/05/29 (Mon) 01:01",
+      "role": "user",
+      "text": "I'm really interested in the language learning podcasts. I've been meaning to learn a new language for a while now, and my commute seems like the perfect time to do it. Do you have any recommendations for language learning apps that I can use in conjunction with the podcasts?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "573dc24b_1",
+      "turnIndex": 8,
+      "date": "2023/05/29 (Mon) 01:01",
+      "role": "user",
+      "text": "I'm excited to try out some of these language learning apps. I think I'll start with Duolingo and see how it goes. I've heard great things about it, and it's free, so that's a plus. Do you have any tips for staying motivated and consistent with language learning?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "573dc24b_1",
+      "turnIndex": 10,
+      "date": "2023/05/29 (Mon) 01:01",
+      "role": "user",
+      "text": "I'm going to try to apply these tips to my own language learning journey. Speaking of which, I've been thinking about starting a language learning podcast to help others stay motivated and engaged. What do you think? Would you listen to a podcast about language learning?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_0250ae1c",
+      "turnIndex": 2,
+      "date": "2023/05/29 (Mon) 04:39",
+      "role": "user",
+      "text": "I've been thinking about recording a video of myself performing some of my jokes and putting it up on YouTube. Do you have any tips on how to set up a good home recording studio for comedy videos?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_0250ae1c",
+      "turnIndex": 4,
+      "date": "2023/05/29 (Mon) 04:39",
+      "role": "user",
+      "text": "Can you recommend some online resources or books on comedy writing and storytelling that can help me improve my craft?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_0250ae1c",
+      "turnIndex": 6,
+      "date": "2023/05/29 (Mon) 04:39",
+      "role": "user",
+      "text": "Can you recommend some online resources or books on building a personal brand as a comedian and creating a online presence?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_0250ae1c",
+      "turnIndex": 8,
+      "date": "2023/05/29 (Mon) 04:39",
+      "role": "user",
+      "text": "I'm thinking of attending a comedy writing workshop at a local writing center on Friday. Do you think that's a good idea?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_0250ae1c",
+      "turnIndex": 10,
+      "date": "2023/05/29 (Mon) 04:39",
+      "role": "user",
+      "text": "I'm going to attend the comedy writing workshop on Friday. I'm looking forward to learning from experienced instructors, getting feedback on my work, and networking with other writers.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 7465,
+  "estimatedTokens": 1867
+}

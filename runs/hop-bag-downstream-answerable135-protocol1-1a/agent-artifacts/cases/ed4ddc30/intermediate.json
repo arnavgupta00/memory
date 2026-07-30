@@ -1,0 +1,18 @@
+{
+  "queryShape": "update-conflict",
+  "setBoundary": "Dozen eggs stocked up in the refrigerator (quantity as stated by the user over time)",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_babbaccb_1",
+      "turnIndex": 2,
+      "why": "User states: “we have a lot stocked up in the fridge - 30 dozen at the moment!” (egg stock quantity claim)."
+    },
+    {
+      "sessionId": "answer_babbaccb_2",
+      "turnIndex": 2,
+      "why": "User states (next day): “we've got 20 dozen stocked up in the fridge right now.” (egg stock quantity claim updated over time)."
+    }
+  ]
+}

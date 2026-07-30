@@ -1,0 +1,366 @@
+[
+  {
+    "session_id": "answer_d87a6ef8",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Medium. This session discusses general XAI trends and provides multiple paper titles, but does not name specific recent publications/conferences (e.g., MICCAI 2023, CVPR/MLHC 2022/2023) or years/dates for the recommendations beyond a few older founding papers; may not directly match the user’s “recent publications or conferences” wording.",
+      "claims": [
+        {
+          "turnIndex": 1,
+          "fact": "The assistant provided an overview of “recent advancements in deep learning for medical image analysis” (multimodal fusion, self-supervised learning, generative models, explainability/interpretability, transformers, 3D imaging, federated learning, clinical workflow integration, personalized medicine, regulatory/ethical considerations).",
+          "why": "May help contextualize what kinds of venues/topics the user might want recommendations for, though it does not list specific publications/conferences."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "BRATS (Brain Tumor Segmentation Challenge): 750 MRI scans (T1, T2, FLAIR, and T1ce).",
+          "why": "This is a concrete dataset/benchmark reference from the assistant; could help the reducer connect to related papers/venues for segmentation."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "MRBrainS: dataset of 5 MRI scans with manual segmentations of brain structures (e.g., white matter, gray matter, cerebrospinal fluid).",
+          "why": "Concrete dataset details that may anchor further recommendations."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "ACDC (Automatic Cardiac Diagnosis Challenge): dataset of 150 cardiac MRI scans with manual segmentations of the left ventricle, right ventricle, and myocardium.",
+          "why": "Concrete dataset/benchmark reference relevant to segmentation literature/venues."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "LVSC (Left Ventricle Segmentation Challenge): dataset of 30 cardiac MRI scans with manual segmentations of the left ventricle.",
+          "why": "Additional dataset reference that could be used to locate related recent work."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "LUNA (Lung Nodule Analysis): dataset of 888 CT scans with manual segmentations of lung nodules.",
+          "why": "Concrete scale/benchmark details useful for follow-up literature."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "LOLA11 (Lung CT Segmentation Challenge): dataset of 55 CT scans with manual segmentations of the lungs.",
+          "why": "Concrete benchmark details that can guide targeted paper/venue search."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "CHAOS (Computational Harmonization of Abdominal Organs Segmentation): dataset of 40 abdominal CT scans with manual segmentations of organs (e.g., liver, spleen, kidneys).",
+          "why": "Concrete dataset reference for abdominal segmentation literature."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "BTCV (Beyond the Cranial Vault): dataset of 50 abdominal CT scans with manual segmentations of organs (e.g., liver, spleen, kidneys).",
+          "why": "Concrete dataset reference useful for locating related work."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "MedMNIST: a dataset of 12 medical image segmentation tasks.",
+          "why": "Concrete dataset reference that could support recommending related papers/venues."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "MSD (Medical Segmentation Decathlon): dataset of 10 medical image segmentation tasks.",
+          "why": "Another benchmark reference relevant to segmentation research."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "ISBI Challenge: dataset of various medical image segmentation tasks, including brain, cardiac, and lung segmentation.",
+          "why": "Venue/challenge umbrella mentioned by name; can be linked to conference/workshop literature."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "MICCAI Grand Challenge: dataset of various medical image segmentation tasks, including brain, cardiac, and lung segmentation.",
+          "why": "Names MICCAI Grand Challenge; directly relevant to “conferences”/challenge recommendations."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "XAI for medical image analysis trends mentioned: attention-based models; gradient-based methods (Grad-CAM, Guided Backpropagation); visualizations/heatmaps; model-agnostic methods (LIME, SHAP values, TreeExplainer); explainable CNNs (e.g., “explainable U-Net”); hybrid approaches; evaluation metrics for XAI; clinical validation; integration with clinical workflows; addressing biases and errors.",
+          "why": "Provides topic keywords and techniques that can guide the reducer toward specific recent papers/conferences."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Survey paper: “Explainable AI in Medical Imaging: A Survey” by Rajpurkar et al. (2020).",
+          "why": "Specific paper recommendation relevant to the XAI topic the user asked about."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Systematic review: “Explanation Methods for Medical Image Analysis: A Systematic Review” by Jimenez-Sánchez et al. (2020).",
+          "why": "Specific paper recommendation."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Technical paper: “Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization” by Selvaraju et al. (2017).",
+          "why": "Specific foundational paper for visualization/interpretation methods."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Technical paper: “Attention-Gated Networks for Improving Ultrasound Image Segmentation” by Schlemper et al. (2019).",
+          "why": "Specific attention mechanism reference relevant to interpretable models in medical imaging."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Technical paper: “DeepLIFT: Deep Learning Important FeaTures” by Shrikumar et al. (2017).",
+          "why": "Specific explanation method reference."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Seminal paper: “Visualizing and Understanding Convolutional Neural Networks” by Zeiler and Fergus (2014).",
+          "why": "Specific visualization foundation paper."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Application paper: “Explainable AI for Breast Cancer Diagnosis using Mammography Images” by Rajpurkar et al. (2020).",
+          "why": "Specific domain/application paper recommendation."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Application paper: “Interpretable Deep Learning for Cardiac Image Segmentation” by Wang et al. (2020).",
+          "why": "Specific domain/application paper recommendation."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Application paper: “Explainable AI for Lung Nodule Detection in CT Scans” by Chen et al. (2020).",
+          "why": "Specific domain/application paper recommendation."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Review article: “Explainable AI in Healthcare: A Review of the Current State and Future Directions” by Topol (2020).",
+          "why": "Specific review article recommendation for broader healthcare XAI."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "sharegpt_E0YL5SX_157",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session does not actually provide any specific recent publications or conferences (no titles, authors, dates, or event names). It only contains a long example personal/application statement with generic placeholder citations ([1,2], [3], [4-9]) and one named program (DARPA’s Next-Generation Nonsurgical Neurotechnology), so it’s unlikely to directly support recommending specific recent venues.",
+      "claims": [
+        {
+          "turnIndex": 1,
+          "fact": "Mentions DARPA’s Next-Generation Nonsurgical Neurotechnology as evidence the field is heading toward improved bidirectional communication with neurons.",
+          "why": "The named DARPA program could be a source of related events, funded projects, or related conferences/publications the assistant might consider when making recommendations."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "sharegpt_9srz3L6_0",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Session content appears to be a whitepaper-style outline for a project (“Fresh Earth” token/ecosystem). It contains no clearly labeled “recent publications” or “conferences,” though it includes a “References” section heading without listing any sources in the provided excerpt. If the question requires actual conference/publication names, this session may be insufficient.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "References: A list of relevant research papers, articles, and other resources that were used in the development of the whitepaper.",
+          "why": "Could contain the publication list the user asked for, but the excerpt doesn’t show the actual references."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "The Fresh Earth ecosystem tokenomics section includes “Token Supply and distribution,” “Token Supply and distribution” and “Token limits by country,” “Token creation,” and “Supply strategy.”",
+          "why": "If the user’s interests include token economics/agrifood blockchain, this session suggests technical subject matter that could guide what kinds of publications/conferences to look for (though it doesn’t name any)."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "The Fresh Earth Token (FET) is an ERC-20 token that will be used within the Fresh Earth ecosystem to facilitate transactions, incentivize participation, and align incentives between stakeholders.",
+          "why": "Indicates the likely research/conference areas indirectly (crypto/token standards + token-incentivized regenerative agriculture)."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "Incentive drivers within the Fresh Earth ecosystem include a B2B and B2C marketplace, a Project Management Platform, a Data Management Platform, and a Rewards System.",
+          "why": "Suggests application domains (agrifood marketplaces, data/measurement platforms for regenerative practice) that correlate with potential conference tracks, even though none are named."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "sharegpt_xni9yYO_6",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session does not mention any specific recent publications or conferences the user has already read/attended; it only lists example AI conferences the user says they would like to publish in. If the goal is “recent” recommendations, this session provides limited direct evidence.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "The user wants to publish papers in peer reviewed Ai conferences such as NeurIPS, CVPR, ICML, ICLR, ICCV etc.",
+          "why": "This is the only concrete list of conference venues in the session that could be used to recommend relevant conferences for the user’s interests."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "The user has been following research and publications in multi agent and multimodal reinforcement learning and became aware of research by Dr. Stefano V Aldrich of University of Edinburgh.",
+          "why": "This indicates a research area and a named researcher/institution that could help tailor recommendations toward relevant venues or reading lists in multi-agent/multimodal RL."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "The user states interest in multi agent and multi modal reinforcement learning (including autonomous agents) for maintaining a sustainable planet.",
+          "why": "This preference/area of focus can guide which conferences/publications are most relevant to suggest (even though no specific recent items are named)."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "6172cc72_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low—this session contains multiple inclusivity/allyship resources and trainings, including several named organizations/courses and concrete content like pronoun guidance and workplace application. However, it does not explicitly mention “recent” publications/conferences or dates for events/publications, so the reducer may need other sessions to satisfy “recent publications or conferences.”",
+      "claims": [
+        {
+          "turnIndex": 7,
+          "fact": "The Trevor Project's Ally Training: A free, interactive course that teaches you how to be a supportive ally to LGBTQ+ youth.",
+          "why": "Named course/resource relevant to LGBTQ+ issues and allyship; could satisfy a recommendation request (even if not explicitly “recent”)."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "GLAAD's Media Institute: Offers courses on LGBTQ+ issues, media representation, and allyship.",
+          "why": "Named training/courses that could be recommended to the user."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Human Rights Campaign's (HRC) Ally Training: A free, online course that covers LGBTQ+ issues, terminology, and how to be an effective ally.",
+          "why": "Named course/resource relevant to LGBTQ+ allyship and issues."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Lambda Legal: A legal organization that advocates for LGBTQ+ rights and provides resources for individuals and organizations.",
+          "why": "Named organization/resource relevant to LGBTQ+ rights; can be used for recommendations."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "PFLAG: (Parents, Families, and Friends of Lesbians and Gays) provides support, education, and advocacy for LGBTQ+ individuals, families, and allies.",
+          "why": "Named organization that offers resources; useful for user seeking guidance/learning."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "The Advocate: A leading LGBTQ+ news and commentary website.",
+          "why": "Named publication/website that could be recommended for ongoing reading."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Autostraddle: A queer women's and non-binary community website that covers news, culture, and personal stories.",
+          "why": "Named outlet for reading/listening to LGBTQ+ issues and experiences."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Everyday Feminism: A website that covers intersectional feminism, LGBTQ+ issues, and social justice.",
+          "why": "Named website overlapping intersectional feminism and LGBTQ+ issues."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Queer Voices: A section of The Huffington Post that covers LGBTQ+ news, culture, and personal stories.",
+          "why": "Named section/publication relevant to LGBTQ+ news and stories."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "\"The Miseducation of Cameron Post\" by Emily M. Danforth: A novel that explores the experiences of a lesbian teenager in a conversion therapy camp.",
+          "why": "Named book recommendation relevant to LGBTQ+ issues; could be included in a “publications” list."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "\"Fun Home\" by Alison Bechdel: A graphic memoir that explores the author's experiences as a lesbian and her relationship with her father.",
+          "why": "Named book recommendation relevant to LGBTQ+ issues; could be included in a “publications” list."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "\"Sissy: A Coming-of-Gender Story\" by Jacob Tobia: A memoir that explores the author's experiences as a non-binary person.",
+          "why": "Named book recommendation relevant to non-binary/gender identity topics; could be included in a “publications” list."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Create gender-neutral bathrooms and update signage to include all gender identities.",
+          "why": "Concrete workplace inclusion practice the assistant provided; may help the user’s workplace-oriented goals."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Provide training on LGBTQ+ issues, intersectionality, and microaggressions.",
+          "why": "Named training topic areas relevant to inclusive workplace; could be used as guidance even though not “publications/conferences.”"
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Offer inclusive benefits, such as health insurance that covers gender-affirming surgeries and hormone therapy.",
+          "why": "Workplace policy guidance for LGBTQ+ inclusion; relevant to the user’s goals."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Provide training on LGBTQ+ issues, intersectionality, and allyship; offer workshops on creating inclusive language, respecting pronouns, and addressing microaggressions.",
+          "why": "Training formats/topics the assistant suggested; could inform what to look for in courses/events."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Use inclusive language in company-wide communications, avoiding gendered language and assumptions.",
+          "why": "Professional setting language guidance relevant to user’s pronoun/inclusive language aims."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Celebrate LGBTQ+ events and awareness months, such as Pride Month and Transgender Awareness Week.",
+          "why": "Named event/awareness periods that could guide what conferences or events to seek (though not “recent” or specific dates)."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Provide training on LGBTQ+ issues, intersectionality, and allyship; offer workshops on creating inclusive language, respecting pronouns, and addressing microaggressions.",
+          "why": "Reinforces specific workshop areas for inclusive practices; could be used when recommending relevant trainings/events."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Ask politely and respectfully: \"May I ask what pronouns you prefer? I want to make sure I'm respecting your identity.\"",
+          "why": "Direct guidance on pronoun questions; relevant to the user’s allyship/inclusion goals (though not a publication/conference)."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Use gender-neutral language: If you're not sure what pronouns someone prefers, you can use gender-neutral language like \"they\" and \"them\" until you're told otherwise.",
+          "why": "Actionable pronoun/communication guidance relevant to inclusion."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Listen and apologize if you make a mistake... \"I'm so sorry, I made a mistake. I'll make sure to use [correct pronouns] from now on.\"",
+          "why": "Actionable guidance for correcting misgendering; relevant to allyship."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Instead of saying \"guys\" or \"girls,\" try using \"folks,\" \"everyone,\" or \"team.\"",
+          "why": "Concrete language substitution tips the assistant gave; could support the user’s workplace/inclusion practice."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Avoid using language that assumes someone's gender, such as \"hello, ladies\" or \"hey, dude.\"",
+          "why": "Concrete guidance on avoiding gendered assumptions."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "9ac3fa82_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Medium. This session is about gardening (companion planting, natural pest control) rather than the user’s question about recent publications or conferences, so it likely contains no relevant recommendations; however, it does include assistant-provided advice content that could affect how the reducer interprets the user’s interests/preferences if it’s repurposed for conference topics.",
+      "claims": [
+        {
+          "turnIndex": 1,
+          "fact": "Assistant provided tips on companion planting for tomatoes, listing specific companion plants (basil, marigold, borage, chives, oregano, comfrey) and plants to avoid near tomatoes (fennel, kohlrabi, members of the Brassica family).",
+          "why": "Captures the user’s stated interest in tomato companion planting and specific horticulture topics; may help the reducer tailor recommendations to gardening-focused publications/conferences if those are sought."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Assistant gave a spacing guide for the \"Three Sisters\" method: corn in the center (3–4 plants per hill; hills 3–4 feet apart), beans 3–4 inches from corn stalks and 2–3 inches apart, tomatoes around the perimeter 2–3 feet away from corn/beans and 2–3 feet apart.",
+          "why": "Shows the user’s active interest in a particular gardening technique and includes concrete details about it that could influence what kinds of gardening workshops/conferences the user may find relevant."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Assistant recommended flowers for natural pest control for tomato plants (marigold, nasturtium, calendula, borage, chrysanthemum, sunflowers, dahlias, bee balm) and provided usage tips (plant around perimeter/intersperse; mix annuals/perennials; plant different bloom times; consider trap crops).",
+          "why": "Strengthens the inferred domain interests (natural pest control via companion planting) relevant to selecting gardening publications/conferences."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Assistant described how to identify common pests (aphids and whiteflies) including characteristic observations (e.g., aphids on underside of leaves, honeydew, ants tending colonies; whiteflies as small winged insects with white/cottony eggs) and monitoring methods (sticky/yellow traps; pest patrol routine).",
+          "why": "Adds further evidence the user is interested in pest identification/monitoring in natural pest control, relevant to gardening-focused events or literature."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Assistant provided neem oil mixing/applying instructions: mixing ratio 2–4 teaspoons neem oil concentrate per 1 quart (1 liter) water plus 1–2 drops mild dish soap; apply by spraying all plant surfaces including undersides; apply early morning or evening; repeat every 7–10 days; precautions and pests controlled.",
+          "why": "Confirms the user’s interest in natural pest control methods (neem oil) and could guide the reducer toward recommending publications/conferences in that niche."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Assistant gave a simple method for making garden markers from recycled stones (materials: flat stones, permanent marker/paint pen, optional sealant; steps: clean/dry stones, write design, optionally seal, dry, place marker).",
+          "why": "Indicates additional hobby/garden DIY interest that could narrow down relevant maker/gardening resources if the reducer seeks conference/publication suggestions in that area."
+        }
+      ]
+    }
+  }
+]

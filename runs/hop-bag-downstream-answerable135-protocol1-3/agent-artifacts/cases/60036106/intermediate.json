@@ -1,0 +1,35 @@
+[
+  {
+    "session_id": "answer_e552e1f9_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session only mentions that a previous Facebook ad campaign reached around 2,000 people; it provides no Instagram influencer collaboration reach figure and does not state totals for a specific combined campaign period (nor whether the 2,000 includes Instagram).",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "Previous ad campaign ran for five days and reached around 2,000 people.",
+          "why": "Provides a concrete reach quantity for a Facebook ad campaign that may be part of the total requested (though it’s explicitly “previous” and only for Facebook)."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_e552e1f9_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session mentions Instagram influencer follower count (10,000) and a previous Facebook ad campaign reach (~2,000), but does not provide a direct 'total number of people reached' for the influencer collaboration or clarify whether Facebook reach (~2,000) is for the same campaign being asked about. Therefore, the exact combined total for 'my Facebook ad campaign and Instagram influencer collaboration' may be incomplete or ambiguous from this single session.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User collaborated with an influencer who promoted their product to her 10,000 followers.",
+          "why": "Provides a follower-based audience size tied to the Instagram influencer collaboration, which could relate to the number of people reached."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "Previous Facebook ad campaign reached around 2,000 people and resulted in 50 clicks to the website.",
+          "why": "Gives an approximate reach figure for a Facebook ad campaign and click data, relevant to the total 'people reached' for Facebook ads."
+        }
+      ]
+    }
+  }
+]

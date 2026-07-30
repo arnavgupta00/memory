@@ -1,0 +1,98 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Sum only the explicit “hours played/complete in X hours” figures stated in the candidate sessions, treating each figure as a separate game-time entry unless the answerer determines duplicates.",
+    "candidateStatus": "found",
+    "missingRisk": "There may be additional games/hours not present in the candidate sessions (or some hours may overlap/represent different difficulties for the same game), so the final total could be incomplete or require deduplication decisions.",
+    "items": [
+      {
+        "sessionId": "answer_8d015d9d_3",
+        "turnIndex": 6,
+        "why": "Explicitly states you spent around 70 hours playing Assassin’s Creed Odyssey."
+      },
+      {
+        "sessionId": "answer_8d015d9d_2",
+        "turnIndex": 0,
+        "why": "Explicitly states The Last of Us Part II on hard took 30 hours to finish."
+      },
+      {
+        "sessionId": "answer_8d015d9d_1",
+        "turnIndex": 0,
+        "why": "Explicitly states The Last of Us Part II on normal took 25 hours to complete."
+      },
+      {
+        "sessionId": "answer_8d015d9d_5",
+        "turnIndex": 0,
+        "why": "Explicitly states Hyper Light Drifter was finished in 5 hours (playtime)."
+      },
+      {
+        "sessionId": "answer_8d015d9d_4",
+        "turnIndex": 0,
+        "why": "Explicitly states Celeste took 10 hours to complete."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Sum only the explicit “hours played/complete in X hours” figures stated in the candidate sessions, treating each figure as a separate game-time entry unless the answerer determines duplicates.",
+    "candidateStatus": "found",
+    "missingRisk": "There may be additional games/hours not present in the candidate sessions (or some hours may overlap/represent different difficulties for the same game), so the final total could be incomplete or require deduplication decisions.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_8d015d9d_3",
+        "turnIndex": 6,
+        "why": "Explicitly states you spent around 70 hours playing Assassin’s Creed Odyssey."
+      },
+      {
+        "sessionId": "answer_8d015d9d_3",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_8d015d9d_3",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_8d015d9d_2",
+        "turnIndex": 0,
+        "why": "Explicitly states The Last of Us Part II on hard took 30 hours to finish."
+      },
+      {
+        "sessionId": "answer_8d015d9d_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_8d015d9d_1",
+        "turnIndex": 0,
+        "why": "Explicitly states The Last of Us Part II on normal took 25 hours to complete."
+      },
+      {
+        "sessionId": "answer_8d015d9d_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_8d015d9d_5",
+        "turnIndex": 0,
+        "why": "Explicitly states Hyper Light Drifter was finished in 5 hours (playtime)."
+      },
+      {
+        "sessionId": "answer_8d015d9d_5",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_8d015d9d_4",
+        "turnIndex": 0,
+        "why": "Explicitly states Celeste took 10 hours to complete."
+      },
+      {
+        "sessionId": "answer_8d015d9d_4",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

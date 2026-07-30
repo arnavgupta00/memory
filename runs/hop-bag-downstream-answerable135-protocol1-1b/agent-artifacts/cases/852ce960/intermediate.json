@@ -1,0 +1,48 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "pre-approval amount specifically for the Wells Fargo mortgage that you got (not general closing-cost estimates).",
+    "candidateStatus": "found",
+    "missingRisk": "Another session may mention a different Wells Fargo pre-approval amount (e.g., $400,000), so downstream should reconcile which one corresponds to the mortgage you’re asking about.",
+    "items": [
+      {
+        "sessionId": "answer_3a6f1e82_1",
+        "turnIndex": 2,
+        "why": "User states they were pre-approved for a $350,000 home loan from Wells Fargo; this is the direct pre-approval amount relevant to the question."
+      },
+      {
+        "sessionId": "answer_3a6f1e82_1",
+        "turnIndex": 3,
+        "why": "Assistant repeats/uses the $350,000 Wells Fargo pre-approval amount to proceed with the estimate, preserving the same key fact for downstream retrieval."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "pre-approval amount specifically for the Wells Fargo mortgage that you got (not general closing-cost estimates).",
+    "candidateStatus": "found",
+    "missingRisk": "Another session may mention a different Wells Fargo pre-approval amount (e.g., $400,000), so downstream should reconcile which one corresponds to the mortgage you’re asking about.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_3a6f1e82_1",
+        "turnIndex": 2,
+        "why": "User states they were pre-approved for a $350,000 home loan from Wells Fargo; this is the direct pre-approval amount relevant to the question."
+      },
+      {
+        "sessionId": "answer_3a6f1e82_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_3a6f1e82_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_3a6f1e82_1",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

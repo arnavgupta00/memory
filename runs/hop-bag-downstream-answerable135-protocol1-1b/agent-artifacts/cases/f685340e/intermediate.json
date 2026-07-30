@@ -1,0 +1,63 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Use the candidate sessions to extract the tennis frequency claims for (1) the earlier period (“previously”) and (2) the current period (“now”) relative to 2023/07/31, without adding new assumptions beyond what’s stated.",
+    "candidateStatus": "found",
+    "missingRisk": "The two candidate sessions may describe different timeframes without explicitly defining what “previously” means relative to 2023/07/31; the answerer may need to decide whether “weekly” (from 2023/03/11) should be treated as the prior frequency and whether “every other week” (from 2023/07/30) is the current frequency.",
+    "items": [
+      {
+        "sessionId": "answer_25df025b_1",
+        "turnIndex": 0,
+        "why": "Contains the earlier tennis frequency statement: “I have weekly tennis sessions with friends,” plus local park context."
+      },
+      {
+        "sessionId": "answer_25df025b_2",
+        "turnIndex": 0,
+        "why": "Contains the current tennis frequency statement: “I play tennis with my friends at the local park every other week,” plus local park context near the query date."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Use the candidate sessions to extract the tennis frequency claims for (1) the earlier period (“previously”) and (2) the current period (“now”) relative to 2023/07/31, without adding new assumptions beyond what’s stated.",
+    "candidateStatus": "found",
+    "missingRisk": "The two candidate sessions may describe different timeframes without explicitly defining what “previously” means relative to 2023/07/31; the answerer may need to decide whether “weekly” (from 2023/03/11) should be treated as the prior frequency and whether “every other week” (from 2023/07/30) is the current frequency.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_25df025b_1",
+        "turnIndex": 0,
+        "why": "Contains the earlier tennis frequency statement: “I have weekly tennis sessions with friends,” plus local park context."
+      },
+      {
+        "sessionId": "answer_25df025b_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_25df025b_2",
+        "turnIndex": 0,
+        "why": "Contains the current tennis frequency statement: “I play tennis with my friends at the local park every other week,” plus local park context near the query date."
+      },
+      {
+        "sessionId": "answer_25df025b_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_25df025b_1",
+        "turnIndex": 6,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_25df025b_1",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_25df025b_1",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

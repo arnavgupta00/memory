@@ -1,0 +1,64 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Cocktail recipe(s) the user says they tried last weekend (relative to 2023/05/30).",
+  "candidateStatus": "found",
+  "missingRisk": "n/a",
+  "items": [
+    {
+      "sessionId": "answer_c8354ae9",
+      "turnIndex": 2,
+      "date": "2023/05/22 (Mon) 08:41",
+      "role": "user",
+      "text": "That's a lot of great ideas! I'm particularly interested in the Lavender Dream, as I've been experimenting with lavender in my cocktails lately. Speaking of which, I tried a lavender gin fizz recipe last weekend, but it didn't quite turn out as expected - I didn't have simple syrup, so I had to improvise with honey and water. Do you have any tips on making a good simple syrup, or would you recommend a specific brand?",
+      "why": "User explicitly says: “I tried a lavender gin fizz recipe last weekend…”",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c8354ae9",
+      "turnIndex": 4,
+      "date": "2023/05/22 (Mon) 08:41",
+      "role": "user",
+      "text": "Thanks for the tips on making simple syrup! I think I'll try making my own this weekend. For the Lavender Dream, I actually didn't infuse my gin with lavender, I just found a recipe online that called for lavender syrup and gin. I didn't have lavender syrup, so I tried to make a lavender gin fizz instead, but like I said, it didn't turn out so well. Anyway, I was thinking of experimenting with different gin brands for my summer dinner party. Can you recommend any good ones?",
+      "why": "User further clarifies they attempted a lavender gin fizz (instead of lavender syrup) and that it didn’t turn out well.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c8354ae9",
+      "turnIndex": 0,
+      "date": "2023/05/22 (Mon) 08:41",
+      "role": "user",
+      "text": "I'm planning a summer dinner party and want to create a signature cocktail for the event. Can you suggest some refreshing gin-based drinks that incorporate fresh herbs from my garden?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c8354ae9",
+      "turnIndex": 6,
+      "date": "2023/05/22 (Mon) 08:41",
+      "role": "user",
+      "text": "I actually have a bottle of Bombay Sapphire at home, which I've been enjoying lately. I've been using it to make classic gin and tonics, and I have to say, it's become my go-to for that particular drink. I've also been experimenting with different tonic waters, and I'm currently obsessed with the elderflower tonic from Fever-Tree. Have you tried it?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c8354ae9",
+      "turnIndex": 8,
+      "date": "2023/05/22 (Mon) 08:41",
+      "role": "user",
+      "text": "I think that's a great idea! I've been meaning to experiment with lavender in my cocktails more, and using it in a gin and tonic sounds like a fantastic way to do so. I'll definitely look into making a lavender syrup or infusion to add to my Bombay Sapphire and Fever-Tree elderflower tonic. Do you have any tips on how to make a good lavender syrup, or should I just experiment with different ratios of lavender to sugar and water?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c8354ae9",
+      "turnIndex": 10,
+      "date": "2023/05/22 (Mon) 08:41",
+      "role": "user",
+      "text": "That's really helpful, thanks! I think I'll start with the 1:1:1 ratio and adjust from there. I'm excited to experiment and find the perfect balance of flavors for my Lavender Dream cocktail. By the way, speaking of experimenting with flavors, I've been trying out different hot sauces lately and I recently made my own hot sauce using jalapenos from my garden. Have you tried making your own hot sauce before?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 2274,
+  "estimatedTokens": 569
+}

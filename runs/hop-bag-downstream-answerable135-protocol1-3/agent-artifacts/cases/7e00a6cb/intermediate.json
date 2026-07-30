@@ -1,0 +1,21 @@
+[
+  {
+    "session_id": "answer_ultrachat_370515",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session contains a hostel recommendation near the Red Light District, but it does not explicitly confirm it as “the one” the user refers to from “last time,” nor does it provide any other hostel name tied to the Red Light District beyond that single mention.",
+      "claims": [
+        {
+          "turnIndex": 1,
+          "fact": "Some options include: International Budget Hostel.",
+          "why": "This lists a specific hostel included among budget-friendly options."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "International Budget Hostel: situated near the famous Red Light District and offers affordable dormitory-style rooms and private rooms.",
+          "why": "Directly matches the query about a hostel near the Red Light District and preserves the hostel name and location details."
+        }
+      ]
+    }
+  }
+]

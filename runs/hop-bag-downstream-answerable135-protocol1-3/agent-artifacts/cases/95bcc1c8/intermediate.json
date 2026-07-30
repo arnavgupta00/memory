@@ -1,0 +1,26 @@
+[
+  {
+    "session_id": "answer_cb742a61",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "none",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "I'm looking for some comedy writing tips. I've been taking a stand-up comedy class and I'm trying to come up with some new material.",
+          "why": "Provides context about the user's comedy activity but not directly the count question."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "I recently went to an open mic night and saw 10 amateur comedians perform.",
+          "why": "Directly answers the numeric part of the question about how many amateur comedians were seen performing at an open mic night."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "Oh, and I almost forgot to mention - I had a great time at that open mic night a few weeks ago.",
+          "why": "Corroborates that the open mic night occurred, but does not change the count."
+        }
+      ]
+    }
+  }
+]

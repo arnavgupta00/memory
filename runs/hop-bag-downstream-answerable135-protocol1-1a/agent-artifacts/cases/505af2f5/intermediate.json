@@ -1,0 +1,33 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Coffee creamer recipe recommendations, especially around healthier/lower-sugar homemade creamer and flavor preferences.",
+  "candidateStatus": "found",
+  "missingRisk": "may still be missing more recent preferences (e.g., dietary limits beyond sugar reduction, preferred tastes/texture, or whether they use dairy vs non-dairy).",
+  "items": [
+    {
+      "sessionId": "answer_f3164f2c",
+      "turnIndex": 0,
+      "why": "User’s goal and current homemade creamer base: reducing sugar intake and saving money; uses almond milk, vanilla extract, and honey."
+    },
+    {
+      "sessionId": "answer_f3164f2c",
+      "turnIndex": 1,
+      "why": "Assistant recommendations directly relevant to making the user’s homemade flavored creamer healthier (sweetener swaps, adjust honey, add spices, pinch of salt, other milks, etc.)."
+    },
+    {
+      "sessionId": "4f2d6be4_2",
+      "turnIndex": 6,
+      "why": "User is interested in new coffee flavors; assistant provided spring-themed coffee flavors (includes Lemon Ginger) that can inform creamer flavor direction."
+    },
+    {
+      "sessionId": "4f2d6be4_2",
+      "turnIndex": 7,
+      "why": "Assistant’s detailed spring-themed coffee drink/flavor suggestions (flavor combos like lemon ginger, strawberry cream, etc.) that can translate into creamer recipes."
+    },
+    {
+      "sessionId": "4f2d6be4_2",
+      "turnIndex": 8,
+      "why": "User chose Lemon Ginger first; shows specific flavor preference they may want to apply to a creamer recipe."
+    }
+  ]
+}

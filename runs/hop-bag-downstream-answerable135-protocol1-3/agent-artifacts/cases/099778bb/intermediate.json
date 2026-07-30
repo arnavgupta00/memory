@@ -1,0 +1,55 @@
+[
+  {
+    "session_id": "answer_80d6d664_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Session contains no verified company statistic; the only numeric leadership figure (“women occupy 20 of the leadership positions”) appears to be provided by the user, not confirmed by the assistant or backed by a source. Likely the question needs a percentage, but the session does not state the total number of leadership positions or an explicit percentage.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "User says: “women occupy 20 of the leadership positions in our company.”",
+          "why": "This is the only quantitative data relevant to women’s share of leadership positions, though it is missing the total and may not be confirmed."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "Assistant discusses diversity and inclusion resources (Company intranet, company website, HR department, ERGs, and diversity and inclusion reports).",
+          "why": "May be relevant if the user is trying to locate the exact leadership gender-percentage figure via reported company metrics."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Assistant suggests diversity and inclusion reports often include leadership demographics, including the number of women in senior leadership roles.",
+          "why": "Indicates where the needed leadership-gender percentage could be found, even though no specific percentage is provided."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_80d6d664_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session does not provide any company-specific count of women in leadership roles or an explicit percentage; it only mentions a total of 100 leadership positions and provides general suggestions/resources about measuring women’s representation. Therefore, the reducer will likely need other sessions to answer the percentage question.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User says they have a total of 100 leadership positions across the company.",
+          "why": "Provides a denominator for leadership positions count (needed for calculating a women-held percentage) even though women’s count/percentage is not provided here."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Assistant suggests setting diversity and inclusion goals and tracking diversity and inclusion metrics such as representation in leadership.",
+          "why": "Relevant to the question because it addresses how to measure representation (women’s share of leadership), even though it does not state the actual percentage for the user’s company."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Assistant states that certain resources may provide data on the average percentage of women in leadership positions by industry and company size.",
+          "why": "Indicates where percentage benchmarks might be found, though it does not answer the user’s company-specific percentage."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Assistant lists multiple resources (e.g., Catalyst, McKinsey, Deloitte) that provide data on the representation of women in leadership positions.",
+          "why": "Supports the idea that women’s representation percentages exist in external reports, but does not provide the user’s company’s women-in-leadership percentage."
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,118 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Which LinkedIn/book-club group the user joined first: 'Page Turners' vs 'Marketing Professionals'",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_544fe66c_2",
+      "turnIndex": 0,
+      "date": "2023/05/25 (Thu) 01:50",
+      "role": "user",
+      "text": "I'm looking for some book recommendations. I just joined a new book club group called \"Page Turners\" last week, where we discuss our favorite novels and share recommendations. Do you have any suggestions for our next read?",
+      "why": "User states they joined the new book club group 'Page Turners' last week.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_544fe66c_3",
+      "turnIndex": 0,
+      "date": "2023/05/25 (Thu) 05:43",
+      "role": "user",
+      "text": "I'm looking for some marketing resources on personal branding. I've been engaging with a group called \"Marketing Professionals\" on LinkedIn since I joined it yesterday, where we discuss industry trends and share resources. Do you know of any good articles or online courses on the topic?",
+      "why": "User states they began engaging with 'Marketing Professionals' on LinkedIn since joining it yesterday.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_544fe66c_2",
+      "turnIndex": 2,
+      "date": "2023/05/25 (Thu) 01:50",
+      "role": "user",
+      "text": "These all look great! I think I'll suggest \"The Seven Husbands of Evelyn Hugo\" for our next read. I've heard great things about it and it seems like a fun and engaging story. Do you have any information on the author, Taylor Jenkins Reid?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_544fe66c_2",
+      "turnIndex": 4,
+      "date": "2023/05/25 (Thu) 01:50",
+      "role": "user",
+      "text": "That's really helpful. I'll definitely share this with my book club. By the way, have you got any information on debut authors? One of the members in my book club, who's also an author, is publishing her debut novel soon and I'd love to learn more about the process.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_544fe66c_2",
+      "turnIndex": 6,
+      "date": "2023/05/25 (Thu) 01:50",
+      "role": "user",
+      "text": "That's really informative. I'll definitely share this with my book club member who's publishing her debut novel. By the way, do you have any tips on how to lead a book club discussion? I've participated in two discussions already, one on \"The Nightingale\" and another on \"The Hate U Give\", and I'd love to learn how to facilitate a more engaging conversation.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_544fe66c_2",
+      "turnIndex": 8,
+      "date": "2023/05/25 (Thu) 01:50",
+      "role": "user",
+      "text": "I think I can suggest some books that might be of interest to my book club member who's publishing her debut novel. Do you have any recommendations for books on writing, publishing, or author platforms?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_544fe66c_2",
+      "turnIndex": 10,
+      "date": "2023/05/25 (Thu) 01:50",
+      "role": "user",
+      "text": "I think I can also mention that one of the members in my book club is publishing her debut novel soon, and I'd love to learn more about the process. Would you happen to have any information or resources on debut authors and the publishing process?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_544fe66c_3",
+      "turnIndex": 2,
+      "date": "2023/05/25 (Thu) 05:43",
+      "role": "user",
+      "text": "I'd like to learn more about creating a strong online presence, especially on LinkedIn. Can you give me some tips on how to optimize my LinkedIn profile to showcase my personal brand?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_544fe66c_3",
+      "turnIndex": 4,
+      "date": "2023/05/25 (Thu) 05:43",
+      "role": "user",
+      "text": "I'll definitely work on optimizing my LinkedIn profile. Can you also suggest some ways to create engaging content on LinkedIn, like the type of posts that can spark conversations and drive meaningful interactions?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_544fe66c_3",
+      "turnIndex": 6,
+      "date": "2023/05/25 (Thu) 05:43",
+      "role": "user",
+      "text": "I've been engaging with a group called \"Marketing Professionals\" on LinkedIn, where we discuss industry trends and share resources. I'd like to share some of the insights and discussions from the group in my own posts. Do you think that's a good idea, and if so, how can I do it without coming across as too promotional or spammy?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_544fe66c_3",
+      "turnIndex": 8,
+      "date": "2023/05/25 (Thu) 05:43",
+      "role": "user",
+      "text": "I'd like to ask about creating a content calendar to organize my posts and ensure consistency. Can you provide some tips on how to create an effective content calendar, and maybe some tools or templates to make it easier?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_544fe66c_3",
+      "turnIndex": 10,
+      "date": "2023/05/25 (Thu) 05:43",
+      "role": "user",
+      "text": "I'd like to create a content calendar to organize my posts and ensure consistency on LinkedIn. Can you provide some tips on how to create an effective content calendar, and maybe some tools or templates to make it easier?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 2989,
+  "estimatedTokens": 748
+}

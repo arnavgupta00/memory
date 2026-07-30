@@ -1,0 +1,154 @@
+{
+  "queryShape": "order",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "answer_016f6bd4_1",
+      "turnIndex": 0,
+      "date": "2022/05/15 (Sun) 04:32",
+      "role": "user",
+      "text": "I'm looking for some ideas for gifts for my brother's birthday in June. I've been thinking of getting him a new watch, but I'm not sure what brand or style to go for. Can you give me some suggestions? By the way, I just got a great deal on a personalized photo album from Shutterfly last month, I ordered it on the 15th of April for my best friend's birthday and it turned out amazing!",
+      "why": "per-session extractor: This is the ordering date tied to the best friend's birthday party gift, which is needed to compute how many days before the party the gift was ordered.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_016f6bd4_1",
+      "turnIndex": 6,
+      "date": "2022/05/15 (Sun) 04:32",
+      "role": "user",
+      "text": "That's really helpful, thanks! I think I'll go ahead with the Skagen Ancher. I'm sure my brother will love it. By the way, speaking of personalized gifts, I recently ordered a customized photo album from Shutterfly for my best friend's birthday, and it turned out amazing. I ordered it on the 15th of April and it arrived on the 20th, just in time for her party. Do you think I could get a similar service for watches, like engraving or something?",
+      "why": "per-session extractor: Provides both the order date (April 15) and an arrival date (April 20) linked to her party; arrival may help infer timing if the party date is otherwise known.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "5cb58cc6",
+      "turnIndex": 8,
+      "date": "2022/05/15 (Sun) 09:56",
+      "role": "user",
+      "text": "I've been using Instagram to keep up with my friends and family who live abroad. I follow around 150 accounts, and I try to scroll through my feed at least once a day. Last week, I posted a story about my birthday celebration and got around 30 replies from friends and family. I recall responding to most of them individually, thanking them for their wishes.",
+      "why": "empty-extractor deterministic fallback",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_016f6bd4_2",
+      "turnIndex": 4,
+      "date": "2022/05/15 (Sun) 14:45",
+      "role": "user",
+      "text": "I'm particularly interested in the Fossil Grant Chronograph Watch, can you tell me more about it? Also, I had a great time celebrating my best friend's 30th birthday party recently, it was on the 22nd of April, she loved the personalized photo album I got her.",
+      "why": "per-session extractor: Provides the birthday party date (April 22) and identifies the gift (personalized photo album), which could be needed to compute how many days before the party you ordered it—though the ordering date is not stated here.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "aaf71ce2_2",
+      "turnIndex": 0,
+      "date": "2022/05/15 (Sun) 19:06",
+      "role": "user",
+      "text": "I'm looking for some gift ideas for my sister-in-law's sister, who got married last December. I finally got around to buying a kitchen appliance from their registry, but I want to add a more personal touch to the gift. Do you have any suggestions? By the way, speaking of weddings and engagements, my close friend Rachel got engaged last month on May 15th, and we're already planning her bachelorette party!",
+      "why": "empty-extractor deterministic fallback",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "2def525b_1",
+      "turnIndex": 2,
+      "date": "2022/05/15 (Sun) 20:55",
+      "role": "user",
+      "text": "I'm planning to visit my mom's best friend in Denver, Colorado. I'm flexible with my travel dates, but I'd like to go within the next two weeks. I live near Chicago, so I'd prefer to fly out of O'Hare or Midway airport. I'm open to budget-friendly options, and my budget for flights and accommodations is around $500 total.",
+      "why": "empty-extractor deterministic fallback",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_016f6bd4_1",
+      "turnIndex": 1,
+      "date": "2022/05/15 (Sun) 04:32",
+      "role": "assistant",
+      "text": "Happy birthday to your brother in advance! Getting a watch as a gift is a great idea, and I'd be happy to help you with some suggestions.\n\nBefore I dive into some watch recommendations, I just want to say that's awesome you got a great deal on a personalized photo album from Shutterfly! It's always exciting to find a great bargain, and I'm sure your best friend loved the thoughtful gift.\n\nNow, let's get back to watches! To give you some tailored suggestions, could you please tell me a bit more about your brother's style and preferences? For example:\n\n1. Does he have a preferred brand or style in mind (e.g., luxury, sporty, minimalist, vintage)?\n2. What's his budget like? Are you looking to spend under $100, $200, or $500+?\n3. Does he have a favorite color or metal type (e.g., leather, stainless steel, gold)?\n4. Is there a specific feature he's looking for (e.g., waterproof, smartwatch, chronograph)?\n5. Does he dress formally or casually most of the time?\n\nWith these details, I can provide you with some personalized watch recommendations that'll fit your brother's style and preferences.\n\nIn the meantime, here are some popular watch brands across various price points to consider:\n\n* Affordable: Fossil, Skagen, Timex\n* Mid-range: Tissot, Seiko, Citizen\n* Luxury: Omega, Rolex, Tag Heuer\n\nLet me know if you have any specific questions or if there's anything else I can help you with!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_016f6bd4_1",
+      "turnIndex": 5,
+      "date": "2022/05/15 (Sun) 04:32",
+      "role": "assistant",
+      "text": "The Skagen Ancher is a fantastic choice, and I'm happy to provide more information about the leather strap quality and engraving options.\n\n**Leather Strap Quality:**\nSkagen is known for using high-quality leather straps that are durable and comfortable to wear. The Ancher model features a genuine leather strap made from cowhide, which is soft to the touch and develops a beautiful patina over time. The leather is also treated with a protective coating to resist scratches and water damage.\n\nWhile Skagen's leather straps are generally well-regarded, it's essential to note that they may not be as durable as some high-end watch brands. However, with proper care and maintenance, the Ancher's leather strap should last for several years.\n\n**Engraving Options:**\nYes, it is possible to get the Skagen Ancher engraved with a personal message. Skagen offers engraving services for some of their models, including the Ancher. You can choose from various font styles and characters to create a unique message or symbol.\n\nHowever, please note that engraving services may not be available for all Skagen models or retailers. If you're interested in engraving, I recommend checking with the retailer you plan to purchase from to see if they offer this service. Some popular retailers like Amazon or Skagen's official website might have engraving options available.\n\nAlternatively, you could also consider using a third-party engraving service, but be sure to check the warranty and authenticity of the watch before doing so.\n\n**Additional Tips:**\n\n* To ensure the leather strap lasts longer, avoid exposing it to excessive water, harsh chemicals, or extreme temperatures.\n* Condition the leather strap periodically to keep it soft and supple.\n* If you do decide to engrave the watch, make sure to check the character limit and font style options before finalizing your order.\n\nI hope this information helps you make a more informed decision! If you have any more questions or concerns, feel free to ask.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_016f6bd4_1",
+      "turnIndex": 7,
+      "date": "2022/05/15 (Sun) 04:32",
+      "role": "assistant",
+      "text": "I'm glad you're excited about the Skagen Ancher!\n\nRegarding personalized watch services, yes, there are several options available that offer engraving, customization, or even bespoke watch designs. Here are a few possibilities:\n\n1. **Watch Engraving Services:** Many online retailers, like Amazon or WatchShop, offer watch engraving services for certain models. They might have a range of font styles, characters, and symbols to choose from. You can check with the retailer before making a purchase to see if they offer this service.\n2. **Custom Watch Companies:** There are companies that specialize in custom watch designs, engraving, and personalization. They might offer bespoke watch designs, monogramming, or special messages. Some popular options include Timex, Fossil, and Daniel Wellington.\n3. **Local Jewelers:** You can also visit local jewelers or watch repair shops in your area that offer engraving services. They might have more flexibility in terms of design and font options.\n4. **Online Marketplaces:** Etsy is a great platform to find unique, handmade, or customized watches with personalized engravings. You can search for sellers who offer customization services or bespoke watches.\n\nKeep in mind that engraving services might add an extra cost to the watch, and the availability of these services may vary depending on the retailer or brand. Be sure to check the warranty and authenticity of the watch before opting for any customization.\n\nIt's great to hear that your Shutterfly experience was successful, and I'm sure your best friend loved the personalized photo album! If you have any more questions or need help with finding a watch engraving service, feel free to ask!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "5cb58cc6",
+      "turnIndex": 7,
+      "date": "2022/05/15 (Sun) 09:56",
+      "role": "assistant",
+      "text": "It's great that you've found a way to engage with your hobbies on Facebook and receive positive feedback from your network.\n\nThe fact that you posted a photo from your recent hike and received engagement from your friends and acquaintances can be a great motivator to continue sharing your experiences and connecting with others on the platform.\n\nLet's break down your Facebook usage further:\n\n* **Increased engagement in hobby-related groups**: This is a great way to connect with like-minded individuals and stay updated on topics that interest you. It's likely that this increase in engagement was a one-time spike due to your recent post, but it's essential to monitor your usage to ensure it doesn't become excessive.\n* **Posting frequency and content type**: You mentioned posting a photo from your hike. Are you planning to continue sharing more updates about your outdoor adventures or other aspects of your life?\n* **Engagement metrics**: The 20 likes and 5 comments on your post are a good indication that your friends are interested in your content. Do you find yourself checking your notifications and engagement metrics frequently, or is it not a significant concern for you?\n\nMoving on to your other platforms:\n\n* **Instagram**: You didn't mention any significant changes in your Instagram usage. Are you using Instagram primarily for personal or professional purposes? Do you follow any influencers or brands related to your hobbies or work?\n* **Twitter**: You didn't mention any changes in your Twitter usage either. Are you using Twitter for news, work-related activities, or personal interests? Do you engage with others on the platform, or is it mostly a passive experience for you?\n* **LinkedIn**: You didn't mention any changes in your LinkedIn usage. Are you using LinkedIn primarily for professional networking, job searching, or staying updated on industry news?\n\n**Reflection time!**\n\nConsider the following questions:\n\n* Are there any platforms where you feel like you're not using them to their full potential or not getting the desired engagement?\n* Are there any specific features or content types that consume most of your attention on each platform?\n* Are there any times of the day when you tend to mindlessly scroll through social media?\n* How do you feel about your overall social media usage? Do you feel like it's impacting your productivity, relationships, or mental health in any way?\n\nTake your time to reflect on these questions, and we can discuss your thoughts and observations further.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "5cb58cc6",
+      "turnIndex": 9,
+      "date": "2022/05/15 (Sun) 09:56",
+      "role": "assistant",
+      "text": "It's great that you're using Instagram to stay connected with your friends and family who live abroad. The platform can be a wonderful tool for maintaining relationships across distances.\n\nLet's break down your Instagram usage further:\n\n* **Following 150 accounts**: That's a moderate-sized following. Are you finding it manageable to keep up with the content from all these accounts, or do you feel like you're missing out on certain posts or updates?\n* **Daily scrolling**: You mentioned scrolling through your feed at least once a day. Do you have a specific time of day when you usually check Instagram, or is it more of a habitual behavior throughout the day?\n* **Posting frequency and content type**: You posted a story about your birthday celebration and received 30 replies. Congratulations on your birthday, by the way! Do you usually post stories or feed posts, and what type of content do you tend to share (e.g., personal updates, photos, videos, etc.)?\n* **Engagement metrics**: You responded to most of the replies individually, which is a great way to nurture your relationships. Do you find yourself checking your notifications and engagement metrics frequently, or is it not a significant concern for you?\n\nIt's interesting that you mentioned responding to most of the replies individually. This level of engagement can be time-consuming, but it's also a great way to build stronger connections with your loved ones.\n\n**Time management and boundaries**\n\nConsidering your increased WhatsApp usage for work and your daily Instagram scrolling, it's essential to be mindful of your time management and boundaries. Ask yourself:\n\n* Are there any specific times of the day when you feel like you're wasting time on social media or getting distracted from more important tasks?\n* Do you have any rules or boundaries in place for your social media usage, such as not checking your accounts during meals or before bed?\n* Are there any tasks or activities that you've been putting off due to your social media usage?\n\n**Reflection time!**\n\nConsider the following questions:\n\n* Are there any platforms where you feel like you're not using them to their full potential or not getting the desired engagement?\n* Are there any specific features or content types that consume most of your attention on each platform?\n* Are there any times of the day when you tend to mindlessly scroll through social media?\n* How do you feel about your overall social media usage? Do you feel like it's impacting your productivity, relationships, or mental health in any way?\n\nTake your time to reflect on these questions, and we can discuss your thoughts and observations further.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_016f6bd4_2",
+      "turnIndex": 3,
+      "date": "2022/05/15 (Sun) 14:45",
+      "role": "assistant",
+      "text": "Here are some specific watch models from the brands I mentioned earlier that fall within the $50-$70 price range:\n\n1. **Fossil**:\n\t* Fossil Grant Chronograph Watch (FS4486): A stylish chronograph watch with a leather strap, available in various colors. ($55-$65)\n\t* Fossil Decker Watch (FS4725): A minimalist watch with a sleek design and a stainless steel band. ($50-$60)\n2. **Skagen**:\n\t* Skagen Ancher Watch (SKW6005): A classic watch with a minimalist design and a mesh band. ($55-$65)\n\t* Skagen Hagen Watch (SKW6075): A stylish watch with a leather strap and a subtle chronograph feature. ($60-$70)\n3. **Citizen**:\n\t* Citizen BM8475-03E Eco-Drive Watch: A sleek and eco-friendly watch that runs on light power, with a stainless steel band. ($50-$60)\n\t* Citizen AW1550-85L Watch: A sporty watch with a chronograph feature and a stainless steel band. ($55-$65)\n4. **Timex**:\n\t* Timex Weekender Watch (T2P495): A classic and affordable watch with a leather strap and a simple design. ($30-$40)\n\t* Timex Intelligent Quartz Watch (T2P493): A stylish watch with a chronograph feature and a stainless steel band. ($50-$60)\n5. **Casio**:\n\t* Casio Edifice Watch (EFA-120D-1A1V): A sporty watch with a chronograph feature and a stainless steel band. ($50-$60)\n\t* Casio G-Shock Watch (DW-5600E-1V): A rugged and affordable watch with a digital display. ($40-$50)\n6. **Daniel Wellington**:\n\t* Daniel Wellington Classic Petite Watch (DW00100115): A minimalist watch with a leather strap and a small face. ($50-$60)\n\nPlease note that prices may vary depending on the seller, shipping, and availability. I recommend checking the prices on Amazon and reading reviews to ensure you find the best fit for your brother's style and preferences.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_016f6bd4_2",
+      "turnIndex": 5,
+      "date": "2022/05/15 (Sun) 14:45",
+      "role": "assistant",
+      "text": "I'm glad to hear that your best friend loved the personalized photo album! It's always great to see thoughtful gifts appreciated.\n\nNow, let's talk more about the Fossil Grant Chronograph Watch (FS4486). Here are some key features:\n\n**Design:**\n\n* The Grant Chronograph Watch features a classic, timeless design with a round case and a stainless steel band.\n* The watch face is white with Roman numeral markers and three sub-dials for chronograph functions.\n* The watch is available in various color combinations, including silver, gold, and rose gold, with different strap options like leather, metal, or a combination of both.\n\n**Features:**\n\n* Chronograph function: The watch can measure elapsed time, split time, and has a 1/10th second counter.\n* Date display: The watch displays the date at the 3 o'clock position.\n* Water resistance: The watch is water-resistant up to 100 meters (330 feet), making it suitable for everyday wear, but not for diving or swimming.\n* Quartz movement: The watch is powered by a reliable quartz movement, which is accurate and requires minimal maintenance.\n\n**Size:**\n\n* Case diameter: 44mm (1.73 inches)\n* Case thickness: 12mm (0.47 inches)\n* Band width: 22mm (0.87 inches)\n\n**Other details:**\n\n* The watch comes with a 11-year battery life, which is impressive for a quartz watch.\n* It's a unisex design, but it's generally considered a men's watch due to its larger size.\n* Fossil offers a 1-year limited warranty on the watch.\n\n**Price:**\n\n* The Fossil Grant Chronograph Watch (FS4486) typically retails between $55-$65 on Amazon, depending on the color and strap combination.\n\nOverall, the Fossil Grant Chronograph Watch is a stylish and functional timepiece that's perfect for everyday wear. Its classic design, chronograph features, and affordable price make it an excellent choice for a gift.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "aaf71ce2_2",
+      "turnIndex": 1,
+      "date": "2022/05/15 (Sun) 19:06",
+      "role": "assistant",
+      "text": "Congratulations to your sister-in-law's sister on her recent marriage, and to your friend Rachel on her engagement!\n\nWhat a thoughtful gesture to add a personal touch to the kitchen appliance gift! Here are some ideas to consider:\n\n1. **Monogrammed Apron**: A beautifully embroidered apron with the couple's initials or new shared last name can make a lovely addition to their kitchen.\n2. **Personalized Cookbook**: Create a custom cookbook filled with your favorite family recipes, along with notes and stories. You can use a self-publishing platform like Blurb or Shutterfly to make it.\n3. **Customized Cutting Board**: A beautifully crafted cutting board with their names or a special message can become a treasured kitchen item.\n4. **Gourmet Food Basket**: Put together a basket filled with gourmet food items, such as artisanal cheeses, crackers, jams, and chocolates, that they can enjoy together.\n5. **Wine and Cheese Night Kit**: Create a wine and cheese night kit with a bottle of wine, gourmet cheese, crackers, and a wine opener. You can also include a gift card to a local wine shop or a wine tasting experience.\n6. **Handwritten Recipe Cards**: Write out your favorite recipes on beautifully designed cards, along with stories and tips. This can become a treasured keepsake for the couple.\n7. **Kitchen Decor Item**: A beautiful kitchen decor item, such as a vase, candle, or wall art, that reflects their personal style can add a warm touch to their kitchen.\n\nRemember, the key is to show your thoughtfulness and effort in selecting a gift that reflects their interests and tastes.\n\nNow, how exciting about Rachel's engagement and upcoming bachelorette party! What kind of festivities are you planning for her special celebration?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "2def525b_1",
+      "turnIndex": 1,
+      "date": "2022/05/15 (Sun) 20:55",
+      "role": "assistant",
+      "text": "I'm so sorry to hear about your losses and the tough time you're going through. Losing someone close can be incredibly difficult, and it's amazing that you're taking the time to visit your mom's best friend during this challenging period.\n\nOf course, I'd be happy to help you find affordable flights and accommodations for your trip. To get started, could you please provide me with some details?\n\n1. Where is your mom's best friend located?\n2. What are your travel dates (or a range of dates you're considering)?\n3. Which airport(s) would you prefer to fly out of (if you have multiple options)?\n4. Are you open to booking a budget-friendly airline or do you have a preferred airline?\n5. What's your budget for flights and accommodations per night?\n6. Would you prefer to stay in a hotel, Airbnb, or other type of accommodation?\n\nOnce I have this information, I can start searching for options that fit your needs and budget.\n\nRemember, take care of yourself during this difficult time, and I'm here to help make this trip a little easier for you.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "2def525b_1",
+      "turnIndex": 3,
+      "date": "2022/05/15 (Sun) 20:55",
+      "role": "assistant",
+      "text": "I've got you covered.\n\nGiven your flexibility with travel dates, I've searched for affordable flights and accommodations in Denver within the next two weeks. Here are some options for you:\n\n**Flights:**\n\n1. **Frontier Airlines** from O'Hare (ORD) to Denver (DEN) on March 14th (Tuesday) - $138 one-way\n\t* Return flight on March 18th (Saturday) - $138 one-way\n\tTotal: $276\n2. **Spirit Airlines** from O'Hare (ORD) to Denver (DEN) on March 17th (Friday) - $148 one-way\n\t* Return flight on March 21st (Tuesday) - $148 one-way\n\tTotal: $296\n3. **United Airlines** from O'Hare (ORD) to Denver (DEN) on March 15th (Wednesday) - $158 one-way\n\t* Return flight on March 19th (Sunday) - $158 one-way\n\tTotal: $316\n\n**Accommodations:**\n\n1. **Airbnb**: Private room in a shared apartment in the Capitol Hill neighborhood, within walking distance to downtown Denver. $35/night (average)\n\t* Total for 4 nights: $140\n2. **Budget Hotel**: Super 8 by Wyndham Denver Central, 2.5 miles from downtown Denver. $45/night (average)\n\t* Total for 4 nights: $180\n3. **Hostel**: Denver Central Hostel, located in the LoDo neighborhood, within walking distance to Union Station. $30/night (average)\n\t* Total for 4 nights: $120\n\nConsidering your budget of $500, I'd recommend option 1 for flights (Frontier Airlines) and option 1 for accommodations (Airbnb). This combination would total around $416, leaving you with some flexibility to adjust or add to your plans.\n\nPlease note that prices may vary depending on the time of booking and availability. I recommend booking as soon as possible to secure the best rates.\n\nHow do these options sound? Would you like me to explore more alternatives or book one of these options for you?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 20522,
+  "estimatedTokens": 5131
+}

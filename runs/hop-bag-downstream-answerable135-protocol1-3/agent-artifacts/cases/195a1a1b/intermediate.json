@@ -1,0 +1,648 @@
+[
+  {
+    "session_id": "1b71c896_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low. This session contains detailed information about the user’s interests (outdoor activities, mountain biking), preferences (moderate difficulty, 20–30 miles/day), relevant past activity (5K charity run time), and assistant recommendations (where/how to find trails, cycling events, guided tours/rentals, and buying/using a dropper post). It should be sufficient for extracting claims relevant to suggesting evening activities, even though it doesn’t directly ask for evening ideas.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "I'm planning a summer vacation and was thinking of doing some outdoor activities.",
+          "why": "User’s interest in outdoor activities (possible basis for evening activity suggestions)."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "I've been trying to stay active lately, just got back from a 5K charity run on April 17th, finished it in 27 minutes and 12 seconds, which was a personal best for me.",
+          "why": "User’s recent fitness activity and performance details can inform what kinds of evening activities match their activity level/motivation."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "I'm planning to visit the nearby mountains, so I'd say mountain biking on trails is what I'm looking for.",
+          "why": "Clarifies a specific preferred activity type that could translate to evening plans (e.g., going for a ride/related activities)."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "I'm comfortable with moderate difficulty levels, and I'd like to aim for around 20-30 miles per day.",
+          "why": "Provides concrete preferences (difficulty and distance) for planning activity intensity/duration."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "I don't have access to your specific location, but I can provide you with some general tips and recommendations for finding great mountain biking trails.",
+          "why": "Indicates the assistant offered generic methods; useful to know the kind of recommendation style used."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Check out websites like Trailforks, MTB Project, or TrailLink, which allow you to search for trails by location, difficulty level, and distance.",
+          "why": "Actionable resources for finding trails that could be repurposed for evening outing planning."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Visit local bike shops in the mountain area you're planning to visit and ask for recommendations on the best trails for your skill level and desired distance.",
+          "why": "User preference/behavior: consulting local bike shops; suggests an evening activity option (visit shop)."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "Do you know if there are any cycling events or festivals happening in the nearby mountains this summer that I could participate in or attend?",
+          "why": "User is interested in cycling-related events/festivals during summer; relevant for planning activities beyond riding."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Try searching for \"cycling events near me\" or \"mountain biking festivals in [state/region]\" to find relevant results.",
+          "why": "Assistant provided a way to find cycling events; could support suggesting evening options if user is looking for local events."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "I'm actually thinking of getting a new mountain bike for the trip...",
+          "why": "User is considering acquiring biking equipment; could relate to prepping for rides in evenings (shopping, research, test rides)."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "I've been doing a lot of running lately, like that 5K charity run I did on April 17th... but I'm not too familiar with mountain bikes.",
+          "why": "User context (runner, beginner to mountain biking) affects what kinds of evening activities are appropriate."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Determine your budget.",
+          "why": "Assistant’s bike-buying guidance includes a concrete step; useful if evening activity involves research/shopping."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Identify your riding style: smooth trails, technical singletrack, or a mix.",
+          "why": "Helps match gear/activity choices to terrain; relevant to planning rides."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Suspension: Hardtail (front suspension only)... Full-suspension (front and rear)...",
+          "why": "Framework for choosing bike type; could influence how to plan evening practice/ride type."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Disc brakes are a must for mountain biking.",
+          "why": "Safety/gear claim; can inform what to look for when selecting equipment for rides."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "As a beginner, you may want to consider a hardtail or entry-level full-suspension bike with a more forgiving geometry.",
+          "why": "Guidance tailored to user; can shape what kind of evening activity/ride they should attempt."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "I'll start by visiting some local bike shops and doing some test rides to get a feel for what I like.",
+          "why": "User plan/intent: visit bike shops and do test rides—could be an evening activity."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "I'm excited to get into mountain biking and explore the trails in the nearby mountains.",
+          "why": "Motivation and target activity area."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "do you know if there are any bike shops that offer guided mountain bike tours or rentals in the area?",
+          "why": "User asked about guided tours/rentals; relevant to suggesting evening activities like taking a lesson/tour."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Unfortunately, I'm a large language model, I don't have access to specific information about bike shops in your area.",
+          "why": "Explains limitation; suggests the assistant shifted to general ways to find shops."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Google search: Type in \"bike shops near me\" or \"mountain bike rentals near me\" and browse... add keywords like \"guided tours\" or \"mountain bike lessons\".",
+          "why": "Actionable method to locate guided tours/rentals for evening planning."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "I was thinking of getting a bike with a dropper post... Can you explain what a dropper post is and how it benefits mountain biking?",
+          "why": "User interest in dropper post; relevant if evening activity involves deciding/upgrading bike components."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "A dropper post is a type of seatpost that allows you to quickly and easily lower or raise your saddle height while riding.",
+          "why": "Defines the component; could support user understanding before evening bike maintenance/research."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Dropper post benefits include increased control and confidence on technical descents, steep terrain, and tight corners.",
+          "why": "Performance/safety claim; relevant to planning what rides/training to attempt."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "ultrachat_511593",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Session content is about gym/covid precautions and does not directly discuss “evening activities” or personal plans/preferences for tonight; any usefulness to the question may be limited to alternative options mentioned (outdoor workouts, virtual classes) rather than a list of evening activities.",
+      "claims": [
+        {
+          "turnIndex": 3,
+          "fact": "Alternately, you could consider other options such as outdoor workouts or virtual classes from the comfort of your own home.",
+          "why": "Proposes alternatives to going to the gym that could serve as evening activity ideas (outdoor workouts, virtual classes)."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "Gyms have implemented a reservation system to manage capacity and avoid overcrowding; members can book a slot in advance and can only attend during their designated time.",
+          "why": "Describes a constraint/experience related to gym visits that may affect what an evening activity looks like for the user."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "Some common adjustments include: limiting capacity; enhanced cleaning protocols; mandatory masks; virtual workouts; outdoor workouts; changes to equipment layout.",
+          "why": "Provides a set of pandemic-era adaptations that could inform how gym-based evening activities might be structured."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Some gyms require masks only in certain areas, like when entering and leaving the gym or in common areas such as locker rooms or restrooms, and allow members to take them off while working out if they can maintain a safe distance from others.",
+          "why": "Clarifies mask policy nuances that could affect the user’s willingness to do a gym-based evening activity."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "I don't know if it's even worth it.",
+          "why": "Captures the user’s expressed hesitation about the gym being worth the hassle now, relevant to selecting evening activities."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "87fff4b4_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Session content is about planning a Hawaii family trip (Honolulu) with kids (snorkeling, surfing, luaus). It may not contain direct advice for “evening activities” on 2023/05/30, so the match to the user’s current question could be weak or require different context.",
+      "claims": [
+        {
+          "turnIndex": 1,
+          "fact": "User is planning a week-long vacation to Hawaii with my family in December and is looking for kid-friendly activities and restaurants in Honolulu.",
+          "why": "Captures trip timing (December), duration (week-long), destination (Hawaii/Honolulu), and family/kid context that could influence suitable activity suggestions."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "Kid-friendly activities in Honolulu include: Waikiki Beach; Honolulu Zoo (over 1,000 animals); Sea Life Park Hawaii; Diamond Head State Monument; Dole Plantation (Pineapple Express train tour, world's largest maze, Dole Whip).",
+          "why": "Lists specific kid-friendly activities that could be repurposed as evening/outdoor activity candidates (depending on hours) or as a baseline preference set."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "Kid-friendly restaurants in Honolulu include: Duke's Waikiki; The Pig and The Lady; Helena's Hawaiian Food; Tiki's Grill & Café; Zippy's.",
+          "why": "Provides dining preferences and specific restaurant options that could be relevant to evening plans."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Kid-friendly snorkeling tour company recommendations in Oahu include: Hawaii Nautical (\"Snorkel with Sea Turtles\"), Sea Breeze Watersports (\"Snorkel Adventure\"), Ocean Joy Cruises (\"Snorkel and Swim with Sea Creatures\"), Aloha Keiki Snorkeling, Mokuoluas snorkeling tour.",
+          "why": "Supplies named child-friendly activity providers and tour types that may matter if the question is about choosing activities."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Authentic/family-friendly luau suggestions include: Paradise Cove Luau; Germaine's Luau; Toa Luau; Waikiki Starlight Luau (Hilton Hawaiian Village).",
+          "why": "Adds culturally themed evening-style activity options (luaus) and named venues, including notes about authenticity/family-friendliness."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Surf school recommendations that cater to kids include: Goofy Foot Surf School (kids as young as 5); Faith Surf School; Hans Hedemann Surf School; Surf N Sea; Aloha Surf School.",
+          "why": "Provides additional activity options relevant to evening/shore activities depending on schedule; also indicates the user’s children’s surf lesson interest."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "User plans to book a snorkeling tour with Hawaii Nautical and look into booking a surf lesson with Goofy Foot Surf School.",
+          "why": "Captures the user’s intended bookings and preferences for kid-friendly instruction and tours."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "89a1800c_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session focuses on planning a movie night (not general evening activities). It may still inform suggestions by framing evening options as a community movie screening with cultural elements, but it likely won’t cover broader non-movie evening activities (e.g., hobbies, outings, classes).",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is planning to host a movie night at their local community center and needs help finding a good indie film to screen; they also help organize a film festival at their local community center and curate the program.",
+          "why": "Reveals the user’s interest/activities: organizing events at a community center and curating film festival programming—useful for suggesting evening activities aligned with their preferences."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "Assistant provided recommendations for critically acclaimed indie films across genres (Drama, Comedy, Thriller/Mystery, Documentary), including titles such as The Florida Project, The Farewell, Moonlight, The Big Sick, The Lobster, Frances Ha, The Invitation, Coherence, The Killing of a Sacred Deer, The Act of Killing, The Staircase, and The Look of Silence.",
+          "why": "Contains candidate evening activity content (movie night film picks) and specific film titles that could be used as recommendations."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "User is particularly interested in \"The Farewell\" and mentioned meeting director Lulu Wang at a screening of her film during the Rooftop Films summer series in Brooklyn; they ask if it would be a good fit for their movie night since it’s a more well-known indie film.",
+          "why": "Captures user-specific preference (The Farewell) and relevant past experience (met Lulu Wang / Rooftop Films series) that may guide tailored evening suggestions."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Assistant said \"The Farewell\" is an excellent choice for the movie night and suggested reasons including cultural relevance, universal themes, accessibility, tone (humor and heartwarming), and that it can serve as a conversation starter; assistant also recommended adding Q&A/discussion and cultural activities (Chinese refreshments, Chinese-inspired decorations, pre-screening cultural performance).",
+          "why": "Directly provides evening event ideas and engagement components tailored to the user’s planned screening."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "User asked whether they could partner with local food vendors to offer Chinese-inspired snacks and drinks during the screening.",
+          "why": "Expresses a concrete evening-format enhancement (food vendors) tied to the user’s event planning."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Assistant recommended partnering with local food vendors for Chinese-inspired snacks and drinks and listed examples: dumplings, egg tarts, fortune cookies, lychee fruit, boba tea, Chinese coffee (yuan yang coffee), and jasmine tea; also gave vendor planning steps (communicate clearly, coordinate logistics, promote partnership).",
+          "why": "Provides actionable details for a community evening activity (snacks/drinks menu and logistics), which could be used in suggestions."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "User planned to reach out to local food vendors and asked whether they should offer a brief introduction/context about the film before the screening to help attendees understand the cultural background and themes.",
+          "why": "Highlights another enhancement for the evening activity (pre-screening intro/context)."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Assistant recommended offering a brief introduction/context and suggested formats: a 5–10 minute short presentation, program notes/handout with synopsis and cultural context, a short pre-screening video, or a brief Q&A session beforehand; it also advised keeping it concise and avoiding spoilers.",
+          "why": "Supplies concrete ideas and constraints for structuring the evening event experience."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "User said they could put together a concise and informative introduction and asked whether they should consider having a moderator/host for the Q&A session after the screening.",
+          "why": "Indicates preference/plan for moderated discussion—useful for suggesting engaging evening programming."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Assistant recommended having a moderator/host for the Q&A, listing reasons (guided conversation, time management, encouraging participation, expertise, conflict resolution) and selection criteria (knowledge of film/cultural context, communication skills, neutrality, Q&A experience); also suggested inviting a guest speaker (film critic, scholar, cultural expert).",
+          "why": "Provides additional evening activity design elements (moderated Q&A) and selection guidance."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "User stated they could take on the role of moderator for the Q&A session because they have experience curating programs for their local film festival; they are familiar with the film’s cultural context and themes and are comfortable speaking in front of a group, and they can keep discussion focused and respectful with inclusive participation.",
+          "why": "Confirms user capability/preferences for leading the evening event, which can shape tailored activity suggestions."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Assistant recapped a plan: screen \"The Farewell\" at the local community center; offer Chinese-inspired snacks and drinks; provide a brief introduction covering cultural context and themes; host a Q&A after the screening moderated by the user; encourage attendee sharing and additional insights; then asked if anything else should be added or changed.",
+          "why": "Summarizes the concrete evening plan elements proposed in this session—useful when generating activity suggestions."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "ce79a004",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session is about hotel selection and industry conference advice, not directly about evening activities on 2023/05/30; extracted claims may be only tangential to the user’s evening-activity question.",
+      "claims": [
+        {
+          "turnIndex": 3,
+          "fact": "Gives tips to maximize an industry conference experience, including setting clear goals, researching agenda/speakers, networking strategically, taking notes and following up, being an active participant, using social media, planning for downtime, and following up after the conference.",
+          "why": "Contains a concrete suggestion about planning for downtime (potentially relevant to evening activities) and general evening-time leisure/energy management."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Provides a structured set of tips for prioritizing time, networking effectively, and following up at conferences (before/during/after), including taking breaks and following up within 24–48 hours.",
+          "why": "Useful for extracting actionable planning/routine ideas, including the idea to take breaks, which could inform how to structure an evening."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "User reports a significant change they've seen: shift towards digital marketing and e-commerce; emphasis on social media, influencer marketing, and online advertising rather than print and TV ads.",
+          "why": "Relevant to understanding the user’s interests/work context (consumer goods marketing), which may affect what kinds of evening activities they’d enjoy."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "User says they’ve been with the company about 2 years and 3 months and are working on a new product line made from recycled materials; they attribute growth to sustainability and eco-friendliness.",
+          "why": "Captures user background/preferences (sustainability focus) that could guide suggested evening activities (e.g., sustainability-related events/learning)."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "ultrachat_396124",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "none_found",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User asked: “Can you suggest some scenic drives in the San Juan Islands?”",
+          "why": "Sets the user’s requested activity theme (scenic drives) and location context (San Juan Islands), which can inform evening activity suggestions."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "San Juan Loop Road: 24-mile drive on San Juan Island through rolling farmland, dense forests, and along the shoreline.",
+          "why": "Specific named driving activity with exact length and sightseeing characteristics that could be adapted into an evening plan."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "Orcas Island Scenic Byway: 36-mile drive from Eastsound to Deer Harbor, passing Olga, Doe Bay, and Orcas.",
+          "why": "Specific named driving activity with exact length and route endpoints/waypoints."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "Lopez Island Scenic Drive: 31-mile narrow road through rolling pastures, sweeping beaches, and past iconic fishing boats.",
+          "why": "Specific named driving activity with exact length and notable scenery."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "Shaw Island Loop Road: 11-mile loop through old-growth forests, historic farms, and along the shoreline.",
+          "why": "Specific named driving activity with exact length and terrain/historic features."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "Guemes Island Scenic Drive: 8-mile drive across a scenic bridge and through rolling farmland and along the shoreline.",
+          "why": "Specific named driving activity with exact length and a key feature (scenic bridge)."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "For wildlife: recommended San Juan Loop Road on San Juan Island; route offers opportunities to spot wildlife including bald eagles, foxes, deer, and even orcas and other marine mammals from various viewpoints.",
+          "why": "Connects a particular drive to wildlife viewing and lists species, which could guide an evening wildlife-focused activity."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Advice for wildlife drive: drive slowly and bring binoculars; stop at local parks and trails for closer wildlife habitat viewing.",
+          "why": "Actionable tips for executing the recommended activity (pace, gear, stops)."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Orcas and other marine mammals: best time to see orcas is April to October, especially summer months.",
+          "why": "Seasonal timing claim that could be used to plan an optimal evening visit window."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Bald eagles: can be seen all year round, more numerous in winter months.",
+          "why": "Seasonal/timing guidance for spotting a specific animal."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Foxes: red and grey foxes can be seen all year round; best chance is early morning or late afternoon.",
+          "why": "Time-of-day guidance relevant to “evening” planning (late afternoon leading into evening)."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Deer: black-tailed deer can be seen year-round; more active during fall and winter; look for them at dawn or dusk.",
+          "why": "Provides dusk guidance directly relevant to evening activity timing."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Places to stay near nature/wildlife included: Lakedale Resort at Three Lakes (82 acres with three freshwater lakes; lodges/log cabins/canvas cabins/campsites).",
+          "why": "Proximity-to-nature lodging recommendation that could support staying to do evening activities locally."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Places to stay near nature/wildlife included: Doe Bay Resort and Retreat on Orcas Island near waterfront; accommodations include yurts, cabins, campsites.",
+          "why": "Lodging details that may influence where evening activities are based."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Places to stay near nature/wildlife included: Earthbox Inn & Spa (cozy eco-friendly hotel) in Friday Harbor; convenient to explore trails and wildlife areas.",
+          "why": "Lodging location and access claim for trails/wildlife exploration."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Places to stay near nature/wildlife included: Roche Harbor Resort (on San Juan Island) with fishing, kayaking, and whale watching activities.",
+          "why": "Specifies activity types available from the resort, potentially suitable for evening plans depending on schedule."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Places to stay near nature/wildlife included: Lopez Islander Resort (Lopez Island) waterfront property with marina, beachfront access, facilities for fishing and boating.",
+          "why": "Activity/resource proximity tied to lodging location."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "User said they are always on a tight budget when they travel.",
+          "why": "User constraint/preferences that affect what kinds of evening activities/advice would be feasible."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Affordable stay options listed: San Juan County Park (camp sites, affordable, close to nature and wildlife).",
+          "why": "Budget constraint support via specific local accommodation."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Affordable stay options listed: Odlin County Park on Lopez Island (campsites; access to hiking trails and wildlife viewing).",
+          "why": "Connects lodging to hiking/wildlife viewing opportunities."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Affordable stay options listed: Cascade Harbor Inn on Orcas Island (comfortable rooms, budget-friendly; proximity to shoreline and wildlife).",
+          "why": "Budget-friendly lodging near shoreline/wildlife."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Affordable stay options listed: Kangaroo House B&B on Orcas Island (budget-friendly; shared bathrooms; dormitory-style room; close proximity to kayaking and wildlife watching).",
+          "why": "Budget-friendly and includes specific wildlife/water activities (kayaking/watching)."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Affordable stay options listed: Lopez Island Hostel (budget-friendly dormitory-style; close proximity to hikes and wildlife).",
+          "why": "Budget-friendly lodging with nearby hiking/wildlife viewing."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "User asked to be reminded which option had “a heated pool and room service,” stating they want luxury even though on a tight budget.",
+          "why": "Captures user’s luxury preference and the specific amenities they associate with luxury."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "9f12daa1_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Some evening-specific activity suggestions may be missing because this session focuses on planning a one-week lake-town trip and on guided imagery for grief/relaxation rather than explicitly listing evening activities. However, it does include bedtime routine guidance and calming practices that could apply to evenings.",
+      "claims": [
+        {
+          "turnIndex": 3,
+          "fact": "Accommodation: consider staying in a cozy cabin or cottage near the lake rather than a hotel; possibly rent a lakefront property with a dock or a boat.",
+          "why": "Extracts travel preferences and lodging options tied to the lake experience, which could inform evening downtime during the trip."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Activities include fishing; taking a leisurely boat ride around the lake or renting a kayak or paddleboard; taking short nature walks around the lake or in surrounding woods; reflection and journaling each day; local exploration of the town and visiting old haunts.",
+          "why": "Lists concrete activities the assistant recommended during the trip; some (reflection/journaling, local exploration) could map to evening options."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Special activities to honor dad: light a candle or lantern on the lake shore or a meaningful spot; bring a memento; create a memory book/scrapbook during the trip.",
+          "why": "Provides memorial/meaningful activities that could be done in the evening at a lodging site."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Research suggests up to 60% of people report having dreams about deceased loved ones during grieving.",
+          "why": "Grief-related context and coping rationale that may affect what activities are appropriate during evenings."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "If dreams are vivid/disturbing: keep a dream journal, reflect on emotions, seek support, and practice self-care.",
+          "why": "Gives actionable coping steps that could be part of an evening routine."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Vivid and emotional dreams are described as normal during grief; deep breathing, progressive muscle relaxation, or guided imagery can help manage emotional aftermath of dreams.",
+          "why": "Supports using relaxation/guided imagery (potentially in the evening) as a coping strategy."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Apps/websites recommended for guided imagery for grief and loss: Calm, Insight Timer, Happify; The Dougy Center for Grieving Children & Families, Grief One, The National Alliance for Grieving Children.",
+          "why": "Directly relevant resources for guided imagery that could be used right before bed (evening)."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Specific guided imagery recordings suggested: 'Guided Imagery for Grief and Loss' by Belleruth Naparstek (Health Journeys); 'Grief and Loss: A Guided Imagery Meditation' by Dr. Rachel Naomi Remen; 'Coping with Grief and Loss' by Dr. Andrew Weil.",
+          "why": "Pinpoints concrete evening-usable content options the assistant recommended."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Recommendation: establish a consistent routine for guided imagery; doing it at the same time every day can help create a habit, maximize relaxation, improve sleep, and boost mood; suggested timing options include right before bed or first thing in the morning.",
+          "why": "Links guided imagery to a daily schedule and explicitly references before-bed timing relevant to 'evening'."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Advice on timing: before bed can help relax/unwind, process emotions, and prepare for sleep; morning can set a positive tone; choose the time that best fits personal schedule/preferences (if not a morning person, do it before bed).",
+          "why": "Provides decision guidance for when to perform the guided imagery as an evening activity."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "ed9dad6c_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Medium—this session includes advice about hiking and joint-friendly outdoor activities, but it does not directly address “evening” activities or the user’s location/time constraints beyond the date context.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is planning to start a new exercise routine and asked for outdoor activities that are easy on the joints.",
+          "why": "This captures an advice-preference constraint (outdoor + joint-friendly) and the user’s exercise goal."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User noticed significant improvement in flexibility after 8 weeks of yoga classes, which they finished recently.",
+          "why": "User-reported experience/fitness context may influence suitable activity recommendations."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "Assistant recommended low-impact outdoor activities easy on the joints: walking, cycling, swimming, hiking, tai chi or qigong, kayaking or canoeing, gardening, and outdoor yoga.",
+          "why": "This is a concrete list of activity suggestions that could be reused for “evening” ideas."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Assistant suggested beginner-friendly trail-finding resources: AllTrails, Hiking Project, Trailforks; NPS and state/local park websites; local hiking clubs/Meetup; ask gear store staff; ask friends/family/coworkers.",
+          "why": "Provides actionable methods for selecting trails, relevant to user’s interest in hiking."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Assistant provided beginner trail characteristics: start with shorter distances (2–5 miles), minimal elevation gain (less than 500 feet), smooth well-maintained surfaces, and engaging features; also suggested checking trail conditions/permits and bringing water/snacks/sun protection/first-aid and informing someone of plans.",
+          "why": "Includes quantitative thresholds and safety/prep guidance for hiking."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "User asked for a hike with a scenic view, preferably with a lake or waterfall, and asked for trail recommendations in their area.",
+          "why": "Captures specific preference constraints (scenic + lake/waterfall + local recommendations)."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Assistant advised how to find scenic hikes with lake/waterfall views despite not knowing user location: identify location; use AllTrails/Hiking Project/Trailforks with keyword filters; check local parks/recreation sites; search “best hikes with lake views” or “waterfall hikes near me”; ask locals/outdoor enthusiasts.",
+          "why": "Contains a process for obtaining local options matching the user’s preferences."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Assistant listed trail types that might fit preferences: lake loops, waterfall hikes, ridge trails, valley trails.",
+          "why": "These are categorized activity/trail ideas the user could consider."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "User found a trail described as about 3 miles long with a gentle elevation gain; it is suitable for beginners and has a picnic area near the lake.",
+          "why": "Preserves exact trail attributes and the user’s concrete candidate they’re considering."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "User asked whether to bring a picnic lunch or whether there are food options near the trailhead.",
+          "why": "Shows user’s needs around logistics (food availability)."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Assistant recommended bringing a picnic lunch and suggested example items: sandwiches, fruits, cheese, crackers; trail mix (nuts/dried fruits); energy bars/granola bars; water or a refillable hydration pack; blanket or lightweight picnic mat.",
+          "why": "Provides a concrete picnic plan and supplies list."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Assistant suggested checking the trailhead website/social media for nearby restaurants/cafes/food trucks; checking nearby towns/villages; and packing energy-rich snacks if needed.",
+          "why": "Gives actionable options for food near a trailhead and a fallback plan."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Assistant advised to check for specific rules/regulations about food and picnicking and to pack out waste (leave area as found).",
+          "why": "Safety/etiquette constraints relevant to preparing for the outing."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "User planned to bring a picnic lunch and asked what essentials to bring for a comfortable and safe hike.",
+          "why": "Captures the user’s upcoming plan and the type of guidance they requested."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Assistant provided an essentials checklist for the hike, including: sturdy shoes; comfortable clothing in layers (avoid cotton); hat and gloves; water bottle/hydration pack; snacks; picnic lunch (and a cooler for perishable items); first aid kit (bandages, antiseptic wipes, pain relievers, needed meds); SPF 30+ sunscreen; DEET-based insect repellent; map and compass; headlamp/flashlight if hiking late; backpack/daypack; trash bag; camera; phone and portable charger; check weather; let someone know plans/trail/expected return time; stay on trail and avoid shortcuts; watch for wildlife/other hikers.",
+          "why": "This is a detailed preparation guidance list that could be repurposed for hiking trips the user may take in the evening."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_6dc4305e",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "none_found",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "User prefers winding down by 9:30 pm to prepare for a good night's sleep.",
+          "why": "Time constraint/preferences for evening activities."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "User requested help with prioritizing tasks and creating a schedule; they have around 7-8 hours available for tasks each day and want to minimize procrastination and social media usage.",
+          "why": "Indicates evening schedule needs and constraints (minimize distractions) that can inform what to suggest for the evening."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Suggested schedule includes a 6:00 pm - 6:30 pm review/progress planning block and earlier project work through 6:00 pm.",
+          "why": "Provides specific evening-adjacent time blocks that could be adapted into evening activity suggestions."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Assistant suggested a gradual wind-down transition 60-90 minutes before bedtime, avoiding stimulating activities and screens, and using relaxation techniques like reading, meditation, deep breathing, yoga/stretching, or soothing music.",
+          "why": "Directly contains evening wind-down activity ideas."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Assistant provided a sample wind-down schedule: 8:30 pm finish remaining work, 8:45 pm start relaxation technique, 9:15 pm put away electronic devices, 9:20 pm prepare sleep environment, 9:25 pm get ready for bed, 9:30 pm sleep time.",
+          "why": "Specific evening timeline and activities that can be repurposed for the question."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Assistant recommended meditation apps: Headspace, Calm, Insight Timer, Meditation Studio, Buddify.",
+          "why": "Evening relaxation activity resources."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Assistant recommended guided meditation resources including Guided Meditation by Andrew Weil (YouTube), Rainy Mood, Sleep With Me (podcast), Meditation Oasis, and UCLA Mindful Awareness Research Center.",
+          "why": "Additional evening relaxation activity resources."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Assistant suggested guided meditations for sleep/relaxation: \"Sleep\" by Headspace (10 minutes), \"Deep Sleep\" by Calm (20 minutes), \"Sleep Meditation\" by Andrew Weil (10 minutes), \"Guided Sleep Meditation\" by Meditation Studio (15 minutes), \"Sleep Story: The Magical Forest\" by Calm (20 minutes); also relaxation meditations like \"Relaxation Response\" by Dr. Herbert Benson (10 minutes) and \"Body Scan\" by Insight Timer (10 minutes).",
+          "why": "Concrete guided-meditation options relevant to evening activities."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Assistant overview of Headspace \"Sleep\" meditation: 10-minute meditation with introduction by Andy Puddicombe, focus on breath/body, imagery/visualization, then drifting off to sleep.",
+          "why": "Details what user can expect from an evening meditation activity."
+        },
+        {
+          "turnIndex": 12,
+          "fact": "User reported the Headspace meditation was relaxing and calming; it helped them unwind, quiet their mind, focus on imagery/visualization, distract from stressful thoughts, and fall asleep more easily.",
+          "why": "User’s past experience/preferences for the type of evening activity (imagery/visualization) and its perceived benefit."
+        },
+        {
+          "turnIndex": 15,
+          "fact": "Assistant provided an overview of Insight Timer \"Body Scan\" meditation: introduction (1-2 minutes), body scan from toes to head (8-10 minutes), then breathing/relaxation (2-3 minutes), and conclusion (1-2 minutes).",
+          "why": "Concrete evening guided-meditation activity option with structure and duration."
+        },
+        {
+          "turnIndex": 15,
+          "fact": "Assistant advised tips for the Body Scan: find a quiet comfortable space, relax and avoid expectations, focus on breath/body sensations, and gently bring attention back if mind wanders.",
+          "why": "Guidance that could support evening activity execution."
+        }
+      ]
+    }
+  }
+]

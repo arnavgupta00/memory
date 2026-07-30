@@ -1,0 +1,43 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "2023/07/01 (Sat) 13:38 relative to “two weeks ago”; identify the sports event mentioned.",
+    "candidateStatus": "found",
+    "missingRisk": "Only one candidate session is provided (dated 2023/06/02), which is not exactly two weeks before 2023/07/01; the event in this session may or may not match the user’s “two weeks ago” reference.",
+    "items": [
+      {
+        "sessionId": "answer_8c64ce26_2",
+        "turnIndex": 0,
+        "why": "Contains the sports-event participation statement and names the event: “Spring Sprint Triathlon,” including the 20K bike ride."
+      },
+      {
+        "sessionId": "answer_8c64ce26_2",
+        "turnIndex": 1,
+        "why": "Assistant explicitly acknowledges/complements the named event (“Spring Sprint Triathlon”), which preserves the event identification for downstream use."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "2023/07/01 (Sat) 13:38 relative to “two weeks ago”; identify the sports event mentioned.",
+    "candidateStatus": "found",
+    "missingRisk": "Only one candidate session is provided (dated 2023/06/02), which is not exactly two weeks before 2023/07/01; the event in this session may or may not match the user’s “two weeks ago” reference.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_8c64ce26_2",
+        "turnIndex": 0,
+        "why": "Contains the sports-event participation statement and names the event: “Spring Sprint Triathlon,” including the 20K bike ride."
+      },
+      {
+        "sessionId": "answer_8c64ce26_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_8c64ce26_2",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

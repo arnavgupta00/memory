@@ -1,0 +1,23 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Completed writing pieces (short stories, poems, and writing-challenge submissions) made since the user restarted writing ~3 weeks ago, up to 2023/05/30.",
+  "candidateStatus": "found",
+  "missingRisk": "Other writing pieces (additional poems, short stories, or writing-challenge submissions) since the restart may have been completed but not mentioned in the provided memory.",
+  "items": [
+    {
+      "sessionId": "answer_669318cf_2",
+      "turnIndex": 0,
+      "why": "User states they have written 17 poems in the past two weeks—relevant to counting completed poems since the restart window."
+    },
+    {
+      "sessionId": "answer_669318cf_1",
+      "turnIndex": 0,
+      "why": "User states they have written five short stories so far—relevant to counting completed short stories since the restart window."
+    },
+    {
+      "sessionId": "answer_669318cf_3",
+      "turnIndex": 0,
+      "why": "User describes starting a writing challenge and provides a specific completed submission from last week (prompt + titled piece)—relevant to counting completed writing-challenge pieces."
+    }
+  ]
+}

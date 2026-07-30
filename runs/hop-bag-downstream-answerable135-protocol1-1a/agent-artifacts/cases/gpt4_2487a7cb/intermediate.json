@@ -1,0 +1,18 @@
+{
+  "queryShape": "order",
+  "setBoundary": "Your attended learning events: the 'Effective Time Management' workshop vs the 'Data Analysis using Python' webinar (determine which happened first).",
+  "candidateStatus": "found",
+  "missingRisk": "Exact calendar dates/times for the webinar and the 'last Saturday' workshop aren’t fully specified, so the ordering may rely on relative time references only.",
+  "items": [
+    {
+      "sessionId": "answer_1c6b85ea_2",
+      "turnIndex": 2,
+      "why": "Mentions you participated in a webinar titled 'Data Analysis using Python' about two months ago."
+    },
+    {
+      "sessionId": "answer_1c6b85ea_1",
+      "turnIndex": 10,
+      "why": "Mentions you attended a workshop titled 'Effective Time Management' at a local community center last Saturday."
+    }
+  ]
+}

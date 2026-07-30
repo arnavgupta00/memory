@@ -1,0 +1,63 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Determine the time gap (in weeks) between the date the user bought the new tennis racket online and the date they received it.",
+    "candidateStatus": "found",
+    "missingRisk": "If there were additional purchases/receipts in other sessions not included here, the selected dates could be incomplete or refer to a different racket/order.",
+    "items": [
+      {
+        "sessionId": "answer_4d5490f1_1",
+        "turnIndex": 6,
+        "why": "Contains the buy event: user says they “just bought a new tennis racket online today” in the session dated 2023/03/10."
+      },
+      {
+        "sessionId": "answer_4d5490f1_2",
+        "turnIndex": 0,
+        "why": "Contains the receive event: user says “I just received my new tennis racket today” in the session dated 2023/03/17."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Determine the time gap (in weeks) between the date the user bought the new tennis racket online and the date they received it.",
+    "candidateStatus": "found",
+    "missingRisk": "If there were additional purchases/receipts in other sessions not included here, the selected dates could be incomplete or refer to a different racket/order.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_4d5490f1_1",
+        "turnIndex": 6,
+        "why": "Contains the buy event: user says they “just bought a new tennis racket online today” in the session dated 2023/03/10."
+      },
+      {
+        "sessionId": "answer_4d5490f1_1",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_4d5490f1_1",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_4d5490f1_2",
+        "turnIndex": 0,
+        "why": "Contains the receive event: user says “I just received my new tennis racket today” in the session dated 2023/03/17."
+      },
+      {
+        "sessionId": "answer_4d5490f1_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_4d5490f1_1",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_4d5490f1_1",
+        "turnIndex": 11,
+        "why": "deterministic candidate-session coverage repair"
+      }
+    ]
+  }
+}

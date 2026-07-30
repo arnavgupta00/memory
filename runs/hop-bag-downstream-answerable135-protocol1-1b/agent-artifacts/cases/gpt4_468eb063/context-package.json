@@ -1,0 +1,145 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Today is 2023/04/20 (Thu) 10:12. Find the date (or explicit “today”) when you met Emma, then compute the days-ago from that date to today.",
+  "candidateStatus": "found",
+  "missingRisk": "If “today” in the Emma session is ambiguous (e.g., relative to the session timestamp vs. the user’s real current time), the computed days-ago could be off by a day.; frozen bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "e60a93ff_2",
+      "turnIndex": 7,
+      "date": "2023/04/11 (Tue) 19:27",
+      "role": "assistant",
+      "text": "What a wonderful idea! Inviting her to meet up for a quick coffee before your shift is a great way to catch up and introduce her to the charity event.\n\nAs for asking her if she'd be interested in volunteering, it's definitely worth a try! Here are some pros and cons to consider:\n\n**Pros:**\n\n1. **Shared experience**: Volunteering together can be a great way to bond and create a shared experience.\n2. **Introduce her to the cause**: You can introduce her to the charity's mission and values, which might resonate with her interests and passions.\n3. **New opportunity**: She might not have considered volunteering before, and you could be introducing her to a new opportunity to give back.\n\n**Cons:**\n\n1. **Last-minute commitment**: It might be a last-minute ask, and she might not be able to commit to volunteering on short notice.\n2. **Different interests**: She might not be interested in volunteering or might have conflicting interests.\n3. **Adding pressure**: You don't want to put pressure on her to volunteer just because you're doing it.\n\nTo approach this, you could ask her in a casual and non-committal way, like:\n\n\"Hey, I'm volunteering at a charity event today and I thought it would be great if you could join me for a quick coffee before my shift. If you're interested, I could also introduce you to the organization and you could consider volunteering with me. No pressure, though!\"\n\nThis way, you're extending an invitation without putting pressure on her to commit. If she's interested, she'll let you know, and if not, you can still enjoy your coffee and catch-up.\n\nRemember to respect her decision either way, and don't be discouraged if she declines. The goal is to spend time together and introduce her to the charity, not to obligate her to volunteer.",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "e60a93ff_2",
+      "turnIndex": 8,
+      "date": "2023/04/11 (Tue) 19:27",
+      "role": "user",
+      "text": "I'll ask her to meet up for a quick coffee before my shift and introduce her to the charity event. If she's interested, I can ask her if she'd like to volunteer with me, but I'll make sure to keep it casual and non-committal. By the way, I've been meaning to follow up with Sophia, a woman I met at a networking event a couple of weeks ago, to discuss a potential collaboration. Do you think it's a good idea to send her a follow-up email this week?",
+      "why": "deterministic candidate-session coverage repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "e60a93ff_2",
+      "turnIndex": 9,
+      "date": "2023/04/11 (Tue) 19:27",
+      "role": "assistant",
+      "text": "It's great that you're thinking of following up with Sophia about the potential collaboration.\n\nIn general, it's a good idea to follow up with people you've met at networking events, especially if you discussed a specific opportunity or collaboration. A follow-up email can help keep the conversation going and show that you're interested in exploring the opportunity further.\n\nBefore sending the email, consider the following:\n\n1. **Timing**: Make sure you're not sending the email too soon or too late. A couple of weeks after the event is a good timeframe to follow up.\n2. **Content**: Be clear and concise about the purpose of the email. You can reiterate your interest in the collaboration, ask if she's had a chance to think about it, and propose a next step (e.g., a call to discuss further).\n3. **Tone**: Keep the tone professional and friendly. You want to show that you're enthusiastic about the opportunity, but also respectful of her time and interests.\n\nHere's an example email to get you started:\n\n\"Hi Sophia,\n\nI wanted to follow up on our conversation at the networking event a couple of weeks ago. I'm still very interested in exploring the collaboration opportunity we discussed, and I was wondering if you've had a chance to think about it further.\n\nIf you're available, I'd love to schedule a call to discuss the details and answer any questions you may have. Please let me know a convenient time, and I'll make sure to schedule it.\n\nLooking forward to hearing back from you and potentially working together.\n\nBest regards,\n[Your Name]\"\n\nRemember to proofread your email, make sure the tone is professional, and include a clear call-to-action (e.g., scheduling a call).\n\nGo ahead and send the email, and see how Sophia responds. Good luck!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_9b09d95b_1",
+      "turnIndex": 0,
+      "date": "2023/04/11 (Tue) 23:18",
+      "role": "user",
+      "text": "I'm looking for some tips on social media advertising. I just attended a digital marketing workshop last week and the speaker, Rachel Lee, mentioned some interesting strategies. I was wondering if you could recommend some online resources or tutorials on the topic. By the way, I catch up with Emma, a freelance writer, over lunch today and she's now a potential collaborator for a project I'm working on.",
+      "why": "States you “catch up with Emma … over lunch today,” which anchors when you met Emma relative to the session’s date (2023/04/11).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_9b09d95b_1",
+      "turnIndex": 1,
+      "date": "2023/04/11 (Tue) 23:18",
+      "role": "assistant",
+      "text": "Sounds like you've been busy with the digital marketing workshop and networking! I'd be happy to help you with social media advertising tips and resources.\n\nSince you mentioned Rachel Lee's workshop, I'll assume you're looking for advanced strategies. Here are some online resources and tutorials to help you dive deeper:\n\n1. **HubSpot Academy**: HubSpot offers free online courses and certifications in social media advertising, including Facebook, Instagram, and LinkedIn ads.\n2. **Facebook Blueprint**: Facebook's official training program provides in-depth tutorials on Facebook and Instagram ads, including best practices and advanced strategies.\n3. **Social Media Examiner**: This popular digital marketing blog offers a range of articles, webinars, and online courses on social media advertising, including Facebook, Twitter, and LinkedIn.\n4. **AdEspresso University**: AdEspresso, a Facebook advertising tool, offers a free online university with courses and tutorials on Facebook and Instagram ads.\n5. ** Moz's Beginner's Guide to Paid Social**: Moz, a well-known SEO authority, provides a comprehensive guide to paid social media advertising, covering Facebook, Twitter, and LinkedIn.\n6. **Udemy and Coursera courses**: You can find a variety of social media advertising courses on these popular online learning platforms, often taught by industry experts.\n7. **YouTube channels**: Follow industry experts like Neil Patel, Gary Vaynerchuk, and Mari Smith, who regularly share social media advertising tips and strategies on their YouTube channels.\n\nAs for your project, it's great that you've connected with Emma, the freelance writer. Collaborations can lead to exciting opportunities!\n\nFeel free to ask me any specific questions about social media advertising, and I'll do my best to help.",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_9b09d95b_1",
+      "turnIndex": 2,
+      "date": "2023/04/11 (Tue) 23:18",
+      "role": "user",
+      "text": "I'm actually interested in learning more about Facebook ads, can you show me some tutorials on how to set up a campaign and target the right audience?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "e60a93ff_2",
+      "turnIndex": 0,
+      "date": "2023/04/11 (Tue) 19:27",
+      "role": "user",
+      "text": "I'm planning to volunteer at another charity event this weekend and I was wondering if you could help me come up with some conversation starters to break the ice with the other volunteers. I recall that a few months ago, I volunteered at a charity event and met a lot of like-minded people, including a guy named Tom who's involved with the organization.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "e60a93ff_2",
+      "turnIndex": 2,
+      "date": "2023/04/11 (Tue) 19:27",
+      "role": "user",
+      "text": "That's really helpful, thanks! I think I'll use some of those conversation starters to break the ice. I'm also wondering if you can help me find some good coffee shops near the event location, as I'd like to grab a coffee before or after my shift.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "e60a93ff_2",
+      "turnIndex": 4,
+      "date": "2023/04/11 (Tue) 19:27",
+      "role": "user",
+      "text": "I'll try searching on Google Maps and Yelp to find some good coffee shops near the event location. By the way, speaking of coffee shops, I met a freelance writer at a coffee shop near my office last week and we exchanged numbers to grab lunch sometime. Do you think it's a good idea to invite her to meet up for coffee before my volunteer shift?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "e60a93ff_2",
+      "turnIndex": 6,
+      "date": "2023/04/11 (Tue) 19:27",
+      "role": "user",
+      "text": "I think I'll invite her to meet up for a quick coffee before my shift, it'll be a great way to catch up and I can introduce her to the charity event I'm volunteering at. Do you think it's a good idea to ask her if she'd be interested in volunteering as well?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "e60a93ff_2",
+      "turnIndex": 10,
+      "date": "2023/04/11 (Tue) 19:27",
+      "role": "user",
+      "text": "I'll send her a follow-up email this week to discuss the potential collaboration. By the way, I've been meaning to reach out to Rachel, a woman I met at a music festival last weekend, to finalize plans for brunch. Do you think I should suggest a specific location or let her decide?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_9b09d95b_1",
+      "turnIndex": 4,
+      "date": "2023/04/11 (Tue) 23:18",
+      "role": "user",
+      "text": "I'd like to know more about Facebook's Audience Insights tool, can you show me how to use it to gather information about my target audience?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_9b09d95b_1",
+      "turnIndex": 6,
+      "date": "2023/04/11 (Tue) 23:18",
+      "role": "user",
+      "text": "I'm also interested in learning more about Instagram ads, since Emma mentioned she's seen some great results with them. Can you show me some tutorials on how to set up an Instagram ad campaign?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_9b09d95b_1",
+      "turnIndex": 8,
+      "date": "2023/04/11 (Tue) 23:18",
+      "role": "user",
+      "text": "I'd like to know more about Instagram's targeting options, especially since Emma mentioned she's had success with targeting specific interests and behaviors. Can you show me how to target my ads to people who are interested in sustainable living and eco-friendly products?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_9b09d95b_1",
+      "turnIndex": 10,
+      "date": "2023/04/11 (Tue) 23:18",
+      "role": "user",
+      "text": "I'd like to know more about Instagram's automatic targeting feature. Can you show me how to use it to reach people who are likely to be interested in my sustainable living and eco-friendly products?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 8626,
+  "estimatedTokens": 2157
+}

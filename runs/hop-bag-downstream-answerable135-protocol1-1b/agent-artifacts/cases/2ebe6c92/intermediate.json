@@ -1,0 +1,43 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify which specific book the user finished approximately one week before 2023/02/07 (i.e., around 2023/01/31).",
+    "candidateStatus": "found",
+    "missingRisk": "If the user finished a different book on/around 2023/01/31 in a session not included here, this selection could be incomplete.",
+    "items": [
+      {
+        "sessionId": "answer_c9d35c00_2",
+        "turnIndex": 0,
+        "why": "On 2023/01/31, the user states they “just finished” the historical fiction novel \"The Nightingale\" by Kristin Hannah, which matches the ‘a week ago’ timeframe."
+      },
+      {
+        "sessionId": "answer_c9d35c00_2",
+        "turnIndex": 1,
+        "why": "Assistant immediately confirms the finished book and discusses next recommendations, providing surrounding context that the finished title was \"The Nightingale\"."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify which specific book the user finished approximately one week before 2023/02/07 (i.e., around 2023/01/31).",
+    "candidateStatus": "found",
+    "missingRisk": "If the user finished a different book on/around 2023/01/31 in a session not included here, this selection could be incomplete.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_c9d35c00_2",
+        "turnIndex": 0,
+        "why": "On 2023/01/31, the user states they “just finished” the historical fiction novel \"The Nightingale\" by Kristin Hannah, which matches the ‘a week ago’ timeframe."
+      },
+      {
+        "sessionId": "answer_c9d35c00_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_c9d35c00_2",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

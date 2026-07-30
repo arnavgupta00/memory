@@ -1,0 +1,58 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Use only the sessions that state a “worth in terms of amount I paid” relationship for the user’s painting/art find (no other valuation examples).",
+    "candidateStatus": "found",
+    "missingRisk": "The catalog does not explicitly mention the painting as a “sunset”; it only says a flea market find is worth triple what was paid. If the sunset painting is a different item or session, the needed paid-price/value relationship may be missing.",
+    "items": [
+      {
+        "sessionId": "answer_645b0329",
+        "turnIndex": 6,
+        "why": "Contains the key valuation relationship needed: the flea market find is worth triple what the user paid for it."
+      },
+      {
+        "sessionId": "answer_645b0329",
+        "turnIndex": 7,
+        "why": "Reinforces the same “triple the original price” claim and mentions considering appraisal for a more accurate estimate (context for how to interpret the value)."
+      },
+      {
+        "sessionId": "answer_645b0329",
+        "turnIndex": 8,
+        "why": "Provides nearby context that the user kept and hung the artwork, which may help the answerer confirm it’s the same “painting/art find” referenced in the question."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Use only the sessions that state a “worth in terms of amount I paid” relationship for the user’s painting/art find (no other valuation examples).",
+    "candidateStatus": "found",
+    "missingRisk": "The catalog does not explicitly mention the painting as a “sunset”; it only says a flea market find is worth triple what was paid. If the sunset painting is a different item or session, the needed paid-price/value relationship may be missing.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_645b0329",
+        "turnIndex": 6,
+        "why": "Contains the key valuation relationship needed: the flea market find is worth triple what the user paid for it."
+      },
+      {
+        "sessionId": "answer_645b0329",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_645b0329",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_645b0329",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_645b0329",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

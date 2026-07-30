@@ -1,0 +1,58 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Use only the provided sessions to determine how long the user’s parents have been staying in the US as of today (2023/10/22). Preserve both the “past six months” and “nine months” claims without deciding which is more current until the answerer compares timestamps.",
+    "candidateStatus": "found",
+    "missingRisk": "If the “six months” and “nine months” refer to different dates/measurement points (e.g., at the time of those messages) the answerer may need to reconcile which statement best applies to 2023/10/22.",
+    "items": [
+      {
+        "sessionId": "answer_611b6e83_1",
+        "turnIndex": 2,
+        "why": "Contains the explicit duration claim: parents have been living with the user in the US for the past six months (timestamped 2023/07/16)."
+      },
+      {
+        "sessionId": "answer_611b6e83_2",
+        "turnIndex": 0,
+        "why": "Contains the explicit duration claim: parents have been staying with the user for nine months now (timestamped 2023/10/20), which is closest to today (2023/10/22)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Use only the provided sessions to determine how long the user’s parents have been staying in the US as of today (2023/10/22). Preserve both the “past six months” and “nine months” claims without deciding which is more current until the answerer compares timestamps.",
+    "candidateStatus": "found",
+    "missingRisk": "If the “six months” and “nine months” refer to different dates/measurement points (e.g., at the time of those messages) the answerer may need to reconcile which statement best applies to 2023/10/22.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_611b6e83_1",
+        "turnIndex": 2,
+        "why": "Contains the explicit duration claim: parents have been living with the user in the US for the past six months (timestamped 2023/07/16)."
+      },
+      {
+        "sessionId": "answer_611b6e83_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_611b6e83_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_611b6e83_2",
+        "turnIndex": 0,
+        "why": "Contains the explicit duration claim: parents have been staying with the user for nine months now (timestamped 2023/10/20), which is closest to today (2023/10/22)."
+      },
+      {
+        "sessionId": "answer_611b6e83_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_611b6e83_1",
+        "turnIndex": 0,
+        "why": "deterministic candidate-session coverage repair"
+      }
+    ]
+  }
+}

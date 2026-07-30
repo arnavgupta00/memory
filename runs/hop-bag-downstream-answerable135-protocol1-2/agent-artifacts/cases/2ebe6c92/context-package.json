@@ -1,0 +1,280 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "the frozen retriever bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "fb303dd2_2",
+      "turnIndex": 0,
+      "date": "2023/01/08 (Sun) 09:11",
+      "role": "user",
+      "text": "I'm planning a trip to Portland, Oregon, which I booked a few weeks ago for a weekend getaway. Can you recommend some must-try food trucks and breweries in the city?",
+      "why": "annotation fact anchor; lexical score 12",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c9d35c00_1",
+      "turnIndex": 0,
+      "date": "2023/01/10 (Tue) 12:59",
+      "role": "user",
+      "text": "I'm looking for some book recommendations. I've been on a roll with reading lately, and I just started \"The Nightingale\" by Kristin Hannah today. I'm really into historical fiction and stories with strong female leads, so any suggestions would be great!",
+      "why": "annotation fact anchor; lexical score 12",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c9d35c00_1",
+      "turnIndex": 4,
+      "date": "2023/01/10 (Tue) 12:59",
+      "role": "user",
+      "text": "I've actually already read \"The Poppy War\" and I really enjoyed it. Have you got any recommendations for historical fiction audiobooks that are similar to \"The Nightingale\"? I loved the historical setting and the strong female leads in that book.",
+      "why": "annotation fact anchor; lexical score 12",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c9d35c00_1",
+      "turnIndex": 6,
+      "date": "2023/01/10 (Tue) 12:59",
+      "role": "user",
+      "text": "I'm looking for some book recommendations that deal with mythology or folklore from different cultures. I've been enjoying books that reimagine classic stories or retell them from different perspectives.",
+      "why": "annotation fact anchor; lexical score 12",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "9d4312f6_3",
+      "turnIndex": 3,
+      "date": "2023/01/16 (Mon) 23:55",
+      "role": "assistant",
+      "text": "I'm glad you're looking to balance out your screen time with some audio entertainment!\n\nNow, about those TV recommendations... If you enjoyed the nostalgic vibe and blend of sci-fi and mystery in \"Stranger Things,\" here are some shows you might enjoy:\n\n1. **The X-Files** (1993-2002, 2016-2018): A classic sci-fi horror series that follows FBI agents Fox Mulder and Dana Scully as they investigate paranormal cases.\n2. **Twin Peaks** (1990-1991, 2017): A surreal, mysterious series created by David Lynch, following an FBI agent investigating the murder of a young woman in a small town.\n3. **The Haunting of Hill House** (2018-2019): A Netflix series that follows a family's experiences in a haunted house, jumping between past and present.\n4. **The OA** (2016-2019): A supernatural thriller that follows a young woman who returns after being missing for seven years, with a mysterious story to tell.\n5. **Fringe** (2008-2013): A J.J. Abrams-created series that follows a team investigating unexplained phenomena and fringe science.\n6. **The Twilight Zone** (2019-present): A reboot of the classic series, exploring science fiction, horror, and the supernatural.\n7. **Russian Doll** (2019-present): A dark comedy-drama that follows a woman who keeps reliving the same night, as she tries to figure out what's happening to her.\n8. **The Umbrella Academy** (2020-present): A superhero series based on the comic book series, following a dysfunctional family of adopted siblings with special abilities.\n9. **Locke & Key** (2020-present): A Netflix series based on the comic book series, following a family who discovers magical keys with powerful abilities.\n10. **Dark** (2017-2020): A German Netflix series that explores the mysterious disappearance of children in a small town, delving into sci-fi and supernatural themes.\n\nThese shows offer a mix of mystery, sci-fi, and supernatural elements that might scratch that \"Stranger Things\" itch.\n\nRemember, you can always pace yourself and take breaks from screen time to enjoy your new podcasts and other activities. Balance is key!",
+      "why": "raw lexical; lexical score 10",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "9d4312f6_3",
+      "turnIndex": 6,
+      "date": "2023/01/16 (Mon) 23:55",
+      "role": "user",
+      "text": "That's a great list! I'll definitely check some of those out. I've been really interested in true crime lately, so \"The Keepers\" and \"Abducted in Plain Sight\" sound fascinating. By the way, do you think you could recommend some books on true crime or mystery? I've been listening to \"My Favorite Murder\" for years, and I'd love to dive deeper into the subject.",
+      "why": "annotation fact anchor; lexical score 12",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c9d35c00_2",
+      "turnIndex": 0,
+      "date": "2023/01/31 (Tue) 02:37",
+      "role": "user",
+      "text": "I'm looking for some book recommendations. I just finished a historical fiction novel, \"The Nightingale\" by Kristin Hannah, today and I'm in the mood for something similar. Do you have any suggestions?",
+      "why": "annotation fact anchor; lexical score 12",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c9d35c00_2",
+      "turnIndex": 4,
+      "date": "2023/01/31 (Tue) 02:37",
+      "role": "user",
+      "text": "I've heard that \"The Alice Network\" is a great book, but I'm curious - are there any other books that you would recommend that are similar to \"The Nightingale\" in terms of the emotional depth and the historical fiction aspect, but maybe with a slightly different focus or time period?",
+      "why": "annotation fact anchor; lexical score 12",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c9d35c00_2",
+      "turnIndex": 9,
+      "date": "2023/01/31 (Tue) 02:37",
+      "role": "assistant",
+      "text": "I'm so glad to hear that! \"The Song of Achilles\" is a beautifully written novel, and it's perfect for reading in short bursts before bed. Madeline Miller's writing is so evocative and immersive that it's easy to get lost in the story, even in short sessions.\n\nYou're about halfway through, which means you're probably getting to the more intense and emotional parts of the story. Be prepared to have your heart strings pulled, because Miller's writing can be quite affecting.\n\nFinishing the book by the end of the month is a great goal, and I'm sure you'll be able to achieve it. Take your time, though, and savor the experience. The story is worth lingering over, and the characters will stay with you long after you finish the book.\n\nWhat do you think of Patroclus and Achilles' relationship so far? Have you noticed how Miller weaves together the mythological and historical elements with the characters' personal stories?\n\nFeel free to share your thoughts, and I'll be happy to discuss the book with you!",
+      "why": "raw lexical; lexical score 20",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "1ba79ea8_1",
+      "turnIndex": 0,
+      "date": "2023/01/31 (Tue) 15:00",
+      "role": "user",
+      "text": "I'm looking for some book recommendations. I just started actively participating in the 'Book Lovers' group discussions today and I'd love to get some inspiration from other sources as well. Can you suggest some popular books in the fiction genre?",
+      "why": "annotation fact anchor; lexical score 12",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "1ba79ea8_1",
+      "turnIndex": 2,
+      "date": "2023/01/31 (Tue) 15:00",
+      "role": "user",
+      "text": "Can you recommend some popular book review websites or blogs that I can follow to stay updated on the latest releases and trends in the fiction genre?",
+      "why": "annotation fact anchor; lexical score 12",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "1ba79ea8_1",
+      "turnIndex": 4,
+      "date": "2023/01/31 (Tue) 15:00",
+      "role": "user",
+      "text": "I'm particularly interested in fantasy and science fiction. Can you recommend some popular book review websites or blogs that focus on these genres?",
+      "why": "annotation fact anchor; lexical score 12",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "fb303dd2_2",
+      "turnIndex": 1,
+      "date": "2023/01/08 (Sun) 09:11",
+      "role": "assistant",
+      "text": "Portland is a foodie's paradise, and you've come to the right place! Portland is famous for its food trucks and craft breweries, and I'd be happy to recommend some must-try spots. Here are a few:\n\n**Food Trucks:**\n\n1. **Lardo**: Known for their mouth-watering sandwiches, Lardo has been featured on Food Network's Diners, Drive-Ins, and Dives. Try the signature Porchetta or the Korean Fried Chicken sandwich.\n2. **Pok Pok**: This Thai food truck turned restaurant is a Portland institution. Try the famous Fish-Sauce Wings or the spicy and sour Tom Yum Soup.\n3. **Grilled Cheese Grill**: A grilled cheese lover's dream come true. Try the \"Cheesy Dreamy\" with apple slices and honey mustard.\n4. **Big's Chicken**: Crispy fried chicken and creative sandwiches like the \"Cluckin' Good\" with bacon and cheddar.\n5. **Egyptian Koshari**: For a flavorful and healthy option, try their vegetarian and vegan-friendly Egyptian street food dishes like the Koshari Plate or the Ful Medames.\n\n**Breweries:**\n\n1. **Widmer Brothers Brewing**: One of Portland's oldest and most iconic breweries. Try their Hefeweizen or the seasonal offerings like the Summerfest.\n2. **Deschutes Brewery**: Known for their Mirror Pond Pale Ale and Black Butte Porter. Take a tour of the brewery and enjoy a pint in their outdoor beer garden.\n3. **Cascade Brewing Barrel House**: If you're a sour beer fan, this is the place to go. Try their famous Kriek or The Vine.\n4. **Base Camp Brewing Company**: This brewery is known for its outdoor enthusiasts' vibe and delicious beers like the In-Tents IPL or the S'mores Stout.\n5. **Ecliptic Brewing**: Another popular brewery with a great selection of beers like the Spica Pilsner or the Capella Porter.\n\n**Additional Tips:**\n\n* Check the food truck schedules and locations before you go, as they can change frequently.\n* Be prepared for lines at popular food trucks, especially during peak hours.\n* Many breweries offer tours, so plan ahead and book a tour if you're interested.\n* Don't forget to try some of Portland's famous Voodoo Doughnut and Salt & Straw Ice Cream while you're in town!\n\nEnjoy your weekend getaway in Portland, and happy eating and drinking!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "fb303dd2_2",
+      "turnIndex": 2,
+      "date": "2023/01/08 (Sun) 09:11",
+      "role": "user",
+      "text": "I've been doing a lot of traveling recently, and Portland is just one of the many trips I've taken or planned. I'm really excited to try all the food and beer Portland has to offer. Can you recommend some must-see attractions or neighborhoods to explore in Portland, besides the food trucks and breweries?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "fb303dd2_2",
+      "turnIndex": 3,
+      "date": "2023/01/08 (Sun) 09:11",
+      "role": "assistant",
+      "text": "Besides the amazing food and drink scene, Portland has a lot to offer in terms of attractions, neighborhoods, and activities. Here are some must-see attractions and neighborhoods to explore:\n\n**Must-see Attractions:**\n\n1. **Powell's City of Books**: The largest independent bookstore in the world, covering an entire city block and containing over one million books.\n2. **Japanese Garden**: A serene oasis in the heart of the city, featuring beautifully manicured gardens, walking paths, and a teahouse.\n3. **Pittock Mansion**: A stunning French Renaissance-style chateau with panoramic views of the city and the surrounding mountains.\n4. **Saturday Market**: Every Saturday from March to December, the city hosts a bustling market featuring local vendors selling handmade crafts, artwork, and souvenirs.\n5. **Forest Park**: One of the largest urban forests in the United States, with over 80 miles of hiking trails, including the popular Wildwood Trail.\n\n**Neighborhoods to Explore:**\n\n1. **The Pearl District**: An upscale neighborhood filled with boutiques, art galleries, and restaurants, known for its trendy vibe and beautiful architecture.\n2. **Alberta Arts District**: A vibrant neighborhood with a mix of eclectic shops, restaurants, and bars, known for its street art and funkiness.\n3. **Hawthorne District**: A bohemian neighborhood with a mix of vintage shops, record stores, and restaurants, known for its laid-back atmosphere.\n4. **Chinatown**: One of the oldest Chinatowns in the United States, featuring colorful architecture, cultural attractions, and authentic Chinese cuisine.\n5. **Mississippi Avenue**: A hip neighborhood with a mix of boutiques, restaurants, and bars, known for its artsy vibe and live music venues.\n\n**Other Activities:**\n\n1. **Walk or Bike across the City**: Portland is very pedestrian- and bike-friendly, with many scenic routes and bike paths. Rent a bike and explore the city on two wheels.\n2. **Visit the Waterfront**: The Tom McCall Waterfront Park is a beautiful spot to take a stroll, have a picnic, or attend one of the many festivals and events throughout the year.\n3. **Take a Day Trip**: Portland is surrounded by beautiful natural scenery, including the Columbia River Gorge, Mount Hood, and the Oregon Coast. Consider taking a day trip to explore these areas.\n4. **Explore the Murals**: Portland is known for its vibrant street art scene, with many colorful murals throughout the city. Take a self-guided tour to discover some of the best works.\n5. **Visit Voodoo Doughnut's Original Location**: Even if you're not a big fan of doughnuts, the original Voodoo Doughnut location is a must-see for its quirky decor and iconic status.\n\nThese are just a few of the many attractions and neighborhoods to explore in Portland. Depending on your interests and the time of year you visit, there may be other activities and events worth checking out. Enjoy your trip!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c9d35c00_1",
+      "turnIndex": 1,
+      "date": "2023/01/10 (Tue) 12:59",
+      "role": "assistant",
+      "text": "You're off to a great start with \"The Nightingale\"! Kristin Hannah is an amazing author. Here are some historical fiction book recommendations with strong female leads that you might enjoy:\n\n1. **The Alice Network** by Kate Quinn: A historical fiction novel based on the true stories of female spies during WWI and WWII. It's a thrilling and emotional ride with two strong female protagonists.\n2. **The Red Tent** by Anita Diamant: A beautifully written story that imagines the life of Dinah, a biblical figure, and her experiences as a woman in ancient Mesopotamia.\n3. **The Girl with the Pearl Earring** by Tracy Chevalier: A historical fiction novel inspired by Johannes Vermeer's famous painting. It's a quiet, yet powerful story about a young girl's life in 17th-century Holland.\n4. **The Other Boleyn Girl** by Philippa Gregory: A historical fiction novel that explores the lives of Mary and Anne Boleyn, sisters who both caught the eye of King Henry VIII. It's a fascinating and engaging read.\n5. **The Paris Wife** by Paula McLain: A historical fiction novel that tells the story of Hadley Richardson, the first wife of Ernest Hemingway, set in 1920s Paris.\n6. **The Song of Achilles** by Madeline Miller: A beautifully written novel that reimagines the Trojan War from the perspective of Achilles' lover, Patroclus. It's a stunning debut novel that won the Orange Prize.\n7. **The Women in the Castle** by Jessica Shattuck: A historical fiction novel that explores the lives of three women in Germany during and after WWII. It's a powerful and emotional read.\n8. **The Guernsey Literary and Potato Peel Pie Society** by Mary Ann Shaffer: A historical fiction novel set on the island of Guernsey after WWII. It's a heartwarming and uplifting story about the power of literature and community.\n9. **The Heretic's Daughter** by Kathleen Kent: A historical fiction novel based on the true story of the author's ancestor, who was accused of being a witch in 17th-century England.\n10. **The Lost Queen** by Signe Pike: A historical fiction novel that reimagines the life of a 6th-century Scottish queen, Languoreth. It's a beautifully written and immersive read.\n\nI hope you find some new books to add to your reading list!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c9d35c00_1",
+      "turnIndex": 3,
+      "date": "2023/01/10 (Tue) 12:59",
+      "role": "assistant",
+      "text": "What a wonderful coincidence! I'm glad you're enjoying \"The Song of Achilles\".\n\nNow, about those audiobook recommendations similar to \"The Power\" by Naomi Alderman:\n\n1. **The Handmaid's Tale** by Margaret Atwood (narrated by Claire Danes): A classic dystopian novel that explores a patriarchal society where women's bodies are controlled by the government.\n2. **The Power**'s own companion, **The Testaments** by Margaret Atwood (narrated by Ann Dowd, Bryce Dallas Howard, and Mae Whitman): A sequel to \"The Handmaid's Tale\", set 15 years after the events of the original novel.\n3. **The Girls** by Emma Cline (narrated by Cady McClain): A haunting and atmospheric novel that explores a Manson-like cult in 1960s California, with a strong focus on female relationships and power dynamics.\n4. **The Power** meets **The Hunger Games** in **The Belles** by Dhonielle Clayton (narrated by Rosie Jones): A lush and imaginative novel set in a fantasy world where magic-wielding women are forced to serve the ruling class.\n5. **The Poppy War** by R.F. Kuang (narrated by Emily Woo Zeller): A fantasy epic that combines elements of Chinese history and mythology, featuring a young orphan girl who enrolls in a prestigious military academy and discovers her latent powers.\n6. **The Fifth Season** by N.K. Jemisin (narrated by Robin Miles): The first book in the Broken Earth trilogy, which is a stunning work of fantasy that explores issues of power, oppression, and identity in a world where natural disasters called \"Fifth Seasons\" have caused widespread destruction.\n7. **The Disasters** by M.K. England (narrated by Bahni Turpin): A sci-fi novel that follows a group of kids who are training to become space explorers, but find themselves at the center of a conspiracy that threatens the entire galaxy.\n8. **The Outside** by Ada Hoffmann (narrated by January LaVoy): A thought-provoking novel that explores the consequences of first contact with an alien species, featuring a scientist who becomes embroiled in a conspiracy that threatens humanity's future.\n\nThese audiobooks offer a mix of dystopian, sci-fi, and fantasy elements, along with strong feminist themes and complex female characters. I hope you find something that piques your interest!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c9d35c00_1",
+      "turnIndex": 5,
+      "date": "2023/01/10 (Tue) 12:59",
+      "role": "assistant",
+      "text": "\"The Poppy War\" is an amazing book!\n\nI'm glad you asked for historical fiction audiobook recommendations similar to \"The Nightingale\"! Here are some suggestions:\n\n1. **The Alice Network** by Kate Quinn (narrated by Saskia Maarleveld): A historical fiction novel based on the true stories of female spies during WWI and WWII, featuring two strong female protagonists.\n2. **The Lost Girls of Paris** by Pam Jenoff (narrated by Elizabeth Jasicki): A historical fiction novel set in 1946, following a young widow who discovers a suitcase of photographs of women who worked for a resistance network during the war.\n3. **The Women in the Castle** by Jessica Shattuck (narrated by Cassandra Campbell): A historical fiction novel that explores the lives of three women in Germany during and after WWII, each with her own secrets and struggles.\n4. **The Tattooist of Auschwitz** by Heather Morris (narrated by Richard Armitage): A historical fiction novel based on the true story of the Lale Sokolov, the tattooist at Auschwitz-Birkenau concentration camp, and his love story with a fellow prisoner.\n5. **Those Who Save Us** by Jenna Blum (narrated by Suzanne Toren): A historical fiction novel that explores the complex relationship between a mother and daughter, set against the backdrop of WWII and the Holocaust.\n6. **The Soldier's Wife** by Pam Jenoff (narrated by Elizabeth Jasicki): A historical fiction novel set in Nazi-occupied France, following a young woman who must navigate the treacherous landscape to survive and protect her family.\n7. **The Guernsey Literary and Potato Peel Pie Society** by Mary Ann Shaffer (narrated by Juliet Mills, et al.): A historical fiction novel set on the island of Guernsey after WWII, exploring the experiences of the islanders during the occupation.\n8. **The Velvet Hours** by Alyssa Palombo (narrated by Cassandra Campbell): A historical fiction novel based on the true story of Marthe de Florian, a courtesan who lived in Paris during the Belle Époque.\n\nThese audiobooks offer a mix of historical settings, strong female leads, and engaging stories that I hope you'll enjoy!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c9d35c00_1",
+      "turnIndex": 7,
+      "date": "2023/01/10 (Tue) 12:59",
+      "role": "assistant",
+      "text": "What a fascinating topic! I'd be delighted to recommend some books that delve into mythology and folklore from diverse cultures, offering fresh perspectives and reimaginings of classic stories. Here are a few suggestions:\n\n1. **The Song of Achilles** by Madeline Miller (Greek mythology): A beautifully written novel that reimagines the Trojan War from the perspective of Achilles' lover, Patroclus.\n2. **The Penelopiad** by Margaret Atwood (Greek mythology): A novella that retells Homer's Odyssey from the perspective of Penelope, Odysseus' wife.\n3. **The Gilded Wolves** by Roshani Chokshi (Indian and French mythology): A YA fantasy novel that combines Indian and French mythology, set in 19th-century Paris.\n4. **The Fifth Season** by N.K. Jemisin (African and Asian mythology): The first book in the Broken Earth trilogy, which draws inspiration from African and Asian mythologies, exploring themes of power, identity, and natural disasters.\n5. **The House of Shattered Wings** by Aliette de Bodard (French and Vietnamese mythology): A dark fantasy novel set in post-apocalyptic Paris, drawing on French and Vietnamese mythologies.\n6. **The Star-Touched Queen** by Roshani Chokshi (Indian mythology): A lush and atmospheric YA fantasy novel inspired by Indian mythology, set in a fantasy world with a strong female protagonist.\n7. **The Bear and the Nightingale** by Katherine Arden (Russian folklore): A beautifully written novel that draws on Russian folklore, set in medieval Russia, with a strong female protagonist.\n8. **The Silence of the Girls** by Pat Barker (Greek mythology): A retelling of Homer's Iliad from the perspective of Briseis, a Trojan princess who becomes a concubine to Achilles.\n9. **The Poppy War** by R.F. Kuang (Chinese mythology and history): A fantasy epic that combines elements of Chinese history and mythology, set in a world inspired by Chinese culture.\n10. **The Library of the Unwritten** by A.J. Hackwith (Multicultural mythology): A fantasy novel that explores the concept of unwritten stories and features a diverse cast of characters from various mythologies and cultures.\n\nThese books offer a rich and diverse range of mythological and folkloric influences, reimagined and retold in innovative and captivating ways. I hope you find something that piques your interest!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "9d4312f6_3",
+      "turnIndex": 2,
+      "date": "2023/01/16 (Mon) 23:55",
+      "role": "user",
+      "text": "That's quite a list! I'll definitely check some of those out. I've actually been watching a lot of TV lately, so I might need something to listen to while I'm doing chores or commuting. Speaking of TV, I've been averaging around 4 hours of screen time per day, which is way above my usual. Do you think you could recommend some shows similar to \"Stranger Things\"? I loved the nostalgic vibe and the mix of sci-fi and mystery.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "9d4312f6_3",
+      "turnIndex": 4,
+      "date": "2023/01/16 (Mon) 23:55",
+      "role": "user",
+      "text": "I'll definitely check some of those shows out. I've been meaning to start \"The Crown\" for ages, but I think I'll try something a bit more sci-fi and mysterious first. Do you think you could recommend some documentaries similar to \"Tiger King\"? I was really fascinated by the world of big cat owners and enthusiasts, and I'd love to learn more about unusual subcultures or hobbies.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "9d4312f6_3",
+      "turnIndex": 5,
+      "date": "2023/01/16 (Mon) 23:55",
+      "role": "assistant",
+      "text": "\"The Crown\" is a great show, but if you're in the mood for something more sci-fi and mysterious, I've got you covered!\n\nNow, about those documentaries similar to \"Tiger King\"... If you're fascinated by unusual subcultures or hobbies, here are some documentaries you might enjoy:\n\n1. **Wild Wild Country** (2018): A Netflix series about the Rajneesh movement, a spiritual group that established a commune in Oregon in the 1980s.\n2. **The Keepers** (2017): A Netflix series investigating the unsolved murder of a nun, Sister Cathy Cesnik, and the secrets surrounding her death.\n3. **Abducted in Plain Sight** (2017): A true-crime documentary about the Broberg family, whose daughter was kidnapped by a close family friend and neighbor.\n4. **The Imposter** (2012): A documentary about a young Frenchman who impersonated a missing Texas boy, and the family who took him in.\n5. **The Staircase** (2004): A true-crime documentary series about the trial of Michael Peterson, accused of murdering his wife in their home.\n6. **Jiro Dreams of Sushi** (2011): A documentary about the world of high-end sushi and the legendary sushi chef Jiro Ono.\n7. **The September Issue** (2009): A documentary about the creation of the September issue of Vogue magazine, featuring Anna Wintour.\n8. **The King of Kong: A Fistful of Quarters** (2007): A documentary about competitive Donkey Kong players and their quest for the highest score.\n9. **The Queen of Versailles** (2012): A documentary about a wealthy family building the largest house in America, inspired by the Palace of Versailles.\n10. **Tickled** (2016): A documentary about the world of competitive endurance tickling, which leads to a darker exploration of exploitation and abuse.\n\nThese documentaries offer a mix of true crime, unusual subcultures, and fascinating stories that might appeal to your curiosity.\n\nRemember, you can always find more documentaries on streaming platforms like Netflix, Hulu, or Amazon Prime, or on YouTube channels like Vice, Vox, or PBS Idea Channel. Enjoy!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "9d4312f6_3",
+      "turnIndex": 7,
+      "date": "2023/01/16 (Mon) 23:55",
+      "role": "assistant",
+      "text": "I'm glad you're interested in exploring true crime and mystery further!\n\nIf you enjoy the style of \"My Favorite Murder,\" you might enjoy books that offer a similar blend of true crime storytelling, humor, and personal perspective. Here are some book recommendations:\n\n1. **\"I'll Be Gone in the Dark\" by Michelle McNamara**: A critically acclaimed book about the Golden State Killer, written by a true crime journalist who was obsessed with the case.\n2. **\"The Devil in the White City\" by Erik Larson**: A historical true crime book about H.H. Holmes, a serial killer who preyed on victims during the 1893 World's Fair in Chicago.\n3. **\"In Cold Blood\" by Truman Capote**: A classic true crime book about the brutal murder of a Kansas family and the investigation that followed.\n4. **\"Helter Skelter\" by Vincent Bugliosi and Curt Gentry**: A detailed account of the Charles Manson murders and the trial that followed.\n5. **\"The Monster of Florence\" by Douglas Preston and Mario Spezi**: A true crime book about a serial killer in Florence, Italy, and the authors' investigation into the case.\n6. **\"The Stranger Beside Me\" by Ann Rule**: A true crime book about Ted Bundy, written by a woman who knew him personally and worked with him at a crisis hotline.\n7. **\"The Fact of a Body\" by Alexandria Marzano-Lesnevich**: A memoir and true crime book about the author's obsession with a murder case in Louisiana and her own personal connection to the case.\n8. **\"I Am Innocent\" by Laura Caldwell**: A true crime book about a woman who was wrongly accused of murder and her fight to clear her name.\n\nIf you prefer more lighthearted and humorous true crime books, you might enjoy:\n\n1. **\"Stay Sexy & Don't Get Murdered\" by Karen Kilgariff and Georgia Hardstark**: A book about true crime, personal stories, and life advice from the hosts of \"My Favorite Murder.\"\n2. **\"Last Call: A True Story of Love, Lust, and Murder in Queer New York\" by Elon Green**: A true crime book about a series of murders in the LGBTQ+ community in New York City in the 1990s.\n3. **\"The Wicked Boy\" by Kate Summerscale**: A historical true crime book about a young boy who murdered his mother in Victorian England.\n\nThese books offer a mix of true crime stories, personal perspectives, and humor that might appeal to fans of \"My Favorite Murder.\" Happy reading!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "9d4312f6_3",
+      "turnIndex": 8,
+      "date": "2023/01/16 (Mon) 23:55",
+      "role": "user",
+      "text": "I'll definitely check those out! I've been listening to true crime podcasts for years, and I'm excited to dive deeper into the subject with these books. By the way, do you think you could recommend some mystery or thriller novels? I've been meaning to get into reading fiction again, and I'd love some suggestions.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c9d35c00_2",
+      "turnIndex": 1,
+      "date": "2023/01/31 (Tue) 02:37",
+      "role": "assistant",
+      "text": "\"The Nightingale\" is an amazing book! I'm happy to help you find your next great read.\n\nIf you enjoyed the historical fiction, emotional depth, and strong female protagonists of \"The Nightingale,\" here are some book recommendations that might interest you:\n\n1. **All the Light We Cannot See** by Anthony Doerr: Set during WWII, this Pulitzer Prize-winning novel tells the story of a blind French girl and a German boy whose paths intersect in the midst of the devastation.\n2. **The Alice Network** by Kate Quinn: This novel explores the lives of two women, a socialite and a spy, during WWI and the aftermath. It's a story of friendship, love, and survival.\n3. **The Lost Girls of Paris** by Pam Jenoff: Another WWII-era novel, this one follows a young widow who discovers a suitcase of photographs of women who worked for a resistance network and becomes determined to uncover their stories.\n4. **The Women in the Castle** by Jessica Shattuck: This novel tells the story of three women, each with a unique experience during WWII, and their struggles to rebuild their lives in the aftermath.\n5. **Those Who Save Us** by Jenna Blum: A mother-daughter story set during WWII, exploring the complexities of their relationship and the secrets they keep.\n6. **The Guernsey Literary and Potato Peel Pie Society** by Mary Ann Shaffer: While not strictly historical fiction, this epistolary novel is set on the island of Guernsey after WWII and explores the islanders' experiences during the occupation.\n7. **The Soldier's Wife** by Pam Jenoff: A historical fiction novel set in Nazi-occupied France, following a young woman's struggles to survive and resist the occupation.\n8. **The Postmistress** by Sarah Blake: A novel that weaves together the stories of three women in 1940: a radio broadcaster, a wife, and a postmistress, all connected by the events of WWII.\n9. **The Girl You Left Behind** by Jojo Moyes: A historical fiction novel that explores the story of a young woman in France during WWI and her struggles to survive and find love.\n10. **The Invisible Bridge** by Julie Orringer: A sweeping historical novel that follows a Hungarian Jewish family during WWII, exploring themes of love, loss, and survival.\n\nThese books offer a mix of historical fiction, strong female protagonists, and emotional depth, which I hope will resonate with you after reading \"The Nightingale.\"",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c9d35c00_2",
+      "turnIndex": 3,
+      "date": "2023/01/31 (Tue) 02:37",
+      "role": "assistant",
+      "text": "\"The Alice Network\" by Kate Quinn is a fantastic choice! It's a historical fiction novel that explores the lives of two women, a socialite and a spy, during World War I and the aftermath. Here's a brief summary:\n\n**Plot:**\n\nThe novel follows two main characters:\n\n1. **Charlie St. Clair**: A pregnant, unmarried American socialite who travels to Europe in 1947 to find her cousin, Rose, who disappeared during the war. Charlie's search leads her to Eve Gardiner, a former spy for the Alice Network.\n2. **Eve Gardiner**: A former spy for the Alice Network, a real-life espionage ring that operated in France during WWI. Eve's past is marked by trauma, loss, and heroism, and she's now living a reclusive life in London.\n\nAs Charlie and Eve's paths converge, they form an unlikely bond, and Eve begins to share her story with Charlie. Through Eve's narrative, the novel flashes back to her experiences during the war, when she worked with the Alice Network, a group of female spies who risked their lives to gather intelligence and help the Allies.\n\n**Themes and Historical Context:**\n\nThe novel explores themes of female empowerment, friendship, love, and survival during times of war. It delves into the often-overlooked contributions of women during WWI, particularly the bravery and sacrifice of female spies like Eve.\n\nThe Alice Network was a real organization, founded by Louise de Bettignies, a Belgian woman who recruited and trained female spies to gather intelligence behind enemy lines. The network operated in France and Belgium from 1915 to 1918.\n\n**Writing Style and Praise:**\n\nKate Quinn's writing is engaging, and she masterfully weaves together the dual narratives of Charlie and Eve. The novel has received widespread praise for its:\n\n* Well-researched historical details\n* Strong, complex female characters\n* Emotional depth and resonance\n* Page-turning plot with unexpected twists\n\n**Awards and Recognition:**\n\n\"The Alice Network\" has been a New York Times bestseller and has received several awards and nominations, including:\n\n* Goodreads Choice Awards 2017 (Historical Fiction)\n* Audie Award 2018 (Historical Fiction)\n* Amazon's Best Books of 2017 (Historical Fiction)\n\nIf you're looking for a historical fiction novel with strong female protagonists, a gripping story, and a unique perspective on WWI, \"The Alice Network\" is an excellent choice.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c9d35c00_2",
+      "turnIndex": 5,
+      "date": "2023/01/31 (Tue) 02:37",
+      "role": "assistant",
+      "text": "While \"The Alice Network\" shares some similarities with \"The Nightingale,\" I understand your desire to explore other options with a different focus or time period. Here are some historical fiction recommendations that offer emotional depth and a unique perspective:\n\n**WWII-era novels:**\n\n1. **We Were the Lucky Ones** by Georgia Hunter: A meticulously researched novel based on the true story of the author's family, exploring the lives of a Polish family during WWII and their struggles to survive and reunite.\n2. **The Lost Girls of Paris** by Pam Jenoff: A historical fiction novel set in 1946, following a young widow who discovers a suitcase of photographs of women who worked for a resistance network and becomes determined to uncover their stories.\n3. **The Huntress** by Kate Quinn: A novel that explores the lives of three women during WWII: a British journalist, an American socialite, and a female Soviet bomber pilot, all connected by their pursuit of a Nazi war criminal.\n\n**Other time periods and focuses:**\n\n1. **The Red Tent** by Anita Diamant: A beautifully written novel that reimagines the story of Dinah, a biblical figure, and her experiences as a woman in ancient Mesopotamia.\n2. **The Song of Achilles** by Madeline Miller: A stunning novel that retells the Trojan War from the perspective of Achilles' lover, Patroclus, exploring the complexities of love, war, and human relationships.\n3. **The Kitchen House** by Kathleen Grissom: A historical fiction novel set in the 1800s American South, exploring the complex relationships between a young white girl and the enslaved people who care for her on a plantation.\n\n**Unique perspectives and settings:**\n\n1. **The Poppy War** by R.F. Kuang: A fantasy novel set in a world inspired by Chinese history and mythology, following a young orphan who enrolls in a prestigious military academy and discovers her latent powers.\n2. **The Gilded Wolves** by Roshani Chokshi: A historical fantasy novel set in Paris in the late 1800s, following a group of thieves and scholars as they try to steal a powerful artifact and uncover a conspiracy.\n3. **The Ten Thousand Doors of January** by Alix E. Harrow: A historical fantasy novel that explores the life of a young woman who discovers a magical book that allows her to travel between worlds, and must navigate the boundaries between reality and fiction.\n\nThese novels offer a mix of historical fiction, emotional depth, and unique perspectives, which might appeal to you if you're looking for something similar to \"The Nightingale\" but with a different focus or time period.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c9d35c00_2",
+      "turnIndex": 8,
+      "date": "2023/01/31 (Tue) 02:37",
+      "role": "user",
+      "text": "I'm actually currently reading \"The Song of Achilles\" and I'm really enjoying it. I've been reading it in short bursts before bed, and it's been a great way to unwind. I'm about halfway through it, and I'm hoping to finish it by the end of the month.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "1ba79ea8_1",
+      "turnIndex": 1,
+      "date": "2023/01/31 (Tue) 15:00",
+      "role": "assistant",
+      "text": "Welcome to the world of book lovers! I'd be delighted to recommend some popular fiction books that might interest you. Here are a few suggestions across various sub-genres:\n\n**Contemporary Fiction**\n\n1. **The Seven Husbands of Evelyn Hugo** by Taylor Jenkins Reid: A heartwarming story about the life of a reclusive Hollywood star and her seven marriages.\n2. **The Nightingale** by Kristin Hannah: A historical fiction novel set in France during World War II, exploring the lives of two sisters.\n3. **The Hate U Give** by Angie Thomas: A powerful and timely novel about racism, police brutality, and activism.\n\n**Fantasy**\n\n1. **The Night Circus** by Erin Morgenstern: A magical and imaginative tale about a competition between two young magicians set in a mysterious circus.\n2. **The First Fifteen Lives of Harry August** by Claire North: A thought-provoking novel about a man who is reborn every time he dies, and must navigate a complex web of time travel.\n3. **The All Souls Trilogy** by Deborah Harkness: A historical fantasy series that combines witches, vampires, and demons in a richly detailed setting.\n\n**Mystery & Thriller**\n\n1. **Gone Girl** by Gillian Flynn: A twisty and suspenseful novel about a marriage that takes a dark and unexpected turn.\n2. **The Silent Patient** by Alex Michaelides: A psychological thriller about a famous painter who shoots her husband and refuses to speak after the incident.\n3. **The Girl on the Train** by Paula Hawkins: A gripping mystery about a commuter who becomes obsessed with a perfect couple, only to discover that their lives are not as they seem.\n\n**Romance**\n\n1. **The Hating Game** by Sally Thorne: A witty and charming romance about two co-workers who engage in a series of escalating pranks and one-upmanship.\n2. **The Time Traveler's Wife** by Audrey Niffenegger: A beautifully written love story about a man with a genetic disorder that causes him to time-travel involuntarily.\n3. **Eleanor Oliphant is Completely Fine** by Gail Honeyman: A heartwarming novel about a socially awkward woman who finds love and connection in unexpected places.\n\n**Science Fiction**\n\n1. **The Three-Body Problem** by Liu Cixin: A award-winning novel that explores the first contact between humans and an alien civilization.\n2. **The Power** by Naomi Alderman: A thought-provoking novel that imagines a world where women suddenly develop the ability to release electrical jolts from their fingertips.\n3. **The Illuminae Files** by Amie Kaufman and Jay Kristoff: A fast-paced and action-packed series set in a distant future where corporations and artificial intelligence shape the galaxy.\n\nThese are just a few examples to get you started. You can also explore Goodreads, Book Riot, and BookTube for more recommendations and reviews. Happy reading!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "1ba79ea8_1",
+      "turnIndex": 3,
+      "date": "2023/01/31 (Tue) 15:00",
+      "role": "assistant",
+      "text": "Here are some popular book review websites and blogs that cover the fiction genre:\n\n1. **Goodreads**: While not exclusively a review site, Goodreads is the largest online community of book lovers, with millions of user-generated reviews and ratings.\n2. **Book Riot**: A popular online publication that features book reviews, news, and essays on all things literary.\n3. **The New York Times Book Review**: The NYT's book review section is a trusted source for in-depth reviews of new releases and bestsellers.\n4. **Kirkus Reviews**: A well-respected publication that provides professional book reviews, including fiction, non-fiction, and children's literature.\n5. **Publishers Weekly**: Another industry publication that offers news, reviews, and bestseller lists for the publishing industry.\n6. **The Millions**: A literary blog that features essays, reviews, and interviews with authors, with a focus on literary fiction and non-fiction.\n7. **BookPage**: A website that offers book reviews, author interviews, and reading guides, with a focus on fiction, non-fiction, and children's literature.\n8. **Library Journal**: A publication that provides book reviews, news, and resources for librarians, but also useful for book lovers.\n9. **NPR Books**: NPR's book section features reviews, author interviews, and book lists, with a focus on fiction, non-fiction, and poetry.\n10. **The Guardian Books**: The Guardian's book section offers reviews, news, and author interviews, with a focus on literary fiction and non-fiction.\n\nBook Blogs:\n\n1. **The Book Smugglers**: A popular blog that features book reviews, author interviews, and discussions on fantasy, science fiction, and romance.\n2. **The Readventurer**: A blog that focuses on young adult, new adult, and adult fiction, with a strong emphasis on diversity and representation.\n3. **Dear Author**: A romance-focused blog that features book reviews, author interviews, and industry commentary.\n4. **Smart Bitches, Trashy Books**: A popular blog that reviews romance, science fiction, and fantasy, with a focus on diversity and representation.\n5. **Bookish**: A blog that features book reviews, author interviews, and bookish news, with a focus on young adult and adult fiction.\n6. **The Rumpus**: A literary blog that features book reviews, author interviews, and essays on literature and culture.\n7. **Electric Literature**: A non-profit digital publisher that features book reviews, author interviews, and original fiction.\n8. **Lit Hub**: A literary blog that features book reviews, author interviews, and essays on literature and culture.\n\nThese are just a few examples of the many amazing book review websites and blogs out there. You can also explore bookstagram, booktube, and book podcasts for more bookish content!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 38248,
+  "estimatedTokens": 9562
+}

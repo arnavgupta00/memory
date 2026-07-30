@@ -1,0 +1,21 @@
+[
+  {
+    "session_id": "answer_355c48bb",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Medium—this session clearly states the play title, but it does not provide the attendance date/time or any theater/venue name to disambiguate the specific event.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "The user recently went to a play at the local community theater and was impressed by the lead actress's performance; she reminded them of their friend Emily, who's also an aspiring actress.",
+          "why": "Indicates attendance at a local community theater production and provides context about the user’s impression and related person (Emily)."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "The play I attended was actually a production of The Glass Menagerie.",
+          "why": "Directly identifies the play title the user attended at the local community theater."
+        }
+      ]
+    }
+  }
+]

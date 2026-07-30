@@ -1,0 +1,84 @@
+[
+  {
+    "session_id": "answer_c8354ae9",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Medium. The user mentions trying a “lavender gin fizz recipe” last weekend, but the exact “type of cocktail recipe” wording in the question could refer to a specific named recipe (e.g., Lavender Dream vs gin fizz). This session contains the relevant category (lavender gin fizz) but not a broader description like drink style beyond that.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "The user tried a “lavender gin fizz recipe” last weekend; it didn’t turn out as expected and they improvised because they didn’t have simple syrup (used honey and water).",
+          "why": "Directly indicates the cocktail type/format the user attempted last weekend (lavender gin fizz) and key constraint (no simple syrup, substituted honey + water)."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "The user did not infuse their gin with lavender; they used an online recipe calling for lavender syrup and gin, but since they didn’t have lavender syrup they tried to make a lavender gin fizz instead.",
+          "why": "Clarifies how the attempt was made and reinforces that the cocktail recipe type they ended up trying was a lavender gin fizz rather than an infused-gin lavender approach."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "71cf5aeb_3",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session contains recommendations and the user’s intent/excitement to try specific cocktails (e.g., Smokey Mango Mule), but it does not explicitly say that you actually tried a cocktail “last weekend,” so the exact type of cocktail recipe tried may be missing or ambiguous.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "On 2023/05/28, you said you were looking for new cocktail recipes to try out.",
+          "why": "Establishes the timeframe and that cocktails were being considered for trying, relevant to identifying what type you tried last weekend."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "You said you were really interested in the “Smokey Mango Mule.”",
+          "why": "Pinpoints a specific cocktail recipe you showed interest in within the last weekend timeframe."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "You received a recipe and making instructions for the “Smokey Mango Mule,” including “Smoked Paprika-Infused Simple Syrup.”",
+          "why": "Identifies the type/style of cocktail recipe (Smokey Mango Mule; tequila + mango + smoked paprika-infused simple syrup) that you were trying to make/learn."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "You asked for recommendations for citrus-based cocktails that incorporate multiple citrus fruits.",
+          "why": "Indicates interest in a class/type of cocktail recipes involving multiple citrus fruits around the same weekend."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "You were recommended multiple citrus-based cocktails: “Citrus Sunrise,” “Triple Citrus Collins,” “Citrus-Ginger Fizz,” “Sunset Sour,” and “Citrus-Herb Spritz.”",
+          "why": "Provides the specific citrus-multi-fruit cocktail types associated with your weekend plan."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "You said you were excited to try out “Citrus Sunrise” and “Triple Citrus Collins.”",
+          "why": "Directly links your intent to try particular multi-citrus cocktail recipes during last weekend."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "You were thinking of hosting a brunch with a “citrus-infused mimosa bar” with juices like orange, grapefruit, and lemon.",
+          "why": "Describes another cocktail format/type (mimosa bar; citrus-infused) that you were planning for the same weekend period."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "a7189b75",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "High: this session contains dinner-party menu planning and several proposed signature cocktails, but it does not explicitly state that the user actually tried any cocktail recipe “last weekend,” nor does it name a cocktail they tried as a personal experience.",
+      "claims": [
+        {
+          "turnIndex": 11,
+          "fact": "Signature cocktail suggestions included: \"Italian Sunset\" (Prosecco, Aperol, lemon juice, soda water, orange slice), \"Sage Advice\" (gin, sage-infused simple syrup, lemon juice, soda water, sage leaf + lemon slice), and \"Tuscan Mule\" (ginger beer, lime juice, Chianti wine, copper mug, lime wedge + rosemary sprig).",
+          "why": "The question asks what type of cocktail recipe the user tried last weekend; this session provides multiple cocktail recipe types, including their specific names and ingredients, which could match the user's later recalled action (if they did try one)."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "User asked for wine pairing options for the Creamy Mushroom Sauce with Prosciutto and Sage, or maybe signature cocktails that would complement the Italian-inspired menu.",
+          "why": "Indicates the user’s interest in signature cocktails for this Italian-inspired menu, which may relate to the “type of cocktail recipe” they tried, but the session does not confirm which one was tried."
+        }
+      ]
+    }
+  }
+]

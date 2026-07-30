@@ -1,0 +1,33 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Reminder of the specific language learning app that uses mnemonics (the one named in the prior recommendations).",
+    "candidateStatus": "found",
+    "missingRisk": "None; the app using mnemonics is explicitly mentioned by name.",
+    "items": [
+      {
+        "sessionId": "answer_ultrachat_39395",
+        "turnIndex": 5,
+        "why": "Assistant lists language learning apps and explicitly states that Memrise “uses mnemonics to help learners memorize words, phrases, and grammatical concepts,” matching the user’s request to be reminded of the mnemonics-based option."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Reminder of the specific language learning app that uses mnemonics (the one named in the prior recommendations).",
+    "candidateStatus": "found",
+    "missingRisk": "None; the app using mnemonics is explicitly mentioned by name.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_ultrachat_39395",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_ultrachat_39395",
+        "turnIndex": 5,
+        "why": "Assistant lists language learning apps and explicitly states that Memrise “uses mnemonics to help learners memorize words, phrases, and grammatical concepts,” matching the user’s request to be reminded of the mnemonics-based option."
+      }
+    ]
+  }
+}

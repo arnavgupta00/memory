@@ -1,0 +1,73 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Select only the assistant turns where specific publications/papers are recommended (even if not explicitly labeled as conferences), plus any immediately surrounding context needed to understand those recommendations.",
+    "candidateStatus": "found",
+    "missingRisk": "The provided candidate sessions recommend research papers/articles and datasets (often older/seminal), but do not clearly mention “recent conferences” or specific upcoming event dates; downstream might need additional candidate sessions focused on conference/publication recency.",
+    "items": [
+      {
+        "sessionId": "answer_d87a6ef8",
+        "turnIndex": 7,
+        "why": "Assistant recommends specific XAI medical imaging research papers/articles (including survey and technical papers), which can serve as the requested “publications.”"
+      },
+      {
+        "sessionId": "answer_d87a6ef8",
+        "turnIndex": 11,
+        "why": "Assistant recommends additional XAI/visualization/interpreting papers (saliency/visualization techniques), further supporting the publications recommendation request."
+      },
+      {
+        "sessionId": "answer_d87a6ef8",
+        "turnIndex": 8,
+        "why": "Assistant provides a structured set of advanced-topic paper/article recommendations (multimodal fusion, transfer learning, domain adaptation) that may match the user’s interest in “recent publications.”"
+      },
+      {
+        "sessionId": "answer_d87a6ef8",
+        "turnIndex": 6,
+        "why": "Assistant introduces the latest trends in explainable AI for medical image analysis, which can be used downstream to contextualize or filter the paper recommendations for recency/interest."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Select only the assistant turns where specific publications/papers are recommended (even if not explicitly labeled as conferences), plus any immediately surrounding context needed to understand those recommendations.",
+    "candidateStatus": "found",
+    "missingRisk": "The provided candidate sessions recommend research papers/articles and datasets (often older/seminal), but do not clearly mention “recent conferences” or specific upcoming event dates; downstream might need additional candidate sessions focused on conference/publication recency.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_d87a6ef8",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_d87a6ef8",
+        "turnIndex": 7,
+        "why": "Assistant recommends specific XAI medical imaging research papers/articles (including survey and technical papers), which can serve as the requested “publications.”"
+      },
+      {
+        "sessionId": "answer_d87a6ef8",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_d87a6ef8",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_d87a6ef8",
+        "turnIndex": 11,
+        "why": "Assistant recommends additional XAI/visualization/interpreting papers (saliency/visualization techniques), further supporting the publications recommendation request."
+      },
+      {
+        "sessionId": "answer_d87a6ef8",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_d87a6ef8",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

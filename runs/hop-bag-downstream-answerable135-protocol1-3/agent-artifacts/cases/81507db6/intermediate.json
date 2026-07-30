@@ -1,0 +1,128 @@
+[
+  {
+    "session_id": "answer_da3c1266_4",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains no information about any graduation ceremonies attended (no dates, counts, or mentions of attending ceremonies within the past three months). The only relevant mention is missing a nephew’s eighth grade graduation ceremony last month, which is not enough to answer the exact question about how many graduation ceremonies the user attended in the past three months.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User said: \"I've been thinking about family... feeling a bit guilty about missing my nephew Jack's eighth grade graduation ceremony last month.\"",
+          "why": "Mentions a graduation ceremony in the recent past (last month). While it indicates the user did not attend that specific ceremony, it may still help the reducer determine counts/attendance within the past three months."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_da3c1266_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session mentions only one graduation ceremony (a preschool graduation for the cousin Emma) and provides an approximate timeframe (“about two months ago”). It does not list any other ceremonies, so the count for the past three months cannot be confirmed as complete from this single session.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is looking into certification programs in digital marketing.",
+          "why": "Context for the user’s interests, not directly related to graduation-ceremony count."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User attended their little cousin Emma's preschool graduation about two months ago.",
+          "why": "Direct evidence of a graduation ceremony attendance that likely falls within the past three months."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "User mentions again that it feels like just yesterday I was attending her preschool graduation ceremony (referring to Emma).",
+          "why": "Reinforces that the user attended Emma’s preschool graduation, relevant to counting within the last three months."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_da3c1266_5",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low: the session contains a relevant personal-event claim (a graduation attended) with an approximate time reference, but it does not provide an exact graduation date or a total count, so the reducer may need other sessions to determine how many graduation ceremonies were attended in the past three months.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User considering pursuing a certification in digital marketing and has narrowed it down to two programs.",
+          "why": "Could be relevant context if the graduation ceremony count question relates to user’s educational activities/goals, but it likely does not directly answer the ceremony-attended count."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User attended their colleague Alex's graduation from a leadership development program at work a few weeks ago.",
+          "why": "Directly relevant to counting graduation ceremonies attended in a recent time window (past three months), though the date is approximate."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "One of the programs is offered by HubSpot; the other is by the Digital Marketing Institute.",
+          "why": "Not directly about graduation ceremonies attended, but could help contextualize whether the user’s 'graduation' might refer to program completions vs. ceremonies."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "Both digital marketing certification programs are online and self-paced; the HubSpot program is free while the Digital Marketing Institute program costs around $5,000.",
+          "why": "Educational context; not directly about the graduation-ceremony count but may help characterize user’s recent learning activities."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "Both programs cover similar topics like SEO, social media, and email marketing.",
+          "why": "Educational context; unlikely to affect ceremony attendance counts."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "HubSpot certification recognition is well-known and respected within the inbound marketing community, but recognition varies depending on context and job/company size.",
+          "why": "Not about ceremony attendance; included only because it is a user-relevant education/career detail."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "DMI certification is described as more traditional and widely recognized across the digital marketing industry and globally (presence in over 100 countries).",
+          "why": "Not about ceremony attendance; educational/career detail only."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Digital Marketing Institute offers a payment plan that allows you to spread the $5,000 cost over several months or years.",
+          "why": "Educational finance detail; not about the graduation-ceremony count."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "DMI payment plan is typically divided into 3-6 monthly installments.",
+          "why": "Educational finance detail; not about the graduation-ceremony count."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "DMI does not charge additional fees or interest for the payment plan; late payment fees may apply.",
+          "why": "Educational finance detail; not about the graduation-ceremony count."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "DMI provides career support including career coaching, job placement assistance, access to job boards/career portals, networking events, and a global alumni network with over 10,000 professionals worldwide.",
+          "why": "Educational/career detail; not directly about ceremony attendance count."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "DMI reports job placement statistics: 80% of graduates find employment within 6 months, 60% see an increase in salary within 6 months, and 90% report improved job prospects after completing the program.",
+          "why": "Educational outcomes; not directly about ceremony attendance count."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_da3c1266_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Only one graduation attendance is mentioned in this session (best friend Rachel’s master’s ceremony). If there were other ceremonies attended in the past three months, they are not covered here.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User session states: “Today is 2023/07/21 (Fri) 23:33.”",
+          "why": "Provides the reference date needed to determine what falls within the past three months."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User: “I just attended my best friend Rachel's master's degree graduation ceremony a couple of weeks ago.”",
+          "why": "Directly relevant to counting graduation ceremonies attended in the past three months; implies the user attended at least one ceremony in that timeframe."
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,163 @@
+{
+  "queryShape": "order",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "1446b088_2",
+      "turnIndex": 3,
+      "date": "2023/05/12 (Fri) 15:34",
+      "role": "assistant",
+      "text": "Consistency and tracking progress are crucial to staying motivated and reaching your goals. Here are some tips to help you track your progress and stay motivated:\n\n1. **Set specific goals**: Define your goals, such as increasing your daily step count by 1,000 steps per day or completing a certain number of workouts per week. Having clear goals will help you stay focused.\n2. **Use a fitness tracker or pedometer**: Wear a fitness tracker or pedometer to track your daily step count, distance, and calories burned. This will help you monitor your progress and stay motivated.\n3. **Log your workouts**: Keep a workout log or journal to track the exercises you've done, the number of sets and reps, and how you feel. This will help you see your progress and identify patterns.\n4. **Create a schedule**: Plan out your workouts and schedule them in your calendar. Treat them as non-negotiable appointments to ensure you stick to your routine.\n5. **Track your progress photos**: Take progress photos at the beginning and end of each week or month. This will help you visualize your progress and stay motivated.\n6. **Find an accountability partner**: Share your goals with a friend or family member and ask them to hold you accountable. This can be a great motivator!\n7. **Reward yourself**: Set small rewards for yourself when you reach certain milestones. This could be something as simple as a new workout outfit or a post-workout smoothie.\n8. **Celebrate small wins**: Acknowledge and celebrate your small victories along the way. This will help you stay motivated and encouraged.\n9. **Mix it up**: Vary your workout routine every 2-3 weeks to avoid plateaus and prevent boredom.\n10. **Be kind to yourself**: Remember that it's okay to have off days. Don't be too hard on yourself if you miss a workout or don't see immediate results. Get back on track and keep moving forward.\n\nAdditionally, here are some tips specific to the exercises I mentioned earlier:\n\n* For bodyweight marching, try to increase the duration or number of sets as you get more comfortable.\n* For walking lunges, focus on proper form and engage your core to avoid straining your knees.\n* As you get more comfortable with the exercises, try incorporating them into your daily routine, such as during commercial breaks while watching TV or during your lunch break at work.\n\nRemember, consistency is key. Stick to your routine, and you'll start to see progress and feel more motivated over time.\n\nHow do these tips sound? Do you have any other questions or concerns about tracking your progress or staying motivated?",
+      "why": "empty-extractor deterministic fallback",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "9345f7dc_4",
+      "turnIndex": 0,
+      "date": "2023/05/21 (Sun) 12:34",
+      "role": "user",
+      "text": "I'm thinking of trying to adjust my morning routine to get some exercise before work. Do you have any suggestions for a quick 20-minute workout that I can fit in before I head out the door? By the way, I've been taking the bus to work for the past three weeks, so I'm trying to make the most of my morning commute time.",
+      "why": "empty-extractor deterministic fallback",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_8c64ce25_2",
+      "turnIndex": 0,
+      "date": "2023/06/02 (Fri) 15:29",
+      "role": "user",
+      "text": "I'm looking for some new bike routes to try out. Do you have any suggestions for trails around the city? By the way, I just completed the Spring Sprint Triathlon today, which included a 20K bike ride, and I'm itching to get back on my bike.",
+      "why": "per-session extractor: Establishes the timeframe of at least one event discussed in this session.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_8c64ce25_2",
+      "turnIndex": 4,
+      "date": "2023/06/02 (Fri) 15:29",
+      "role": "user",
+      "text": "I was thinking of exploring the waterfront path on Thursday evening, after my volleyball league game.",
+      "why": "per-session extractor: Indicates another sports-related participation (volleyball league game) tied to a temporal endpoint (“Thursday evening”), which may be needed to order events.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_8c64ce25_1",
+      "turnIndex": 0,
+      "date": "2023/06/10 (Sat) 15:00",
+      "role": "user",
+      "text": "I'm looking for some new running shoes. I just finished a 5K run with a personal best time of 27 minutes and 42 seconds at the Midsummer 5K Run, and I think it's time to upgrade my gear. Can you recommend some good running shoes for racing?",
+      "why": "per-session extractor: Identifies a sports event the user participated in and includes a performance metric (time) that can help confirm participation; needed to place one event within the past month ordering.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "78d28576_2",
+      "turnIndex": 7,
+      "date": "2023/06/16 (Fri) 15:35",
+      "role": "assistant",
+      "text": "You're already on the right track with planks and Russian twists! To further improve your core strength, I recommend adding some variety to your exercises and increasing the intensity. Here are some suggestions to help you achieve your goal of holding a 60-second plank by the end of the month:\n\n**Add these exercises to your routine:**\n\n1. **Leg raises:** Lie on your back with arms extended overhead, and raise your legs straight up towards the ceiling. Lift your shoulders off the ground, holding for 1-2 seconds. Lower your legs back down without touching the floor, and repeat for 3 sets of 10-12 reps.\n2. **Bicycle crunches:** Lie on your back with hands behind your head, and alternate bringing each elbow towards the opposite knee, as if pedaling a bicycle. Do 3 sets of 10-12 reps.\n3. **Pallof press:** Hold a resistance band or cable handle with both hands, and press it away from your body, keeping your core muscles engaged. Return to the starting position, and repeat for 3 sets of 10-12 reps.\n4. **Side plank (each side):** Lie on your side with feet stacked, and lift your hips off the ground, holding for 30-60 seconds. Repeat on the other side.\n5. **Woodchoppers:** Hold a weight or medicine ball, and twist your torso from side to side, keeping your arms straight. Do 3 sets of 10-12 reps.\n\n**Incorporate progressive overload:**\n\n1. **Increase plank hold time:** Aim to hold your plank for 45 seconds in week 2, and 60 seconds by the end of the month.\n2. **Add weight or resistance:** Use weights, resistance bands, or a medicine ball to increase the intensity of your exercises.\n3. **Increase reps or sets:** Gradually increase the number of reps or sets as your core strength improves.\n\n**Tips to help you achieve your goal:**\n\n1. **Focus on proper form:** Engage your core muscles by drawing your belly button towards your spine, and avoid letting your hips sag or back arch.\n2. **Practice consistently:** Aim to do core exercises 3-4 times a week, with at least one day of rest in between.\n3. **Mix and match exercises:** Vary your exercises to target different muscle groups and avoid plateaus.\n4. **Engage your core in daily activities:** Practice good posture, and engage your core muscles during daily activities like walking, lifting, or carrying objects.\n\nRemember to listen to your body and only do what feels comfortable and safe. If you experience any discomfort or pain, stop the exercise immediately and consult with a healthcare professional.",
+      "why": "empty-extractor deterministic fallback",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_8c64ce25_3",
+      "turnIndex": 0,
+      "date": "2023/06/17 (Sat) 11:09",
+      "role": "user",
+      "text": "I'm looking for some tips on injury prevention and recovery strategies for soccer players. I participate in the company's annual charity soccer tournament today, and I want to make sure I'm taking care of myself.",
+      "why": "per-session extractor: This provides an explicit user participation in a sports event and a date anchor needed to order events chronologically.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "1446b088_2",
+      "turnIndex": 2,
+      "date": "2023/05/12 (Fri) 15:34",
+      "role": "user",
+      "text": "I'm excited to try out these exercises. I'll definitely start with the bodyweight marching and walking lunges since they seem easy to follow. Do you have any tips on how to track my progress and stay motivated?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "1446b088_2",
+      "turnIndex": 4,
+      "date": "2023/05/12 (Fri) 15:34",
+      "role": "user",
+      "text": "I'll definitely try to implement those tips to track my progress and stay motivated. Speaking of tracking my progress, I've been using my Omron body fat scale to track my body composition. Do you have any recommendations on how to interpret the data and make sense of the different metrics it provides?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "9345f7dc_4",
+      "turnIndex": 1,
+      "date": "2023/05/21 (Sun) 12:34",
+      "role": "assistant",
+      "text": "That's a great goal! Fitting in a quick workout before work can boost your energy and set a positive tone for the day. Given your bus commute, you can definitely make the most of your morning time. Here are some 20-minute workout ideas that you can try:\n\n**Bodyweight Exercises**\n\n1. 7-Minute Workout: This is a quick and intense circuit workout that targets major muscle groups. You can do 2-3 rounds in 20 minutes.\n\t* Jumping jacks (30 seconds)\n\t* Burpees (15 reps)\n\t* Mountain climbers (30 seconds)\n\t* Plank (30 seconds)\n\t* Dumbbell rows (15 reps per arm)\n\t* Bicycle crunches (15 reps)\n\t* Tricep dips (15 reps)\n\t* Russian twists (15 reps)\n2. Quick Strength Circuit: Focus on 5-6 exercises that work different muscle groups. Do 3 sets of 10-12 reps each.\n\t* Squats\n\t* Push-ups\n\t* Lunges\n\t* Plank jacks\n\t* Chest dips (using a chair or bench)\n\t* Calf raises\n\n**High-Intensity Interval Training (HIIT)**\n\n1. 20-Minute HIIT: Alternate between 30 seconds of intense exercise and 30 seconds of rest. Repeat for 20 minutes.\n\t* Sprints in place\n\t* Jumping jacks\n\t* Burpees\n\t* Mountain climbers\n\t* Plank jacks\n2. Tabata Workout: A 4-minute HIIT cycle, repeated 4-5 times. Work for 20 seconds, rest for 10 seconds.\n\t* Sprints in place\n\t* Jumping jacks\n\t* Burpees\n\t* Mountain climbers\n\n**Yoga or Stretching**\n\n1. Quick Flow Yoga: Focus on 10-12 poses, holding each for 20-30 seconds. Move quickly between poses to keep your heart rate up.\n\t* Downward-facing dog\n\t* Warrior II\n\t* Triangle pose\n\t* Tree pose\n\t* Seated forward bend\n\t* Plank\n\t* Cobra pose\n2. Dynamic Stretching: Focus on 10-12 dynamic stretches, holding each for 10-15 seconds.\n\t* Leg swings\n\t* Arm circles\n\t* Hip circles\n\t* Calf raises\n\t* Toe touches\n\t* Side lunges\n\nRemember to:\n\n* Warm up with 2-3 minutes of light cardio (jogging in place, jumping jacks, etc.)\n* Cool down with 2-3 minutes of stretching\n* Listen to your body and adjust the intensity and duration based on your fitness level\n* Make sure to leave enough time to get ready for work after your workout!\n\nChoose a workout that suits your fitness level and preferences, and have fun with it!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_8c64ce25_2",
+      "turnIndex": 1,
+      "date": "2023/06/02 (Fri) 15:29",
+      "role": "assistant",
+      "text": "Huge congrats on completing the Spring Sprint Triathlon! That's an amazing achievement!\n\nI'd be happy to help you with some new bike route suggestions around the city. Since I'm a large language model, I don't have personal experiences, but I can provide you with some popular bike trails and routes that you might enjoy:\n\n1. **Local Park Trails**: Check out the trails in nearby parks or nature reserves. These trails are often well-maintained, scenic, and less crowded than urban roads. You can search online for \"bike trails near me\" or \"bike routes in [your city/park name]\" to find options.\n2. **Rail Trails**: Many cities have converted old railway lines into bike trails, which are often flat, smooth, and car-free. These trails can be a great option for a relaxing ride.\n3. **Waterfront Paths**: If you live near a lake, river, or ocean, there might be a waterfront path or bike trail that offers stunning views and a pleasant ride.\n4. **Urban Bike Lanes**: Explore your city's urban bike lanes, which are designed to provide a safe and efficient route for cyclists. You can use online resources like Google Maps or bike route planning apps to find bike-friendly routes.\n5. **Group Rides**: Join a local cycling group or club, which often organize group rides on various routes. This is a great way to meet fellow cyclists, learn new routes, and get motivated.\n\nSome popular bike route planning resources include:\n\n* Strava: A social network for athletes that allows you to discover and share routes.\n* TrailLink: A website and app that provides information on bike trails and routes across the US.\n* MapMyRide: A route planning tool that allows you to create and share bike routes.\n* Local bike shops: Visit your local bike shop and ask for recommendations on popular bike routes and trails in the area.\n\nRemember to always follow safety guidelines, wear appropriate gear, and obey traffic rules when riding in urban areas.\n\nI hope this helps you find some exciting new bike routes to explore!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_8c64ce25_2",
+      "turnIndex": 3,
+      "date": "2023/06/02 (Fri) 15:29",
+      "role": "assistant",
+      "text": "I'm glad you found the suggestions helpful!\n\nRegarding the waterfront path, I don't have real-time information about specific paths or their schedules. However, I can suggest a few ways to find out if the waterfront path is open to cyclists during the week:\n\n1. **Check the city's website**: Look for the city's official website, parks department, or transportation department website. They usually have information on bike trails, paths, and their usage rules.\n2. **Contact local bike shops**: Reach out to local bike shops or cycling organizations in your area. They often have knowledge about the local cycling infrastructure and can provide you with information on the waterfront path's availability.\n3. **Social media and online forums**: Join local cycling groups or forums on social media platforms like Facebook or Reddit. Ask the community if they have any information about the waterfront path's hours of operation.\n4. **Check with local authorities**: If you're unable to find information online, you can contact the local parks department, transportation department, or police department to ask about the path's availability during the week.\n5. **Visit the path**: If all else fails, you can always visit the waterfront path during the week and see if it's open to cyclists. Look for signs or postings that might indicate any restrictions.\n\nRemember to always follow local rules and regulations, and be respectful of other path users, such as pedestrians and joggers.\n\nI hope this helps, and I wish you a great ride along the waterfront path!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_8c64ce25_2",
+      "turnIndex": 5,
+      "date": "2023/06/02 (Fri) 15:29",
+      "role": "assistant",
+      "text": "Sounds like a great plan! Exploring the waterfront path on a Thursday evening after your volleyball league game sounds like a fantastic way to unwind and get some exercise.\n\nSince you're planning to visit the path in the evening, you might want to consider a few things to ensure a safe and enjoyable ride:\n\n1. **Lighting**: Make sure you have proper lighting on your bike, especially if the path is not well-lit. You don't want to ride in the dark without being visible to others.\n2. **Traffic**: While the waterfront path might be less crowded in the evening, you should still be aware of pedestrian traffic, joggers, and other cyclists.\n3. **Weather**: Check the weather forecast beforehand to ensure you're prepared for any conditions. You might want to bring a light jacket or rain gear, depending on the forecast.\n4. **Path conditions**: Be mindful of the path's surface and any potential hazards, such as potholes, cracks, or debris.\n\nAssuming the path is open to cyclists during the week, you should be good to go! Enjoy the scenic views, fresh air, and the thrill of exploring a new ride.\n\nRemember to stay hydrated, wear comfortable clothing, and have fun!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_8c64ce25_1",
+      "turnIndex": 1,
+      "date": "2023/06/10 (Sat) 15:00",
+      "role": "assistant",
+      "text": "Congratulations on your personal best time at the Midsummer 5K Run! That's an impressive achievement!\n\nWhen it comes to racing, you'll want shoes that provide a responsive ride, excellent cushioning, and a snug, secure fit. Here are some top recommendations for racing shoes that can help you shave off precious seconds from your next 5K:\n\n1. **Nike Vaporfly Next%**: These shoes are designed for elite runners, but are also suitable for serious recreational runners like yourself. They feature a full-length carbon plate for maximum propulsion and a responsive, snappy feel.\n2. **Adidas Adizero Adios**: These shoes are built for speed, with a focus on lightweight, responsive cushioning and a sleek, aerodynamic design. They're ideal for runners with a faster pace, like yours.\n3. **New Balance FuelCell 5280**: These shoes offer a unique midsole design that provides both cushioning and propulsion. They're lightweight, breathable, and perfect for fast-paced racing.\n4. **Brooks Hyperion Elite**: These shoes feature a DNA LOFT midsole for superior cushioning and a BioMoGo DNA midsole for customized support. They're designed for speed and agility, making them perfect for racing.\n5. **Asics MetaRide**: These shoes boast a unique rocker design that encourages a smooth, efficient stride. They're lightweight, breathable, and provide excellent cushioning for a fast, comfortable ride.\n\nWhen choosing a racing shoe, consider the following factors:\n\n* **Weight**: Lighter shoes can help you run faster, but may sacrifice some cushioning.\n* **Cushioning**: Adequate cushioning is essential for comfort and performance. Look for shoes with responsive, springy midsoles.\n* **Fit**: Ensure a snug, secure fit to prevent blisters and discomfort during your run.\n* **Drop**: If you're used to a lower heel-to-toe drop, look for shoes with a similar design to minimize transition time.\n\nRemember to try on several options, go for a run or jog in each pair, and choose the one that feels most comfortable and responsive to your foot strike.\n\nLastly, don't forget to break in your new shoes gradually to avoid any discomfort or injuries. Happy running!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "78d28576_2",
+      "turnIndex": 6,
+      "date": "2023/06/16 (Fri) 15:35",
+      "role": "user",
+      "text": "How can I incorporate strength training to improve my core strength, as I'm currently doing planks and Russian twists 3 times a week and aiming to hold a plank for 60 seconds by the end of the month?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "78d28576_2",
+      "turnIndex": 8,
+      "date": "2023/06/16 (Fri) 15:35",
+      "role": "user",
+      "text": "I'm wondering if you can help me with my water intake. I'm aiming to drink at least 8 glasses a day, but I'm having trouble tracking it. Do you have any suggestions on how I can make sure I'm drinking enough water throughout the day?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_8c64ce25_3",
+      "turnIndex": 1,
+      "date": "2023/06/17 (Sat) 11:09",
+      "role": "assistant",
+      "text": "Great attitude! As a recreational soccer player, it's fantastic that you're thinking about injury prevention and recovery strategies. Here are some valuable tips to help you minimize the risk of injury and optimize your performance during the charity tournament:\n\n**Injury Prevention Strategies:**\n\n1. **Warm up and cool down properly**: Before playing, warm up with light cardio (jogging, jumping jacks) and dynamic stretching (leg swings, high knees, hip circles). After the game, cool down with static stretches (hamstrings, quadriceps, calves).\n2. **Hydrate and fuel**: Drink plenty of water or sports drinks to stay hydrated. Fuel your body with a balanced meal or snack 1-2 hours before playing, including complex carbs, protein, and healthy fats.\n3. **Listen to your body**: If you're feeling tired or experiencing pain, take regular breaks to rest and recover. Don't push yourself too hard, especially if you're not used to playing soccer regularly.\n4. **Use proper technique**: Focus on proper tackling, landing, and ball control techniques to reduce the risk of injuries.\n5. **Wear protective gear**: Wear shin guards, and consider wearing knee-high socks and elbow pads for added protection.\n6. **Stay flexible and strong**: Regularly incorporate exercises that improve your flexibility, strength, and core stability, such as squats, lunges, and planks.\n\n**Recovery Strategies:**\n\n1. **Stretch and foam roll**: After the game, take 10-15 minutes to stretch your major muscle groups, including your legs, hips, and lower back. Use a foam roller to release tension in your IT band, quadriceps, and hamstrings.\n2. **Ice and compression**: If you experience any pain or swelling, apply ice to the affected area for 10-15 minutes, followed by compression bandages or sleeves to reduce inflammation.\n3. **Replenish fluids and electrolytes**: Drink sports drinks or coconut water to replenish lost electrolytes and fluids.\n4. **Rest and recovery**: Allow your body time to recover between games, if you're playing multiple matches. Aim for at least 30-60 minutes of rest and recovery time.\n5. **Post-game nutrition**: Refuel with a balanced meal or snack that includes protein, complex carbs, and healthy fats within 30-60 minutes after the game.\n6. **Active recovery**: Engage in low-intensity activities like walking, cycling, or swimming to promote blood flow and aid in recovery.\n\n**Additional Tips:**\n\n* Get enough sleep (7-9 hours) before the tournament to ensure you're well-rested and ready to perform.\n* Avoid playing if you're experiencing any underlying medical conditions, such as a concussion or muscle strain.\n* Communicate with your teammates and opponents about any injuries or concerns during the game.\n\nBy following these injury prevention and recovery strategies, you'll be well-prepared to enjoy the charity tournament while minimizing the risk of injury. Have fun, stay safe, and good luck!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 19009,
+  "estimatedTokens": 4753
+}

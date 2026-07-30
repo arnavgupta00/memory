@@ -1,0 +1,28 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Workshops attended in the 4-month window ending 2023/02/26, summing any stated workshop fees/spend amounts.",
+  "candidateStatus": "found",
+  "missingRisk": "Other workshop attendances in the last four months may have costs mentioned elsewhere (including different amounts/dates) that are not present in the provided memory; also some workshop dates in memory (e.g., March) may be outside the window or may be recorded with ambiguity.",
+  "items": [
+    {
+      "sessionId": "answer_826d51da_3",
+      "turnIndex": 0,
+      "why": "Mentions a one-day photography workshop on Feb 22 that was free (workshop spend = $0)."
+    },
+    {
+      "sessionId": "answer_826d51da_3",
+      "turnIndex": 11,
+      "why": "Mentions a half-day mindfulness workshop on Dec 12 with an explicit payment: paid $20."
+    },
+    {
+      "sessionId": "answer_826d51da_4",
+      "turnIndex": 0,
+      "why": "Mentions a two-day writing workshop in November with an explicit payment: paid $200."
+    },
+    {
+      "sessionId": "answer_826d51da_2",
+      "turnIndex": 0,
+      "why": "Mentions a digital marketing workshop dated March 15-16 with explicit payment: paid $500 (may or may not fall within the last-four-month window depending on exact date handling)."
+    }
+  ]
+}

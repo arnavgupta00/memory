@@ -1,0 +1,70 @@
+[
+  {
+    "session_id": "573dc24b_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session only contains podcast recommendations and language-learning/self-improvement advice; it does not include any show/movie preferences for tonight, so it may be irrelevant to the user’s request for a TV show or movie.",
+      "claims": [
+        {
+          "turnIndex": 3,
+          "fact": "User wants self-improvement podcasts for personal development and productivity; they’ve been enjoying \"How I Built This\".",
+          "why": "Captures the user’s stated preferences and currently enjoyed content (useful for recommending entertainment related to productivity/self-improvement, though not directly movies/shows)."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "User listened to \"Crime Junkie\" for 5 days straight and is hooked on true crime.",
+          "why": "Establishes entertainment taste (true crime) that could inform a TV/movie recommendation if the reducer maps it to screen media."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Assistant recommended commute-friendly podcasts, including TED Radio Hour, Stuff You Should Know, How I Built This, The Daily Boost, and The Coursera Podcast.",
+          "why": "Provides specific podcast titles tied to commuting, which may help when translating preferences to tonight’s media."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Assistant recommended language learning apps to use with podcasts: Duolingo, Babbel, Rosetta Stone, Anki, Memrise, Quizlet, HelloTalk, Lingodeer, Busuu, and Open Culture.",
+          "why": "Captures language-learning resources and the user’s active plan to learn a language, which could affect recommendations (e.g., immersive content)."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "User plans to start with Duolingo because it’s free and they’ve heard great things.",
+          "why": "Shows a preference/starting point the reducer can incorporate into advice or content suggestions."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Assistant suggested tips for staying motivated and consistent with language learning (e.g., set realistic goals, create a schedule, track progress, immersion, gamification).",
+          "why": "Contains behavioral guidance that may influence what type of media the user would enjoy or consider helpful."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "Assistant listed true crime podcasts the user might enjoy: My Favorite Murder, Last Podcast on the Left, Serial, Crime Stories with Laura Beil, True Crime Garage, Casefile True Crime Podcast, The Vanished, Dr. Death, Criminology, Small Town Dicks, The Generation Why Podcast, The Fall Line, Bear Brook, Sword and Scale, The Clearing.",
+          "why": "Provides a large set of specific true-crime entertainment options; could be adapted to show/movie recommendations if the reducer searches for screen equivalents."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_0250ae1c",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "high",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is an aspiring stand-up comedian looking for advice on how to improve craft; asks for stand-up comedy specials on Netflix with strong storytelling abilities like John Mulaney's 'Kid Gorgeous'.",
+          "why": "Preference and domain context (stand-up, Netflix, strong storytelling) relevant to recommending something to watch tonight."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "Assistant recommends Netflix stand-up specials with strong storytelling abilities: Hasan Minhaj: Homecoming King; Ali Wong: Hard Knock Wife; Mike Birbiglia: My Girlfriend's Boyfriend; Taylor Tomlinson: Quarter-Life Crisis; Maria Bamford: Lady Dynamite; Bo Burnham: Make Happy; Demetri Martin: Live (At the Time); Wanda Sykes: Not Normal; Hannah Gadsby: Nanette; Brian Regan: Nunchucks and Flamethrowers.",
+          "why": "Provides a concrete list of shows/specials that could be used as viewing recommendations."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "User is going to attend the comedy writing workshop on Friday and is looking forward to learning from experienced instructors, getting feedback on their work, and networking with other writers.",
+          "why": "Confirms ongoing comedy-writing interest; may influence the type of recommendation toward comedy/storytelling."
+        }
+      ]
+    }
+  }
+]

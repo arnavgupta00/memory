@@ -1,0 +1,73 @@
+{
+  "raw": {
+    "queryShape": "order",
+    "setBoundary": "January sports events and their chronological order",
+    "candidateStatus": "found",
+    "missingRisk": "Some event dates are described indirectly (e.g., “last weekend” on 2023/01/22), so the downstream answerer may need to infer the exact calendar date within January from context.",
+    "items": [
+      {
+        "sessionId": "answer_e6c20e52_3",
+        "turnIndex": 4,
+        "why": "User directly states the sports event watched: Lakers vs Chicago Bulls at the Staples Center (session dated 2023/01/05)."
+      },
+      {
+        "sessionId": "answer_e6c20e52_2",
+        "turnIndex": 2,
+        "why": "User directly states the sports event watched: College Football National Championship game (Georgia vs Alabama 33-18) at home with family (session dated 2023/01/15; game was “yesterday”)."
+      },
+      {
+        "sessionId": "answer_e6c20e52_1",
+        "turnIndex": 0,
+        "why": "User directly states the sports event watched: Kansas City Chiefs defeat Buffalo Bills in the Divisional Round of the NFL playoffs (“last weekend”) at friend Mike’s place (session dated 2023/01/22)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "order",
+    "setBoundary": "January sports events and their chronological order",
+    "candidateStatus": "found",
+    "missingRisk": "Some event dates are described indirectly (e.g., “last weekend” on 2023/01/22), so the downstream answerer may need to infer the exact calendar date within January from context.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_e6c20e52_3",
+        "turnIndex": 4,
+        "why": "User directly states the sports event watched: Lakers vs Chicago Bulls at the Staples Center (session dated 2023/01/05)."
+      },
+      {
+        "sessionId": "answer_e6c20e52_3",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e6c20e52_3",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e6c20e52_2",
+        "turnIndex": 2,
+        "why": "User directly states the sports event watched: College Football National Championship game (Georgia vs Alabama 33-18) at home with family (session dated 2023/01/15; game was “yesterday”)."
+      },
+      {
+        "sessionId": "answer_e6c20e52_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e6c20e52_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e6c20e52_1",
+        "turnIndex": 0,
+        "why": "User directly states the sports event watched: Kansas City Chiefs defeat Buffalo Bills in the Divisional Round of the NFL playoffs (“last weekend”) at friend Mike’s place (session dated 2023/01/22)."
+      },
+      {
+        "sessionId": "answer_e6c20e52_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

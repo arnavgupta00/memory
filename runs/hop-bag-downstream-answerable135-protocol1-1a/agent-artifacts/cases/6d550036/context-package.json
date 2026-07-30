@@ -1,0 +1,334 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Projects you personally led or are currently leading (including leading a team on a project).",
+  "candidateStatus": "found",
+  "missingRisk": "May be other led/currently-leading projects not mentioned in the provided memory block.",
+  "items": [
+    {
+      "sessionId": "sharegpt_J7ZAFLd_0",
+      "turnIndex": 0,
+      "date": "2023/05/21 (Sun) 09:03",
+      "role": "user",
+      "text": "I am planning a project in Nigeria that connects 100 rural villages to running water. Who can be the stakeholders that will benefit or be harmed by the project? give the response in an array format",
+      "why": "Mentions you are planning a Nigeria project (possible leadership/project lead, though framing is not explicit as 'led').",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ec904b3c_1",
+      "turnIndex": 0,
+      "date": "2023/05/21 (Sun) 19:38",
+      "role": "user",
+      "text": "I'm working on a project that involves analyzing customer data to identify trends and patterns. I was thinking of using clustering analysis, but I'm not sure which type of clustering method to use. Can you help me decide between k-means and hierarchical clustering? By the way, I've had some experience with data analysis from my Marketing Research class project, where I led the data analysis team and we did a comprehensive market analysis for a new product launch.",
+      "why": "States you led the data analysis team for a Marketing Research class project (new product launch market analysis).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "sharegpt_zciCXP1_12",
+      "turnIndex": 6,
+      "date": "2023/05/27 (Sat) 02:54",
+      "role": "user",
+      "text": "Improve the answer saying yes we have applied with the ESP but not for an event of this magnitudeHave you previously applied to ESP with this same idea or project?\\*Has anything changed? If you're considering reapplying, we recommend signing up for Office Hours first before restarting the application process.This is the first time we applied for an IRL event of this magnitude! In the past, we applied to host events during The Merge, we hosted 3 events in 3 different cities for 80-100 people each one.",
+      "why": "Indicates prior experience applying to ESP and hosting 3 events during The Merge; part of organizing team/project history (leadership not explicit per-person but relevant to whether you led projects/events).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "sharegpt_zciCXP1_12",
+      "turnIndex": 7,
+      "date": "2023/05/27 (Sat) 02:54",
+      "role": "assistant",
+      "text": "To improve the answer to the question, “Have you previously applied to ESP with this same idea or project?” the following could be added:\nWhile we have previously applied for funding from ESP to host events, this is the first time we have applied for an IRL event of this magnitude. In the past, we applied for funding to host events during The Merge and successfully hosted three events in three different cities, with attendance ranging from 80-100 people at each event. While these events were successful, they were much smaller in scale than Ethereum Mexico, which is our largest event to date. We believe that Ethereum Mexico has the potential to make a significant impact on the Ethereum ecosystem in Mexico and are excited to bring together builders, developers, and enthusiasts from across the country to network, collaborate, and learn. While some aspects of our previous events may inform our approach to Ethereum Mexico, we are approaching this project with a fresh perspective and are committed to making it a success.",
+      "why": "States you/the team (Ethereum México Community Team) previously hosted events and is planning Ethereum Mexico (relevant to project leadership by team/org).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "2e4430d8_2",
+      "turnIndex": 0,
+      "date": "2023/05/28 (Sun) 03:42",
+      "role": "user",
+      "text": "I'm planning to launch a new product feature in June and I need to create a project timeline. Can you help me create a Gantt chart or recommend a tool to do so? By the way, I've been pretty busy lately, especially since I was promoted to a senior software engineer position three months ago and have been leading a team of five engineers.",
+      "why": "Says you were promoted to senior software engineer and have been leading a team of five engineers; also references a high-priority project you completed ahead of schedule.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "2e4430d8_2",
+      "turnIndex": 2,
+      "date": "2023/05/28 (Sun) 03:42",
+      "role": "user",
+      "text": "I think I'll try out Asana for creating a Gantt chart, since I've heard good things about it. Can you help me estimate the duration of each task based on my team's velocity? We've been doing pretty well lately, delivering features ahead of schedule, like that high-priority project I completed two months ahead of time, which led to a significant increase in company revenue.",
+      "why": "Continues the context of your current project/timeline work and reinforces your leadership role while planning tasks/durations for the team.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ec904b3c_2",
+      "turnIndex": 2,
+      "date": "2023/05/29 (Mon) 09:25",
+      "role": "user",
+      "text": "I've been working on a solo project for my Data Mining class, and I'm really interested in applying some of these techniques to my customer purchase data. I'm trying to identify patterns and trends, and I think feature engineering will really help me with that. Do you have any specific tips on how to handle high cardinality categorical variables in my dataset?",
+      "why": "Describes your solo data mining class project work (may count depending on whether 'led' applies vs. merely did).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "sharegpt_J7ZAFLd_0",
+      "turnIndex": 2,
+      "date": "2023/05/21 (Sun) 09:03",
+      "role": "user",
+      "text": "puts this in a table. \ncolumns: Stakeholders title, Stakeholder type (business/non profit/gov/individuals), short description of potential benefit/harm",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_J7ZAFLd_0",
+      "turnIndex": 4,
+      "date": "2023/05/21 (Sun) 09:03",
+      "role": "user",
+      "text": "now break each row into the potential indicators that will allow us to measure the impact",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_J7ZAFLd_0",
+      "turnIndex": 6,
+      "date": "2023/05/21 (Sun) 09:03",
+      "role": "user",
+      "text": "do it for all stakeholders",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ec904b3c_1",
+      "turnIndex": 2,
+      "date": "2023/05/21 (Sun) 19:38",
+      "role": "user",
+      "text": "I was thinking of using k-means clustering initially, but I'm not sure about the number of clusters. Can you suggest any methods to determine the optimal number of clusters?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ec904b3c_1",
+      "turnIndex": 4,
+      "date": "2023/05/21 (Sun) 19:38",
+      "role": "user",
+      "text": "I think I'll try the elbow method and silhouette analysis first. I'll also take a look at the data visualization to see if I can identify any patterns or structures that might help me decide on the number of clusters. By the way, do you have any recommendations on how to prepare my data for clustering? Should I normalize or scale my data?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ec904b3c_1",
+      "turnIndex": 6,
+      "date": "2023/05/21 (Sun) 19:38",
+      "role": "user",
+      "text": "I'll definitely take those data preparation steps into consideration. I've also been thinking about how to visualize my data to identify patterns or structures that might help me decide on the number of clusters. Do you have any recommendations on what types of plots or visualizations I should use to visualize my customer data?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ec904b3c_1",
+      "turnIndex": 8,
+      "date": "2023/05/21 (Sun) 19:38",
+      "role": "user",
+      "text": "I think I'll start with some scatter plots and heatmaps to visualize the relationships between my customer features. I also want to try out dimensionality reduction techniques like PCA or t-SNE to see if I can identify any clusters or patterns in my high-dimensional data. By the way, I've had some experience with data visualization from my Marketing Research class project, where we had to create reports and presentations to communicate our findings to stakeholders. Do you think I should use any specific color schemes or visual encoding techniques to make my visualizations more effective?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ec904b3c_1",
+      "turnIndex": 10,
+      "date": "2023/05/21 (Sun) 19:38",
+      "role": "user",
+      "text": "I think I'll try out some of these visualization techniques and see what works best for my customer data. I'll also keep in mind the best practices for visualizing high-dimensional data using dimensionality reduction techniques. Thanks for the tips!",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_nVi6tIt_0",
+      "turnIndex": 0,
+      "date": "2023/05/21 (Sun) 22:09",
+      "role": "user",
+      "text": "how to start web design company?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_nVi6tIt_0",
+      "turnIndex": 2,
+      "date": "2023/05/21 (Sun) 22:09",
+      "role": "user",
+      "text": "how to setup a web design company?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_nVi6tIt_0",
+      "turnIndex": 4,
+      "date": "2023/05/21 (Sun) 22:09",
+      "role": "user",
+      "text": "how to price a web design project for a large company?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ec904b3c_4",
+      "turnIndex": 0,
+      "date": "2023/05/24 (Wed) 15:24",
+      "role": "user",
+      "text": "I'm looking for some help with data visualization tools. I recently participated in a case competition hosted by a consulting firm, where we had to analyze a business case and present our recommendations to a panel of judges. I was thinking of using some data visualization tools to make our presentation more engaging. Can you recommend some popular data visualization tools that are easy to use?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ec904b3c_4",
+      "turnIndex": 2,
+      "date": "2023/05/24 (Wed) 15:24",
+      "role": "user",
+      "text": "I think I'll start with Tableau and Power BI, they seem like great options. Can you give me some tips on how to create effective dashboards in these tools?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ec904b3c_4",
+      "turnIndex": 4,
+      "date": "2023/05/24 (Wed) 15:24",
+      "role": "user",
+      "text": "I'll start with Tableau first since it seems to be more user-friendly. Can you walk me through the process of connecting to a data source, creating a dashboard, and publishing it online?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ec904b3c_4",
+      "turnIndex": 6,
+      "date": "2023/05/24 (Wed) 15:24",
+      "role": "user",
+      "text": "I'm trying to create a dashboard for my case competition presentation, and I think I can use Tableau to visualize some key metrics. I was wondering if you could help me brainstorm some ideas for the types of charts and visualizations I could use to showcase our team's analysis and recommendations.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ec904b3c_4",
+      "turnIndex": 8,
+      "date": "2023/05/24 (Wed) 15:24",
+      "role": "user",
+      "text": "Thank you for the suggestions! I think I have a good idea of the types of charts and visualizations I can use to showcase our team's analysis and recommendations. However, I'm still struggling to decide on the specific metrics and data points to focus on. Can you help me brainstorm some ideas for the types of metrics and data points that would be relevant for a case competition presentation?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_zciCXP1_12",
+      "turnIndex": 0,
+      "date": "2023/05/27 (Sat) 02:54",
+      "role": "user",
+      "text": "Answer the following quesiton in a better way.\nHow does your project differ from similar ones?\\*\nWe would answer this question from the perspective of what is happening in Mexico. In the last year, we have seen a growing community. More people are involved in projects, more people are getting on board and maybe the best part, most people are walking with strong core values about the ecosystem. \n\nLast year we had two big events in the country. ETHMexico, run by ETHGlobal and Blockchainland, run by a private entity. Both events got more than 700 attendees.\n\nThis year, the only big event confirmed about blockchain is BlockchainLand, so we, as the Ethereum México Community Team, believe that the most important event about Web3 should not be a private one. We aim to make an event created by the community for the community, with workshops and talks about how Ethereum and all the protocols built on it could bring new tools and opportunities for the people.\nHow does your project differ from similar ones?\\*\nWe would answer this question from the perspective of what is happening in Mexico. In the last year, we have seen a growing community. More people are involved in projects, more people are getting on board and maybe the best part, most people are walking with strong core values about the ecosystem. \n\nLast year we had two big events in the country. ETHMexico, run by ETHGlobal and Blockchainland, run by a private entity. Both events got more than 700 attendees.\n\nThis year, the only big event confirmed about blockchain is BlockchainLand, so we, as the Ethereum México Community Team, believe that the most important event about Web3 should not be a private one. We aim to make an event created by the community for the community, with workshops and talks about how Ethereum and all the protocols built on it could bring new tools and opportunities for the people.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_zciCXP1_12",
+      "turnIndex": 2,
+      "date": "2023/05/27 (Sat) 02:54",
+      "role": "user",
+      "text": "Answer the following question in 2 different ways, propose different answers:\nWhat are your plans after the grant is completed?\\*\nHow do you aim to be sustainable after the grant? Alternatively, tell us why this project doesn't need to be sustainable!",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_zciCXP1_12",
+      "turnIndex": 4,
+      "date": "2023/05/27 (Sat) 02:54",
+      "role": "user",
+      "text": "Improve this answer:\nIf you didn't work on this project, what would you work on instead?\\*\nWe would keep doing small community events across the country, but without the opportunity to offer a larger, high-quality event to consolidate these.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "sharegpt_zciCXP1_12",
+      "turnIndex": 8,
+      "date": "2023/05/27 (Sat) 02:54",
+      "role": "user",
+      "text": "Answer this question saying we ask for 20k USD, but that we are open about the grant amount, that the important part is making this event possible!\nRequested amount\\*",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "2e4430d8_2",
+      "turnIndex": 4,
+      "date": "2023/05/28 (Sun) 03:42",
+      "role": "user",
+      "text": "I'll use a combination of these methods to estimate the duration of each task. Since I've been leading the team, I have a good understanding of their strengths and weaknesses, so I'll factor that in as well. Just to confirm, in Asana, I can create a task, set a deadline, and assign it to a team member, right? And I can also track the progress and dependencies between tasks?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "2e4430d8_2",
+      "turnIndex": 6,
+      "date": "2023/05/28 (Sun) 03:42",
+      "role": "user",
+      "text": "I'm thinking of organizing a meeting with my team to discuss the project plan and assign tasks. Do you think it's a good idea to include the junior engineer, Alex, in this meeting? He's been doing well under my guidance, and I think it would be a great opportunity for him to learn more about project planning and collaboration.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "2e4430d8_2",
+      "turnIndex": 8,
+      "date": "2023/05/28 (Sun) 03:42",
+      "role": "user",
+      "text": "I'll make sure to prepare Alex beforehand and encourage him to participate actively during the meeting. I'll also assign him a specific role, such as taking notes, to help him feel more engaged. Do you think I should also discuss the project's goals and objectives with the team during the meeting, or is that something I should cover separately?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "2e4430d8_2",
+      "turnIndex": 10,
+      "date": "2023/05/28 (Sun) 03:42",
+      "role": "user",
+      "text": "I think I'll cover the project's goals and objectives at the beginning of the meeting, and then move on to discussing the project plan and task assignments. That way, everyone will have a clear understanding of what we're trying to achieve and how their tasks fit into the bigger picture.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ec904b3c_2",
+      "turnIndex": 0,
+      "date": "2023/05/29 (Mon) 09:25",
+      "role": "user",
+      "text": "I'm using Python and R to build predictive models, but I'm having some trouble with feature engineering. Can you give me some tips or resources on how to improve my feature engineering skills?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ec904b3c_2",
+      "turnIndex": 4,
+      "date": "2023/05/29 (Mon) 09:25",
+      "role": "user",
+      "text": "These tips are really helpful, thanks! I'm going to try out a few of them, especially the grouping and binning method. I think it'll really help me to identify patterns in my customer purchase data. By the way, do you have any suggestions on how to visualize the results of my analysis? I want to present my findings in a way that's easy to understand for my professor and classmates.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ec904b3c_2",
+      "turnIndex": 6,
+      "date": "2023/05/29 (Mon) 09:25",
+      "role": "user",
+      "text": "These suggestions are really helpful! I think I'll try to focus on creating a clear and concise storyline with my visualizations, and use a combination of bar charts, scatter plots, and heatmaps to show the patterns and trends in my customer purchase data. I also like the idea of using interactive visualizations to make it easier for my audience to explore the data. Do you have any tips on how to effectively present my findings to my professor and classmates? Should I create a formal presentation or a written report?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ec904b3c_2",
+      "turnIndex": 8,
+      "date": "2023/05/29 (Mon) 09:25",
+      "role": "user",
+      "text": "These tips are really helpful! I think I'll create a formal presentation with a clear structure and focus on highlighting the key findings and insights from my analysis. I'll also make sure to practice my presentation to ensure I stay within the time limit and deliver my message confidently. Additionally, I'll consider using interactive visualizations to make it easier for my audience to explore the data. One question I have is, how can I ensure that my presentation is engaging and holds the audience's attention throughout?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ec904b3c_2",
+      "turnIndex": 10,
+      "date": "2023/05/29 (Mon) 09:25",
+      "role": "user",
+      "text": "I think I've covered everything I wanted to discuss. Thanks for the chat, it was really helpful to bounce ideas and get feedback on my project. I feel more confident now about presenting my findings to my professor and classmates.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 12508,
+  "estimatedTokens": 3127
+}

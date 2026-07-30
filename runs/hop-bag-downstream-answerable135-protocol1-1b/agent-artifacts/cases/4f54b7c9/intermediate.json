@@ -1,0 +1,98 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Include only the explicitly mentioned family-inherited/acquired antique/vintage heirlooms in the provided candidate sessions (do not add other items not stated).",
+    "candidateStatus": "found",
+    "missingRisk": "If the downstream answerer counts only “antique” (excluding “vintage” or “depression-era”) or treats “set” vs “items” differently (e.g., depression-era glassware set as one vs multiple pieces), the total may change.",
+    "items": [
+      {
+        "sessionId": "answer_50940cb7_1",
+        "turnIndex": 0,
+        "why": "States the user inherited three heirlooms: grandmother’s vintage diamond necklace, antique music box, and depression-era glassware (from specific family members)."
+      },
+      {
+        "sessionId": "answer_50940cb7_1",
+        "turnIndex": 4,
+        "why": "Reiterates the three items (music box and depression-era glassware) in the context of prioritizing insurance/appraisals, supporting the complete member set of inherited items."
+      },
+      {
+        "sessionId": "answer_50940cb7_2",
+        "turnIndex": 0,
+        "why": "States the user has an antique tea set from cousin Rachel and a vintage typewriter that belonged to dad (family-provenance acquisition)."
+      },
+      {
+        "sessionId": "answer_50940cb7_2",
+        "turnIndex": 6,
+        "why": "Explicitly restates provenance: antique tea set received from cousin Rachel and vintage typewriter belonged to dad, reinforcing the family-member links for counting."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Include only the explicitly mentioned family-inherited/acquired antique/vintage heirlooms in the provided candidate sessions (do not add other items not stated).",
+    "candidateStatus": "found",
+    "missingRisk": "If the downstream answerer counts only “antique” (excluding “vintage” or “depression-era”) or treats “set” vs “items” differently (e.g., depression-era glassware set as one vs multiple pieces), the total may change.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_50940cb7_1",
+        "turnIndex": 0,
+        "why": "States the user inherited three heirlooms: grandmother’s vintage diamond necklace, antique music box, and depression-era glassware (from specific family members)."
+      },
+      {
+        "sessionId": "answer_50940cb7_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_50940cb7_1",
+        "turnIndex": 4,
+        "why": "Reiterates the three items (music box and depression-era glassware) in the context of prioritizing insurance/appraisals, supporting the complete member set of inherited items."
+      },
+      {
+        "sessionId": "answer_50940cb7_1",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_50940cb7_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_50940cb7_2",
+        "turnIndex": 0,
+        "why": "States the user has an antique tea set from cousin Rachel and a vintage typewriter that belonged to dad (family-provenance acquisition)."
+      },
+      {
+        "sessionId": "answer_50940cb7_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_50940cb7_2",
+        "turnIndex": 6,
+        "why": "Explicitly restates provenance: antique tea set received from cousin Rachel and vintage typewriter belonged to dad, reinforcing the family-member links for counting."
+      },
+      {
+        "sessionId": "answer_50940cb7_2",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_50940cb7_2",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_50940cb7_2",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_50940cb7_1",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Use only the sneaker-wearing counts stated by the user in the available sessions; do not infer additional wear after the stated timestamps.",
+    "candidateStatus": "found",
+    "missingRisk": "The catalog only shows counts up to 2023/05/30 (4 times already, then later 6 times); if you wore them after 2023/05/30 (e.g., between 2023/05/30 and 2023/06/18), that additional wear is not present in the candidate sessions.",
+    "items": [
+      {
+        "sessionId": "answer_caf5b52e_1",
+        "turnIndex": 2,
+        "why": "Contains the explicit claim: you have worn the new black Converse Chuck Taylor All Star sneakers four times already."
+      },
+      {
+        "sessionId": "answer_caf5b52e_1",
+        "turnIndex": 10,
+        "why": "Repeats/affirms the same four-times count and adds context (worn to a friend's birthday party last Saturday)."
+      },
+      {
+        "sessionId": "answer_caf5b52e_2",
+        "turnIndex": 0,
+        "why": "Contains the later updated explicit claim: you have worn your new black Converse six times."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Use only the sneaker-wearing counts stated by the user in the available sessions; do not infer additional wear after the stated timestamps.",
+    "candidateStatus": "found",
+    "missingRisk": "The catalog only shows counts up to 2023/05/30 (4 times already, then later 6 times); if you wore them after 2023/05/30 (e.g., between 2023/05/30 and 2023/06/18), that additional wear is not present in the candidate sessions.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_caf5b52e_1",
+        "turnIndex": 2,
+        "why": "Contains the explicit claim: you have worn the new black Converse Chuck Taylor All Star sneakers four times already."
+      },
+      {
+        "sessionId": "answer_caf5b52e_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_caf5b52e_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_caf5b52e_1",
+        "turnIndex": 10,
+        "why": "Repeats/affirms the same four-times count and adds context (worn to a friend's birthday party last Saturday)."
+      },
+      {
+        "sessionId": "answer_caf5b52e_1",
+        "turnIndex": 11,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_caf5b52e_1",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_caf5b52e_2",
+        "turnIndex": 0,
+        "why": "Contains the later updated explicit claim: you have worn your new black Converse six times."
+      },
+      {
+        "sessionId": "answer_caf5b52e_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "dda70510_2",
+        "turnIndex": 2,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "dda70510_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "dda70510_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "86b56135_2",
+        "turnIndex": 10,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "86b56135_2",
+        "turnIndex": 11,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "86b56135_2",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "ultrachat_31960",
+        "turnIndex": 10,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "ultrachat_31960",
+        "turnIndex": 11,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "ultrachat_31960",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "ultrachat_548559",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "ultrachat_548559",
+        "turnIndex": 1,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "ultrachat_548559",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "sharegpt_PvScEsS_0",
+        "turnIndex": 2,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "sharegpt_PvScEsS_0",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "sharegpt_PvScEsS_0",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "b3619c2c",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "b3619c2c",
+        "turnIndex": 5,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "b3619c2c",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "a20bc58f",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "a20bc58f",
+        "turnIndex": 9,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "a20bc58f",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "sharegpt_AfCsKC0_12",
+        "turnIndex": 0,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "sharegpt_AfCsKC0_12",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

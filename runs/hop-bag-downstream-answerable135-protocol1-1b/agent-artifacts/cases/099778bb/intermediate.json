@@ -1,0 +1,73 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Use the provided counts of (a) total leadership positions and (b) women in those positions, then compute the percentage.",
+    "candidateStatus": "found",
+    "missingRisk": "The candidates include only a count of women in leadership (20) and a separate count of total leadership positions (100); downstream must confirm these refer to the same company scope/timeframe before calculating a single percentage.",
+    "items": [
+      {
+        "sessionId": "answer_80d6d664_1",
+        "turnIndex": 0,
+        "why": "Provides the total number of leadership positions in the company (100), needed for the denominator."
+      },
+      {
+        "sessionId": "answer_80d6d664_2",
+        "turnIndex": 2,
+        "why": "Provides the number of leadership positions held by women (women occupy 20), needed for the numerator."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Use the provided counts of (a) total leadership positions and (b) women in those positions, then compute the percentage.",
+    "candidateStatus": "found",
+    "missingRisk": "The candidates include only a count of women in leadership (20) and a separate count of total leadership positions (100); downstream must confirm these refer to the same company scope/timeframe before calculating a single percentage.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_80d6d664_1",
+        "turnIndex": 0,
+        "why": "Provides the total number of leadership positions in the company (100), needed for the denominator."
+      },
+      {
+        "sessionId": "answer_80d6d664_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_80d6d664_2",
+        "turnIndex": 2,
+        "why": "Provides the number of leadership positions held by women (women occupy 20), needed for the numerator."
+      },
+      {
+        "sessionId": "answer_80d6d664_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_80d6d664_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_80d6d664_2",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_80d6d664_1",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_80d6d664_1",
+        "turnIndex": 7,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_80d6d664_1",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

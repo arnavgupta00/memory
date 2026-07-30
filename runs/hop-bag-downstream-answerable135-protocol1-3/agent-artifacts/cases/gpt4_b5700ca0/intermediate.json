@@ -1,0 +1,21 @@
+[
+  {
+    "session_id": "answer_a17423e8_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The question asks where you attended a religious activity last week; this session includes a mention of attending the Maundy Thursday service at the Episcopal Church but does not explicitly connect it to “last week” relative to the provided current date (2023/04/10). It also contains unrelated volunteer details (Food Bank, Easter Egg Hunt).",
+      "claims": [
+        {
+          "turnIndex": 6,
+          "fact": "User: \"I'm glad I got to attend the Maundy Thursday service at the Episcopal Church, it was a beautiful and moving experience.\"",
+          "why": "This is the only explicit religious activity location mentioned (Episcopal Church) and is likely the answer to where the user attended the religious activity."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User: \"I just helped out at an Easter Egg Hunt event last week\"",
+          "why": "Provides a “last week” temporal anchor, though the activity described is not explicitly religious; could be a distracting candidate for the target religious activity timeline."
+        }
+      ]
+    }
+  }
+]

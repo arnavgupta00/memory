@@ -1,0 +1,30 @@
+[
+  {
+    "session_id": "answer_eaa8e3ef_1",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains trip-planning for Maui (accommodations >$300/night) and activities/food recommendations, but it does not mention Tokyo accommodations or any Tokyo per-night cost. Therefore it likely cannot support the specific comparison requested (Hawaii vs Tokyo accommodations per night).",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "I'm planning a trip to Maui and I've already booked a luxurious resort in Maui that costs over $300 per night.",
+          "why": "Provides a Hawaii (Maui) accommodations per-night cost relevant to the Hawaii side of the comparison."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_eaa8e3ef_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "none_found for Hawaii accommodations spend; this session only mentions Tokyo hostel cost and provides no Hawaii accommodation cost per night, so the needed comparison value for Hawaii is absent.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "User stayed in a hostel in Tokyo that cost around $30 per night when they went solo last January.",
+          "why": "Provides Tokyo accommodation cost per night needed to compare against Hawaii."
+        }
+      ]
+    }
+  }
+]

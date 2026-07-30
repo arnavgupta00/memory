@@ -1,0 +1,23 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Luxury-item purchases (e.g., designer apparel/accessories/shoes/other discretionary luxury) made in the past few months, as explicitly mentioned with amounts.",
+  "candidateStatus": "found",
+  "missingRisk": "Other luxury purchases in the past few months may have been made but were not explicitly mentioned with amounts in the provided memory.",
+  "items": [
+    {
+      "sessionId": "answer_ef74281f_2",
+      "turnIndex": 2,
+      "why": "Mentions a luxury evening gown purchase for $800 (explicit luxury item + amount)."
+    },
+    {
+      "sessionId": "answer_ef74281f_1",
+      "turnIndex": 0,
+      "why": "Mentions a designer handbag from Gucci for $1,200 (explicit luxury item + amount)."
+    },
+    {
+      "sessionId": "answer_ef74281f_3",
+      "turnIndex": 2,
+      "why": "Mentions luxury leather boots from a high-end Italian designer for $500 (explicit luxury item + amount)."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the following session turns to identify the two hobbies that led the user to join online communities.",
+    "candidateStatus": "found",
+    "missingRisk": "If the user’s phrasing of the hobbies appears only in unselected turns, the hobbies might be missed or slightly paraphrased.",
+    "items": [
+      {
+        "sessionId": "answer_688f9a3f_1",
+        "turnIndex": 4,
+        "why": "Mentions the hobby (photography) and explicitly says they joined online photography communities for learning/getting feedback."
+      },
+      {
+        "sessionId": "answer_688f9a3f_2",
+        "turnIndex": 2,
+        "why": "Mentions the hobby (cooking/recipe techniques) and explicitly says joining online communities led to engaging in discussions and sharing thoughts."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the following session turns to identify the two hobbies that led the user to join online communities.",
+    "candidateStatus": "found",
+    "missingRisk": "If the user’s phrasing of the hobbies appears only in unselected turns, the hobbies might be missed or slightly paraphrased.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_688f9a3f_1",
+        "turnIndex": 4,
+        "why": "Mentions the hobby (photography) and explicitly says they joined online photography communities for learning/getting feedback."
+      },
+      {
+        "sessionId": "answer_688f9a3f_1",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_688f9a3f_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_688f9a3f_2",
+        "turnIndex": 2,
+        "why": "Mentions the hobby (cooking/recipe techniques) and explicitly says joining online communities led to engaging in discussions and sharing thoughts."
+      },
+      {
+        "sessionId": "answer_688f9a3f_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_688f9a3f_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Charity events the user personally participated/volunteered in that have an explicit date, counting only those occurring before the user’s “Run for the Cure” event on Oct 15, 2023.",
+  "candidateStatus": "found",
+  "missingRisk": "Other charity events may exist but aren’t mentioned here or lack explicit dates, so they may not be counted.",
+  "items": [
+    {
+      "sessionId": "answer_4ffa04a2_6",
+      "turnIndex": 0,
+      "why": "User says they participated in the “Dance for a Cause” event on May 1 (explicit charity event date before Oct 15)."
+    },
+    {
+      "sessionId": "answer_4ffa04a2_4",
+      "turnIndex": 0,
+      "why": "User says they attended a charity golf tournament on July 17 (explicit charity event date before Oct 15)."
+    },
+    {
+      "sessionId": "answer_4ffa04a2_2",
+      "turnIndex": 0,
+      "why": "User says they volunteered at the “Food for Thought” charity gala on September 25 (explicit charity event date before Oct 15)."
+    },
+    {
+      "sessionId": "answer_4ffa04a2_1",
+      "turnIndex": 0,
+      "why": "User establishes the “Run for the Cure” event date (Oct 15) and participation details, which is the cutoff for “before.”"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_1",
+      "turnIndex": 6,
+      "why": "Reiterates participation in “Run for the Cure” on Oct 15 (reinforces the cutoff date)."
+    }
+  ]
+}

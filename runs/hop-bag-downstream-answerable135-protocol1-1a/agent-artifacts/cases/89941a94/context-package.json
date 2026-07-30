@@ -1,0 +1,64 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Other bikes owned besides a mountain bike and a commuter bike prior to purchasing a gravel bike (i.e., what additional bike(s) you had then).",
+  "candidateStatus": "found",
+  "missingRisk": "n/a",
+  "items": [
+    {
+      "sessionId": "answer_e1403127_1",
+      "turnIndex": 4,
+      "date": "2023/05/25 (Thu) 15:36",
+      "role": "user",
+      "text": "I'm actually thinking of doing a century ride soon, do you think my current road bike is ready for that distance, considering I've already done 2,000 miles on it? And by the way, I've been using it along with my other two bikes, a mountain bike and a commuter bike.",
+      "why": "User states they use their road bike in addition to their mountain bike and commuter bike (indicating an additional bike besides the mountain + commuter).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e1403127_1",
+      "turnIndex": 6,
+      "date": "2023/05/25 (Thu) 15:36",
+      "role": "user",
+      "text": "I'm planning to use my road bike for the century ride, and I've been using it for long rides on the weekends. I've also been using my mountain bike for trail rides and my commuter bike for daily commutes. By the way, I currently have three bikes, and I'm wondering if that's too many.",
+      "why": "User explicitly says they currently have three bikes and references the categories (road, mountain, commuter), clarifying what the additional bike is.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e1403127_1",
+      "turnIndex": 0,
+      "date": "2023/05/25 (Thu) 15:36",
+      "role": "user",
+      "text": "I'm planning a 50-mile ride this weekend and I want to make sure my road bike is in top condition. Can you give me some tips on how to adjust the derailleurs and also recommend some good routes in my area?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e1403127_1",
+      "turnIndex": 2,
+      "date": "2023/05/25 (Thu) 15:36",
+      "role": "user",
+      "text": "I'm in the San Francisco Bay Area. Also, I was thinking of upgrading my road bike's wheels to carbon fiber wheels, do you think it's worth the investment?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e1403127_1",
+      "turnIndex": 8,
+      "date": "2023/05/25 (Thu) 15:36",
+      "role": "user",
+      "text": "I'm thinking of upgrading my road bike's wheels to carbon fiber wheels, do you think it's worth the investment, considering I've been doing long rides on the weekends and I've already done 2,000 miles on my current wheels?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e1403127_1",
+      "turnIndex": 10,
+      "date": "2023/05/25 (Thu) 15:36",
+      "role": "user",
+      "text": "I think I'll need to do some more research and consider my budget before making a decision on the carbon fiber wheels. In the meantime, can you give me some recommendations on bike computers and GPS devices? I've been using my phone's GPS, but I'm thinking of getting a dedicated device.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 1417,
+  "estimatedTokens": 355
+}

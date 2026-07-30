@@ -1,0 +1,172 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "answer_6a3b5c13_3",
+      "turnIndex": 0,
+      "date": "2023/05/26 (Fri) 10:17",
+      "role": "user",
+      "text": "I'm trying to plan my meals for the week and was wondering if you could help me come up with some recipe ideas using chicken breast and ground beef, which I just bought last week. By the way, I've been trying to shop more sustainably, which is why I placed an online order with Thrive Market last month and spent around $150 on organic and sustainable products.",
+      "why": "per-session extractor: Potential evidence of grocery-related spending amount at a specific store (Thrive Market) within the relevant time window.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_6a3b5c13_3",
+      "turnIndex": 8,
+      "date": "2023/05/26 (Fri) 10:17",
+      "role": "user",
+      "text": "I'm planning to shop at Publix this week, and I'm hoping to earn some cashback through the Ibotta app. Do you have any recommendations on what types of items I should focus on purchasing to maximize my cashback earnings?",
+      "why": "per-session extractor: Indicates Publix as a store the user plans to spend money at, but no amount is provided; may still be relevant if the system uses plans/intent as evidence.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_6a3b5c13_1",
+      "turnIndex": 0,
+      "date": "2023/05/26 (Fri) 14:05",
+      "role": "user",
+      "text": "I'm trying to plan my meals for the upcoming week and was wondering if you could help me with some recipe suggestions. By the way, I just want to mention that I went grocery shopping last Saturday, exactly a week ago, and spent around $120 at Walmart, which is actually a bit higher than I expected, but I did get some good deals with a 10% off coupon on dairy products.",
+      "why": "per-session extractor: Provides a concrete grocery store name (Walmart) and spending amount ($120) within roughly the past month, relevant to determining where they spent the most.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_6a3b5c13_2",
+      "turnIndex": 0,
+      "date": "2023/05/29 (Mon) 15:17",
+      "role": "user",
+      "text": "I'm trying to plan my meals for the upcoming week and make a grocery list. Can you help me come up with some recipe ideas using chicken breast and ground beef? By the way, speaking of grocery shopping, my sister and I went to Trader Joe's the week before last and spent around $80 between the two of us on some pre-packaged meals and snacks.",
+      "why": "per-session extractor: Provides a grocery store name (Trader Joe's) and an amount ($80) within roughly the past month, which could be used to compare spending by store if other sessions supply other stores/amounts.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_6a3b5c13_2",
+      "turnIndex": 2,
+      "date": "2023/05/29 (Mon) 15:17",
+      "role": "user",
+      "text": "That's a great list, thanks! I think I'll try the Chicken Fajitas and Spaghetti Bolognese this week. Can you help me generate a grocery list for those recipes? And by the way, I'm also planning to use some of the ingredients I already have at home, like the chicken breast and ground beef I bought last week at Walmart.",
+      "why": "per-session extractor: Names Walmart as a grocery store and indicates a purchase of grocery items (chicken breast and ground beef) within the past month, though no amount is given.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_6a3b5c13_4",
+      "turnIndex": 0,
+      "date": "2023/05/30 (Tue) 03:44",
+      "role": "user",
+      "text": "I'm trying to plan my meals for the next week and make a grocery list. I was wondering if you could help me with some recipe suggestions and a list of ingredients I'll need. By the way, speaking of groceries, I've been relying on Instacart a lot lately.",
+      "why": "per-session extractor: Indicates a shopping context but doesn’t include store-spend amounts.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_6a3b5c13_4",
+      "turnIndex": 6,
+      "date": "2023/05/30 (Tue) 03:44",
+      "role": "user",
+      "text": "I'm glad you helped me with the meal plan and grocery list. I think I'll stick to Instacart for this week's grocery shopping. By the way, I've been using their service quite frequently. I ordered from Publix last week and spent around $60. The delivery fee was $10, but it was worth it since I was short on time. Do you think you could help me estimate the cost of the ingredients on this list based on average prices? I'd like to budget for my groceries this week.",
+      "why": "per-session extractor: Directly provides store (Publix) and spending amounts ($60 total groceries, $10 delivery) with a relative time (“last week”).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_6a3b5c13_3",
+      "turnIndex": 1,
+      "date": "2023/05/26 (Fri) 10:17",
+      "role": "assistant",
+      "text": "Great job on taking steps towards sustainable shopping! Thrive Market is an excellent platform for finding eco-friendly and organic products.\n\nNow, let's get to planning some delicious meals using chicken breast and ground beef! Here are some recipe ideas to get you started:\n\n**Chicken Breast Recipes**\n\n1. **Lemon Garlic Chicken**: Marinate chicken breast in a mixture of lemon juice, garlic, olive oil, and herbs like thyme and rosemary. Grill or bake until cooked through. Serve with roasted veggies and quinoa.\n2. **Chicken Fajitas**: Slice chicken breast into strips and sauté with bell peppers, onions, and fajita seasoning. Serve with whole-grain tortillas, avocado, and salsa.\n3. **Chicken Caesar Salad**: Grill or bake chicken breast, then chop and toss with romaine lettuce, croutons, parmesan cheese, and a homemade Caesar dressing.\n4. **Chicken Tikka Masala**: Marinate chicken breast in yogurt and spices, then grill or bake. Serve with a creamy tomato sauce and basmati rice.\n5. **Chicken and Veggie Kabobs**: Skewer chicken breast, cherry tomatoes, mushrooms, and bell peppers. Brush with olive oil and grill or bake until cooked through.\n\n**Ground Beef Recipes**\n\n1. **Spaghetti Bolognese**: Cook ground beef with onions, garlic, and tomato sauce. Serve with whole-grain spaghetti and a side of steamed broccoli.\n2. **Tacos**: Season ground beef with taco seasoning and cook in a skillet. Serve with whole-grain tortillas, shredded lettuce, diced tomatoes, and avocado.\n3. **Meatball Subs**: Mix ground beef with breadcrumbs, egg, and seasonings. Form into meatballs and bake or fry until cooked through. Serve on whole-grain subs with marinara sauce and melted mozzarella cheese.\n4. **Shepherd's Pie**: Brown ground beef with vegetables and seasonings, then top with mashed potatoes and bake until golden brown.\n5. **Stuffed Bell Peppers**: Fill bell peppers with a mixture of cooked ground beef, cooked rice, and seasonings. Bake until the peppers are tender.\n\nThese recipes should give you a great starting point for planning your meals for the week. You can also experiment with different spices and seasonings to add more flavor and variety to your dishes.\n\nRemember to pair your meals with some of the sustainable products you purchased from Thrive Market to make the most of your online order!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_6a3b5c13_3",
+      "turnIndex": 7,
+      "date": "2023/05/26 (Fri) 10:17",
+      "role": "assistant",
+      "text": "I'd be happy to help you with that. Based on the recipes we discussed earlier, here's a list of ingredients you may need to pick up on your grocery shopping trip:\n\n**Produce:**\n\n* Bell peppers (2-3)\n* Onions (2-3)\n* Mushrooms (1 pint)\n* Cherry tomatoes (1 pint)\n* Broccoli (1 head)\n* Lettuce (1 head)\n* Spinach (1 bag)\n* Fresh herbs (such as thyme, rosemary, and parsley)\n* Lemons (2-3)\n* Avocados (2-3)\n* Fresh cilantro (1 bunch)\n\n**Meat and Poultry:**\n\n* Boneless, skinless chicken breasts (4-5 lbs)\n* Ground beef (1-2 lbs)\n\n**Dairy and Eggs:**\n\n* Greek yogurt (1-2 cups)\n* Shredded mozzarella cheese (1 cup)\n* Parmesan cheese (1 cup)\n* Eggs (6-8)\n\n**Pantry:**\n\n* Whole wheat pasta (1-2 boxes)\n* Quinoa (1-2 bags)\n* Olive oil (1-2 bottles)\n* Coconut oil (1-2 jars)\n* Salt (1-2 cups)\n* Pepper (1-2 cups)\n* Fajita seasoning (1-2 packets)\n* Taco seasoning (1-2 packets)\n* Tomato sauce (1-2 jars)\n* Canned diced tomatoes (1-2 cans)\n* Balsamic vinegar (1-2 cups)\n* Worcestershire sauce (1-2 cups)\n* Soy sauce (1-2 cups)\n* Spices (such as cumin, chili powder, and oregano)\n\n**Miscellaneous:**\n\n* Whole wheat tortillas (6-8)\n* Granola or croutons (1 bag)\n* Salsa (1-2 cups)\n* Hummus (1-2 cups)\n* Nuts and seeds (such as almonds, walnuts, and chia seeds)\n\nFeel free to adjust this list based on your personal preferences and dietary needs. You may already have some of these ingredients in your pantry, so be sure to check before you head out to shop!\n\nRemember to shop sustainably by choosing organic and eco-friendly options whenever possible. Happy shopping!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_6a3b5c13_3",
+      "turnIndex": 9,
+      "date": "2023/05/26 (Fri) 10:17",
+      "role": "assistant",
+      "text": "Publix is a great store to shop at, and Ibotta is an excellent app to earn cashback!\n\nTo maximize your cashback earnings, focus on purchasing items that offer higher cashback rates or have multiple offers available. Here are some tips to help you earn more cashback at Publix with Ibotta:\n\n1. **Check the Ibotta app**: Before you head to Publix, open the Ibotta app and browse the available offers. Look for items with higher cashback rates (e.g., 10% or more) or those with multiple offers.\n2. **Buy in bulk**: If you use a lot of a particular item, consider buying in bulk to maximize your cashback earnings. Just make sure you have enough storage space and that the items won't expire soon.\n3. **Focus on staples**: Ibotta often offers cashback on staple items like milk, bread, eggs, and pasta. These items are frequently used, so you'll likely need them anyway.\n4. **Look for bonus offers**: Ibotta sometimes runs bonus offers on specific brands or categories. Keep an eye out for these opportunities to earn extra cashback.\n5. **Shop the sales**: Publix often has weekly sales on various items. Check the sales flyer and try to match those items with Ibotta offers to maximize your savings.\n6. **Buy private label products**: Publix's private label products, like Publix brand or GreenWise, often have higher cashback rates than name-brand products.\n7. **Don't forget the digital coupons**: In addition to Ibotta offers, Publix also offers digital coupons that can be loaded onto your loyalty card. Make sure to check for these coupons and use them in conjunction with Ibotta offers.\n\nSome popular items that often have high cashback rates on Ibotta include:\n\n* Beverages (e.g., juice, soda, coffee)\n* Snacks (e.g., chips, crackers, cookies)\n* Baking supplies (e.g., flour, sugar, baking powder)\n* Pantry items (e.g., pasta, rice, canned goods)\n* Personal care items (e.g., toothpaste, shampoo, conditioner)\n\nRemember to always check the Ibotta app for the most up-to-date offers and to redeem your cashback rewards after your purchase.\n\nHappy shopping at Publix, and I hope you earn some great cashback rewards with Ibotta!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_6a3b5c13_1",
+      "turnIndex": 1,
+      "date": "2023/05/26 (Fri) 14:05",
+      "role": "assistant",
+      "text": "I'd be happy to help you with some meal planning and recipe suggestions. Congratulations on scoring a good deal with the 10% off coupon on dairy products!\n\nBefore we dive into recipe ideas, could you please share some more details about your dietary preferences and restrictions? For example:\n\n1. Do you have any food allergies or intolerances (e.g. gluten-free, vegetarian, dairy-free)?\n2. What type of cuisine do you enjoy cooking/eating (e.g. Italian, Mexican, Asian-inspired)?\n3. How many meals are you planning to prepare for the week (e.g. breakfast, lunch, dinner, snacks)?\n4. Are there any ingredients you particularly like or dislike?\n5. How much time do you have available for cooking each day (e.g. quick 30-minute meals, more elaborate dinner prep)?\n6. Do you have any leftovers or ingredients you'd like to use up from your previous grocery haul?\n\nWith this information, I can provide you with personalized recipe suggestions and meal ideas that fit your needs and preferences.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_6a3b5c13_2",
+      "turnIndex": 1,
+      "date": "2023/05/29 (Mon) 15:17",
+      "role": "assistant",
+      "text": "I'd be happy to help you with some recipe ideas using chicken breast and ground beef.\n\nBefore we dive into recipes, I have to say that $80 for two people at Trader Joe's sounds like a great deal! Trader Joe's is known for their affordable prices, and it's awesome that you and your sister were able to score some good deals on pre-packaged meals and snacks.\n\nNow, let's get to those recipe ideas!\n\n**Chicken Breast Recipes:**\n\n1. **Lemon Garlic Chicken**: Marinate chicken breast in a mixture of lemon juice, garlic, olive oil, salt, and pepper. Grill or bake until cooked through. Serve with roasted veggies and quinoa.\n2. **Chicken Fajitas**: Slice chicken breast into strips and sauté with bell peppers, onions, and fajita seasoning. Serve with warm flour or corn tortillas, sour cream, and salsa.\n3. **Chicken Parmesan**: Bread chicken breast with breadcrumbs, Parmesan cheese, and Italian seasonings. Bake or fry until crispy, then top with marinara sauce and melted mozzarella cheese. Serve with pasta or a green salad.\n4. **Chicken Caesar Wraps**: Grill or bake chicken breast, then slice and wrap in a Caesar-dressed romaine lettuce leaf with croutons and shaved Parmesan cheese.\n\n**Ground Beef Recipes:**\n\n1. **Spaghetti Bolognese**: Brown ground beef with onions, garlic, and tomato paste. Simmer with canned tomatoes and serve over spaghetti with grated Parmesan cheese.\n2. **Tacos**: Season ground beef with taco seasoning and cook in a skillet. Serve in tacos with your favorite toppings, such as lettuce, cheese, diced tomatoes, and salsa.\n3. **Meatball Subs**: Mix ground beef with breadcrumbs, egg, and Italian seasonings. Form into meatballs and bake or fry until cooked through. Serve on sub rolls with marinara sauce and melted mozzarella cheese.\n4. **Shepherd's Pie**: Brown ground beef with onions and seasonings, then top with mashed potatoes and bake until golden brown.\n\nThese are just a few ideas to get you started. You can always adjust the recipes to suit your tastes and dietary preferences.\n\nFeel free to pick and choose the recipes that appeal to you, and I can help you create a grocery list based on the ingredients needed.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_6a3b5c13_2",
+      "turnIndex": 3,
+      "date": "2023/05/29 (Mon) 15:17",
+      "role": "assistant",
+      "text": "I'd be happy to help you generate a grocery list for the Chicken Fajitas and Spaghetti Bolognese recipes.\n\nSince you already have chicken breast and ground beef, you can cross those off the list. Here's what you'll need to pick up at the store:\n\n**For Chicken Fajitas:**\n\n* Bell peppers (any color)\n* Onions\n* Fajita seasoning (or individual spices like cumin, chili powder, and paprika)\n* Tortillas (flour or corn)\n* Sour cream\n* Salsa\n* Shredded cheese (optional)\n* Fresh cilantro (optional)\n* Cooking oil or butter\n\n**For Spaghetti Bolognese:**\n\n* Spaghetti\n* Canned crushed tomatoes\n* Tomato paste\n* Onion\n* Garlic\n* Italian seasoning\n* Olive oil\n* Salt and pepper\n* Grated Parmesan cheese\n* Fresh basil (optional)\n\nYou may already have some pantry staples like olive oil, salt, pepper, and spices, so be sure to check your kitchen before you head out to shop.\n\nHere's a combined list:\n\n* Produce:\n\t+ Bell peppers\n\t+ Onions\n\t+ Fresh cilantro (optional)\n\t+ Fresh basil (optional)\n* Dry goods:\n\t+ Tortillas\n\t+ Spaghetti\n* Canned goods:\n\t+ Canned crushed tomatoes\n* Dairy:\n\t+ Sour cream\n\t+ Shredded cheese (optional)\n\t+ Parmesan cheese\n* Pantry:\n\t+ Fajita seasoning (or individual spices)\n\t+ Italian seasoning\n\t+ Tomato paste\n\nFeel free to adjust the list based on your personal preferences and dietary needs. You may also want to consider picking up some additional items, like drinks or snacks, while you're at the store.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_6a3b5c13_4",
+      "turnIndex": 1,
+      "date": "2023/05/30 (Tue) 03:44",
+      "role": "assistant",
+      "text": "I'd be happy to help you with meal planning and grocery lists.\n\nFirst, let's talk about meal planning. Do you have any dietary restrictions or preferences (e.g. vegetarian, gluten-free, dairy-free)? Are there any specific cuisines or types of food you enjoy cooking or eating?\n\nAlso, how many meals are you planning to cook for the next week? Would you like me to suggest breakfast, lunch, and dinner options, or just a few dinners?\n\nRegarding Instacart, that's a great service! $60 for a week's worth of groceries from Publix sounds like a reasonable amount. Do you have any staples at home that you'd like to use up, or would you like me to suggest recipes that don't require any specific pantry items?\n\nLet me know, and I can start suggesting some recipes and ingredients for you!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_6a3b5c13_4",
+      "turnIndex": 2,
+      "date": "2023/05/30 (Tue) 03:44",
+      "role": "user",
+      "text": "I'm open to any cuisine, but I've been trying to cook more meals at home to reduce food waste. I'd like to plan for 5 dinners and maybe a few lunch ideas. I do have some staples like rice, pasta, and canned goods from my last trip to Walmart.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_6a3b5c13_4",
+      "turnIndex": 5,
+      "date": "2023/05/30 (Tue) 03:44",
+      "role": "assistant",
+      "text": "I'd be happy to help you with that. Here's a organized grocery list by aisle/category:\n\n**Produce:**\n\n* Bell peppers (2-3)\n* Onions (2)\n* Mushrooms (1 pint)\n* Tomatoes (1 pint cherry tomatoes or 2-3 medium tomatoes)\n* Avocado (2-3)\n* Spinach (1 bag)\n* Carrots (1 bunch)\n* Brussels sprouts (1 bunch)\n* Sweet potatoes (2-3)\n* Fresh cilantro (1 bunch)\n* Fresh basil (1 bunch)\n* Thyme (1 sprig or 1 packet of dried thyme)\n\n**Meat/Seafood:**\n\n* Ground beef (1 lb) or vegetarian alternative (e.g., tofu, tempeh)\n* Chicken breast (1-2 lbs)\n\n**Dairy/Eggs:**\n\n* Heavy cream (1 cup)\n* Mozzarella cheese (shredded, 1 cup)\n* Shredded cheese (1 cup)\n* Sour cream (1 cup)\n\n**Canned Goods:**\n\n* Canned black beans (1 can)\n* Canned diced tomatoes (1 can)\n* Enchilada sauce (1 can)\n\n**Pantry:**\n\n* Olive oil\n* Garlic\n* Tomato paste\n* Fajita seasoning\n* Balsamic vinegar\n* Honey\n* Salt\n* Pepper\n\n**Bakery:**\n\n* Crusty bread (1 loaf)\n\n**Miscellaneous:**\n\n* Tortillas (6-8)\n* Salsa (1 jar)\n\nFeel free to adjust the quantities based on your personal preferences and the number of people you're planning to cook for. You may already have some pantry staples like olive oil, garlic, and spices, so be sure to check your kitchen before you head out to shop!\n\nIf you're using Instacart, you can simply add these items to your cart and adjust the quantities as needed. Happy shopping and cooking!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_6a3b5c13_4",
+      "turnIndex": 7,
+      "date": "2023/05/30 (Tue) 03:44",
+      "role": "assistant",
+      "text": "I'm happy to help you estimate the cost of the ingredients on your list.\n\nBased on average prices, here's a rough estimate of the total cost:\n\n**Produce:**\n\n* Bell peppers (2-3): $2-$3\n* Onions (2): $0.50-$1\n* Mushrooms (1 pint): $3-$4\n* Tomatoes (1 pint cherry tomatoes or 2-3 medium tomatoes): $3-$4\n* Avocado (2-3): $5-$6\n* Spinach (1 bag): $2-$3\n* Carrots (1 bunch): $0.50-$1\n* Brussels sprouts (1 bunch): $2-$3\n* Sweet potatoes (2-3): $2-$3\n* Fresh cilantro (1 bunch): $1-$2\n* Fresh basil (1 bunch): $1-$2\n* Thyme (1 sprig or 1 packet of dried thyme): $1-$2\n\nTotal produce cost: $25-$35\n\n**Meat/Seafood:**\n\n* Ground beef (1 lb) or vegetarian alternative: $3-$5\n* Chicken breast (1-2 lbs): $6-$12\n\nTotal meat/seafood cost: $9-$17\n\n**Dairy/Eggs:**\n\n* Heavy cream (1 cup): $1-$2\n* Mozzarella cheese (shredded, 1 cup): $3-$5\n* Shredded cheese (1 cup): $3-$5\n* Sour cream (1 cup): $2-$3\n\nTotal dairy/eggs cost: $9-$15\n\n**Canned Goods:**\n\n* Canned black beans (1 can): $1-$2\n* Canned diced tomatoes (1 can): $1-$2\n* Enchilada sauce (1 can): $1-$2\n\nTotal canned goods cost: $3-$6\n\n**Pantry:**\n\n* Olive oil: $5-$10 (depending on the size and quality)\n* Garlic: $0.25-$1\n* Tomato paste: $1-$2\n* Fajita seasoning: $1-$2\n* Balsamic vinegar: $5-$10 (depending on the size and quality)\n* Honey: $2-$5\n* Salt: $0.25-$1\n* Pepper: $0.25-$1\n\nTotal pantry cost: $15-$35\n\n**Bakery:**\n\n* Crusty bread (1 loaf): $2-$4\n\nTotal bakery cost: $2-$4\n\n**Miscellaneous:**\n\n* Tortillas (6-8): $2-$4\n* Salsa (1 jar): $2-$4\n\nTotal miscellaneous cost: $4-$8\n\n**Total estimated cost:** $74-$115\n\nKeep in mind that these are rough estimates and prices can vary depending on your location, store, and quality of ingredients. Additionally, this total does not include the delivery fee, which would add $10 to your total.\n\nIt's great that you're budgeting for your groceries, and I hope this estimate helps you plan your expenses. Happy shopping and cooking!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_6a3b5c13_4",
+      "turnIndex": 8,
+      "date": "2023/05/30 (Tue) 03:44",
+      "role": "user",
+      "text": "That's really helpful, thank you! I think I'll aim to stay around $80-$90, considering the delivery fee. One more question - do you think I could substitute any ingredients with something else to reduce the cost? For example, could I use canned tomatoes instead of fresh ones?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 17497,
+  "estimatedTokens": 4375
+}

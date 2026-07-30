@@ -1,0 +1,63 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify the assistant-provided list item at position 27 (out of 100 prompt parameters), preserving enough surrounding pagination context to locate the 27th entry.",
+    "candidateStatus": "found",
+    "missingRisk": "The provided candidate raw turns only show parameter numbers 1–15 and 49–64 and 97–100; parameter 27 is likely in an omitted assistant continuation turn (for numbers 16–48), so the 27th item may not be retrievable from the current catalog excerpts.",
+    "items": [
+      {
+        "sessionId": "answer_sharegpt_6pWK9yx_0",
+        "turnIndex": 1,
+        "why": "Contains the start of the 1–15 portion of the assistant’s 100-parameter list; needed to anchor list numbering and pagination before the missing region."
+      },
+      {
+        "sessionId": "answer_sharegpt_6pWK9yx_0",
+        "turnIndex": 3,
+        "why": "Shows a later continuation (49–64), demonstrating how the list was paginated across assistant turns; helps the answerer infer where parameter 27 would have appeared in an omitted continuation."
+      },
+      {
+        "sessionId": "answer_sharegpt_6pWK9yx_0",
+        "turnIndex": 5,
+        "why": "Shows the tail end of the list (97–100); included for overall pagination context even though it likely does not contain parameter 27."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify the assistant-provided list item at position 27 (out of 100 prompt parameters), preserving enough surrounding pagination context to locate the 27th entry.",
+    "candidateStatus": "found",
+    "missingRisk": "The provided candidate raw turns only show parameter numbers 1–15 and 49–64 and 97–100; parameter 27 is likely in an omitted assistant continuation turn (for numbers 16–48), so the 27th item may not be retrievable from the current catalog excerpts.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_sharegpt_6pWK9yx_0",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_sharegpt_6pWK9yx_0",
+        "turnIndex": 1,
+        "why": "Contains the start of the 1–15 portion of the assistant’s 100-parameter list; needed to anchor list numbering and pagination before the missing region."
+      },
+      {
+        "sessionId": "answer_sharegpt_6pWK9yx_0",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_sharegpt_6pWK9yx_0",
+        "turnIndex": 3,
+        "why": "Shows a later continuation (49–64), demonstrating how the list was paginated across assistant turns; helps the answerer infer where parameter 27 would have appeared in an omitted continuation."
+      },
+      {
+        "sessionId": "answer_sharegpt_6pWK9yx_0",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_sharegpt_6pWK9yx_0",
+        "turnIndex": 5,
+        "why": "Shows the tail end of the list (97–100); included for overall pagination context even though it likely does not contain parameter 27."
+      }
+    ]
+  }
+}

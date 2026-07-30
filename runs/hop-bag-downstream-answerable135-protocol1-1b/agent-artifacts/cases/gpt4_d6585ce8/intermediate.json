@@ -1,0 +1,138 @@
+{
+  "raw": {
+    "queryShape": "order",
+    "setBoundary": "Include only turns that state (or directly imply) specific past concert/musical events attended, with any associated dates or “today/recently” context, so the downstream model can reconstruct a chronological list from earliest to latest within the past two months.",
+    "candidateStatus": "found",
+    "missingRisk": "Some sessions mention events as “recently” or without an explicit event date (e.g., Queen with Adam Lambert; Brooklyn festival). If the exact concert date is not stated, the downstream answerer may have to infer relative order using the session timestamps, which could mismatch actual event dates.",
+    "items": [
+      {
+        "sessionId": "answer_f999b05b_2",
+        "turnIndex": 0,
+        "why": "States the user just got back from a music festival in Brooklyn (and will be used as an attended event for ordering)."
+      },
+      {
+        "sessionId": "answer_f999b05b_4",
+        "turnIndex": 0,
+        "why": "States the user attended a free outdoor concert series in the park today (session dated 2023/03/25, useful for chronological placement)."
+      },
+      {
+        "sessionId": "answer_f999b05b_1",
+        "turnIndex": 0,
+        "why": "States the user got back from an amazing Billie Eilish concert at Wells Fargo Center in Philly today (session dated 2023/03/18, earliest among candidates)."
+      },
+      {
+        "sessionId": "answer_f999b05b_5",
+        "turnIndex": 0,
+        "why": "States the user enjoyed a jazz night at a local bar today (session dated 2023/04/08, needed for ordering among April events)."
+      },
+      {
+        "sessionId": "answer_f999b05b_3",
+        "turnIndex": 0,
+        "why": "States the user saw Queen live with Adam Lambert at the Prudential Center in Newark, NJ with parents (attended musical event for ordering, though explicit event date isn’t given)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "order",
+    "setBoundary": "Include only turns that state (or directly imply) specific past concert/musical events attended, with any associated dates or “today/recently” context, so the downstream model can reconstruct a chronological list from earliest to latest within the past two months.",
+    "candidateStatus": "found",
+    "missingRisk": "Some sessions mention events as “recently” or without an explicit event date (e.g., Queen with Adam Lambert; Brooklyn festival). If the exact concert date is not stated, the downstream answerer may have to infer relative order using the session timestamps, which could mismatch actual event dates.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_f999b05b_2",
+        "turnIndex": 0,
+        "why": "States the user just got back from a music festival in Brooklyn (and will be used as an attended event for ordering)."
+      },
+      {
+        "sessionId": "answer_f999b05b_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_f999b05b_4",
+        "turnIndex": 0,
+        "why": "States the user attended a free outdoor concert series in the park today (session dated 2023/03/25, useful for chronological placement)."
+      },
+      {
+        "sessionId": "answer_f999b05b_4",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_f999b05b_1",
+        "turnIndex": 0,
+        "why": "States the user got back from an amazing Billie Eilish concert at Wells Fargo Center in Philly today (session dated 2023/03/18, earliest among candidates)."
+      },
+      {
+        "sessionId": "answer_f999b05b_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_f999b05b_5",
+        "turnIndex": 0,
+        "why": "States the user enjoyed a jazz night at a local bar today (session dated 2023/04/08, needed for ordering among April events)."
+      },
+      {
+        "sessionId": "answer_f999b05b_5",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_f999b05b_3",
+        "turnIndex": 0,
+        "why": "States the user saw Queen live with Adam Lambert at the Prudential Center in Newark, NJ with parents (attended musical event for ordering, though explicit event date isn’t given)."
+      },
+      {
+        "sessionId": "answer_f999b05b_3",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_f999b05b_2",
+        "turnIndex": 10,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_f999b05b_2",
+        "turnIndex": 11,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_f999b05b_2",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "4a79d078_4",
+        "turnIndex": 2,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "4a79d078_4",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "4a79d078_4",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_f999b05b_3",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_f999b05b_3",
+        "turnIndex": 7,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_f999b05b_3",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

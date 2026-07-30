@@ -1,0 +1,61 @@
+[
+  {
+    "session_id": "answer_2fc6aabb",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "none_found",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User said they recently figured out how to use the slow cooker and made a delicious beef stew, and they want to try more slow cooker recipes.",
+          "why": "Provides context about the user’s current slow-cooker experience and what they’re trying to do (learn more recipes), which may relate to why their results are slow cooker–related."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "Assistant recommended slow cooker recipes including Chili Con Carne, Pulled Pork, and Beef Stew, plus Korean BBQ Beef, Indian Butter Chicken, Mexican Chicken Tacos, Lentil Curry, Roasted Vegetable Stew, Black Bean Chili, Mac and Cheese, Chicken and Dumplings, Pot Roast, Greek Chicken, Jamaican Jerk Chicken, and Breakfast Casserole.",
+          "why": "Contains a list of specific slow cooker recipes the assistant suggested; could be useful as options/examples when addressing “slow cooker recipes”."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Assistant gave a basic slow cooker yogurt recipe: heat 1/2 gallon milk on low 2-3 hours to 180°F–185°F (82°C–85°C), cool to 110°F–120°F (43°C–49°C), add 1/4 cup plain yogurt with live cultures, incubate 8-12 hours, then refrigerate.",
+          "why": "Directly provides procedural guidance for slow-cooker outcomes (yogurt in a slow cooker), including key temperatures and times."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Assistant said using a thermometer is highly recommended (but not strictly necessary) for yogurt milk heating to 180°F–185°F (82°C–85°C), and without a thermometer to heat 2-3 hours until simmering/boiling signs appear, then cool to 110°F–120°F (43°C–49°C) before adding starter.",
+          "why": "Offers advice about process control (temperature monitoring) that can affect slow-cooker results."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Assistant recommended vegetarian/vegan slow cooker recipes: Lentil Curry, Roasted Vegetable Stew, Black Bean Chili, Eggplant Parmesan, Butternut Squash Risotto; and Vegan Chili, Quinoa and Black Bean Bowl, Lentil and Mushroom Stew, Vegan Mac and Cheese, Chickpea and Spinach Curry.",
+          "why": "Provides another set of specific recipe ideas and lists plant-based slow cooker dishes."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Assistant suggested vegan yogurt alternative bases for slow cooker yogurt: Soy Yogurt, Coconut Yogurt, Almond Yogurt, Cashew Yogurt, Oat Yogurt, Rice Yogurt, Hemp Yogurt, and Flax Yogurt.",
+          "why": "Lists candidate base ingredients for yogurt outcomes relevant to slow-cooker yogurt consistency."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Assistant listed flavorings and sweeteners for slow cooker yogurt: vanilla, cinnamon, fruit, nutmeg, ginger, lemon, cocoa; and honey, maple syrup, coconut sugar, date syrup, monk fruit sweetener, stevia; plus add-ins like granola, nuts/seeds, cocoa nibs, dried fruit.",
+          "why": "Contains customization options that affect taste and potentially perceived “results” of the yogurt."
+        },
+        {
+          "turnIndex": 13,
+          "fact": "Assistant gave cashew-based slow cooker yogurt techniques: rinse 1 cup cashews; soak at least 4 hours or overnight; drain/rinse and soak again 4 hours or overnight; blend with 1/2 cup fresh water about 2 minutes; strain through cheesecloth/nut milk bag/fine-mesh sieve; chill at least 2 hours; use low heat to prevent scorching; incubate 8-12 hours; use vegan yogurt starter or probiotic powder.",
+          "why": "Includes detailed prep ratios, soak/blend/strain steps, timing, and equipment recommendations that strongly affect slow-cooker yogurt consistency."
+        },
+        {
+          "turnIndex": 15,
+          "fact": "Assistant restated a cashew process: soak 1 cup cashews at least 4 hours or overnight; blend with 1/2 cup fresh water about 2 minutes; strain; adjust cashews-to-water ratio for thickness; blend time affects consistency.",
+          "why": "Adds additional/confirming procedural details about consistency drivers (ratio, blend time, straining)."
+        },
+        {
+          "turnIndex": 17,
+          "fact": "Assistant advised on straining cashew mixture tools for smooth consistency: cheesecloth, nut milk bag, or fine-mesh sieve; suggested squeezing to extract liquid; noted nut milk bag may be effective but can be pricey; fine-mesh sieve may be easier but can leave a slightly grainy texture; emphasized using clean/sanitized straining tool to prevent contamination.",
+          "why": "Provides direct guidance on straining method selection and technique, which directly affects texture/results."
+        }
+      ]
+    }
+  }
+]

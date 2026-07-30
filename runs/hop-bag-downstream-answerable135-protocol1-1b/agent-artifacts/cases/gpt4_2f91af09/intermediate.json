@@ -1,0 +1,73 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Total pieces of writing completed since the user started writing again three weeks ago (including short stories, poems, and writing-challenge pieces).",
+    "candidateStatus": "found",
+    "missingRisk": "The catalog includes counts for short stories (5) and poems (17 in the past two weeks) plus one writing-challenge piece, but it may not cover all writing pieces completed in the full three-week period (e.g., missing additional poems/stories/challenge submissions outside the mentioned windows).",
+    "items": [
+      {
+        "sessionId": "answer_669318cf_2",
+        "turnIndex": 0,
+        "why": "Provides the numeric count of completed pieces: user says they have written 17 poems in the past two weeks (relevant to the poem portion of the total)."
+      },
+      {
+        "sessionId": "answer_669318cf_1",
+        "turnIndex": 0,
+        "why": "Provides the numeric count of completed pieces: user says they've written five short stories so far (relevant to the short-story portion)."
+      },
+      {
+        "sessionId": "answer_669318cf_3",
+        "turnIndex": 0,
+        "why": "Provides writing-challenge completion evidence for a piece and prompt: user says last week's prompt was 'forgotten memories' and they wrote 'The Smell of Old Books' (relevant to the challenge portion)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Total pieces of writing completed since the user started writing again three weeks ago (including short stories, poems, and writing-challenge pieces).",
+    "candidateStatus": "found",
+    "missingRisk": "The catalog includes counts for short stories (5) and poems (17 in the past two weeks) plus one writing-challenge piece, but it may not cover all writing pieces completed in the full three-week period (e.g., missing additional poems/stories/challenge submissions outside the mentioned windows).; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_669318cf_2",
+        "turnIndex": 0,
+        "why": "Provides the numeric count of completed pieces: user says they have written 17 poems in the past two weeks (relevant to the poem portion of the total)."
+      },
+      {
+        "sessionId": "answer_669318cf_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_669318cf_1",
+        "turnIndex": 0,
+        "why": "Provides the numeric count of completed pieces: user says they've written five short stories so far (relevant to the short-story portion)."
+      },
+      {
+        "sessionId": "answer_669318cf_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_669318cf_3",
+        "turnIndex": 0,
+        "why": "Provides writing-challenge completion evidence for a piece and prompt: user says last week's prompt was 'forgotten memories' and they wrote 'The Smell of Old Books' (relevant to the challenge portion)."
+      },
+      {
+        "sessionId": "answer_669318cf_3",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_669318cf_2",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_669318cf_1",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

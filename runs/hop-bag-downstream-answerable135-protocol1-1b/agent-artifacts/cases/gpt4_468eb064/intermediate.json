@@ -1,0 +1,33 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the session matching last Tuesday (2023/04/11). Identify the person met with over lunch that day.",
+    "candidateStatus": "found",
+    "missingRisk": "Could be another separate lunch/contact entry not present in the candidate catalog; only the 2023/04/11 session was provided.",
+    "items": [
+      {
+        "sessionId": "answer_9b09d95b_1",
+        "turnIndex": 0,
+        "why": "Directly states the lunch meet-up details: you catch up with Emma, a freelance writer, over lunch (on 2023/04/11)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the session matching last Tuesday (2023/04/11). Identify the person met with over lunch that day.",
+    "candidateStatus": "found",
+    "missingRisk": "Could be another separate lunch/contact entry not present in the candidate catalog; only the 2023/04/11 session was provided.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_9b09d95b_1",
+        "turnIndex": 0,
+        "why": "Directly states the lunch meet-up details: you catch up with Emma, a freelance writer, over lunch (on 2023/04/11)."
+      },
+      {
+        "sessionId": "answer_9b09d95b_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

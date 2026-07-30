@@ -1,0 +1,73 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Religious activities the user attended last week (relative to 2023/04/10)",
+  "candidateStatus": "found",
+  "missingRisk": "You may have attended another religious activity last week that isn’t mentioned in the selected turns.",
+  "items": [
+    {
+      "sessionId": "answer_a17423e8_1",
+      "turnIndex": 5,
+      "date": "2023/04/06 (Thu) 05:36",
+      "role": "assistant",
+      "text": "The Food Bank Volunteer opportunity is a wonderful way to make a difference in your community.\n\nHere's more information on the Food Bank Volunteer opportunity:\n\n**Food Bank Location:**\nThe food bank is located at 123 Main St, Anytown, USA 12345. It's easily accessible by public transportation, and there's also parking available on site.\n\n**Types of Tasks:**\nAs a Food Bank Volunteer, you'll be helping with various tasks to support the food bank's operations. These may include:\n\n* **Sorting and Packaging:** Sorting donated food items, packing them into boxes or bags, and labeling them for distribution.\n* **Inventory Management:** Assisting with receiving and stocking donations, as well as maintaining the inventory of food items.\n* **Food Distribution:** Helping to prepare and distribute food to clients, including setting up the distribution area, handing out food, and cleaning up afterwards.\n* **Other Tasks:** Assisting with special events, fundraising, and administrative tasks as needed.\n\n**Time Commitment:**\nThe food bank is open Monday to Friday, and they have various shifts available in the evenings ( typically 4:00 pm - 7:00 pm). You can choose a regular schedule that fits your availability, such as:\n\n* One evening per week (e.g., every Monday from 4:00 pm - 7:00 pm)\n* Two evenings per week (e.g., every Tuesday and Thursday from 4:00 pm - 7:00 pm)\n* Flexible schedule (e.g., you can volunteer on an as-needed basis, with a minimum of 2 hours per month)\n\n**Requirements:**\nTo volunteer at the food bank, you'll need to:\n\n* Be at least 18 years old\n* Fill out a volunteer application form (available on their website or in person)\n* Attend a brief orientation session (about 30 minutes) to learn more about the food bank and the volunteer role\n* Sign a waiver and release form\n* Pass a background check (this is a standard requirement for all food bank volunteers)\n\n**Training:**\nThe food bank provides on-the-job training, so you'll learn as you go! They'll also provide guidance and support to ensure you're comfortable with the tasks and procedures.\n\n**Background Checks:**\nThe food bank requires a background check for all volunteers, which is a standard procedure to ensure the safety and security of their clients and staff. Don't worry, it's a quick and easy process that can be done online or in person.\n\nIf you're interested in volunteering at the food bank, I can provide you with the contact information and application form. Would you like to take the next step?",
+      "why": "Nearby context where the user is discussing volunteering details; includes the lead-up timeline around the Maundy Thursday mention in the following user turn.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_a17423e8_1",
+      "turnIndex": 6,
+      "date": "2023/04/06 (Thu) 05:36",
+      "role": "user",
+      "text": "Yes, I'd like to take the next step. Please provide me with the contact information and application form. I'm looking forward to volunteering at the food bank and making a difference in my community. By the way, I'm glad I got to attend the Maundy Thursday service at the Episcopal Church, it was a beautiful and moving experience.",
+      "why": "User directly states: they attended the Maundy Thursday service at the Episcopal Church (last week relative to 2023/04/10).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_a17423e8_1",
+      "turnIndex": 0,
+      "date": "2023/04/06 (Thu) 05:36",
+      "role": "user",
+      "text": "I'm looking for some information on local volunteer opportunities. I just helped out at an Easter Egg Hunt event last week and I'm interested in finding more ways to give back to the community.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a17423e8_1",
+      "turnIndex": 2,
+      "date": "2023/04/06 (Thu) 05:36",
+      "role": "user",
+      "text": "I'm open to various causes, but I think I'd prefer something related to community service or helping the underprivileged. I'm available on weekdays, preferably in the evenings, and I don't mind committing to a regular schedule.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a17423e8_1",
+      "turnIndex": 4,
+      "date": "2023/04/06 (Thu) 05:36",
+      "role": "user",
+      "text": "I think the Food Bank Volunteer opportunity sounds interesting. Can you provide me with more information on the food bank's location, the types of tasks I'd be doing, and the time commitment required? Also, do they have any requirements for volunteers, such as training or background checks?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a17423e8_1",
+      "turnIndex": 8,
+      "date": "2023/04/06 (Thu) 05:36",
+      "role": "user",
+      "text": "I'd like to ask, are there any opportunities to volunteer with a group from my church or community? I'd love to invite some friends to join me in volunteering at the food bank.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a17423e8_1",
+      "turnIndex": 10,
+      "date": "2023/04/06 (Thu) 05:36",
+      "role": "user",
+      "text": "I'd like to ask, are there any opportunities for my church group to adopt a specific project or program at the food bank, such as organizing a food drive or helping with a special event? We're looking for ways to make a more significant impact and contribute to the food bank's mission.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 4001,
+  "estimatedTokens": 1001
+}

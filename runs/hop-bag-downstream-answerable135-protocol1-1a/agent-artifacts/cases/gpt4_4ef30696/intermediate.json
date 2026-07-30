@@ -1,0 +1,18 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Reading dates for two specific books: when 'The Nightingale' was finished and when 'The Hitchhiker's Guide to the Galaxy' was started.",
+  "candidateStatus": "found",
+  "missingRisk": "n/a",
+  "items": [
+    {
+      "sessionId": "answer_f964cea3_1",
+      "turnIndex": 0,
+      "why": "User says they finished reading 'The Nightingale' today (session date 2022/01/15)."
+    },
+    {
+      "sessionId": "answer_f964cea3_2",
+      "turnIndex": 0,
+      "why": "User says they started reading 'The Hitchhiker's Guide to the Galaxy' today (session date 2022/01/16)."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Total time (in weeks) you spent reading 'The Nightingale' and listening to 'Sapiens: A Brief History of Humankind' and 'The Power' from your stated start/finish moments (up to 2022/04/30).",
+  "candidateStatus": "found",
+  "missingRisk": "You provided start/finish dates for some books, but not enough detail for an unambiguous “weeks spent” calculation (e.g., whether to include partial days/weeks, exact start time granularity, and whether any of the sessions overlapped or continued after the stated “today” moments).",
+  "items": [
+    {
+      "sessionId": "answer_e9ad5914_1",
+      "turnIndex": 0,
+      "why": "User started reading 'The Nightingale' today (2022/01/01), establishing a start point for time spent."
+    },
+    {
+      "sessionId": "answer_e9ad5914_2",
+      "turnIndex": 0,
+      "why": "User finished reading 'The Nightingale' today (2022/01/15), establishing an end point for time spent."
+    },
+    {
+      "sessionId": "answer_e9ad5914_3",
+      "turnIndex": 6,
+      "why": "User started listening to 'Sapiens: A Brief History of Humankind' today (2022/02/01), establishing a start point for listening time."
+    },
+    {
+      "sessionId": "answer_e9ad5914_4",
+      "turnIndex": 0,
+      "why": "User finished listening to 'Sapiens: A Brief History of Humankind' today (2022/03/01), establishing an end point for listening time."
+    },
+    {
+      "sessionId": "answer_e9ad5914_6",
+      "turnIndex": 0,
+      "why": "User finished listening to 'The Power' today (2022/03/20), establishing an end point for listening time (but start point may still be missing)."
+    }
+  ]
+}

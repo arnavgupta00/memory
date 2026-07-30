@@ -1,0 +1,53 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Refer to the specific two-factor authentication methods the assistant previously named (and any nearby elaboration).",
+    "candidateStatus": "found",
+    "missingRisk": "If the answerer needs additional detail beyond the named examples (e.g., specific OTP app types, token vs SMS, or biometric modality), it may not be present in the selected turns.",
+    "items": [
+      {
+        "sessionId": "answer_ultrachat_348449",
+        "turnIndex": 1,
+        "why": "This assistant message explicitly states two-factor authentication methods: “biometric authentication” and “one-time passwords (OTP).”"
+      },
+      {
+        "sessionId": "answer_ultrachat_348449",
+        "turnIndex": 5,
+        "why": "This assistant follow-up further mentions biometric examples (“fingerprint, facial recognition”) and ties them to easier security measures including two-factor authentication."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Refer to the specific two-factor authentication methods the assistant previously named (and any nearby elaboration).",
+    "candidateStatus": "found",
+    "missingRisk": "If the answerer needs additional detail beyond the named examples (e.g., specific OTP app types, token vs SMS, or biometric modality), it may not be present in the selected turns.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_ultrachat_348449",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_ultrachat_348449",
+        "turnIndex": 1,
+        "why": "This assistant message explicitly states two-factor authentication methods: “biometric authentication” and “one-time passwords (OTP).”"
+      },
+      {
+        "sessionId": "answer_ultrachat_348449",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_ultrachat_348449",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_ultrachat_348449",
+        "turnIndex": 5,
+        "why": "This assistant follow-up further mentions biometric examples (“fingerprint, facial recognition”) and ties them to easier security measures including two-factor authentication."
+      }
+    ]
+  }
+}

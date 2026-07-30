@@ -1,0 +1,118 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Tennis with friends at the local park (past frequency vs current/ongoing frequency)",
+  "candidateStatus": "found",
+  "missingRisk": "May still be missing more recent/actual frequency details after the planned “this Sunday” (2023/07/30), and any explicit statement about how “often now” differs beyond the previously described schedule.",
+  "items": [
+    {
+      "sessionId": "answer_25df025b_1",
+      "turnIndex": 0,
+      "date": "2023/03/11 (Sat) 18:01",
+      "role": "user",
+      "text": "I'm thinking of ordering some new athletic socks online, but I'm not sure which brand to go with. Can you give me some recommendations? By the way, I was just at the local park last Sunday, and I saw some people playing tennis - reminds me of my own weekly tennis sessions with friends.",
+      "why": "Mentions “weekly tennis sessions with friends” at the local park, which supports the “previously” frequency.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_25df025b_1",
+      "turnIndex": 6,
+      "date": "2023/03/11 (Sat) 18:01",
+      "role": "user",
+      "text": "Yeah, I'm planning to play tennis with my friends this Sunday at the local park.",
+      "why": "States a specific upcoming session (“this Sunday at the local park”), useful for the “now” portion of the comparison.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_25df025b_2",
+      "turnIndex": 0,
+      "date": "2023/07/30 (Sun) 04:03",
+      "role": "user",
+      "text": "I'm looking to plan out my weekend. Can you suggest some jogging routes near my house? Oh, and by the way, I'm planning to play tennis with my friends at the local park this Sunday, like we do every other week.",
+      "why": "Explicitly says tennis with friends at the local park is something they “do every other week,” relevant to current frequency (and potentially the updated pattern vs “weekly”).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_25df025b_1",
+      "turnIndex": 2,
+      "date": "2023/03/11 (Sat) 18:01",
+      "role": "user",
+      "text": "I've heard good things about Nike's athletic socks, especially since I already have their Air Zoom tennis shoes. Do they have any specific socks designed for tennis?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_25df025b_1",
+      "turnIndex": 4,
+      "date": "2023/03/11 (Sat) 18:01",
+      "role": "user",
+      "text": "I think I'll go with the Nike Court Flex Tennis Socks. Do they come in different colors?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_25df025b_1",
+      "turnIndex": 8,
+      "date": "2023/03/11 (Sat) 18:01",
+      "role": "user",
+      "text": "I'm a big fan of Roger Federer, he's such a legend on the court. But I'm not really inspired by the pros, I just play for fun with my friends. Speaking of which, do you know any good ways to keep my tennis racket in good condition?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_25df025b_1",
+      "turnIndex": 10,
+      "date": "2023/03/11 (Sat) 18:01",
+      "role": "user",
+      "text": "I'm more of a baseline player, so I tend to focus on my forehand and backhand groundstrokes. But I'm trying to improve my net game, so I've been practicing my volleys and overheads. Do you know any good drills or exercises to help improve my reaction time and hand-eye coordination at the net?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_25df025b_2",
+      "turnIndex": 2,
+      "date": "2023/07/30 (Sun) 04:03",
+      "role": "user",
+      "text": "I'm in 95123, and I'd like a 5-mile route. Also, I prefer routes with minimal traffic and nice scenery.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_25df025b_2",
+      "turnIndex": 4,
+      "date": "2023/07/30 (Sun) 04:03",
+      "role": "user",
+      "text": "I think I'll try the Almaden Lake Park Loop. It sounds really nice. By the way, do you know if there are any yoga studios near the park? I might want to stop by after my jog.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_25df025b_2",
+      "turnIndex": 6,
+      "date": "2023/07/30 (Sun) 04:03",
+      "role": "user",
+      "text": "I think I'll try the CorePower Yoga Almaden. I've heard good things about them. Do you have any tips on how to stay motivated to exercise regularly?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_25df025b_2",
+      "turnIndex": 8,
+      "date": "2023/07/30 (Sun) 04:03",
+      "role": "user",
+      "text": "I think I'll try to mix up my routine by incorporating more swimming into my schedule. I recently signed up for swim lessons at the local pool, and I'm really enjoying it. Do you have any tips on how to improve my swimming technique?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_25df025b_2",
+      "turnIndex": 10,
+      "date": "2023/07/30 (Sun) 04:03",
+      "role": "user",
+      "text": "I'm thinking of getting a new tennis bag to carry my gear to the local park. Do you have any recommendations for a good tennis bag that can fit my racket, shoes, and other essentials?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 2194,
+  "estimatedTokens": 549
+}

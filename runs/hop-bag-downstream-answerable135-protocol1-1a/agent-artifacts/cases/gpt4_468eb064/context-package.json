@@ -1,0 +1,64 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "People you met with during lunch on the Tuesday before 2023/04/18 (i.e., 2023/04/11).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_9b09d95b_1",
+      "turnIndex": 0,
+      "date": "2023/04/11 (Tue) 22:13",
+      "role": "user",
+      "text": "I'm looking for some tips on social media advertising. I just attended a digital marketing workshop last week and the speaker, Rachel Lee, mentioned some interesting strategies. I was wondering if you could recommend some online resources or tutorials on the topic. By the way, I catch up with Emma, a freelance writer, over lunch today and she's now a potential collaborator for a project I'm working on.",
+      "why": "User states they “catch up with Emma … over lunch today,” identifying Emma as the person they met with during that lunch (on 2023/04/11).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_9b09d95b_1",
+      "turnIndex": 2,
+      "date": "2023/04/11 (Tue) 22:13",
+      "role": "user",
+      "text": "I'm actually interested in learning more about Facebook ads, can you show me some tutorials on how to set up a campaign and target the right audience?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_9b09d95b_1",
+      "turnIndex": 4,
+      "date": "2023/04/11 (Tue) 22:13",
+      "role": "user",
+      "text": "I'd like to know more about Facebook's Audience Insights tool, can you show me how to use it to gather information about my target audience?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_9b09d95b_1",
+      "turnIndex": 6,
+      "date": "2023/04/11 (Tue) 22:13",
+      "role": "user",
+      "text": "I'm also interested in learning more about Instagram ads, since Emma mentioned she's seen some great results with them. Can you show me some tutorials on how to set up an Instagram ad campaign?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_9b09d95b_1",
+      "turnIndex": 8,
+      "date": "2023/04/11 (Tue) 22:13",
+      "role": "user",
+      "text": "I'd like to know more about Instagram's targeting options, especially since Emma mentioned she's had success with targeting specific interests and behaviors. Can you show me how to target my ads to people who are interested in sustainable living and eco-friendly products?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_9b09d95b_1",
+      "turnIndex": 10,
+      "date": "2023/04/11 (Tue) 22:13",
+      "role": "user",
+      "text": "I'd like to know more about Instagram's automatic targeting feature. Can you show me how to use it to reach people who are likely to be interested in my sustainable living and eco-friendly products?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 1358,
+  "estimatedTokens": 340
+}

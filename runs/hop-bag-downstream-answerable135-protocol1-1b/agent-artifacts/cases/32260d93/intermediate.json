@@ -1,0 +1,38 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Recommend a show or movie for tonight based on prior preferences stored in candidate sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "Candidate sessions mostly contain podcast recommendations and comedy-writing advice; only one session includes Netflix stand-up specials, which may or may not match the user’s intended “show or movie” request (vs. podcasts).",
+    "items": [
+      {
+        "sessionId": "answer_0250ae1c",
+        "turnIndex": 1,
+        "why": "Contains the assistant’s direct recommendations of Netflix stand-up specials (shows/videos) that match the user’s entertainment preference and could be suggested for tonight."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Recommend a show or movie for tonight based on prior preferences stored in candidate sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "Candidate sessions mostly contain podcast recommendations and comedy-writing advice; only one session includes Netflix stand-up specials, which may or may not match the user’s intended “show or movie” request (vs. podcasts).; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_0250ae1c",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_0250ae1c",
+        "turnIndex": 1,
+        "why": "Contains the assistant’s direct recommendations of Netflix stand-up specials (shows/videos) that match the user’s entertainment preference and could be suggested for tonight."
+      },
+      {
+        "sessionId": "answer_0250ae1c",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

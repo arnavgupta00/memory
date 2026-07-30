@@ -1,0 +1,21 @@
+[
+  {
+    "session_id": "answer_ultrachat_519486",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low — the session explicitly names a state (Pennsylvania) as an example with pre-drilling and post-drilling groundwater monitoring requirements.",
+      "claims": [
+        {
+          "turnIndex": 1,
+          "fact": "Pennsylvania requires fracking companies to monitor groundwater quality at nearby wells before drilling and for a certain period after drilling is complete.",
+          "why": "Directly answers which state was mentioned as having the baseline (before drilling) and post-drilling monitoring requirement."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "In Pennsylvania, operators are required to submit pre-drilling water quality test reports to the state's Department of Environmental Protection.",
+          "why": "Additional supporting detail from the same session about Pennsylvania’s pre-drilling monitoring/baseline testing requirement."
+        }
+      ]
+    }
+  }
+]

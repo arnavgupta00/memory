@@ -1,0 +1,54 @@
+[
+  {
+    "session_id": "answer_3e9fce53_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session only contains one relevant dated event (helping friend prepare a nursery and shopping at Buy Buy Baby). It does not mention helping a cousin with baby shower preparations or ordering a customized phone case for a friend's birthday, so the other two events needed by the question may be missing from this session (though they could appear in other sessions).",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "On 2023/02/05 (Sun) 18:29, the user said: \"By the way, I just helped my friend prepare a nursery today, and we spent an entire Sunday afternoon shopping for baby supplies and decorations at Buy Buy Baby.\"",
+          "why": "This is a concrete, user-stated event about helping a friend prepare a nursery and includes the specific time context (Sunday afternoon) and the store (Buy Buy Baby), which could correspond to the first/second/third event order in the question."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_3e9fce53_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session only mentions helping your cousin pick out items for her baby shower; it does not include the nursery-prep day or the customized phone case order date needed to determine the full ordered sequence of three events.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "On 2023/02/10 (Fri) 21:05, the user said they were thinking of getting a baby gift for a coworker's new baby and asked for recommendations for essential items new parents usually need.",
+          "why": "Provides context for the session but does not directly match any of the three queried events."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "The user said they just helped their cousin pick out stuff for her baby shower, and they ended up getting diapers, wipes, and a baby monitor at Target.",
+          "why": "Directly corresponds to one of the three events in the question (helping cousin pick out stuff for her baby shower) and includes store/items."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_3e9fce53_3",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session only contains evidence for one of the three events (ordering a customized phone case). It does not mention helping a friend prepare the nursery or helping a cousin pick out stuff for a baby shower, so those events may be in other sessions.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "2023/02/20 (Mon) 13:12: user is looking for gift ideas for siblings.",
+          "why": "Establishes the session context and that the user is actively planning gifts; may help locate related timeline items across sessions."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "The user just ordered a customized phone case for friend's birthday today, which she really loves.",
+          "why": "Directly supports the event: ordering a customized phone case for a friend's birthday (one of the three events to order chronologically)."
+        }
+      ]
+    }
+  }
+]

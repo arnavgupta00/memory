@@ -1,0 +1,83 @@
+[
+  {
+    "session_id": "1446b088_2",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains no identifiable information about any sports events the user participated in (no event names, dates, or participation details). It appears focused on workouts/health tracking rather than sports events, so evidence for the requested “order of the three sports events” is missing from this candidate.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "9345f7dc_4",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains suggestions and plans for workouts/exercise (e.g., trying a 7-minute workout 3 times a week) but does not mention any specific sports events the user actually participated in, with dates/times. If the user’s “sports events” are interpreted broadly as workouts, this session still does not provide an order of three distinct events within the past month.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_8c64ce25_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session mentions one completed sports event (Spring Sprint Triathlon on 2023/06/02) and references a volleyball league game as something the user plans to attend later (“Thursday evening after my volleyball league game”), but it does not provide an explicit date for the volleyball game or a third sports event, so the full “three sports events” order may be incomplete in this single session.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User session date context: 2023/06/02 (Fri) 15:29.",
+          "why": "Establishes the timeframe of at least one event discussed in this session."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User completed the Spring Sprint Triathlon today.",
+          "why": "Indicates the user participated in a sports event that occurred on this session date."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "The Spring Sprint Triathlon included a 20K bike ride.",
+          "why": "Captures the event details (distance) that may help distinguish among sports events."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "User planned to explore the waterfront path on Thursday evening, after my volleyball league game.",
+          "why": "Indicates another sports-related participation (volleyball league game) tied to a temporal endpoint (“Thursday evening”), which may be needed to order events."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_8c64ce25_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session mentions only one specific sports event (Midsummer 5K Run) and provides no explicit event date beyond the conversation timestamp, so it likely covers only one of the three participations needed for the requested earliest-to-latest ordering.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is looking for new running shoes after finishing a 5K run with a personal best time of 27 minutes and 42 seconds at the Midsummer 5K Run.",
+          "why": "Identifies a sports event the user participated in and includes a performance metric (time) that can help confirm participation; needed to place one event within the past month ordering."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "78d28576_2",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains fitness planning and exercise/water intake advice, but no mentions of any sports events the user participated in (e.g., competition names, match/event dates, or “sports events” participation). Therefore there may be no extractable evidence for the requested chronological order.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_8c64ce25_3",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session contains only one explicit sports participation event (a company annual charity soccer tournament) but does not list the other two sports events needed for the “three sports events” ordering. It also provides advice rather than user event dates beyond a single tournament reference, so the reducer may not be able to derive the full chronological list from this session alone.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "Today, 2023/06/17 (Sat) 11:09, the user is participating in the company's annual charity soccer tournament today.",
+          "why": "This provides an explicit user participation in a sports event and a date anchor needed to order events chronologically."
+        }
+      ]
+    }
+  }
+]

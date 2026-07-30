@@ -1,0 +1,23 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Your gym consistency period (start date/duration) and associated reported weight-loss amounts",
+  "candidateStatus": "found",
+  "missingRisk": "May still be missing the exact start date of “consistently” to compare against the two weight-loss reports (5 lb in past month vs 10 lb in ~3 months).",
+  "items": [
+    {
+      "sessionId": "answer_ae3a122b_1",
+      "turnIndex": 2,
+      "why": "User reports weight loss: “lost about 5 pounds in the past month.”"
+    },
+    {
+      "sessionId": "answer_ae3a122b_1",
+      "turnIndex": 8,
+      "why": "User repeats/updates weight loss context: “I've lost 5 pounds in the past month… hoping to continue this trend.”"
+    },
+    {
+      "sessionId": "answer_ae3a122b_2",
+      "turnIndex": 2,
+      "why": "User gives a separate larger figure tied to gym consistency duration: “I've lost 10 pounds since I started going consistently to the gym 3 months ago.”"
+    }
+  ]
+}

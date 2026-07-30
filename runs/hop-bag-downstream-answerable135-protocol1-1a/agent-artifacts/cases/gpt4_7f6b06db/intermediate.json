@@ -1,0 +1,33 @@
+{
+  "queryShape": "order",
+  "setBoundary": "User’s actual trips taken in the 3 months before 2023/06/01 (likely day trips and multi-day trips mentioned with explicit “just got back” language).",
+  "candidateStatus": "found",
+  "missingRisk": "May be additional trips in that window that are mentioned without explicit dates; only the clearly date-stamped trip mentions can be ordered confidently from memory.",
+  "items": [
+    {
+      "sessionId": "631e4016",
+      "turnIndex": 10,
+      "why": "Mentions getting a new backpack but is around 2023/03/09; not clearly a trip taken within 3 months (no “just got back from trip” text). Included nearby context was avoided to prevent noise."
+    },
+    {
+      "sessionId": "answer_5d8c99d3_1",
+      "turnIndex": 8,
+      "why": "“I just got back from a day hike to Muir Woods National Monument … today” dated 2023/03/10; identifies an actual trip taken (Muir Woods) with an explicit date."
+    },
+    {
+      "sessionId": "answer_5d8c99d3_2",
+      "turnIndex": 0,
+      "why": "Session dated 2023/04/20 includes: “I just got back from a road trip with friends to Big Sur and Monterey today”; identifies an actual trip taken with an explicit date."
+    },
+    {
+      "sessionId": "answer_5d8c99d3_2",
+      "turnIndex": 0,
+      "why": "This same turn also establishes the Big Sur & Monterey trip, needed for ordering among the three trips."
+    },
+    {
+      "sessionId": "answer_5d8c99d3_3",
+      "turnIndex": 0,
+      "why": "Session dated 2023/05/15 includes: “I just got back from a solo camping trip to Yosemite National Park today”; identifies an actual trip taken with an explicit date."
+    }
+  ]
+}

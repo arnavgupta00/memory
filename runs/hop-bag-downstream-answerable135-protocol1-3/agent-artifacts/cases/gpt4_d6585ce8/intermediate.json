@@ -1,0 +1,140 @@
+[
+  {
+    "session_id": "answer_f999b05b_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session only mentions one attended concert and does not provide dates beyond the session timestamp; it may omit other events within the past two months if they were mentioned elsewhere.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User says: \"I just got back from an amazing Billie Eilish concert at the Wells Fargo Center in Philly with my sister today\".",
+          "why": "This is a concrete attended musical event (Billie Eilish concert) that can anchor the user’s attendance order."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "Concert venue/location: \"Wells Fargo Center in Philly\".",
+          "why": "Venue/location can help uniquely identify the specific concert entry when ordering events."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_f999b05b_4",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "none_found session is clearly present but contains no explicit attended event list beyond a single free outdoor concert series on 2023/03/25; other mentions are future/planning or general recommendations, so the reducer may still need other sessions to compile the full past-two-month attendance order.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User says: \"I attended a free outdoor concert series in the park today\" (session date: 2023/03/25).",
+          "why": "Directly indicates one attended concert/event, with temporal anchor (today on 2023/03/25)."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User says they discovered \"some great new talent\" at the free outdoor concert series in the park.",
+          "why": "Captures the context of the event (new artists discovered) though it may not affect ordering; could help interpret the event list if names are later provided elsewhere."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "User asks about Mt. Joy: \"have you got any info on their upcoming tour dates or releases?\"",
+          "why": "Indicates user interest in a likely related music act, but this turn is about future tour/release info rather than an attended event."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "User plans: \"I'm actually thinking of attending a jazz night at a local bar soon\"",
+          "why": "Represents a planned (future) event, which may be relevant if the question reducer includes pending items or distinguishes attended vs planned."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_f999b05b_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session appears to be about general song/artist recommendations and planning to check out local music events, not about specific concerts/musical events actually attended in the past two months. The only potentially relevant attendance detail is a music festival in Brooklyn, but it lacks an exact date/order and does not specify the specific concerts/events attended during the two-month window.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User says they've been listening to a lot of indie music lately, especially since they just got back from a music festival in Brooklyn with a group of friends, featuring a lineup of their favorite indie bands.",
+          "why": "Indicates attendance at a live music festival in Brooklyn; could be one item in the requested chronological list of events attended, but the exact festival date and which specific acts are not provided."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "User: \"I've actually seen Glass Animals live at the music festival in Brooklyn, and they were amazing!\"",
+          "why": "Connects the Brooklyn festival attendance to a specific artist (Glass Animals) the user saw live; may be needed to order events if the reducer has festival timing from elsewhere."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "User is thinking of checking out some local music events in their neighborhood, maybe a free outdoor concert series in the park or a jazz night at a local bar.",
+          "why": "Captures planned/considered types of musical events (outdoor concert series; jazz night) that could be relevant if the question includes intended attendance or if follow-up sessions specify actual event dates."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_f999b05b_5",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session does not list a dated sequence of the concerts/musical events attended within the past two months; it only mentions a few events in a general way. Key event dates/venues and the full order are likely missing.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "The user says they've been to a lot of great concerts lately, specifically mentioning the Billie Eilish show in Philly.",
+          "why": "This is an attended large concert event that could be part of the requested chronological order, but the date and venue details are not provided."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "The user says they enjoyed a smaller local music night: a jazz night at a local bar today (2023/04/08).",
+          "why": "This is an attended musical event with a clear temporal reference (“today”) that can anchor one point in the timeline for the past two months."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "4a79d078_4",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains no mentions of concerts or musical events attended in the past two months (it discusses volunteering/charity opportunities instead). If the user’s attended concert/musical-event details are in another candidate session, they are not present here.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_f999b05b_3",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session contains attendee experiences (a Queen concert and a Brooklyn music festival) but provides no exact dates for when they occurred, only a session timestamp (2023/04/15) that can’t reliably establish the event date. It also includes many upcoming festival dates (e.g., Panorama July 24-26) that are not clearly marked as “attended,” so they may be unrelated to the “past two months attended” ordering.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is looking for recommendations for rock music playlists on streaming services and says they've been listening to a lot of Queen lately.",
+          "why": "Establishes Queen interest but does not directly specify an attended event; may help interpret later attendance context."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User “just saw them live with Adam Lambert at the Prudential Center in Newark, NJ with my parents.”",
+          "why": "Directly describes a live concert the user attended; includes location (Prudential Center, Newark, NJ) and the billed artists (Queen + Adam Lambert), but lacks the date."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "User says they recently attended a “music festival in Brooklyn” featuring some of their favorite indie bands.",
+          "why": "Directly describes a festival the user attended in the recent past; includes Brooklyn but lacks the exact festival date(s)."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "User asks for indie rock festivals or concerts happening in the coming months to check out.",
+          "why": "Shows the user is thinking about upcoming events; helps separate “past two months attended” from “future to attend,” though this turn itself doesn’t name a specific attended event."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "User says they are interested in “Panorama Music Festival in NYC,” and asks what to expect.",
+          "why": "Indicates an interest in Panorama (an event with later described dates), but this is not stated as attended; may be relevant to exclude from “past two months” ordering."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Panorama Music Festival is described as a three-day festival held on Randall's Island Park in NYC.",
+          "why": "Provides concrete event location and duration that could be used if the reducer decides the user attended; the session does not state it was attended."
+        }
+      ]
+    }
+  }
+]

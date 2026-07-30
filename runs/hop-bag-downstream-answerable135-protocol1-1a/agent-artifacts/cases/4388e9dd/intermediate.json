@@ -1,0 +1,23 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Clothing/attire details for Andy in the comedy-movie script scenes",
+  "candidateStatus": "found",
+  "missingRisk": "n/a",
+  "items": [
+    {
+      "sessionId": "answer_sharegpt_qTi81nS_0",
+      "turnIndex": 1,
+      "why": "Directly states Andy wears an untidy, stained white shirt (also includes the scene header describing his appearance)."
+    },
+    {
+      "sessionId": "answer_sharegpt_qTi81nS_0",
+      "turnIndex": 0,
+      "why": "Provides the character description for Andy, including that he wears an untidy, stained white shirt (sets the baseline attire used across the written scenes)."
+    },
+    {
+      "sessionId": "answer_sharegpt_qTi81nS_0",
+      "turnIndex": 5,
+      "why": "Reinforces Andy’s continued characterization in later scene dialogue and references his signature line (“Right guys, settle down”), aligning with the same script’s depiction of his attire."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Sum the total “people reached” across (1) the Facebook ad campaign and (2) the Instagram influencer collaboration, using only the quantities explicitly stated in the retrieved sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "The Instagram influencer metric provided is “10,000 followers” (not an explicit “people reached”/impressions), so downstream may need to decide whether to treat followers as reached or whether additional “reach” data is missing.",
+    "items": [
+      {
+        "sessionId": "answer_e552e1f9_1",
+        "turnIndex": 0,
+        "why": "Contains the explicit Facebook ad campaign reach figure: “previous… reached around 2,000 people,” which is needed for the aggregation."
+      },
+      {
+        "sessionId": "answer_e552e1f9_2",
+        "turnIndex": 0,
+        "why": "Contains the explicit influencer collaboration audience size: influencer promoted to her “10,000 followers,” which is the only stated quantity to use for the Instagram component of the aggregation."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Sum the total “people reached” across (1) the Facebook ad campaign and (2) the Instagram influencer collaboration, using only the quantities explicitly stated in the retrieved sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "The Instagram influencer metric provided is “10,000 followers” (not an explicit “people reached”/impressions), so downstream may need to decide whether to treat followers as reached or whether additional “reach” data is missing.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_e552e1f9_1",
+        "turnIndex": 0,
+        "why": "Contains the explicit Facebook ad campaign reach figure: “previous… reached around 2,000 people,” which is needed for the aggregation."
+      },
+      {
+        "sessionId": "answer_e552e1f9_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e552e1f9_2",
+        "turnIndex": 0,
+        "why": "Contains the explicit influencer collaboration audience size: influencer promoted to her “10,000 followers,” which is the only stated quantity to use for the Instagram component of the aggregation."
+      },
+      {
+        "sessionId": "answer_e552e1f9_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e552e1f9_2",
+        "turnIndex": 10,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_e552e1f9_2",
+        "turnIndex": 11,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e552e1f9_2",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

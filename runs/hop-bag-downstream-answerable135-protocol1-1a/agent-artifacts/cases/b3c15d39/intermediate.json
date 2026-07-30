@@ -1,0 +1,18 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Remote shutter release order date vs arrival date (days elapsed)",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_05d808e6_1",
+      "turnIndex": 10,
+      "why": "States the user ordered a new remote shutter release on February 5th."
+    },
+    {
+      "sessionId": "answer_05d808e6_2",
+      "turnIndex": 0,
+      "why": "States the user’s new remote shutter release arrived on February 10th."
+    }
+  ]
+}

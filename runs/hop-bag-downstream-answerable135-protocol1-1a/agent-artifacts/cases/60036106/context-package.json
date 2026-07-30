@@ -1,0 +1,118 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "People reached across (a) your Facebook ad campaign and (b) your Instagram influencer collaboration.",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_e552e1f9_1",
+      "turnIndex": 0,
+      "date": "2023/05/29 (Mon) 03:00",
+      "role": "user",
+      "text": "I'm looking to run another Facebook ad campaign soon and I want to make sure I'm targeting the right audience. Can you help me identify the most effective targeting options for my business? By the way, my previous ad campaign, which ran for five days, reached around 2,000 people.",
+      "why": "States your previous Facebook ad campaign reached around 2,000 people (Facebook ad reach for the total).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e552e1f9_2",
+      "turnIndex": 0,
+      "date": "2023/05/29 (Mon) 10:53",
+      "role": "user",
+      "text": "I'm trying to improve my Instagram engagement. Can you suggest some popular hashtags in my niche that I can use? By the way, I recently collaborated with an influencer who promoted my product to her 10,000 followers, and it was a great success.",
+      "why": "States your Instagram influencer collaboration promoted your product to her 10,000 followers (Instagram influencer reach for the total).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e552e1f9_1",
+      "turnIndex": 2,
+      "date": "2023/05/29 (Mon) 03:00",
+      "role": "user",
+      "text": "My business operates in the e-commerce niche, and I offer handmade home decor products. My ideal customer is a female between 25-45 years old who values unique, eco-friendly products. The goal of my previous campaign was to drive website traffic and increase brand awareness. My ad content was a high-quality image of one of my products with a brief description and a call-to-action to visit my website. The budget for my previous campaign was around $100, and the results were 50 clicks to my website, which I'm pretty happy with.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e552e1f9_1",
+      "turnIndex": 4,
+      "date": "2023/05/29 (Mon) 03:00",
+      "role": "user",
+      "text": "I see your suggestions are really helpful. I'm particularly interested in the lookalike targeting option. Can you tell me more about how to create a lookalike audience and how it works?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e552e1f9_1",
+      "turnIndex": 6,
+      "date": "2023/05/29 (Mon) 03:00",
+      "role": "user",
+      "text": "Can you tell me more about the custom audience option? How do I create a custom audience and what are the benefits of using it?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e552e1f9_1",
+      "turnIndex": 8,
+      "date": "2023/05/29 (Mon) 03:00",
+      "role": "user",
+      "text": "I'd like to create a custom audience based on my website traffic. Can you walk me through the process of setting up Facebook Pixel and creating a custom audience from my website traffic?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e552e1f9_1",
+      "turnIndex": 10,
+      "date": "2023/05/29 (Mon) 03:00",
+      "role": "user",
+      "text": "I'd like to know more about how I can use my custom audience in my ad campaigns. Can you give me some tips on how to effectively target my custom audience and maximize my ad spend?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e552e1f9_2",
+      "turnIndex": 2,
+      "date": "2023/05/29 (Mon) 10:53",
+      "role": "user",
+      "text": "My product is a handmade jewelry, and my target audience is young adults who are interested in unique accessories. Some keywords related to my product are \"handmade jewelry\", \"unique accessories\", and \"indie fashion\".",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e552e1f9_2",
+      "turnIndex": 4,
+      "date": "2023/05/29 (Mon) 10:53",
+      "role": "user",
+      "text": "I'd like to know more about how I can create an Instagram story that will engage my followers. Can you give me some ideas on what type of content I can post on my story?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e552e1f9_2",
+      "turnIndex": 6,
+      "date": "2023/05/29 (Mon) 10:53",
+      "role": "user",
+      "text": "I've been using Instagram stories to give my followers a sneak peek into my production process, and to ask for their feedback on new products. I've also been experimenting with polls, like the one I did last week where I asked my followers to vote for their favorite product design. Around 50 people voted, which was a great response.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e552e1f9_2",
+      "turnIndex": 8,
+      "date": "2023/05/29 (Mon) 10:53",
+      "role": "user",
+      "text": "I'm planning to run another Facebook ad campaign soon, and I'd like to target people who have shown interest in similar products to mine. Can you give me some tips on how to effectively target my ad audience on Facebook?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e552e1f9_2",
+      "turnIndex": 10,
+      "date": "2023/05/29 (Mon) 10:53",
+      "role": "user",
+      "text": "I'm planning to target people who have shown interest in similar products to mine, just like I did in my previous Facebook ad campaign, which reached around 2,000 people and resulted in 50 clicks to my website.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 2883,
+  "estimatedTokens": 721
+}

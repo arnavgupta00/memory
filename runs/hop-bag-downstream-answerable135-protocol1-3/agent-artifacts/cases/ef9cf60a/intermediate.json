@@ -1,0 +1,85 @@
+[
+  {
+    "session_id": "answer_87e3a1cb_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session contains a user-provided estimate for a Tiffany's necklace cost (~$200) for the sister, but it does not explicitly confirm whether this is the only gift or whether any other gift-related spending occurred. It also mentions a separate planned gift for a niece, which could be conflated unless the reducer properly attributes the sister-specific expense.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "I'm trying to plan a gift for my niece's birthday...",
+          "why": "Mentions a gift-planning context (niece), which may be irrelevant to the sister spending but could cause attribution errors if not separated."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "I just got a great gift for my sister recently - a silver necklace with a small pendant from Tiffany's that cost around $200.",
+          "why": "Directly answers the question about sister gift spending with an amount estimate and item/store details."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "By the way, I recently got my sister a silver necklace with a small pendant from Tiffany's that cost around $200, and she loved it.",
+          "why": "Reiterates the sister gift purchase and approximate cost, supporting the $200 figure."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_87e3a1cb_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session only mentions one prior gift-card amount ($100) and discusses future ideas/budgets ($100 for spa day, $20-$50 for small gift), but it does not state an actual total you spent on gifts for your sister in the queried timeframe. There may be missing spend details elsewhere.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is thinking of getting sister's birthday gift next year: spa day around $100, and last time user got her a gift card to her favorite spa for $100 and she loved it.",
+          "why": "Includes a specific gift-related spend amount ($100) and future budget target that could be part of calculating total gifts spend."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "Assistant recommends spa packages around the $100 price point and mentions example pricing ranges/starting prices (e.g., Massage Envy sessions starting at around $60-$70; Ritz-Carlton spa packages starting at around $100; Woodhouse Day Spa \"Mini Retreat\" around $120).",
+          "why": "Provides concrete dollar amounts tied to spa day options, which could be used to estimate intended spending if the question is about planned spend."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "User wants to add a small gift to go along with spa day, with a budget around $20-$50.",
+          "why": "Contains a specific small-gift budget that may factor into total gift spending."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Assistant suggests small spa-themed gift ideas with price ranges: essential oil diffuser ($25-$35), scented candles ($20-$30), eye mask ($15-$25), bath bombs/salts ($20-$40), plush spa slippers ($20-$30), scrub or body butter ($20-$40), etc.",
+          "why": "Provides dollar ranges for components of the gift bundle, potentially relevant to determining total spend if the user follows these suggestions."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "User says they like the idea of getting a relaxing essential oil diffuser and asks whether to get a gift set with a few different oils or a single oil like lavender.",
+          "why": "Indicates the specific item type (essential oil diffuser) that could relate to the cost of the gifts."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Assistant advises that if sister is new, a single oil like lavender could be a great introduction; otherwise consider a gift set with 3-5 oils for relaxation/calming benefits.",
+          "why": "Not directly about spending, but it constrains the kind of product (single oil vs 3-5 oils) which affects potential cost."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "User decides to go with a gift set that includes a few different oils (because sister likes trying new scents).",
+          "why": "Confirms the intended product format for the small gift, which could determine its price when summed."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Assistant recommends including a personalized note/message with the gift and gives guidance on how to write it (brief, sincere, personal).",
+          "why": "Not spend-related, but could indicate an additional included element; could matter if the question counts accessories/printables."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "User proposes mentioning that they got her a gift card to her favorite spa last time, which was $100, and asks if it’s relevant to mention in the note; assistant says it’s a great idea and suggests connecting the new gift to that prior $100 gift-card experience.",
+          "why": "Reiterates the $100 gift-card amount and ties it to the new gift note, potentially relevant to total gift expenditure context."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Assistant reiterates suggestion to mention the prior $100 gift card in the note and advises avoiding wording that sounds bragging/one-upping.",
+          "why": "Confirms the narrative framing around the $100 gift card, which may matter if the question expects that amount as part of the gift total."
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,118 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Charity cycling event fundraising: compare initial goal vs amount ultimately raised to compute the difference.",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_254d8b09_1",
+      "turnIndex": 8,
+      "date": "2023/05/20 (Sat) 03:00",
+      "role": "user",
+      "text": "That's a great list of tips! I think I'll start by setting specific, measurable goals and tracking my workouts using a fitness app. I'll also try to celebrate small victories along the way to stay motivated. I recently participated in a charity cycling event where I initially aimed to raise $200 in donations for the local children's hospital. Speaking of goals, I'm still thinking about signing up for that triathlon in June. Do you think it's a good idea to start training for it now, or should I wait until closer to the event?",
+      "why": "User states initial fundraising goal for the local children’s hospital charity cycling event was $200.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_254d8b09_2",
+      "turnIndex": 0,
+      "date": "2023/05/28 (Sun) 14:28",
+      "role": "user",
+      "text": "I'm looking to get some bike maintenance tips. I recently participated in a charity cycling event and raised $250 in donations, which was a great experience. Do you have any advice on how to properly tune my bike after a long ride?",
+      "why": "User states they raised $250 in donations for the charity cycling event.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_254d8b09_1",
+      "turnIndex": 0,
+      "date": "2023/05/20 (Sat) 03:00",
+      "role": "user",
+      "text": "I'm looking for some tips on how to improve my cycling endurance. I've been taking spin classes at the gym and I've noticed some progress, but I want to take it to the next level.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_254d8b09_1",
+      "turnIndex": 2,
+      "date": "2023/05/20 (Sat) 03:00",
+      "role": "user",
+      "text": "I'm interested in trying out interval training, but I'm not sure how to incorporate it into my spin classes. Can you give me some examples of interval workouts I can do in a spin class setting?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_254d8b09_1",
+      "turnIndex": 4,
+      "date": "2023/05/20 (Sat) 03:00",
+      "role": "user",
+      "text": "I like the idea of incorporating interval training into my spin classes, but I'm not sure if I'll be able to keep up with the high-intensity intervals. Do you think it's okay to modify the intervals to suit my fitness level, or should I stick to the exact routine you provided?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_254d8b09_1",
+      "turnIndex": 6,
+      "date": "2023/05/20 (Sat) 03:00",
+      "role": "user",
+      "text": "I think I'll try the modified routine you provided and see how it goes. Can you give me some tips on how to track my progress and stay motivated?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_254d8b09_1",
+      "turnIndex": 10,
+      "date": "2023/05/20 (Sat) 03:00",
+      "role": "user",
+      "text": "I'm excited to start training for the triathlon! I think it's a great idea to start now and work my way up gradually. I'll definitely need to prioritize rest and recovery, as well as listen to my body and make adjustments as needed. I might consider working with a coach or experienced triathlete to help me develop a customized training plan.\n\nBy the way, speaking of customized training plans, do you have any tips on how to create a balanced training plan that incorporates all three disciplines of triathlon training? I want to make sure I'm allocating my time and energy effectively to improve my overall performance.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_254d8b09_2",
+      "turnIndex": 2,
+      "date": "2023/05/28 (Sun) 14:28",
+      "role": "user",
+      "text": "I'm also planning to join a triathlon in June, do you have any advice on how to improve my freestyle swimming technique?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_254d8b09_2",
+      "turnIndex": 4,
+      "date": "2023/05/28 (Sun) 14:28",
+      "role": "user",
+      "text": "I'm also planning to sign up for spin classes at the gym to improve my cycling endurance for the triathlon. Do you have any advice on how to make the most out of spin classes?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_254d8b09_2",
+      "turnIndex": 6,
+      "date": "2023/05/28 (Sun) 14:28",
+      "role": "user",
+      "text": "I'm thinking of asking my coworkers to join me for a friendly basketball game during lunch breaks. Do you have any advice on how to organize a casual game like that?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_254d8b09_2",
+      "turnIndex": 8,
+      "date": "2023/05/28 (Sun) 14:28",
+      "role": "user",
+      "text": "I was thinking of inviting my friend Rachel to join us for the game. She's really athletic and played in the 5K run with me last Saturday. We finished the race in 27 minutes and 12 seconds, which was a personal best for me. Do you think she'd be interested in playing basketball with us?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_254d8b09_2",
+      "turnIndex": 10,
+      "date": "2023/05/28 (Sun) 14:28",
+      "role": "user",
+      "text": "I'll ask Rachel if she's interested in playing basketball with us. I'll make sure to emphasize that it's a casual game and we're just looking to have some fun during lunch breaks. Thanks for the advice!",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 3127,
+  "estimatedTokens": 782
+}

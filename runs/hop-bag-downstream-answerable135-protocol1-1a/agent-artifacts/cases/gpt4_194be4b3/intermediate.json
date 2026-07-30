@@ -1,0 +1,38 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Musical instruments the user currently owns (not hypothetical purchases or items they are thinking about getting).",
+  "candidateStatus": "found",
+  "missingRisk": "The memory may not include every instrument you own, and it’s unclear whether any listed items were sold/given away since the mentioned conversations (e.g., the drum set).",
+  "items": [
+    {
+      "sessionId": "answer_3826dc55_1",
+      "turnIndex": 2,
+      "why": "User states they have a black Fender Stratocaster electric guitar (owned ~5 years, go-to instrument)."
+    },
+    {
+      "sessionId": "answer_3826dc55_2",
+      "turnIndex": 6,
+      "why": "User states they own an acoustic guitar: Yamaha FG800 (owned ~8 years)."
+    },
+    {
+      "sessionId": "answer_3826dc55_3",
+      "turnIndex": 3,
+      "why": "User states they own a piano: Korg B1 (owned ~3 years; sticking keys)."
+    },
+    {
+      "sessionId": "answer_3826dc55_3",
+      "turnIndex": 0,
+      "why": "User states they have an old drum set (5-piece Pearl Export) that they have not played in years (implies current ownership at that time)."
+    },
+    {
+      "sessionId": "answer_3826dc55_4",
+      "turnIndex": 0,
+      "why": "User reiterates they own the Korg B1 and want a technician for it (supports continued ownership across later time)."
+    },
+    {
+      "sessionId": "answer_3826dc55_4",
+      "turnIndex": 6,
+      "why": "User discusses getting their Korg B1 serviced due to sticking keys (reinforces they still have it)."
+    }
+  ]
+}

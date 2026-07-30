@@ -1,0 +1,97 @@
+[
+  {
+    "session_id": "answer_b6018747_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session contains counts for rare figurines and rare records, but provides no explicit total across all rare items (and mentions other categories like rare coins/antique vase without counts). Answering total would require summing across categories using data not fully present here.",
+      "claims": [
+        {
+          "turnIndex": 4,
+          "fact": "User has 12 rare figurines in their collection.",
+          "why": "Provides a specific count of one category of rare items."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "User says they have 57 rare records and are excited to add a new vinyl record to their collection.",
+          "why": "Provides a specific count of another category of rare items."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_b6018747_4",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low. This session includes at least one explicit quantity about rare books, which may be relevant to totaling rare items, but it does not provide a total for all rare item types (e.g., coins/antique vase) beyond that number.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "The user says they have a small but valuable collection of 5 books.",
+          "why": "This is an explicit count of rare books the user possesses, directly relevant to computing a total of rare items if the question includes books."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_b6018747_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session contains only a single explicit quantity related to rare records (57), but it does not confirm whether this is the total count across all rare items or whether any other rare items are mentioned elsewhere; also the conversation shifts to valuing an antique vase, which may be a separate “rare item” not counted here.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is asking about organizing “my rare records,” specifically a catalog system for “57 rare records.”",
+          "why": "Provides an explicit quantity (57) tied to rare records, which may be the basis for answering a total-count question."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_b6018747_3",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session includes only the user stating they have 25 rare coins; it does not provide any counts for other categories of rare items (e.g., rare records, rare books, antique vase, rare collectibles). If the question expects a total across multiple rare item types, additional sessions are likely needed.",
+      "claims": [
+        {
+          "turnIndex": 4,
+          "fact": "User has 25 rare coins.",
+          "why": "Direct quantity relevant to the question about total rare items; it establishes at least one count."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "User is updating their inventory list of rare records.",
+          "why": "Indicates additional rare item category (rare records) that may need counting for the total, though no number is provided in this session."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "a3d8e134_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session does not provide a total number of rare items owned—only mentions that the user has discovered/sold several rare vinyl records and explicitly names one specific rare album. Therefore, the total cannot be determined from this session alone.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is thinking of starting a collection of rare items and mentions having a few lucky finds recently.",
+          "why": "Indicates the user has multiple rare finds, but no explicit count of rare items owned is given."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "User says they recently found a rare 1967 pressing of The Beatles' Sgt. Pepper's Lonely Hearts Club Band, still in its original packaging and in near-mint condition.",
+          "why": "Provides at least one specific rare item the user has (or recently found), relevant to any inventory/count."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "User says they snatched it up for a steal and later sold it to a record collector for a tidy profit.",
+          "why": "Establishes that at least that rare item was owned and sold, which may affect how the “in total” count should be interpreted (owned vs. previously owned)."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "User previously said each of the items they've discovered was highly valued and they were able to sell them for a significant amount of money.",
+          "why": "Suggests multiple rare items were discovered, but still does not state a total quantity."
+        }
+      ]
+    }
+  }
+]

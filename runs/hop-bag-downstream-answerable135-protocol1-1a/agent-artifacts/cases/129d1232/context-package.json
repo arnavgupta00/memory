@@ -1,0 +1,163 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Total $ amount the user personally raised across all charity events they participated in (e.g., walks/runs/yoga/bike-a-thon).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_1de862d6_1",
+      "turnIndex": 2,
+      "date": "2023/05/01 (Mon) 10:42",
+      "role": "user",
+      "text": "I'm really interested in the \"big four\" you mentioned, especially reducing plastic bag usage. I've realized how often I've been using them for grocery shopping, and it's definitely an area I can improve on. By the way, I recently participated in a charity walk and managed to raise $250 through sponsors, which got me thinking about the impact of my daily habits on the community and environment.",
+      "why": "User reports raising $250 through sponsors at a charity walk.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_1de862d6_3",
+      "turnIndex": 0,
+      "date": "2023/05/01 (Mon) 21:16",
+      "role": "user",
+      "text": "I'm looking for some tips on zero-waste living. I recently met someone who's really into it, and I'm curious to learn more. By the way, I just helped organize a charity yoga event that raised $600 for a local animal shelter.",
+      "why": "User reports helping organize a charity yoga event that raised $600 for a local animal shelter.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_1de862d6_2",
+      "turnIndex": 2,
+      "date": "2023/05/01 (Mon) 22:24",
+      "role": "user",
+      "text": "Thanks for the resources! I'll definitely check them out. By the way, speaking of charity events, I recently participated in a Bike-a-Thon for Cancer Research and my team managed to raise $5,000! It was an amazing experience. Do you have any tips on how to stay motivated to continue volunteering and making a difference in the community?",
+      "why": "User reports participating in a Bike-a-Thon for Cancer Research and that their team raised $5,000.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_1de862d6_1",
+      "turnIndex": 0,
+      "date": "2023/05/01 (Mon) 10:42",
+      "role": "user",
+      "text": "I'm looking for some advice on reducing waste in my daily life. I recently met someone at a charity event who introduced me to the concept of zero-waste living, and I'm interested in learning more.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_1de862d6_1",
+      "turnIndex": 4,
+      "date": "2023/05/01 (Mon) 10:42",
+      "role": "user",
+      "text": "I think it's just getting into the habit of remembering to take my reusable bags with me every time I go shopping. I'm planning to put a note on my fridge to remind me to grab them before I head out.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_1de862d6_1",
+      "turnIndex": 6,
+      "date": "2023/05/01 (Mon) 10:42",
+      "role": "user",
+      "text": "Yeah, I've thought about it, and I actually have a few reusable water bottles at home. I just need to get into the habit of washing them regularly and taking them with me when I'm out and about. Do you have any tips on how to keep them clean and fresh?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_1de862d6_1",
+      "turnIndex": 8,
+      "date": "2023/05/01 (Mon) 10:42",
+      "role": "user",
+      "text": "I think I'd like to explore reducing coffee cup waste. I'm a big coffee lover, and I've been using disposable cups way too often. I'd love to learn more about reusable coffee cups and how to make the switch.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_1de862d6_1",
+      "turnIndex": 10,
+      "date": "2023/05/01 (Mon) 10:42",
+      "role": "user",
+      "text": "I'm excited to make the switch to a reusable coffee cup. I think I'll start by looking into KeepCup and Hydro Flask, as they seem like popular and reliable options. My main concern is remembering to bring my reusable cup with me when I'm out and about. Do you have any tips on how to make it a habit to carry my reusable cup everywhere?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_1de862d6_3",
+      "turnIndex": 2,
+      "date": "2023/05/01 (Mon) 21:16",
+      "role": "user",
+      "text": "I'm interested in learning more about composting. Can you tell me more about how to set up a compost bin and what kind of food waste can be composted?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_1de862d6_3",
+      "turnIndex": 4,
+      "date": "2023/05/01 (Mon) 21:16",
+      "role": "user",
+      "text": "I'm a bit concerned about odors. I don't want to attract pests or have a smelly backyard. Can you give me some tips on how to minimize odors in my compost bin?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_1de862d6_3",
+      "turnIndex": 6,
+      "date": "2023/05/01 (Mon) 21:16",
+      "role": "user",
+      "text": "How does the carbon-to-nitrogen ratio affect the composting process?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_1de862d6_3",
+      "turnIndex": 8,
+      "date": "2023/05/01 (Mon) 21:16",
+      "role": "user",
+      "text": "I'd like to know more about the different types of compost bins available. What are the pros and cons of each?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_1de862d6_2",
+      "turnIndex": 0,
+      "date": "2023/05/01 (Mon) 22:24",
+      "role": "user",
+      "text": "I'm looking for some information on zero-waste living, I met someone who introduced me to the concept a while back and I'm interested in learning more. Do you have any resources or tips to get me started?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_1de862d6_2",
+      "turnIndex": 4,
+      "date": "2023/05/01 (Mon) 22:24",
+      "role": "user",
+      "text": "I've been thinking about organizing a charity event of my own, maybe a charity run or a fundraising dinner. Do you have any advice on how to get started with organizing an event like that?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_1de862d6_2",
+      "turnIndex": 6,
+      "date": "2023/05/01 (Mon) 22:24",
+      "role": "user",
+      "text": "That's really helpful, thank you! I think I'll start by brainstorming some ideas and researching different charities to support. Do you have any tips on how to choose the right charity to support?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_1de862d6_2",
+      "turnIndex": 8,
+      "date": "2023/05/01 (Mon) 22:24",
+      "role": "user",
+      "text": "That's really helpful, thank you! I think I'll start researching some charities that focus on education and children's welfare. Do you have any tips on how to create a compelling event concept that will attract attendees and sponsors?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_1de862d6_2",
+      "turnIndex": 10,
+      "date": "2023/05/01 (Mon) 22:24",
+      "role": "user",
+      "text": "I think I'll start brainstorming some ideas and researching different charities to support. I'll also make sure to create a unique and engaging event concept that will attract attendees and sponsors. Thanks for all the tips and advice!",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 3693,
+  "estimatedTokens": 924
+}

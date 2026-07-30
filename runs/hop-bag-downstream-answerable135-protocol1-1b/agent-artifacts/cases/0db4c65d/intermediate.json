@@ -1,0 +1,63 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Compute the number of days elapsed between the date the user finished reading The Seven Husbands of Evelyn Hugo and the date they attended the local library book reading event (with The Silent Patient author). Preserve the two explicit dates from the candidate sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "If downstream interpretation treats either 'today' differently (e.g., if the assistant’s remembered dates are inaccurate or if 'finished reading today' should be tied to a different date), the computed day count could be off. Current date (2023/02/10) appears unrelated to the day-difference asked.",
+    "items": [
+      {
+        "sessionId": "answer_b9e32ff8_1",
+        "turnIndex": 0,
+        "why": "User states they finished a discussion and is in the mood; provides context that the relevant timeline anchors to their Seven Husbands reading activity."
+      },
+      {
+        "sessionId": "answer_b9e32ff8_1",
+        "turnIndex": 2,
+        "why": "States 'I finished reading The Seven Husbands of Evelyn Hugo today'—this is the needed end date for the day-difference."
+      },
+      {
+        "sessionId": "answer_b9e32ff8_2",
+        "turnIndex": 0,
+        "why": "States they attended a book reading event at the local library 'today' and that the Silent Patient author was discussing her latest thriller—needed event-date anchor."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Compute the number of days elapsed between the date the user finished reading The Seven Husbands of Evelyn Hugo and the date they attended the local library book reading event (with The Silent Patient author). Preserve the two explicit dates from the candidate sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "If downstream interpretation treats either 'today' differently (e.g., if the assistant’s remembered dates are inaccurate or if 'finished reading today' should be tied to a different date), the computed day count could be off. Current date (2023/02/10) appears unrelated to the day-difference asked.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_b9e32ff8_1",
+        "turnIndex": 0,
+        "why": "User states they finished a discussion and is in the mood; provides context that the relevant timeline anchors to their Seven Husbands reading activity."
+      },
+      {
+        "sessionId": "answer_b9e32ff8_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_b9e32ff8_1",
+        "turnIndex": 2,
+        "why": "States 'I finished reading The Seven Husbands of Evelyn Hugo today'—this is the needed end date for the day-difference."
+      },
+      {
+        "sessionId": "answer_b9e32ff8_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_b9e32ff8_2",
+        "turnIndex": 0,
+        "why": "States they attended a book reading event at the local library 'today' and that the Silent Patient author was discussing her latest thriller—needed event-date anchor."
+      },
+      {
+        "sessionId": "answer_b9e32ff8_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Focus on the conversation where theme-park recommendations were requested and provided, especially Halloween-themed event suggestions and related VIP food/dining details.",
+    "candidateStatus": "found",
+    "missingRisk": "If the user wants theme-park weekend suggestions beyond Halloween or outside the LA-area parks covered in the retrieved session, the selected turns may not fully address that broader scope.",
+    "items": [
+      {
+        "sessionId": "answer_a1e169b1",
+        "turnIndex": 1,
+        "why": "Assistant provides the core recommendations for upcoming theme park events (Halloween Time, Knott’s Scary Farm, Fright Fest/Fright Fest, etc.)."
+      },
+      {
+        "sessionId": "answer_a1e169b1",
+        "turnIndex": 3,
+        "why": "Assistant lists must-try Halloween-themed food items, supporting the user’s interest in event weekend experiences."
+      },
+      {
+        "sessionId": "answer_a1e169b1",
+        "turnIndex": 5,
+        "why": "Assistant gives unique/exclusive Halloween dining experiences and special Halloween menus/restaurants."
+      },
+      {
+        "sessionId": "answer_a1e169b1",
+        "turnIndex": 7,
+        "why": "Assistant includes pricing and perks for the Halloween Horror Nights VIP Experience Gourmet Buffet."
+      },
+      {
+        "sessionId": "answer_a1e169b1",
+        "turnIndex": 9,
+        "why": "Assistant describes what to expect from the Behind-the-Scenes Tour add-on to the VIP Experience."
+      },
+      {
+        "sessionId": "answer_a1e169b1",
+        "turnIndex": 11,
+        "why": "Assistant explains whether/how to book the Universal Studios Hollywood VIP Experience package online vs by phone."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Focus on the conversation where theme-park recommendations were requested and provided, especially Halloween-themed event suggestions and related VIP food/dining details.",
+    "candidateStatus": "found",
+    "missingRisk": "If the user wants theme-park weekend suggestions beyond Halloween or outside the LA-area parks covered in the retrieved session, the selected turns may not fully address that broader scope.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_a1e169b1",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_a1e169b1",
+        "turnIndex": 1,
+        "why": "Assistant provides the core recommendations for upcoming theme park events (Halloween Time, Knott’s Scary Farm, Fright Fest/Fright Fest, etc.)."
+      },
+      {
+        "sessionId": "answer_a1e169b1",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_a1e169b1",
+        "turnIndex": 3,
+        "why": "Assistant lists must-try Halloween-themed food items, supporting the user’s interest in event weekend experiences."
+      },
+      {
+        "sessionId": "answer_a1e169b1",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_a1e169b1",
+        "turnIndex": 5,
+        "why": "Assistant gives unique/exclusive Halloween dining experiences and special Halloween menus/restaurants."
+      },
+      {
+        "sessionId": "answer_a1e169b1",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_a1e169b1",
+        "turnIndex": 7,
+        "why": "Assistant includes pricing and perks for the Halloween Horror Nights VIP Experience Gourmet Buffet."
+      },
+      {
+        "sessionId": "answer_a1e169b1",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_a1e169b1",
+        "turnIndex": 9,
+        "why": "Assistant describes what to expect from the Behind-the-Scenes Tour add-on to the VIP Experience."
+      },
+      {
+        "sessionId": "answer_a1e169b1",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_a1e169b1",
+        "turnIndex": 11,
+        "why": "Assistant explains whether/how to book the Universal Studios Hollywood VIP Experience package online vs by phone."
+      }
+    ]
+  }
+}

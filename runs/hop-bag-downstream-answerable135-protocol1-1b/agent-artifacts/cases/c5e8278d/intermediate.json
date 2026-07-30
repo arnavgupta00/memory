@@ -1,0 +1,43 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the most direct mention of the prior last name, including any immediate surrounding context about the name change.",
+    "candidateStatus": "found",
+    "missingRisk": "If the user provided multiple name-change events, this session might reflect only the most recent change; there could be an earlier last name not mentioned here.",
+    "items": [
+      {
+        "sessionId": "answer_f6168136",
+        "turnIndex": 0,
+        "why": "Directly states: old last name was Johnson and now it is Winters, which is the needed prior last name."
+      },
+      {
+        "sessionId": "answer_f6168136",
+        "turnIndex": 1,
+        "why": "Assistant acknowledges the recent name change (context that the user’s statement is about a legal name change)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the most direct mention of the prior last name, including any immediate surrounding context about the name change.",
+    "candidateStatus": "found",
+    "missingRisk": "If the user provided multiple name-change events, this session might reflect only the most recent change; there could be an earlier last name not mentioned here.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_f6168136",
+        "turnIndex": 0,
+        "why": "Directly states: old last name was Johnson and now it is Winters, which is the needed prior last name."
+      },
+      {
+        "sessionId": "answer_f6168136",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_f6168136",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

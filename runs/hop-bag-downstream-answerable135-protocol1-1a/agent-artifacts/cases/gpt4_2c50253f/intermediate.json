@@ -1,0 +1,18 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Wake-up times specifically for Tuesdays and Thursdays mentioned by the user.",
+  "candidateStatus": "found",
+  "missingRisk": "You said you wake up 15 minutes earlier on Tuesdays and Thursdays, but the exact resulting wake-up clock time for those days (e.g., 7:00 AM vs another time) isn’t explicitly stated in the provided turns; only the baseline wake-up and the “15 minutes earlier” change are present.",
+  "items": [
+    {
+      "sessionId": "answer_9af4e346_2",
+      "turnIndex": 0,
+      "why": "States that on Tuesdays and Thursdays you started waking up 15 minutes earlier to meditate and do yoga."
+    },
+    {
+      "sessionId": "answer_9af4e346_1",
+      "turnIndex": 0,
+      "why": "Provides your baseline wake-up time of 7:00 AM (context needed to convert the “15 minutes earlier” to the Tuesday/Thursday wake-up time)."
+    }
+  ]
+}

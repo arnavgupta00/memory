@@ -1,0 +1,109 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "answer_669318cf_2",
+      "turnIndex": 0,
+      "date": "2023/05/21 (Sun) 09:34",
+      "role": "user",
+      "text": "I'm trying to organize my writing projects and was wondering if you could help me with some tools or apps to help me stay on top of my writing schedule and deadlines. By the way, I've been on a roll lately - I've written 17 poems in the past two weeks, and it's been a great way to express myself creatively.",
+      "why": "per-session extractor: Provides a concrete quantity of written pieces (poems) within a defined recent time window relevant to estimating total pieces completed since restarting writing.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_669318cf_1",
+      "turnIndex": 0,
+      "date": "2023/05/28 (Sun) 08:32",
+      "role": "user",
+      "text": "I'm looking for some writing prompts to help me stay motivated. I've written five short stories so far, and I'm hoping to keep the momentum going. Do you have any prompts or ideas that might spark some inspiration?",
+      "why": "per-session extractor: Provides a quantitative writing completion claim (five short stories) that could be part of the “total pieces of writing completed” count, though it doesn’t include poems or writing-challenge pieces.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_669318cf_1",
+      "turnIndex": 4,
+      "date": "2023/05/28 (Sun) 08:32",
+      "role": "user",
+      "text": "I'm thinking of writing a story from the perspective of a book. Since I've written five short stories so far, I'm wondering if I could link this new story to one of my previous ones. Do you have any suggestions on how I could do that?",
+      "why": "per-session extractor: Reinforces that the user has completed five short stories and indicates they are starting a new linked story (potentially relevant to total completed pieces if later sessions confirm completion).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_669318cf_1",
+      "turnIndex": 6,
+      "date": "2023/05/28 (Sun) 08:32",
+      "role": "user",
+      "text": "I like the idea of the book being owned by a character from one of my previous stories. I think I'll choose \"The Mysterious Neighbor\" as the story to link it to. The book could have been a favorite of the neighbor's, and it holds sentimental value. What kind of details should I include to make the connection between the two stories clear without making it too obvious or forced?",
+      "why": "per-session extractor: Indicates a planned connection to a prior work and suggests a new piece being developed, which could matter for the writing-challenge/overall outputs tally if completion is recorded elsewhere.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_669318cf_3",
+      "turnIndex": 0,
+      "date": "2023/05/30 (Tue) 15:54",
+      "role": "user",
+      "text": "I'm trying to organize my writing files and I was wondering if you could suggest some ways to categorize and store them. I've been writing a lot lately, including short stories and poetry, and I'd like to keep track of my progress. By the way, I've also just started participating in a writing challenge on a social media platform, where we're given a prompt every week and have to write a short piece in response. Last week's prompt was \"forgotten memories\", and I wrote a piece titled \"The Smell of Old Books\".",
+      "why": "per-session extractor: Relevant to the question’s categories (short stories and poems) and indicates the user has written in these forms, though no counts are provided.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_669318cf_2",
+      "turnIndex": 1,
+      "date": "2023/05/21 (Sun) 09:34",
+      "role": "assistant",
+      "text": "Congratulations on your creative streak! 17 poems in two weeks is an impressive accomplishment. I'd be happy to help you find tools and apps to help you stay organized and on track with your writing projects.\n\nHere are some popular options to consider:\n\n**Writing Project Management Tools:**\n\n1. **Trello**: A visual project management tool that uses boards, lists, and cards to organize tasks and deadlines. You can create boards for different projects, add cards for individual tasks, and set deadlines.\n2. **Asana**: A task management tool that helps you organize and prioritize your writing projects. You can create tasks, set deadlines, and track progress.\n3. **Scrivener**: A writing software that offers project management features, including a corkboard, outliner, and deadline tracking.\n\n**Writing Scheduling Tools:**\n\n1. **Google Calendar**: A calendar tool that allows you to schedule writing sessions, set reminders, and block time for specific projects.\n2. **Pomodoro Timers**: Tools like Tomato Timer, Focus Booster, or Pomofocus help you stay focused with timed writing sessions (e.g., 25 minutes of writing + 5 minutes of break).\n3. **Writing Habit Trackers**: Apps like Habitica, HabitBull, or Loop Habit Tracker help you track your daily writing habits and stay consistent.\n\n**Other Tools:**\n\n1. **Evernote**: A note-taking app that allows you to organize your ideas, research, and writing notes.\n2. **Ulysses**: A writing app that offers a distraction-free writing environment, organization features, and deadline tracking.\n3. **RescueTime**: A time management tool that tracks how you spend your time on your computer or mobile device, helping you identify areas for improvement.\n\n**Poetry-Specific Tools:**\n\n1. **Poetry apps**: Apps like Poet's Pad, Poetry Editor, or HaikuJAM provide writing prompts, organization features, and editing tools specifically designed for poetry.\n\nExperiment with these tools to find the ones that work best for you and your writing style. Remember, the key to staying organized is to find a system that you enjoy using and can commit to regularly.\n\nWhat do you think? Is there a particular aspect of writing project management or scheduling that you'd like to focus on?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_669318cf_1",
+      "turnIndex": 1,
+      "date": "2023/05/28 (Sun) 08:32",
+      "role": "assistant",
+      "text": "Congratulations on writing five short stories! That's a great accomplishment, and I'm happy to help you keep the momentum going. Here are some writing prompts and ideas to spark inspiration:\n\n**Character-driven prompts:**\n\n1. **The Last Memory**: Write a story about a character who is struggling to hold on to their last memory of a lost loved one. Explore the emotions and themes that come with grief and nostalgia.\n2. **The Stranger in the Mirror**: Your character wakes up one morning to find a stranger staring back at them in the mirror. Who is this person, and how do they navigate their new identity?\n3. **The Secret Life**: Create a character with a secret life or hobby that no one knows about. How do they balance their secret with their everyday life, and what happens when it's threatened to be exposed?\n\n**Plot-driven prompts:**\n\n1. **The Mysterious Box**: A character receives a mysterious box with no return address or indication of who sent it. What's inside, and how does it change their life?\n2. **The Time Loop**: Your character is stuck in a time loop, reliving the same day over and over. How do they try to break the cycle, and what do they learn about themselves in the process?\n3. **The Last Hope**: The world is ending, and your character is one of the few survivors. What do they do to try and save humanity, and what are the consequences of their actions?\n\n**World-building prompts:**\n\n1. **The Floating City**: Create a city that exists in the sky, and follow a character as they navigate its wonders and dangers.\n2. **The Underwater Colony**: Your character lives in an underwater colony, where the rules of the surface don't apply. Explore the challenges and opportunities of living in this unique environment.\n3. **The Post-Apocalyptic Future**: The world has ended, but your character is part of a small group trying to rebuild. What are the challenges they face, and how do they work together to create a new society?\n\n**Flash fiction prompts:**\n\n1. **Five-Word Story**: Write a complete story using only five words. (Example: \"For sale: baby shoes, never worn.\")\n2. **Six-Word Story**: Write a story using only six words. (Example: \"Last night, I died again.\")\n3. **Drabble**: Write a 100-word story with a clear beginning, middle, and end.\n\n**Other ideas:**\n\n1. **Revisit a Previous Character**: Take a character from one of your previous stories and continue their journey in a new tale.\n2. **Experiment with Genre**: Try writing in a genre you've never attempted before, like science fiction, fantasy, or horror.\n3. **Write from a Different Perspective**: Write a story from the perspective of an inanimate object, an animal, or a non-human character.\n\nI hope these prompts and ideas help spark inspiration for your next short story!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_669318cf_1",
+      "turnIndex": 3,
+      "date": "2023/05/28 (Sun) 08:32",
+      "role": "assistant",
+      "text": "Writing from the perspective of an inanimate object can be a unique and fascinating way to tell a story. Here are some tips to help you effectively write from the perspective of an inanimate object:\n\n1. **Choose an object with a rich history**: Select an object that has been a part of multiple events, has been handled by various people, or has witnessed significant moments in history. This will give you a wealth of material to draw from and make your story more engaging.\n2. **Give your object a distinct voice**: Since your object can't speak, you'll need to create a voice that's distinct from human characters. Consider the object's purpose, its age, and the people who've interacted with it to develop its tone, language, and personality.\n3. **Use sensory details**: Objects experience the world differently than humans do. Focus on the senses that are relevant to your object, such as sight, sound, touch, or smell. For example, a old clock might describe the feel of dust accumulating on its surface or the sound of its ticking mechanism.\n4. **Show, don't tell**: Instead of telling the reader about the object's history, show it through descriptive scenes and vignettes. This will help the reader infer the object's significance and create a more immersive experience.\n5. **Explore the object's emotional connection to humans**: While objects don't have emotions, they can evoke emotions in humans. Explore the relationships between your object and the people who've interacted with it. How has the object been used, loved, or mistreated? How has it brought people together or driven them apart?\n6. **Consider the object's purpose and function**: Think about how the object's purpose has changed over time or how it's been repurposed. This can reveal interesting insights into human behavior, cultural shifts, or historical events.\n7. **Play with time and perspective**: Since objects can exist for centuries, you can use non-linear storytelling to jump between different time periods, owners, or events. This can create a unique narrative structure and add depth to your story.\n8. **Research and authenticity**: If you're writing about a specific object, research its history, design, and cultural significance. This will help you create a more authentic and detailed narrative.\n\nSome examples of inanimate objects that could make great narrators:\n\n* A antique clock that's been passed down through generations\n* A worn, leather-bound book that's been read by countless people\n* A vintage typewriter that's been used by famous authors\n* A family heirloom that's been lost and found multiple times\n* A streetlamp that's watched over a city's transformation\n\nSome famous examples of stories told from the perspective of inanimate objects include:\n\n* \"The Yellow Wallpaper\" by Charlotte Perkins Gilman (told from the perspective of a room)\n* \"The Gift of the Magi\" by O. Henry (told from the perspective of a hair comb)\n* \"The Story of an Hour\" by Kate Chopin (told from the perspective of a room)\n\nRemember to have fun and be creative when writing from the perspective of an inanimate object. It's a unique opportunity to explore the world in a fresh and imaginative way!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_669318cf_1",
+      "turnIndex": 5,
+      "date": "2023/05/28 (Sun) 08:32",
+      "role": "assistant",
+      "text": "What a great idea! Linking your new story to one of your previous ones can add depth and continuity to your body of work. Since you're writing from the perspective of a book, you have a natural connection to explore. Here are some suggestions on how you could link your new story to one of your previous ones:\n\n1. **The book was owned by a character**: Choose a character from one of your previous stories and make the book a significant object in their life. Perhaps the book was a favorite of theirs, or it held sentimental value. This connection allows you to revisit the character and explore their thoughts, feelings, and experiences through the book's perspective.\n2. **The book contains a story within a story**: One of your previous stories could be a tale told within the pages of the book. The book could be a collection of short stories, and one of them is a story you've already written. This allows you to revisit the world and characters of your previous story while still offering a new narrative.\n3. **The book is a catalyst for a character's journey**: The book could be the catalyst that sets a character from one of your previous stories on a new path. For example, the book might contain a hidden message, a mysterious code, or a prophecy that inspires the character to embark on a new adventure.\n4. **The book is a family heirloom**: The book could be passed down through generations of a family, with each generation leaving their mark on the book. You could explore the history of the family and how the book has influenced their lives, connecting it to a character or storyline from one of your previous stories.\n5. **The book is a portal to another world**: The book could be a portal to a world or dimension that exists within one of your previous stories. The book becomes a gateway for characters to travel between worlds, allowing you to revisit familiar settings and characters while introducing new ones.\n6. **The book contains a character's backstory**: One of your previous characters might have written the book, and it contains their backstory or secrets. This allows you to delve deeper into the character's past, exploring their motivations and experiences in a new light.\n\nChoose a connection that resonates with you, and feel free to modify or combine these ideas to fit your story. Remember to have fun and be creative! Linking your stories can add a new layer of depth to your writing, and it's a great way to reward readers who have followed your work.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_669318cf_1",
+      "turnIndex": 7,
+      "date": "2023/05/28 (Sun) 08:32",
+      "role": "assistant",
+      "text": "\"The Mysterious Neighbor\" is a great story to link to. By making the book a favorite of the neighbor's, you can create a rich emotional connection between the two stories. To make the connection clear without making it too obvious or forced, consider including the following details:\n\n1. **Subtle mentions**: Sprinkle subtle mentions of the neighbor throughout the book's narrative. For example, the book might remember the neighbor's touch, their scent, or the way they used to read it by the window. These small details will help readers who are familiar with \"The Mysterious Neighbor\" make the connection.\n2. ** Shared themes or motifs**: Explore themes or motifs that were present in \"The Mysterious Neighbor\" and weave them into the book's narrative. This will create a sense of continuity between the two stories. For example, if \"The Mysterious Neighbor\" touched on the theme of loneliness, the book could reflect on how it brought comfort to the neighbor during difficult times.\n3. **Specific objects or settings**: Include specific objects or settings from \"The Mysterious Neighbor\" in the book's narrative. This could be a particular chair, a favorite coffee shop, or a specific street. These details will help readers connect the dots between the two stories.\n4. **The neighbor's writing or notes**: The book could contain notes or writing from the neighbor, which would provide a direct link to the character. This could be in the form of annotations, bookmarks, or even a hidden message. This will make the connection clear without being too on-the-nose.\n5. **The book's significance**: Show how the book was significant to the neighbor, such as being a gift from a loved one or a reminder of a special event. This will help readers understand why the book is important to the neighbor and why it's being passed down.\n6. **Echoes of the neighbor's personality**: Infuse the book's narrative with echoes of the neighbor's personality, such as their sense of humor, their love of literature, or their quirks. This will help readers feel like they're revisiting a familiar character.\n7. **A nod to the original story's plot**: You could include a subtle nod to the plot of \"The Mysterious Neighbor\" within the book's narrative. For example, the book might remember a specific conversation the neighbor had with the protagonist or a particular event that occurred in the original story.\n\nRemember to strike a balance between making the connection clear and not being too obvious. You want to reward readers who are familiar with \"The Mysterious Neighbor\" without making the connection feel forced or artificial. By including these subtle details, you'll create a sense of continuity between the two stories that will enrich the reading experience.",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_669318cf_3",
+      "turnIndex": 1,
+      "date": "2023/05/30 (Tue) 15:54",
+      "role": "assistant",
+      "text": "Congratulations on your writing progress and participation in the writing challenge! Organizing your files can help you track your progress, easily locate specific pieces, and even inspire new ideas. Here are some suggestions for categorizing and storing your writing files:\n\n**Categorization Ideas:**\n\n1. **Genre**: Create folders or labels for different genres, such as Short Stories, Poetry, Flash Fiction, Non-Fiction, etc.\n2. **Project-based**: Organize files by specific projects, like individual short stories or poetry collections. This can help you keep all related files and drafts together.\n3. **Theme or Topic**: Categorize files by theme, like \"Memory and Nostalgia\" (perfect for your \"The Smell of Old Books\" piece!), \"Fantasy\", \"Romance\", etc.\n4. **Chronological**: Organize files by date, with folders or labels for each year, month, or quarter. This can help you track your progress over time.\n5. **Writing Challenge**: Create a folder or label specifically for your writing challenge submissions, with subfolders for each prompt (e.g., \"Forgotten Memories\", \"Future Prompts\", etc.).\n\n**Storage Options:**\n\n1. **Digital Folders**: Create a hierarchical folder structure on your computer or cloud storage service (e.g., Google Drive, Dropbox, OneDrive). This allows easy access and organization of your files.\n2. **Cloud-based Note-taking Apps**: Consider using apps like Evernote, Simplenote, or Bear to store and organize your writing files. These apps often have tagging and searching features to help you quickly find specific pieces.\n3. **Physical Binders or Folders**: If you prefer a more tactile approach, use physical binders or folders to store printed copies of your work. This can be helpful for reviewing and editing your work offline.\n4. **Hybrid Approach**: Combine digital and physical storage by keeping digital copies of your files and printing out select pieces for a physical archive.\n\n**Additional Tips:**\n\n1. **Use clear and descriptive file names**: Include the title, date, and any relevant keywords in your file names to make them easy to find.\n2. **Keep multiple drafts and versions**: Store different versions of your work to track changes and progress.\n3. **Add metadata or tags**: Use keywords, tags, or metadata to add context to your files, making them easier to search and categorize.\n4. **Regularly back up your files**: Ensure your files are safe by regularly backing them up to an external hard drive, cloud storage, or both.\n\nI hope these suggestions help you organize your writing files and keep track of your progress!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 17643,
+  "estimatedTokens": 4411
+}

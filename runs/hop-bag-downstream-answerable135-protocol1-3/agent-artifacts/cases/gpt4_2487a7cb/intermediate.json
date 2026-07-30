@@ -1,0 +1,38 @@
+[
+  {
+    "session_id": "answer_1c6b85ea_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session only mentions that you participated in a webinar called \"Data Analysis using Python\" two months ago. It does not mention attending the \"Effective Time Management\" workshop, so it cannot determine which event you attended first.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "You participated in a webinar on \"Data Analysis using Python\" two months ago.",
+          "why": "This provides a relative timing for attending the \"Data Analysis using Python\" webinar, which is one of the two events in the question."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "4f5880c6_6",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains only general Q&A about management consulting skills, qualifications, and typical project/data-analysis responsibilities. It does not mention attending any specific event, workshop, webinar, or provide any timestamps related to 'Effective Time Management' or 'Data Analysis using Python', so there is no evidence to determine which event was attended first.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_1c6b85ea_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session only mentions attending the \"Effective Time Management\" workshop (last Saturday) and does not mention the \"Data Analysis using Python\" webinar. If the webinar was attended earlier, that information is missing from this session and cannot be resolved here.",
+      "claims": [
+        {
+          "turnIndex": 10,
+          "fact": "User attended the workshop on \"Effective Time Management\" at the local community center last Saturday.",
+          "why": "This is a concrete event the user says they attended and provides a relative timing reference (\"last Saturday\") relevant to determining which event they attended first."
+        }
+      ]
+    }
+  }
+]

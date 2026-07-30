@@ -1,0 +1,43 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Dinner parties the user attended within the past month relative to 2023/05/30 (i.e., roughly 2023/04/30–2023/05/30); include potlucks/BBQs/feasts described as dinner-party-like social gatherings.",
+  "candidateStatus": "found",
+  "missingRisk": "Some attended dinner parties may be mentioned in other sessions not included here, or the timeframe/dates for certain gatherings may be ambiguous.",
+  "items": [
+    {
+      "sessionId": "21f8f481_3",
+      "turnIndex": 0,
+      "why": "User mentions returning from a birthday party for David “last week” and describes activities; could be considered a dinner-party-style social event depending on context."
+    },
+    {
+      "sessionId": "21f8f481_3",
+      "turnIndex": 4,
+      "why": "User states they’re organizing apartment for a game night or potluck dinner soon; helps characterize their social/dinner-party activities, though not an attended event."
+    },
+    {
+      "sessionId": "answer_75eca223_1",
+      "turnIndex": 0,
+      "why": "User says they attended a lovely Italian feast at Sarah's place “last week,” which is a direct dinner-party attendance within the last month."
+    },
+    {
+      "sessionId": "answer_75eca223_2",
+      "turnIndex": 4,
+      "why": "User references experience with dinner parties, including a low-key potluck at Alex’s place “yesterday,” which is within the last month and likely a dinner party."
+    },
+    {
+      "sessionId": "answer_75eca223_2",
+      "turnIndex": 4,
+      "why": "Same turn also mentions a BBQ dinner party at Mike’s place “where we watched a football game together,” with a relative time (“Mike’s place” event timing in the same set of described dinner-party experiences)."
+    },
+    {
+      "sessionId": "answer_75eca223_2",
+      "turnIndex": 2,
+      "why": "User recalls a BBQ theme “like the one we had at Mike's place two weeks ago”; indicates another dinner-party-like attendance within the past month."
+    },
+    {
+      "sessionId": "eb6737c0_1",
+      "turnIndex": 0,
+      "why": "User mentions having a big party with at least 15 people to watch the Super Bowl about a month ago; may or may not count as a dinner party, but it’s a social event within the timeframe and could affect the counting depending on interpretation."
+    }
+  ]
+}

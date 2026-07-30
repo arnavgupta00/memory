@@ -1,0 +1,118 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Personal best time(s) you’ve stated for charity 5K runs (and any later targets referencing those times)",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_a25d4a91_1",
+      "turnIndex": 4,
+      "date": "2023/05/23 (Tue) 13:01",
+      "role": "user",
+      "text": "That's really helpful, thanks! I've been doing some running lately, and I'm happy to say that I recently set a personal best time in a charity 5K run with a time of 27:12. Do you have any tips on how to improve my running technique to make me more efficient and effective on the soccer field?",
+      "why": "States your personal best time in a charity 5K run as 27:12.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_a25d4a91_2",
+      "turnIndex": 0,
+      "date": "2023/05/30 (Tue) 13:53",
+      "role": "user",
+      "text": "I'm training for another charity 5K run coming up and I was wondering if you could give me some tips on how to improve my endurance. By the way, I'm hoping to beat my personal best time of 25:50 this time around.",
+      "why": "Mentions your goal for a later charity 5K run and references beating your personal best time of 25:50.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_a25d4a91_2",
+      "turnIndex": 10,
+      "date": "2023/05/30 (Tue) 13:53",
+      "role": "user",
+      "text": "I'm getting ready for a charity 5K run and I was wondering if you could give me some tips on how to improve my endurance. By the way, I'm hoping to beat my personal best time this time around.",
+      "why": "Another training-related charity 5K run message referencing improving your personal-best time (context for the later personal-best value).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_a25d4a91_1",
+      "turnIndex": 0,
+      "date": "2023/05/23 (Tue) 13:01",
+      "role": "user",
+      "text": "I'm trying to plan out my fitness schedule for the next few weeks. Can you remind me when my next soccer game is with my coworkers?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a25d4a91_1",
+      "turnIndex": 2,
+      "date": "2023/05/23 (Tue) 13:01",
+      "role": "user",
+      "text": "I think it's in two weeks, I remember my teammate saying something about it. Can you give me some tips on how to improve my endurance for soccer, since we're playing every two weeks?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a25d4a91_1",
+      "turnIndex": 6,
+      "date": "2023/05/23 (Tue) 13:01",
+      "role": "user",
+      "text": "That's really helpful, thanks! I've been focusing on strengthening my core and legs, which has helped with my running and soccer games. Speaking of soccer, I recently scored a goal in a recreational game with my coworkers, which was a highlight for me since I'm not typically a goal-scorer. Do you have any tips on how to improve my shooting technique in soccer?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a25d4a91_1",
+      "turnIndex": 8,
+      "date": "2023/05/23 (Tue) 13:01",
+      "role": "user",
+      "text": "That's really helpful, thanks! I've been thinking about signing up for a tennis tournament that's happening on May 6th. I've been playing tennis casually for a few years, but this will be my first real tournament. Do you have any tips on how to prepare for it?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a25d4a91_1",
+      "turnIndex": 10,
+      "date": "2023/05/23 (Tue) 13:01",
+      "role": "user",
+      "text": "That's really helpful, thanks! I've been practicing my serve and volleys, and I'm hoping to make it to at least the quarterfinals. I'll definitely work on my footwork and returns as well. Do you have any tips on how to choose the right tennis racket and strings for my playing style?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a25d4a91_2",
+      "turnIndex": 2,
+      "date": "2023/05/30 (Tue) 13:53",
+      "role": "user",
+      "text": "What should I focus on during my interval training, is it more important to push myself to complete the intervals or to focus on maintaining a consistent pace throughout the workout?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a25d4a91_2",
+      "turnIndex": 4,
+      "date": "2023/05/30 (Tue) 13:53",
+      "role": "user",
+      "text": "I was thinking about incorporating strength training into my routine, can you recommend some exercises that will help improve my running performance?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a25d4a91_2",
+      "turnIndex": 6,
+      "date": "2023/05/30 (Tue) 13:53",
+      "role": "user",
+      "text": "I'm actually getting ready for a tennis tournament coming up on May 6th and I was wondering if you could give me some tips on how to improve my serve.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a25d4a91_2",
+      "turnIndex": 8,
+      "date": "2023/05/30 (Tue) 13:53",
+      "role": "user",
+      "text": "Thanks for the tips! I've been working on my serve and I think I need to focus on my toss consistency. Do you have any drills that can help me improve my toss?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 2554,
+  "estimatedTokens": 639
+}

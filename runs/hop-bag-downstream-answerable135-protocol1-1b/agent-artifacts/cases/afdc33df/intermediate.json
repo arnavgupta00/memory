@@ -1,0 +1,83 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Focus on the assistant’s provided, kitchen-cleanliness-related tips (cleaning a sink/drain area and reducing countertop clutter via organization), plus any nearby maintenance items that cause mess (leaks/surface damage).",
+    "candidateStatus": "found",
+    "missingRisk": "No candidate session explicitly gives general daily/weekly kitchen-cleaning routines for “keeping it clean”; coverage may be limited to specific problem areas (garbage disposal, utensil storage, leaks, countertop scratches).",
+    "items": [
+      {
+        "sessionId": "answer_8549e5e0",
+        "turnIndex": 1,
+        "why": "Contains the assistant’s direct tips for cleaning and maintaining a garbage disposal (odor/debris prevention), which affects kitchen cleanliness."
+      },
+      {
+        "sessionId": "answer_8549e5e0",
+        "turnIndex": 3,
+        "why": "Contains the assistant’s utensil-holder organization recommendations aimed at keeping countertops clutter-free and reducing kitchen mess."
+      },
+      {
+        "sessionId": "answer_8549e5e0",
+        "turnIndex": 5,
+        "why": "Provides DIY guidance for repairing/removing granite countertop scratches near the sink, relevant to maintaining a cleaner-looking kitchen surface."
+      },
+      {
+        "sessionId": "answer_8549e5e0",
+        "turnIndex": 7,
+        "why": "Includes troubleshooting/fixing a slightly leaking kitchen faucet, which can create ongoing mess/water buildup."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Focus on the assistant’s provided, kitchen-cleanliness-related tips (cleaning a sink/drain area and reducing countertop clutter via organization), plus any nearby maintenance items that cause mess (leaks/surface damage).",
+    "candidateStatus": "found",
+    "missingRisk": "No candidate session explicitly gives general daily/weekly kitchen-cleaning routines for “keeping it clean”; coverage may be limited to specific problem areas (garbage disposal, utensil storage, leaks, countertop scratches).; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_8549e5e0",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_8549e5e0",
+        "turnIndex": 1,
+        "why": "Contains the assistant’s direct tips for cleaning and maintaining a garbage disposal (odor/debris prevention), which affects kitchen cleanliness."
+      },
+      {
+        "sessionId": "answer_8549e5e0",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_8549e5e0",
+        "turnIndex": 3,
+        "why": "Contains the assistant’s utensil-holder organization recommendations aimed at keeping countertops clutter-free and reducing kitchen mess."
+      },
+      {
+        "sessionId": "answer_8549e5e0",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_8549e5e0",
+        "turnIndex": 5,
+        "why": "Provides DIY guidance for repairing/removing granite countertop scratches near the sink, relevant to maintaining a cleaner-looking kitchen surface."
+      },
+      {
+        "sessionId": "answer_8549e5e0",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_8549e5e0",
+        "turnIndex": 7,
+        "why": "Includes troubleshooting/fixing a slightly leaking kitchen faucet, which can create ongoing mess/water buildup."
+      },
+      {
+        "sessionId": "answer_8549e5e0",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

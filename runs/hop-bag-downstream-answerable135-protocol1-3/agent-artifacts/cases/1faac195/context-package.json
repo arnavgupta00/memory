@@ -1,0 +1,46 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "answer_d01949bf",
+      "turnIndex": 2,
+      "date": "2023/05/20 (Sat) 21:14",
+      "role": "user",
+      "text": "I'm thinking of visiting my sister Emily in Denver soon, and I was wondering if you knew any kid-friendly attractions there?",
+      "why": "per-session extractor: Indicates the sister Emily is associated with Denver (location claim may answer where she lives).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_d01949bf",
+      "turnIndex": 1,
+      "date": "2023/05/20 (Sat) 21:14",
+      "role": "assistant",
+      "text": "What a wonderful adventure you're planning! I'd be delighted to help you with kid-friendly attractions in various cities. Here are some popular and fun suggestions:\n\n**East Coast:**\n\n1. **Orlando, Florida**:\n\t* Walt Disney World (Magic Kingdom, Epcot, Hollywood Studios, and Animal Kingdom)\n\t* Universal Orlando Resort (Universal Studios, Islands of Adventure, and Volcano Bay)\n\t* LEGOLAND Florida\n2. **Washington, D.C.**:\n\t* National Zoo (free admission)\n\t* National Museum of Natural History (hands-on exhibits and dinosaur fossils)\n\t* National Children's Museum (play-based learning)\n3. **New York City, New York**:\n\t* American Museum of Natural History (dinosaurs, space, and more)\n\t* Central Park Zoo and Conservatory Garden\n\t* Children's Museum of the Arts (interactive art exhibits)\n\n**Midwest:**\n\n1. **Chicago, Illinois**:\n\t* Navy Pier (amusement park, boat cruises, and entertainment)\n\t* Lincoln Park Zoo (free admission)\n\t* Museum of Science and Industry (hands-on exhibits and a coal mine tour)\n2. **Indianapolis, Indiana**:\n\t* Indianapolis Zoo (African Plains exhibit and Dolphin Show)\n\t* Children's Museum of Indianapolis (largest children's museum in the world)\n\t* Conner Prairie (interactive historical areas and farm)\n\n**South:**\n\n1. **Gatlinburg, Tennessee**:\n\t* Dollywood (Dolly Parton's theme park with roller coasters and live shows)\n\t* Ripley's Aquarium of the Smokies (shark tunnel and penguin exhibit)\n\t* Ober Gatlinburg Ski Resort and Amusement Park (year-round fun)\n2. **San Antonio, Texas**:\n\t* San Antonio Zoo and Aquarium (African Plains exhibit and sea lion show)\n\t* Natural Bridge Caverns (underground cave exploration)\n\t* Sea Life San Antonio Aquarium (interactive exhibits and shark tunnel)\n\n**West Coast:**\n\n1. **Anaheim, California**:\n\t* Disneyland Resort (Disneyland Park, Disney California Adventure, and Downtown Disney)\n\t* Knott's Berry Farm (roller coasters and Camp Snoopy)\n\t* Adventure City (smaller, more affordable theme park)\n2. **San Francisco, California**:\n\t* San Francisco Zoo and Gardens (African Savannah exhibit and steam train ride)\n\t* Exploratorium (interactive science museum)\n\t* Pier 39 (sea lions, arcade games, and street performers)\n\n**Other notable attractions:**\n\n1. **St. Louis, Missouri**: City Museum (one-of-a-kind, interactive museum made from reclaimed materials)\n2. **Denver, Colorado**: Denver Zoo (naturalistic habitats and a playground)\n3. **Portland, Oregon**: Oregon Zoo (African Savannah exhibit and train ride)\n\nRemember to check the attractions' websites for hours, prices, and age restrictions to ensure they fit your family's needs. Have a fantastic road trip and create wonderful memories with your family!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_d01949bf",
+      "turnIndex": 3,
+      "date": "2023/05/20 (Sat) 21:14",
+      "role": "assistant",
+      "text": "Denver is a great destination! There are plenty of fun and kid-friendly attractions in the Mile High City. Here are some popular ones to consider:\n\n1. **Denver Zoo**: Home to over 4,000 animals, the Denver Zoo offers a variety of exhibits, including the popular African Savannah and the new Elephant Passage. There are also a playground, a carousel, and a train ride.\n2. **Children's Museum of Denver at Marsico Campus**: This museum features interactive exhibits focused on art, science, and imagination. Kids can explore a mini-city, play with bubbles, and create their own art projects.\n3. **Denver Museum of Nature & Science**: While not exclusively a children's museum, the DMNS has plenty of kid-friendly exhibits, including dinosaur fossils, a hands-on space exhibit, and an IMAX theater.\n4. **Denver Art Museum**: The DAM offers family-friendly activities and tours, including the Family Center, which features art projects and play areas. The museum's outdoor sculpture garden is also a great spot for kids to run around.\n5. **Washington Park**: This sprawling park has several playgrounds, a lake, and plenty of green space for picnics and outdoor games. You can also rent bikes or take a stroll around the park.\n6. **Denver Botanic Gardens**: The gardens offer a variety of kid-friendly activities, including a children's garden with a maze, a treehouse, and a play area.\n7. **Elitch Gardens Theme and Water Park**: For some thrill and fun, head to Elitch Gardens, which features roller coasters, water slides, and a kiddie land for younger kids.\n8. **Wings Over the Rockies Air and Space Museum**: Located in a historic airplane hangar, this museum showcases historic aircraft and offers interactive exhibits, including a flight simulator.\n9. **Dinosaur Ridge**: Just west of Denver, Dinosaur Ridge is a famous fossil site with over 1,000 dinosaur footprints and 300 dinosaur tracks. There's also a museum and a playground on site.\n10. **Confluence Park**: This park is located where the South Platte River meets the Cherry Creek, offering a playground, a splash pad, and a skate park.\n\nThese are just a few of the many kid-friendly attractions in Denver. Be sure to check the attractions' websites for hours, prices, and age restrictions to plan your trip accordingly.\n\nHave a great time visiting your sister and exploring Denver with the kids!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_d01949bf",
+      "turnIndex": 4,
+      "date": "2023/05/20 (Sat) 21:14",
+      "role": "user",
+      "text": "I'm also thinking of bringing my niece Emma, who's taking piano lessons, to a concert or a show that might interest her. Do you have any suggestions for kid-friendly performances or events in Denver that might inspire her love for music?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 5402,
+  "estimatedTokens": 1351
+}

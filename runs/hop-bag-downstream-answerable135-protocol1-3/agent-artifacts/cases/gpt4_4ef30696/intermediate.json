@@ -1,0 +1,40 @@
+[
+  {
+    "session_id": "answer_f964cea3_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session contains a date for finishing 'The Nightingale' (2022/01/15) but no information about when 'The Hitchhiker's Guide to the Galaxy' was started, so the time difference cannot be computed from this session alone.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "Today the user is looking for book recommendations.",
+          "why": "Provides session context but does not affect the requested date difference directly."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "The user just finished reading 'The Nightingale' by Kristin Hannah today.",
+          "why": "This is a key endpoint for the calculation (day finished 'The Nightingale')."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "The session date is 2022/01/15 (Sat) 08:16, which is described as 'today' when the user finished 'The Nightingale'.",
+          "why": "Provides the specific calendar date to associate with the 'finished reading' claim."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_f964cea3_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session includes when you started reading 'The Hitchhiker's Guide to the Galaxy' but does not mention when you finished reading 'The Nightingale', so the day-difference cannot be computed from this session alone.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "Today I just started reading 'The Hitchhiker's Guide to the Galaxy' by Douglas Adams.",
+          "why": "This is the only session evidence about the start date for 'The Hitchhiker's Guide to the Galaxy' needed for calculating the day difference."
+        }
+      ]
+    }
+  }
+]

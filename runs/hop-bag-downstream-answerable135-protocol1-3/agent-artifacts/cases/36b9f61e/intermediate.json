@@ -1,0 +1,107 @@
+[
+  {
+    "session_id": "answer_ef74281f_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session includes only one explicit luxury-item purchase amount ($800 for a luxury evening gown) and does not provide any total spending for the past few months or any other luxury-item transactions; the requested “total amount” cannot be derived from this session alone.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "User splurged on a luxury evening gown for a wedding; amount was $800.",
+          "why": "Provides an explicit luxury-item expense that may be part of the “past few months” total if it falls within that period."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Assistant mentions the purchase as a $800 opportunity cost.",
+          "why": "Reinforces the same luxury-item amount ($800) in context of the user’s spending, potentially aiding consistent extraction."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_ef74281f_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session includes only one explicit luxury-item purchase amount ($1,200 for a Gucci designer handbag) and does not provide any other luxury purchases or dates within the “past few months,” so the total luxury spend cannot be reliably computed from this single session. It also does not define the time window (“past few months”) in terms of exact start/end dates.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User wants help tracking expenses and mentions splurging on luxury items every now and then.",
+          "why": "Indicates the user’s luxury spending pattern, which may relate to determining what counts as “luxury items in the past few months.”"
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User got a designer handbag from Gucci for $1,200.",
+          "why": "Provides an explicit luxury-item spending amount that could be included in the total if it falls within the requested past-few-months window."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "User splurges on luxury items every few months, usually when feeling stressed or celebratory.",
+          "why": "Helps interpret the likely frequency/selection of luxury purchases when summing over the past few months."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "User does not set a budget before making luxury purchases.",
+          "why": "A user preference/constraint that may affect how totals should be categorized or estimated."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "User asked what fashion items they usually splurge on aside from the Gucci handbag.",
+          "why": "Shows that additional luxury items (beyond the Gucci handbag) may be relevant for calculating the total, though the session does not list quantities/prices."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "User splurges on high-end accessories like handbags and shoes and occasional luxury clothing items like evening gowns.",
+          "why": "Defines what the user considers “luxury items,” needed to categorize spending when computing the total."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "User justifies some luxury purchases as 'investment pieces,' but admits it is often an emotional response to an occasion or mood.",
+          "why": "Provides context on motivations; may be used to interpret which purchases qualify as luxury splurges."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "User likes setting a 'treat yourself' budget so they can get luxury items without feeling too guilty.",
+          "why": "User preference for a budgeting approach, relevant to how luxury spending totals may be measured going forward (though not directly the past few months total)."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "Assistant says unused 'treat yourself' budget can be rolled over to the next month (flexible budgeting).",
+          "why": "May affect how the user tracks luxury spending over months, potentially impacting how totals should be aggregated across the requested period."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "85cd56c7_1",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains no explicit spending amounts or mentions of luxury-item purchases. It mainly includes advice requests (ergonomic chairs, books for elliptical, curtain fabric, coffee table styling, and desk lamp recommendations), so it may not provide evidence for the total luxury spend past few months.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_ef74281f_3",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session only contains two specific luxury-related purchase examples (the $500 leather boots and $20 H&M graphic tees). It does not provide any time window (“past few months”) totals or any other luxury transactions, so the reducer may not be able to compute the requested total from this session alone.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "User bought a pack of graphic tees from H&M for $20.",
+          "why": "This is a concrete purchase amount that the user described as part of their luxury vs budget-friendly pattern; could be relevant if the luxury classification logic later mislabels or contrasts with the luxury item."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "User made a luxury purchase: a pair of leather boots from a high-end Italian designer for $500.",
+          "why": "This is a specific luxury-item spend amount ($500) that can contribute directly to a total of luxury spending if within the requested time range."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Assistant categorized the $20 H&M graphic tees as a budget-friendly purchase and the $500 Italian designer leather boots as a luxury item.",
+          "why": "The assistant’s labeling may be used by the reducer to confirm the luxury/budget categorization for those amounts."
+        }
+      ]
+    }
+  }
+]

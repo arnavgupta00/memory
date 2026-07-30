@@ -1,0 +1,18 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Amateur comedians the user watched perform at the open mic night (their stated number).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_cb742a61",
+      "turnIndex": 0,
+      "why": "User explicitly states they went to an open mic night and saw '10 amateur comedians' perform."
+    },
+    {
+      "sessionId": "answer_cb742a61",
+      "turnIndex": 10,
+      "why": "Additional nearby mention of the open mic night (no number), included for context around the same event."
+    }
+  ]
+}

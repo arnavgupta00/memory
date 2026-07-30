@@ -1,0 +1,73 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Total number of different bird species the user has seen in their local park (tracked/counted over time).",
+    "candidateStatus": "found",
+    "missingRisk": "There are at least two different reported totals in different sessions (27 species on 2023/05/24 vs 32 species on 2023/05/29). The downstream answer may need to reconcile whether these are cumulative updates or conflicting counts.",
+    "items": [
+      {
+        "sessionId": "answer_90de9b4d_1",
+        "turnIndex": 4,
+        "why": "Directly states the user has spotted 27 different bird species in their local park so far."
+      },
+      {
+        "sessionId": "answer_90de9b4d_2",
+        "turnIndex": 2,
+        "why": "Directly states the user’s total bird species count is 32 after seeing a Northern Flicker."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Total number of different bird species the user has seen in their local park (tracked/counted over time).",
+    "candidateStatus": "found",
+    "missingRisk": "There are at least two different reported totals in different sessions (27 species on 2023/05/24 vs 32 species on 2023/05/29). The downstream answer may need to reconcile whether these are cumulative updates or conflicting counts.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_90de9b4d_1",
+        "turnIndex": 4,
+        "why": "Directly states the user has spotted 27 different bird species in their local park so far."
+      },
+      {
+        "sessionId": "answer_90de9b4d_1",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_90de9b4d_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_90de9b4d_2",
+        "turnIndex": 2,
+        "why": "Directly states the user’s total bird species count is 32 after seeing a Northern Flicker."
+      },
+      {
+        "sessionId": "answer_90de9b4d_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_90de9b4d_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "fb5dd87f_7",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "fb5dd87f_7",
+        "turnIndex": 3,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "fb5dd87f_7",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

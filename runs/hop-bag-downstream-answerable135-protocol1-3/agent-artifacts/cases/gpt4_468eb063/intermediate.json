@@ -1,0 +1,34 @@
+[
+  {
+    "session_id": "e60a93ff_2",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session does not mention meeting Emma, so it can’t be used to determine how many days ago you met her.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_9b09d95b_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "May require resolving what “today” refers to (likely 2023/04/11 based on the session timestamp, but the session itself doesn’t explicitly restate the calendar date of the lunch meetup).",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User session dated 2023/04/11 (Tue) 23:18 (context for “today”).",
+          "why": "Provides the reference point to interpret “over lunch today” for when the meeting with Emma occurred."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User says they catch up with Emma, a freelance writer, over lunch today.",
+          "why": "Directly states the event time for meeting Emma (“over lunch today”), which is needed to compute how many days ago relative to the question date."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "Emma is now a potential collaborator for a project the user is working on.",
+          "why": "Not needed for the day-count calculation, but it is an associated fact about Emma/collaboration that could be relevant context."
+        }
+      ]
+    }
+  }
+]

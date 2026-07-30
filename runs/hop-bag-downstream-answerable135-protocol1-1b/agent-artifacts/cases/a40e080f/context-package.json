@@ -1,0 +1,55 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Identify the two companies named as prioritizing employee safety and well-being like Triumvirate.",
+  "candidateStatus": "found",
+  "missingRisk": "If the second company’s details are only partially shown in the preview, additional nearby assistant turn content may be needed to capture the full name/claim exactly as originally stated.; frozen bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "answer_ultrachat_269020",
+      "turnIndex": 6,
+      "date": "2023/05/26 (Fri) 07:42",
+      "role": "user",
+      "text": "For sure! It's always a win-win when companies take care of their employees. It makes me feel better about supporting them as a customer. Do you know of any other companies that prioritize safety and well-being like Triumvirate?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ultrachat_269020",
+      "turnIndex": 7,
+      "date": "2023/05/26 (Fri) 07:42",
+      "role": "assistant",
+      "text": "As an AI language model, I can give you an example of two companies that prioritize the safety and well-being of their employees like Triumvirate does:\n\n1. Patagonia - this outdoor clothing and gear company is well-known for its commitment to environmental conservation and also prioritizes the well-being of its employees. The company offers flexible work arrangements, generous maternity and paternity leave, and invests in employee education and wellness. In 2020, Patagonia was named one of the world's most ethical companies by the Ethisphere Institute for the tenth time.\n\n2. Southwest Airlines - this popular airline puts a strong emphasis on its employees, who they call \"Warriors\". Southwest offers its \"Warriors\" top-of-the-line training, generous benefits packages, and a positive work environment. The result is an enthusiastic team that prioritizes safety, customer service, and company success. Southwest has consistently been recognized for its emphasis on employee well-being, including being named one of the best places to work by Glassdoor.\n\nThere are many other companies that prioritize employee safety and happiness. I hope this information is helpful to you!",
+      "why": "Contains the assistant’s explicit recommendation listing the two companies (Patagonia and Southwest Airlines) that prioritize employee safety and well-being like Triumvirate.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_ultrachat_269020",
+      "turnIndex": 0,
+      "date": "2023/05/26 (Fri) 07:42",
+      "role": "user",
+      "text": "Can you provide examples of specific situations where Triumvirate's emphasis on employee safety has resulted in tangible improvements to working conditions?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ultrachat_269020",
+      "turnIndex": 2,
+      "date": "2023/05/26 (Fri) 07:42",
+      "role": "user",
+      "text": "That makes sense. I'm glad to hear that Triumvirate takes employee safety seriously. It's important for companies to prioritize the well-being of their workers.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_ultrachat_269020",
+      "turnIndex": 4,
+      "date": "2023/05/26 (Fri) 07:42",
+      "role": "user",
+      "text": "Yeah, definitely. I wish more companies followed Triumvirate's example. It's reassuring to know that companies can still be successful while prioritizing employee safety.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 1895,
+  "estimatedTokens": 474
+}

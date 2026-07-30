@@ -1,0 +1,64 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Sports events the user said they participated in (e.g., competitions/leagues) around the referenced time.",
+  "candidateStatus": "found",
+  "missingRisk": "The referenced “two weeks ago” date (relative to 2023/07/01) may not exactly match the dates in memory; there may be another sports event not present here.",
+  "items": [
+    {
+      "sessionId": "answer_8c64ce26_2",
+      "turnIndex": 0,
+      "date": "2023/06/02 (Fri) 00:46",
+      "role": "user",
+      "text": "I'm looking for some new bike routes to try out. Do you have any suggestions for trails around the city? By the way, I just completed the Spring Sprint Triathlon today, which included a 20K bike ride, and I'm itching to get back on my bike.",
+      "why": "Contains the user’s statement about completing a sports event (Spring Sprint Triathlon) and describes it as the event the user participated in.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_8c64ce26_2",
+      "turnIndex": 2,
+      "date": "2023/06/02 (Fri) 00:46",
+      "role": "user",
+      "text": "That's helpful, thanks! I've been thinking of exploring the waterfront path, but I was wondering if you know if it's open to cyclists during the week, or is it more of a weekend thing?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_8c64ce26_2",
+      "turnIndex": 4,
+      "date": "2023/06/02 (Fri) 00:46",
+      "role": "user",
+      "text": "I was thinking of exploring the waterfront path on Thursday evening, after my volleyball league game.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_8c64ce26_2",
+      "turnIndex": 6,
+      "date": "2023/06/02 (Fri) 00:46",
+      "role": "user",
+      "text": "I was thinking of maybe stopping by a cafe or restaurant along the waterfront to grab a bite to eat after my ride. Do you have any recommendations for good places to eat around there?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_8c64ce26_2",
+      "turnIndex": 8,
+      "date": "2023/06/02 (Fri) 00:46",
+      "role": "user",
+      "text": "I'm thinking of trying out a seafood restaurant I saw along the waterfront. I've been craving some fish and chips after that intense bike ride.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_8c64ce26_2",
+      "turnIndex": 10,
+      "date": "2023/06/02 (Fri) 00:46",
+      "role": "user",
+      "text": "I might ask the restaurant if they have any outdoor seating available, so I can keep an eye on my bike while I eat.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 966,
+  "estimatedTokens": 242
+}

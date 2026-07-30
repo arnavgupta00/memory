@@ -1,0 +1,80 @@
+[
+  {
+    "session_id": "answer_f999b05c_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "none_found",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "I just got back from an amazing Billie Eilish concert at the Wells Fargo Center in Philly with my sister today.",
+          "why": "This directly identifies who the user went with (my sister) to a music event, and includes the venue details."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "I'm thinking of framing the ticket stub along with a photo of my sister and me from the concert.",
+          "why": "Reinforces that the companion at the concert was the sister (my sister and me), which can help answer the 'who did I go with' question."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_f999b05c_4",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session discusses attending a free outdoor concert series but never mentions who you went with (no companion names/relationship). It also refers to an event on 2023/03/25 (today in that thread), which may not match “last Saturday” relative to 2023/04/22.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_f999b05c_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session only mentions a music festival in Brooklyn with a group of friends, but it does not specify who you went with to a music event “last Saturday” relative to 2023/04/22; therefore the needed attendee identity is likely missing or only indirectly implied.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "You got back from a music festival in Brooklyn with a group of friends.",
+          "why": "The question asks who you went with to a music event last Saturday; this is the only attendee-group info present in the session, though it may refer to a different event/time."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "Since I've been to a music festival in Brooklyn with a group of friends, featuring a lineup of my favorite indie bands...",
+          "why": "Reiterates that the Brooklyn festival involved a group of friends, which could be relevant to identifying who you went with (even if it may not be the same “last Saturday” event)."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "I've actually seen Glass Animals live at the music festival in Brooklyn, and they were amazing!",
+          "why": "Confirms your presence at the Brooklyn music festival where you saw Glass Animals live; may help link the relevant event context if the reducer maps that to “last Saturday.”"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_f999b05c_5",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session discusses concert/music recommendations and learning saxophone, but it does not mention a specific “music event last Saturday” (relative to 2023/04/22) or identify who the user went with. Missing the identity of the person(s) requires other sessions or event logs.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_f999b05c_3",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session discusses attending a Queen concert with parents and a separate Brooklyn music festival, but it does not clearly specify who you went with to a music event “last Saturday” relative to 2023/04/22; the relevant attendee details may be missing or refer to a different event/date.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "Saw Queen live with Adam Lambert at the Prudential Center in Newark, NJ with my parents.",
+          "why": "Names the people you went with (\"my parents\") for a live Queen concert; could potentially match the “last Saturday” event if dates align, but the session doesn’t confirm that."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "I've been to a music festival in Brooklyn recently, featuring some of my favorite indie bands.",
+          "why": "Confirms you attended a music festival in Brooklyn recently; useful for identifying the event that might be “last Saturday,” though it does not state who you went with."
+        }
+      ]
+    }
+  }
+]

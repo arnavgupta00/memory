@@ -1,0 +1,100 @@
+{
+  "queryShape": "order",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "e6ab6a7b_2",
+      "turnIndex": 1,
+      "date": "2023/04/02 (Sun) 19:39",
+      "role": "assistant",
+      "text": "That's wonderful to hear! Serving breakfast to those in need is a great way to make a positive impact in your community. I'd be happy to help you find more volunteer opportunities that align with your interests and values. Here are some suggestions:\n\n**Food-related volunteer opportunities:**\n\n1. **Food banks**: Many food banks rely on volunteers to help sort and distribute food to those in need. You can search for food banks in your area and contact them to inquire about volunteer opportunities.\n2. **Soup kitchens**: Similar to serving breakfast, soup kitchens provide meals to people in need. You can search online for soup kitchens in your area and reach out to them to volunteer.\n3. **Food pantries**: Food pantries provide groceries to individuals and families in need. You can help sort and distribute food, as well as assist with client intake.\n4. **Meal delivery programs**: Organizations like Meals on Wheels deliver meals to seniors and individuals with disabilities. You can volunteer to help prepare, package, and deliver meals.\n\n**Other volunteer opportunities:**\n\n1. **Homeless shelters**: Many shelters provide temporary housing and support services to individuals and families in need. You can volunteer to help with daily tasks, such as serving meals, sorting donations, or leading activities.\n2. **Community gardens**: Community gardens provide fresh produce to those in need and often rely on volunteers to help with planting, harvesting, and distributing food.\n3. **Parks and recreation departments**: Many parks and recreation departments offer volunteer opportunities to help with community events, clean-up initiatives, and youth programs.\n4. **Senior centers**: Senior centers often provide meals, social activities, and support services to seniors. You can volunteer to help with daily activities, such as serving meals, leading classes, or simply socializing with seniors.\n\n**Events and organizations:**\n\n1. **VolunteerMatch**: A website that connects volunteers with non-profit organizations in their area. You can search for volunteer opportunities by location, cause, and type of work.\n2. **United Way**: A non-profit organization that focuses on education, income, and health. You can search for volunteer opportunities in your area through their website.\n3. **Food festivals and events**: Many food festivals and events rely on volunteers to help with setup, food preparation, and teardown. You can search online for food festivals in your area and contact the organizers to inquire about volunteer opportunities.\n4. **Local non-profits**: Research local non-profits in your area that align with your values and interests. Reach out to them to inquire about volunteer opportunities.\n\nRemember to consider your availability, skills, and interests when selecting a volunteer opportunity. You can also ask friends, family, or colleagues for recommendations or suggestions. Good luck, and I hope you find a fulfilling volunteer opportunity!",
+      "why": "empty-extractor deterministic fallback",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_59547700",
+      "turnIndex": 2,
+      "date": "2023/04/02 (Sun) 22:15",
+      "role": "user",
+      "text": "I'm most passionate about animal welfare and children's health, so anything related to those causes would be great. I'm open to attending different types of events, but I did really enjoy the \"Love is in the Air\" fundraising dinner I volunteered at back in February - it was a great way to meet new people.",
+      "why": "per-session extractor: This is the only direct volunteered-at timing statement; it likely answers when you volunteered but only provides month-level detail.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_59547700",
+      "turnIndex": 8,
+      "date": "2023/04/02 (Sun) 22:15",
+      "role": "user",
+      "text": "I'm really looking forward to the silent auction and raffles at \"Strut Your Mutt\". I've had a great experience with similar events in the past, like the \"Love is in the Air\" fundraising dinner I volunteered at back on Valentine's Day. The energy and excitement of bidding on amazing prizes while supporting a good cause is just fantastic!",
+      "why": "per-session extractor: Provides an alternate temporal anchor (“Valentine's Day”) that could map to an exact date in February.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "e6ab6a7b_2",
+      "turnIndex": 0,
+      "date": "2023/04/02 (Sun) 19:39",
+      "role": "user",
+      "text": "I'm looking for some volunteer opportunities in my community. I've had a really fulfilling experience serving breakfast to people in need during my volunteer work, and I'm eager to do more. Can you suggest some organizations or events that I can get involved with?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "e6ab6a7b_2",
+      "turnIndex": 2,
+      "date": "2023/04/02 (Sun) 19:39",
+      "role": "user",
+      "text": "I'm interested in helping out at a local food bank. Can you tell me more about what kind of tasks I'd be doing if I volunteered there?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_59547700",
+      "turnIndex": 1,
+      "date": "2023/04/02 (Sun) 22:15",
+      "role": "assistant",
+      "text": "Los Angeles is a hub for philanthropy and hosts numerous charity events throughout the year. I'd be happy to help you find some upcoming charity events in LA that align with your interests. Here are a few questions to help me narrow down some options:\n\n1. What causes are you most passionate about (e.g., children, animals, environment, health, education, arts)?\n2. Are you interested in attending a specific type of event (e.g., gala, charity run, auction, benefit concert, volunteer day)?\n3. Do you have a preferred date range or month in mind?\n4. Are you open to attending events hosted by smaller, local organizations or do you prefer larger, more well-known charities?\n5. Is there a specific location in LA you're interested in (e.g., downtown, Beverly Hills, Santa Monica, Pasadena)?\n\nOnce I have a better understanding of your preferences, I can provide you with a list of upcoming charity events in LA that might interest you.\n\nIn the meantime, here are a few popular charity events in LA that might be of interest:\n\n* The American Cancer Society's \"Relay For Life\" (various dates and locations)\n* The Los Angeles LGBT Center's \"An Evening with Women\" (May)\n* The St. Jude Children's Research Hospital \"St. Jude Walk/Run to End Childhood Cancer\" (September)\n* The Environmental Defense Fund's \"EDF Gala\" (October)\n* The American Red Cross's \"Red Cross Gala\" (November)\n\nLet me know if any of these events resonate with you, or if you'd like me to suggest more options based on your specific interests!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_59547700",
+      "turnIndex": 3,
+      "date": "2023/04/02 (Sun) 22:15",
+      "role": "assistant",
+      "text": "With your passion for animal welfare and children's health, I've curated a list of upcoming charity events in LA that might interest you:\n\n**Animal Welfare:**\n\n1. **Best Friends Animal Society's \"Strut Your Mutt\"** (September): A fun dog walk and festival to raise funds for animal welfare organizations.\n2. **American Humane's \"Hero Dog Awards\"** (October): A star-studded gala honoring heroic canines and their human companions.\n3. **The Humane Society of the United States' \"To the Rescue!\"** (November): A benefit gala featuring a silent auction, dinner, and program highlighting animal rescue efforts.\n\n**Children's Health:**\n\n1. **Children's Hospital Los Angeles' \"Noche de Niños\"** (October): A festive gala and auction supporting pediatric care and research at CHLA.\n2. **St. Jude Children's Research Hospital's \"St. Jude Walk/Run to End Childhood Cancer\"** (September): A fun run/walk event to raise funds for pediatric cancer research and treatment.\n3. **Shriners Hospitals for Children's \"Love to the Rescue\" Gala** (November): A benefit dinner and auction supporting medical care for children with orthopedic conditions, burns, and spinal cord injuries.\n\n**Events similar to \"Love is in the Air\" fundraising dinner:**\n\n1. **The Gentle Barn's \"Sunset Hoedown\"** (June): A fun, rustic evening with dinner, live music, and auctions supporting animal welfare and at-risk youth programs.\n2. **The Painted Turtle's \"Summer Gala\"** (July): A whimsical evening with dinner, auctions, and entertainment benefiting a summer camp for children with serious illnesses.\n3. **The Boys & Girls Clubs of America's \"Youth of the Year Gala\"** (September): A celebratory dinner honoring outstanding young leaders and supporting after-school programs for children.\n\nThese events offer a mix of fundraising dinners, walks/runs, and galas that align with your interests. You can expect to meet new people, learn about the causes, and have a great time while making a difference.\n\nPlease let me know if you'd like more information about any of these events or if you'd like me to suggest more options!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_59547700",
+      "turnIndex": 4,
+      "date": "2023/04/02 (Sun) 22:15",
+      "role": "user",
+      "text": "I think I'd like to learn more about the \"Strut Your Mutt\" event in September. Do you have any more details on that?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_59547700",
+      "turnIndex": 7,
+      "date": "2023/04/02 (Sun) 22:15",
+      "role": "assistant",
+      "text": "The silent auction and raffles at \"Strut Your Mutt\" are always a highlight of the event! You'll have the opportunity to bid on exciting prizes and experiences, all while supporting a great cause.\n\n**Silent Auction:**\n\nThe silent auction will feature a variety of items and experiences, including:\n\n1. **Pet-themed packages:** Spa days for your furry friend, pet photography sessions, and pet-friendly getaways.\n2. **Exclusive experiences:** Meet-and-greets with celebrity pet owners, behind-the-scenes tours of animal sanctuaries, and VIP access to pet-friendly events.\n3. **Luxury items:** Designer pet accessories, high-end pet beds, and premium pet food and treats.\n4. **Unique services:** Pet training sessions, dog walking or pet sitting services, and pet grooming packages.\n5. **Autographed items:** Signed pet-themed books, photos, and memorabilia from famous animal lovers.\n\n**Raffles:**\n\nThe raffle prizes will be announced closer to the event, but in the past, they've included:\n\n1. **Pet-friendly getaways:** Weekend stays at pet-friendly resorts, hotels, or vacation rentals.\n2. **Pet pampering packages:** Spa days, grooming sessions, and pet photography packages.\n3. **Pet gear and accessories:** High-end pet beds, strollers, and outdoor gear.\n4. **Experiences:** Tickets to pet-friendly events, concerts, or sporting games.\n5. **Cash prizes:** Generous cash prizes to support your favorite animal welfare organization.\n\n**Special Items to Look Out For:**\n\n1. **Exclusive pet portrait sessions:** A professional photo shoot with a renowned pet photographer, complete with a framed print and digital copies.\n2. **Private dog training sessions:** One-on-one training sessions with a certified dog trainer to help with behavioral issues or agility training.\n3. **Pet-friendly weekend getaways:** A weekend stay at a luxurious pet-friendly resort, complete with dog-friendly activities and amenities.\n4. **Autographed pet-themed art:** Unique, one-of-a-kind art pieces created by local artists, signed by famous animal lovers or celebrities.\n5. **VIP pet experiences:** Private meet-and-greets with animal celebrities, behind-the-scenes tours of animal sanctuaries, or exclusive access to pet-friendly events.\n\nRemember to arrive early to browse the silent auction and raffle prizes, and don't hesitate to ask volunteers for more information about each item. You can also set a budget for yourself and stick to it to ensure a fun and responsible bidding experience.\n\nAre you excited to start bidding and winning some amazing prizes for a great cause?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_59547700",
+      "turnIndex": 9,
+      "date": "2023/04/02 (Sun) 22:15",
+      "role": "assistant",
+      "text": "I'm so glad to hear that! It's wonderful that you've had a positive experience with silent auctions and raffles in the past. The energy and excitement of bidding on amazing prizes while supporting a good cause is indeed infectious!\n\nThe \"Love is in the Air\" fundraising dinner sounds like a fantastic event, and I'm sure your volunteering efforts made a significant impact. It's great that you're continuing to support wonderful causes like animal welfare and children's health.\n\nAt \"Strut Your Mutt\", you'll have the opportunity to mingle with like-minded individuals, enjoy the festive atmosphere, and bid on incredible prizes, all while making a difference in the lives of animals in need. The silent auction and raffles are always a highlight of the event, and I'm sure you'll have a fantastic time.\n\nRemember to arrive early to get a good look at the auction items and raffle prizes, and don't hesitate to ask volunteers for more information about each item. You can also set a budget for yourself and stick to it to ensure a fun and responsible bidding experience.\n\nAre you planning on attending the event with friends or family, or will you be meeting new people there?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 11465,
+  "estimatedTokens": 2867
+}

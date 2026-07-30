@@ -1,0 +1,262 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Charity events the user personally participated/volunteered in that have an explicit date, counting only those occurring before the user’s “Run for the Cure” event on Oct 15, 2023.",
+  "candidateStatus": "found",
+  "missingRisk": "Other charity events may exist but aren’t mentioned here or lack explicit dates, so they may not be counted.",
+  "items": [
+    {
+      "sessionId": "answer_4ffa04a2_1",
+      "turnIndex": 0,
+      "date": "2023/11/29 (Wed) 03:49",
+      "role": "user",
+      "text": "I'm looking for some tips on how to stay motivated to continue participating in charity events. I just ran 5 kilometers in the \"Run for the Cure\" event on October 15th and raised $250 for breast cancer research, which was an amazing experience.",
+      "why": "User establishes the “Run for the Cure” event date (Oct 15) and participation details, which is the cutoff for “before.”",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_1",
+      "turnIndex": 6,
+      "date": "2023/11/29 (Wed) 03:49",
+      "role": "user",
+      "text": "That's really helpful, thanks! I've been meaning to get back into cycling for a while now, and this gives me a good starting point. By the way, I just got back from the \"Run for the Cure\" event on October 15th, where I ran 5 kilometers to raise money for breast cancer research. It was an incredible experience, and I'm looking forward to doing more charity events in the future.",
+      "why": "Reiterates participation in “Run for the Cure” on Oct 15 (reinforces the cutoff date).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_2",
+      "turnIndex": 0,
+      "date": "2023/11/29 (Wed) 05:08",
+      "role": "user",
+      "text": "I'm looking for some information on local charity events happening in the next few months. I've been involved in a few events recently, actually - I volunteered at the \"Food for Thought\" charity gala on September 25th, which was a great experience. Do you know of any upcoming events that focus on food banks or hunger relief?",
+      "why": "User says they volunteered at the “Food for Thought” charity gala on September 25 (explicit charity event date before Oct 15).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_6",
+      "turnIndex": 0,
+      "date": "2023/11/29 (Wed) 10:18",
+      "role": "user",
+      "text": "I'm looking for some information on local charity events happening in the next few months. I've been really active in the charity scene lately, actually - I just participated in the \"Dance for a Cause\" event on May 1st, which was a blast. Do you know of any upcoming events that I might be interested in?",
+      "why": "User says they participated in the “Dance for a Cause” event on May 1 (explicit charity event date before Oct 15).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_4",
+      "turnIndex": 0,
+      "date": "2023/11/29 (Wed) 15:28",
+      "role": "user",
+      "text": "Hi! I'm looking for some advice on how to improve my golf game. I attended a charity golf tournament on July 17th, and while I had a blast playing with colleagues, I realized I need to work on my swing. Do you have any tips or recommendations for a beginner like me?",
+      "why": "User says they attended a charity golf tournament on July 17 (explicit charity event date before Oct 15).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_1",
+      "turnIndex": 2,
+      "date": "2023/11/29 (Wed) 03:49",
+      "role": "user",
+      "text": "I totally agree with your tips, especially the one about setting new goals. Speaking of which, I'm thinking of registering for a cycling event next month. Can you suggest some popular cycling routes in my area?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_1",
+      "turnIndex": 4,
+      "date": "2023/11/29 (Wed) 03:49",
+      "role": "user",
+      "text": "I'm thinking of registering for a 10-kilometer cycling event, and I'm a bit concerned about my fitness level. Can you give me some general tips on how to prepare for a cycling event, especially since I'm not an experienced cyclist?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_1",
+      "turnIndex": 8,
+      "date": "2023/11/29 (Wed) 03:49",
+      "role": "user",
+      "text": "The \"Run for the Cure\" event was truly inspiring, and I think what resonated with me the most was seeing so many people come together for a common cause. There were over 5,000 participants, and the energy was electric! Crossing the finish line and knowing that I'd raised $250 for breast cancer research was an incredible feeling.\n\nAs for future charity events, I'm actually interested in exploring more cycling events, as I mentioned earlier. I've also been considering participating in a charity swim event to support a local children's hospital. I've never done a swim event before, but I'm excited to challenge myself and learn something new.\n\nWhat about you? Do you have any recommendations for charity events or causes that I might be interested in?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_1",
+      "turnIndex": 10,
+      "date": "2023/11/29 (Wed) 03:49",
+      "role": "user",
+      "text": "That's really helpful, thanks! I think I'll start looking into those organizations and events. It's great to have a starting point. By the way, do you think you could help me with some tips on how to fundraise for my charity swim event? I've never done a swim event before, and I'm not sure where to start with fundraising.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_2",
+      "turnIndex": 2,
+      "date": "2023/11/29 (Wed) 05:08",
+      "role": "user",
+      "text": "I'll definitely check out those resources. I'm particularly interested in events that focus on food banks, as I've seen firsthand the impact they have on the community. Do you have any information on food bank statistics or trends in my area?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_2",
+      "turnIndex": 4,
+      "date": "2023/11/29 (Wed) 05:08",
+      "role": "user",
+      "text": "I'll look into those resources to learn more about the food banks in my area. Another thing I was wondering is, are there any apps or online platforms that allow me to find and track volunteer opportunities, especially ones related to food banks or hunger relief?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_2",
+      "turnIndex": 6,
+      "date": "2023/11/29 (Wed) 05:08",
+      "role": "user",
+      "text": "I'll check out these platforms and apps to find volunteer opportunities related to food banks and hunger relief. I'm also interested in learning more about the impact of food waste on hunger relief efforts. Do you have any information on food waste reduction initiatives or organizations that focus on food recovery and redistribution?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_2",
+      "turnIndex": 8,
+      "date": "2023/11/29 (Wed) 05:08",
+      "role": "user",
+      "text": "I'd like to learn more about food rescue apps, such as FoodFinder, Rescuing Leftover Cuisine, and Food Rescue US. Can you tell me more about how these apps work and how they're making an impact in reducing food waste and feeding the hungry?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_2",
+      "turnIndex": 10,
+      "date": "2023/11/29 (Wed) 05:08",
+      "role": "user",
+      "text": "I'd like to learn more about the volunteer opportunities available with these food rescue apps. What kind of volunteer roles are typically available, and how can I get involved?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_3",
+      "turnIndex": 0,
+      "date": "2023/11/29 (Wed) 07:51",
+      "role": "user",
+      "text": "I'm looking to find some local bike trails for a casual ride this weekend. Do you have any recommendations? By the way, I recently participated in the \"Bike-a-Thon\" charity event in November, which was a lot of fun and a great way to support a good cause.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_3",
+      "turnIndex": 2,
+      "date": "2023/11/29 (Wed) 07:51",
+      "role": "user",
+      "text": "I'll check out those resources. I'm actually looking for a relatively easy trail since I'm not as experienced as I'd like to be. Do you think you could give me some general tips for a beginner like me on how to prepare for a casual bike ride?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_3",
+      "turnIndex": 4,
+      "date": "2023/11/29 (Wed) 07:51",
+      "role": "user",
+      "text": "I'll definitely take those tips into consideration. I'm actually thinking of inviting some friends who are also beginner riders. Do you think it's a good idea to ride in a group, or is it better to start solo?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_3",
+      "turnIndex": 6,
+      "date": "2023/11/29 (Wed) 07:51",
+      "role": "user",
+      "text": "That's really helpful! I think I'll invite my friends and we'll start with a small group. We can discuss and agree on the route and pace beforehand. Do you have any tips on how to communicate effectively while riding in a group?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_3",
+      "turnIndex": 8,
+      "date": "2023/11/29 (Wed) 07:51",
+      "role": "user",
+      "text": "I think I'll suggest a route that's about 10-15 miles long, with a relatively flat terrain. We can start with a gentle pace and adjust as needed. I'll also remind everyone to bring their safety gear, including helmets, and to dress comfortably. Do you think I should also suggest a meetup point and time, or should I leave that up to each individual?",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_3",
+      "turnIndex": 10,
+      "date": "2023/11/29 (Wed) 07:51",
+      "role": "user",
+      "text": "I think I'll also suggest that we take regular breaks to rest, rehydrate, and regroup. That way, everyone can catch their breath, stretch their legs, and make any necessary adjustments before continuing on.",
+      "why": "supporting turn from sibling session (set expansion)",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_6",
+      "turnIndex": 2,
+      "date": "2023/11/29 (Wed) 10:18",
+      "role": "user",
+      "text": "I'll definitely try those suggestions. I'm particularly interested in events that support arts programs, so if you happen to come across any information about those, let me know.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_6",
+      "turnIndex": 4,
+      "date": "2023/11/29 (Wed) 10:18",
+      "role": "user",
+      "text": "I'm also interested in finding ways to stay active while giving back to my community. Do you have any suggestions for charity fitness events or volunteer opportunities that involve physical activity?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_6",
+      "turnIndex": 6,
+      "date": "2023/11/29 (Wed) 10:18",
+      "role": "user",
+      "text": "I'm actually looking for something that combines my interest in arts and fitness. Do you know if there are any charity events or volunteer opportunities that combine these two interests?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_6",
+      "turnIndex": 8,
+      "date": "2023/11/29 (Wed) 10:18",
+      "role": "user",
+      "text": "I've actually already participated in a dance marathon, the \"Dance for a Cause\" event on May 1st, where I danced for 6 hours to raise money for a local arts program. It was an amazing experience, and I'm looking for more opportunities like that. Can you suggest any other events or organizations that combine arts and fitness?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_6",
+      "turnIndex": 10,
+      "date": "2023/11/29 (Wed) 10:18",
+      "role": "user",
+      "text": "I'm excited to explore these options and find more opportunities to combine arts and fitness. I'll definitely check out the events and organizations you mentioned, and also search for online platforms and social media groups focused on arts and fitness. Thanks for the suggestions!",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_4",
+      "turnIndex": 2,
+      "date": "2023/11/29 (Wed) 15:28",
+      "role": "user",
+      "text": "I'll definitely work on my stance and grip. I've also been thinking about getting some golf lessons. Do you know of any good instructors or courses in my area that offer lessons for beginners?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_4",
+      "turnIndex": 4,
+      "date": "2023/11/29 (Wed) 15:28",
+      "role": "user",
+      "text": "I'll definitely check out those resources. I'm also thinking of organizing a charity golf tournament similar to the one I attended on July 17th. Do you have any tips or advice on how to plan and organize a successful charity golf tournament?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4ffa04a2_4",
+      "turnIndex": 6,
+      "date": "2023/11/29 (Wed) 15:28",
+      "role": "user",
+      "text": "That's a lot of helpful information! I'm still thinking about the logistics of the tournament. How do I go about finding sponsors and donors for the event? Do you have any advice on crafting a compelling pitch or proposal to present to potential sponsors?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 7643,
+  "estimatedTokens": 1911
+}

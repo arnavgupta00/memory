@@ -1,0 +1,38 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify who gave the user the new stand mixer as a birthday gift.",
+    "candidateStatus": "found",
+    "missingRisk": "None—candidate sessions include the explicit birthday-gift source (sister) for the stand mixer.",
+    "items": [
+      {
+        "sessionId": "answer_f5b33470",
+        "turnIndex": 4,
+        "why": "States directly: user got the new stand mixer as a birthday gift from their sister last month."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify who gave the user the new stand mixer as a birthday gift.",
+    "candidateStatus": "found",
+    "missingRisk": "None—candidate sessions include the explicit birthday-gift source (sister) for the stand mixer.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_f5b33470",
+        "turnIndex": 4,
+        "why": "States directly: user got the new stand mixer as a birthday gift from their sister last month."
+      },
+      {
+        "sessionId": "answer_f5b33470",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_f5b33470",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

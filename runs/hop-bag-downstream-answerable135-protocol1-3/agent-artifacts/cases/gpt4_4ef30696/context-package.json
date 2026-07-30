@@ -1,0 +1,46 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "answer_f964cea3_1",
+      "turnIndex": 0,
+      "date": "2022/01/15 (Sat) 08:16",
+      "role": "user",
+      "text": "I'm looking for some book recommendations. I just finished reading 'The Nightingale' by Kristin Hannah today and I'm still reeling from the emotional experience. I'm open to trying out different genres, so any suggestions would be great.",
+      "why": "per-session extractor: Provides session context but does not affect the requested date difference directly.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f964cea3_2",
+      "turnIndex": 0,
+      "date": "2022/01/16 (Sun) 16:21",
+      "role": "user",
+      "text": "I need some book recommendations. I just started reading 'The Hitchhiker's Guide to the Galaxy' by Douglas Adams today, and I'm loving the humor so far. Can you suggest some authors or books that have a similar tone and style?",
+      "why": "per-session extractor: This is the only session evidence about the start date for 'The Hitchhiker's Guide to the Galaxy' needed for calculating the day difference.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f964cea3_1",
+      "turnIndex": 1,
+      "date": "2022/01/15 (Sat) 08:16",
+      "role": "assistant",
+      "text": "'The Nightingale' is an emotionally charged novel, isn't it? I'm glad you're open to exploring different genres! Based on your interest in historical fiction and emotionally resonant stories, here are some book recommendations that might appeal to you:\n\n**Historical Fiction**\n\n1. **All the Light We Cannot See** by Anthony Doerr: A beautifully written novel set during WWII, exploring the lives of a German boy and a blind French girl whose paths intersect in the midst of the war.\n2. **The Alice Network** by Kate Quinn: A historical fiction novel that follows two women, a socialite and a spy, during WWI and the aftermath, delving into themes of friendship, love, and survival.\n3. **The Lost Girls of Paris** by Pam Jenoff: A suspenseful and emotional novel set in 1946, following a young widow who discovers a suitcase of photographs of women who worked for a resistance network during the war.\n\n**Contemporary Fiction**\n\n1. **The Seven Husbands of Evelyn Hugo** by Taylor Jenkins Reid: A heartwarming and engaging novel about the life of a reclusive Hollywood star, exploring themes of love, identity, and the power of storytelling.\n2. **The Immortal Life of Henrietta Lacks** by Rebecca Skloot: A non-fiction book that reads like a novel, telling the story of Henrietta Lacks, a poor black tobacco farmer whose cancer cells were taken without her knowledge and led to numerous scientific breakthroughs.\n3. **The Age of Miracles** by Karen Thompson Walker: A dystopian novel that explores a world where the rotation of the Earth suddenly slows, and the consequences this has on human life, love, and relationships.\n\n**Other Genres**\n\n1. **The Night Circus** by Erin Morgenstern: A magical and imaginative novel set in a mysterious circus that appears at night, filled with enchanting characters and a competition between two young magicians.\n2. **The Power** by Naomi Alderman: A thought-provoking speculative fiction novel that explores a world where women suddenly develop the ability to release electrical jolts from their fingertips, allowing them to dominate and control society.\n3. **The Song of Achilles** by Madeline Miller: A beautifully written novel that reimagines the Trojan War from the perspective of Achilles' lover, Patroclus, exploring themes of love, war, and mortality.\n\nThese books offer a mix of historical fiction, contemporary stories, and genre-bending novels that might appeal to you after reading 'The Nightingale'. Let me know if you have any specific preferences or if you'd like more recommendations!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f964cea3_2",
+      "turnIndex": 1,
+      "date": "2022/01/16 (Sun) 16:21",
+      "role": "assistant",
+      "text": "You're in for a treat! Douglas Adams' humor is one of a kind, but I can suggest some authors and books that share a similar tone and style. Here are a few recommendations:\n\n1. **Terry Pratchett**: Pratchett's Discworld series is a perfect match for Hitchhiker's fans. Start with \"Guards! Guards!\" or \"Mort\" for a taste of his absurd humor and clever satire.\n2. **Good Omens** by Terry Pratchett and Neil Gaiman: This collaborative novel shares a similar blend of humor, wit, and absurdity, with a dash of fantasy and adventure.\n3. **Red Dwarf** by Grant Naylor: This series of novels is based on the popular TV show and shares a similar brand of humor, sci-fi, and satire.\n4. **To Say Nothing of the Dog** by Connie Willis: This novel combines humor, time travel, and Victorian-era satire, with a dash of wit and absurdity.\n5. **The Stainless Steel Rat** series by Harry Harrison: These novels follow the adventures of a charming con artist in a futuristic society, with a similar tone of humor and satire.\n6. **The Long Dark Tea-Time of the Soul** by Douglas Adams' friend and fellow author, Dirk Gently: This novel explores the intersection of science, philosophy, and humor, with a similar tone to Hitchhiker's.\n7. **Jasper Fforde**: Fforde's Thursday Next series is a great match for Hitchhiker's fans, with its blend of humor, satire, and absurdity, set in a world of literature and time travel.\n8. **The Colour of Magic** by Terry Pratchett (again!): While not directly related to Hitchhiker's, this Discworld novel shares a similar sense of humor and absurdity, with a dash of fantasy and adventure.\n9. **The Anubis Gates** by Tim Powers: This novel combines time travel, science fiction, and humor, with a similar sense of adventure and wit.\n10. **Ready Player One** by Ernest Cline: This novel is a love letter to 1980s pop culture, with a similar blend of humor, adventure, and sci-fi.\n\nThese authors and books should provide you with a similar tone and style to Hitchhiker's Guide to the Galaxy. Enjoy exploring these recommendations, and happy reading!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 5063,
+  "estimatedTokens": 1266
+}

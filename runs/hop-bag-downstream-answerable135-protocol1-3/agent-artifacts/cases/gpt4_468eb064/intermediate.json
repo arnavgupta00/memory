@@ -1,0 +1,21 @@
+[
+  {
+    "session_id": "answer_9b09d95b_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session states you “catch up with Emma … over lunch today,” but the question asks who you met with “during the lunch last Tuesday.” This session’s explicit lunch is “today” and does not clearly match “last Tuesday” relative to the provided current date (2023/04/18). There may be a date mismatch or the relevant lunch-for-last-Tuesday meeting could be in another session not provided here.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "You attended a digital marketing workshop last week; the speaker was Rachel Lee and she mentioned strategies.",
+          "why": "Provides contextual information about recent events, but more importantly may help disambiguate timelines around the lunch meeting."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "You catch up with Emma, a freelance writer, over lunch today and she’s now a potential collaborator for a project you’re working on.",
+          "why": "Directly identifies a person you met with over lunch (Emma) and links the meeting to a collaboration; may be relevant to determining who you met with during the lunch."
+        }
+      ]
+    }
+  }
+]

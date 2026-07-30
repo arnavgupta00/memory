@@ -1,0 +1,55 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "The person(s) you went with to the music event on the Saturday immediately before 2023/04/22 (i.e., 2023/04/15).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_f999b05c_3",
+      "turnIndex": 0,
+      "date": "2023/04/15 (Sat) 03:11",
+      "role": "user",
+      "text": "I'm looking for some recommendations for rock music playlists on streaming services. I've been listening to a lot of Queen lately, actually just saw them live with Adam Lambert at the Prudential Center in Newark, NJ with my parents, and I'm craving more of that classic rock sound.",
+      "why": "On 2023/04/15 (Sat), you described seeing Queen live with Adam Lambert “at the Prudential Center in Newark, NJ with my parents,” which indicates who you went with to that music event.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_f999b05c_3",
+      "turnIndex": 2,
+      "date": "2023/04/15 (Sat) 03:11",
+      "role": "user",
+      "text": "I'm also interested in discovering new artists and bands. Do you have any recommendations for indie rock or alternative bands that I might enjoy? I recently attended a music festival in Brooklyn that featured some of my favorite indie bands, and I'm always on the lookout for new sounds.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05c_3",
+      "turnIndex": 4,
+      "date": "2023/04/15 (Sat) 03:11",
+      "role": "user",
+      "text": "I'd like to know more about the current indie rock scene. Are there any popular indie rock festivals or concerts happening in the coming months that I should check out?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05c_3",
+      "turnIndex": 6,
+      "date": "2023/04/15 (Sat) 03:11",
+      "role": "user",
+      "text": "I've been to a music festival in Brooklyn recently, featuring some of my favorite indie bands, and I'm always on the lookout for new sounds. I'd love to know more about the current indie rock scene. Are there any popular indie rock festivals or concerts happening in the coming months that I should check out?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_f999b05c_3",
+      "turnIndex": 8,
+      "date": "2023/04/15 (Sat) 03:11",
+      "role": "user",
+      "text": "I'm really interested in the Panorama Music Festival in NYC. I've heard great things about it, and the lineup looks amazing. I'd love to know more about the festival's atmosphere and what to expect from the event. Also, do you have any tips on how to make the most out of the festival experience?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 1341,
+  "estimatedTokens": 336
+}

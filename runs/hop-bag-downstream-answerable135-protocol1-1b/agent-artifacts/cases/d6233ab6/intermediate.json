@@ -1,0 +1,72 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "No candidate sessions contain facts or assistant recommendations related to attending a high school reunion. ",
+    "candidateStatus": "none_found",
+    "missingRisk": "The retrieved candidate sessions appear unrelated to high school reunions; it’s possible reunion-relevant context exists in other sessions not included in the catalog.",
+    "items": []
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "No candidate sessions contain facts or assistant recommendations related to attending a high school reunion. ",
+    "candidateStatus": "found",
+    "missingRisk": "The retrieved candidate sessions appear unrelated to high school reunions; it’s possible reunion-relevant context exists in other sessions not included in the catalog.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "94bc18df_3",
+        "turnIndex": 6,
+        "why": "deterministic empty-selector fallback"
+      },
+      {
+        "sessionId": "94bc18df_3",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "94bc18df_3",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "sharegpt_xni9yYO_6",
+        "turnIndex": 0,
+        "why": "deterministic empty-selector fallback"
+      },
+      {
+        "sessionId": "sharegpt_xni9yYO_6",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_b0fac439",
+        "turnIndex": 2,
+        "why": "deterministic empty-selector fallback"
+      },
+      {
+        "sessionId": "answer_b0fac439",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_b0fac439",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "f916c63a_2",
+        "turnIndex": 10,
+        "why": "deterministic empty-selector fallback"
+      },
+      {
+        "sessionId": "f916c63a_2",
+        "turnIndex": 11,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "f916c63a_2",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

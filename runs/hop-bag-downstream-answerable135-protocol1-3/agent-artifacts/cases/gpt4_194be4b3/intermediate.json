@@ -1,0 +1,93 @@
+[
+  {
+    "session_id": "answer_3826dc55_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session does not state how many musical instruments the user currently owns; it only mentions specific instruments (an electric guitar and an acoustic guitar) and discusses pedals/humidifier ideas. If the user owns additional instruments, they are not listed here, so the final count may be incomplete.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "I've been playing my black Fender Stratocaster electric guitar a lot lately.",
+          "why": "Indicates the user currently has/uses a specific electric guitar (a counted instrument), which could contribute to the total."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "I've had my black Fender Stratocaster electric guitar for about 5 years now, and it's been my go-to instrument.",
+          "why": "Reinforces that this electric guitar is owned currently (supports inclusion in instrument count)."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "I've been thinking about getting a new guitar humidifier to help keep my acoustic guitar in good condition.",
+          "why": "Indicates the user currently owns an acoustic guitar (another counted instrument)."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "I've been thinking about getting a new guitar humidifier to help keep my acoustic guitar in good condition.",
+          "why": "The acoustic guitar is explicitly referenced as existing, which may be needed to determine ownership count."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_3826dc55_3",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session only mentions three instruments: an old 5-piece Pearl Export drum set, a Korg B1 piano, and a planned/potential purchase of a Cordoba ukulele. It may omit other instruments you own, and it is unclear whether you currently own (versus plan to buy) the ukulele, so the count for “currently own” may be incomplete.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is thinking of selling an old drum set, a 5-piece Pearl Export, that they haven't played in years.",
+          "why": "Indicates the user owns a specific drum set (5-piece Pearl Export) relevant to counting current instruments."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "User has a piano, a Korg B1, which they've had for about 3 years, and some keys have started to stick.",
+          "why": "Indicates the user currently owns a Korg B1 piano (with timeframe), relevant to the instrument count."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "User is also thinking of buying a new ukulele and has been eyeing a Cordoba ukulele.",
+          "why": "May indicate an intended purchase; extraction preserves the fact that a Cordoba ukulele is being considered, which may or may not be part of “currently own.”"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_3826dc55_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "High — the session only explicitly mentions owning one specific instrument (an acoustic guitar), with no statement about whether the user owns any other musical instruments; therefore the total count cannot be determined from this session alone.",
+      "claims": [
+        {
+          "turnIndex": 6,
+          "fact": "I've had my acoustic guitar, a Yamaha FG800, for about 8 years.",
+          "why": "Directly indicates the user currently owns (and has) at least one musical instrument: an acoustic guitar (Yamaha FG800)."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "I'm looking to learn some new techniques to improve my guitar playing.",
+          "why": "Establishes involvement with guitar but does not specify instrument count; could still support that the user owns a guitar."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_3826dc55_4",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session does not explicitly state the total number of musical instruments the user currently owns; it only mentions a Korg B1 piano the user has and the user is considering getting a ukulele. If the user owns additional instruments not mentioned here, they will be missing from this evidence.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "The user is looking to find a piano technician to service my Korg B1, which I've had for about 3 years.",
+          "why": "Indicates the user currently owns a Korg B1 digital piano (counts as an owned musical instrument)."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "The user is thinking about maybe getting a new ukulele and asks about Cordoba ukuleles.",
+          "why": "Indicates a potential instrument the user may obtain (not confirmed as currently owned), relevant to determining current instrument count when combined with other evidence."
+        }
+      ]
+    }
+  }
+]

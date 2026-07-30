@@ -1,0 +1,18 @@
+{
+  "queryShape": "order",
+  "setBoundary": "The set consists of the user’s tennis-racket purchase date and the user’s tennis-racket receipt date, and any turns that restate those dates.",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_4d5490f1_1",
+      "turnIndex": 6,
+      "why": "States the user bought a new tennis racket online “today” (this session date is 2023/03/10), giving the purchase day."
+    },
+    {
+      "sessionId": "answer_4d5490f1_2",
+      "turnIndex": 0,
+      "why": "States the user “just received my new tennis racket today” (this session date is 2023/03/17), giving the receipt day."
+    }
+  ]
+}

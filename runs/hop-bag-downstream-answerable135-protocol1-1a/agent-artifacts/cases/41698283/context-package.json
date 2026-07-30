@@ -1,0 +1,64 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Lenses the user purchased most recently (explicitly stated).",
+  "candidateStatus": "found",
+  "missingRisk": "None",
+  "items": [
+    {
+      "sessionId": "answer_c7ddc051_2",
+      "turnIndex": 0,
+      "date": "2023/08/30 (Wed) 14:23",
+      "role": "user",
+      "text": "I'm considering getting a new tripod, but I'm not sure which one to choose. Can you compare the Gitzo and Really Right Stuff tripods for me? By the way, I've been getting some great shots with my new 70-200mm zoom lens lately.",
+      "why": "User mentions getting a new 70-200mm zoom lens (most recent ‘new lens’ language in memory) and asks about tripods.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c7ddc051_2",
+      "turnIndex": 8,
+      "date": "2023/08/30 (Wed) 14:23",
+      "role": "user",
+      "text": "I think I'll go with the Think Tank Urban Disguise 40L. I like its sleek design and versatility, and it seems like it would be a great fit for my street and travel photography. By the way, I recently took some great shots with my 70-200mm zoom lens at a local park, and I'm really loving the results I'm getting with it.",
+      "why": "User again references the 70-200mm zoom lens they recently took great shots with, reinforcing recency around the same ‘new lens’ purchase.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_c7ddc051_2",
+      "turnIndex": 2,
+      "date": "2023/08/30 (Wed) 14:23",
+      "role": "user",
+      "text": "How does the weight of the tripod affect the camera's stability, and are there any specific features I should look for in a tripod head? By the way, I've been getting some great portrait shots with the remote flash triggers I got from that workshop.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c7ddc051_2",
+      "turnIndex": 4,
+      "date": "2023/08/30 (Wed) 14:23",
+      "role": "user",
+      "text": "I've been considering upgrading to a full-frame camera body, possibly a Nikon Z6 or a Canon EOS R. Do you think the camera body would make a significant difference in image quality compared to my current Nikon D5600, and would it be worth the investment?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c7ddc051_2",
+      "turnIndex": 6,
+      "date": "2023/08/30 (Wed) 14:23",
+      "role": "user",
+      "text": "I've been thinking about getting a new camera bag to replace my old one, and I'm considering the Lowepro ProTactic 450 AW and the Think Tank Urban Disguise 40L. Can you compare them for me?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_c7ddc051_2",
+      "turnIndex": 10,
+      "date": "2023/08/30 (Wed) 14:23",
+      "role": "user",
+      "text": "Actually, I've been thinking about getting a wide-angle lens, maybe something like a 14-24mm or a 16-35mm. I've heard they're great for capturing sweeping landscapes and cityscapes, and I think they would complement my 70-200mm zoom lens nicely. What do you think?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 1502,
+  "estimatedTokens": 376
+}

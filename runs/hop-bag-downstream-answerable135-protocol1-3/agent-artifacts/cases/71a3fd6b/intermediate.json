@@ -1,0 +1,21 @@
+[
+  {
+    "session_id": "answer_ultrachat_417348",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session includes tourism board contact details with a phone number, but the question asks for the phone number “you provided me earlier”—this session is the only candidate provided, and no explicit confirmation is present that it matches the user’s earlier request beyond the same details.",
+      "claims": [
+        {
+          "turnIndex": 3,
+          "fact": "Speyer Tourismus Marketing GmbH — Phone: +49 (0) 62 32 / 14 23 - 0",
+          "why": "This contains the tourism board phone number the user is asking to confirm."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "Visitors can consult with the tourism board of Speyer to know about any upcoming sporting events.",
+          "why": "Provides context that the tourism board is a relevant contact for information, but not the phone number itself."
+        }
+      ]
+    }
+  }
+]

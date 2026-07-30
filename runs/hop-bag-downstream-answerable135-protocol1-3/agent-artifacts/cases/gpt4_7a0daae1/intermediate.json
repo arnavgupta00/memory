@@ -1,0 +1,30 @@
+[
+  {
+    "session_id": "answer_4d5490f1_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session states you bought the tennis racket online “today” (2023/03/10) and that you plan to try it during tennis lessons this Saturday, but it does not explicitly state when you actually received the racket. Without an explicit receipt date, the number of weeks between purchase and receipt cannot be determined from this session alone.",
+      "claims": [
+        {
+          "turnIndex": 6,
+          "fact": "The user says: “By the way, I just bought a new tennis racket online today, and I'm planning to try it out during my tennis lessons this Saturday.”",
+          "why": "Contains the purchase timing (“today”) and a related upcoming Saturday, which may help infer dates needed to calculate the weeks to receipt, though it does not explicitly give a receipt date."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_4d5490f1_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "High: This session only states the user received the new tennis racket on 2023/03/17, but it does not mention the day the user bought the racket. Without the purchase date, the number of weeks cannot be determined from this session alone.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "The user says: \"I just received my new tennis racket today\" in the session dated 2023/03/17 (Fri) 09:54.",
+          "why": "This provides the receive date for the new tennis racket, which is one endpoint needed to compute weeks between purchase and receipt."
+        }
+      ]
+    }
+  }
+]

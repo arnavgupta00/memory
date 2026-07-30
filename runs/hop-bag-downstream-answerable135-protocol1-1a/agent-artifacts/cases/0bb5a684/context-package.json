@@ -1,0 +1,118 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Days between the workshop date ('Effective Communication in the Workplace') and the team meeting the user was preparing for.",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_e936197f_1",
+      "turnIndex": 0,
+      "date": "2023/01/13 (Fri) 01:02",
+      "role": "user",
+      "text": "I'm preparing for an upcoming meeting with my team and I want to make sure I'm effectively communicating our project updates. I recently attended a workshop on \"Effective Communication in the Workplace\" on January 10th, which was really helpful in improving my active listening and conflict resolution skills. Can you provide some tips on structuring my presentation to keep my team engaged?",
+      "why": "User states they attended the workshop on January 10th and that it helped with meeting preparation.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e936197f_2",
+      "turnIndex": 0,
+      "date": "2023/01/13 (Fri) 13:59",
+      "role": "user",
+      "text": "I'm preparing for an upcoming team meeting and want to make sure I'm well-prepared to communicate effectively. I remember making a note to myself to practice those skills in my upcoming team meeting on January 17th, and I'm looking for some tips on active listening and conflict resolution. Can you provide some resources or advice on those topics?",
+      "why": "User references an upcoming team meeting on January 17th that they were preparing for.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e936197f_1",
+      "turnIndex": 2,
+      "date": "2023/01/13 (Fri) 01:02",
+      "role": "user",
+      "text": "That's really helpful, thanks for the tips! I'll make sure to focus on structuring my presentation in a logical order and using visual aids effectively. Additionally, I want to make sure I'm actively listening to my team's feedback and concerns during the meeting. Can you give me some advice on how to practice active listening, which was also a key takeaway from the workshop?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e936197f_1",
+      "turnIndex": 4,
+      "date": "2023/01/13 (Fri) 01:02",
+      "role": "user",
+      "text": "I'm glad I attended that workshop on \"Effective Communication in the Workplace\" on January 10th, as it helped me realize the importance of active listening in team meetings. Now, I'm more confident in my ability to create an engaging presentation and practice active listening during our meeting. Can you suggest some tools or software that I can use to create visually appealing slides and diagrams for my presentation?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e936197f_1",
+      "turnIndex": 6,
+      "date": "2023/01/13 (Fri) 01:02",
+      "role": "user",
+      "text": "I'm thinking of incorporating some interactive elements into my presentation, like polls or Q&A sessions. Do you have any recommendations for tools or software that can help me do that?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e936197f_1",
+      "turnIndex": 8,
+      "date": "2023/01/13 (Fri) 01:02",
+      "role": "user",
+      "text": "I'll definitely consider using some of these interactive tools to make my presentation more engaging. Since I attended a workshop on \"Effective Communication in the Workplace\" on January 10th, I've been focusing on improving my communication skills, including presenting information in a clear and concise manner. Do you have any tips on how to effectively convey complex information in a simple way?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e936197f_1",
+      "turnIndex": 10,
+      "date": "2023/01/13 (Fri) 01:02",
+      "role": "user",
+      "text": "I'd like to ask about the importance of self-awareness in effective communication. As I reflect on the workshop I attended on \"Effective Communication in the Workplace\" on January 10th, I realize that self-awareness was a key takeaway for me. Can you elaborate on why self-awareness is crucial in communication, and how I can continue to develop this skill?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e936197f_2",
+      "turnIndex": 2,
+      "date": "2023/01/13 (Fri) 13:59",
+      "role": "user",
+      "text": "I'm also concerned about staying on track with my team meeting agenda. Do you have any suggestions on how to prioritize tasks and allocate time for each discussion topic?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e936197f_2",
+      "turnIndex": 4,
+      "date": "2023/01/13 (Fri) 13:59",
+      "role": "user",
+      "text": "I like the idea of using a \"parking lot\" for non-essential topics. How do you suggest I handle a situation where a team member raises a topic that's not on the agenda, but still seems important?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e936197f_2",
+      "turnIndex": 6,
+      "date": "2023/01/13 (Fri) 13:59",
+      "role": "user",
+      "text": "I'm also concerned about taking notes during the meeting. Do you have any suggestions on how to effectively take notes and organize them afterwards?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e936197f_2",
+      "turnIndex": 8,
+      "date": "2023/01/13 (Fri) 13:59",
+      "role": "user",
+      "text": "I'd like to know more about how to use a template or format to organize my notes during the meeting. Can you provide some examples of templates or formats that I can use?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e936197f_2",
+      "turnIndex": 10,
+      "date": "2023/01/13 (Fri) 13:59",
+      "role": "user",
+      "text": "I remember making a note to myself to practice those skills in my upcoming team meeting on January 17th. I'd like to explore more templates and formats to organize my notes during the meeting. Can you provide some examples of digital templates that I can use, such as Microsoft OneNote, Evernote, or Google Docs?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 3473,
+  "estimatedTokens": 869
+}

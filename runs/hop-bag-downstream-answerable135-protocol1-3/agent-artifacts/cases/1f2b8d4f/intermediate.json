@@ -1,0 +1,105 @@
+[
+  {
+    "session_id": "answer_d8454588_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session provides only the luxury boot price ($800) and several approximate budget option price ranges, but it does not identify an explicit “similar pair found at the budget store” with a single definite price to compute a precise difference. The reducer may need clarification or may interpret one of the cited budget-store options as the compared pair.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "$800 for the luxury boots",
+          "why": "Provides the luxury-boot reference price needed to calculate a difference."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "Black ankle boots with a heel from a luxury brand; sleek design; quality of the leather; confident and stylish",
+          "why": "Describes the luxury-boot characteristics to match against the “similar pair” at a budget store."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Sam Edelman Hazel Boot: around $200-$250 (Nordstrom or Sam Edelman’s website)",
+          "why": "Offers an explicit similar-boot option with a quoted price range that could be treated as a “similar pair” price depending on which budget-store comparison is chosen."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Clarks Wave Boot: around $150-$180 (Clarks’ website or Amazon)",
+          "why": "Provides another candidate similar-boot price range that might correspond to the budget-store match."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Vince Camuto Betina Boot: around $200-$250 (Vince Camuto’s website or Nordstrom)",
+          "why": "Another explicit similar-boot price range for potential comparison."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Steve Madden Baily Boot: around $100-$150 (Steve Madden’s website or Amazon)",
+          "why": "Gives a similar-boot price range that could be used for the budget-store price."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "ASOS Design Ankle Boot: around $80-$100 (ASOS’ website)",
+          "why": "Provides a lower-priced similar option that may align with a “budget store” comparison."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "In the $50-$100 price range: Old Navy ankle boots start at around $30-$40",
+          "why": "Supplies budget-store pricing for a potentially compared similar pair within the target range."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "In the $50-$100 price range: Target ankle boots start at around $30-$50",
+          "why": "Supplies budget-store pricing that could be used as the budget-store “similar pair” price."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "In the $50-$100 price range: Forever 21 ankle boots start at around $20-$40",
+          "why": "Supplies budget-store pricing as another possible match for the budget-store comparison."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "In the $50-$100 price range: H&M ankle boots start at around $30-$60",
+          "why": "Supplies budget-store pricing as another possible match."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "In the $50-$100 price range: Amazon ankle boots start at around $30-$70",
+          "why": "Supplies budget-store/e-commerce pricing that could correspond to the “similar pair found at the budget store.”"
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Amazon's Ollio Ankle Boot: priced around $40-$50",
+          "why": "Gives a specific named budget option with a quoted price range that could be used in a difference calculation."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "H&M's Ankle Boot with Heel: priced around $40-$50",
+          "why": "Gives another specific named budget option with a quoted price range."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Forever 21's Ankle Boot with Block Heel: priced around $25-$35",
+          "why": "Gives another specific named budget option with a quoted price range."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "User does not want to spend $200-$250; thinking more along the lines of $50-$100",
+          "why": "Captures the user’s price constraint for what counts as the “budget store” similar pair in the comparison."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_d8454588_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Likely missing the luxury boot price: this session mentions only the budget-store similar boots price ($50) and does not state the price you paid for your luxury boots.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "Similar boots can be found at a budget store for $50.",
+          "why": "This provides a concrete budget-store price for the “similar pair” needed to compute the difference versus your luxury boots."
+        }
+      ]
+    }
+  }
+]

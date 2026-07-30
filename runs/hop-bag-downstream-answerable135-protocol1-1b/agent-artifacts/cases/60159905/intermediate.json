@@ -1,0 +1,118 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Consider dinner parties you attended within the 1-month window ending 2023/05/30 14:40 (i.e., roughly since 2023/04/30).",
+    "candidateStatus": "found",
+    "missingRisk": "The candidate sessions include “dinner party” and “potluck” events, but the catalog only provides relative timing (e.g., “last week”, “yesterday”, “two weeks ago”) rather than exact dates; there may be additional attended dinner parties outside this candidate set, or some events may not qualify as “dinner parties” depending on how the answerer defines them.",
+    "items": [
+      {
+        "sessionId": "answer_75eca223_2",
+        "turnIndex": 2,
+        "why": "States prior dinner-party experience at Mike’s place “two weeks ago” (BBQ theme + football), which likely falls within the past month and counts as an attended dinner party."
+      },
+      {
+        "sessionId": "answer_75eca223_2",
+        "turnIndex": 4,
+        "why": "Explicitly mentions experience with a “low-key dinner party” at Alex’s place “yesterday” (potluck + cuisines), which is within the past month and relevant to counting attended dinner parties."
+      },
+      {
+        "sessionId": "answer_75eca223_1",
+        "turnIndex": 0,
+        "why": "Explicitly states you “attended a lovely Italian feast at Sarah’s place last week,” which is an attended dinner-party event within the past month."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Consider dinner parties you attended within the 1-month window ending 2023/05/30 14:40 (i.e., roughly since 2023/04/30).",
+    "candidateStatus": "found",
+    "missingRisk": "The candidate sessions include “dinner party” and “potluck” events, but the catalog only provides relative timing (e.g., “last week”, “yesterday”, “two weeks ago”) rather than exact dates; there may be additional attended dinner parties outside this candidate set, or some events may not qualify as “dinner parties” depending on how the answerer defines them.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_75eca223_2",
+        "turnIndex": 2,
+        "why": "States prior dinner-party experience at Mike’s place “two weeks ago” (BBQ theme + football), which likely falls within the past month and counts as an attended dinner party."
+      },
+      {
+        "sessionId": "answer_75eca223_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_75eca223_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_75eca223_2",
+        "turnIndex": 4,
+        "why": "Explicitly mentions experience with a “low-key dinner party” at Alex’s place “yesterday” (potluck + cuisines), which is within the past month and relevant to counting attended dinner parties."
+      },
+      {
+        "sessionId": "answer_75eca223_2",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_75eca223_1",
+        "turnIndex": 0,
+        "why": "Explicitly states you “attended a lovely Italian feast at Sarah’s place last week,” which is an attended dinner-party event within the past month."
+      },
+      {
+        "sessionId": "answer_75eca223_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "21f8f481_3",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "21f8f481_3",
+        "turnIndex": 5,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "21f8f481_3",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_75eca223_1",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_75eca223_1",
+        "turnIndex": 3,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_75eca223_1",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "eb6737c0_1",
+        "turnIndex": 0,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "eb6737c0_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "c351fa3b_1",
+        "turnIndex": 0,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "c351fa3b_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

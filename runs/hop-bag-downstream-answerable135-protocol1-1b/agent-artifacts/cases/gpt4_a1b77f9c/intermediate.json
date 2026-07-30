@@ -1,0 +1,153 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Compute total weeks across three time spans from the recorded start/finish moments for each book; use only the dates/timestamps present in the candidate sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "The sessions don’t provide explicit reading/listening durations (e.g., hours/minutes per day or number of weeks directly). Downstream may approximate weeks from start/finish dates, but the exact interpretation (inclusive/exclusive days, timezone, partial-week handling) isn’t specified.",
+    "items": [
+      {
+        "sessionId": "answer_e9ad5914_1",
+        "turnIndex": 0,
+        "why": "Records the start of reading 'The Nightingale' on 2022/01/01."
+      },
+      {
+        "sessionId": "answer_e9ad5914_2",
+        "turnIndex": 0,
+        "why": "Records finishing reading 'The Nightingale' on 2022/01/15."
+      },
+      {
+        "sessionId": "answer_e9ad5914_3",
+        "turnIndex": 0,
+        "why": "Records starting to listen to 'Sapiens: A Brief History of Humankind' on 2022/02/01."
+      },
+      {
+        "sessionId": "answer_e9ad5914_4",
+        "turnIndex": 0,
+        "why": "Records finishing listening to 'Sapiens: A Brief History of Humankind' on 2022/03/01."
+      },
+      {
+        "sessionId": "answer_e9ad5914_5",
+        "turnIndex": 0,
+        "why": "Records starting to listen to 'The Power' on 2022/03/06."
+      },
+      {
+        "sessionId": "answer_e9ad5914_6",
+        "turnIndex": 0,
+        "why": "Records finishing listening to 'The Power' on 2022/03/20."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Compute total weeks across three time spans from the recorded start/finish moments for each book; use only the dates/timestamps present in the candidate sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "The sessions don’t provide explicit reading/listening durations (e.g., hours/minutes per day or number of weeks directly). Downstream may approximate weeks from start/finish dates, but the exact interpretation (inclusive/exclusive days, timezone, partial-week handling) isn’t specified.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_e9ad5914_1",
+        "turnIndex": 0,
+        "why": "Records the start of reading 'The Nightingale' on 2022/01/01."
+      },
+      {
+        "sessionId": "answer_e9ad5914_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e9ad5914_2",
+        "turnIndex": 0,
+        "why": "Records finishing reading 'The Nightingale' on 2022/01/15."
+      },
+      {
+        "sessionId": "answer_e9ad5914_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e9ad5914_3",
+        "turnIndex": 0,
+        "why": "Records starting to listen to 'Sapiens: A Brief History of Humankind' on 2022/02/01."
+      },
+      {
+        "sessionId": "answer_e9ad5914_3",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e9ad5914_4",
+        "turnIndex": 0,
+        "why": "Records finishing listening to 'Sapiens: A Brief History of Humankind' on 2022/03/01."
+      },
+      {
+        "sessionId": "answer_e9ad5914_4",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e9ad5914_5",
+        "turnIndex": 0,
+        "why": "Records starting to listen to 'The Power' on 2022/03/06."
+      },
+      {
+        "sessionId": "answer_e9ad5914_5",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e9ad5914_6",
+        "turnIndex": 0,
+        "why": "Records finishing listening to 'The Power' on 2022/03/20."
+      },
+      {
+        "sessionId": "answer_e9ad5914_6",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e9ad5914_1",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e9ad5914_1",
+        "turnIndex": 7,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_e9ad5914_1",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e9ad5914_2",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e9ad5914_3",
+        "turnIndex": 6,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_e9ad5914_3",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e9ad5914_3",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e9ad5914_5",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_e9ad5914_6",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

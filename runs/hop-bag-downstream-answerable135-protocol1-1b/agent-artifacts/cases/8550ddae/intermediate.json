@@ -1,0 +1,58 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the turn(s) that explicitly state what cocktail recipe you tried “last weekend” (and any nearby clarification).",
+    "candidateStatus": "found",
+    "missingRisk": "If “last weekend” refers to a different session than the one containing the explicit “tried … last weekend” statement, the selected turns might miss that other recipe.",
+    "items": [
+      {
+        "sessionId": "answer_c8354ae9",
+        "turnIndex": 2,
+        "why": "User explicitly says: “Last weekend, I tried a lavender gin fizz recipe” (and notes improvising due to missing simple syrup)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the turn(s) that explicitly state what cocktail recipe you tried “last weekend” (and any nearby clarification).",
+    "candidateStatus": "found",
+    "missingRisk": "If “last weekend” refers to a different session than the one containing the explicit “tried … last weekend” statement, the selected turns might miss that other recipe.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_c8354ae9",
+        "turnIndex": 2,
+        "why": "User explicitly says: “Last weekend, I tried a lavender gin fizz recipe” (and notes improvising due to missing simple syrup)."
+      },
+      {
+        "sessionId": "answer_c8354ae9",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_c8354ae9",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "71cf5aeb_3",
+        "turnIndex": 0,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "71cf5aeb_3",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "a7189b75",
+        "turnIndex": 0,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "a7189b75",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

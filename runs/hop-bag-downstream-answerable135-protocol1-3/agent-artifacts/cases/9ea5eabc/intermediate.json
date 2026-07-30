@@ -1,0 +1,45 @@
+[
+  {
+    "session_id": "answer_02e66dec_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session contains location details only indirectly via the user’s description of a past family trip; it clearly mentions Hawaii and a specific area (Waikiki) but does not explicitly state the exact destination for the “most recent family trip” beyond those references. No dates for the trip itself are given.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "The user recently went on a family trip to Hawaii and had a great time snorkeling together, but felt stuck to a schedule.",
+          "why": "This directly identifies a family trip destination (Hawaii) and relevant activities/preferences (snorkeling; scheduling constraint) that could answer where they went."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "The user says they would have set aside more time to explore Waikiki and do some shopping, but it was hard to fit with their packed schedule.",
+          "why": "This adds a specific place within the referenced trip (Waikiki) and implies they were there during that family trip."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "The user expresses difficulty prioritizing personal time on a family trip and suggests communicating needs with family and taking a few hours on a specific day to explore and shop.",
+          "why": "This captures the user’s constraints/preferences about that trip context (schedule/personal time), which may help interpret which location they mean."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_02e66dec_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session only mentions a recent family trip to Paris (\"last month\"), but does not provide any other destination(s) or specific trip dates/locations beyond Paris. If the user’s most recent family trip involved multiple places, this session may omit additional destinations.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "User: \"We just went there as a family last month [Paris]\" and \"it was amazing\"; \"my kids loved it.\"",
+          "why": "Indicates the most recent family trip destination (Paris) and that it occurred \"last month\" relative to the session."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "User: \"Since I've been thinking about my recent family trip to Paris\"",
+          "why": "Re-states that the user’s recent family trip was to Paris, which directly supports identifying where they went."
+        }
+      ]
+    }
+  }
+]

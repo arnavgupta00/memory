@@ -1,0 +1,154 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Use the candidate sessions to extract the user’s stated personal-best time(s) in the charity 5K run, preserving any conflicting values until the downstream answerer decides which is the true personal best.",
+  "candidateStatus": "found",
+  "missingRisk": "Two different personal-best times are mentioned across sessions (27:12 on 2023/05/23 and 25:50 on 2023/05/30). Downstream may need to reconcile which time is the actual current personal best as of 2023/06/25.; frozen bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "answer_a25d4a91_1",
+      "turnIndex": 3,
+      "date": "2023/05/23 (Tue) 13:01",
+      "role": "assistant",
+      "text": "Having a two-week gap between games is a good amount of time to work on your endurance and fitness. Here are some tips to help you improve your endurance for soccer:\n\n1. **Cardiovascular Training**: Incorporate cardio exercises into your workout routine, such as jogging, cycling, or swimming, for at least 20-30 minutes, 2-3 times a week. This will help increase your aerobic capacity and endurance.\n2. **High-Intensity Interval Training (HIIT)**: Incorporate HIIT workouts that mimic the intensity of a soccer game. For example, sprint for 20-30 seconds, followed by 1-2 minutes of active recovery. Repeat for 20-30 minutes.\n3. **Strength Training**: Focus on exercises that target your legs, core, and glutes, such as squats, lunges, deadlifts, and leg press. This will help you build power and endurance.\n4. **Plyometric Exercises**: Incorporate plyometric exercises like jump squats, box jumps, and burpees to improve your explosiveness and power.\n5. **Agility Drills**: Incorporate agility drills like cone drills, ladder drills, and shuttle runs to improve your speed, agility, and quick changes of direction.\n6. **Proper Warm-up and Cool-down**: Make sure to warm up properly before your games and cool down afterwards to prevent injuries and aid in recovery.\n7. **Incorporate Hill Sprints**: Find a hill or incline and sprint up it at maximum effort for 20-30 seconds. Walk or jog back down to recover, and repeat for 20-30 minutes. This will help improve your anaerobic endurance.\n8. **Incorporate Small-Sided Games**: Play small-sided games like 3v3 or 4v4 with your friends or teammates. This will help you work on your endurance in a game-like situation.\n9. **Stay Hydrated and Fuel Properly**: Make sure to drink plenty of water and eat a balanced diet that includes complex carbohydrates, lean protein, and healthy fats to help fuel your body.\n10. **Get Enough Rest and Recovery**: Adequate rest and recovery are crucial for your body to adapt to the demands of soccer. Aim for 7-9 hours of sleep and take rest days as needed.\n\nRemember to start slowly and gradually increase the intensity and duration of your workouts as you get closer to your game. It's also important to listen to your body and not overdo it, as overtraining can lead to injury or burnout.\n\nI hope these tips help you improve your endurance and perform well in your upcoming game!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_a25d4a91_1",
+      "turnIndex": 4,
+      "date": "2023/05/23 (Tue) 13:01",
+      "role": "user",
+      "text": "That's really helpful, thanks! I've been doing some running lately, and I'm happy to say that I recently set a personal best time in a charity 5K run with a time of 27:12. Do you have any tips on how to improve my running technique to make me more efficient and effective on the soccer field?",
+      "why": "User explicitly states a personal best in a charity 5K run with time 27:12; directly answers the time value needed.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_a25d4a91_1",
+      "turnIndex": 5,
+      "date": "2023/05/23 (Tue) 13:01",
+      "role": "assistant",
+      "text": "Congratulations on your personal best time in the 5K run! That's a great achievement!\n\nRunning technique is crucial for efficiency and effectiveness on the soccer field. Here are some tips to help you improve your running technique:\n\n1. **Posture**: Maintain a tall, upright posture while running. Imagine a string pulling your head up towards the ceiling. This will help you run more efficiently and reduce fatigue.\n2. **Footstrike**: Try to land midfoot or forefoot instead of heel striking. This will reduce the impact on your joints and help you generate more power and speed.\n3. **Stride Length and Cadence**: Focus on quick, light steps instead of long, heavy strides. Aim for a cadence of 160-170 steps per minute. This will help you maintain speed and endurance.\n4. **Arm Swing**: Keep your arms relaxed and bent at around 90 degrees. Avoid crossing your arms over your body or holding them too far away from your body. This will help you maintain balance and generate power.\n5. **Core Engagement**: Engage your core muscles to maintain good posture and generate power. Imagine you're pulling your belly button towards your spine.\n6. **Breathing**: Practice rhythmic breathing to help you stay relaxed and focused. Exhale when your left foot hits the ground, and inhale when your right foot hits the ground (or vice versa).\n7. **Plyometric Exercises**: Incorporate plyometric exercises like box jumps, depth jumps, and bounding to improve your explosive power and speed.\n8. **Agility Drills**: Incorporate agility drills like cone drills, ladder drills, and shuttle runs to improve your speed, agility, and quick changes of direction.\n9. **Strength Training**: Incorporate strength training exercises that target your glutes, legs, and core. This will help you generate more power and speed.\n10. **Practice with a Soccer Ball**: Practice running with a soccer ball at your feet. This will help you develop the ability to control your speed and direction while running with the ball.\n\nAdditionally, here are some soccer-specific tips:\n\n1. **Change of Direction**: Practice quick changes of direction, such as cutting, weaving, and decelerating. This will help you navigate the soccer field more efficiently.\n2. **Pace Yourself**: Learn to pace yourself during a game. Start with a moderate pace and adjust according to the game's intensity.\n3. **Use Your Arms**: Use your arms to shield the ball, create space, and protect yourself from opponents.\n4. **Keep Your Head Up**: Keep your head up and eyes forward to stay aware of your surroundings and teammates.\n5. **Practice Game Situations**: Practice game scenarios, such as making runs, receiving passes, and creating scoring opportunities. This will help you develop your decision-making skills and reaction time.\n\nRemember, the key to improving your running technique is to practice consistently and make small adjustments over time. Focus on one or two areas at a time, and don't be afraid to seek guidance from a running coach or experienced soccer player.",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_a25d4a91_1",
+      "turnIndex": 6,
+      "date": "2023/05/23 (Tue) 13:01",
+      "role": "user",
+      "text": "That's really helpful, thanks! I've been focusing on strengthening my core and legs, which has helped with my running and soccer games. Speaking of soccer, I recently scored a goal in a recreational game with my coworkers, which was a highlight for me since I'm not typically a goal-scorer. Do you have any tips on how to improve my shooting technique in soccer?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_a25d4a91_2",
+      "turnIndex": 0,
+      "date": "2023/05/30 (Tue) 13:53",
+      "role": "user",
+      "text": "I'm training for another charity 5K run coming up and I was wondering if you could give me some tips on how to improve my endurance. By the way, I'm hoping to beat my personal best time of 25:50 this time around.",
+      "why": "User states they are hoping to beat their personal best time of 25:50 in a charity 5K run; this is the other personal-best value to reconcile.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_a25d4a91_2",
+      "turnIndex": 1,
+      "date": "2023/05/30 (Tue) 13:53",
+      "role": "assistant",
+      "text": "Congratulations on your upcoming charity 5K run! Improving your endurance requires a combination of consistent training, gradual progression, and smart strategies. Given your goal to beat your personal best time of 25:50, I'll provide you with tailored tips to help you achieve it.\n\n**1. Gradually Increase Your Weekly Mileage**: To build endurance, you need to increase your weekly mileage. Aim to add 10-15% to your weekly total every week. This allows your body to adapt to the demands of running without risking injury.\n\n**2. Incorporate Interval Training**: Intervals are an excellent way to boost your endurance and speed. Try incorporating interval workouts like:\n\t* 4-6 x 800m at a fast pace, with 400m active recovery in between\n\t* 3-5 x 1600m at a moderate pace, with 800m active recovery\n\t* Hill repeats: find a route with a gradual incline and run up the hill at a high intensity, then recover by walking or jogging back down\n\n**3. Incorporate Strength Training**: Building strength in your core, glutes, and legs will help you maintain good form and generate more power when you run. Focus on exercises like squats, lunges, deadlifts, and leg press.\n\n**4. Incorporate Long Runs**: One longer run per week (6-8 kilometers) will help your body adapt to the demands of running continuously. Try to maintain a conversational pace during these runs.\n\n**5. Incorporate Speed Work**: Incorporate shorter, faster runs into your routine, such as 200-400m sprints at a high intensity. This will help you build speed and endurance.\n\n**6. Incorporate Proper Breathing and Pacing**: Practice deep, rhythmic breathing to help you stay relaxed and focused. Try to maintain a consistent pace throughout your runs, with a slight negative split (faster second half).\n\n**7. Pay Attention to Your Form**: Good form will help you run more efficiently and reduce your risk of injury. Focus on:\n\t* Keeping your posture upright\n\t* Landing midfoot or forefoot instead of heel striking\n\t* Keeping your arms relaxed and bent at around 90 degrees\n\t* Engaging your core and glutes to support your running form\n\n**8. Fuel and Hydrate Properly**: Make sure you're fueling your body with a balanced diet that includes complex carbohydrates, lean protein, and healthy fats. Stay hydrated by drinking plenty of water before, during, and after your runs.\n\n**9. Get Enough Rest and Recovery**: Adequate rest and recovery are crucial for your body to adapt to the demands of training. Ensure you're getting 7-9 hours of sleep each night and taking rest days as needed.\n\n**10. Mental Preparation**: Visualize yourself crossing the finish line in under 25:50. Focus on positive self-talk, and remind yourself that you've put in the work to achieve your goal.\n\nSample Training Plan:\n\nMonday: 30-minute easy run\nTuesday: Interval training (4-6 x 800m)\nWednesday: Rest day\nThursday: 30-minute easy run\nFriday: Strength training (legs and core)\nSaturday: 6-8 kilometer long run\nSunday: Rest day or active recovery (e.g., yoga or a leisurely bike ride)\n\nRemember to listen to your body and adjust your training plan as needed. With consistent training and focus on these tips, you'll be well on your way to beating your personal best time!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_a25d4a91_2",
+      "turnIndex": 10,
+      "date": "2023/05/30 (Tue) 13:53",
+      "role": "user",
+      "text": "I'm getting ready for a charity 5K run and I was wondering if you could give me some tips on how to improve my endurance. By the way, I'm hoping to beat my personal best time this time around.",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_a25d4a91_2",
+      "turnIndex": 11,
+      "date": "2023/05/30 (Tue) 13:53",
+      "role": "assistant",
+      "text": "Improving endurance for a 5K run requires a combination of consistent training, strategic pacing, and mental preparation. Given your goal to beat your personal best time of 25:50, I'll provide you with tailored tips to help you achieve it.\n\n**1. Incorporate Interval Training:**\nInterval training is an effective way to boost your endurance and speed. Try incorporating interval workouts like:\n\t* 4-6 x 800m at a fast pace, with 400m active recovery in between\n\t* 3-5 x 1600m at a moderate pace, with 800m active recovery\n\t* Hill repeats: find a route with a gradual incline and run up the hill at a high intensity, then recover by walking or jogging back down\n\n**2. Increase Your Weekly Mileage:**\nGradually increase your weekly mileage to build endurance. Aim to add 10-15% to your weekly total every week. This allows your body to adapt to the demands of running without risking injury.\n\n**3. Incorporate Strength Training:**\nBuilding strength in your core, glutes, and legs will help you maintain good form and generate more power when you run. Focus on exercises like squats, lunges, deadlifts, and leg press.\n\n**4. Incorporate Long Runs:**\nOne longer run per week (6-8 kilometers) will help your body adapt to the demands of running continuously. Try to maintain a conversational pace during these runs.\n\n**5. Focus on Proper Breathing and Pacing:**\nPractice deep, rhythmic breathing to help you stay relaxed and focused. Try to maintain a consistent pace throughout your runs, with a slight negative split (faster second half).\n\n**6. Pay Attention to Your Form:**\nGood form will help you run more efficiently and reduce your risk of injury. Focus on:\n\t* Keeping your posture upright\n\t* Landing midfoot or forefoot instead of heel striking\n\t* Keeping your arms relaxed and bent at around 90 degrees\n\t* Engaging your core and glutes to support your running form\n\n**7. Fuel and Hydrate Properly:**\nMake sure you're fueling your body with a balanced diet that includes complex carbohydrates, lean protein, and healthy fats. Stay hydrated by drinking plenty of water before, during, and after your runs.\n\n**8. Get Enough Rest and Recovery:**\nAdequate rest and recovery are crucial for your body to adapt to the demands of training. Ensure you're getting 7-9 hours of sleep each night and taking rest days as needed.\n\n**9. Mental Preparation:**\nVisualize yourself crossing the finish line in under 25:50. Focus on positive self-talk, and remind yourself that you've put in the work to achieve your goal.\n\nSample Training Plan:\n\nMonday: 30-minute easy run\nTuesday: Interval training (4-6 x 800m)\nWednesday: Rest day\nThursday: 30-minute easy run\nFriday: Strength training (legs and core)\nSaturday: 6-8 kilometer long run\nSunday: Rest day or active recovery (e.g., yoga or a leisurely bike ride)\n\nRemember to listen to your body and adjust your training plan as needed. With consistent training and focus on these tips, you'll be well on your way to beating your personal best time!",
+      "why": "Assistant restates the goal to beat a personal best time of 25:50, reinforcing that the PB value mentioned in this session is 25:50.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_a25d4a91_1",
+      "turnIndex": 0,
+      "date": "2023/05/23 (Tue) 13:01",
+      "role": "user",
+      "text": "I'm trying to plan out my fitness schedule for the next few weeks. Can you remind me when my next soccer game is with my coworkers?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a25d4a91_1",
+      "turnIndex": 2,
+      "date": "2023/05/23 (Tue) 13:01",
+      "role": "user",
+      "text": "I think it's in two weeks, I remember my teammate saying something about it. Can you give me some tips on how to improve my endurance for soccer, since we're playing every two weeks?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a25d4a91_1",
+      "turnIndex": 8,
+      "date": "2023/05/23 (Tue) 13:01",
+      "role": "user",
+      "text": "That's really helpful, thanks! I've been thinking about signing up for a tennis tournament that's happening on May 6th. I've been playing tennis casually for a few years, but this will be my first real tournament. Do you have any tips on how to prepare for it?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a25d4a91_1",
+      "turnIndex": 10,
+      "date": "2023/05/23 (Tue) 13:01",
+      "role": "user",
+      "text": "That's really helpful, thanks! I've been practicing my serve and volleys, and I'm hoping to make it to at least the quarterfinals. I'll definitely work on my footwork and returns as well. Do you have any tips on how to choose the right tennis racket and strings for my playing style?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a25d4a91_2",
+      "turnIndex": 2,
+      "date": "2023/05/30 (Tue) 13:53",
+      "role": "user",
+      "text": "What should I focus on during my interval training, is it more important to push myself to complete the intervals or to focus on maintaining a consistent pace throughout the workout?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a25d4a91_2",
+      "turnIndex": 4,
+      "date": "2023/05/30 (Tue) 13:53",
+      "role": "user",
+      "text": "I was thinking about incorporating strength training into my routine, can you recommend some exercises that will help improve my running performance?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a25d4a91_2",
+      "turnIndex": 6,
+      "date": "2023/05/30 (Tue) 13:53",
+      "role": "user",
+      "text": "I'm actually getting ready for a tennis tournament coming up on May 6th and I was wondering if you could give me some tips on how to improve my serve.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_a25d4a91_2",
+      "turnIndex": 8,
+      "date": "2023/05/30 (Tue) 13:53",
+      "role": "user",
+      "text": "Thanks for the tips! I've been working on my serve and I think I need to focus on my toss consistency. Do you have any drills that can help me improve my toss?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 14126,
+  "estimatedTokens": 3532
+}

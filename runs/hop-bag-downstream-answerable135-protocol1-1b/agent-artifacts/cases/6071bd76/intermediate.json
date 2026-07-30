@@ -1,0 +1,48 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Compare the French press coffee-to-water ratio stated in earlier vs later sessions to determine whether the water per tablespoon increased or decreased.",
+    "candidateStatus": "found",
+    "missingRisk": "If there is a more recent ratio change in an unreturned session, this comparison could miss it; only the two provided sessions contain explicit ratio numbers.",
+    "items": [
+      {
+        "sessionId": "answer_4dac77cb_1",
+        "turnIndex": 0,
+        "why": "Contains the earlier French press ratio: 1 tablespoon coffee for every 6 ounces of water."
+      },
+      {
+        "sessionId": "answer_4dac77cb_2",
+        "turnIndex": 0,
+        "why": "Contains the later French press ratio: 1 tablespoon coffee for every 5 ounces of water."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Compare the French press coffee-to-water ratio stated in earlier vs later sessions to determine whether the water per tablespoon increased or decreased.",
+    "candidateStatus": "found",
+    "missingRisk": "If there is a more recent ratio change in an unreturned session, this comparison could miss it; only the two provided sessions contain explicit ratio numbers.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_4dac77cb_1",
+        "turnIndex": 0,
+        "why": "Contains the earlier French press ratio: 1 tablespoon coffee for every 6 ounces of water."
+      },
+      {
+        "sessionId": "answer_4dac77cb_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_4dac77cb_2",
+        "turnIndex": 0,
+        "why": "Contains the later French press ratio: 1 tablespoon coffee for every 5 ounces of water."
+      },
+      {
+        "sessionId": "answer_4dac77cb_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

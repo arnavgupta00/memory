@@ -1,0 +1,35 @@
+[
+  {
+    "session_id": "answer_05d808e6_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session states you ordered the new remote shutter release on February 5th, but it does not provide when it was received/delivered. Without a delivery/arrival date or timeframe, the exact number of days cannot be determined from this session alone.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "On February 5th you realized you lost your remote shutter release and ordered a new one online.",
+          "why": "Provides the order date (Feb 5) needed to compute how many days it took after ordering."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_05d808e6_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Some timing/order details may be missing: the session states only the arrival date (February 10th) but does not include the order date, shipping timeframe, or when the user placed the order, so the “how many days after I ordered it” duration cannot be fully determined from this session alone.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User says: “I just got a new remote shutter release that arrived on February 10th.”",
+          "why": "Provides the arrival date needed for a delivery-day calculation, but no order date is present in this session."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "User reiterates: “I did mention that I got a new remote shutter release that arrived on February 10th.”",
+          "why": "Reinforces the same arrival-date fact; still no order date is provided."
+        }
+      ]
+    }
+  }
+]

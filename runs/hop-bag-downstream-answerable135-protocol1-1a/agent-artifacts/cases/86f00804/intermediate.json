@@ -1,0 +1,18 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "The book the user says they are currently reading (most recent explicitly ongoing read)",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_96b8c9ee",
+      "turnIndex": 0,
+      "why": "User explicitly says they are currently “devouring” The Seven Husbands of Evelyn Hugo."
+    },
+    {
+      "sessionId": "answer_96b8c9ee",
+      "turnIndex": 6,
+      "why": "User also mentions The Last House Guest as the book for their book club that they have already read—useful context for whether it could be current, but framed as already read."
+    }
+  ]
+}

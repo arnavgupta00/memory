@@ -1,0 +1,138 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Count babies/families mentioned as recently born/adopted within the “last few months” window relative to 2023/05/13, using the birth timing cues provided (e.g., “a few weeks ago,” “in March,” “in April,” “recently”).",
+    "candidateStatus": "found",
+    "missingRisk": "Some candidates only provide month-level timing (e.g., March/April) or ambiguous phrasing (“a few weeks ago,” “around the same time”), so downstream counting may require interpretation of what qualifies as “last few months.”",
+    "items": [
+      {
+        "sessionId": "answer_fa526fc0_4",
+        "turnIndex": 0,
+        "why": "Provides the key “baby boy named Jasper a few weeks ago” fact (recent birth timing) for a friend (David)."
+      },
+      {
+        "sessionId": "answer_fa526fc0_4",
+        "turnIndex": 8,
+        "why": "Contains birth timing for multiple babies: Max (born in March), Charlotte (born around the same time as Max), and aunt’s twins Ava & Lily (born in April)."
+      },
+      {
+        "sessionId": "answer_fa526fc0_4",
+        "turnIndex": 10,
+        "why": "Adds another baby/adoption to include in the count: Sarah’s adopted daughter Aaliyah (timing described as recent in the earlier session facts)."
+      },
+      {
+        "sessionId": "answer_fa526fc0_2",
+        "turnIndex": 0,
+        "why": "Compares/collects additional recent-child facts in one place: Charlotte’s recent birth (“a few weeks after Rachel’s baby shower”), David/Jasper’s “a few weeks ago,” aunt’s twins Ava & Lily, and Sarah’s adopted child Aaliyah."
+      },
+      {
+        "sessionId": "answer_fa526fc0_2",
+        "turnIndex": 4,
+        "why": "Reiterates the same “Jasper … a few weeks ago” and “Ava and Lily” facts in the get-together context, helpful as corroboration for counting Jasper/Ava/Lily as recent additions."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Count babies/families mentioned as recently born/adopted within the “last few months” window relative to 2023/05/13, using the birth timing cues provided (e.g., “a few weeks ago,” “in March,” “in April,” “recently”).",
+    "candidateStatus": "found",
+    "missingRisk": "Some candidates only provide month-level timing (e.g., March/April) or ambiguous phrasing (“a few weeks ago,” “around the same time”), so downstream counting may require interpretation of what qualifies as “last few months.”; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_fa526fc0_4",
+        "turnIndex": 0,
+        "why": "Provides the key “baby boy named Jasper a few weeks ago” fact (recent birth timing) for a friend (David)."
+      },
+      {
+        "sessionId": "answer_fa526fc0_4",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_fa526fc0_4",
+        "turnIndex": 8,
+        "why": "Contains birth timing for multiple babies: Max (born in March), Charlotte (born around the same time as Max), and aunt’s twins Ava & Lily (born in April)."
+      },
+      {
+        "sessionId": "answer_fa526fc0_4",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_fa526fc0_4",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_fa526fc0_4",
+        "turnIndex": 10,
+        "why": "Adds another baby/adoption to include in the count: Sarah’s adopted daughter Aaliyah (timing described as recent in the earlier session facts)."
+      },
+      {
+        "sessionId": "answer_fa526fc0_4",
+        "turnIndex": 11,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_fa526fc0_2",
+        "turnIndex": 0,
+        "why": "Compares/collects additional recent-child facts in one place: Charlotte’s recent birth (“a few weeks after Rachel’s baby shower”), David/Jasper’s “a few weeks ago,” aunt’s twins Ava & Lily, and Sarah’s adopted child Aaliyah."
+      },
+      {
+        "sessionId": "answer_fa526fc0_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_fa526fc0_2",
+        "turnIndex": 4,
+        "why": "Reiterates the same “Jasper … a few weeks ago” and “Ava and Lily” facts in the get-together context, helpful as corroboration for counting Jasper/Ava/Lily as recent additions."
+      },
+      {
+        "sessionId": "answer_fa526fc0_2",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_fa526fc0_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_fa526fc0_3",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_fa526fc0_3",
+        "turnIndex": 1,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_fa526fc0_3",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_fa526fc0_1",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_fa526fc0_1",
+        "turnIndex": 1,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_fa526fc0_1",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_fa526fc0_2",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

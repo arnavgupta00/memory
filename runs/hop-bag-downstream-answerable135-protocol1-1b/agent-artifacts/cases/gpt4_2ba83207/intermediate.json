@@ -1,0 +1,138 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "past month relative to 2023/05/30 22:59; determine which grocery store user spent the most money at",
+    "candidateStatus": "found",
+    "missingRisk": "If the user spent money at additional stores in the past month that are not represented in these candidate sessions, the true “most” store could be different. Also, whether to include Instacart delivery fees in the store spend may affect comparisons (sessions mention both item totals and a delivery fee).",
+    "items": [
+      {
+        "sessionId": "answer_6a3b5c13_1",
+        "turnIndex": 0,
+        "why": "Direct spend fact: user grocery shopped at Walmart and spent around $120 (last Saturday, about a week ago)."
+      },
+      {
+        "sessionId": "answer_6a3b5c13_0",
+        "turnIndex": 0,
+        "why": "Direct spend fact: user placed an online order with Thrive Market last month and spent around $150 on organic and sustainable products."
+      },
+      {
+        "sessionId": "answer_6a3b5c13_2",
+        "turnIndex": 0,
+        "why": "Direct spend fact: user and sister went to Trader Joe's (week before last) and spent around $80 between the two of them."
+      },
+      {
+        "sessionId": "answer_6a3b5c13_4",
+        "turnIndex": 0,
+        "why": "Publix spend facts: user ordered from Publix last week via Instacart and spent around $60, plus a $10 delivery fee (relevant for total spend comparison)."
+      },
+      {
+        "sessionId": "answer_6a3b5c13_4",
+        "turnIndex": 6,
+        "why": "Reinforces Publix spend and includes delivery-fee context: confirms $60 spent on the Publix order and $10 delivery fee."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "past month relative to 2023/05/30 22:59; determine which grocery store user spent the most money at",
+    "candidateStatus": "found",
+    "missingRisk": "If the user spent money at additional stores in the past month that are not represented in these candidate sessions, the true “most” store could be different. Also, whether to include Instacart delivery fees in the store spend may affect comparisons (sessions mention both item totals and a delivery fee).; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_6a3b5c13_1",
+        "turnIndex": 0,
+        "why": "Direct spend fact: user grocery shopped at Walmart and spent around $120 (last Saturday, about a week ago)."
+      },
+      {
+        "sessionId": "answer_6a3b5c13_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_6a3b5c13_2",
+        "turnIndex": 0,
+        "why": "Direct spend fact: user and sister went to Trader Joe's (week before last) and spent around $80 between the two of them."
+      },
+      {
+        "sessionId": "answer_6a3b5c13_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_6a3b5c13_4",
+        "turnIndex": 0,
+        "why": "Publix spend facts: user ordered from Publix last week via Instacart and spent around $60, plus a $10 delivery fee (relevant for total spend comparison)."
+      },
+      {
+        "sessionId": "answer_6a3b5c13_4",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_6a3b5c13_4",
+        "turnIndex": 6,
+        "why": "Reinforces Publix spend and includes delivery-fee context: confirms $60 spent on the Publix order and $10 delivery fee."
+      },
+      {
+        "sessionId": "answer_6a3b5c13_4",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_6a3b5c13_4",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_6a3b5c13_3",
+        "turnIndex": 0,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_6a3b5c13_3",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_6a3b5c13_1",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_6a3b5c13_1",
+        "turnIndex": 11,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_6a3b5c13_2",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_6a3b5c13_2",
+        "turnIndex": 3,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_6a3b5c13_2",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_6a3b5c13_4",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_6a3b5c13_4",
+        "turnIndex": 9,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_6a3b5c13_4",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

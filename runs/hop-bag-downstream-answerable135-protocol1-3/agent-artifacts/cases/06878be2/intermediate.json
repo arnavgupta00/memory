@@ -1,0 +1,131 @@
+[
+  {
+    "session_id": "answer_555dfb94",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low—this session contains multiple assistant recommendations and user goals relevant to suggesting complementary photography accessories (flash, protection cases, external battery packs, tripod details, bag recommendations).",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is looking to upgrade their camera flash and wants recommendations compatible with their Sony A7R IV.",
+          "why": "Identifies the user’s camera model and an accessory category they’re seeking (flash) that can inform complementary accessory suggestions."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "Recommended Sony HVL-F60RM and Sony HVL-F45RM as compatible flash options for Sony A7R IV.",
+          "why": "Provides specific flash accessory options with compatibility to the user’s camera."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "Recommended third-party flashes: Godox V1, Godox AD200, Profoto A1, and Nissin Di700A as compatible with Sony A7R IV.",
+          "why": "Gives a list of alternative flash accessories that complement a Sony A7R IV setup."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "Suggested considerations for flash selection: guide number, wireless radio control, high-speed sync, LED light, and battery life.",
+          "why": "Contains decision criteria that could guide choosing complementary flash accessories."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Godox V1 build/durability comparison: plastic body with metal hot shoe and partial metal chassis; ~237g; not as premium/robust as F60RM; not weather-sealed.",
+          "why": "Adds durability/build-quality details for a flash accessory that the user was leaning toward, relevant to accessory choice."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Battery/recycle performance comparison: Godox V1 up to 480 flashes per charge; minimum recycle time 1.5s; Sony HVL-F60RM 220 flashes per charge; recycle time 2.5s.",
+          "why": "Provides concrete performance specs for accessory selection and comparison."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "User chose to go with the Godox V1 and asked for cases/pouches to protect the new flash.",
+          "why": "Identifies follow-on accessory needs specifically for protecting the chosen flash."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Recommended case options for Godox V1: Godox V1 Hard Case ($25), Nanuk 915 Hard Case ($40), Pelican 1060 Case ($50).",
+          "why": "Supplies specific protection accessories that complement the flash setup."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Recommended pouch options for Godox V1: Think Tank Photo Flash Pouch ($15), Lowepro Flash Pouch ($20), Vello Flash Pouch ($10).",
+          "why": "Supplies specific protection accessories for the flash, relevant to complementary gear."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "User asked for external battery packs that can charge their Sony A7R IV and other devices on the go.",
+          "why": "Identifies another accessory category (power) relevant to complementing the photography setup."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Recommended external battery pack options: Anker PowerCore 20000 PD (20,000mAh; charges via USB-C PD; $60), Mophie Powerstation XXL (20,800mAh; USB-C PD; $100), Jackery Titan S 20000 (20,000mAh; USB-C PD; $70).",
+          "why": "Provides specific battery accessory recommendations with capacities and charging method."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Also recommended: Anker PowerCore Fusion (15,000mAh; $40), EC Technology 22,400mAh ($50), RavPower 20,000mAh ($60).",
+          "why": "Adds additional battery accessory options that complement on-the-go shooting."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Suggested criteria for battery packs: capacity at least 15,000mAh, USB-C PD support, size/weight, multiple USB ports, and price.",
+          "why": "Gives selection criteria that could be used when suggesting power-accessories."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "User asked about the best way to clean their Sony 24-70mm f/2.8 lens; mentioned concern about streaks/scratches.",
+          "why": "Indicates lens-care needs, which can complement a photography kit (maintenance accessories/processes)."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Assistant recommended cleaning materials: soft, dry microfiber cloth; optional lens cleaning tissue/pre-moistened wipe; optional lens cleaning solution.",
+          "why": "Provides specific maintenance/accessory recommendations related to preserving image quality."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Assistant advised precautions: avoid paper towels/tissues; don't use household cleaners/chemicals; don't touch lens with bare hands; avoid too much pressure; clean in well-ventilated area.",
+          "why": "Provides care guidance that could influence what cleaning accessories to buy/use."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "User is thinking of getting a new tripod, specifically the Gitzo GT3543LS.",
+          "why": "Identifies tripod accessory intent relevant to complementing a photography setup."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Assistant described Gitzo GT3543LS features: magnesium alloy construction; Systematic Series 3; supports up to 39.7 lbs (18 kg); 4-section legs; G-Lock Ultra; Rapid Column; removable feet.",
+          "why": "Provides concrete tripod accessory specs/features useful for compatibility and purchase considerations."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Assistant stated head compatibility: designed to work with Gitzo GH3382QD ballhead; also compatible with other heads using 3/8\" thread.",
+          "why": "Gives accessory compatibility details relevant to building out the tripod system."
+        },
+        {
+          "turnIndex": 13,
+          "fact": "User asked for more about the G-Lock Ultra system.",
+          "why": "Establishes interest in tripod leg-locking accessory technology details."
+        },
+        {
+          "turnIndex": 13,
+          "fact": "Assistant explained G-Lock Ultra as a leg-locking mechanism for secure/fast locking; described components: leg locks, G-Lock Ultra cam, G-Lock Ultra lever.",
+          "why": "Details tripod accessory mechanics that complement the GT3543LS."
+        },
+        {
+          "turnIndex": 13,
+          "fact": "Assistant claimed benefits of G-Lock Ultra: fast/secure locking, rigid/stable connection between leg and central column, easy to use (even with gloves/cold weather), durable for heavy use/harsh environments.",
+          "why": "Provides performance/durability claims relevant to choosing tripod accessories."
+        },
+        {
+          "turnIndex": 14,
+          "fact": "User (as a Sony camera user) is considering upgrading their camera bag to be more comfortable and durable; asked for camera bag recommendations specifically designed for Sony cameras.",
+          "why": "Identifies an additional complementary accessory category (camera bag) and user’s comfort/durability preference."
+        },
+        {
+          "turnIndex": 15,
+          "fact": "Assistant asked narrowing questions for the camera bag: budget; amount of gear; bag type preference (backpack/messenger/shoulder); travel vs everyday use.",
+          "why": "Captures user constraints/preferences that would be needed to recommend bags."
+        }
+      ]
+    }
+  }
+]

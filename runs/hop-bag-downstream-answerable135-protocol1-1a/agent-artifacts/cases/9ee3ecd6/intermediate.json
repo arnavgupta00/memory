@@ -1,0 +1,23 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Your Sephora Beauty Insider points needed to redeem a free skincare product/reward",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_66c23110_2",
+      "turnIndex": 6,
+      "why": "User states they are close to redeeming a free skincare product and that they “just need a total of 300 points.”"
+    },
+    {
+      "sessionId": "answer_66c23110_1",
+      "turnIndex": 0,
+      "why": "User earlier mentions having earned 50 points and currently having 200 points total in the Sephora loyalty program (context for their points situation)."
+    },
+    {
+      "sessionId": "answer_66c23110_2",
+      "turnIndex": 5,
+      "why": "Assistant reinforces the user’s proximity to redeeming, referencing being close to 300 points."
+    }
+  ]
+}

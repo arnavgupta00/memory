@@ -1,0 +1,45 @@
+[
+  {
+    "session_id": "answer_70dc7d08_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Medium—this session states you attended the Holiday Market “a week before Black Friday” but does not provide the exact purchase date for the iPhone 13 Pro or the exact date of the Holiday Market, so the day-difference must be computed using outside information from other sessions.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "You attended the annual Holiday Market at the local mall a week before Black Friday.",
+          "why": "Provides the temporal relationship needed to compute how many days before your iPhone 13 Pro purchase you attended the Holiday Market."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_70dc7d08_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "High — this session does not mention attending a Holiday Market; it only discusses phone/TV/soundbar shopping and the iPhone 13 Pro purchase on Black Friday. If the Holiday Market date exists, it is likely in a different session.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "The user is looking to upgrade their phone case and screen protector for iPhone 13 Pro.",
+          "why": "Shows the device context, but does not include any Holiday Market or iPhone purchase date details."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User says they got their iPhone 13 Pro at a discounted price of $800 from Best Buy on Black Friday.",
+          "why": "Provides a date anchor for the iPhone purchase (relative to Black Friday), which is needed to compute the days before the iPhone purchase."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User states the regular price was $1,000.",
+          "why": "Additional purchase details that may be useful, though not directly for the Holiday Market-day calculation."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "User is planning to use their phone more outdoors and wants waterproof phone cases protected from water and dust.",
+          "why": "User preference/context, not directly related to Holiday Market timing."
+        }
+      ]
+    }
+  }
+]

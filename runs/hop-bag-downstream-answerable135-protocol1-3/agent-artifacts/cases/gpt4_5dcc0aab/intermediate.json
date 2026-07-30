@@ -1,0 +1,142 @@
+[
+  {
+    "session_id": "answer_099c1b6c_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session contains no explicit mention that the user cleaned any pair of shoes last month. It mainly discusses shoes worn at a music festival “last month” and general shoe recommendations; therefore the target question (“Which pair of shoes did I clean last month?”) is likely missing from this session.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User plans a trip to the mountains next month and is deciding between two hiking boots: the Merrell Moab 2 Mid Waterproof and the Keen Targhee II Mid WP.",
+          "why": "Contains the shoe pair options that could be relevant to identifying which shoes were handled/cleaned, though it does not state cleaning occurred."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User attended a music festival last month and their Converse Chuck Taylor All Star sneakers (had for years) were perfect for it.",
+          "why": "Establishes shoes worn “last month,” which might be confused with shoes that were cleaned, but no cleaning is mentioned."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "User reports water seeping into their Converse Chuck Taylor All Star sneakers at the music festival last month, especially on the heels where the soles are starting to wear down.",
+          "why": "Provides details about the Converse sneakers after the music festival; could relate to maintenance/cleaning context, but still no explicit cleaning action is stated."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Assistant states both the Merrell Moab 2 Mid Waterproof and the Keen Targhee II Mid WP feature a waterproof and breathable membrane to keep feet dry, and that no boot is completely waterproof.",
+          "why": "Relevant only if the cleaning question is about maintenance of waterproof shoes; however, it does not mention cleaning last month."
+        },
+        {
+          "turnIndex": 3,
+          "fact": "Assistant suggests cleaning and drying boots regularly to prevent dirt and debris from compromising the waterproofing system.",
+          "why": "Mentions the concept of cleaning/drying, but not that the user cleaned any specific pair last month."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_099c1b6c_4",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session discusses planned shoe maintenance (brown leather dress shoes to a cobbler this Saturday) but does not mention any cleaning done last month or any specific pair(s) cleaned then; therefore it likely does not contain the answer the question asks for.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is planning a trip to the mountains next month and is considering Merrell Moab 2 Mid Waterproof vs Keen Targhee II Mid WP; user also needs to remember to take brown leather dress shoes to the cobbler to get them polished and conditioned.",
+          "why": "Includes a specific pair of shoes (brown leather dress shoes) and a maintenance plan to the cobbler, which could relate to cleaning/conditioning but is framed as a reminder rather than last-month completion."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "User states they need to remember to take their brown leather dress shoes to the cobbler to get them polished and conditioned this Saturday.",
+          "why": "Directly states timing (this Saturday relative to the session date) and the shoe type, which may be relevant if the question’s 'last month' could be misaligned or requires disambiguation."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "User reiterates they will remember to take their brown leather dress shoes to the cobbler to get them polished and conditioned this Saturday, so they look good as new again.",
+          "why": "Reinforces the same maintenance plan and includes the intended outcome; still not 'last month,' but could be the only 'clean/condition' shoe detail present."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_099c1b6c_5",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "High: this session discusses choosing hiking boots, shoe polishing/cleaning advice, and reminders about lent running shoes, but it does not explicitly state which pair of shoes the user cleaned last month. No concrete “cleaned last month” event or shoe pair is mentioned.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is considering the Merrell Moab 2 Mid Waterproof and the Keen Targhee II Mid WP for hiking boots.",
+          "why": "These are explicit shoe model names that could be relevant if the “cleaned last month” pair matches one of them."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "User needs to get their brown leather dress shoes polished and conditioned.",
+          "why": "Introduces a specific pair/type of shoes (brown leather dress shoes) that could relate to cleaning."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "User needs to remind their sister to return their spare pair of running shoes that were lent a few weeks ago; sister said she'd only need them for a week or two but it's been almost a month now.",
+          "why": "Provides timing context (“almost a month”) and a specific shoe category (spare pair of running shoes), though it’s about returning them rather than cleaning."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Assistant lists reminders: (1) Try on the Merrell Moab 2 Mid Waterproof and Keen Targhee II Mid WP hiking boots at a local outdoor gear store; (2) Find a good cobbler to polish and condition brown leather dress shoes; (3) Remind sister to return spare pair of running shoes.",
+          "why": "Reiterates the exact shoe models/types and associated actions (polish/condition; try-on), which might overlap with “cleaned” depending on how the question is interpreted."
+        },
+        {
+          "turnIndex": 9,
+          "fact": "Assistant provides a step-by-step guide on cleaning and maintaining hiking boots, including removing loose dirt, using mild soap and water, rinsing thoroughly, drying, and applying waterproofing and conditioning.",
+          "why": "Contains advice about cleaning hiking boots; could be relevant background, though it does not identify a specific pair cleaned “last month.”"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_099c1b6c_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "High risk of incompleteness/ambiguity: this session contains a reference to cleaning “my white Adidas sneakers last month” and no other “pair of shoes cleaned last month,” so it likely answers the question but may omit other pairs if multiple were cleaned. Also the question asks for a specific “pair of shoes,” while the session mentions only “white Adidas sneakers” (brand/model not fully specified).",
+      "claims": [
+        {
+          "turnIndex": 6,
+          "fact": "I cleaned my white Adidas sneakers last month.",
+          "why": "Directly states a shoe-cleaning action tied to the time reference “last month,” matching the question’s likely timeframe."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "I used a mixture of soap and water to wipe down the uppers of the white Adidas sneakers, then let them air dry on the balcony for a few hours.",
+          "why": "Adds concrete details about how the cleaned shoes were treated; could help confirm which pair is being referenced."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "I’ve been wearing my new Vans Old Skool sneakers almost every day since I got them last weekend.",
+          "why": "Introduces another shoe pair (Vans Old Skool) with a different timeframe (“last weekend”), which helps distinguish it from the “last month” Adidas cleaning mentioned earlier."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_099c1b6c_3",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The user mentions cleaning “white Adidas sneakers last month” but does not name the exact “pair of shoes” beyond that; the question asks which pair was cleaned last month, so if more specific shoe details exist in other sessions they could be required to answer fully.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "I wore my trusty old Converse Chuck Taylor All Star sneakers to that outdoor music festival last month.",
+          "why": "Relevant shoe identification (Converse Chuck Taylor All Star) and timing (“last month”) though it refers to wearing rather than cleaning."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "I remember I cleaned my white Adidas sneakers last month.",
+          "why": "Directly answers the cleaning+time constraint (“cleaned” + “white Adidas sneakers” + “last month”)."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "I just got back from the mall last weekend and ended up buying a pair of black and white Vans Old Skool sneakers on a whim.",
+          "why": "Provides additional shoe candidates (black and white Vans Old Skool) that could be confused with “last month” items, helping the reducer disambiguate."
+        }
+      ]
+    }
+  }
+]

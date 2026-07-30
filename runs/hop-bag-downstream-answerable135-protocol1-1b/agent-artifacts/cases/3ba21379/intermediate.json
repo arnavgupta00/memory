@@ -1,0 +1,73 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the most recent candidate statements that describe the user’s current/active model project as of 2023/06/01 (compare Mustang GT350R vs. any later “switched to” update).",
+    "candidateStatus": "found",
+    "missingRisk": "The candidates span two different projects (Ford Mustang Shelby GT350R, then a later switch to a Ford F-150). If the user later switched again (not present here), this may not reflect what they are working on specifically on 2023/06/01.",
+    "items": [
+      {
+        "sessionId": "answer_cd345582_1",
+        "turnIndex": 0,
+        "why": "Explicitly states the user’s current project is a Ford Mustang Shelby GT350R model."
+      },
+      {
+        "sessionId": "answer_cd345582_1",
+        "turnIndex": 4,
+        "why": "Reinforces that they are using Vallejo paints on their current Ford Mustang Shelby GT350R project."
+      },
+      {
+        "sessionId": "answer_cd345582_2",
+        "turnIndex": 2,
+        "why": "Indicates a later change: the user switched to a Ford F-150 pickup truck model (relevant for determining what they are currently working on)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the most recent candidate statements that describe the user’s current/active model project as of 2023/06/01 (compare Mustang GT350R vs. any later “switched to” update).",
+    "candidateStatus": "found",
+    "missingRisk": "The candidates span two different projects (Ford Mustang Shelby GT350R, then a later switch to a Ford F-150). If the user later switched again (not present here), this may not reflect what they are working on specifically on 2023/06/01.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_cd345582_1",
+        "turnIndex": 0,
+        "why": "Explicitly states the user’s current project is a Ford Mustang Shelby GT350R model."
+      },
+      {
+        "sessionId": "answer_cd345582_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_cd345582_1",
+        "turnIndex": 4,
+        "why": "Reinforces that they are using Vallejo paints on their current Ford Mustang Shelby GT350R project."
+      },
+      {
+        "sessionId": "answer_cd345582_1",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_cd345582_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_cd345582_2",
+        "turnIndex": 2,
+        "why": "Indicates a later change: the user switched to a Ford F-150 pickup truck model (relevant for determining what they are currently working on)."
+      },
+      {
+        "sessionId": "answer_cd345582_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_cd345582_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

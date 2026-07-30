@@ -1,0 +1,31 @@
+[
+  {
+    "session_id": "answer_sharegpt_4aJsGCH_0",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low: the session explicitly states when construction began, which directly answers the question. No evidence of missing or conflicting dates within this session.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "The construction of the house began in 2014.",
+          "why": "Directly states the year the construction began, which is the requested information."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "The contract was signed between the parties in 2015.",
+          "why": "Provides additional timeline detail that could be relevant if the question is interpreted as surrounding construction start context."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "The agreement stated that the construction would be completed by October 2015.",
+          "why": "Additional temporal endpoint that may help corroborate or place the construction start within the broader timeline."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "The plaintiff received the keys to the house in December 2016.",
+          "why": "Further timeline detail that may be used to reconstruct the chronology if needed."
+        }
+      ]
+    }
+  }
+]

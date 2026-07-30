@@ -1,0 +1,18 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Worldwide release count for the user's favorite artist’s debut album (or any stated worldwide-copy limit connected to it)",
+  "candidateStatus": "found",
+  "missingRisk": "May still be missing the actual debut album worldwide release number; the memory only references a limited-edition poster tied to the debut album, not the album’s overall worldwide copies.",
+  "items": [
+    {
+      "sessionId": "answer_ed1982fc",
+      "turnIndex": 6,
+      "why": "User states the signed poster from the favorite artist’s debut album is a limited edition of only 500 copies worldwide—this is the only explicit worldwide-copy figure in memory and likely the intended number."
+    },
+    {
+      "sessionId": "answer_ed1982fc",
+      "turnIndex": 7,
+      "why": "Assistant repeats the “limited edition of only 500 copies worldwide” detail when discussing displaying the signed poster."
+    }
+  ]
+}

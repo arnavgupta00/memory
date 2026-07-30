@@ -1,0 +1,78 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the candidate sessions to extract the user’s stated personal-best time(s) in the charity 5K run, preserving any conflicting values until the downstream answerer decides which is the true personal best.",
+    "candidateStatus": "found",
+    "missingRisk": "Two different personal-best times are mentioned across sessions (27:12 on 2023/05/23 and 25:50 on 2023/05/30). Downstream may need to reconcile which time is the actual current personal best as of 2023/06/25.",
+    "items": [
+      {
+        "sessionId": "answer_a25d4a91_1",
+        "turnIndex": 4,
+        "why": "User explicitly states a personal best in a charity 5K run with time 27:12; directly answers the time value needed."
+      },
+      {
+        "sessionId": "answer_a25d4a91_1",
+        "turnIndex": 5,
+        "why": "Assistant acknowledges the user’s personal best of 27:12, providing nearby confirmation/context for the same fact."
+      },
+      {
+        "sessionId": "answer_a25d4a91_2",
+        "turnIndex": 0,
+        "why": "User states they are hoping to beat their personal best time of 25:50 in a charity 5K run; this is the other personal-best value to reconcile."
+      },
+      {
+        "sessionId": "answer_a25d4a91_2",
+        "turnIndex": 11,
+        "why": "Assistant restates the goal to beat a personal best time of 25:50, reinforcing that the PB value mentioned in this session is 25:50."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Use the candidate sessions to extract the user’s stated personal-best time(s) in the charity 5K run, preserving any conflicting values until the downstream answerer decides which is the true personal best.",
+    "candidateStatus": "found",
+    "missingRisk": "Two different personal-best times are mentioned across sessions (27:12 on 2023/05/23 and 25:50 on 2023/05/30). Downstream may need to reconcile which time is the actual current personal best as of 2023/06/25.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_a25d4a91_1",
+        "turnIndex": 4,
+        "why": "User explicitly states a personal best in a charity 5K run with time 27:12; directly answers the time value needed."
+      },
+      {
+        "sessionId": "answer_a25d4a91_1",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_a25d4a91_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_a25d4a91_1",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_a25d4a91_2",
+        "turnIndex": 0,
+        "why": "User states they are hoping to beat their personal best time of 25:50 in a charity 5K run; this is the other personal-best value to reconcile."
+      },
+      {
+        "sessionId": "answer_a25d4a91_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_a25d4a91_2",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_a25d4a91_2",
+        "turnIndex": 11,
+        "why": "Assistant restates the goal to beat a personal best time of 25:50, reinforcing that the PB value mentioned in this session is 25:50."
+      }
+    ]
+  }
+}

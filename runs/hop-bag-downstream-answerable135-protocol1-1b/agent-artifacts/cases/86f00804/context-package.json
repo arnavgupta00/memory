@@ -1,0 +1,73 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Identify the book the user is currently reading as of the conversation date; preserve the explicit “currently reading” statement and immediate nearby context.",
+  "candidateStatus": "found",
+  "missingRisk": "If there are later sessions after 2023/05/23 that update the “currently reading” book, this selection may miss the newer title.; frozen bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "answer_96b8c9ee",
+      "turnIndex": 0,
+      "date": "2023/05/23 (Tue) 11:27",
+      "role": "user",
+      "text": "I'm trying to figure out how to fit more reading time into my daily routine. Do you have any tips on how to prioritize reading when life gets busy? By the way, I'm currently devouring \"The Seven Husbands of Evelyn Hugo\" and it's hard to put down!",
+      "why": "User explicitly says they are currently reading “The Seven Husbands of Evelyn Hugo.”",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_96b8c9ee",
+      "turnIndex": 1,
+      "date": "2023/05/23 (Tue) 11:27",
+      "role": "assistant",
+      "text": "\"The Seven Husbands of Evelyn Hugo\" is an amazing book! I'm glad you're enjoying it!\n\nFitting reading into a busy schedule can be challenging, but with a few strategies, you can make it a priority. Here are some tips to help you squeeze in more reading time:\n\n1. **Schedule it in**: Treat reading as a non-negotiable part of your daily routine, just like brushing your teeth or taking a shower. Set a specific time and duration for reading, and stick to it.\n2. **Start small**: You don't need to dedicate an hour or more to reading. Even 15-20 minutes a day can be beneficial. Begin with a manageable goal, and gradually increase the time as you make reading a habit.\n3. **Make it a habit loop**: Attach reading to an existing habit, like right before bed, during your daily commute, or while enjoying your morning coffee. This way, reading becomes an automatic part of your routine.\n4. **Choose the right format**: If you're short on time, consider audiobooks or e-books, which can be easily consumed during activities like exercising, cooking, or driving.\n5. **Prioritize your reading material**: Be intentional about what you read. Focus on books that truly interest you, and don't be afraid to DNF (did not finish) if a book isn't holding your attention.\n6. **Take advantage of waiting time**: Use waiting time, like waiting in line, at the doctor's office, or during breaks at work, to sneak in a few pages.\n7. **Get comfortable**: Create a cozy reading nook or find a comfortable spot where you can relax and focus on your book.\n8. **Make it a self-care activity**: View reading as a way to unwind and recharge. This mindset can help you prioritize reading as a necessary part of your daily routine.\n9. **Get accountability**: Join a book club, find a reading buddy, or participate in online reading challenges to stay motivated and inspired.\n10. **Be flexible**: Life can be unpredictable, and some days you might not be able to fit in your usual reading time. Don't stress; simply adjust your schedule and make up for it when you can.\n\nRemember, the key is to find a rhythm that works for you and your unique schedule. With a little creativity and commitment, you can make reading a consistent part of your daily routine.\n\nEnjoy the rest of \"The Seven Husbands of Evelyn Hugo\"!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_96b8c9ee",
+      "turnIndex": 2,
+      "date": "2023/05/23 (Tue) 11:27",
+      "role": "user",
+      "text": "I love the idea of making reading a habit loop. I actually do that already, reading before bed every night. I've been averaging 20-30 pages a night, and some nights I've stayed up way too late reading 50-60 pages in one sitting. Do you have any recommendations for book tracking apps or websites, like Goodreads, to help me stay organized and on top of my reading goals?",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_96b8c9ee",
+      "turnIndex": 4,
+      "date": "2023/05/23 (Tue) 11:27",
+      "role": "user",
+      "text": "I think I'll check out Libib and StoryGraph. I'm actually curious about tracking my reading speed and comprehension, so maybe BookNerd will be a good option too. \n\nBy the way, I've been thinking about starting a book club with some friends. Do you have any tips on how to organize and run a successful book club?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_96b8c9ee",
+      "turnIndex": 6,
+      "date": "2023/05/23 (Tue) 11:27",
+      "role": "user",
+      "text": "I've actually already started a book club with some friends, and our first meeting is scheduled for next weekend. We're going to discuss \"The Last House Guest\" by Megan Miranda, which I've already read and really enjoyed.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_96b8c9ee",
+      "turnIndex": 8,
+      "date": "2023/05/23 (Tue) 11:27",
+      "role": "user",
+      "text": "Yeah, I'm really looking forward to it! We're just going to have a casual discussion and see where it takes us. I might prepare some snacks and drinks to make it feel more relaxed. We'll probably just sit around, chat, and see what everyone thought of the book.\n\nYou know, speaking of books, I was thinking of checking out some book awards and lists to find new titles to read. Do you have any recommendations for popular book awards or lists that are worth following?\n",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_96b8c9ee",
+      "turnIndex": 10,
+      "date": "2023/05/23 (Tue) 11:27",
+      "role": "user",
+      "text": "I'm glad you mentioned the Indie Next List. I've been meaning to check it out. I've been trying to support more indie authors and bookstores lately.\n\nBy the way, have you heard about the Book of the Month Club? I've been thinking of joining it, but I'm not sure if it's worth it. Do you have any experience with it?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 4218,
+  "estimatedTokens": 1055
+}

@@ -1,0 +1,58 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify the play the user said they attended at the local community theater.",
+    "candidateStatus": "found",
+    "missingRisk": "If there are multiple theater mentions across candidates (or a different play is mentioned elsewhere), selecting only The Glass Menagerie could be incomplete.",
+    "items": [
+      {
+        "sessionId": "answer_355c48bb",
+        "turnIndex": 4,
+        "why": "User explicitly states the play they attended at the local community theater: it was a production of The Glass Menagerie."
+      },
+      {
+        "sessionId": "answer_355c48bb",
+        "turnIndex": 5,
+        "why": "Assistant confirms and describes The Glass Menagerie, reinforcing that this is the play the user attended."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Identify the play the user said they attended at the local community theater.",
+    "candidateStatus": "found",
+    "missingRisk": "If there are multiple theater mentions across candidates (or a different play is mentioned elsewhere), selecting only The Glass Menagerie could be incomplete.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_355c48bb",
+        "turnIndex": 4,
+        "why": "User explicitly states the play they attended at the local community theater: it was a production of The Glass Menagerie."
+      },
+      {
+        "sessionId": "answer_355c48bb",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_355c48bb",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_355c48bb",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_355c48bb",
+        "turnIndex": 2,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_355c48bb",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

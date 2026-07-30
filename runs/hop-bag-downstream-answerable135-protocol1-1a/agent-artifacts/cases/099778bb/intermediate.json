@@ -1,0 +1,23 @@
+{
+  "queryShape": "aggregate",
+  "setBoundary": "Leadership positions in the user’s company (women’s representation vs total leadership positions).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_80d6d664_1",
+      "turnIndex": 0,
+      "why": "User states total leadership positions across the company is 100, which is the denominator needed for the women’s leadership percentage."
+    },
+    {
+      "sessionId": "answer_80d6d664_2",
+      "turnIndex": 2,
+      "why": "User states women occupy 20 of the leadership positions in the company, which is the numerator needed for the women’s leadership percentage."
+    },
+    {
+      "sessionId": "answer_80d6d664_2",
+      "turnIndex": 3,
+      "why": "Assistant discusses that D&I reports often include leadership demographics and responds to the user’s premise about women occupying 20 leadership positions (context/confirmation of the user-provided figure)."
+    }
+  ]
+}

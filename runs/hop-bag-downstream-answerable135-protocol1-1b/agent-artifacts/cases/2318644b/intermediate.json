@@ -1,0 +1,53 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Per-night accommodations cost: Hawaii (Maui) vs Tokyo (Tokyo hostel).",
+    "candidateStatus": "found",
+    "missingRisk": "Only Maui (Hawaii) resort cost is given as a lower bound (“over $300”) while Tokyo is given as an approximate ($30), so the exact difference may be ambiguous without a precise Hawaii nightly price.",
+    "items": [
+      {
+        "sessionId": "answer_eaa8e3ef_1",
+        "turnIndex": 0,
+        "why": "Contains the Hawaii accommodations cost figure: a luxurious resort in Maui costs over $300 per night (needed for the Hawaii per-night number)."
+      },
+      {
+        "sessionId": "answer_eaa8e3ef_2",
+        "turnIndex": 2,
+        "why": "Contains the Tokyo accommodations cost figure: a hostel in Tokyo cost around $30 per night when traveling solo last January (needed for the Tokyo per-night number)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Per-night accommodations cost: Hawaii (Maui) vs Tokyo (Tokyo hostel).",
+    "candidateStatus": "found",
+    "missingRisk": "Only Maui (Hawaii) resort cost is given as a lower bound (“over $300”) while Tokyo is given as an approximate ($30), so the exact difference may be ambiguous without a precise Hawaii nightly price.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_eaa8e3ef_1",
+        "turnIndex": 0,
+        "why": "Contains the Hawaii accommodations cost figure: a luxurious resort in Maui costs over $300 per night (needed for the Hawaii per-night number)."
+      },
+      {
+        "sessionId": "answer_eaa8e3ef_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_eaa8e3ef_2",
+        "turnIndex": 2,
+        "why": "Contains the Tokyo accommodations cost figure: a hostel in Tokyo cost around $30 per night when traveling solo last January (needed for the Tokyo per-night number)."
+      },
+      {
+        "sessionId": "answer_eaa8e3ef_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_eaa8e3ef_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

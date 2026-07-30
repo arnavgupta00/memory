@@ -1,0 +1,38 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Complete your Bachelor's degree in Computer Science—source of the school name.",
+    "candidateStatus": "found",
+    "missingRisk": "If the dataset requires the assistant to explicitly restate the Bachelor’s location, selecting only the user turn may omit that; a parallel assistant turn may be needed to confirm phrasing.",
+    "items": [
+      {
+        "sessionId": "answer_986de8c3",
+        "turnIndex": 4,
+        "why": "User explicitly states: “I completed my undergrad in CS from UCLA,” which directly answers where the Bachelor’s degree was completed."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Complete your Bachelor's degree in Computer Science—source of the school name.",
+    "candidateStatus": "found",
+    "missingRisk": "If the dataset requires the assistant to explicitly restate the Bachelor’s location, selecting only the user turn may omit that; a parallel assistant turn may be needed to confirm phrasing.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_986de8c3",
+        "turnIndex": 4,
+        "why": "User explicitly states: “I completed my undergrad in CS from UCLA,” which directly answers where the Bachelor’s degree was completed."
+      },
+      {
+        "sessionId": "answer_986de8c3",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_986de8c3",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

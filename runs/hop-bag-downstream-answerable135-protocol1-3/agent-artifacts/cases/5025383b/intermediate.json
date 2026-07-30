@@ -1,0 +1,55 @@
+[
+  {
+    "session_id": "answer_688f9a3f_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low—session includes explicit mention of hobbies (photography and Lightroom/photo editing) and how they relate to joining online communities, but it does not state two hobbies in a single self-contained “two hobbies” sentence; inference is required to map to the question’s phrasing.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is looking for advice on camera lenses and says they’ve been really into photography lately and reading a lot about different lenses online.",
+          "why": "Indicates photography as a hobby that motivated or connected to learning online."
+        },
+        {
+          "turnIndex": 4,
+          "fact": "User says: “I’ve been really enjoying editing my photos in Lightroom - the online communities I’ve joined have been super helpful in learning new techniques and getting feedback on my work.”",
+          "why": "Directly links Lightroom photo editing (a hobby) to joining online communities."
+        },
+        {
+          "turnIndex": 5,
+          "fact": "Assistant states: “It’s great to hear that you’re enjoying editing your photos in Lightroom! … the online communities can be super helpful in learning new techniques and getting feedback on your work.”",
+          "why": "Reinforces the relationship between Lightroom editing and online communities (assistant’s echoed content)."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "User says: “I think I’ll start by sharing my editing process in Lightroom… I’ve learned so much from online communities…”",
+          "why": "Further ties Lightroom editing hobby to learning from online communities."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_688f9a3f_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "The session only explicitly describes joining online communities related to cooking and discussing recipe techniques; it does not clearly name two specific hobbies. The question asks for “the two hobbies that led me to join online communities,” but this session provides only one hobby theme (cooking/recipe techniques).",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "The user said they have joined a few online communities related to cooking, which led them to engage in discussions about recipe techniques and share their thoughts on food-related posts.",
+          "why": "This directly indicates one hobby area (cooking) that motivated joining online communities, but does not identify two hobbies."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "The user said they've been trying to engage more with online communities related to cooking, and they've already joined a few online communities, which led them to engage in discussions about recipe techniques and share their thoughts on food-related posts.",
+          "why": "Reinforces the connection between joining online cooking communities and participating via recipe-technique discussions."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "The user said they are looking for some recipe inspiration.",
+          "why": "Indicates the user’s interest that could qualify as a hobby-related activity leading to community participation, though it does not specify two hobbies."
+        }
+      ]
+    }
+  }
+]

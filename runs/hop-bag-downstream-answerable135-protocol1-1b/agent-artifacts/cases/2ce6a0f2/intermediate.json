@@ -1,0 +1,123 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Past month relative to 2023/03/08 (include events attended from 2023/02/08–2023/03/08; count distinct art-related events)",
+    "candidateStatus": "found",
+    "missingRisk": "Some candidate sessions only mention plans or general museum content; only clearly dated “attended” items are selected here, but there may be additional art-related events outside these sessions or ambiguous categorizations (e.g., “History Museum” vs. “art-related”).",
+    "items": [
+      {
+        "sessionId": "answer_901a6763_1",
+        "turnIndex": 2,
+        "why": "States you attended the “Women in Art” exhibition on February 10th (dated attended art event)."
+      },
+      {
+        "sessionId": "answer_901a6763_2",
+        "turnIndex": 0,
+        "why": "States you volunteered at the Children’s Museum “Art Afternoon” event on February 17th (dated attended/participated art event)."
+      },
+      {
+        "sessionId": "answer_901a6763_3",
+        "turnIndex": 0,
+        "why": "States you went on a guided tour at the History Museum on February 24th (dated attended event; relevant to art museums/art interest)."
+      },
+      {
+        "sessionId": "answer_901a6763_4",
+        "turnIndex": 0,
+        "why": "States you attended a lecture titled “The Evolution of Street Art” on March 3rd (dated attended street-art event)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Past month relative to 2023/03/08 (include events attended from 2023/02/08–2023/03/08; count distinct art-related events)",
+    "candidateStatus": "found",
+    "missingRisk": "Some candidate sessions only mention plans or general museum content; only clearly dated “attended” items are selected here, but there may be additional art-related events outside these sessions or ambiguous categorizations (e.g., “History Museum” vs. “art-related”).; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_901a6763_1",
+        "turnIndex": 2,
+        "why": "States you attended the “Women in Art” exhibition on February 10th (dated attended art event)."
+      },
+      {
+        "sessionId": "answer_901a6763_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_901a6763_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_901a6763_2",
+        "turnIndex": 0,
+        "why": "States you volunteered at the Children’s Museum “Art Afternoon” event on February 17th (dated attended/participated art event)."
+      },
+      {
+        "sessionId": "answer_901a6763_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_901a6763_3",
+        "turnIndex": 0,
+        "why": "States you went on a guided tour at the History Museum on February 24th (dated attended event; relevant to art museums/art interest)."
+      },
+      {
+        "sessionId": "answer_901a6763_3",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_901a6763_4",
+        "turnIndex": 0,
+        "why": "States you attended a lecture titled “The Evolution of Street Art” on March 3rd (dated attended street-art event)."
+      },
+      {
+        "sessionId": "answer_901a6763_4",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_901a6763_2",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_901a6763_2",
+        "turnIndex": 3,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_901a6763_2",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_901a6763_4",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_901a6763_1",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_901a6763_1",
+        "turnIndex": 7,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_901a6763_1",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_901a6763_3",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

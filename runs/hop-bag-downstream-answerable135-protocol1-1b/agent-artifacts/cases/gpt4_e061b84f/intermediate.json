@@ -1,0 +1,123 @@
+{
+  "raw": {
+    "queryShape": "order",
+    "setBoundary": "Identify the three sports events the user participated in during the past month and order them chronologically (earliest → latest) using the event dates provided in the sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "If the three “sports events” meant by the question exclude some of these (e.g., triathlon/5K/soccer vs. other athletic activities like a volleyball league game mentioned as context), additional event-specific sessions may be needed to match the user’s intended set.",
+    "items": [
+      {
+        "sessionId": "answer_8c64ce25_2",
+        "turnIndex": 0,
+        "why": "Contains the user statement that they completed the Spring Sprint Triathlon (includes the event date from the session header)."
+      },
+      {
+        "sessionId": "answer_8c64ce25_1",
+        "turnIndex": 0,
+        "why": "Contains the user statement that they finished the Midsummer 5K Run with a personal best (includes the event date from the session header)."
+      },
+      {
+        "sessionId": "answer_8c64ce25_3",
+        "turnIndex": 0,
+        "why": "Contains the user statement that they participated in the company’s annual charity soccer tournament (includes the event date from the session header)."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "order",
+    "setBoundary": "Identify the three sports events the user participated in during the past month and order them chronologically (earliest → latest) using the event dates provided in the sessions.",
+    "candidateStatus": "found",
+    "missingRisk": "If the three “sports events” meant by the question exclude some of these (e.g., triathlon/5K/soccer vs. other athletic activities like a volleyball league game mentioned as context), additional event-specific sessions may be needed to match the user’s intended set.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_8c64ce25_2",
+        "turnIndex": 0,
+        "why": "Contains the user statement that they completed the Spring Sprint Triathlon (includes the event date from the session header)."
+      },
+      {
+        "sessionId": "answer_8c64ce25_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_8c64ce25_1",
+        "turnIndex": 0,
+        "why": "Contains the user statement that they finished the Midsummer 5K Run with a personal best (includes the event date from the session header)."
+      },
+      {
+        "sessionId": "answer_8c64ce25_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_8c64ce25_3",
+        "turnIndex": 0,
+        "why": "Contains the user statement that they participated in the company’s annual charity soccer tournament (includes the event date from the session header)."
+      },
+      {
+        "sessionId": "answer_8c64ce25_3",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "1446b088_2",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "1446b088_2",
+        "turnIndex": 3,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "1446b088_2",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "9345f7dc_4",
+        "turnIndex": 0,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "9345f7dc_4",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_8c64ce25_2",
+        "turnIndex": 2,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_8c64ce25_2",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_8c64ce25_1",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "78d28576_2",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "78d28576_2",
+        "turnIndex": 7,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "78d28576_2",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_8c64ce25_3",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

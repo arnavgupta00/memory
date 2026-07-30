@@ -1,0 +1,23 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Books the user finished around one week before 2023/02/07",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_c9d35c00_2",
+      "turnIndex": 0,
+      "why": "User explicitly says they finished a book: “I just finished … ‘The Nightingale’ … today.” (dated 2023/01/31, about a week before 2023/02/07)."
+    },
+    {
+      "sessionId": "answer_c9d35c00_1",
+      "turnIndex": 0,
+      "why": "Assistant and user context about the user starting “The Nightingale” (helps anchor the identity of the book)."
+    },
+    {
+      "sessionId": "answer_c9d35c00_2",
+      "turnIndex": 5,
+      "why": "Mentions “The Nightingale” again in follow-up recommendations, reinforcing which title the prior finished-book refers to."
+    }
+  ]
+}

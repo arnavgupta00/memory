@@ -1,0 +1,82 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "answer_fea2e4d3",
+      "turnIndex": 2,
+      "date": "2023/05/24 (Wed) 04:49",
+      "role": "user",
+      "text": "Here's a start - I've bought gifts for my sister's birthday, my mom, my neighbor Mrs. Johnson, coworkers, my best friend's baby shower, and my brother's new apartment.",
+      "why": "per-session extractor: Directly answers what the user bought for the sister’s birthday gift; includes item names and relationship (sister) plus “matching” detail.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_fea2e4d3",
+      "turnIndex": 4,
+      "date": "2023/05/24 (Wed) 04:49",
+      "role": "user",
+      "text": "For my sister's birthday, I got her a yellow dress and a pair of earrings to match.",
+      "why": "per-session extractor: Same explicit gift details appear in this user turn; provides the concrete list of sister’s birthday items.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "89452526_2",
+      "turnIndex": 9,
+      "date": "2023/05/26 (Fri) 01:15",
+      "role": "assistant",
+      "text": "A $25 gift card is a great idea! Considering you spent around the same amount on the customized phone case for his birthday, it's a thoughtful and consistent gesture. $25 is a decent amount that can get your brother a new game, some in-game items, or a few months of subscription to a gaming service.\n\nWith a $25 gift card, your brother can:\n\n* Purchase a new game or DLC (downloadable content) for his favorite game\n* Buy in-game items, such as skins, characters, or currency\n* Subscribe to a gaming service like Xbox Game Pass, PlayStation Now, or NVIDIA GeForce NOW for a few months\n* Get a few months of online gaming subscription, such as Xbox Live Gold or PlayStation Plus\n\nA $25 gift card is a generous amount that shows you care about your brother's gaming habits and want to support his gaming experiences. It's also a flexible gift that allows him to choose something he really wants or needs.\n\nI think pairing the gaming-themed mousepad with a $25 gift card to his favorite gaming platform's store is an excellent gift idea. It's a thoughtful and well-rounded present that shows you're paying attention to his interests and hobbies.",
+      "why": "empty-extractor deterministic fallback",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_fea2e4d3",
+      "turnIndex": 1,
+      "date": "2023/05/24 (Wed) 04:49",
+      "role": "assistant",
+      "text": "I'd be happy to help you keep track of the gifts you've bought. Let's get started!\n\nTo make a list, I'll need you to provide me with some information. Please feel free to share the following details:\n\n1. Occasions: What occasions have you bought gifts for recently? (e.g., birthdays, holidays, weddings, graduations, etc.)\n2. Gifts: What gifts have you bought for each occasion? (e.g., specific items, categories, or experiences)\n3. Recipients: Who are the gifts for? (e.g., names, relationships, or groups)\n\nYou can share as much or as little information as you'd like, and I'll help you organize it into a list. If you need any prompts or examples, just let me know!\n\nOnce we get started, you can add or edit the list as needed. This will help you keep track of your gifts and make it easier to plan for future occasions.\n\nLet's get organized!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_fea2e4d3",
+      "turnIndex": 3,
+      "date": "2023/05/24 (Wed) 04:49",
+      "role": "assistant",
+      "text": "Let's break down each occasion and gift. Please feel free to add more details as we go along.\n\n**Sister's Birthday**\n\n* Occasion: Sister's birthday\n* Gift(s): _______________________________________ (what did you get her?)\n\n**Gift for Mom**\n\n* Occasion: Just because/No specific occasion\n* Gift(s): _______________________________________ (what did you get her?)\n\n**Gift for Mrs. Johnson**\n\n* Occasion: _______________________________________ (was it a holiday, just because, or another reason?)\n* Gift(s): _______________________________________ (what did you get her?)\n\n**Coworkers**\n\n* Occasion: _______________________________________ (was it a holiday, team-building, or another reason?)\n* Gift(s): _______________________________________ (what did you get them? e.g., individual gifts or a group gift?)\n\n**Best Friend's Baby Shower**\n\n* Occasion: Baby shower\n* Gift(s): _______________________________________ (what did you get for the baby?)\n\n**Brother's New Apartment**\n\n* Occasion: Housewarming/new apartment\n* Gift(s): _______________________________________ (what did you get him for his new place?)\n\nFill in the blanks with the gifts you've purchased, and I'll help you organize them into a neat list. If you need any reminders or prompts, just let me know!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_fea2e4d3",
+      "turnIndex": 5,
+      "date": "2023/05/24 (Wed) 04:49",
+      "role": "assistant",
+      "text": "Here's the updated list:\n\n**Sister's Birthday**\n\n* Occasion: Sister's birthday\n* Gift(s):\n\t+ Yellow dress\n\t+ Pair of earrings (matching the dress)\n\nLet's move on to the next one!\n\n**Gift for Mom**\n\n* Occasion: Just because/No specific occasion\n* Gift(s): _______________________________________ (what did you get her?)\n\nWhat did you get for your mom?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "89452526_2",
+      "turnIndex": 8,
+      "date": "2023/05/26 (Fri) 01:15",
+      "role": "user",
+      "text": "I think a $25 gift card would be a good amount, considering I spent around that much on the customized phone case for his birthday last month. Do you think that's a good idea?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "89452526_2",
+      "turnIndex": 10,
+      "date": "2023/05/26 (Fri) 01:15",
+      "role": "user",
+      "text": "Now that I have a good idea for the gift, do you think I should include a personal message or a birthday card with the gift, or is the gift itself enough?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 4186,
+  "estimatedTokens": 1047
+}

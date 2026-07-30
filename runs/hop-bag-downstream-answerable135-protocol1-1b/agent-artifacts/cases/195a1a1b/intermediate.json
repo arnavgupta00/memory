@@ -1,0 +1,93 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Use only the preserved assistant recommendations and directly relevant context from the selected sessions to suggest evening activities.",
+    "candidateStatus": "found",
+    "missingRisk": "The catalog may not include explicit “evening” activity options beyond general outdoor/relaxation suggestions (e.g., hiking/walking vs. time-of-day planning), so the downstream answerer may need to adapt activities to the evening context.",
+    "items": [
+      {
+        "sessionId": "ed9dad6c_2",
+        "turnIndex": 1,
+        "why": "Assistant recommends joint-friendly outdoor activities (e.g., walking/cycling) in response to the user asking for evening-appropriate outdoor activities that are easy on the joints."
+      },
+      {
+        "sessionId": "ed9dad6c_2",
+        "turnIndex": 3,
+        "why": "Assistant provides guidance for finding beginner-friendly hiking trails, which can translate into planning a scenic evening hike."
+      },
+      {
+        "sessionId": "answer_6dc4305e",
+        "turnIndex": 5,
+        "why": "Assistant suggests winding down activities in the later part of the day (pre-bed relaxation), including meditation as an evening option."
+      },
+      {
+        "sessionId": "answer_6dc4305e",
+        "turnIndex": 9,
+        "why": "Assistant provides specific guided meditation options for sleep/relaxation, supporting an evening activity recommendation."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Use only the preserved assistant recommendations and directly relevant context from the selected sessions to suggest evening activities.",
+    "candidateStatus": "found",
+    "missingRisk": "The catalog may not include explicit “evening” activity options beyond general outdoor/relaxation suggestions (e.g., hiking/walking vs. time-of-day planning), so the downstream answerer may need to adapt activities to the evening context.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "ed9dad6c_2",
+        "turnIndex": 0,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "ed9dad6c_2",
+        "turnIndex": 1,
+        "why": "Assistant recommends joint-friendly outdoor activities (e.g., walking/cycling) in response to the user asking for evening-appropriate outdoor activities that are easy on the joints."
+      },
+      {
+        "sessionId": "ed9dad6c_2",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "ed9dad6c_2",
+        "turnIndex": 3,
+        "why": "Assistant provides guidance for finding beginner-friendly hiking trails, which can translate into planning a scenic evening hike."
+      },
+      {
+        "sessionId": "ed9dad6c_2",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_6dc4305e",
+        "turnIndex": 4,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_6dc4305e",
+        "turnIndex": 5,
+        "why": "Assistant suggests winding down activities in the later part of the day (pre-bed relaxation), including meditation as an evening option."
+      },
+      {
+        "sessionId": "answer_6dc4305e",
+        "turnIndex": 6,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_6dc4305e",
+        "turnIndex": 8,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_6dc4305e",
+        "turnIndex": 9,
+        "why": "Assistant provides specific guided meditation options for sleep/relaxation, supporting an evening activity recommendation."
+      },
+      {
+        "sessionId": "answer_6dc4305e",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

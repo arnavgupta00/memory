@@ -1,0 +1,73 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Compute elapsed days between the order date (Feb 5) and arrival date (Feb 10) of the new remote shutter release; rely on the stored raw facts for those dates.",
+    "candidateStatus": "found",
+    "missingRisk": "If the conversation has multiple remote shutter release orders/arrivals, these sessions only mention one order date (Feb 5) and one arrival date (Feb 10); another shipment could make the elapsed days different.",
+    "items": [
+      {
+        "sessionId": "answer_05d808e6_1",
+        "turnIndex": 0,
+        "why": "Contains the order event: user says they ordered a new remote shutter release online on February 5th after losing the old one."
+      },
+      {
+        "sessionId": "answer_05d808e6_1",
+        "turnIndex": 10,
+        "why": "Reiterates the same order date context (ordered Feb 5th) and mentions the replacement is working well, helping confirm the remote shutter release referenced."
+      },
+      {
+        "sessionId": "answer_05d808e6_2",
+        "turnIndex": 0,
+        "why": "Contains the arrival event: user says the new remote shutter release arrived on February 10th."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Compute elapsed days between the order date (Feb 5) and arrival date (Feb 10) of the new remote shutter release; rely on the stored raw facts for those dates.",
+    "candidateStatus": "found",
+    "missingRisk": "If the conversation has multiple remote shutter release orders/arrivals, these sessions only mention one order date (Feb 5) and one arrival date (Feb 10); another shipment could make the elapsed days different.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_05d808e6_1",
+        "turnIndex": 0,
+        "why": "Contains the order event: user says they ordered a new remote shutter release online on February 5th after losing the old one."
+      },
+      {
+        "sessionId": "answer_05d808e6_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_05d808e6_1",
+        "turnIndex": 10,
+        "why": "Reiterates the same order date context (ordered Feb 5th) and mentions the replacement is working well, helping confirm the remote shutter release referenced."
+      },
+      {
+        "sessionId": "answer_05d808e6_1",
+        "turnIndex": 11,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_05d808e6_1",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_05d808e6_2",
+        "turnIndex": 0,
+        "why": "Contains the arrival event: user says the new remote shutter release arrived on February 10th."
+      },
+      {
+        "sessionId": "answer_05d808e6_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_05d808e6_2",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "raw": {
+    "queryShape": "aggregate",
+    "setBoundary": "Compute total formal education time from high school start (2010) through Bachelor's completion (2020), using the provided durations/years (high school years attended; bachelor completion time).",
+    "candidateStatus": "found",
+    "missingRisk": "If high school and bachelor overlap with any transition periods (e.g., summer before start of bachelor) are not specified, downstream calculation may assume whole-year counts based only on provided attend/complete spans.",
+    "items": [
+      {
+        "sessionId": "answer_35c5419d_1",
+        "turnIndex": 2,
+        "why": "Contains the explicit high school attendance window: Arcadia High School from 2010 to 2014 (needed to determine years in formal education before undergrad)."
+      },
+      {
+        "sessionId": "answer_35c5419d_3",
+        "turnIndex": 0,
+        "why": "Contains the explicit statement that the Bachelor's degree at UCLA “took me four years to complete,” and notes graduation with a Bachelor's in 2020 (needed for undergrad years)."
+      },
+      {
+        "sessionId": "answer_35c5419d_3",
+        "turnIndex": 1,
+        "why": "Assistant reiteration/confirmation of “completing your Bachelor's…in 2020” which helps anchor the Bachelor's completion endpoint for the downstream total."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "aggregate",
+    "setBoundary": "Compute total formal education time from high school start (2010) through Bachelor's completion (2020), using the provided durations/years (high school years attended; bachelor completion time).",
+    "candidateStatus": "found",
+    "missingRisk": "If high school and bachelor overlap with any transition periods (e.g., summer before start of bachelor) are not specified, downstream calculation may assume whole-year counts based only on provided attend/complete spans.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_35c5419d_1",
+        "turnIndex": 2,
+        "why": "Contains the explicit high school attendance window: Arcadia High School from 2010 to 2014 (needed to determine years in formal education before undergrad)."
+      },
+      {
+        "sessionId": "answer_35c5419d_1",
+        "turnIndex": 3,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_35c5419d_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_35c5419d_3",
+        "turnIndex": 0,
+        "why": "Contains the explicit statement that the Bachelor's degree at UCLA “took me four years to complete,” and notes graduation with a Bachelor's in 2020 (needed for undergrad years)."
+      },
+      {
+        "sessionId": "answer_35c5419d_3",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_35c5419d_3",
+        "turnIndex": 2,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}

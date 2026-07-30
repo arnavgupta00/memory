@@ -1,0 +1,114 @@
+[
+  {
+    "session_id": "dda70510_2",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session does not mention your new black Converse Chuck Taylor All Star sneakers or any times you wore them; it focuses on gift shopping for a sister and Coach/Tory Burch handbag details, so it is unlikely to contain evidence for the requested count.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "86b56135_2",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session appears to discuss BBQ sauce/marinades and grilling tips only. There is no mention of wearing any sneakers (including “new black Converse Chuck Taylor All Star”) or any count/timeline related to footwear.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "ultrachat_31960",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session appears to be about British colonial economic policies and contains no information about the user wearing any sneakers, including the new black Converse Chuck Taylor All Star shoes. If sneaker-wearing logs exist, they are not in this candidate session.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "ultrachat_548559",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session is about how technological advancements affect the music industry (creation, distribution, streaming, social media, record stores) and contains no information about the user wearing any sneakers.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "sharegpt_PvScEsS_0",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session is about designing SQL database schemas for a doctor’s surgery and contains no personal information related to wearing sneakers or any counts/timestamps for footwear.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "b3619c2c",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains no mentions of wearing any sneakers, including new black Converse Chuck Taylor All Star shoes, and no counts or logs related to footwear. The question cannot be answered from this session.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "answer_caf5b52e_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Low—this session contains an explicit count of how many times the user wore their new black Converse Chuck Taylor All Star sneakers, but it may not include later wears after 2023/05/30.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User asked for help finding a cobbler to fix brown leather boots and mentioned thinking of getting a shoe cleaning kit; no Converse wear count stated here.",
+          "why": "Background about shoe care needs; does not directly address the sneakers count but may be context."
+        },
+        {
+          "turnIndex": 0,
+          "fact": "User wore their new black Converse to run some errands yesterday, so that's six times now that they've worn them.",
+          "why": "Direct quantitative claim relevant to 'How many times have I worn my new black Converse Chuck Taylor All Star sneakers?' (count = six)."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "Assistant said it was happy to help with shoe-related queries and referred to 'Your new Converse' as having 'Six times' as a great start.",
+          "why": "Confirms/reflects the 'six times' claim in the assistant’s response, which can be used as corroboration for the count."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_caf5b52e_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session does state a wear count for the new black Converse Chuck Taylor All Star sneakers (four times) and references a “last Saturday” event, but it does not connect that count to the user’s current date (2023/06/18) or indicate whether the sneakers were worn again after that described time. Chronology with the question date therefore may be incomplete.",
+      "claims": [
+        {
+          "turnIndex": 2,
+          "fact": "User: “I’ve been loving my new black Converse Chuck Taylor All Star sneakers, I’ve worn them four times already, including to my friend’s birthday party last Saturday.”",
+          "why": "Directly provides a quantity (four times) and context (friend’s birthday party last Saturday) for wearing the specific sneakers."
+        },
+        {
+          "turnIndex": 10,
+          "fact": "User: “I’ve worn my new black Converse Chuck Taylor All Star sneakers four times already, including to my friend’s birthday party last Saturday.”",
+          "why": "Reiterates the same wear count for the specific sneakers; may help corroborate the stated number."
+        },
+        {
+          "turnIndex": 11,
+          "fact": "Assistant: “it’s wonderful that you’ve already worn them four times.”",
+          "why": "Confirms the user-stated count for the sneakers within the assistant’s reply, potentially aiding extraction/corroboration."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "a20bc58f",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains advice and discussion about displaying and selling vintage Star Wars collectibles (Millennium Falcon, Luke Skywalker action figure, vinyl records) but no mention of any black Converse Chuck Taylor All Star sneakers or how many times they were worn.",
+      "claims": []
+    }
+  },
+  {
+    "session_id": "sharegpt_AfCsKC0_12",
+    "output": {
+      "candidateStatus": "none_found",
+      "missingRisk": "This session contains only bankruptcy-court notice text and no information about wearing sneakers, Converse Chuck Taylor All Star shoes, or any counts/timestamps related to them. Likely irrelevant to the question; if the user kept shoe-wearing logs in other sessions, those would be needed.",
+      "claims": []
+    }
+  }
+]

@@ -1,0 +1,82 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "facts bearing on the question across the frozen candidate-session bag",
+  "candidateStatus": "found",
+  "missingRisk": "each session was mapped independently; the frozen bag may omit required sessions",
+  "items": [
+    {
+      "sessionId": "answer_3a6f1e82_1",
+      "turnIndex": 2,
+      "date": "2023/08/11 (Fri) 00:01",
+      "role": "user",
+      "text": "I'm actually buying a $325,000 house, and I got pre-approved for $350,000 from Wells Fargo. What would be the estimated closing costs for my situation?",
+      "why": "per-session extractor: Directly states the pre-approval amount from Wells Fargo needed to answer the question.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_3a6f1e82_1",
+      "turnIndex": 11,
+      "date": "2023/08/11 (Fri) 00:01",
+      "role": "assistant",
+      "text": "I'd be happy to help you estimate your monthly mortgage payment, property taxes, and insurance.\n\nBased on your pre-approval for a $350,000 loan, let's assume you'll be financing $325,000 (purchase price) minus $25,000 (down payment) = $300,000.\n\nHere are some estimates:\n\n**Mortgage Payment:**\n\n* Loan amount: $300,000\n* Interest rate: 4% (assuming a 30-year fixed-rate mortgage)\n* Monthly payment: approximately $1,432\n\n**Property Taxes:**\n\n* Property tax rate: 1.25% of the purchase price (this may vary depending on your location)\n* Annual property taxes: $4,062.50 (1.25% of $325,000)\n* Monthly property taxes: approximately $338.54\n\n**Insurance:**\n\n* Homeowners insurance rate: 0.8% of the purchase price (this may vary depending on your location and other factors)\n* Annual insurance premium: $2,600 (0.8% of $325,000)\n* Monthly insurance premium: approximately $216.67\n\n**Total Monthly Payment:**\n\n* Mortgage payment: $1,432\n* Property taxes: $338.54\n* Insurance: $216.67\n* Total: approximately $1,987.21\n\nKeep in mind that these are rough estimates and may vary depending on your individual circumstances. Your actual mortgage payment, property taxes, and insurance premiums may be higher or lower.\n\nIt's essential to review your loan estimate and closing disclosure documents carefully to get a more accurate picture of your monthly payments. Additionally, you may want to consider other costs associated with homeownership, such as maintenance, repairs, and utilities.\n\nI hope this helps you plan your finances for your new home!",
+      "why": "per-session extractor: Uses the pre-approval figure ($350,000) again, linking it to the financing assumptions; helpful if chronology or interpretation is needed.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_3a6f1e82_2",
+      "turnIndex": 0,
+      "date": "2023/11/30 (Thu) 00:36",
+      "role": "user",
+      "text": "I'm planning to move into my new home soon and I need to set up cable and TV services. Can you recommend some providers in my area and their prices? By the way, I'm really looking forward to finally owning a home, it's been a long process, but it'll be worth it to have a backyard like the one I'll have - remember when I got pre-approved for $400,000 from Wells Fargo?",
+      "why": "per-session extractor: Directly states the pre-approval amount and lender needed to answer the question.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_3a6f1e82_1",
+      "turnIndex": 1,
+      "date": "2023/08/11 (Fri) 00:01",
+      "role": "assistant",
+      "text": "I'd be happy to help you estimate your closing costs.\n\nClosing costs are fees associated with the home buying process that are typically paid at the closing of the transaction. These costs can vary depending on several factors, such as the location, type of property, and type of loan you're using. Here are some common closing costs and estimated ranges to help you plan:\n\n1. **Title Insurance and Escrow Fees**:\n\t* Title insurance: 0.5% to 1.0% of the purchase price\n\t* Escrow fees: $500 to $2,000\n2. **Loan Origination Fees**:\n\t* Origination fee: 0.5% to 1.0% of the loan amount\n\t* Underwriting fee: $300 to $900\n\t* Appraisal fee: $300 to $1,000\n3. **Appraisal Fee**:\n\t* $300 to $1,000 (already included in loan origination fees above)\n4. **Credit Report Fee**:\n\t* $15 to $30\n5. **Flood Determination Fee**:\n\t* $15 to $50\n6. **Inspection Fees** (optional):\n\t* Home inspection: $300 to $1,000\n\t* Pest inspection: $50 to $150\n\t* Septic inspection: $100 to $300\n7. **Attorney Fees** (optional):\n\t* $500 to $2,000\n8. **Recording Fees**:\n\t* $50 to $200\n9. **Transfer Taxes** (varies by state and locality):\n\t* 0.1% to 2.0% of the purchase price\n10. **Other Fees**:\n\t* Courier fees: $20 to $100\n\t* Notary fees: $20 to $100\n\nTo estimate your total closing costs, you can use the following ranges:\n\n* For a conventional loan: 2% to 5% of the purchase price\n* For an FHA loan: 2.5% to 6% of the purchase price\n* For a VA loan: 1.5% to 3% of the purchase price\n* For a USDA loan: 1% to 3% of the purchase price\n\nBased on these estimates, if you're purchasing a $250,000 home, your closing costs could range from:\n\n* $5,000 to $12,500 (conventional loan)\n* $6,250 to $15,000 (FHA loan)\n* $3,750 to $7,500 (VA loan)\n* $2,500 to $7,500 (USDA loan)\n\nKeep in mind that these are rough estimates, and your actual closing costs may vary depending on your specific situation. It's a good idea to review your loan estimate and closing disclosure documents carefully to get a more accurate estimate of your closing costs.\n\nI hope this helps you plan your budget for your new home purchase!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_3a6f1e82_1",
+      "turnIndex": 3,
+      "date": "2023/08/11 (Fri) 00:01",
+      "role": "assistant",
+      "text": "Congratulations on your pre-approval!\n\nBased on your pre-approval amount of $350,000 and the purchase price of $325,000, I'll provide you with a more detailed estimate of your closing costs.\n\nAssuming you're getting a conventional loan from Wells Fargo, here's a breakdown of the estimated closing costs:\n\n1. **Title Insurance and Escrow Fees**:\n\t* Title insurance: 0.5% to 1.0% of the purchase price = $1,625 to $3,250\n\t* Escrow fees: $500 to $2,000 = $1,250 (avg.)\n\tTotal: $2,875 to $5,250\n2. **Loan Origination Fees**:\n\t* Origination fee: 0.5% to 1.0% of the loan amount = $1,750 to $3,500\n\t* Underwriting fee: $300 to $900 = $600 (avg.)\n\t* Appraisal fee: $300 to $1,000 = $650 (avg.)\n\tTotal: $2,700 to $5,050\n3. **Appraisal Fee** (already included in loan origination fees above)\n4. **Credit Report Fee**:\n\t* $15 to $30 = $22.50 (avg.)\n5. **Flood Determination Fee**:\n\t* $15 to $50 = $32.50 (avg.)\n6. **Inspection Fees** (optional):\n\t* Home inspection: $300 to $1,000 = $650 (avg.)\n\t* Pest inspection: $50 to $150 = $100 (avg.)\n\t* Septic inspection: $100 to $300 = $200 (avg.)\n\tTotal: $950 to $1,350\n7. **Attorney Fees** (optional):\n\t* $500 to $2,000 = $1,250 (avg.)\n8. **Recording Fees**:\n\t* $50 to $200 = $125 (avg.)\n9. **Transfer Taxes** (varies by state and locality):\n\t* 0.1% to 2.0% of the purchase price = $325 to $6,500 (avg. 0.5% = $1,625)\n10. **Other Fees**:\n\t* Courier fees: $20 to $100 = $60 (avg.)\n\t* Notary fees: $20 to $100 = $60 (avg.)\n\nTotal Estimated Closing Costs: $11,332 to $20,322\n\nAs a rough estimate, you can expect to pay around 3.5% to 6.2% of the purchase price in closing costs. Based on your purchase price of $325,000, that would be:\n\n* 3.5%: $11,375\n* 6.2%: $20,150\n\nKeep in mind that these are estimated ranges, and your actual closing costs may vary depending on your location, loan terms, and other factors. It's always a good idea to review your loan estimate and closing disclosure documents carefully to get a more accurate estimate of your closing costs.\n\nI hope this helps you plan your budget for your new home purchase!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_3a6f1e82_1",
+      "turnIndex": 4,
+      "date": "2023/08/11 (Fri) 00:01",
+      "role": "user",
+      "text": "Can you help me understand how much of the closing costs I can negotiate with the seller to cover, based on the inspection report?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_3a6f1e82_1",
+      "turnIndex": 10,
+      "date": "2023/08/11 (Fri) 00:01",
+      "role": "user",
+      "text": "Can you help me understand how much I'll need to pay each month for my mortgage payment, property taxes, and insurance?",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_3a6f1e82_2",
+      "turnIndex": 1,
+      "date": "2023/11/30 (Thu) 00:36",
+      "role": "assistant",
+      "text": "Congratulations on your new home! I'm happy to help you with setting up cable and TV services.\n\nHowever, I need to clarify a few things. As a digital AI assistant, I don't have access to your personal information or previous conversations. I'm a new conversation each time you interact with me, so I don't recall you getting pre-approved for a mortgage or any other personal details.\n\nTo provide you with accurate information on cable and TV service providers in your area, I'll need to know your location. Could you please share your zip code or city and state with me? That way, I can give you a list of available providers and their prices.\n\nAlso, keep in mind that prices may vary depending on the specific services you choose, such as internet speed, TV channel packages, and any bundles or promotions. I'll do my best to provide you with a general idea of what's available in your area.\n\nLet me know your location, and I'll get started on helping you find the best cable and TV services for your new home!",
+      "why": "adjacent conversational context",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 7455,
+  "estimatedTokens": 1864
+}

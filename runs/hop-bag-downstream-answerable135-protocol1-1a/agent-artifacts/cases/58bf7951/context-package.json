@@ -1,0 +1,73 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Play attended at the local community theater (specific title)",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_355c48bb",
+      "turnIndex": 2,
+      "date": "2023/05/26 (Fri) 07:31",
+      "role": "user",
+      "text": "I'll definitely try those suggestions. By the way, I recently went to a play at the local community theater and was impressed by the lead actress's performance - she reminded me of my friend Emily, who's also an aspiring actress.",
+      "why": "User states the play they attended at the local community theater was a production of The Glass Menagerie.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_355c48bb",
+      "turnIndex": 4,
+      "date": "2023/05/26 (Fri) 07:31",
+      "role": "user",
+      "text": "I was thinking of getting Emily to audition for a role, I'll definitely encourage her to give it a shot. The play I attended was actually a production of The Glass Menagerie, have you heard of it?",
+      "why": "Assistant responds referencing the same play the user attended and confirms details about The Glass Menagerie, reinforcing the title.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_355c48bb",
+      "turnIndex": 5,
+      "date": "2023/05/26 (Fri) 07:31",
+      "role": "assistant",
+      "text": "The Glass Menagerie is a classic play by Tennessee Williams, one of the most renowned American playwrights. It's a memory play that explores the complex relationships within the Wingfield family, particularly between Amanda, Laura, and Tom. The play is known for its poignant and introspective themes, as well as its beautiful, lyrical language.\n\nAs a large language model, I don't have personal experiences or emotions, but I can provide information and insights about the play. I can tell you that The Glass Menagerie is considered one of Williams' most autobiographical works, drawing from his own family dynamics and experiences.\n\nIf Emily is interested in auditioning for a role, I'm sure she'll find the play's themes and characters fascinating to work with. The Glass Menagerie is a challenging but rewarding play for actors, and it's a great opportunity for Emily to showcase her skills.\n\nRemember to encourage Emily to prepare thoroughly for the audition, and to have fun with the process. Break a leg, Emily!",
+      "why": "Assistant continues discussing The Glass Menagerie in response to the user’s question about it, providing further context tied to the attended play.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_355c48bb",
+      "turnIndex": 0,
+      "date": "2023/05/26 (Fri) 07:31",
+      "role": "user",
+      "text": "I'm looking for some recommendations for local Italian restaurants. I recently tried the new place downtown and it was pretty good, but I'd love to explore other options.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_355c48bb",
+      "turnIndex": 6,
+      "date": "2023/05/26 (Fri) 07:31",
+      "role": "user",
+      "text": "I've been thinking of taking some acting classes myself, do you know of any local studios or instructors that offer classes for adults?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_355c48bb",
+      "turnIndex": 8,
+      "date": "2023/05/26 (Fri) 07:31",
+      "role": "user",
+      "text": "I'll definitely try those suggestions. I've been thinking about taking some acting classes to improve my skills, especially after my recent audition for a role in \"The Crucible\" didn't go well.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_355c48bb",
+      "turnIndex": 10,
+      "date": "2023/05/26 (Fri) 07:31",
+      "role": "user",
+      "text": "I'm thinking of focusing on scene study and character development. I've always struggled with really getting into character and making my performances feel authentic. I'd love to work on that and get more comfortable with analyzing scripts and developing a character's backstory.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 2220,
+  "estimatedTokens": 555
+}

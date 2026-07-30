@@ -1,0 +1,83 @@
+[
+  {
+    "session_id": "answer_6a3b5c13_3",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session does not contain any transaction history or totals by grocery store for the past month; it only mentions an upcoming plan to shop at Publix and a past online Thrive Market spend (~$150). If the question depends on spending at multiple local grocery stores (e.g., Whole Foods, Walmart, Kroger), those details are likely missing from this session.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User placed an online order with Thrive Market last month and spent around $150 on organic and sustainable products.",
+          "why": "Potential evidence of grocery-related spending amount at a specific store (Thrive Market) within the relevant time window."
+        },
+        {
+          "turnIndex": 8,
+          "fact": "User is planning to shop at Publix this week.",
+          "why": "Indicates Publix as a store the user plans to spend money at, but no amount is provided; may still be relevant if the system uses plans/intent as evidence."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_6a3b5c13_1",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "Only one grocery trip is mentioned ($120 at Walmart a week ago). The session does not provide other store spending, so it may not reflect the maximum across the past month.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User spent around $120 at Walmart on grocery shopping last Saturday, exactly a week ago, and got a 10% off coupon on dairy products.",
+          "why": "Provides a concrete grocery store name (Walmart) and spending amount ($120) within roughly the past month, relevant to determining where they spent the most."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_6a3b5c13_2",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session mentions a past Trader Joe's trip ($80 total between two people) and that chicken/ground beef was bought last week at Walmart, but it does not provide enough per-store spending detail across the full past month to determine which grocery store you spent the most money at.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "Trader Joe's the week before last and spent around $80 between the two of us on some pre-packaged meals and snacks.",
+          "why": "Provides a grocery store name (Trader Joe's) and an amount ($80) within roughly the past month, which could be used to compare spending by store if other sessions supply other stores/amounts."
+        },
+        {
+          "turnIndex": 2,
+          "fact": "I already have ... chicken breast and ground beef I bought last week at Walmart.",
+          "why": "Names Walmart as a grocery store and indicates a purchase of grocery items (chicken breast and ground beef) within the past month, though no amount is given."
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "answer_6a3b5c13_4",
+    "output": {
+      "candidateStatus": "found",
+      "missingRisk": "This session only mentions one prior grocery order (Publix last week, ~$60 plus $10 delivery) and does not provide amounts from other stores in the past month, so it cannot establish which store you spent the most at overall.",
+      "claims": [
+        {
+          "turnIndex": 0,
+          "fact": "User is planning meals for the next week and making a grocery list; they rely on Instacart a lot lately.",
+          "why": "Indicates a shopping context but doesn’t include store-spend amounts."
+        },
+        {
+          "turnIndex": 1,
+          "fact": "Assistant references Instacart: “$60 for a week's worth of groceries from Publix sounds like a reasonable amount.”",
+          "why": "Contains a specific store name (Publix) and a dollar amount ($60) tied to groceries."
+        },
+        {
+          "turnIndex": 6,
+          "fact": "User: “I ordered from Publix last week and spent around $60. The delivery fee was $10.”",
+          "why": "Directly provides store (Publix) and spending amounts ($60 total groceries, $10 delivery) with a relative time (“last week”)."
+        },
+        {
+          "turnIndex": 7,
+          "fact": "Assistant: “Additionally, this total does not include the delivery fee, which would add $10 to your total.”",
+          "why": "Adds a $10 delivery fee reference, which could be relevant if the question considers total spend; not tied to a specific store name in this line."
+        }
+      ]
+    }
+  }
+]

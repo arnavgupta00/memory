@@ -1,0 +1,23 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Personal best time(s) you’ve stated for charity 5K runs (and any later targets referencing those times)",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_a25d4a91_1",
+      "turnIndex": 4,
+      "why": "States your personal best time in a charity 5K run as 27:12."
+    },
+    {
+      "sessionId": "answer_a25d4a91_2",
+      "turnIndex": 0,
+      "why": "Mentions your goal for a later charity 5K run and references beating your personal best time of 25:50."
+    },
+    {
+      "sessionId": "answer_a25d4a91_2",
+      "turnIndex": 10,
+      "why": "Another training-related charity 5K run message referencing improving your personal-best time (context for the later personal-best value)."
+    }
+  ]
+}

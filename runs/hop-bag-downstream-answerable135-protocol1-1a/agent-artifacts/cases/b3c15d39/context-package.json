@@ -1,0 +1,118 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Remote shutter release order date vs arrival date (days elapsed)",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_05d808e6_1",
+      "turnIndex": 10,
+      "date": "2023/03/01 (Wed) 00:00",
+      "role": "user",
+      "text": "I think I'll price my old tripod competitively, but also highlight its excellent condition and the fact that it's been well-maintained. I'll research similar listings online and add 10-20% to the average market value to reflect its quality. Thanks for the advice! By the way, I also ordered a new remote shutter release online on February 5th, after I realized I lost my old one during a photo walk. It's been working great so far.",
+      "why": "States the user ordered a new remote shutter release on February 5th.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_05d808e6_2",
+      "turnIndex": 0,
+      "date": "2023/03/01 (Wed) 13:48",
+      "role": "user",
+      "text": "I'm looking for some recommendations on external hard drives to back up my photos. I've been considering Western Digital and LaCie, but I'm open to other options. By the way, I've been really busy with photography lately - I just got a new remote shutter release that arrived on February 10th, and it's been a game-changer.",
+      "why": "States the user’s new remote shutter release arrived on February 10th.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_05d808e6_1",
+      "turnIndex": 0,
+      "date": "2023/03/01 (Wed) 00:00",
+      "role": "user",
+      "text": "I'm thinking of taking my camera gear on a hike this weekend and I want to make sure I have everything I need. Can you give me a list of essential items to pack in my camera bag? By the way, I recently got a new bag from Peak Design, which I love, but I'm still getting used to the layout - it's been a challenge finding everything quickly, like when I was looking for my tripod during a photo walk on February 5th, which is also when I realized I lost my remote shutter release, so I ordered a new one online.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_05d808e6_1",
+      "turnIndex": 2,
+      "date": "2023/03/01 (Wed) 00:00",
+      "role": "user",
+      "text": "I'm also thinking of taking my 50mm prime lens, which I've been really enjoying using lately. Do you think it's a good idea to bring it along on the hike, or would a zoom lens be more practical?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_05d808e6_1",
+      "turnIndex": 4,
+      "date": "2023/03/01 (Wed) 00:00",
+      "role": "user",
+      "text": "I think I'll bring the 50mm prime lens since I've been really enjoying using it lately. I've been experimenting with different camera settings and techniques, and I think it'll be a good challenge to work with a fixed focal length on the hike.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_05d808e6_1",
+      "turnIndex": 6,
+      "date": "2023/03/01 (Wed) 00:00",
+      "role": "user",
+      "text": "I'm also thinking of selling my old tripod, which I've had since 2018. Do you think I should sell it online through a marketplace like eBay or Craigslist, or should I try to sell it to a local camera store?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_05d808e6_1",
+      "turnIndex": 8,
+      "date": "2023/03/01 (Wed) 00:00",
+      "role": "user",
+      "text": "I've been thinking about selling my old tripod, but I'm not sure about the price. I've had it since 2018, and it's still in great condition. Do you think I should price it competitively based on similar listings online, or should I aim higher since it's been well-maintained? By the way, I've been doing some research on new tripods, and I think I've found a good option that's more portable and lightweight. I'll probably order it next week.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_05d808e6_2",
+      "turnIndex": 2,
+      "date": "2023/03/01 (Wed) 13:48",
+      "role": "user",
+      "text": "I've been using Adobe Lightroom to organize and edit my photos, and I've been really happy with it. Do you have any recommendations for settings or presets that would be suitable for landscape and portrait photography?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_05d808e6_2",
+      "turnIndex": 4,
+      "date": "2023/03/01 (Wed) 13:48",
+      "role": "user",
+      "text": "I've been experimenting with different camera bags and backpacks, and I've been using my new one from Peak Design to carry my gear on hikes and trips. It's been working out great, but I still need to get used to the new layout and compartments.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_05d808e6_2",
+      "turnIndex": 6,
+      "date": "2023/03/01 (Wed) 13:48",
+      "role": "user",
+      "text": "I've been thinking about upgrading my tripod, which I bought back in 2018. Do you have any recommendations for lightweight and portable tripods that would be suitable for travel and outdoor photography?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_05d808e6_2",
+      "turnIndex": 8,
+      "date": "2023/03/01 (Wed) 13:48",
+      "role": "user",
+      "text": "I've been thinking about selling my old tripod and upgrading to a more portable and lightweight one. I've been doing some research and reading reviews, and I think I've found a good option. I'll probably order it next week.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_05d808e6_2",
+      "turnIndex": 10,
+      "date": "2023/03/01 (Wed) 13:48",
+      "role": "user",
+      "text": "I didn't mention the specific tripod model I'm considering, but I did mention that I got a new remote shutter release that arrived on February 10th, and it's been a game-changer.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 3414,
+  "estimatedTokens": 854
+}

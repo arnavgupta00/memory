@@ -1,0 +1,136 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Compare the French press coffee-to-water ratio stated in earlier vs later sessions to determine whether the water per tablespoon increased or decreased.",
+  "candidateStatus": "found",
+  "missingRisk": "If there is a more recent ratio change in an unreturned session, this comparison could miss it; only the two provided sessions contain explicit ratio numbers.; frozen bag may omit a required session",
+  "items": [
+    {
+      "sessionId": "answer_4dac77cb_1",
+      "turnIndex": 0,
+      "date": "2023/02/11 (Sat) 11:41",
+      "role": "user",
+      "text": "I'm thinking of trying out a new coffee recipe, but I'm not sure what type of coffee beans would pair well with citrus notes. Can you recommend some options? By the way, I've been experimenting with my French press and I've found that 1 tablespoon of coffee for every 6 ounces of water is the perfect ratio for me.",
+      "why": "Contains the earlier French press ratio: 1 tablespoon coffee for every 6 ounces of water.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_4dac77cb_1",
+      "turnIndex": 1,
+      "date": "2023/02/11 (Sat) 11:41",
+      "role": "assistant",
+      "text": "Citrus notes are a great addition to coffee! You've got a good starting point with your French press ratio, now let's explore some coffee beans that would complement citrus flavors nicely.\n\nWhen it comes to pairing coffee with citrus, you'll want beans that have bright, vibrant acidity and flavor profiles that won't overpower the citrus notes. Here are some coffee bean options that might fit the bill:\n\n1. **Kenyan coffee**: Kenyan beans are known for their bright acidity and complex flavor profiles, which often feature citrus notes like lemon, orange, and grapefruit. Look for beans from regions like Nyeri, Kiambu, or Muranga.\n2. **Ethiopian Yirgacheffe**: Ethiopian coffees are renowned for their floral and citrus flavors. Yirgacheffe beans, in particular, offer a delicate, tea-like body with notes of lemon, bergamot, and citrus blossoms.\n3. **Colombian Gesha**: Gesha beans from Colombia often exhibit a citrusy flavor profile, with notes of orange, lemon, and lime. They tend to have a medium to high acidity, which will cut through the richness of the citrus.\n4. **Guatemalan Antigua**: Guatemalan Antigua beans can have a balanced acidity and flavor profiles that feature citrus notes like orange, lemon, and citrus peel. Look for beans from farms in the Antigua region.\n5. **Rwanda Bourbon**: Rwandan Bourbon beans are known for their bright acidity and flavors of citrus, berries, and stone fruits. They can add a nice balance to citrus notes in your coffee recipe.\n\nWhen experimenting with citrus-infused coffee, consider the type of citrus fruit you're using and how you're incorporating it. Are you adding juice, zest, or slices to your coffee? This will help you determine the best coffee bean to pair with it.\n\nFor your French press, you might want to adjust the grind size and steeping time to bring out the optimal flavor from your chosen coffee beans. A medium-coarse grind and a 3-4 minute steeping time could be a good starting point.\n\nFeel free to experiment with different roasts, too. A lighter roast might accentuate the citrus notes, while a darker roast could add a richer, more balanced flavor.\n\nHave fun exploring these options, and I hope you find the perfect coffee-citrus combination!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_4dac77cb_2",
+      "turnIndex": 0,
+      "date": "2023/06/30 (Fri) 13:14",
+      "role": "user",
+      "text": "I'm thinking of trying out a new tea blend this weekend. Do you have any recommendations for a relaxing tea that's similar to chamomile? By the way, I'm planning to brew a fresh pot of coffee in the morning, and I'm feeling excited to use my new beans - I've got my French press ratio down to a science: 1 tablespoon of coffee for every 5 ounces of water.",
+      "why": "Contains the later French press ratio: 1 tablespoon coffee for every 5 ounces of water.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_4dac77cb_2",
+      "turnIndex": 1,
+      "date": "2023/06/30 (Fri) 13:14",
+      "role": "assistant",
+      "text": "A new tea blend sounds like a lovely way to unwind! If you're looking for a relaxing tea similar to chamomile, I'd be happy to suggest a few options:\n\n1. **Lavender tea**: Like chamomile, lavender is known for its calming effects and can promote a good night's sleep. The floral flavor is soothing and gentle, making it a great choice for unwinding.\n2. **Tulsi tea** (Holy Basil): Tulsi is an herbal tea that's also known for its calming properties. It has a slightly sweet and spicy flavor, which can help reduce stress and anxiety.\n3. **Rooibos tea**: This caffeine-free tea from South Africa has a nutty flavor and is rich in antioxidants. It's a great choice for a relaxing evening tea, as it can help promote a good night's sleep.\n4. **Passionflower tea**: Another herbal tea with calming properties, passionflower can help reduce anxiety and promote relaxation.\n5. **Valerian root tea**: Valerian root is a natural sedative and can help with sleep disorders. The flavor is earthy and slightly sweet, making it a nice alternative to chamomile.\n\nAs for your coffee, I'm glad to hear you're excited to brew a fresh pot! Your French press ratio of 1:5 sounds spot on. Enjoy your coffee and tea adventures this weekend!\n\nRemember, when trying a new tea, you can always adjust the steeping time and amount of tea leaves to your liking. Happy sipping!",
+      "why": "deterministic adjacent-turn repair",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_4dac77cb_1",
+      "turnIndex": 2,
+      "date": "2023/02/11 (Sat) 11:41",
+      "role": "user",
+      "text": "I think I'll try the Kenyan coffee first. Do you have any recommendations for a good tea to pair with citrus flavors?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4dac77cb_1",
+      "turnIndex": 4,
+      "date": "2023/02/11 (Sat) 11:41",
+      "role": "user",
+      "text": "I'll try the Earl Grey tea with my citrus-infused coffee. By the way, do you have any recommendations for a good coffee subscription service?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4dac77cb_1",
+      "turnIndex": 6,
+      "date": "2023/02/11 (Sat) 11:41",
+      "role": "user",
+      "text": "I've already signed up for a coffee subscription service last month and got my first shipment of beans yesterday. I'm excited to try some new roasts and flavors.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4dac77cb_1",
+      "turnIndex": 8,
+      "date": "2023/02/11 (Sat) 11:41",
+      "role": "user",
+      "text": "I'm curious, what do you think of the beans you received in your first shipment? Are you planning on trying them out in your French press, or do you have another brewing method in mind?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4dac77cb_1",
+      "turnIndex": 10,
+      "date": "2023/02/11 (Sat) 11:41",
+      "role": "user",
+      "text": "I'm excited to try out the new beans in my French press, actually. I think the bright, vibrant flavors will pair really well with the citrus notes I'm experimenting with. Do you have any tips on how to store my coffee beans to preserve their freshness?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4dac77cb_2",
+      "turnIndex": 2,
+      "date": "2023/06/30 (Fri) 13:14",
+      "role": "user",
+      "text": "What's the best way to store tea leaves to keep them fresh?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4dac77cb_2",
+      "turnIndex": 4,
+      "date": "2023/06/30 (Fri) 13:14",
+      "role": "user",
+      "text": "That's really helpful, thanks! I've been meaning to organize my tea cabinet, so I'll definitely use these tips. Speaking of which, I'm thinking of trying out a new tea subscription service - have you heard of any good ones?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4dac77cb_2",
+      "turnIndex": 6,
+      "date": "2023/06/30 (Fri) 13:14",
+      "role": "user",
+      "text": "I've heard of a few of those, but not all. I think I'll check out Adagio Teas and The Tea Spot. Do you know if they offer any discounts or promotions for new customers?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4dac77cb_2",
+      "turnIndex": 8,
+      "date": "2023/06/30 (Fri) 13:14",
+      "role": "user",
+      "text": "I'll definitely check out those promotions. By the way, I've been meaning to ask: what's the best way to clean my French press? I want to make sure I'm getting all the old coffee oils out.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_4dac77cb_2",
+      "turnIndex": 10,
+      "date": "2023/06/30 (Fri) 13:14",
+      "role": "user",
+      "text": "I was thinking of trying out that new rose tea my sister introduced me to. Do you think it would pair well with a sweet treat, like shortbread cookies?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 5886,
+  "estimatedTokens": 1472
+}

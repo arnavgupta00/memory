@@ -1,0 +1,33 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "A set of prior preference signals the user has given that could inform a tonight show/movie recommendation (e.g., comedy storytelling like John Mulaney; true-crime interest; Netflix stand-up)",
+  "candidateStatus": "found",
+  "missingRisk": "User’s tastes for movies/shows (genres, platforms, content limits) may not be specified; only podcast/comedy signals are present.",
+  "items": [
+    {
+      "sessionId": "573dc24b_1",
+      "turnIndex": 0,
+      "why": "User describes being hooked on true crime (podcasts), which is a taste signal for what kind of night entertainment they may want."
+    },
+    {
+      "sessionId": "573dc24b_1",
+      "turnIndex": 2,
+      "why": "User asks for self-improvement/personal development podcasts and mentions enjoying 'How I Built This'—another entertainment preference signal."
+    },
+    {
+      "sessionId": "573dc24b_1",
+      "turnIndex": 3,
+      "why": "Assistant provides a list of self-improvement/personal development podcasts; useful only insofar as it reflects the user’s previously expressed interest in that style/content."
+    },
+    {
+      "sessionId": "answer_0250ae1c",
+      "turnIndex": 0,
+      "why": "User explicitly requests Netflix stand-up specials with strong storytelling abilities like John Mulaney’s 'Kid Gorgeous'—clear preference for storytelling comedy."
+    },
+    {
+      "sessionId": "answer_0250ae1c",
+      "turnIndex": 1,
+      "why": "Assistant recommends specific Netflix stand-up specials (and calls out storytelling); useful as prior recommendations aligned with the user’s request."
+    }
+  ]
+}

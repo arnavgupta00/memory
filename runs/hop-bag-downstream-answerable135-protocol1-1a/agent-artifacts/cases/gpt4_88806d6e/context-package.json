@@ -1,0 +1,118 @@
+{
+  "queryShape": "order",
+  "setBoundary": "People you met: Mark & Sarah (friends) vs Tom (a guy you met at a charity event); determine which was met first based on the dates you gave.",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_e60a93ff_2",
+      "turnIndex": 0,
+      "date": "2023/05/28 (Sun) 02:45",
+      "role": "user",
+      "text": "I'm planning to volunteer at another charity event this weekend and I was wondering if you could help me come up with some conversation starters to break the ice with the other volunteers. I recall that a few months ago, I volunteered at a charity event and met a lot of like-minded people, including a guy named Tom who's involved with the organization.",
+      "why": "Mentions you volunteered a few months ago and met a guy named Tom involved with the organization (used as the meeting-time basis for Tom).",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e60a93ff_1",
+      "turnIndex": 0,
+      "date": "2023/05/28 (Sun) 18:40",
+      "role": "user",
+      "text": "I'm planning a trip to visit my friends Mark and Sarah, who I met on a beach trip about a month ago, and I was wondering if you could help me find some good restaurants in their hometown?",
+      "why": "States you’re planning to visit friends Mark and Sarah and says you met them on a beach trip about a month ago.",
+      "tier": "selected"
+    },
+    {
+      "sessionId": "answer_e60a93ff_2",
+      "turnIndex": 2,
+      "date": "2023/05/28 (Sun) 02:45",
+      "role": "user",
+      "text": "That's really helpful, thanks! I think I'll use some of those conversation starters to break the ice. I'm also wondering if you can help me find some good coffee shops near the event location, as I'd like to grab a coffee before or after my shift.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e60a93ff_2",
+      "turnIndex": 4,
+      "date": "2023/05/28 (Sun) 02:45",
+      "role": "user",
+      "text": "I'll try searching on Google Maps and Yelp to find some good coffee shops near the event location. By the way, speaking of coffee shops, I met a freelance writer at a coffee shop near my office last week and we exchanged numbers to grab lunch sometime. Do you think it's a good idea to invite her to meet up for coffee before my volunteer shift?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e60a93ff_2",
+      "turnIndex": 6,
+      "date": "2023/05/28 (Sun) 02:45",
+      "role": "user",
+      "text": "I think I'll invite her to meet up for a quick coffee before my shift, it'll be a great way to catch up and I can introduce her to the charity event I'm volunteering at. Do you think it's a good idea to ask her if she'd be interested in volunteering as well?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e60a93ff_2",
+      "turnIndex": 8,
+      "date": "2023/05/28 (Sun) 02:45",
+      "role": "user",
+      "text": "I'll ask her to meet up for a quick coffee before my shift and introduce her to the charity event. If she's interested, I can ask her if she'd like to volunteer with me, but I'll make sure to keep it casual and non-committal. By the way, I've been meaning to follow up with Sophia, a woman I met at a networking event a couple of weeks ago, to discuss a potential collaboration. Do you think it's a good idea to send her a follow-up email this week?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e60a93ff_2",
+      "turnIndex": 10,
+      "date": "2023/05/28 (Sun) 02:45",
+      "role": "user",
+      "text": "I'll send her a follow-up email this week to discuss the potential collaboration. By the way, I've been meaning to reach out to Rachel, a woman I met at a music festival last weekend, to finalize plans for brunch. Do you think I should suggest a specific location or let her decide?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e60a93ff_1",
+      "turnIndex": 2,
+      "date": "2023/05/28 (Sun) 18:40",
+      "role": "user",
+      "text": "Mark and Sarah mentioned they live in a small town near the mountains, but I don't recall the exact name. Is there a way to find it? We had dinner together at a seafood place near the beach, so I think I'd like to find something similar in their hometown.",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e60a93ff_1",
+      "turnIndex": 4,
+      "date": "2023/05/28 (Sun) 18:40",
+      "role": "user",
+      "text": "I'll try to reach out to Mark and Sarah to get the exact name of their hometown. In the meantime, I was thinking of planning some outdoor activities during my visit. Can you suggest some popular outdoor activities that are commonly found in small towns near the mountains?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e60a93ff_1",
+      "turnIndex": 6,
+      "date": "2023/05/28 (Sun) 18:40",
+      "role": "user",
+      "text": "I'm thinking of bringing my camera to capture some nice shots during my visit. Are there any photography tips you could give me for capturing the beauty of the mountains and outdoor scenery?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e60a93ff_1",
+      "turnIndex": 8,
+      "date": "2023/05/28 (Sun) 18:40",
+      "role": "user",
+      "text": "That's really helpful! I'm thinking of bringing my camera to capture some nice shots during my visit. Speaking of visits, I was wondering if you could help me plan a day trip to explore the surrounding areas of Mark and Sarah's hometown?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    },
+    {
+      "sessionId": "answer_e60a93ff_1",
+      "turnIndex": 10,
+      "date": "2023/05/28 (Sun) 18:40",
+      "role": "user",
+      "text": "I was thinking of asking Mark and Sarah about the local history and culture of their hometown. They might have some interesting stories or recommendations for me to explore. Do you think that's a good idea?",
+      "why": "supporting turn from selected session",
+      "tier": "supporting"
+    }
+  ],
+  "characterCount": 3282,
+  "estimatedTokens": 821
+}

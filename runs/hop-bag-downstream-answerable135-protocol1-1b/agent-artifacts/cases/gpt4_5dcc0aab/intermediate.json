@@ -1,0 +1,108 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Use only the selected turns to determine which pair of shoes the user cleaned last month.",
+    "candidateStatus": "found",
+    "missingRisk": "The catalog indicates “cleaned my white Adidas sneakers last month,” but it doesn’t mention any other shoe-cleaning activity that same month; if the user cleaned more than one pair last month elsewhere, it may be absent from this candidate set.",
+    "items": [
+      {
+        "sessionId": "answer_099c1b6c_1",
+        "turnIndex": 6,
+        "why": "Directly states the user cleaned “my white Adidas sneakers last month,” which identifies the shoes and the timeframe."
+      },
+      {
+        "sessionId": "answer_099c1b6c_1",
+        "turnIndex": 8,
+        "why": "Confirms the cleaning method and “looked like new again after that,” providing surrounding context for the same “last month” cleaning event."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Use only the selected turns to determine which pair of shoes the user cleaned last month.",
+    "candidateStatus": "found",
+    "missingRisk": "The catalog indicates “cleaned my white Adidas sneakers last month,” but it doesn’t mention any other shoe-cleaning activity that same month; if the user cleaned more than one pair last month elsewhere, it may be absent from this candidate set.; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_099c1b6c_1",
+        "turnIndex": 6,
+        "why": "Directly states the user cleaned “my white Adidas sneakers last month,” which identifies the shoes and the timeframe."
+      },
+      {
+        "sessionId": "answer_099c1b6c_1",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_099c1b6c_1",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_099c1b6c_1",
+        "turnIndex": 8,
+        "why": "Confirms the cleaning method and “looked like new again after that,” providing surrounding context for the same “last month” cleaning event."
+      },
+      {
+        "sessionId": "answer_099c1b6c_1",
+        "turnIndex": 9,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_099c1b6c_2",
+        "turnIndex": 0,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_099c1b6c_2",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_099c1b6c_4",
+        "turnIndex": 0,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_099c1b6c_4",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_099c1b6c_5",
+        "turnIndex": 6,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_099c1b6c_5",
+        "turnIndex": 7,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_099c1b6c_5",
+        "turnIndex": 5,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_099c1b6c_1",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_099c1b6c_1",
+        "turnIndex": 11,
+        "why": "deterministic candidate-session coverage repair"
+      },
+      {
+        "sessionId": "answer_099c1b6c_3",
+        "turnIndex": 10,
+        "why": "deterministic adjacent-turn repair"
+      },
+      {
+        "sessionId": "answer_099c1b6c_3",
+        "turnIndex": 11,
+        "why": "deterministic candidate-session coverage repair"
+      }
+    ]
+  }
+}

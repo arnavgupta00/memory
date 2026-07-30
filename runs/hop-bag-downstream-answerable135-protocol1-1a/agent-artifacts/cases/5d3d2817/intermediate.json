@@ -1,0 +1,23 @@
+{
+  "queryShape": "lookup",
+  "setBoundary": "Your stated previous occupation / prior job title(s).",
+  "candidateStatus": "found",
+  "missingRisk": "none",
+  "items": [
+    {
+      "sessionId": "answer_235eb6fb",
+      "turnIndex": 4,
+      "why": "User describes their previous role: “in my previous role … marketing specialist at a small startup.”"
+    },
+    {
+      "sessionId": "answer_235eb6fb",
+      "turnIndex": 8,
+      "why": "User reiterates the prior job context: “In my previous role at the startup, I was responsible for managing a team of interns…” (supports understanding of the previous occupation/work)."
+    },
+    {
+      "sessionId": "answer_235eb6fb",
+      "turnIndex": 0,
+      "why": "Establishes the user has a “new role,” which frames the prior occupation they reference later in the same session."
+    }
+  ]
+}

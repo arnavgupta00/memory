@@ -1,0 +1,33 @@
+{
+  "raw": {
+    "queryShape": "lookup",
+    "setBoundary": "Use only the user/assistant turns that directly state when the March 15th issue was read; compute the days-ago using the provided current date (2023/04/01) downstream.",
+    "candidateStatus": "found",
+    "missingRisk": "If the candidate session only says the reading date without the exact day-of-month linkage, the answerer may need another turn explicitly tying 'today' to March 15 (or a different year).",
+    "items": [
+      {
+        "sessionId": "answer_e22d6aef_1",
+        "turnIndex": 0,
+        "why": "Contains the direct fact: the user says they read the March 15th issue 'today' (session date is 2023/03/20). Needed to determine how many days ago it was from 2023/04/01."
+      }
+    ]
+  },
+  "repaired": {
+    "queryShape": "lookup",
+    "setBoundary": "Use only the user/assistant turns that directly state when the March 15th issue was read; compute the days-ago using the provided current date (2023/04/01) downstream.",
+    "candidateStatus": "found",
+    "missingRisk": "If the candidate session only says the reading date without the exact day-of-month linkage, the answerer may need another turn explicitly tying 'today' to March 15 (or a different year).; frozen bag may omit a required session",
+    "items": [
+      {
+        "sessionId": "answer_e22d6aef_1",
+        "turnIndex": 0,
+        "why": "Contains the direct fact: the user says they read the March 15th issue 'today' (session date is 2023/03/20). Needed to determine how many days ago it was from 2023/04/01."
+      },
+      {
+        "sessionId": "answer_e22d6aef_1",
+        "turnIndex": 1,
+        "why": "deterministic adjacent-turn repair"
+      }
+    ]
+  }
+}
