@@ -62,18 +62,6 @@ unchanged to every production workload. The full protocol and failure
 decomposition are recorded in
 [the full benchmark certification](src/agents/current/architecture/0008-FULL500-CERTIFICATION-2026-07-31.md).
 
-```mermaid
-flowchart TD
-  Q["Question + date"] --> P["Luna low facet planner"]
-  P --> V["Parallel BM25 over notes, USER, ASSISTANT, and combined views"]
-  V --> C["Fused top-24 candidate pool"]
-  C --> A["Luna low permissive admission"]
-  A --> B["Opaque session bag, maximum 12"]
-  B --> E["Parallel Nano low per-session extraction"]
-  E --> R["Deterministic balanced raw-turn package"]
-  R --> F["Luna high final answer"]
-```
-
 | Stage | Implementation |
 |---|---|
 | Session ingestion | GPT-5.4 Nano, USER turns only |
