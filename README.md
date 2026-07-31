@@ -1,135 +1,119 @@
 # MemoryBench
 
-MemoryBench is a reproducible LongMemEval-S harness and a workspace for developing long-term-memory
-agents. The benchmark lifecycle and canonical evaluator remain in stable Python.
+MemoryBench is a research workspace for building and evaluating long-term-memory
+agents on LongMemEval-S. The current system is **Architecture 0008**, an
+opaque-ID retrieval and evidence-extraction pipeline designed to recover the
+smallest useful set of past sessions before answering.
+
+## Current result
+
+Architecture 0008 scored **457/500 (91.40%)** on the complete 500-question
+LongMemEval-S evaluation.
+
+| Metric | Result |
+|---|---:|
+| Overall accuracy | **457/500 (91.40%)** |
+| Task-averaged accuracy | **92.74%** |
+| Answerable questions | 431/470 (91.70%) |
+| Abstention questions | 26/30 (86.67%) |
+| Candidate-pool full-gold coverage | 494/500 (98.80%) |
+| Selected-bag full-gold coverage | 471/500 (94.20%) |
+| Approximate total benchmark cost | **$14.7–$15** |
+
+The cost is the rounded end-to-end budget for the 500-question benchmark,
+including one-time session ingestion, retrieval, evidence extraction, final
+answering, and canonical judging. Ingestion is reusable across later question
+runs; experimental development runs before the selected architecture are not
+part of this figure. Provider metering and output length can move the exact
+bill slightly, so the cost is intentionally reported as a range.
+
+### Accuracy by question type
+
+| Question type | Correct | Accuracy |
+|---|---:|---:|
+| Knowledge update | 74/78 | 94.87% |
+| Multi-session | 116/133 | 87.22% |
+| Single-session assistant | 56/56 | 100.00% |
+| Single-session preference | 27/30 | 90.00% |
+| Single-session user | 68/70 | 97.14% |
+| Temporal reasoning | 116/133 | 87.22% |
+
+## Why the score is credible
+
+- The result covers **all 500 questions**, rather than a selected development
+  slice.
+- All **19,195 unique sessions** were freshly ingested for the certification
+  run. No earlier annotation cache or query-time model output was reused.
+- Every stage completed for all 500 questions with **zero unresolved case
+  failures**.
+- Raw LongMemEval session IDs were never shown to the models. The audit checked
+  all 19,195 storer prompts and every retrieval and downstream prompt set and
+  found **zero raw-ID leaks**.
+- Answers were scored with the pinned canonical evaluator,
+  `gpt-4o-2024-08-06` at temperature 0.
+- Exact prompts, structured outputs, request IDs, token usage, latency, and
+  retry counts were retained for every model-dependent stage.
+- The candidate pool contained every gold session for 98.80% of questions and
+  the final selected bag did so for 94.20%, independently measuring retrieval
+  before answer quality.
+
+This is a single complete benchmark run, not a claim that 91.40% transfers
+unchanged to every production workload. The full protocol and failure
+decomposition are recorded in
+[the Architecture 0008 certification](src/agents/current/architecture/0008-FULL500-CERTIFICATION-2026-07-31.md).
+
+## Architecture 0008
+
+```mermaid
+flowchart TD
+  Q["Question + date"] --> P["Luna low facet planner"]
+  P --> V["Parallel BM25 over notes, USER, ASSISTANT, and combined views"]
+  V --> C["Fused top-24 candidate pool"]
+  C --> A["Luna low permissive admission"]
+  A --> B["Opaque session bag, maximum 12"]
+  B --> E["Parallel Nano low per-session extraction"]
+  E --> R["Deterministic balanced raw-turn package"]
+  R --> F["Luna high final answer"]
+```
+
+| Stage | Implementation |
+|---|---|
+| Session ingestion | GPT-5.4 Nano, USER turns only |
+| Facet planning and admission | GPT-5.6 Luna, low reasoning |
+| Candidate discovery | Deterministic local multi-view BM25 |
+| Per-session evidence extraction | GPT-5.4 Nano, low reasoning |
+| Final answer | GPT-5.6 Luna, high reasoning |
+| Canonical judge | GPT-4o, temperature 0 |
+
+The planner creates concrete entity, date, amount, and temporal query lanes.
+Local search executes those lanes across structured notes and raw-turn views
+in parallel. A recall-first 24-session pool is fused, then a permissive
+admission step selects at most 12 complementary sessions. Nano extracts exact
+question-bearing turns independently per session, deterministic code builds a
+balanced evidence package, and Luna produces the final answer.
+
+Of the 43 incorrect answers, **35 already had every gold session in the final
+bag**; only 8 lacked full-gold retrieval. The largest remaining opportunity is
+therefore downstream multi-session and temporal reasoning, not candidate
+discovery.
+
+The complete design is documented in
+[the current architecture](src/agents/current/ARCHITECTURE.md) and
+[the Architecture 0008 specification](src/agents/current/architecture/0008-hop-hybrid-arm3.md).
+
+## Repository structure
 
 ```text
 src/
 ├── agents/
-│   ├── current/                                  ← BUILD HERE (active architecture)
-│   ├── architecture-0003.2-hybrid-graph-reader/  ← preserved, still runnable
+│   ├── current/                                  ← Architecture 0008
+│   ├── architecture-0003.2-hybrid-graph-reader/  ← preserved research line
 │   └── baselines/full_context/                   ← frozen Architecture 0001
-└── longmemeval/                                  ← STABLE BENCHMARK HARNESS (Python)
+└── longmemeval/                                  ← stable benchmark harness
 ```
 
-Architecture 0003.2 is preserved rather than active. Its fresh blind 18-case result was 11/18,
-statistically indistinguishable from the far simpler full-context baseline, so the active line of
-work restarts from a minimal retrieval backbone and adds layers only when a measured delta on a
-sufficiently large sample justifies them.
-
-## Architecture 0003.2 at a glance (preserved)
-
-Sessions arrive one by one. Local code archives every session. Mr. Contexto extracts typed semantic
-memories after every complete B-session window; deterministic code owns graph paths, provenance,
-temporal history, and a coverage audit. Mr. Shino summarizes the graph after every complete
-C-session window. At question time, local BM25 searches complete raw sessions, graph cells, Shino
-summaries, uncovered signals, and the unprocessed tail. A dedicated Reader selects grounded
-evidence before the compact final answer call.
-
-```text
-session → ingestSession
-              └─ every B → Contexto → per-memory validation/materialization → mutation ledger
-                              └─ every C → Shino → summary ledger
-
-question → local hybrid retrieval → Reader → compact evidence → final answer → AnswerResult
-```
-
-There are no embeddings, vector database, query-planner call, reranker call, partial-tail
-consolidation, or hidden repair calls. Retrieval and rank fusion are deterministic local
-operations. For `N` sessions, the exact agent call count is:
-
-```text
-floor(N / B) Contexto + floor(N / C) Shino + 1 Reader + 1 answer
-```
-
-Read [`src/agents/README.md`](src/agents/README.md), then
-[`ARCHITECTURE.md`](src/agents/architecture-0003.2-hybrid-graph-reader/ARCHITECTURE.md). The complete
-design is in
-[`0003-contexto-shino-langgraph.md`](src/agents/architecture-0003.2-hybrid-graph-reader/architecture/0003-contexto-shino-langgraph.md),
-with the graph-construction revision in
-[`0003.1-contexto-semantic-memory-study.md`](src/agents/architecture-0003.2-hybrid-graph-reader/architecture/0003.1-contexto-semantic-memory-study.md)
-and the final repair in
-[`0003.2-hybrid-graph-reader.md`](src/agents/architecture-0003.2-hybrid-graph-reader/architecture/0003.2-hybrid-graph-reader.md).
-
-## Setup
-
-Prerequisites: Python 3.12, [`uv`](https://docs.astral.sh/uv/), Node.js 22+, and pnpm 10.
-
-```bash
-uv sync --locked --extra dev
-pnpm install --frozen-lockfile
-pnpm agent:build
-cp environment.example .env
-uv run memorybench data fetch
-uv run memorybench doctor
-uv run memorybench ui build
-```
-
-Put credentials only in `.env` as `OPENAI_API_KEY` and/or `GEMINI_API_KEY`. The canonical judge
-requires OpenAI. Keys are ignored, redacted from diagnostic artifacts, and never intentionally
-serialized.
-
-## Controlled B3/C9 and B9/C9 runs
-
-The first pair uses `gpt-5-nano-2025-08-07` for Contexto, Shino, Reader, and Answer. The two OpenAI
-files differ semantically only in run name and `graph_batch_size`.
-
-```bash
-uv run memorybench run \
-  --config src/agents/architecture-0003.2-hybrid-graph-reader/configs/architecture-0003-openai-b3-c9.yaml \
-  --ui
-
-uv run memorybench run \
-  --config src/agents/architecture-0003.2-hybrid-graph-reader/configs/architecture-0003-openai-b9-c9.yaml \
-  --ui
-```
-
-Equivalent Gemini templates and a mixed-provider example sit beside them. Commands never start a
-paid run unless invoked explicitly.
-
-An interrupted case replays accepted graph mutations, skips its durable session prefix, and reuses
-any validated provider response saved before a crash:
-
-```bash
-uv run memorybench run --config CONFIG_PATH --resume
-```
-
-Then run the pinned canonical evaluator and report:
-
-```bash
-uv run memorybench judge --run RUN_ID
-uv run memorybench report --run RUN_ID
-```
-
-## Memory Observatory
-
-The read-only observer is a Hono service on `127.0.0.1` with an SSE event stream and a
-React/Cytoscape interface. Closing or crashing the browser/server never controls the benchmark host.
-
-```bash
-uv run memorybench ui start --open
-uv run memorybench ui status
-uv run memorybench ui open --run RUN_ID
-uv run memorybench ui export --run RUN_ID --question-id QUESTION_ID --batch 1
-uv run memorybench ui stop
-```
-
-It displays the live Contexto → retrieval → Reader → Answer funnel, the nested semantic context
-graph, B-session coverage and memory updates, C-session Shino windows, ranked retrieval channels,
-Reader facts/conflicts, provenance and raw source turns, prompts/responses/usage, final answers, and
-historical Python runs.
-
-## Historical architectures and results
-
-- Architecture 0001 remains runnable in
-  [`src/agents/baselines/full_context/`](src/agents/baselines/full_context/).
-- Architecture 0002 and its tests are archived in
-  [`legacy/python-architecture-0002/`](legacy/python-architecture-0002/).
-- The definitive GPT-5 nano full-context Canary-2 baseline is preserved at
-  [`runs/baseline-canary-2-gpt-5-nano-20260722-v3/`](runs/baseline-canary-2-gpt-5-nano-20260722-v3/)
-  and scored 37/60 (61.67%), including 8/10 abstentions.
-
-Existing run directories are not migrated or rewritten.
+Historical architectures remain preserved so measurements and design
+decisions can be audited without rewriting prior results.
 
 ## Benchmark pins
 
@@ -139,20 +123,4 @@ Existing run directories are not migrated or rewritten.
 | Cleaned dataset | `98d7416c24c778c2fee6e6f3006e7a073259d48f` |
 | Canonical judge | `gpt-4o-2024-08-06`, temperature `0` |
 
-## Offline validation
-
-```bash
-uv run ruff format --check .
-uv run ruff check .
-uv run mypy
-uv run pytest
-pnpm agent:typecheck
-pnpm agent:lint
-pnpm agent:test
-pnpm ui:test
-pnpm ui:build
-```
-
-CI is offline and requires no API key or dataset download.
-
-Apache-2.0. See [`LICENSE`](LICENSE).
+Apache-2.0. See [LICENSE](LICENSE).

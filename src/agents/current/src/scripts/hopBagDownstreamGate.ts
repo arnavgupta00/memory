@@ -152,10 +152,24 @@ type ModelCall = {
   request_id: string | null;
   retry_count: number;
 };
+type ModelIoRecord = {
+  sequence: number;
+  role: string;
+  model: string;
+  reasoning: ReasoningEffort;
+  prompt_messages: PromptEnvelope["messages"];
+  output_text: string;
+  parsed_output: unknown;
+  usage: TokenUsage;
+  latency_ms: number;
+  request_id: string | null;
+  retry_count: number;
+};
 type StructuredCall<T> = {
   value: T;
   generation: Generation;
   call: ModelCall;
+  io: ModelIoRecord;
 };
 
 function loadDotEnv(path: string): void {
@@ -361,6 +375,19 @@ async function callStructured<T>(args: {
             reasoning_effort: args.reasoning,
             max_output_tokens: args.maxOutputTokens,
           },
+          usage,
+          latency_ms: latency,
+          request_id: requestId,
+          retry_count: retryCount,
+        },
+        io: {
+          sequence: args.sequence,
+          role: args.role,
+          model: args.model,
+          reasoning: args.reasoning,
+          prompt_messages: args.prompt.messages,
+          output_text: response.output_text,
+          parsed_output: value,
           usage,
           latency_ms: latency,
           request_id: requestId,
@@ -825,6 +852,7 @@ async function preparePackage(args: {
 }): Promise<{
   pkg: ContextPackage;
   calls: ModelCall[];
+  modelIo: ModelIoRecord[];
   intermediate: unknown;
   warnings: string[];
 }> {
@@ -872,6 +900,7 @@ async function preparePackage(args: {
     return {
       pkg: built.package,
       calls: [selected.call],
+      modelIo: [selected.io],
       intermediate: selected.value,
       warnings: built.warnings,
     };
@@ -921,6 +950,7 @@ async function preparePackage(args: {
     return {
       pkg: built.package,
       calls: [selected.call],
+      modelIo: [selected.io],
       intermediate: { raw: selected.value, repaired },
       warnings: built.warnings,
     };
@@ -930,6 +960,7 @@ async function preparePackage(args: {
     return {
       pkg: buildDeterministicPackage(args.raw.question, args.sessions, args.annotations),
       calls: [],
+      modelIo: [],
       intermediate: { method: "deterministic-balanced-raw-turn-package" },
       warnings: [],
     };
@@ -990,6 +1021,7 @@ async function preparePackage(args: {
   return {
     pkg,
     calls: extracted.map(({ result }) => result.call),
+    modelIo: extracted.map(({ result }) => result.io),
     intermediate: extracted.map(({ session, result }) => ({
       session_id: session.session_id,
       output: result.value,
@@ -1013,6 +1045,7 @@ function configForArm(args: {
   concurrency: number;
   tokenBudget: number;
   opaqueSessionIds: boolean;
+  captureModelIo: boolean;
   readerModel: string;
   readerReasoning: ReasoningEffort;
   answerModel: string;
@@ -1097,7 +1130,7 @@ function configForArm(args: {
     selection: { strategy: "question-ids" },
     execution: {
       case_concurrency: args.concurrency,
-      capture_model_io: false,
+      capture_model_io: args.captureModelIo,
       auto_export_final_svg: false,
     },
   };
@@ -1110,6 +1143,7 @@ function yamlForRun(args: {
   concurrency: number;
   tokenBudget: number;
   opaqueSessionIds: boolean;
+  captureModelIo: boolean;
   readerModel: string;
   readerReasoning: ReasoningEffort;
   answerModel: string;
@@ -1131,6 +1165,7 @@ function yamlForRun(args: {
     `  session_id_visibility: ${
       args.opaqueSessionIds ? "opaque_per_case_v1" : "raw_legacy"
     }`,
+    `  capture_model_io: ${String(args.captureModelIo)}`,
     `  package_max_turns: ${String(PACKAGE_MAX_TURNS)}`,
     `  package_char_budget: ${String(PACKAGE_CHAR_BUDGET)}`,
     "",
@@ -1174,6 +1209,7 @@ async function main(): Promise<void> {
   const concurrency = Number(args.concurrency ?? "128");
   const tokenBudget = Number(args["token-budget"] ?? "2000000");
   const opaqueSessionIds = args["opaque-session-ids"] !== "false";
+  const captureModelIo = args["capture-model-io"] === "true";
   const readerModel = args["reader-model"] ?? DEFAULT_MODEL;
   const readerReasoning = (args["reader-reasoning"] ?? "low") as ReasoningEffort;
   const answerModel = args["answer-model"] ?? DEFAULT_MODEL;
@@ -1250,6 +1286,7 @@ async function main(): Promise<void> {
         concurrency,
         tokenBudget,
         opaqueSessionIds,
+        captureModelIo,
         readerModel,
         readerReasoning,
         answerModel,
@@ -1262,6 +1299,7 @@ async function main(): Promise<void> {
       concurrency,
       tokenBudget,
       opaqueSessionIds,
+      captureModelIo,
       readerModel,
       readerReasoning,
       answerModel,
@@ -1298,6 +1336,7 @@ async function main(): Promise<void> {
         session_id_visibility: opaqueSessionIds
           ? "opaque_per_case_v1"
           : "raw_legacy",
+        capture_model_io: captureModelIo,
         reader_model: readerModel,
         reader_reasoning: readerReasoning,
         answer_model: answerModel,
@@ -1334,6 +1373,7 @@ async function main(): Promise<void> {
       session_id_visibility: opaqueSessionIds
         ? "opaque_per_case_v1"
         : "raw_legacy",
+      capture_model_io: captureModelIo,
       reader_model: readerModel,
       reader_reasoning: readerReasoning,
       answer_model: answerModel,
@@ -1469,6 +1509,12 @@ async function main(): Promise<void> {
         resolve(caseDir, "intermediate.json"),
         `${JSON.stringify(prepared.intermediate, null, 2)}\n`,
       );
+      if (captureModelIo) {
+        writeFileSync(
+          resolve(caseDir, "model-io.json"),
+          `${JSON.stringify([...prepared.modelIo, answer.io], null, 2)}\n`,
+        );
+      }
       appendFileSync(resolve(state.root, "predictions.jsonl"), `${JSON.stringify(prediction)}\n`);
       state.completed += 1;
     } catch (error) {

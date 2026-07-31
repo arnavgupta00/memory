@@ -12,6 +12,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { performance } from "node:perf_hooks";
 
 import OpenAI from "openai";
 import { zodTextFormat } from "openai/helpers/zod";
@@ -74,7 +75,7 @@ type RawCase = {
 
 type SliceCase = {
   question_id: string;
-  stratum: "hard" | "mid" | "easy";
+  stratum: string;
   question_type: string;
 };
 
@@ -98,6 +99,23 @@ type Usage = {
   inputTokens: number;
   outputTokens: number;
   calls: number;
+};
+
+type ModelIoRecord = {
+  sequence: number;
+  stage: string;
+  model: string;
+  reasoning: Reasoning;
+  prompt_messages: PromptEnvelope["messages"];
+  output_text: string;
+  parsed_output: unknown;
+  input_tokens: number;
+  output_tokens: number;
+  total_tokens: number;
+  latency_ms: number;
+  request_id: string | null;
+  retry_count: number;
+  error?: string;
 };
 
 type Facet = {
@@ -152,6 +170,7 @@ type ArmResult = {
   modelBag: string[];
   modelPool: string[];
   usage: Usage;
+  modelIo: ModelIoRecord[];
   trace: unknown[];
 };
 
@@ -171,6 +190,7 @@ type CaseResult = {
   output_tokens: number;
   api_calls: number;
   elapsed_ms: number;
+  model_io: ModelIoRecord[];
   trace: unknown[];
   error?: string;
 };
@@ -399,40 +419,189 @@ async function planFacets(args: {
   reasoning: Reasoning;
   space: CaseSpace;
   usage: Usage;
+  modelIo: ModelIoRecord[];
 }): Promise<FacetPlan> {
-  const prompt = await args.prompts.render("hop-facet-plan-v1", {
+  const basePrompt = await args.prompts.render("hop-facet-plan-v1", {
     question: args.space.raw.question,
     question_date: args.space.raw.question_date,
   });
-  const inputText = envelopeText(prompt);
-  assertNoRawSessionIdLeak(inputText, args.space.rawSessionIds);
-  const release = await args.gate.acquire(estimateTokens(inputText) + OUTPUT_RESERVE);
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    const prompt: PromptEnvelope = attempt === 0
+      ? basePrompt
+      : {
+        ...basePrompt,
+        messages: [
+          ...basePrompt.messages,
+          {
+            role: "user",
+            content:
+              "Retry the same retrieval plan. Ensure every structured field is valid JSON.",
+          },
+        ],
+      };
+    const inputText = envelopeText(prompt);
+    assertNoRawSessionIdLeak(inputText, args.space.rawSessionIds);
+    const release = await args.gate.acquire(estimateTokens(inputText) + OUTPUT_RESERVE);
+    const started = performance.now();
+    try {
+      const response = await args.openai.responses.parse({
+        model: args.model,
+        input: prompt.messages,
+        text: { format: zodTextFormat(FacetPlanSchema, "hop_facet_plan_v1") },
+        ...(args.reasoning === "none" ? {} : { reasoning: { effort: args.reasoning } }),
+      });
+      addUsage(args.usage, response);
+      const parsed = response.output_parsed;
+      if (!parsed) throw new Error("facet planner returned no structured output");
+      args.modelIo.push({
+        sequence: args.modelIo.length + 1,
+        stage: "facet_plan",
+        model: args.model,
+        reasoning: args.reasoning,
+        prompt_messages: prompt.messages,
+        output_text: response.output_text,
+        parsed_output: parsed,
+        input_tokens: response.usage?.input_tokens ?? 0,
+        output_tokens: response.usage?.output_tokens ?? 0,
+        total_tokens: response.usage?.total_tokens ?? 0,
+        latency_ms: performance.now() - started,
+        request_id: response._request_id ?? null,
+        retry_count: attempt,
+      });
+      const validIds = new Set(parsed.facets.map((facet) => facet.id));
+      const queries = parsed.queries
+        .map((query) => ({
+          ...query,
+          facet_ids: query.facet_ids.filter((id) => validIds.has(id)),
+        }))
+        .filter((query) => query.facet_ids.length > 0);
+      return {
+        facets: parsed.facets,
+        queries: queries.length > 0
+          ? queries
+          : parsed.facets.map((facet) => ({
+            query: facet.query_terms.join(" "),
+            facet_ids: [facet.id],
+          })),
+      };
+    } catch (error) {
+      args.modelIo.push({
+        sequence: args.modelIo.length + 1,
+        stage: "facet_plan",
+        model: args.model,
+        reasoning: args.reasoning,
+        prompt_messages: prompt.messages,
+        output_text: "",
+        parsed_output: null,
+        input_tokens: 0,
+        output_tokens: 0,
+        total_tokens: 0,
+        latency_ms: performance.now() - started,
+        request_id: null,
+        retry_count: attempt,
+        error: error instanceof Error ? error.message : String(error),
+      });
+      const message = error instanceof Error ? error.message : String(error);
+      const retryable =
+        /failed to parse JSON|empty structured output|rate|429|timeout|5\d\d/i.test(message);
+      if (!retryable) {
+        throw error;
+      }
+      if (attempt === 2) break;
+    } finally {
+      release();
+    }
+  }
+  const fallbackPrompt: PromptEnvelope = {
+    ...basePrompt,
+    messages: [
+      ...basePrompt.messages,
+      {
+        role: "user",
+        content: [
+          "The strict structured-output transport failed. Return ONLY one valid JSON object.",
+          "Use this exact shape:",
+          '{"facets":[{"id":"facet_1","kind":"lookup","description":"...",'
+            + '"query_terms":["..."],"required_evidence_count":1}],',
+          '"queries":[{"query":"...","facet_ids":["facet_1"]}]}',
+          "Allowed kind values: lookup, prior_value, current_value, temporal_endpoint, "
+            + "aggregate_member, comparison, absence.",
+        ].join("\n"),
+      },
+    ],
+  };
+  const fallbackText = envelopeText(fallbackPrompt);
+  assertNoRawSessionIdLeak(fallbackText, args.space.rawSessionIds);
+  const release = await args.gate.acquire(estimateTokens(fallbackText) + OUTPUT_RESERVE);
+  const started = performance.now();
   try {
-    const response = await args.openai.responses.parse({
+    const response = await args.openai.responses.create({
       model: args.model,
-      input: prompt.messages,
-      text: { format: zodTextFormat(FacetPlanSchema, "hop_facet_plan_v1") },
+      input: fallbackPrompt.messages,
+      max_output_tokens: 1_200,
       ...(args.reasoning === "none" ? {} : { reasoning: { effort: args.reasoning } }),
     });
     addUsage(args.usage, response);
-    const parsed = response.output_parsed;
-    if (!parsed) throw new Error("facet planner returned no structured output");
-    const validIds = new Set(parsed.facets.map((facet) => facet.id));
-    const queries = parsed.queries
-      .map((query) => ({
-        ...query,
-        facet_ids: query.facet_ids.filter((id) => validIds.has(id)),
-      }))
-      .filter((query) => query.facet_ids.length > 0);
-    return {
-      facets: parsed.facets,
-      queries: queries.length > 0
-        ? queries
-        : parsed.facets.map((facet) => ({
-          query: facet.query_terms.join(" "),
-          facet_ids: [facet.id],
-        })),
+    const firstBrace = response.output_text.indexOf("{");
+    const lastBrace = response.output_text.lastIndexOf("}");
+    if (firstBrace < 0 || lastBrace <= firstBrace) {
+      throw new Error("facet planner fallback returned no JSON object");
+    }
+    const parsed = FacetPlanSchema.parse(
+      JSON.parse(response.output_text.slice(firstBrace, lastBrace + 1)),
+    );
+    args.modelIo.push({
+      sequence: args.modelIo.length + 1,
+      stage: "facet_plan_unstructured_json_fallback",
+      model: args.model,
+      reasoning: args.reasoning,
+      prompt_messages: fallbackPrompt.messages,
+      output_text: response.output_text,
+      parsed_output: parsed,
+      input_tokens: response.usage?.input_tokens ?? 0,
+      output_tokens: response.usage?.output_tokens ?? 0,
+      total_tokens: response.usage?.total_tokens ?? 0,
+      latency_ms: performance.now() - started,
+      request_id: null,
+      retry_count: 3,
+    });
+    return parsed;
+  } catch (error) {
+    const queryTerms = tokenizeRetrievalText(args.space.raw.question).slice(0, 16);
+    const deterministicPlan: FacetPlan = {
+      facets: [
+        {
+          id: "facet_1",
+          kind: "lookup",
+          description: args.space.raw.question,
+          query_terms: queryTerms,
+          required_evidence_count: 1,
+        },
+      ],
+      queries: [
+        {
+          query: args.space.raw.question,
+          facet_ids: ["facet_1"],
+        },
+      ],
     };
+    args.modelIo.push({
+      sequence: args.modelIo.length + 1,
+      stage: "facet_plan_deterministic_fallback",
+      model: "local-deterministic",
+      reasoning: args.reasoning,
+      prompt_messages: fallbackPrompt.messages,
+      output_text: "",
+      parsed_output: deterministicPlan,
+      input_tokens: 0,
+      output_tokens: 0,
+      total_tokens: 0,
+      latency_ms: performance.now() - started,
+      request_id: null,
+      retry_count: 4,
+      error: error instanceof Error ? error.message : String(error),
+    });
+    return deterministicPlan;
   } finally {
     release();
   }
@@ -449,6 +618,7 @@ async function assessCandidates(args: {
   plan: FacetPlan;
   catalog: string;
   usage: Usage;
+  modelIo: ModelIoRecord[];
 }): Promise<{ assessments: CandidateAssessment[]; unresolved: string[] }> {
   const prompt = await args.prompts.render(args.promptName, {
     question: args.space.raw.question,
@@ -459,6 +629,7 @@ async function assessCandidates(args: {
   const inputText = envelopeText(prompt);
   assertNoRawSessionIdLeak(inputText, args.space.rawSessionIds);
   const release = await args.gate.acquire(estimateTokens(inputText) + OUTPUT_RESERVE);
+  const started = performance.now();
   try {
     const response = await args.openai.responses.parse({
       model: args.model,
@@ -471,6 +642,21 @@ async function assessCandidates(args: {
     addUsage(args.usage, response);
     const parsed = response.output_parsed;
     if (!parsed) throw new Error("candidate verifier returned no structured output");
+    args.modelIo.push({
+      sequence: args.modelIo.length + 1,
+      stage: "candidate_assessment",
+      model: args.model,
+      reasoning: args.reasoning,
+      prompt_messages: prompt.messages,
+      output_text: response.output_text,
+      parsed_output: parsed,
+      input_tokens: response.usage?.input_tokens ?? 0,
+      output_tokens: response.usage?.output_tokens ?? 0,
+      total_tokens: response.usage?.total_tokens ?? 0,
+      latency_ms: performance.now() - started,
+      request_id: response._request_id ?? null,
+      retry_count: 0,
+    });
     return {
       assessments: parsed.assessments,
       unresolved: parsed.unresolved_facet_ids,
@@ -778,6 +964,7 @@ async function admitWithV1Prompt(args: {
   space: CaseSpace;
   pool: EvidenceCandidate[];
   usage: Usage;
+  modelIo: ModelIoRecord[];
 }): Promise<{ admitted: string[]; requested: string[] }> {
   const prompt = await args.prompts.render("hop-retrieve-v1", {
     question: args.space.raw.question,
@@ -794,6 +981,7 @@ async function admitWithV1Prompt(args: {
   const inputText = envelopeText(prompt);
   assertNoRawSessionIdLeak(inputText, args.space.rawSessionIds);
   const release = await args.gate.acquire(estimateTokens(inputText) + OUTPUT_RESERVE);
+  const started = performance.now();
   try {
     const response = await args.openai.responses.create({
       model: args.model,
@@ -818,11 +1006,53 @@ async function admitWithV1Prompt(args: {
     const requested = Array.isArray(parsed.session_ids)
       ? parsed.session_ids.map((id) => String(id))
       : [];
+    args.modelIo.push({
+      sequence: args.modelIo.length + 1,
+      stage: "v1_admission",
+      model: args.model,
+      reasoning: args.reasoning,
+      prompt_messages: prompt.messages,
+      output_text: response.output_text,
+      parsed_output: {
+        tool_name: toolCall.name,
+        tool_arguments: parsed,
+      },
+      input_tokens: response.usage?.input_tokens ?? 0,
+      output_tokens: response.usage?.output_tokens ?? 0,
+      total_tokens: response.usage?.total_tokens ?? 0,
+      latency_ms: performance.now() - started,
+      request_id: response._request_id ?? null,
+      retry_count: 0,
+    });
     const allowed = new Set(args.pool.map((candidate) => candidate.sessionId));
     const admitted = [...new Set(requested)]
       .filter((id) => allowed.has(id))
       .slice(0, BAG_MAX);
     return { admitted, requested };
+  } catch (error) {
+    const requested = args.pool
+      .slice(0, BAG_MAX)
+      .map((candidate) => candidate.sessionId);
+    args.modelIo.push({
+      sequence: args.modelIo.length + 1,
+      stage: "v1_admission_deterministic_fallback",
+      model: "local-deterministic",
+      reasoning: args.reasoning,
+      prompt_messages: prompt.messages,
+      output_text: "",
+      parsed_output: {
+        strategy: "top_fused_candidates",
+        session_ids: requested,
+      },
+      input_tokens: 0,
+      output_tokens: 0,
+      total_tokens: 0,
+      latency_ms: performance.now() - started,
+      request_id: null,
+      retry_count: 1,
+      error: error instanceof Error ? error.message : String(error),
+    });
+    return { admitted: requested, requested };
   } finally {
     release();
   }
@@ -837,7 +1067,8 @@ async function runParallel(args: {
   space: CaseSpace;
 }): Promise<ArmResult> {
   const usage: Usage = { inputTokens: 0, outputTokens: 0, calls: 0 };
-  const plan = await planFacets({ ...args, usage });
+  const modelIo: ModelIoRecord[] = [];
+  const plan = await planFacets({ ...args, usage, modelIo });
   const pool = discoverParallelPool({ space: args.space, plan });
   const verified = await assessCandidates({
     ...args,
@@ -845,6 +1076,7 @@ async function runParallel(args: {
     plan,
     catalog: candidateCatalog(pool),
     usage,
+    modelIo,
   });
   const modelBag = selectMinimalCover({
     plan,
@@ -855,6 +1087,7 @@ async function runParallel(args: {
     modelBag,
     modelPool: pool.map((item) => item.sessionId),
     usage,
+    modelIo,
     trace: [
       { plan },
       {
@@ -879,13 +1112,15 @@ async function runHybrid(args: {
   space: CaseSpace;
 }): Promise<ArmResult> {
   const usage: Usage = { inputTokens: 0, outputTokens: 0, calls: 0 };
-  const plan = await planFacets({ ...args, usage });
+  const modelIo: ModelIoRecord[] = [];
+  const plan = await planFacets({ ...args, usage, modelIo });
   const pool = discoverParallelPool({ space: args.space, plan });
-  const selection = await admitWithV1Prompt({ ...args, pool, usage });
+  const selection = await admitWithV1Prompt({ ...args, pool, usage, modelIo });
   return {
     modelBag: selection.admitted,
     modelPool: pool.map((item) => item.sessionId),
     usage,
+    modelIo,
     trace: [
       { plan },
       {
@@ -996,7 +1231,8 @@ async function runLedger(args: {
   space: CaseSpace;
 }): Promise<ArmResult> {
   const usage: Usage = { inputTokens: 0, outputTokens: 0, calls: 0 };
-  const plan = await planFacets({ ...args, usage });
+  const modelIo: ModelIoRecord[] = [];
+  const plan = await planFacets({ ...args, usage, modelIo });
   const claims = buildClaims(args.space);
   const claimById = new Map(claims.map((claim) => [claim.id, claim]));
   const index = new Bm25Index(
@@ -1064,6 +1300,7 @@ async function runLedger(args: {
     plan,
     catalog: candidateCatalog(pool, "claim candidate"),
     usage,
+    modelIo,
   });
   const modelBag = selectMinimalCover({
     plan,
@@ -1074,6 +1311,7 @@ async function runLedger(args: {
     modelBag,
     modelPool: pool.map((item) => item.sessionId),
     usage,
+    modelIo,
     trace: [
       { plan, claim_count: claims.length },
       {
@@ -1136,7 +1374,8 @@ async function runStateful(args: {
   space: CaseSpace;
 }): Promise<ArmResult> {
   const usage: Usage = { inputTokens: 0, outputTokens: 0, calls: 0 };
-  const plan = await planFacets({ ...args, usage });
+  const modelIo: ModelIoRecord[] = [];
+  const plan = await planFacets({ ...args, usage, modelIo });
   const documents = buildNotesDocuments({
     sessionIds: args.space.opaque.sessionIds,
     datesBySessionId: args.space.opaque.datesBySessionId,
@@ -1190,6 +1429,7 @@ async function runStateful(args: {
     const inputText = envelopeText(prompt);
     assertNoRawSessionIdLeak(inputText, args.space.rawSessionIds);
     const release = await args.gate.acquire(estimateTokens(inputText) + OUTPUT_RESERVE);
+    const started = performance.now();
     let response: OpenAIResponse;
     try {
       response = await args.openai.responses.create({
@@ -1201,6 +1441,26 @@ async function runStateful(args: {
         ...(args.reasoning === "none" ? {} : { reasoning: { effort: args.reasoning } }),
       });
       addUsage(usage, response);
+      modelIo.push({
+        sequence: modelIo.length + 1,
+        stage: `stateful_turn_${String(turns)}`,
+        model: args.model,
+        reasoning: args.reasoning,
+        prompt_messages: prompt.messages,
+        output_text: response.output_text,
+        parsed_output: response.output
+          .filter((item) => item.type === "function_call")
+          .map((item) => ({
+            name: item.name,
+            arguments: item.arguments,
+          })),
+        input_tokens: response.usage?.input_tokens ?? 0,
+        output_tokens: response.usage?.output_tokens ?? 0,
+        total_tokens: response.usage?.total_tokens ?? 0,
+        latency_ms: performance.now() - started,
+        request_id: null,
+        retry_count: 0,
+      });
     } finally {
       release();
     }
@@ -1335,6 +1595,7 @@ async function runStateful(args: {
     modelBag: bag,
     modelPool: [...evidence.keys()],
     usage,
+    modelIo,
     trace,
   };
 }
@@ -1392,6 +1653,9 @@ async function main(): Promise<void> {
     PROJECT_ROOT,
     cli.out ?? `runs/local-archive/backbone/hop-screen90-${arm}-v1.json`,
   );
+  const caseArtifactsPath = cli["case-artifacts"]
+    ? resolve(PROJECT_ROOT, cli["case-artifacts"])
+    : null;
 
   const slice = JSON.parse(readFileSync(idsPath, "utf8")) as Slice;
   const selected = limit === undefined ? slice.cases : slice.cases.slice(0, limit);
@@ -1409,6 +1673,7 @@ async function main(): Promise<void> {
   const results = Array<CaseResult | undefined>(selected.length);
   let cursor = 0;
   const started = Date.now();
+  if (caseArtifactsPath) mkdirSync(caseArtifactsPath, { recursive: true });
 
   console.log(
     `hop-architecture-screen arm=${arm} cases=${String(selected.length)} `
@@ -1437,6 +1702,7 @@ async function main(): Promise<void> {
         output_tokens: 0,
         api_calls: 0,
         elapsed_ms: 0,
+        model_io: [],
         trace: [],
         error: "missing dataset case",
       };
@@ -1475,6 +1741,7 @@ async function main(): Promise<void> {
         output_tokens: armResult.usage.outputTokens,
         api_calls: armResult.usage.calls,
         elapsed_ms: Date.now() - caseStarted,
+        model_io: armResult.modelIo,
         trace: armResult.trace,
       };
     } catch (error) {
@@ -1494,6 +1761,7 @@ async function main(): Promise<void> {
         output_tokens: 0,
         api_calls: 0,
         elapsed_ms: Date.now() - caseStarted,
+        model_io: [],
         trace: [],
         error: error instanceof Error ? error.message : String(error),
       };
@@ -1507,6 +1775,13 @@ async function main(): Promise<void> {
       const sliceCase = selected[indexCase];
       if (!sliceCase) continue;
       await runOne(indexCase, sliceCase);
+      const result = results[indexCase];
+      if (caseArtifactsPath && result) {
+        writeFileSync(
+          resolve(caseArtifactsPath, `${sliceCase.question_id}.json`),
+          `${JSON.stringify(result, null, 2)}\n`,
+        );
+      }
       const done = results.filter((item) => item !== undefined).length;
       if (done % 5 === 0 || done === selected.length) {
         console.log(
@@ -1530,6 +1805,7 @@ async function main(): Promise<void> {
     created_at: new Date().toISOString(),
     arm,
     ids_path: idsPath,
+    case_artifacts_path: caseArtifactsPath,
     model,
     reasoning,
     bag_max: BAG_MAX,

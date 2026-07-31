@@ -12,22 +12,31 @@
  *     --cache runs/local-archive/backbone/session-annotations-v1 \
  *     --concurrency 24
  */
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { createHash } from "node:crypto";
+import {
+  appendFileSync,
+  existsSync,
+  mkdirSync,
+  readFileSync,
+  writeFileSync,
+} from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { performance } from "node:perf_hooks";
 
 import OpenAI from "openai";
 import { zodTextFormat } from "openai/helpers/zod";
 import { z } from "zod";
 
 import { PromptLoader } from "../services/promptLoader.js";
+import { assertNoRawSessionIdLeak } from "../retrieval/opaqueSessionIds.js";
 
 const PROJECT_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "../../../../../");
 const DEFAULT_RUN = resolve(PROJECT_ROOT, "runs/architecture-0005.4.4-canary1-breadth");
 const DEFAULT_DATASET = resolve(PROJECT_ROOT, "data/raw/longmemeval_s_cleaned.json");
 const DEFAULT_ORACLE = resolve(PROJECT_ROOT, "data/raw/longmemeval_oracle.json");
-const MODEL = "gpt-5.4-nano-2026-03-17";
-const TOKEN_BUDGET = 200_000;
+const DEFAULT_MODEL = "gpt-5.4-nano-2026-03-17";
+const DEFAULT_TOKEN_BUDGET = 200_000;
 const WINDOW_SECONDS = 60;
 const OUTPUT_CEILING = 800;
 
@@ -225,6 +234,30 @@ function writeCached(cacheDir: string, sessionId: string, value: Annotation): vo
   );
 }
 
+function opaqueSourceId(sessionId: string): string {
+  const digest = createHash("sha256").update(sessionId).digest("hex").slice(0, 16);
+  return `memory_source_${digest}`;
+}
+
+function sleep(milliseconds: number): Promise<void> {
+  return new Promise((resolveWait) => setTimeout(resolveWait, milliseconds));
+}
+
+function errorMessage(error: unknown): string {
+  if (error instanceof Error) return error.message;
+  if (typeof error === "string") return error;
+  if (typeof error === "number" || typeof error === "boolean") return String(error);
+  return "unknown annotation failure";
+}
+
+function retryDelay(error: unknown, attempt: number): number | null {
+  const message = errorMessage(error);
+  if (!/rate|429|timeout|5\d\d|ECONNRESET|ETIMEDOUT|empty structured/i.test(message)) {
+    return null;
+  }
+  return Math.min(60_000, 1_000 * 2 ** attempt);
+}
+
 async function main(): Promise<void> {
   loadDotEnv(resolve(PROJECT_ROOT, ".env"));
   const args = parseArgs(process.argv.slice(2));
@@ -235,16 +268,29 @@ async function main(): Promise<void> {
     PROJECT_ROOT,
     args.cache ?? "runs/local-archive/backbone/session-annotations-v1",
   );
+  const auditDir = resolve(PROJECT_ROOT, args["audit-dir"] ?? `${cacheDir}/_audit`);
   const slice = args.slice ?? "hard12";
   const concurrency = Number(args.concurrency ?? "24");
+  const tokenBudget = Number(args["token-budget"] ?? String(DEFAULT_TOKEN_BUDGET));
+  const model = args.model ?? DEFAULT_MODEL;
   const promptName = args.prompt ?? "session-annotate-v1";
   const limit = args.limit ? Number(args.limit) : undefined;
+  if (!Number.isInteger(concurrency) || concurrency < 1 || concurrency > 256) {
+    throw new Error("--concurrency must be an integer in 1..256");
+  }
+  if (!Number.isFinite(tokenBudget) || tokenBudget < 1) {
+    throw new Error("--token-budget must be positive");
+  }
 
   if (!process.env.OPENAI_API_KEY) throw new Error("OPENAI_API_KEY is required");
 
-  const manifest = JSON.parse(readFileSync(resolve(runDir, "manifest.json"), "utf8")) as {
-    selected_question_ids: string[];
-  };
+  const manifest = args.ids
+    ? JSON.parse(readFileSync(resolve(PROJECT_ROOT, args.ids), "utf8")) as {
+      question_ids: string[];
+    }
+    : JSON.parse(readFileSync(resolve(runDir, "manifest.json"), "utf8")) as {
+      selected_question_ids: string[];
+    };
   const dataset = JSON.parse(readFileSync(datasetPath, "utf8")) as RawCase[];
   const oracleList = JSON.parse(readFileSync(oraclePath, "utf8")) as Array<{
     question_id: string;
@@ -255,7 +301,10 @@ async function main(): Promise<void> {
     oracleList.map((item) => [item.question_id, item]),
   );
 
-  const qids = resolveSlice(slice, runDir, manifest.selected_question_ids, oracle);
+  const selectedQuestionIds = "question_ids" in manifest
+    ? manifest.question_ids
+    : manifest.selected_question_ids;
+  const qids = resolveSlice(slice, runDir, selectedQuestionIds, oracle);
   const sessions = new Map<string, { date: string; turns: RawTurn[] }>();
   for (const q of qids) {
     const raw = byId.get(q);
@@ -271,6 +320,10 @@ async function main(): Promise<void> {
 
   let sessionIds = [...sessions.keys()].sort();
   if (limit !== undefined) sessionIds = sessionIds.slice(0, limit);
+  const cachePaths = sessionIds.map((sessionId) => cachePath(cacheDir, sessionId));
+  if (new Set(cachePaths).size !== cachePaths.length) {
+    throw new Error("two session IDs map to the same annotation path");
+  }
 
   const pending: string[] = [];
   let cached = 0;
@@ -282,58 +335,147 @@ async function main(): Promise<void> {
   console.log(
     `slice=${slice} questions=${String(qids.length)} sessions=${String(sessionIds.length)} `
       + `cached=${String(cached)} to_annotate=${String(pending.length)} `
-      + `concurrency=${String(concurrency)} model=${MODEL}`,
+      + `concurrency=${String(concurrency)} token_budget=${String(tokenBudget)} model=${model}`,
   );
 
   if (pending.length === 0) {
-    writeIndex(cacheDir, sessionIds);
+    writeIndex(cacheDir, sessionIds, model);
     console.log("nothing to do");
     return;
   }
 
   const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY, maxRetries: 0 });
   const prompts = new PromptLoader();
-  const gate = new TokenBudgetGate(TOKEN_BUDGET, WINDOW_SECONDS, concurrency);
+  const gate = new TokenBudgetGate(tokenBudget, WINDOW_SECONDS, concurrency);
   let done = 0;
   let failed = 0;
+  let inputTokens = 0;
+  let outputTokens = 0;
+  let totalRetries = 0;
   const started = Date.now();
+  mkdirSync(auditDir, { recursive: true });
+  writeFileSync(resolve(auditDir, "errors.jsonl"), "");
+
+  function writeProgress(status: "running" | "completed" | "partial"): void {
+    writeFileSync(
+      resolve(auditDir, "manifest.json"),
+      `${JSON.stringify(
+        {
+          schema_version: 1,
+          status,
+          updated_at: new Date().toISOString(),
+          prompt: promptName,
+          model,
+          question_count: qids.length,
+          unique_session_count: sessionIds.length,
+          preexisting_cache_count: cached,
+          requested_annotation_count: pending.length,
+          completed_count: done,
+          failure_count: failed,
+          input_tokens: inputTokens,
+          output_tokens: outputTokens,
+          total_tokens: inputTokens + outputTokens,
+          retry_count: totalRetries,
+          concurrency,
+          token_budget: tokenBudget,
+          window_seconds: WINDOW_SECONDS,
+          session_id_visibility: "opaque_source_hash_v1",
+          elapsed_ms: Date.now() - started,
+        },
+        null,
+        2,
+      )}\n`,
+    );
+  }
+  writeProgress("running");
 
   async function annotateOne(sessionId: string): Promise<void> {
     const session = sessions.get(sessionId);
     if (!session) return;
     const userTurns = formatUserTurns(session.turns);
     const prompt = await prompts.render(promptName, {
-      session_id: sessionId,
+      session_id: opaqueSourceId(sessionId),
       session_date: session.date,
       user_turns: userTurns,
     });
     const inputText = prompt.messages.map((m) => m.content).join("\n");
-    const release = await gate.acquire(estimateInputTokens(inputText) + OUTPUT_CEILING);
-    try {
-      const response = await openai.responses.parse({
-        model: MODEL,
-        input: prompt.messages.map((message) => ({
-          role: message.role,
-          content: message.content,
-        })),
-        text: { format: zodTextFormat(AnnotationSchema, "session_annotate_v1") },
-        temperature: 0,
-      });
-      const value = response.output_parsed;
-      if (!value) throw new Error("empty structured output");
-      writeCached(cacheDir, sessionId, value);
-      done += 1;
-      if (done % 25 === 0 || done === pending.length) {
-        const elapsed = ((Date.now() - started) / 1000).toFixed(0);
-        console.log(
-          `progress ${String(done)}/${String(pending.length)} failed=${String(failed)} ${elapsed}s`,
+    assertNoRawSessionIdLeak(inputText, [sessionId]);
+    let lastError: unknown;
+    for (let attempt = 0; attempt <= 6; attempt += 1) {
+      const release = await gate.acquire(estimateInputTokens(inputText) + OUTPUT_CEILING);
+      const callStarted = performance.now();
+      try {
+        const response = await openai.responses.parse({
+          model,
+          input: prompt.messages.map((message) => ({
+            role: message.role,
+            content: message.content,
+          })),
+          text: { format: zodTextFormat(AnnotationSchema, "session_annotate_v1") },
+        });
+        const value = response.output_parsed;
+        if (!value) throw new Error("empty structured output");
+        writeCached(cacheDir, sessionId, value);
+        writeFileSync(
+          resolve(auditDir, `${sessionId.replaceAll(/[^a-zA-Z0-9._-]/g, "_")}.json`),
+          `${JSON.stringify(
+            {
+              session_id: sessionId,
+              model_visible_session_id: opaqueSourceId(sessionId),
+              session_date: session.date,
+              prompt: prompt.messages,
+              output_text: response.output_text,
+              parsed_output: value,
+              usage: {
+                input_tokens: response.usage?.input_tokens ?? 0,
+                output_tokens: response.usage?.output_tokens ?? 0,
+                total_tokens: response.usage?.total_tokens ?? 0,
+                reasoning_tokens:
+                  response.usage?.output_tokens_details.reasoning_tokens ?? 0,
+              },
+              request_id: response._request_id ?? null,
+              latency_ms: performance.now() - callStarted,
+              retry_count: attempt,
+            },
+            null,
+            2,
+          )}\n`,
         );
+        inputTokens += response.usage?.input_tokens ?? 0;
+        outputTokens += response.usage?.output_tokens ?? 0;
+        totalRetries += attempt;
+        done += 1;
+        lastError = undefined;
+        if ((done + failed) % 25 === 0 || done + failed === pending.length) {
+          writeProgress("running");
+          const elapsed = ((Date.now() - started) / 1000).toFixed(0);
+          console.log(
+            `progress ${String(done + failed)}/${String(pending.length)} `
+              + `completed=${String(done)} failed=${String(failed)} ${elapsed}s`,
+          );
+        }
+        break;
+      } catch (error) {
+        lastError = error;
+        const waitMs = retryDelay(error, attempt);
+        if (waitMs === null || attempt === 6) break;
+        await sleep(waitMs);
+      } finally {
+        release();
       }
-    } catch (error) {
+    }
+    if (lastError !== undefined) {
       failed += 1;
-      console.error(`fail ${sessionId}: ${error instanceof Error ? error.message : String(error)}`);
-    } finally {
-      release();
+      appendFileSync(
+        resolve(auditDir, "errors.jsonl"),
+        `${JSON.stringify({
+          session_id: sessionId,
+          error: errorMessage(lastError),
+        })}\n`,
+      );
+      console.error(
+        `fail ${sessionId}: ${errorMessage(lastError)}`,
+      );
     }
   }
 
@@ -351,14 +493,17 @@ async function main(): Promise<void> {
     Array.from({ length: Math.min(concurrency, pending.length) }, () => worker()),
   );
 
-  writeIndex(cacheDir, sessionIds);
+  writeIndex(cacheDir, sessionIds, model);
+  writeProgress(failed === 0 ? "completed" : "partial");
   console.log(
     `done annotated=${String(done)} failed=${String(failed)} `
+      + `input_tokens=${String(inputTokens)} output_tokens=${String(outputTokens)} `
       + `cache=${cacheDir} elapsed_s=${((Date.now() - started) / 1000).toFixed(1)}`,
   );
+  if (failed > 0) process.exitCode = 1;
 }
 
-function writeIndex(cacheDir: string, sessionIds: string[]): void {
+function writeIndex(cacheDir: string, sessionIds: string[], model: string): void {
   mkdirSync(cacheDir, { recursive: true });
   const sessions: Record<string, Annotation> = {};
   for (const sid of sessionIds) {
@@ -370,7 +515,7 @@ function writeIndex(cacheDir: string, sessionIds: string[]): void {
     JSON.stringify(
       {
         prompt: "session-annotate-v1",
-        model: MODEL,
+        model,
         session_count: Object.keys(sessions).length,
         sessions,
       },

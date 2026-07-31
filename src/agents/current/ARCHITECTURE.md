@@ -1,9 +1,10 @@
 # Current architecture
 
 **Architecture ID:** `0008-hop-hybrid-arm3`
-**Status:** selected / measured — answerable135 **123/135 (91.11%)**
+**Status:** selected / full-500 certified — **457/500 (91.40%)**
 **Design:** [architecture/0008-hop-hybrid-arm3.md](architecture/0008-hop-hybrid-arm3.md)
 **Checkpoint:** [architecture/0008-CHECKPOINT-2026-07-31.md](architecture/0008-CHECKPOINT-2026-07-31.md)
+**Certification:** [architecture/0008-FULL500-CERTIFICATION-2026-07-31.md](architecture/0008-FULL500-CERTIFICATION-2026-07-31.md)
 
 ## Selected pipeline
 
@@ -22,20 +23,22 @@ flowchart TD
   R --> F["Luna high final answer"]
 ```
 
-## Frozen measurement
+## Full-500 certification
 
 | Metric | Result |
 |---|---:|
-| Candidate-pool full gold | 133/135 (98.52%) |
-| Selected-bag full gold | 126/135 (93.33%) |
-| Final answers | **123/135 (91.11%)** |
-| Hard final answers | 21/28 (75.00%) |
-| Mid final answers | 11/12 (91.67%) |
-| Easy final answers | 91/95 (95.79%) |
+| Candidate-pool full gold | 494/500 (98.80%) |
+| Selected-bag full gold | 471/500 (94.20%) |
+| Final answers | **457/500 (91.40%)** |
+| Answerable final answers | 431/470 (91.70%) |
+| Abstention final answers | 26/30 (86.67%) |
+| Task-averaged accuracy | 92.74% |
 
 All model-visible session identifiers are deterministic opaque per-question
 `memory_###` handles. Raw dataset identifiers are rejected if they reach an API
-prompt.
+prompt. The certification freshly ingested all 19,195 sessions, completed all
+500 questions without unresolved failures, and found zero raw-ID leaks across
+all audited model-visible prompts.
 
 ## Component contract
 
@@ -63,18 +66,16 @@ selected for extraction.
 
 ## Cost
 
-Estimated answerable135 inference cost before canonical judging:
-
-- hybrid retrieval: $1.915;
-- Nano-low extraction: $0.323;
-- Luna-high final answer: $1.218;
-- total: **$3.455**.
+The complete 500-question benchmark costs approximately **$14.7–$15**,
+including fresh ingestion, retrieval, Nano-low extraction, Luna-high final
+answers, and canonical judging. Ingestion is reusable for later question runs
+over the same corpus.
 
 ## Implementation status
 
-Architecture 0008 is implemented and measured through the offline retrieval,
-downstream, and answer-replay runners. Live host wiring remains pending and is
-not part of this checkpoint.
+Architecture 0008 is implemented and certified through the offline retrieval
+and downstream evaluation pipeline. Live host wiring remains pending and is
+not part of the certification.
 
 Previous active architecture 0005.4.4 and all earlier designs remain preserved
 under [architecture/](architecture/) and in

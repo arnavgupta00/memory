@@ -3,6 +3,7 @@
 **Status:** selected / measured
 **Prior active:** [0005.4.4 breadth](0005.4.4-breadth.md)
 **Checkpoint:** [0008-CHECKPOINT-2026-07-31.md](0008-CHECKPOINT-2026-07-31.md)
+**Full-500 certification:** [0008-FULL500-CERTIFICATION-2026-07-31.md](0008-FULL500-CERTIFICATION-2026-07-31.md)
 
 ## Decision
 
@@ -14,13 +15,13 @@ All model-visible session identifiers are deterministic opaque per-question
 handles. Raw LongMemEval identifiers are used only by the host to hydrate and
 score sessions; they are rejected if they reach a model prompt.
 
-The frozen answerable135 measurement is:
+The complete 500-question certification is:
 
-- candidate-pool full gold: **133/135 (98.52%)**
-- selected-bag full gold: **126/135 (93.33%)**
-- end-to-end accuracy: **123/135 (91.11%)**
-- hard retrieval: **22/28 (78.57%)**
-- hard final answers: **21/28 (75.00%)**
+- candidate-pool full gold: **494/500 (98.80%)**
+- selected-bag full gold: **471/500 (94.20%)**
+- end-to-end accuracy: **457/500 (91.40%)**
+- answerable accuracy: **431/470 (91.70%)**
+- abstention accuracy: **26/30 (86.67%)**
 
 This is the selected benchmark architecture. The implementation is currently
 available through the offline hop and downstream runners; wiring it into the
@@ -78,7 +79,7 @@ Admission is deliberately permissive: retain every promising direct or
 complementary session instead of constructing a minimal set cover. The bag is
 capped at 12 sessions.
 
-On answerable135:
+On the earlier answerable135 development slice:
 
 - 3,237 candidate entries were exposed across 135 questions;
 - 279/281 required gold-session occurrences were discovered;
@@ -86,6 +87,10 @@ On answerable135:
 - admission reduced this to 307 bag entries: 268 gold and 39 non-gold.
 
 The pool is recall-first; the bag is the precision boundary.
+
+On the complete 500-question certification, the candidate pool contained full
+gold for 494/500 questions and the selected bag contained full gold for
+471/500.
 
 ## Arm 3 reader
 
@@ -146,18 +151,15 @@ baselines.
 
 ## Cost
 
-Estimated answerable135 query-time inference cost, excluding the canonical
-judge:
+The complete 500-question benchmark costs approximately **$14.7–$15**. This
+includes fresh session ingestion, retrieval, Nano-low extraction, Luna-high
+final answers, and canonical judging. The rounded range reflects provider
+metering and output-length variance; it excludes earlier research experiments.
 
-| Stage | Cost |
-|---|---:|
-| Hybrid retrieval | $1.915 |
-| Nano-low Arm 3 extraction | $0.323 |
-| Luna-high final answer | $1.218 |
-| **Total** | **$3.455** |
-
-The rejected Luna-high extraction variant increased the complete pipeline to
-approximately $4.990 without improving accuracy.
+Ingestion is a one-time cost that can be amortized across later question runs
+over the same frozen corpus. The earlier answerable135 model-allocation tests
+remain useful for relative comparisons: Luna-high extraction cost about 5.97
+times Nano-low extraction without improving accuracy.
 
 ## Canonical files
 
@@ -180,3 +182,6 @@ approximately $4.990 without improving accuracy.
 
 Detailed analysis:
 [HOP-ANSWERABLE135-DOWNSTREAM-V1-VS-HYBRID-2026-07-31.md](HOP-ANSWERABLE135-DOWNSTREAM-V1-VS-HYBRID-2026-07-31.md).
+
+Full-population certification:
+[0008-FULL500-CERTIFICATION-2026-07-31.md](0008-FULL500-CERTIFICATION-2026-07-31.md).
