@@ -7,7 +7,7 @@ answering.
 
 ## Current result
 
-The current pipeline scored **457/500 (91.40%)** on the complete 500-question
+The system scored **457/500 (91.40%)** on the complete 500-question
 LongMemEval-S evaluation.
 
 | Metric | Result |
@@ -62,8 +62,6 @@ unchanged to every production workload. The full protocol and failure
 decomposition are recorded in
 [the full benchmark certification](src/agents/current/architecture/0008-FULL500-CERTIFICATION-2026-07-31.md).
 
-## Current pipeline
-
 ```mermaid
 flowchart TD
   Q["Question + date"] --> P["Luna low facet planner"]
@@ -106,7 +104,7 @@ The complete design is documented in
 ```text
 src/
 ├── agents/
-│   ├── current/                                  ← current memory pipeline
+│   ├── current/                                  ← active system
 │   ├── architecture-0003.2-hybrid-graph-reader/  ← preserved research line
 │   └── baselines/full_context/                   ← frozen Architecture 0001
 └── longmemeval/                                  ← stable benchmark harness
