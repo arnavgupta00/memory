@@ -1,13 +1,13 @@
 # MemoryBench
 
 MemoryBench is a research workspace for building and evaluating long-term-memory
-agents on LongMemEval-S. The current system is **Architecture 0008**, an
-opaque-ID retrieval and evidence-extraction pipeline designed to recover the
-smallest useful set of past sessions before answering.
+agents on LongMemEval-S. The current system uses opaque-ID retrieval and
+evidence extraction to recover the smallest useful set of past sessions before
+answering.
 
 ## Current result
 
-Architecture 0008 scored **457/500 (91.40%)** on the complete 500-question
+The current pipeline scored **457/500 (91.40%)** on the complete 500-question
 LongMemEval-S evaluation.
 
 | Metric | Result |
@@ -60,9 +60,9 @@ bill slightly, so the cost is intentionally reported as a range.
 This is a single complete benchmark run, not a claim that 91.40% transfers
 unchanged to every production workload. The full protocol and failure
 decomposition are recorded in
-[the Architecture 0008 certification](src/agents/current/architecture/0008-FULL500-CERTIFICATION-2026-07-31.md).
+[the full benchmark certification](src/agents/current/architecture/0008-FULL500-CERTIFICATION-2026-07-31.md).
 
-## Architecture 0008
+## Current pipeline
 
 ```mermaid
 flowchart TD
@@ -99,14 +99,14 @@ discovery.
 
 The complete design is documented in
 [the current architecture](src/agents/current/ARCHITECTURE.md) and
-[the Architecture 0008 specification](src/agents/current/architecture/0008-hop-hybrid-arm3.md).
+[the detailed system specification](src/agents/current/architecture/0008-hop-hybrid-arm3.md).
 
 ## Repository structure
 
 ```text
 src/
 ├── agents/
-│   ├── current/                                  ← Architecture 0008
+│   ├── current/                                  ← current memory pipeline
 │   ├── architecture-0003.2-hybrid-graph-reader/  ← preserved research line
 │   └── baselines/full_context/                   ← frozen Architecture 0001
 └── longmemeval/                                  ← stable benchmark harness
