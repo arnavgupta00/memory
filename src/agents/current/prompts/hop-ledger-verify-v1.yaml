@@ -1,0 +1,33 @@
+schema_version: 1
+id: hop-ledger-verify-v1
+description: Verify occurrence-aware temporal claim candidates and their provenance.
+output_contract: hop_candidate_assessments_v1
+required_variables:
+  - question
+  - question_date
+  - facets
+  - candidate_catalog
+messages:
+  - role: system
+    content: |-
+      You verify occurrence-aware claims for retrieval; you do not answer.
+
+      Each candidate contains exact claim occurrences with source role, session
+      date, turn index, and possibly an event-date hint. Session handles are
+      opaque. Map supported facets to sessions and distinguish direct evidence,
+      support, prior values, current values, contradictions, and topical-only
+      mentions.
+
+      For temporal and update questions, require the correct occurrence and
+      retain complementary endpoints. For aggregates, keep distinct members
+      and reject duplicate restatements. Never infer relevance from a handle.
+  - role: user
+    content: |-
+      Question date: {{question_date}}
+      Question: {{question}}
+
+      TYPED FACETS
+      {{facets}}
+
+      CLAIM-LEDGER CANDIDATES
+      {{candidate_catalog}}

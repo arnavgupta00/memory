@@ -1,122 +1,81 @@
 # Current architecture
 
-**Architecture ID:** `0005-context-service` (revision **0005.4.4** — active)
-**Status:** active — BM25 **K96/140k** + Call-2 **`answer-v8-preference`** · canary-1 **126/150 (84.0%)** pref **12/15** abs **13/15** (+9/−7 vs 0005.4) · [resume checkpoint](architecture/0005.4.4-RESUME-CHECKPOINT-2026-07-29.md) · [0005.4.4 freeze](architecture/0005.4.4-CHECKPOINT-2026-07-29.md) · [0005.4.3](architecture/0005.4.3-CHECKPOINT-2026-07-29.md)
+**Architecture ID:** `0008-hop-hybrid-arm3`
+**Status:** selected / measured — answerable135 **123/135 (91.11%)**
+**Design:** [architecture/0008-hop-hybrid-arm3.md](architecture/0008-hop-hybrid-arm3.md)
+**Checkpoint:** [architecture/0008-CHECKPOINT-2026-07-31.md](architecture/0008-CHECKPOINT-2026-07-31.md)
 
-Active configs: `configs/architecture-0005.4.4-canary1-breadth.yaml`,
-`configs/architecture-0005.4.4-canary2-breadth.yaml`.
+## Selected pipeline
 
-Preserved (not active): 0005.4.3 K48/80k + v8; 0005.4 + `answer-v5-package` **124/150**; Luna low **127/150** (rolled back); format middle-agent killed; [0005.5 answer-v6](architecture/0005.5-CHECKPOINT-2026-07-27.md); [0006 session-routing](architecture/0006-CHECKPOINT-2026-07-28.md). Rejected this cycle: U-WINDOW, U-CAP, U-FLOOR (net +1 only).
+> **Opaque parallel multi-view hybrid retrieval → GPT-5.4 Nano low Arm 3
+> extraction → GPT-5.6 Luna high final answer**
 
-Active line: broad BM25 retrieval (top_k 96, char_budget 140k), then a selector that emits a
-compact verbatim context package for a separate answerer. Package assembly may resolve any
-turn from a session that contributed at least one BM25 span (full-session reach). Call-2 uses
-an advice-only preference procedure on top of the v5 factual rules. Session index / series
-expand / answer-v6 / lexical floor stay off. The 0004.2 single-call answerer remains available
-when `select_enabled` is false.
-
-## Decision
-
-Raw sessions are the memory. Nothing is rewritten, summarized, or extracted at write time, so
-nothing can be lost at write time. All intelligence happens at question time, where the question is
-available to guide it.
-
-```text
-ingest(session)   → append verbatim to the case store        (zero model calls)
-answer(question)  → BM25 over turn windows (broad bundle)
-                  → selectContext → verbatim context package (one model call)
-                  → answer from package only                 (one model call)
+```mermaid
+flowchart TD
+  Q["Question + date"] --> P["Luna low facet/query planner"]
+  P --> V["Parallel local BM25: notes + USER + ASSISTANT + combined"]
+  V --> C["Fused top-24 candidate pool"]
+  C --> A["Luna low v1-style admission"]
+  A --> B["Opaque bag, max 12"]
+  B --> M["Parallel Nano low per-session extraction"]
+  M --> R["Deterministic balanced raw-turn package"]
+  R --> F["Luna high final answer"]
 ```
 
-For `N` sessions with `select_enabled`, the agent makes **two** model calls per question and
-**zero** during ingestion. With `select_enabled: false`, it falls back to the 0004.2 single call.
+## Frozen measurement
 
-## Why this shape
+| Metric | Result |
+|---|---:|
+| Candidate-pool full gold | 133/135 (98.52%) |
+| Selected-bag full gold | 126/135 (93.33%) |
+| Final answers | **123/135 (91.11%)** |
+| Hard final answers | 21/28 (75.00%) |
+| Mid final answers | 11/12 (91.67%) |
+| Easy final answers | 91/95 (95.79%) |
 
-Architecture 0003.2's own blind diagnostics justify it. Deterministic BM25 located the reference
-session in 17 of 18 blind cases while the constructed graph missed references BM25 found, and six of
-seven answerable losses occurred after retrieval had already succeeded. Recall was not the
-bottleneck; everything built to repair recall was paying for a problem that raw sessions plus a
-lexical index already solved.
+All model-visible session identifiers are deterministic opaque per-question
+`memory_###` handles. Raw dataset identifiers are rejected if they reach an API
+prompt.
 
-The cost consequence is the point. Architecture 0003.2 cost about $0.039 per case and roughly 22
-model calls; the full-context baseline cost $0.0058 per case. A retrieval-limited single call should
-sit below that, which puts the full 500-case benchmark within the price of one previous 18-case
-gate. Cheap runs are what make honest measurement possible.
+## Component contract
 
-## Retrieval
+1. Luna-low decomposes the question into concrete evidence facets and lexical
+   query lanes.
+2. Local BM25 searches structured notes, raw USER turns, raw ASSISTANT turns,
+   and combined raw turns in parallel.
+3. Rank fusion retains at most 24 candidates.
+4. The actual v1 retrieval methodology permissively admits promising and
+   complementary sessions into a maximum-12 bag.
+5. Nano-low independently maps each admitted session to exact raw-turn
+   references.
+6. Deterministic code builds a balanced package capped at 40 turns and 40,000
+   characters.
+7. Luna-high answers from that package using `answer-v8-preference`.
 
-Each session is indexed as overlapping role-tagged turn windows rather than as one document, so the
-unit retrieved is already the unit the answerer needs. Every window carries its session ID, session
-date, and turn index range; dates travel with the text because temporal questions depend on them.
+## Model decision
 
-Ranking is BM25 with `k1=1.5`, `b=0.9`, Unicode tokenization, user-turn-only
-window indexing (`index_user_turns_only`), and stable tie-breaking. Selected
-windows are coalesced when adjacent, ordered chronologically in the prompt, and truncated only at
-window boundaries.
+Changing only the final answerer from Nano-medium to Luna-high improved
+accuracy from 116/135 (85.93%) to 123/135 (91.11%).
 
-There are no embeddings, no vector store, no reranker call, no query-planner call, and no write-time
-model calls.
+Changing the Arm 3 extractor from Nano-low to Luna-high tied at 123/135 while
+raising extraction cost approximately 5.97 times. Nano-low therefore remains
+selected for extraction.
 
-## Answering
+## Cost
 
-One call receives the question, the question date, and the selected windows. It returns a structured
-result carrying the answer, a support status, and the window references it used. Abstention is an
-explicit supported outcome, not a fallback.
+Estimated answerable135 inference cost before canonical judging:
 
-The frozen default prompt is `prompts/answer-v2-evidence.yaml` (`options.answer_prompt` defaults to
-`answer-v2-evidence`). It keeps the simple-prompt abstention rules and adds a required
-`evidenceTable` of dated memory facts before the hypothesis. Rows prefer user statements for facts
-about the user; assistant turns are used when the question asks what the assistant said. Count,
-order, duration, and conflict questions require exhaustive rows. Recommended answer settings:
-`reasoning_effort: medium`, `max_output_tokens: 16000` on `gpt-5.4-nano-2026-03-17`.
+- hybrid retrieval: $1.915;
+- Nano-low extraction: $0.323;
+- Luna-high final answer: $1.218;
+- total: **$3.455**.
 
-`mapAnswerResult` substitutes the canned abstention string only when `supportStatus` is
-`insufficient` **and** the hypothesis is empty. A non-empty hypothesis is preserved so the judge
-sees the model's actual answer.
+## Implementation status
 
-On canary-2 the ladder was: simple/none **35/60** → evidence/medium **51/60** → map+prompt fixes
-**54/60 (90.0%)**, population-weighted **86.0%**. Canonical config:
-`configs/architecture-0004-canary2-evidence-medium.yaml`.
+Architecture 0008 is implemented and measured through the offline retrieval,
+downstream, and answer-replay runners. Live host wiring remains pending and is
+not part of this checkpoint.
 
-## Measurement discipline
-
-Two metrics, deliberately separated:
-
-- **Retrieval recall@K**, computed offline against reference session IDs with no model call and no
-  judge. This is the fast inner loop and it is free.
-- **End-to-end accuracy**, via the pinned canonical judge.
-
-At 18 cases a single answer is worth 5.6 points and the standard error near 65% is about 11 points,
-which is why Architecture 0003.2's 14/18 and 11/18 were indistinguishable. No architectural decision
-is made below roughly 100 cases.
-
-`dev-9-v1` and `dev-60-v1` are development sets drawn from the unused pool and disjoint from both
-canaries. They are contaminated by design and are never reported as blind results.
-
-## The ladder
-
-Each rung is a hypothesis that must earn its place with a measured delta:
-
-1. this backbone, scored honestly;
-2. retrieval quality — chunk sizing, hybrid lexical/dense, query decomposition, temporal filters,
-   measured by recall@K alone;
-3. answer quality — prompt shape, context ordering, stronger models, at fixed retrieval;
-4. a reading or selection layer, only once the answerer is demonstrably drowning in context;
-5. write-time structure such as summaries, extracted facts, or a graph, only against a question
-   class retrieval provably cannot serve. Knowledge-update recency and multi-session aggregation are
-   the honest candidates: they scored 1/3 and 1/3 in the last blind run.
-
-Structure is not forbidden. It has to win an argument against a measured baseline instead of being
-the starting assumption.
-
-Next planned rung: Architecture **0005** context service — keep broad BM25, add a selector that
-emits a compact verbatim context package, answer from the package only.
-
-## Preserved work
-
-Architecture 0003.2 remains runnable at
-[`../architecture-0003.2-hybrid-graph-reader/`](../architecture-0003.2-hybrid-graph-reader/) and is
-tagged in git as `architecture-0003.2-hybrid-graph-reader`. Architecture 0001 remains runnable under
-[`../baselines/full_context/`](../baselines/full_context/). Architecture 0002 is archived under
-[`../../../legacy/python-architecture-0002/`](../../../legacy/python-architecture-0002/).
+Previous active architecture 0005.4.4 and all earlier designs remain preserved
+under [architecture/](architecture/) and in
+[architecture/LOG.md](architecture/LOG.md).

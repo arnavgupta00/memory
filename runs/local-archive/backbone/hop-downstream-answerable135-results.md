@@ -1,5 +1,10 @@
 # Frozen hop-bag downstream gate — answerable135
 
+> Measurement warning (2026-07-31): these historical runs exposed raw
+> `answer_*` session IDs to model-visible retrieval/downstream context. The hop
+> retriever has since been recertified with opaque IDs at 120/135, but the
+> downstream scores in this document have not yet been recertified.
+
 Date: 2026-07-30
 
 ## Decision

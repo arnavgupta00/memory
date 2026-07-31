@@ -10,10 +10,15 @@
  *     --ids runs/local-archive/backbone/hop27-ids.json \
  *     --annotations runs/local-archive/backbone/session-annotations-v1 \
  *     --hops 3 --model gpt-5.4-nano-2026-03-17 --reasoning medium \
- *     --concurrency 8 --out runs/local-archive/backbone/hop-gate-nano-h3.json
+ *     --concurrency 8 --token-budget 200000 \
+ *     --out runs/local-archive/backbone/hop-gate-nano-h3.json
  *
  * Baselines only (no LLM):
  *   ... hopRetrieveGate.ts --baselines-only --out .../hop-gate-baselines.json
+ *
+ * Model-visible session IDs are opaque per case by default. The legacy,
+ * label-leaking behavior exists only for historical reproduction via
+ * `--opaque-session-ids false`.
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
@@ -33,6 +38,10 @@ import {
   type NotesHit,
   type SessionAnnotation,
 } from "../retrieval/notesIndex.js";
+import {
+  assertNoRawSessionIdLeak,
+  buildOpaqueSessionSpace,
+} from "../retrieval/opaqueSessionIds.js";
 import { PromptLoader } from "../services/promptLoader.js";
 
 const PROJECT_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "../../../../../");
@@ -52,6 +61,13 @@ const WINDOW_SECONDS = 60;
 const OUTPUT_CEILING = 2_500;
 const BAG_MAX = 12;
 const ALLOWED_TOP_K = new Set([5, 10, 20]);
+const MODEL_PRICING_PER_MILLION: Record<
+  string,
+  { input: number; output: number }
+> = {
+  "gpt-5.6-luna": { input: 1, output: 6 },
+  "gpt-5.4-nano": { input: 0.2, output: 1.25 },
+};
 
 type RawCase = {
   question_id: string;
@@ -97,6 +113,7 @@ type CaseResult = {
   question_type: string;
   gold: string[];
   bag: string[];
+  model_bag: string[];
   hops_used: number;
   turns: number;
   done_reason: string | null;
@@ -150,6 +167,10 @@ function parseArgs(argv: string[]): Record<string, string> {
     }
   }
   return out;
+}
+
+function stringToolArg(value: unknown, fallback = ""): string {
+  return typeof value === "string" ? value : fallback;
 }
 
 function estimateInputTokens(text: string): number {
@@ -353,6 +374,7 @@ async function runHopAgent(args: {
   sessionIds: string[];
   datesBySessionId: Map<string, string>;
   annotations: Map<string, SessionAnnotation>;
+  rawSessionIdsForLeakCheck: string[];
 }): Promise<{
   bag: string[];
   hopsUsed: number;
@@ -380,7 +402,7 @@ async function runHopAgent(args: {
   let outputTokens = 0;
   const maxTurns = args.hopBudget * 3 + 4;
 
-  while (turns < maxTurns && !doneReason) {
+  while (turns < maxTurns) {
     turns += 1;
     const prompt = await args.prompts.render(args.promptName, {
       question: args.question,
@@ -392,6 +414,7 @@ async function runHopAgent(args: {
       last_tool_results: lastToolResults,
     });
     const inputText = prompt.messages.map((m) => m.content).join("\n");
+    assertNoRawSessionIdLeak(inputText, args.rawSessionIdsForLeakCheck);
     const release = await args.gate.acquire(estimateInputTokens(inputText) + OUTPUT_CEILING);
     let response: OpenAIResponse;
     try {
@@ -458,7 +481,7 @@ async function runHopAgent(args: {
       hopsUsed += 1;
       let hits: NotesHit[] = [];
       if (name === "bm25_notes") {
-        const query = String(parsedArgs.query ?? "");
+        const query = stringToolArg(parsedArgs.query);
         const topKRaw = Number(parsedArgs.top_k ?? 10);
         const topK = ALLOWED_TOP_K.has(topKRaw) ? topKRaw : 10;
         hits = searchNotesBm25({
@@ -522,7 +545,7 @@ async function runHopAgent(args: {
     }
 
     if (name === "done") {
-      doneReason = String(parsedArgs.reason ?? "done");
+      doneReason = stringToolArg(parsedArgs.reason, "done");
       steps.push({
         hop: hopsUsed,
         tool: name,
@@ -592,6 +615,13 @@ function notesBm25Baseline(args: {
   };
 }
 
+function pricingForModel(model: string): { input: number; output: number } | null {
+  const match = Object.entries(MODEL_PRICING_PER_MILLION).find(([prefix]) =>
+    model.startsWith(prefix),
+  );
+  return match?.[1] ?? null;
+}
+
 async function main(): Promise<void> {
   loadDotEnv(resolve(PROJECT_ROOT, ".env"));
   const args = parseArgs(process.argv.slice(2));
@@ -605,6 +635,9 @@ async function main(): Promise<void> {
   const reasoning = (args.reasoning ?? "medium") as "none" | "low" | "medium" | "high";
   const promptName = args.prompt ?? "hop-retrieve-v1";
   const concurrency = Number(args.concurrency ?? "8");
+  const tokenBudget = Number(args["token-budget"] ?? String(TOKEN_BUDGET));
+  const windowSeconds = Number(args["window-seconds"] ?? String(WINDOW_SECONDS));
+  const opaqueSessionIds = args["opaque-session-ids"] !== "false";
   const baselinesOnly = args["baselines-only"] === "true";
   const outPath = resolve(
     PROJECT_ROOT,
@@ -631,6 +664,7 @@ async function main(): Promise<void> {
     `hop-retrieve-gate ids=${String(selected.length)} hops=${String(hopBudget)} `
       + `model=${baselinesOnly ? "none" : model} reasoning=${baselinesOnly ? "n/a" : reasoning} `
       + `prompt=${promptName} concurrency=${String(concurrency)} `
+      + `token_budget=${String(tokenBudget)} opaque_session_ids=${String(opaqueSessionIds)} `
       + `annotations=${String(annotations.size)} baselines_only=${String(baselinesOnly)}`,
   );
 
@@ -641,8 +675,8 @@ async function main(): Promise<void> {
     throw new Error("OPENAI_API_KEY is required");
   }
   const prompts = new PromptLoader();
-  const gate = new TokenBudgetGate(TOKEN_BUDGET, WINDOW_SECONDS, concurrency);
-  const results: CaseResult[] = new Array(selected.length);
+  const gate = new TokenBudgetGate(tokenBudget, windowSeconds, concurrency);
+  const results = Array<CaseResult | undefined>(selected.length);
   let cursor = 0;
   const started = Date.now();
 
@@ -656,6 +690,7 @@ async function main(): Promise<void> {
         question_type: hopCase.question_type,
         gold,
         bag: [],
+        model_bag: [],
         hops_used: 0,
         turns: 0,
         done_reason: null,
@@ -686,15 +721,42 @@ async function main(): Promise<void> {
 
     const p1 = phase1ById.get(hopCase.question_id);
     const goldRanks = p1?.gold_ranks ?? hopCase.phase1_gold_ranks;
+    const modelSpace = opaqueSessionIds
+      ? buildOpaqueSessionSpace({
+        namespace: hopCase.question_id,
+        sessionIds: raw.haystack_session_ids,
+        datesBySessionId,
+        annotations,
+      })
+      : {
+        sessionIds: raw.haystack_session_ids,
+        datesBySessionId,
+        annotations,
+        realToOpaque: new Map(raw.haystack_session_ids.map((id) => [id, id])),
+        opaqueToReal: new Map(raw.haystack_session_ids.map((id) => [id, id])),
+      };
+    const modelGold = gold.flatMap((id) => {
+      const modelId = modelSpace.realToOpaque.get(id);
+      return modelId ? [modelId] : [];
+    });
     const notesBase = notesBm25Baseline({
       question: raw.question,
-      sessionIds: raw.haystack_session_ids,
-      datesBySessionId,
-      annotations,
-      gold,
+      sessionIds: modelSpace.sessionIds,
+      datesBySessionId: modelSpace.datesBySessionId,
+      annotations: modelSpace.annotations,
+      gold: modelGold,
+    });
+    const notesTop5 = notesBase.top5.flatMap((id) => {
+      const realId = modelSpace.opaqueToReal.get(id);
+      return realId ? [realId] : [];
+    });
+    const notesTop12 = notesBase.top12.flatMap((id) => {
+      const realId = modelSpace.opaqueToReal.get(id);
+      return realId ? [realId] : [];
     });
 
     let bag: string[] = [];
+    let modelBag: string[] = [];
     let hopsUsed = 0;
     let turns = 0;
     let doneReason: string | null = baselinesOnly ? "baselines_only" : null;
@@ -715,11 +777,16 @@ async function main(): Promise<void> {
           promptName,
           question: raw.question,
           questionDate: raw.question_date,
-          sessionIds: raw.haystack_session_ids,
-          datesBySessionId,
-          annotations,
+          sessionIds: modelSpace.sessionIds,
+          datesBySessionId: modelSpace.datesBySessionId,
+          annotations: modelSpace.annotations,
+          rawSessionIdsForLeakCheck: opaqueSessionIds ? raw.haystack_session_ids : [],
         });
-        bag = agent.bag;
+        modelBag = agent.bag;
+        bag = modelBag.flatMap((id) => {
+          const realId = modelSpace.opaqueToReal.get(id);
+          return realId ? [realId] : [];
+        });
         hopsUsed = agent.hopsUsed;
         turns = agent.turns;
         doneReason = agent.doneReason;
@@ -737,6 +804,7 @@ async function main(): Promise<void> {
       question_type: hopCase.question_type,
       gold,
       bag,
+      model_bag: modelBag,
       hops_used: hopsUsed,
       turns,
       done_reason: doneReason,
@@ -746,10 +814,10 @@ async function main(): Promise<void> {
       phase1_worst_rank: p1?.worst_rank ?? hopCase.phase1_worst_rank,
       phase1_in_top5: phase1InTopK(goldRanks, 5),
       phase1_in_top12: phase1InTopK(goldRanks, 12),
-      notes_bm25_top5: notesBase.top5,
-      notes_bm25_top12: notesBase.top12,
-      notes_bm25_full_gold_top5: notesBase.fullGoldTop5,
-      notes_bm25_full_gold_top12: notesBase.fullGoldTop12,
+      notes_bm25_top5: notesTop5,
+      notes_bm25_top12: notesTop12,
+      notes_bm25_full_gold_top5: fullGoldIn(notesTop5, gold),
+      notes_bm25_full_gold_top12: fullGoldIn(notesTop12, gold),
       input_tokens: inputTokens,
       output_tokens: outputTokens,
       error,
@@ -775,8 +843,15 @@ async function main(): Promise<void> {
   const workers = Math.min(baselinesOnly ? 1 : concurrency, Math.max(selected.length, 1));
   await Promise.all(Array.from({ length: workers }, () => worker()));
 
-  const finished = results.filter((item): item is CaseResult => !!item);
+  const finished = results.filter((item): item is CaseResult => item !== undefined);
   const aggregate = summarizeStratum(finished);
+  const totalInputTokens = finished.reduce((sum, item) => sum + item.input_tokens, 0);
+  const totalOutputTokens = finished.reduce((sum, item) => sum + item.output_tokens, 0);
+  const pricing = baselinesOnly ? null : pricingForModel(model);
+  const estimatedCostUsd = pricing
+    ? (totalInputTokens * pricing.input + totalOutputTokens * pricing.output) / 1_000_000
+    : null;
+  const elapsedMs = Date.now() - started;
   const payload = {
     created_at: new Date().toISOString(),
     ids_path: idsPath,
@@ -788,6 +863,20 @@ async function main(): Promise<void> {
     hop_budget: hopBudget,
     bag_max: BAG_MAX,
     baselines_only: baselinesOnly,
+    session_id_visibility: opaqueSessionIds ? "opaque_per_case_v1" : "raw_legacy",
+    rate_limit: {
+      token_budget: tokenBudget,
+      window_seconds: windowSeconds,
+      concurrency,
+    },
+    usage: {
+      input_tokens: totalInputTokens,
+      output_tokens: totalOutputTokens,
+      total_tokens: totalInputTokens + totalOutputTokens,
+      estimated_cost_usd: estimatedCostUsd,
+      pricing_per_million: pricing,
+      elapsed_ms: elapsedMs,
+    },
     aggregate,
     cases: finished,
   };

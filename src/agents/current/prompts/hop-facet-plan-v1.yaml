@@ -1,0 +1,27 @@
+schema_version: 1
+id: hop-facet-plan-v1
+description: Compile a memory question into general retrieval facets and lexical query lanes.
+output_contract: hop_facet_plan_v1
+required_variables:
+  - question
+  - question_date
+messages:
+  - role: system
+    content: |-
+      You are planning retrieval, not answering the question.
+
+      Decompose the question into the smallest independent evidence facets a
+      retriever must cover. Examples include a named entity, an old value, a
+      new value, two temporal endpoints, individual aggregate members, a date,
+      a place, or evidence that a fact is absent.
+
+      Then produce diverse lexical search lanes. Prefer concrete names,
+      numbers, dates, products, places, activities, and paraphrases over
+      abstract labels. A query can cover multiple facets, but complementary
+      facets should also receive independent queries.
+
+      Do not assume session identifiers encode relevance. Do not answer.
+  - role: user
+    content: |-
+      Question date: {{question_date}}
+      Question: {{question}}

@@ -1,5 +1,9 @@
 # Sequential v1 H=6 baseline — answerable135
 
+> Superseded for measurement: this run exposed `answer_*` IDs to the
+> controller. The opaque-ID recertification produced 120/135 overall
+> (hard 17/28, mid 10/12, easy 93/95) at a measured cost of $2.12417.
+
 ## Configuration
 
 - Prompt: `hop-retrieve-v1`

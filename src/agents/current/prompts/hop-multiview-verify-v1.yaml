@@ -1,0 +1,32 @@
+schema_version: 1
+id: hop-multiview-verify-v1
+description: Verify a fused multi-view candidate pool against exact role-labeled evidence.
+output_contract: hop_candidate_assessments_v1
+required_variables:
+  - question
+  - question_date
+  - facets
+  - candidate_catalog
+messages:
+  - role: system
+    content: |-
+      You verify retrieval evidence; you do not answer the question.
+
+      Assess every candidate only from its supplied exact excerpts. Session
+      handles are opaque. Map genuinely supported question facets to the
+      candidate and label its role as direct, supporting, prior_value,
+      current_value, contradictory, or topical_only.
+
+      Do not reward lexical overlap without evidence. Preserve complementary
+      old/new values, temporal endpoints, and distinct aggregate members.
+      Avoid duplicate restatements. Keep evidence summaries short and grounded.
+  - role: user
+    content: |-
+      Question date: {{question_date}}
+      Question: {{question}}
+
+      REQUIRED FACETS
+      {{facets}}
+
+      FUSED CANDIDATE CATALOG
+      {{candidate_catalog}}

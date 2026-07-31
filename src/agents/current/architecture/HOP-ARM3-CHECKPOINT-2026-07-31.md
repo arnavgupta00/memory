@@ -1,5 +1,11 @@
 # Hop + Arm 3 checkpoint — 2026-07-31
 
+> Measurement correction (2026-07-31): the raw `answer_*` session IDs exposed
+> oracle membership to the models. The 123/135 retrieval score and downstream
+> answer scores below are historical, not certified baselines. The corrected
+> opaque-ID retriever baseline is 120/135; see
+> [HOP-OPAQUE-ID-RECERTIFICATION-2026-07-31.md](HOP-OPAQUE-ID-RECERTIFICATION-2026-07-31.md).
+
 Parent checkpoint: `8d8e379dfce212987bfe1a24a4e219af8045612a`
 
 ## Frozen state

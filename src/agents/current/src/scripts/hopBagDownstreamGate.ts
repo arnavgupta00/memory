@@ -51,6 +51,10 @@ import {
   loadAnnotations,
   type SessionAnnotation,
 } from "../retrieval/notesIndex.js";
+import {
+  assertNoRawSessionIdLeak,
+  buildOpaqueSessionSpace,
+} from "../retrieval/opaqueSessionIds.js";
 import { PromptLoader, type PromptEnvelope } from "../services/promptLoader.js";
 import {
   AnswerOutputSchema,
@@ -72,14 +76,14 @@ const DEFAULT_ANNOTATIONS = resolve(
   PROJECT_ROOT,
   "runs/local-archive/backbone/session-annotations-v1",
 );
-const MODEL = "gpt-5.4-nano-2026-03-17";
+const DEFAULT_MODEL = "gpt-5.4-nano-2026-03-17";
 const ANSWER_PROMPT = "answer-v8-preference";
 const PACKAGE_MAX_TURNS = 40;
 const PACKAGE_CHAR_BUDGET = 40_000;
 const RAW_EXCERPT_MAX_CHARS = 4_000;
 const ALL_ARMS = ["1a", "1b", "2", "3"] as const;
 type Arm = (typeof ALL_ARMS)[number];
-type ReasoningEffort = "low" | "medium";
+type ReasoningEffort = "low" | "medium" | "high";
 
 type RawTurn = { role: "user" | "assistant"; content: string };
 type RawCase = {
@@ -96,10 +100,11 @@ type FrozenHopCase = {
   bag: string[];
 };
 type FrozenHopRun = {
-  model: string;
-  reasoning: string;
-  prompt: string;
-  hop_budget: number;
+  model?: string;
+  reasoning?: string;
+  prompt?: string;
+  hop_budget?: number;
+  arm?: string;
   cases: FrozenHopCase[];
 };
 type Ref = { turnIndex: number; why: string };
@@ -117,7 +122,6 @@ const SessionExtractSchema = z.strictObject({
     )
     .max(24),
 });
-type SessionExtract = z.infer<typeof SessionExtractSchema>;
 
 type TokenUsage = {
   input_tokens: number | null;
@@ -275,7 +279,9 @@ async function mapPool<T, R>(
       const index = cursor;
       cursor += 1;
       if (index >= items.length) return;
-      results[index] = await worker(items[index]!, index);
+      const item = items[index];
+      if (item === undefined) throw new Error("task pool contains a sparse item");
+      results[index] = await worker(item, index);
     }
   }
   await Promise.all(Array.from({ length: Math.min(concurrency, items.length) }, () => run()));
@@ -285,7 +291,9 @@ async function mapPool<T, R>(
 async function callStructured<T>(args: {
   openai: OpenAI;
   gate: DispatchGate;
+  model: string;
   prompt: PromptEnvelope;
+  rawSessionIdsForLeakCheck?: string[];
   schema: z.ZodType<T>;
   schemaName: string;
   role: string;
@@ -294,6 +302,11 @@ async function callStructured<T>(args: {
   outputReservation: number;
   sequence: number;
 }): Promise<StructuredCall<T>> {
+  const serializedPrompt = promptText(args.prompt);
+  assertNoRawSessionIdLeak(
+    serializedPrompt,
+    args.rawSessionIdsForLeakCheck ?? [],
+  );
   let lastError: unknown;
   for (let attempt = 0; attempt <= 6; attempt += 1) {
     const reservation = estimateInputTokens(args.prompt) + args.outputReservation;
@@ -302,7 +315,7 @@ async function callStructured<T>(args: {
     try {
       const response = await args.openai.responses.parse(
         {
-          model: MODEL,
+          model: args.model,
           input: args.prompt.messages,
           max_output_tokens: args.maxOutputTokens,
           reasoning: { effort: args.reasoning },
@@ -320,7 +333,7 @@ async function callStructured<T>(args: {
         input_tokens: response.usage?.input_tokens ?? null,
         output_tokens: response.usage?.output_tokens ?? null,
         total_tokens: response.usage?.total_tokens ?? null,
-        reasoning_tokens: response.usage?.output_tokens_details?.reasoning_tokens ?? null,
+        reasoning_tokens: response.usage?.output_tokens_details.reasoning_tokens ?? null,
       };
       const retryCount = attempt;
       const requestId = response._request_id ?? null;
@@ -328,7 +341,7 @@ async function callStructured<T>(args: {
         value,
         generation: {
           text: response.output_text,
-          model: MODEL,
+          model: args.model,
           provider: "openai",
           usage,
           latency_ms: latency,
@@ -340,7 +353,7 @@ async function callStructured<T>(args: {
           role: args.role,
           kind: "generation",
           provider: "openai",
-          model: MODEL,
+          model: args.model,
           input_sha256: sha256(promptText(args.prompt)),
           item_count: 1,
           parameters: {
@@ -803,6 +816,9 @@ async function preparePackage(args: {
   raw: RawCase;
   sessions: TimestampedSession[];
   annotations: Map<string, SessionAnnotation>;
+  rawSessionIdsForLeakCheck: string[];
+  readerModel: string;
+  readerReasoning: ReasoningEffort;
   prompts: PromptLoader;
   openai: OpenAI;
   gate: DispatchGate;
@@ -828,11 +844,13 @@ async function preparePackage(args: {
     const selected = await callStructured({
       openai: args.openai,
       gate: args.gate,
+      model: args.readerModel,
       prompt,
+      rawSessionIdsForLeakCheck: args.rawSessionIdsForLeakCheck,
       schema: SelectOutputSchema,
       schemaName: "select_v1",
       role: "select",
-      reasoning: "low",
+      reasoning: args.readerReasoning,
       maxOutputTokens: 8000,
       outputReservation: 3000,
       sequence: 1,
@@ -869,11 +887,13 @@ async function preparePackage(args: {
     const selected = await callStructured({
       openai: args.openai,
       gate: args.gate,
+      model: args.readerModel,
       prompt,
+      rawSessionIdsForLeakCheck: args.rawSessionIdsForLeakCheck,
       schema: SelectOutputSchema,
       schemaName: "select_v1",
       role: "select",
-      reasoning: "low",
+      reasoning: args.readerReasoning,
       maxOutputTokens: 8000,
       outputReservation: 3000,
       sequence: 1,
@@ -925,11 +945,13 @@ async function preparePackage(args: {
       const result = await callStructured({
         openai: args.openai,
         gate: args.gate,
+        model: args.readerModel,
         prompt,
+        rawSessionIdsForLeakCheck: args.rawSessionIdsForLeakCheck,
         schema: SessionExtractSchema,
         schemaName: "hop_session_extract_v1",
         role: "session_extract",
-        reasoning: "low",
+        reasoning: args.readerReasoning,
         maxOutputTokens: 8000,
         outputReservation: 3000,
         sequence: index + 1,
@@ -976,57 +998,80 @@ async function preparePackage(args: {
   };
 }
 
-function configForArm(runId: string, arm: Arm, concurrency: number, tokenBudget: number): unknown {
+function pricingForModel(model: string): {
+  input: number | null;
+  output: number | null;
+} {
+  if (model.startsWith("gpt-5.6-luna")) return { input: 1, output: 6 };
+  if (model.startsWith("gpt-5.4-nano")) return { input: 0.2, output: 1.25 };
+  return { input: null, output: null };
+}
+
+function configForArm(args: {
+  runId: string;
+  arm: Arm;
+  concurrency: number;
+  tokenBudget: number;
+  opaqueSessionIds: boolean;
+  readerModel: string;
+  readerReasoning: ReasoningEffort;
+  answerModel: string;
+  answerReasoning: ReasoningEffort;
+}): unknown {
   const models: Record<string, unknown> = {};
-  if (arm === "1a" || arm === "1b") {
+  const readerPricing = pricingForModel(args.readerModel);
+  const answerPricing = pricingForModel(args.answerModel);
+  if (args.arm === "1a" || args.arm === "1b") {
     models.select = {
       kind: "generation",
       provider: "openai",
-      model: MODEL,
+      model: args.readerModel,
       temperature: 1,
-      reasoning_effort: "low",
+      reasoning_effort: args.readerReasoning,
       max_output_tokens: 8000,
       timeout_seconds: 300,
-      concurrency,
+      concurrency: args.concurrency,
       max_retries: 6,
-      input_price_per_million: 0.2,
-      output_price_per_million: 1.25,
+      input_price_per_million: readerPricing.input,
+      output_price_per_million: readerPricing.output,
     };
   }
-  if (arm === "3") {
+  if (args.arm === "3") {
     models.session_extract = {
       kind: "generation",
       provider: "openai",
-      model: MODEL,
+      model: args.readerModel,
       temperature: 1,
-      reasoning_effort: "low",
+      reasoning_effort: args.readerReasoning,
       max_output_tokens: 8000,
       timeout_seconds: 300,
-      concurrency,
+      concurrency: args.concurrency,
       max_retries: 6,
-      input_price_per_million: 0.2,
-      output_price_per_million: 1.25,
+      input_price_per_million: readerPricing.input,
+      output_price_per_million: readerPricing.output,
     };
   }
+  const providerModels = [...new Set([args.readerModel, args.answerModel])];
   return {
-    name: runId,
+    name: args.runId,
     mode: "full-context",
     agent: {
       backend: "node",
       entrypoint: "src/agents/current/dist/host.js",
-      provider_model_limits: [
-        {
+      provider_model_limits: providerModels.map((model) => ({
           provider: "openai",
-          model: MODEL,
-          max_concurrency: concurrency,
-          token_budget: tokenBudget,
+          model,
+          max_concurrency: args.concurrency,
+          token_budget: args.tokenBudget,
           window_seconds: 60,
-        },
-      ],
+      })),
       models,
       options: {
         frozen_hop_bag: true,
-        downstream_arm: arm,
+        session_id_visibility: args.opaqueSessionIds
+          ? "opaque_per_case_v1"
+          : "raw_legacy",
+        downstream_arm: args.arm,
         answer_prompt: ANSWER_PROMPT,
         package_max_turns: PACKAGE_MAX_TURNS,
         package_char_budget: PACKAGE_CHAR_BUDGET,
@@ -1034,15 +1079,15 @@ function configForArm(runId: string, arm: Arm, concurrency: number, tokenBudget:
     },
     answer: {
       provider: "openai",
-      model: MODEL,
+      model: args.answerModel,
       temperature: 1,
-      reasoning_effort: "medium",
+      reasoning_effort: args.answerReasoning,
       max_output_tokens: 16000,
       timeout_seconds: 300,
-      concurrency,
+      concurrency: args.concurrency,
       max_retries: 6,
-      input_price_per_million: 0.2,
-      output_price_per_million: 1.25,
+      input_price_per_million: answerPricing.input,
+      output_price_per_million: answerPricing.output,
     },
     judge: {
       provider: "openai",
@@ -1051,7 +1096,7 @@ function configForArm(runId: string, arm: Arm, concurrency: number, tokenBudget:
     },
     selection: { strategy: "question-ids" },
     execution: {
-      case_concurrency: concurrency,
+      case_concurrency: args.concurrency,
       capture_model_io: false,
       auto_export_final_svg: false,
     },
@@ -1064,6 +1109,11 @@ function yamlForRun(args: {
   hopRun: string;
   concurrency: number;
   tokenBudget: number;
+  opaqueSessionIds: boolean;
+  readerModel: string;
+  readerReasoning: ReasoningEffort;
+  answerModel: string;
+  answerReasoning: ReasoningEffort;
 }): string {
   return [
     `name: ${args.runId}`,
@@ -1072,9 +1122,15 @@ function yamlForRun(args: {
     `  downstream_arm: ${args.arm}`,
     `  frozen_hop_run: ${args.hopRun}`,
     `  answer_prompt: ${ANSWER_PROMPT}`,
-    `  model: ${MODEL}`,
+    `  reader_model: ${args.readerModel}`,
+    `  reader_reasoning: ${args.readerReasoning}`,
+    `  answer_model: ${args.answerModel}`,
+    `  answer_reasoning: ${args.answerReasoning}`,
     `  request_concurrency: ${String(args.concurrency)}`,
     `  token_budget_per_minute: ${String(args.tokenBudget)}`,
+    `  session_id_visibility: ${
+      args.opaqueSessionIds ? "opaque_per_case_v1" : "raw_legacy"
+    }`,
     `  package_max_turns: ${String(PACKAGE_MAX_TURNS)}`,
     `  package_char_budget: ${String(PACKAGE_CHAR_BUDGET)}`,
     "",
@@ -1102,7 +1158,8 @@ function datasetHashes(): Record<string, string> {
   return Object.fromEntries(
     paths.map((path) => {
       const absolute = resolve(PROJECT_ROOT, path);
-      return [path.split("/").at(-1)!, sha256(readFileSync(absolute))];
+      const fileName = path.slice(path.lastIndexOf("/") + 1);
+      return [fileName, sha256(readFileSync(absolute))];
     }),
   );
 }
@@ -1116,12 +1173,24 @@ async function main(): Promise<void> {
   assertSlug(outPrefix, "out-prefix");
   const concurrency = Number(args.concurrency ?? "128");
   const tokenBudget = Number(args["token-budget"] ?? "2000000");
+  const opaqueSessionIds = args["opaque-session-ids"] !== "false";
+  const readerModel = args["reader-model"] ?? DEFAULT_MODEL;
+  const readerReasoning = (args["reader-reasoning"] ?? "low") as ReasoningEffort;
+  const answerModel = args["answer-model"] ?? DEFAULT_MODEL;
+  const answerReasoning = (args["answer-reasoning"] ?? "medium") as ReasoningEffort;
   const limit = args.limit ? Number(args.limit) : null;
   if (!Number.isInteger(concurrency) || concurrency < 1 || concurrency > 256) {
     throw new Error("--concurrency must be an integer in 1..256");
   }
   if (!Number.isFinite(tokenBudget) || tokenBudget < 1) {
     throw new Error("--token-budget must be positive");
+  }
+  const allowedReasoning = new Set<ReasoningEffort>(["low", "medium", "high"]);
+  if (!allowedReasoning.has(readerReasoning)) {
+    throw new Error("--reader-reasoning must be low, medium, or high");
+  }
+  if (!allowedReasoning.has(answerReasoning)) {
+    throw new Error("--answer-reasoning must be low, medium, or high");
   }
   const requestedArms = (args.arms ?? ALL_ARMS.join(","))
     .split(",")
@@ -1174,9 +1243,30 @@ async function main(): Promise<void> {
     writeFileSync(resolve(root, "errors.jsonl"), "");
     writeFileSync(
       resolve(root, "config.yaml"),
-      yamlForRun({ runId, arm, hopRun: hopRunRel, concurrency, tokenBudget }),
+      yamlForRun({
+        runId,
+        arm,
+        hopRun: hopRunRel,
+        concurrency,
+        tokenBudget,
+        opaqueSessionIds,
+        readerModel,
+        readerReasoning,
+        answerModel,
+        answerReasoning,
+      }),
     );
-    const config = configForArm(runId, arm, concurrency, tokenBudget);
+    const config = configForArm({
+      runId,
+      arm,
+      concurrency,
+      tokenBudget,
+      opaqueSessionIds,
+      readerModel,
+      readerReasoning,
+      answerModel,
+      answerReasoning,
+    });
     const manifest: Record<string, unknown> = {
       schema_version: 2,
       run_id: runId,
@@ -1205,6 +1295,13 @@ async function main(): Promise<void> {
         frozen_hop_reasoning: hopRun.reasoning,
         frozen_hop_prompt: hopRun.prompt,
         frozen_hop_budget: hopRun.hop_budget,
+        session_id_visibility: opaqueSessionIds
+          ? "opaque_per_case_v1"
+          : "raw_legacy",
+        reader_model: readerModel,
+        reader_reasoning: readerReasoning,
+        answer_model: answerModel,
+        answer_reasoning: answerReasoning,
         downstream_arm: arm,
       },
     };
@@ -1214,11 +1311,13 @@ async function main(): Promise<void> {
 
   const tasks: Array<{ arm: Arm; hopCase: FrozenHopCase; caseIndex: number }> = [];
   for (let caseIndex = 0; caseIndex < selectedHopCases.length; caseIndex += 1) {
+    const hopCase = selectedHopCases[caseIndex];
+    if (!hopCase) continue;
     const rotated = requestedArms.map(
-      (_arm, offset) => requestedArms[(caseIndex + offset) % requestedArms.length]!,
-    );
+      (_arm, offset) => requestedArms[(caseIndex + offset) % requestedArms.length],
+    ).filter((arm): arm is Arm => arm !== undefined);
     for (const arm of rotated) {
-      tasks.push({ arm, hopCase: selectedHopCases[caseIndex]!, caseIndex });
+      tasks.push({ arm, hopCase, caseIndex });
     }
   }
 
@@ -1232,23 +1331,60 @@ async function main(): Promise<void> {
       tasks: tasks.length,
       concurrency,
       token_budget: tokenBudget,
+      session_id_visibility: opaqueSessionIds
+        ? "opaque_per_case_v1"
+        : "raw_legacy",
+      reader_model: readerModel,
+      reader_reasoning: readerReasoning,
+      answer_model: answerModel,
+      answer_reasoning: answerReasoning,
       hop_run: hopRunRel,
       out_prefix: outPrefix,
     }),
   );
 
   await mapPool(tasks, concurrency, async ({ arm, hopCase }) => {
-    const state = states.get(arm)!;
-    const raw = rawById.get(hopCase.question_id)!;
+    const state = states.get(arm);
+    if (!state) throw new Error(`missing state for arm ${arm}`);
+    const raw = rawById.get(hopCase.question_id);
+    if (!raw) throw new Error(`dataset is missing ${hopCase.question_id}`);
     const hydrated = hydrateBag(raw, hopCase.bag);
+    let modelSessions = hydrated.sessions;
+    let modelAnnotations = annotations;
+    const rawSessionIdsForLeakCheck = opaqueSessionIds
+      ? [...new Set(raw.haystack_session_ids)]
+      : [];
+    if (opaqueSessionIds) {
+      const datesBySessionId = new Map<string, string>();
+      for (let index = 0; index < raw.haystack_session_ids.length; index += 1) {
+        const sessionId = raw.haystack_session_ids[index];
+        if (sessionId) {
+          datesBySessionId.set(sessionId, raw.haystack_dates[index] ?? "");
+        }
+      }
+      const opaqueSpace = buildOpaqueSessionSpace({
+        namespace: raw.question_id,
+        sessionIds: raw.haystack_session_ids,
+        datesBySessionId,
+        annotations,
+      });
+      modelSessions = hydrated.sessions.flatMap((session) => {
+        const opaqueId = opaqueSpace.realToOpaque.get(session.session_id);
+        return opaqueId ? [{ ...session, session_id: opaqueId }] : [];
+      });
+      modelAnnotations = opaqueSpace.annotations;
+    }
     const caseDir = resolve(state.root, "agent-artifacts/cases", raw.question_id);
     mkdirSync(caseDir, { recursive: true });
     try {
       const prepared = await preparePackage({
         arm,
         raw,
-        sessions: hydrated.sessions,
-        annotations,
+        sessions: modelSessions,
+        annotations: modelAnnotations,
+        rawSessionIdsForLeakCheck,
+        readerModel,
+        readerReasoning,
         prompts,
         openai,
         gate,
@@ -1257,7 +1393,7 @@ async function main(): Promise<void> {
         {
           question: raw.question,
           questionDate: raw.question_date,
-          retrieval: retrievalForSpans(spansForSessions(hydrated.sessions)),
+          retrieval: retrievalForSpans(spansForSessions(modelSessions)),
           contextPackage: prepared.pkg,
           promptName: ANSWER_PROMPT,
         },
@@ -1266,11 +1402,13 @@ async function main(): Promise<void> {
       const answer = await callStructured({
         openai,
         gate,
+        model: answerModel,
         prompt: answerPrompt,
+        rawSessionIdsForLeakCheck,
         schema: AnswerOutputSchema,
         schemaName: "answer_v1",
         role: "answer",
-        reasoning: "medium",
+        reasoning: answerReasoning,
         maxOutputTokens: 16_000,
         outputReservation: 7000,
         sequence: prepared.calls.length + 1,
@@ -1306,9 +1444,12 @@ async function main(): Promise<void> {
           downstream_arm: arm,
           frozen_hop_bag: [...new Set(hopCase.bag)],
           frozen_hop_bag_size: new Set(hopCase.bag).size,
-          hydrated_bag_size: hydrated.sessions.length,
+          hydrated_bag_size: modelSessions.length,
           missing_bag_session_ids: hydrated.missingSessionIds,
-          package_session_coverage: packageSessionCoverage(prepared.pkg, hydrated.sessions),
+          session_id_visibility: opaqueSessionIds
+            ? "opaque_per_case_v1"
+            : "raw_legacy",
+          package_session_coverage: packageSessionCoverage(prepared.pkg, modelSessions),
           package_warnings: prepared.warnings,
           invalid_answer_evidence_count: invalidEvidenceCount,
           support_status: answer.value.supportStatus,
