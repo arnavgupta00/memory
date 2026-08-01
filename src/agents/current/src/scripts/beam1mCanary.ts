@@ -149,6 +149,10 @@ async function main(): Promise<void> {
   const ingestConcurrency = args["ingest-concurrency"] ?? "256";
   const tokenBudget = args["token-budget"] ?? "1900000";
   const judgeWorkers = args["judge-workers"] ?? "10";
+  const retrievalArm = args["retrieval-arm"] ?? "hybrid";
+  if (!new Set(["hybrid", "answer-shaped"]).has(retrievalArm)) {
+    throw new Error("--retrieval-arm must be hybrid or answer-shaped");
+  }
   const python = args.python ?? (existsSync(DEFAULT_JUDGE_PYTHON) ? DEFAULT_JUDGE_PYTHON : "python3");
 
   if (stageArg === "all" && existsSync(runRoot)) {
@@ -175,6 +179,7 @@ async function main(): Promise<void> {
       storer_model: "gpt-5.4-nano-2026-03-17",
       planner_and_admission_model: "gpt-5.6-luna",
       planner_and_admission_reasoning: "low",
+      retrieval_arm: retrievalArm,
       reader_model: "gpt-5.4-nano-2026-03-17",
       reader_reasoning: "low",
       answer_model: "gpt-5.6-luna",
@@ -242,7 +247,7 @@ async function main(): Promise<void> {
       "--token-budget", tokenBudget,
     ])],
     ["retrieve", commandForTypeScript("hopArchitectureScreen.ts", [
-      "--arm", "hybrid",
+      "--arm", retrievalArm,
       "--ids", resolve(inputDir, "slice.json"),
       "--dataset", resolve(inputDir, "dataset.json"),
       "--oracle", resolve(inputDir, "oracle.json"),

@@ -1,11 +1,13 @@
 import { describe, expect, it } from "vitest";
 
 import {
+  answerShapedModeForQuestion,
   BROAD_HISTORY_RETRIEVAL_PROFILE,
   FOCUSED_RETRIEVAL_PROFILE,
   isBroadHistoryQuestion,
   retainMappedSession,
   retrievalProfileForQuestion,
+  shouldUseAnswerShapedRetrieval,
 } from "../src/retrieval/retrievalProfile.js";
 
 describe("retrievalProfileForQuestion", () => {
@@ -30,6 +32,32 @@ describe("retrievalProfileForQuestion", () => {
   ])("keeps focused questions on the original limits: %s", (question) => {
     expect(isBroadHistoryQuestion(question)).toBe(false);
     expect(retrievalProfileForQuestion(question)).toEqual(FOCUSED_RETRIEVAL_PROFILE);
+  });
+});
+
+describe("answerShapedModeForQuestion", () => {
+  it.each([
+    ["Reconstruct the project timeline in chronological order.", "timeline"],
+    ["Give me a comprehensive summary of the product work so far.", "summary"],
+    ["How many days passed between March 1 and March 15?", "temporal"],
+    ["Have I written any unit tests, and if so, what coverage did I achieve?", "contradiction"],
+    ["Has Kristen completed a Master's degree at Istanbul University?", "contradiction"],
+    ["List all the deployment approaches I mentioned.", "aggregate"],
+  ] as const)("routes %s through the %s workflow", (question, mode) => {
+    expect(answerShapedModeForQuestion(question)).toBe(mode);
+    expect(shouldUseAnswerShapedRetrieval(question)).toBe(true);
+  });
+
+  it.each([
+    "What data type did I choose for the price column?",
+    "What is my current preferred tennis racket?",
+    "Compare the two amounts I mentioned last week.",
+    "How did my contributions evolve together to support financial balance?",
+    "How long are my weekly swimming sessions?",
+    "When would be a good time to start a meaningful conversation this weekend?",
+  ])("keeps protected focused shapes on the existing planner: %s", (question) => {
+    expect(answerShapedModeForQuestion(question)).toBeNull();
+    expect(shouldUseAnswerShapedRetrieval(question)).toBe(false);
   });
 });
 

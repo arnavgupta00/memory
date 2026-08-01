@@ -89,6 +89,30 @@ messages:
     }
   });
 
+  test("renders answer-shaped retrieval workflow prompts", async () => {
+    const loader = new PromptLoader();
+    const blueprint = await loader.render("hop-answer-blueprint-v1", {
+      question: "How long was it between starting and completing the migration?",
+      question_date: "2026-08-02",
+      routing_mode: "temporal",
+    });
+    expect(blueprint.promptId).toBe("hop-answer-blueprint-v1");
+    expect(blueprint.messages.some((message) => message.content.includes("blank answer template")))
+      .toBe(true);
+
+    const controller = await loader.render("hop-answer-search-controller-v1", {
+      question: "How long was it between starting and completing the migration?",
+      question_date: "2026-08-02",
+      phase: "follow_up",
+      evidence_blueprint: '{"slots":[]}',
+      candidate_catalog: "candidate 1: memory_001",
+    });
+    expect(controller.promptId).toBe("hop-answer-search-controller-v1");
+    expect(controller.messages.some((message) => message.content.includes("discovered_vocabulary")))
+      .toBe(true);
+    expect(controller.messages.every((message) => !message.content.includes("{{"))).toBe(true);
+  });
+
   test("loads select-v4/v5 and answer-v6-package prompts", async () => {
     const loader = new PromptLoader();
     const select = await loader.render("select-v4", {

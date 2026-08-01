@@ -5,6 +5,7 @@
  * - stateful: coverage-guided sequential notes search with persistent evidence.
  * - parallel: one plan, four local search views, batched verification, set cover.
  * - hybrid: parallel candidate discovery, then permissive v1-style admission.
+ * - answer-shaped: gated two-agent blueprint/search feedback over hybrid discovery.
  * - ledger: occurrence-aware claim search, batched verification, set cover.
  *
  * All model-visible session references are deterministic per-case opaque handles.
@@ -41,9 +42,11 @@ import {
 import { tokenizeRetrievalText } from "../retrieval/tokenize.js";
 import type { Bm25SearchResult, RetrievalDocument } from "../retrieval/types.js";
 import {
+  answerShapedModeForQuestion,
   BROAD_HISTORY_RETRIEVAL_PROFILE,
   FOCUSED_RETRIEVAL_PROFILE,
   retrievalProfileForQuestion,
+  type AnswerShapedMode,
   type RetrievalProfile,
 } from "../retrieval/retrievalProfile.js";
 import { PromptLoader, type PromptEnvelope } from "../services/promptLoader.js";
@@ -66,7 +69,7 @@ const OUTPUT_RESERVE = 1_200;
 const LUNA_INPUT_PRICE = 1;
 const LUNA_OUTPUT_PRICE = 6;
 
-type Arm = "stateful" | "parallel" | "hybrid" | "ledger";
+type Arm = "stateful" | "parallel" | "hybrid" | "answer-shaped" | "ledger";
 type Reasoning = "none" | "low" | "medium" | "high";
 
 type SliceCase = {
@@ -138,6 +141,9 @@ type FacetPlan = {
   facets: Facet[];
   queries: QueryLane[];
 };
+
+type AnswerBlueprint = z.infer<typeof AnswerBlueprintSchema>;
+type SearchControllerOutput = z.infer<typeof SearchControllerSchema>;
 
 type CandidateAssessment = {
   session_id: string;
@@ -218,6 +224,67 @@ const FacetPlanSchema = z.strictObject({
       facet_ids: z.array(z.string().min(1).max(20)).min(1).max(10),
     }),
   ).min(1).max(10),
+});
+
+const AnswerBlueprintSchema = z.strictObject({
+  question_mode: z.enum([
+    "lookup",
+    "update",
+    "contradiction",
+    "temporal",
+    "aggregate",
+    "timeline",
+    "summary",
+    "absence",
+  ]),
+  answer_template: z.string().min(1).max(800),
+  completion_rule: z.string().min(1).max(800),
+  coverage_dimensions: z.array(z.string().min(1).max(160)).max(12),
+  slots: z.array(
+    z.strictObject({
+      id: z.string().regex(/^[a-z][a-z0-9_]{0,29}$/u),
+      kind: z.enum([
+        "lookup",
+        "prior_value",
+        "current_value",
+        "temporal_endpoint",
+        "aggregate_member",
+        "comparison",
+        "absence",
+      ]),
+      description: z.string().min(1).max(300),
+      required_evidence_count: z.number().int().min(1).max(6),
+      likely_evidence_phrases: z.array(z.string().min(1).max(120)).min(1).max(12),
+      contrast_terms: z.array(z.string().min(1).max(100)).max(10),
+    }),
+  ).min(1).max(10),
+});
+
+const SearchControllerSchema = z.strictObject({
+  coverage: z.array(
+    z.strictObject({
+      slot_id: z.string().regex(/^[a-z][a-z0-9_]{0,29}$/u),
+      status: z.enum(["covered", "partial", "missing"]),
+      evidence_session_ids: z.array(z.string().regex(/^memory_\d{3}$/u)).max(12),
+      evidence_summary: z.string().max(300),
+    }),
+  ).max(10),
+  queries: z.array(
+    z.strictObject({
+      query: z.string().min(1).max(300),
+      slot_ids: z.array(z.string().regex(/^[a-z][a-z0-9_]{0,29}$/u)).min(1).max(10),
+      lane: z.enum([
+        "question_anchor",
+        "answer_language",
+        "contrast",
+        "temporal",
+        "discovered_vocabulary",
+      ]),
+      purpose: z.string().min(1).max(240),
+    }),
+  ).max(12),
+  stop: z.boolean(),
+  stop_reason: z.string().min(1).max(400),
 });
 
 const CandidateAssessmentsSchema = z.strictObject({
@@ -606,6 +673,206 @@ async function planFacets(args: {
   }
 }
 
+async function planAnswerBlueprint(args: {
+  openai: OpenAI;
+  prompts: PromptLoader;
+  gate: TokenGate;
+  model: string;
+  reasoning: Reasoning;
+  space: CaseSpace;
+  mode: AnswerShapedMode;
+  usage: Usage;
+  modelIo: ModelIoRecord[];
+}): Promise<AnswerBlueprint | null> {
+  const prompt = await args.prompts.render("hop-answer-blueprint-v1", {
+    question: args.space.raw.question,
+    question_date: args.space.raw.question_date,
+    routing_mode: args.mode,
+  });
+  const inputText = envelopeText(prompt);
+  assertNoRawSessionIdLeak(inputText, args.space.rawSessionIds);
+  const release = await args.gate.acquire(estimateTokens(inputText) + OUTPUT_RESERVE);
+  const started = performance.now();
+  try {
+    const response = await args.openai.responses.parse({
+      model: args.model,
+      input: prompt.messages,
+      text: { format: zodTextFormat(AnswerBlueprintSchema, "hop_answer_blueprint_v1") },
+      ...(args.reasoning === "none" ? {} : { reasoning: { effort: args.reasoning } }),
+    });
+    addUsage(args.usage, response);
+    const parsed = response.output_parsed;
+    if (!parsed) throw new Error("answer blueprint returned no structured output");
+    args.modelIo.push({
+      sequence: args.modelIo.length + 1,
+      stage: "answer_blueprint",
+      model: args.model,
+      reasoning: args.reasoning,
+      prompt_messages: prompt.messages,
+      output_text: response.output_text,
+      parsed_output: parsed,
+      input_tokens: response.usage?.input_tokens ?? 0,
+      output_tokens: response.usage?.output_tokens ?? 0,
+      total_tokens: response.usage?.total_tokens ?? 0,
+      latency_ms: performance.now() - started,
+      request_id: response._request_id ?? null,
+      retry_count: 0,
+    });
+    return { ...parsed, question_mode: args.mode };
+  } catch (error) {
+    args.modelIo.push({
+      sequence: args.modelIo.length + 1,
+      stage: "answer_blueprint_fallback",
+      model: args.model,
+      reasoning: args.reasoning,
+      prompt_messages: prompt.messages,
+      output_text: "",
+      parsed_output: null,
+      input_tokens: 0,
+      output_tokens: 0,
+      total_tokens: 0,
+      latency_ms: performance.now() - started,
+      request_id: null,
+      retry_count: 1,
+      error: error instanceof Error ? error.message : String(error),
+    });
+    return null;
+  } finally {
+    release();
+  }
+}
+
+async function runSearchController(args: {
+  openai: OpenAI;
+  prompts: PromptLoader;
+  gate: TokenGate;
+  model: string;
+  reasoning: Reasoning;
+  space: CaseSpace;
+  blueprint: AnswerBlueprint;
+  phase: "initial" | "follow_up";
+  candidateCatalogText: string;
+  usage: Usage;
+  modelIo: ModelIoRecord[];
+}): Promise<SearchControllerOutput | null> {
+  const prompt = await args.prompts.render("hop-answer-search-controller-v1", {
+    question: args.space.raw.question,
+    question_date: args.space.raw.question_date,
+    phase: args.phase,
+    evidence_blueprint: JSON.stringify(args.blueprint, null, 2),
+    candidate_catalog: args.candidateCatalogText,
+  });
+  const inputText = envelopeText(prompt);
+  assertNoRawSessionIdLeak(inputText, args.space.rawSessionIds);
+  const release = await args.gate.acquire(estimateTokens(inputText) + OUTPUT_RESERVE);
+  const started = performance.now();
+  try {
+    const response = await args.openai.responses.parse({
+      model: args.model,
+      input: prompt.messages,
+      text: {
+        format: zodTextFormat(SearchControllerSchema, "hop_answer_search_controller_v1"),
+      },
+      ...(args.reasoning === "none" ? {} : { reasoning: { effort: args.reasoning } }),
+    });
+    addUsage(args.usage, response);
+    const parsed = response.output_parsed;
+    if (!parsed) throw new Error("search controller returned no structured output");
+    args.modelIo.push({
+      sequence: args.modelIo.length + 1,
+      stage: `answer_search_${args.phase}`,
+      model: args.model,
+      reasoning: args.reasoning,
+      prompt_messages: prompt.messages,
+      output_text: response.output_text,
+      parsed_output: parsed,
+      input_tokens: response.usage?.input_tokens ?? 0,
+      output_tokens: response.usage?.output_tokens ?? 0,
+      total_tokens: response.usage?.total_tokens ?? 0,
+      latency_ms: performance.now() - started,
+      request_id: response._request_id ?? null,
+      retry_count: 0,
+    });
+    return parsed;
+  } catch (error) {
+    args.modelIo.push({
+      sequence: args.modelIo.length + 1,
+      stage: `answer_search_${args.phase}_fallback`,
+      model: args.model,
+      reasoning: args.reasoning,
+      prompt_messages: prompt.messages,
+      output_text: "",
+      parsed_output: null,
+      input_tokens: 0,
+      output_tokens: 0,
+      total_tokens: 0,
+      latency_ms: performance.now() - started,
+      request_id: null,
+      retry_count: 1,
+      error: error instanceof Error ? error.message : String(error),
+    });
+    return null;
+  } finally {
+    release();
+  }
+}
+
+function controllerQueries(args: {
+  blueprint: AnswerBlueprint;
+  output: SearchControllerOutput | null;
+  existing?: QueryLane[];
+}): QueryLane[] {
+  const validSlotIds = new Set(args.blueprint.slots.map((slot) => slot.id));
+  const seen = new Set((args.existing ?? []).map((lane) => normalizeQuery(lane.query)));
+  const queries: QueryLane[] = [];
+  for (const candidate of args.output?.queries ?? []) {
+    const facetIds = [...new Set(candidate.slot_ids.filter((id) => validSlotIds.has(id)))];
+    const normalized = normalizeQuery(candidate.query);
+    if (facetIds.length === 0 || normalized.length === 0 || seen.has(normalized)) continue;
+    seen.add(normalized);
+    queries.push({ query: candidate.query, facet_ids: facetIds });
+  }
+  return queries;
+}
+
+function blueprintFallbackQueries(blueprint: AnswerBlueprint): QueryLane[] {
+  return blueprint.slots.map((slot) => ({
+    query: [...slot.likely_evidence_phrases, ...slot.contrast_terms].slice(0, 8).join(" "),
+    facet_ids: [slot.id],
+  }));
+}
+
+function facetPlanFromBlueprint(args: {
+  blueprint: AnswerBlueprint;
+  queries: QueryLane[];
+}): FacetPlan {
+  return {
+    facets: args.blueprint.slots.map((slot) => ({
+      id: slot.id,
+      kind: slot.kind,
+      description: slot.description,
+      query_terms: [...slot.likely_evidence_phrases, ...slot.contrast_terms].slice(0, 12),
+      required_evidence_count: slot.required_evidence_count,
+    })),
+    queries: args.queries.length > 0 ? args.queries : blueprintFallbackQueries(args.blueprint),
+  };
+}
+
+function coverageLedgerText(output: SearchControllerOutput | null): string {
+  if (!output) return "(coverage controller unavailable)";
+  return output.coverage
+    .map(
+      (entry) => {
+        const summary = entry.evidence_summary.replaceAll(
+          /\b(?:memory|session)[-_]\d+\b/giu,
+          "[candidate evidence]",
+        );
+        return `${entry.slot_id}: ${entry.status}; ${summary}`;
+      },
+    )
+    .join("\n");
+}
+
 async function assessCandidates(args: {
   promptName: "hop-multiview-verify-v1" | "hop-ledger-verify-v1";
   openai: OpenAI;
@@ -912,10 +1179,48 @@ function selectMinimalCover(args: {
   return selected;
 }
 
+function rankParallelCandidates(args: {
+  candidates: EvidenceCandidate[];
+  plan: FacetPlan;
+  poolMax: number;
+  coverageAware: boolean;
+}): EvidenceCandidate[] {
+  const ranked = [...args.candidates].sort(
+    (left, right) =>
+      right.score - left.score
+      || right.facetIds.size - left.facetIds.size
+      || left.sessionId.localeCompare(right.sessionId),
+  );
+  if (!args.coverageAware) return ranked.slice(0, args.poolMax);
+
+  const selected: EvidenceCandidate[] = [];
+  const selectedIds = new Set<string>();
+  const maxRounds = Math.max(...args.plan.facets.map((facet) => facet.required_evidence_count));
+  for (let round = 0; round < maxRounds && selected.length < args.poolMax; round += 1) {
+    for (const facet of args.plan.facets) {
+      if (round >= facet.required_evidence_count || selected.length >= args.poolMax) continue;
+      const candidate = ranked.find(
+        (item) => !selectedIds.has(item.sessionId) && item.facetIds.has(facet.id),
+      );
+      if (!candidate) continue;
+      selected.push(candidate);
+      selectedIds.add(candidate.sessionId);
+    }
+  }
+  for (const candidate of ranked) {
+    if (selected.length >= args.poolMax) break;
+    if (selectedIds.has(candidate.sessionId)) continue;
+    selected.push(candidate);
+    selectedIds.add(candidate.sessionId);
+  }
+  return selected;
+}
+
 function discoverParallelPool(args: {
   space: CaseSpace;
   plan: FacetPlan;
   profile: RetrievalProfile;
+  coverageAware?: boolean;
 }): EvidenceCandidate[] {
   const notesDocs = buildNotesDocuments({
     sessionIds: args.space.opaque.sessionIds,
@@ -945,14 +1250,12 @@ function discoverParallelPool(args: {
       });
     }
   }
-  return [...candidates.values()]
-    .sort(
-      (left, right) =>
-        right.score - left.score
-        || right.facetIds.size - left.facetIds.size
-        || left.sessionId.localeCompare(right.sessionId),
-    )
-    .slice(0, args.profile.poolMax);
+  return rankParallelCandidates({
+    candidates: [...candidates.values()],
+    plan: args.plan,
+    poolMax: args.profile.poolMax,
+    coverageAware: args.coverageAware ?? false,
+  });
 }
 
 async function admitWithV1Prompt(args: {
@@ -963,6 +1266,7 @@ async function admitWithV1Prompt(args: {
   reasoning: Reasoning;
   space: CaseSpace;
   pool: EvidenceCandidate[];
+  strategyContext?: string;
   usage: Usage;
   modelIo: ModelIoRecord[];
 }): Promise<{ admitted: string[]; requested: string[] }> {
@@ -976,6 +1280,7 @@ async function admitWithV1Prompt(args: {
     last_tool_results:
       `Parallel multi-view search returned ${String(args.pool.length)} hits. `
       + "This is the complete result set: add every promising session now.\n"
+      + (args.strategyContext ? `${args.strategyContext}\n` : "")
       + candidateCatalog(args.pool, "search hit"),
   });
   const inputText = envelopeText(prompt);
@@ -1114,18 +1419,127 @@ async function runHybrid(args: {
   model: string;
   reasoning: Reasoning;
   space: CaseSpace;
+  answerShapedEnabled?: boolean;
 }): Promise<ArmResult> {
   const usage: Usage = { inputTokens: 0, outputTokens: 0, calls: 0 };
   const modelIo: ModelIoRecord[] = [];
-  const plan = await planFacets({ ...args, usage, modelIo });
   const profile = retrievalProfileForQuestion(args.space.raw.question);
-  const pool = discoverParallelPool({ space: args.space, plan, profile });
+  const answerShapedMode = args.answerShapedEnabled
+    ? answerShapedModeForQuestion(args.space.raw.question)
+    : null;
+  const blueprint = answerShapedMode
+    ? await planAnswerBlueprint({ ...args, mode: answerShapedMode, usage, modelIo })
+    : null;
+
+  if (!blueprint) {
+    const plan = await planFacets({ ...args, usage, modelIo });
+    const pool = discoverParallelPool({ space: args.space, plan, profile });
+    const broadSessionIds = pool
+      .slice(0, profile.bagMax)
+      .map((candidate) => candidate.sessionId);
+    const selection = profile.scope === "broad_history"
+      ? { admitted: broadSessionIds, requested: broadSessionIds }
+      : await admitWithV1Prompt({ ...args, pool, usage, modelIo });
+    return {
+      modelBag: selection.admitted,
+      modelPool: pool.map((item) => item.sessionId),
+      usage,
+      modelIo,
+      trace: [
+        { retrieval_profile: profile },
+        {
+          answer_shaped_workflow: {
+            activated: answerShapedMode !== null,
+            mode: answerShapedMode,
+            status: answerShapedMode ? "blueprint_failed_fallback" : "not_routed",
+          },
+        },
+        { plan },
+        {
+          candidate_pool: pool.map((item) => ({
+            session_id: item.sessionId,
+            score: item.score,
+            facet_ids: [...item.facetIds],
+            ranks: item.ranks,
+          })),
+        },
+        {
+          admission: {
+            method:
+              profile.scope === "broad_history"
+                ? "parallel_per_session_reader"
+                : "v1_prompt",
+            requested: selection.requested,
+            admitted: selection.admitted,
+          },
+        },
+      ],
+    };
+  }
+
+  const initialController = await runSearchController({
+    ...args,
+    blueprint,
+    phase: "initial",
+    candidateCatalogText: "(no search has run yet)",
+    usage,
+    modelIo,
+  });
+  let initialQueries = controllerQueries({ blueprint, output: initialController });
+  if (initialQueries.length === 0) initialQueries = blueprintFallbackQueries(blueprint);
+  const initialPlan = facetPlanFromBlueprint({ blueprint, queries: initialQueries });
+  const firstPool = discoverParallelPool({
+    space: args.space,
+    plan: initialPlan,
+    profile,
+    coverageAware: true,
+  });
+  const followUpController = await runSearchController({
+    ...args,
+    blueprint,
+    phase: "follow_up",
+    candidateCatalogText: candidateCatalog(firstPool.slice(0, 64), "round-1 candidate"),
+    usage,
+    modelIo,
+  });
+  const followUpQueries = controllerQueries({
+    blueprint,
+    output: followUpController,
+    existing: initialQueries,
+  });
+  const combinedQueries = [...initialQueries, ...followUpQueries];
+  const plan = facetPlanFromBlueprint({ blueprint, queries: combinedQueries });
+  const pool = followUpQueries.length > 0
+    ? discoverParallelPool({
+      space: args.space,
+      plan,
+      profile,
+      coverageAware: true,
+    })
+    : firstPool;
   const broadSessionIds = pool
     .slice(0, profile.bagMax)
     .map((candidate) => candidate.sessionId);
+  const strategyContext = [
+    "ANSWER-SHAPED EVIDENCE BLUEPRINT",
+    `mode=${answerShapedMode}`,
+    `answer_template=${blueprint.answer_template}`,
+    `completion_rule=${blueprint.completion_rule}`,
+    "required_slots:",
+    formatFacets(plan.facets),
+    "follow_up_coverage:",
+    coverageLedgerText(followUpController),
+    "Coverage summaries are guidance only. Add only exact memory_### handles printed in search hits.",
+  ].join("\n");
   const selection = profile.scope === "broad_history"
     ? { admitted: broadSessionIds, requested: broadSessionIds }
-    : await admitWithV1Prompt({ ...args, pool, usage, modelIo });
+    : await admitWithV1Prompt({
+      ...args,
+      pool,
+      strategyContext,
+      usage,
+      modelIo,
+    });
   return {
     modelBag: selection.admitted,
     modelPool: pool.map((item) => item.sessionId),
@@ -1133,6 +1547,25 @@ async function runHybrid(args: {
     modelIo,
     trace: [
       { retrieval_profile: profile },
+      {
+        answer_shaped_workflow: {
+          activated: true,
+          mode: answerShapedMode,
+          initial_query_count: initialQueries.length,
+          follow_up_query_count: followUpQueries.length,
+        },
+      },
+      { answer_blueprint: blueprint },
+      { initial_search_controller: initialController },
+      {
+        round_1_candidate_pool: firstPool.map((item) => ({
+          session_id: item.sessionId,
+          score: item.score,
+          facet_ids: [...item.facetIds],
+          ranks: item.ranks,
+        })),
+      },
+      { follow_up_search_controller: followUpController },
       { plan },
       {
         candidate_pool: pool.map((item) => ({
@@ -1650,8 +2083,8 @@ async function main(): Promise<void> {
   loadDotEnv(resolve(PROJECT_ROOT, ".env"));
   const cli = parseArgs(process.argv.slice(2));
   const arm = cli.arm as Arm | undefined;
-  if (!arm || !["stateful", "parallel", "hybrid", "ledger"].includes(arm)) {
-    throw new Error("--arm must be stateful, parallel, hybrid, or ledger");
+  if (!arm || !["stateful", "parallel", "hybrid", "answer-shaped", "ledger"].includes(arm)) {
+    throw new Error("--arm must be stateful, parallel, hybrid, answer-shaped, or ledger");
   }
   if (!process.env.OPENAI_API_KEY) throw new Error("OPENAI_API_KEY is required");
   const idsPath = resolve(PROJECT_ROOT, cli.ids ?? DEFAULT_IDS);
@@ -1699,7 +2132,7 @@ async function main(): Promise<void> {
   async function runOne(indexCase: number, sliceCase: SliceCase): Promise<void> {
     const raw = byId.get(sliceCase.question_id);
     const goldReal = goldById.get(sliceCase.question_id) ?? [];
-    const profile = arm === "hybrid" && raw
+    const profile = (arm === "hybrid" || arm === "answer-shaped") && raw
       ? retrievalProfileForQuestion(raw.question)
       : FOCUSED_RETRIEVAL_PROFILE;
     const caseStarted = Date.now();
@@ -1735,8 +2168,16 @@ async function main(): Promise<void> {
         ? await runStateful({ openai, prompts, gate, model, reasoning, space })
         : arm === "parallel"
           ? await runParallel({ openai, prompts, gate, model, reasoning, space })
-          : arm === "hybrid"
-            ? await runHybrid({ openai, prompts, gate, model, reasoning, space })
+          : arm === "hybrid" || arm === "answer-shaped"
+            ? await runHybrid({
+              openai,
+              prompts,
+              gate,
+              model,
+              reasoning,
+              space,
+              answerShapedEnabled: arm === "answer-shaped",
+            })
             : await runLedger({ openai, prompts, gate, model, reasoning, space });
       const bag = armResult.modelBag.flatMap((id) => {
         const realId = space.opaque.opaqueToReal.get(id);
