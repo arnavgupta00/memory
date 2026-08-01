@@ -5,6 +5,7 @@
  * - stateful: coverage-guided sequential notes search with persistent evidence.
  * - parallel: one plan, four local search views, batched verification, set cover.
  * - hybrid: parallel candidate discovery, then permissive v1-style admission.
+ * - hybrid-dense: family-balanced BM25 + semantic discovery, then v1 admission.
  * - answer-shaped: gated two-agent blueprint/search feedback over hybrid discovery.
  * - ledger: occurrence-aware claim search, batched verification, set cover.
  *
@@ -42,6 +43,22 @@ import {
 import { tokenizeRetrievalText } from "../retrieval/tokenize.js";
 import type { Bm25SearchResult, RetrievalDocument } from "../retrieval/types.js";
 import {
+  collapseSparseViews,
+  familyBalancedRrf,
+  type FamilyFusionScore,
+  type SessionRanking,
+} from "../retrieval/hybridRankFusion.js";
+import {
+  semanticCorpusHash,
+  semanticSessionsFromCase,
+} from "../retrieval/semanticChunker.js";
+import { SemanticIndexSet } from "../retrieval/semanticIndex.js";
+import { createSemanticProvider } from "../retrieval/semanticProviders.js";
+import type {
+  SemanticEmbeddingProvider,
+  SemanticEmbeddingUsage,
+} from "../retrieval/semanticTypes.js";
+import {
   answerShapedModeForQuestion,
   BROAD_HISTORY_RETRIEVAL_PROFILE,
   FOCUSED_RETRIEVAL_PROFILE,
@@ -69,7 +86,7 @@ const OUTPUT_RESERVE = 1_200;
 const LUNA_INPUT_PRICE = 1;
 const LUNA_OUTPUT_PRICE = 6;
 
-type Arm = "stateful" | "parallel" | "hybrid" | "answer-shaped" | "ledger";
+type Arm = "stateful" | "parallel" | "hybrid" | "hybrid-dense" | "answer-shaped" | "ledger";
 type Reasoning = "none" | "low" | "medium" | "high";
 
 type SliceCase = {
@@ -166,6 +183,7 @@ type EvidenceCandidate = {
   facetIds: Set<string>;
   matchedTerms: Set<string>;
   ranks: Array<{ view: string; query: string; rank: number }>;
+  fusion?: FamilyFusionScore;
 };
 
 type ArmResult = {
@@ -174,6 +192,7 @@ type ArmResult = {
   usage: Usage;
   modelIo: ModelIoRecord[];
   trace: unknown[];
+  semanticUsage?: SemanticEmbeddingUsage;
 };
 
 type CaseResult = {
@@ -194,10 +213,18 @@ type CaseResult = {
   input_tokens: number;
   output_tokens: number;
   api_calls: number;
+  semantic_input_tokens: number;
+  semantic_api_calls: number;
   elapsed_ms: number;
   model_io: ModelIoRecord[];
   trace: unknown[];
   error?: string;
+};
+
+type SemanticRuntime = {
+  indexSet: SemanticIndexSet;
+  provider: SemanticEmbeddingProvider;
+  annotations: Map<string, SessionAnnotation>;
 };
 
 const FacetPlanSchema = z.strictObject({
@@ -1258,6 +1285,156 @@ function discoverParallelPool(args: {
   });
 }
 
+type EnsembleDiscovery = {
+  pool: EvidenceCandidate[];
+  usage: SemanticEmbeddingUsage;
+  trace: Record<string, unknown>;
+};
+
+async function discoverEnsemblePool(args: {
+  space: CaseSpace;
+  plan: FacetPlan;
+  profile: RetrievalProfile;
+  semantic: SemanticRuntime;
+}): Promise<EnsembleDiscovery> {
+  const notesDocs = buildNotesDocuments({
+    sessionIds: args.space.opaque.sessionIds,
+    datesBySessionId: args.space.opaque.datesBySessionId,
+    annotations: args.space.opaque.annotations,
+  });
+  const views = new Map<string, Bm25Index>([
+    ["notes", new Bm25Index(notesDocs)],
+    ["user", new Bm25Index(makeRoleDocuments(args.space, "user"))],
+    ["assistant", new Bm25Index(makeRoleDocuments(args.space, "assistant"))],
+    ["all", new Bm25Index(makeRoleDocuments(args.space, "all"))],
+  ]);
+  const allFacetIds = args.plan.facets.map((facet) => facet.id);
+  const lanes: QueryLane[] = [
+    { query: args.space.raw.question, facet_ids: allFacetIds },
+    ...args.plan.queries,
+  ];
+  const candidates = new Map<string, EvidenceCandidate>();
+  const rankings: SessionRanking[] = [];
+  const sparseTrace: Array<Record<string, unknown>> = [];
+
+  for (let queryIndex = 0; queryIndex < lanes.length; queryIndex += 1) {
+    const lane = lanes[queryIndex];
+    if (!lane) continue;
+    const rankedViews: string[][] = [];
+    for (const [view, index] of views) {
+      const results = index.search(lane.query, args.profile.searchTopK);
+      rankedViews.push(results.map((item) => item.documentId));
+      addRankedEvidence({
+        candidates,
+        results,
+        view,
+        query: lane,
+        space: args.space,
+      });
+    }
+    const collapsed = collapseSparseViews(rankedViews);
+    rankings.push({ family: "sparse", queryIndex, sessionIds: collapsed });
+    sparseTrace.push({ query_index: queryIndex, query: lane.query, session_ids: collapsed });
+  }
+
+  const sessions = semanticSessionsFromCase(args.space.raw, args.semantic.annotations);
+  const corpusHash = semanticCorpusHash(sessions);
+  const semanticIndex = args.semantic.indexSet.load(corpusHash);
+  const embeddedQueries = await args.semantic.provider.embedQueries(
+    lanes.map((lane) => lane.query),
+  );
+  if (embeddedQueries.vectors.length !== lanes.length) {
+    throw new Error("semantic provider returned an unexpected query count");
+  }
+  const denseTopK = args.profile.scope === "broad_history"
+    ? args.profile.searchTopK
+    : Math.max(args.profile.searchTopK, args.profile.poolMax);
+  const denseTrace: Array<Record<string, unknown>> = [];
+  for (let queryIndex = 0; queryIndex < lanes.length; queryIndex += 1) {
+    const lane = lanes[queryIndex];
+    const vector = embeddedQueries.vectors[queryIndex];
+    if (!lane || !vector) continue;
+    const rawHits = semanticIndex.searchSessions(vector, denseTopK);
+    const hits = rawHits.flatMap((hit) => {
+      const opaqueId = args.space.opaque.realToOpaque.get(hit.sessionId);
+      return opaqueId ? [{ ...hit, opaqueId }] : [];
+    });
+    rankings.push({
+      family: "dense",
+      queryIndex,
+      sessionIds: hits.map((item) => item.opaqueId),
+    });
+    denseTrace.push({
+      query_index: queryIndex,
+      query: lane.query,
+      hits: hits.map((item) => ({
+        session_id: item.opaqueId,
+        rank: item.rank,
+        cosine: item.score,
+        chunk_id: item.chunk.chunkId,
+        source: item.chunk.source,
+        turn_index: item.chunk.turnIndex,
+      })),
+    });
+    for (const hit of hits) {
+      let candidate = candidates.get(hit.opaqueId);
+      if (!candidate) {
+        candidate = {
+          sessionId: hit.opaqueId,
+          date: args.space.dateByOpaqueId.get(hit.opaqueId) ?? "",
+          score: 0,
+          excerpts: new Set(),
+          facetIds: new Set(),
+          matchedTerms: new Set(),
+          ranks: [],
+        };
+        candidates.set(hit.opaqueId, candidate);
+      }
+      for (const facetId of lane.facet_ids) candidate.facetIds.add(facetId);
+      candidate.ranks.push({
+        view: `dense:${args.semantic.provider.config.model}`,
+        query: lane.query,
+        rank: hit.rank,
+      });
+      candidate.excerpts.add(
+        `dense ${hit.chunk.source}: ${clip(hit.chunk.text, 520)}`,
+      );
+    }
+  }
+
+  const fused = familyBalancedRrf({ rankings, queryCount: lanes.length, k: 60 });
+  const pool = fused.flatMap((fusion) => {
+    const candidate = candidates.get(fusion.sessionId);
+    if (!candidate) return [];
+    candidate.score = fusion.score;
+    candidate.fusion = fusion;
+    return [candidate];
+  }).slice(0, args.profile.poolMax);
+  return {
+    pool,
+    usage: embeddedQueries.usage,
+    trace: {
+      method: "family_balanced_rrf_v1",
+      rrf_k: 60,
+      corpus_hash: corpusHash,
+      provider: args.semantic.provider.config.provider,
+      model: args.semantic.provider.config.model,
+      dimension: args.semantic.provider.config.dimension,
+      dense_top_k: denseTopK,
+      query_count: lanes.length,
+      sparse_rankings: sparseTrace,
+      dense_rankings: denseTrace,
+      fused_pool: pool.map((item) => ({
+        session_id: item.sessionId,
+        score: item.score,
+        sparse_score: item.fusion?.sparseScore ?? 0,
+        dense_score: item.fusion?.denseScore ?? 0,
+        facet_ids: [...item.facetIds],
+      })),
+    },
+  };
+}
+
 async function admitWithV1Prompt(args: {
   openai: OpenAI;
   prompts: PromptLoader;
@@ -1420,6 +1597,7 @@ async function runHybrid(args: {
   reasoning: Reasoning;
   space: CaseSpace;
   answerShapedEnabled?: boolean;
+  semantic?: SemanticRuntime;
 }): Promise<ArmResult> {
   const usage: Usage = { inputTokens: 0, outputTokens: 0, calls: 0 };
   const modelIo: ModelIoRecord[] = [];
@@ -1433,7 +1611,16 @@ async function runHybrid(args: {
 
   if (!blueprint) {
     const plan = await planFacets({ ...args, usage, modelIo });
-    const pool = discoverParallelPool({ space: args.space, plan, profile });
+    const ensemble = args.semantic
+      ? await discoverEnsemblePool({
+        space: args.space,
+        plan,
+        profile,
+        semantic: args.semantic,
+      })
+      : null;
+    const pool = ensemble?.pool
+      ?? discoverParallelPool({ space: args.space, plan, profile });
     const broadSessionIds = pool
       .slice(0, profile.bagMax)
       .map((candidate) => candidate.sessionId);
@@ -1445,8 +1632,10 @@ async function runHybrid(args: {
       modelPool: pool.map((item) => item.sessionId),
       usage,
       modelIo,
+      ...(ensemble ? { semanticUsage: ensemble.usage } : {}),
       trace: [
         { retrieval_profile: profile },
+        ...(ensemble ? [{ ensemble_discovery: ensemble.trace }] : []),
         {
           answer_shaped_workflow: {
             activated: answerShapedMode !== null,
@@ -1459,6 +1648,8 @@ async function runHybrid(args: {
           candidate_pool: pool.map((item) => ({
             session_id: item.sessionId,
             score: item.score,
+            sparse_score: item.fusion?.sparseScore ?? null,
+            dense_score: item.fusion?.denseScore ?? null,
             facet_ids: [...item.facetIds],
             ranks: item.ranks,
           })),
@@ -2083,8 +2274,8 @@ async function main(): Promise<void> {
   loadDotEnv(resolve(PROJECT_ROOT, ".env"));
   const cli = parseArgs(process.argv.slice(2));
   const arm = cli.arm as Arm | undefined;
-  if (!arm || !["stateful", "parallel", "hybrid", "answer-shaped", "ledger"].includes(arm)) {
-    throw new Error("--arm must be stateful, parallel, hybrid, answer-shaped, or ledger");
+  if (!arm || !["stateful", "parallel", "hybrid", "hybrid-dense", "answer-shaped", "ledger"].includes(arm)) {
+    throw new Error("--arm must be stateful, parallel, hybrid, hybrid-dense, answer-shaped, or ledger");
   }
   if (!process.env.OPENAI_API_KEY) throw new Error("OPENAI_API_KEY is required");
   const idsPath = resolve(PROJECT_ROOT, cli.ids ?? DEFAULT_IDS);
@@ -2096,6 +2287,13 @@ async function main(): Promise<void> {
   const windowSeconds = Number(cli["window-seconds"] ?? "60");
   const model = cli.model ?? "gpt-5.6-luna";
   const reasoning = (cli.reasoning ?? "low") as Reasoning;
+  const semanticIndexPath = cli["semantic-index"]
+    ? resolve(PROJECT_ROOT, cli["semantic-index"])
+    : null;
+  const embeddingConcurrency = Number(cli["embedding-concurrency"] ?? "8");
+  if (arm === "hybrid-dense" && !semanticIndexPath) {
+    throw new Error("--semantic-index is required for --arm hybrid-dense");
+  }
   const limit = cli.limit ? Number(cli.limit) : undefined;
   const outPath = resolve(
     PROJECT_ROOT,
@@ -2118,6 +2316,18 @@ async function main(): Promise<void> {
   const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY, maxRetries: 2 });
   const prompts = new PromptLoader();
   const gate = new TokenGate(tokenBudget, windowSeconds, concurrency);
+  const semanticRuntime = arm === "hybrid-dense" && semanticIndexPath
+    ? (() => {
+      const indexSet = new SemanticIndexSet(semanticIndexPath);
+      const provider = createSemanticProvider({
+        provider: indexSet.manifest.provider,
+        model: indexSet.manifest.model,
+        dimension: indexSet.manifest.dimension,
+        maxConcurrency: embeddingConcurrency,
+      });
+      return { indexSet, provider, annotations } satisfies SemanticRuntime;
+    })()
+    : null;
   const results = Array<CaseResult | undefined>(selected.length);
   let cursor = 0;
   const started = Date.now();
@@ -2132,7 +2342,7 @@ async function main(): Promise<void> {
   async function runOne(indexCase: number, sliceCase: SliceCase): Promise<void> {
     const raw = byId.get(sliceCase.question_id);
     const goldReal = goldById.get(sliceCase.question_id) ?? [];
-    const profile = (arm === "hybrid" || arm === "answer-shaped") && raw
+    const profile = (arm === "hybrid" || arm === "hybrid-dense" || arm === "answer-shaped") && raw
       ? retrievalProfileForQuestion(raw.question)
       : FOCUSED_RETRIEVAL_PROFILE;
     const caseStarted = Date.now();
@@ -2155,6 +2365,8 @@ async function main(): Promise<void> {
         input_tokens: 0,
         output_tokens: 0,
         api_calls: 0,
+        semantic_input_tokens: 0,
+        semantic_api_calls: 0,
         elapsed_ms: 0,
         model_io: [],
         trace: [],
@@ -2168,7 +2380,7 @@ async function main(): Promise<void> {
         ? await runStateful({ openai, prompts, gate, model, reasoning, space })
         : arm === "parallel"
           ? await runParallel({ openai, prompts, gate, model, reasoning, space })
-          : arm === "hybrid" || arm === "answer-shaped"
+          : arm === "hybrid" || arm === "hybrid-dense" || arm === "answer-shaped"
             ? await runHybrid({
               openai,
               prompts,
@@ -2177,6 +2389,9 @@ async function main(): Promise<void> {
               reasoning,
               space,
               answerShapedEnabled: arm === "answer-shaped",
+              ...(arm === "hybrid-dense" && semanticRuntime
+                ? { semantic: semanticRuntime }
+                : {}),
             })
             : await runLedger({ openai, prompts, gate, model, reasoning, space });
       const bag = armResult.modelBag.flatMap((id) => {
@@ -2205,6 +2420,8 @@ async function main(): Promise<void> {
         input_tokens: armResult.usage.inputTokens,
         output_tokens: armResult.usage.outputTokens,
         api_calls: armResult.usage.calls,
+        semantic_input_tokens: armResult.semanticUsage?.inputTokens ?? 0,
+        semantic_api_calls: armResult.semanticUsage?.requests ?? 0,
         elapsed_ms: Date.now() - caseStarted,
         model_io: armResult.modelIo,
         trace: armResult.trace,
@@ -2228,6 +2445,8 @@ async function main(): Promise<void> {
         input_tokens: 0,
         output_tokens: 0,
         api_calls: 0,
+        semantic_input_tokens: 0,
+        semantic_api_calls: 0,
         elapsed_ms: Date.now() - caseStarted,
         model_io: [],
         trace: [],
@@ -2274,6 +2493,14 @@ async function main(): Promise<void> {
   const finished = results.filter((item): item is CaseResult => item !== undefined);
   const inputTokens = finished.reduce((sum, item) => sum + item.input_tokens, 0);
   const outputTokens = finished.reduce((sum, item) => sum + item.output_tokens, 0);
+  const semanticInputTokens = finished.reduce(
+    (sum, item) => sum + item.semantic_input_tokens,
+    0,
+  );
+  const semanticApiCalls = finished.reduce(
+    (sum, item) => sum + item.semantic_api_calls,
+    0,
+  );
   const payload = {
     created_at: new Date().toISOString(),
     arm,
@@ -2287,6 +2514,15 @@ async function main(): Promise<void> {
       focused: FOCUSED_RETRIEVAL_PROFILE,
       broad_history: BROAD_HISTORY_RETRIEVAL_PROFILE,
     },
+    semantic_index: semanticRuntime
+      ? {
+        path: semanticIndexPath,
+        provider: semanticRuntime.indexSet.manifest.provider,
+        model: semanticRuntime.indexSet.manifest.model,
+        dimension: semanticRuntime.indexSet.manifest.dimension,
+        chunker_version: semanticRuntime.indexSet.manifest.chunker_version,
+      }
+      : null,
     session_id_visibility: "opaque_per_case_v1",
     rate_limit: {
       concurrency,
@@ -2298,6 +2534,8 @@ async function main(): Promise<void> {
       output_tokens: outputTokens,
       total_tokens: inputTokens + outputTokens,
       api_calls: finished.reduce((sum, item) => sum + item.api_calls, 0),
+      semantic_query_input_tokens: semanticInputTokens,
+      semantic_query_api_calls: semanticApiCalls,
       estimated_cost_usd:
         (inputTokens * LUNA_INPUT_PRICE + outputTokens * LUNA_OUTPUT_PRICE) / 1_000_000,
       elapsed_ms: Date.now() - started,

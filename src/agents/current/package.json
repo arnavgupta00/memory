@@ -23,6 +23,7 @@
     "gate:hop": "node --import tsx --max-old-space-size=8192 src/scripts/hopRetrieveGate.ts",
     "gate:hop-packs": "node --import tsx --max-old-space-size=8192 src/scripts/buildHopTeacherPacks.ts",
     "build:beam-1m-canaries": "node --import tsx src/scripts/buildBeam1mCanaries.ts",
+    "build:semantic-index": "node --import tsx --max-old-space-size=8192 src/scripts/buildSemanticIndex.ts",
     "prepare:beam-1m": "node --import tsx --max-old-space-size=8192 src/scripts/prepareBeam1m.ts",
     "setup:beam-judge": "node --import tsx src/scripts/setupBeamOfficialJudge.ts",
     "run:beam-1m": "node --import tsx --max-old-space-size=8192 src/scripts/beam1mCanary.ts",

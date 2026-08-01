@@ -28,6 +28,7 @@ const STAGES = [
   "preflight",
   "prepare",
   "ingest",
+  "semantic-index",
   "retrieve",
   "answer",
   "export",
@@ -125,7 +126,13 @@ async function main(): Promise<void> {
   if (stageArg !== "all" && !STAGES.includes(stageArg as Stage)) {
     throw new Error(`--stage must be all or one of ${STAGES.join(", ")}`);
   }
-  const stages: Stage[] = stageArg === "all" ? [...STAGES] : [stageArg as Stage];
+  const retrievalArm = args["retrieval-arm"] ?? "hybrid";
+  if (!new Set(["hybrid", "hybrid-dense", "answer-shaped"]).has(retrievalArm)) {
+    throw new Error("--retrieval-arm must be hybrid, hybrid-dense, or answer-shaped");
+  }
+  const stages: Stage[] = stageArg === "all"
+    ? STAGES.filter((stage) => stage !== "semantic-index" || retrievalArm === "hybrid-dense")
+    : [stageArg as Stage];
   const beamRoot = resolve(PROJECT_ROOT, required(args["beam-root"], "--beam-root"));
   const beamRepo = args["beam-repo"]
     ? resolve(PROJECT_ROOT, args["beam-repo"])
@@ -140,19 +147,28 @@ async function main(): Promise<void> {
   const inputDir = resolve(runRoot, "input");
   const annotationsDir = resolve(runRoot, "annotations");
   const logsDir = resolve(runRoot, "logs");
-  const retrievalPath = resolve(runRoot, "retrieval/hybrid.json");
+  const retrievalPath = resolve(
+    runRoot,
+    retrievalArm === "hybrid" ? "retrieval/hybrid.json" : `retrieval/${retrievalArm}.json`,
+  );
   const retrievalCases = resolve(runRoot, "traces/retrieval/cases");
   const downstreamDir = resolve(runRoot, "downstream");
-  const downstreamRun = resolve(downstreamDir, "architecture-0008-3");
+  const architectureName = retrievalArm === "hybrid-dense" ? "architecture-0008.2" : "architecture-0008";
+  const downstreamRun = resolve(downstreamDir, `${architectureName}-3`);
   const officialResults = resolve(runRoot, "official-results");
   const concurrency = args.concurrency ?? "128";
   const ingestConcurrency = args["ingest-concurrency"] ?? "256";
   const tokenBudget = args["token-budget"] ?? "1900000";
   const judgeWorkers = args["judge-workers"] ?? "10";
-  const retrievalArm = args["retrieval-arm"] ?? "hybrid";
-  if (!new Set(["hybrid", "answer-shaped"]).has(retrievalArm)) {
-    throw new Error("--retrieval-arm must be hybrid or answer-shaped");
+  const embeddingProvider = args["embedding-provider"] ?? "voyage";
+  if (!new Set(["voyage", "gemini", "openai"]).has(embeddingProvider)) {
+    throw new Error("--embedding-provider must be voyage, gemini, or openai");
   }
+  const embeddingConcurrency = args["embedding-concurrency"] ?? "8";
+  const corpusConcurrency = args["corpus-concurrency"] ?? "3";
+  const semanticIndexDir = args["semantic-index"]
+    ? resolve(PROJECT_ROOT, args["semantic-index"])
+    : resolve(runRoot, "semantic-index", embeddingProvider);
   const python = args.python ?? (existsSync(DEFAULT_JUDGE_PYTHON) ? DEFAULT_JUDGE_PYTHON : "python3");
 
   if (stageArg === "all" && existsSync(runRoot)) {
@@ -167,7 +183,7 @@ async function main(): Promise<void> {
     schema_version: 1,
     benchmark: "BEAM",
     tier: "1M",
-    architecture: "0008",
+    architecture: retrievalArm === "hybrid-dense" ? "0008.2" : "0008",
     status: "running",
     created_at: new Date().toISOString(),
     requested_stages: stages,
@@ -180,6 +196,15 @@ async function main(): Promise<void> {
       planner_and_admission_model: "gpt-5.6-luna",
       planner_and_admission_reasoning: "low",
       retrieval_arm: retrievalArm,
+      ...(retrievalArm === "hybrid-dense"
+        ? {
+          semantic_retrieval: {
+            provider: embeddingProvider,
+            index: semanticIndexDir,
+            fusion: "family-balanced-rrf-v1",
+          },
+        }
+        : {}),
       reader_model: "gpt-5.4-nano-2026-03-17",
       reader_reasoning: "low",
       answer_model: "gpt-5.6-luna",
@@ -195,6 +220,7 @@ async function main(): Promise<void> {
       token_budget_per_minute: Number(tokenBudget),
       question_concurrency: Number(concurrency),
       ingestion_concurrency: Number(ingestConcurrency),
+      embedding_concurrency: Number(embeddingConcurrency),
     },
     judge: {
       implementation: "official pinned BEAM evaluator",
@@ -246,6 +272,16 @@ async function main(): Promise<void> {
       "--concurrency", ingestConcurrency,
       "--token-budget", tokenBudget,
     ])],
+    ["semantic-index", commandForTypeScript("buildSemanticIndex.ts", [
+      "--dataset", resolve(inputDir, "dataset.json"),
+      "--annotations", annotationsDir,
+      "--provider", embeddingProvider,
+      "--concurrency", embeddingConcurrency,
+      "--corpus-concurrency", corpusConcurrency,
+      "--out", semanticIndexDir,
+      ...(args["embedding-model"] ? ["--model", args["embedding-model"]] : []),
+      ...(args["embedding-dimension"] ? ["--dimension", args["embedding-dimension"]] : []),
+    ])],
     ["retrieve", commandForTypeScript("hopArchitectureScreen.ts", [
       "--arm", retrievalArm,
       "--ids", resolve(inputDir, "slice.json"),
@@ -258,10 +294,16 @@ async function main(): Promise<void> {
       "--token-budget", tokenBudget,
       "--case-artifacts", retrievalCases,
       "--out", retrievalPath,
+      ...(retrievalArm === "hybrid-dense"
+        ? [
+          "--semantic-index", semanticIndexDir,
+          "--embedding-concurrency", embeddingConcurrency,
+        ]
+        : []),
     ])],
     ["answer", commandForTypeScript("hopBagDownstreamGate.ts", [
       "--hop-run", retrievalPath,
-      "--out-prefix", "architecture-0008",
+      "--out-prefix", architectureName,
       "--arms", "3",
       "--dataset", resolve(inputDir, "dataset.json"),
       "--oracle", resolve(inputDir, "oracle.json"),
@@ -281,21 +323,21 @@ async function main(): Promise<void> {
       "--beam-root", beamRoot,
       "--predictions", resolve(downstreamRun, "predictions.jsonl"),
       "--out", officialResults,
-      "--filename", "architecture-0008.json",
+      "--filename", `${architectureName}.json`,
     ])],
     ["judge", [python, [
       resolve(SCRIPT_ROOT, "runBeamOfficialEvaluation.py"),
       "--beam-repo", beamRepo ?? "",
       "--beam-root", beamRoot,
       "--results", officialResults,
-      "--filename", "architecture-0008.json",
+      "--filename", `${architectureName}.json`,
       "--max-workers", judgeWorkers,
       "--python", python,
     ]]],
     ["summarize", commandForTypeScript("summarizeBeam1mEvaluation.ts", [
       "--manifest", manifest,
       "--results", officialResults,
-      "--filename", "architecture-0008.json",
+      "--filename", `${architectureName}.json`,
       "--out", resolve(runRoot, "beam-official-summary.json"),
     ])],
   ]);
