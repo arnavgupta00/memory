@@ -40,6 +40,39 @@ class Semaphore {
   }
 }
 
+class SlidingTokenGate {
+  readonly #budget: number;
+  readonly #windowMs: number;
+  readonly #history: Array<{ at: number; tokens: number }> = [];
+
+  constructor(budget: number, windowMs = 60_000) {
+    this.#budget = budget;
+    this.#windowMs = windowMs;
+  }
+
+  async acquire(tokens: number): Promise<void> {
+    const reserved = Math.min(Math.max(1, tokens), this.#budget);
+    for (;;) {
+      const now = Date.now();
+      while (this.#history[0] && now - this.#history[0].at >= this.#windowMs) {
+        this.#history.shift();
+      }
+      const used = this.#history.reduce((sum, item) => sum + item.tokens, 0);
+      if (used + reserved <= this.#budget) {
+        this.#history.push({ at: now, tokens: reserved });
+        return;
+      }
+      const oldest = this.#history[0];
+      const waitMs = oldest ? Math.max(25, oldest.at + this.#windowMs - now + 25) : 25;
+      await new Promise<void>((resolveWait) => setTimeout(resolveWait, Math.min(waitMs, 60_000)));
+    }
+  }
+}
+
+async function wait(milliseconds: number): Promise<void> {
+  await new Promise<void>((resolveWait) => setTimeout(resolveWait, milliseconds));
+}
+
 function approximateTokens(texts: string[]): number {
   return Math.max(1, Math.ceil(texts.reduce((sum, text) => sum + text.length, 0) / 4));
 }
@@ -72,15 +105,22 @@ function addUsage(
 function documentBatches(
   documents: SemanticDocumentEmbeddingInput[],
 ): SemanticDocumentEmbeddingInput[][] {
+  // Provider tokenization is materially denser than the generic chars/4
+  // estimate on code-heavy BEAM sessions. Keep a wide margin below Voyage's
+  // 120K hard request limit; observed BEAM batches can be ~1.36x the estimate.
+  const estimatedTokenBudget = 70_000;
   const output: SemanticDocumentEmbeddingInput[][] = [];
   let batch: SemanticDocumentEmbeddingInput[] = [];
   let tokens = 0;
   for (const document of documents) {
     const documentTokens = approximateTokens(document.chunks);
-    if (documentTokens > 110_000) {
-      throw new Error(`semantic session ${document.sessionId} exceeds the 110K request safety limit`);
+    if (documentTokens > estimatedTokenBudget) {
+      throw new Error(`semantic session ${document.sessionId} exceeds the request safety limit`);
     }
-    if (batch.length > 0 && (tokens + documentTokens > 100_000 || batch.length >= 256)) {
+    if (
+      batch.length > 0
+      && (tokens + documentTokens > estimatedTokenBudget || batch.length >= 256)
+    ) {
       output.push(batch);
       batch = [];
       tokens = 0;
@@ -96,6 +136,7 @@ class VoyageContextProvider implements SemanticEmbeddingProvider {
   readonly config: SemanticProviderConfig;
   readonly #apiKey: string;
   readonly #semaphore: Semaphore;
+  readonly #tokenGate = new SlidingTokenGate(2_700_000);
 
   constructor(config: SemanticProviderConfig, apiKey: string) {
     this.config = config;
@@ -107,43 +148,57 @@ class VoyageContextProvider implements SemanticEmbeddingProvider {
     groups: number[][][];
     inputTokens: number;
   }> {
+    // The generic estimate can undercount Voyage tokens by ~36% on BEAM's
+    // code-heavy text. Reserve 1.5x against the account's 3M TPM allowance.
+    await this.#tokenGate.acquire(Math.ceil(approximateTokens(inputs.flat()) * 1.5));
     return this.#semaphore.run(async () => {
-      const response = await fetch("https://api.voyageai.com/v1/contextualizedembeddings", {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${this.#apiKey}`,
-          "content-type": "application/json",
-        },
-        body: JSON.stringify({
-          inputs,
-          input_type: inputType,
-          model: this.config.model,
-          output_dimension: this.config.dimension,
-        }),
-      });
-      if (!response.ok) {
-        const body = (await response.text()).slice(0, 1_000);
-        throw new Error(`Voyage embeddings failed (${String(response.status)}): ${body}`);
-      }
-      const payload = await response.json() as VoyageResponse;
-      if (!Array.isArray(payload.data) || payload.data.length !== inputs.length) {
-        throw new Error("Voyage embeddings returned an unexpected document count");
-      }
-      const groups = payload.data.map((group, groupIndex) => {
-        const expected = inputs[groupIndex]?.length ?? 0;
-        if (!Array.isArray(group.data) || group.data.length !== expected) {
-          throw new Error(`Voyage embeddings returned an unexpected chunk count for group ${String(groupIndex)}`);
+      for (let attempt = 0; attempt < 6; attempt += 1) {
+        const response = await fetch("https://api.voyageai.com/v1/contextualizedembeddings", {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${this.#apiKey}`,
+            "content-type": "application/json",
+          },
+          body: JSON.stringify({
+            inputs,
+            input_type: inputType,
+            model: this.config.model,
+            output_dimension: this.config.dimension,
+          }),
+        });
+        if (response.ok) {
+          const payload = await response.json() as VoyageResponse;
+          if (!Array.isArray(payload.data) || payload.data.length !== inputs.length) {
+            throw new Error("Voyage embeddings returned an unexpected document count");
+          }
+          const groups = payload.data.map((group, groupIndex) => {
+            const expected = inputs[groupIndex]?.length ?? 0;
+            if (!Array.isArray(group.data) || group.data.length !== expected) {
+              throw new Error(`Voyage embeddings returned an unexpected chunk count for group ${String(groupIndex)}`);
+            }
+            return group.data.map((item, itemIndex) => validateVector(
+              item.embedding,
+              this.config.dimension,
+              `Voyage group ${String(groupIndex)} chunk ${String(itemIndex)}`,
+            ));
+          });
+          return {
+            groups,
+            inputTokens: Number(payload.usage?.total_tokens ?? approximateTokens(inputs.flat())),
+          };
         }
-        return group.data.map((item, itemIndex) => validateVector(
-          item.embedding,
-          this.config.dimension,
-          `Voyage group ${String(groupIndex)} chunk ${String(itemIndex)}`,
-        ));
-      });
-      return {
-        groups,
-        inputTokens: Number(payload.usage?.total_tokens ?? approximateTokens(inputs.flat())),
-      };
+        const body = (await response.text()).slice(0, 1_000);
+        const retryable = response.status === 429 || response.status >= 500;
+        if (!retryable || attempt === 5) {
+          throw new Error(`Voyage embeddings failed (${String(response.status)}): ${body}`);
+        }
+        const retryAfterSeconds = Number(response.headers.get("retry-after") ?? "0");
+        const delayMs = Number.isFinite(retryAfterSeconds) && retryAfterSeconds > 0
+          ? Math.min(retryAfterSeconds * 1_000, 60_000)
+          : Math.min(5_000 * 2 ** attempt, 60_000);
+        await wait(delayMs);
+      }
+      throw new Error("Voyage embeddings exhausted retries");
     });
   }
 
