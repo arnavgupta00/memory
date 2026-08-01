@@ -28,6 +28,10 @@ import OpenAI from "openai";
 import { zodTextFormat } from "openai/helpers/zod";
 import { z } from "zod";
 
+import {
+  loadArchitectureCases,
+  type ArchitectureTurn,
+} from "../benchmarks/architectureDataset.js";
 import { PromptLoader } from "../services/promptLoader.js";
 import { assertNoRawSessionIdLeak } from "../retrieval/opaqueSessionIds.js";
 
@@ -57,14 +61,6 @@ const AnnotationSchema = z.object({
   ),
 });
 type Annotation = z.infer<typeof AnnotationSchema>;
-
-type RawTurn = { role: "user" | "assistant"; content: string; has_answer?: boolean };
-type RawCase = {
-  question_id: string;
-  haystack_session_ids: string[];
-  haystack_dates: string[];
-  haystack_sessions: RawTurn[][];
-};
 
 function loadDotEnv(path: string): void {
   if (!existsSync(path)) return;
@@ -200,7 +196,7 @@ function resolveSlice(
   throw new Error(`unknown slice: ${name}`);
 }
 
-function formatUserTurns(turns: RawTurn[]): string {
+function formatUserTurns(turns: ArchitectureTurn[]): string {
   const lines: string[] = [];
   for (let index = 0; index < turns.length; index += 1) {
     const turn = turns[index];
@@ -291,7 +287,7 @@ async function main(): Promise<void> {
     : JSON.parse(readFileSync(resolve(runDir, "manifest.json"), "utf8")) as {
       selected_question_ids: string[];
     };
-  const dataset = JSON.parse(readFileSync(datasetPath, "utf8")) as RawCase[];
+  const dataset = loadArchitectureCases(datasetPath);
   const oracleList = JSON.parse(readFileSync(oraclePath, "utf8")) as Array<{
     question_id: string;
     answer_session_ids: string[];
@@ -305,7 +301,7 @@ async function main(): Promise<void> {
     ? manifest.question_ids
     : manifest.selected_question_ids;
   const qids = resolveSlice(slice, runDir, selectedQuestionIds, oracle);
-  const sessions = new Map<string, { date: string; turns: RawTurn[] }>();
+  const sessions = new Map<string, { date: string; turns: ArchitectureTurn[] }>();
   for (const q of qids) {
     const raw = byId.get(q);
     if (!raw) continue;

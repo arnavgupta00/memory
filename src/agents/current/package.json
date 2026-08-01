@@ -21,7 +21,13 @@
     "gate:package-rebuild": "node --import tsx --max-old-space-size=8192 src/scripts/packageRebuildGate.ts",
     "gate:session-routing": "node --import tsx --max-old-space-size=8192 src/scripts/sessionRoutingGate.ts",
     "gate:hop": "node --import tsx --max-old-space-size=8192 src/scripts/hopRetrieveGate.ts",
-    "gate:hop-packs": "node --import tsx --max-old-space-size=8192 src/scripts/buildHopTeacherPacks.ts"
+    "gate:hop-packs": "node --import tsx --max-old-space-size=8192 src/scripts/buildHopTeacherPacks.ts",
+    "build:beam-1m-canaries": "node --import tsx src/scripts/buildBeam1mCanaries.ts",
+    "prepare:beam-1m": "node --import tsx --max-old-space-size=8192 src/scripts/prepareBeam1m.ts",
+    "setup:beam-judge": "node --import tsx src/scripts/setupBeamOfficialJudge.ts",
+    "run:beam-1m": "node --import tsx --max-old-space-size=8192 src/scripts/beam1mCanary.ts",
+    "export:beam-1m": "node --import tsx src/scripts/exportBeam1mAnswers.ts",
+    "summarize:beam-1m": "node --import tsx src/scripts/summarizeBeam1mEvaluation.ts"
   },
   "dependencies": {
     "@google/genai": "2.13.0",

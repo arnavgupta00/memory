@@ -5,6 +5,7 @@
 **Design:** [architecture/0008-hop-hybrid-arm3.md](architecture/0008-hop-hybrid-arm3.md)
 **Checkpoint:** [architecture/0008-CHECKPOINT-2026-07-31.md](architecture/0008-CHECKPOINT-2026-07-31.md)
 **Certification:** [architecture/0008-FULL500-CERTIFICATION-2026-07-31.md](architecture/0008-FULL500-CERTIFICATION-2026-07-31.md)
+**BEAM checkpoint:** [architecture/BEAM-1M-CANARY-A-CHECKPOINT-2026-08-01.md](architecture/BEAM-1M-CANARY-A-CHECKPOINT-2026-08-01.md)
 
 ## Selected pipeline
 
@@ -76,6 +77,12 @@ over the same corpus.
 Architecture 0008 is implemented and certified through the offline retrieval
 and downstream evaluation pipeline. Live host wiring remains pending and is
 not part of the certification.
+
+The BEAM-1M adapter keeps this focused path unchanged for normal questions. An
+explicit-order question-only router selects a wide-history profile for timeline
+questions. On Canary A, the selected route has a controlled official macro of
+**64.69%**, versus the **62.92%** frozen baseline. Architecture 0005.4 was rejected
+for this role at **26.33%** event ordering versus **51.70%** for the selected route.
 
 Previous active architecture 0005.4.4 and all earlier designs remain preserved
 under [architecture/](architecture/) and in

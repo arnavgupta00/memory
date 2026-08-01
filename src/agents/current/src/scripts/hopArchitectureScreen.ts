@@ -22,6 +22,11 @@ import type {
 } from "openai/resources/responses/responses";
 import { z } from "zod";
 
+import {
+  loadArchitectureCases,
+  type ArchitectureCase as RawCase,
+  type ArchitectureTurn as RawTurn,
+} from "../benchmarks/architectureDataset.js";
 import { Bm25Index } from "../retrieval/bm25.js";
 import {
   buildNotesDocuments,
@@ -35,6 +40,12 @@ import {
 } from "../retrieval/opaqueSessionIds.js";
 import { tokenizeRetrievalText } from "../retrieval/tokenize.js";
 import type { Bm25SearchResult, RetrievalDocument } from "../retrieval/types.js";
+import {
+  BROAD_HISTORY_RETRIEVAL_PROFILE,
+  FOCUSED_RETRIEVAL_PROFILE,
+  retrievalProfileForQuestion,
+  type RetrievalProfile,
+} from "../retrieval/retrievalProfile.js";
 import { PromptLoader, type PromptEnvelope } from "../services/promptLoader.js";
 
 const PROJECT_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "../../../../../");
@@ -48,8 +59,8 @@ const DEFAULT_ANNOTATIONS = resolve(
   PROJECT_ROOT,
   "runs/local-archive/backbone/session-annotations-v1",
 );
-const BAG_MAX = 12;
-const POOL_MAX = 24;
+const BAG_MAX = FOCUSED_RETRIEVAL_PROFILE.bagMax;
+const POOL_MAX = FOCUSED_RETRIEVAL_PROFILE.poolMax;
 const HOP_BUDGET = 6;
 const OUTPUT_RESERVE = 1_200;
 const LUNA_INPUT_PRICE = 1;
@@ -57,21 +68,6 @@ const LUNA_OUTPUT_PRICE = 6;
 
 type Arm = "stateful" | "parallel" | "hybrid" | "ledger";
 type Reasoning = "none" | "low" | "medium" | "high";
-
-type RawTurn = {
-  role: "user" | "assistant";
-  content: string;
-};
-
-type RawCase = {
-  question_id: string;
-  question_type: string;
-  question: string;
-  question_date: string;
-  haystack_session_ids: string[];
-  haystack_dates: string[];
-  haystack_sessions: RawTurn[][];
-};
 
 type SliceCase = {
   question_id: string;
@@ -186,6 +182,9 @@ type CaseResult = {
   candidate_pool_full_gold: boolean;
   gold_recall: number;
   candidate_pool_gold_recall: number;
+  retrieval_scope: RetrievalProfile["scope"];
+  bag_limit: number;
+  pool_limit: number;
   input_tokens: number;
   output_tokens: number;
   api_calls: number;
@@ -916,6 +915,7 @@ function selectMinimalCover(args: {
 function discoverParallelPool(args: {
   space: CaseSpace;
   plan: FacetPlan;
+  profile: RetrievalProfile;
 }): EvidenceCandidate[] {
   const notesDocs = buildNotesDocuments({
     sessionIds: args.space.opaque.sessionIds,
@@ -938,7 +938,7 @@ function discoverParallelPool(args: {
     for (const lane of lanes) {
       addRankedEvidence({
         candidates,
-        results: index.search(lane.query, 10),
+        results: index.search(lane.query, args.profile.searchTopK),
         view,
         query: lane,
         space: args.space,
@@ -952,7 +952,7 @@ function discoverParallelPool(args: {
         || right.facetIds.size - left.facetIds.size
         || left.sessionId.localeCompare(right.sessionId),
     )
-    .slice(0, POOL_MAX);
+    .slice(0, args.profile.poolMax);
 }
 
 async function admitWithV1Prompt(args: {
@@ -1069,7 +1069,11 @@ async function runParallel(args: {
   const usage: Usage = { inputTokens: 0, outputTokens: 0, calls: 0 };
   const modelIo: ModelIoRecord[] = [];
   const plan = await planFacets({ ...args, usage, modelIo });
-  const pool = discoverParallelPool({ space: args.space, plan });
+  const pool = discoverParallelPool({
+    space: args.space,
+    plan,
+    profile: FOCUSED_RETRIEVAL_PROFILE,
+  });
   const verified = await assessCandidates({
     ...args,
     promptName: "hop-multiview-verify-v1",
@@ -1114,14 +1118,21 @@ async function runHybrid(args: {
   const usage: Usage = { inputTokens: 0, outputTokens: 0, calls: 0 };
   const modelIo: ModelIoRecord[] = [];
   const plan = await planFacets({ ...args, usage, modelIo });
-  const pool = discoverParallelPool({ space: args.space, plan });
-  const selection = await admitWithV1Prompt({ ...args, pool, usage, modelIo });
+  const profile = retrievalProfileForQuestion(args.space.raw.question);
+  const pool = discoverParallelPool({ space: args.space, plan, profile });
+  const broadSessionIds = pool
+    .slice(0, profile.bagMax)
+    .map((candidate) => candidate.sessionId);
+  const selection = profile.scope === "broad_history"
+    ? { admitted: broadSessionIds, requested: broadSessionIds }
+    : await admitWithV1Prompt({ ...args, pool, usage, modelIo });
   return {
     modelBag: selection.admitted,
     modelPool: pool.map((item) => item.sessionId),
     usage,
     modelIo,
     trace: [
+      { retrieval_profile: profile },
       { plan },
       {
         candidate_pool: pool.map((item) => ({
@@ -1132,7 +1143,11 @@ async function runHybrid(args: {
         })),
       },
       {
-        v1_admission: {
+        admission: {
+          method:
+            profile.scope === "broad_history"
+              ? "parallel_per_session_reader"
+              : "v1_prompt",
           requested: selection.requested,
           admitted: selection.admitted,
         },
@@ -1659,7 +1674,7 @@ async function main(): Promise<void> {
 
   const slice = JSON.parse(readFileSync(idsPath, "utf8")) as Slice;
   const selected = limit === undefined ? slice.cases : slice.cases.slice(0, limit);
-  const dataset = JSON.parse(readFileSync(datasetPath, "utf8")) as RawCase[];
+  const dataset = loadArchitectureCases(datasetPath);
   const oracle = JSON.parse(readFileSync(oraclePath, "utf8")) as Array<{
     question_id: string;
     answer_session_ids: string[];
@@ -1684,6 +1699,9 @@ async function main(): Promise<void> {
   async function runOne(indexCase: number, sliceCase: SliceCase): Promise<void> {
     const raw = byId.get(sliceCase.question_id);
     const goldReal = goldById.get(sliceCase.question_id) ?? [];
+    const profile = arm === "hybrid" && raw
+      ? retrievalProfileForQuestion(raw.question)
+      : FOCUSED_RETRIEVAL_PROFILE;
     const caseStarted = Date.now();
     if (!raw) {
       results[indexCase] = {
@@ -1698,6 +1716,9 @@ async function main(): Promise<void> {
         candidate_pool_full_gold: false,
         gold_recall: 0,
         candidate_pool_gold_recall: 0,
+        retrieval_scope: profile.scope,
+        bag_limit: profile.bagMax,
+        pool_limit: profile.poolMax,
         input_tokens: 0,
         output_tokens: 0,
         api_calls: 0,
@@ -1737,6 +1758,9 @@ async function main(): Promise<void> {
         candidate_pool_full_gold: fullGoldIn(pool, goldReal),
         gold_recall: recall(bag, goldReal),
         candidate_pool_gold_recall: recall(pool, goldReal),
+        retrieval_scope: profile.scope,
+        bag_limit: profile.bagMax,
+        pool_limit: profile.poolMax,
         input_tokens: armResult.usage.inputTokens,
         output_tokens: armResult.usage.outputTokens,
         api_calls: armResult.usage.calls,
@@ -1757,6 +1781,9 @@ async function main(): Promise<void> {
         candidate_pool_full_gold: false,
         gold_recall: 0,
         candidate_pool_gold_recall: 0,
+        retrieval_scope: profile.scope,
+        bag_limit: profile.bagMax,
+        pool_limit: profile.poolMax,
         input_tokens: 0,
         output_tokens: 0,
         api_calls: 0,
@@ -1777,8 +1804,13 @@ async function main(): Promise<void> {
       await runOne(indexCase, sliceCase);
       const result = results[indexCase];
       if (caseArtifactsPath && result) {
+        const artifactPath = resolve(
+          caseArtifactsPath,
+          `${sliceCase.question_id}.json`,
+        );
+        mkdirSync(dirname(artifactPath), { recursive: true });
         writeFileSync(
-          resolve(caseArtifactsPath, `${sliceCase.question_id}.json`),
+          artifactPath,
           `${JSON.stringify(result, null, 2)}\n`,
         );
       }
@@ -1810,6 +1842,10 @@ async function main(): Promise<void> {
     reasoning,
     bag_max: BAG_MAX,
     pool_max: POOL_MAX,
+    retrieval_profiles: {
+      focused: FOCUSED_RETRIEVAL_PROFILE,
+      broad_history: BROAD_HISTORY_RETRIEVAL_PROFILE,
+    },
     session_id_visibility: "opaque_per_case_v1",
     rate_limit: {
       concurrency,

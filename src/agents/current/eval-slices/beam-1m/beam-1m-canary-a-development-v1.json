@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "benchmark": "BEAM",
+  "tier": "1M",
+  "name": "beam-1m-canary-a-development-v1",
+  "role": "development_only_not_predictive",
+  "status": "frozen_unrun",
+  "selection_seed": 20260731,
+  "source": {
+    "repository": "https://github.com/mohammadtavakoli78/BEAM",
+    "commit": "3e12035532eb85768f1a7cd779832b650c4b2ef9",
+    "topics_sha256": "1c060ac0ac17ccae49f797b7fc12f802a824ae14c67d6648f3058da902e18086"
+  },
+  "isolation_unit": "complete_conversation",
+  "conversation_ids": [
+    3,
+    8,
+    18,
+    25,
+    29
+  ],
+  "question_keys": [
+    "beam-1m/chat-03/abstention/1",
+    "beam-1m/chat-03/abstention/2",
+    "beam-1m/chat-03/contradiction_resolution/1",
+    "beam-1m/chat-03/contradiction_resolution/2",
+    "beam-1m/chat-03/event_ordering/1",
+    "beam-1m/chat-03/event_ordering/2",
+    "beam-1m/chat-03/information_extraction/1",
+    "beam-1m/chat-03/information_extraction/2",
+    "beam-1m/chat-03/instruction_following/1",
+    "beam-1m/chat-03/instruction_following/2",
+    "beam-1m/chat-03/knowledge_update/1",
+    "beam-1m/chat-03/knowledge_update/2",
+    "beam-1m/chat-03/multi_session_reasoning/1",
+    "beam-1m/chat-03/multi_session_reasoning/2",
+    "beam-1m/chat-03/preference_following/1",
+    "beam-1m/chat-03/preference_following/2",
+    "beam-1m/chat-03/summarization/1",
+    "beam-1m/chat-03/summarization/2",
+    "beam-1m/chat-03/temporal_reasoning/1",
+    "beam-1m/chat-03/temporal_reasoning/2",
+    "beam-1m/chat-08/abstention/1",
+    "beam-1m/chat-08/abstention/2",
+    "beam-1m/chat-08/contradiction_resolution/1",
+    "beam-1m/chat-08/contradiction_resolution/2",
+    "beam-1m/chat-08/event_ordering/1",
+    "beam-1m/chat-08/event_ordering/2",
+    "beam-1m/chat-08/information_extraction/1",
+    "beam-1m/chat-08/information_extraction/2",
+    "beam-1m/chat-08/instruction_following/1",
+    "beam-1m/chat-08/instruction_following/2",
+    "beam-1m/chat-08/knowledge_update/1",
+    "beam-1m/chat-08/knowledge_update/2",
+    "beam-1m/chat-08/multi_session_reasoning/1",
+    "beam-1m/chat-08/multi_session_reasoning/2",
+    "beam-1m/chat-08/preference_following/1",
+    "beam-1m/chat-08/preference_following/2",
+    "beam-1m/chat-08/summarization/1",
+    "beam-1m/chat-08/summarization/2",
+    "beam-1m/chat-08/temporal_reasoning/1",
+    "beam-1m/chat-08/temporal_reasoning/2",
+    "beam-1m/chat-18/abstention/1",
+    "beam-1m/chat-18/abstention/2",
+    "beam-1m/chat-18/contradiction_resolution/1",
+    "beam-1m/chat-18/contradiction_resolution/2",
+    "beam-1m/chat-18/event_ordering/1",
+    "beam-1m/chat-18/event_ordering/2",
+    "beam-1m/chat-18/information_extraction/1",
+    "beam-1m/chat-18/information_extraction/2",
+    "beam-1m/chat-18/instruction_following/1",
+    "beam-1m/chat-18/instruction_following/2",
+    "beam-1m/chat-18/knowledge_update/1",
+    "beam-1m/chat-18/knowledge_update/2",
+    "beam-1m/chat-18/multi_session_reasoning/1",
+    "beam-1m/chat-18/multi_session_reasoning/2",
+    "beam-1m/chat-18/preference_following/1",
+    "beam-1m/chat-18/preference_following/2",
+    "beam-1m/chat-18/summarization/1",
+    "beam-1m/chat-18/summarization/2",
+    "beam-1m/chat-18/temporal_reasoning/1",
+    "beam-1m/chat-18/temporal_reasoning/2",
+    "beam-1m/chat-25/abstention/1",
+    "beam-1m/chat-25/abstention/2",
+    "beam-1m/chat-25/contradiction_resolution/1",
+    "beam-1m/chat-25/contradiction_resolution/2",
+    "beam-1m/chat-25/event_ordering/1",
+    "beam-1m/chat-25/event_ordering/2",
+    "beam-1m/chat-25/information_extraction/1",
+    "beam-1m/chat-25/information_extraction/2",
+    "beam-1m/chat-25/instruction_following/1",
+    "beam-1m/chat-25/instruction_following/2",
+    "beam-1m/chat-25/knowledge_update/1",
+    "beam-1m/chat-25/knowledge_update/2",
+    "beam-1m/chat-25/multi_session_reasoning/1",
+    "beam-1m/chat-25/multi_session_reasoning/2",
+    "beam-1m/chat-25/preference_following/1",
+    "beam-1m/chat-25/preference_following/2",
+    "beam-1m/chat-25/summarization/1",
+    "beam-1m/chat-25/summarization/2",
+    "beam-1m/chat-25/temporal_reasoning/1",
+    "beam-1m/chat-25/temporal_reasoning/2",
+    "beam-1m/chat-29/abstention/1",
+    "beam-1m/chat-29/abstention/2",
+    "beam-1m/chat-29/contradiction_resolution/1",
+    "beam-1m/chat-29/contradiction_resolution/2",
+    "beam-1m/chat-29/event_ordering/1",
+    "beam-1m/chat-29/event_ordering/2",
+    "beam-1m/chat-29/information_extraction/1",
+    "beam-1m/chat-29/information_extraction/2",
+    "beam-1m/chat-29/instruction_following/1",
+    "beam-1m/chat-29/instruction_following/2",
+    "beam-1m/chat-29/knowledge_update/1",
+    "beam-1m/chat-29/knowledge_update/2",
+    "beam-1m/chat-29/multi_session_reasoning/1",
+    "beam-1m/chat-29/multi_session_reasoning/2",
+    "beam-1m/chat-29/preference_following/1",
+    "beam-1m/chat-29/preference_following/2",
+    "beam-1m/chat-29/summarization/1",
+    "beam-1m/chat-29/summarization/2",
+    "beam-1m/chat-29/temporal_reasoning/1",
+    "beam-1m/chat-29/temporal_reasoning/2"
+  ],
+  "counts": {
+    "conversations": 5,
+    "questions": 100,
+    "by_category": {
+      "Business & Entrepreneurship": 1,
+      "Coding": 1,
+      "Math": 1,
+      "Relationship & Family": 1,
+      "Sport": 1
+    },
+    "by_ability": {
+      "abstention": 10,
+      "contradiction_resolution": 10,
+      "event_ordering": 10,
+      "information_extraction": 10,
+      "instruction_following": 10,
+      "knowledge_update": 10,
+      "multi_session_reasoning": 10,
+      "preference_following": 10,
+      "summarization": 10,
+      "temporal_reasoning": 10
+    },
+    "by_difficulty": {
+      "clear": 10,
+      "easy": 31,
+      "hard": 19,
+      "medium": 38,
+      "moderate": 2
+    },
+    "evidence_pairs": {
+      "mean": 6.61,
+      "median": 3,
+      "p90": 20,
+      "max": 48,
+      "over_12": 15,
+      "over_20": 10,
+      "over_24": 10
+    }
+  },
+  "source_records": [
+    {
+      "conversation_id": 3,
+      "category": "Coding",
+      "chat_sha256": "3e2f10e6d76a514ced7ea7d73be589f20f6a77e0cc973fee5139e3705ae5d572",
+      "probing_questions_sha256": "52b2eedd5c099e92b8125d71b480396ebfca61cb84768622196e2f7c4d930c33"
+    },
+    {
+      "conversation_id": 8,
+      "category": "Math",
+      "chat_sha256": "a3fe062533b2858c9a1a6f1fec03226f468d4f4f69d1f7ff0201be91516a625f",
+      "probing_questions_sha256": "7e6f80cb6f7a5b4b69fa81271e505a832d23c1e52bab3f0c10afe30a3f887cc5"
+    },
+    {
+      "conversation_id": 18,
+      "category": "Relationship & Family",
+      "chat_sha256": "6da8ea08cbbfcdc75466e91ac60fb98cf467ee112d30a23886dbb5f8b55cfe3c",
+      "probing_questions_sha256": "ad18304a2077693ffb28c534fa1194cd89a7fa9e27acc9eafce6ef3495be44c2"
+    },
+    {
+      "conversation_id": 25,
+      "category": "Business & Entrepreneurship",
+      "chat_sha256": "952c133d86b2f6194e947991500100215657653bacddc65d2fa95af2ea454d55",
+      "probing_questions_sha256": "01c30627d64c5d5345b3a423b05587b380e1cfb1aeafd0309d5b68aa71ddee4c"
+    },
+    {
+      "conversation_id": 29,
+      "category": "Sport",
+      "chat_sha256": "78ad2333c0f54b29d31568bf9a09e99ab7595ed0ec8a1acb4a88b0446065bb26",
+      "probing_questions_sha256": "ad48b89e9c9c27bd0e3c8e98740ea3429aac3f930ea7eac7396c79aa655da155"
+    }
+  ],
+  "balance": {
+    "objective": 0.10584251,
+    "rms_standardized_mean_difference": 0.322003,
+    "max_absolute_standardized_mean_difference": 1.028992,
+    "largest_differences": [
+      {
+        "feature": "category:Relationship & Family",
+        "standardized_mean_difference": 1.028992
+      },
+      {
+        "feature": "difficulty_hard_rate",
+        "standardized_mean_difference": -0.66011
+      },
+      {
+        "feature": "category:Business & Entrepreneurship",
+        "standardized_mean_difference": 0.615457
+      },
+      {
+        "feature": "category:Sport",
+        "standardized_mean_difference": 0.408248
+      },
+      {
+        "feature": "evidence_max",
+        "standardized_mean_difference": -0.393384
+      },
+      {
+        "feature": "source_mean_position",
+        "standardized_mean_difference": 0.362048
+      },
+      {
+        "feature": "user_character_share",
+        "standardized_mean_difference": 0.336454
+      },
+      {
+        "feature": "multi_session_evidence_mean",
+        "standardized_mean_difference": 0.330169
+      },
+      {
+        "feature": "event_ordering_over_12_rate",
+        "standardized_mean_difference": -0.317999
+      },
+      {
+        "feature": "source_position_q4_rate",
+        "standardized_mean_difference": 0.317913
+      }
+    ]
+  },
+  "inspection_policy": "Individual cases may be inspected and used for debugging or tuning."
+}

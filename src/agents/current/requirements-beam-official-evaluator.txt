@@ -1,0 +1,15 @@
+# Direct runtime dependencies imported by the official BEAM evaluator at
+# commit 3e12035532eb85768f1a7cd779832b650c4b2ef9. Versions match its
+# requirements.txt; generation-only and CUDA-only packages are intentionally
+# excluded from this evaluator environment.
+json-repair==0.44.1
+langchain-core==0.3.75
+langchain-openai==0.3.19
+nltk==3.9.1
+numpy==1.26.4
+openai==1.84.0
+rouge_score==0.1.2
+scipy==1.16.1
+sentence-transformers==5.0.0
+torch==2.7.1
+transformers==4.54.1

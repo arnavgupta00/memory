@@ -36,6 +36,10 @@ import { zodTextFormat } from "openai/helpers/zod";
 import { z } from "zod";
 
 import {
+  loadArchitectureCases,
+  type ArchitectureCase as RawCase,
+} from "../benchmarks/architectureDataset.js";
+import {
   buildContextPackage,
   tokenizeForPackage,
 } from "../nodes/selectContext.js";
@@ -55,6 +59,10 @@ import {
   assertNoRawSessionIdLeak,
   buildOpaqueSessionSpace,
 } from "../retrieval/opaqueSessionIds.js";
+import {
+  isBroadHistoryQuestion,
+  retainMappedSession,
+} from "../retrieval/retrievalProfile.js";
 import { PromptLoader, type PromptEnvelope } from "../services/promptLoader.js";
 import {
   AnswerOutputSchema,
@@ -72,6 +80,7 @@ const DEFAULT_HOP_RUN = resolve(
   "runs/local-archive/backbone/hop-gate-luna-h6-v1-answerable135.json",
 );
 const DEFAULT_DATASET = resolve(PROJECT_ROOT, "data/raw/longmemeval_s_cleaned.json");
+const DEFAULT_ORACLE = resolve(PROJECT_ROOT, "data/raw/longmemeval_oracle.json");
 const DEFAULT_ANNOTATIONS = resolve(
   PROJECT_ROOT,
   "runs/local-archive/backbone/session-annotations-v1",
@@ -85,16 +94,6 @@ const ALL_ARMS = ["1a", "1b", "2", "3"] as const;
 type Arm = (typeof ALL_ARMS)[number];
 type ReasoningEffort = "low" | "medium" | "high";
 
-type RawTurn = { role: "user" | "assistant"; content: string };
-type RawCase = {
-  question_id: string;
-  question_type: string;
-  question: string;
-  question_date: string;
-  haystack_session_ids: string[];
-  haystack_dates: string[];
-  haystack_sessions: RawTurn[][];
-};
 type FrozenHopCase = {
   question_id: string;
   bag: string[];
@@ -990,6 +989,16 @@ async function preparePackage(args: {
       return { session, result };
     }),
   );
+  const broadHistory = isBroadHistoryQuestion(args.raw.question);
+  const packageSessions = broadHistory
+    ? extracted
+      .filter(({ result }) => retainMappedSession({
+        question: args.raw.question,
+        candidateStatus: result.value.candidateStatus,
+        claimCount: result.value.claims.length,
+      }))
+      .map(({ session }) => session)
+    : args.sessions;
   const refsBySession = new Map<string, Ref[]>();
   for (const { session, result } of extracted) {
     const refs: Ref[] = [];
@@ -1002,7 +1011,7 @@ async function preparePackage(args: {
         why: `per-session extractor: ${claim.why || claim.fact}`,
       });
     }
-    if (refs.length === 0) {
+    if (refs.length === 0 && !broadHistory) {
       const fallback = makeAnchorRefs(
         args.raw.question,
         session,
@@ -1014,9 +1023,11 @@ async function preparePackage(args: {
   }
   const pkg = buildBalancedPackage({
     question: args.raw.question,
-    sessions: args.sessions,
+    sessions: packageSessions,
     refsBySession,
-    missingRisk: "each session was mapped independently; the frozen bag may omit required sessions",
+    missingRisk: broadHistory
+      ? "broad-history lexical candidates were filtered independently; diffuse or implicit events may still be missing"
+      : "each session was mapped independently; the frozen bag may omit required sessions",
   });
   return {
     pkg,
@@ -1050,6 +1061,7 @@ function configForArm(args: {
   readerReasoning: ReasoningEffort;
   answerModel: string;
   answerReasoning: ReasoningEffort;
+  benchmark: string;
 }): unknown {
   const models: Record<string, unknown> = {};
   const readerPricing = pricingForModel(args.readerModel);
@@ -1124,7 +1136,7 @@ function configForArm(args: {
     },
     judge: {
       provider: "openai",
-      model: "gpt-4o-2024-08-06",
+      model: args.benchmark === "BEAM-1M" ? "gpt-4.1-mini" : "gpt-4o-2024-08-06",
       temperature: 0,
     },
     selection: { strategy: "question-ids" },
@@ -1148,10 +1160,12 @@ function yamlForRun(args: {
   readerReasoning: ReasoningEffort;
   answerModel: string;
   answerReasoning: ReasoningEffort;
+  benchmark: string;
 }): string {
   return [
     `name: ${args.runId}`,
     "mode: full-context",
+    ...(args.benchmark === "LongMemEval" ? [] : [`benchmark: ${args.benchmark}`]),
     "experiment:",
     `  downstream_arm: ${args.arm}`,
     `  frozen_hop_run: ${args.hopRun}`,
@@ -1185,14 +1199,10 @@ function gitState(): { commit: string; dirty: boolean } {
   return { commit, dirty };
 }
 
-function datasetHashes(): Record<string, string> {
-  const paths = [
-    "data/raw/longmemeval_s_cleaned.json",
-    "data/raw/longmemeval_oracle.json",
-  ];
+function datasetHashes(paths: string[]): Record<string, string> {
   return Object.fromEntries(
     paths.map((path) => {
-      const absolute = resolve(PROJECT_ROOT, path);
+      const absolute = resolve(path);
       const fileName = path.slice(path.lastIndexOf("/") + 1);
       return [fileName, sha256(readFileSync(absolute))];
     }),
@@ -1204,6 +1214,11 @@ async function main(): Promise<void> {
   if (!process.env.OPENAI_API_KEY) throw new Error("OPENAI_API_KEY is required");
   const args = parseArgs(process.argv.slice(2));
   const hopRunPath = resolve(PROJECT_ROOT, args["hop-run"] ?? DEFAULT_HOP_RUN);
+  const datasetPath = resolve(PROJECT_ROOT, args.dataset ?? DEFAULT_DATASET);
+  const oraclePath = resolve(PROJECT_ROOT, args.oracle ?? DEFAULT_ORACLE);
+  const annotationsPath = resolve(PROJECT_ROOT, args.annotations ?? DEFAULT_ANNOTATIONS);
+  const runsDir = resolve(PROJECT_ROOT, args["runs-dir"] ?? "runs");
+  const benchmark = args.benchmark ?? "LongMemEval";
   const outPrefix = args["out-prefix"] ?? "hop-bag-downstream-answerable135-v1";
   assertSlug(outPrefix, "out-prefix");
   const concurrency = Number(args.concurrency ?? "128");
@@ -1238,7 +1253,7 @@ async function main(): Promise<void> {
   }
 
   const hopRun = JSON.parse(readFileSync(hopRunPath, "utf8")) as FrozenHopRun;
-  const rawCases = JSON.parse(readFileSync(DEFAULT_DATASET, "utf8")) as RawCase[];
+  const rawCases = loadArchitectureCases(datasetPath);
   const rawById = new Map(rawCases.map((raw) => [raw.question_id, raw]));
   const selectedHopCases = limit === null ? hopRun.cases : hopRun.cases.slice(0, limit);
   if (selectedHopCases.length === 0) throw new Error("no frozen hop cases selected");
@@ -1249,13 +1264,13 @@ async function main(): Promise<void> {
   for (const questionId of questionIds) {
     if (!rawById.has(questionId)) throw new Error(`dataset is missing ${questionId}`);
   }
-  const annotations = loadAnnotations(DEFAULT_ANNOTATIONS);
+  const annotations = loadAnnotations(annotationsPath);
   const prompts = new PromptLoader();
   const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY, maxRetries: 0 });
   const gate = new DispatchGate(tokenBudget, 60, concurrency);
   const createdAt = new Date().toISOString();
   const repoGit = gitState();
-  const hashes = datasetHashes();
+  const hashes = datasetHashes([datasetPath, oraclePath]);
   const hopRunRel = hopRunPath.startsWith(`${PROJECT_ROOT}/`)
     ? hopRunPath.slice(PROJECT_ROOT.length + 1)
     : hopRunPath;
@@ -1270,7 +1285,7 @@ async function main(): Promise<void> {
   const states = new Map<Arm, ArmState>();
   for (const arm of requestedArms) {
     const runId = `${outPrefix}-${arm}`;
-    const root = resolve(PROJECT_ROOT, "runs", runId);
+    const root = resolve(runsDir, runId);
     if (existsSync(root)) {
       throw new Error(`output run already exists: ${runId}`);
     }
@@ -1291,6 +1306,7 @@ async function main(): Promise<void> {
         readerReasoning,
         answerModel,
         answerReasoning,
+        benchmark,
       }),
     );
     const config = configForArm({
@@ -1304,6 +1320,7 @@ async function main(): Promise<void> {
       readerReasoning,
       answerModel,
       answerReasoning,
+      benchmark,
     });
     const manifest: Record<string, unknown> = {
       schema_version: 2,
@@ -1316,6 +1333,10 @@ async function main(): Promise<void> {
       config_fingerprint: sha256(JSON.stringify(config)),
       git: repoGit,
       dataset_hashes: hashes,
+      benchmark,
+      dataset_path: datasetPath,
+      oracle_path: oraclePath,
+      annotations_path: annotationsPath,
       dataset_mode: "full-context",
       selected_question_ids: questionIds,
       selected_count: questionIds.length,
@@ -1342,6 +1363,7 @@ async function main(): Promise<void> {
         answer_model: answerModel,
         answer_reasoning: answerReasoning,
         downstream_arm: arm,
+        benchmark,
       },
     };
     writeFileSync(resolve(root, "manifest.json"), `${JSON.stringify(manifest, null, 2)}\n`);

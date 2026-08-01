@@ -1,0 +1,280 @@
+{
+  "schema_version": 1,
+  "benchmark": "BEAM",
+  "tier": "1M",
+  "name": "beam-1m-canary-design-v1",
+  "status": "frozen_unrun",
+  "generated_by": "src/agents/current/src/scripts/buildBeam1mCanaries.ts",
+  "selection_seed": 20260731,
+  "source_commit": "3e12035532eb85768f1a7cd779832b650c4b2ef9",
+  "source_topics_sha256": "1c060ac0ac17ccae49f797b7fc12f802a824ae14c67d6648f3058da902e18086",
+  "selection_inputs": "Conversation category and structural metadata, difficulty labels, and aggregate source-ID count/position geometry. Question text, reference answers, and rubrics are excluded.",
+  "population": {
+    "conversations": 35,
+    "questions": 700,
+    "by_category": {
+      "Business & Entrepreneurship": 2,
+      "Career and Professional Development": 2,
+      "Coding": 5,
+      "Cooking": 2,
+      "Education & Learning": 1,
+      "Event Planning": 3,
+      "Financial Investment": 2,
+      "Health & Wellness": 3,
+      "Home & Real Estate": 3,
+      "Math": 5,
+      "Relationship & Family": 1,
+      "Sport": 3,
+      "Trip Planning": 3
+    },
+    "by_ability": {
+      "abstention": 70,
+      "contradiction_resolution": 70,
+      "event_ordering": 70,
+      "information_extraction": 70,
+      "instruction_following": 70,
+      "knowledge_update": 70,
+      "multi_session_reasoning": 70,
+      "preference_following": 70,
+      "summarization": 70,
+      "temporal_reasoning": 70
+    },
+    "by_difficulty": {
+      "clear": 70,
+      "easy": 208,
+      "hard": 165,
+      "medium": 252,
+      "moderate": 5
+    },
+    "evidence_pairs": {
+      "mean": 6.7071,
+      "median": 3,
+      "p90": 25,
+      "max": 48,
+      "over_12": 107,
+      "over_20": 82,
+      "over_24": 71
+    }
+  },
+  "partition": {
+    "development_conversation_ids": [
+      3,
+      8,
+      18,
+      25,
+      29
+    ],
+    "certification_conversation_ids": [
+      1,
+      2,
+      9,
+      10,
+      12,
+      14,
+      17,
+      22,
+      24,
+      26,
+      27,
+      30,
+      35
+    ],
+    "reserve_conversation_ids": [
+      4,
+      5,
+      6,
+      7,
+      11,
+      13,
+      15,
+      16,
+      19,
+      20,
+      21,
+      23,
+      28,
+      31,
+      32,
+      33,
+      34
+    ],
+    "expansion_to_15_conversation_ids": [
+      16,
+      21
+    ],
+    "expansion_to_17_conversation_ids": [
+      7,
+      34
+    ],
+    "final_blind_confirmation_conversation_ids": [
+      4,
+      5,
+      6,
+      11,
+      13,
+      15,
+      19,
+      20,
+      23,
+      28,
+      31,
+      32,
+      33
+    ]
+  },
+  "certification_balance": {
+    "objective": 0.00604257,
+    "rms_standardized_mean_difference": 0.079215,
+    "max_absolute_standardized_mean_difference": 0.176761,
+    "largest_differences": [
+      {
+        "feature": "source_position_q4_rate",
+        "standardized_mean_difference": 0.176761
+      },
+      {
+        "feature": "category:Education & Learning",
+        "standardized_mean_difference": -0.171499
+      },
+      {
+        "feature": "category:Relationship & Family",
+        "standardized_mean_difference": -0.171499
+      },
+      {
+        "feature": "evidence_p90",
+        "standardized_mean_difference": 0.126938
+      },
+      {
+        "feature": "summarization_evidence_mean",
+        "standardized_mean_difference": 0.121617
+      },
+      {
+        "feature": "message_count",
+        "standardized_mean_difference": -0.118884
+      },
+      {
+        "feature": "pair_count",
+        "standardized_mean_difference": -0.118884
+      },
+      {
+        "feature": "total_characters",
+        "standardized_mean_difference": -0.110925
+      },
+      {
+        "feature": "difficulty_easy_rate",
+        "standardized_mean_difference": 0.099232
+      },
+      {
+        "feature": "category:Cooking",
+        "standardized_mean_difference": 0.085217
+      }
+    ]
+  },
+  "certification_15_balance": {
+    "objective": 0.00716698,
+    "rms_standardized_mean_difference": 0.085259,
+    "max_absolute_standardized_mean_difference": 0.197685,
+    "largest_differences": [
+      {
+        "feature": "evidence_max",
+        "standardized_mean_difference": 0.197685
+      },
+      {
+        "feature": "category:Education & Learning",
+        "standardized_mean_difference": -0.171499
+      },
+      {
+        "feature": "category:Relationship & Family",
+        "standardized_mean_difference": -0.171499
+      },
+      {
+        "feature": "category:Home & Real Estate",
+        "standardized_mean_difference": 0.170103
+      },
+      {
+        "feature": "category:Health & Wellness",
+        "standardized_mean_difference": 0.170103
+      },
+      {
+        "feature": "source_mean_position",
+        "standardized_mean_difference": -0.13731
+      },
+      {
+        "feature": "source_position_q1_rate",
+        "standardized_mean_difference": 0.121075
+      },
+      {
+        "feature": "source_position_q2_rate",
+        "standardized_mean_difference": -0.114036
+      },
+      {
+        "feature": "source_mean_span",
+        "standardized_mean_difference": -0.096619
+      },
+      {
+        "feature": "total_characters",
+        "standardized_mean_difference": -0.079105
+      }
+    ]
+  },
+  "certification_17_balance": {
+    "objective": 0.00581472,
+    "rms_standardized_mean_difference": 0.07296,
+    "max_absolute_standardized_mean_difference": 0.171499,
+    "largest_differences": [
+      {
+        "feature": "category:Education & Learning",
+        "standardized_mean_difference": -0.171499
+      },
+      {
+        "feature": "category:Relationship & Family",
+        "standardized_mean_difference": -0.171499
+      },
+      {
+        "feature": "evidence_max",
+        "standardized_mean_difference": 0.129375
+      },
+      {
+        "feature": "evidence_over_12_rate",
+        "standardized_mean_difference": -0.114526
+      },
+      {
+        "feature": "category:Event Planning",
+        "standardized_mean_difference": 0.114069
+      },
+      {
+        "feature": "category:Home & Real Estate",
+        "standardized_mean_difference": 0.114069
+      },
+      {
+        "feature": "category:Health & Wellness",
+        "standardized_mean_difference": 0.114069
+      },
+      {
+        "feature": "category:Math",
+        "standardized_mean_difference": 0.096058
+      },
+      {
+        "feature": "category:Sport",
+        "standardized_mean_difference": -0.096058
+      },
+      {
+        "feature": "category:Trip Planning",
+        "standardized_mean_difference": -0.096058
+      }
+    ]
+  },
+  "reliability_contract": {
+    "primary_metric": "official BEAM macro score across ten abilities",
+    "target_half_width": 0.05,
+    "confidence_level": 0.95,
+    "unit_for_uncertainty": "conversation-level score",
+    "base_conversations": 13,
+    "expansion_rule": "Add the next precommitted two-conversation block only when the finite-population 95% confidence interval half-width exceeds 0.05. Never expand based on the point score.",
+    "benchmark_thresholds": {
+      "published_rag": 0.302,
+      "published_light": 0.336
+    },
+    "reliability_status": "provisional_structural",
+    "certification_requirement": "Requires a paired frozen-system full-700 run; published per-conversation baseline outputs were not available in the upstream repository for retrospective score backtesting."
+  }
+}
