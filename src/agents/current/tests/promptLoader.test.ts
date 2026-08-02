@@ -113,6 +113,44 @@ messages:
     expect(controller.messages.every((message) => !message.content.includes("{{"))).toBe(true);
   });
 
+  test("renders answer-targeted retrieval workflow prompts", async () => {
+    const loader = new PromptLoader();
+    const contract = await loader.render("hop-answer-contract-v2", {
+      question: "What changed between the original deadline and the revised launch?",
+      question_date: "2026-08-02",
+    });
+    expect(contract.promptId).toBe("hop-answer-contract-v2");
+    expect(contract.messages.some((message) => message.content.includes("answer SHAPE"))).toBe(
+      true,
+    );
+
+    const query = await loader.render("hop-answer-targeted-query-v1", {
+      question: "What changed between the original deadline and the revised launch?",
+      question_date: "2026-08-02",
+      phase: "follow_up",
+      answer_contract: '{"slots":[]}',
+      verified_ledger: "launch_date: missing",
+      evidence_catalog: "candidate memory_001",
+    });
+    expect(query.messages.some((message) => message.content.includes("dense_evidence_queries")))
+      .toBe(true);
+    expect(query.messages.some((message) => message.content.includes("VERIFIED EVIDENCE LEDGER")))
+      .toBe(true);
+
+    const verify = await loader.render("hop-answer-slot-verify-v1", {
+      question: "What changed between the original deadline and the revised launch?",
+      question_date: "2026-08-02",
+      answer_contract: '{"slots":[]}',
+      candidate_catalog: "candidate memory_001",
+    });
+    expect(verify.messages.some((message) => message.content.includes("unverified hypotheses")))
+      .toBe(true);
+    expect(
+      [...contract.messages, ...query.messages, ...verify.messages]
+        .every((message) => !message.content.includes("{{")),
+    ).toBe(true);
+  });
+
   test("loads select-v4/v5 and answer-v6-package prompts", async () => {
     const loader = new PromptLoader();
     const select = await loader.render("select-v4", {

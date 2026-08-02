@@ -8,6 +8,8 @@
  * - hybrid-dense: family-balanced BM25 + semantic discovery, then v1 admission.
  * - answer-shaped: gated two-agent blueprint/search feedback over hybrid discovery.
  * - answer-shaped-dense: answer-shaped workflow with BM25 + semantic discovery.
+ * - answer-targeted-query: retriever-specific answer queries with V1 admission.
+ * - answer-targeted: verified slot coverage with one targeted follow-up round.
  * - ledger: occurrence-aware claim search, batched verification, set cover.
  *
  * All model-visible session references are deterministic per-case opaque handles.
@@ -94,6 +96,8 @@ type Arm =
   | "hybrid-dense"
   | "answer-shaped"
   | "answer-shaped-dense"
+  | "answer-targeted-query"
+  | "answer-targeted"
   | "ledger";
 type Reasoning = "none" | "low" | "medium" | "high";
 
@@ -169,6 +173,8 @@ type FacetPlan = {
 
 type AnswerBlueprint = z.infer<typeof AnswerBlueprintSchema>;
 type SearchControllerOutput = z.infer<typeof SearchControllerSchema>;
+type AnswerTargetedQueryPlan = z.infer<typeof AnswerTargetedQueryPlanSchema>;
+type AnswerSlotVerification = z.infer<typeof AnswerSlotVerificationSchema>;
 
 type CandidateAssessment = {
   session_id: string;
@@ -334,6 +340,47 @@ const SearchControllerSchema = z.strictObject({
   ).max(12),
   stop: z.boolean(),
   stop_reason: z.string().min(1).max(400),
+});
+
+const AnswerTargetedQueryPlanSchema = z.strictObject({
+  query_groups: z.array(
+    z.strictObject({
+      slot_ids: z.array(
+        z.string().regex(/^[a-z][a-z0-9_]{0,29}$/u),
+      ).min(1).max(10),
+      sparse_queries: z.array(z.string().min(1).max(240)).min(1).max(3),
+      dense_evidence_queries: z.array(z.string().min(1).max(500)).min(1).max(2),
+      hypothetical_passages: z.array(z.string().min(1).max(700)).max(2),
+      purpose: z.string().min(1).max(300),
+    }),
+  ).max(12),
+  stop: z.boolean(),
+  stop_reason: z.string().min(1).max(400),
+});
+
+const AnswerSlotVerificationSchema = z.strictObject({
+  assessments: z.array(
+    z.strictObject({
+      session_id: z.string().regex(/^memory_\d{3}$/u),
+      slot_evidence: z.array(
+        z.strictObject({
+          slot_id: z.string().regex(/^[a-z][a-z0-9_]{0,29}$/u),
+          status: z.enum(["direct", "partial", "topical_only"]),
+          evidence: z.string().min(1).max(360),
+          extracted_values: z.array(z.string().min(1).max(120)).max(8),
+          date_mentions: z.array(z.string().min(1).max(80)).max(8),
+        }),
+      ).max(10),
+    }),
+  ).max(POOL_MAX),
+  coverage: z.array(
+    z.strictObject({
+      slot_id: z.string().regex(/^[a-z][a-z0-9_]{0,29}$/u),
+      status: z.enum(["covered", "partial", "missing"]),
+      direct_session_ids: z.array(z.string().regex(/^memory_\d{3}$/u)).max(12),
+      gap: z.string().max(300),
+    }),
+  ).max(10),
 });
 
 const CandidateAssessmentsSchema = z.strictObject({
@@ -729,14 +776,18 @@ async function planAnswerBlueprint(args: {
   model: string;
   reasoning: Reasoning;
   space: CaseSpace;
-  mode: AnswerShapedMode;
+  mode?: AnswerShapedMode;
+  promptName?: "hop-answer-blueprint-v1" | "hop-answer-contract-v2";
   usage: Usage;
   modelIo: ModelIoRecord[];
 }): Promise<AnswerBlueprint | null> {
-  const prompt = await args.prompts.render("hop-answer-blueprint-v1", {
+  const promptName = args.promptName ?? "hop-answer-blueprint-v1";
+  const prompt = await args.prompts.render(promptName, {
     question: args.space.raw.question,
     question_date: args.space.raw.question_date,
-    routing_mode: args.mode,
+    ...(promptName === "hop-answer-blueprint-v1"
+      ? { routing_mode: args.mode ?? "infer from the question" }
+      : {}),
   });
   const inputText = envelopeText(prompt);
   assertNoRawSessionIdLeak(inputText, args.space.rawSessionIds);
@@ -767,7 +818,7 @@ async function planAnswerBlueprint(args: {
       request_id: response._request_id ?? null,
       retry_count: 0,
     });
-    return { ...parsed, question_mode: args.mode };
+    return args.mode ? { ...parsed, question_mode: args.mode } : parsed;
   } catch (error) {
     args.modelIo.push({
       sequence: args.modelIo.length + 1,
@@ -905,6 +956,197 @@ function facetPlanFromBlueprint(args: {
     })),
     queries: args.queries.length > 0 ? args.queries : blueprintFallbackQueries(args.blueprint),
   };
+}
+
+function answerContractPlan(blueprint: AnswerBlueprint): FacetPlan {
+  return facetPlanFromBlueprint({ blueprint, queries: blueprintFallbackQueries(blueprint) });
+}
+
+function sanitizeAnswerTargetedQueryPlan(args: {
+  blueprint: AnswerBlueprint;
+  plan: AnswerTargetedQueryPlan;
+}): AnswerTargetedQueryPlan {
+  const validSlotIds = new Set(args.blueprint.slots.map((slot) => slot.id));
+  const seen = new Set<string>();
+  const queryGroups = args.plan.query_groups.flatMap((group) => {
+    const slotIds = [...new Set(group.slot_ids.filter((id) => validSlotIds.has(id)))];
+    if (slotIds.length === 0) return [];
+    const unique = (queries: string[], limit: number): string[] => queries
+      .filter((query) => {
+        const normalized = normalizeQuery(query);
+        if (!normalized || seen.has(normalized)) return false;
+        seen.add(normalized);
+        return true;
+      })
+      .slice(0, limit);
+    const sparseQueries = unique(group.sparse_queries, 3);
+    const denseQueries = unique(group.dense_evidence_queries, 2);
+    const hypotheticalPassages = unique(group.hypothetical_passages, 2);
+    if (sparseQueries.length === 0 && denseQueries.length === 0 && hypotheticalPassages.length === 0) {
+      return [];
+    }
+    return [{
+      slot_ids: slotIds,
+      sparse_queries: sparseQueries.length > 0
+        ? sparseQueries
+        : [args.blueprint.slots.find((slot) => slot.id === slotIds[0])?.description ?? "evidence"],
+      dense_evidence_queries: denseQueries.length > 0
+        ? denseQueries
+        : [`A conversation that directly states ${args.blueprint.slots.find((slot) => slot.id === slotIds[0])?.description ?? "the requested evidence"}.`],
+      hypothetical_passages: hypotheticalPassages,
+      purpose: group.purpose,
+    }];
+  }).slice(0, 12);
+  return {
+    query_groups: queryGroups,
+    stop: args.plan.stop,
+    stop_reason: args.plan.stop_reason,
+  };
+}
+
+function answerTargetedFallbackPlan(args: {
+  blueprint: AnswerBlueprint;
+  phase: "initial" | "follow_up";
+  unresolvedSlotIds?: Set<string>;
+}): AnswerTargetedQueryPlan {
+  const slots = args.blueprint.slots.filter(
+    (slot) => !args.unresolvedSlotIds || args.unresolvedSlotIds.has(slot.id),
+  );
+  if (args.phase === "follow_up" && slots.length === 0) {
+    return { query_groups: [], stop: true, stop_reason: "All answer slots are covered." };
+  }
+  return {
+    query_groups: slots.map((slot) => ({
+      slot_ids: [slot.id],
+      sparse_queries: [
+        [...slot.likely_evidence_phrases, ...slot.contrast_terms].slice(0, 5).join(" "),
+      ],
+      dense_evidence_queries: [
+        `A conversation that directly states ${slot.description}.`,
+      ],
+      hypothetical_passages: [],
+      purpose: `Find direct evidence for ${slot.description}`,
+    })),
+    stop: false,
+    stop_reason: "Evidence retrieval is required for unresolved answer slots.",
+  };
+}
+
+async function planAnswerTargetedQueries(args: {
+  openai: OpenAI;
+  prompts: PromptLoader;
+  gate: TokenGate;
+  model: string;
+  reasoning: Reasoning;
+  space: CaseSpace;
+  blueprint: AnswerBlueprint;
+  phase: "initial" | "follow_up";
+  verification?: AnswerSlotVerification;
+  evidenceCatalog: string;
+  usage: Usage;
+  modelIo: ModelIoRecord[];
+}): Promise<AnswerTargetedQueryPlan> {
+  const verifiedLedger = args.verification
+    ? answerSlotLedgerText(args.verification)
+    : "(no verified evidence yet)";
+  const prompt = await args.prompts.render("hop-answer-targeted-query-v1", {
+    question: args.space.raw.question,
+    question_date: args.space.raw.question_date,
+    phase: args.phase,
+    answer_contract: JSON.stringify(args.blueprint, null, 2),
+    verified_ledger: verifiedLedger,
+    evidence_catalog: args.evidenceCatalog,
+  });
+  const inputText = envelopeText(prompt);
+  assertNoRawSessionIdLeak(inputText, args.space.rawSessionIds);
+  const release = await args.gate.acquire(estimateTokens(inputText) + OUTPUT_RESERVE);
+  const started = performance.now();
+  try {
+    const response = await args.openai.responses.parse({
+      model: args.model,
+      input: prompt.messages,
+      text: {
+        format: zodTextFormat(AnswerTargetedQueryPlanSchema, "hop_answer_targeted_query_v1"),
+      },
+      ...(args.reasoning === "none" ? {} : { reasoning: { effort: args.reasoning } }),
+    });
+    addUsage(args.usage, response);
+    const parsed = response.output_parsed;
+    if (!parsed) throw new Error("answer-targeted query reasoner returned no structured output");
+    const plan = sanitizeAnswerTargetedQueryPlan({ blueprint: args.blueprint, plan: parsed });
+    args.modelIo.push({
+      sequence: args.modelIo.length + 1,
+      stage: `answer_targeted_query_${args.phase}`,
+      model: args.model,
+      reasoning: args.reasoning,
+      prompt_messages: prompt.messages,
+      output_text: response.output_text,
+      parsed_output: plan,
+      input_tokens: response.usage?.input_tokens ?? 0,
+      output_tokens: response.usage?.output_tokens ?? 0,
+      total_tokens: response.usage?.total_tokens ?? 0,
+      latency_ms: performance.now() - started,
+      request_id: response._request_id ?? null,
+      retry_count: 0,
+    });
+    return plan;
+  } catch (error) {
+    const unresolvedSlotIds = args.verification
+      ? new Set(
+        args.verification.coverage
+          .filter((entry) => entry.status !== "covered")
+          .map((entry) => entry.slot_id),
+      )
+      : undefined;
+    const fallback = answerTargetedFallbackPlan({
+      blueprint: args.blueprint,
+      phase: args.phase,
+      ...(unresolvedSlotIds ? { unresolvedSlotIds } : {}),
+    });
+    args.modelIo.push({
+      sequence: args.modelIo.length + 1,
+      stage: `answer_targeted_query_${args.phase}_fallback`,
+      model: "local-deterministic",
+      reasoning: args.reasoning,
+      prompt_messages: prompt.messages,
+      output_text: "",
+      parsed_output: fallback,
+      input_tokens: 0,
+      output_tokens: 0,
+      total_tokens: 0,
+      latency_ms: performance.now() - started,
+      request_id: null,
+      retry_count: 1,
+      error: error instanceof Error ? error.message : String(error),
+    });
+    return fallback;
+  } finally {
+    release();
+  }
+}
+
+function answerSlotLedgerText(verification: AnswerSlotVerification): string {
+  const evidenceBySlot = new Map<string, string[]>();
+  for (const assessment of verification.assessments) {
+    for (const evidence of assessment.slot_evidence) {
+      if (evidence.status === "topical_only") continue;
+      const entries = evidenceBySlot.get(evidence.slot_id) ?? [];
+      entries.push(
+        `${assessment.session_id} ${evidence.status}: ${evidence.evidence}`
+        + (evidence.extracted_values.length > 0
+          ? ` values=${evidence.extracted_values.join("; ")}`
+          : "")
+        + (evidence.date_mentions.length > 0
+          ? ` dates=${evidence.date_mentions.join("; ")}`
+          : ""),
+      );
+      evidenceBySlot.set(evidence.slot_id, entries);
+    }
+  }
+  return verification.coverage.map((entry) => [
+    `${entry.slot_id}: ${entry.status}; gap=${entry.gap || "none"}`,
+    ...(evidenceBySlot.get(entry.slot_id) ?? []),
+  ].join("\n")).join("\n\n");
 }
 
 function coverageLedgerText(output: SearchControllerOutput | null): string {
@@ -1159,16 +1401,222 @@ function addRankedEvidence(args: {
   }
 }
 
-function candidateCatalog(candidates: EvidenceCandidate[], heading = "candidate"): string {
+function catalogExcerpts(candidate: EvidenceCandidate, balanced: boolean): string[] {
+  const excerpts = [...candidate.excerpts];
+  if (!balanced) return excerpts.slice(0, 6);
+  const sourceOrder = ["notes:", "user:", "assistant:", "all:", "dense "];
+  const selected: string[] = [];
+  for (let round = 0; round < 2 && selected.length < 8; round += 1) {
+    for (const prefix of sourceOrder) {
+      const matches = excerpts.filter((excerpt) => excerpt.startsWith(prefix));
+      const excerpt = matches[round];
+      if (excerpt && !selected.includes(excerpt)) selected.push(excerpt);
+      if (selected.length >= 8) break;
+    }
+  }
+  for (const excerpt of excerpts) {
+    if (selected.length >= 8) break;
+    if (!selected.includes(excerpt)) selected.push(excerpt);
+  }
+  return selected;
+}
+
+function candidateCatalog(
+  candidates: EvidenceCandidate[],
+  heading = "candidate",
+  balanced = false,
+): string {
   return candidates
     .map(
       (candidate, index) =>
         `${heading} ${String(index + 1)}: ${candidate.sessionId} `
         + `date=${candidate.date || "(unknown)"} fused=${candidate.score.toFixed(4)} `
         + `suggested_facets=[${[...candidate.facetIds].join(",")}]\n`
-        + [...candidate.excerpts].slice(0, 6).map((excerpt) => `- ${excerpt}`).join("\n"),
+        + catalogExcerpts(candidate, balanced).map((excerpt) => `- ${excerpt}`).join("\n"),
     )
     .join("\n\n");
+}
+
+async function verifyAnswerSlots(args: {
+  openai: OpenAI;
+  prompts: PromptLoader;
+  gate: TokenGate;
+  model: string;
+  reasoning: Reasoning;
+  space: CaseSpace;
+  blueprint: AnswerBlueprint;
+  pool: EvidenceCandidate[];
+  stage: "initial" | "final";
+  usage: Usage;
+  modelIo: ModelIoRecord[];
+}): Promise<AnswerSlotVerification> {
+  const catalog = candidateCatalog(args.pool, "unverified candidate", true);
+  const prompt = await args.prompts.render("hop-answer-slot-verify-v1", {
+    question: args.space.raw.question,
+    question_date: args.space.raw.question_date,
+    answer_contract: JSON.stringify(args.blueprint, null, 2),
+    candidate_catalog: catalog,
+  });
+  const inputText = envelopeText(prompt);
+  assertNoRawSessionIdLeak(inputText, args.space.rawSessionIds);
+  const release = await args.gate.acquire(estimateTokens(inputText) + OUTPUT_RESERVE);
+  const started = performance.now();
+  try {
+    const response = await args.openai.responses.parse({
+      model: args.model,
+      input: prompt.messages,
+      text: {
+        format: zodTextFormat(
+          AnswerSlotVerificationSchema,
+          "hop_answer_slot_verification_v1",
+        ),
+      },
+      ...(args.reasoning === "none" ? {} : { reasoning: { effort: args.reasoning } }),
+    });
+    addUsage(args.usage, response);
+    const parsed = response.output_parsed;
+    if (!parsed) throw new Error("answer-slot verifier returned no structured output");
+    const allowedSessions = new Set(args.pool.map((candidate) => candidate.sessionId));
+    const validSlots = new Set(args.blueprint.slots.map((slot) => slot.id));
+    const sanitized: AnswerSlotVerification = {
+      assessments: parsed.assessments.flatMap((assessment) => {
+        if (!allowedSessions.has(assessment.session_id)) return [];
+        const slotEvidence = assessment.slot_evidence.filter(
+          (evidence) => validSlots.has(evidence.slot_id),
+        );
+        return slotEvidence.length > 0 ? [{ ...assessment, slot_evidence: slotEvidence }] : [];
+      }),
+      coverage: parsed.coverage
+        .filter((entry) => validSlots.has(entry.slot_id))
+        .map((entry) => ({
+          ...entry,
+          direct_session_ids: [...new Set(entry.direct_session_ids)]
+            .filter((id) => allowedSessions.has(id)),
+        })),
+    };
+    const coveredSlots = new Set(sanitized.coverage.map((entry) => entry.slot_id));
+    for (const slot of args.blueprint.slots) {
+      if (coveredSlots.has(slot.id)) continue;
+      sanitized.coverage.push({
+        slot_id: slot.id,
+        status: "missing",
+        direct_session_ids: [],
+        gap: "The verifier returned no coverage decision for this required slot.",
+      });
+    }
+    args.modelIo.push({
+      sequence: args.modelIo.length + 1,
+      stage: `answer_slot_verification_${args.stage}`,
+      model: args.model,
+      reasoning: args.reasoning,
+      prompt_messages: prompt.messages,
+      output_text: response.output_text,
+      parsed_output: sanitized,
+      input_tokens: response.usage?.input_tokens ?? 0,
+      output_tokens: response.usage?.output_tokens ?? 0,
+      total_tokens: response.usage?.total_tokens ?? 0,
+      latency_ms: performance.now() - started,
+      request_id: response._request_id ?? null,
+      retry_count: 0,
+    });
+    return sanitized;
+  } finally {
+    release();
+  }
+}
+
+function usefulVerifiedCandidateCatalog(args: {
+  pool: EvidenceCandidate[];
+  verification: AnswerSlotVerification;
+}): string {
+  const useful = new Set(
+    args.verification.assessments.flatMap((assessment) =>
+      assessment.slot_evidence.some((entry) => entry.status !== "topical_only")
+        ? [assessment.session_id]
+        : []),
+  );
+  const candidates = args.pool.filter((candidate) => useful.has(candidate.sessionId));
+  return candidates.length > 0
+    ? candidateCatalog(candidates, "verified-vocabulary candidate", true)
+    : "(no candidate supplied verified vocabulary)";
+}
+
+function selectVerifiedCoverage(args: {
+  blueprint: AnswerBlueprint;
+  candidates: EvidenceCandidate[];
+  verification: AnswerSlotVerification;
+  bagMax: number;
+}): string[] {
+  const candidateById = new Map(args.candidates.map((candidate) => [candidate.sessionId, candidate]));
+  const validSlots = new Set(args.blueprint.slots.map((slot) => slot.id));
+  const evidenceBySession = new Map<string, Map<string, "direct" | "partial">>();
+  for (const assessment of args.verification.assessments) {
+    if (!candidateById.has(assessment.session_id)) continue;
+    const slotMap = evidenceBySession.get(assessment.session_id)
+      ?? new Map<string, "direct" | "partial">();
+    for (const entry of assessment.slot_evidence) {
+      if (!validSlots.has(entry.slot_id) || entry.status === "topical_only") continue;
+      const prior = slotMap.get(entry.slot_id);
+      if (entry.status === "direct" || !prior) slotMap.set(entry.slot_id, entry.status);
+    }
+    if (slotMap.size > 0) evidenceBySession.set(assessment.session_id, slotMap);
+  }
+  const remaining = new Map(
+    args.blueprint.slots.map((slot) => [slot.id, slot.required_evidence_count]),
+  );
+  const selected: string[] = [];
+  const selectedSet = new Set<string>();
+  while (selected.length < args.bagMax) {
+    let bestId: string | undefined;
+    let bestUtility = 0;
+    for (const [sessionId, slotMap] of evidenceBySession) {
+      if (selectedSet.has(sessionId)) continue;
+      let directGain = 0;
+      let partialGain = 0;
+      for (const [slotId, status] of slotMap) {
+        if ((remaining.get(slotId) ?? 0) <= 0) continue;
+        if (status === "direct") directGain += 1;
+        else partialGain += 1;
+      }
+      const candidate = candidateById.get(sessionId);
+      const utility = directGain * 10_000 + partialGain * 1_000
+        + slotMap.size * 100 + (candidate?.score ?? 0);
+      if (utility > bestUtility) {
+        bestUtility = utility;
+        bestId = sessionId;
+      }
+    }
+    if (!bestId || bestUtility <= 0) break;
+    selected.push(bestId);
+    selectedSet.add(bestId);
+    for (const [slotId, status] of evidenceBySession.get(bestId) ?? []) {
+      if (status !== "direct") continue;
+      const count = remaining.get(slotId) ?? 0;
+      if (count > 0) remaining.set(slotId, count - 1);
+    }
+  }
+  const remainingUseful = [...evidenceBySession.entries()]
+    .filter(([sessionId]) => !selectedSet.has(sessionId))
+    .sort(([leftId, left], [rightId, right]) => {
+      const leftDirect = [...left.values()].filter((status) => status === "direct").length;
+      const rightDirect = [...right.values()].filter((status) => status === "direct").length;
+      return rightDirect - leftDirect
+        || right.size - left.size
+        || (candidateById.get(rightId)?.score ?? 0) - (candidateById.get(leftId)?.score ?? 0)
+        || leftId.localeCompare(rightId);
+    });
+  for (const [sessionId] of remainingUseful) {
+    if (selected.length >= args.bagMax) break;
+    selected.push(sessionId);
+    selectedSet.add(sessionId);
+  }
+  for (const candidate of args.candidates) {
+    if (selected.length >= args.bagMax) break;
+    if (selectedSet.has(candidate.sessionId)) continue;
+    selected.push(candidate.sessionId);
+    selectedSet.add(candidate.sessionId);
+  }
+  return selected;
 }
 
 function selectMinimalCover(args: {
@@ -1457,6 +1905,331 @@ async function discoverEnsemblePool(args: {
   };
 }
 
+type AnswerTargetedLane = QueryLane & {
+  kind: "question_fallback" | "sparse_anchor" | "dense_evidence" | "hypothetical_passage";
+  weight: number;
+};
+
+type AnswerTargetedDiscovery = {
+  pool: EvidenceCandidate[];
+  usage: SemanticEmbeddingUsage;
+  trace: Record<string, unknown>;
+};
+
+function dedupeTargetedLanes(lanes: AnswerTargetedLane[]): AnswerTargetedLane[] {
+  const seen = new Set<string>();
+  return lanes.filter((lane) => {
+    const key = `${lane.kind}:${normalizeQuery(lane.query)}:${[...lane.facet_ids].sort().join(",")}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+async function discoverAnswerTargetedPool(args: {
+  space: CaseSpace;
+  blueprint: AnswerBlueprint;
+  queryPlan: AnswerTargetedQueryPlan;
+  profile: RetrievalProfile;
+  semantic: SemanticRuntime;
+  includeOriginalQuestion: boolean;
+}): Promise<AnswerTargetedDiscovery> {
+  const notesDocs = buildNotesDocuments({
+    sessionIds: args.space.opaque.sessionIds,
+    datesBySessionId: args.space.opaque.datesBySessionId,
+    annotations: args.space.opaque.annotations,
+  });
+  const views = new Map<string, Bm25Index>([
+    ["notes", new Bm25Index(notesDocs)],
+    ["user", new Bm25Index(makeRoleDocuments(args.space, "user"))],
+    ["assistant", new Bm25Index(makeRoleDocuments(args.space, "assistant"))],
+    ["all", new Bm25Index(makeRoleDocuments(args.space, "all"))],
+  ]);
+  const allSlotIds = args.blueprint.slots.map((slot) => slot.id);
+  const sparseLanes = dedupeTargetedLanes([
+    ...(args.includeOriginalQuestion
+      ? [{
+        query: args.space.raw.question,
+        facet_ids: allSlotIds,
+        kind: "question_fallback" as const,
+        weight: 0.35,
+      }]
+      : []),
+    ...args.queryPlan.query_groups.flatMap((group) =>
+      group.sparse_queries.map((query) => ({
+        query,
+        facet_ids: group.slot_ids,
+        kind: "sparse_anchor" as const,
+        weight: 1,
+      }))),
+  ]);
+  const denseLanes = dedupeTargetedLanes([
+    ...(args.includeOriginalQuestion
+      ? [{
+        query: args.space.raw.question,
+        facet_ids: allSlotIds,
+        kind: "question_fallback" as const,
+        weight: 0.35,
+      }]
+      : []),
+    ...args.queryPlan.query_groups.flatMap((group) => [
+      ...group.dense_evidence_queries.map((query) => ({
+        query,
+        facet_ids: group.slot_ids,
+        kind: "dense_evidence" as const,
+        weight: 1,
+      })),
+      ...group.hypothetical_passages.map((query) => ({
+        query,
+        facet_ids: group.slot_ids,
+        kind: "hypothetical_passage" as const,
+        weight: 1,
+      })),
+    ]),
+  ]);
+  const candidates = new Map<string, EvidenceCandidate>();
+  const rankings: Array<{
+    family: "sparse" | "dense";
+    lane: AnswerTargetedLane;
+    sessionIds: string[];
+    cosineBySession?: Map<string, number>;
+  }> = [];
+  const sparseTrace: Array<Record<string, unknown>> = [];
+  for (let queryIndex = 0; queryIndex < sparseLanes.length; queryIndex += 1) {
+    const lane = sparseLanes[queryIndex];
+    if (!lane) continue;
+    const rankedViews: string[][] = [];
+    for (const [view, index] of views) {
+      const results = index.search(lane.query, args.profile.searchTopK);
+      rankedViews.push(results.map((item) => item.documentId));
+      addRankedEvidence({
+        candidates,
+        results,
+        view,
+        query: lane,
+        space: args.space,
+      });
+    }
+    const sessionIds = collapseSparseViews(rankedViews);
+    rankings.push({ family: "sparse", lane, sessionIds });
+    sparseTrace.push({
+      query_index: queryIndex,
+      kind: lane.kind,
+      query: lane.query,
+      slot_ids: lane.facet_ids,
+      session_ids: sessionIds,
+    });
+  }
+
+  const sessions = semanticSessionsFromCase(args.space.raw, args.semantic.annotations);
+  const corpusHash = semanticCorpusHash(sessions);
+  const semanticIndex = args.semantic.indexSet.load(corpusHash);
+  const embeddedQueries = await args.semantic.provider.embedQueries(
+    denseLanes.map((lane) => lane.query),
+  );
+  if (embeddedQueries.vectors.length !== denseLanes.length) {
+    throw new Error("semantic provider returned an unexpected answer-targeted query count");
+  }
+  const denseTopK = args.profile.scope === "broad_history"
+    ? args.profile.searchTopK
+    : Math.max(args.profile.searchTopK, args.profile.poolMax);
+  const denseTrace: Array<Record<string, unknown>> = [];
+  for (let queryIndex = 0; queryIndex < denseLanes.length; queryIndex += 1) {
+    const lane = denseLanes[queryIndex];
+    const vector = embeddedQueries.vectors[queryIndex];
+    if (!lane || !vector) continue;
+    const hits = semanticIndex.searchSessions(vector, denseTopK).flatMap((hit) => {
+      const opaqueId = args.space.opaque.realToOpaque.get(hit.sessionId);
+      return opaqueId ? [{ ...hit, opaqueId }] : [];
+    });
+    rankings.push({
+      family: "dense",
+      lane,
+      sessionIds: hits.map((hit) => hit.opaqueId),
+      cosineBySession: new Map(hits.map((hit) => [hit.opaqueId, hit.score])),
+    });
+    denseTrace.push({
+      query_index: queryIndex,
+      kind: lane.kind,
+      query: lane.query,
+      slot_ids: lane.facet_ids,
+      hits: hits.map((hit) => ({
+        session_id: hit.opaqueId,
+        rank: hit.rank,
+        cosine: hit.score,
+        chunk_id: hit.chunk.chunkId,
+        source: hit.chunk.source,
+        turn_index: hit.chunk.turnIndex,
+      })),
+    });
+    for (const hit of hits) {
+      let candidate = candidates.get(hit.opaqueId);
+      if (!candidate) {
+        candidate = {
+          sessionId: hit.opaqueId,
+          date: args.space.dateByOpaqueId.get(hit.opaqueId) ?? "",
+          score: 0,
+          excerpts: new Set(),
+          facetIds: new Set(),
+          matchedTerms: new Set(),
+          ranks: [],
+        };
+        candidates.set(hit.opaqueId, candidate);
+      }
+      for (const slotId of lane.facet_ids) candidate.facetIds.add(slotId);
+      candidate.ranks.push({
+        view: `${lane.kind}:dense:${args.semantic.provider.config.model}`,
+        query: lane.query,
+        rank: hit.rank,
+      });
+      candidate.excerpts.add(`dense ${hit.chunk.source}: ${clip(hit.chunk.text, 520)}`);
+    }
+  }
+
+  const laneWeightBySlotFamily = new Map<string, number>();
+  for (const ranking of rankings) {
+    for (const slotId of ranking.lane.facet_ids) {
+      const key = `${slotId}:${ranking.family}`;
+      laneWeightBySlotFamily.set(
+        key,
+        (laneWeightBySlotFamily.get(key) ?? 0) + ranking.lane.weight,
+      );
+    }
+  }
+  const slotScores = new Map<string, Map<string, { sparse: number; dense: number }>>();
+  for (const ranking of rankings) {
+    const cosineValues = ranking.cosineBySession
+      ? [...ranking.cosineBySession.values()]
+      : [];
+    const maxCosine = cosineValues.length > 0 ? Math.max(...cosineValues) : 0;
+    const minCosine = cosineValues.length > 0 ? Math.min(...cosineValues) : 0;
+    for (let index = 0; index < ranking.sessionIds.length; index += 1) {
+      const sessionId = ranking.sessionIds[index];
+      if (!sessionId) continue;
+      const rank = index + 1;
+      const cosine = ranking.cosineBySession?.get(sessionId);
+      const cosineWeight = cosine === undefined || maxCosine === minCosine
+        ? 1
+        : 0.5 + 0.5 * ((cosine - minCosine) / (maxCosine - minCosine));
+      for (const slotId of ranking.lane.facet_ids) {
+        const normalizer = laneWeightBySlotFamily.get(`${slotId}:${ranking.family}`) ?? 1;
+        const contribution = ranking.lane.weight / normalizer
+          * 0.5 / (60 + rank)
+          * cosineWeight;
+        const bySlot = slotScores.get(sessionId)
+          ?? new Map<string, { sparse: number; dense: number }>();
+        const score = bySlot.get(slotId) ?? { sparse: 0, dense: 0 };
+        score[ranking.family] += contribution;
+        bySlot.set(slotId, score);
+        slotScores.set(sessionId, bySlot);
+      }
+    }
+  }
+  for (const [sessionId, candidate] of candidates) {
+    candidate.score = [...(slotScores.get(sessionId)?.values() ?? [])]
+      .reduce((sum, score) => sum + score.sparse + score.dense, 0);
+  }
+
+  const selected: EvidenceCandidate[] = [];
+  const selectedIds = new Set<string>();
+  const groups = args.blueprint.slots.flatMap((slot) => (["sparse", "dense"] as const).map(
+    (family) => ({
+      slotId: slot.id,
+      family,
+      candidates: [...candidates.values()]
+        .filter((candidate) => (slotScores.get(candidate.sessionId)?.get(slot.id)?.[family] ?? 0) > 0)
+        .sort((left, right) =>
+          (slotScores.get(right.sessionId)?.get(slot.id)?.[family] ?? 0)
+          - (slotScores.get(left.sessionId)?.get(slot.id)?.[family] ?? 0)
+          || right.score - left.score
+          || left.sessionId.localeCompare(right.sessionId)),
+      cursor: 0,
+    })),
+  );
+  while (selected.length < args.profile.poolMax) {
+    let progressed = false;
+    for (const group of groups) {
+      while (
+        group.cursor < group.candidates.length
+        && selectedIds.has(group.candidates[group.cursor]?.sessionId ?? "")
+      ) group.cursor += 1;
+      const candidate = group.candidates[group.cursor];
+      if (!candidate) continue;
+      group.cursor += 1;
+      selected.push(candidate);
+      selectedIds.add(candidate.sessionId);
+      progressed = true;
+      if (selected.length >= args.profile.poolMax) break;
+    }
+    if (!progressed) break;
+  }
+  const globallyRanked = [...candidates.values()].sort(
+    (left, right) => right.score - left.score || left.sessionId.localeCompare(right.sessionId),
+  );
+  for (const candidate of globallyRanked) {
+    if (selected.length >= args.profile.poolMax) break;
+    if (selectedIds.has(candidate.sessionId)) continue;
+    selected.push(candidate);
+    selectedIds.add(candidate.sessionId);
+  }
+  return {
+    pool: selected,
+    usage: embeddedQueries.usage,
+    trace: {
+      method: "answer_targeted_slot_family_v1",
+      corpus_hash: corpusHash,
+      provider: args.semantic.provider.config.provider,
+      model: args.semantic.provider.config.model,
+      dimension: args.semantic.provider.config.dimension,
+      dense_top_k: denseTopK,
+      sparse_queries: sparseTrace,
+      dense_queries: denseTrace,
+      pool: selected.map((candidate) => ({
+        session_id: candidate.sessionId,
+        score: candidate.score,
+        retrieval_slot_hypotheses: [...candidate.facetIds],
+        slot_family_scores: Object.fromEntries(
+          [...(slotScores.get(candidate.sessionId)?.entries() ?? [])],
+        ),
+      })),
+    },
+  };
+}
+
+function mergeAnswerTargetedPools(args: {
+  pools: EvidenceCandidate[][];
+  plan: FacetPlan;
+  poolMax: number;
+}): EvidenceCandidate[] {
+  const merged = new Map<string, EvidenceCandidate>();
+  for (const pool of args.pools) {
+    for (const candidate of pool) {
+      const existing = merged.get(candidate.sessionId);
+      if (!existing) {
+        merged.set(candidate.sessionId, {
+          ...candidate,
+          excerpts: new Set(candidate.excerpts),
+          facetIds: new Set(candidate.facetIds),
+          matchedTerms: new Set(candidate.matchedTerms),
+          ranks: [...candidate.ranks],
+        });
+        continue;
+      }
+      existing.score += candidate.score;
+      for (const excerpt of candidate.excerpts) existing.excerpts.add(excerpt);
+      for (const facetId of candidate.facetIds) existing.facetIds.add(facetId);
+      for (const term of candidate.matchedTerms) existing.matchedTerms.add(term);
+      existing.ranks.push(...candidate.ranks);
+    }
+  }
+  return rankParallelCandidates({
+    candidates: [...merged.values()],
+    plan: args.plan,
+    poolMax: args.poolMax,
+    coverageAware: true,
+  });
+}
+
 async function admitWithV1Prompt(args: {
   openai: OpenAI;
   prompts: PromptLoader;
@@ -1466,6 +2239,7 @@ async function admitWithV1Prompt(args: {
   space: CaseSpace;
   pool: EvidenceCandidate[];
   strategyContext?: string;
+  catalogText?: string;
   usage: Usage;
   modelIo: ModelIoRecord[];
 }): Promise<{ admitted: string[]; requested: string[] }> {
@@ -1480,7 +2254,7 @@ async function admitWithV1Prompt(args: {
       `Parallel multi-view search returned ${String(args.pool.length)} hits. `
       + "This is the complete result set: add every promising session now.\n"
       + (args.strategyContext ? `${args.strategyContext}\n` : "")
-      + candidateCatalog(args.pool, "search hit"),
+      + (args.catalogText ?? candidateCatalog(args.pool, "search hit")),
   });
   const inputText = envelopeText(prompt);
   assertNoRawSessionIdLeak(inputText, args.space.rawSessionIds);
@@ -1830,6 +2604,240 @@ async function runHybrid(args: {
               : "v1_prompt",
           requested: selection.requested,
           admitted: selection.admitted,
+        },
+      },
+    ],
+  };
+}
+
+async function runAnswerTargeted(args: {
+  openai: OpenAI;
+  prompts: PromptLoader;
+  gate: TokenGate;
+  model: string;
+  reasoning: Reasoning;
+  space: CaseSpace;
+  semantic: SemanticRuntime;
+  queryOnly: boolean;
+}): Promise<ArmResult> {
+  const profile = retrievalProfileForQuestion(args.space.raw.question);
+  if (profile.scope === "broad_history") {
+    const delegated = await runHybrid({
+      openai: args.openai,
+      prompts: args.prompts,
+      gate: args.gate,
+      model: args.model,
+      reasoning: args.reasoning,
+      space: args.space,
+      answerShapedEnabled: true,
+    });
+    return {
+      ...delegated,
+      trace: [
+        {
+          answer_targeted_workflow: {
+            activated: false,
+            status: "delegated_to_0008.1_broad_history",
+            query_only: args.queryOnly,
+          },
+        },
+        ...delegated.trace,
+      ],
+    };
+  }
+
+  const usage: Usage = { inputTokens: 0, outputTokens: 0, calls: 0 };
+  const modelIo: ModelIoRecord[] = [];
+  const blueprint = await planAnswerBlueprint({
+    ...args,
+    promptName: "hop-answer-contract-v2",
+    usage,
+    modelIo,
+  });
+  if (!blueprint) {
+    const fallback = await runHybrid({
+      openai: args.openai,
+      prompts: args.prompts,
+      gate: args.gate,
+      model: args.model,
+      reasoning: args.reasoning,
+      space: args.space,
+      semantic: args.semantic,
+    });
+    return {
+      ...fallback,
+      trace: [
+        {
+          answer_targeted_workflow: {
+            activated: false,
+            status: "answer_contract_failed_hybrid_dense_fallback",
+            query_only: args.queryOnly,
+          },
+        },
+        ...fallback.trace,
+      ],
+    };
+  }
+  const plan = answerContractPlan(blueprint);
+  const initialQueries = await planAnswerTargetedQueries({
+    ...args,
+    blueprint,
+    phase: "initial",
+    evidenceCatalog: "(no search has run yet)",
+    usage,
+    modelIo,
+  });
+  const initialDiscovery = await discoverAnswerTargetedPool({
+    space: args.space,
+    blueprint,
+    queryPlan: initialQueries,
+    profile,
+    semantic: args.semantic,
+    includeOriginalQuestion: true,
+  });
+
+  if (args.queryOnly) {
+    const selection = await admitWithV1Prompt({
+      ...args,
+      pool: initialDiscovery.pool,
+      strategyContext: [
+        "ANSWER-TARGETED QUERY ABLATION",
+        `answer_template=${blueprint.answer_template}`,
+        `completion_rule=${blueprint.completion_rule}`,
+        "required_slots:",
+        formatFacets(plan.facets),
+        "Retrieval slot labels are hypotheses; judge only printed excerpts.",
+      ].join("\n"),
+      catalogText: candidateCatalog(
+        initialDiscovery.pool,
+        "answer-targeted search hit",
+        true,
+      ),
+      usage,
+      modelIo,
+    });
+    return {
+      modelBag: selection.admitted,
+      modelPool: initialDiscovery.pool.map((candidate) => candidate.sessionId),
+      usage,
+      modelIo,
+      semanticUsage: initialDiscovery.usage,
+      trace: [
+        { retrieval_profile: profile },
+        {
+          answer_targeted_workflow: {
+            activated: true,
+            query_only: true,
+            initial_query_groups: initialQueries.query_groups.length,
+          },
+        },
+        { answer_contract: blueprint },
+        { initial_query_plan: initialQueries },
+        { initial_discovery: initialDiscovery.trace },
+        {
+          admission: {
+            method: "v1_prompt",
+            requested: selection.requested,
+            admitted: selection.admitted,
+          },
+        },
+      ],
+    };
+  }
+
+  const initialVerification = await verifyAnswerSlots({
+    ...args,
+    blueprint,
+    pool: initialDiscovery.pool,
+    stage: "initial",
+    usage,
+    modelIo,
+  });
+  const needsFollowUp = initialVerification.coverage.some(
+    (entry) => entry.status !== "covered",
+  );
+  const followUpQueries = needsFollowUp
+    ? await planAnswerTargetedQueries({
+      ...args,
+      blueprint,
+      phase: "follow_up",
+      verification: initialVerification,
+      evidenceCatalog: usefulVerifiedCandidateCatalog({
+        pool: initialDiscovery.pool,
+        verification: initialVerification,
+      }),
+      usage,
+      modelIo,
+    })
+    : { query_groups: [], stop: true, stop_reason: "Every answer slot is covered." };
+  const followUpDiscovery = !followUpQueries.stop && followUpQueries.query_groups.length > 0
+    ? await discoverAnswerTargetedPool({
+      space: args.space,
+      blueprint,
+      queryPlan: followUpQueries,
+      profile,
+      semantic: args.semantic,
+      includeOriginalQuestion: false,
+    })
+    : null;
+  const finalPool = followUpDiscovery
+    ? mergeAnswerTargetedPools({
+      pools: [initialDiscovery.pool, followUpDiscovery.pool],
+      plan,
+      poolMax: profile.poolMax,
+    })
+    : initialDiscovery.pool;
+  const finalVerification = followUpDiscovery
+    ? await verifyAnswerSlots({
+      ...args,
+      blueprint,
+      pool: finalPool,
+      stage: "final",
+      usage,
+      modelIo,
+    })
+    : initialVerification;
+  const modelBag = selectVerifiedCoverage({
+    blueprint,
+    candidates: finalPool,
+    verification: finalVerification,
+    bagMax: profile.bagMax,
+  });
+  const semanticUsage = mergeSemanticUsage([
+    initialDiscovery.usage,
+    followUpDiscovery?.usage,
+  ]);
+  return {
+    modelBag,
+    modelPool: finalPool.map((candidate) => candidate.sessionId),
+    usage,
+    modelIo,
+    ...(semanticUsage ? { semanticUsage } : {}),
+    trace: [
+      { retrieval_profile: profile },
+      {
+        answer_targeted_workflow: {
+          activated: true,
+          query_only: false,
+          initial_query_groups: initialQueries.query_groups.length,
+          follow_up_required: needsFollowUp,
+          follow_up_query_groups: followUpQueries.query_groups.length,
+        },
+      },
+      { answer_contract: blueprint },
+      { initial_query_plan: initialQueries },
+      { initial_discovery: initialDiscovery.trace },
+      { initial_verification: initialVerification },
+      { follow_up_query_plan: followUpQueries },
+      ...(followUpDiscovery ? [{ follow_up_discovery: followUpDiscovery.trace }] : []),
+      { final_verification: finalVerification },
+      {
+        selection: {
+          method: "verified_slot_cover_then_permissive_fill",
+          admitted: modelBag,
+          unresolved_slots: finalVerification.coverage
+            .filter((entry) => entry.status !== "covered")
+            .map((entry) => entry.slot_id),
         },
       },
     ],
@@ -2337,9 +3345,11 @@ async function main(): Promise<void> {
     "hybrid-dense",
     "answer-shaped",
     "answer-shaped-dense",
+    "answer-targeted-query",
+    "answer-targeted",
     "ledger",
   ].includes(arm)) {
-    throw new Error("--arm must be stateful, parallel, hybrid, hybrid-dense, answer-shaped, answer-shaped-dense, or ledger");
+    throw new Error("--arm must be stateful, parallel, hybrid, hybrid-dense, answer-shaped, answer-shaped-dense, answer-targeted-query, answer-targeted, or ledger");
   }
   if (!process.env.OPENAI_API_KEY) throw new Error("OPENAI_API_KEY is required");
   const idsPath = resolve(PROJECT_ROOT, cli.ids ?? DEFAULT_IDS);
@@ -2355,7 +3365,12 @@ async function main(): Promise<void> {
     ? resolve(PROJECT_ROOT, cli["semantic-index"])
     : null;
   const embeddingConcurrency = Number(cli["embedding-concurrency"] ?? "8");
-  if ((arm === "hybrid-dense" || arm === "answer-shaped-dense") && !semanticIndexPath) {
+  if ((
+    arm === "hybrid-dense"
+    || arm === "answer-shaped-dense"
+    || arm === "answer-targeted-query"
+    || arm === "answer-targeted"
+  ) && !semanticIndexPath) {
     throw new Error("--semantic-index is required for dense retrieval arms");
   }
   const limit = cli.limit ? Number(cli.limit) : undefined;
@@ -2380,7 +3395,12 @@ async function main(): Promise<void> {
   const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY, maxRetries: 2 });
   const prompts = new PromptLoader();
   const gate = new TokenGate(tokenBudget, windowSeconds, concurrency);
-  const semanticRuntime = (arm === "hybrid-dense" || arm === "answer-shaped-dense")
+  const semanticRuntime = (
+    arm === "hybrid-dense"
+    || arm === "answer-shaped-dense"
+    || arm === "answer-targeted-query"
+    || arm === "answer-targeted"
+  )
     && semanticIndexPath
     ? (() => {
       const indexSet = new SemanticIndexSet(semanticIndexPath);
@@ -2412,6 +3432,8 @@ async function main(): Promise<void> {
       || arm === "hybrid-dense"
       || arm === "answer-shaped"
       || arm === "answer-shaped-dense"
+      || arm === "answer-targeted-query"
+      || arm === "answer-targeted"
     ) && raw
       ? retrievalProfileForQuestion(raw.question)
       : FOCUSED_RETRIEVAL_PROFILE;
@@ -2450,7 +3472,18 @@ async function main(): Promise<void> {
         ? await runStateful({ openai, prompts, gate, model, reasoning, space })
         : arm === "parallel"
           ? await runParallel({ openai, prompts, gate, model, reasoning, space })
-          : arm === "hybrid"
+          : arm === "answer-targeted-query" || arm === "answer-targeted"
+            ? await runAnswerTargeted({
+              openai,
+              prompts,
+              gate,
+              model,
+              reasoning,
+              space,
+              semantic: semanticRuntime as SemanticRuntime,
+              queryOnly: arm === "answer-targeted-query",
+            })
+            : arm === "hybrid"
             || arm === "hybrid-dense"
             || arm === "answer-shaped"
             || arm === "answer-shaped-dense"
