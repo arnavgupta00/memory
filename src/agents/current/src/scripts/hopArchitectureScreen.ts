@@ -7,6 +7,7 @@
  * - hybrid: parallel candidate discovery, then permissive v1-style admission.
  * - hybrid-dense: family-balanced BM25 + semantic discovery, then v1 admission.
  * - answer-shaped: gated two-agent blueprint/search feedback over hybrid discovery.
+ * - answer-shaped-dense: answer-shaped workflow with BM25 + semantic discovery.
  * - ledger: occurrence-aware claim search, batched verification, set cover.
  *
  * All model-visible session references are deterministic per-case opaque handles.
@@ -86,7 +87,14 @@ const OUTPUT_RESERVE = 1_200;
 const LUNA_INPUT_PRICE = 1;
 const LUNA_OUTPUT_PRICE = 6;
 
-type Arm = "stateful" | "parallel" | "hybrid" | "hybrid-dense" | "answer-shaped" | "ledger";
+type Arm =
+  | "stateful"
+  | "parallel"
+  | "hybrid"
+  | "hybrid-dense"
+  | "answer-shaped"
+  | "answer-shaped-dense"
+  | "ledger";
 type Reasoning = "none" | "low" | "medium" | "high";
 
 type SliceCase = {
@@ -226,6 +234,20 @@ type SemanticRuntime = {
   provider: SemanticEmbeddingProvider;
   annotations: Map<string, SessionAnnotation>;
 };
+
+function mergeSemanticUsage(
+  usages: Array<SemanticEmbeddingUsage | undefined>,
+): SemanticEmbeddingUsage | undefined {
+  const present = usages.filter(
+    (item): item is SemanticEmbeddingUsage => item !== undefined,
+  );
+  if (present.length === 0) return undefined;
+  return {
+    inputTokens: present.reduce((sum, item) => sum + item.inputTokens, 0),
+    requests: present.reduce((sum, item) => sum + item.requests, 0),
+    exactTokenCount: present.every((item) => item.exactTokenCount),
+  };
+}
 
 const FacetPlanSchema = z.strictObject({
   facets: z.array(
@@ -1598,6 +1620,7 @@ async function runHybrid(args: {
   space: CaseSpace;
   answerShapedEnabled?: boolean;
   semantic?: SemanticRuntime;
+  semanticRoutedOnly?: boolean;
 }): Promise<ArmResult> {
   const usage: Usage = { inputTokens: 0, outputTokens: 0, calls: 0 };
   const modelIo: ModelIoRecord[] = [];
@@ -1611,12 +1634,16 @@ async function runHybrid(args: {
 
   if (!blueprint) {
     const plan = await planFacets({ ...args, usage, modelIo });
-    const ensemble = args.semantic
+    const useSemantic = args.semantic
+      && (!args.semanticRoutedOnly || answerShapedMode !== null)
+      ? args.semantic
+      : null;
+    const ensemble = useSemantic
       ? await discoverEnsemblePool({
         space: args.space,
         plan,
         profile,
-        semantic: args.semantic,
+        semantic: useSemantic,
       })
       : null;
     const pool = ensemble?.pool
@@ -1679,12 +1706,21 @@ async function runHybrid(args: {
   let initialQueries = controllerQueries({ blueprint, output: initialController });
   if (initialQueries.length === 0) initialQueries = blueprintFallbackQueries(blueprint);
   const initialPlan = facetPlanFromBlueprint({ blueprint, queries: initialQueries });
-  const firstPool = discoverParallelPool({
-    space: args.space,
-    plan: initialPlan,
-    profile,
-    coverageAware: true,
-  });
+  const firstEnsemble = args.semantic
+    ? await discoverEnsemblePool({
+      space: args.space,
+      plan: initialPlan,
+      profile,
+      semantic: args.semantic,
+    })
+    : null;
+  const firstPool = firstEnsemble?.pool
+    ?? discoverParallelPool({
+      space: args.space,
+      plan: initialPlan,
+      profile,
+      coverageAware: true,
+    });
   const followUpController = await runSearchController({
     ...args,
     blueprint,
@@ -1700,13 +1736,22 @@ async function runHybrid(args: {
   });
   const combinedQueries = [...initialQueries, ...followUpQueries];
   const plan = facetPlanFromBlueprint({ blueprint, queries: combinedQueries });
-  const pool = followUpQueries.length > 0
-    ? discoverParallelPool({
+  const finalEnsemble = followUpQueries.length > 0 && args.semantic
+    ? await discoverEnsemblePool({
       space: args.space,
       plan,
       profile,
-      coverageAware: true,
+      semantic: args.semantic,
     })
+    : null;
+  const pool = followUpQueries.length > 0
+    ? finalEnsemble?.pool
+      ?? discoverParallelPool({
+        space: args.space,
+        plan,
+        profile,
+        coverageAware: true,
+      })
     : firstPool;
   const broadSessionIds = pool
     .slice(0, profile.bagMax)
@@ -1731,11 +1776,16 @@ async function runHybrid(args: {
       usage,
       modelIo,
     });
+  const semanticUsage = mergeSemanticUsage([
+    firstEnsemble?.usage,
+    finalEnsemble?.usage,
+  ]);
   return {
     modelBag: selection.admitted,
     modelPool: pool.map((item) => item.sessionId),
     usage,
     modelIo,
+    ...(semanticUsage ? { semanticUsage } : {}),
     trace: [
       { retrieval_profile: profile },
       {
@@ -1748,20 +1798,26 @@ async function runHybrid(args: {
       },
       { answer_blueprint: blueprint },
       { initial_search_controller: initialController },
+      ...(firstEnsemble ? [{ round_1_ensemble_discovery: firstEnsemble.trace }] : []),
       {
         round_1_candidate_pool: firstPool.map((item) => ({
           session_id: item.sessionId,
           score: item.score,
+          sparse_score: item.fusion?.sparseScore ?? null,
+          dense_score: item.fusion?.denseScore ?? null,
           facet_ids: [...item.facetIds],
           ranks: item.ranks,
         })),
       },
       { follow_up_search_controller: followUpController },
       { plan },
+      ...(finalEnsemble ? [{ final_ensemble_discovery: finalEnsemble.trace }] : []),
       {
         candidate_pool: pool.map((item) => ({
           session_id: item.sessionId,
           score: item.score,
+          sparse_score: item.fusion?.sparseScore ?? null,
+          dense_score: item.fusion?.denseScore ?? null,
           facet_ids: [...item.facetIds],
           ranks: item.ranks,
         })),
@@ -2274,8 +2330,16 @@ async function main(): Promise<void> {
   loadDotEnv(resolve(PROJECT_ROOT, ".env"));
   const cli = parseArgs(process.argv.slice(2));
   const arm = cli.arm as Arm | undefined;
-  if (!arm || !["stateful", "parallel", "hybrid", "hybrid-dense", "answer-shaped", "ledger"].includes(arm)) {
-    throw new Error("--arm must be stateful, parallel, hybrid, hybrid-dense, answer-shaped, or ledger");
+  if (!arm || ![
+    "stateful",
+    "parallel",
+    "hybrid",
+    "hybrid-dense",
+    "answer-shaped",
+    "answer-shaped-dense",
+    "ledger",
+  ].includes(arm)) {
+    throw new Error("--arm must be stateful, parallel, hybrid, hybrid-dense, answer-shaped, answer-shaped-dense, or ledger");
   }
   if (!process.env.OPENAI_API_KEY) throw new Error("OPENAI_API_KEY is required");
   const idsPath = resolve(PROJECT_ROOT, cli.ids ?? DEFAULT_IDS);
@@ -2291,8 +2355,8 @@ async function main(): Promise<void> {
     ? resolve(PROJECT_ROOT, cli["semantic-index"])
     : null;
   const embeddingConcurrency = Number(cli["embedding-concurrency"] ?? "8");
-  if (arm === "hybrid-dense" && !semanticIndexPath) {
-    throw new Error("--semantic-index is required for --arm hybrid-dense");
+  if ((arm === "hybrid-dense" || arm === "answer-shaped-dense") && !semanticIndexPath) {
+    throw new Error("--semantic-index is required for dense retrieval arms");
   }
   const limit = cli.limit ? Number(cli.limit) : undefined;
   const outPath = resolve(
@@ -2316,7 +2380,8 @@ async function main(): Promise<void> {
   const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY, maxRetries: 2 });
   const prompts = new PromptLoader();
   const gate = new TokenGate(tokenBudget, windowSeconds, concurrency);
-  const semanticRuntime = arm === "hybrid-dense" && semanticIndexPath
+  const semanticRuntime = (arm === "hybrid-dense" || arm === "answer-shaped-dense")
+    && semanticIndexPath
     ? (() => {
       const indexSet = new SemanticIndexSet(semanticIndexPath);
       const provider = createSemanticProvider({
@@ -2342,7 +2407,12 @@ async function main(): Promise<void> {
   async function runOne(indexCase: number, sliceCase: SliceCase): Promise<void> {
     const raw = byId.get(sliceCase.question_id);
     const goldReal = goldById.get(sliceCase.question_id) ?? [];
-    const profile = (arm === "hybrid" || arm === "hybrid-dense" || arm === "answer-shaped") && raw
+    const profile = (
+      arm === "hybrid"
+      || arm === "hybrid-dense"
+      || arm === "answer-shaped"
+      || arm === "answer-shaped-dense"
+    ) && raw
       ? retrievalProfileForQuestion(raw.question)
       : FOCUSED_RETRIEVAL_PROFILE;
     const caseStarted = Date.now();
@@ -2380,7 +2450,10 @@ async function main(): Promise<void> {
         ? await runStateful({ openai, prompts, gate, model, reasoning, space })
         : arm === "parallel"
           ? await runParallel({ openai, prompts, gate, model, reasoning, space })
-          : arm === "hybrid" || arm === "hybrid-dense" || arm === "answer-shaped"
+          : arm === "hybrid"
+            || arm === "hybrid-dense"
+            || arm === "answer-shaped"
+            || arm === "answer-shaped-dense"
             ? await runHybrid({
               openai,
               prompts,
@@ -2388,8 +2461,10 @@ async function main(): Promise<void> {
               model,
               reasoning,
               space,
-              answerShapedEnabled: arm === "answer-shaped",
-              ...(arm === "hybrid-dense" && semanticRuntime
+              answerShapedEnabled:
+                arm === "answer-shaped" || arm === "answer-shaped-dense",
+              ...(arm === "answer-shaped-dense" ? { semanticRoutedOnly: true } : {}),
+              ...((arm === "hybrid-dense" || arm === "answer-shaped-dense") && semanticRuntime
                 ? { semantic: semanticRuntime }
                 : {}),
             })

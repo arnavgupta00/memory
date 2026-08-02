@@ -127,11 +127,17 @@ async function main(): Promise<void> {
     throw new Error(`--stage must be all or one of ${STAGES.join(", ")}`);
   }
   const retrievalArm = args["retrieval-arm"] ?? "hybrid";
-  if (!new Set(["hybrid", "hybrid-dense", "answer-shaped"]).has(retrievalArm)) {
-    throw new Error("--retrieval-arm must be hybrid, hybrid-dense, or answer-shaped");
+  if (!new Set([
+    "hybrid",
+    "hybrid-dense",
+    "answer-shaped",
+    "answer-shaped-dense",
+  ]).has(retrievalArm)) {
+    throw new Error("--retrieval-arm must be hybrid, hybrid-dense, answer-shaped, or answer-shaped-dense");
   }
+  const usesSemantic = retrievalArm === "hybrid-dense" || retrievalArm === "answer-shaped-dense";
   const stages: Stage[] = stageArg === "all"
-    ? STAGES.filter((stage) => stage !== "semantic-index" || retrievalArm === "hybrid-dense")
+    ? STAGES.filter((stage) => stage !== "semantic-index" || usesSemantic)
     : [stageArg as Stage];
   const beamRoot = resolve(PROJECT_ROOT, required(args["beam-root"], "--beam-root"));
   const beamRepo = args["beam-repo"]
@@ -153,7 +159,11 @@ async function main(): Promise<void> {
   );
   const retrievalCases = resolve(runRoot, "traces/retrieval/cases");
   const downstreamDir = resolve(runRoot, "downstream");
-  const architectureName = retrievalArm === "hybrid-dense" ? "architecture-0008.2" : "architecture-0008";
+  const architectureName = retrievalArm === "hybrid-dense"
+    ? "architecture-0008.2"
+    : retrievalArm === "answer-shaped-dense"
+      ? "architecture-0008.3"
+      : "architecture-0008";
   const downstreamRun = resolve(downstreamDir, `${architectureName}-3`);
   const officialResults = resolve(runRoot, "official-results");
   const concurrency = args.concurrency ?? "128";
@@ -183,7 +193,11 @@ async function main(): Promise<void> {
     schema_version: 1,
     benchmark: "BEAM",
     tier: "1M",
-    architecture: retrievalArm === "hybrid-dense" ? "0008.2" : "0008",
+    architecture: retrievalArm === "hybrid-dense"
+      ? "0008.2"
+      : retrievalArm === "answer-shaped-dense"
+        ? "0008.3"
+        : "0008",
     status: "running",
     created_at: new Date().toISOString(),
     requested_stages: stages,
@@ -196,7 +210,7 @@ async function main(): Promise<void> {
       planner_and_admission_model: "gpt-5.6-luna",
       planner_and_admission_reasoning: "low",
       retrieval_arm: retrievalArm,
-      ...(retrievalArm === "hybrid-dense"
+      ...(usesSemantic
         ? {
           semantic_retrieval: {
             provider: embeddingProvider,
@@ -294,7 +308,7 @@ async function main(): Promise<void> {
       "--token-budget", tokenBudget,
       "--case-artifacts", retrievalCases,
       "--out", retrievalPath,
-      ...(retrievalArm === "hybrid-dense"
+      ...(usesSemantic
         ? [
           "--semantic-index", semanticIndexDir,
           "--embedding-concurrency", embeddingConcurrency,
