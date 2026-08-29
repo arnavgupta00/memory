@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "benchmark": "BEAM",
+  "tier": "1M",
+  "name": "beam-1m-compression-smoke12-v1",
+  "role": "development_smoke_not_predictive",
+  "question_ids": [
+    "beam-1m/chat-18/summarization/1",
+    "beam-1m/chat-29/summarization/2",
+    "beam-1m/chat-25/summarization/1",
+    "beam-1m/chat-18/summarization/2",
+    "beam-1m/chat-29/multi_session_reasoning/1",
+    "beam-1m/chat-25/multi_session_reasoning/2",
+    "beam-1m/chat-08/multi_session_reasoning/2",
+    "beam-1m/chat-18/multi_session_reasoning/2",
+    "beam-1m/chat-25/information_extraction/2",
+    "beam-1m/chat-25/temporal_reasoning/1",
+    "beam-1m/chat-08/contradiction_resolution/2",
+    "beam-1m/chat-08/instruction_following/1"
+  ],
+  "ability_counts": {
+    "contradiction_resolution": 1,
+    "information_extraction": 1,
+    "instruction_following": 1,
+    "multi_session_reasoning": 4,
+    "summarization": 4,
+    "temporal_reasoning": 1
+  },
+  "selection": {
+    "policy": "four summarization, four multi-session, and four point-task controls; broad cases ordered by measured K81 loss",
+    "source_diagnostic": "/Users/arnav/programming/projects/memory/runs/beam-1m-k81-downstream-20260806/layer-diagnostic.json",
+    "warning": "selection used the unreconciled oracle only to stress known failure shapes; scoring must use the recertified oracle"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "benchmark": "BEAM",
+  "tier": "1M",
+  "name": "beam-1m-compression-answer-ab8-v1",
+  "role": "development_answer_ab_not_predictive",
+  "question_ids": [
+    "beam-1m/chat-18/summarization/1",
+    "beam-1m/chat-29/summarization/2",
+    "beam-1m/chat-25/summarization/1",
+    "beam-1m/chat-18/summarization/2",
+    "beam-1m/chat-29/multi_session_reasoning/1",
+    "beam-1m/chat-25/multi_session_reasoning/2",
+    "beam-1m/chat-08/multi_session_reasoning/2",
+    "beam-1m/chat-18/multi_session_reasoning/2"
+  ],
+  "ability_counts": {
+    "summarization": 4,
+    "multi_session_reasoning": 4
+  },
+  "selection": {
+    "policy": "the eight broad-history cases from the pre-existing frozen compression smoke12 cohort",
+    "parent_manifest": "beam-1m-compression-smoke12-v1.json",
+    "warning": "development A/B only; do not treat eight questions as a population estimate"
+  }
+}

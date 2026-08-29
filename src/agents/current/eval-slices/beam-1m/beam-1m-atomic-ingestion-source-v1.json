@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "benchmark": "BEAM",
+  "tier": "1M",
+  "name": "beam-1m-atomic-ingestion-source-v1",
+  "role": "question_blind_ingestion_source_selection",
+  "selection_seed": "beam-1m-atomic-ingestion-dev-v1",
+  "eligible_conversation_ids": [3, 18],
+  "primary_conversation_id": 18,
+  "primary_sha256_rank": "0323f00dd2284098aaffc3c8521e2793259d54252a02f62da7eccd4abc928a0f",
+  "shadow_conversation_id": 3,
+  "shadow_sha256_rank": "b3f045df83d75f191ff9d4cc5173cf7c86f0754081b44f03e0a3ab7f71f0fb14",
+  "forbidden_inputs": [
+    "question or probe manifests",
+    "answers or scoring rubrics",
+    "oracle atoms or source IDs",
+    "retrieval and compression traces",
+    "prior predictions and scores"
+  ]
+}

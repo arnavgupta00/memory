@@ -6,6 +6,12 @@
 **Checkpoint:** [architecture/0008-CHECKPOINT-2026-07-31.md](architecture/0008-CHECKPOINT-2026-07-31.md)
 **Certification:** [architecture/0008-FULL500-CERTIFICATION-2026-07-31.md](architecture/0008-FULL500-CERTIFICATION-2026-07-31.md)
 **BEAM checkpoint:** [architecture/BEAM-1M-CANARY-A-CHECKPOINT-2026-08-01.md](architecture/BEAM-1M-CANARY-A-CHECKPOINT-2026-08-01.md)
+**BEAM retrieval advancement gate:** [architecture/BEAM-1M-RETRIEVAL-ADVANCEMENT-GATE-2026-08-08.md](architecture/BEAM-1M-RETRIEVAL-ADVANCEMENT-GATE-2026-08-08.md)
+**BEAM Phase-1 diagnosis:** [architecture/BEAM-1M-PHASE1-RETRIEVAL-DIAGNOSIS-2026-08-08.md](architecture/BEAM-1M-PHASE1-RETRIEVAL-DIAGNOSIS-2026-08-08.md)
+**BEAM coverage-first compression workflow:** [architecture/BEAM-1M-COMPRESSION-WORKFLOW-2026-08-08.md](architecture/BEAM-1M-COMPRESSION-WORKFLOW-2026-08-08.md)
+**BEAM alternative compression micro-gate:** [architecture/BEAM-1M-COMPRESSION-ALTERNATIVES-MICROGATE-2026-08-09.md](architecture/BEAM-1M-COMPRESSION-ALTERNATIVES-MICROGATE-2026-08-09.md)
+
+**BEAM Coverage Explorer answer A/B:** [architecture/BEAM-1M-COMPRESSION-ANSWER-AB8-2026-08-09.md](architecture/BEAM-1M-COMPRESSION-ANSWER-AB8-2026-08-09.md)
 
 ## Selected pipeline
 

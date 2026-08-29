@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "benchmark": "BEAM",
+  "tier": "1M",
+  "name": "beam-1m-compression-micro4-v1",
+  "role": "development_falsification_screen_not_score_estimate",
+  "question_ids": [
+    "beam-1m/chat-18/summarization/2",
+    "beam-1m/chat-29/multi_session_reasoning/1",
+    "beam-1m/chat-25/information_extraction/2",
+    "beam-1m/chat-08/instruction_following/1"
+  ],
+  "ability_counts": {
+    "summarization": 1,
+    "multi_session_reasoning": 1,
+    "information_extraction": 1,
+    "instruction_following": 1
+  },
+  "selection": {
+    "eligibility": "certified development-smoke questions whose discovery union contains every recertified evidence atom",
+    "hash_seed": "beam-compression-micro-v1",
+    "policy": "lowest SHA-256 within summarization and multi-session strata, plus the two lowest point-task hashes from distinct abilities",
+    "forbidden_inputs": [
+      "prior compressor score",
+      "gold-session position",
+      "answer text",
+      "sealed holdout"
+    ]
+  },
+  "advancement_gate": {
+    "complete_stories": "4/4",
+    "minimum_atom_recall": 0.97,
+    "maximum_retained_token_fraction_per_case": 0.5,
+    "cost": "reported_not_gated",
+    "maximum_invalid_source_pointer_rate": 0.005
+  },
+  "warning": "Passing only authorizes a larger development smoke; it does not establish an 85% population score."
+}

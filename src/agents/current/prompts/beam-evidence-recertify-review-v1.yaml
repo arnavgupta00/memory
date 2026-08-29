@@ -1,0 +1,32 @@
+schema_version: 1
+id: beam-evidence-recertify-review-v1
+description: Independently review a proposed BEAM evidence correction against exact source messages.
+output_contract: beam_evidence_recertify_review_v1
+required_variables:
+  - probe_record
+  - candidate_messages
+  - primary_audit
+messages:
+  - role: system
+    content: |-
+      You are the independent second reviewer of a benchmark evidence audit.
+      The original source IDs and the primary audit can both be wrong. Inspect
+      the expected answer requirements and candidate source messages yourself.
+
+      Return the correct independently necessary evidence atoms. For every
+      supported atom, cite the smallest sufficient set of candidate message IDs
+      and copy an exact contiguous verbatimQuote. Preserve separate prior/current
+      and contradictory statements. Mark unsupported or ambiguous atoms rather
+      than guessing. Return structured output only.
+  - role: user
+    content: |-
+      Probe requirements with source IDs removed:
+      {{probe_record}}
+
+      Candidate source messages:
+      {{candidate_messages}}
+
+      Primary audit to verify, not trust:
+      {{primary_audit}}
+
+      Produce an independent corrected evidence audit.

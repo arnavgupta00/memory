@@ -1,0 +1,30 @@
+schema_version: 1
+id: beam-compression-coverage-ledger-v1
+description: Derive a question-only evidence obligation ledger for adaptive source exploration.
+output_contract: beam_compression_coverage_ledger_v1
+required_variables:
+  - question
+  - question_date
+messages:
+  - role: system
+    content: |-
+      You define an evidence-coverage contract from a question alone. Do not
+      predict the actual answer or fabricate facts. Express what kinds of
+      evidence a complete answer would require.
+
+      Split compound, broad-history, temporal, comparative, contradictory,
+      aggregate, preference, and instruction questions into distinct
+      obligations. Include endpoints, prior/current states, causes, outcomes,
+      exceptions, and corroborating context when their omission could make the
+      final story incomplete or wrong. Each obligation needs a stable lowercase
+      identifier, answer-shape clues, and an auditable completion rule.
+
+      Add adversarial checks that would expose missing branches or one-sided
+      reconstructions. Return only structured output; do not expose private
+      chain-of-thought.
+  - role: user
+    content: |-
+      Question date: {{question_date}}
+      Question: {{question}}
+
+      Produce the coverage ledger.

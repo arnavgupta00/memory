@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "benchmark": "BEAM",
+  "tier": "1M",
+  "name": "beam-1m-compression-holdout40-v1",
+  "role": "sealed_compression_generalization_gate_do_not_open_during_prompt_development",
+  "source": {
+    "repository": "https://github.com/mohammadtavakoli78/BEAM",
+    "commit": "3e12035532eb85768f1a7cd779832b650c4b2ef9",
+    "topics_sha256": "1c060ac0ac17ccae49f797b7fc12f802a824ae14c67d6648f3058da902e18086"
+  },
+  "conversation_ids": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    13,
+    15,
+    16,
+    19,
+    20,
+    21,
+    23,
+    28,
+    31,
+    32,
+    33,
+    34
+  ],
+  "question_keys": [
+    "beam-1m/chat-21/contradiction_resolution/2",
+    "beam-1m/chat-04/contradiction_resolution/1",
+    "beam-1m/chat-13/contradiction_resolution/1",
+    "beam-1m/chat-20/contradiction_resolution/1",
+    "beam-1m/chat-05/contradiction_resolution/1",
+    "beam-1m/chat-06/information_extraction/2",
+    "beam-1m/chat-34/information_extraction/2",
+    "beam-1m/chat-21/information_extraction/1",
+    "beam-1m/chat-11/information_extraction/2",
+    "beam-1m/chat-31/information_extraction/2",
+    "beam-1m/chat-11/instruction_following/2",
+    "beam-1m/chat-23/instruction_following/2",
+    "beam-1m/chat-16/instruction_following/2",
+    "beam-1m/chat-20/instruction_following/1",
+    "beam-1m/chat-07/instruction_following/1",
+    "beam-1m/chat-20/knowledge_update/2",
+    "beam-1m/chat-32/knowledge_update/2",
+    "beam-1m/chat-33/knowledge_update/2",
+    "beam-1m/chat-19/knowledge_update/2",
+    "beam-1m/chat-31/knowledge_update/1",
+    "beam-1m/chat-32/multi_session_reasoning/2",
+    "beam-1m/chat-15/multi_session_reasoning/1",
+    "beam-1m/chat-16/multi_session_reasoning/1",
+    "beam-1m/chat-06/multi_session_reasoning/1",
+    "beam-1m/chat-21/multi_session_reasoning/1",
+    "beam-1m/chat-19/preference_following/2",
+    "beam-1m/chat-33/preference_following/2",
+    "beam-1m/chat-34/preference_following/2",
+    "beam-1m/chat-20/preference_following/2",
+    "beam-1m/chat-06/preference_following/2",
+    "beam-1m/chat-07/summarization/2",
+    "beam-1m/chat-04/summarization/1",
+    "beam-1m/chat-13/summarization/1",
+    "beam-1m/chat-32/summarization/2",
+    "beam-1m/chat-05/summarization/1",
+    "beam-1m/chat-28/temporal_reasoning/1",
+    "beam-1m/chat-11/temporal_reasoning/2",
+    "beam-1m/chat-04/temporal_reasoning/1",
+    "beam-1m/chat-34/temporal_reasoning/1",
+    "beam-1m/chat-31/temporal_reasoning/2"
+  ],
+  "source_records": [
+    {
+      "conversation_id": 4,
+      "category": "Coding",
+      "chat_sha256": "10a69ff4b6f868e9ee401038894fef5bbbee9faf8149f75ba64db37b1370484d",
+      "probing_questions_sha256": "23e4f2bfdb6b2189edecf231d8d8b909c76d1a984c267ac72d1a2b078d57739a"
+    },
+    {
+      "conversation_id": 5,
+      "category": "Coding",
+      "chat_sha256": "f622e6f1a2823c781889dc40e20647f6bb2e9013b8ad029ab802516a31d71f3b",
+      "probing_questions_sha256": "4543ef75d7b7e183ca22fcdc558011ec03e5f7ec50290cc011fb49949d79e812"
+    },
+    {
+      "conversation_id": 6,
+      "category": "Math",
+      "chat_sha256": "5900bf2cdf7020048bddd29bb7ee55fa4161341012e5a4c9690c4b0e5b3472ab",
+      "probing_questions_sha256": "47a0df103bd156d3b11a08ea9bce9da094134e14cfcfe938ee21d564edd9bbfd"
+    },
+    {
+      "conversation_id": 7,
+      "category": "Math",
+      "chat_sha256": "41d92b8f58db9d86fe04669a568a4642cbf76ad44e4200f5baef750b76a89201",
+      "probing_questions_sha256": "e5fa0845934d98404a7083ea992e1c28ec3eac1810cc272e869967b8720d072f"
+    },
+    {
+      "conversation_id": 11,
+      "category": "Career and Professional Development",
+      "chat_sha256": "1011097be4afde22ef2beffa8a1be14e8f05e37981f43355edb53b9545bf1dc7",
+      "probing_questions_sha256": "40a9d0720baf79882a9b0455fd948c2ef5e0001512eff860aa9d7645dd1b610d"
+    },
+    {
+      "conversation_id": 13,
+      "category": "Financial Investment",
+      "chat_sha256": "e57197ff4c7daf17546cc9a43ff76b16530644893b461c3160b0a1097ede0241",
+      "probing_questions_sha256": "ca8cde4a6c38e84cbd8b3c4c852e22ab559c3ff3dd2f6605684b7f0a97ea544a"
+    },
+    {
+      "conversation_id": 15,
+      "category": "Health & Wellness",
+      "chat_sha256": "4e2b98451c52aa74cb52221c0f1adba15c04d6fc41e4af4bca1947a597128885",
+      "probing_questions_sha256": "e852b9a64031d0335013679376fedfbc1c922b8561178f47e936f9f74bddf80a"
+    },
+    {
+      "conversation_id": 16,
+      "category": "Health & Wellness",
+      "chat_sha256": "53258c5c84fd669f9aa3bdf2101dae2007a4dbb6ddf7bca828dec70059a520da",
+      "probing_questions_sha256": "0059214945c52a617f28d429ece9e8f17d7bc34bed5c2c2edbb735a21c5ef3cf"
+    },
+    {
+      "conversation_id": 19,
+      "category": "Education & Learning",
+      "chat_sha256": "63c549e2aebebe9fc1ac89a79a6538584e5643649a41bbcb908f4cd072be7660",
+      "probing_questions_sha256": "9e2e2336bead1a063112e3f50faf194c1f0fb73f3b8a6f381c9d69cac8429ce6"
+    },
+    {
+      "conversation_id": 20,
+      "category": "Home & Real Estate",
+      "chat_sha256": "b625de2f8f716ea0e5e4a5db58b4093a28efb1734c93aa7aa103dde95bc408a0",
+      "probing_questions_sha256": "7f9d121386bed47be754aede8acdf70578880c9f91a4f2a4718424f65a7dbd67"
+    },
+    {
+      "conversation_id": 21,
+      "category": "Home & Real Estate",
+      "chat_sha256": "001cbde94873130236743b124f5cac82724a91d88ac35254017b0d09dd730555",
+      "probing_questions_sha256": "231efdb4f1c4aea8ac2a518721dcb9a79ce90e626a9d4469a8e21d6f86ae6e99"
+    },
+    {
+      "conversation_id": 23,
+      "category": "Cooking",
+      "chat_sha256": "445120153fd81655104f6de253ec6f565cd837df42c5241e6cd4e303f49960f2",
+      "probing_questions_sha256": "ceafa932d51f3fabf4dd405e53ed834c64e6854cb622034787293c9392a58678"
+    },
+    {
+      "conversation_id": 28,
+      "category": "Sport",
+      "chat_sha256": "82dc51ecaabfc9e79990c5dd799b91d06f96e1212c2f0a90ec5991f88f0313c6",
+      "probing_questions_sha256": "40741124c30aeaaf9e576582edcde7501cb9db415cabffa43e0ef1b49b05892f"
+    },
+    {
+      "conversation_id": 31,
+      "category": "Trip Planning",
+      "chat_sha256": "4aec3143e4b364e730e37b8d0f5c623403568c4a163537285f97a687673a7131",
+      "probing_questions_sha256": "db22b6bce15e3d18b987c13f17360e7c8476b8a812a2134311cad1cf08673289"
+    },
+    {
+      "conversation_id": 32,
+      "category": "Trip Planning",
+      "chat_sha256": "81e4ee283ec2ed74708da6466d82336285db21b002040bc628336072cc7a2614",
+      "probing_questions_sha256": "6a6b8a519ad4c6725b4af956ecaf9e6628efa97418345e456d6874a4d1626fec"
+    },
+    {
+      "conversation_id": 33,
+      "category": "Event Planning",
+      "chat_sha256": "b19656e14da34a8ab21b1127e3f1185f988849bab733ed60e4a8229478d05b6e",
+      "probing_questions_sha256": "081dd9ed2a505e1bcf75af42b9d98d369ec21d144efdf18886cdc6e76bd99e95"
+    },
+    {
+      "conversation_id": 34,
+      "category": "Event Planning",
+      "chat_sha256": "c485a46820442fbc9bf27d6d4062622902948486ab626443d51a2487c68c9cad",
+      "probing_questions_sha256": "c01d65e3416e9d973fb0b05d18c474ce4a145303656850753bcd47b4f287281d"
+    }
+  ],
+  "sealed": true,
+  "selection": {
+    "source_manifest": "/Users/arnav/programming/projects/memory/src/agents/current/eval-slices/beam-1m/beam-1m-blind-reserve-v1.json",
+    "seed_sha256": "d555179bce2061affda02c35ae98d87bf6ba14ef097c0f83a07d9ecc273a77c5",
+    "policy": "five hash-selected, conversation-distinct questions per focused answerable ability; no question text, answers, rubrics, or scores inspected",
+    "ability_counts": {
+      "contradiction_resolution": 5,
+      "information_extraction": 5,
+      "instruction_following": 5,
+      "knowledge_update": 5,
+      "multi_session_reasoning": 5,
+      "preference_following": 5,
+      "summarization": 5,
+      "temporal_reasoning": 5
+    }
+  }
+}

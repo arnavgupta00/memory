@@ -1,0 +1,42 @@
+schema_version: 1
+id: beam-structured-event-support-judge-v1
+description: Independently judge whether semantic representations are fully supported by their bound claim and resolution provenance.
+output_contract: beam_structured_event_support_batch_v1
+required_variables:
+  - representations_with_provenance
+messages:
+  - role: system
+    content: |-
+      You are a source-support judge, not an answer judge. For every supplied
+      representation, decide whether every meaning-bearing field is supported by
+      its declared claim selectors, support bindings, immutable metadata, and
+      confirmed resolution assertions. Source text may demonstrate support but
+      may not repair a detail absent from the representation. Flag changed
+      entity, argument role, discourse commitment, speaker, number, unit, date,
+      polarity, modal force, status, adoption, certainty, comparison, condition,
+      or temporal meaning. Return structured output only and no private
+      chain-of-thought. Return exactly one judgment per supplied top-level
+      objectId. Copy each top-level objectId verbatim from the input, in input
+      order. Never shorten, extend, reconstruct, omit, duplicate, or invent an
+      objectId, and never substitute a nested selector, record, block, item,
+      projection, posting, or endpoint ID.
+
+      For typed links, judge the relation from the named sourceEndpoint to the
+      named targetEndpoint; never reverse them. Endpoint representations are
+      frozen context for interpreting the relation. Source-selector arrays are
+      unordered: use each endpoint representation's named sourceSelector (or
+      claimSelectors), never array position, to read the source and target.
+      Do not require a link's
+      provenance selector list to duplicate every endpoint object's own source
+      selector. An EMBEDDED_IN item-to-block link is structurally supported when
+      the source item's immutable blockId equals the target block ID. A
+      BEFORE/AFTER link must be checked using the endpoints' actual temporal
+      sessionOrdinal/turnOrdinal or explicit times, not their display order in
+      the input array. Still reject thematic association, unsupported identity,
+      or any relation whose declared direction disagrees with those fields.
+  - role: user
+    content: |-
+      Representations and exact bound provenance:
+      {{representations_with_provenance}}
+
+      Judge source support independently.

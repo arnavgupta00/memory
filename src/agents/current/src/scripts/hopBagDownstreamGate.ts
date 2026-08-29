@@ -10,6 +10,8 @@
  *   1b - notes-aware selector + deterministic coverage/adjacency repair
  *   2  - deterministic balanced raw-turn package (no selector call)
  *   3  - parallel per-session extraction -> deterministic raw-turn reduction
+ *   4  - every raw turn from the frozen bag -> answer (no deletion cap)
+ *   5  - parallel per-session extraction -> exact-deduped claim package (no deletion cap)
  *
  * Usage:
  *   pnpm --dir src/agents/current exec node --import tsx \
@@ -90,7 +92,7 @@ const ANSWER_PROMPT = "answer-v8-preference";
 const PACKAGE_MAX_TURNS = 40;
 const PACKAGE_CHAR_BUDGET = 40_000;
 const RAW_EXCERPT_MAX_CHARS = 4_000;
-const ALL_ARMS = ["1a", "1b", "2", "3"] as const;
+const ALL_ARMS = ["1a", "1b", "2", "3", "4", "5"] as const;
 type Arm = (typeof ALL_ARMS)[number];
 type ReasoningEffort = "low" | "medium" | "high";
 
@@ -690,6 +692,89 @@ function buildDeterministicPackage(
   });
 }
 
+function buildFullRawPackage(
+  question: string,
+  sessions: TimestampedSession[],
+): ContextPackage {
+  const items = sessions
+    .flatMap((session) =>
+      session.turns.map((turn, turnIndex): ContextPackageItem => ({
+        sessionId: session.session_id,
+        turnIndex,
+        date: session.date,
+        role: turn.role,
+        text: turn.content,
+        why: "raw turn retained from the complete K=81 candidate reservoir",
+        tier: "selected",
+      })),
+    )
+    .sort(
+      (left, right) =>
+        left.date.localeCompare(right.date)
+        || left.sessionId.localeCompare(right.sessionId)
+        || left.turnIndex - right.turnIndex,
+    );
+  const characterCount = items.reduce((sum, item) => sum + item.text.length, 0);
+  return {
+    queryShape: inferShape(question),
+    setBoundary: "all raw turns from every session in the frozen candidate reservoir",
+    candidateStatus: items.length > 0 ? "found" : "none_found",
+    missingRisk: "the frozen candidate reservoir may omit a required session; no downstream session or turn was deleted",
+    items,
+    characterCount,
+    estimatedTokens: Math.ceil(characterCount / 4),
+  };
+}
+
+function buildExtractedClaimPackage(args: {
+  question: string;
+  extracted: Array<{
+    session: TimestampedSession;
+    result: StructuredCall<z.infer<typeof SessionExtractSchema>>;
+  }>;
+}): ContextPackage {
+  const items: ContextPackageItem[] = [];
+  const seenFacts = new Set<string>();
+  for (const { session, result } of args.extracted) {
+    for (const claim of result.value.claims) {
+      const source = session.turns[claim.turnIndex];
+      if (!source) continue;
+      const canonical = claim.fact
+        .normalize("NFKC")
+        .toLocaleLowerCase("en-US")
+        .replace(/[^\p{L}\p{N}]+/gu, " ")
+        .trim();
+      if (!canonical || seenFacts.has(canonical)) continue;
+      seenFacts.add(canonical);
+      items.push({
+        sessionId: session.session_id,
+        turnIndex: claim.turnIndex,
+        date: session.date,
+        role: source.role,
+        text: claim.fact.trim(),
+        why: `per-session extractor: ${claim.why}`,
+        tier: "selected",
+      });
+    }
+  }
+  items.sort(
+    (left, right) =>
+      left.date.localeCompare(right.date)
+      || left.sessionId.localeCompare(right.sessionId)
+      || left.turnIndex - right.turnIndex,
+  );
+  const characterCount = items.reduce((sum, item) => sum + item.text.length, 0);
+  return {
+    queryShape: inferShape(args.question),
+    setBoundary: "all question-bearing claims extracted independently from every session in the frozen candidate reservoir",
+    candidateStatus: items.length > 0 ? "found" : "none_found",
+    missingRisk: "the frozen candidate reservoir or the independent claim extractors may omit required evidence; no extracted claim was rank-truncated",
+    items,
+    characterCount,
+    estimatedTokens: Math.ceil(characterCount / 4),
+  };
+}
+
 function formatBagCatalog(
   sessions: TimestampedSession[],
   annotations: Map<string, SessionAnnotation>,
@@ -965,6 +1050,16 @@ async function preparePackage(args: {
     };
   }
 
+  if (args.arm === "4") {
+    return {
+      pkg: buildFullRawPackage(args.raw.question, args.sessions),
+      calls: [],
+      modelIo: [],
+      intermediate: { method: "complete-candidate-reservoir-raw-turn-package" },
+      warnings: [],
+    };
+  }
+
   const extracted = await Promise.all(
     args.sessions.map(async (session, index) => {
       const prompt = await args.prompts.render("hop-session-extract-v1", {
@@ -983,12 +1078,24 @@ async function preparePackage(args: {
         role: "session_extract",
         reasoning: args.readerReasoning,
         maxOutputTokens: 8000,
-        outputReservation: 3000,
+        outputReservation: args.arm === "5" ? 1000 : 3000,
         sequence: index + 1,
       });
       return { session, result };
     }),
   );
+  if (args.arm === "5") {
+    return {
+      pkg: buildExtractedClaimPackage({ question: args.raw.question, extracted }),
+      calls: extracted.map(({ result }) => result.call),
+      modelIo: extracted.map(({ result }) => result.io),
+      intermediate: extracted.map(({ session, result }) => ({
+        session_id: session.session_id,
+        output: result.value,
+      })),
+      warnings: [],
+    };
+  }
   const broadHistory = isBroadHistoryQuestion(args.raw.question);
   const packageSessions = broadHistory
     ? extracted
@@ -1081,7 +1188,7 @@ function configForArm(args: {
       output_price_per_million: readerPricing.output,
     };
   }
-  if (args.arm === "3") {
+  if (args.arm === "3" || args.arm === "5") {
     models.session_extract = {
       kind: "generation",
       provider: "openai",
@@ -1247,7 +1354,9 @@ async function main(): Promise<void> {
     .split(",")
     .map((arm) => arm.trim())
     .filter((arm): arm is Arm => ALL_ARMS.includes(arm as Arm));
-  if (requestedArms.length === 0) throw new Error("--arms must include one of 1a,1b,2,3");
+  if (requestedArms.length === 0) {
+    throw new Error(`--arms must include one of ${ALL_ARMS.join(",")}`);
+  }
   if (new Set(requestedArms).size !== requestedArms.length) {
     throw new Error("--arms contains duplicates");
   }
@@ -1517,7 +1626,7 @@ async function main(): Promise<void> {
           support_status: answer.value.supportStatus,
           answer_call_count: 1,
           select_call_count: arm === "1a" || arm === "1b" ? 1 : 0,
-          extract_call_count: arm === "3" ? prepared.calls.length : 0,
+          extract_call_count: arm === "3" || arm === "5" ? prepared.calls.length : 0,
           context_package: contextTrace(prepared.pkg),
         },
         generation: answer.generation,

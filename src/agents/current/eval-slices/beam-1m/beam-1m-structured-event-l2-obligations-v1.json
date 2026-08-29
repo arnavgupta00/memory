@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "role": "development_falsification",
+  "cohortHash": "217ba713467cdfd6e8e5b3e5d8b0e79b76f3d1760dea0444eb723ebc53773ece",
+  "obligations": [
+    {
+      "obligationId": "ashley_party_plan.user_adopts_home_venue",
+      "storyId": "ashley_party_plan",
+      "obligationType": "direct_semantic",
+      "eligiblePlane": "semantic_record",
+      "stage": "semantic_ingestion",
+      "denominatorName": "direct_semantic",
+      "description": "The user says hosting Ashley's party at home is a good way to save costs.",
+      "satisfactionRule": "One or more accepted USER-attributed semantic records preserve both the home venue choice and its cost-saving rationale as the user's current plan, not as completed behavior.",
+      "sourceSelectorIds": [
+        "selector_2f402afc5e71519b74cb467310ef34855869b76d239569dd2fad56fa2e180f59"
+      ],
+      "criticality": "critical",
+      "stratum": "user_adoption"
+    },
+    {
+      "obligationId": "ashley_party_plan.user_plans_catering_and_invitations",
+      "storyId": "ashley_party_plan",
+      "obligationType": "direct_semantic",
+      "eligiblePlane": "semantic_record",
+      "stage": "semantic_ingestion",
+      "denominatorName": "direct_semantic",
+      "description": "The user plans to seek affordable catering and create simple, elegant invitations.",
+      "satisfactionRule": "Accepted USER-attributed semantic records jointly preserve the affordable-catering plan and the simple-elegant-invitations plan without upgrading them to completed actions.",
+      "sourceSelectorIds": [
+        "selector_835be75c78b5be746b9ae3ff4a3ee3fe65e2534aabdc305fc5fe1844352ba6d1"
+      ],
+      "criticality": "critical",
+      "stratum": "user_adoption"
+    },
+    {
+      "obligationId": "ashley_party_plan.assistant_schedule_buffet_330",
+      "storyId": "ashley_party_plan",
+      "obligationType": "compact_route",
+      "eligiblePlane": "assistant_block",
+      "stage": "semantic_ingestion",
+      "denominatorName": "compact_route",
+      "description": "The assistant's detailed schedule says the buffet opens at 3:30 PM.",
+      "satisfactionRule": "An accepted compact ASSISTANT block or item preserves and makes discoverable the exact 3:30 PM buffet-opening schedule entry; a lossy summary alone is insufficient.",
+      "sourceSelectorIds": [
+        "selector_7f064a0e68afb463052aa1a02b308c85d44d65c32084238b20b99273416da1fc"
+      ],
+      "criticality": "critical",
+      "stratum": "assistant_long_list"
+    },
+    {
+      "obligationId": "ashley_party_plan.assistant_schedule_cake_500",
+      "storyId": "ashley_party_plan",
+      "obligationType": "compact_route",
+      "eligiblePlane": "assistant_block",
+      "stage": "semantic_ingestion",
+      "denominatorName": "compact_route",
+      "description": "The assistant's detailed schedule says cake cutting and birthday wishes occur at 5:00 PM.",
+      "satisfactionRule": "An accepted compact ASSISTANT block or item preserves and makes discoverable the exact 5:00 PM cake-cutting and birthday-wishes schedule entry.",
+      "sourceSelectorIds": [
+        "selector_f3e48fe4710aba0e0df2083523883404c8c6bd53f4a495a05748a109ccfa6911"
+      ],
+      "criticality": "critical",
+      "stratum": "assistant_long_list"
+    },
+    {
+      "obligationId": "ashley_party_plan.assistant_contact_caterers",
+      "storyId": "ashley_party_plan",
+      "obligationType": "compact_route",
+      "eligiblePlane": "assistant_block",
+      "stage": "semantic_ingestion",
+      "denominatorName": "compact_route",
+      "description": "The assistant's next steps say to contact caterers and finalize the menu and cost.",
+      "satisfactionRule": "An accepted compact ASSISTANT block or item preserves and makes discoverable the action to contact caterers and finalize both menu and cost.",
+      "sourceSelectorIds": [
+        "selector_2437d6aca38d28e76b8309ba28f25e0ebd9e6570ffb1c8c5e15f1d84e75b298b"
+      ],
+      "criticality": "critical",
+      "stratum": "assistant_long_list"
+    }
+  ],
+  "exactGates": [
+    {
+      "denominatorName": "direct_semantic",
+      "criticality": "critical",
+      "stratum": "user_adoption",
+      "numeratorRequired": 2,
+      "denominator": 2
+    },
+    {
+      "denominatorName": "compact_route",
+      "criticality": "critical",
+      "stratum": "assistant_long_list",
+      "numeratorRequired": 3,
+      "denominator": 3
+    },
+    {
+      "denominatorName": "source_occurrence",
+      "criticality": "critical",
+      "stratum": "user_adoption",
+      "numeratorRequired": 2,
+      "denominator": 2
+    },
+    {
+      "denominatorName": "source_occurrence",
+      "criticality": "critical",
+      "stratum": "assistant_long_list",
+      "numeratorRequired": 3,
+      "denominator": 3
+    },
+    {
+      "denominatorName": "semantic_story_complete",
+      "criticality": null,
+      "stratum": null,
+      "numeratorRequired": 1,
+      "denominator": 1
+    }
+  ],
+  "precisionPolicy": {
+    "samplingMode": "bounded_cohort_census",
+    "denominatorBasis": "frozen_active_population",
+    "minimumSupportedRatio": 0.99,
+    "requireAllCriticalSupported": true
+  }
+}

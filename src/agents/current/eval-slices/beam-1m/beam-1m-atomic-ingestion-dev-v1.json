@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "benchmark": "BEAM",
+  "tier": "1M",
+  "name": "beam-1m-atomic-ingestion-dev-v1",
+  "role": "sealed_from_now_ingestion_falsification_not_population_estimate",
+  "conversation_selection": {
+    "seed": "beam-1m-atomic-ingestion-dev-v1",
+    "eligible_conversation_ids": [3, 18],
+    "primary_conversation_id": 18,
+    "primary_sha256_rank": "0323f00dd2284098aaffc3c8521e2793259d54252a02f62da7eccd4abc928a0f",
+    "shadow_conversation_id": 3,
+    "shadow_sha256_rank": "b3f045df83d75f191ff9d4cc5173cf7c86f0754081b44f03e0a3ab7f71f0fb14",
+    "eligibility": "certified probe counts only; no question text, source positions, atom counts, answers, or scores"
+  },
+  "probe_selection": {
+    "seed": "beam-1m-atomic-ingestion-probes-v1",
+    "strata": {
+      "contradiction_resolution": 2,
+      "knowledge_update": 2,
+      "temporal_reasoning": 2,
+      "summarization": 2,
+      "information_extraction": 1,
+      "instruction_following": 1,
+      "multi_session_reasoning": 1,
+      "preference_following": 1
+    }
+  },
+  "primary_probe_ids": [
+    "beam-1m/chat-18/contradiction_resolution/2",
+    "beam-1m/chat-18/contradiction_resolution/1",
+    "beam-1m/chat-18/information_extraction/2",
+    "beam-1m/chat-18/instruction_following/2",
+    "beam-1m/chat-18/knowledge_update/2",
+    "beam-1m/chat-18/knowledge_update/1",
+    "beam-1m/chat-18/multi_session_reasoning/1",
+    "beam-1m/chat-18/preference_following/2",
+    "beam-1m/chat-18/summarization/1",
+    "beam-1m/chat-18/summarization/2",
+    "beam-1m/chat-18/temporal_reasoning/2",
+    "beam-1m/chat-18/temporal_reasoning/1"
+  ],
+  "shadow_probe_ids": [
+    "beam-1m/chat-03/contradiction_resolution/1",
+    "beam-1m/chat-03/contradiction_resolution/2",
+    "beam-1m/chat-03/information_extraction/1",
+    "beam-1m/chat-03/instruction_following/2",
+    "beam-1m/chat-03/knowledge_update/2",
+    "beam-1m/chat-03/knowledge_update/1",
+    "beam-1m/chat-03/multi_session_reasoning/1",
+    "beam-1m/chat-03/preference_following/1",
+    "beam-1m/chat-03/summarization/1",
+    "beam-1m/chat-03/summarization/2",
+    "beam-1m/chat-03/temporal_reasoning/2",
+    "beam-1m/chat-03/temporal_reasoning/1"
+  ],
+  "isolation": {
+    "ingestion_input": "raw chronological sessions only",
+    "forbidden_during_ingestion": [
+      "probe questions",
+      "answers or rubrics",
+      "oracle atoms or source IDs",
+      "retrieval traces",
+      "prior predictions or scores"
+    ],
+    "existing_compression_holdout": "untouched and excluded"
+  }
+}

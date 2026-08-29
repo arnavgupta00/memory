@@ -23,11 +23,19 @@
     "gate:hop": "node --import tsx --max-old-space-size=8192 src/scripts/hopRetrieveGate.ts",
     "gate:hop-packs": "node --import tsx --max-old-space-size=8192 src/scripts/buildHopTeacherPacks.ts",
     "build:beam-1m-canaries": "node --import tsx src/scripts/buildBeam1mCanaries.ts",
+    "build:beam-compression-cohorts": "node --import tsx src/scripts/buildBeamCompressionCohorts.ts",
+    "audit:beam-compression-oracle": "node --import tsx --max-old-space-size=8192 src/scripts/recertifyBeamEvidenceOracle.ts",
+    "gate:beam-compression": "node --import tsx --max-old-space-size=8192 src/scripts/beamCompressionGate.ts",
+    "gate:beam-compression-alternatives": "node --import tsx --max-old-space-size=8192 src/scripts/beamCompressionAlternativesGate.ts",
+    "gate:beam-compression-answer-ab": "node --import tsx --max-old-space-size=8192 src/scripts/beamCompressionAnswerAbGate.ts",
+    "gate:beam-atomic-ingestion": "node --import tsx --max-old-space-size=8192 src/scripts/beamAtomicIngestionGate.ts",
+    "judge:beam-targeted": "python src/scripts/runBeamTargetedOfficialEvaluation.py",
     "build:semantic-index": "node --import tsx --max-old-space-size=8192 src/scripts/buildSemanticIndex.ts",
     "prepare:beam-1m": "node --import tsx --max-old-space-size=8192 src/scripts/prepareBeam1m.ts",
     "setup:beam-judge": "node --import tsx src/scripts/setupBeamOfficialJudge.ts",
     "run:beam-1m": "node --import tsx --max-old-space-size=8192 src/scripts/beam1mCanary.ts",
     "export:beam-1m": "node --import tsx src/scripts/exportBeam1mAnswers.ts",
+    "export:beam-final-prompts": "node --import tsx src/scripts/exportBeamFinalPrompts.ts",
     "summarize:beam-1m": "node --import tsx src/scripts/summarizeBeam1mEvaluation.ts"
   },
   "dependencies": {
@@ -35,6 +43,7 @@
     "@langchain/core": "1.2.3",
     "@langchain/langgraph": "1.4.8",
     "js-yaml": "4.1.1",
+    "js-tiktoken": "1.0.21",
     "openai": "6.48.0",
     "zod": "4.4.3"
   },

@@ -1,0 +1,35 @@
+schema_version: 1
+id: beam-evidence-recertify-v1
+description: Recertify BEAM evidence atoms against exact candidate source messages.
+output_contract: beam_evidence_recertify_v1
+required_variables:
+  - probe_record
+  - candidate_messages
+messages:
+  - role: system
+    content: |-
+      You are auditing benchmark evidence labels, not answering the benchmark
+      question. The probe's source_chat_ids are untrusted hints: some may point
+      to unrelated messages. The probe's question, answer or ideal answer,
+      rubric, and descriptive reference fields define the evidence that must be
+      located.
+
+      Split the expected answer into independently necessary evidence atoms.
+      For every atom, cite one or more candidate message IDs that directly
+      support it. Copy a short verbatimQuote that is an exact contiguous
+      substring of each cited message. Cite the smallest sufficient set; retain
+      separate prior/current or contradictory statements as separate atoms.
+
+      Do not cite a message because its ID appears in the original annotation.
+      If the candidates do not directly support an atom, mark it not_found. If
+      support is genuinely ambiguous, mark it ambiguous. Return structured
+      output only and do not reveal private chain-of-thought.
+  - role: user
+    content: |-
+      Official probe record:
+      {{probe_record}}
+
+      Candidate source messages:
+      {{candidate_messages}}
+
+      Recertify the evidence atoms and exact source messages.
